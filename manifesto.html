@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Our Manifesto - iHeartTheatre | The Theatre Renaissance</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ :root {
+ --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ --color-gold: #ffd700;
+ --color-white: #ffffff;
+ --color-dark: #f5f5f5;
+ --color-gray-100: #050508;
+ --color-gray-200: #12121a;
+ --color-gray-600: #a0a0b0;
+ --color-gray-800: #d0d0d8;
+ --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+ --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+ --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+ --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.5);
+ --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ body {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+ background: var(--color-gray-100);
+ color: var(--color-dark);
+ line-height: 1.8;
+ }
+
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.9);
+ backdrop-filter: blur(10px);
+ box-shadow: var(--shadow-sm);
+ z-index: 1000;
+ padding: 1rem 2rem;
+ }
+
+ .nav-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ font-weight: 700;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+
+ .nav-links a {
+ text-decoration: none;
+ color: var(--color-gray-800);
+ font-weight: 500;
+ transition: var(--transition);
+ }
+
+ .nav-links a:hover {
+ color: #667eea;
+ }
+
+ /* Hero */
+ .hero {
+ background: var(--gradient-primary);
+ color: #f5f5f5;
+ padding: 10rem 2rem 6rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
+ background-size: 200px;
+ animation: float 30s infinite linear;
+ }
+
+ @keyframes float {
+ 0%, 100% { transform: translateY(0) rotate(0deg); }
+ 50% { transform: translateY(-30px) rotate(180deg); }
+ }
+
+ .hero-content {
+ position: relative;
+ z-index: 1;
+ max-width: 900px;
+ margin: 0 auto;
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 4rem;
+ margin-bottom: 1.5rem;
+ line-height: 1.1;
+ }
+
+ .hero .subtitle {
+ font-size: 1.5rem;
+ opacity: 0.95;
+ margin-bottom: 3rem;
+ }
+
+ .hero-emphasis {
+ font-size: 1.2rem;
+ font-weight: 600;
+ background: rgba(255, 255, 255, 0.2);
+ padding: 1rem 2rem;
+ border-radius: 50px;
+ display: inline-block;
+ margin-top: 2rem;
+ }
+
+ /* Main Content */
+ main {
+ max-width: 800px;
+ margin: -3rem auto 4rem;
+ padding: 0 2rem;
+ position: relative;
+ z-index: 10;
+ }
+
+ .manifesto-card {
+ background: white;
+ border-radius: 20px;
+ padding: 4rem;
+ box-shadow: var(--shadow-xl);
+ margin-bottom: 3rem;
+ }
+
+ .manifesto-section {
+ margin-bottom: 3rem;
+ }
+
+ .manifesto-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ margin-bottom: 1.5rem;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .manifesto-section p {
+ color: var(--color-gray-800);
+ font-size: 1.15rem;
+ line-height: 1.9;
+ margin-bottom: 1.5rem;
+ }
+
+ .block-quote {
+ border-left: 4px solid #667eea;
+ padding-left: 2rem;
+ margin: 2rem 0;
+ font-style: italic;
+ font-size: 1.2rem;
+ color: var(--color-gray-600);
+ background: var(--color-gray-100);
+ padding: 2rem;
+ border-radius: 0 15px 15px 0;
+ }
+
+ .emphasis-box {
+ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ color: #f5f5f5;
+ padding: 2rem;
+ border-radius: 15px;
+ margin: 2rem 0;
+ }
+
+ .emphasis-box p {
+ color: #f5f5f5;
+ font-weight: 600;
+ margin: 0;
+ }
+
+ .energy-flow {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 3rem 0;
+ flex-wrap: wrap;
+ gap: 1rem;
+ }
+
+ .energy-step {
+ text-align: center;
+ flex: 1;
+ min-width: 150px;
+ }
+
+ .energy-step .arrow {
+ font-size: 2rem;
+ color: #667eea;
+ margin: 1rem 0;
+ }
+
+ .energy-step h3 {
+ font-weight: 700;
+ color: var(--color-gray-800);
+ margin-bottom: 0.5rem;
+ }
+
+ .energy-step p {
+ font-size: 0.9rem;
+ color: var(--color-gray-600);
+ }
+
+ .principles-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 1.5rem;
+ margin-top: 2rem;
+ }
+
+ .principle-card {
+ background: var(--color-gray-100);
+ padding: 2rem;
+ border-radius: 15px;
+ text-align: center;
+ transition: var(--transition);
+ }
+
+ .principle-card:hover {
+ transform: translateY(-5px);
+ box-shadow: var(--shadow-lg);
+ }
+
+ .principle-icon {
+ font-size: 3rem;
+ margin-bottom: 1rem;
+ }
+
+ .principle-title {
+ font-weight: 700;
+ color: var(--color-gray-800);
+ margin-bottom: 0.5rem;
+ }
+
+ .principle-text {
+ color: var(--color-gray-600);
+ font-size: 0.95rem;
+ }
+
+ .call-to-action {
+ text-align: center;
+ margin-top: 4rem;
+ }
+
+ .cta-btn {
+ display: inline-block;
+ padding: 1.5rem 3rem;
+ background: var(--gradient-primary);
+ color: #f5f5f5;
+ text-decoration: none;
+ border-radius: 50px;
+ font-weight: 600;
+ font-size: 1.2rem;
+ transition: var(--transition);
+ box-shadow: var(--shadow-lg);
+ }
+
+ .cta-btn:hover {
+ transform: translateY(-5px);
+ box-shadow: var(--shadow-xl);
+ }
+
+ /* Footer */
+ footer {
+ background: var(--color-dark);
+ color: #f5f5f5;
+ padding: 3rem 2rem;
+ margin-top: 4rem;
+ }
+
+ .footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-bottom: 1.5rem;
+ flex-wrap: wrap;
+ }
+
+ .footer-links a {
+ color: rgba(255, 255, 255, 0.8);
+ text-decoration: none;
+ }
+
+ .footer-copy {
+ color: rgba(255, 255, 255, 0.6);
+ font-size: 0.9rem;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .hero h1 {
+ font-size: 2.5rem;
+ }
+
+ .hero .subtitle {
+ font-size: 1.2rem;
+ }
+
+ .hero-emphasis {
+ font-size: 1rem;
+ }
+
+ .manifesto-card {
+ padding: 2rem 1.5rem;
+ }
+
+ .energy-flow {
+ flex-direction: column;
+ }
+
+ .energy-step .arrow {
+ transform: rotate(90deg);
+ }
+
+ .nav-links {
+ display: none;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="whats-on.html">What's On</a>
+                <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <section class="hero">
+ <div class="hero-content">
+ <h1>The Theatre Renaissance</h1>
+ <p class="subtitle">As AI generates infinite synthetic content, the world will rediscover the power of live performance</p>
+ <div class="hero-emphasis">
+ We are on the cusp of the greatest rise of live performance the world has ever seen
+ </div>
+ </div>
+ </section>
+
+ <main>
+ <div class="manifesto-card">
+ <div class="manifesto-section">
+ <h2>What AI Cannot Imitate</h2>
+ <p>
+ In an age of artificial intelligence, algorithms can generate infinite content. They can write articles, create images, compose music, and produce videos at unprecedented scale and speed.
+ </p>
+ <p>
+ But there is something they can never replicate. Something that algorithms cannot touch, no matter how sophisticated they become.
+ </p>
+ <div class="block-quote">
+ "The raw, electric energy of a real human being standing on stage.<br>
+ The vulnerability of live performance, where anything can happen.<br>
+ The shared breath of an audience suspended in collective wonder.<br>
+ The human soul expressed through art, witnessed by other human souls."
+ </div>
+ <p>
+ As AI floods the world with synthetic content, humans will crave the authentic more deeply than ever before. We will hunger for experiences that feel real—emotions we can feel, performances we can witness, magic we can see.
+ </p>
+ </div>
+
+ <div class="manifesto-section">
+ <h2>We Are Reviewers, Not Critics</h2>
+ <p>
+ The distinction matters. Critics judge. Critics tear down. Critics find flaws. Critics sit in darkness, detached from the energy, delivering verdicts from on high.
+ </p>
+ <p>
+ Reviewers celebrate. Reviewers build up. Reviewers capture magic. Reviewers stand with the audience, feeling the same electricity, and share that feeling with the world.
+ </p>
+ <div class="emphasis-box">
+ <p>
+ Everything real. Everything positive. We only review shows worth celebrating, performances worth experiencing, magic worth sharing.
+ </p>
+ </div>
+ <p>
+ If we can't celebrate it authentically, we don't review it. Our platform is for amplifying excellence, not amplifying negativity.
+ </p>
+ </div>
+
+ <div class="manifesto-section">
+ <h2>Our Love Buzzes in the Audience</h2>
+ <p>
+ This is not metaphor. When we write about a performance, we write with love. Our excitement, our wonder, our genuine appreciation—it buzzes through every word.
+ </p>
+ <p>
+ When someone reads our reviews, they should feel that buzz. They should feel the electricity we felt. They should get excited. They should want to be there, in that room, experiencing that magic.
+ </p>
+ <div class="energy-flow">
+ <div class="energy-step">
+ <h3> Reviewer</h3>
+ <p>Feels the magic, writes with love</p>
+ <div class="arrow">→</div>
+ </div>
+ <div class="energy-step">
+ <h3> Review</h3>
+ <p>Buzzes with authentic excitement</p>
+ <div class="arrow">→</div>
+ </div>
+ <div class="energy-step">
+ <h3> Audience</h3>
+ <p>Feels the buzz, gets excited</p>
+ <div class="arrow">→</div>
+ </div>
+ <div class="energy-step">
+ <h3> Performance</h3>
+ <p>Feels audience energy, elevates</p>
+ <div class="arrow">→</div>
+ </div>
+ <div class="energy-step">
+ <h3> Potential</h3>
+ <p>Performers achieve absolute best</p>
+ </div>
+ </div>
+ <p>
+ We don't just review theatre. We amplify it. We are catalysts for magic. We help performers reach their absolute potential by sending them audiences primed with excitement and appreciation.
+ </p>
+ </div>
+
+ <div class="manifesto-section">
+ <h2>The Greatest Rise of Live Performance</h2>
+ <p>
+ We believe we are on the cusp of something extraordinary. As AI content becomes ubiquitous, the value of live, human performance will skyrocket.
+ </p>
+ <p>
+ People will seek out real experiences. They will crave authentic connection. They will pay a premium for the vulnerability of live performance, the unpredictability of the moment, the shared humanity of being in an audience.
+ </p>
+ <div class="block-quote">
+ "We are not just building a review platform.<br>
+ We are building a movement that celebrates the one thing<br>
+ AI can never replicate: the human spirit expressed through art."
+ </div>
+ <p>
+ This is the Theatre Renaissance. It's happening now. And we are here to celebrate every performance, every venue, every performer who brings magic to the stage.
+ </p>
+ </div>
+
+ <div class="manifesto-section">
+ <h2>Our Principles</h2>
+ <div class="principles-grid">
+ <div class="principle-card">
+ <div class="principle-icon"></div>
+ <h3 class="principle-title">Everything Real</h3>
+ <p class="principle-text">Authentic experiences, genuine emotions, real performances by real people</p>
+ </div>
+ <div class="principle-card">
+ <div class="principle-icon"></div>
+ <h3 class="principle-title">Everything Positive</h3>
+ <p class="principle-text">Celebrate excellence, build up performers, amplify magic</p>
+ </div>
+ <div class="principle-card">
+ <div class="principle-icon"></div>
+ <h3 class="principle-title">We Are Reviewers</h3>
+ <p class="principle-text">Not critics—we celebrate, we don't judge</p>
+ </div>
+ <div class="principle-card">
+ <div class="principle-icon"></div>
+ <h3 class="principle-title">Energy Flows</h3>
+ <p class="principle-text">Our love buzzes in the audience, elevating performances</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="call-to-action">
+ <h2 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 2rem;">Join the Renaissance</h2>
+ <p style="color: var(--color-gray-600); margin-bottom: 2rem; font-size: 1.1rem;">
+ Be part of the greatest rise of live performance the world has ever seen
+ </p>
+ <a href="index.html" class="cta-btn">Feel the Magic →</a>
+ </div>
+ </div>
+ </main>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

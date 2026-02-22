@@ -1,0 +1,37 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# Backup/temp files
+index-original.html
+*.bak
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# Conversation history (not needed in production)
+summarized_conversations/
+outputs/
+
+# Agent files not needed for production site
+backend-agents/
+vscode-agents/
+
+# Draft/strategy docs (keep in repo for reference but exclude from Pages)
+# *.md files are not served by GitHub Pages anyway

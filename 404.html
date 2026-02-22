@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Page Not Found | iHeartTheatre</title>
+ <meta name="description" content="The page you're looking for doesn't exist. Let's get you back to the show!">
+ <meta name="theme-color" content="#667eea">
+ <link rel="manifest" href="/manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="/css/shared.css">
+ <style>
+ .error-page {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 2rem;
+ position: relative;
+ z-index: 2;
+ }
+
+ .error-content {
+ max-width: 600px;
+ }
+
+ .error-code {
+ font-family: 'Playfair Display', serif;
+ font-size: 8rem;
+ font-weight: 700;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ line-height: 1;
+ margin-bottom: 1rem;
+ }
+
+ .error-emoji {
+ font-size: 4rem;
+ margin-bottom: 1rem;
+ display: block;
+ }
+
+ .error-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ margin-bottom: 1rem;
+ color: var(--text-primary);
+ }
+
+ .error-message {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ margin-bottom: 2rem;
+ line-height: 1.7;
+ }
+
+ .error-buttons {
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+
+ .error-links {
+ margin-top: 3rem;
+ display: flex;
+ gap: 2rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+
+ .error-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+
+ .error-links a:hover {
+ color: var(--accent-primary);
+ }
+
+ @media (max-width: 480px) {
+ .error-code {
+ font-size: 5rem;
+ }
+ .error-title {
+ font-size: 1.5rem;
+ }
+ }
+ </style>
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="/index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="/index.html">Home</a>
+ <a href="/whats-on.html">What's On</a>
+ <a href="/reviews.html">Reviews</a>
+ <a href="/reviewers.html">Reviewers</a>
+ <a href="/junior-kids-schools.html">Junior & Kids</a>
+ <a href="/holiday-programs.html">Holiday Programs</a>
+ <a href="/about.html">About</a>
+ <a href="/contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <div class="error-page">
+ <div class="error-content">
+ <span class="error-emoji"></span>
+ <div class="error-code">404</div>
+ <h1 class="error-title">The Curtain Has Fallen</h1>
+ <p class="error-message">
+ This page seems to have taken its final bow. But don't worry — 
+ the show must go on! Let's get you back to the theatre.
+ </p>
+ <div class="error-buttons">
+ <a href="/index.html" class="btn btn-primary">Back to Home</a>
+ <a href="/reviews.html" class="btn btn-secondary">Read Reviews</a>
+ </div>
+ <div class="error-links">
+ <a href="/reviewers.html">Meet Our Reviewers</a>
+ <a href="/junior-kids-schools.html">Junior & Kids</a>
+ <a href="/submit-review.html">Submit a Review</a>
+ <a href="/contact.html">Contact Us</a>
+ </div>
+ </div>
+ </div>
+
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="/icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to your home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <script src="/js/shared.js"></script>
+</body>
+</html>

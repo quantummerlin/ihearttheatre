@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Disclaimer | iHeartTheatre.com</title>
+ <meta name="description" content="Disclaimer for iHeartTheatre.com - Important information about our reviews, opinions, and content.">
+ <meta name="keywords" content="disclaimer, terms, reviews, opinions, iHeartTheatre">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: linear-gradient(135deg, #050508 0%, #0a0a0f 100%);
+ color: #f5f5f5;
+ line-height: 1.8;
+ min-height: 100vh;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 4px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.3s ease;
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 100px 20px 60px;
+ }
+
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+ z-index: 100;
+ padding: 15px 0;
+ }
+
+ .nav-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .nav-logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 700;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+
+ .nav-links a {
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 0.9rem;
+ transition: color 0.3s;
+ }
+
+ .nav-links a:hover {
+ color: #f5f5f5;
+ }
+
+ .hero {
+ text-align: center;
+ padding: 40px 0;
+ margin-bottom: 40px;
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ margin-bottom: 15px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+
+ .hero p {
+ color: #a0a0b0;
+ font-size: 1.1rem;
+ }
+
+ .section {
+ margin-bottom: 50px;
+ }
+
+ .section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ margin-bottom: 20px;
+ color: #f5f5f5;
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ }
+
+ .section h2::before {
+ content: '';
+ width: 4px;
+ height: 35px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ border-radius: 2px;
+ }
+
+ .section h3 {
+ font-size: 1.3rem;
+ margin-bottom: 15px;
+ color: #d0d0d0;
+ margin-top: 30px;
+ }
+
+ .section p {
+ color: #a0a0b0;
+ margin-bottom: 15px;
+ }
+
+ .section ul {
+ color: #a0a0b0;
+ margin-bottom: 15px;
+ padding-left: 25px;
+ }
+
+ .section ul li {
+ margin-bottom: 10px;
+ }
+
+ .highlight {
+ color: #ffd700;
+ font-weight: 600;
+ }
+
+ .emphasis {
+ font-style: italic;
+ color: #d0d0d0;
+ }
+
+ .important-box {
+ background: linear-gradient(135deg, rgba(102, 126, 234, 0.15), rgba(118, 75, 162, 0.15));
+ border: 2px solid rgba(102, 126, 234, 0.3);
+ border-radius: 15px;
+ padding: 30px;
+ margin: 30px 0;
+ backdrop-filter: blur(10px);
+ }
+
+ .important-box h3 {
+ color: #ffd700;
+ margin-top: 0;
+ font-size: 1.5rem;
+ }
+
+ .important-box p {
+ color: #d0d0d0;
+ }
+
+ .reviewer-statement {
+ background: rgba(255, 215, 0, 0.05);
+ border: 1px solid rgba(255, 215, 0, 0.1);
+ border-radius: 15px;
+ padding: 30px;
+ margin: 30px 0;
+ text-align: center;
+ }
+
+ .reviewer-statement h3 {
+ color: #ffd700;
+ font-size: 1.5rem;
+ margin-bottom: 20px;
+ margin-top: 0;
+ }
+
+ .reviewer-statement p {
+ color: #d0d0d0;
+ font-size: 1.1rem;
+ line-height: 1.9;
+ margin-bottom: 0;
+ }
+
+ .contact-info {
+ background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ border-radius: 15px;
+ padding: 30px;
+ margin-top: 40px;
+ text-align: center;
+ }
+
+ .contact-info h3 {
+ color: #ffd700;
+ margin-bottom: 15px;
+ }
+
+ .contact-info p {
+ color: #d0d0d0;
+ font-size: 1.1rem;
+ }
+
+ .contact-info a {
+ color: #667eea;
+ text-decoration: none;
+ font-weight: 600;
+ }
+
+ .contact-info a:hover {
+ text-decoration: underline;
+ }
+
+ footer {
+ background: rgba(5, 5, 8, 0.95);
+ padding: 40px 20px;
+ margin-top: 80px;
+ border-top: 1px solid rgba(255, 255, 255, 0.08);
+ }
+
+ .footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ color: #a0a0b0;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ margin-top: 20px;
+ flex-wrap: wrap;
+ }
+
+ .footer-links a {
+ color: #a0a0b0;
+ text-decoration: none;
+ transition: color 0.3s;
+ }
+
+ .footer-links a:hover {
+ color: #667eea;
+ }
+
+ .last-updated {
+ text-align: center;
+ color: #666;
+ font-size: 0.9rem;
+ margin-top: 60px;
+ padding: 20px;
+ background: rgba(255, 255, 255, 0.02);
+ border-radius: 10px;
+ }
+
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="whats-on.html">What's On</a>
+                <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <div class="container">
+ <section class="hero">
+ <h1>Disclaimer</h1>
+ <p>Important information about our reviews, opinions, and content.</p>
+ </section>
+
+ <section class="section">
+ <h2>General Disclaimer</h2>
+ <p>The information provided on <strong>iHeartTheatre.com</strong> is for general informational and entertainment purposes only. All content on this website reflects the personal opinions, experiences, and perspectives of our reviewers and does not constitute professional advice or criticism.</p>
+ <p>While we strive for accuracy and honesty in our reviews, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the information contained on this website.</p>
+ </section>
+
+ <section class="section">
+ <h2>Our Review Philosophy</h2>
+ 
+ <div class="reviewer-statement">
+ <h3> We Are Reviewers, NOT Critics</h3>
+ <p>We are committed to celebrating theatre in all its forms. Our reviews aim to show the positives of every show reviewed, recognizing that it is possible to not personally enjoy a performance while still appreciating the art, the effort, the production, and the dedication involved.</p>
+ </div>
+
+ <h3>What Our Reviews Represent</h3>
+ <ul>
+ <li><strong>Personal Opinions:</strong> All reviews represent the personal views and experiences of our reviewers (Deanna Amato and Penelope Quinn) based on specific performances attended</li>
+ <li><strong>Subjective Experiences:</strong> Theatre is subjective; individual experiences may vary between different performances, audiences, and viewing circumstances</li>
+ <li><strong>Positive Focus:</strong> We focus on highlighting strengths, achievements, and positive aspects of productions</li>
+ <li><strong>Community Spirit:</strong> Our reviews are written from a place of love and appreciation for Melbourne's theatre community</li>
+ </ul>
+
+ <h3>What Our Reviews Do NOT Represent</h3>
+ <ul>
+ <li><strong>Professional Criticism:</strong> We are not professional theatre critics and do not claim to provide comprehensive critical analysis</li>
+ <li><strong>Definitive Judgments:</strong> Our reviews do not represent the only or definitive opinion on any production</li>
+ <li><strong>Expert Assessments:</strong> Reviews are not intended as expert assessments of technical or artistic merit</li>
+ <li><strong>Recommendations for All:</strong> What one person enjoys may not suit another's tastes or preferences</li>
+ </ul>
+ </section>
+
+ <section class="section">
+ <h2>Accuracy and Timeliness</h2>
+ <h3>Performance Details</h3>
+ <p>We make reasonable efforts to ensure accuracy of production information including show titles, cast members, venues, dates, and companies. However, details may change, and we recommend verifying information directly with venues or production companies before attending.</p>
+ 
+ <h3>Production Changes</h3>
+ <p>Productions may change cast, creative teams, schedules, or other details after our review is published. Our reviews reflect the specific performance attended, which may differ from subsequent performances.</p>
+
+ <h3>Photographs</h3>
+ <p>Production photographs included in reviews are either provided by the production company or taken by our reviewers (with permission when applicable). We make efforts to use appropriate images, but errors in attribution or use may occur. Please contact us to correct any issues.</p>
+ </section>
+
+ <section class="section">
+ <h2>Junior Reviews - Penelope Quinn</h2>
+ 
+ <div class="important-box">
+ <h3> Special Note About Penelope's Reviews</h3>
+ <p>Penelope Quinn (age 7) is our Junior Reviews Editor. Her reviews are:</p>
+ <ul style="margin-top: 15px;">
+ <li>Written from a <strong>child's perspective</strong> on theatre</li>
+ <li>Focused on <strong>family-friendly shows</strong> appropriate for young audiences</li>
+ <li><strong>Supervised and supported</strong> by parents during the review process</li>
+ <li>Intended to provide <strong>insight from a young audience member's point of view</strong></li>
+ </ul>
+ <p style="margin-top: 15px;">Parents should use their own judgment when considering age-appropriateness of productions for their children.</p>
+ </div>
+ </section>
+
+ <section class="section">
+ <h2>No Financial Endorsements</h2>
+ <p>Unless explicitly stated, our reviews are not paid endorsements. We do not accept payment for positive reviews. Reviews are based on genuine experiences and honest opinions formed during attendance at productions.</p>
+ 
+ <h3>Complimentary Tickets</h3>
+ <p>From time to time, we may receive complimentary tickets to productions through media passes or direct invitations. When this occurs, we do not alter our review approach or content. We remain committed to honest, positive-focused reviews regardless of ticket source.</p>
+ 
+ <h3>Promotional Content</h3>
+ <p>Show submissions and promotional content on our website are provided by production companies and may contain marketing language. This content is clearly distinguished from our independent reviews.</p>
+ </section>
+
+ <section class="section">
+ <h2>Third-Party Links and Content</h2>
+ <p>Our website may contain links to third-party websites, including:</p>
+ <ul>
+ <li>Official theatre company websites</li>
+ <li>Ticketing platforms and booking services</li>
+ <li>Venue websites and social media pages</li>
+ <li>Other theatre-related resources</li>
+ </ul>
+ <p>We are not responsible for the content, accuracy, or practices of these third-party websites. Inclusion of links does not constitute endorsement of those websites or their content.</p>
+ </section>
+
+ <section class="section">
+ <h2>User-Submitted Content</h2>
+ <h3>Review Submissions</h3>
+ <p>Community review submissions reflect the personal opinions of the submitting reviewers and do not necessarily represent the views of iHeartTheatre.com or our official reviewers. We review submissions before publication but are not responsible for the accuracy or content of user-submitted reviews.</p>
+
+ <h3>Show and Program Submissions</h3>
+ <p>Information submitted for show listings and holiday programs is provided by the submitting organizations. We do not verify all details and recommend confirming information directly with the production company or venue before attending or making arrangements.</p>
+ </section>
+
+ <section class="section">
+ <h2>Limitation of Liability</h2>
+ <p>To the fullest extent permitted by law, iHeartTheatre.com, its reviewers, and contributors shall not be liable for any loss, damage, or inconvenience arising from:</p>
+ <ul>
+ <li>Relying on information contained in our reviews</li>
+ <li>Attending productions based on our recommendations</li>
+ <li>Errors, omissions, or inaccuracies in our content</li>
+ <li>Unavailability or cancellation of productions</li>
+ <li>Any issues related to third-party websites or services</li>
+ </ul>
+ <p class="emphasis">Theatre attendance involves personal choice and risk. We encourage audience members to make their own informed decisions about which productions to attend.</p>
+ </section>
+
+ <section class="section">
+ <h2>Intellectual Property</h2>
+ <p>All content on iHeartTheatre.com, including reviews, photographs, design, and branding, is protected by copyright. Permission is required to reproduce, distribute, or use our content for commercial purposes.</p>
+ 
+ <h3>Fair Use</h3>
+ <p>Brief quotations from our reviews for non-commercial purposes (with proper attribution) may be considered fair use. Please contact us for permission before using substantial portions of our content.</p>
+ </section>
+
+ <section class="section">
+ <h2>Updates to This Disclaimer</h2>
+ <p>We reserve the right to modify this disclaimer at any time. Changes will be posted on this page with an updated "Last Updated" date. Your continued use of our website constitutes acceptance of any changes.</p>
+ </section>
+
+ <section class="section">
+ <h2>Contact Us</h2>
+ <p>If you have questions about this disclaimer, wish to request corrections, or need clarification about our review practices, please contact us:</p>
+ 
+ <div class="contact-info">
+ <h3> Get in Touch</h3>
+ <p><strong>Email:</strong> <a href="mailto:hello@ihearttheatre.com">hello@ihearttheatre.com</a></p>
+ <p style="margin-top: 15px;">We welcome feedback and are committed to addressing any concerns promptly.</p>
+ </div>
+ </section>
+
+ <div class="last-updated">
+ <p><strong>Last Updated:</strong> February 2025</p>
+ </div>
+ </div>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+
+ <script>
+ // Progress bar
+ window.onscroll = function() {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.getElementById("progressBar").style.width = scrolled + "%";
+ };
+
+ // Smooth scroll for navigation
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+ anchor.addEventListener('click', function (e) {
+ e.preventDefault();
+ document.querySelector(this.getAttribute('href')).scrollIntoView({
+ behavior: 'smooth'
+ });
+ });
+ });
+ </script>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

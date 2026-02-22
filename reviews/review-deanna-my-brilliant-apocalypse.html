@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My Brilliant Apocalypse: The Return of Barry Brilliant | iHeartTheatre.com</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: #050508;
+ color: #f5f5f5;
+ line-height: 1.7;
+ overflow-x: hidden;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.1s ease;
+ }
+
+ .particles {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: 1;
+ overflow: hidden;
+ }
+
+ .particle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ background: rgba(102, 126, 234, 0.3);
+ border-radius: 50%;
+ animation: float 15s infinite ease-in-out;
+ }
+
+ @keyframes float {
+ 0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+ 10% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 120px 20px 80px;
+ position: relative;
+ z-index: 2;
+ }
+
+ .back-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 14px;
+ margin-bottom: 40px;
+ transition: all 0.3s ease;
+ }
+
+ .back-link:hover {
+ color: #667eea;
+ transform: translateX(-5px);
+ }
+
+ .reviewer-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(102, 126, 234, 0.1);
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ padding: 8px 16px;
+ border-radius: 20px;
+ font-size: 13px;
+ color: #667eea;
+ margin-bottom: 24px;
+ }
+
+ .reviewer-badge img {
+ width: 24px;
+ height: 24px;
+ border-radius: 50%;
+ object-fit: cover;
+ }
+
+ h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 5vw, 4rem);
+ font-weight: 700;
+ line-height: 1.2;
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #f5f5f5 0%, #a0a0b0 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .subtitle {
+ font-size: 1.1rem;
+ color: #a0a0b0;
+ margin-bottom: 40px;
+ font-weight: 300;
+ }
+
+ .meta {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.05);
+ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+ margin-bottom: 40px;
+ }
+
+ .meta-item {
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+ }
+
+ .meta-label {
+ font-size: 11px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: #667eea;
+ font-weight: 600;
+ }
+
+ .meta-value {
+ font-size: 14px;
+ color: #f5f5f5;
+ }
+
+ .content {
+ font-size: 1.1rem;
+ line-height: 1.9;
+ color: #d0d0d0;
+ }
+
+ .content p {
+ margin-bottom: 24px;
+ }
+
+ .content p:first-of-type::first-letter {
+ font-family: 'Playfair Display', serif;
+ font-size: 4rem;
+ float: left;
+ line-height: 1;
+ margin-right: 12px;
+ margin-top: 4px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .highlight {
+ background: rgba(102, 126, 234, 0.1);
+ border-left: 3px solid #667eea;
+ padding: 20px;
+ margin: 32px 0;
+ border-radius: 0 8px 8px 0;
+ font-style: italic;
+ }
+
+ .cta-section {
+ background: rgba(102, 126, 234, 0.05);
+ border: 1px solid rgba(102, 126, 234, 0.1);
+ border-radius: 16px;
+ padding: 32px;
+ margin-top: 60px;
+ text-align: center;
+ }
+
+ .cta-section h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ margin-bottom: 12px;
+ color: #f5f5f5;
+ }
+
+ .cta-section p {
+ color: #a0a0b0;
+ margin-bottom: 24px;
+ }
+
+ .cta-button {
+ display: inline-block;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 14px 32px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-weight: 600;
+ transition: all 0.3s ease;
+ }
+
+ .cta-button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ }
+
+ .related-reviews {
+ margin-top: 60px;
+ }
+
+ .related-reviews h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ margin-bottom: 24px;
+ color: #f5f5f5;
+ }
+
+ .review-card {
+ background: rgba(255, 255, 255, 0.02);
+ border: 1px solid rgba(255, 255, 255, 0.05);
+ border-radius: 12px;
+ padding: 24px;
+ margin-bottom: 16px;
+ transition: all 0.3s ease;
+ cursor: pointer;
+ }
+
+ .review-card:hover {
+ background: rgba(255, 255, 255, 0.04);
+ border-color: rgba(102, 126, 234, 0.3);
+ transform: translateX(5px);
+ }
+
+ .review-card h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.2rem;
+ margin-bottom: 8px;
+ color: #f5f5f5;
+ }
+
+ .review-card p {
+ color: #a0a0b0;
+ font-size: 0.9rem;
+ }
+
+ @media (max-width: 768px) {
+ .container {
+ padding: 100px 20px 60px;
+ }
+
+ h1 {
+ font-size: 2rem;
+ }
+
+ .meta {
+ flex-direction: column;
+ gap: 16px;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="../manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
+ <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ 
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="../index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviews.html" class="active">Reviews</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="../holiday-programs.html">Holiday Programs</a>
+ <a href="../about.html">About</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+<div class="container">
+ <a href="../index.html" class="back-link">
+ ← Back to Home
+ </a>
+
+ <div class="reviewer-badge">
+ <img src="../generated_images/deanna-profile.png" alt="Deanna Amato">
+ <span>Deanna Amato</span>
+ </div>
+
+ <h1>My Brilliant Apocalypse: The Return of Barry Brilliant</h1>
+ <p class="subtitle">Melbourne Fringe Festival at Panarcadian Association</p>
+
+ <div class="meta">
+ <div class="meta-item">
+ <span class="meta-label">Venue</span>
+ <span class="meta-value">Panarcadian Association</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Company</span>
+ <span class="meta-value">Melbourne Fringe Festival</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Published</span>
+ <span class="meta-value">October 19, 2024</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Category</span>
+ <span class="meta-value">Play</span>
+ </div>
+ </div>
+
+ <div class="content">
+ <p>My Brilliant Apocalypse: The Return of Barry Brilliant at the Melbourne Fringe Festival is an artistically, critical thought, provoking experience that builds excitement from the beginning. The reception was warm, and the atmosphere felt like a grand celebration under chandeliers. Almost like a bridal party welcoming us into a world of wonder after the surprising amount of cast entered the ballroom single file to take their places on the stage. Over the next few hours, these passionate & dedicated souls each evoked the personas of multiple characters & diligently delivered whoever they were, in each moment.</p>
+
+ <p>The story, the whole series (as this was part one of five) is a vision that has been with its writer, producer & director; Adrian D'Aprano, 22 years in the making and has become his wish, manifesting to heal aspects of the world that challenge humanity. He believes storytelling is magic and this is his legacy.</p>
+
+ <p>The opening score masterfully blends classical & indigenous elements with a modern twist, featuring hauntingly beautiful sounds of the didgeridoo. This unique touch adds a profound depth to the performance, creating an immediate connection.</p>
+
+ <div class="highlight">
+ "The surround sound & lighting was incredibly effective, transforming the ballroom into a dynamic incorporated stage, submerging the audience in the performance. The creative use of the entire space, not only the stage, but also including the entrance & alcoves, had spectators surrounded and engaged. What usually would happen behind a stage curtain was masterfully executed in the darkness of the wings all around us."
+ </div>
+
+ <p>The narrative is a therapeutic journey through themes of stunted creativity, conspiracy theories, and ultimately, the power of human consciousness. The sound effects were synchronised appropriately & enhanced the acting, setting each scene. The diverse cast, all deserving of recognition for their great acting, brought the story to life with the delivery of multiple personalities & varying accents.</p>
+
+ <p>The show invites people to laugh in the face of an uncertain future, tackling confronting topics like violence & homelessness, boldly offering a window into the shadow aspects of our existence and the struggles within a psyche, within a system, where the wrong choice in the eyes of control, could result in being admitted to a psychiatric hospital. It explores the idea that the only cure is to keep creating! For there could possibly be nothing worse than to live or die, with an untold story inside us.</p>
+
+ <p>Flashbacks and scenes with Barry add multiple worlds & layers to the story, revealing the complexities of secret societies, self-realisation, parallel universes and the infinite creator.</p>
+
+ <p>The show delves into the microcosm of society, exploring themes of destiny, control, and the willingness to let go and start over. It challenges the audience to see the system for what it is and to take destiny into their own hands.</p>
+
+ <p>My Brilliant Apocalypse: The Return of Barry Brilliant comes full circle, unveiling a unique theatrical experience & could very well be, a pilot for a TV series, as we look forward to the next episode.</p>
+ </div>
+
+ <div class="cta-section">
+ <h3>Share Your Theatre Experience</h3>
+ <p>Seen this show? We'd love to hear your thoughts.</p>
+ <a href="../submit-review.html" class="cta-button">Submit Your Review</a>
+ </div>
+
+ <div class="related-reviews">
+ <h3>More Reviews by Deanna</h3>
+ <div class="review-card">
+ <h4>Greeking Out</h4>
+ <p>An absolutely joyous, triumphant offering to Fringe</p>
+ </div>
+ <div class="review-card">
+ <h4>Apocrypha by Oozing Future</h4>
+ <p>A captivating blend of futuristic and primal mediums</p>
+ </div>
+ <div class="review-card">
+ <h4>The Lucky Country</h4>
+ <p>Intimate, heartfelt, revolutionary and an absolute privilege to witness</p>
+ </div>
+ </div>
+ </div>
+
+ <script>
+ // Progress Bar
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.getElementById('progressBar').style.width = scrolled + '%';
+ });
+
+ // Particles
+ function createParticles() {
+ const container = document.getElementById('particles');
+ for (let i = 0; i < 30; i++) {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + '%';
+ particle.style.animationDelay = Math.random() * 15 + 's';
+ particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+ container.appendChild(particle);
+ }
+ }
+ createParticles();
+
+ // Scroll Achievement
+ let scrollDepth = 0;
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ 
+ if (scrolled >= 25 && scrollDepth < 25) {
+ scrollDepth = 25;
+ showAchievement('Getting Into It');
+ } else if (scrolled >= 50 && scrollDepth < 50) {
+ scrollDepth = 50;
+ showAchievement('Dedicated Reader');
+ } else if (scrolled >= 75 && scrollDepth < 75) {
+ scrollDepth = 75;
+ showAchievement('True Theatre Lover');
+ } else if (scrolled >= 90 && scrollDepth < 90) {
+ scrollDepth = 90;
+ showAchievement('Renaissance Champion');
+ triggerConfetti();
+ }
+ });
+
+ function showAchievement(text) {
+ const achievement = document.createElement('div');
+ achievement.style.cssText = `
+ position: fixed;
+ top: 80px;
+ right: 20px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 16px 24px;
+ border-radius: 12px;
+ font-weight: 600;
+ z-index: 1001;
+ animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ `;
+ achievement.textContent = text;
+ document.body.appendChild(achievement);
+ 
+ setTimeout(() => {
+ achievement.remove();
+ }, 3000);
+ }
+
+ function triggerConfetti() {
+ for (let i = 0; i < 100; i++) {
+ const confetti = document.createElement('div');
+ confetti.style.cssText = `
+ position: fixed;
+ width: 10px;
+ height: 10px;
+ background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b', '#4ecdc4'][Math.floor(Math.random() * 5)]};
+ left: ${Math.random() * 100}vw;
+ top: -10px;
+ z-index: 1002;
+ animation: confettiFall 3s ease forwards;
+ `;
+ document.body.appendChild(confetti);
+ 
+ setTimeout(() => confetti.remove(), 3000);
+ }
+ }
+
+ // Add confetti animation
+ const style = document.createElement('style');
+ style.textContent = `
+ @keyframes slideIn {
+ from { transform: translateX(100%); opacity: 0; }
+ to { transform: translateX(0); opacity: 1; }
+ }
+ @keyframes fadeOut {
+ from { opacity: 1; }
+ to { opacity: 0; }
+ }
+ @keyframes confettiFall {
+ to {
+ transform: translateY(100vh) rotate(720deg);
+ opacity: 0;
+ }
+ }
+ `;
+ document.head.appendChild(style);
+ </script>
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../whats-on.html">What's On</a>
+                <a href="../reviews.html">Reviews</a>
+ <a href="../about.html">About</a>
+ <a href="../privacy.html">Privacy</a>
+ <a href="../disclaimer.html">Disclaimer</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="../icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="../js/shared.js"></script>
+</body>
+</html>

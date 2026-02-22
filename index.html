@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>iHeartTheatre | The Theatre Renaissance Has Already Started</title>
+ <meta name="description" content="Melbourne's complete theatre community. From school halls to Broadway blockbusters — real reviews by Deanna Amato and 7-year-old Penelope Quinn. We celebrate every stage in Melbourne.">
+ <meta name="keywords" content="Melbourne theatre, theatre reviews, iHeartTheatre, Deanna Amato, Penelope Quinn, kids theatre, family theatre, Melbourne shows">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ :root {
+ --bg-primary: #050508;
+ --bg-secondary: #0a0a0f;
+ --bg-tertiary: #12121a;
+ --text-primary: #f5f5f5;
+ --text-secondary: #a0a0b0;
+ --accent-primary: #667eea;
+ --accent-secondary: #764ba2;
+ --accent-gold: #ffd700;
+ --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ --gradient-gold: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+ --glass-bg: rgba(255, 255, 255, 0.03);
+ --glass-border: rgba(255, 255, 255, 0.08);
+ }
+
+ html {
+ scroll-behavior: smooth;
+ }
+
+ body {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+ background: var(--bg-primary);
+ color: var(--text-primary);
+ line-height: 1.6;
+ overflow-x: hidden;
+ }
+
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.9);
+ backdrop-filter: blur(20px);
+ -webkit-backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--glass-border);
+ z-index: 1000;
+ padding: 1rem 0;
+ transition: all 0.3s ease;
+ }
+
+ .nav-container {
+ max-width: 1400px;
+ margin: 0 auto;
+ padding: 0 2rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ font-weight: 700;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2.5rem;
+ align-items: center;
+ }
+
+ .nav-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-weight: 500;
+ font-size: 0.95rem;
+ transition: all 0.3s ease;
+ position: relative;
+ }
+
+ .nav-links a:hover {
+ color: var(--text-primary);
+ }
+
+ .nav-links a::after {
+ content: '';
+ position: absolute;
+ bottom: -5px;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background: var(--gradient-primary);
+ transition: width 0.3s ease;
+ }
+
+ .nav-links a:hover::after {
+ width: 100%;
+ }
+
+ .nav-cta {
+ background: var(--gradient-primary);
+ color: white;
+ padding: 0.7rem 1.5rem;
+ border-radius: 50px;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 0.9rem;
+ transition: all 0.3s ease;
+ box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+ }
+
+ .nav-cta:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+ }
+
+ /* Hero Section */
+ .hero {
+ min-height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+ overflow: hidden;
+ padding: 8rem 2rem 4rem;
+ }
+
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: url('generated_images/hero-background.png') center/cover no-repeat;
+ filter: brightness(0.3);
+ }
+
+ .hero::after {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: 
+ radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
+ radial-gradient(circle at 80% 50%, rgba(118, 75, 162, 0.15) 0%, transparent 50%);
+ animation: pulse 8s ease-in-out infinite;
+ }
+
+ @keyframes pulse {
+ 0%, 100% { opacity: 0.5; }
+ 50% { opacity: 1; }
+ }
+
+ .hero-content {
+ max-width: 900px;
+ text-align: center;
+ position: relative;
+ z-index: 1;
+ }
+
+ .hero-badge {
+ display: inline-block;
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ padding: 0.5rem 1.2rem;
+ border-radius: 50px;
+ font-size: 0.85rem;
+ color: var(--text-secondary);
+ margin-bottom: 2rem;
+ backdrop-filter: blur(10px);
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 6vw, 4rem);
+ font-weight: 700;
+ line-height: 1.2;
+ margin-bottom: 1.5rem;
+ background: linear-gradient(135deg, #ffffff 0%, #a0a0b0 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ animation: fadeInUp 1s ease-out;
+ }
+
+ .hero-subtitle {
+ font-size: clamp(1.1rem, 2vw, 1.4rem);
+ color: var(--text-secondary);
+ line-height: 1.7;
+ margin-bottom: 3rem;
+ max-width: 700px;
+ margin-left: auto;
+ margin-right: auto;
+ animation: fadeInUp 1s ease-out 0.2s both;
+ }
+
+ .hero-buttons {
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ animation: fadeInUp 1s ease-out 0.4s both;
+ }
+
+ .btn {
+ padding: 1rem 2.5rem;
+ border-radius: 50px;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1rem;
+ transition: all 0.3s ease;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.5rem;
+ }
+
+ .btn-primary {
+ background: var(--gradient-primary);
+ color: white;
+ box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+ }
+
+ .btn-primary:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 6px 30px rgba(102, 126, 234, 0.5);
+ }
+
+ .btn-secondary {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ color: var(--text-primary);
+ }
+
+ .btn-secondary:hover {
+ background: rgba(255, 255, 255, 0.08);
+ transform: translateY(-3px);
+ }
+
+ @keyframes fadeInUp {
+ from {
+ opacity: 0;
+ transform: translateY(30px);
+ }
+ to {
+ opacity: 1;
+ transform: translateY(0);
+ }
+ }
+
+ /* Mission Section */
+ .mission-section {
+ padding: 8rem 2rem;
+ position: relative;
+ }
+
+ .mission-content {
+ max-width: 1000px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .section-badge {
+ display: inline-block;
+ background: rgba(102, 126, 234, 0.1);
+ border: 1px solid rgba(102, 126, 234, 0.3);
+ padding: 0.4rem 1rem;
+ border-radius: 25px;
+ font-size: 0.8rem;
+ color: var(--accent-primary);
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: 2rem;
+ }
+
+ .mission-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 5vw, 3.5rem);
+ font-weight: 700;
+ line-height: 1.2;
+ margin-bottom: 2rem;
+ }
+
+ .mission-text {
+ font-size: 1.25rem;
+ color: var(--text-secondary);
+ line-height: 1.8;
+ margin-bottom: 1.5rem;
+ max-width: 800px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+
+ .emphasis {
+ color: var(--text-primary);
+ font-weight: 600;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ /* Energy Flow Section */
+ .energy-section {
+ padding: 8rem 2rem;
+ background: var(--bg-secondary);
+ position: relative;
+ }
+
+ .energy-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+
+ .energy-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ font-weight: 700;
+ text-align: center;
+ margin-bottom: 4rem;
+ }
+
+ .energy-flow {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 2rem;
+ flex-wrap: wrap;
+ }
+
+ .energy-step {
+ text-align: center;
+ flex: 0 0 auto;
+ }
+
+ .energy-icon {
+ width: 100px;
+ height: 100px;
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 2.5rem;
+ margin-bottom: 1rem;
+ backdrop-filter: blur(10px);
+ transition: all 0.3s ease;
+ }
+
+ .energy-step:hover .energy-icon {
+ background: var(--gradient-primary);
+ transform: scale(1.1);
+ }
+
+ .energy-label {
+ font-weight: 600;
+ color: var(--text-primary);
+ margin-bottom: 0.5rem;
+ }
+
+ .energy-desc {
+ font-size: 0.85rem;
+ color: var(--text-secondary);
+ max-width: 120px;
+ }
+
+ .energy-arrow {
+ font-size: 2rem;
+ color: var(--accent-primary);
+ animation: pulse 2s ease-in-out infinite;
+ }
+
+ /* Reviews Preview */
+ .reviews-preview {
+ padding: 8rem 2rem;
+ background: var(--bg-secondary);
+ }
+
+ .reviews-content {
+ max-width: 1400px;
+ margin: 0 auto;
+ }
+
+ .reviews-header {
+ text-align: center;
+ margin-bottom: 4rem;
+ }
+
+ .reviews-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ font-weight: 700;
+ margin-bottom: 1rem;
+ }
+
+ .reviews-header p {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ }
+
+ .reviews-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+ gap: 2rem;
+ }
+
+ /* Slideshow Styles */
+ .slideshow-container {
+ position: relative;
+ max-width: 1200px;
+ margin: 0 auto;
+ overflow: hidden;
+ }
+
+ .slideshow-wrapper {
+ display: flex;
+ transition: transform 0.5s ease-in-out;
+ }
+
+ .slideshow-slide {
+ min-width: 100%;
+ padding: 0 1rem;
+ box-sizing: border-box;
+ }
+
+ .slideshow-nav {
+ position: absolute;
+ top: 50%;
+ transform: translateY(-50%);
+ background: rgba(102, 126, 234, 0.2);
+ border: 1px solid rgba(102, 126, 234, 0.3);
+ color: #f5f5f5;
+ font-size: 2rem;
+ padding: 1rem 1.5rem;
+ cursor: pointer;
+ border-radius: 50%;
+ transition: all 0.3s ease;
+ z-index: 10;
+ }
+
+ .slideshow-nav:hover {
+ background: rgba(102, 126, 234, 0.4);
+ border-color: rgba(102, 126, 234, 0.5);
+ }
+
+ .slideshow-nav.prev {
+ left: 1rem;
+ }
+
+ .slideshow-nav.next {
+ right: 1rem;
+ }
+
+ .slideshow-dots {
+ display: flex;
+ justify-content: center;
+ gap: 0.5rem;
+ margin-top: 2rem;
+ }
+
+ .slideshow-dot {
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ background: rgba(255, 255, 255, 0.2);
+ cursor: pointer;
+ transition: all 0.3s ease;
+ }
+
+ .slideshow-dot.active {
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ transform: scale(1.2);
+ }
+
+ .slideshow-dot:hover {
+ background: rgba(102, 126, 234, 0.5);
+ }
+
+ .category-filters {
+ display: flex;
+ gap: 0.75rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ margin-bottom: 3rem;
+ }
+
+ .category-filter {
+ padding: 0.75rem 1.5rem;
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 50px;
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ font-weight: 500;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ backdrop-filter: blur(10px);
+ }
+
+ .category-filter:hover {
+ background: rgba(102, 126, 234, 0.1);
+ border-color: rgba(102, 126, 234, 0.3);
+ color: var(--text-primary);
+ }
+
+ .category-filter.active {
+ background: var(--gradient-primary);
+ border-color: transparent;
+ color: white;
+ box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+ }
+
+ .review-card {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 20px;
+ overflow: hidden;
+ backdrop-filter: blur(10px);
+ transition: all 0.4s ease;
+ cursor: pointer;
+ perspective: 1000px;
+ height: 400px;
+ }
+
+ .review-card:hover {
+ transform: translateY(-10px);
+ border-color: rgba(102, 126, 234, 0.3);
+ }
+
+ .review-card-inner {
+ position: relative;
+ width: 100%;
+ height: 100%;
+ transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ transform-style: preserve-3d;
+ }
+
+ .review-card.flipped .review-card-inner {
+ transform: rotateY(180deg);
+ }
+
+ .review-card-front,
+ .review-card-back {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ backface-visibility: hidden;
+ border-radius: 20px;
+ overflow: hidden;
+ }
+
+ .review-card-front {
+ display: flex;
+ flex-direction: column;
+ }
+
+ .review-card-back {
+ transform: rotateY(180deg);
+ padding: 2rem;
+ display: flex;
+ flex-direction: column;
+ background: var(--bg-tertiary);
+ }
+
+ .review-image {
+ height: 200px;
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 4rem;
+ }
+
+ .flip-button {
+ background: var(--gradient-primary);
+ color: white;
+ border: none;
+ padding: 0.8rem 1.5rem;
+ border-radius: 50px;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ margin: 1rem auto;
+ display: block;
+ font-size: 0.9rem;
+ box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+ }
+
+ .flip-button:hover {
+ transform: scale(1.05);
+ box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+ }
+
+ .review-summary {
+ color: var(--text-secondary);
+ line-height: 1.7;
+ font-size: 0.95rem;
+ margin-bottom: 1.5rem;
+ flex-grow: 1;
+ }
+
+ .review-highlights {
+ margin-bottom: 1.5rem;
+ }
+
+ .review-highlights h4 {
+ color: var(--accent-primary);
+ font-size: 0.9rem;
+ margin-bottom: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ }
+
+ .highlight-item {
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ margin-bottom: 0.5rem;
+ }
+
+ .highlight-item::before {
+ content: '•';
+ font-size: 0.8rem;
+ color: var(--accent-primary);
+ }
+
+ .read-full-btn {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ color: var(--text-primary);
+ padding: 0.8rem 1.5rem;
+ border-radius: 50px;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ }
+
+ .read-full-btn:hover {
+ background: var(--gradient-primary);
+ border-color: transparent;
+ transform: translateY(-2px);
+ }
+
+ .review-content {
+ padding: 2rem;
+ }
+
+ .review-badges {
+ display: flex;
+ gap: 0.5rem;
+ margin-bottom: 1rem;
+ flex-wrap: wrap;
+ }
+
+ .badge {
+ padding: 0.25rem 0.75rem;
+ border-radius: 20px;
+ font-size: 0.75rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ }
+
+ .badge-new {
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: #f5f5f5;
+ }
+
+ .badge-days-left {
+ background: rgba(255, 215, 0, 0.15);
+ border: 1px solid rgba(255, 215, 0, 0.3);
+ color: #ffd700;
+ }
+
+ .review-category {
+ display: inline-block;
+ background: rgba(102, 126, 234, 0.2);
+ color: var(--accent-primary);
+ padding: 0.3rem 0.8rem;
+ border-radius: 20px;
+ font-size: 0.75rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ margin-bottom: 1rem;
+ }
+
+ .review-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 600;
+ margin-bottom: 0.5rem;
+ line-height: 1.3;
+ }
+
+ .review-venue {
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ margin-bottom: 1rem;
+ }
+
+ /* CTA Section */
+ .cta-section {
+ padding: 8rem 2rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .cta-section::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: radial-gradient(circle at center, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+ }
+
+ .cta-content {
+ max-width: 700px;
+ margin: 0 auto;
+ position: relative;
+ z-index: 1;
+ }
+
+ .cta-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ font-weight: 700;
+ margin-bottom: 1.5rem;
+ }
+
+ .cta-section p {
+ color: var(--text-secondary);
+ font-size: 1.2rem;
+ margin-bottom: 3rem;
+ }
+
+ .cta-buttons {
+ display: flex;
+ gap: 1rem;
+ justify-content: center;
+ flex-wrap: wrap;
+ }
+
+ /* Footer */
+ footer {
+ background: var(--bg-secondary);
+ border-top: 1px solid var(--glass-border);
+ padding: 4rem 2rem 2rem;
+ }
+
+ .footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-bottom: 2rem;
+ flex-wrap: wrap;
+ }
+
+ .footer-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-size: 0.95rem;
+ transition: all 0.3s ease;
+ }
+
+ .footer-links a:hover {
+ color: var(--text-primary);
+ }
+
+ .footer-copy {
+ color: var(--text-secondary);
+ font-size: 0.85rem;
+ opacity: 0.7;
+ }
+
+ /* Dopamine Optimizations */
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: linear-gradient(90deg, #667eea, #764ba2, #ffd700);
+ width: 0%;
+ z-index: 9999;
+ transition: width 0.1s ease;
+ box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+ }
+
+ .particle {
+ position: fixed;
+ width: 8px;
+ height: 8px;
+ background: radial-gradient(circle, rgba(102, 126, 234, 0.6) 0%, transparent 70%);
+ border-radius: 50%;
+ pointer-events: none;
+ animation: float 4s ease-in-out infinite;
+ z-index: 1;
+ }
+
+ @keyframes float {
+ 0%, 100% {
+ transform: translateY(0) rotate(0deg);
+ opacity: 0.4;
+ }
+ 50% {
+ transform: translateY(-100px) rotate(180deg);
+ opacity: 0.8;
+ }
+ }
+
+ .confetti {
+ position: fixed;
+ width: 8px;
+ height: 8px;
+ pointer-events: none;
+ z-index: 9999;
+ animation: confetti-fall 3s ease-out forwards;
+ }
+
+ @keyframes confetti-fall {
+ 0% {
+ transform: translateY(-100vh) rotate(0deg);
+ opacity: 1;
+ }
+ 100% {
+ transform: translateY(100vh) rotate(720deg);
+ opacity: 0;
+ }
+ }
+
+ .achievement-popup {
+ position: fixed;
+ top: 100px;
+ right: 20px;
+ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ color: white;
+ padding: 1rem 1.5rem;
+ border-radius: 15px;
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ z-index: 9999;
+ animation: slideIn 0.5s ease-out, fadeOut 0.5s ease-out 2.5s forwards;
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ }
+
+ @keyframes slideIn {
+ from {
+ transform: translateX(100%);
+ opacity: 0;
+ }
+ to {
+ transform: translateX(0);
+ opacity: 1;
+ }
+ }
+
+ @keyframes fadeOut {
+ from {
+ opacity: 1;
+ }
+ to {
+ opacity: 0;
+ }
+ }
+
+ .achievement-icon {
+ font-size: 1.5rem;
+ }
+
+ .achievement-text {
+ font-weight: 600;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+
+ .hero {
+ padding: 6rem 1.5rem 4rem;
+ }
+
+ .energy-flow {
+ flex-direction: column;
+ }
+
+ .energy-arrow {
+ transform: rotate(90deg);
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+ <script type="application/ld+json">
+ {
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "iHeartTheatre",
+ "url": "https://ihearttheatre.com",
+ "description": "Melbourne's complete theatre community. Real reviews by real people.",
+ "publisher": {
+ "@type": "Organization",
+ "name": "iHeartTheatre",
+ "url": "https://ihearttheatre.com"
+ },
+ "potentialAction": {
+ "@type": "SearchAction",
+ "target": "https://ihearttheatre.com/reviews.html?q={search_term_string}",
+ "query-input": "required name=search_term_string"
+ }
+ }
+ </script>
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ 
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html" class="active">Home</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <section class="hero" id="home">
+ <div class="hero-content">
+ <div class="hero-badge">The Theatre Renaissance Has Already Started</div>
+ <h1>iHeartTheatre.com<br>The Theatre Renaissance<br>Has Already Started</h1>
+ <p class="hero-subtitle">
+ From school halls to Broadway blockbusters. Real people. Real passion. Real theatre.
+ We celebrate every performance with joy, positivity, and love.
+ </p>
+ <div class="hero-buttons">
+ <a href="#reviews" class="btn btn-primary">
+ Feel the Magic
+ <span>→</span>
+ </a>
+ <a href="manifesto.html" class="btn btn-secondary">
+ Read Our Manifesto
+ </a>
+ </div>
+ </div>
+ </section>
+
+ <section class="mission-section">
+ <div class="mission-content">
+ <div class="section-badge">Our Philosophy</div>
+ <h2>We Are Reviewers, Not Critics</h2>
+ <p class="mission-text">
+ Critics judge. Critics tear down. Critics find flaws.
+ <br><br>
+ <span class="emphasis">Reviewers celebrate. Reviewers build up. Reviewers capture magic.</span>
+ <br><br>
+ Our love for live performance buzzes through every word we write, so that when the audience reads us, they feel the electricity too.
+ </p>
+ </div>
+ </section>
+
+ <section class="energy-section">
+ <div class="energy-content">
+ <h2>The Energy Flow</h2>
+ <div class="energy-flow">
+ <div class="energy-step">
+ <div class="energy-icon">R</div>
+ <div class="energy-label">Reviewer</div>
+ <div class="energy-desc">Feels magic, writes with love</div>
+ </div>
+ <div class="energy-arrow">&rarr;</div>
+ <div class="energy-step">
+ <div class="energy-icon">W</div>
+ <div class="energy-label">Review</div>
+ <div class="energy-desc">Buzzes with excitement</div>
+ </div>
+ <div class="energy-arrow">&rarr;</div>
+ <div class="energy-step">
+ <div class="energy-icon">A</div>
+ <div class="energy-label">Audience</div>
+ <div class="energy-desc">Feels the buzz, gets excited</div>
+ </div>
+ <div class="energy-arrow">&rarr;</div>
+ <div class="energy-step">
+ <div class="energy-icon">P</div>
+ <div class="energy-label">Performance</div>
+ <div class="energy-desc">Elevates from energy</div>
+ </div>
+ <div class="energy-arrow">&rarr;</div>
+ <div class="energy-step">
+ <div class="energy-icon">M</div>
+ <div class="energy-label">Potential</div>
+ <div class="energy-desc">Absolute best achieved</div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="whats-on-preview" id="whats-on">
+ <div class="reviews-content">
+ <div class="reviews-header">
+ <h2>What's On in Melbourne</h2>
+ <p>Current shows and upcoming productions across Melbourne's theatre scene</p>
+ </div>
+ <div class="whats-on-cards" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
+ <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; transition: all 0.3s ease;">
+ <div style="color: var(--accent-primary); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Musical</div>
+ <h3 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px;">Mamma Mia!</h3>
+ <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 4px;">Princess Theatre</p>
+ <p style="color: var(--text-secondary); font-size: 0.85rem;">Now showing</p>
+ </div>
+ <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; transition: all 0.3s ease;">
+ <div style="color: var(--accent-primary); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Musical</div>
+ <h3 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px;">Mary Poppins</h3>
+ <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 4px;">Her Majesty's Theatre</p>
+ <p style="color: var(--text-secondary); font-size: 0.85rem;">Now showing</p>
+ </div>
+ <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; transition: all 0.3s ease;">
+ <div style="color: var(--accent-primary); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Play</div>
+ <h3 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px;">Romeo and Juliet</h3>
+ <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 4px;">Arts Centre Melbourne</p>
+ <p style="color: var(--text-secondary); font-size: 0.85rem;">March &ndash; April 2026</p>
+ </div>
+ </div>
+ <a href="whats-on.html" class="btn btn-secondary" style="display: inline-block;">See All Shows &rarr;</a>
+ </div>
+ </section>
+
+ <section class="reviews-preview" id="reviews">
+ <div class="reviews-content">
+ <div class="reviews-header">
+ <h2>Latest Reviews</h2>
+ <p>Celebrating the magic of Melbourne's theatre scene</p>
+ </div>
+ <div class="category-filters">
+ <button class="category-filter active" data-category="all">All Reviews</button>
+ <button class="category-filter" data-category="Musical">Musicals</button>
+ <button class="category-filter" data-category="Play">Plays</button>
+ <button class="category-filter" data-category="Family">Family & Kids</button>
+ <button class="category-filter" data-category="Comedy">Comedy</button>
+ <button class="category-filter" data-category="Circus">Circus</button>
+ </div>
+ <div class="slideshow-container">
+ <div class="slideshow-wrapper" id="slideshowWrapper">
+ <!-- Slides will be dynamically loaded here -->
+ </div>
+ <button class="slideshow-nav prev" id="prevSlide">&lsaquo;</button>
+ <button class="slideshow-nav next" id="nextSlide">&rsaquo;</button>
+ <div class="slideshow-dots" id="slideshowDots">
+ <!-- Dots will be dynamically loaded here -->
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <section class="cta-section" id="join">
+ <div class="cta-content">
+ <h2>Join the Theatre Renaissance</h2>
+ <p>Be part of the greatest rise of live performance the world has ever seen</p>
+ <div class="cta-buttons">
+ <a href="submit-review.html" class="btn btn-primary">Submit a Review</a>
+ <a href="promote-show.html" class="btn btn-secondary">Promote Your Show</a>
+ </div>
+ </div>
+ </section>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+
+ <script>
+ // Dopamine Optimization System
+ const DopamineSystem = {
+ achievements: new Set(),
+ flipCount: 0,
+ scrollDepth: 0,
+ 
+ init() {
+ this.setupProgressBar();
+ this.setupParticles();
+ this.setupCardFlips();
+ this.setupScrollTracking();
+ this.checkFirstVisit();
+ },
+ 
+ setupProgressBar() {
+ const progressBar = document.getElementById('progressBar');
+ window.addEventListener('scroll', () => {
+ const scrollTop = window.scrollY;
+ const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+ const scrollPercent = (scrollTop / docHeight) * 100;
+ progressBar.style.width = scrollPercent + '%';
+ });
+ },
+ 
+ setupParticles() {
+ for (let i = 0; i < 15; i++) {
+ setTimeout(() => this.createParticle(), i * 200);
+ }
+ setInterval(() => this.createParticle(), 4000);
+ },
+ 
+ createParticle() {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + 'vw';
+ particle.style.top = Math.random() * 100 + 'vh';
+ particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
+ document.body.appendChild(particle);
+ setTimeout(() => particle.remove(), 5000);
+ },
+ 
+ setupCardFlips() {
+ const cards = document.querySelectorAll('.review-card');
+ cards.forEach(card => {
+ card.addEventListener('click', () => {
+ this.flipCount++;
+ this.checkFlipAchievements();
+ this.createConfettiBurst();
+ });
+ });
+ },
+ 
+ setupScrollTracking() {
+ let maxScroll = 0;
+ window.addEventListener('scroll', () => {
+ const scrollTop = window.scrollY;
+ const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+ const scrollPercent = (scrollTop / docHeight) * 100;
+ 
+ if (scrollPercent > maxScroll) {
+ maxScroll = scrollPercent;
+ this.scrollDepth = maxScroll;
+ this.checkScrollAchievements();
+ }
+ });
+ },
+ 
+ checkFirstVisit() {
+ if (!localStorage.getItem('visited')) {
+ localStorage.setItem('visited', 'true');
+ this.showAchievement('Welcome to the Renaissance', 'Your journey begins!');
+ }
+ },
+ 
+ checkFlipAchievements() {
+ if (this.flipCount === 1 && !this.achievements.has('first-flip')) {
+ this.achievements.add('first-flip');
+ this.showAchievement('First Discovery', 'You found the magic!');
+ }
+ if (this.flipCount === 3 && !this.achievements.has('flip-3')) {
+ this.achievements.add('flip-3');
+ this.showAchievement('Curious Mind', 'You love exploring!');
+ }
+ if (this.flipCount === 5 && !this.achievements.has('flip-5')) {
+ this.achievements.add('flip-5');
+ this.showAchievement('Renaissance Explorer', 'Keep discovering!');
+ }
+ },
+ 
+ checkScrollAchievements() {
+ if (this.scrollDepth >= 25 && !this.achievements.has('scroll-25')) {
+ this.achievements.add('scroll-25');
+ this.showAchievement('Getting Into It', 'Keep reading!');
+ }
+ if (this.scrollDepth >= 50 && !this.achievements.has('scroll-50')) {
+ this.achievements.add('scroll-50');
+ this.showAchievement('Dedicated Reader', 'Halfway there!');
+ }
+ if (this.scrollDepth >= 75 && !this.achievements.has('scroll-75')) {
+ this.achievements.add('scroll-75');
+ this.showAchievement('True Theatre Lover', 'Almost there!');
+ }
+ if (this.scrollDepth >= 90 && !this.achievements.has('scroll-90')) {
+ this.achievements.add('scroll-90');
+ this.showAchievement('Renaissance Champion', 'You made it!');
+ this.createConfettiBurst(50);
+ }
+ },
+ 
+ showAchievement(title, message) {
+ const popup = document.createElement('div');
+ popup.className = 'achievement-popup';
+ popup.innerHTML = `
+ <div class="achievement-icon"></div>
+ <div>
+ <div class="achievement-text">${title}</div>
+ <div style="font-size: 0.85rem; opacity: 0.9;">${message}</div>
+ </div>
+ `;
+ document.body.appendChild(popup);
+ setTimeout(() => popup.remove(), 3000);
+ },
+ 
+ createConfettiBurst(count = 20) {
+ const colors = ['#667eea', '#764ba2', '#ffd700', '#f093fb', '#4facfe'];
+ for (let i = 0; i < count; i++) {
+ setTimeout(() => {
+ const confetti = document.createElement('div');
+ confetti.className = 'confetti';
+ confetti.style.left = Math.random() * 100 + 'vw';
+ confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+ confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+ document.body.appendChild(confetti);
+ setTimeout(() => confetti.remove(), 4000);
+ }, i * 50);
+ }
+ }
+ };
+ 
+ document.addEventListener('DOMContentLoaded', () => {
+ DopamineSystem.init();
+ initSlideshow();
+ });
+
+ // Slideshow with Badges and localStorage tracking
+ const allSlideshowReviews = [
+ {
+ id: 'review-deanna-the-good-life',
+ title: 'The Good Life',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Brighton Theatre',
+ company: 'Brighton Theatre Company',
+ publishedDate: '2025-11-10',
+ showEndDate: '2025-11-23',
+ category: 'Play',
+ excerpt: 'A thought-provoking exploration of modern life that balances humor with profound insights about what truly matters.',
+ image: 'REVIEWERS/Deanna/good-life-1.jpg'
+ },
+ {
+ id: 'review-penelope-josephine-wants-to-dance',
+ title: 'Josephine Wants To Dance',
+ reviewer: 'Penelope Quinn',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'The Ian Potter Centre',
+ company: 'Monkey Baa',
+ publishedDate: '2025-05-15',
+ showEndDate: '2025-05-25',
+ category: 'Family',
+ excerpt: 'A delightful story about following your dreams that will inspire children and adults alike.',
+ image: 'REVIEWERS/Penelope/josephine-1.jpg'
+ },
+ {
+ id: 'review-deanna-dying-a-memoir',
+ title: 'Dying: A Memoir',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Fairfax Studio',
+ company: 'Melbourne Theatre Company',
+ publishedDate: '2025-11-15',
+ showEndDate: '2025-11-28',
+ category: 'Play',
+ excerpt: 'A deeply moving and courageous exploration of mortality that challenges and inspires in equal measure.',
+ image: 'REVIEWERS/Deanna/dying-memoir-1.jpg'
+ },
+ {
+ id: 'review-deanna-mamma-mia',
+ title: 'Mamma Mia!',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Geelong Arts Centre',
+ company: 'Geelong Lyric Theatre Society',
+ publishedDate: '2025-10-20',
+ showEndDate: '2025-10-27',
+ category: 'Musical',
+ excerpt: 'ABBA\'s greatest songs shine in this energetic production that had the audience dancing in the aisles.',
+ image: 'REVIEWERS/Deanna/mamma-mia-1.jpg'
+ },
+ {
+ id: 'review-penelope-into-the-woods-jr',
+ title: 'Into The Woods Jr.',
+ reviewer: 'Penelope Quinn',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Doncaster Playhouse',
+ company: 'Wendy Samantha Productions',
+ publishedDate: '2025-07-20',
+ showEndDate: '2025-07-28',
+ category: 'Family',
+ excerpt: 'Stephen Sondheim\'s magical musical comes to life in this enchanting junior production.',
+ image: 'REVIEWERS/Penelope/woods-jr-1.jpg'
+ },
+ {
+ id: 'review-deanna-romeo-and-juliet',
+ title: 'Romeo & Juliet',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Central Park Malvern',
+ company: 'Melbourne Shakespeare Company',
+ publishedDate: '2025-03-20',
+ showEndDate: '2025-03-30',
+ category: 'Play',
+ excerpt: 'Shakespeare\'s timeless tragedy reimagined with fresh energy and powerful performances.',
+ image: 'REVIEWERS/Deanna/romeo-juliet-1.jpg'
+ },
+ {
+ id: 'review-deanna-mary-poppins',
+ title: 'Mary Poppins',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Karralyka Theatre',
+ company: 'MDMS',
+ publishedDate: '2025-06-15',
+ showEndDate: '2025-06-22',
+ category: 'Musical',
+ excerpt: 'Practically perfect in every way, this production captures the magic and wonder.',
+ image: 'REVIEWERS/Deanna/mary-poppins-1.jpg'
+ },
+ {
+ id: 'review-penelope-the-little-mermaid-junior',
+ title: 'The Little Mermaid Junior',
+ reviewer: 'Penelope Quinn',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Rowville Performing Arts Centre',
+ company: 'Windmill Theatre Company Inc.',
+ publishedDate: '2025-04-20',
+ showEndDate: '2025-04-28',
+ category: 'Family',
+ excerpt: 'Disney\'s underwater adventure comes to life in this magical junior production.',
+ image: 'REVIEWERS/Penelope/mermaid-1.jpg'
+ },
+ {
+ id: 'review-deanna-abracadickhead',
+ title: 'Abracadickhead',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Speakeasy Theatre',
+ company: 'Melbourne Comedy Festival',
+ publishedDate: '2025-04-10',
+ showEndDate: '2025-04-20',
+ category: 'Comedy',
+ excerpt: 'Hilarious and thought-provoking comedy that pushes boundaries while delivering genuine laughs.',
+ image: 'REVIEWERS/Deanna/abracadickhead-1.jpg'
+ },
+ {
+ id: 'review-deanna-circus-oz-non-stop',
+ title: 'Circus Oz – Non Stop',
+ reviewer: 'Deanna Amato',
+ reviewerImage: 'generated_images/deanna-profile.png',
+ venue: 'Melbourne Town Hall',
+ company: 'Melbourne International Comedy Festival',
+ publishedDate: '2025-04-05',
+ showEndDate: '2025-04-15',
+ category: 'Circus',
+ excerpt: 'Australia\'s iconic circus delivers another spectacular show of skill, humor, and heart.',
+ image: 'REVIEWERS/Deanna/circus-oz-1.jpg'
+ }
+ ];
+
+ let slideshowReviews = [];
+ let currentSlide = 0;
+ let slideshowInterval;
+ let currentCategory = 'all';
+
+ // Get clicked reviews from localStorage
+ function getClickedReviews() {
+ const clicked = localStorage.getItem('clickedReviews');
+ return clicked ? JSON.parse(clicked) : [];
+ }
+
+ // Mark review as clicked
+ function markReviewAsClicked(reviewId) {
+ const clicked = getClickedReviews();
+ if (!clicked.includes(reviewId)) {
+ clicked.push(reviewId);
+ localStorage.setItem('clickedReviews', JSON.stringify(clicked));
+ }
+ }
+
+ // Filter reviews based on category and clicked status
+ function filterSlideshowReviews(category = 'all') {
+ const clicked = getClickedReviews();
+ let filtered = allSlideshowReviews.filter(review => !clicked.includes(review.id));
+ 
+ if (category !== 'all') {
+ filtered = filtered.filter(review => review.category === category);
+ }
+ 
+ // If no unclicked reviews in category, show all reviews in that category
+ if (filtered.length === 0 && category !== 'all') {
+ filtered = allSlideshowReviews.filter(review => review.category === category);
+ }
+ 
+ // If still no reviews, show all unclicked reviews
+ if (filtered.length === 0) {
+ filtered = allSlideshowReviews.filter(review => !clicked.includes(review.id));
+ }
+ 
+ // If absolutely no reviews, show all reviews
+ if (filtered.length === 0) {
+ filtered = allSlideshowReviews;
+ }
+ 
+ return filtered;
+ }
+
+ function calculateBadges(review) {
+ const today = new Date();
+ const publishedDate = new Date(review.publishedDate);
+ const showEndDate = new Date(review.showEndDate);
+ 
+ const daysSincePublished = Math.floor((today - publishedDate) / (1000 * 60 * 60 * 24));
+ const daysUntilShowEnds = Math.floor((showEndDate - today) / (1000 * 60 * 60 * 24));
+ 
+ const badges = [];
+ 
+ if (daysSincePublished <= 7) {
+ badges.push({
+ type: 'new',
+ text: 'NEW'
+ });
+ }
+ 
+ if (daysUntilShowEnds >= 0) {
+ badges.push({
+ type: 'days-left',
+ text: `${daysUntilShowEnds} days left`
+ });
+ }
+ 
+ return badges;
+ }
+
+ function createSlide(review, index) {
+ const badges = calculateBadges(review);
+ const badgesHTML = badges.map(badge => 
+ `<span class="badge badge-${badge.type}">${badge.text}</span>`
+ ).join('');
+ 
+ return `
+ <div class="slideshow-slide">
+ <div class="review-card" onclick="this.classList.toggle('flipped')">
+ <div class="review-card-inner">
+ <div class="review-card-front">
+ <div class="review-image" style="background-image: url('${review.image}');"></div>
+ <div class="review-content">
+ <div class="review-badges">
+ ${badgesHTML}
+ </div>
+ <span class="review-category">${review.category}</span>
+ <h3 class="review-title">${review.title}</h3>
+ <p class="review-venue">${review.venue}</p>
+ <button class="flip-button">See Highlights</button>
+ </div>
+ </div>
+ <div class="review-card-back">
+ <h3 class="review-title">${review.title}</h3>
+ <p class="review-summary">
+ ${review.excerpt}
+ </p>
+ <div class="review-highlights">
+ <h4>Highlights</h4>
+ <div class="highlight-item">Outstanding performance quality</div>
+ <div class="highlight-item">Engaging and memorable</div>
+ <div class="highlight-item">Perfect for theatre lovers</div>
+ <div class="highlight-item">Highly recommended</div>
+ </div>
+ <a href="reviews/${review.id}.html" class="read-full-btn" onclick="markReviewAsClicked('${review.id}')">Read Full Review →</a>
+ </div>
+ </div>
+ </div>
+ </div>
+ `;
+ }
+
+ function renderSlideshow() {
+ const wrapper = document.getElementById('slideshowWrapper');
+ const dotsContainer = document.getElementById('slideshowDots');
+ 
+ wrapper.innerHTML = slideshowReviews.map((review, index) => createSlide(review, index)).join('');
+ 
+ dotsContainer.innerHTML = slideshowReviews.map((_, index) => 
+ `<div class="slideshow-dot ${index === 0 ? 'active' : ''}" data-index="${index}"></div>`
+ ).join('');
+ 
+ // Add click events to dots
+ dotsContainer.querySelectorAll('.slideshow-dot').forEach(dot => {
+ dot.addEventListener('click', () => {
+ goToSlide(parseInt(dot.dataset.index));
+ });
+ });
+ }
+
+ function goToSlide(index) {
+ currentSlide = index;
+ const wrapper = document.getElementById('slideshowWrapper');
+ wrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+ 
+ // Update dots
+ document.querySelectorAll('.slideshow-dot').forEach((dot, i) => {
+ dot.classList.toggle('active', i === currentSlide);
+ });
+ }
+
+ function nextSlide() {
+ currentSlide = (currentSlide + 1) % slideshowReviews.length;
+ goToSlide(currentSlide);
+ }
+
+ function prevSlide() {
+ currentSlide = (currentSlide - 1 + slideshowReviews.length) % slideshowReviews.length;
+ goToSlide(currentSlide);
+ }
+
+ function initSlideshow() {
+ slideshowReviews = filterSlideshowReviews(currentCategory);
+ renderSlideshow();
+ 
+ // Auto-advance every 5 seconds
+ slideshowInterval = setInterval(nextSlide, 5000);
+ 
+ // Navigation buttons
+ document.getElementById('nextSlide').addEventListener('click', () => {
+ nextSlide();
+ resetInterval();
+ });
+ 
+ document.getElementById('prevSlide').addEventListener('click', () => {
+ prevSlide();
+ resetInterval();
+ });
+ 
+ // Category filter buttons
+ document.querySelectorAll('.category-filter').forEach(btn => {
+ btn.addEventListener('click', () => {
+ document.querySelectorAll('.category-filter').forEach(b => b.classList.remove('active'));
+ btn.classList.add('active');
+ changeCategory(btn.dataset.category);
+ });
+ });
+ }
+
+ function changeCategory(category) {
+ currentCategory = category;
+ currentSlide = 0;
+ slideshowReviews = filterSlideshowReviews(category);
+ renderSlideshow();
+ resetInterval();
+ }
+
+ function resetInterval() {
+ clearInterval(slideshowInterval);
+ slideshowInterval = setInterval(nextSlide, 5000);
+ }
+ </script>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

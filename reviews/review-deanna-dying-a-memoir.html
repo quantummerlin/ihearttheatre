@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Dying: A Memoir | iHeartTheatre.com</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: #050508;
+ color: #f5f5f5;
+ line-height: 1.7;
+ overflow-x: hidden;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.1s ease;
+ }
+
+ .particles {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: 1;
+ overflow: hidden;
+ }
+
+ .particle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ background: rgba(102, 126, 234, 0.3);
+ border-radius: 50%;
+ animation: float 15s infinite ease-in-out;
+ }
+
+ @keyframes float {
+ 0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+ 10% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 120px 20px 80px;
+ position: relative;
+ z-index: 2;
+ }
+
+ .back-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 14px;
+ margin-bottom: 40px;
+ transition: all 0.3s ease;
+ }
+
+ .back-link:hover {
+ color: #667eea;
+ transform: translateX(-5px);
+ }
+
+ .reviewer-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(102, 126, 234, 0.1);
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ padding: 8px 16px;
+ border-radius: 20px;
+ font-size: 13px;
+ color: #667eea;
+ margin-bottom: 24px;
+ }
+
+ .reviewer-badge img {
+ width: 24px;
+ height: 24px;
+ border-radius: 50%;
+ object-fit: cover;
+ }
+
+ h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 5vw, 4rem);
+ font-weight: 700;
+ line-height: 1.2;
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #f5f5f5 0%, #a0a0b0 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .subtitle {
+ font-size: 1.1rem;
+ color: #a0a0b0;
+ margin-bottom: 40px;
+ font-weight: 300;
+ }
+
+ .meta {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.05);
+ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+ margin-bottom: 40px;
+ }
+
+ .meta-item {
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+ }
+
+ .meta-label {
+ font-size: 11px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: #667eea;
+ font-weight: 600;
+ }
+
+ .meta-value {
+ font-size: 14px;
+ color: #f5f5f5;
+ }
+
+ .content {
+ font-size: 1.1rem;
+ line-height: 1.9;
+ color: #d0d0d0;
+ }
+
+ .content p {
+ margin-bottom: 24px;
+ }
+
+ .content p:first-of-type::first-letter {
+ font-family: 'Playfair Display', serif;
+ font-size: 4rem;
+ float: left;
+ line-height: 1;
+ margin-right: 12px;
+ margin-top: 4px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .highlight {
+ background: rgba(102, 126, 234, 0.1);
+ border-left: 3px solid #667eea;
+ padding: 20px;
+ margin: 32px 0;
+ border-radius: 0 8px 8px 0;
+ font-style: italic;
+ }
+
+ .gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 16px;
+ margin: 40px 0;
+ }
+
+ .gallery img {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 12px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ cursor: pointer;
+ }
+
+ .gallery img:hover {
+ transform: scale(1.05);
+ box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+ }
+
+ .cta-section {
+ background: rgba(102, 126, 234, 0.05);
+ border: 1px solid rgba(102, 126, 234, 0.1);
+ border-radius: 16px;
+ padding: 32px;
+ margin-top: 60px;
+ text-align: center;
+ }
+
+ .cta-section h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ margin-bottom: 12px;
+ color: #f5f5f5;
+ }
+
+ .cta-section p {
+ color: #a0a0b0;
+ margin-bottom: 24px;
+ }
+
+ .cta-button {
+ display: inline-block;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 14px 32px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-weight: 600;
+ transition: all 0.3s ease;
+ }
+
+ .cta-button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ }
+
+ .related-reviews {
+ margin-top: 60px;
+ }
+
+ .related-reviews h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ margin-bottom: 24px;
+ color: #f5f5f5;
+ }
+
+ .review-card {
+ background: rgba(255, 255, 255, 0.02);
+ border: 1px solid rgba(255, 255, 255, 0.05);
+ border-radius: 12px;
+ padding: 24px;
+ margin-bottom: 16px;
+ transition: all 0.3s ease;
+ cursor: pointer;
+ }
+
+ .review-card:hover {
+ background: rgba(255, 255, 255, 0.04);
+ border-color: rgba(102, 126, 234, 0.3);
+ transform: translateX(5px);
+ }
+
+ .review-card h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.2rem;
+ margin-bottom: 8px;
+ color: #f5f5f5;
+ }
+
+ .review-card p {
+ color: #a0a0b0;
+ font-size: 0.9rem;
+ }
+
+ @media (max-width: 768px) {
+ .container {
+ padding: 100px 20px 60px;
+ }
+
+ h1 {
+ font-size: 2rem;
+ }
+
+ .meta {
+ flex-direction: column;
+ gap: 16px;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="../manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
+ <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ 
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="../index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviews.html" class="active">Reviews</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="../holiday-programs.html">Holiday Programs</a>
+ <a href="../about.html">About</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+<div class="container">
+ <a href="../index.html" class="back-link">
+ ← Back to Home
+ </a>
+
+ <div class="reviewer-badge">
+ <img src="../generated_images/deanna-profile.png" alt="Deanna Amato">
+ <span>Deanna Amato</span>
+ </div>
+
+ <h1>Dying: A Memoir</h1>
+ <p class="subtitle">Melbourne Theatre Company at Fairfax Studio, Arts Centre</p>
+
+ <div class="meta">
+ <div class="meta-item">
+ <span class="meta-label">Venue</span>
+ <span class="meta-value">Fairfax Studio, Arts Centre</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Company</span>
+ <span class="meta-value">Melbourne Theatre Company</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Published</span>
+ <span class="meta-value">November 6, 2025</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Category</span>
+ <span class="meta-value">Drama</span>
+ </div>
+ </div>
+
+ <div class="gallery">
+ <img src="../REVIEWERS/Deanna/DyingAMemoir1.jpg" alt="Dying: A Memoir production">
+ <img src="../REVIEWERS/Deanna/DyingAMemoir2.jpg" alt="Dying: A Memoir production">
+ <img src="../REVIEWERS/Deanna/DyingAMemoir3.jpg" alt="Dying: A Memoir production">
+ <img src="../REVIEWERS/Deanna/DyingAMemoir4.jpg" alt="Dying: A Memoir production">
+ </div>
+
+ <div class="content">
+ <p>Genevieve Morris breaks the ice as she enters through the audience, setting the tone perfectly — cheeky, warm and unafraid comedic timing, disarming us with wit before leading us gently into the enormity of what's to come.</p>
+
+ <p>Adapted by Benjamin Law from Cory Taylor's acclaimed memoir and directed with immense care by Jean Tong, Dying: A Memoir tackles the inevitable with humour, humanity and startling honesty. Nothing goes unspoken; the unmentionable is mentioned, often with a grin that softens the blow. The humor never undermines the gravity; reminding us that even in dying, there is life.</p>
+
+ <p>There are moments when the lights dim halfway and Morris asks the audience confronting questions. She shifts seamlessly between talking to us in real time and slipping into the story itself, the edges between theatre and life dissolving. It's in these transitions that Dying: A Memoir becomes something more than performance: it's a shared reckoning, an invitation to talk about the uncomfortable.</p>
+
+ <div class="highlight">
+ "Morris holds the space with effortless command. Her delivery is textured and precise, every accent, medical term and quirky inflection landing just right. She moves across the stage with measured pacing, working the room intimately and electrically."
+ </div>
+
+ <p>The set design is deceptively simple: rows of chairs that glide and slot into formation, transforming with ease from airport lounges to nursing homes, waiting rooms and restaurants. Our imagination fills in the rest. Clever lighting and projections guide our attention — digital numbers blinking from hospital monitors to bedside clocks — while soft sounds creep in so slowly you almost don't notice until they swell, overwhelming. A haze of mist descending slowly to thicken the air as a scene gets heavier and then from the darkness strobes and sound erupt into a perfect storm.</p>
+
+ <p>The humour keeps us safely distanced, for most part, then the emotion strikes as the first sniffles ripple through the room. Morris balances vulnerability and wit masterfully, giving us permission to feel everything.</p>
+
+ <p>Cory Taylor's courage lives on in this adaptation. Silence is replaced by conversation, stigma dissolves and we're left in contemplation of our own mortality, of the legacies we might leave behind, of the privilege of being able to talk about death while we're still here. It made me realise how lucky we are to live in a time we can go online to find a death doula and open conversations are not taboo, but healing.</p>
+
+ <p>A remarkable performance by an extraordinary artist and a fully deserved standing ovation for a work that dares to face the inevitable with grace and laughter.</p>
+ </div>
+
+ <div class="cta-section">
+ <h3>Share Your Theatre Experience</h3>
+ <p>Seen this show? We'd love to hear your thoughts.</p>
+ <a href="../submit-review.html" class="cta-button">Submit Your Review</a>
+ </div>
+
+ <div class="related-reviews">
+ <h3>More Reviews by Deanna</h3>
+ <div class="review-card">
+ <h4>Romeo & Juliet</h4>
+ <p>A vibrant theatrical event blending modern nostalgia with classic drama</p>
+ </div>
+ <div class="review-card">
+ <h4>Mary Poppins</h4>
+ <p>An expertly crafted wonder with unexpected magic</p>
+ </div>
+ <div class="review-card">
+ <h4>The Good Life</h4>
+ <p>A charming slice of suburban rebellion</p>
+ </div>
+ </div>
+ </div>
+
+ <script>
+ // Progress Bar
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.getElementById('progressBar').style.width = scrolled + '%';
+ });
+
+ // Particles
+ function createParticles() {
+ const container = document.getElementById('particles');
+ for (let i = 0; i < 30; i++) {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + '%';
+ particle.style.animationDelay = Math.random() * 15 + 's';
+ particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+ container.appendChild(particle);
+ }
+ }
+ createParticles();
+
+ // Scroll Achievement
+ let scrollDepth = 0;
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ 
+ if (scrolled >= 25 && scrollDepth < 25) {
+ scrollDepth = 25;
+ showAchievement('Getting Into It');
+ } else if (scrolled >= 50 && scrollDepth < 50) {
+ scrollDepth = 50;
+ showAchievement('Dedicated Reader');
+ } else if (scrolled >= 75 && scrollDepth < 75) {
+ scrollDepth = 75;
+ showAchievement('True Theatre Lover');
+ } else if (scrolled >= 90 && scrollDepth < 90) {
+ scrollDepth = 90;
+ showAchievement('Renaissance Champion');
+ triggerConfetti();
+ }
+ });
+
+ function showAchievement(text) {
+ const achievement = document.createElement('div');
+ achievement.style.cssText = `
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 16px 24px;
+ border-radius: 12px;
+ font-weight: 600;
+ z-index: 1000;
+ animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ `;
+ achievement.textContent = text;
+ document.body.appendChild(achievement);
+ setTimeout(() => achievement.remove(), 3000);
+ }
+
+ function triggerConfetti() {
+ for (let i = 0; i < 50; i++) {
+ const confetti = document.createElement('div');
+ confetti.style.cssText = `
+ position: fixed;
+ width: 10px;
+ height: 10px;
+ background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b'][Math.floor(Math.random() * 4)]};
+ left: ${Math.random() * 100}vw;
+ top: -10px;
+ z-index: 1000;
+ animation: confettiFall 3s ease-out forwards;
+ `;
+ document.body.appendChild(confetti);
+ setTimeout(() => confetti.remove(), 3000);
+ }
+ }
+
+ // Add confetti animation
+ const style = document.createElement('style');
+ style.textContent = `
+ @keyframes slideIn {
+ from { transform: translateX(100%); opacity: 0; }
+ to { transform: translateX(0); opacity: 1; }
+ }
+ @keyframes fadeOut {
+ from { opacity: 1; }
+ to { opacity: 0; }
+ }
+ @keyframes confettiFall {
+ to {
+ transform: translateY(100vh) rotate(720deg);
+ opacity: 0;
+ }
+ }
+ `;
+ document.head.appendChild(style);
+ </script>
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../whats-on.html">What's On</a>
+                <a href="../reviews.html">Reviews</a>
+ <a href="../about.html">About</a>
+ <a href="../privacy.html">Privacy</a>
+ <a href="../disclaimer.html">Disclaimer</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="../icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="../js/shared.js"></script>
+</body>
+</html>

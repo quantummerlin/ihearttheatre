@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Submit Your Show | iHeartTheatre.com</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ :root {
+ --bg-primary: #050508;
+ --bg-secondary: #0a0a0f;
+ --bg-tertiary: #12121a;
+ --text-primary: #f5f5f5;
+ --text-secondary: #a0a0b0;
+ --accent-primary: #667eea;
+ --accent-secondary: #764ba2;
+ --gradient-primary: linear-gradient(135deg, #667eea, #764ba2);
+ --glass-bg: rgba(255, 255, 255, 0.03);
+ --glass-border: rgba(255, 255, 255, 0.08);
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: var(--bg-primary);
+ color: var(--text-primary);
+ min-height: 100vh;
+ overflow-x: hidden;
+ }
+
+ /* Progress Bar */
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: var(--gradient-primary);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.1s ease;
+ }
+
+ /* Floating Particles */
+ .particles {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: 1;
+ overflow: hidden;
+ }
+
+ .particle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ background: rgba(102, 126, 234, 0.3);
+ border-radius: 50%;
+ animation: float 15s infinite;
+ }
+
+ @keyframes float {
+ 0%, 100% {
+ transform: translateY(100vh) rotate(0deg);
+ opacity: 0;
+ }
+ 10% {
+ opacity: 1;
+ }
+ 90% {
+ opacity: 1;
+ }
+ 100% {
+ transform: translateY(-100vh) rotate(720deg);
+ opacity: 0;
+ }
+ }
+
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--glass-border);
+ z-index: 100;
+ padding: 1rem 2rem;
+ }
+
+ .nav-container {
+ max-width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 700;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+
+ .nav-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ }
+
+ .nav-links a:hover {
+ color: var(--text-primary);
+ }
+
+ .nav-links a.active {
+ color: var(--accent-primary);
+ }
+
+ /* Hero Section */
+ .hero {
+ position: relative;
+ padding: 180px 2rem 100px;
+ text-align: center;
+ background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 6vw, 4rem);
+ font-weight: 700;
+ margin-bottom: 1.5rem;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .hero p {
+ color: var(--text-secondary);
+ font-size: 1.3rem;
+ max-width: 700px;
+ margin: 0 auto 3rem;
+ line-height: 1.6;
+ }
+
+ /* Form Section */
+ .form-section {
+ padding: 6rem 2rem;
+ max-width: 900px;
+ margin: 0 auto;
+ }
+
+ .form-container {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 20px;
+ padding: 3rem;
+ backdrop-filter: blur(10px);
+ }
+
+ .form-group {
+ margin-bottom: 2rem;
+ }
+
+ .form-group label {
+ display: block;
+ color: var(--text-primary);
+ font-weight: 600;
+ margin-bottom: 0.75rem;
+ font-size: 1rem;
+ }
+
+ .form-group label span {
+ color: #ff6b6b;
+ }
+
+ .form-group input,
+ .form-group textarea,
+ .form-group select {
+ width: 100%;
+ padding: 1rem;
+ background: var(--bg-tertiary);
+ border: 1px solid var(--glass-border);
+ border-radius: 10px;
+ color: var(--text-primary);
+ font-size: 1rem;
+ font-family: 'Inter', sans-serif;
+ transition: all 0.3s ease;
+ }
+
+ .form-group input:focus,
+ .form-group textarea:focus,
+ .form-group select:focus {
+ outline: none;
+ border-color: var(--accent-primary);
+ box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+ }
+
+ .form-group textarea {
+ min-height: 150px;
+ resize: vertical;
+ }
+
+ .form-group select {
+ cursor: pointer;
+ }
+
+ .form-group select option {
+ background: var(--bg-tertiary);
+ color: var(--text-primary);
+ }
+
+ .form-row {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 1.5rem;
+ }
+
+ .form-help {
+ color: var(--text-secondary);
+ font-size: 0.85rem;
+ margin-top: 0.5rem;
+ }
+
+ .checkbox-group {
+ display: flex;
+ align-items: flex-start;
+ gap: 0.75rem;
+ margin-bottom: 1rem;
+ }
+
+ .checkbox-group input[type="checkbox"] {
+ width: 20px;
+ height: 20px;
+ margin-top: 0.25rem;
+ cursor: pointer;
+ }
+
+ .checkbox-group label {
+ margin-bottom: 0;
+ font-weight: 400;
+ color: var(--text-secondary);
+ line-height: 1.5;
+ }
+
+ .submit-button {
+ width: 100%;
+ padding: 1.2rem 2rem;
+ background: var(--gradient-primary);
+ color: white;
+ border: none;
+ border-radius: 50px;
+ font-size: 1.1rem;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+ }
+
+ .submit-button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+ }
+
+ .submit-button:disabled {
+ opacity: 0.5;
+ cursor: not-allowed;
+ transform: none;
+ }
+
+ /* Success Message */
+ .success-message {
+ display: none;
+ text-align: center;
+ padding: 3rem;
+ }
+
+ .success-message.show {
+ display: block;
+ }
+
+ .success-icon {
+ font-size: 5rem;
+ margin-bottom: 1.5rem;
+ }
+
+ .success-message h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2.5rem;
+ margin-bottom: 1rem;
+ color: var(--text-primary);
+ }
+
+ .success-message p {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ margin-bottom: 2rem;
+ }
+
+ /* Footer */
+ footer {
+ background: rgba(5, 5, 8, 0.95);
+ border-top: 1px solid var(--glass-border);
+ padding: 3rem 2rem;
+ }
+
+ .footer-content {
+ max-width: 1400px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-bottom: 2rem;
+ }
+
+ .footer-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+
+ .footer-links a:hover {
+ color: var(--accent-primary);
+ }
+
+ .footer-copyright {
+ color: #606070;
+ font-size: 0.85rem;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+
+ .hero {
+ padding: 140px 2rem 80px;
+ }
+
+ .form-row {
+ grid-template-columns: 1fr;
+ }
+
+ .form-container {
+ padding: 2rem;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ 
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="whats-on.html">What's On</a>
+                <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <div class="hero">
+ <h1>Submit Your Show</h1>
+ <p>Share your theatre production with Melbourne's theatre community and get reviewed by our expert team</p>
+ </div>
+
+ <div class="form-section">
+ <div class="form-container" id="showForm">
+ <form id="submissionForm">
+ <div class="form-group">
+ <label for="showTitle">Show Title <span>*</span></label>
+ <input type="text" id="showTitle" name="showTitle" required placeholder="Enter the name of your show">
+ </div>
+
+ <div class="form-row">
+ <div class="form-group">
+ <label for="category">Category <span>*</span></label>
+ <select id="category" name="category" required>
+ <option value="">Select category</option>
+ <option value="Musical">Musical</option>
+ <option value="Play">Play</option>
+ <option value="Comedy">Comedy</option>
+ <option value="Family">Family & Kids</option>
+ <option value="Circus">Circus</option>
+ <option value="Cabaret">Cabaret</option>
+ <option value="Dance">Dance</option>
+ <option value="Opera">Opera</option>
+ <option value="Other">Other</option>
+ </select>
+ </div>
+
+ <div class="form-group">
+ <label for="targetAudience">Target Audience <span>*</span></label>
+ <select id="targetAudience" name="targetAudience" required>
+ <option value="">Select audience</option>
+ <option value="Adults">Adults</option>
+ <option value="Families">Families</option>
+ <option value="Kids">Kids (under 12)</option>
+ <option value="Teens">Teens (13-17)</option>
+ <option value="Seniors">Seniors</option>
+ <option value="All Ages">All Ages</option>
+ </select>
+ </div>
+ </div>
+
+ <div class="form-row">
+ <div class="form-group">
+ <label for="venue">Venue <span>*</span></label>
+ <input type="text" id="venue" name="venue" required placeholder="Enter venue name">
+ </div>
+
+ <div class="form-group">
+ <label for="company">Production Company <span>*</span></label>
+ <input type="text" id="company" name="company" required placeholder="Enter company name">
+ </div>
+ </div>
+
+ <div class="form-row">
+ <div class="form-group">
+ <label for="startDate">Start Date <span>*</span></label>
+ <input type="date" id="startDate" name="startDate" required>
+ </div>
+
+ <div class="form-group">
+ <label for="endDate">End Date <span>*</span></label>
+ <input type="date" id="endDate" name="endDate" required>
+ </div>
+ </div>
+
+ <div class="form-group">
+ <label for="description">Show Description <span>*</span></label>
+ <textarea id="description" name="description" required placeholder="Provide a brief description of your show (2-3 paragraphs)"></textarea>
+ <p class="form-help">Include information about the plot, themes, and what makes your show unique</p>
+ </div>
+
+ <div class="form-group">
+ <label for="contactName">Contact Name <span>*</span></label>
+ <input type="text" id="contactName" name="contactName" required placeholder="Your full name">
+ </div>
+
+ <div class="form-row">
+ <div class="form-group">
+ <label for="contactEmail">Contact Email <span>*</span></label>
+ <input type="email" id="contactEmail" name="contactEmail" required placeholder="your@email.com">
+ </div>
+
+ <div class="form-group">
+ <label for="contactPhone">Contact Phone</label>
+ <input type="tel" id="contactPhone" name="contactPhone" placeholder="04XX XXX XXX">
+ </div>
+ </div>
+
+ <div class="form-group">
+ <label for="website">Website / Ticket Link</label>
+ <input type="url" id="website" name="website" placeholder="https://your-website.com">
+ </div>
+
+ <div class="form-group">
+ <label for="additionalInfo">Additional Information</label>
+ <textarea id="additionalInfo" name="additionalInfo" placeholder="Any other details you'd like us to know (accessibility, special performances, etc.)"></textarea>
+ </div>
+
+ <div class="form-group">
+ <div class="checkbox-group">
+ <input type="checkbox" id="requestReview" name="requestReview" checked>
+ <label for="requestReview">I would like to request a review from our reviewers</label>
+ </div>
+ <p class="form-help">Our reviewers will attend your show and write a comprehensive review</p>
+ </div>
+
+ <div class="form-group">
+ <div class="checkbox-group">
+ <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+ <label for="agreeTerms">I agree to the terms and conditions and confirm that all information provided is accurate</label>
+ </div>
+ </div>
+
+ <button type="submit" class="submit-button">Submit Show</button>
+ </form>
+ </div>
+
+ <div class="success-message" id="successMessage">
+ <div class="success-icon"></div>
+ <h2>Show Submitted Successfully!</h2>
+ <p>Thank you for submitting your show. Our team will review your submission and get back to you within 2-3 business days.</p>
+ <a href="index.html" class="submit-button" style="display: inline-block; width: auto; padding: 1rem 2.5rem;">Return Home</a>
+ </div>
+ </div>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+
+ <script>
+ // Form submission
+ document.getElementById('submissionForm').addEventListener('submit', function(e) {
+ e.preventDefault();
+ 
+ // Validate form
+ const formData = new FormData(this);
+ const data = Object.fromEntries(formData);
+ 
+ // Here you would typically send the data to your backend
+ console.log('Form submitted:', data);
+ 
+ // Show success message
+ document.getElementById('showForm').style.display = 'none';
+ document.getElementById('successMessage').classList.add('show');
+ 
+ // Scroll to top
+ window.scrollTo({ top: 0, behavior: 'smooth' });
+ });
+
+ // Progress bar
+ window.addEventListener('scroll', () => {
+ const scrollTop = window.scrollY;
+ const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+ const scrollPercent = (scrollTop / docHeight) * 100;
+ document.getElementById('progressBar').style.width = scrollPercent + '%';
+ });
+
+ // Floating particles
+ function createParticles() {
+ const container = document.getElementById('particles');
+ for (let i = 0; i < 50; i++) {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + '%';
+ particle.style.animationDelay = Math.random() * 15 + 's';
+ particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+ container.appendChild(particle);
+ }
+ }
+
+ // Initialize
+ createParticles();
+ </script>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

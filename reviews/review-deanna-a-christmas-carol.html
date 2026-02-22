@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>A Christmas Carol | iHeartTheatre.com</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: #050508;
+ color: #f5f5f5;
+ line-height: 1.7;
+ overflow-x: hidden;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.1s ease;
+ }
+
+ .particles {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: 1;
+ overflow: hidden;
+ }
+
+ .particle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ background: rgba(102, 126, 234, 0.3);
+ border-radius: 50%;
+ animation: float 15s infinite ease-in-out;
+ }
+
+ @keyframes float {
+ 0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+ 10% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 120px 20px 80px;
+ position: relative;
+ z-index: 2;
+ }
+
+ .back-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 14px;
+ margin-bottom: 40px;
+ transition: all 0.3s ease;
+ }
+
+ .back-link:hover {
+ color: #667eea;
+ transform: translateX(-5px);
+ }
+
+ .reviewer-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(102, 126, 234, 0.1);
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ padding: 8px 16px;
+ border-radius: 20px;
+ font-size: 13px;
+ color: #667eea;
+ margin-bottom: 24px;
+ }
+
+ .reviewer-badge img {
+ width: 24px;
+ height: 24px;
+ border-radius: 50%;
+ object-fit: cover;
+ }
+
+ h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 5vw, 4rem);
+ font-weight: 700;
+ line-height: 1.2;
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #f5f5f5 0%, #a0a0b0 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .subtitle {
+ font-size: 1.1rem;
+ color: #a0a0b0;
+ margin-bottom: 40px;
+ font-weight: 300;
+ }
+
+ .meta {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.05);
+ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+ margin-bottom: 40px;
+ }
+
+ .meta-item {
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+ }
+
+ .meta-label {
+ font-size: 11px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: #667eea;
+ font-weight: 600;
+ }
+
+ .meta-value {
+ font-size: 14px;
+ color: #f5f5f5;
+ }
+
+ .content {
+ font-size: 1.1rem;
+ line-height: 1.9;
+ color: #d0d0d0;
+ }
+
+ .content p {
+ margin-bottom: 24px;
+ }
+
+ .content p:first-of-type::first-letter {
+ font-family: 'Playfair Display', serif;
+ font-size: 4rem;
+ float: left;
+ line-height: 1;
+ margin-right: 12px;
+ margin-top: 4px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .highlight {
+ background: rgba(102, 126, 234, 0.1);
+ border-left: 3px solid #667eea;
+ padding: 20px;
+ margin: 32px 0;
+ border-radius: 0 8px 8px 0;
+ font-style: italic;
+ }
+
+ .gallery {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 16px;
+ margin: 40px 0;
+ }
+
+ .gallery img {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ border-radius: 12px;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ cursor: pointer;
+ }
+
+ .gallery img:hover {
+ transform: scale(1.05);
+ box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+ }
+
+ .cta-section {
+ background: rgba(102, 126, 234, 0.05);
+ border: 1px solid rgba(102, 126, 234, 0.1);
+ border-radius: 16px;
+ padding: 32px;
+ margin-top: 60px;
+ text-align: center;
+ }
+
+ .cta-section h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ margin-bottom: 12px;
+ color: #f5f5f5;
+ }
+
+ .cta-section p {
+ color: #a0a0b0;
+ margin-bottom: 24px;
+ }
+
+ .cta-button {
+ display: inline-block;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 14px 32px;
+ border-radius: 30px;
+ text-decoration: none;
+ font-weight: 600;
+ transition: all 0.3s ease;
+ }
+
+ .cta-button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ }
+
+ .related-reviews {
+ margin-top: 60px;
+ }
+
+ .related-reviews h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ margin-bottom: 24px;
+ color: #f5f5f5;
+ }
+
+ .review-card {
+ background: rgba(255, 255, 255, 0.02);
+ border: 1px solid rgba(255, 255, 255, 0.05);
+ border-radius: 12px;
+ padding: 24px;
+ margin-bottom: 16px;
+ transition: all 0.3s ease;
+ cursor: pointer;
+ }
+
+ .review-card:hover {
+ background: rgba(255, 255, 255, 0.04);
+ border-color: rgba(102, 126, 234, 0.3);
+ transform: translateX(5px);
+ }
+
+ .review-card h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.2rem;
+ margin-bottom: 8px;
+ color: #f5f5f5;
+ }
+
+ .review-card p {
+ color: #a0a0b0;
+ font-size: 0.9rem;
+ }
+
+ @media (max-width: 768px) {
+ .container {
+ padding: 100px 20px 60px;
+ }
+
+ h1 {
+ font-size: 2rem;
+ }
+
+ .meta {
+ flex-direction: column;
+ gap: 16px;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="../manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
+ <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ 
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="../index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviews.html" class="active">Reviews</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="../holiday-programs.html">Holiday Programs</a>
+ <a href="../about.html">About</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+<div class="container">
+ <a href="../index.html" class="back-link">
+ ← Back to Home
+ </a>
+
+ <div class="reviewer-badge">
+ <img src="../generated_images/deanna-profile.png" alt="Deanna Amato">
+ <span>Deanna Amato</span>
+ </div>
+
+ <h1>A Christmas Carol</h1>
+ <p class="subtitle">An Old Vic Production at Comedy Theatre</p>
+
+ <div class="meta">
+ <div class="meta-item">
+ <span class="meta-label">Venue</span>
+ <span class="meta-value">Comedy Theatre</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Dates</span>
+ <span class="meta-value">November 22 - December 29, 2024</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Published</span>
+ <span class="meta-value">December 3, 2024</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Category</span>
+ <span class="meta-value">Classic Theatre</span>
+ </div>
+ </div>
+
+ <div class="content">
+ <p>The opening night of A Christmas Carol at Melbourne's Comedy Theatre delivered a visually and emotionally charged experience, delightfully blending theatrical innovation with Dickens' timeless message of redemption. This Old Vic production, conceived & directed by Matthew Warchus, stands out for its immersive atmosphere and meticulous attention to detail, taking the audience on a haunting journey and leaving an indelible impression.</p>
+
+ <p>The set & costume design by Rob Howell was nothing short of extraordinary, transforming the stage into a Dickensian dreamscape. A cascading expanse of lanterns from the stage into the auditorium, created a magical, almost ethereal ambiance, personifying hope and illumination in the face of Scrooge's dim inner world.</p>
+
+ <div class="highlight">
+ "The lighting design by Hugh Vanstone added another layer of depth, with cooler contrasts reflecting weather shifts and snow falling gracefully throughout the performance, enhancing the feeling of a crisp Victorian winter."
+ </div>
+
+ <p>The use of the warm lighting and mist contrasting with cool tones, created portals to transport the audience aesthetically between past, present, and future. This was particularly effective in the haunting scenes with Marley's ghost, where the interplay of shadows and light added to the sense of foreboding.</p>
+
+ <p>The set operated like an intricate geometric jigsaw puzzle; its pieces shifted by the cast & slotted seamlessly, to creatively construct or deconstruct each setting. A gloss coffin amongst the dark, matte palette in scenes foreshadowing Scrooge's fate evoked a somber & chilling effect, contrasting sharply to the vibrant, joyous smorgasbord in the course of transformation.</p>
+
+ <p>Musicians were elegantly positioned on the balcony & cast members also appeared in multiple positions throughout the wings & side doors, to evoke an enchanting & multidimensional soundscape, immersing the audience further into the world of Dickens. The timing of the sound effects & miming flawlessly depicted transitions & remarkably underscores the production's precision & polished craft. All the props were so thoughtfully integrated, from the lanterns to hand-held bells and even smaller floor details that subtly conveyed peripheral themes. The use of doorframes added an unexpected dynamic, contributing to the feeling of Scrooge's memories and ghosts materialising from all directions.</p>
+
+ <p>Eric Thomson's portrayal of Scrooge is both captivating and heart-wrenching. His transformation felt earned, making the audience's emotional investment in his journey palpable, with moments of sheer joy and sorrow deeply resonant. The entire cast delivered stellar performances, bringing warmth and enthusiasm to every scene. The audience's emotional engagement was undeniable, as sobs were heard during key moments and tears of joy accompanied the production's uplifting conclusion.</p>
+
+ <p>The combination of Dickens' poignant narrative and Warchus' conception, creates a deeply moving experience, reminding viewers of the magic of compassion and the true spirit of Christmas. Christopher Nightingale's score blended fluently with traditional carols, heightening the emotional stakes while the handbell sequences and live music onstage augmented an exquisite auditory experience.</p>
+
+ <p>This production of A Christmas Carol is a masterful, multi-sensory journey. From mince pies & mandarins, to haunting misty portals and all the wonderful elements designed to immerse and move the audience. Embark on this joyous, exhilarating, and deeply emotional journey, as it captures the magic of Christmas and the transformative power of empathy. A theatrical triumph that blesses each and every one with the true spirit of Christmas.</p>
+ </div>
+
+ <div class="cta-section">
+ <h3>Share Your Theatre Experience</h3>
+ <p>Seen this show? We'd love to hear your thoughts.</p>
+ <a href="../submit-review.html" class="cta-button">Submit Your Review</a>
+ </div>
+
+ <div class="related-reviews">
+ <h3>More Reviews by Deanna</h3>
+ <div class="review-card">
+ <h4>The Good Life</h4>
+ <p>A deeply moving exploration of life's complexities</p>
+ </div>
+ <div class="review-card">
+ <h4>Mamma Mia!</h4>
+ <p>ABBA's timeless hits bring joy to the stage</p>
+ </div>
+ <div class="review-card">
+ <h4>Mary Poppins</h4>
+ <p>Practically perfect in every way</p>
+ </div>
+ </div>
+ </div>
+
+ <script>
+ // Progress Bar
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.getElementById('progressBar').style.width = scrolled + '%';
+ });
+
+ // Particles
+ function createParticles() {
+ const container = document.getElementById('particles');
+ for (let i = 0; i < 30; i++) {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + '%';
+ particle.style.animationDelay = Math.random() * 15 + 's';
+ particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+ container.appendChild(particle);
+ }
+ }
+ createParticles();
+
+ // Scroll Achievement
+ let scrollDepth = 0;
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ 
+ if (scrolled >= 25 && scrollDepth < 25) {
+ scrollDepth = 25;
+ showAchievement('Getting Into It');
+ } else if (scrolled >= 50 && scrollDepth < 50) {
+ scrollDepth = 50;
+ showAchievement('Dedicated Reader');
+ } else if (scrolled >= 75 && scrollDepth < 75) {
+ scrollDepth = 75;
+ showAchievement('True Theatre Lover');
+ } else if (scrolled >= 90 && scrollDepth < 90) {
+ scrollDepth = 90;
+ showAchievement('Renaissance Champion');
+ triggerConfetti();
+ }
+ });
+
+ function showAchievement(text) {
+ const achievement = document.createElement('div');
+ achievement.style.cssText = `
+ position: fixed;
+ bottom: 20px;
+ right: 20px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 16px 24px;
+ border-radius: 12px;
+ font-weight: 600;
+ z-index: 1000;
+ animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ `;
+ achievement.textContent = text;
+ document.body.appendChild(achievement);
+ setTimeout(() => achievement.remove(), 3000);
+ }
+
+ function triggerConfetti() {
+ for (let i = 0; i < 50; i++) {
+ const confetti = document.createElement('div');
+ confetti.style.cssText = `
+ position: fixed;
+ width: 10px;
+ height: 10px;
+ background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b'][Math.floor(Math.random() * 4)]};
+ left: ${Math.random() * 100}vw;
+ top: -10px;
+ z-index: 1000;
+ animation: confettiFall 3s ease-out forwards;
+ `;
+ document.body.appendChild(confetti);
+ setTimeout(() => confetti.remove(), 3000);
+ }
+ }
+
+ // Add confetti animation
+ const style = document.createElement('style');
+ style.textContent = `
+ @keyframes slideIn {
+ from { transform: translateX(100%); opacity: 0; }
+ to { transform: translateX(0); opacity: 1; }
+ }
+ @keyframes fadeOut {
+ from { opacity: 1; }
+ to { opacity: 0; }
+ }
+ @keyframes confettiFall {
+ to {
+ transform: translateY(100vh) rotate(720deg);
+ opacity: 0;
+ }
+ }
+ `;
+ document.head.appendChild(style);
+ </script>
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../whats-on.html">What's On</a>
+                <a href="../reviews.html">Reviews</a>
+ <a href="../about.html">About</a>
+ <a href="../privacy.html">Privacy</a>
+ <a href="../disclaimer.html">Disclaimer</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="../icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="../js/shared.js"></script>
+</body>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>YOUR NAME MEANS DREAM | iHeartTheatre.com</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: #050508;
+ color: #f5f5f5;
+ line-height: 1.7;
+ overflow-x: hidden;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.1s ease;
+ }
+
+ .particles {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: 1;
+ overflow: hidden;
+ }
+
+ .particle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ background: rgba(102, 126, 234, 0.3);
+ border-radius: 50%;
+ animation: float 15s infinite ease-in-out;
+ }
+
+ @keyframes float {
+ 0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+ 10% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 120px 20px 80px;
+ position: relative;
+ z-index: 2;
+ }
+
+ .back-link {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 14px;
+ margin-bottom: 40px;
+ transition: all 0.3s ease;
+ }
+
+ .back-link:hover {
+ color: #667eea;
+ transform: translateX(-5px);
+ }
+
+ .reviewer-badge {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ background: rgba(102, 126, 234, 0.1);
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ padding: 8px 16px;
+ border-radius: 20px;
+ font-size: 13px;
+ color: #667eea;
+ margin-bottom: 24px;
+ }
+
+ .reviewer-badge img {
+ width: 24px;
+ height: 24px;
+ border-radius: 50%;
+ object-fit: cover;
+ }
+
+ h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 5vw, 4rem);
+ font-weight: 700;
+ line-height: 1.2;
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #f5f5f5 0%, #a0a0b0 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .subtitle {
+ font-size: 1.1rem;
+ color: #a0a0b0;
+ margin-bottom: 40px;
+ font-weight: 300;
+ }
+
+ .meta {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ padding: 20px 0;
+ border-top: 1px solid rgba(255, 255, 255, 0.05);
+ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+ margin-bottom: 40px;
+ }
+
+ .meta-item {
+ display: flex;
+ flex-direction: column;
+ gap: 4px;
+ }
+
+ .meta-label {
+ font-size: 11px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: #667eea;
+ }
+
+ .meta-value {
+ font-size: 14px;
+ color: #f5f5f5;
+ }
+
+ .content {
+ font-size: 1.05rem;
+ line-height: 1.8;
+ color: #d0d0d0;
+ }
+
+ .content p {
+ margin-bottom: 1.5rem;
+ }
+
+ .content strong {
+ color: #f5f5f5;
+ font-weight: 600;
+ }
+
+ .content em {
+ color: #a0a0b0;
+ font-style: italic;
+ }
+
+ .gallery {
+ margin: 40px 0;
+ }
+
+ .gallery-title {
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ color: #667eea;
+ margin-bottom: 20px;
+ }
+
+ .gallery-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 16px;
+ }
+
+ .gallery-item {
+ position: relative;
+ aspect-ratio: 16/9;
+ overflow: hidden;
+ border-radius: 8px;
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ }
+
+ .gallery-item img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ transition: transform 0.3s ease;
+ }
+
+ .gallery-item:hover img {
+ transform: scale(1.05);
+ }
+
+ .quote {
+ background: rgba(102, 126, 234, 0.05);
+ border-left: 3px solid #667eea;
+ padding: 24px;
+ margin: 32px 0;
+ border-radius: 0 8px 8px 0;
+ }
+
+ .quote p {
+ font-size: 1.1rem;
+ font-style: italic;
+ color: #e0e0e0;
+ margin: 0;
+ line-height: 1.6;
+ }
+
+ .cta {
+ background: rgba(102, 126, 234, 0.1);
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ border-radius: 12px;
+ padding: 32px;
+ margin: 48px 0;
+ text-align: center;
+ }
+
+ .cta h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ color: #f5f5f5;
+ margin-bottom: 12px;
+ }
+
+ .cta p {
+ color: #a0a0b0;
+ margin-bottom: 20px;
+ }
+
+ .cta a {
+ display: inline-block;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: white;
+ padding: 12px 32px;
+ border-radius: 24px;
+ text-decoration: none;
+ font-weight: 500;
+ transition: all 0.3s ease;
+ }
+
+ .cta a:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+ }
+
+ .related {
+ margin-top: 60px;
+ padding-top: 40px;
+ border-top: 1px solid rgba(255, 255, 255, 0.05);
+ }
+
+ .related-title {
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ color: #667eea;
+ margin-bottom: 24px;
+ }
+
+ .related-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 20px;
+ }
+
+ .related-card {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ border-radius: 12px;
+ padding: 20px;
+ transition: all 0.3s ease;
+ text-decoration: none;
+ color: inherit;
+ }
+
+ .related-card:hover {
+ background: rgba(255, 255, 255, 0.05);
+ border-color: rgba(102, 126, 234, 0.3);
+ transform: translateY(-4px);
+ }
+
+ .related-card h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.1rem;
+ color: #f5f5f5;
+ margin-bottom: 8px;
+ }
+
+ .related-card p {
+ font-size: 0.9rem;
+ color: #a0a0b0;
+ margin: 0;
+ }
+
+ .achievement {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background: rgba(5, 5, 8, 0.95);
+ border: 1px solid rgba(102, 126, 234, 0.3);
+ border-radius: 16px;
+ padding: 32px 48px;
+ text-align: center;
+ z-index: 1001;
+ opacity: 0;
+ visibility: hidden;
+ transition: all 0.3s ease;
+ backdrop-filter: blur(10px);
+ }
+
+ .achievement.show {
+ opacity: 1;
+ visibility: visible;
+ }
+
+ .achievement-icon {
+ font-size: 48px;
+ margin-bottom: 16px;
+ }
+
+ .achievement h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ color: #f5f5f5;
+ margin-bottom: 8px;
+ }
+
+ .achievement p {
+ color: #a0a0b0;
+ margin: 0;
+ }
+
+ @media (max-width: 768px) {
+ .container {
+ padding: 100px 20px 60px;
+ }
+
+ h1 {
+ font-size: 2rem;
+ }
+
+ .meta {
+ flex-direction: column;
+ gap: 12px;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="../manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
+ <link rel="stylesheet" href="../css/shared.css">
+</head>
+<body>
+ <div class="progress-bar"></div>
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="../index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviews.html" class="active">Reviews</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="../holiday-programs.html">Holiday Programs</a>
+ <a href="../about.html">About</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+<div class="container">
+ <a href="../index.html" class="back-link">
+ ← Back to Home
+ </a>
+
+ <div class="reviewer-badge">
+ <img src="../generated_images/deanna-profile.png" alt="Deanna Amato">
+ <span>Deanna Amato</span>
+ </div>
+
+ <h1>YOUR NAME MEANS DREAM</h1>
+ <p class="subtitle">A captivating exploration of relationships between humans & machines</p>
+
+ <div class="meta">
+ <div class="meta-item">
+ <span class="meta-label">Venue</span>
+ <span class="meta-value">Red Stitch Theatre</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Company</span>
+ <span class="meta-value">Red Stitch Actors Theatre</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Published</span>
+ <span class="meta-value">November 7, 2024</span>
+ </div>
+ <div class="meta-item">
+ <span class="meta-label">Category</span>
+ <span class="meta-value">Theatre</span>
+ </div>
+ </div>
+
+ <div class="content">
+ <p>Your Name Means Dream at Red Stitch Theatre is a captivating exploration of relationships between humans & machines, brought to life with remarkable depth and complexity.</p>
+
+ <p>Written by Oscar nominee and Obie Award-winning playwright Jos Rivera and directed by multiple Green Room Award and Matilda Award nominee, Kat Henry. This production features absolute standout performances by Caroline Lee and Lucy Ansell, who navigate the intricate dynamics of their characters with admirable grace and precision.</p>
+
+ <p>The play centers on Aislin (Caroline Lee), a woman approaching her last chapter, living a tattered life in an apartment with dirty windows, portraying her isolation and decay of a once vibrant life. Aislins son introduces her to Stacy (Lucy Ansell), a humanoid robot designed to provide companionship and support. The narrative delves into key concepts of existentialist thought such as crises, angst, courage, freedom, immanence and the evolving role of Artificial Intelligence in our everyday lives.</p>
+
+ <p>Caroline Lee embodies a character who is stubborn and rigid, yet eventually transforms thanks to Stacy, into someone capable of fluid and fun moments. Lees portrayal captures the essence of a woman sinking into her aging process, reflecting a lucid appreciation from youth to her current state. Her interactions with Stacy are painstakingly emotional, making the audience lose their breath in the presence of her poise.</p>
+
+ <p>Lucy Ansell starts with a stiff & glitchy, robotic demeanour that gradually learns to become more palatably human-like. Ansells ability to balance the mechanical and human aspects of Stacy, while arbitrarily imitating others, reveals glimpses of her triple threat talents & contributes layers of intricacy. Her mannerisms highlight the plays exploration of possession and ones loss of identity.</p>
+
+ <p>Kat Henrys direction ensures that every entrance and exit is meaningful & instrumental to the overall narrative. The use of the New York accent adds authenticity to the characters and their backgrounds. The tones of the performances range from humorous to harrowing, creating a rich tapestry of emotions. The lighting design by Amelia Lever-Davidson enhances each moment, using shadows and light to amplify the characters emotional states beyond the stage. The immersive sound design by Ian Moorhead, further enables the audience to absorb the story.</p>
+
+ <p>The sets by Hahnie Goldfinch, feature a worn leather couch, an aged throw, peeling wallpaper, and dirty windows. These elements create a tangible sense of Aislins world. The inclusion of a vinyl record player & bulky speaker adds to the atmosphere, evoking a sense of nostalgia and the passage of time.</p>
+
+ <p>Your Name Means Dream is a sign of our times, addressing contemporary issues with a blend of humor, tension, and existential inquiry. The plays harrowing finale leaves a lasting impact, prompting audiences to reflect on the future of caregiving and the nature of human connection.</p>
+
+ <p>This production deserves a bigger stage; however, the intimacy of this theatre experience allows the essence of the human experience to be received with exceptional power and clarity, making it a privilege to be in the room. Make sure to reserve yourself a seat to this show running until the 24th of November.</p>
+ </div>
+
+ <div class="cta">
+ <h3>Share Your Theatre Experience</h3>
+ <p>Seen this show? Submit your own review and join our community of theatre lovers.</p>
+ <a href="submit-review.html">Submit a Review</a>
+ </div>
+
+ <div class="related">
+ <h3 class="related-title">More Reviews by Deanna</h3>
+ <div class="related-grid">
+ <a href="review-deanna-dying-a-memoir.html" class="related-card">
+ <h4>Dying: A Memoir</h4>
+ <p>Melbourne Theatre Company</p>
+ </a>
+ <a href="review-deanna-mother-play.html" class="related-card">
+ <h4>Mother Play</h4>
+ <p>Melbourne Theatre Company</p>
+ </a>
+ <a href="review-deanna-truth.html" class="related-card">
+ <h4>TRUTH</h4>
+ <p>Malthouse Theatre</p>
+ </a>
+ </div>
+ </div>
+ </div>
+
+ <div class="achievement" id="achievement">
+ <div class="achievement-icon"></div>
+ <h4 id="achievement-title">Achievement Unlocked!</h4>
+ <p id="achievement-message">You've discovered something special</p>
+ </div>
+
+ <script>
+ // Progress bar
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.querySelector('.progress-bar').style.width = scrolled + '%';
+ });
+
+ // Particles
+ function createParticles() {
+ const container = document.getElementById('particles');
+ for (let i = 0; i < 50; i++) {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + '%';
+ particle.style.animationDelay = Math.random() * 15 + 's';
+ particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+ container.appendChild(particle);
+ }
+ }
+ createParticles();
+
+ // Achievements
+ const achievements = [
+ { threshold: 25, title: 'Getting Into It', message: 'You\'re diving deep into this review' },
+ { threshold: 50, title: 'Dedicated Reader', message: 'Halfway through and still going strong' },
+ { threshold: 75, title: 'True Theatre Lover', message: 'You really appreciate the art' },
+ { threshold: 90, title: 'Renaissance Champion', message: 'You\'ve completed the journey!' }
+ ];
+
+ let unlockedAchievements = new Set();
+
+ window.addEventListener('scroll', () => {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+
+ achievements.forEach(achievement => {
+ if (scrolled >= achievement.threshold && !unlockedAchievements.has(achievement.title)) {
+ unlockedAchievements.add(achievement.title);
+ showAchievement(achievement.title, achievement.message);
+ }
+ });
+ });
+
+ function showAchievement(title, message) {
+ const achievement = document.getElementById('achievement');
+ document.getElementById('achievement-title').textContent = title;
+ document.getElementById('achievement-message').textContent = message;
+ achievement.classList.add('show');
+
+ setTimeout(() => {
+ achievement.classList.remove('show');
+ }, 3000);
+ }
+ </script>
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="../index.html">Home</a>
+ <a href="../reviewers.html">Reviewers</a>
+ <a href="../whats-on.html">What's On</a>
+                <a href="../reviews.html">Reviews</a>
+ <a href="../about.html">About</a>
+ <a href="../privacy.html">Privacy</a>
+ <a href="../disclaimer.html">Disclaimer</a>
+ <a href="../contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="../icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="../js/shared.js"></script>
+</body>
+</html>

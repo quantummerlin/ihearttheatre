@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Junior, Kids & Schools | iHeartTheatre.com</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ :root {
+ --bg-primary: #050508;
+ --bg-secondary: #0a0a0f;
+ --bg-tertiary: #12121a;
+ --text-primary: #f5f5f5;
+ --text-secondary: #a0a0b0;
+ --accent-primary: #667eea;
+ --accent-secondary: #764ba2;
+ --gradient-primary: linear-gradient(135deg, #667eea, #764ba2);
+ --glass-bg: rgba(255, 255, 255, 0.03);
+ --glass-border: rgba(255, 255, 255, 0.08);
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: var(--bg-primary);
+ color: var(--text-primary);
+ min-height: 100vh;
+ overflow-x: hidden;
+ }
+
+ /* Progress Bar */
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 3px;
+ background: var(--gradient-primary);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.1s ease;
+ }
+
+ /* Floating Particles */
+ .particles {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ z-index: 1;
+ overflow: hidden;
+ }
+
+ .particle {
+ position: absolute;
+ width: 4px;
+ height: 4px;
+ background: rgba(102, 126, 234, 0.3);
+ border-radius: 50%;
+ animation: float 15s infinite;
+ }
+
+ @keyframes float {
+ 0%, 100% {
+ transform: translateY(100vh) rotate(0deg);
+ opacity: 0;
+ }
+ 10% {
+ opacity: 1;
+ }
+ 90% {
+ opacity: 1;
+ }
+ 100% {
+ transform: translateY(-100vh) rotate(720deg);
+ opacity: 0;
+ }
+ }
+
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid var(--glass-border);
+ z-index: 100;
+ padding: 1rem 2rem;
+ }
+
+ .nav-container {
+ max-width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 700;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ list-style: none;
+ }
+
+ .nav-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ font-weight: 500;
+ transition: color 0.3s ease;
+ }
+
+ .nav-links a:hover {
+ color: var(--text-primary);
+ }
+
+ .nav-links a.active {
+ color: var(--accent-primary);
+ }
+
+ /* Hero Section */
+ .hero {
+ position: relative;
+ padding: 180px 2rem 100px;
+ text-align: center;
+ background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 6vw, 4rem);
+ font-weight: 700;
+ margin-bottom: 1.5rem;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .hero p {
+ color: var(--text-secondary);
+ font-size: 1.3rem;
+ max-width: 700px;
+ margin: 0 auto 3rem;
+ line-height: 1.6;
+ }
+
+ .hero-emoji {
+ font-size: 4rem;
+ margin-bottom: 1rem;
+ animation: bounce 2s ease-in-out infinite;
+ }
+
+ @keyframes bounce {
+ 0%, 100% { transform: translateY(0); }
+ 50% { transform: translateY(-20px); }
+ }
+
+ /* Section Styles */
+ .section {
+ padding: 6rem 2rem;
+ max-width: 1400px;
+ margin: 0 auto;
+ }
+
+ .section-header {
+ text-align: center;
+ margin-bottom: 4rem;
+ }
+
+ .section-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ font-weight: 700;
+ margin-bottom: 1rem;
+ color: var(--text-primary);
+ }
+
+ .section-header p {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ max-width: 600px;
+ margin: 0 auto;
+ }
+
+ /* Feature Cards */
+ .features-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 2rem;
+ margin-bottom: 4rem;
+ }
+
+ .feature-card {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 20px;
+ padding: 2rem;
+ backdrop-filter: blur(10px);
+ transition: all 0.4s ease;
+ }
+
+ .feature-card:hover {
+ transform: translateY(-8px);
+ border-color: rgba(102, 126, 234, 0.3);
+ box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+ }
+
+ .feature-icon {
+ font-size: 3rem;
+ margin-bottom: 1.5rem;
+ }
+
+ .feature-card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 600;
+ margin-bottom: 1rem;
+ color: var(--text-primary);
+ }
+
+ .feature-card p {
+ color: var(--text-secondary);
+ line-height: 1.6;
+ }
+
+ /* Reviews Grid */
+ .reviews-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+ gap: 2rem;
+ }
+
+ .review-card {
+ background: var(--glass-bg);
+ border: 1px solid var(--glass-border);
+ border-radius: 16px;
+ overflow: hidden;
+ transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+ cursor: pointer;
+ position: relative;
+ }
+
+ .review-card:hover {
+ transform: translateY(-8px);
+ border-color: rgba(102, 126, 234, 0.3);
+ box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+ }
+
+ .review-card-image {
+ width: 100%;
+ height: 200px;
+ object-fit: cover;
+ }
+
+ .review-card-content {
+ padding: 1.5rem;
+ }
+
+ .review-card-badges {
+ display: flex;
+ gap: 0.5rem;
+ margin-bottom: 1rem;
+ flex-wrap: wrap;
+ }
+
+ .badge {
+ padding: 0.25rem 0.75rem;
+ border-radius: 20px;
+ font-size: 0.75rem;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ }
+
+ .badge-new {
+ background: var(--gradient-primary);
+ color: #f5f5f5;
+ }
+
+ .badge-days-left {
+ background: rgba(255, 215, 0, 0.15);
+ border: 1px solid rgba(255, 215, 0, 0.3);
+ color: #ffd700;
+ }
+
+ .review-card-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 600;
+ margin-bottom: 0.5rem;
+ color: var(--text-primary);
+ }
+
+ .review-card-meta {
+ display: flex;
+ gap: 1rem;
+ color: var(--text-secondary);
+ font-size: 0.85rem;
+ margin-bottom: 1rem;
+ }
+
+ .review-card-excerpt {
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ line-height: 1.6;
+ margin-bottom: 1rem;
+ display: -webkit-box;
+ -webkit-line-clamp: 3;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ }
+
+ .review-card-reviewer {
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+ padding-top: 1rem;
+ border-top: 1px solid var(--glass-border);
+ }
+
+ .review-card-reviewer img {
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ object-fit: cover;
+ }
+
+ .review-card-reviewer-info {
+ flex: 1;
+ }
+
+ .review-card-reviewer-name {
+ font-weight: 600;
+ color: var(--text-primary);
+ font-size: 0.9rem;
+ }
+
+ .review-card-reviewer-role {
+ color: var(--text-secondary);
+ font-size: 0.8rem;
+ }
+
+ /* CTA Section */
+ .cta-section {
+ background: var(--bg-secondary);
+ padding: 6rem 2rem;
+ text-align: center;
+ margin-top: 4rem;
+ }
+
+ .cta-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ font-weight: 700;
+ margin-bottom: 1.5rem;
+ color: var(--text-primary);
+ }
+
+ .cta-section p {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ max-width: 600px;
+ margin: 0 auto 2rem;
+ }
+
+ .cta-button {
+ display: inline-block;
+ padding: 1rem 2.5rem;
+ background: var(--gradient-primary);
+ color: white;
+ text-decoration: none;
+ border-radius: 50px;
+ font-weight: 600;
+ transition: all 0.3s ease;
+ box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+ }
+
+ .cta-button:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+ }
+
+ /* Footer */
+ footer {
+ background: rgba(5, 5, 8, 0.95);
+ border-top: 1px solid var(--glass-border);
+ padding: 3rem 2rem;
+ }
+
+ .footer-content {
+ max-width: 1400px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-bottom: 2rem;
+ }
+
+ .footer-links a {
+ color: var(--text-secondary);
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+
+ .footer-links a:hover {
+ color: var(--accent-primary);
+ }
+
+ .footer-copyright {
+ color: #606070;
+ font-size: 0.85rem;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+
+ .hero {
+ padding: 140px 2rem 80px;
+ }
+
+ .features-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .reviews-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+
+ /* Achievement Popup */
+ .achievement-popup {
+ position: fixed;
+ bottom: 2rem;
+ right: 2rem;
+ background: rgba(255, 255, 255, 0.05);
+ backdrop-filter: blur(20px);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ border-radius: 12px;
+ padding: 1.5rem;
+ z-index: 1000;
+ transform: translateX(400px);
+ transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+ max-width: 350px;
+ }
+
+ .achievement-popup.show {
+ transform: translateX(0);
+ }
+
+ .achievement-popup h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.2rem;
+ margin-bottom: 0.5rem;
+ color: #ffd700;
+ }
+
+ .achievement-popup p {
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ 
+ <div class="particles" id="particles"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="whats-on.html">What's On</a>
+                <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html" class="active">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <div class="hero">
+ <div class="hero-emoji"></div>
+ <h1>Junior, Kids & Schools</h1>
+ <p>Discover magical theatre experiences designed for young audiences, school groups, and families across Melbourne</p>
+ </div>
+
+ <div class="section">
+ <div class="section-header">
+ <h2>Why Choose Kids' Theatre?</h2>
+ <p>Theatre sparks imagination, builds confidence, and creates lasting memories for children of all ages</p>
+ </div>
+
+ <div class="features-grid">
+ <div class="feature-card">
+ <div class="feature-icon"></div>
+ <h3>Sparks Creativity</h3>
+ <p>Theatre encourages children to think creatively and express themselves in new and exciting ways.</p>
+ </div>
+
+ <div class="feature-card">
+ <div class="feature-icon"></div>
+ <h3>Builds Confidence</h3>
+ <p>Participating in or watching theatre helps children develop self-confidence and public speaking skills.</p>
+ </div>
+
+ <div class="feature-card">
+ <div class="feature-icon"></div>
+ <h3>Educational Value</h3>
+ <p>Many shows are based on literature, history, or important social themes, making learning fun.</p>
+ </div>
+
+ <div class="feature-card">
+ <div class="feature-icon"></div>
+ <h3>Family Bonding</h3>
+ <p>Shared theatre experiences create wonderful family memories and spark conversations.</p>
+ </div>
+
+ <div class="feature-card">
+ <div class="feature-icon"></div>
+ <h3>Inspires Dreams</h3>
+ <p>Seeing young performers on stage inspires children to pursue their own artistic dreams.</p>
+ </div>
+
+ <div class="feature-card">
+ <div class="feature-icon"></div>
+ <h3>Accessible & Fun</h3>
+ <p>Kids' theatre is designed to be engaging, interactive, and age-appropriate for young audiences.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="section">
+ <div class="section-header">
+ <h2>Featured Kids' Reviews</h2>
+ <p>Curated reviews from our Junior Editor, Penelope Quinn (age 7)</p>
+ </div>
+
+ <div class="reviews-grid" id="kidsReviewsGrid">
+ <!-- Reviews will be dynamically loaded here -->
+ </div>
+ </div>
+
+ <div class="cta-section">
+ <h2>Have a Kids' Show to Share?</h2>
+ <p>Submit your school production, kids' theatre show, or family-friendly performance for review</p>
+ <a href="submit-show.html" class="cta-button">Submit Your Show</a>
+ </div>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+
+ <div class="achievement-popup" id="achievementPopup">
+ <h3 id="achievementTitle">Achievement Unlocked!</h3>
+ <p id="achievementText">You've discovered something special</p>
+ </div>
+
+ <script>
+ // Kids' Reviews Data
+ const kidsReviews = [
+ {
+ id: 'review-penelope-josephine-wants-to-dance',
+ title: 'Josephine Wants To Dance',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'The Ian Potter Centre',
+ company: 'Monkey Baa',
+ publishedDate: '2025-05-15',
+ showEndDate: '2025-05-25',
+ category: 'Family',
+ excerpt: 'A delightful story about following your dreams that will inspire children and adults alike.',
+ image: 'REVIEWERS/Penelope/josephine-1.jpg'
+ },
+ {
+ id: 'review-penelope-into-the-woods-jr',
+ title: 'Into The Woods Jr.',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Doncaster Playhouse',
+ company: 'Wendy Samantha Productions',
+ publishedDate: '2025-07-20',
+ showEndDate: '2025-07-28',
+ category: 'Family',
+ excerpt: 'Stephen Sondheim\'s magical musical comes to life in this enchanting junior production.',
+ image: 'REVIEWERS/Penelope/woods-jr-1.jpg'
+ },
+ {
+ id: 'review-penelope-into-the-woods-jnr',
+ title: 'Into The Woods Jnr',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Eltham Little Theatre',
+ company: 'Wendy Samantha Productions',
+ publishedDate: '2025-07-22',
+ showEndDate: '2025-07-30',
+ category: 'Family',
+ excerpt: 'Another wonderful production of this beloved musical with a talented young cast.',
+ image: 'REVIEWERS/Penelope/woods-jnr-1.jpg'
+ },
+ {
+ id: 'review-penelope-the-little-mermaid-junior',
+ title: 'The Little Mermaid Junior',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Rowville Performing Arts Centre',
+ company: 'Windmill Theatre Company Inc.',
+ publishedDate: '2025-04-20',
+ showEndDate: '2025-04-28',
+ category: 'Family',
+ excerpt: 'Disney\'s underwater adventure comes to life in this magical junior production.',
+ image: 'REVIEWERS/Penelope/mermaid-1.jpg'
+ },
+ {
+ id: 'review-penelope-robin-hood',
+ title: 'Robin Hood',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Central Park Malvern',
+ company: 'Melbourne Shakespeare Company',
+ publishedDate: '2025-03-25',
+ showEndDate: '2025-04-05',
+ category: 'Family',
+ excerpt: 'A swashbuckling adventure that brings the legendary hero to life for young audiences.',
+ image: 'REVIEWERS/Penelope/robin-hood-1.jpg'
+ },
+ {
+ id: 'review-penelope-the-wind-in-the-willows',
+ title: 'The Wind in the Willows',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Royal Botanic Gardens Melbourne',
+ company: 'Australian Shakespeare Company',
+ publishedDate: '2025-01-15',
+ showEndDate: '2025-01-28',
+ category: 'Family',
+ excerpt: 'A charming outdoor production that brings the classic story to life in a beautiful setting.',
+ image: 'REVIEWERS/Penelope/willows-1.jpg'
+ },
+ {
+ id: 'review-penelope-imagine-live',
+ title: 'Imagine LIVE',
+ reviewer: 'Penelope Quinn',
+ reviewerRole: 'Junior Reviews Editor',
+ reviewerImage: 'generated_images/penelope-profile.png',
+ venue: 'Geelong Arts Centre',
+ company: 'Jolyon James NCM',
+ publishedDate: '2025-06-20',
+ showEndDate: '2025-06-28',
+ category: 'Family',
+ excerpt: 'An imaginative and interactive experience that sparks creativity in young minds.',
+ image: 'REVIEWERS/Penelope/imagine-1.jpg'
+ }
+ ];
+
+ // Calculate badges
+ function calculateBadges(review) {
+ const today = new Date();
+ const publishedDate = new Date(review.publishedDate);
+ const showEndDate = new Date(review.showEndDate);
+ 
+ const daysSincePublished = Math.floor((today - publishedDate) / (1000 * 60 * 60 * 24));
+ const daysUntilShowEnds = Math.floor((showEndDate - today) / (1000 * 60 * 60 * 24));
+ 
+ const badges = [];
+ 
+ if (daysSincePublished <= 7) {
+ badges.push({
+ type: 'new',
+ text: 'NEW'
+ });
+ }
+ 
+ if (daysUntilShowEnds >= 0) {
+ badges.push({
+ type: 'days-left',
+ text: `${daysUntilShowEnds} days left`
+ });
+ }
+ 
+ return badges;
+ }
+
+ // Render kids' reviews
+ function renderKidsReviews() {
+ const grid = document.getElementById('kidsReviewsGrid');
+ 
+ kidsReviews.forEach(review => {
+ const badges = calculateBadges(review);
+ const badgesHTML = badges.map(badge => 
+ `<span class="badge badge-${badge.type}">${badge.text}</span>`
+ ).join('');
+ 
+ const card = document.createElement('div');
+ card.className = 'review-card';
+ card.innerHTML = `
+ <img src="${review.image}" alt="${review.title}" class="review-card-image">
+ <div class="review-card-content">
+ <div class="review-card-badges">
+ ${badgesHTML}
+ </div>
+ <h3 class="review-card-title">${review.title}</h3>
+ <div class="review-card-meta">
+ <span> ${review.venue}</span>
+ <span> ${review.category}</span>
+ </div>
+ <p class="review-card-excerpt">${review.excerpt}</p>
+ <div class="review-card-reviewer">
+ <img src="${review.reviewerImage}" alt="${review.reviewer}">
+ <div class="review-card-reviewer-info">
+ <div class="review-card-reviewer-name">${review.reviewer}</div>
+ <div class="review-card-reviewer-role">${review.reviewerRole}</div>
+ </div>
+ </div>
+ </div>
+ `;
+ 
+ card.addEventListener('click', () => {
+ window.location.href = `reviews/${review.id}.html`;
+ });
+ 
+ grid.appendChild(card);
+ });
+ }
+
+ // Progress bar
+ window.addEventListener('scroll', () => {
+ const scrollTop = window.scrollY;
+ const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+ const scrollPercent = (scrollTop / docHeight) * 100;
+ document.getElementById('progressBar').style.width = scrollPercent + '%';
+ });
+
+ // Floating particles
+ function createParticles() {
+ const container = document.getElementById('particles');
+ for (let i = 0; i < 50; i++) {
+ const particle = document.createElement('div');
+ particle.className = 'particle';
+ particle.style.left = Math.random() * 100 + '%';
+ particle.style.animationDelay = Math.random() * 15 + 's';
+ particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+ container.appendChild(particle);
+ }
+ }
+
+ // Achievement system
+ let achievementsUnlocked = {
+ 'Getting Into It': false,
+ 'Dedicated Reader': false,
+ 'True Theatre Lover': false,
+ 'Renaissance Champion': false
+ };
+
+ function showAchievement(title, text) {
+ if (achievementsUnlocked[title]) return;
+ 
+ achievementsUnlocked[title] = true;
+ const popup = document.getElementById('achievementPopup');
+ document.getElementById('achievementTitle').textContent = title;
+ document.getElementById('achievementText').textContent = text;
+ popup.classList.add('show');
+ 
+ setTimeout(() => {
+ popup.classList.remove('show');
+ }, 3000);
+ }
+
+ window.addEventListener('scroll', () => {
+ const scrollTop = window.scrollY;
+ const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+ const scrollPercent = (scrollTop / docHeight) * 100;
+ 
+ if (scrollPercent >= 25 && !achievementsUnlocked['Getting Into It']) {
+ showAchievement('Getting Into It', 'You\'ve started exploring kids\' theatre!');
+ }
+ if (scrollPercent >= 50 && !achievementsUnlocked['Dedicated Reader']) {
+ showAchievement('Dedicated Reader', 'Halfway through our kids\' reviews!');
+ }
+ if (scrollPercent >= 75 && !achievementsUnlocked['True Theatre Lover']) {
+ showAchievement('True Theatre Lover', 'You\'re truly dedicated to young audiences!');
+ }
+ if (scrollPercent >= 90 && !achievementsUnlocked['Renaissance Champion']) {
+ showAchievement('Renaissance Champion', 'You\'ve explored it all! ');
+ }
+ });
+
+ // Initialize
+ createParticles();
+ renderKidsReviews();
+ </script>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

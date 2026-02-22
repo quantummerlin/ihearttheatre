@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Penelope Quinn - iHeartTheatre | Melbourne Theatre Reviews</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ :root {
+ --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+ --color-gold: #ffd700;
+ --color-white: #ffffff;
+ --color-dark: #f5f5f5;
+ --color-gray-100: #050508;
+ --color-gray-200: #12121a;
+ --color-gray-300: #1a1a25;
+ --color-gray-600: #a0a0b0;
+ --color-gray-800: #d0d0d8;
+ --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+ --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+ --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
+ --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.5);
+ --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+ }
+
+ body {
+ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+ background: var(--color-gray-100);
+ color: var(--color-dark);
+ line-height: 1.6;
+ }
+
+ /* Navigation */
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.9);
+ backdrop-filter: blur(10px);
+ box-shadow: var(--shadow-sm);
+ z-index: 1000;
+ padding: 1rem 2rem;
+ }
+
+ .nav-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ font-weight: 700;
+ background: var(--gradient-primary);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+
+ .nav-links a {
+ text-decoration: none;
+ color: var(--color-gray-800);
+ font-weight: 500;
+ transition: var(--transition);
+ }
+
+ .nav-links a:hover {
+ color: #667eea;
+ }
+
+ /* Profile Header */
+ .profile-header {
+ background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+ color: #f5f5f5;
+ padding: 8rem 2rem 4rem;
+ text-align: center;
+ }
+
+ .profile-avatar {
+ width: 150px;
+ height: 150px;
+ background: white;
+ border-radius: 50%;
+ margin: 0 auto 1.5rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 4rem;
+ box-shadow: var(--shadow-xl);
+ }
+
+ .profile-name {
+ font-family: 'Playfair Display', serif;
+ font-size: 3rem;
+ margin-bottom: 0.5rem;
+ }
+
+ .profile-title {
+ font-size: 1.3rem;
+ opacity: 0.95;
+ margin-bottom: 1.5rem;
+ }
+
+ .profile-stats {
+ display: flex;
+ justify-content: center;
+ gap: 3rem;
+ max-width: 600px;
+ margin: 0 auto;
+ }
+
+ .stat {
+ text-align: center;
+ }
+
+ .stat-value {
+ font-size: 2.5rem;
+ font-weight: 700;
+ }
+
+ .stat-label {
+ font-size: 1rem;
+ opacity: 0.85;
+ }
+
+ /* Main Content */
+ main {
+ max-width: 900px;
+ margin: -3rem auto 4rem;
+ padding: 0 2rem;
+ position: relative;
+ z-index: 10;
+ }
+
+ /* Bio Section */
+ .bio-section {
+ background: white;
+ border-radius: 20px;
+ padding: 3rem;
+ box-shadow: var(--shadow-lg);
+ margin-bottom: 2rem;
+ }
+
+ .bio-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ margin-bottom: 1rem;
+ background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .bio-section p {
+ color: var(--color-gray-800);
+ line-height: 1.9;
+ font-size: 1.05rem;
+ }
+
+ /* Specialties */
+ .specialties-section {
+ background: white;
+ border-radius: 20px;
+ padding: 3rem;
+ box-shadow: var(--shadow-lg);
+ margin-bottom: 2rem;
+ }
+
+ .specialties-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 1rem;
+ margin-top: 1.5rem;
+ }
+
+ .specialty-card {
+ background: var(--color-gray-100);
+ padding: 1.5rem;
+ border-radius: 15px;
+ text-align: center;
+ transition: var(--transition);
+ }
+
+ .specialty-card:hover {
+ transform: translateY(-5px);
+ background: var(--color-gray-200);
+ }
+
+ .specialty-icon {
+ font-size: 2rem;
+ margin-bottom: 0.5rem;
+ }
+
+ .specialty-name {
+ font-weight: 600;
+ color: var(--color-gray-800);
+ }
+
+ /* Reviews Section */
+ .reviews-section {
+ background: white;
+ border-radius: 20px;
+ padding: 3rem;
+ box-shadow: var(--shadow-lg);
+ }
+
+ .reviews-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ margin-bottom: 2rem;
+ background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ }
+
+ .review-card {
+ background: var(--color-gray-100);
+ border-radius: 15px;
+ padding: 2rem;
+ margin-bottom: 1.5rem;
+ transition: var(--transition);
+ cursor: pointer;
+ }
+
+ .review-card:hover {
+ transform: translateX(10px);
+ background: var(--color-gray-200);
+ box-shadow: var(--shadow-md);
+ }
+
+ .review-header {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ margin-bottom: 1rem;
+ }
+
+ .review-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.4rem;
+ color: var(--color-gray-800);
+ margin-bottom: 0.5rem;
+ }
+
+ .review-venue {
+ color: var(--color-gray-600);
+ font-size: 0.95rem;
+ }
+
+ .review-rating {
+ background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+ color: #f5f5f5;
+ padding: 0.5rem 1rem;
+ border-radius: 20px;
+ font-weight: 700;
+ font-size: 1.1rem;
+ }
+
+ .review-date {
+ color: var(--color-gray-600);
+ font-size: 0.9rem;
+ margin-bottom: 1rem;
+ }
+
+ .review-excerpt {
+ color: var(--color-gray-800);
+ line-height: 1.7;
+ font-size: 1rem;
+ }
+
+ .read-more {
+ color: #f5576c;
+ font-weight: 600;
+ margin-top: 1rem;
+ display: inline-block;
+ }
+
+ /* Footer */
+ footer {
+ background: var(--color-dark);
+ color: #f5f5f5;
+ padding: 3rem 2rem;
+ margin-top: 4rem;
+ }
+
+ .footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 2rem;
+ margin-bottom: 1.5rem;
+ flex-wrap: wrap;
+ }
+
+ .footer-links a {
+ color: rgba(255, 255, 255, 0.8);
+ text-decoration: none;
+ }
+
+ .footer-copy {
+ color: rgba(255, 255, 255, 0.6);
+ font-size: 0.9rem;
+ }
+
+ /* Responsive */
+ @media (max-width: 768px) {
+ .profile-header {
+ padding: 6rem 1.5rem 3rem;
+ }
+
+ .profile-name {
+ font-size: 2rem;
+ }
+
+ .profile-stats {
+ flex-direction: column;
+ gap: 1.5rem;
+ }
+
+ .bio-section,
+ .specialties-section,
+ .reviews-section {
+ padding: 2rem 1.5rem;
+ }
+
+ .nav-links {
+ display: none;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="whats-on.html">What's On</a>
+                <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html" class="active">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <section class="profile-header">
+ <div class="profile-avatar"></div>
+ <h1 class="profile-name">Penelope Quinn</h1>
+ <p class="profile-title">Junior Reviews Editor • Melbourne's Youngest Theatre Critic</p>
+ <div class="profile-stats">
+ <div class="stat">
+ <div class="stat-value">7</div>
+ <div class="stat-label">Reviews Published</div>
+ </div>
+ <div class="stat">
+ <div class="stat-value">7</div>
+ <div class="stat-label">Years Old</div>
+ </div>
+ <div class="stat">
+ <div class="stat-value">4.7</div>
+ <div class="stat-label">Average Rating</div>
+ </div>
+ </div>
+ </section>
+
+ <main>
+ <section class="bio-section">
+ <h2>Meet Penelope</h2>
+ <p>
+ Penelope Quinn is Melbourne's youngest performance champion at just 7 years old! With a genuine love for theatre and an honest kid's perspective, Penelope celebrates the wonder of family theatre, capturing the magic that makes kids fall in love with live performance.
+ </p>
+ <br>
+ <p>
+ Her reviews focus on family-friendly and junior theatre productions, helping families discover shows that kids will truly love. Whether it's a school production, a junior musical, or a major family show, Penelope tells it like it is—from a kid's point of view!
+ </p>
+ <br>
+ <p>
+ Parents love her reviews because they help them make informed decisions about what shows are appropriate and enjoyable for children. Her enthusiasm is contagious, and her insights are refreshingly honest and age-appropriate.
+ </p>
+ </section>
+
+ <section class="specialties-section">
+ <h2>Review Specialties</h2>
+ <div class="specialties-grid">
+ <div class="specialty-card">
+ <div class="specialty-icon"></div>
+ <div class="specialty-name">Family Shows</div>
+ </div>
+ <div class="specialty-card">
+ <div class="specialty-icon"></div>
+ <div class="specialty-name">Junior Musicals</div>
+ </div>
+ <div class="specialty-card">
+ <div class="specialty-icon"></div>
+ <div class="specialty-name">School Productions</div>
+ </div>
+ <div class="specialty-card">
+ <div class="specialty-icon"></div>
+ <div class="specialty-name">Kids' Perspective</div>
+ </div>
+ <div class="specialty-card">
+ <div class="specialty-icon"></div>
+ <div class="specialty-name">Age-Appropriate</div>
+ </div>
+ <div class="specialty-card">
+ <div class="specialty-icon"></div>
+ <div class="specialty-name">Pantomimes</div>
+ </div>
+ </div>
+ </section>
+
+ <section class="reviews-section">
+ <h2>All Reviews by Penelope</h2>
+ 
+ <div class="review-card">
+ <div class="review-header">
+ <div>
+ <h3 class="review-title">Josephine Wants To Dance</h3>
+ <p class="review-venue">Arts Centre Melbourne</p>
+ </div>
+ <span class="review-rating">5/5</span>
+ </div>
+ <p class="review-date">July 2025</p>
+ <p class="review-excerpt">
+ This was the BEST show ever! I loved Josephine the kangaroo and all her dancing. The music was so fun and I couldn't stop dancing in my seat. Perfect for kids of all ages!...
+ </p>
+ <span class="read-more">Read Full Review →</span>
+ </div>
+
+ <div class="review-card">
+ <div class="review-header">
+ <div>
+ <h3 class="review-title">The Little Mermaid Junior</h3>
+ <p class="review-venue">Gasworks Arts Park</p>
+ </div>
+ <span class="review-rating">4.5/5</span>
+ </div>
+ <p class="review-date">July 2025</p>
+ <p class="review-excerpt">
+ The costumes were amazing and all the sea creatures looked so real! Ariel had a beautiful voice. My favorite part was when the crab sang. I want to be Ariel when I grow up!...
+ </p>
+ <span class="read-more">Read Full Review →</span>
+ </div>
+
+ <div class="review-card">
+ <div class="review-header">
+ <div>
+ <h3 class="review-title">Into The Woods Jr.</h3>
+ <p class="review-venue">Melbourne Theatre Company</p>
+ </div>
+ <span class="review-rating">5/5</span>
+ </div>
+ <p class="review-date">September 2024</p>
+ <p class="review-excerpt">
+ All my favorite fairy tales in one show! Little Red Riding Hood was so funny and the wolf was scary but not too scary. The songs were catchy and I sang them all the way home!...
+ </p>
+ <span class="read-more">Read Full Review →</span>
+ </div>
+
+ <div class="review-card">
+ <div class="review-header">
+ <div>
+ <h3 class="review-title">Robin Hood</h3>
+ <p class="review-venue">Regent Theatre</p>
+ </div>
+ <span class="review-rating">4.5/5</span>
+ </div>
+ <p class="review-date">July 2024</p>
+ <p class="review-excerpt">
+ Robin Hood is my favorite hero! The archery contest was exciting and the Friar Tuck was hilarious. I really liked how they made it funny but still had the adventure parts!...
+ </p>
+ <span class="read-more">Read Full Review →</span>
+ </div>
+
+ <div class="review-card">
+ <div class="review-header">
+ <div>
+ <h3 class="review-title">The Wind in the Willows</h3>
+ <p class="review-venue">Comedy Theatre</p>
+ </div>
+ <span class="review-rating">5/5</span>
+ </div>
+ <p class="review-date">May 2024</p>
+ <p class="review-excerpt">
+ Toad was the funniest character! I laughed so much. The river scenes were beautiful and I loved Mole and Ratty's friendship. This is a great show for the whole family!...
+ </p>
+ <span class="read-more">Read Full Review →</span>
+ </div>
+ </section>
+ </main>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

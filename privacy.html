@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Privacy Policy | iHeartTheatre.com</title>
+ <meta name="description" content="Privacy Policy for iHeartTheatre.com - How we collect, use, and protect your information when you use our theatre review platform.">
+ <meta name="keywords" content="privacy policy, data protection, personal information, iHeartTheatre">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: linear-gradient(135deg, #050508 0%, #0a0a0f 100%);
+ color: #f5f5f5;
+ line-height: 1.8;
+ min-height: 100vh;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 4px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.3s ease;
+ }
+
+ .container {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 100px 20px 60px;
+ }
+
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+ z-index: 100;
+ padding: 15px 0;
+ }
+
+ .nav-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .nav-logo {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 700;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ text-decoration: none;
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+
+ .nav-links a {
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 0.9rem;
+ transition: color 0.3s;
+ }
+
+ .nav-links a:hover {
+ color: #f5f5f5;
+ }
+
+ .hero {
+ text-align: center;
+ padding: 40px 0;
+ margin-bottom: 40px;
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 4vw, 3rem);
+ margin-bottom: 15px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+
+ .hero p {
+ color: #a0a0b0;
+ font-size: 1.1rem;
+ }
+
+ .section {
+ margin-bottom: 50px;
+ }
+
+ .section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ margin-bottom: 20px;
+ color: #f5f5f5;
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ }
+
+ .section h2::before {
+ content: '';
+ width: 4px;
+ height: 35px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ border-radius: 2px;
+ }
+
+ .section h3 {
+ font-size: 1.3rem;
+ margin-bottom: 15px;
+ color: #d0d0d0;
+ margin-top: 30px;
+ }
+
+ .section p {
+ color: #a0a0b0;
+ margin-bottom: 15px;
+ }
+
+ .section ul {
+ color: #a0a0b0;
+ margin-bottom: 15px;
+ padding-left: 25px;
+ }
+
+ .section ul li {
+ margin-bottom: 10px;
+ }
+
+ .highlight {
+ color: #ffd700;
+ font-weight: 600;
+ }
+
+ .emphasis {
+ font-style: italic;
+ color: #d0d0d0;
+ }
+
+ .info-box {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ border-radius: 15px;
+ padding: 25px;
+ margin: 25px 0;
+ backdrop-filter: blur(10px);
+ }
+
+ .info-box h3 {
+ color: #667eea;
+ margin-top: 0;
+ }
+
+ .contact-info {
+ background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ border-radius: 15px;
+ padding: 30px;
+ margin-top: 40px;
+ text-align: center;
+ }
+
+ .contact-info h3 {
+ color: #ffd700;
+ margin-bottom: 15px;
+ }
+
+ .contact-info p {
+ color: #d0d0d0;
+ font-size: 1.1rem;
+ }
+
+ .contact-info a {
+ color: #667eea;
+ text-decoration: none;
+ font-weight: 600;
+ }
+
+ .contact-info a:hover {
+ text-decoration: underline;
+ }
+
+ footer {
+ background: rgba(5, 5, 8, 0.95);
+ padding: 40px 20px;
+ margin-top: 80px;
+ border-top: 1px solid rgba(255, 255, 255, 0.08);
+ }
+
+ .footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ color: #a0a0b0;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ margin-top: 20px;
+ flex-wrap: wrap;
+ }
+
+ .footer-links a {
+ color: #a0a0b0;
+ text-decoration: none;
+ transition: color 0.3s;
+ }
+
+ .footer-links a:hover {
+ color: #667eea;
+ }
+
+ .last-updated {
+ text-align: center;
+ color: #666;
+ font-size: 0.9rem;
+ margin-top: 60px;
+ padding: 20px;
+ background: rgba(255, 255, 255, 0.02);
+ border-radius: 10px;
+ }
+
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="whats-on.html">What's On</a>
+                <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <div class="container">
+ <section class="hero">
+ <h1>Privacy Policy</h1>
+ <p>Your privacy matters to us. Here's how we protect your information.</p>
+ </section>
+
+ <section class="section">
+ <h2>Introduction</h2>
+ <p>At <strong>iHeartTheatre.com</strong>, we respect your privacy and are committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.</p>
+ <p class="emphasis">By using iHeartTheatre.com, you agree to the terms of this Privacy Policy. If you do not agree with these terms, please do not use our website.</p>
+ </section>
+
+ <section class="section">
+ <h2>Information We Collect</h2>
+ 
+ <h3>Information You Provide</h3>
+ <p>We may collect information you voluntarily provide to us, including:</p>
+ <ul>
+ <li><strong>Review Submissions:</strong> Name, email address, review content, and show details when submitting a review</li>
+ <li><strong>Show Submissions:</strong> Company name, contact information, show details, and promotional materials when submitting a show</li>
+ <li><strong>Newsletter Signups:</strong> Email address for newsletter subscriptions</li>
+ <li><strong>Contact Inquiries:</strong> Name, email address, and message when contacting us</li>
+ <li><strong>Photos and Images:</strong> Production photos when submitting reviews or shows</li>
+ </ul>
+
+ <h3>Automatically Collected Information</h3>
+ <p>We may automatically collect certain technical information, including:</p>
+ <ul>
+ <li><strong>Browser Information:</strong> Browser type, version, and operating system</li>
+ <li><strong>Device Information:</strong> Device type and screen resolution</li>
+ <li><strong>Usage Data:</strong> Pages visited, time spent on pages, and click patterns</li>
+ <li><strong>IP Address:</strong> Your IP address (anonymized where possible)</li>
+ </ul>
+
+ <h3>Cookies and Similar Technologies</h3>
+ <p>We use cookies and similar technologies to:</p>
+ <ul>
+ <li>Remember your preferences and settings</li>
+ <li>Improve website performance and functionality</li>
+ <li>Analyze website usage patterns</li>
+ <li>Provide personalized content</li>
+ </ul>
+ <p>You can control cookie settings through your browser preferences.</p>
+ </section>
+
+ <section class="section">
+ <h2>How We Use Your Information</h2>
+ <p>We use the information we collect to:</p>
+ <ul>
+ <li><strong>Provide Services:</strong> Process and publish reviews, show listings, and submissions</li>
+ <li><strong>Communicate with You:</strong> Respond to inquiries, send newsletters, and provide updates</li>
+ <li><strong>Improve Our Platform:</strong> Enhance user experience, develop new features, and fix issues</li>
+ <li><strong>Analyze Usage:</strong> Understand how visitors use our website to improve content and functionality</li>
+ <li><strong>Ensure Security:</strong> Prevent fraud and protect against unauthorized access</li>
+ <li><strong>Comply with Legal Obligations:</strong> Meet applicable laws and regulations</li>
+ </ul>
+ </section>
+
+ <section class="section">
+ <h2>Information Sharing and Disclosure</h2>
+ <p>We <span class="highlight">do not sell</span> your personal information. We may share your information only in the following circumstances:</p>
+ <ul>
+ <li><strong>Public Content:</strong> Reviews and show submissions may be published publicly on our website with the information you provide (name, show details, review content, etc.)</li>
+ <li><strong>Service Providers:</strong> With trusted third-party service providers who assist in operating our website (e.g., hosting, analytics, email services) under strict confidentiality agreements</li>
+ <li><strong>Legal Requirements:</strong> When required by law, court order, or government request</li>
+ <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets (with notice)</li>
+ <li><strong>With Your Consent:</strong> When you have given us explicit consent to share your information</li>
+ </ul>
+ </section>
+
+ <section class="section">
+ <h2>Data Security</h2>
+ <p>We implement reasonable security measures to protect your information from unauthorized access, use, or disclosure. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+ 
+ <div class="info-box">
+ <h3> Security Measures We Use</h3>
+ <ul>
+ <li>Secure HTTPS encryption for all data transmission</li>
+ <li>Secure storage of user data</li>
+ <li>Regular security audits and updates</li>
+ <li>Access controls and authentication procedures</li>
+ <li>Monitoring for security breaches</li>
+ </ul>
+ </div>
+ </section>
+
+ <section class="section">
+ <h2>Data Retention</h2>
+ <p>We retain your personal information only as long as necessary for the purposes outlined in this Privacy Policy, unless a longer retention period is required or permitted by law.</p>
+ <ul>
+ <li><strong>Reviews:</strong> Published reviews are retained indefinitely unless requested for removal</li>
+ <li><strong>Contact Information:</strong> Contact details are retained for communication purposes</li>
+ <li><strong>Newsletter Subscribers:</strong> Email addresses are retained until you unsubscribe</li>
+ <li><strong>Website Analytics:</strong> Usage data is retained for analysis and improvement purposes</li>
+ </ul>
+ </section>
+
+ <section class="section">
+ <h2>Your Rights and Choices</h2>
+ <p>Depending on your location, you may have certain rights regarding your personal information:</p>
+ <ul>
+ <li><strong>Access:</strong> Request a copy of the personal information we hold about you</li>
+ <li><strong>Correction:</strong> Request correction of inaccurate or incomplete information</li>
+ <li><strong>Deletion:</strong> Request deletion of your personal information (subject to legal requirements)</li>
+ <li><strong>Portability:</strong> Request transfer of your information to another service</li>
+ <li><strong>Objection:</strong> Object to certain uses of your information</li>
+ <li><strong>Withdraw Consent:</strong> Withdraw consent for processing where consent is the legal basis</li>
+ </ul>
+ <p>To exercise these rights, please contact us using the information below.</p>
+ </section>
+
+ <section class="section">
+ <h2>Children's Privacy</h2>
+ <p>Our website includes content and features specifically designed for children and young people, such as Penelope's Junior Reviews. We are particularly careful when handling information from children under 13 years of age.</p>
+ 
+ <div class="info-box">
+ <h3> Our Commitment to Young Users</h3>
+ <ul>
+ <li>We do <strong>not knowingly</strong> collect personal information from children under 13 without parental consent</li>
+ <li>Young reviewers' submissions are reviewed and supervised by parents/guardians</li>
+ <li>Personal information about minors is limited and protected</li>
+ <li>Parents can request access, correction, or deletion of their child's information</li>
+ </ul>
+ </div>
+ </section>
+
+ <section class="section">
+ <h2>Third-Party Links</h2>
+ <p>Our website may contain links to third-party websites, including theatre venues, ticketing platforms, and other resources. We are not responsible for the privacy practices of these third-party sites. We encourage you to review the privacy policies of any third-party websites you visit.</p>
+ </section>
+
+ <section class="section">
+ <h2>Changes to This Privacy Policy</h2>
+ <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by:</p>
+ <ul>
+ <li>Posting the new Privacy Policy on this page</li>
+ <li>Updating the "Last Updated" date</li>
+ <li>Sending an email notification to registered users (for significant changes)</li>
+ </ul>
+ <p class="emphasis">Your continued use of our website after changes constitutes acceptance of the updated Privacy Policy.</p>
+ </section>
+
+ <section class="section">
+ <h2>Contact Us</h2>
+ <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us:</p>
+ 
+ <div class="contact-info">
+ <h3> Get in Touch</h3>
+ <p><strong>Email:</strong> <a href="mailto:hello@ihearttheatre.com">hello@ihearttheatre.com</a></p>
+ <p style="margin-top: 15px;">We will respond to your privacy inquiries within 30 days.</p>
+ </div>
+ </section>
+
+ <div class="last-updated">
+ <p><strong>Last Updated:</strong> February 2025</p>
+ </div>
+ </div>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+
+ <script>
+ // Progress bar
+ window.onscroll = function() {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.getElementById("progressBar").style.width = scrolled + "%";
+ };
+
+ // Smooth scroll for navigation
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+ anchor.addEventListener('click', function (e) {
+ e.preventDefault();
+ document.querySelector(this.getAttribute('href')).scrollIntoView({
+ behavior: 'smooth'
+ });
+ });
+ });
+ </script>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

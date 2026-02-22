@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Contact Us | iHeartTheatre.com</title>
+ <meta name="description" content="Get in touch with iHeartTheatre.com - Submit reviews, promote shows, or just say hello to Melbourne's theatre community.">
+ <meta name="keywords" content="contact iHeartTheatre, submit show, theatre reviews Melbourne, Deanna Amato, Penelope Quinn">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ font-family: 'Inter', sans-serif;
+ background: linear-gradient(135deg, #050508 0%, #0a0a0f 100%);
+ color: #f5f5f5;
+ line-height: 1.8;
+ min-height: 100vh;
+ }
+
+ .progress-bar {
+ position: fixed;
+ top: 0;
+ left: 0;
+ height: 4px;
+ background: linear-gradient(90deg, #667eea, #764ba2);
+ width: 0%;
+ z-index: 1000;
+ transition: width 0.3s ease;
+ }
+
+ .container {
+ max-width: 900px;
+ margin: 0 auto;
+ padding: 100px 20px 60px;
+ }
+
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ background: rgba(5, 5, 8, 0.95);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+ z-index: 100;
+ padding: 15px 0;
+ }
+
+ /* nav-container and logo styles provided by shared.css */
+
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+
+ .nav-links a {
+ color: #a0a0b0;
+ text-decoration: none;
+ font-size: 0.9rem;
+ transition: color 0.3s;
+ }
+
+ .nav-links a:hover {
+ color: #f5f5f5;
+ }
+
+ .hero {
+ text-align: center;
+ padding: 50px 0;
+ margin-bottom: 50px;
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2.5rem, 5vw, 3.5rem);
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+
+ .hero p {
+ color: #a0a0b0;
+ font-size: 1.2rem;
+ max-width: 600px;
+ margin: 0 auto;
+ }
+
+ .section {
+ margin-bottom: 60px;
+ }
+
+ .section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ margin-bottom: 25px;
+ color: #f5f5f5;
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ }
+
+ .section h2::before {
+ content: '';
+ width: 4px;
+ height: 40px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ border-radius: 2px;
+ }
+
+ .contact-options {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 25px;
+ margin-bottom: 40px;
+ }
+
+ .contact-card {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ border-radius: 20px;
+ padding: 30px;
+ text-align: center;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+ backdrop-filter: blur(10px);
+ }
+
+ .contact-card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+ border-color: rgba(102, 126, 234, 0.3);
+ }
+
+ .contact-card .icon {
+ width: 60px;
+ height: 60px;
+ border-radius: 50%;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-size: 1.4rem;
+ font-weight: 700;
+ color: white;
+ margin-bottom: 20px;
+ font-family: 'Playfair Display', serif;
+ }
+
+ .contact-card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.4rem;
+ margin-bottom: 15px;
+ color: #f5f5f5;
+ }
+
+ .contact-card p {
+ color: #a0a0b0;
+ margin-bottom: 20px;
+ font-size: 0.95rem;
+ }
+
+ .contact-card .email {
+ color: #667eea;
+ font-weight: 600;
+ font-size: 1.1rem;
+ }
+
+ .contact-card a {
+ display: inline-block;
+ margin-top: 15px;
+ padding: 12px 30px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: #fff;
+ text-decoration: none;
+ border-radius: 50px;
+ font-weight: 600;
+ transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .contact-card a:hover {
+ transform: translateY(-2px);
+ box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+ }
+
+ .contact-form {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ border-radius: 20px;
+ padding: 40px;
+ backdrop-filter: blur(10px);
+ }
+
+ .form-group {
+ margin-bottom: 25px;
+ }
+
+ .form-group label {
+ display: block;
+ color: #d0d0d0;
+ margin-bottom: 8px;
+ font-weight: 500;
+ }
+
+ .form-group input,
+ .form-group textarea,
+ .form-group select {
+ width: 100%;
+ padding: 15px 20px;
+ background: rgba(255, 255, 255, 0.05);
+ border: 1px solid rgba(255, 255, 255, 0.1);
+ border-radius: 10px;
+ color: #f5f5f5;
+ font-size: 1rem;
+ font-family: 'Inter', sans-serif;
+ transition: border-color 0.3s, box-shadow 0.3s;
+ }
+
+ .form-group input:focus,
+ .form-group textarea:focus,
+ .form-group select:focus {
+ outline: none;
+ border-color: #667eea;
+ box-shadow: 0 0 20px rgba(102, 126, 234, 0.2);
+ }
+
+ .form-group textarea {
+ min-height: 150px;
+ resize: vertical;
+ }
+
+ .form-group select {
+ cursor: pointer;
+ }
+
+ .form-group select option {
+ background: #0a0a0f;
+ color: #f5f5f5;
+ }
+
+ .submit-btn {
+ width: 100%;
+ padding: 18px 40px;
+ background: linear-gradient(135deg, #667eea, #764ba2);
+ color: #fff;
+ border: none;
+ border-radius: 50px;
+ font-size: 1.1rem;
+ font-weight: 600;
+ font-family: 'Inter', sans-serif;
+ cursor: pointer;
+ transition: transform 0.3s, box-shadow 0.3s;
+ }
+
+ .submit-btn:hover {
+ transform: translateY(-3px);
+ box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+ }
+
+ .social-links {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ margin-top: 40px;
+ flex-wrap: wrap;
+ }
+
+ .social-link {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ padding: 15px 30px;
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(255, 255, 255, 0.08);
+ border-radius: 50px;
+ color: #f5f5f5;
+ text-decoration: none;
+ transition: all 0.3s ease;
+ }
+
+ .social-link:hover {
+ background: rgba(102, 126, 234, 0.1);
+ border-color: #667eea;
+ transform: translateY(-2px);
+ }
+
+ .social-link .icon {
+ font-size: 1.5rem;
+ }
+
+ .team-section {
+ background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+ border: 1px solid rgba(102, 126, 234, 0.2);
+ border-radius: 20px;
+ padding: 40px;
+ margin-top: 60px;
+ }
+
+ .team-section h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ margin-bottom: 30px;
+ color: #f5f5f5;
+ text-align: center;
+ }
+
+ .team-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ gap: 30px;
+ }
+
+ .team-member {
+ text-align: center;
+ padding: 20px;
+ }
+
+ .team-member img {
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ object-fit: cover;
+ margin-bottom: 20px;
+ border: 3px solid rgba(102, 126, 234, 0.3);
+ }
+
+ .team-member h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.3rem;
+ margin-bottom: 10px;
+ color: #f5f5f5;
+ }
+
+ .team-member .role {
+ color: #667eea;
+ font-weight: 600;
+ margin-bottom: 10px;
+ }
+
+ .team-member p {
+ color: #a0a0b0;
+ font-size: 0.95rem;
+ }
+
+ footer {
+ background: rgba(5, 5, 8, 0.95);
+ padding: 40px 20px;
+ margin-top: 80px;
+ border-top: 1px solid rgba(255, 255, 255, 0.08);
+ }
+
+ .footer-content {
+ max-width: 1200px;
+ margin: 0 auto;
+ text-align: center;
+ color: #a0a0b0;
+ }
+
+ .footer-links {
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+ margin-top: 20px;
+ flex-wrap: wrap;
+ }
+
+ .footer-links a {
+ color: #a0a0b0;
+ text-decoration: none;
+ transition: color 0.3s;
+ }
+
+ .footer-links a:hover {
+ color: #667eea;
+ }
+
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ }
+
+ .contact-options {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+ <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+ <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+
+ <nav>
+ <div class="nav-container">
+ <a href="index.html" class="logo">iHeartTheatre</a>
+ <div class="hamburger" aria-label="Toggle navigation">
+ <span></span>
+ <span></span>
+ <span></span>
+ </div>
+ <div class="nav-links">
+ <a href="index.html">Home</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="junior-kids-schools.html">Junior & Kids</a>
+ <a href="holiday-programs.html">Holiday Programs</a>
+ <a href="about.html">About</a>
+ <a href="contact.html" class="active">Contact</a>
+ </div>
+ </div>
+ </nav>
+
+ <div class="container">
+ <section class="hero">
+ <h1>Get in Touch</h1>
+ <p>We'd love to hear from you! Whether you're a performer, a production company, or a theatre lover, let's connect.</p>
+ </section>
+
+ <section class="section">
+ <h2>Quick Contact Options</h2>
+ 
+ <div class="contact-options">
+ <div class="contact-card">
+ <div class="icon">Q</div>
+ <h3>General Inquiries</h3>
+ <p>For questions, feedback, or general information about iHeartTheatre</p>
+ <div class="email">hello@ihearttheatre.com</div>
+ </div>
+
+ <div class="contact-card">
+ <div class="icon">S</div>
+ <h3>Submit a Show</h3>
+ <p>Have a production you'd like us to review or promote?</p>
+ <a href="submit-show.html">Submit Show</a>
+ </div>
+
+ <div class="contact-card">
+ <div class="icon">R</div>
+ <h3>Become a Reviewer</h3>
+ <p>Interested in joining our team of community reviewers?</p>
+ <a href="submit-review.html">Submit Review</a>
+ </div>
+
+ <div class="contact-card">
+ <div class="icon">P</div>
+ <h3>Press & Media</h3>
+ <p>For press inquiries, interviews, or media partnerships</p>
+ <div class="email">press@ihearttheatre.com</div>
+ </div>
+
+ <div class="contact-card">
+ <div class="icon">C</div>
+ <h3>Partnerships</h3>
+ <p>Interested in partnering with iHeartTheatre?</p>
+ <div class="email">partnerships@ihearttheatre.com</div>
+ </div>
+
+ <div class="contact-card">
+ <div class="icon">E</div>
+ <h3>School Programs</h3>
+ <p>For school shows, holiday programs, or youth theatre</p>
+ <a href="submit-holiday-program.html">Submit Program</a>
+ </div>
+ </div>
+ </section>
+
+ <section class="section">
+ <h2>Send Us a Message</h2>
+ 
+ <div class="contact-form">
+ <form id="contactForm">
+ <div class="form-group">
+ <label for="name">Your Name *</label>
+ <input type="text" id="name" name="name" required placeholder="Enter your name">
+ </div>
+
+ <div class="form-group">
+ <label for="email">Email Address *</label>
+ <input type="email" id="email" name="email" required placeholder="Enter your email">
+ </div>
+
+ <div class="form-group">
+ <label for="subject">Subject *</label>
+ <select id="subject" name="subject" required>
+ <option value="">Select a topic</option>
+ <option value="general">General Inquiry</option>
+ <option value="show-submission">Show Submission</option>
+ <option value="review-submission">Review Submission</option>
+ <option value="press">Press & Media</option>
+ <option value="partnership">Partnership Opportunity</option>
+ <option value="feedback">Feedback</option>
+ <option value="correction">Correction Request</option>
+ <option value="other">Other</option>
+ </select>
+ </div>
+
+ <div class="form-group">
+ <label for="message">Your Message *</label>
+ <textarea id="message" name="message" required placeholder="Tell us what's on your mind..."></textarea>
+ </div>
+
+ <button type="submit" class="submit-btn">Send Message</button>
+ </form>
+ </div>
+ </section>
+
+ <section class="section">
+ <h2>Connect With Us</h2>
+ <p style="text-align: center; color: #a0a0b0; margin-bottom: 30px;">Follow us on social media for the latest theatre news and reviews</p>
+ 
+ <div class="social-links">
+ <a href="https://instagram.com/ihearttheatre" class="social-link" target="_blank" rel="noopener">
+ <span>Instagram</span>
+ </a>
+ <a href="https://facebook.com/ihearttheatre" class="social-link" target="_blank" rel="noopener">
+ <span>Facebook</span>
+ </a>
+ <a href="https://twitter.com/ihearttheatre" class="social-link" target="_blank" rel="noopener">
+ <span>Twitter</span>
+ </a>
+ <a href="https://youtube.com/@ihearttheatre" class="social-link" target="_blank" rel="noopener">
+ <span>YouTube</span>
+ </a>
+ </div>
+ </section>
+
+ <section class="team-section">
+ <h2>Meet the Team</h2>
+ 
+ <div class="team-grid">
+ <div class="team-member">
+ <img src="generated_images/deanna-profile.png" alt="Deanna Amato">
+ <h3>Deanna Amato</h3>
+ <div class="role">Adult Reviews Editor</div>
+ <p>15+ years of theatre experience, passionate about celebrating Melbourne's vibrant theatre community</p>
+ </div>
+
+ <div class="team-member">
+ <img src="generated_images/penelope-profile.png" alt="Penelope Quinn">
+ <h3>Penelope Quinn</h3>
+ <div class="role">Junior Reviews Editor</div>
+ <p>Age 7. Melbourne's youngest theatre reviewer, bringing a child's perspective to family theatre</p>
+ </div>
+ </div>
+ </section>
+ </div>
+
+ <footer>
+ <div class="footer-content">
+ <div class="footer-links">
+ <a href="index.html">Home</a>
+ <a href="reviewers.html">Reviewers</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="about.html">About</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+ <a href="contact.html">Contact</a>
+ </div>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+ </div>
+ </footer>
+
+ <script>
+ // Progress bar
+ window.onscroll = function() {
+ const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+ const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+ const scrolled = (winScroll / height) * 100;
+ document.getElementById("progressBar").style.width = scrolled + "%";
+ };
+
+ // Form submission handler
+ document.getElementById('contactForm').addEventListener('submit', function(e) {
+ e.preventDefault();
+ 
+ const name = document.getElementById('name').value;
+ const email = document.getElementById('email').value;
+ const subject = document.getElementById('subject').value;
+ const message = document.getElementById('message').value;
+
+ // In a real implementation, this would send data to a server
+ // For now, show a success message
+ alert(`Thank you ${name}! Your message has been received. We'll get back to you at ${email} soon.\n\nSubject: ${subject}\nMessage: ${message}`);
+ 
+ // Reset form
+ this.reset();
+ });
+
+ // Smooth scroll for navigation
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+ anchor.addEventListener('click', function (e) {
+ e.preventDefault();
+ document.querySelector(this.getAttribute('href')).scrollIntoView({
+ behavior: 'smooth'
+ });
+ });
+ });
+ </script>
+ <!-- PWA Install Banner -->
+ <div id="pwa-install-banner" class="pwa-install-banner">
+ <img src="icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
+ <div class="pwa-text">
+ <h4>Install iHeartTheatre</h4>
+ <p>Add to home screen for the best experience</p>
+ </div>
+ <button class="pwa-install-btn" onclick="installPWA()">Install</button>
+ <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
+ </div>
+
+ <!-- Back to Top -->
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+ <script src="js/shared.js"></script>
+</body>
+</html>

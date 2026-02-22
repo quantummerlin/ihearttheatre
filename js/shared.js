@@ -197,6 +197,47 @@ function initAchievements() {
 }
 
 // ============================================
+// Cookie/Privacy Consent Banner
+// ============================================
+function initCookieConsent() {
+ if (localStorage.getItem('cookie-consent')) return;
+
+ const banner = document.createElement('div');
+ banner.id = 'cookie-consent';
+ banner.className = 'cookie-consent';
+ banner.innerHTML = `
+ <div class="cookie-text">
+ <p>We use cookies and local storage to improve your experience, remember your preferences, and enable offline access via our service worker.
+ <a href="${window.location.pathname.includes('/reviews/') ? '../privacy.html' : 'privacy.html'}">Privacy Policy</a></p>
+ </div>
+ <div class="cookie-actions">
+ <button class="cookie-accept" onclick="acceptCookies()">Accept</button>
+ <button class="cookie-decline" onclick="declineCookies()">Decline</button>
+ </div>
+ `;
+ document.body.appendChild(banner);
+ requestAnimationFrame(() => banner.classList.add('show'));
+}
+
+function acceptCookies() {
+ localStorage.setItem('cookie-consent', 'accepted');
+ closeCookieBanner();
+}
+
+function declineCookies() {
+ localStorage.setItem('cookie-consent', 'declined');
+ closeCookieBanner();
+}
+
+function closeCookieBanner() {
+ const banner = document.getElementById('cookie-consent');
+ if (banner) {
+ banner.classList.remove('show');
+ setTimeout(() => banner.remove(), 400);
+ }
+}
+
+// ============================================
 // Initialize Everything
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -205,4 +246,5 @@ document.addEventListener('DOMContentLoaded', () => {
  initHamburger();
  initBackToTop();
  initAchievements();
+ initCookieConsent();
 });

@@ -6,12 +6,13 @@ You are the **Lead Agent** for the iHeartTheatre.com website team. You coordinat
 
 | Agent | Prompt File | Specialty |
 |-------|------------|-----------|
-| 🎬 **Review Publisher** | `review-publisher.prompt.md` | Creates new review pages from raw content |
-| 🔍 **Site Auditor** | `site-auditor.prompt.md` | Checks all pages for consistency & quality |
-| 📈 **SEO Manager** | `seo-manager.prompt.md` | Sitemap, meta tags, structured data, search visibility |
-| 🎨 **Style Guardian** | `style-guardian.prompt.md` | Design system enforcement, CSS consistency |
-| 📝 **Content Updater** | `content-updater.prompt.md` | Keeps listing pages, profiles, and links in sync |
-| ⚡ **Performance & PWA** | `performance-pwa.prompt.md` | Speed, caching, accessibility, PWA health |
+| Review Publisher | `review-publisher.prompt.md` | Creates new review pages from raw content |
+| Site Auditor | `site-auditor.prompt.md` | Checks all pages for consistency & quality |
+| SEO Manager | `seo-manager.prompt.md` | Sitemap, meta tags, structured data, search visibility |
+| Style Guardian | `style-guardian.prompt.md` | Design system enforcement, CSS consistency |
+| Content Updater | `content-updater.prompt.md` | Keeps listing pages, profiles, and links in sync |
+| Performance & PWA | `performance-pwa.prompt.md` | Speed, caching, accessibility, PWA health |
+| Legal Compliance | `legal-compliance.prompt.md` | Privacy, cookies, accessibility, Australian law |
 
 ## How to Use This Team
 

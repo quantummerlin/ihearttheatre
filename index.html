@@ -540,7 +540,7 @@
  transition: all 0.4s ease;
  cursor: pointer;
  perspective: 1000px;
- height: 400px;
+ height: 420px;
  }
 
  .review-card:hover {
@@ -584,7 +584,8 @@
  }
 
  .review-image {
- height: 200px;
+ aspect-ratio: 16 / 9;
+ width: 100%;
  background-size: cover;
  background-position: center;
  display: flex;
@@ -916,14 +917,78 @@
 
  .hero {
  padding: 6rem 1.5rem 4rem;
+ text-align: center;
+ }
+
+ .hero h1, .hero h2, .hero p {
+ text-align: center;
  }
 
  .energy-flow {
  flex-direction: column;
+ align-items: center;
  }
 
  .energy-arrow {
  transform: rotate(90deg);
+ }
+
+ .reviews-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .review-card {
+ height: auto;
+ }
+
+ .review-card-front {
+ position: relative;
+ }
+
+ .review-card-back {
+ position: relative;
+ transform: none;
+ }
+
+ .review-card-inner {
+ transform-style: flat;
+ }
+
+ .review-card.flipped .review-card-inner {
+ transform: none;
+ }
+
+ .review-card-front,
+ .review-card-back {
+ position: relative;
+ backface-visibility: visible;
+ }
+
+ .review-card-back {
+ display: none;
+ }
+
+ .flip-button {
+ display: none;
+ }
+
+ .category-filters {
+ gap: 0.5rem;
+ }
+
+ .category-filter {
+ padding: 0.5rem 1rem;
+ font-size: 0.8rem;
+ }
+
+ .slideshow-nav {
+ padding: 0.5rem 0.8rem;
+ font-size: 1.5rem;
+ }
+
+ .section-heading,
+ .reviews-header {
+ text-align: center;
  }
  }
  </style>

@@ -126,7 +126,7 @@
 
         .show-card-image {
             width: 100%;
-            height: 200px;
+            aspect-ratio: 16 / 9;
             background: var(--bg-tertiary);
             display: flex;
             align-items: center;
@@ -339,11 +339,20 @@
 
             .submit-cta {
                 padding: 32px 20px;
+                text-align: center;
+            }
+
+            .show-card-body {
+                text-align: center;
             }
 
             .show-card-footer {
                 flex-direction: column;
-                align-items: flex-start;
+                align-items: center;
+            }
+
+            .show-card-meta .meta-line {
+                justify-content: center;
             }
         }
     </style>

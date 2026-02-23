@@ -433,6 +433,14 @@ footer {
     .program-badges {
         justify-content: center;
     }
+
+    /* Brighten images on mobile — dark theme can feel heavy on small screens */
+    img,
+    .review-image,
+    .show-card-image,
+    .gallery img {
+        filter: brightness(1.1);
+    }
 }
 
 @media (max-width: 480px) {

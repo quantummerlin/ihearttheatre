@@ -24,7 +24,6 @@ Scan these locations:
 | **shared.js loaded** | `<script src="js/shared.js">` or `../js/shared.js` for review pages |
 | **shared.css loaded** | `<link rel="stylesheet" href="css/shared.css">` or `../css/shared.css` |
 | **PWA meta tags** | `manifest.json` link, `theme-color` meta, `apple-touch-icon` |
-| **PWA install banner** | `id="pwa-install-banner"` div present |
 | **Progress bar** | `id="progressBar"` div present |
 | **Particles** | `id="particles"` div present |
 | **Back to top** | `id="backToTop"` button present |

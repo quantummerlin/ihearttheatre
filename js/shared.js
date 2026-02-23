@@ -15,46 +15,6 @@ if ('serviceWorker' in navigator) {
 }
 
 // ============================================
-// PWA Install Prompt
-// ============================================
-let deferredPrompt;
-
-window.addEventListener('beforeinstallprompt', (e) => {
- e.preventDefault();
- deferredPrompt = e;
-
- // Don't show if user dismissed before
- if (localStorage.getItem('pwa-dismissed')) return;
-
- // Show install banner after 30 seconds
- setTimeout(() => {
- const banner = document.getElementById('pwa-install-banner');
- if (banner) {
- banner.classList.add('show');
- }
- }, 30000);
-});
-
-function installPWA() {
- if (!deferredPrompt) return;
- deferredPrompt.prompt();
- deferredPrompt.userChoice.then(choice => {
- if (choice.outcome === 'accepted') {
- console.log('[iHT] PWA installed');
- }
- deferredPrompt = null;
- const banner = document.getElementById('pwa-install-banner');
- if (banner) banner.classList.remove('show');
- });
-}
-
-function dismissPWA() {
- localStorage.setItem('pwa-dismissed', 'true');
- const banner = document.getElementById('pwa-install-banner');
- if (banner) banner.classList.remove('show');
-}
-
-// ============================================
 // Progress Bar
 // ============================================
 function initProgressBar() {

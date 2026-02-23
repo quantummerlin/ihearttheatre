@@ -125,15 +125,6 @@ Use this exact structure (shown with Deanna as example):
         </div>
     </footer>
 
-    <div id="pwa-install-banner" class="pwa-install-banner">
-        <img src="../icons/icon-96x96.png" alt="iHeartTheatre" class="pwa-icon">
-        <div class="pwa-text">
-            <h4>Install iHeartTheatre</h4>
-            <p>Add to home screen for the best experience</p>
-        </div>
-        <button class="pwa-install-btn" onclick="installPWA()">Install</button>
-        <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
-    </div>
     <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
     <script src="../js/shared.js"></script>
 </body>

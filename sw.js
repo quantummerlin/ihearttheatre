@@ -1,5 +1,5 @@
 // iHeartTheatre Service Worker v1.0
-const CACHE_NAME = 'ihearttheatre-v3';
+const CACHE_NAME = 'ihearttheatre-v4';
 const OFFLINE_URL = '/404.html';
 
 // Core pages to pre-cache

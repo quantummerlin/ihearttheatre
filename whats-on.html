@@ -264,6 +264,20 @@
    justify-content: center;
   }
 
+  .show-card-image {
+   position: absolute;
+   inset: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   transition: transform .4s ease;
+  }
+
+  .show-card:hover .show-card-image {
+   transform: scale(1.05);
+  }
+
   .show-card-initials {
    font-family: 'Playfair Display', serif;
    font-size: 3rem;
@@ -538,7 +552,8 @@
    warning: 'Explicit language, strobe lighting, smoke effects.',
    tags: ['musical', 'comedy'],
    featured: true,
-   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)'
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)',
+   image: null
   },
   {
    title: 'Cluedo',
@@ -554,7 +569,8 @@
    warning: 'Depictions of murder, simulated firearms, gunshots, brief flashing lights.',
    tags: ['play', 'comedy', 'whodunnit'],
    featured: true,
-   gradient: 'linear-gradient(135deg, #2d1b30 0%, #1a1a2e 50%, #0d0d2b 100%)'
+   gradient: 'linear-gradient(135deg, #2d1b30 0%, #1a1a2e 50%, #0d0d2b 100%)',
+   image: null
   },
   {
    title: 'Do Not Pass Go',
@@ -570,7 +586,8 @@
    warning: 'Mature themes including discussions of gender-affirming surgery.',
    tags: ['play', 'dark comedy', 'new writing'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #1b2838 0%, #171b26 50%, #0e1117 100%)'
+   gradient: 'linear-gradient(135deg, #1b2838 0%, #171b26 50%, #0e1117 100%)',
+   image: null
   },
   {
    title: 'West Gate',
@@ -586,7 +603,8 @@
    warning: 'Frequent coarse language, racially sensitive language, mature themes.',
    tags: ['play', 'drama', 'new writing', 'australian'],
    featured: true,
-   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #292929 50%, #1a1a1a 100%)'
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #292929 50%, #1a1a1a 100%)',
+   image: null
   },
   {
    title: 'The Australian Ballet: Flora',
@@ -602,7 +620,8 @@
    warning: null,
    tags: ['dance', 'ballet', 'first nations'],
    featured: true,
-   gradient: 'linear-gradient(135deg, #0b3d1a 0%, #1a2e1a 50%, #0d1f0d 100%)'
+   gradient: 'linear-gradient(135deg, #0b3d1a 0%, #1a2e1a 50%, #0d1f0d 100%)',
+   image: null
   },
   {
    title: 'Daniel Kitson: Work in Progress',
@@ -618,7 +637,8 @@
    warning: null,
    tags: ['comedy', 'one-person', 'storytelling'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #2e1a2e 0%, #1a1a2e 50%, #0d0d2b 100%)'
+   gradient: 'linear-gradient(135deg, #2e1a2e 0%, #1a1a2e 50%, #0d0d2b 100%)',
+   image: null
   },
   {
    title: 'The Glass Menagerie',
@@ -634,7 +654,8 @@
    warning: 'Mature themes, ableist and racist language.',
    tags: ['play', 'classic', 'drama'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #1e1e3f 0%, #2a1a3f 50%, #0d0d2b 100%)'
+   gradient: 'linear-gradient(135deg, #1e1e3f 0%, #2a1a3f 50%, #0d0d2b 100%)',
+   image: null
   },
   {
    title: 'Pass Around the Smile LIVE',
@@ -650,7 +671,8 @@
    warning: null,
    tags: ['family', 'kids', 'live'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #3d1a3d 0%, #2e1a4a 50%, #1a0d33 100%)'
+   gradient: 'linear-gradient(135deg, #3d1a3d 0%, #2e1a4a 50%, #1a0d33 100%)',
+   image: null
   },
   {
    title: 'Shoelace Chaser',
@@ -666,7 +688,8 @@
    warning: 'Mature themes, occasional coarse language.',
    tags: ['play', 'new writing', 'education'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #1a2e1a 0%, #1a1a2e 50%, #0d1f20 100%)'
+   gradient: 'linear-gradient(135deg, #1a2e1a 0%, #1a1a2e 50%, #0d1f20 100%)',
+   image: null
   },
   {
    title: 'Retrograde',
@@ -682,7 +705,8 @@
    warning: null,
    tags: ['play', 'drama'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #2e1a1a 0%, #1a1a2e 50%, #1a0d0d 100%)'
+   gradient: 'linear-gradient(135deg, #2e1a1a 0%, #1a1a2e 50%, #1a0d0d 100%)',
+   image: null
   },
   {
    title: 'Losing Face',
@@ -698,7 +722,8 @@
    warning: null,
    tags: ['play', 'new writing'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #2e2e1a 50%, #1a1a0d 100%)'
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #2e2e1a 50%, #1a1a0d 100%)',
+   image: null
   },
   {
    title: 'Uncle Vanya',
@@ -714,7 +739,8 @@
    warning: null,
    tags: ['play', 'classic', 'drama'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #1a2e2e 0%, #1a1a2e 50%, #0d1a1a 100%)'
+   gradient: 'linear-gradient(135deg, #1a2e2e 0%, #1a1a2e 50%, #0d1a1a 100%)',
+   image: null
   },
   {
    title: 'The Jungle and the Sea',
@@ -730,7 +756,8 @@
    warning: null,
    tags: ['play', 'drama'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e1a 50%, #0d1a0d 100%)'
+   gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e1a 50%, #0d1a0d 100%)',
+   image: null
   },
   {
    title: 'Eliza',
@@ -746,7 +773,8 @@
    warning: null,
    tags: ['play'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #2e1a2e 0%, #1a2e2e 50%, #0d0d1a 100%)'
+   gradient: 'linear-gradient(135deg, #2e1a2e 0%, #1a2e2e 50%, #0d0d1a 100%)',
+   image: null
   },
   {
    title: 'Before I Forget',
@@ -762,7 +790,8 @@
    warning: null,
    tags: ['play'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #2e1a1a 50%, #1a0d0d 100%)'
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #2e1a1a 50%, #1a0d0d 100%)',
+   image: null
   },
   {
    title: 'A Room with a View',
@@ -778,7 +807,8 @@
    warning: null,
    tags: ['play'],
    featured: false,
-   gradient: 'linear-gradient(135deg, #2e2e1a 0%, #1a2e1a 50%, #0d1a0d 100%)'
+   gradient: 'linear-gradient(135deg, #2e2e1a 0%, #1a2e1a 50%, #0d1a0d 100%)',
+   image: null
   }
  ];
 
@@ -833,8 +863,11 @@
    var status = getStatus(show);
    var slide = document.createElement('div');
    slide.className = 'slide' + (i === 0 ? ' active' : '');
+   var slideBg = show.image
+    ? '<div class="slide-bg" style="background-image:url(' + show.image + ')"></div>'
+    : '<div class="slide-bg" style="background:' + show.gradient + '"></div>';
    slide.innerHTML =
-    '<div class="slide-bg" style="background:' + show.gradient + '"></div>' +
+    slideBg +
     '<div class="slide-content">' +
      '<span class="slide-badge ' + statusBadgeClass(status) + '">' + statusLabel(status) + '</span>' +
      '<h2 class="slide-title">' + show.title + '</h2>' +
@@ -1033,11 +1066,15 @@
 
    var tagsHTML = show.tags.map(function(t) { return '<span class="show-tag">' + t + '</span>'; }).join('');
 
+   var headerInner = show.image
+    ? '<img class="show-card-image" src="' + show.image + '" alt="' + show.title + '" loading="lazy">'
+    : '<div class="show-card-gradient" style="background:' + show.gradient + '">' +
+       '<span class="show-card-initials">' + initials(show.title) + '</span>' +
+      '</div>';
+
    card.innerHTML =
     '<div class="show-card-header">' +
-     '<div class="show-card-gradient" style="background:' + show.gradient + '">' +
-      '<span class="show-card-initials">' + initials(show.title) + '</span>' +
-     '</div>' +
+     headerInner +
      '<div class="show-card-badges">' +
       '<span class="slide-badge ' + statusBadgeClass(status) + '">' + statusLabel(status) + '</span>' +
      '</div>' +

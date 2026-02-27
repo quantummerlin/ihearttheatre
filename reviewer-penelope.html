@@ -99,14 +99,18 @@
  .profile-avatar {
  width: 150px;
  height: 150px;
- background: white;
  border-radius: 50%;
  margin: 0 auto 1.5rem;
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 4rem;
+ overflow: hidden;
+ border: 4px solid rgba(255, 255, 255, 0.2);
  box-shadow: var(--shadow-xl);
+ }
+
+ .profile-avatar img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ display: block;
  }
 
  .profile-name {
@@ -411,7 +415,9 @@
  </nav>
 
  <section class="profile-header">
- <div class="profile-avatar"></div>
+ <div class="profile-avatar">
+ <img src="generated_images/penelope-profile.png" alt="Penelope Quinn" loading="eager">
+ </div>
  <h1 class="profile-name">Penelope Quinn</h1>
  <p class="profile-title">Junior Reviews Editor • Melbourne's Youngest Theatre Critic</p>
  <div class="profile-stats">

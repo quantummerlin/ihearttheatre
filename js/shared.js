@@ -198,6 +198,82 @@ function closeCookieBanner() {
 }
 
 // ============================================
+// Gallery Lightbox
+// ============================================
+function initLightbox() {
+ // Find all gallery images
+ var galleryImages = document.querySelectorAll(
+  '.gallery img, .gallery-item img, .review-gallery-item img'
+ );
+ if (galleryImages.length === 0) return;
+
+ // Create lightbox overlay
+ var overlay = document.createElement('div');
+ overlay.className = 'lightbox-overlay';
+ overlay.innerHTML =
+  '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+  '<button class="lightbox-nav prev" aria-label="Previous">&lsaquo;</button>' +
+  '<img src="" alt="Full size image">' +
+  '<button class="lightbox-nav next" aria-label="Next">&rsaquo;</button>';
+ document.body.appendChild(overlay);
+
+ var lightboxImg = overlay.querySelector('img');
+ var closeBtn = overlay.querySelector('.lightbox-close');
+ var prevBtn = overlay.querySelector('.lightbox-nav.prev');
+ var nextBtn = overlay.querySelector('.lightbox-nav.next');
+ var images = Array.from(galleryImages);
+ var currentIndex = 0;
+
+ function openLightbox(index) {
+  currentIndex = index;
+  lightboxImg.src = images[currentIndex].src;
+  lightboxImg.alt = images[currentIndex].alt || 'Gallery image';
+  overlay.classList.add('active');
+  document.body.style.overflow = 'hidden';
+ }
+
+ function closeLightbox() {
+  overlay.classList.remove('active');
+  document.body.style.overflow = '';
+ }
+
+ function showPrev() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  lightboxImg.src = images[currentIndex].src;
+  lightboxImg.alt = images[currentIndex].alt || 'Gallery image';
+ }
+
+ function showNext() {
+  currentIndex = (currentIndex + 1) % images.length;
+  lightboxImg.src = images[currentIndex].src;
+  lightboxImg.alt = images[currentIndex].alt || 'Gallery image';
+ }
+
+ images.forEach(function(img, i) {
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', function(e) {
+   e.preventDefault();
+   openLightbox(i);
+  });
+ });
+
+ closeBtn.addEventListener('click', closeLightbox);
+ prevBtn.addEventListener('click', function(e) { e.stopPropagation(); showPrev(); });
+ nextBtn.addEventListener('click', function(e) { e.stopPropagation(); showNext(); });
+
+ overlay.addEventListener('click', function(e) {
+  if (e.target === overlay) closeLightbox();
+ });
+
+ document.addEventListener('keydown', function(e) {
+  if (!overlay.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') showPrev();
+  if (e.key === 'ArrowRight') showNext();
+ });
+}
+
+// ============================================
 // Initialize Everything
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -207,4 +283,5 @@ document.addEventListener('DOMContentLoaded', () => {
  initBackToTop();
  initAchievements();
  initCookieConsent();
+ initLightbox();
 });

@@ -1,664 +1,1075 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What's On | iHeartTheatre.com</title>
-    <meta name="description" content="What's on in Melbourne theatre right now. Current and upcoming shows, musicals, plays, family productions and more across Melbourne's vibrant theatre scene.">
-    <meta name="theme-color" content="#667eea">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
-    <link rel="stylesheet" href="css/shared.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        .page-header {
-            padding: 120px 20px 60px;
-            text-align: center;
-            position: relative;
-            z-index: 2;
-        }
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>What's On | Melbourne Theatre Shows | iHeartTheatre</title>
+ <meta name="description" content="What's on in Melbourne theatre right now — musicals, plays, dance &amp; family shows. Real-time listings with dates, venues and ticket links.">
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/shared.css">
+ <style>
+  /* ── Hero Slideshow ────────────────────────── */
+  .hero-slideshow {
+   position: relative;
+   width: 100%;
+   min-height: 520px;
+   overflow: hidden;
+   margin-top: 70px;
+  }
 
-        .page-header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 700;
-            margin-bottom: 16px;
-            background: linear-gradient(135deg, #f5f5f5 0%, #a0a0b0 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+  .slide {
+   position: absolute;
+   inset: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   transition: opacity .8s ease;
+   pointer-events: none;
+  }
 
-        .page-header p {
-            color: var(--text-secondary);
-            font-size: 1.1rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
+  .slide.active {
+   opacity: 1;
+   pointer-events: auto;
+   position: relative;
+  }
 
-        .content-wrapper {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px 80px;
-            position: relative;
-            z-index: 2;
-        }
+  .slide-bg {
+   position: absolute;
+   inset: 0;
+   background-size: cover;
+   background-position: center;
+   filter: brightness(.35) saturate(.8);
+  }
 
-        /* Filter bar */
-        .filter-bar {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 48px;
-        }
+  .slide-content {
+   position: relative;
+   z-index: 2;
+   max-width: 800px;
+   padding: 60px 2rem;
+   text-align: center;
+  }
 
-        .filter-btn {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            color: var(--text-secondary);
-            padding: 10px 20px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            font-family: 'Inter', sans-serif;
-            transition: all 0.3s ease;
-        }
+  .slide-badge {
+   display: inline-block;
+   padding: 6px 18px;
+   border-radius: 20px;
+   font-size: .75rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-bottom: 16px;
+  }
 
-        .filter-btn:hover {
-            border-color: rgba(102, 126, 234, 0.3);
-            color: var(--text-primary);
-        }
+  .slide-badge.now { background: rgba(102,126,234,.25); color: #667eea; border: 1px solid rgba(102,126,234,.4); }
+  .slide-badge.soon { background: rgba(255,215,0,.15); color: #ffd700; border: 1px solid rgba(255,215,0,.3); }
+  .slide-badge.closing { background: rgba(255,107,107,.2); color: #ff6b6b; border: 1px solid rgba(255,107,107,.35); }
 
-        .filter-btn.active {
-            background: var(--gradient-primary);
-            border-color: transparent;
-            color: white;
-            font-weight: 600;
-        }
+  .slide-title {
+   font-family: 'Playfair Display', serif;
+   font-size: clamp(2rem, 5vw, 3.2rem);
+   font-weight: 700;
+   margin-bottom: 12px;
+   line-height: 1.15;
+  }
 
-        /* Time section headers */
-        .time-section {
-            margin-bottom: 48px;
-        }
+  .slide-meta {
+   color: var(--text-secondary);
+   font-size: .95rem;
+   margin-bottom: 8px;
+  }
 
-        .time-section-header {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
-            color: var(--text-primary);
-            margin-bottom: 24px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--glass-border);
-        }
+  .slide-desc {
+   color: var(--text-secondary);
+   font-size: 1rem;
+   line-height: 1.6;
+   margin-bottom: 24px;
+   max-width: 600px;
+   margin-inline: auto;
+  }
 
-        .time-section-header span {
-            color: var(--accent-primary);
-            font-size: 0.85rem;
-            font-family: 'Inter', sans-serif;
-            font-weight: 400;
-            margin-left: 12px;
-        }
+  .slide-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
-        /* Show cards */
-        .shows-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-            gap: 24px;
-        }
+  /* Slideshow controls */
+  .slide-arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 5;
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   background: rgba(255,255,255,.08);
+   border: 1px solid rgba(255,255,255,.15);
+   color: white;
+   font-size: 1.2rem;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background .3s;
+  }
+  .slide-arrow:hover { background: rgba(255,255,255,.18); }
+  .slide-arrow.prev { left: 16px; }
+  .slide-arrow.next { right: 16px; }
 
-        .show-card {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 16px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
+  .slide-dots {
+   position: absolute;
+   bottom: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 8px;
+   z-index: 5;
+  }
+  .slide-dot {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: rgba(255,255,255,.2);
+   border: none;
+   cursor: pointer;
+   transition: background .3s, transform .3s;
+  }
+  .slide-dot.active { background: var(--accent-primary); transform: scale(1.3); }
 
-        .show-card:hover {
-            border-color: rgba(102, 126, 234, 0.3);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
+  /* ── Quick Stats ────────────────────────────── */
+  .quick-stats {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+   gap: 16px;
+   max-width: 1200px;
+   margin: -30px auto 0;
+   padding: 0 2rem;
+   position: relative;
+   z-index: 3;
+  }
 
-        .show-card-image {
-            width: 100%;
-            aspect-ratio: 16 / 9;
-            background: var(--bg-tertiary);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-        }
+  .stat-card {
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   border-radius: 16px;
+   padding: 20px;
+   text-align: center;
+   backdrop-filter: blur(12px);
+   -webkit-backdrop-filter: blur(12px);
+  }
 
-        .show-card-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+  .stat-number {
+   font-family: 'Playfair Display', serif;
+   font-size: 2rem;
+   font-weight: 700;
+   background: var(--gradient-primary);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+  }
 
-        .show-card-image .placeholder {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            color: var(--accent-primary);
-            opacity: 0.4;
-        }
+  .stat-label {
+   color: var(--text-secondary);
+   font-size: .8rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-top: 4px;
+  }
 
-        .show-status {
-            position: absolute;
-            top: 12px;
-            right: 12px;
-            padding: 5px 14px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
+  /* ── Filters ────────────────────────────────── */
+  .filters-section {
+   max-width: 1200px;
+   margin: 48px auto 0;
+   padding: 0 2rem;
+  }
 
-        .show-status.now-showing {
-            background: rgba(102, 126, 234, 0.9);
-            color: white;
-        }
+  .filter-row {
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+   margin-bottom: 16px;
+   align-items: center;
+  }
 
-        .show-status.coming-soon {
-            background: rgba(255, 215, 0, 0.9);
-            color: #1a1a2e;
-        }
+  .filter-label {
+   color: var(--text-secondary);
+   font-size: .8rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin-right: 6px;
+   white-space: nowrap;
+  }
 
-        .show-status.closing-soon {
-            background: rgba(255, 107, 107, 0.9);
-            color: white;
-        }
+  .filter-chip {
+   padding: 8px 18px;
+   border-radius: 20px;
+   border: 1px solid var(--glass-border);
+   background: transparent;
+   color: var(--text-secondary);
+   font-size: .85rem;
+   cursor: pointer;
+   transition: all .25s ease;
+   white-space: nowrap;
+  }
 
-        .show-card-body {
-            padding: 24px;
-        }
+  .filter-chip:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+  .filter-chip.active { background: var(--gradient-primary); color: white; border-color: transparent; }
 
-        .show-card-category {
-            display: inline-block;
-            color: var(--accent-primary);
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 8px;
-        }
+  /* ── Show Grid ──────────────────────────────── */
+  .shows-section {
+   max-width: 1200px;
+   margin: 32px auto 0;
+   padding: 0 2rem 60px;
+  }
 
-        .show-card-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            font-weight: 600;
-            color: var(--text-primary);
-            margin-bottom: 12px;
-            line-height: 1.3;
-        }
+  .shows-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+   gap: 24px;
+  }
 
-        .show-card-meta {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            margin-bottom: 16px;
-        }
+  .show-card {
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   border-radius: 16px;
+   overflow: hidden;
+   transition: transform .3s ease, box-shadow .3s ease;
+   display: flex;
+   flex-direction: column;
+  }
 
-        .show-card-meta .meta-line {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
+  .show-card:hover {
+   transform: translateY(-4px);
+   box-shadow: 0 16px 40px rgba(102,126,234,.15);
+  }
 
-        .meta-line .label {
-            color: var(--accent-primary);
-            font-weight: 600;
-            font-size: 0.8rem;
-            min-width: 55px;
-        }
+  .show-card-header {
+   position: relative;
+   height: 180px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
 
-        .show-card-desc {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
+  .show-card-gradient {
+   position: absolute;
+   inset: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
 
-        .show-card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 12px;
-        }
+  .show-card-initials {
+   font-family: 'Playfair Display', serif;
+   font-size: 3rem;
+   font-weight: 700;
+   color: rgba(255,255,255,.9);
+  }
 
-        .show-card-footer .price {
-            color: var(--text-secondary);
-            font-size: 0.85rem;
-        }
+  .show-card-badges {
+   position: absolute;
+   top: 12px;
+   left: 12px;
+   display: flex;
+   gap: 6px;
+   flex-wrap: wrap;
+   z-index: 2;
+  }
 
-        .show-card-footer .price strong {
-            color: var(--accent-gold);
-        }
+  .show-card-body {
+   padding: 20px;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+  }
 
-        .btn-show {
-            display: inline-block;
-            padding: 10px 20px;
-            background: var(--gradient-primary);
-            color: white;
-            border-radius: 25px;
-            text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
+  .show-card-title {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.25rem;
+   font-weight: 600;
+   margin-bottom: 8px;
+   line-height: 1.3;
+  }
 
-        .btn-show:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-        }
+  .show-card-venue {
+   color: var(--accent-primary);
+   font-size: .85rem;
+   font-weight: 500;
+   margin-bottom: 4px;
+  }
 
-        /* Reviewed badge */
-        .reviewed-badge {
-            display: inline-block;
-            background: rgba(102, 126, 234, 0.1);
-            border: 1px solid rgba(102, 126, 234, 0.2);
-            color: var(--accent-primary);
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
+  .show-card-dates {
+   color: var(--text-secondary);
+   font-size: .82rem;
+   margin-bottom: 10px;
+  }
 
-        .reviewed-badge:hover {
-            background: rgba(102, 126, 234, 0.2);
-            border-color: rgba(102, 126, 234, 0.4);
-        }
+  .show-card-company {
+   color: var(--text-secondary);
+   font-size: .78rem;
+   font-style: italic;
+   margin-bottom: 10px;
+  }
 
-        /* Submit CTA */
-        .submit-cta {
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: 48px;
-            text-align: center;
-            margin-top: 64px;
-        }
+  .show-card-desc {
+   color: var(--text-secondary);
+   font-size: .88rem;
+   line-height: 1.55;
+   margin-bottom: 16px;
+   flex: 1;
+   display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+  }
 
-        .submit-cta h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            margin-bottom: 12px;
-        }
+  .show-card-footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   flex-wrap: wrap;
+  }
 
-        .submit-cta p {
-            color: var(--text-secondary);
-            margin-bottom: 24px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+  .show-card-tags {
+   display: flex;
+   gap: 6px;
+   flex-wrap: wrap;
+  }
 
-        .submit-cta .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
+  .show-tag {
+   font-size: .7rem;
+   padding: 3px 10px;
+   border-radius: 12px;
+   background: rgba(102,126,234,.1);
+   color: var(--accent-primary);
+   border: 1px solid rgba(102,126,234,.2);
+   text-transform: uppercase;
+   letter-spacing: .5px;
+  }
 
-        /* Empty state */
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: var(--text-secondary);
-        }
+  .show-card-link {
+   display: inline-block;
+   padding: 8px 20px;
+   border-radius: 20px;
+   background: var(--gradient-primary);
+   color: white;
+   text-decoration: none;
+   font-size: .82rem;
+   font-weight: 600;
+   transition: transform .2s, box-shadow .2s;
+   white-space: nowrap;
+  }
+  .show-card-link:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 6px 20px rgba(102,126,234,.35);
+  }
 
-        .empty-state h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-            color: var(--text-primary);
-            margin-bottom: 8px;
-        }
+  .show-card-detail {
+   font-size: .78rem;
+   color: var(--text-secondary);
+   margin-top: 10px;
+   padding-top: 10px;
+   border-top: 1px solid var(--glass-border);
+  }
 
-        /* No shows message */
-        .no-shows {
-            display: none;
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-secondary);
-        }
+  .show-card-detail span { display: inline-block; margin-right: 14px; }
 
-        @media (max-width: 768px) {
-            .shows-grid {
-                grid-template-columns: 1fr;
-            }
+  .no-results {
+   grid-column: 1 / -1;
+   text-align: center;
+   padding: 60px 20px;
+   color: var(--text-secondary);
+  }
 
-            .submit-cta {
-                padding: 32px 20px;
-                text-align: center;
-            }
+  .no-results h3 {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.4rem;
+   margin-bottom: 8px;
+   color: var(--text-primary);
+  }
 
-            .show-card-body {
-                text-align: center;
-            }
+  /* ── CTA Section ────────────────────────────── */
+  .cta-section {
+   max-width: 800px;
+   margin: 0 auto 60px;
+   padding: 48px 2rem;
+   text-align: center;
+  }
 
-            .show-card-footer {
-                flex-direction: column;
-                align-items: center;
-            }
+  .cta-section h2 {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.8rem;
+   margin-bottom: 12px;
+  }
 
-            .show-card-meta .meta-line {
-                justify-content: center;
-            }
-        }
-    </style>
+  .cta-section p {
+   color: var(--text-secondary);
+   margin-bottom: 24px;
+   line-height: 1.6;
+  }
+
+  .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+
+  /* ── Responsive ─────────────────────────────── */
+  @media (max-width: 768px) {
+   .hero-slideshow { min-height: 440px; }
+   .slide-content { padding: 40px 1.2rem; }
+   .quick-stats { grid-template-columns: repeat(2, 1fr); margin-top: -20px; padding: 0 1rem; }
+   .shows-grid { grid-template-columns: 1fr; }
+   .slide-arrow { display: none; }
+   .show-card-header { height: 140px; }
+  }
+
+  @media (max-width: 480px) {
+   .quick-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+   .filter-row { gap: 6px; }
+   .filter-chip { padding: 6px 14px; font-size: .8rem; }
+  }
+ </style>
 </head>
 <body>
-    <div class="progress-bar" id="progressBar"></div>
-    <div class="particles" id="particles"></div>
 
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">iHeartTheatre</a>
-            <div class="hamburger" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="whats-on.html" class="active">What's On</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="reviewers.html">Reviewers</a>
-                <a href="junior-kids-schools.html">Junior & Kids</a>
-                <a href="holiday-programs.html">Holiday Programs</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-    </nav>
+ <div class="progress-bar" id="progressBar"></div>
+ <div class="particles" id="particles"></div>
 
-    <section class="page-header">
-        <h1>What's On in Melbourne</h1>
-        <p>Current and upcoming theatre, musicals, plays and live performances across Melbourne</p>
-    </section>
+ <nav>
+  <div class="nav-container">
+   <a href="index.html" class="logo">iHeartTheatre</a>
+   <div class="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+   </div>
+   <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="whats-on.html" class="active">What's On</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="reviewers.html">Reviewers</a>
+    <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+    <a href="holiday-programs.html">Holiday Programs</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+   </div>
+  </div>
+ </nav>
 
-    <div class="content-wrapper">
-        <div class="filter-bar" id="filterBar">
-            <button class="filter-btn active" data-category="all">All Shows</button>
-            <button class="filter-btn" data-category="Musical">Musicals</button>
-            <button class="filter-btn" data-category="Play">Plays</button>
-            <button class="filter-btn" data-category="Family">Family</button>
-            <button class="filter-btn" data-category="Comedy">Comedy</button>
-            <button class="filter-btn" data-category="Cabaret">Cabaret</button>
-            <button class="filter-btn" data-category="Kids">Kids</button>
-        </div>
+ <!-- ══════ Hero Slideshow ══════ -->
+ <section class="hero-slideshow" id="heroSlideshow" aria-label="Featured shows slideshow">
+  <!-- slides injected by JS -->
+ </section>
 
-        <div id="showsContainer">
-            <!-- Dynamically populated -->
-        </div>
+ <!-- ══════ Quick Stats ══════ -->
+ <div class="quick-stats" id="quickStats">
+  <!-- injected by JS -->
+ </div>
 
-        <div class="no-shows" id="noShows">
-            <h3>No shows match that filter</h3>
-            <p>Try selecting a different category, or check back soon as we update listings regularly.</p>
-        </div>
+ <!-- ══════ Filters ══════ -->
+ <section class="filters-section">
+  <div class="filter-row" id="statusFilters">
+   <span class="filter-label">Status</span>
+  </div>
+  <div class="filter-row" id="categoryFilters">
+   <span class="filter-label">Category</span>
+  </div>
+  <div class="filter-row" id="venueFilters">
+   <span class="filter-label">Venue</span>
+  </div>
+ </section>
 
-        <div class="submit-cta">
-            <h2>Got a Show Coming Up?</h2>
-            <p>We'd love to help you reach Melbourne's theatre community. Submit your show details and we'll add it to our listings.</p>
-            <div class="cta-buttons">
-                <a href="submit-show.html" class="btn btn-primary">Submit Your Show</a>
-                <a href="promote-show.html" class="btn btn-secondary">Promote Your Show</a>
-            </div>
-        </div>
-    </div>
+ <!-- ══════ Shows Grid ══════ -->
+ <section class="shows-section">
+  <div class="shows-grid" id="showsGrid">
+   <!-- injected by JS -->
+  </div>
+ </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="reviewers.html">Reviewers</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="about.html">About</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
-        </div>
-    </footer>
+ <!-- ══════ CTA ══════ -->
+ <section class="cta-section">
+  <h2>Got a show to promote?</h2>
+  <p>Whether you're a major production or a community theatre group, we'd love to help spread the word about your show.</p>
+  <div class="cta-buttons">
+   <a href="submit-show.html" class="btn btn-primary">Submit a Show</a>
+   <a href="promote-show.html" class="btn btn-secondary">Promote Your Show</a>
+  </div>
+ </section>
 
-        <button class="pwa-install-btn" onclick="installPWA()">Install</button>
-        <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
-    </div>
-    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+ <footer>
+  <div class="footer-content">
+   <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="reviewers.html">Reviewers</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="contact.html">Contact</a>
+   </div>
+   <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+  </div>
+ </footer>
 
-    <script>
-        // ===========================================
-        // What's On — Show Listings Data
-        // ===========================================
-        // To add a new show, add an object to this array.
-        // Fields: title, venue, dates, endDate (YYYY-MM-DD), category, description, price, ticketUrl, image (optional), reviewUrl (optional)
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
-        const shows = [
-            {
-                title: 'Mamma Mia!',
-                venue: 'Princess Theatre',
-                dates: 'Now showing',
-                endDate: '2026-06-30',
-                category: 'Musical',
-                description: 'The smash-hit musical based on the songs of ABBA returns to Melbourne. A mother, a daughter, three possible dads, and a trip down the aisle on a Greek island paradise.',
-                price: 'From $70',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-deanna-mamma-mia.html'
-            },
-            {
-                title: 'Mary Poppins',
-                venue: 'Her Majesty\'s Theatre',
-                dates: 'Now showing',
-                endDate: '2026-05-15',
-                category: 'Musical',
-                description: 'Disney and Cameron Mackintosh\'s supercalifragilistic musical. A practically perfect production that brings the magic of Cherry Tree Lane to life on stage.',
-                price: 'From $65',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-deanna-mary-poppins.html'
-            },
-            {
-                title: 'Into the Woods Jr.',
-                venue: 'National Theatre',
-                dates: 'March 2026',
-                endDate: '2026-03-28',
-                category: 'Family',
-                description: 'A junior production of Sondheim\'s beloved fairy-tale musical, performed by an outstanding young cast. Be careful what you wish for.',
-                price: 'From $25',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-penelope-into-the-woods-jr.html'
-            },
-            {
-                title: 'Romeo and Juliet',
-                venue: 'Arts Centre Melbourne',
-                dates: 'March &ndash; April 2026',
-                endDate: '2026-04-20',
-                category: 'Play',
-                description: 'Shakespeare\'s timeless tragedy of star-crossed lovers, reimagined for a contemporary audience. A powerful and moving production.',
-                price: 'From $55',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-deanna-romeo-and-juliet.html'
-            },
-            {
-                title: 'Seussical the Musical',
-                venue: 'The Concourse, Chatswood',
-                dates: 'April 2026',
-                endDate: '2026-04-30',
-                category: 'Kids',
-                description: 'The Cat in the Hat narrates the story of Horton the Elephant, who discovers Whos on a speck of dust. A colourful, energetic show perfect for young audiences.',
-                price: 'From $30',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-deanna-seussical-the-musical.html'
-            },
-            {
-                title: 'The Little Mermaid Junior',
-                venue: 'MLC School Theatre',
-                dates: 'May 2026',
-                endDate: '2026-05-30',
-                category: 'Kids',
-                description: 'Disney\'s enchanting undersea adventure adapted for young performers. Join Ariel as she dreams of life on land in this sparkling junior production.',
-                price: 'From $20',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-penelope-the-little-mermaid-junior.html'
-            },
-            {
-                title: 'Bubble Laboratory',
-                venue: 'Melbourne International Comedy Festival',
-                dates: 'March &ndash; April 2026',
-                endDate: '2026-04-20',
-                category: 'Family',
-                description: 'A mesmerising family show featuring incredible bubble artistry. Science meets spectacle in this interactive experience that delights audiences of all ages.',
-                price: 'From $30',
-                ticketUrl: '#',
-                reviewUrl: 'reviews/review-deanna-bubble-laboratory.html'
-            },
-            {
-                title: 'Circus Oz: Non-Stop',
-                venue: 'Arts Centre Melbourne',
-                dates: 'April 2026',
-                endDate: '2026-04-30',
-                category: 'Circus',
-                description: 'Australia\'s legendary contemporary circus returns with a high-energy, non-stop show of acrobatics, comedy, and breathtaking skill.',
-                price: 'From $45',
-                ticketUrl: '#'
-            }
-        ];
+ <script>
+ /* ═══════════════════════════════════════════
+    Show Data — sourced from venue websites
+    as of 27 Feb 2026.
+    ═══════════════════════════════════════════ */
+ var TODAY = new Date('2026-02-27');
 
-        // ===========================================
-        // Rendering Logic
-        // ===========================================
-        const today = new Date();
-        today.setHours(0, 0, 0, 0);
+ var shows = [
+  {
+   title: 'The Book of Mormon',
+   venue: 'Princess Theatre',
+   dates: '6 Feb \u2013 31 May 2026',
+   startDate: '2026-02-06',
+   endDate: '2026-05-31',
+   category: 'Musical',
+   company: 'Marriner Group',
+   description: 'Australia\u2019s biggest musical comedy is back! This nine-time Tony Award\u00AE-winning Best Musical follows the misadventures of a mismatched pair of missionaries. Created by the makers of South Park.',
+   ticketUrl: 'https://premier.ticketek.com.au/shows/show.aspx?sh=BOOKOFM26',
+   runtime: '2 hrs 20 mins (incl. interval)',
+   warning: 'Explicit language, strobe lighting, smoke effects.',
+   tags: ['musical', 'comedy'],
+   featured: true,
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)'
+  },
+  {
+   title: 'Cluedo',
+   venue: 'Comedy Theatre',
+   dates: '7 Feb \u2013 15 Mar 2026',
+   startDate: '2026-02-07',
+   endDate: '2026-03-15',
+   category: 'Play',
+   company: 'Marriner Group',
+   description: 'The ultimate whodunnit! Six mysterious guests assemble at Boddy Manor for a night they\u2019ll never forget. Based on the cult 1985 film and classic Hasbro board game.',
+   ticketUrl: 'https://premier.ticketek.com.au/Shows/Show.aspx?sh=CLUEDO26',
+   runtime: '1 hr 30 mins, no interval',
+   warning: 'Depictions of murder, simulated firearms, gunshots, brief flashing lights.',
+   tags: ['play', 'comedy', 'whodunnit'],
+   featured: true,
+   gradient: 'linear-gradient(135deg, #2d1b30 0%, #1a1a2e 50%, #0d0d2b 100%)'
+  },
+  {
+   title: 'Do Not Pass Go',
+   venue: 'Southbank Theatre, The Lawler',
+   dates: '14 Feb \u2013 28 Mar 2026',
+   startDate: '2026-02-14',
+   endDate: '2026-03-28',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'An oddly tender dark comedy set amid the soul-sucking grind of modern corporate culture. Two colleagues wander from work chat into politics, personal lives, and whether any of it still matters.',
+   ticketUrl: 'https://tickets.mtc.com.au/production/19781',
+   runtime: '1 hr 20 mins, no interval',
+   warning: 'Mature themes including discussions of gender-affirming surgery.',
+   tags: ['play', 'dark comedy', 'new writing'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #1b2838 0%, #171b26 50%, #0e1117 100%)'
+  },
+  {
+   title: 'West Gate',
+   venue: 'Southbank Theatre, The Sumner',
+   dates: '10 Mar \u2013 18 Apr 2026',
+   startDate: '2026-03-10',
+   endDate: '2026-04-18',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'An emotionally charged depiction of the human cost of Australia\u2019s worst industrial disaster \u2014 the West Gate Bridge collapse of 1970, featuring a stellar cast of cult screen favourites.',
+   ticketUrl: 'https://tickets.mtc.com.au/production/19782',
+   runtime: null,
+   warning: 'Frequent coarse language, racially sensitive language, mature themes.',
+   tags: ['play', 'drama', 'new writing', 'australian'],
+   featured: true,
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #292929 50%, #1a1a1a 100%)'
+  },
+  {
+   title: 'The Australian Ballet: Flora',
+   venue: 'Regent Theatre',
+   dates: '12 Mar \u2013 21 Mar 2026',
+   startDate: '2026-03-12',
+   endDate: '2026-03-21',
+   category: 'Dance',
+   company: 'The Australian Ballet \u00D7 Bangarra Dance Theatre',
+   description: 'A groundbreaking collaboration between The Australian Ballet and Bangarra Dance Theatre. An ensemble of over 35 dancers traces the profound influence of historic and environmental events on Australia\u2019s flora and First Peoples.',
+   ticketUrl: 'https://premier.ticketek.com.au/shows/show.aspx?sh=FLORA26',
+   runtime: null,
+   warning: null,
+   tags: ['dance', 'ballet', 'first nations'],
+   featured: true,
+   gradient: 'linear-gradient(135deg, #0b3d1a 0%, #1a2e1a 50%, #0d1f0d 100%)'
+  },
+  {
+   title: 'Daniel Kitson: Work in Progress',
+   venue: 'Southbank Theatre, The Lawler',
+   dates: '31 Mar \u2013 18 Apr 2026',
+   startDate: '2026-03-31',
+   endDate: '2026-04-18',
+   category: 'Comedy',
+   company: 'Southbank Theatre',
+   description: 'The legendary storyteller Daniel Kitson brings a brand-new work-in-progress to Melbourne. Known for his singular, deeply personal style of theatre-making that defies easy categorisation.',
+   ticketUrl: 'https://www.mtc.com.au/plays-and-tickets/whats-on/other-companies/daniel-kitson-work-in-progress/',
+   runtime: null,
+   warning: null,
+   tags: ['comedy', 'one-person', 'storytelling'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #2e1a2e 0%, #1a1a2e 50%, #0d0d2b 100%)'
+  },
+  {
+   title: 'The Glass Menagerie',
+   venue: 'Southbank Theatre, The Sumner',
+   dates: '27 Apr \u2013 5 Jun 2026',
+   startDate: '2026-04-27',
+   endDate: '2026-06-05',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'Tennessee Williams\u2019s haunting memory play stars Alison Whyte in a contemporary revival. A heartbreakingly hopeful mother clings to the past while trying to control the future. With Tim Draxl.',
+   ticketUrl: 'https://tickets.mtc.com.au/production/19783',
+   runtime: null,
+   warning: 'Mature themes, ableist and racist language.',
+   tags: ['play', 'classic', 'drama'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #1e1e3f 0%, #2a1a3f 50%, #0d0d2b 100%)'
+  },
+  {
+   title: 'Pass Around the Smile LIVE',
+   venue: 'Southbank Theatre, The Lawler',
+   dates: '2 May 2026',
+   startDate: '2026-05-02',
+   endDate: '2026-05-02',
+   category: 'Family',
+   company: 'Cleo Massey',
+   description: 'Join Cleo Massey for a joyful live show celebrating kindness and connection \u2014 perfect for young audiences and families.',
+   ticketUrl: 'https://www.mtc.com.au/plays-and-tickets/whats-on/other-companies/pass-around-the-smile-live/',
+   runtime: null,
+   warning: null,
+   tags: ['family', 'kids', 'live'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #3d1a3d 0%, #2e1a4a 50%, #1a0d33 100%)'
+  },
+  {
+   title: 'Shoelace Chaser',
+   venue: 'Southbank Theatre, The Lawler',
+   dates: '9 \u2013 27 May 2026',
+   startDate: '2026-05-09',
+   endDate: '2026-05-27',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'Growing up is hard enough, but add in being a carer \u2014 and the race gets even tougher. A moving comedy drama about chasing your dreams when the odds are stacked against you.',
+   ticketUrl: 'https://tickets.mtc.com.au/production/20203',
+   runtime: null,
+   warning: 'Mature themes, occasional coarse language.',
+   tags: ['play', 'new writing', 'education'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #1a2e1a 0%, #1a1a2e 50%, #0d1f20 100%)'
+  },
+  {
+   title: 'Retrograde',
+   venue: 'Arts Centre Melbourne, Fairfax Studio',
+   dates: '16 May \u2013 27 Jun 2026',
+   startDate: '2026-05-16',
+   endDate: '2026-06-27',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'By Ryan Calais Cameron. A powerful new work presented at the Arts Centre Melbourne\u2019s Fairfax Studio as part of MTC\u2019s 2026 Season.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play', 'drama'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #2e1a1a 0%, #1a1a2e 50%, #1a0d0d 100%)'
+  },
+  {
+   title: 'Losing Face',
+   venue: 'Southbank Theatre, The Sumner',
+   dates: '22 Jun \u2013 25 Jul 2026',
+   startDate: '2026-06-22',
+   endDate: '2026-07-25',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'A new work by Marieke Hardy, developed through MTC\u2019s acclaimed NEXT STAGE Writers\u2019 Program.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play', 'new writing'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #2e2e1a 50%, #1a1a0d 100%)'
+  },
+  {
+   title: 'Uncle Vanya',
+   venue: 'Arts Centre Melbourne, Playhouse',
+   dates: '21 Jul \u2013 22 Aug 2026',
+   startDate: '2026-07-21',
+   endDate: '2026-08-22',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'Chekhov\u2019s masterpiece of provincial longing and unfulfilled dreams at the Arts Centre Melbourne Playhouse.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play', 'classic', 'drama'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #1a2e2e 0%, #1a1a2e 50%, #0d1a1a 100%)'
+  },
+  {
+   title: 'The Jungle and the Sea',
+   venue: 'Southbank Theatre, The Sumner',
+   dates: '14 Aug \u2013 12 Sep 2026',
+   startDate: '2026-08-14',
+   endDate: '2026-09-12',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'A new work at the Sumner, presented as part of MTC\u2019s 2026 Season.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play', 'drama'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e1a 50%, #0d1a0d 100%)'
+  },
+  {
+   title: 'Eliza',
+   venue: 'Southbank Theatre, The Sumner',
+   dates: '28 Sep \u2013 31 Oct 2026',
+   startDate: '2026-09-28',
+   endDate: '2026-10-31',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'Part of MTC\u2019s 2026 Season at the Sumner theatre in Southbank.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #2e1a2e 0%, #1a2e2e 50%, #0d0d1a 100%)'
+  },
+  {
+   title: 'Before I Forget',
+   venue: 'Arts Centre Melbourne, Fairfax Studio',
+   dates: '24 Oct \u2013 28 Nov 2026',
+   startDate: '2026-10-24',
+   endDate: '2026-11-28',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'Presented at the Fairfax Studio as part of MTC\u2019s 2026 Season.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #1a1a2e 0%, #2e1a1a 50%, #1a0d0d 100%)'
+  },
+  {
+   title: 'A Room with a View',
+   venue: 'Southbank Theatre, The Sumner',
+   dates: '14 Nov \u2013 19 Dec 2026',
+   startDate: '2026-11-14',
+   endDate: '2026-12-19',
+   category: 'Play',
+   company: 'Melbourne Theatre Company',
+   description: 'The final production in MTC\u2019s 2026 Season at the Sumner.',
+   ticketUrl: 'https://tickets.mtc.com.au',
+   runtime: null,
+   warning: null,
+   tags: ['play'],
+   featured: false,
+   gradient: 'linear-gradient(135deg, #2e2e1a 0%, #1a2e1a 50%, #0d1a0d 100%)'
+  }
+ ];
 
-        function getShowStatus(endDate) {
-            const end = new Date(endDate);
-            const diffDays = Math.ceil((end - today) / (1000 * 60 * 60 * 24));
 
-            if (diffDays < 0) return { label: 'Finished', class: 'finished', sort: 3 };
-            if (diffDays <= 14) return { label: 'Closing Soon', class: 'closing-soon', sort: 0 };
-            return { label: 'Now Showing', class: 'now-showing', sort: 1 };
-        }
+ /* ═══════════════════════════════════════════
+    Helpers
+    ═══════════════════════════════════════════ */
+ function getStatus(show) {
+  var s = new Date(show.startDate);
+  var e = new Date(show.endDate);
+  if (TODAY < s) return 'coming-soon';
+  if (TODAY > e) return 'closed';
+  var daysLeft = Math.ceil((e - TODAY) / 86400000);
+  if (daysLeft <= 14) return 'closing-soon';
+  return 'now-playing';
+ }
 
-        function renderShows(filter) {
-            const container = document.getElementById('showsContainer');
-            const noShows = document.getElementById('noShows');
+ function statusLabel(status) {
+  switch (status) {
+   case 'now-playing':  return 'Now Playing';
+   case 'closing-soon': return 'Closing Soon';
+   case 'coming-soon':  return 'Coming Soon';
+   case 'closed':       return 'Closed';
+   default:             return status;
+  }
+ }
 
-            // Filter out finished shows and apply category filter
-            let filtered = shows.filter(show => {
-                const status = getShowStatus(show.endDate);
-                if (status.label === 'Finished') return false;
-                if (filter && filter !== 'all' && show.category !== filter) return false;
-                return true;
-            });
+ function statusBadgeClass(status) {
+  switch (status) {
+   case 'now-playing':  return 'now';
+   case 'closing-soon': return 'closing';
+   case 'coming-soon':  return 'soon';
+   default:             return '';
+  }
+ }
 
-            // Sort: closing soon first, then by end date
-            filtered.sort((a, b) => {
-                const statusA = getShowStatus(a.endDate);
-                const statusB = getShowStatus(b.endDate);
-                if (statusA.sort !== statusB.sort) return statusA.sort - statusB.sort;
-                return new Date(a.endDate) - new Date(b.endDate);
-            });
+ function initials(title) {
+  return title.replace(/^(The |A |An )/i, '').split(/\s+/).slice(0, 2).map(function(w) { return w[0]; }).join('').toUpperCase();
+ }
 
-            if (filtered.length === 0) {
-                container.innerHTML = '';
-                noShows.style.display = 'block';
-                return;
-            }
 
-            noShows.style.display = 'none';
+ /* ═══════════════════════════════════════════
+    Slideshow
+    ═══════════════════════════════════════════ */
+ var featuredShows = shows.filter(function(s) { return s.featured && getStatus(s) !== 'closed'; });
+ var currentSlide = 0;
+ var slideInterval;
 
-            // Group by status
-            const closingSoon = filtered.filter(s => getShowStatus(s.endDate).class === 'closing-soon');
-            const nowShowing = filtered.filter(s => getShowStatus(s.endDate).class === 'now-showing');
-            const comingSoon = filtered.filter(s => getShowStatus(s.endDate).class === 'coming-soon');
+ function buildSlideshow() {
+  var container = document.getElementById('heroSlideshow');
+  featuredShows.forEach(function(show, i) {
+   var status = getStatus(show);
+   var slide = document.createElement('div');
+   slide.className = 'slide' + (i === 0 ? ' active' : '');
+   slide.innerHTML =
+    '<div class="slide-bg" style="background:' + show.gradient + '"></div>' +
+    '<div class="slide-content">' +
+     '<span class="slide-badge ' + statusBadgeClass(status) + '">' + statusLabel(status) + '</span>' +
+     '<h2 class="slide-title">' + show.title + '</h2>' +
+     '<p class="slide-meta">' + show.venue + ' &bull; ' + show.dates + '</p>' +
+     '<p class="slide-desc">' + show.description + '</p>' +
+     '<div class="slide-actions">' +
+      '<a href="' + show.ticketUrl + '" class="btn btn-primary" target="_blank" rel="noopener">Get Tickets</a>' +
+     '</div>' +
+    '</div>';
+   container.appendChild(slide);
+  });
 
-            let html = '';
+  // Arrows
+  var prevBtn = document.createElement('button');
+  prevBtn.className = 'slide-arrow prev';
+  prevBtn.setAttribute('aria-label', 'Previous slide');
+  prevBtn.innerHTML = '&#8249;';
+  prevBtn.addEventListener('click', function() { goToSlide(currentSlide - 1); resetSlideInterval(); });
+  container.appendChild(prevBtn);
 
-            if (closingSoon.length > 0) {
-                html += renderSection('Closing Soon', closingSoon.length + ' show' + (closingSoon.length !== 1 ? 's' : ''), closingSoon);
-            }
-            if (nowShowing.length > 0) {
-                html += renderSection('Now Showing', nowShowing.length + ' show' + (nowShowing.length !== 1 ? 's' : ''), nowShowing);
-            }
-            if (comingSoon.length > 0) {
-                html += renderSection('Coming Soon', comingSoon.length + ' show' + (comingSoon.length !== 1 ? 's' : ''), comingSoon);
-            }
+  var nextBtn = document.createElement('button');
+  nextBtn.className = 'slide-arrow next';
+  nextBtn.setAttribute('aria-label', 'Next slide');
+  nextBtn.innerHTML = '&#8250;';
+  nextBtn.addEventListener('click', function() { goToSlide(currentSlide + 1); resetSlideInterval(); });
+  container.appendChild(nextBtn);
 
-            // If all ended up in one group, just render flat
-            if (html === '') {
-                html = renderSection('Current Shows', filtered.length + ' show' + (filtered.length !== 1 ? 's' : ''), filtered);
-            }
+  // Dots
+  var dots = document.createElement('div');
+  dots.className = 'slide-dots';
+  featuredShows.forEach(function(_, i) {
+   var dot = document.createElement('button');
+   dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
+   dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+   dot.addEventListener('click', function() { goToSlide(i); resetSlideInterval(); });
+   dots.appendChild(dot);
+  });
+  container.appendChild(dots);
 
-            container.innerHTML = html;
-        }
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+   if (e.key === 'ArrowLeft') { goToSlide(currentSlide - 1); resetSlideInterval(); }
+   if (e.key === 'ArrowRight') { goToSlide(currentSlide + 1); resetSlideInterval(); }
+  });
 
-        function renderSection(title, subtitle, showList) {
-            let html = `
-                <div class="time-section">
-                    <h2 class="time-section-header">${title}<span>${subtitle}</span></h2>
-                    <div class="shows-grid">
-            `;
+  startSlideInterval();
+ }
 
-            showList.forEach(show => {
-                const status = getShowStatus(show.endDate);
-                const reviewLink = show.reviewUrl
-                    ? `<a href="${show.reviewUrl}" class="reviewed-badge">Read Our Review</a>`
-                    : '';
+ function goToSlide(n) {
+  var slides = document.querySelectorAll('.hero-slideshow .slide');
+  var dots = document.querySelectorAll('.slide-dot');
+  slides[currentSlide].classList.remove('active');
+  dots[currentSlide].classList.remove('active');
+  currentSlide = (n + featuredShows.length) % featuredShows.length;
+  slides[currentSlide].classList.add('active');
+  dots[currentSlide].classList.add('active');
+ }
 
-                html += `
-                    <div class="show-card" data-category="${show.category}">
-                        <div class="show-card-image">
-                            <div class="placeholder">${show.title.charAt(0)}</div>
-                            <div class="show-status ${status.class}">${status.label}</div>
-                        </div>
-                        <div class="show-card-body">
-                            <div class="show-card-category">${show.category}</div>
-                            <h3 class="show-card-title">${show.title}</h3>
-                            <div class="show-card-meta">
-                                <div class="meta-line"><span class="label">Venue</span> ${show.venue}</div>
-                                <div class="meta-line"><span class="label">Dates</span> ${show.dates}</div>
-                            </div>
-                            <p class="show-card-desc">${show.description}</p>
-                            <div class="show-card-footer">
-                                <span class="price"><strong>${show.price}</strong></span>
-                                ${reviewLink}
-                                ${show.ticketUrl && show.ticketUrl !== '#'
-                                    ? `<a href="${show.ticketUrl}" class="btn-show" target="_blank" rel="noopener">Get Tickets</a>`
-                                    : ''}
-                            </div>
-                        </div>
-                    </div>
-                `;
-            });
+ function startSlideInterval() { slideInterval = setInterval(function() { goToSlide(currentSlide + 1); }, 6000); }
+ function resetSlideInterval() { clearInterval(slideInterval); startSlideInterval(); }
 
-            html += `</div></div>`;
-            return html;
-        }
 
-        // ===========================================
-        // Filter Controls
-        // ===========================================
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                renderShows(btn.dataset.category);
-            });
-        });
+ /* ═══════════════════════════════════════════
+    Quick Stats
+    ═══════════════════════════════════════════ */
+ function buildStats() {
+  var active = shows.filter(function(s) { var st = getStatus(s); return st === 'now-playing' || st === 'closing-soon'; });
+  var upcoming = shows.filter(function(s) { return getStatus(s) === 'coming-soon'; });
+  var venues = [];
+  var companies = [];
+  shows.forEach(function(s) {
+   if (venues.indexOf(s.venue) === -1) venues.push(s.venue);
+   if (companies.indexOf(s.company) === -1) companies.push(s.company);
+  });
 
-        // Initial render
-        renderShows('all');
-    </script>
-    <script src="js/shared.js"></script>
+  var container = document.getElementById('quickStats');
+  var stats = [
+   { n: active.length,    l: 'Now Playing' },
+   { n: upcoming.length,  l: 'Coming Soon' },
+   { n: venues.length,    l: 'Venues' },
+   { n: companies.length, l: 'Companies' }
+  ];
+  stats.forEach(function(s) {
+   var card = document.createElement('div');
+   card.className = 'stat-card';
+   card.innerHTML = '<div class="stat-number">' + s.n + '</div><div class="stat-label">' + s.l + '</div>';
+   container.appendChild(card);
+  });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Filters
+    ═══════════════════════════════════════════ */
+ var activeStatusFilter = 'all';
+ var activeCategoryFilter = 'all';
+ var activeVenueFilter = 'all';
+
+ function buildFilters() {
+  // Status
+  var statuses = ['all', 'now-playing', 'closing-soon', 'coming-soon'];
+  var statusContainer = document.getElementById('statusFilters');
+  statuses.forEach(function(s) {
+   var btn = document.createElement('button');
+   btn.className = 'filter-chip' + (s === 'all' ? ' active' : '');
+   btn.textContent = s === 'all' ? 'All Shows' : statusLabel(s);
+   btn.addEventListener('click', function() {
+    activeStatusFilter = s;
+    var chips = document.querySelectorAll('#statusFilters .filter-chip');
+    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
+    btn.classList.add('active');
+    renderShows();
+   });
+   statusContainer.appendChild(btn);
+  });
+
+  // Category
+  var catSet = [];
+  shows.forEach(function(s) { if (catSet.indexOf(s.category) === -1) catSet.push(s.category); });
+  var categories = ['all'].concat(catSet);
+  var catContainer = document.getElementById('categoryFilters');
+  categories.forEach(function(c) {
+   var btn = document.createElement('button');
+   btn.className = 'filter-chip' + (c === 'all' ? ' active' : '');
+   btn.textContent = c === 'all' ? 'All' : c;
+   btn.addEventListener('click', function() {
+    activeCategoryFilter = c;
+    var chips = document.querySelectorAll('#categoryFilters .filter-chip');
+    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
+    btn.classList.add('active');
+    renderShows();
+   });
+   catContainer.appendChild(btn);
+  });
+
+  // Venue
+  var venSet = [];
+  shows.forEach(function(s) { if (venSet.indexOf(s.venue) === -1) venSet.push(s.venue); });
+  var venues = ['all'].concat(venSet);
+  var venueContainer = document.getElementById('venueFilters');
+  venues.forEach(function(v) {
+   var btn = document.createElement('button');
+   btn.className = 'filter-chip' + (v === 'all' ? ' active' : '');
+   btn.textContent = v === 'all' ? 'All' : v;
+   btn.addEventListener('click', function() {
+    activeVenueFilter = v;
+    var chips = document.querySelectorAll('#venueFilters .filter-chip');
+    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
+    btn.classList.add('active');
+    renderShows();
+   });
+   venueContainer.appendChild(btn);
+  });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Render Shows
+    ═══════════════════════════════════════════ */
+ function renderShows() {
+  var grid = document.getElementById('showsGrid');
+  grid.innerHTML = '';
+
+  var filtered = shows.filter(function(s) {
+   var status = getStatus(s);
+   if (status === 'closed') return false;
+   if (activeStatusFilter !== 'all' && status !== activeStatusFilter) return false;
+   if (activeCategoryFilter !== 'all' && s.category !== activeCategoryFilter) return false;
+   if (activeVenueFilter !== 'all' && s.venue !== activeVenueFilter) return false;
+   return true;
+  });
+
+  // Sort: closing-soon first, then now-playing, then coming-soon (by start date)
+  var order = { 'closing-soon': 0, 'now-playing': 1, 'coming-soon': 2 };
+  filtered.sort(function(a, b) {
+   var sa = getStatus(a), sb = getStatus(b);
+   if (order[sa] !== order[sb]) return order[sa] - order[sb];
+   return new Date(a.startDate) - new Date(b.startDate);
+  });
+
+  if (filtered.length === 0) {
+   grid.innerHTML = '<div class="no-results"><h3>No shows match your filters</h3><p>Try adjusting your selection above.</p></div>';
+   return;
+  }
+
+  filtered.forEach(function(show) {
+   var status = getStatus(show);
+   var card = document.createElement('div');
+   card.className = 'show-card';
+
+   var detailHTML = '';
+   var details = [];
+   if (show.runtime) details.push('\u23F1 ' + show.runtime);
+   if (show.warning) details.push('\u26A0\uFE0F ' + show.warning);
+   if (details.length) detailHTML = '<div class="show-card-detail">' + details.map(function(d) { return '<span>' + d + '</span>'; }).join('') + '</div>';
+
+   var tagsHTML = show.tags.map(function(t) { return '<span class="show-tag">' + t + '</span>'; }).join('');
+
+   card.innerHTML =
+    '<div class="show-card-header">' +
+     '<div class="show-card-gradient" style="background:' + show.gradient + '">' +
+      '<span class="show-card-initials">' + initials(show.title) + '</span>' +
+     '</div>' +
+     '<div class="show-card-badges">' +
+      '<span class="slide-badge ' + statusBadgeClass(status) + '">' + statusLabel(status) + '</span>' +
+     '</div>' +
+    '</div>' +
+    '<div class="show-card-body">' +
+     '<h3 class="show-card-title">' + show.title + '</h3>' +
+     '<p class="show-card-venue">' + show.venue + '</p>' +
+     '<p class="show-card-dates">' + show.dates + '</p>' +
+     '<p class="show-card-company">' + show.company + '</p>' +
+     '<p class="show-card-desc">' + show.description + '</p>' +
+     '<div class="show-card-footer">' +
+      '<div class="show-card-tags">' + tagsHTML + '</div>' +
+      '<a href="' + show.ticketUrl + '" class="show-card-link" target="_blank" rel="noopener">Tickets</a>' +
+     '</div>' +
+     detailHTML +
+    '</div>';
+   grid.appendChild(card);
+  });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Init
+    ═══════════════════════════════════════════ */
+ document.addEventListener('DOMContentLoaded', function() {
+  buildSlideshow();
+  buildStats();
+  buildFilters();
+  renderShows();
+ });
+ </script>
+
+ <script src="js/shared.js"></script>
 </body>
 </html>

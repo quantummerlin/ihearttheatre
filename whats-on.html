@@ -3,8 +3,8 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>What's On | Melbourne Theatre Shows | iHeartTheatre</title>
- <meta name="description" content="What's on in Melbourne theatre right now — musicals, plays, dance &amp; family shows. Real-time listings with dates, venues and ticket links.">
+ <title>What's On in Victoria | Theatre, Auditions &amp; Promos | iHeartTheatre</title>
+ <meta name="description" content="Everything happening in Victorian theatre — professional, community, school and amateur. Upcoming shows, auditions, promos and ticket links from community halls to the main strip.">
  <meta name="theme-color" content="#667eea">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -445,6 +445,275 @@
    .filter-row { gap: 6px; }
    .filter-chip { padding: 6px 14px; font-size: .8rem; }
   }
+
+  /* ── Venue Type Badges ──────────────────────── */
+  .vtype-badge {
+   font-size: .68rem;
+   padding: 3px 9px;
+   border-radius: 12px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: .5px;
+  }
+  .vtype-professional { background: rgba(102,126,234,.18); color: #667eea; border: 1px solid rgba(102,126,234,.3); }
+  .vtype-community    { background: rgba(255,215,0,.12); color: #ffd700; border: 1px solid rgba(255,215,0,.25); }
+  .vtype-school       { background: rgba(80,200,120,.12); color: #50c878; border: 1px solid rgba(80,200,120,.25); }
+  .vtype-amateur      { background: rgba(255,140,0,.12); color: #ff8c00; border: 1px solid rgba(255,140,0,.25); }
+
+  /* ── Submit Banner ──────────────────────────── */
+  .submit-banner {
+   max-width: 1200px;
+   margin: 40px auto 0;
+   padding: 0 2rem;
+  }
+  .submit-banner-inner {
+   background: linear-gradient(135deg, rgba(102,126,234,.12) 0%, rgba(118,75,162,.12) 100%);
+   border: 1px solid rgba(102,126,234,.25);
+   border-radius: 20px;
+   padding: 28px 36px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+   flex-wrap: wrap;
+  }
+  .submit-banner-text h3 {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.3rem;
+   margin-bottom: 6px;
+  }
+  .submit-banner-text p {
+   color: var(--text-secondary);
+   font-size: .9rem;
+   line-height: 1.5;
+   margin: 0;
+  }
+  .submit-banner-actions { display: flex; gap: 10px; flex-wrap: wrap; flex-shrink: 0; }
+  @media (max-width: 700px) {
+   .submit-banner-inner { padding: 22px 20px; }
+   .submit-banner-text h3 { font-size: 1.1rem; }
+  }
+
+  /* ── Section Headings ───────────────────────── */
+  .section-heading {
+   max-width: 1200px;
+   margin: 56px auto 0;
+   padding: 0 2rem;
+   display: flex;
+   align-items: baseline;
+   justify-content: space-between;
+   gap: 16px;
+   flex-wrap: wrap;
+  }
+  .section-heading h2 {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.7rem;
+   font-weight: 700;
+   background: var(--gradient-primary);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   margin: 0;
+  }
+  .section-heading p {
+   color: var(--text-secondary);
+   font-size: .88rem;
+   margin: 0;
+  }
+  .section-heading a {
+   color: var(--accent-primary);
+   font-size: .88rem;
+   text-decoration: none;
+  }
+  .section-heading a:hover { text-decoration: underline; }
+
+  /* ── Auditions Section ──────────────────────── */
+  .auditions-section {
+   max-width: 1200px;
+   margin: 24px auto 0;
+   padding: 0 2rem;
+  }
+  .auditions-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+   gap: 20px;
+  }
+  .audition-card {
+   background: var(--glass-bg);
+   border: 1px solid rgba(80,200,120,.15);
+   border-radius: 16px;
+   padding: 22px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .audition-card:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 12px 32px rgba(80,200,120,.1);
+  }
+  .audition-show {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.15rem;
+   font-weight: 600;
+   line-height: 1.3;
+  }
+  .audition-company {
+   color: #50c878;
+   font-size: .82rem;
+   font-weight: 500;
+  }
+  .audition-detail {
+   color: var(--text-secondary);
+   font-size: .85rem;
+   line-height: 1.55;
+  }
+  .audition-meta {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+   margin-top: 2px;
+  }
+  .audition-meta-item {
+   font-size: .8rem;
+   color: var(--text-secondary);
+  }
+  .audition-roles {
+   font-size: .82rem;
+   color: var(--text-secondary);
+  }
+  .audition-roles strong { color: var(--text-primary); }
+  .audition-card-footer {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin-top: 6px;
+   gap: 10px;
+   flex-wrap: wrap;
+  }
+  .audition-deadline {
+   font-size: .8rem;
+   color: #ff8c00;
+   font-weight: 600;
+  }
+  .audition-link {
+   display: inline-block;
+   padding: 7px 18px;
+   border-radius: 20px;
+   border: 1px solid rgba(80,200,120,.4);
+   color: #50c878;
+   font-size: .8rem;
+   font-weight: 600;
+   text-decoration: none;
+   transition: background .2s, color .2s;
+   white-space: nowrap;
+  }
+  .audition-link:hover { background: rgba(80,200,120,.15); }
+  @media (max-width: 768px) { .auditions-grid { grid-template-columns: 1fr; } }
+
+  /* ── Promos Section ─────────────────────────── */
+  .promos-section {
+   max-width: 1200px;
+   margin: 24px auto 0;
+   padding: 0 2rem;
+  }
+  .promos-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+   gap: 20px;
+  }
+  .promo-card {
+   background: linear-gradient(135deg, rgba(255,215,0,.06) 0%, rgba(255,179,71,.04) 100%);
+   border: 1px solid rgba(255,215,0,.18);
+   border-radius: 16px;
+   padding: 22px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .promo-card:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 12px 32px rgba(255,215,0,.08);
+  }
+  .promo-badge {
+   display: inline-block;
+   background: var(--gradient-gold);
+   color: #1a1a1a;
+   font-size: .7rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   padding: 4px 12px;
+   border-radius: 12px;
+   width: fit-content;
+  }
+  .promo-show {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.1rem;
+   font-weight: 600;
+   line-height: 1.3;
+  }
+  .promo-company { color: var(--text-secondary); font-size: .82rem; }
+  .promo-offer { color: #ffd700; font-size: .95rem; font-weight: 600; line-height: 1.4; }
+  .promo-detail { color: var(--text-secondary); font-size: .83rem; line-height: 1.5; }
+  .promo-expiry { color: #ff8c00; font-size: .78rem; font-weight: 600; }
+  .promo-link {
+   display: inline-block;
+   padding: 8px 20px;
+   border-radius: 20px;
+   background: rgba(255,215,0,.12);
+   border: 1px solid rgba(255,215,0,.3);
+   color: #ffd700;
+   font-size: .82rem;
+   font-weight: 600;
+   text-decoration: none;
+   width: fit-content;
+   transition: background .2s;
+   margin-top: 4px;
+  }
+  .promo-link:hover { background: rgba(255,215,0,.22); }
+  @media (max-width: 768px) { .promos-grid { grid-template-columns: 1fr; } }
+
+  /* ── Reviews Teaser ─────────────────────────── */
+  .reviews-teaser {
+   max-width: 1200px;
+   margin: 24px auto 0;
+   padding: 0 2rem 60px;
+  }
+  .reviews-teaser-grid {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+   gap: 20px;
+  }
+  .review-teaser-card {
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   border-radius: 16px;
+   padding: 22px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   text-decoration: none;
+   color: inherit;
+   transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .review-teaser-card:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 12px 32px rgba(102,126,234,.12);
+  }
+  .review-teaser-stars { color: #ffd700; font-size: .95rem; letter-spacing: 2px; }
+  .review-teaser-show { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; }
+  .review-teaser-by { color: var(--text-secondary); font-size: .8rem; }
+  .review-teaser-excerpt {
+   color: var(--text-secondary);
+   font-size: .84rem;
+   line-height: 1.5;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+  }
  </style>
 </head>
 <body>
@@ -473,6 +742,20 @@
   </div>
  </nav>
 
+ <!-- ══════ Submit Banner ══════ -->
+ <div class="submit-banner">
+  <div class="submit-banner-inner">
+   <div class="submit-banner-text">
+    <h3>🎭 Get your show, audition or promo listed — it's free!</h3>
+    <p>iHeartTheatre is a celebration of Victorian theatre in every form. Community halls, school productions, amateur companies, fringe shows, professional seasons — we want to know about all of it. Send us the details.</p>
+   </div>
+   <div class="submit-banner-actions">
+    <a href="submit-show.html" class="btn btn-primary">Submit a Show</a>
+    <a href="contact.html" class="btn btn-secondary">Message Us</a>
+   </div>
+  </div>
+ </div>
+
  <!-- ══════ Hero Slideshow ══════ -->
  <section class="hero-slideshow" id="heroSlideshow" aria-label="Featured shows slideshow">
   <!-- slides injected by JS -->
@@ -488,13 +771,19 @@
   <div class="filter-row" id="statusFilters">
    <span class="filter-label">Status</span>
   </div>
-  <div class="filter-row" id="categoryFilters">
-   <span class="filter-label">Category</span>
+  <div class="filter-row" id="vtypeFilters">
+   <span class="filter-label">Type</span>
   </div>
-  <div class="filter-row" id="venueFilters">
-   <span class="filter-label">Venue</span>
+  <div class="filter-row" id="categoryFilters">
+   <span class="filter-label">Genre</span>
   </div>
  </section>
+
+ <!-- ══════ Shows Section Heading ══════ -->
+ <div class="section-heading">
+  <h2>Upcoming Shows Across Victoria</h2>
+  <p>From the main strip to community halls &amp; school stages</p>
+ </div>
 
  <!-- ══════ Shows Grid ══════ -->
  <section class="shows-section">
@@ -503,13 +792,53 @@
   </div>
  </section>
 
+ <!-- ══════ Auditions Heading ══════ -->
+ <div class="section-heading">
+  <h2>Auditions &amp; Casting Calls</h2>
+  <p>Open auditions across Victoria — community, school &amp; professional</p>
+ </div>
+
+ <!-- ══════ Auditions Grid ══════ -->
+ <section class="auditions-section">
+  <div class="auditions-grid" id="auditionsGrid">
+   <!-- injected by JS -->
+  </div>
+ </section>
+
+ <!-- ══════ Promos Heading ══════ -->
+ <div class="section-heading">
+  <h2>Deals &amp; Promotions</h2>
+  <p>Special offers, group discounts &amp; last-minute deals</p>
+ </div>
+
+ <!-- ══════ Promos Grid ══════ -->
+ <section class="promos-section">
+  <div class="promos-grid" id="promosGrid">
+   <!-- injected by JS -->
+  </div>
+ </section>
+
+ <!-- ══════ Reviews Heading ══════ -->
+ <div class="section-heading">
+  <h2>Shows We've Celebrated</h2>
+  <a href="reviews.html">Read all our write-ups &rarr;</a>
+ </div>
+
+ <!-- ══════ Reviews Teaser ══════ -->
+ <div class="reviews-teaser">
+  <div class="reviews-teaser-grid" id="reviewsTeaserGrid">
+   <!-- injected by JS -->
+  </div>
+ </div>
+
  <!-- ══════ CTA ══════ -->
  <section class="cta-section">
-  <h2>Got a show to promote?</h2>
-  <p>Whether you're a major production or a community theatre group, we'd love to help spread the word about your show.</p>
+  <h2>Be part of the celebration</h2>
+  <p>iHeartTheatre exists to celebrate Victorian theatre in every form — from community halls and school stages to the professional seasons. Whether you want to submit a show, share an audition notice, or just say hello, we'd love to hear from you.</p>
   <div class="cta-buttons">
    <a href="submit-show.html" class="btn btn-primary">Submit a Show</a>
    <a href="promote-show.html" class="btn btn-secondary">Promote Your Show</a>
+   <a href="contact.html" class="btn btn-secondary">Contact Us</a>
   </div>
  </section>
 
@@ -533,14 +862,16 @@
  <script>
  /* ═══════════════════════════════════════════
     Show Data — sourced from venue websites
-    as of 27 Feb 2026.
+    as of 30 Mar 2026.
+    venueType: 'professional' | 'community' | 'school' | 'amateur'
     ═══════════════════════════════════════════ */
- var TODAY = new Date('2026-02-27');
+ var TODAY = new Date('2026-03-31');
 
  var shows = [
   {
    title: 'The Book of Mormon',
    venue: 'Princess Theatre',
+   venueType: 'professional',
    dates: '6 Feb \u2013 31 May 2026',
    startDate: '2026-02-06',
    endDate: '2026-05-31',
@@ -558,6 +889,7 @@
   {
    title: 'Cluedo',
    venue: 'Comedy Theatre',
+   venueType: 'professional',
    dates: '7 Feb \u2013 15 Mar 2026',
    startDate: '2026-02-07',
    endDate: '2026-03-15',
@@ -568,13 +900,14 @@
    runtime: '1 hr 30 mins, no interval',
    warning: 'Depictions of murder, simulated firearms, gunshots, brief flashing lights.',
    tags: ['play', 'comedy', 'whodunnit'],
-   featured: true,
+   featured: false,
    gradient: 'linear-gradient(135deg, #2d1b30 0%, #1a1a2e 50%, #0d0d2b 100%)',
    image: null
   },
   {
    title: 'Do Not Pass Go',
    venue: 'Southbank Theatre, The Lawler',
+   venueType: 'professional',
    dates: '14 Feb \u2013 28 Mar 2026',
    startDate: '2026-02-14',
    endDate: '2026-03-28',
@@ -592,6 +925,7 @@
   {
    title: 'West Gate',
    venue: 'Southbank Theatre, The Sumner',
+   venueType: 'professional',
    dates: '10 Mar \u2013 18 Apr 2026',
    startDate: '2026-03-10',
    endDate: '2026-04-18',
@@ -609,6 +943,7 @@
   {
    title: 'The Australian Ballet: Flora',
    venue: 'Regent Theatre',
+   venueType: 'professional',
    dates: '12 Mar \u2013 21 Mar 2026',
    startDate: '2026-03-12',
    endDate: '2026-03-21',
@@ -626,6 +961,7 @@
   {
    title: 'Daniel Kitson: Work in Progress',
    venue: 'Southbank Theatre, The Lawler',
+   venueType: 'professional',
    dates: '31 Mar \u2013 18 Apr 2026',
    startDate: '2026-03-31',
    endDate: '2026-04-18',
@@ -643,12 +979,13 @@
   {
    title: 'The Glass Menagerie',
    venue: 'Southbank Theatre, The Sumner',
+   venueType: 'professional',
    dates: '27 Apr \u2013 5 Jun 2026',
    startDate: '2026-04-27',
    endDate: '2026-06-05',
    category: 'Play',
    company: 'Melbourne Theatre Company',
-   description: 'Tennessee Williams\u2019s haunting memory play stars Alison Whyte in a contemporary revival. A heartbreakingly hopeful mother clings to the past while trying to control the future. With Tim Draxl.',
+   description: 'Tennessee Williams\u2019s haunting memory play stars Alison Whyte in a contemporary revival. A heartbreakingly hopeful mother clings to the past while trying to control the future.',
    ticketUrl: 'https://tickets.mtc.com.au/production/19783',
    runtime: null,
    warning: 'Mature themes, ableist and racist language.',
@@ -660,6 +997,7 @@
   {
    title: 'Pass Around the Smile LIVE',
    venue: 'Southbank Theatre, The Lawler',
+   venueType: 'professional',
    dates: '2 May 2026',
    startDate: '2026-05-02',
    endDate: '2026-05-02',
@@ -677,6 +1015,7 @@
   {
    title: 'Shoelace Chaser',
    venue: 'Southbank Theatre, The Lawler',
+   venueType: 'professional',
    dates: '9 \u2013 27 May 2026',
    startDate: '2026-05-09',
    endDate: '2026-05-27',
@@ -694,6 +1033,7 @@
   {
    title: 'Retrograde',
    venue: 'Arts Centre Melbourne, Fairfax Studio',
+   venueType: 'professional',
    dates: '16 May \u2013 27 Jun 2026',
    startDate: '2026-05-16',
    endDate: '2026-06-27',
@@ -711,6 +1051,7 @@
   {
    title: 'Losing Face',
    venue: 'Southbank Theatre, The Sumner',
+   venueType: 'professional',
    dates: '22 Jun \u2013 25 Jul 2026',
    startDate: '2026-06-22',
    endDate: '2026-07-25',
@@ -728,6 +1069,7 @@
   {
    title: 'Uncle Vanya',
    venue: 'Arts Centre Melbourne, Playhouse',
+   venueType: 'professional',
    dates: '21 Jul \u2013 22 Aug 2026',
    startDate: '2026-07-21',
    endDate: '2026-08-22',
@@ -745,6 +1087,7 @@
   {
    title: 'The Jungle and the Sea',
    venue: 'Southbank Theatre, The Sumner',
+   venueType: 'professional',
    dates: '14 Aug \u2013 12 Sep 2026',
    startDate: '2026-08-14',
    endDate: '2026-09-12',
@@ -762,6 +1105,7 @@
   {
    title: 'Eliza',
    venue: 'Southbank Theatre, The Sumner',
+   venueType: 'professional',
    dates: '28 Sep \u2013 31 Oct 2026',
    startDate: '2026-09-28',
    endDate: '2026-10-31',
@@ -779,6 +1123,7 @@
   {
    title: 'Before I Forget',
    venue: 'Arts Centre Melbourne, Fairfax Studio',
+   venueType: 'professional',
    dates: '24 Oct \u2013 28 Nov 2026',
    startDate: '2026-10-24',
    endDate: '2026-11-28',
@@ -796,6 +1141,7 @@
   {
    title: 'A Room with a View',
    venue: 'Southbank Theatre, The Sumner',
+   venueType: 'professional',
    dates: '14 Nov \u2013 19 Dec 2026',
    startDate: '2026-11-14',
    endDate: '2026-12-19',
@@ -812,6 +1158,1160 @@
   }
  ];
 
+ /* ── APRIL 2026 ── */
+ ,{
+  title: 'Shrek the Musical',
+  venue: 'Heathdale Christian College, Werribee Campus',
+  venueType: 'school',
+  dates: 'Apr / May 2026',
+  startDate: '2026-04-14',
+  endDate: '2026-05-10',
+  category: 'Musical',
+  company: 'Heathdale Christian College',
+  description: 'Heathdale\'s student performers bring the beloved ogre and his fairy-tale friends to life in this school production. Fairytale creatures, swamp songs and a whole lot of heart.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'School', 'Werribee'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a3d0d 0%, #2e5c1a 100%)',
+  image: null
+ },
+ {
+  title: 'Bonnie &amp; Clyde',
+  venue: 'Various, Geelong',
+  venueType: 'amateur',
+  dates: 'Apr 10\u201318, 2026',
+  startDate: '2026-04-10',
+  endDate: '2026-04-18',
+  category: 'Musical',
+  company: 'Theatre of the Damned',
+  description: 'Theatre of the Damned brings the rip-roaring story of America\'s most infamous outlaws to Geelong. This dark, electric musical is not for the faint-hearted.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Amateur', 'Geelong'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #3d0d0d 0%, #5c1a1a 100%)',
+  image: null
+ },
+ {
+  title: 'Les Mis\u00E9rables',
+  venue: 'Various, Berwick',
+  venueType: 'amateur',
+  dates: 'Apr 10\u201319, 2026',
+  startDate: '2026-04-10',
+  endDate: '2026-04-19',
+  category: 'Musical',
+  company: 'Upstage Theatre Company (UTC)',
+  description: 'The Upstage Theatre Company brings Victor Hugo\'s epic to the south-east. A sweeping community production of one of the greatest musicals ever written.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Amateur', 'Berwick', 'South-East'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d0d2e 0%, #1a1a5c 100%)',
+  image: null
+ },
+ {
+  title: 'Diary of a Wimpy Kid: The Musical',
+  venue: 'Various, Warragul',
+  venueType: 'school',
+  dates: 'Apr 14\u201317, 2026',
+  startDate: '2026-04-14',
+  endDate: '2026-04-17',
+  category: 'Musical',
+  company: 'Warragul Youth Theatre',
+  description: 'Straight from Greg Heffley\'s notebook: Warragul Youth Theatre tackles the hilarious coming-of-age musical based on the beloved book series. A great night out for families and kids.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Youth', 'Family', 'Warragul', 'Gippsland'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a0d 0%, #5c3a1a 100%)',
+  image: null
+ },
+ {
+  title: 'Frozen Jr',
+  venue: 'Cranbourne Community Theatre',
+  venueType: 'amateur',
+  dates: 'Apr 16\u201319, 2026',
+  startDate: '2026-04-16',
+  endDate: '2026-04-19',
+  category: 'Musical',
+  company: 'Windmill Theatre Company (WTC)',
+  description: 'Let it go! Windmill Theatre Company brings the junior edition of the smash-hit Disney musical to Cranbourne. Young performers, big songs, and a whole lot of Elsa magic.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Junior', 'Cranbourne', 'South-East'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a3d 0%, #1a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Oshun',
+  venue: 'Wyndham Cultural Centre, Werribee',
+  venueType: 'community',
+  dates: 'Apr 17\u201319, 2026',
+  startDate: '2026-04-17',
+  endDate: '2026-04-19',
+  category: 'Dance/Performance',
+  company: 'Wyndham Cultural Centre',
+  description: 'A contemporary performance work celebrating the Yoruba spirit of love, water and fertility. A cultural and artistic event at one of Melbourne\'s western suburbs\' premier community arts venues.',
+  ticketUrl: 'https://www.wyndhamculturalcentre.com.au',
+  runtime: 'TBC',
+  tags: ['Dance', 'Contemporary', 'Community', 'Werribee', 'West'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a00 0%, #5c3a00 100%)',
+  image: null
+ },
+ {
+  title: 'MARA',
+  venue: 'Theatre Works, St Kilda',
+  venueType: 'professional',
+  dates: 'Apr 22\u2013May 3, 2026',
+  startDate: '2026-04-22',
+  endDate: '2026-05-03',
+  category: 'Play',
+  company: 'Theatre Works',
+  description: 'A school-matinee season at Theatre Works, St Kilda. MARA is an intimate new work presented specifically for student audiences. A chance for younger Melburnians to experience live independent theatre.',
+  ticketUrl: 'https://www.theatreworks.org.au',
+  runtime: 'TBC',
+  tags: ['Play', 'School Matinees', 'Independent', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d2e 0%, #3a1a5c 100%)',
+  image: null
+ },
+ /* ── MAY 2026 ── */
+ ,{
+  title: 'Waitress',
+  venue: 'Her Majesty\'s Theatre, Melbourne',
+  venueType: 'professional',
+  dates: 'May 1\u201331, 2026',
+  startDate: '2026-05-01',
+  endDate: '2026-05-31',
+  category: 'Musical',
+  company: 'Crossroads Live Australia',
+  description: 'The feel-good musical about a woman who finds her voice through the art of baking. Featuring the irresistible score by Jessie Nelson, Waitress is a sweet slice of theatre at Her Majesty\'s this May.',
+  ticketUrl: 'https://premier.ticketek.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Professional', 'Melbourne CBD'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #5c1a1a 0%, #8c2a2a 100%)',
+  image: null
+ },
+ {
+  title: '&amp; Juliet',
+  venue: 'The Forge Theatre, Bairnsdale',
+  venueType: 'community',
+  dates: 'May 1\u201317, 2026',
+  startDate: '2026-05-01',
+  endDate: '2026-05-17',
+  category: 'Musical',
+  company: 'The Forge Theatre, Bairnsdale',
+  description: 'East Gippsland\'s Forge Theatre tackles the pop-music smash about Juliet living her best life after Romeo. Packed with Max Martin anthems — a fabulous night out in Bairnsdale.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Community', 'Bairnsdale', 'Gippsland'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e0d3d 0%, #5c1a6e 100%)',
+  image: null
+ },
+ {
+  title: 'La Traviata',
+  venue: 'Various (Opera Australia touring)',
+  venueType: 'professional',
+  dates: 'May 8\u201316, 2026',
+  startDate: '2026-05-08',
+  endDate: '2026-05-16',
+  category: 'Opera',
+  company: 'Opera Australia',
+  description: 'Verdi\'s timeless tragedy of love, sacrifice and society. Opera Australia brings the full grandeur of La Traviata to Victorian audiences in a stunning production.',
+  ticketUrl: 'https://www.opera.org.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Opera Australia', 'Verdi'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a3d 0%, #1a2e6e 100%)',
+  image: null
+ },
+ {
+  title: 'AUTO-TUNE',
+  venue: 'Her Majesty\'s Theatre, Ballarat',
+  venueType: 'professional',
+  dates: 'May 9, 2026',
+  startDate: '2026-05-09',
+  endDate: '2026-05-09',
+  category: 'Musical',
+  company: 'Her Majesty\'s Theatre Ballarat',
+  description: 'A brand new rock opera event at the iconic Her Majesty\'s Theatre in Ballarat. AUTO-TUNE promises an electrifying evening of original music and live theatre in one of regional Victoria\'s grandest venues.',
+  ticketUrl: 'https://www.hmt.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Rock Opera', 'Professional', 'Ballarat'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%)',
+  image: null
+ },
+ {
+  title: 'Sister Act',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'May 2026',
+  startDate: '2026-05-01',
+  endDate: '2026-05-31',
+  category: 'Musical',
+  company: 'Various (dates TBC)',
+  description: 'The hilarious, feel-good musical inspired by the 1992 film. Deloris Van Cartier takes cover in a convent and transforms the choir. Dates and venues to be confirmed — watch this space!',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Community', 'Comedy'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d2e 0%, #3d1a5c 100%)',
+  image: null
+ },
+ {
+  title: 'The Magic Pudding: The Opera',
+  venue: 'Victorian Opera, Nunawading / Preston / Narre Warren',
+  venueType: 'professional',
+  dates: 'May 9\u201329, 2026',
+  startDate: '2026-05-09',
+  endDate: '2026-05-29',
+  category: 'Opera',
+  company: 'Victorian Opera',
+  description: 'A uniquely Australian opera based on Norman Lindsay\'s beloved classic. Victorian Opera tours this whimsical creation to community venues across the suburbs — a rare chance to see grand opera up close.',
+  ticketUrl: 'https://www.victorianopera.com.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Family', 'Victorian Opera', 'Touring'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a00 0%, #5c3600 100%)',
+  image: null
+ },
+ {
+  title: 'Matilda Jr',
+  venue: 'Seymour Performing Workshop (SPW)',
+  venueType: 'school',
+  dates: 'May 9\u201317, 2026',
+  startDate: '2026-05-09',
+  endDate: '2026-05-17',
+  category: 'Musical',
+  company: 'Seymour Performing Workshop',
+  description: 'Seymour\'s own youth performers take on the junior edition of the RSC\'s beloved Roald Dahl musical. Young Matildas, inspired teachers and some very rotten tricks in store!',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Junior', 'Youth', 'Seymour', 'Regional'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d2e0d 0%, #1a5c1a 100%)',
+  image: null
+ },
+ {
+  title: 'The Hunchback of Notre Dame',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'May 15\u201330, 2026',
+  startDate: '2026-05-15',
+  endDate: '2026-05-30',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'One of the most powerful and underrated Disney musicals is getting a full staging somewhere in Victoria this May. Soaring choral music, Hugo\'s gothic drama and the heart of Quasimodo. Details to be confirmed.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d00 0%, #3d2200 100%)',
+  image: null
+ },
+ /* ── MAY 2026 (continued) ── */
+ ,{
+  title: 'Sainting Joan',
+  venue: 'Theatre Works, St Kilda',
+  venueType: 'professional',
+  dates: 'May 20\u201330, 2026',
+  startDate: '2026-05-20',
+  endDate: '2026-05-30',
+  category: 'Play',
+  company: 'Theatre Works',
+  description: 'An independent theatre event at Theatre Works, St Kilda. Sainting Joan is a bold reimagining exploring faith, power and the weight of history through a contemporary lens.',
+  ticketUrl: 'https://www.theatreworks.org.au',
+  runtime: 'TBC',
+  tags: ['Play', 'Independent', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a00 0%, #6e4200 100%)',
+  image: null
+ },
+ {
+  title: 'Frozen',
+  venue: 'Her Majesty\'s Theatre, Ballarat',
+  venueType: 'community',
+  dates: 'May 21\u201331, 2026',
+  startDate: '2026-05-21',
+  endDate: '2026-05-31',
+  category: 'Musical',
+  company: 'BLOC',
+  description: 'BLOC brings Disney\'s Frozen to the grand surroundings of Her Majesty\'s Theatre, Ballarat. A full-scale community production of the phenomenon that swept the world. Let it go!',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Community', 'Ballarat'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a3d 0%, #1a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Beauty and the Beast',
+  venue: 'Geelong Arts Centre',
+  venueType: 'amateur',
+  dates: 'May 22\u2013Jun 8, 2026',
+  startDate: '2026-05-22',
+  endDate: '2026-06-08',
+  category: 'Musical',
+  company: 'Geelong Lyric Theatre',
+  description: 'A tale as old as time, brought to life by Geelong Lyric Theatre at the Geelong Arts Centre. A lavish amateur production of the beloved Disney musical — candlesticks, enchanted roses and all.',
+  ticketUrl: 'https://www.gac.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Amateur', 'Geelong'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a00 0%, #6e4200 100%)',
+  image: null
+ },
+ {
+  title: 'The Magic Pudding: The Opera',
+  venue: 'Bunjil Place, Narre Warren',
+  venueType: 'professional',
+  dates: 'May 29\u201330, 2026',
+  startDate: '2026-05-29',
+  endDate: '2026-05-30',
+  category: 'Opera',
+  company: 'Victorian Opera',
+  description: 'The final leg of Victorian Opera\'s touring production of The Magic Pudding. Catch it at Bunjil Place — a perfect family outing that brings great opera right to Melbourne\'s south-east.',
+  ticketUrl: 'https://www.bunjilplace.com.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Family', 'Victorian Opera', 'Narre Warren'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #3d2200 0%, #6e4000 100%)',
+  image: null
+ },
+ {
+  title: '42nd Street',
+  venue: 'Bunjil Place, Narre Warren',
+  venueType: 'amateur',
+  dates: 'May 29\u2013Jun 8, 2026',
+  startDate: '2026-05-29',
+  endDate: '2026-06-08',
+  category: 'Musical',
+  company: 'CLOC Musical Theatre',
+  description: 'Melbourne\'s beloved CLOC Musical Theatre brings the ultimate backstage Broadway musical to Bunjil Place. Tap dancing, show-stopping numbers, and that iconic story of a small-town girl making it big.',
+  ticketUrl: 'https://www.bunjilplace.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Amateur', 'Tap Dance', 'Narre Warren', 'South-East'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d00 0%, #3d2200 100%)',
+  image: null
+ },
+ {
+  title: 'The Wizard of Oz',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'May 2026',
+  startDate: '2026-05-01',
+  endDate: '2026-05-31',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'Follow the Yellow Brick Road! A community staging of the timeless Oz classic. Details to be confirmed — check back for venue and booking information.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e2e00 0%, #5c5c00 100%)',
+  image: null
+ },
+ {
+  title: 'Company',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'May 2026',
+  startDate: '2026-05-01',
+  endDate: '2026-05-31',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'Stephen Sondheim\'s sharp, brilliant examination of marriage, commitment and modern relationships. A challenging and rewarding musical for cast and audience alike. Venue and details TBC.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Sondheim', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a1a2e 0%, #3a3a5c 100%)',
+  image: null
+ },
+ /* ── JUNE 2026 ── */
+ ,{
+  title: 'Katzenmusik',
+  venue: 'Theatre Works, St Kilda',
+  venueType: 'professional',
+  dates: 'Jun 3\u201313, 2026',
+  startDate: '2026-06-03',
+  endDate: '2026-06-13',
+  category: 'Play',
+  company: 'Theatre Works',
+  description: 'A new independent work presented at Theatre Works, St Kilda. Katzenmusik — the music of cats — promises an offbeat, theatrical experience in one of Melbourne\'s most adventurous independent spaces.',
+  ticketUrl: 'https://www.theatreworks.org.au',
+  runtime: 'TBC',
+  tags: ['Play', 'Independent', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d2e 0%, #3a1a5c 100%)',
+  image: null
+ },
+ {
+  title: 'Beauty and the Beast',
+  venue: 'Various, Mountain District',
+  venueType: 'amateur',
+  dates: 'Jun 12\u201321, 2026',
+  startDate: '2026-06-12',
+  endDate: '2026-06-21',
+  category: 'Musical',
+  company: 'Mountain District Music Society (MDMS)',
+  description: 'The Mountain District Music Society brings their version of the beloved Disney musical to the Dandenong Ranges community. A warm, locally-loved production that always delivers.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Amateur', 'Dandenong Ranges'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a00 0%, #5c3600 100%)',
+  image: null
+ },
+ {
+  title: 'Mary Poppins',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Jun 13\u201322, 2026',
+  startDate: '2026-06-13',
+  endDate: '2026-06-22',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'Supercalifragilistic! A community production of Disney and Cameron Mackintosh\'s beloved musical. Practically perfect in every way — details to be confirmed.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a3d 0%, #1a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Pride and Prejudice* (*sort of)',
+  venue: 'Athenaeum Theatre, Melbourne',
+  venueType: 'professional',
+  dates: 'Jun 18\u2013Jul 12, 2026',
+  startDate: '2026-06-18',
+  endDate: '2026-07-12',
+  category: 'Play',
+  company: 'Touring Production',
+  description: 'The smash-hit touring production brings Jane Austen\'s masterpiece (and a whole lot of chaos) to the Athenaeum. Five women, all the parts, zero filter. Hilarious and heartfelt.',
+  ticketUrl: 'https://www.athenaeumtheatre.com.au',
+  runtime: 'TBC',
+  tags: ['Play', 'Professional', 'Comedy', 'Melbourne CBD'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #1a1a2e 0%, #3a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Seussical',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Jun 20\u201327, 2026',
+  startDate: '2026-06-20',
+  endDate: '2026-06-27',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'All the characters of Dr. Seuss crammed into one glorious, colourful musical! Horton, the Cat in the Hat, Gertrude McFuzz — a community production of pure theatrical joy.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Family', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e0d00 0%, #6e2200 100%)',
+  image: null
+ },
+ {
+  title: 'The Sea Wolves Howl',
+  venue: 'Berninneit Arts Centre, Cowes (Phillip Island)',
+  venueType: 'community',
+  dates: 'Jun 21, 2026',
+  startDate: '2026-06-21',
+  endDate: '2026-06-21',
+  category: 'Play',
+  company: 'Berninneit / Community',
+  description: 'An original community performance work at the community-owned Berninneit Arts Centre in Cowes on Phillip Island. A one-night event celebrating stories from the Bass Strait region.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Play', 'Community', 'Phillip Island', 'Original Work'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e5c 100%)',
+  image: null
+ },
+ {
+  title: 'Bluey\'s Big Play',
+  venue: 'Various, Victoria (touring)',
+  venueType: 'professional',
+  dates: 'Jun 27\u2013Jul 23, 2026',
+  startDate: '2026-06-27',
+  endDate: '2026-07-23',
+  category: 'Family',
+  company: 'Bluey Theatrical',
+  description: 'The award-winning live theatrical show based on the iconic Australian animated series tours Victoria! Featuring brand new stories and a 40-minute theatrical adventure, Bluey and her family come to life on stage. Touring Wangaratta, Comedy Theatre Melbourne, Ballarat, Bendigo, Geelong, Mildura, Dandenong, Horsham and more.',
+  ticketUrl: 'https://www.ticketmaster.com.au',
+  runtime: '40 min (no interval)',
+  tags: ['Family', 'Professional', 'Touring', 'Bluey'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #005c8a 0%, #0087c8 100%)',
+  image: null
+ },
+ {
+  title: 'Spike the Echidna',
+  venue: 'Yan Yean Theatre',
+  venueType: 'community',
+  dates: 'Jun 30, 2026',
+  startDate: '2026-06-30',
+  endDate: '2026-06-30',
+  category: 'Family',
+  company: 'Yan Yean Theatre',
+  description: 'A special family show at the beloved Yan Yean Theatre in Melbourne\'s outer north. Featuring our prickly Australian friend Spike the Echidna — the perfect outing for little ones in the term holidays.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Family', 'Community', 'Yan Yean', 'North'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a00 0%, #5c3600 100%)',
+  image: null
+ },
+ {
+  title: 'The Coronation of Poppea',
+  venue: 'Palais Theatre, St Kilda',
+  venueType: 'professional',
+  dates: 'Jun 30\u2013Jul 5, 2026',
+  startDate: '2026-06-30',
+  endDate: '2026-07-05',
+  category: 'Opera',
+  company: 'Opera Australia / Victorian Opera',
+  description: 'Monteverdi\'s great baroque opera — one of the oldest works still performed on stage — at the glorious Palais Theatre. Power, ambition and passion in ancient Rome. A magnificent season.',
+  ticketUrl: 'https://www.opera.org.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Baroque', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d0d2e 0%, #1a1a5c 100%)',
+  image: null
+ },
+ {
+  title: '&amp; Juliet',
+  venue: 'Bunjil Place, Narre Warren',
+  venueType: 'amateur',
+  dates: 'Jun 2026',
+  startDate: '2026-06-01',
+  endDate: '2026-06-30',
+  category: 'Musical',
+  company: 'Windmill Theatre Company (WTC)',
+  description: 'Windmill Theatre Company brings the pop-tastic & Juliet to Bunjil Place. A second Victorian community production of the Max Martin musical hit — Juliet\'s story isn\'t over yet.',
+  ticketUrl: 'https://www.bunjilplace.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Amateur', 'Narre Warren', 'South-East'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e0d3d 0%, #5c1a6e 100%)',
+  image: null
+ },
+ /* ── JULY 2026 ── */
+ ,{
+  title: 'Jersey Boys',
+  venue: 'TBC',
+  venueType: 'professional',
+  dates: 'Jul\u2013Aug 2026',
+  startDate: '2026-07-01',
+  endDate: '2026-08-31',
+  category: 'Musical',
+  company: 'Touring Production',
+  description: 'The story of Frankie Valli and the Four Seasons — from the streets of New Jersey to the Rock and Roll Hall of Fame. Oh, what a night! Venue and exact dates to be confirmed.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Professional', 'Jukebox'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d00 0%, #3d2200 100%)',
+  image: null
+ },
+ {
+  title: 'Lightning Thief: The Percy Jackson Musical',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Jul 3\u201311, 2026',
+  startDate: '2026-07-03',
+  endDate: '2026-07-11',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'Percy Jackson heads to the stage! Based on Rick Riordan\'s beloved novel, this exciting musical follows the half-blood hero on his quest across America. Greek gods, monsters and a whole lot of fun.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Youth', 'Family', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a3d 0%, #1a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Matilda Jr',
+  venue: 'TBC, Melbourne',
+  venueType: 'amateur',
+  dates: 'Jul 3\u201312, 2026',
+  startDate: '2026-07-03',
+  endDate: '2026-07-12',
+  category: 'Musical',
+  company: 'Fab Nobs Theatre Company',
+  description: 'Bayswater\'s Fab Nobs Theatre Company brings the junior edition of Matilda to Melbourne audiences. A brilliantly mischievous musical full of clever kids and very bad adults.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Junior', 'Family', 'Amateur', 'Bayswater'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d2e0d 0%, #1a5c1a 100%)',
+  image: null
+ },
+ {
+  title: 'Robot Song',
+  venue: 'BLOC, Ballarat / Bendigo (touring)',
+  venueType: 'community',
+  dates: 'Jul 8 (Ballarat) + Bendigo TBC',
+  startDate: '2026-07-08',
+  endDate: '2026-07-31',
+  category: 'Family',
+  company: 'BLOC / Bendigo',
+  description: 'A delightful family show touring regional Victoria. Robot Song hits Ballarat and Bendigo — a perfect school holiday outing celebrating music, technology and imagination.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Family', 'Community', 'Ballarat', 'Bendigo', 'Regional'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%)',
+  image: null
+ },
+ {
+  title: 'Patience',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Jul 10\u201312, 2026',
+  startDate: '2026-07-10',
+  endDate: '2026-07-12',
+  category: 'Musical',
+  company: 'Gilbert &amp; Sullivan Opera Victoria (GSOV)',
+  description: 'Gilbert and Sullivan Opera Victoria presents Patience, the beloved comic opera that gently skewers Victorian aestheticism. A witty, beautifully sung production from one of Melbourne\'s most dedicated G&S companies.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Opera', 'Gilbert & Sullivan', 'Amateur', 'Comedy'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Pretty Woman: The Musical',
+  venue: 'Regent Theatre, Melbourne',
+  venueType: 'professional',
+  dates: 'Jul 14\u2013Aug 9, 2026',
+  startDate: '2026-07-14',
+  endDate: '2026-08-09',
+  category: 'Musical',
+  company: 'Stormy Entertainment',
+  description: 'The iconic Hollywood fairy tale comes to the Regent Theatre! Based on the beloved film, and featuring original songs by the film\'s composer Bryan Adams and Jim Vallance, alongside Roy Orbison\'s classic title song.',
+  ticketUrl: 'https://premier.ticketek.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Professional', 'Melbourne CBD', 'Regent Theatre'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #3d0d1a 0%, #6e1a3a 100%)',
+  image: null
+ },
+ {
+  title: 'When We Dead Awaken',
+  venue: 'The Explosives Factory, Maribyrnong',
+  venueType: 'professional',
+  dates: 'Jul 22\u2013Aug 8, 2026',
+  startDate: '2026-07-22',
+  endDate: '2026-08-08',
+  category: 'Play',
+  company: 'Doppelgangster',
+  description: 'Ibsen\'s intense, final masterwork in an independent production at the atmospheric Explosives Factory in Maribyrnong. Doppelgangster brings this rarely performed late play to Melbourne\'s independent scene.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Play', 'Independent', 'Ibsen', 'Maribyrnong'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a1a1a 0%, #2e2e2e 100%)',
+  image: null
+ },
+ {
+  title: 'Don Giovanni',
+  venue: 'Various (Opera Australia touring)',
+  venueType: 'professional',
+  dates: 'Jul 23 (Nunawading) / Aug 1 (Bendigo)',
+  startDate: '2026-07-23',
+  endDate: '2026-08-01',
+  category: 'Opera',
+  company: 'Opera Australia',
+  description: 'Mozart\'s towering opera about the world\'s most notorious seducer tours Victoria. Opera Australia brings Don Giovanni to community venues in Nunawading and Bendigo — see world-class opera close to home.',
+  ticketUrl: 'https://www.opera.org.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Mozart', 'Opera Australia', 'Touring', 'Bendigo'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d0d2e 0%, #1a1a5c 100%)',
+  image: null
+ },
+ {
+  title: 'SIX: The Musical',
+  venue: 'Comedy Theatre, Melbourne',
+  venueType: 'professional',
+  dates: 'Jul 24\u2013Aug 23, 2026',
+  startDate: '2026-07-24',
+  endDate: '2026-08-23',
+  category: 'Musical',
+  company: 'GFO Entertainment',
+  description: 'From Tudor Queens to pop princesses! The sensational West End and Broadway hit SIX comes to Melbourne\'s Comedy Theatre. Six wives of Henry VIII remixed as a pop concert. History has never been this good.',
+  ticketUrl: 'https://premier.ticketek.com.au',
+  runtime: '80 min (no interval)',
+  tags: ['Musical', 'Professional', 'Melbourne CBD', 'Comedy Theatre'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #3d1a00 0%, #7a3500 100%)',
+  image: null
+ },
+ {
+  title: 'After-Light: The Dramatic Prog-Rock Opera',
+  venue: 'Macedon, Various',
+  venueType: 'amateur',
+  dates: 'Jul 2026',
+  startDate: '2026-07-01',
+  endDate: '2026-07-31',
+  category: 'Musical',
+  company: 'The Mount Players, Macedon',
+  description: 'Something completely different from The Mount Players! An original dramatic prog-rock opera — combining the epic scale of classical opera with the power of progressive rock. Only in Macedon.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Opera', 'Rock', 'Original', 'Amateur', 'Macedon', 'Regional'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a1a1a 0%, #2e0d3d 100%)',
+  image: null
+ },
+ {
+  title: 'Oliver Jr',
+  venue: 'Various, Horsham',
+  venueType: 'school',
+  dates: 'Jul 2026',
+  startDate: '2026-07-01',
+  endDate: '2026-07-31',
+  category: 'Musical',
+  company: 'Horsham Arts Council / Red Door',
+  description: 'Consider yourself part of the family! A youth production of Oliver! Junior in regional Horsham — giving young people in Victoria\'s western district their moment under the spotlight.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Junior', 'Youth', 'Horsham', 'Regional', 'Wimmera'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d00 0%, #3d2000 100%)',
+  image: null
+ },
+ /* ── AUGUST 2026 ── */
+ ,{
+  title: 'A Beautiful Noise: The Neil Diamond Musical',
+  venue: 'Princess Theatre, Melbourne',
+  venueType: 'professional',
+  dates: 'Aug 5\u2013Sep 27, 2026',
+  startDate: '2026-08-05',
+  endDate: '2026-09-27',
+  category: 'Musical',
+  company: 'Crossroads Live Australia',
+  description: 'The story of the poet from Brooklyn who became one of the all-time great singer-songwriters. From Cherry Cherry to Sweet Caroline, this electrifying jukebox musical celebrates the life and music of Neil Diamond at the Princess Theatre.',
+  ticketUrl: 'https://premier.ticketek.com.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Professional', 'Jukebox', 'Melbourne CBD', 'Princess Theatre'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #1a1a00 0%, #3d3d00 100%)',
+  image: null
+ },
+ {
+  title: 'Newsies Jr',
+  venue: 'TBC',
+  venueType: 'school',
+  dates: 'Aug 2026',
+  startDate: '2026-08-01',
+  endDate: '2026-08-31',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'Inspired by the real newsboys\' strike of 1899 — the Junior edition of Disney\'s Newsies brings the power of youth to the stage. Lots of big dance numbers and great ensemble energy.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Junior', 'Youth', 'School'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d00 0%, #3d2000 100%)',
+  image: null
+ },
+ {
+  title: 'Frozen Jr',
+  venue: 'Various, Horsham',
+  venueType: 'school',
+  dates: 'Aug 2026',
+  startDate: '2026-08-01',
+  endDate: '2026-08-31',
+  category: 'Musical',
+  company: 'Horsham College',
+  description: 'Horsham College presents the junior edition of the beloved Disney classic. A school production in regional Victoria that will melt even the coldest hearts.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Junior', 'Family', 'School', 'Horsham', 'Regional', 'Wimmera'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a3d 0%, #1a3a6e 100%)',
+  image: null
+ },
+ {
+  title: 'Red Door — Production TBC',
+  venue: 'Various, Horsham',
+  venueType: 'school',
+  dates: 'Aug 2026',
+  startDate: '2026-08-01',
+  endDate: '2026-08-31',
+  category: 'Musical',
+  company: 'Red Door Dance and Theatre Co.',
+  description: 'Red Door Dance and Theatre Co. presents their August school-holiday production in Horsham. Full details to be announced — see their website for updates.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Dance', 'Theatre', 'Youth', 'School', 'Horsham', 'Regional'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #3d0d0d 0%, #6e1a1a 100%)',
+  image: null
+ },
+ {
+  title: 'Ride the Cyclone',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Sep 2026',
+  startDate: '2026-09-01',
+  endDate: '2026-09-30',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'A darkly comic, wildly inventive musical about six choir students who die in a freak rollercoaster accident and compete for the chance to be brought back to life. One of the most original musicals of the last decade.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Dark Comedy', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d2e 0%, #3a1a5c 100%)',
+  image: null
+ },
+ {
+  title: 'The Eternally Hopeful',
+  venue: 'The Explosives Factory, Maribyrnong',
+  venueType: 'professional',
+  dates: 'Sep 2026',
+  startDate: '2026-09-01',
+  endDate: '2026-09-30',
+  category: 'Play',
+  company: 'Doppelgangster',
+  description: 'Another bold independent work from Doppelgangster at the Explosives Factory. The Eternally Hopeful promises to be as provocative and compelling as their previous work at this converted industrial space.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Play', 'Independent', 'Maribyrnong'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a0d 0%, #1a3d1a 100%)',
+  image: null
+ },
+ {
+  title: 'The Sea Wolves Howl',
+  venue: 'Cardinia Cultural Centre / Karralyka Centre',
+  venueType: 'community',
+  dates: 'Oct 2026',
+  startDate: '2026-10-01',
+  endDate: '2026-10-31',
+  category: 'Play',
+  company: 'Community / Various',
+  description: 'Following its Phillip Island premiere, The Sea Wolves Howl continues its Gippsland and outer-eastern orbit at Cardinia Cultural Centre and Karralyka Centre. An original community work worth catching.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Play', 'Community', 'Original Work', 'Cardinia', 'Karralyka'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e5c 100%)',
+  image: null
+ },
+ {
+  title: 'Dirty Rotten Scoundrels',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Oct 23\u2013Nov 8, 2026',
+  startDate: '2026-10-23',
+  endDate: '2026-11-08',
+  category: 'Musical',
+  company: 'TBC',
+  description: 'Two con men battle it out on the French Riviera in this lavishly funny musical. Could be presented by any number of Victorian companies — watch this space for details. Dazzling, deceptive, delightful.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Comedy', 'Community'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d2e2e 0%, #1a5c5c 100%)',
+  image: null
+ },
+ /* ── SEPTEMBER–NOVEMBER 2026 ── */
+ ,{
+  title: 'Turn of the Screw',
+  venue: 'Palais Theatre, St Kilda',
+  venueType: 'professional',
+  dates: 'Sep 2026',
+  startDate: '2026-09-01',
+  endDate: '2026-09-30',
+  category: 'Opera',
+  company: 'Victorian Opera',
+  description: 'Benjamin Britten\'s chilling chamber opera at the Palais Theatre. Two adults, two children, and the question of whether the ghosts of Bly Manor are real. Brilliantly unsettling.',
+  ticketUrl: 'https://www.victorianopera.com.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Victorian Opera', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e5c 100%)',
+  image: null
+ },
+ {
+  title: 'The Spare Room',
+  venue: 'Palais Theatre, St Kilda',
+  venueType: 'professional',
+  dates: 'Sep 2026',
+  startDate: '2026-09-01',
+  endDate: '2026-09-30',
+  category: 'Play',
+  company: 'Victorian Opera / Independent',
+  description: 'An original work at the Palais Theatre in St Kilda. Based on Helen Garner\'s remarkable Australian novel, The Spare Room is an intimate and devastating exploration of friendship, illness and love.',
+  ticketUrl: 'https://www.palaistheatre.com.au',
+  runtime: 'TBC',
+  tags: ['Play', 'Professional', 'Australian', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a1a1a 0%, #3a3a3a 100%)',
+  image: null
+ },
+ {
+  title: 'Young Frankenstein',
+  venue: 'Theatre Works, St Kilda',
+  venueType: 'professional',
+  dates: 'Sep\u2013Oct 2026',
+  startDate: '2026-09-01',
+  endDate: '2026-10-31',
+  category: 'Musical',
+  company: 'Theatre Works',
+  description: 'Mel Brooks\' gloriously silly musical adaptation of his own film at Theatre Works St Kilda. Monsters, mad scientists, and an absolutely killer soundtrack. It\'s alive!',
+  ticketUrl: 'https://www.theatreworks.org.au',
+  runtime: 'TBC',
+  tags: ['Musical', 'Comedy', 'Independent', 'St Kilda'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d2e0d 0%, #1a5c1a 100%)',
+  image: null
+ },
+ {
+  title: 'Red Door — Production TBC',
+  venue: 'Various, Horsham',
+  venueType: 'school',
+  dates: 'Sep 2026',
+  startDate: '2026-09-01',
+  endDate: '2026-09-30',
+  category: 'Musical',
+  company: 'Red Door Dance and Theatre Co.',
+  description: 'Red Door\'s spring school holiday production in Horsham. Full details to be announced. One of regional Victoria\'s most exciting youth theatre companies.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Dance', 'Theatre', 'Youth', 'School', 'Horsham', 'Regional', 'Wimmera'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #3d0d0d 0%, #6e1a1a 100%)',
+  image: null
+ },
+ {
+  title: 'Into the Woods',
+  venue: 'Her Majesty\'s Theatre, Ballarat',
+  venueType: 'community',
+  dates: 'Sep\u2013Oct 2026',
+  startDate: '2026-09-15',
+  endDate: '2026-10-04',
+  category: 'Musical',
+  company: 'BLOC, Ballarat',
+  description: 'Sondheim\'s glorious dark fairy-tale musical at the majestic Her Majesty\'s Theatre in Ballarat. BLOC takes the audience into the woods to discover what happens after \"happily ever after\".',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Sondheim', 'Community', 'Ballarat', 'Regional'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a0d 0%, #1a3d1a 100%)',
+  image: null
+ },
+ {
+  title: 'Room on the Broom',
+  venue: 'Various, Bendigo',
+  venueType: 'professional',
+  dates: 'Oct 2026',
+  startDate: '2026-10-01',
+  endDate: '2026-10-31',
+  category: 'Family',
+  company: 'Touring Production',
+  description: 'The beloved Julia Donaldson picture book brings its magical witch, her broomstick and a menagerie of friendly animals to the stage. A perfect first theatre experience for little ones — touring to Bendigo.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Family', 'Professional', 'Touring', 'Bendigo', 'Regional'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e0d2e 0%, #5c1a5c 100%)',
+  image: null
+ },
+ {
+  title: 'The Deplorables',
+  venue: 'Theatre Works, St Kilda (and Portland / Lighthouse Warrnambool)',
+  venueType: 'professional',
+  dates: 'Oct\u2013Nov 2026',
+  startDate: '2026-10-01',
+  endDate: '2026-11-30',
+  category: 'Play',
+  company: 'Theatre Works / Various',
+  description: 'A provocative new Australian work that tours from Theatre Works in St Kilda out to Portland and Lighthouse Warrnambool. Independent theatre reaching Victoria\'s far south-west.',
+  ticketUrl: 'https://www.theatreworks.org.au',
+  runtime: 'TBC',
+  tags: ['Play', 'Independent', 'Touring', 'St Kilda', 'Portland', 'Warrnambool', 'South-West'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e1a1a 0%, #5c3a3a 100%)',
+  image: null
+ },
+ {
+  title: '&amp; Juliet',
+  venue: 'Williamstown Musical Theatre',
+  venueType: 'amateur',
+  dates: 'Nov 2026',
+  startDate: '2026-11-01',
+  endDate: '2026-11-30',
+  category: 'Musical',
+  company: 'Williamstown Musical Theatre Company',
+  description: 'Melbourne\'s beloved Williamstown Musical Theatre Company takes on & Juliet — the third Victorian community production of the pop music sensation this year. Every production its own story.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Amateur', 'Williamstown', 'Inner West'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #2e0d3d 0%, #5c1a6e 100%)',
+  image: null
+ },
+ {
+  title: 'La Boh\u00E8me',
+  venue: 'Regent Theatre, Melbourne',
+  venueType: 'professional',
+  dates: 'Nov 7\u201318, 2026',
+  startDate: '2026-11-07',
+  endDate: '2026-11-18',
+  category: 'Opera',
+  company: 'Opera Australia',
+  description: 'Puccini\'s most romantic opera returns to Melbourne in a full Opera Australia production at the Regent Theatre. Mimi, Rodolfo, love, loss and one of the great scores in all of opera.',
+  ticketUrl: 'https://www.opera.org.au',
+  runtime: 'TBC',
+  tags: ['Opera', 'Professional', 'Opera Australia', 'Puccini', 'Melbourne CBD'],
+  featured: true,
+  gradient: 'linear-gradient(135deg, #3d0d0d 0%, #6e1a1a 100%)',
+  image: null
+ },
+ {
+  title: 'A Christmas Carol (G&S Style)',
+  venue: 'TBC',
+  venueType: 'amateur',
+  dates: 'Nov\u2013Dec 2026',
+  startDate: '2026-11-20',
+  endDate: '2026-12-20',
+  category: 'Musical',
+  company: 'Gilbert &amp; Sullivan Opera Victoria (GSOV)',
+  description: 'GSOV puts their distinctive musical stamp on the Christmas classic. Expect Dickens\' much-loved story brought to life with the warmth and charm of one of Victoria\'s most dedicated societies.',
+  ticketUrl: 'contact.html',
+  runtime: 'TBC',
+  tags: ['Musical', 'Amateur', 'Christmas', 'Gilbert & Sullivan'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #1a0d00 0%, #3d2200 100%)',
+  image: null
+ },
+ {
+  title: 'Watershed',
+  venue: 'Playhouse Theatre, Arts Centre Melbourne',
+  venueType: 'professional',
+  dates: 'Nov 21\u201328, 2026',
+  startDate: '2026-11-21',
+  endDate: '2026-11-28',
+  category: 'Play',
+  company: 'Opera Australia',
+  description: 'A powerful new work from Opera Australia at Arts Centre Melbourne\'s Playhouse Theatre. Watershed is a thoughtful, resonant piece marking the end of a vital year for Victorian performing arts.',
+  ticketUrl: 'https://www.opera.org.au',
+  runtime: 'TBC',
+  tags: ['Play', 'Opera', 'Professional', 'Arts Centre Melbourne'],
+  featured: false,
+  gradient: 'linear-gradient(135deg, #0d1a2e 0%, #1a2e5c 100%)',
+  image: null
+ }
+ /* ── END OF SHOWS DATA ── */
+
+
+
+
+
+
+
+
+
+ /* ═══════════════════════════════════════════
+    Auditions Data
+    ═══════════════════════════════════════════ */
+ var auditions = [
+  {
+   show: 'Oliver! Jr',
+   company: 'Bellarine Jongleurs',
+   venueType: 'amateur',
+   location: 'The Potato Shed, Drysdale',
+   region: 'Bellarine Peninsula',
+   details: 'Bellarine Jongleurs are looking for young performers (primary school age and up) for this August production. No previous experience required for ensemble. Contact the company for audition details.',
+   roles: 'Oliver, Artful Dodger, Fagin, Nancy, Ensemble',
+   auditionDate: 'Details TBC — contact company',
+   showDates: 'Aug 28\u201330, 2026',
+   deadline: 'Contact for details',
+   contactUrl: 'contact.html'
+  },
+  {
+   show: 'Want your audition listed here?',
+   company: 'iHeartTheatre',
+   venueType: 'community',
+   location: 'Anywhere in Victoria',
+   region: 'Victoria',
+   details: 'Got an open audition or casting call? Send us the details and we\'ll list it here for free. Community groups, school productions, amateur societies, indie companies — everyone welcome.',
+   roles: 'Any roles, any show',
+   auditionDate: 'Your dates here',
+   showDates: 'Your production dates',
+   deadline: 'Contact us to get listed',
+   contactUrl: 'contact.html'
+  }
+ ];
+
+ /* ═══════════════════════════════════════════
+    Promos Data
+    ═══════════════════════════════════════════ */
+ var promos = [
+  {
+   type: 'Group Discount',
+   show: 'West Gate',
+   company: 'Melbourne Theatre Company',
+   offer: '20% off groups of 10+ for select Tuesday sessions',
+   detail: 'Book any Tuesday performance in April as a group of 10 or more and receive 20% off. Contact MTC group bookings directly.',
+   expires: 'Valid through Apr 2026',
+   ticketUrl: 'https://tickets.mtc.com.au'
+  },
+  {
+   type: 'Rush Tickets',
+   show: 'The Book of Mormon',
+   company: 'Marriner Group',
+   offer: '$40 rush tickets available day-of at the Princess Theatre box office',
+   detail: 'Queue from 9am on the day of performance at the Princess Theatre box office. Cash or card. Subject to availability. One per person.',
+   expires: 'While season runs to May 2026',
+   ticketUrl: 'https://premier.ticketek.com.au/shows/show.aspx?sh=BOOKOFM26'
+  },
+  {
+   type: 'Student Discount',
+   show: 'Daniel Kitson: Work in Progress',
+   company: 'Southbank Theatre',
+   offer: '30% off with valid full-time student ID',
+   detail: 'Full-time students can access 30% off tickets with valid student ID at the Southbank Theatre box office. Online discount code also available — contact MTC.',
+   expires: 'Valid Apr 2026',
+   ticketUrl: 'https://www.mtc.com.au/plays-and-tickets/whats-on/other-companies/daniel-kitson-work-in-progress/'
+  },
+  {
+   type: 'Got a deal to share?',
+   show: 'List your promo here — free',
+   company: 'iHeartTheatre',
+   offer: 'Community groups, schools, independent shows — send us your special offers and we\'ll spread the word',
+   detail: 'Group discounts, earlybird pricing, school matinee tickets, comps for community groups — whatever you\'re offering, we\'ll help get it out there.',
+   expires: 'Contact us any time',
+   ticketUrl: 'contact.html'
+  }
+ ];
+
+ /* ═══════════════════════════════════════════
+    Reviews Teaser Data
+    ═══════════════════════════════════════════ */
+ var reviewsTeaser = [
+  { stars: 5, show: 'Mary Poppins', reviewer: 'Deanna Amato', excerpt: 'Practically perfect in every way. This production soars.', url: '../reviews/review-deanna-mary-poppins.html' },
+  { stars: 5, show: 'Mamma Mia!', reviewer: 'Deanna Amato', excerpt: 'Pure joy from start to finish. The crowd was on its feet.', url: '../reviews/review-deanna-mamma-mia.html' },
+  { stars: 4, show: 'Into the Woods Jr.', reviewer: 'Penelope Quinn', excerpt: 'Honestly incredible. I cried at the end!', url: '../reviews/review-penelope-into-the-woods-jnr.html' },
+  { stars: 5, show: 'The Little Mermaid Junior', reviewer: 'Penelope Quinn', excerpt: 'Best thing I have EVER seen. I want to see it again!', url: '../reviews/review-penelope-the-little-mermaid-junior.html' }
+ ];
 
  /* ═══════════════════════════════════════════
     Helpers
@@ -936,19 +2436,13 @@
  function buildStats() {
   var active = shows.filter(function(s) { var st = getStatus(s); return st === 'now-playing' || st === 'closing-soon'; });
   var upcoming = shows.filter(function(s) { return getStatus(s) === 'coming-soon'; });
-  var venues = [];
-  var companies = [];
-  shows.forEach(function(s) {
-   if (venues.indexOf(s.venue) === -1) venues.push(s.venue);
-   if (companies.indexOf(s.company) === -1) companies.push(s.company);
-  });
-
+  var community = shows.filter(function(s) { return s.venueType === 'community' || s.venueType === 'school' || s.venueType === 'amateur'; }).filter(function(s) { return getStatus(s) !== 'closed'; });
   var container = document.getElementById('quickStats');
   var stats = [
-   { n: active.length,    l: 'Now Playing' },
-   { n: upcoming.length,  l: 'Coming Soon' },
-   { n: venues.length,    l: 'Venues' },
-   { n: companies.length, l: 'Companies' }
+   { n: active.length,     l: 'Shows On Now' },
+   { n: upcoming.length,   l: 'Coming Soon' },
+   { n: community.length,  l: 'Community & Schools' },
+   { n: auditions.length,  l: 'Open Auditions' }
   ];
   stats.forEach(function(s) {
    var card = document.createElement('div');
@@ -963,8 +2457,8 @@
     Filters
     ═══════════════════════════════════════════ */
  var activeStatusFilter = 'all';
+ var activeVtypeFilter = 'all';
  var activeCategoryFilter = 'all';
- var activeVenueFilter = 'all';
 
  function buildFilters() {
   // Status
@@ -984,7 +2478,30 @@
    statusContainer.appendChild(btn);
   });
 
-  // Category
+  // Venue Type
+  var vtypes = [
+   { key: 'all',          label: 'All Types' },
+   { key: 'professional', label: 'Professional' },
+   { key: 'community',    label: 'Community' },
+   { key: 'amateur',      label: 'Amateur' },
+   { key: 'school',       label: 'School' }
+  ];
+  var vtypeContainer = document.getElementById('vtypeFilters');
+  vtypes.forEach(function(vt) {
+   var btn = document.createElement('button');
+   btn.className = 'filter-chip' + (vt.key === 'all' ? ' active' : '');
+   btn.textContent = vt.label;
+   btn.addEventListener('click', function() {
+    activeVtypeFilter = vt.key;
+    var chips = document.querySelectorAll('#vtypeFilters .filter-chip');
+    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
+    btn.classList.add('active');
+    renderShows();
+   });
+   vtypeContainer.appendChild(btn);
+  });
+
+  // Category / Genre
   var catSet = [];
   shows.forEach(function(s) { if (catSet.indexOf(s.category) === -1) catSet.push(s.category); });
   var categories = ['all'].concat(catSet);
@@ -1002,31 +2519,22 @@
    });
    catContainer.appendChild(btn);
   });
-
-  // Venue
-  var venSet = [];
-  shows.forEach(function(s) { if (venSet.indexOf(s.venue) === -1) venSet.push(s.venue); });
-  var venues = ['all'].concat(venSet);
-  var venueContainer = document.getElementById('venueFilters');
-  venues.forEach(function(v) {
-   var btn = document.createElement('button');
-   btn.className = 'filter-chip' + (v === 'all' ? ' active' : '');
-   btn.textContent = v === 'all' ? 'All' : v;
-   btn.addEventListener('click', function() {
-    activeVenueFilter = v;
-    var chips = document.querySelectorAll('#venueFilters .filter-chip');
-    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
-    btn.classList.add('active');
-    renderShows();
-   });
-   venueContainer.appendChild(btn);
-  });
  }
 
 
  /* ═══════════════════════════════════════════
     Render Shows
     ═══════════════════════════════════════════ */
+ function vtypeLabel(vt) {
+  switch (vt) {
+   case 'professional': return 'Professional';
+   case 'community':    return 'Community';
+   case 'amateur':      return 'Amateur';
+   case 'school':       return 'School';
+   default:             return vt;
+  }
+ }
+
  function renderShows() {
   var grid = document.getElementById('showsGrid');
   grid.innerHTML = '';
@@ -1035,12 +2543,11 @@
    var status = getStatus(s);
    if (status === 'closed') return false;
    if (activeStatusFilter !== 'all' && status !== activeStatusFilter) return false;
+   if (activeVtypeFilter !== 'all' && s.venueType !== activeVtypeFilter) return false;
    if (activeCategoryFilter !== 'all' && s.category !== activeCategoryFilter) return false;
-   if (activeVenueFilter !== 'all' && s.venue !== activeVenueFilter) return false;
    return true;
   });
 
-  // Sort: closing-soon first, then now-playing, then coming-soon (by start date)
   var order = { 'closing-soon': 0, 'now-playing': 1, 'coming-soon': 2 };
   filtered.sort(function(a, b) {
    var sa = getStatus(a), sb = getStatus(b);
@@ -1066,17 +2573,22 @@
 
    var tagsHTML = show.tags.map(function(t) { return '<span class="show-tag">' + t + '</span>'; }).join('');
 
+   var vtypeBadge = '<span class="vtype-badge vtype-' + show.venueType + '">' + vtypeLabel(show.venueType) + '</span>';
+
    var headerInner = show.image
     ? '<img class="show-card-image" src="' + show.image + '" alt="' + show.title + '" loading="lazy">'
     : '<div class="show-card-gradient" style="background:' + show.gradient + '">' +
        '<span class="show-card-initials">' + initials(show.title) + '</span>' +
       '</div>';
 
+   var ticketTarget = show.ticketUrl.startsWith('http') ? ' target="_blank" rel="noopener"' : '';
+
    card.innerHTML =
     '<div class="show-card-header">' +
      headerInner +
      '<div class="show-card-badges">' +
       '<span class="slide-badge ' + statusBadgeClass(status) + '">' + statusLabel(status) + '</span>' +
+      vtypeBadge +
      '</div>' +
     '</div>' +
     '<div class="show-card-body">' +
@@ -1087,10 +2599,82 @@
      '<p class="show-card-desc">' + show.description + '</p>' +
      '<div class="show-card-footer">' +
       '<div class="show-card-tags">' + tagsHTML + '</div>' +
-      '<a href="' + show.ticketUrl + '" class="show-card-link" target="_blank" rel="noopener">Tickets</a>' +
+      '<a href="' + show.ticketUrl + '" class="show-card-link"' + ticketTarget + '>Tickets</a>' +
      '</div>' +
      detailHTML +
     '</div>';
+   grid.appendChild(card);
+  });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Render Auditions
+    ═══════════════════════════════════════════ */
+ function buildAuditions() {
+  var grid = document.getElementById('auditionsGrid');
+  auditions.forEach(function(a) {
+   var card = document.createElement('div');
+   card.className = 'audition-card';
+   card.innerHTML =
+    '<div>' +
+     '<span class="vtype-badge vtype-' + a.venueType + '">' + vtypeLabel(a.venueType) + '</span>' +
+    '</div>' +
+    '<p class="audition-show">' + a.show + '</p>' +
+    '<p class="audition-company">' + a.company + ' &bull; ' + a.location + '</p>' +
+    '<p class="audition-detail">' + a.details + '</p>' +
+    '<p class="audition-roles"><strong>Roles sought:</strong> ' + a.roles + '</p>' +
+    '<div class="audition-meta">' +
+     '<span class="audition-meta-item">&#128197; Audition: ' + a.auditionDate + '</span>' +
+     '<span class="audition-meta-item">&#127914; Show: ' + a.showDates + '</span>' +
+    '</div>' +
+    '<div class="audition-card-footer">' +
+     '<span class="audition-deadline">&#9888; ' + a.deadline + '</span>' +
+     '<a href="' + a.contactUrl + '" class="audition-link">Get In Touch</a>' +
+    '</div>';
+   grid.appendChild(card);
+  });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Render Promos
+    ═══════════════════════════════════════════ */
+ function buildPromos() {
+  var grid = document.getElementById('promosGrid');
+  promos.forEach(function(p) {
+   var card = document.createElement('div');
+   card.className = 'promo-card';
+   var ticketTarget = p.ticketUrl.startsWith('http') ? ' target="_blank" rel="noopener"' : '';
+   card.innerHTML =
+    '<span class="promo-badge">' + p.type + '</span>' +
+    '<p class="promo-show">' + p.show + '</p>' +
+    '<p class="promo-company">' + p.company + '</p>' +
+    '<p class="promo-offer">' + p.offer + '</p>' +
+    '<p class="promo-detail">' + p.detail + '</p>' +
+    '<p class="promo-expiry">&#128197; ' + p.expires + '</p>' +
+    '<a href="' + p.ticketUrl + '" class="promo-link"' + ticketTarget + '>Claim / Book &rarr;</a>';
+   grid.appendChild(card);
+  });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Render Reviews Teaser
+    ═══════════════════════════════════════════ */
+ function buildReviewsTeaser() {
+  var grid = document.getElementById('reviewsTeaserGrid');
+  reviewsTeaser.forEach(function(r) {
+   var stars = '';
+   for (var i = 0; i < r.stars; i++) stars += '&#9733;';
+   var card = document.createElement('a');
+   card.className = 'review-teaser-card';
+   card.href = r.url;
+   card.innerHTML =
+    '<span class="review-teaser-stars">' + stars + '</span>' +
+    '<p class="review-teaser-show">' + r.show + '</p>' +
+    '<p class="review-teaser-by">Reviewed by ' + r.reviewer + '</p>' +
+    '<p class="review-teaser-excerpt">' + r.excerpt + '</p>';
    grid.appendChild(card);
   });
  }
@@ -1104,6 +2688,9 @@
   buildStats();
   buildFilters();
   renderShows();
+  buildAuditions();
+  buildPromos();
+  buildReviewsTeaser();
  });
  </script>
 

@@ -1,0 +1,477 @@
+/* ============================================
+   iHeartTheatre - Magic Effects CSS
+   Phase 1: Visual Theatre Magic
+   ============================================ */
+
+/* === Curtain Reveal Transitions === */
+.curtain-reveal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.curtain-left,
+.curtain-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #1a0a1a 0%, #2d1b2d 50%, #1a0a1a 100%);
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.curtain-left {
+    left: 0;
+    transform: translateX(0);
+}
+
+.curtain-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.curtain-reveal.open .curtain-left {
+    transform: translateX(-100%);
+}
+
+.curtain-reveal.open .curtain-right {
+    transform: translateX(100%);
+}
+
+/* Curtain texture overlay */
+.curtain-left::after,
+.curtain-right::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        rgba(0,0,0,0.1) 10px,
+        rgba(0,0,0,0.1) 20px
+    );
+    pointer-events: none;
+}
+
+/* === Spotlight Cursor Effect === */
+.spotlight-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    background: radial-gradient(
+        circle 200px at var(--mouse-x, 50%) var(--mouse-y, 50%),
+        transparent 0%,
+        rgba(5, 5, 8, 0.3) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.spotlight-overlay.active {
+    opacity: 1;
+}
+
+/* === Floating Theatre Emojis === */
+.floating-emoji {
+    position: fixed;
+    font-size: 2rem;
+    pointer-events: none;
+    z-index: 100;
+    animation: floatUp 4s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* === Typewriter Effect === */
+.typewriter-text {
+    overflow: hidden;
+    border-right: 3px solid var(--accent-primary);
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent-primary); }
+}
+
+/* === Magic Wand Cursor Trail === */
+.sparkle {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    pointer-events: none;
+    z-index: 9997;
+    border-radius: 50%;
+    animation: sparkleFade 1s ease-out forwards;
+}
+
+.sparkle.gold {
+    background: radial-gradient(circle, #ffd700 0%, transparent 70%);
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.sparkle.purple {
+    background: radial-gradient(circle, #764ba2 0%, transparent 70%);
+    box-shadow: 0 0 10px #764ba2;
+}
+
+@keyframes sparkleFade {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) rotate(180deg);
+        opacity: 0;
+    }
+}
+
+/* === Applause Button === */
+.applause-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.applause-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+}
+
+.applause-btn.clapped {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2), rgba(118, 75, 162, 0.2));
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+.applause-btn .clap-count {
+    font-weight: 600;
+}
+
+/* === Virtual Standing Ovation === */
+.standing-ovation {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 5, 8, 0.95);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+}
+
+.standing-ovation.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.ovation-hands {
+    font-size: 4rem;
+    animation: clap 0.5s ease-in-out infinite;
+}
+
+@keyframes clap {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.ovation-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ovation-subtext {
+    color: var(--text-secondary);
+    margin-top: 1rem;
+}
+
+/* === Scene Change Transitions === */
+.scene-transition {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.scene-wipe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-primary);
+    transform: translateX(-100%);
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scene-transition.active .scene-wipe {
+    transform: translateX(0);
+}
+
+.scene-transition.exit .scene-wipe {
+    transform: translateX(100%);
+}
+
+/* === Stage Lighting Hover Effect === */
+.stage-light-hover {
+    position: relative;
+    overflow: hidden;
+}
+
+.stage-light-hover::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at var(--hover-x, 50%) var(--hover-y, 50%),
+        rgba(102, 126, 234, 0.15) 0%,
+        transparent 50%
+    );
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.stage-light-hover:hover::before {
+    opacity: 1;
+}
+
+/* === Theatre Trivia Loading === */
+.trivia-loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10000;
+}
+
+.trivia-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.trivia-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    max-width: 400px;
+}
+
+.trivia-fact {
+    color: var(--accent-primary);
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* === Enhanced Achievement Toast === */
+.achievement-toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--gradient-primary);
+    color: white;
+    padding: 16px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    z-index: 10000;
+    animation: slideInRight 0.5s ease, fadeOut 0.5s ease 4s forwards;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.achievement-toast .icon {
+    font-size: 1.5rem;
+}
+
+.achievement-toast .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.achievement-toast .title {
+    font-size: 1rem;
+}
+
+.achievement-toast .message {
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+/* === Enhanced Confetti === */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    z-index: 9999;
+    animation: confettiFall 3s ease-out forwards;
+}
+
+.confetti.paper {
+    border-radius: 0;
+}
+
+.confetti.circle {
+    border-radius: 50%;
+}
+
+.confetti.streamer {
+    width: 4px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+@keyframes confettiFall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh) rotate(720deg);
+        opacity: 0;
+    }
+}
+
+/* === Theatre Journey Progress === */
+.journey-progress {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 16px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    min-width: 200px;
+}
+
+.journey-progress h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.journey-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.journey-stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.journey-stat .label {
+    color: var(--text-secondary);
+}
+
+.journey-stat .value {
+    color: var(--accent-primary);
+    font-weight: 600;
+}
+
+/* === Responsive Magic === */
+@media (max-width: 768px) {
+    .spotlight-overlay {
+        display: none;
+    }
+    
+    .journey-progress {
+        display: none;
+    }
+    
+    .typewriter-text {
+        white-space: normal;
+        border-right: none;
+        animation: none;
+    }
+}
+
+/* === Reduced Motion Support === */
+@media (prefers-reduced-motion: reduce) {
+    .curtain-left,
+    .curtain-right {
+        transition: none;
+    }
+    
+    .floating-emoji {
+        animation: none;
+        display: none;
+    }
+    
+    .sparkle {
+        animation: none;
+    }
+    
+    .ovation-hands {
+        animation: none;
+    }
+    
+    .confetti {
+        animation: none;
+        display: none;
+    }
+}

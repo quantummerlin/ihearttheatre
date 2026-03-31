@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditions & Casting Calls | Melbourne & Victoria | iHeartTheatre</title>
+    <meta name="description" content="Open auditions and casting calls across Melbourne and Victoria. Community theatre, professional productions, school shows — find your next role here.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/magic-effects.css">
+    <style>
+        :root {
+            --bg-primary: #050508;
+            --bg-secondary: #0a0a0f;
+            --bg-tertiary: #12121a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0b0;
+            --accent-primary: #667eea;
+            --accent-secondary: #764ba2;
+            --accent-gold: #ffd700;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .page-hero {
+            padding: 140px 2rem 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+        }
+
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Filters */
+        .filters-section {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 0 2rem;
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            align-items: center;
+        }
+
+        .filter-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: 6px;
+        }
+
+        .filter-chip {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 1px solid var(--glass-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-chip:hover, .filter-chip.active {
+            background: var(--gradient-primary);
+            border-color: transparent;
+            color: white;
+        }
+
+        /* Auditions Grid */
+        .auditions-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 80px;
+        }
+
+        .auditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 24px;
+        }
+
+        .audition-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 28px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .audition-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(102, 126, 234, 0.3);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.1);
+        }
+
+        .audition-card.urgent {
+            border-color: rgba(255, 107, 107, 0.5);
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.05), var(--glass-bg));
+        }
+
+        .audition-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-professional { background: rgba(102, 126, 234, 0.9); color: white; }
+        .badge-community { background: rgba(255, 215, 0, 0.9); color: #1a1a1a; }
+        .badge-amateur { background: rgba(80, 200, 120, 0.9); color: white; }
+        .badge-school { background: rgba(255, 107, 107, 0.9); color: white; }
+        .badge-urgent { background: rgba(255, 0, 0, 0.9); color: white; animation: pulse 2s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .audition-show {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            padding-right: 80px;
+        }
+
+        .audition-company {
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+
+        .audition-venue {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        .audition-details {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+        }
+
+        .audition-detail {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .audition-detail:last-child {
+            margin-bottom: 0;
+        }
+
+        .audition-detail-icon {
+            width: 24px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .audition-detail-label {
+            color: var(--text-secondary);
+        }
+
+        .audition-roles {
+            margin-bottom: 16px;
+        }
+
+        .audition-roles h4 {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .role-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .role-tag {
+            padding: 6px 14px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--accent-primary);
+        }
+
+        .audition-footer {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .audition-deadline {
+            flex: 1;
+            color: #ff8c00;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .audition-btn {
+            padding: 10px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .audition-btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .audition-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        /* Submit Audition CTA */
+        .submit-audition-cta {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .submit-audition-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .submit-audition-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        /* Resources Section */
+        .resources-section {
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 2rem;
+        }
+
+        .resources-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .resource-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .resource-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .resource-card p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+        }
+
+        .resource-link {
+            color: var(--accent-primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .auditions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .audition-show {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">iHeartTheatre</a>
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="whats-on.html">What's On</a>
+                <a href="venues.html">Venues</a>
+                <a href="auditions.html" class="active">Auditions</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="actors.html">Actors</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1>Auditions & Casting Calls</h1>
+        <p>Find your next role across Melbourne and Victoria. From professional productions to community theatre, school shows to independent projects — your spotlight awaits.</p>
+    </section>
+
+    <section class="filters-section">
+        <div class="filter-row">
+            <span class="filter-label">Type:</span>
+            <button class="filter-chip active" data-filter="all">All</button>
+            <button class="filter-chip" data-filter="professional">Professional</button>
+            <button class="filter-chip" data-filter="community">Community</button>
+            <button class="filter-chip" data-filter="amateur">Amateur</button>
+            <button class="filter-chip" data-filter="school">School</button>
+        </div>
+        <div class="filter-row">
+            <span class="filter-label">Region:</span>
+            <button class="filter-chip active" data-region="all">All Victoria</button>
+            <button class="filter-chip" data-region="melbourne">Melbourne</button>
+            <button class="filter-chip" data-region="north">Northern Suburbs</button>
+            <button class="filter-chip" data-region="east">Eastern Suburbs</button>
+            <button class="filter-chip" data-region="west">Western Suburbs</button>
+            <button class="filter-chip" data-region="regional">Regional</button>
+        </div>
+    </section>
+
+    <section class="auditions-section">
+        <div class="auditions-grid" id="auditionsGrid">
+            <!-- Auditions injected by JavaScript -->
+        </div>
+    </section>
+
+    <section class="submit-audition-cta">
+        <h2>🎭 Post an Audition</h2>
+        <p>Director or producer? List your audition for free and reach hundreds of performers across Victoria.</p>
+        <a href="contact.html" class="btn btn-primary">Submit Audition Notice</a>
+    </section>
+
+    <section class="resources-section">
+        <h2>Audition Resources</h2>
+        <div class="resources-grid">
+            <div class="resource-card">
+                <div class="resource-icon">🎵</div>
+                <h3>Audition Songs</h3>
+                <p>Curated lists of audition songs for different voice types and musical theatre styles.</p>
+                <a href="#" class="resource-link">Browse Songs →</a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">📜</div>
+                <h3>Monologues</h3>
+                <p>Classical and contemporary monologues for drama auditions, searchable by age and gender.</p>
+                <a href="#" class="resource-link">Find Monologues →</a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">💡</div>
+                <h3>Audition Tips</h3>
+                <p>Expert advice on nailing your audition, from preparation to presentation.</p>
+                <a href="#" class="resource-link">Get Tips →</a>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">📹</div>
+                <h3>Self-Tape Guide</h3>
+                <p>How to record professional-quality audition videos at home.</p>
+                <a href="#" class="resource-link">Learn More →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script>
+        // Audition Data
+        const auditions = [
+            {
+                id: 1,
+                show: 'Oliver!',
+                company: 'Box Hill Musical Theatre',
+                type: 'amateur',
+                region: 'east',
+                venue: 'Box Hill Town Hall',
+                auditionDate: 'Sun 19 Apr 2026, 10am–2pm',
+                showDates: 'Jul–Aug 2026',
+                deadline: 'Register by 15 Apr',
+                roles: ['Oliver', 'Artful Dodger', 'Fagin', 'Nancy', 'Ensemble'],
+                description: 'Open auditions for all roles. No experience necessary for ensemble. Strong voices essential for principals. Ages 8 and up welcome.',
+                contactUrl: 'contact.html',
+                isUrgent: true
+            },
+            {
+                id: 2,
+                show: 'Grease',
+                company: 'Geelong Performing Arts Youth',
+                type: 'school',
+                region: 'regional',
+                venue: 'Geelong Arts Centre Studio',
+                auditionDate: 'Sat 25 Apr 2026, 9am–1pm',
+                showDates: 'Sep 2026',
+                deadline: 'Register by 20 Apr',
+                roles: ['Sandy', 'Danny', 'Pink Ladies', 'T-Birds', 'Ensemble'],
+                description: 'Youth production (ages 12–19) seeking Sandy, Danny, Pink Ladies and T-Birds plus ensemble. Strong movement skills highly valued.',
+                contactUrl: 'contact.html',
+                isUrgent: false
+            },
+            {
+                id: 3,
+                show: 'A Midsummer Night\'s Dream',
+                company: 'Williamstown Little Theatre',
+                type: 'community',
+                region: 'west',
+                venue: 'Williamstown Town Hall',
+                auditionDate: 'Tue 21 & Wed 22 Apr 2026, 7pm',
+                showDates: 'Jun 2026',
+                deadline: 'No registration required',
+                roles: ['Titania', 'Oberon', 'Puck', 'Mechanicals', 'Lovers'],
+                description: 'Community production seeking full cast. Experience with Shakespeare preferred but not essential. Strong female and non-binary cast lean.',
+                contactUrl: 'contact.html',
+                isUrgent: false
+            },
+            {
+                id: 4,
+                show: 'Chicago',
+                company: 'Footscray Theatrical Society',
+                type: 'amateur',
+                region: 'west',
+                venue: 'The Whitten Oval Function Centre',
+                auditionDate: 'Sat 11 Apr 2026, 10am–2pm',
+                showDates: 'Oct 2026',
+                deadline: 'Register by 8 Apr',
+                roles: ['Roxie Hart', 'Velma Kelly', 'Billy Flynn', 'Matron', 'Chorus'],
+                description: 'Western suburbs favourite brings the ultimate jazz-age musical! Seeking strong belt voices and movers. All ages 18+.',
+                contactUrl: 'contact.html',
+                isUrgent: true
+            },
+            {
+                id: 5,
+                show: 'The 25th Annual Putnam County Spelling Bee',
+                company: 'Ballarat Light Opera Co.',
+                type: 'community',
+                region: 'regional',
+                venue: 'Her Majesty\'s Theatre, Ballarat',
+                auditionDate: 'Sun 3 May 2026, 11am–3pm',
+                showDates: 'Sep 2026',
+                deadline: 'Open call',
+                roles: ['6 principals (gender-flexible)'],
+                description: 'Ballarat\'s iconic community company. This hilarious small-cast musical needs 6 strong adult performers. Great for newer performers.',
+                contactUrl: 'contact.html',
+                isUrgent: false
+            },
+            {
+                id: 6,
+                show: 'Les Misérables School Edition',
+                company: 'Camberwell Grammar School',
+                type: 'school',
+                region: 'east',
+                venue: 'Camberwell Grammar, Crowther Hall',
+                auditionDate: 'Mon 6 Apr 2026, 4–6pm',
+                showDates: 'Aug 2026',
+                deadline: 'Students only',
+                roles: ['Jean Valjean', 'Javert', 'Fantine', 'Cosette', 'Ensemble'],
+                description: 'Camberwell Grammar\'s annual musical. Open to current students only. Strong singing required for principal roles.',
+                contactUrl: 'contact.html',
+                isUrgent: true
+            },
+            {
+                id: 7,
+                show: 'The Importance of Being Earnest',
+                company: 'Melbourne Theatre Company',
+                type: 'professional',
+                region: 'melbourne',
+                venue: 'Southbank Theatre',
+                auditionDate: 'By appointment',
+                showDates: 'Nov 2026',
+                deadline: 'Submit CV by 30 Apr',
+                roles: ['Algernon', 'Jack', 'Gwendolen', 'Cecily', 'Lady Bracknell'],
+                description: 'Professional production seeking experienced actors. Equity rates. Please submit headshot and CV.',
+                contactUrl: 'contact.html',
+                isUrgent: false
+            },
+            {
+                id: 8,
+                show: 'Into the Woods',
+                company: 'Coburg Senior Secondary',
+                type: 'school',
+                region: 'north',
+                venue: 'Coburg Senior Theatre',
+                auditionDate: 'Fri 25 Apr 2026, 3:30pm',
+                showDates: 'Aug 2026',
+                deadline: 'Students only',
+                roles: ['Baker', 'Baker\'s Wife', 'Witch', 'Cinderella', 'Jack'],
+                description: 'Senior school production. Open to Coburg students Years 10-12. Strong singers and actors needed.',
+                contactUrl: 'contact.html',
+                isUrgent: false
+            },
+            {
+                id: 9,
+                show: 'Cabaret',
+                company: 'North Eastern Theatre Company',
+                type: 'community',
+                region: 'east',
+                venue: 'Heidelberg Theatre',
+                auditionDate: 'Sun 27 Apr 2026, 2pm–6pm',
+                showDates: 'Oct 2026',
+                deadline: 'Register by 22 Apr',
+                roles: ['Sally Bowles', 'Emcee', 'Cliff', 'Fräulein Schneider'],
+                description: 'Bold community production of the Kander & Ebb classic. Seeking strong triple threats with dramatic range.',
+                contactUrl: 'contact.html',
+                isUrgent: false
+            },
+            {
+                id: 10,
+                show: 'The Crucible',
+                company: 'Theatre 451',
+                type: 'independent',
+                region: 'melbourne',
+                venue: 'La Mama Courthouse',
+                auditionDate: 'Mon 14 Apr 2026, 6pm–9pm',
+                showDates: 'Jun 2026',
+                deadline: 'Book by 10 Apr',
+                roles: ['Proctor', 'Elizabeth', 'Abigail', 'Hale', 'Danforth'],
+                description: 'Independent production exploring Miller\'s masterpiece. Non-traditional casting encouraged. Stipend available.',
+                contactUrl: 'contact.html',
+                isUrgent: true
+            }
+        ];
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAuditions();
+            bindFilters();
+        });
+
+        function renderAuditions(filterType = 'all', filterRegion = 'all') {
+            const grid = document.getElementById('auditionsGrid');
+            grid.innerHTML = '';
+
+            const filtered = auditions.filter(audition => {
+                const typeMatch = filterType === 'all' || audition.type === filterType;
+                const regionMatch = filterRegion === 'all' || audition.region === filterRegion;
+                return typeMatch && regionMatch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 60px; color: var(--text-secondary);">No auditions match your filters</div>';
+                return;
+            }
+
+            filtered.forEach(audition => {
+                const card = createAuditionCard(audition);
+                grid.appendChild(card);
+            });
+        }
+
+        function createAuditionCard(audition) {
+            const card = document.createElement('div');
+            card.className = 'audition-card' + (audition.isUrgent ? ' urgent' : '');
+            
+            const badgeClass = audition.isUrgent ? 'badge-urgent' : `badge-${audition.type}`;
+            const badgeText = audition.isUrgent ? 'URGENT' : audition.type;
+            
+            card.innerHTML = `
+                <span class="audition-badge ${badgeClass}">${badgeText}</span>
+                <h3 class="audition-show">${audition.show}</h3>
+                <div class="audition-company">${audition.company}</div>
+                <div class="audition-venue">📍 ${audition.venue}</div>
+                
+                <div class="audition-details">
+                    <div class="audition-detail">
+                        <span class="audition-detail-icon">📅</span>
+                        <span><span class="audition-detail-label">Audition:</span> ${audition.auditionDate}</span>
+                    </div>
+                    <div class="audition-detail">
+                        <span class="audition-detail-icon">🎭</span>
+                        <span><span class="audition-detail-label">Show:</span> ${audition.showDates}</span>
+                    </div>
+                    <div class="audition-detail">
+                        <span class="audition-detail-icon">⏰</span>
+                        <span><span class="audition-detail-label">Deadline:</span> ${audition.deadline}</span>
+                    </div>
+                </div>
+                
+                <div class="audition-roles">
+                    <h4>Roles Available</h4>
+                    <div class="role-tags">
+                        ${audition.roles.map(role => `<span class="role-tag">${role}</span>`).join('')}
+                    </div>
+                </div>
+                
+                <div class="audition-footer">
+                    <div class="audition-deadline">⚠️ ${audition.deadline}</div>
+                    <a href="${audition.contactUrl}" class="audition-btn audition-btn-primary">Apply Now</a>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function bindFilters() {
+            const typeFilters = document.querySelectorAll('[data-filter]');
+            const regionFilters = document.querySelectorAll('[data-region]');
+            
+            let activeType = 'all';
+            let activeRegion = 'all';
+
+            typeFilters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    typeFilters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeType = btn.dataset.filter;
+                    renderAuditions(activeType, activeRegion);
+                });
+            });
+
+            regionFilters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    regionFilters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeRegion = btn.dataset.region;
+                    renderAuditions(activeType, activeRegion);
+                });
+            });
+        }
+    </script>
+
+    <script src="js/shared.js"></script>
+    <script src="js/magic-effects.js"></script>
+</body>
+</html>

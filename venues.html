@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venues Guide | Melbourne & Victoria Theatre Spaces | iHeartTheatre</title>
+    <meta name="description" content="Complete guide to theatre venues across Melbourne and Victoria. Professional theatres, community halls, school auditoriums — find the perfect space for your next production or discover where to watch great theatre.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/magic-effects.css">
+    <style>
+        :root {
+            --bg-primary: #050508;
+            --bg-secondary: #0a0a0f;
+            --bg-tertiary: #12121a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0b0;
+            --accent-primary: #667eea;
+            --accent-secondary: #764ba2;
+            --accent-gold: #ffd700;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .page-hero {
+            padding: 140px 2rem 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+        }
+
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Quick Stats */
+        .venue-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: -30px auto 60px;
+            padding: 0 2rem;
+        }
+
+        .venue-stat-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .venue-stat-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .venue-stat-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 4px;
+        }
+
+        /* Filters */
+        .filters-section {
+            max-width: 1200px;
+            margin: 0 auto 40px;
+            padding: 0 2rem;
+        }
+
+        .filter-row {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            align-items: center;
+        }
+
+        .filter-label {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-right: 6px;
+        }
+
+        .filter-chip {
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: 1px solid var(--glass-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-chip:hover, .filter-chip.active {
+            background: var(--gradient-primary);
+            border-color: transparent;
+            color: white;
+        }
+
+        /* Venue Grid */
+        .venues-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem 80px;
+        }
+
+        .venues-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 24px;
+        }
+
+        .venue-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .venue-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(102, 126, 234, 0.3);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.1);
+        }
+
+        .venue-card-header {
+            height: 180px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .venue-initials {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .venue-type-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .venue-type-professional { background: rgba(102, 126, 234, 0.9); color: white; }
+        .venue-type-community { background: rgba(255, 215, 0, 0.9); color: #1a1a1a; }
+        .venue-type-independent { background: rgba(80, 200, 120, 0.9); color: white; }
+        .venue-type-fringe { background: rgba(255, 107, 107, 0.9); color: white; }
+
+        .venue-card-body {
+            padding: 24px;
+        }
+
+        .venue-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .venue-location {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .venue-details {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .venue-detail {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .venue-detail-icon {
+            width: 24px;
+            height: 24px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .venue-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .venue-tag {
+            padding: 4px 12px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: var(--accent-primary);
+        }
+
+        .venue-card-footer {
+            display: flex;
+            gap: 10px;
+        }
+
+        .venue-btn {
+            flex: 1;
+            padding: 10px 16px;
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .venue-btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .venue-btn-secondary {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+        }
+
+        .venue-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Submit Venue CTA */
+        .submit-venue-cta {
+            max-width: 800px;
+            margin: 60px auto;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .submit-venue-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .submit-venue-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .venues-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .venue-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">iHeartTheatre</a>
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="whats-on.html">What's On</a>
+                <a href="venues.html" class="active">Venues</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="actors.html">Actors</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1>Theatre Venues Guide</h1>
+        <p>Every stage across Melbourne and Victoria — from grand proscenium arches to intimate black box theatres, community halls to school auditoriums.</p>
+    </section>
+
+    <div class="venue-stats">
+        <div class="venue-stat-card">
+            <div class="venue-stat-number" id="stat-total">0</div>
+            <div class="venue-stat-label">Total Venues</div>
+        </div>
+        <div class="venue-stat-card">
+            <div class="venue-stat-number" id="stat-professional">0</div>
+            <div class="venue-stat-label">Professional</div>
+        </div>
+        <div class="venue-stat-card">
+            <div class="venue-stat-number" id="stat-community">0</div>
+            <div class="venue-stat-label">Community</div>
+        </div>
+        <div class="venue-stat-card">
+            <div class="venue-stat-number" id="stat-regional">0</div>
+            <div class="venue-stat-label">Regional</div>
+        </div>
+    </div>
+
+    <section class="filters-section">
+        <div class="filter-row">
+            <span class="filter-label">Type:</span>
+            <button class="filter-chip active" data-filter="all">All Venues</button>
+            <button class="filter-chip" data-filter="professional">Professional</button>
+            <button class="filter-chip" data-filter="community">Community</button>
+            <button class="filter-chip" data-filter="independent">Independent</button>
+            <button class="filter-chip" data-filter="fringe">Fringe</button>
+        </div>
+        <div class="filter-row">
+            <span class="filter-label">Location:</span>
+            <button class="filter-chip active" data-location="all">All</button>
+            <button class="filter-chip" data-location="cbd">Melbourne CBD</button>
+            <button class="filter-chip" data-location="inner">Inner Suburbs</button>
+            <button class="filter-chip" data-location="outer">Outer Suburbs</button>
+            <button class="filter-chip" data-location="regional">Regional</button>
+        </div>
+    </section>
+
+    <section class="venues-section">
+        <div class="venues-grid" id="venuesGrid">
+            <!-- Venues injected by JavaScript -->
+        </div>
+    </section>
+
+    <section class="submit-venue-cta">
+        <h2>🎭 List Your Venue</h2>
+        <p>Own or manage a theatre space? Get it listed for free and connect with production companies, performers, and audiences across Victoria.</p>
+        <a href="contact.html" class="btn btn-primary">Submit Your Venue</a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="venues.html">Venues</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script>
+        // Venue Data
+        const venues = [
+            {
+                id: 'princess-theatre',
+                name: 'Princess Theatre',
+                type: 'professional',
+                location: 'cbd',
+                address: '163 Spring St, Melbourne',
+                capacity: 1488,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Full access',
+                tags: ['Musicals', 'Major productions', 'Heritage'],
+                website: 'https://www.marrinergroup.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'her-majestys',
+                name: "Her Majesty's Theatre",
+                type: 'professional',
+                location: 'cbd',
+                address: '219 Exhibition St, Melbourne',
+                capacity: 1700,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Full access',
+                tags: ['Musicals', 'Large-scale', 'Historic'],
+                website: 'https://www.marrinergroup.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'regent-theatre',
+                name: 'Regent Theatre',
+                type: 'professional',
+                location: 'cbd',
+                address: '191 Collins St, Melbourne',
+                capacity: 2141,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Full access',
+                tags: ['Blockbusters', 'Largest venue', 'Art deco'],
+                website: 'https://www.marrinergroup.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'arts-centre-playhouse',
+                name: 'Arts Centre Melbourne - Playhouse',
+                type: 'professional',
+                location: 'cbd',
+                address: '100 St Kilda Rd, Melbourne',
+                capacity: 884,
+                stages: 1,
+                parking: 'Onsite',
+                accessibility: 'Full access',
+                tags: ['Drama', 'MTC', 'Waterfront'],
+                website: 'https://www.artscentremelbourne.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'arts-centre-fairfax',
+                name: 'Arts Centre Melbourne - Fairfax Studio',
+                type: 'professional',
+                location: 'cbd',
+                address: '100 St Kilda Rd, Melbourne',
+                capacity: 376,
+                stages: 1,
+                parking: 'Onsite',
+                accessibility: 'Full access',
+                tags: ['Intimate', 'New works', 'MTC'],
+                website: 'https://www.artscentremelbourne.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'southbank-sunner',
+                name: 'Southbank Theatre - The Sumner',
+                type: 'professional',
+                location: 'cbd',
+                address: '140 Southbank Blvd, Melbourne',
+                capacity: 562,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Full access',
+                tags: ['MTC', 'Contemporary', 'Drama'],
+                website: 'https://www.mtc.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'southbank-lawler',
+                name: 'Southbank Theatre - The Lawler',
+                type: 'professional',
+                location: 'cbd',
+                address: '140 Southbank Blvd, Melbourne',
+                capacity: 150,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Full access',
+                tags: ['Intimate', 'Experimental', 'MTC'],
+                website: 'https://www.mtc.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'comedy-theatre',
+                name: 'Comedy Theatre',
+                type: 'professional',
+                location: 'cbd',
+                address: '240 Exhibition St, Melbourne',
+                capacity: 1000,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Partial',
+                tags: ['Comedy', 'Plays', 'Intimate'],
+                website: 'https://www.marrinergroup.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'forum-melbourne',
+                name: 'Forum Melbourne',
+                type: 'professional',
+                location: 'cbd',
+                address: '154 Flinders St, Melbourne',
+                capacity: 2000,
+                stages: 1,
+                parking: 'Nearby',
+                accessibility: 'Partial',
+                tags: ['Concerts', 'Comedy', 'Iconic'],
+                website: 'https://www.forummelbourne.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'la-mama',
+                name: 'La Mama Theatre',
+                type: 'independent',
+                location: 'inner',
+                address: '205 Faraday St, Carlton',
+                capacity: 100,
+                stages: 2,
+                parking: 'Street',
+                accessibility: 'Limited',
+                tags: ['Independent', 'New writing', 'Risk-taking'],
+                website: 'https://www.lamama.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'theatre-works',
+                name: 'Theatre Works',
+                type: 'independent',
+                location: 'inner',
+                address: '14 Acland St, St Kilda',
+                capacity: 203,
+                stages: 2,
+                parking: 'Street',
+                accessibility: 'Full access',
+                tags: ['Independent', 'Contemporary', 'Diverse'],
+                website: 'https://www.theatreworks.org.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'fortyfivedownstairs',
+                name: 'fortyfivedownstairs',
+                type: 'independent',
+                location: 'cbd',
+                address: '45 Flinders Lane, Melbourne',
+                capacity: 120,
+                stages: 2,
+                parking: 'Nearby',
+                accessibility: 'Limited',
+                tags: ['Independent', 'Visual art', 'Performance'],
+                website: 'https://www.fortyfivedownstairs.com',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'northcote-town-hall',
+                name: 'Northcote Town Hall',
+                type: 'community',
+                location: 'inner',
+                address: '189 High St, Northcote',
+                capacity: 300,
+                stages: 1,
+                parking: 'Street',
+                accessibility: 'Full access',
+                tags: ['Community', 'Local', 'Affordable'],
+                website: 'https://www.darebinarts.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'brunswick-town-hall',
+                name: 'Brunswick Town Hall',
+                type: 'community',
+                location: 'inner',
+                address: '233 Sydney Rd, Brunswick',
+                capacity: 400,
+                stages: 1,
+                parking: 'Street',
+                accessibility: 'Partial',
+                tags: ['Community', 'Moreland', 'Heritage'],
+                website: 'https://www.merri-bek.vic.gov.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'footscray-community-arts',
+                name: 'Footscray Community Arts',
+                type: 'community',
+                location: 'inner',
+                address: '45 Moreland St, Footscray',
+                capacity: 150,
+                stages: 1,
+                parking: 'Onsite',
+                accessibility: 'Full access',
+                tags: ['Community', 'Culturally diverse', 'Workshops'],
+                website: 'https://www.footscrayarts.com',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'geelong-arts-centre',
+                name: 'Geelong Arts Centre',
+                type: 'professional',
+                location: 'regional',
+                address: '50 Little Malop St, Geelong',
+                capacity: 800,
+                stages: 2,
+                parking: 'Onsite',
+                accessibility: 'Full access',
+                tags: ['Regional', 'Premium', 'Multiple spaces'],
+                website: 'https://www.geelongartscentre.org.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'ballarat-civic-hall',
+                name: 'Ballarat Civic Hall',
+                type: 'community',
+                location: 'regional',
+                address: '300 Mair St, Ballarat',
+                capacity: 1000,
+                stages: 1,
+                parking: 'Onsite',
+                accessibility: 'Partial',
+                tags: ['Regional', 'Historic', 'Large events'],
+                website: 'https://www.ballarat.vic.gov.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'bendigo-theatre',
+                name: 'Bendigo Theatre Company',
+                type: 'community',
+                location: 'regional',
+                address: '8-12 Hargreaves St, Bendigo',
+                capacity: 200,
+                stages: 1,
+                parking: 'Street',
+                accessibility: 'Partial',
+                tags: ['Regional', 'Community theatre', 'Local'],
+                website: 'https://www.bendigotheatrecompany.com',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'fringe-hub',
+                name: 'Melbourne Fringe Hub',
+                type: 'fringe',
+                location: 'cbd',
+                address: 'Various CBD locations',
+                capacity: 'Variable',
+                stages: 'Multiple',
+                parking: 'Variable',
+                accessibility: 'Variable',
+                tags: ['Fringe', 'Festival', 'Experimental'],
+                website: 'https://www.melbournefringe.com.au',
+                bookUrl: 'contact.html'
+            },
+            {
+                id: 'trades-hall',
+                name: 'Melbourne Trades Hall',
+                type: 'fringe',
+                location: 'cbd',
+                address: '54 Victoria St, Carlton',
+                capacity: 150,
+                stages: 1,
+                parking: 'Street',
+                accessibility: 'Limited',
+                tags: ['Fringe', 'Comedy', 'Alternative'],
+                website: 'https://www.tradeshall.com.au',
+                bookUrl: 'contact.html'
+            }
+        ];
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStats();
+            renderVenues();
+            bindFilters();
+        });
+
+        function updateStats() {
+            document.getElementById('stat-total').textContent = venues.length;
+            document.getElementById('stat-professional').textContent = venues.filter(v => v.type === 'professional').length;
+            document.getElementById('stat-community').textContent = venues.filter(v => v.type === 'community').length;
+            document.getElementById('stat-regional').textContent = venues.filter(v => v.location === 'regional').length;
+        }
+
+        function renderVenues(filterType = 'all', filterLocation = 'all') {
+            const grid = document.getElementById('venuesGrid');
+            grid.innerHTML = '';
+
+            const filtered = venues.filter(venue => {
+                const typeMatch = filterType === 'all' || venue.type === filterType;
+                const locationMatch = filterLocation === 'all' || venue.location === filterLocation;
+                return typeMatch && locationMatch;
+            });
+
+            if (filtered.length === 0) {
+                grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 60px; color: var(--text-secondary);">No venues match your filters</div>';
+                return;
+            }
+
+            filtered.forEach(venue => {
+                const card = createVenueCard(venue);
+                grid.appendChild(card);
+            });
+        }
+
+        function createVenueCard(venue) {
+            const card = document.createElement('div');
+            card.className = 'venue-card';
+            
+            const initials = venue.name.split(' ').map(w => w[0]).join('').substring(0, 2).toUpperCase();
+            
+            card.innerHTML = `
+                <div class="venue-card-header">
+                    <div class="venue-initials">${initials}</div>
+                    <span class="venue-type-badge venue-type-${venue.type}">${venue.type}</span>
+                </div>
+                <div class="venue-card-body">
+                    <h3 class="venue-name">${venue.name}</h3>
+                    <div class="venue-location">📍 ${venue.address}</div>
+                    <div class="venue-details">
+                        <div class="venue-detail">
+                            <div class="venue-detail-icon">👥</div>
+                            <span>Capacity: ${venue.capacity}</span>
+                        </div>
+                        <div class="venue-detail">
+                            <div class="venue-detail-icon">🎭</div>
+                            <span>Stages: ${venue.stages}</span>
+                        </div>
+                        <div class="venue-detail">
+                            <div class="venue-detail-icon">🅿️</div>
+                            <span>${venue.parking}</span>
+                        </div>
+                        <div class="venue-detail">
+                            <div class="venue-detail-icon">♿</div>
+                            <span>${venue.accessibility}</span>
+                        </div>
+                    </div>
+                    <div class="venue-tags">
+                        ${venue.tags.map(tag => `<span class="venue-tag">${tag}</span>`).join('')}
+                    </div>
+                    <div class="venue-card-footer">
+                        <a href="${venue.website}" target="_blank" rel="noopener" class="venue-btn venue-btn-primary">Visit Website</a>
+                        <a href="${venue.bookUrl}" class="venue-btn venue-btn-secondary">Enquire</a>
+                    </div>
+                </div>
+            `;
+            
+            return card;
+        }
+
+        function bindFilters() {
+            const typeFilters = document.querySelectorAll('[data-filter]');
+            const locationFilters = document.querySelectorAll('[data-location]');
+            
+            let activeType = 'all';
+            let activeLocation = 'all';
+
+            typeFilters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    typeFilters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeType = btn.dataset.filter;
+                    renderVenues(activeType, activeLocation);
+                });
+            });
+
+            locationFilters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    locationFilters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    activeLocation = btn.dataset.location;
+                    renderVenues(activeType, activeLocation);
+                });
+            });
+        }
+    </script>
+
+    <script src="js/shared.js"></script>
+    <script src="js/magic-effects.js"></script>
+</body>
+</html>

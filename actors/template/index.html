@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Actor | iHeartTheatre</title>
+    <meta name="description" content="Your professional actor portfolio. View credits, photos, and get in touch for casting opportunities.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/shared.css">
+    <link rel="stylesheet" href="../../css/magic-effects.css">
+    <style>
+        /* ========================================
+           ACTOR PORTFOLIO TEMPLATE
+           Instructions: Customize the colors and
+           content to make it your own!
+           ======================================== */
+
+        /* STEP 1: Choose Your Color Scheme
+           Change these colors to match your brand */
+        :root {
+            /* Option 1: Warm/Gold (classic) */
+            --actor-primary: #d4af37;
+            --actor-secondary: #b8941f;
+            
+            /* Option 2: Cool/Blue (contemporary) */
+            /* --actor-primary: #4a90e2; */
+            /* --actor-secondary: #357abd; */
+            
+            /* Option 3: Bold/Purple (dramatic) */
+            /* --actor-primary: #9b59b6; */
+            /* --actor-secondary: #8e44ad; */
+            
+            /* Option 4: Rose/Pink (youthful) */
+            /* --actor-primary: #ff6b9d; */
+            /* --actor-secondary: #c44569; */
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #f5f5f5;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .actor-header {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        .actor-header-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--actor-primary);
+            text-decoration: none;
+        }
+
+        .actor-header-nav a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-left: 24px;
+            transition: color 0.3s;
+        }
+
+        .actor-header-nav a:hover {
+            color: var(--actor-primary);
+        }
+
+        /* Hero Section */
+        .actor-hero {
+            padding: 140px 24px 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(212, 175, 55, 0.1) 0%, transparent 100%);
+        }
+
+        /* STEP 2: Add Your Photo
+           Replace the emoji with an <img> tag:
+           <img src="your-photo.jpg" alt="Your Name" style="width: 100%; height: 100%; object-fit: cover;">
+        */
+        .actor-avatar-large {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--actor-primary), var(--actor-secondary));
+            margin: 0 auto 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .actor-name {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #fff, var(--actor-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .actor-title {
+            font-size: 1.3rem;
+            color: var(--actor-primary);
+            margin-bottom: 16px;
+        }
+
+        .actor-location {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 1rem;
+            margin-bottom: 24px;
+        }
+
+        /* STEP 3: Write Your Bio */
+        .actor-bio-short {
+            max-width: 600px;
+            margin: 0 auto 32px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* STEP 4: Add Your Social Links */
+        .actor-social {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .actor-social a {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .actor-social a:hover {
+            background: var(--actor-primary);
+            transform: translateY(-3px);
+        }
+
+        /* Content Sections */
+        .actor-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .actor-section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        /* Credits Table */
+        .credits-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .credits-table th,
+        .credits-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .credits-table th {
+            color: var(--actor-primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .credits-table td {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 25px;
+            color: var(--actor-primary);
+            font-size: 0.95rem;
+        }
+
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 16px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 1;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            overflow: hidden;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Contact */
+        .contact-section {
+            text-align: center;
+            padding: 80px 24px;
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-email {
+            font-size: 1.3rem;
+            color: var(--actor-primary);
+            text-decoration: none;
+            margin-bottom: 24px;
+            display: inline-block;
+        }
+
+        .contact-email:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .actor-footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        .actor-footer a {
+            color: var(--actor-primary);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .actor-avatar-large {
+                width: 150px;
+                height: 150px;
+                font-size: 4rem;
+            }
+
+            .credits-table {
+                font-size: 0.9rem;
+            }
+
+            .credits-table th,
+            .credits-table td {
+                padding: 12px;
+            }
+
+            .actor-header-nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="actor-header">
+        <a href="../../index.html" class="actor-header-logo">iHeartTheatre</a>
+        <nav class="actor-header-nav">
+            <a href="#about">About</a>
+            <a href="#credits">Credits</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="actor-hero" id="about">
+        <!-- STEP 2: Replace with your photo or keep the emoji -->
+        <div class="actor-avatar-large">🎭</div>
+        
+        <!-- STEP 3: Your Name -->
+        <h1 class="actor-name">Your Name</h1>
+        
+        <!-- Your Title/Type -->
+        <div class="actor-title">Actor / Singer / Dancer</div>
+        
+        <!-- Location -->
+        <div class="actor-location">📍 Melbourne, Victoria</div>
+        
+        <!-- STEP 4: Your Bio -->
+        <p class="actor-bio-short">
+            Welcome to my actor portfolio! I'm a passionate performer based in Melbourne 
+            with experience in theatre, film, and television. I love bringing characters 
+            to life and telling stories that move audiences.
+        </p>
+        
+        <!-- STEP 5: Your Social Links -->
+        <div class="actor-social">
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="Twitter">🐦</a>
+            <a href="#" title="YouTube">▶️</a>
+            <a href="#" title="Spotlight">🎬</a>
+            <a href="mailto:your@email.com" title="Email">✉️</a>
+        </div>
+    </section>
+
+    <section class="actor-section" id="credits">
+        <h2 class="actor-section-title">Credits & Experience</h2>
+        <table class="credits-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Show/Project</th>
+                    <th>Role</th>
+                    <th>Company/Director</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- STEP 6: Add Your Credits -->
+                <tr>
+                    <td>2025</td>
+                    <td>Example Musical</td>
+                    <td>Lead Role</td>
+                    <td>Theatre Company</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Example Play</td>
+                    <td>Supporting</td>
+                    <td>Director Name</td>
+                </tr>
+                <tr>
+                    <td>2024</td>
+                    <td>Short Film</td>
+                    <td>Feature</td>
+                    <td>Production Company</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="actor-section" id="skills">
+        <h2 class="actor-section-title">Skills & Specialties</h2>
+        <div class="skills-grid">
+            <!-- STEP 7: List Your Skills -->
+            <span class="skill-tag">🎭 Acting</span>
+            <span class="skill-tag">🎵 Singing (Soprano/Alto/Tenor/Bass)</span>
+            <span class="skill-tag">💃 Dance (Ballet/Jazz/Tap)</span>
+            <span class="skill-tag">🎤 Voice Over</span>
+            <span class="skill-tag">🎬 Screen Acting</span>
+            <span class="skill-tag">🎸 Musical Instrument</span>
+            <span class="skill-tag">🗣️ Accents (British/American/etc)</span>
+            <span class="skill-tag">🤸 Physical Theatre</span>
+        </div>
+    </section>
+
+    <section class="actor-section" id="gallery">
+        <h2 class="actor-section-title">Photos</h2>
+        <div class="gallery-grid">
+            <!-- STEP 8: Add Your Photos -->
+            <div class="gallery-item">📸</div>
+            <div class="gallery-item">📸</div>
+            <div class="gallery-item">📸</div>
+            <div class="gallery-item">📸</div>
+        </div>
+    </section>
+
+    <section class="actor-section" id="training">
+        <h2 class="actor-section-title">Training & Education</h2>
+        <table class="credits-table">
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Institution/Course</th>
+                    <th>Focus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- STEP 9: Add Your Training -->
+                <tr>
+                    <td>2020-2023</td>
+                    <td>Drama School Name</td>
+                    <td>Bachelor of Fine Arts (Acting)</td>
+                </tr>
+                <tr>
+                    <td>2023</td>
+                    <td>Workshop/Masterclass</td>
+                    <td>Shakespeare Intensive</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <h2 class="actor-section-title">Get In Touch</h2>
+        <p style="color: rgba(255,255,255,0.7); margin-bottom: 24px;">
+            For casting enquiries, collaborations, or just to say hello!
+        </p>
+        <!-- STEP 10: Your Contact Email -->
+        <a href="mailto:your@email.com" class="contact-email">your@email.com</a>
+        
+        <div style="margin-top: 32px;">
+            <p style="color: rgba(255,255,255,0.6); font-size: 0.9rem;">
+                Or contact me through my agent:<br>
+                <strong style="color: var(--actor-primary);">Agent Name</strong><br>
+                agent@agency.com | 0412 345 678
+            </p>
+        </div>
+    </section>
+
+    <footer class="actor-footer">
+        <p>© 2026 Your Name | Part of the <a href="https://ihearttheatre.com">iHeartTheatre</a> Network</p>
+        <p style="margin-top: 8px; font-size: 0.8rem;">
+            Powered by <a href="../../actors.html">iHeartTheatre Actor Websites</a>
+        </p>
+    </footer>
+
+    <script src="../../js/shared.js"></script>
+    <script src="../../js/magic-effects.js"></script>
+</body>
+</html>

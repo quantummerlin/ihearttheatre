@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actors Directory | Melbourne & Victorian Performers | iHeartTheatre</title>
+    <meta name="description" content="Discover talented performers across Melbourne and Victoria. Browse actor profiles, portfolios, and connect with the theatre community. Get your own actor website at yourname.ihearttheatre.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/magic-effects.css">
+    <style>
+        :root {
+            --bg-primary: #050508;
+            --bg-secondary: #0a0a0f;
+            --bg-tertiary: #12121a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0b0;
+            --accent-primary: #667eea;
+            --accent-secondary: #764ba2;
+            --accent-gold: #ffd700;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .page-hero {
+            padding: 140px 2rem 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(102, 126, 234, 0.1) 0%, transparent 100%);
+        }
+
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-hero p {
+            color: var(--text-secondary);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        /* Pricing Cards */
+        .pricing-section {
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 2rem;
+        }
+
+        .pricing-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 32px;
+        }
+
+        .pricing-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 40px 32px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--accent-primary);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), var(--glass-bg));
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--gradient-primary);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .pricing-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .pricing-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            opacity: 0.7;
+        }
+
+        .pricing-period {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 24px;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pricing-features li:before {
+            content: '✓';
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .pricing-btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            border-radius: 30px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+        }
+
+        .pricing-btn-secondary {
+            background: transparent;
+            border: 1px solid var(--glass-border);
+            color: var(--text-primary);
+        }
+
+        /* Featured Actors */
+        .featured-actors {
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 2rem;
+        }
+
+        .featured-actors h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .actors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 32px;
+        }
+
+        .actor-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .actor-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(102, 126, 234, 0.3);
+        }
+
+        .actor-image {
+            height: 280px;
+            background: var(--gradient-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .actor-avatar {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .actor-card-body {
+            padding: 24px;
+        }
+
+        .actor-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 4px;
+        }
+
+        .actor-type {
+            color: var(--accent-primary);
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+        }
+
+        .actor-bio {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .actor-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .actor-tag {
+            padding: 4px 12px;
+            background: rgba(102, 126, 234, 0.1);
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: var(--accent-primary);
+        }
+
+        .actor-subdomain {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--glass-border);
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .actor-subdomain span {
+            color: var(--accent-primary);
+            font-weight: 500;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            max-width: 1200px;
+            margin: 0 auto 80px;
+            padding: 0 2rem;
+        }
+
+        .benefits-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 32px;
+        }
+
+        .benefit-card {
+            text-align: center;
+            padding: 32px 24px;
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+        }
+
+        .benefit-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* Telegram CTA */
+        .telegram-cta {
+            max-width: 800px;
+            margin: 0 auto 80px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(0, 136, 204, 0.1), rgba(0, 136, 204, 0.05));
+            border: 1px solid rgba(0, 136, 204, 0.3);
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .telegram-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+        }
+
+        .telegram-cta p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 32px;
+            background: #0088cc;
+            color: white;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 136, 204, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .actors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .actors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">iHeartTheatre</a>
+            <div class="hamburger" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="whats-on.html">What's On</a>
+                <a href="venues.html">Venues</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="actors.html" class="active">Actors</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1>Actor Portfolio Websites</h1>
+        <p>Your professional home on the web. Get yourname.ihearttheatre.com and showcase your talent to casting directors, agents, and the theatre community.</p>
+        <div class="hero-cta">
+            <a href="#pricing" class="btn btn-primary">Get Started</a>
+            <a href="#featured" class="btn btn-secondary">See Examples</a>
+        </div>
+    </section>
+
+    <section class="pricing-section" id="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="pricing-icon">🎭</div>
+                <h3 class="pricing-name">DIY Portfolio</h3>
+                <div class="pricing-price">$20<span>/year</span></div>
+                <div class="pricing-period">Manage it yourself</div>
+                <ul class="pricing-features">
+                    <li>yourname.ihearttheatre.com</li>
+                    <li>Professional actor template</li>
+                    <li>Bio & credits pages</li>
+                    <li>Photo gallery</li>
+                    <li>Contact form</li>
+                    <li>Social media links</li>
+                    <li>Simple CMS to update content</li>
+                </ul>
+                <a href="https://t.me/ihearttheatre_bot" class="pricing-btn pricing-btn-secondary">Chat on Telegram</a>
+            </div>
+
+            <div class="pricing-card featured">
+                <span class="pricing-badge">MOST POPULAR</span>
+                <div class="pricing-icon">⭐</div>
+                <h3 class="pricing-name">Managed Portfolio</h3>
+                <div class="pricing-price">$300<span> setup</span></div>
+                <div class="pricing-period">Then $50 per update</div>
+                <ul class="pricing-features">
+                    <li>Everything in DIY, plus:</li>
+                    <li>Custom design tweaks</li>
+                    <li>Professional setup</li>
+                    <li>SEO optimization</li>
+                    <li>We handle all updates</li>
+                    <li>Priority support</li>
+                    <li>Featured in directory</li>
+                </ul>
+                <a href="https://t.me/ihearttheatre_bot" class="pricing-btn pricing-btn-primary">Get Started</a>
+            </div>
+
+            <div class="pricing-card">
+                <div class="pricing-icon">🌟</div>
+                <h3 class="pricing-name">Premium Package</h3>
+                <div class="pricing-price">$500<span>/year</span></div>
+                <div class="pricing-period">Unlimited updates included</div>
+                <ul class="pricing-features">
+                    <li>Everything in Managed, plus:</li>
+                    <li>Unlimited updates</li>
+                    <li>Monthly performance reports</li>
+                    <li>Priority placement</li>
+                    <li>Showreel hosting</li>
+                    <li>Professional headshot session</li>
+                    <li>Personal branding consultation</li>
+                </ul>
+                <a href="https://t.me/ihearttheatre_bot" class="pricing-btn pricing-btn-secondary">Chat on Telegram</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-actors" id="featured">
+        <h2>Featured Performers</h2>
+        <div class="actors-grid">
+            <a href="https://penelopequinn.ihearttheatre.com" class="actor-card" target="_blank">
+                <div class="actor-image">
+                    <div class="actor-avatar">👧</div>
+                </div>
+                <div class="actor-card-body">
+                    <h3 class="actor-name">Penelope Quinn</h3>
+                    <div class="actor-type">Young Performer</div>
+                    <p class="actor-bio">7-year-old theatre enthusiast reviewing shows across Melbourne. Passionate about musical theatre and storytelling.</p>
+                    <div class="actor-tags">
+                        <span class="actor-tag">Musical Theatre</span>
+                        <span class="actor-tag">Reviewer</span>
+                    </div>
+                    <div class="actor-subdomain">Visit: <span>penelopequinn.ihearttheatre.com</span></div>
+                </div>
+            </a>
+
+            <a href="#" class="actor-card" onclick="event.preventDefault(); alert('Coming soon!');">
+                <div class="actor-image">
+                    <div class="actor-avatar">🎭</div>
+                </div>
+                <div class="actor-card-body">
+                    <h3 class="actor-name">Your Name Here</h3>
+                    <div class="actor-type">Create Your Profile</div>
+                    <p class="actor-bio">Join Penelope and other performers showcasing their talent. Get your professional actor website today.</p>
+                    <div class="actor-tags">
+                        <span class="actor-tag">Actor</span>
+                        <span class="actor-tag">Performer</span>
+                    </div>
+                    <div class="actor-subdomain">Get: <span>yourname.ihearttheatre.com</span></div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <h2>Why Get an Actor Website?</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">🎯</div>
+                <h3>Be Discoverable</h3>
+                <p>Casting directors and agents can find you easily. Your profile appears in our directory.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">💼</div>
+                <h3>Look Professional</h3>
+                <p>A dedicated website shows you're serious about your craft. Stand out from the crowd.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🎪</div>
+                <h3>Connect with Community</h3>
+                <p>Join the iHeartTheatre network of performers, companies, and theatre lovers.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">⚡</div>
+                <h3>Easy to Update</h3>
+                <p>Add new credits, photos, and reels anytime. Keep your portfolio current.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="telegram-cta">
+        <h2>📱 Chat With Us on Telegram</h2>
+        <p>Ready to get your actor website? Have questions? Message us on Telegram and we'll help you get started.</p>
+        <a href="https://t.me/ihearttheatre_bot" class="telegram-btn" target="_blank" rel="noopener">
+            <span>💬</span>
+            <span>Message @ihearttheatre_bot</span>
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="actors.html">Actors</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+    <script src="js/shared.js"></script>
+    <script src="js/magic-effects.js"></script>
+</body>
+</html>

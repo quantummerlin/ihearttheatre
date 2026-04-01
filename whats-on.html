@@ -322,10 +322,10 @@
   }
 
   .show-card-company {
-   color: var(--text-secondary);
-   font-size: .78rem;
-   font-style: italic;
-   margin-bottom: 10px;
+   color: var(--text-primary);
+   font-size: .82rem;
+   font-weight: 600;
+   margin-bottom: 2px;
   }
 
   .show-card-desc {
@@ -1161,7 +1161,7 @@
  ];
 
  /* ── APRIL 2026 ── */
- ,{
+ {
   title: 'Shrek the Musical',
   venue: 'Heathdale Christian College, Werribee Campus',
   venueType: 'school',
@@ -1281,7 +1281,7 @@
   image: null
  },
  /* ── MAY 2026 ── */
- ,{
+ {
   title: 'Waitress',
   venue: 'Her Majesty\'s Theatre, Melbourne',
   venueType: 'professional',
@@ -1418,7 +1418,7 @@
   image: null
  },
  /* ── MAY 2026 (continued) ── */
- ,{
+ {
   title: 'Sainting Joan',
   venue: 'Theatre Works, St Kilda',
   venueType: 'professional',
@@ -1538,7 +1538,7 @@
   image: null
  },
  /* ── JUNE 2026 ── */
- ,{
+ {
   title: 'Katzenmusik',
   venue: 'Theatre Works, St Kilda',
   venueType: 'professional',
@@ -1709,7 +1709,7 @@
   image: null
  },
  /* ── JULY 2026 ── */
- ,{
+ {
   title: 'Jersey Boys',
   venue: 'TBC',
   venueType: 'professional',
@@ -1897,7 +1897,7 @@
   image: null
  },
  /* ── AUGUST 2026 ── */
- ,{
+ {
   title: 'A Beautiful Noise: The Neil Diamond Musical',
   venue: 'Princess Theatre, Melbourne',
   venueType: 'professional',
@@ -2034,7 +2034,7 @@
   image: null
  },
  /* ── SEPTEMBER–NOVEMBER 2026 ── */
- ,{
+ {
   title: 'Turn of the Screw',
   venue: 'Palais Theatre, St Kilda',
   venueType: 'professional',
@@ -2595,9 +2595,9 @@
     '</div>' +
     '<div class="show-card-body">' +
      '<h3 class="show-card-title">' + show.title + '</h3>' +
+     '<p class="show-card-company">' + show.company + '</p>' +
      '<p class="show-card-venue">' + show.venue + '</p>' +
      '<p class="show-card-dates">' + show.dates + '</p>' +
-     '<p class="show-card-company">' + show.company + '</p>' +
      '<p class="show-card-desc">' + show.description + '</p>' +
      '<div class="show-card-footer">' +
       '<div class="show-card-tags">' + tagsHTML + '</div>' +

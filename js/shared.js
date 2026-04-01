@@ -36,15 +36,14 @@ function initParticles() {
  const container = document.getElementById('particles');
  if (!container) return;
 
- const count = window.innerWidth < 768 ? 8 : 15;
+ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ const count = window.innerWidth < 768 ? 4 : 7;
  for (let i = 0; i < count; i++) {
  const particle = document.createElement('div');
  particle.className = 'particle';
  particle.style.left = Math.random() * 100 + '%';
- particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
- particle.style.animationDelay = (Math.random() * 15) + 's';
- particle.style.width = (Math.random() * 4 + 2) + 'px';
- particle.style.height = particle.style.width;
+ particle.style.animationDuration = (Math.random() * 15 + 15) + 's';
+ particle.style.animationDelay = (Math.random() * 20) + 's';
  container.appendChild(particle);
  }
 }

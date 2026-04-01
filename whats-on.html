@@ -21,7 +21,7 @@
    width: 100%;
    min-height: 520px;
    overflow: hidden;
-   margin-top: 70px;
+   margin-top: 72px;
   }
 
   .slide {
@@ -158,8 +158,6 @@
    border-radius: 16px;
    padding: 20px;
    text-align: center;
-   backdrop-filter: blur(12px);
-   -webkit-backdrop-filter: blur(12px);
   }
 
   .stat-number {
@@ -463,35 +461,37 @@
   /* ── Submit Banner ──────────────────────────── */
   .submit-banner {
    max-width: 1200px;
-   margin: 40px auto 0;
+   margin: 56px auto 0;
    padding: 0 2rem;
   }
   .submit-banner-inner {
-   background: linear-gradient(135deg, rgba(102,126,234,.12) 0%, rgba(118,75,162,.12) 100%);
-   border: 1px solid rgba(102,126,234,.25);
-   border-radius: 20px;
-   padding: 28px 36px;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   gap: 20px;
-   flex-wrap: wrap;
+   background: linear-gradient(135deg, rgba(102,126,234,.1) 0%, rgba(118,75,162,.1) 100%);
+   border: 1px solid rgba(102,126,234,.2);
+   border-radius: 16px;
+   padding: 36px 40px;
+   text-align: center;
   }
   .submit-banner-text h3 {
    font-family: 'Playfair Display', serif;
-   font-size: 1.3rem;
-   margin-bottom: 6px;
+   font-size: 1.4rem;
+   margin-bottom: 10px;
   }
   .submit-banner-text p {
    color: var(--text-secondary);
-   font-size: .9rem;
-   line-height: 1.5;
-   margin: 0;
+   font-size: .92rem;
+   line-height: 1.6;
+   margin: 0 auto 24px;
+   max-width: 680px;
   }
-  .submit-banner-actions { display: flex; gap: 10px; flex-wrap: wrap; flex-shrink: 0; }
+  .submit-banner-actions {
+   display: flex;
+   gap: 12px;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
   @media (max-width: 700px) {
-   .submit-banner-inner { padding: 22px 20px; }
-   .submit-banner-text h3 { font-size: 1.1rem; }
+   .submit-banner-inner { padding: 28px 20px; }
+   .submit-banner-text h3 { font-size: 1.15rem; }
   }
 
   /* ── Section Headings ───────────────────────── */
@@ -742,20 +742,6 @@
   </div>
  </nav>
 
- <!-- ══════ Submit Banner ══════ -->
- <div class="submit-banner">
-  <div class="submit-banner-inner">
-   <div class="submit-banner-text">
-    <h3>🎭 Get your show, audition or promo listed — it's free!</h3>
-    <p>iHeartTheatre is a celebration of Victorian theatre in every form. Community halls, school productions, amateur companies, fringe shows, professional seasons — we want to know about all of it. Send us the details.</p>
-   </div>
-   <div class="submit-banner-actions">
-    <a href="submit-show.html" class="btn btn-primary">Submit a Show</a>
-    <a href="contact.html" class="btn btn-secondary">Message Us</a>
-   </div>
-  </div>
- </div>
-
  <!-- ══════ Hero Slideshow ══════ -->
  <section class="hero-slideshow" id="heroSlideshow" aria-label="Featured shows slideshow">
   <!-- slides injected by JS -->
@@ -764,6 +750,20 @@
  <!-- ══════ Quick Stats ══════ -->
  <div class="quick-stats" id="quickStats">
   <!-- injected by JS -->
+ </div>
+
+ <!-- ══════ Submit Banner ══════ -->
+ <div class="submit-banner">
+  <div class="submit-banner-inner">
+   <div class="submit-banner-text">
+    <h3>Get your show, audition or promo listed &mdash; it&rsquo;s free</h3>
+    <p>iHeartTheatre celebrates Victorian theatre in every form. Community halls, school productions, amateur companies, fringe shows, professional seasons &mdash; send us the details and we&rsquo;ll get it listed.</p>
+   </div>
+   <div class="submit-banner-actions">
+    <a href="submit-show.html" class="btn btn-primary">Submit a Show</a>
+    <a href="contact.html" class="btn btn-secondary">Message Us</a>
+   </div>
+  </div>
  </div>
 
  <!-- ══════ Filters ══════ -->
@@ -867,7 +867,7 @@
     as of 30 Mar 2026.
     venueType: 'professional' | 'community' | 'school' | 'amateur'
     ═══════════════════════════════════════════ */
- var TODAY = new Date('2026-03-31');
+ var TODAY = new Date();
 
  var shows = [
   {

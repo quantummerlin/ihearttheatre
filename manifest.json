@@ -1,7 +1,7 @@
 {
-  "name": "iHeartTheatre - Melbourne's Complete Theatre Community",
+  "name": "iHeartTheatre - Victoria's Theatre Hub",
   "short_name": "iHeartTheatre",
-  "description": "From school halls to Broadway blockbusters. Real people. Real passion. Real theatre. Melbourne's complete theatre community platform.",
+  "description": "Victoria's theatre hub. Find shows, venues, auditions and companies across Melbourne and Victoria.",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#050508",

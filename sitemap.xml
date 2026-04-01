@@ -3,33 +3,39 @@
     <!-- Main Pages -->
     <url>
         <loc>https://ihearttheatre.com/</loc>
-        <lastmod>2026-02-22</lastmod>
+        <lastmod>2026-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://ihearttheatre.com/reviews.html</loc>
-        <lastmod>2026-02-23</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
         <loc>https://ihearttheatre.com/whats-on.html</loc>
-        <lastmod>2026-02-23</lastmod>
+        <lastmod>2026-04-01</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://ihearttheatre.com/auditions.html</loc>
+        <lastmod>2026-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://ihearttheatre.com/reviewers.html</loc>
-        <lastmod>2026-02-22</lastmod>
+        <loc>https://ihearttheatre.com/venues.html</loc>
+        <lastmod>2026-04-01</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://ihearttheatre.com/junior-kids-schools.html</loc>
-        <lastmod>2026-02-22</lastmod>
+        <lastmod>2026-04-01</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ihearttheatre.com/reviews.html</loc>
+        <lastmod>2026-04-01</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.75</priority>
     </url>
     <url>
         <loc>https://ihearttheatre.com/holiday-programs.html</loc>

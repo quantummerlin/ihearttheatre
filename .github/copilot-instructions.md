@@ -85,10 +85,10 @@ Every page MUST have this nav structure:
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="whats-on.html">What's On</a>
+      <a href="venues.html">Venues</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="junior-kids-schools.html">Junior &amp; Kids</a>
       <a href="reviews.html">Reviews</a>
-      <a href="reviewers.html">Reviewers</a>
-      <a href="junior-kids-schools.html">Junior & Kids</a>
-      <a href="holiday-programs.html">Holiday Programs</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -103,6 +103,9 @@ Same structure but all `href` values prefixed with `../`:
 <!-- ... -->
 <a href="../index.html">Home</a>
 <a href="../whats-on.html">What's On</a>
+<a href="../venues.html">Venues</a>
+<a href="../auditions.html">Auditions</a>
+<a href="../junior-kids-schools.html">Junior &amp; Kids</a>
 <a href="../reviews.html">Reviews</a>
 <!-- etc. -->
 ```
@@ -113,14 +116,16 @@ Same structure but all `href` values prefixed with `../`:
   <div class="footer-content">
     <div class="footer-links">
       <a href="index.html">Home</a>
-      <a href="reviewers.html">Reviewers</a>
+      <a href="whats-on.html">What's On</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="venues.html">Venues</a>
       <a href="reviews.html">Reviews</a>
       <a href="about.html">About</a>
       <a href="privacy.html">Privacy</a>
       <a href="disclaimer.html">Disclaimer</a>
       <a href="contact.html">Contact</a>
     </div>
-    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Theatre Renaissance Has Already Started</p>
+    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Home of Victorian Theatre</p>
   </div>
 </footer>
 ```

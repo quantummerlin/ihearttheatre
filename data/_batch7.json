@@ -1,0 +1,349 @@
+{
+  "songs": {
+    "six/catherine-aragon": {
+      "role_name": "Catherine of Aragon",
+      "musical": "Six",
+      "songs_to_prepare": [
+        {"title": "And I Am Telling You I'm Not Going", "from": "Dreamgirls", "composer": "Henry Krieger", "why": "The original wife's absolute refusal to accept being replaced — fierce mezzo belt that mirrors Aragon's declaration", "type": "style_match"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The woman who refuses to be written out of her own story — powerful mezzo belt to E5, unbreakable conviction", "type": "style_match"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "Contemporary MT powerhouse — the unstoppable woman who will not yield no matter what, driving belt with charisma", "type": "contrasting"}
+      ],
+      "style_guidance": "Aragon opens the show and sets the standard — mezzo-soprano with a power belt that can cut through a rock band. Her energy is fierce, righteous, and entirely contemporary despite the Tudor setting. This is a concert belt, not a legit tone.",
+      "avoid": ["Classical or period vocal approach — Six is entirely contemporary pop/rock, no vibrato-heavy legit soprano"]
+    },
+    "six/anne-boleyn": {
+      "role_name": "Anne Boleyn",
+      "musical": "Six",
+      "songs_to_prepare": [
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Witty, self-aware, and delightfully oblivious to the danger around her — Anne's comic pop energy exactly", "type": "style_match"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "The unstoppable girl who is absolutely certain of her greatness right up until she isn't", "type": "contrasting"},
+        {"title": "Gimme Gimme", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Pop-adjacent belt anthem with contemporary sensibility and enormous confidence — Anne's vibe in song format", "type": "style_match"}
+      ],
+      "style_guidance": "Anne Boleyn is Six's comedian — mezzo-soprano pop belt with irrepressible wit, comedic timing, and the ability to make you laugh at jokes about her own execution. She is the most fun queen, which makes her tragedy land harder.",
+      "avoid": ["Tragic or vulnerable tone — Anne's whole character is that she refuses to be defined by what happened to her"]
+    },
+    "six/jane-seymour": {
+      "role_name": "Jane Seymour",
+      "musical": "Six",
+      "songs_to_prepare": [
+        {"title": "She Used to Be Mine", "from": "Waitress", "composer": "Sara Bareilles", "why": "The quiet, emotional power ballad about a woman who knew who she was before circumstances changed her", "type": "style_match"},
+        {"title": "On My Own", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The woman who loved genuinely and never got to see how the story ended — soprano/mezzo ballad with controlled emotion", "type": "style_match"},
+        {"title": "I Dreamed a Dream", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The queen who had what she always wanted and didn't survive to enjoy it — mezzo/soprano ballad, genuine tragedy", "type": "contrasting"}
+      ],
+      "style_guidance": "Jane Seymour is the show's emotional centre — soprano/mezzo with a genuine ballad quality that stops the concert dead. 'Heart of Stone' is Six's power ballad and Jane needs to deliver the full emotional weight. Authentic vulnerability, not performance of sadness.",
+      "avoid": ["Pop performer energy — Jane is the one queen who plays it completely straight and the contrast to her sisters is essential"]
+    },
+    "six/anna-cleves": {
+      "role_name": "Anna of Cleves",
+      "musical": "Six",
+      "songs_to_prepare": [
+        {"title": "Anything You Can Do", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "The queen who won the game of Henry's marriages and refuses to pretend otherwise — competitive, confident mezzo", "type": "style_match"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "The woman fully and gloriously at peace with exactly who she is — alto/mezzo owning the room", "type": "style_match"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Contrasting — the woman who was told she was unwanted and built herself a better life regardless", "type": "contrasting"}
+      ],
+      "style_guidance": "Anna of Cleves got divorced and kept the money and the freedom — mezzo/alto with hip-hop flow, maximum confidence, and absolute zero emotional damage. She won. She knows she won. The comedy is entirely grounded in how correct she is.",
+      "avoid": ["Victimhood or vulnerability — Anna is the show's winner and she knows it; any hint of damage undermines the entire character"]
+    },
+    "six/katherine-howard": {
+      "role_name": "Katherine Howard",
+      "musical": "Six",
+      "songs_to_prepare": [
+        {"title": "I Know Things Now", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The youngest, who learned too late that the world was dangerous — soprano with the specific vulnerability of youth betrayed", "type": "style_match"},
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Shows the social butterfly soprano energy — the girl who used her looks and paid the price for it", "type": "contrasting"},
+        {"title": "Gimme Gimme", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Contemporary pop soprano belt — young woman wanting something from the world she thought she could access", "type": "style_match"}
+      ],
+      "style_guidance": "Katherine Howard is the youngest of the queens and the show's most heartbreaking story — soprano pop belt with an irresistibly fun surface that gradually reveals the cost of her circumstances. She is not naive; she simply had no other options.",
+      "avoid": ["Pure tragedy — Katherine's number 'All You Wanna Do' is deliberately pop-fun on the surface; the horror comes from what she's describing underneath"]
+    },
+    "six/catherine-parr": {
+      "role_name": "Catherine Parr",
+      "musical": "Six",
+      "songs_to_prepare": [
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "The final queen who refuses to let her story be reduced — mezzo with building emotional intelligence and declaration", "type": "style_match"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "The survivor claiming her narrative — alto/mezzo declaration that builds to a full belt", "type": "style_match"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "The woman who refuses to be a punchline — driving mezzo belt with intelligence and determination", "type": "contrasting"}
+      ],
+      "style_guidance": "Catherine Parr closes the show — mezzo/alto with a building belt, emotional intelligence, and the ability to speak directly to the audience about how women's stories get told. She is the most politically explicit queen and needs genuine gravity.",
+      "avoid": ["Light pop energy — Parr is the philosopher and activist of the six; she needs weight and purpose, not just charisma"]
+    },
+    "waitress/waitress-jenna": {
+      "role_name": "Jenna Hunterson",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "She Used to Be Mine", "from": "Waitress", "composer": "Sara Bareilles", "why": "Jenna's own defining song — mezzo-soprano with contemporary pop-musical quality, quiet devastation building to a belt", "type": "same_show"},
+        {"title": "Still Hurting", "from": "The Last Five Years", "composer": "Jason Robert Brown", "why": "A woman processing a painful relationship with raw emotional honesty — contemporary mezzo, exactly Jenna's world", "type": "style_match"},
+        {"title": "I Dreamed a Dream", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The woman who had a vision of herself that life tried to take — mezzo with belt, accessible emotion", "type": "contrasting"},
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Mezzo-soprano with quiet dignity — Jenna at her most reflective, before she finds her way out", "type": "style_match"}
+      ],
+      "style_guidance": "Jenna is trapped in an abusive marriage and finds freedom through baking and a doomed affair — mezzo-soprano with a pop-musical quality, warm chest voice, and a belt that reveals her internal fire only when she can no longer hold it back.",
+      "avoid": ["Big showy belt songs — Jenna's power is concealed until it has to come out; the build matters enormously"]
+    },
+    "waitress/waitress-becky": {
+      "role_name": "Becky",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "And I Am Telling You I'm Not Going", "from": "Dreamgirls", "composer": "Henry Krieger", "why": "The big, honest, no-nonsense alto/mezzo belt that Becky's character demands — real, direct, enormous", "type": "style_match"},
+        {"title": "Before the Parade Passes By", "from": "Hello, Dolly!", "composer": "Jerry Herman", "why": "The woman who is done with small choices — big mezzo declaration of claiming her own life", "type": "style_match"},
+        {"title": "I'm Still Here", "from": "Follies", "composer": "Stephen Sondheim", "why": "The survivor's anthem — alto/mezzo who has been through everything and is still standing", "type": "contrasting"}
+      ],
+      "style_guidance": "Becky is the diner's soul — alto/mezzo with a real belt and the kind of truth-telling warmth that comes from experience. She supports Jenna and has her own story. Big voice, bigger heart, zero tolerance for self-pity.",
+      "avoid": ["Sweet or restrained material — Becky is direct, warm, and refuses to soften her truth"]
+    },
+    "waitress/waitress-dawn": {
+      "role_name": "Dawn",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The sweetly anxious woman whose emotional situation manifests physically — mezzo comedy with genuine heart", "type": "style_match"},
+        {"title": "Much More", "from": "The Fantasticks", "composer": "Harvey Schmidt", "why": "The dreaming young woman who wants to be swept off her feet — soprano/mezzo imagining the life she wants", "type": "contrasting"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The awkward woman discovering she is suddenly, wonderfully loved — mezzo-soprano with charming self-surprise", "type": "style_match"}
+      ],
+      "style_guidance": "Dawn is the show's comic romantic — awkward, over-analytical, and completely won over by a man who is just as much of both things. Mezzo-soprano with natural comedy and accessible vulnerability. Her love story is the show's purest joy.",
+      "avoid": ["Cool or sophisticated material — Dawn is the opposite of cool; her awkwardness is her superpower"]
+    },
+    "waitress/waitress-dr-pomatter": {
+      "role_name": "Dr. Jim Pomatter",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "All I Ask of You", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Romantic tenor/baritone in a complicated situation — the doctor who walks into something he cannot control", "type": "style_match"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "A man who experienced something transformative and cannot go back to how things were — tenor with emotional range", "type": "style_match"},
+        {"title": "If I Loved You", "from": "Carousel", "composer": "Richard Rodgers", "why": "Romantic leading-man tenor/baritone with complex feelings — the conditional hypothetical of a doomed love", "type": "contrasting"}
+      ],
+      "style_guidance": "Dr. Pomatter is the awkward, well-meaning doctor who falls in love with his patient — tenor/baritone with natural warmth, an endearing nervousness, and genuine romantic quality. He is a good person doing a complicated thing.",
+      "avoid": ["Smooth, confident romantic lead — the whole point is his charming awkwardness, not polished seduction"]
+    },
+    "waitress/waitress-earl": {
+      "role_name": "Earl Hunterson",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The man who controls his environment through intimidation and genuine ownership of a small domain", "type": "style_match"},
+        {"title": "My Way", "from": "Pop repertoire", "composer": "Jacques Revaux", "why": "If standards/pop accepted — the controlling man's credo, absolute and self-justifying", "type": "contrasting"}
+      ],
+      "style_guidance": "Earl is the show's villain — baritone who is controlling, volatile, and dangerously ordinary. The performance must never play him as a cartoon; the horror is his complete sense of entitlement and self-justification.",
+      "avoid": ["Over-the-top villainy — Earl is terrifying precisely because he seems normal from the outside"]
+    },
+    "waitress/waitress-ogie": {
+      "role_name": "Ogie Anhorn",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The person who is suddenly, gloriously in love and cannot contain it — tenor with complete, unbridled joy", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Pure theatrical energy — a man who has found his audience of one and is performing his entire soul for her", "type": "contrasting"},
+        {"title": "Wonderful", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The enthusiastic man who genuinely loves something more than can be expressed in words — Ogie's brand of overwhelming presence", "type": "style_match"}
+      ],
+      "style_guidance": "Ogie is the intensely, sincerely enthusiastic man who loves Dawn with his entire being immediately and forever — tenor/baritone with no restraint, zero self-consciousness, and such genuine warmth that his overwhelming nature becomes completely winning.",
+      "avoid": ["Comic irony or self-awareness about how much he is — Ogie is never joking. The comedy comes entirely from his absolute sincerity."]
+    },
+    "waitress/waitress-cal": {
+      "role_name": "Cal",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Gruff authority figure who runs his domain with minimal emotional expression — baritone character with hidden warmth", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "The exasperated manager character — baritone who just wants everyone to do their job and stop with the feelings", "type": "contrasting"}
+      ],
+      "style_guidance": "Cal runs the diner and pretends to be tougher than he is — baritone character voice with gruff warmth and the specific comedy of a man who cares deeply but is constitutionally unable to say so.",
+      "avoid": ["Warm, openly expressive material — Cal's entire personality is compressed warmth under deliberately indifferent surface"]
+    },
+    "waitress/waitress-joe": {
+      "role_name": "Old Joe",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "The wise elder who has known love and loss — bass/baritone with earned warmth and the weight of years", "type": "style_match"},
+        {"title": "September Song", "from": "Knickerbocker Holiday", "composer": "Kurt Weill", "why": "The older man reflecting on time and the preciousness of what's left — bass-baritone warmth and wisdom", "type": "style_match"}
+      ],
+      "style_guidance": "Old Joe is the diner's secret heart — bass/baritone who has lived a full life, knows Jenna's worth, and whose relationship with her is the show's quiet emotional anchor. Age and warmth over vocal range.",
+      "avoid": ["Energetic or ambitious material — Old Joe's power is stillness, wisdom, and accumulated love"]
+    },
+    "waitress/waitress-ensemble": {
+      "role_name": "Ensemble — Diner Staff, Townspeople",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Contemporary mezzo-soprano with emotional specificity — the Waitress ensemble plays real people in a real small town", "type": "style_match"},
+        {"title": "She Used to Be Mine", "from": "Waitress", "composer": "Sara Bareilles", "why": "If auditioning for this specific show — shows the contemporary pop-musical voice the score requires", "type": "same_show"}
+      ],
+      "style_guidance": "Waitress ensemble plays the world of a small-town diner — contemporary pop-musical voices with warmth and specificity. This is not a dance-heavy show; strong acting through song and naturalistic presence matter most.",
+      "avoid": ["Showy or theatrical approach — this world is grounded and real; the magic is in the ordinary"]
+    },
+    "wizard-of-oz/dorothy": {
+      "role_name": "Dorothy Gale",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "Somewhere Over the Rainbow", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "Dorothy's defining moment — soprano/mezzo with lyrical warmth and the yearning of someone who wants to be somewhere other than here", "type": "same_show"},
+        {"title": "Part of Your World", "from": "The Little Mermaid", "composer": "Alan Menken", "why": "The girl who wants more than the world she knows — same yearning soprano quality, same emotional arc", "type": "style_match"},
+        {"title": "Wouldn't It Be Loverly", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "The girl with a simpler dream — contrasting soprano/mezzo showing warmth and period-style charm", "type": "contrasting"},
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Soprano with longing and dream-quality — the girl imagining somewhere better, clear and focused", "type": "style_match"}
+      ],
+      "style_guidance": "Dorothy needs a natural, warm soprano who makes 'Over the Rainbow' feel genuinely spontaneous — not a showcase, a moment of honest longing. The character is brave, curious, and thoroughly Kansas despite the extraordinary circumstances.",
+      "avoid": ["Belty pop approach — the Wizard of Oz calls for warm, lyric soprano quality; overdone technique undermines Dorothy's sincerity"]
+    },
+    "wizard-of-oz/scarecrow": {
+      "role_name": "Scarecrow",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "If I Only Had a Brain", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "The Scarecrow's own song — shows the character's enthusiastic, physical, gentle comic quality", "type": "same_show"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The person reaching for an identity they lack — baritone/tenor yearning for the ability to think", "type": "style_match"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The character discovering a whole world beyond what they knew — wide-eyed, physical, genuinely moved", "type": "contrasting"}
+      ],
+      "style_guidance": "The Scarecrow is physical comedy first — rubbery, loose-limbed, endlessly enthusiastic. Baritone/tenor with comic timing, physical commitment, and the ability to make thinking itself look like a revelation.",
+      "avoid": ["Restrained physical performance — the Scarecrow's appeal is entirely in the specific, committed physical work"]
+    },
+    "wizard-of-oz/tin-man": {
+      "role_name": "Tin Man",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "If I Only Had a Heart", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "The Tin Man's defining song — shows the tender, lyrical quality of a character who wants to feel", "type": "same_show"},
+        {"title": "This Nearly Was Mine", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Romantic baritone who thought he might get the thing he always wanted — warm, legit, genuine", "type": "style_match"},
+        {"title": "If I Loved You", "from": "Carousel", "composer": "Richard Rodgers", "why": "Baritone contemplating what love would feel like — the Tin Man asking the unaskable question in song", "type": "style_match"}
+      ],
+      "style_guidance": "The Tin Man requires precise physical performance (rigid, joint-by-joint movement) combined with emotional longing — baritone with warmth who carries the show's most obviously human desire despite being made of metal. The contrast is the whole point.",
+      "avoid": ["Cold or mechanical vocal delivery — the Tin Man wants to feel; his singing should already be full of the emotion he claims not to have"]
+    },
+    "wizard-of-oz/cowardly-lion": {
+      "role_name": "Cowardly Lion",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "If I Were King of the Forest", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "The Lion's fantasy anthem — baritone character who believes in his own imagined magnificence", "type": "same_show"},
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The comedic character with anxiety as their dominant characteristic — physical, neurotic, entirely committed", "type": "contrasting"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "Contrasting — where the Lion wants to go but can only get there in a fantasy sequence", "type": "contrasting"}
+      ],
+      "style_guidance": "The Cowardly Lion is the show's biggest physical comedy role — baritone/character tenor with maximum range of expression (crying, boasting, hiding, roaring), specific physical work, and the genuine warmth of a natural protector who is terrified of himself.",
+      "avoid": ["Understated performance — the Lion operates in big, clear physical comedy; restraint is not in his vocabulary"]
+    },
+    "wizard-of-oz/wicked-witch": {
+      "role_name": "Wicked Witch of the West",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "Rose's Turn", "from": "Gypsy", "composer": "Jule Styne", "why": "The grande dame villain moment of reckoning — mezzo/alto with full theatrical power and a clear backstory of grievance", "type": "style_match"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Dramatic mezzo confronting a situation she cannot change — the witch after Dorothy gets away", "type": "contrasting"},
+        {"title": "The Witch's Rap / No Good Deed", "from": "Wicked", "composer": "Stephen Schwartz", "why": "If a Wicked-influenced production — the villain's perspective, the mezzo with genuine grievance under the cackle", "type": "style_match"}
+      ],
+      "style_guidance": "The Wicked Witch is one of musical theatre's most iconic villains — mezzo-soprano/alto with a cackle, genuine menace, specific physicality, and the theatrical authority to stop a show in its tracks. She needs both comedy and genuine threat.",
+      "avoid": ["One-note evil — the best Witches have a specific grievance and a real logic to their actions, even if the actions are terrible"]
+    },
+    "wizard-of-oz/glinda": {
+      "role_name": "Glinda the Good Witch",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "Operatic comedic soprano with self-aware glamour — Glinda's voice type and theatrical persona perfectly captured", "type": "style_match"},
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The beneficent good-witch soprano who is cheerfully certain she knows best — sparkling and irresistible", "type": "style_match"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Soprano with delight in her own perfection — Glinda before she has learned anything", "type": "contrasting"}
+      ],
+      "style_guidance": "Glinda is the warm-hearted, comically self-certain good witch — soprano with sparkle, natural authority, and perfect pitch (literally and figuratively). She floats down in a bubble and nobody should doubt for a second that she is exactly as wonderful as she thinks she is.",
+      "avoid": ["Heavy or serious material — Glinda is radiant, light, and operates entirely at the level of reassuring certainty"]
+    },
+    "wizard-of-oz/wizard": {
+      "role_name": "The Wizard of Oz / Professor Marvel",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The theatrical impresario running a show built on misdirection — character baritone with authority and charm", "type": "style_match"},
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "The character claiming an expertise he entirely invented — patter baritone with pompous self-assurance", "type": "style_match"},
+        {"title": "The Wonderful Wizard of Oz", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "The character's own declaration of false omnipotence — if auditioning specifically for this production", "type": "same_show"}
+      ],
+      "style_guidance": "The Wizard is a con man with a good heart — character baritone with theatrical presence, charm, and the specific comedy of someone desperately trying to maintain a massive deception. He is warm, flustered, and entirely human.",
+      "avoid": ["Grand or actually intimidating baritone work — the Wizard deflates; the revelation of his smallness is the character's truth"]
+    },
+    "wizard-of-oz/uncle-henry-auntie-em": {
+      "role_name": "Auntie Em / Uncle Henry / Miss Gulch / Glinda (touring double)",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "So Big/So Small", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Maternal warmth and contained grief — Auntie Em's love for Dorothy in one song", "type": "style_match"},
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "The warm adult who watches a child leave the world they tried to give them — mezzo-soprano with age and love", "type": "contrasting"}
+      ],
+      "style_guidance": "Em and Henry anchor the real world — warm, plain speaking character voices who make Oz genuinely extraordinary by contrast. In productions where they double as Oz figures (Witch/Omby), range and versatility matter.",
+      "avoid": ["Glamorous or theatrical material — Em and Henry are salt-of-the-earth Kansas; the ordinariness is the point"]
+    },
+    "wizard-of-oz/ensemble": {
+      "role_name": "Ensemble — Munchkins, Winkies, Crows, Jitterbugs",
+      "musical": "The Wizard of Oz",
+      "songs_to_prepare": [
+        {"title": "Ding-Dong! The Witch Is Dead", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "The Munchkins' celebration — shows ability to deliver high, bright ensemble tone with physical character work", "type": "same_show"},
+        {"title": "Be Our Guest", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "Fantasy world ensemble who must be distinct characters with warmth and theatrical generosity", "type": "contrasting"}
+      ],
+      "style_guidance": "Wizard of Oz ensemble requires extreme character specificity — you may be a Munchkin, a crow, a apple-throwing tree, or a flying monkey. Strong physicality, character commitment, and the ability to shift between very different ensemble roles.",
+      "avoid": ["Generic ensemble approach — every creature in Oz has a specific physical and vocal character"]
+    },
+    "young-frankenstein/dr-frederick-frankenstein": {
+      "role_name": "Dr. Frederick Frankenstein",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "Finishing the Hat", "from": "Sunday in the Park with George", "composer": "Stephen Sondheim", "why": "The scientist/artist consumed by his obsession — baritone explaining why the work means more than anything else", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "Mel Brooks's shows are Sondheim-adjacent in their emotional intelligence — baritone confronting what his obsession costs him", "type": "contrasting"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The Mel Brooks comedy baritone who commits completely to the premise — this is the tonal register Dr. Frankenstein lives in", "type": "style_match"}
+      ],
+      "style_guidance": "Frederick is the comic hero — baritone/musical comedy voice with intelligence, physical commitment to absurdity, and the ability to deliver Mel Brooks material with complete sincerity. He believes in his science completely, which is what makes it funny.",
+      "avoid": ["Ironic or winking performance — Mel Brooks comedy requires total commitment to the premise; Frederick is never joking"]
+    },
+    "young-frankenstein/the-monster": {
+      "role_name": "The Monster",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "The isolated, misunderstood figure who wants to be seen as human — bass-baritone with power and yearning", "type": "style_match"},
+        {"title": "Something", "from": "Beatles repertoire (if pop/rock accepted)", "composer": "George Harrison", "why": "The Monster's awakening love — bass with unexpected tenderness under the physical imposing exterior", "type": "contrasting"},
+        {"title": "Old Man River", "from": "Show Boat", "composer": "Jerome Kern", "why": "Deep bass-baritone with the weight of someone who exists outside normal human society — power and melancholy", "type": "style_match"}
+      ],
+      "style_guidance": "The Monster is a comic physical role first — bass-baritone who can also dance (he tap-dances in 'Puttin' on the Ritz') and deliver physical comedy while maintaining the character's genuine emotional arc. Voice ranges from grunts to full song; the contrast is the joke.",
+      "avoid": ["Pure horror — the Monster is sympathetic and comedic; the character wants connection and love, not dominance"]
+    },
+    "young-frankenstein/inga": {
+      "role_name": "Inga",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Sunshine soprano who is delighted by everything including her own existence — Inga's entire personality", "type": "style_match"},
+        {"title": "Diamonds Are a Girl's Best Friend", "from": "Gentlemen Prefer Blondes", "composer": "Jule Styne", "why": "Flirtatious, physically confident soprano with comic timing and charm — very Inga", "type": "style_match"},
+        {"title": "I Could Have Danced All Night", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "Soprano who has discovered something wonderful — the joy and physicality of Inga's approach to the world", "type": "contrasting"}
+      ],
+      "style_guidance": "Inga is the warm, enthusiastic, completely physical Swedish laboratory assistant — soprano belt with comic timing, willingness to lean into absurdity, and enormous charm. She is never an object; she drives her own story entirely.",
+      "avoid": ["Passive or objectified performance — Inga is active, joyful, and chooses everything she does"]
+    },
+    "young-frankenstein/igor": {
+      "role_name": "Igor",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The comic sidekick who exists to make chaos and delight in it — character baritone at full commitment", "type": "style_match"},
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "Hunchbacked character with a hump that moves — patter comedy delivered with total physical commitment", "type": "contrasting"}
+      ],
+      "style_guidance": "Igor is the show's physical comedian — character baritone with a hunchback, a moving hump, and a completely individual interpretation of every social norm. The comedy is entirely physical and entirely committed. Igor knows he's funny; that is exactly the problem.",
+      "avoid": ["Subtle character work — Igor is broad, physical comedy delivered at maximum commitment in every scene"]
+    },
+    "young-frankenstein/elizabeth-benning": {
+      "role_name": "Elizabeth Benning",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "The operatic comedic soprano who is obsessed with her appearance and absolutely committed to the bit — Elizabeth exactly", "type": "style_match"},
+        {"title": "Anything You Can Do", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "The competitive soprano who must always win — Elizabeth's relationship with Frederick in one song", "type": "style_match"},
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The woman entirely convinced of her own importance offering extremely unhelpful assistance — soprano comedy with self-unawareness", "type": "contrasting"}
+      ],
+      "style_guidance": "Elizabeth is the comic-soprano fiancée obsessed with her hair — soprano/belt with operatic range, comic timing, and the specific comedy of someone who manages to make every situation about their own inconvenience. Mel Brooks comedy requires complete commitment to the bit.",
+      "avoid": ["Warm romantic soprano approach — Elizabeth is a comedy role; her relationship with Frederick is entirely secondary to hair maintenance"]
+    },
+    "young-frankenstein/frau-blucher": {
+      "role_name": "Frau Blücher",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "I'm the Greatest Star", "from": "Funny Girl", "composer": "Jule Styne", "why": "Mezzo/alto character with enormous theatrical self-belief and the specific quality of someone who has been waiting a very long time for their moment", "type": "contrasting"},
+        {"title": "Rose's Turn", "from": "Gypsy", "composer": "Jule Styne", "why": "The veteran who has been waiting in the wings of someone else's story — alto/mezzo with theatrical power and dark comedy", "type": "style_match"},
+        {"title": "Whatever Lola Wants", "from": "Damn Yankees", "composer": "Richard Adler", "why": "The woman who will not be denied and will use every tool available — character mezzo with predatory charm", "type": "style_match"}
+      ],
+      "style_guidance": "Frau Blücher causes horses to whinny merely by being named — alto/mezzo character with maximum theatrical presence, dark romantic obsession (for the old Dr. Frankenstein), and the specific comedy of complete, unwavering, completely inappropriate devotion.",
+      "avoid": ["Subtle or restrained performance — every entrance and exit Frau Blücher makes should be an event"]
+    },
+    "young-frankenstein/inspector-kemp": {
+      "role_name": "Inspector Hans Kemp",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "Military authority figure with a prosthetic arm — character baritone delivering pompous authority with physical comedy", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "The exasperated authority figure trying to maintain order amid increasing chaos — exactly Kemp's arc", "type": "contrasting"}
+      ],
+      "style_guidance": "Inspector Kemp has a prosthetic arm that takes on a life of its own — character baritone/bass with broad physical comedy, military swagger, and the ability to make a scene with a prop that is as much of a character as he is.",
+      "avoid": ["Subtle physicality — Kemp's prosthetic arm business must be fully committed, specific, and very, very funny"]
+    },
+    "young-frankenstein/ensemble-young-frankenstein": {
+      "role_name": "Ensemble — Villagers, Townspeople, Laboratory Assistants",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Ensemble who must collectively create the comedy world — Mel Brooks requires total ensemble commitment to the bit", "type": "style_match"},
+        {"title": "Puttin' on the Ritz", "from": "Young Frankenstein", "composer": "Irving Berlin / adapted", "why": "The show's ensemble showstopper — if auditioning for this production, this is the number to understand", "type": "same_show"}
+      ],
+      "style_guidance": "Young Frankenstein ensemble must be strong singers who can deliver Mel Brooks comedy with period musical-theatre style — the show is a loving parody of old-Hollywood monster movies and requires both the genre knowledge and the comedic commitment to fully land.",
+      "avoid": ["Contemporary pop style — this show lives in a very specific Mel Brooks / classic Hollywood / Golden Age musical parody space"]
+    }
+  }
+}

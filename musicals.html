@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Role guides for 22 musicals — find your perfect role, hear audition song suggestions, and understand what directors are looking for.">
+<meta name="theme-color" content="#667eea">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Musical Role Guides — iHeartTheatre</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192x192.png">
+<link rel="stylesheet" href="css/shared.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+<style>
+:root {
+    --bg-primary: #050508;
+    --bg-secondary: #0a0a0f;
+    --bg-tertiary: #12121a;
+    --text-primary: #f5f5f5;
+    --text-secondary: #a0a0b0;
+    --accent-primary: #667eea;
+    --accent-secondary: #764ba2;
+    --accent-gold: #ffd700;
+    --glass-bg: rgba(255,255,255,0.03);
+    --glass-border: rgba(255,255,255,0.08);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg-primary); color: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; min-height: 100vh; }
+
+/* Page header */
+.page-hero {
+    padding: 100px 20px 48px;
+    text-align: center;
+    background: radial-gradient(ellipse at top, rgba(102,126,234,0.12) 0%, transparent 70%);
+}
+.page-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(102,126,234,0.2), rgba(118,75,162,0.2));
+    border: 1px solid rgba(102,126,234,0.3);
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--accent-primary);
+    margin-bottom: 16px;
+}
+.page-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 14px;
+}
+.page-hero p { color: var(--text-secondary); font-size: 1.05rem; max-width: 560px; margin: 0 auto; }
+
+/* Controls */
+.controls {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+.search-wrap { flex: 1; min-width: 200px; position: relative; }
+.search-wrap input {
+    width: 100%;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    padding: 12px 16px 12px 42px;
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+}
+.search-wrap input:focus { border-color: var(--accent-primary); }
+.search-wrap::before { content: '🔍'; position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 0.9rem; }
+.filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 7px 16px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.pill.active, .pill:hover { background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25)); border-color: var(--accent-primary); color: var(--text-primary); }
+
+/* Musicals grid */
+.musicals-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.musical-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 22px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: relative;
+    overflow: hidden;
+}
+.musical-card::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(102,126,234,0.05), rgba(118,75,162,0.05));
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.musical-card:hover { border-color: rgba(102,126,234,0.4); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(102,126,234,0.15); }
+.musical-card:hover::before { opacity: 1; }
+.musical-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 4px; line-height: 1.3; }
+.musical-composer { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 12px; }
+.musical-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.meta-chip {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 6px;
+    padding: 3px 9px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+}
+.meta-chip.diff-advanced { color: #ff9800; border-color: rgba(255,152,0,0.3); background: rgba(255,152,0,0.08); }
+.meta-chip.diff-expert { color: #f44336; border-color: rgba(244,67,54,0.3); background: rgba(244,67,54,0.08); }
+.meta-chip.diff-intermediate { color: #4caf50; border-color: rgba(76,175,80,0.3); background: rgba(76,175,80,0.08); }
+.meta-chip.diff-beginner { color: #2196f3; border-color: rgba(33,150,243,0.3); background: rgba(33,150,243,0.08); }
+.meta-chip.junior-yes { color: var(--accent-gold); border-color: rgba(255,215,0,0.3); background: rgba(255,215,0,0.08); }
+.genre-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
+.genre-tag { font-size: 0.72rem; color: var(--accent-primary); background: rgba(102,126,234,0.1); border-radius: 4px; padding: 2px 7px; }
+.card-footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--glass-border); }
+.role-count { font-size: 0.8rem; color: var(--text-secondary); }
+.view-roles-btn {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 14px;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: inherit;
+    transition: opacity 0.2s;
+}
+.view-roles-btn:hover { opacity: 0.9; }
+.no-results { text-align: center; padding: 60px 20px; color: var(--text-secondary); grid-column: 1/-1; }
+
+/* Role detail modal */
+.modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 10100;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s;
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-overlay.open { opacity: 1; pointer-events: auto; }
+.modal-panel {
+    width: min(680px, 100vw);
+    height: 100%;
+    background: var(--bg-secondary);
+    border-left: 1px solid var(--glass-border);
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+    display: flex;
+    flex-direction: column;
+}
+.modal-overlay.open .modal-panel { transform: translateX(0); }
+.modal-header {
+    position: sticky; top: 0;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 20px 22px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 10;
+}
+.modal-musical-title { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 600; }
+.modal-musical-composer { color: var(--text-secondary); font-size: 0.85rem; margin-top: 3px; }
+.modal-close {
+    background: none; border: none;
+    color: var(--text-secondary); font-size: 1.5rem;
+    cursor: pointer; padding: 4px 8px; flex-shrink: 0;
+    line-height: 1;
+}
+.modal-body { padding: 20px 22px 40px; flex: 1; }
+
+/* Role cards inside modal */
+.modal-roles-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-primary);
+    margin-bottom: 16px;
+}
+.role-card {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+.role-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; margin-bottom: 10px; }
+.role-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; }
+.role-type-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+.type-lead { background: rgba(255,215,0,0.15); color: var(--accent-gold); }
+.type-supporting { background: rgba(102,126,234,0.15); color: var(--accent-primary); }
+.type-character { background: rgba(118,75,162,0.15); color: #c084fc; }
+.type-ensemble { background: rgba(76,175,80,0.15); color: #4caf50; }
+.vocal-row {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px;
+}
+.vocal-chip {
+    font-size: 0.77rem;
+    padding: 3px 9px;
+    border-radius: 6px;
+    background: rgba(102,126,234,0.1);
+    color: var(--accent-primary);
+    border: 1px solid rgba(102,126,234,0.2);
+}
+.vocal-chip.belt { background: rgba(255,152,0,0.1); color: #ff9800; border-color: rgba(255,152,0,0.3); }
+.role-description {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.role-description.expanded { display: block; -webkit-line-clamp: unset; }
+.expand-desc {
+    background: none; border: none;
+    color: var(--accent-primary);
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+/* Song sections */
+.songs-section { margin-bottom: 12px; }
+.songs-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 6px;
+}
+.songs-label.show-songs { color: #c084fc; }
+.songs-label.audition-songs { color: #ffd700; }
+.song-item {
+    display: flex;
+    gap: 8px;
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 5px;
+    padding: 6px 10px;
+    background: rgba(255,255,255,0.02);
+    border-radius: 8px;
+    border-left: 3px solid;
+}
+.song-item.show-song { border-color: rgba(192,132,252,0.5); }
+.song-item.audition-tip { border-color: rgba(255,215,0,0.4); }
+.song-item-icon { flex-shrink: 0; }
+.song-note { font-size: 0.78rem; color: var(--text-secondary); opacity: 0.8; }
+
+.no-songs { font-size: 0.83rem; color: var(--text-secondary); font-style: italic; opacity: 0.7; }
+
+/* Director notes section */
+.director-section { margin-top: 12px; }
+.director-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--accent-primary);
+    margin-bottom: 6px;
+}
+.director-list { list-style: none; }
+.director-list li {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    padding: 4px 0;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.5;
+}
+.director-list li::before { content: '→'; position: absolute; left: 0; color: var(--accent-primary); font-size: 0.75rem; }
+
+/* Loading state */
+.loading-spinner {
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; padding: 60px 20px;
+    color: var(--text-secondary);
+    gap: 14px;
+}
+.spinner {
+    width: 36px; height: 36px;
+    border: 3px solid rgba(102,126,234,0.2);
+    border-top-color: var(--accent-primary);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeUp { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+.musical-card { animation: fadeUp 0.35s ease both; }
+
+/* Mobile */
+@media (max-width: 600px) {
+    .controls { flex-direction: column; }
+    .filter-pills { display: grid; grid-template-columns: 1fr 1fr; }
+    .musicals-grid { grid-template-columns: 1fr; padding: 0 12px 40px; }
+}
+</style>
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<div class="particles" id="particles"></div>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">iHeartTheatre</a>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+    <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="musicals.html" class="active">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-badge">🎭 22 Musicals</div>
+  <h1>Musical Role Guides</h1>
+  <p>Find your perfect role. Discover what directors are looking for and which songs to prepare for your audition.</p>
+</div>
+
+<div class="controls">
+  <div class="search-wrap">
+    <input type="search" id="search-input" placeholder="Search musical title, composer, style…" autocomplete="off">
+  </div>
+  <div class="filter-pills" id="filter-pills">
+    <button class="pill active" data-filter="all">All</button>
+    <button class="pill" data-filter="beginner">Beginner</button>
+    <button class="pill" data-filter="intermediate">Intermediate</button>
+    <button class="pill" data-filter="advanced">Advanced</button>
+    <button class="pill" data-filter="expert">Expert</button>
+    <button class="pill" data-filter="junior">🌟 Jr Available</button>
+  </div>
+</div>
+
+<div class="musicals-grid" id="musicals-grid">
+  <div class="loading-spinner" style="grid-column:1/-1;">
+    <div class="spinner"></div>
+    <span>Loading role guides…</span>
+  </div>
+</div>
+
+<!-- Role detail panel -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal-panel" id="modal-panel">
+    <div class="modal-header">
+      <div>
+        <div class="modal-musical-title" id="modal-title">—</div>
+        <div class="modal-musical-composer" id="modal-composer"></div>
+      </div>
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+    </div>
+    <div class="modal-body" id="modal-body">
+      <div class="loading-spinner"><div class="spinner"></div><span>Loading…</span></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="shows.html">Shows</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="musicals.html">Role Guides</a>
+      <a href="services.html">Services</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script src="js/shared.js"></script>
+<script>
+(function() {
+    var allMusicals = [];
+    var activeFilter = 'all';
+    var AUDITION_SONGS = {};
+
+    function escHtml(s) {
+        if (!s) return '';
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function diffClass(d) {
+        if (!d) return '';
+        d = d.toLowerCase();
+        if (d.includes('expert')) return 'diff-expert';
+        if (d.includes('advanced')) return 'diff-advanced';
+        if (d.includes('intermediate')) return 'diff-intermediate';
+        if (d.includes('beginner')) return 'diff-beginner';
+        return '';
+    }
+
+    function diffLabel(d) {
+        if (!d) return '';
+        d = d.toLowerCase();
+        if (d.includes('expert')) return 'Expert';
+        if (d.includes('advanced_to_expert')) return 'Adv–Expert';
+        if (d.includes('advanced')) return 'Advanced';
+        if (d.includes('intermediate_to_advanced')) return 'Int–Adv';
+        if (d.includes('intermediate')) return 'Intermediate';
+        if (d.includes('beginner')) return 'Beginner';
+        return d;
+    }
+
+    function danceLabel(d) {
+        const m = { none: 'No Dance', light: 'Light Dance', medium: 'Some Dance', high: 'Dance Heavy', very_high: 'Dance Intensive', choreography_heavy: 'Choreo Heavy' };
+        return m[d] || d;
+    }
+
+    function renderMusicalCard(m, idx) {
+        const genres = (m.genre_tags || []).slice(0, 4).map(g =>
+            `<span class="genre-tag">${escHtml(g.replace(/_/g,' '))}</span>`
+        ).join('');
+        const dc = diffClass(m.difficulty_overall);
+        const dl = diffLabel(m.difficulty_overall);
+
+        return `<div class="musical-card" style="animation-delay:${idx * 0.04}s" data-id="${escHtml(m.id)}">
+            <div class="musical-title">${escHtml(m.title)}</div>
+            <div class="musical-composer">${escHtml(m.music_by)}${m.year_premiered?' &bull; '+m.year_premiered:''}</div>
+            <div class="musical-meta">
+                ${dl ? `<span class="meta-chip ${dc}">${escHtml(dl)}</span>` : ''}
+                ${m.dance_intensity ? `<span class="meta-chip">💃 ${escHtml(danceLabel(m.dance_intensity))}</span>` : ''}
+                ${m.typical_cast_size ? `<span class="meta-chip">👥 ${escHtml(m.typical_cast_size)}</span>` : ''}
+                ${m.age_range ? `<span class="meta-chip">🎂 ${escHtml(m.age_range)}</span>` : ''}
+                ${m.junior_version_available ? `<span class="meta-chip junior-yes">⭐ Jr Available</span>` : ''}
+            </div>
+            ${genres ? `<div class="genre-tags">${genres}</div>` : ''}
+            <div class="card-footer-row">
+                <span class="role-count">${m.role_count || '?'} roles</span>
+                <button class="view-roles-btn" onclick="openModal('${escHtml(m.id)}')">View Roles →</button>
+            </div>
+        </div>`;
+    }
+
+    function getFiltered() {
+        const q = document.getElementById('search-input').value.toLowerCase().trim();
+        return allMusicals.filter(m => {
+            if (activeFilter === 'junior' && !m.junior_version_available) return false;
+            if (activeFilter === 'beginner' && !(m.difficulty_overall||'').toLowerCase().includes('beginner')) return false;
+            if (activeFilter === 'intermediate' && !(m.difficulty_overall||'').toLowerCase().includes('intermediate')) return false;
+            if (activeFilter === 'advanced' && !(m.difficulty_overall||'').toLowerCase().includes('advanced')) return false;
+            if (activeFilter === 'expert' && !(m.difficulty_overall||'').toLowerCase().includes('expert')) return false;
+            if (q) {
+                const s = [m.title, m.music_by, (m.genre_tags||[]).join(' '), m.vocal_style].join(' ').toLowerCase();
+                return s.includes(q);
+            }
+            return true;
+        });
+    }
+
+    function render() {
+        const grid = document.getElementById('musicals-grid');
+        const filtered = getFiltered();
+        if (!filtered.length) {
+            grid.innerHTML = '<div class="no-results"><p>No musicals found matching your search.</p></div>';
+            return;
+        }
+        grid.innerHTML = filtered.map((m, i) => renderMusicalCard(m, i)).join('');
+    }
+
+    // ── Modal / role guide ──────────────────────────────────────────────
+    var loadedRoles = {};
+
+    window.openModal = function(musicalId) {
+        var overlay = document.getElementById('modal-overlay');
+        var titleEl = document.getElementById('modal-title');
+        var composerEl = document.getElementById('modal-composer');
+        var bodyEl = document.getElementById('modal-body');
+
+        var meta = allMusicals.find(m => m.id === musicalId);
+        if (meta) {
+            titleEl.textContent = meta.title;
+            composerEl.textContent = meta.music_by + (meta.year_premiered ? ' · ' + meta.year_premiered : '');
+        }
+
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+
+        if (loadedRoles[musicalId]) {
+            renderRoles(bodyEl, loadedRoles[musicalId]);
+            return;
+        }
+
+        bodyEl.innerHTML = '<div class="loading-spinner"><div class="spinner"></div><span>Loading roles…</span></div>';
+
+        fetch('data/musicals/' + musicalId + '.json')
+            .then(r => r.json())
+            .then(data => {
+                loadedRoles[musicalId] = data;
+                renderRoles(bodyEl, data);
+            })
+            .catch(() => {
+                bodyEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px;">Could not load role data.</p>';
+            });
+    };
+
+    function renderRoles(container, data) {
+        var musical = data.musical || {};
+        var roles = data.roles || [];
+
+        var html = '';
+
+        // Musical overview strip
+        if (musical.vocal_style || musical.synopsis) {
+            html += '<div style="background:rgba(102,126,234,0.07);border:1px solid rgba(102,126,234,0.2);border-radius:12px;padding:14px 16px;margin-bottom:20px;">';
+            if (musical.vocal_style) html += '<div style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:6px;font-style:italic;">' + escHtml(musical.vocal_style) + '</div>';
+            if (musical.synopsis) {
+                var synopsisId = 'synopsis-' + (musical.id || 'x');
+                html += '<div id="' + synopsisId + '" style="font-size:0.82rem;color:var(--text-secondary);line-height:1.6;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;">' + escHtml(musical.synopsis) + '</div>';
+                html += '<button class="expand-desc" style="margin-top:6px;" onclick="toggleExpand(\'' + synopsisId + '\',this)">Read more ↓</button>';
+            }
+            html += '</div>';
+        }
+
+        html += '<div class="modal-roles-label">' + roles.length + ' Roles</div>';
+
+        roles.forEach(function(role) {
+            html += renderRoleCard(role, musical.id);
+        });
+
+        container.innerHTML = html;
+    }
+
+    function renderRoleCard(role, musicalId) {
+        var typeClass = { lead: 'type-lead', supporting: 'type-supporting', character: 'type-character', ensemble: 'type-ensemble' };
+        var typeLabel = { lead: '⭐ Lead', supporting: '🎭 Supporting', character: '🎪 Character', ensemble: '🎵 Ensemble' };
+
+        var rt = (role.role_type || 'supporting').toLowerCase();
+        var tc = typeClass[rt] || 'type-supporting';
+        var tl = typeLabel[rt] || rt;
+
+        var ageStr = '';
+        if (role.age_range) {
+            if (typeof role.age_range === 'object') ageStr = (role.age_range.min || '?') + '–' + (role.age_range.max || '?');
+            else ageStr = role.age_range;
+        }
+
+        var descId = 'desc-' + escHtml(role.id).replace(/[^a-z0-9]/gi, '-');
+
+        var html = '<div class="role-card">';
+        html += '<div class="role-header"><div class="role-name">' + escHtml(role.name) + '</div><span class="role-type-badge ' + tc + '">' + tl + '</span></div>';
+
+        // Vocal chips
+        if (role.vocal) {
+            html += '<div class="vocal-row">';
+            if (role.vocal.voice_type) html += '<span class="vocal-chip">🎤 ' + escHtml(role.vocal.voice_type.replace(/_/g,' ')) + '</span>';
+            if (role.vocal.range) html += '<span class="vocal-chip">🎵 ' + escHtml(role.vocal.range) + '</span>';
+            if (role.vocal.belt_required) html += '<span class="vocal-chip belt">🔥 Belt required ' + (role.vocal.belt_range ? '(' + escHtml(role.vocal.belt_range) + ')' : '') + '</span>';
+            if (ageStr) html += '<span class="vocal-chip" style="background:rgba(255,255,255,0.05);color:var(--text-secondary);border-color:var(--glass-border);">Age ' + escHtml(ageStr) + '</span>';
+            html += '</div>';
+        }
+
+        // Description
+        if (role.description) {
+            html += '<div class="role-description" id="' + descId + '">' + escHtml(role.description) + '</div>';
+            html += '<button class="expand-desc" onclick="toggleExpand(\'' + descId + '\',this)">Read more ↓</button>';
+        }
+
+        // Songs from the show
+        var keySongs = role.key_songs || [];
+        html += '<div class="songs-section">';
+        html += '<div class="songs-label show-songs">🎭 Songs in the show</div>';
+        if (keySongs.length) {
+            keySongs.forEach(function(s) {
+                html += '<div class="song-item show-song">';
+                html += '<span class="song-item-icon">♪</span>';
+                html += '<div><div style="font-weight:600;color:var(--text-primary);">' + escHtml(s.title) + '</div>';
+                if (s.type) html += '<div style="font-size:0.75rem;color:var(--accent-primary);text-transform:capitalize;margin-bottom:2px;">' + escHtml(s.type.replace(/_/g,' ')) + '</div>';
+                if (s.notes) html += '<div class="song-note">' + escHtml(s.notes) + '</div>';
+                html += '</div></div>';
+            });
+        } else {
+            html += '<div class="no-songs">Song data not yet available</div>';
+        }
+        html += '</div>';
+
+        // Audition song suggestions — use curated database if available, else fall back to tips
+        var curatedKey = (musicalId || '') + '/' + (role.id || '');
+        var curated = AUDITION_SONGS[curatedKey];
+
+        html += '<div class="songs-section">';
+        html += '<div class="songs-label audition-songs">🌟 What to prepare for auditions</div>';
+        if (curated && curated.songs_to_prepare && curated.songs_to_prepare.length) {
+            curated.songs_to_prepare.forEach(function(s) {
+                var typeIcon = s.type === 'same_show' ? '🎭' : s.type === 'contrasting' ? '⚡' : '🎵';
+                html += '<div class="song-item audition-tip">';
+                html += '<span class="song-item-icon">' + typeIcon + '</span>';
+                html += '<div><div style="font-weight:600;color:var(--text-primary);">' + escHtml(s.title) + '</div>';
+                html += '<div style="font-size:0.75rem;color:var(--accent-primary);margin-bottom:2px;">' + escHtml(s.from) + ' · ' + escHtml(s.composer) + '</div>';
+                html += '<div class="song-note">' + escHtml(s.why) + '</div>';
+                html += '</div></div>';
+            });
+            if (curated.style_guidance) {
+                html += '<div style="margin-top:8px;padding:8px 10px;background:rgba(102,126,234,0.06);border-left:2px solid var(--accent-primary);border-radius:0 6px 6px 0;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;">' + escHtml(curated.style_guidance) + '</div>';
+            }
+            if (curated.avoid && curated.avoid.length) {
+                html += '<div style="margin-top:6px;font-size:0.75rem;color:#ff8080;">⚠ Avoid: ' + curated.avoid.map(function(a){ return escHtml(a); }).join(' · ') + '</div>';
+            }
+        } else {
+            var tips = (role.audition_guidance || {}).tips || [];
+            var songTips = tips.filter(function(t) {
+                return /prepare|song|sing|32 bar|bars|repertoire|material/i.test(t);
+            });
+            if (songTips.length) {
+                songTips.forEach(function(tip) {
+                    html += '<div class="song-item audition-tip"><span class="song-item-icon">→</span><div>' + escHtml(tip) + '</div></div>';
+                });
+            } else {
+                html += '<div class="no-songs">Prepare a song that matches this character\'s vocal type and emotional range</div>';
+            }
+        }
+        html += '</div>';
+
+        // What directors look for
+        var lookFor = (role.audition_guidance || {}).what_directors_look_for || [];
+        if (lookFor.length) {
+            html += '<div class="director-section">';
+            html += '<div class="director-label">What directors are looking for</div>';
+            html += '<ul class="director-list">' + lookFor.slice(0, 4).map(function(f) {
+                return '<li>' + escHtml(f) + '</li>';
+            }).join('') + '</ul>';
+            html += '</div>';
+        }
+
+        html += '</div>'; // end role-card
+        return html;
+    }
+
+    window.toggleExpand = function(id, btn) {
+        var el = document.getElementById(id);
+        if (!el) return;
+        el.classList.toggle('expanded');
+        btn.textContent = el.classList.contains('expanded') ? 'Show less ↑' : 'Read more ↓';
+    };
+
+    // Close modal
+    document.getElementById('modal-close').addEventListener('click', closeModal);
+    document.getElementById('modal-overlay').addEventListener('click', function(e) {
+        if (e.target === this) closeModal();
+    });
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+    function closeModal() {
+        document.getElementById('modal-overlay').classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    // Filter pills
+    document.getElementById('filter-pills').addEventListener('click', function(e) {
+        var pill = e.target.closest('.pill');
+        if (!pill) return;
+        document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        activeFilter = pill.dataset.filter;
+        render();
+    });
+
+    // Search
+    document.getElementById('search-input').addEventListener('input', function() { render(); });
+
+    // Load audition songs database
+    fetch('data/audition-songs.json')
+        .then(r => r.json())
+        .then(data => { AUDITION_SONGS = data.songs || {}; })
+        .catch(() => {});
+
+    // Load index
+    fetch('data/musicals-index.json')
+        .then(r => r.json())
+        .then(data => {
+            allMusicals = Array.isArray(data) ? data : [];
+            allMusicals.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+            render();
+        })
+        .catch(() => {
+            document.getElementById('musicals-grid').innerHTML =
+                '<div class="no-results"><p>Unable to load musicals data.</p></div>';
+        });
+})();
+</script>
+</body>
+</html>

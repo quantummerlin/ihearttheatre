@@ -1,0 +1,1275 @@
+{
+  "musical": {
+    "id": "oliver",
+    "title": "Oliver!",
+    "music_by": "Lionel Bart",
+    "lyrics_by": "Lionel Bart",
+    "book_by": "Lionel Bart",
+    "based_on": "'Oliver Twist' by Charles Dickens (1838)",
+    "year_premiered": 1960,
+    "setting": "London — workhouses, streets, thieves' dens, and gentlemen's residences",
+    "time_period": "Victorian England, 1830s-1840s",
+    "themes": [
+      "poverty and class inequality",
+      "innocence surviving corruption",
+      "found family",
+      "exploitation of children",
+      "redemption and sacrifice",
+      "the power of kindness",
+      "survival",
+      "loyalty and betrayal",
+      "moral courage"
+    ],
+    "genre_tags": ["classic_british_musical", "Dickens", "family", "large_cast", "children's_chorus", "dramatic", "music_hall", "period_piece"],
+    "vocal_style": "Classic British musical theatre with music hall, cockney, and legit influences. Lionel Bart's instantly memorable melodies range from jaunty cockney knees-ups to soaring ballads to sinister character numbers. Strong emphasis on ensemble singing and large-scale production numbers.",
+    "dance_intensity": "moderate",
+    "orchestra_size": "full",
+    "typical_cast_size": "30-60+",
+    "age_range": "8-70",
+    "difficulty_overall": "intermediate",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI) / Cameron Mackintosh Ltd",
+    "synopsis": "Young orphan Oliver Twist endures a miserable existence in a Victorian workhouse run by the pompous Mr Bumble and the sharp-tongued Widow Corney. After daring to ask for more food, Oliver is sold to the undertaker Mr Sowerberry, where he is bullied by Noah Claypole. Oliver escapes to London where he meets the Artful Dodger, who introduces him to Fagin's gang of child pickpockets. When a pickpocketing attempt goes wrong, Oliver is taken in by the kind Mr Brownlow. But the criminal world won't let Oliver go — the brutal Bill Sikes and the conflicted Nancy are sent to recapture him. Nancy, torn between her loyalty to Sikes and her desire to protect Oliver, ultimately sacrifices her life to save him. Oliver finds a true home with Mr Brownlow, while the world of Fagin's den crumbles around those who exploited the innocent."
+  },
+  "roles": [
+    {
+      "id": "oliver-twist",
+      "name": "Oliver Twist",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 8,
+        "max": 13
+      },
+      "description": "An orphaned boy of approximately eight to ten years old who endures cruelty, exploitation, and danger while maintaining an extraordinary innocence and goodness. Oliver is the moral compass of the entire show — his purity of heart exposes the corruption of every world he passes through. From the workhouse to the undertaker's to Fagin's den to Mr Brownlow's home, Oliver's journey tests whether goodness can survive in a brutal world. The role demands a young performer with exceptional emotional depth, a pure treble voice, and the ability to carry the audience's empathy through two and a half hours of Dickensian drama.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "treble_boy_soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid_to_high",
+        "style_notes": "Pure, clear treble voice with emotional expressiveness. 'Where Is Love?' requires sustained legit singing with genuine pathos — one of the most beloved ballads in musical theatre. Must also handle ensemble numbers and the Act Two 'Who Will Buy?' sequence. The voice must sound vulnerable and innocent while projecting in a large theatre."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staged_movement", "period_physicality"],
+        "stamina": "moderate",
+        "notes": "Limited choreography but constant stage presence. Must convey physical vulnerability — hunger, exhaustion, fear — through body language. The workhouse and street scenes require committed physical acting."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["innocent_child", "orphan_survivor", "moral_compass", "emotional_anchor"],
+        "emotional_range": "wide",
+        "comedy_skills": false,
+        "notes": "Extraordinary demands for a child performer. Must convey genuine fear, loneliness, hope, and love without sentimentality. Oliver is not a passive victim — he has inner strength and spirit (he asks for more, he fights Noah, he trusts Nancy). The audience's investment in the entire show depends on believing in Oliver's goodness. Must sustain emotional truth across a long show."
+      },
+      "performance": {
+        "stage_time_percentage": 65,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": ["emotional_maturity_beyond_age", "sustained_vulnerability", "posh_accent", "period_physicality"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_get_cast", "best_to_grow"],
+        "why": "The title role and the emotional heart of one of the most performed musicals in the world. An extraordinary opportunity for a young performer — develops emotional maturity, vocal technique, and the ability to carry a professional production. A defining role in any young performer's development.",
+        "common_casting": "Boys aged 8-13 with pure treble voices and genuine emotional depth. Multiple Olivers are often cast to share the demanding schedule. Directors look for authenticity over polish — real feeling trumps technique.",
+        "standout_opportunity": "'Where Is Love?' is one of the most iconic solos in musical theatre. A young performer who can deliver it with genuine emotion will be remembered by every audience member."
+      },
+      "growth_profile": {
+        "skills_developed": ["sustained_lead_performance", "emotional_truth", "legit_treble_singing", "carrying_a_show", "professional_discipline"],
+        "challenge_areas": ["emotional_stamina_across_long_show", "maintaining_freshness_over_a_run", "working_with_adult_cast"],
+        "recommended_for": ["talented_young_boy_performers", "children_with_strong_emotional_availability", "young_singers_with_pure_treble_voices"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A pure, clear singing voice that carries emotion",
+          "Genuine emotional availability — can this child make you believe?",
+          "Inner strength — Oliver is brave, not just pitiful",
+          "The ability to sustain focus and energy across a long show",
+          "Natural stage presence without precocity"
+        ],
+        "common_mistakes": [
+          "Playing Oliver as whiny or self-pitying instead of brave and hopeful",
+          "Performing emotions rather than feeling them",
+          "Insufficient vocal projection for theatre",
+          "Losing energy or focus in Act Two"
+        ],
+        "tips": [
+          "Prepare 'Where Is Love?' with genuine feeling — don't just sing, FEEL",
+          "Show directors your brave side — Oliver stands up for himself",
+          "Practice the posh accent if required — Oliver speaks differently from Fagin's gang",
+          "Remember: Oliver is the hero because he stays good, not because he's a victim"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Where Is Love?",
+          "type": "solo_ballad",
+          "notes": "Oliver's iconic ballad of longing for love and belonging. Pure, heartbreaking, and one of the most recognisable songs in musical theatre."
+        },
+        {
+          "title": "Who Will Buy?",
+          "type": "ensemble_featured",
+          "notes": "Oliver's joyful morning at Mr Brownlow's — a rare moment of happiness. Builds into one of the show's biggest production numbers."
+        },
+        {
+          "title": "Consider Yourself",
+          "type": "ensemble",
+          "notes": "Dodger and Fagin's gang welcome Oliver. Oliver is swept into their world with infectious energy."
+        }
+      ]
+    },
+    {
+      "id": "fagin",
+      "name": "Fagin",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 35,
+        "max": 70
+      },
+      "description": "A conniving, eccentric career criminal who runs a gang of child pickpockets from his filthy den in the London slums. Fagin is one of the great character roles in musical theatre — a man of many contradictory dimensions: leader, vagrant, father figure, teacher, manipulator, coward, entertainer, and ultimately a lost soul. He genuinely cares for his boys in his twisted way while cynically exploiting them. His comic numbers are showstoppers, but his final scene — alone, facing the gallows — is one of the most haunting moments in the canon. The role has been a star vehicle since the original production, immortalised by Ron Moody and revived by Rowan Atkinson.",
+      "vocal": {
+        "range": "B2-Eb5",
+        "voice_type": "baritone_character",
+        "belt_required": true,
+        "belt_range": "D4-Eb5",
+        "tessitura": "mid",
+        "style_notes": "Music hall character voice with enormous personality. Must be able to perform 'Reviewing the Situation' — one of the great patter songs — with impeccable comic timing and diction. Also handles the sinister 'You've Got to Pick a Pocket or Two' and the jaunty 'Be Back Soon'. The voice must convey warmth, menace, comedy, and pathos in equal measure."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["music_hall", "comic_physicality", "character_movement"],
+        "stamina": "moderate_to_high",
+        "notes": "Fagin's physicality IS his character — stooped, darting, birdlike, with expressive hands and a distinctive walk. Not technical dance but constant, committed physical characterisation that requires stamina and invention."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["loveable_villain", "eccentric_criminal", "twisted_father_figure", "music_hall_entertainer", "tragic_figure"],
+        "emotional_range": "extreme",
+        "comedy_skills": true,
+        "notes": "One of the most complex character roles in musical theatre. Must be simultaneously funny and frightening, warm and manipulative, entertaining and repulsive. The audience must enjoy Fagin while understanding he's exploiting children. His final scene — 'Reviewing the Situation (Reprise)' alone in his den — must be genuinely moving. The role requires a master actor-comedian with the skill to navigate moral complexity while keeping the audience engaged. Cockney accent essential."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 3,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "music_hall_performance", "physical_characterisation", "patter_singing", "children_ensemble_management"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast", "best_to_grow"],
+        "why": "Fagin is THE star role of Oliver! — the character audiences come to see and the performance they remember. Every number is a potential showstopper. The role develops the full spectrum of performance skills: physical comedy, patter singing, moral complexity, emotional depth, and the ability to hold a stage against a massive cast. Career-defining for the right performer.",
+        "common_casting": "Exceptional character actors with physical comedy skills and genuine charisma. Has been played by comedy legends (Ron Moody, Rowan Atkinson, Robert Lindsay). Directors look for someone who can command the stage while playing a character who operates in shadows.",
+        "standout_opportunity": "'Reviewing the Situation' is one of the greatest comic solos in musical theatre. 'Pick a Pocket or Two' with the boys is a beloved crowd-pleaser. The final scene is devastatingly powerful."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_acting_masterclass", "physical_comedy", "patter_singing", "moral_complexity", "music_hall_tradition", "working_with_children_ensemble"],
+        "challenge_areas": ["navigating_problematic_historical_characterisation", "sustaining_physical_characterisation", "balancing_comedy_with_menace"],
+        "recommended_for": ["experienced_character_actors", "physical_comedians_seeking_dramatic_depth", "performers_wanting_iconic_star_role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "An instantly compelling physical characterisation",
+          "Impeccable comic timing with a patter-ready voice",
+          "The ability to be loveable and sinister simultaneously",
+          "Cockney accent that's rock-solid",
+          "Genuine emotional depth for the final scenes"
+        ],
+        "common_mistakes": [
+          "Copying Ron Moody's film performance instead of finding your own Fagin",
+          "Playing Fagin as purely comic without the darkness",
+          "Insufficient physical commitment to the characterisation",
+          "Losing the patter clarity in 'Reviewing the Situation'"
+        ],
+        "tips": [
+          "Watch multiple Fagins — Moody, Atkinson, Robert Lindsay — then find YOUR version",
+          "Prepare 'Reviewing the Situation' — it's the ultimate Fagin audition piece",
+          "Develop a complete physical vocabulary before auditions — how does Fagin walk, sit, eat, count his treasures?",
+          "Find the loneliness: Fagin at the end, alone, is the key to the whole performance"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "You've Got to Pick a Pocket or Two",
+          "type": "solo_with_boys",
+          "notes": "Fagin teaches the boys his 'trade'. Sinister content delivered with music hall charm and comedy."
+        },
+        {
+          "title": "Be Back Soon",
+          "type": "solo_with_ensemble",
+          "notes": "Fagin sends the boys out to steal. Jaunty, infectious, and darkly funny."
+        },
+        {
+          "title": "Reviewing the Situation",
+          "type": "solo_patter",
+          "notes": "One of the greatest patter songs ever written. Fagin debates going straight. Comic genius with escalating absurdity."
+        },
+        {
+          "title": "Reviewing the Situation (Reprise)",
+          "type": "solo_dramatic",
+          "notes": "Fagin alone, facing the end. The comedy stripped away, leaving raw humanity. Devastating."
+        }
+      ]
+    },
+    {
+      "id": "nancy",
+      "name": "Nancy",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "A former child pickpocket from Fagin's gang, now a young woman trapped in an abusive relationship with Bill Sikes. Nancy is streetwise, tough, fiercely loyal, and secretly good-hearted — she's the most morally complex character in the show. Despite her involvement in crime, she becomes Oliver's fiercest protector, ultimately sacrificing her life to save him. Her internal conflict — love for Sikes pulling against her conscience — drives the show's dramatic climax. Nancy is also the show's musical powerhouse, delivering two of the most iconic numbers in British musical theatre: the joyous 'Oom-Pah-Pah' and the devastating 'As Long As He Needs Me'.",
+      "vocal": {
+        "range": "E3-B4",
+        "voice_type": "alto_mezzo_belt",
+        "belt_required": true,
+        "belt_range": "E4-B4",
+        "tessitura": "mid",
+        "style_notes": "Powerful belt voice with raw emotional force. 'As Long As He Needs Me' is one of the great torch songs — requires sustained, heart-wrenching belt that builds to devastating climax. 'Oom-Pah-Pah' demands infectious energy and audience command. 'It's a Fine Life' requires warmth and defiant optimism. Must convey toughness and vulnerability in the same voice."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["music_hall", "pub_performance", "period_movement"],
+        "stamina": "moderate_to_high",
+        "notes": "'Oom-Pah-Pah' is a big physical number involving the pub ensemble. Must lead and energise the company. Movement should convey streetwise toughness with underlying grace."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["tragic_heroine", "abused_woman", "fierce_protector", "conflicted_loyalist", "sacrificial_figure"],
+        "emotional_range": "extreme",
+        "comedy_skills": true,
+        "notes": "The most emotionally demanding role in the show. Must navigate the impossible tension between love for Sikes and protection of Oliver. Nancy is not a victim — she makes active choices, and her final choice costs her everything. The role requires the ability to be raucously funny in 'Oom-Pah-Pah' and then break the audience's heart with her death scene. Cockney accent essential."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 3,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["powerhouse_belt", "cockney_accent", "emotional_extremes", "pub_performance_leadership", "death_scene"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast", "best_to_grow"],
+        "why": "Nancy is one of the most iconic roles in British musical theatre. 'As Long As He Needs Me' is a career-defining number, and the role develops the full range of performance skills — powerhouse singing, complex dramatic acting, comedy, and the ability to devastate an audience. A role that has launched careers.",
+        "common_casting": "Powerful alto/mezzo belters with genuine dramatic ability and street-smart energy. Directors look for someone who can own 'Oom-Pah-Pah' AND destroy the audience with 'As Long As He Needs Me'. Must feel authentically tough, not performing toughness.",
+        "standout_opportunity": "'As Long As He Needs Me' is one of the most famous solos in musical theatre history. Nancy's death scene is the dramatic climax. When done well, it's the performance audiences remember forever."
+      },
+      "growth_profile": {
+        "skills_developed": ["powerhouse_belt_technique", "dramatic_acting_at_intensity", "comedy_to_tragedy_range", "cockney_dialect", "leading_ensemble_numbers", "death_scene_performance"],
+        "challenge_areas": ["sustaining_emotional_intensity", "navigating_abusive_relationship_portrayal", "belt_stamina_across_show"],
+        "recommended_for": ["strong_belters_seeking_dramatic_showcase", "actresses_wanting_iconic_british_mt_role", "performers_ready_for_emotionally_demanding_lead"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A voice that can shake the walls — raw belt power with emotional truth",
+          "Street-smart toughness that feels authentic",
+          "The ability to break the audience's heart",
+          "Cockney accent that's completely natural",
+          "Energy to lead 'Oom-Pah-Pah' and the emotional depth for 'As Long As He Needs Me'"
+        ],
+        "common_mistakes": [
+          "All voice, no acting — Nancy requires genuine dramatic depth",
+          "Playing Nancy as purely a victim without her strength and humour",
+          "Weak cockney accent undermining the characterisation",
+          "Starting 'As Long As He Needs Me' too big with nowhere to build"
+        ],
+        "tips": [
+          "Prepare 'As Long As He Needs Me' — it's THE Nancy audition piece",
+          "Find the strength: Nancy CHOOSES to protect Oliver knowing it will kill her",
+          "Show both sides — your audition needs warmth AND devastation",
+          "Cockney accent must be absolutely solid — work with a dialect coach"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "It's a Fine Life",
+          "type": "duet_with_bet_and_ensemble",
+          "notes": "Nancy's defiant anthem of making the best of her circumstances. Warm, spirited, and deceptively hopeful."
+        },
+        {
+          "title": "As Long As He Needs Me",
+          "type": "solo_torch_ballad",
+          "notes": "One of the most famous songs in musical theatre. Nancy's devastating declaration of love for the man who abuses her. Builds from quiet reflection to overwhelming emotional power."
+        },
+        {
+          "title": "Oom-Pah-Pah",
+          "type": "solo_with_ensemble",
+          "notes": "Nancy's big pub number — used as a distraction while Oliver escapes. Raucous, infectious, and audience-engaging. Nancy commands the room."
+        }
+      ]
+    },
+    {
+      "id": "artful-dodger",
+      "name": "The Artful Dodger",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 10,
+        "max": 16
+      },
+      "description": "Jack Dawkins, known as the Artful Dodger, is the cleverest and most charismatic of Fagin's young pickpockets. Despite being roughly the same age as Oliver, the Dodger speaks, dresses, and carries himself like a worldly adult — a miniature man-about-town in an oversized top hat and tailcoat. He's the one who finds Oliver on the streets and introduces him to Fagin's world. The Dodger is lively, self-assured, street-smart, and genuinely likeable — a born showman who represents the seductive appeal of Fagin's criminal life. He leads 'Consider Yourself', one of the show's most beloved numbers.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "treble_boy_soprano_belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Bright, confident, cheeky singing voice with belt energy. Must lead 'Consider Yourself' with infectious charisma. Cockney accent in both speech and song. The voice should sound like a kid who thinks he's an adult — confident beyond his years."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["music_hall", "street_swagger", "cockney_knees_up"],
+        "stamina": "high",
+        "notes": "'Consider Yourself' is one of the biggest production numbers and the Dodger is at its centre. Must move with swagger, confidence, and infectious energy. Street-smart physicality that's part dance, part attitude."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["street_wise_kid", "charming_rogue", "born_showman", "miniature_adult"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must project adult confidence from a child's body. The Dodger is never uncertain, never afraid — he owns every room he enters. Cockney accent must be impeccable. The audience should be completely charmed while understanding that the Dodger is a product of a cruel system. Natural charisma is essential — you can't teach the Dodger's swagger."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "street_swagger", "natural_charisma", "leading_large_ensemble_number", "pickpocket_miming"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "The Dodger is the breakout role of Oliver! — the character audiences fall in love with. 'Consider Yourself' is a massive showstopper and the Dodger is front and centre. A star-making role for young performers that develops confidence, charisma, and stage command.",
+        "common_casting": "Naturally charismatic young performers with big personalities, strong voices, and genuine swagger. Directors look for kids who can command a stage full of adults. The Dodger picks himself in auditions — the right kid is unmistakable.",
+        "standout_opportunity": "'Consider Yourself' is the number that brings the house down. The Dodger's entrance with Oliver is one of the most famous moments in the show."
+      },
+      "growth_profile": {
+        "skills_developed": ["stage_confidence", "leading_large_numbers", "cockney_dialect", "charisma_development", "physical_characterisation"],
+        "challenge_areas": ["maintaining_adult_confidence_without_overplaying", "cockney_accent_consistency", "sustaining_energy"],
+        "recommended_for": ["confident_young_performers", "young_performers_with_natural_charisma", "boys_ready_for_breakout_supporting_role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural swagger and confidence that fills the room",
+          "A strong, cheeky singing voice",
+          "Cockney accent that sounds like second nature",
+          "The ability to command attention even in a crowded scene",
+          "Physical energy and movement confidence"
+        ],
+        "common_mistakes": [
+          "Trying too hard to be cool — the Dodger's confidence must feel natural",
+          "Weak cockney accent undermining the characterisation",
+          "Not enough physical commitment to the swagger",
+          "Being charming without being specific — the Dodger has detailed physicality"
+        ],
+        "tips": [
+          "Watch Jack Wild in the 1968 film — he IS the Dodger",
+          "Develop a physical vocabulary: how does the Dodger walk, tip his hat, pick a pocket?",
+          "Cockney accent must be airtight — practice until it's effortless",
+          "Own the room in your audition — the Dodger doesn't wait for permission"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Consider Yourself",
+          "type": "solo_leading_ensemble",
+          "notes": "One of the most iconic numbers in musical theatre. The Dodger welcomes Oliver to London with infectious energy. A massive production number that the Dodger drives."
+        },
+        {
+          "title": "Pick a Pocket or Two",
+          "type": "ensemble_featured",
+          "notes": "The Dodger demonstrates pickpocketing technique alongside Fagin. Cheeky and skilled."
+        },
+        {
+          "title": "Be Back Soon",
+          "type": "ensemble",
+          "notes": "The Dodger leads the gang out on their daily thieving expedition."
+        }
+      ]
+    },
+    {
+      "id": "bill-sikes",
+      "name": "Bill Sikes",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 45
+      },
+      "description": "A brutal, terrifying career criminal and the most dangerous figure in Fagin's world. Sikes is Nancy's abusive partner and the show's primary antagonist — a man of violence whose menacing presence casts a shadow over the second act. He is not a cartoon villain; Sikes is genuinely frightening, a product of the same cruel system that created Fagin's gang but without any of Fagin's charm or complexity. His murder of Nancy is the show's darkest and most dramatically powerful moment. The role is primarily acting-driven with minimal singing, making it a showcase for intense dramatic presence.",
+      "vocal": {
+        "range": "C#3-C4",
+        "voice_type": "bass_baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "low",
+        "style_notes": "Minimal singing — Sikes is primarily a dramatic acting role with some ensemble vocal lines. When he does sing, the voice should be rough, powerful, and threatening. His 'My Name' number (included in some productions) is more spoken-sung intimidation than formal singing."
+      },
+      "dance": {
+        "level": "none",
+        "styles": ["menacing_physicality"],
+        "stamina": "low_to_moderate",
+        "notes": "No dance. Physical presence is everything — Sikes must be physically imposing and intimidating. Movement should be heavy, deliberate, and threatening."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["brutal_villain", "abuser", "career_criminal", "menacing_presence"],
+        "emotional_range": "moderate",
+        "comedy_skills": false,
+        "notes": "A role of terrifying intensity. Must be genuinely frightening without crossing into melodrama. Sikes's violence must feel real enough to make the audience fear for Nancy and Oliver. The murder scene requires enormous skill — it must be shocking and devastating without being gratuitous. Restraint and intensity in equal measure. Cockney accent essential."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["menacing_presence", "controlled_violence_staging", "physical_intimidation", "cockney_accent"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_stand_out"],
+        "why": "Despite limited stage time, Sikes makes a massive dramatic impact. The role develops intense dramatic acting skills — the ability to command a scene through presence alone. When Sikes enters, the energy of the entire show shifts. A powerful role for actors who excel at intensity.",
+        "common_casting": "Physically imposing actors with genuine dramatic intensity. Directors look for someone the audience genuinely fears. Often cast with experienced dramatic actors rather than singer-dancers.",
+        "standout_opportunity": "The murder scene is the dramatic climax of the show. A Sikes who can make the audience hold their breath creates the most powerful version of Oliver!"
+      },
+      "growth_profile": {
+        "skills_developed": ["dramatic_intensity", "physical_presence", "controlled_menace", "staged_violence_technique"],
+        "challenge_areas": ["sustaining_menace_without_becoming_cartoonish", "the_murder_scene_staging", "restraint_within_intensity"],
+        "recommended_for": ["dramatic_actors_seeking_intense_roles", "physically_imposing_performers", "actors_developing_stage_combat_skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine physical presence that changes the energy of the room",
+          "Intensity that's controlled, not wild",
+          "A voice that commands without shouting",
+          "The ability to be threatening through stillness",
+          "Cockney accent that feels dangerous"
+        ],
+        "common_mistakes": [
+          "Shouting instead of menacing — real danger is quiet",
+          "Cartoonish villainy instead of believable threat",
+          "No variation — even Sikes has moments of quiet before the storm",
+          "Insufficient physical presence"
+        ],
+        "tips": [
+          "Watch Oliver Reed's definitive film performance for contained menace",
+          "Prepare a dramatic monologue that shows controlled intensity",
+          "Less is more: the scariest Sikes is the one who barely raises his voice",
+          "Stage combat preparation is valuable — the murder scene requires careful choreography"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "My Name (included in some productions)",
+          "type": "solo_dramatic",
+          "notes": "Sikes's intimidating introduction. More spoken-sung threat than formal number."
+        },
+        {
+          "title": "It's a Fine Life (brief appearance)",
+          "type": "scene",
+          "notes": "Sikes's presence in the pub establishes his relationship with Nancy."
+        }
+      ]
+    },
+    {
+      "id": "mr-bumble",
+      "name": "Mr Bumble",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 35,
+        "max": 60
+      },
+      "description": "The pompous, self-important Beadle who runs the workhouse with petty tyranny and self-righteous cruelty. Mr Bumble preaches Christian morality while showing zero compassion to the children in his care. He is the embodiment of Victorian institutional hypocrisy — a bully in a position of minor authority who lords it over those who can't fight back. He is also, crucially, very funny — his pomposity, his courting of Widow Corney, and his bluster make him one of the show's great comic creations. He's the one who sells Oliver to the Sowerberrys and who famously refuses Oliver's request for more.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "baritone_comic",
+        "belt_required": true,
+        "belt_range": "D4-A4",
+        "tessitura": "mid",
+        "style_notes": "Big, pompous baritone with comic bluster. Must deliver 'Boy for Sale' with mercenary cheerfulness and handle the workhouse ensemble numbers with authority. The voice should sound like a man who loves the sound of his own voice — self-important, brassy, and deeply pleased with himself."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["pompous_strut", "comedic_movement"],
+        "stamina": "low_to_moderate",
+        "notes": "Bumble's physicality is his character — the strut, the belly, the wagging finger, the puffed-up chest. Not technical dance but committed physical comedy."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["pompous_authority", "comic_bully", "institutional_hypocrite", "romantic_buffoon"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "A classic Dickensian comic villain. Must be funny while being genuinely cruel — the audience laughs at Bumble but should also feel the injustice he represents. The courtship scenes with Widow Corney are comic gold. Cockney accent essential. Good comedic timing is the primary requirement."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["pompous_physicality", "cockney_accent", "comic_authority", "institutional_characterisation"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Bumble is one of the most enjoyable comic roles in the show — every entrance gets laughs, and the Corney courtship is a highlight. The role develops character comedy, physical performance, and Dickensian acting style.",
+        "common_casting": "Larger-than-life character actors with natural comic authority. Directors look for someone who can be pompous, funny, and believably cruel. Often cast with comedians or experienced character actors.",
+        "standout_opportunity": "'Boy for Sale' and the courtship scenes with Widow Corney are consistent audience pleasers. Bumble's outrage at Oliver asking for more is one of the most famous moments in the show."
+      },
+      "growth_profile": {
+        "skills_developed": ["dickensian_character_comedy", "pompous_authority_performance", "physical_comedy", "comic_timing"],
+        "challenge_areas": ["finding_fresh_comedy_nightly", "balancing_funny_with_cruel", "sustaining_physical_characterisation"],
+        "recommended_for": ["character_actors_seeking_comic_roles", "performers_developing_physical_comedy", "baritones_wanting_featured_character_work"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Comic authority that fills the room",
+          "A big, characterful voice",
+          "Physical comedy commitment — Bumble is ALL physicality",
+          "Cockney accent with pompous affectation",
+          "The ability to be funny and threatening simultaneously"
+        ],
+        "common_mistakes": [
+          "One-note pomposity without comic variation",
+          "Not finding the menace beneath the comedy",
+          "Physical characterisation that's too subtle for the role",
+          "Insufficient vocal projection for the bluster"
+        ],
+        "tips": [
+          "Watch Harry Secombe in the film for classic Bumble energy",
+          "Develop a complete physical characterisation — posture, walk, gestures",
+          "The courtship with Corney must be genuinely funny — prepare the scenes",
+          "Remember: Bumble is the system's cruelty made flesh, wrapped in comedy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Boy for Sale",
+          "type": "solo",
+          "notes": "Bumble hawks Oliver through the streets like merchandise. Darkly comic — horrible content delivered with cheerful salesmanship."
+        },
+        {
+          "title": "Oliver! (Food, Glorious Food ensemble)",
+          "type": "ensemble_featured",
+          "notes": "Bumble presides over the workhouse. His outrage at Oliver's request for more sets the entire plot in motion."
+        },
+        {
+          "title": "I Shall Scream (with Widow Corney)",
+          "type": "duet_comedy",
+          "notes": "Hilarious courtship duet. Two pompous people trying to maintain dignity while flirting. Comedy gold."
+        }
+      ]
+    },
+    {
+      "id": "widow-corney",
+      "name": "Widow Corney",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 35,
+        "max": 60
+      },
+      "description": "The sharp-tongued, domineering matron of the workhouse. A widow who wields petty power over the orphans and paupers in her care with pinched-face disapproval and zero compassion. Her comic highlight is the courtship with Mr Bumble — two pompous people trying to maintain dignity while clearly attracted to each other. She is the female counterpart to Bumble's institutional cruelty, but where Bumble blusters, Corney needle-jabs with precision. A delicious comic character role.",
+      "vocal": {
+        "range": "C4-E5",
+        "voice_type": "soprano_character",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Shrill, sharp character soprano with comic edge. The 'I Shall Scream' duet requires comedic singing with precise timing. Must sound like a woman who could freeze water with a look but secretly wants to be romanced."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comic_movement", "stiff_propriety"],
+        "stamina": "low",
+        "notes": "Physical comedy of propriety — stiff, disapproving posture that gradually melts during the Bumble courtship. The comedy is in the contrast between her rigid exterior and her romantic interior."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["sharp_tongued_matron", "comic_romantic", "institutional_cruelty", "reluctant_romantic"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be genuinely frightening to the orphans while hilarious to the audience. The courtship with Bumble is the role's centrepiece — two people pretending they're not interested while clearly besotted. Cockney accent essential. Comic timing is paramount."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["comic_propriety", "cockney_accent", "romantic_comedy_timing", "shrill_authority"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Widow Corney is a reliable scene-stealer with the perfect comedy partner in Mr Bumble. 'I Shall Scream' is consistently one of the most entertaining scenes in the show. The role develops character comedy and romantic comedy skills.",
+        "common_casting": "Sharp-featured character actresses with strong comic timing. Directors look for someone who can generate laughs through disapproval and reluctant attraction. Often paired carefully with Bumble for maximum comic chemistry.",
+        "standout_opportunity": "'I Shall Scream' with Bumble is guaranteed comedy gold and one of the show's most beloved scenes."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_comedy", "romantic_comedy_timing", "sharp_character_voice", "period_comedy"],
+        "challenge_areas": ["making_limited_stage_time_count", "comic_chemistry_with_bumble", "finding_variation_in_disapproval"],
+        "recommended_for": ["character_actresses_seeking_comedy_roles", "performers_developing_comic_timing", "sopranos_wanting_character_work"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Sharp comic timing and physical comedy",
+          "A characterful soprano voice with an edge",
+          "The ability to convey disapproval that's hilarious",
+          "Chemistry potential with Mr Bumble",
+          "Cockney accent with pompous affectation"
+        ],
+        "common_mistakes": [
+          "Being too one-note in the disapproval",
+          "Not finding the secret romantic underneath",
+          "Insufficient vocal projection for the character voice",
+          "Missing the comedy in the Bumble courtship"
+        ],
+        "tips": [
+          "Prepare 'I Shall Scream' material or a character comedy number",
+          "Find the contradiction: rigid exterior, romantic interior",
+          "Physical comedy is key — how does Corney express attraction while maintaining propriety?",
+          "Think of Corney as Bumble's perfect match — equally pompous, equally ridiculous"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I Shall Scream",
+          "type": "duet_comedy",
+          "notes": "Hilarious courtship duet with Mr Bumble. Two rigid people losing their composure. The comedy highlight of the workhouse scenes."
+        },
+        {
+          "title": "Oliver! (Food, Glorious Food ensemble)",
+          "type": "ensemble",
+          "notes": "Corney presides over the gruel-serving with sour-faced disapproval."
+        }
+      ]
+    },
+    {
+      "id": "mr-brownlow",
+      "name": "Mr Brownlow",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 45,
+        "max": 65
+      },
+      "description": "A wealthy, kind, and distinguished gentleman who takes Oliver in after the boy is falsely accused of picking his pocket. Mr Brownlow represents the best of Victorian society — compassionate, just, and willing to look beyond class and circumstance to see the child underneath. He is Oliver's salvation and eventual adoptive father. The role is primarily dramatic — a man of quiet authority and genuine warmth. His scenes with Oliver provide the emotional respite from the show's darker elements.",
+      "vocal": {
+        "range": "non_singing_or_minimal",
+        "voice_type": "speaking_role",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "n/a",
+        "style_notes": "Primarily a non-singing role with possible ensemble participation. The voice should convey authority, warmth, and breeding — posh RP accent. Vocal quality matters for dramatic scenes even without singing."
+      },
+      "dance": {
+        "level": "none",
+        "styles": ["dignified_movement"],
+        "stamina": "low",
+        "notes": "Movement should convey dignity, wealth, and gentleness. No dance requirements."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["benevolent_gentleman", "father_figure", "moral_authority", "quiet_hero"],
+        "emotional_range": "moderate",
+        "comedy_skills": false,
+        "notes": "Must convey genuine warmth and authority without sentimentality. Brownlow's belief in Oliver must feel earned and real. His scenes with Oliver are the emotional heart of the hope in the story. Posh RP accent essential — he speaks a completely different English from Fagin's world."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["posh_rp_accent", "dignified_authority", "warmth_without_sentimentality"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "A dignified supporting role that provides essential contrast to the criminal world. Develops subtle dramatic acting skills and the ability to convey authority with warmth. Important for actors who excel at quiet, authoritative presence.",
+        "common_casting": "Distinguished character actors with natural authority and warmth. Directors look for someone who instantly reads as a kind, wealthy gentleman. Often cast with experienced actors.",
+        "standout_opportunity": "Brownlow's scenes with Oliver are touching and his final acceptance of the boy is the story's emotional resolution."
+      },
+      "growth_profile": {
+        "skills_developed": ["dignified_dramatic_acting", "posh_accent_work", "quiet_authority", "paternal_warmth"],
+        "challenge_areas": ["making_a_passive_role_dramatically_active", "avoiding_blandness", "conveying_emotion_with_restraint"],
+        "recommended_for": ["mature_actors_seeking_dignified_roles", "performers_developing_accent_range", "actors_wanting_quiet_authority_roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural authority and dignity",
+          "Genuine warmth that reads from the stage",
+          "Posh RP accent that sounds completely natural",
+          "The ability to convey emotion with restraint",
+          "Physical presence that suggests wealth and breeding"
+        ],
+        "common_mistakes": [
+          "Being too stiff or cold — Brownlow is genuinely warm",
+          "Overacting the kindness into sentimentality",
+          "Weak accent work",
+          "Disappearing in scenes with more colourful characters"
+        ],
+        "tips": [
+          "Prepare a dignified dramatic monologue — Shakespeare or Dickens adaptation works well",
+          "Find the quiet strength: Brownlow defies his social world by taking in a street urchin",
+          "The posh accent must be effortless — work on it thoroughly",
+          "Brownlow's power is in what he doesn't say — show directors your subtlety"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Who Will Buy? (scene)",
+          "type": "dramatic_scene",
+          "notes": "Brownlow's household provides Oliver's happiest moment. The gentleman's kindness is the backdrop for Oliver's joy."
+        }
+      ]
+    },
+    {
+      "id": "bet",
+      "name": "Bet",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 14,
+        "max": 25
+      },
+      "description": "One of Fagin's former pickpockets and Nancy's closest friend (or sister, in some productions). Bet looks up to Nancy with fierce devotion and serves as Nancy's confidante and partner in their scenes together. She is caring, good-natured, and loyal — a younger version of Nancy who may face the same tragic path. Bet provides a mirror for Nancy's choices: she represents what Nancy was, and what she might become if she follows the same road. Featured in 'It's a Fine Life' and present in key dramatic moments.",
+      "vocal": {
+        "range": "C4-C5",
+        "voice_type": "alto_mezzo",
+        "belt_required": true,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Strong, warm voice that complements Nancy's in their shared numbers. Must handle 'It's a Fine Life' as a duet partner with energy and heart. Cockney accent in singing."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["music_hall", "pub_dance", "period_movement"],
+        "stamina": "moderate",
+        "notes": "Active participant in pub scenes and 'Oom-Pah-Pah'. Must move with street-smart energy and confidence."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["loyal_friend", "young_streetwise_woman", "devoted_sister_figure"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must convey genuine devotion to Nancy and a spirited, warm personality. The role provides essential support to Nancy's emotional arc. Cockney accent essential."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "nancy_support_dynamic", "pub_performance"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_grow"],
+        "why": "Bet is a wonderful stepping-stone role — featured enough to develop significant skills but not so demanding as to overwhelm. Develops cockney dialect, ensemble leadership, and the ability to support a lead performance. A natural path towards playing Nancy in a future production.",
+        "common_casting": "Young female performers with belt voices and warm personalities. Directors look for someone who complements Nancy without competing with her.",
+        "standout_opportunity": "'It's a Fine Life' duet with Nancy is a highlight, and Bet's reactions during the dramatic climax add emotional depth."
+      },
+      "growth_profile": {
+        "skills_developed": ["cockney_dialect", "supporting_lead_performance", "duet_partnership", "ensemble_integration"],
+        "challenge_areas": ["making_supporting_role_distinct", "not_being_overshadowed_by_nancy", "finding_individual_moments"],
+        "recommended_for": ["young_female_performers_building_experience", "belt_voices_developing_character_skills", "performers_on_path_to_leading_roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A warm, strong voice that blends with Nancy",
+          "Genuine warmth and loyalty in performance",
+          "Cockney accent proficiency",
+          "Physical energy for pub scenes",
+          "Supportive ensemble awareness"
+        ],
+        "common_mistakes": [
+          "Trying to outshine Nancy instead of supporting her",
+          "Insufficient character development — Bet is her own person",
+          "Weak cockney accent",
+          "Not enough physical energy in ensemble scenes"
+        ],
+        "tips": [
+          "Prepare a cockney-appropriate belt number",
+          "Think about Bet's specific relationship with Nancy — devotion, concern, loyalty",
+          "Show directors you can support a lead while maintaining your own character",
+          "This role is the natural stepping stone to Nancy — show you're building towards it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "It's a Fine Life",
+          "type": "duet_with_nancy",
+          "notes": "Bet and Nancy's spirited declaration of making the best of their lives. Warm, defiant, and deeply bonded."
+        },
+        {
+          "title": "Oom-Pah-Pah",
+          "type": "ensemble_featured",
+          "notes": "Active participant in Nancy's big pub number."
+        }
+      ]
+    },
+    {
+      "id": "mr-sowerberry",
+      "name": "Mr Sowerberry",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The local undertaker who purchases Oliver from the workhouse. Sowerberry is slimy, stingy, and dominated by his wife. He sees Oliver primarily as cheap labour and a potential 'mute' (mourner) for children's funerals. Despite his ghoulish profession, he provides some dark comedy — a man who profits from death while being thoroughly henpecked at home. His scenes establish Oliver's desperation to escape before reaching London.",
+      "vocal": {
+        "range": "Bb3-F4",
+        "voice_type": "baritone_character",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Character baritone with dark comic delivery. Featured in 'That's Your Funeral' — a darkly funny number about profiting from death. Cockney accent with a slimy, ingratiating quality."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comic_movement"],
+        "stamina": "low",
+        "notes": "Minimal movement requirements. Physicality should suggest a man who spends his life around coffins — stooped, pale, rubbing his hands."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["comic_villain", "henpecked_husband", "ghoulish_profiteer"],
+        "emotional_range": "limited_to_moderate",
+        "comedy_skills": true,
+        "notes": "Dark comedy role. Must find the humour in a thoroughly unpleasant character. The dynamic with Mrs Sowerberry — she rules, he cowers — is a reliable comedy pairing."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "dark_comedy", "henpecked_physicality"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "A fun featured role with a solo number and strong comic scenes. Develops character comedy in limited stage time. Pairs well with Mrs Sowerberry for reliable laughs.",
+        "common_casting": "Character actors with dark comic instincts. Directors look for someone who can make death funny while remaining believably Dickensian.",
+        "standout_opportunity": "'That's Your Funeral' is a darkly funny featured number that showcases character comedy."
+      },
+      "growth_profile": {
+        "skills_developed": ["dark_character_comedy", "featured_number_performance", "comic_pairing"],
+        "challenge_areas": ["maximum_impact_in_limited_time", "dark_comedy_tone"],
+        "recommended_for": ["character_actors_building_experience", "performers_wanting_featured_comic_cameo"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Dark comic instincts",
+          "Characterful voice and physicality",
+          "Cockney accent",
+          "Comedy pairing potential with Mrs Sowerberry"
+        ],
+        "common_mistakes": [
+          "Playing too straight — this is dark comedy",
+          "Insufficient physical characterisation",
+          "Forgetting the henpecked dynamic"
+        ],
+        "tips": [
+          "Find the dark humour: a man who literally measures children for coffins",
+          "Develop a specific physical vocabulary — how does an undertaker move?",
+          "The Mrs Sowerberry dynamic is key — show you can play submissive comedy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "That's Your Funeral",
+          "type": "featured_number",
+          "notes": "Darkly comic number about the undertaking business. Sowerberry sees death as a business opportunity."
+        }
+      ]
+    },
+    {
+      "id": "mrs-sowerberry",
+      "name": "Mrs Sowerberry",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The undertaker's domineering, mean-spirited wife who rules her household with an iron fist. She is stingy, cruel to Oliver, and thoroughly in charge of her cowering husband. Together with Noah and Charlotte, she makes Oliver's time at the undertaker's miserable enough to trigger his escape to London. A sharp comic character.",
+      "vocal": {
+        "range": "Bb4-F5",
+        "voice_type": "mezzo_soprano_character",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid_to_high",
+        "style_notes": "Sharp, shrewish character voice. Featured in 'That's Your Funeral' ensemble. Must project authority and disapproval through voice alone."
+      },
+      "dance": {
+        "level": "none",
+        "styles": ["domineering_physicality"],
+        "stamina": "low",
+        "notes": "No dance. Physical comedy of domestic domination — towering over her husband, cuffing Oliver, ruling the household."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["domineering_wife", "cruel_mistress", "comic_shrew"],
+        "emotional_range": "limited",
+        "comedy_skills": true,
+        "notes": "Must be genuinely frightening to Oliver while funny to the audience. The domestic comedy with Mr Sowerberry is the role's strength."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "domineering_physicality", "comic_cruelty"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "A reliable comic cameo that develops character comedy and domestic comedy pairing skills. Limited time, maximum impact.",
+        "common_casting": "Sharp character actresses who can dominate a scene. Directors look for someone who makes Mr Sowerberry look pathetic by comparison.",
+        "standout_opportunity": "The Sowerberry household scenes are always entertaining, and Mrs Sowerberry drives the comedy."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_comedy", "domineering_physicality", "comic_pairing", "scene_efficiency"],
+        "challenge_areas": ["maximum_impact_in_very_limited_time"],
+        "recommended_for": ["character_actresses_building_experience", "performers_wanting_brief_featured_roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Commanding presence that dominates the scene",
+          "Sharp comic timing",
+          "Cockney accent with shrewish edge",
+          "Physical comedy of domestic authority"
+        ],
+        "common_mistakes": [
+          "Not being big enough — this role requires scale",
+          "Missing the comedy in the cruelty"
+        ],
+        "tips": [
+          "Mrs Sowerberry rules everything — show that authority from the moment you enter",
+          "The comedy is in the dynamic with her husband — play the domination"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "That's Your Funeral",
+          "type": "ensemble_featured",
+          "notes": "Featured in the undertaker's number. Mrs Sowerberry's disapproval punctuates the scene."
+        }
+      ]
+    },
+    {
+      "id": "noah-claypole",
+      "name": "Noah Claypole",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {
+        "min": 12,
+        "max": 18
+      },
+      "description": "The Sowerberrys' apprentice — a bully who torments Oliver about his dead mother, provoking the fight that causes Oliver to flee to London. Noah is a coward and a bully — tough with those weaker than him, cringing before anyone stronger. His flirtatious relationship with Charlotte provides comic relief. He is the catalyst for Oliver's escape.",
+      "vocal": {
+        "range": "non_singing_or_minimal",
+        "voice_type": "speaking_role",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "n/a",
+        "style_notes": "Primarily non-singing. Cockney accent. Voice should convey whiny bullying — tough when he's winning, pathetic when challenged."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["physical_comedy", "bullying_physicality"],
+        "stamina": "low",
+        "notes": "The fight with Oliver requires staged combat. Physical comedy of cowardice."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["cowardly_bully", "apprentice", "comic_antagonist"],
+        "emotional_range": "limited",
+        "comedy_skills": true,
+        "notes": "Must be convincingly cruel to Oliver while being obviously pathetic. The audience should despise Noah while laughing at his cowardice. The flirtation with Charlotte is a comic subplot."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "staged_combat", "cowardly_bully_physicality"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "A fun featured cameo that develops character acting and staged combat. Noah's scene with Oliver is a crucial plot point that audiences remember.",
+        "common_casting": "Young character actors who can play unlikeable with comic skill.",
+        "standout_opportunity": "The bullying scene and fight with Oliver is dramatically important and showcases character acting."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_villainy", "staged_combat", "comic_cowardice"],
+        "challenge_areas": ["being_hateable_yet_entertaining"],
+        "recommended_for": ["young_character_actors", "performers_learning_staged_combat"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Convincing bully physicality",
+          "Comic cowardice when challenged",
+          "Cockney accent",
+          "Chemistry with Charlotte"
+        ],
+        "common_mistakes": [
+          "Being too genuinely threatening — Noah is pathetic",
+          "Not enough physical commitment"
+        ],
+        "tips": [
+          "Noah is all bark until someone barks back — find the coward inside the bully",
+          "The fight scene is your moment — make it count"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "That's Your Funeral",
+          "type": "scene",
+          "notes": "Noah features in the undertaker's household scenes."
+        }
+      ]
+    },
+    {
+      "id": "charley-bates",
+      "name": "Charley Bates",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {
+        "min": 10,
+        "max": 15
+      },
+      "description": "The Artful Dodger's sidekick and one of Fagin's most enthusiastic pickpockets. Charley is cheerful, easily amused (he laughs at everything), and completely devoted to the gang's lifestyle. He provides comic energy in the den scenes and is always at the Dodger's side. A lively, scene-filling presence in the boys' ensemble.",
+      "vocal": {
+        "range": "varies",
+        "voice_type": "treble_ensemble",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Strong ensemble singer. Featured in gang numbers. Must blend with the boys' chorus while having individual personality."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["street_movement", "cockney_energy"],
+        "stamina": "moderate",
+        "notes": "Active in all gang numbers. Must keep up with the Dodger's energy."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["cheerful_sidekick", "enthusiastic_thief", "loyal_gang_member"],
+        "emotional_range": "limited",
+        "comedy_skills": true,
+        "notes": "Non-singing speaking role with strong ensemble presence. Must be visibly enjoying himself at all times. The Dodger's loyal right-hand man."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["cockney_accent", "infectious_laughter", "gang_ensemble_energy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_grow"],
+        "why": "A great entry-level featured role for young performers. Develops ensemble skills, character work, and cockney dialect while being part of the show's most energetic scenes.",
+        "common_casting": "Energetic young performers with natural enthusiasm. Directors look for boys who light up the stage with infectious energy.",
+        "standout_opportunity": "Charley's reactions and laughter punctuate the gang scenes. A strong Charley Bates elevates every scene he's in."
+      },
+      "growth_profile": {
+        "skills_developed": ["ensemble_performance", "cockney_dialect", "reactive_acting", "gang_dynamic_work"],
+        "challenge_areas": ["standing_out_within_ensemble", "maintaining_energy"],
+        "recommended_for": ["young_performers_in_early_development", "energetic_boys_building_stage_experience"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Infectious energy and enthusiasm",
+          "Cockney accent ability",
+          "Reactive acting — always engaged",
+          "Physical energy for gang numbers"
+        ],
+        "common_mistakes": [
+          "Being invisible in ensemble scenes",
+          "Not enough individual character within the gang"
+        ],
+        "tips": [
+          "Charley's trademark is his laugh — develop a distinctive, joyful laugh",
+          "Always be reacting: Charley finds everything hilarious and exciting"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Consider Yourself",
+          "type": "ensemble",
+          "notes": "Charley is part of the gang welcoming Oliver."
+        },
+        {
+          "title": "Pick a Pocket or Two",
+          "type": "ensemble",
+          "notes": "Charley enthusiastically participates in Fagin's training session."
+        },
+        {
+          "title": "Be Back Soon",
+          "type": "ensemble",
+          "notes": "Charley heads out with the gang, Dodger's loyal shadow."
+        }
+      ]
+    },
+    {
+      "id": "ensemble-oliver",
+      "name": "Ensemble (Workhouse Boys / Fagin's Gang / Street Sellers / Townspeople / Who Will Buy? Soloists)",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {
+        "min": 8,
+        "max": 65
+      },
+      "description": "Oliver! features one of the largest and most varied ensembles in musical theatre, spanning children's chorus, young performers, and adult ensemble. The Workhouse Boys create the opening world of deprivation and 'Food, Glorious Food'. Fagin's Gang of child pickpockets drives 'Consider Yourself' and 'Be Back Soon'. The 'Who Will Buy?' sequence features four named street seller soloists (Rose Seller, Strawberry Seller, Milk Maid, Knife Grinder) who build the spectacular production number. Adult Townspeople populate London's streets, pubs, and markets. Additional featured roles include Charlotte (Sowerberrys' daughter), Old Sally (pauper with a secret), Mrs Bedwin (Brownlow's housekeeper), Dr Grimwig (comic doctor), and the Workhouse Governors/Chairman.",
+      "vocal": {
+        "range": "varies_by_part",
+        "voice_type": "mixed_ensemble",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "varies",
+        "style_notes": "Large-scale ensemble singing in the classic British musical tradition. 'Food, Glorious Food' is one of the great children's ensemble numbers. 'Consider Yourself' is a massive production number requiring full company energy. 'Who Will Buy?' builds from four solo voices into a spectacular choral climax. Strong unison and part singing throughout."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["music_hall", "cockney_knees_up", "period_street_movement", "production_numbers"],
+        "stamina": "moderate_to_high",
+        "notes": "'Consider Yourself' and 'Who Will Buy?' are major production numbers requiring coordinated movement from a large ensemble. The children's chorus must handle staging while maintaining character. 'Oom-Pah-Pah' pub scene requires energetic audience-style participation."
+      },
+      "acting": {
+        "level": "basic_to_intermediate",
+        "character_types": ["victorian_poor", "street_children", "london_citizens", "pub_patrons"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Each ensemble member must create a specific Victorian character. The children's chorus requires particular commitment — these are starving, exploited children whose energy must still fill the stage. Featured ensemble roles (Charlotte, Old Sally, Mrs Bedwin, Dr Grimwig, Governors) require individual character development. Cockney or posh accent depending on track."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 7,
+        "quick_changes": 2,
+        "special_skills": ["large_scale_production_numbers", "children_ensemble_discipline", "cockney_and_posh_accents", "who_will_buy_soloists", "period_characterisation"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_grow"],
+        "why": "The Oliver! ensemble is one of the great ensemble experiences — massive production numbers, a beloved score, and the opportunity to create a complete Victorian world. Develops large-scale ensemble skills, period performance, and the discipline required for a big company show. The 'Who Will Buy?' soloists get genuine featured moments.",
+        "common_casting": "Large, varied company including children's chorus, young performers, and adult ensemble. Directors look for strong singers who can create individual characters within the crowd. 'Who Will Buy?' soloists need particularly strong voices.",
+        "standout_opportunity": "The 'Who Will Buy?' soloists (Rose Seller, Strawberry Seller, Milk Maid, Knife Grinder) have individual featured moments in one of the show's most spectacular numbers. 'Food, Glorious Food' is a beloved opening that showcases the children's ensemble."
+      },
+      "growth_profile": {
+        "skills_developed": ["large_scale_ensemble_technique", "period_characterisation", "production_number_discipline", "cockney_dialect", "children_ensemble_skills"],
+        "challenge_areas": ["maintaining_individual_character_in_large_company", "stamina_for_big_production_numbers", "accent_consistency"],
+        "recommended_for": ["young_performers_building_ensemble_experience", "adult_ensemble_singers_wanting_classic_mt", "children_in_first_major_production"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong singing voices for ensemble numbers",
+          "Period-appropriate physicality and character",
+          "Cockney accent ability (most tracks)",
+          "Energy for large production numbers",
+          "Discipline for working in a big company"
+        ],
+        "common_mistakes": [
+          "Generic ensemble presence without individual character",
+          "Insufficient cockney accent preparation",
+          "Not enough energy for the big numbers",
+          "Children's chorus members losing focus during long scenes"
+        ],
+        "tips": [
+          "Create a specific Victorian character with a backstory",
+          "Prepare strong ensemble singing — directors listen for blend and power",
+          "If auditioning for 'Who Will Buy?' soloists, prepare the specific vocal style",
+          "Children: practice focus and discipline — directors need reliable young performers"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Food, Glorious Food",
+          "type": "children_ensemble_opener",
+          "notes": "One of the most famous opening numbers in musical theatre. The workhouse boys dream of food. Sets the tone for the entire show."
+        },
+        {
+          "title": "Consider Yourself",
+          "type": "full_company_production",
+          "notes": "Massive production number as Oliver is welcomed into London's streets. The company creates the entire bustling world of Victorian London."
+        },
+        {
+          "title": "Who Will Buy?",
+          "type": "production_number_with_soloists",
+          "notes": "Four street seller soloists build into a spectacular choral number. One of the most ambitious production numbers in musical theatre."
+        },
+        {
+          "title": "Oom-Pah-Pah",
+          "type": "pub_ensemble",
+          "notes": "Nancy leads the pub crowd in a raucous sing-along. The ensemble creates the rowdy Three Cripples pub atmosphere."
+        }
+      ]
+    }
+  ]
+}

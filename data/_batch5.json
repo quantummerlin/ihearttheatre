@@ -1,0 +1,352 @@
+{
+  "songs": {
+    "matilda/matilda-matilda": {
+      "role_name": "Matilda Wormwood",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "Naughty", "from": "Matilda the Musical", "composer": "Tim Minchin", "why": "Matilda's defining anthem — a child who decides the world's rules are wrong and acts on it", "type": "same_show"},
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "A child with a rich inner world and fierce intelligence in an unkind environment — warm child soprano", "type": "contrasting"},
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Shows the lyric child quality and vulnerability beneath Matilda's formidable confidence", "type": "contrasting"},
+        {"title": "Somewhere", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The yearning for a world where extraordinary people are not punished for it — Matilda in one song", "type": "contrasting"}
+      ],
+      "style_guidance": "Matilda requires a child who is genuinely extraordinary — a young soprano/belt with intelligence and physical commitment. She must read as preternaturally grown-up while being entirely a child. The belt range to E5 is needed.",
+      "avoid": ["Cute child performance — Matilda is never cute. She is fierce, compassionate, and righteous."]
+    },
+    "matilda/matilda-trunchbull": {
+      "role_name": "Miss Agatha Trunchbull",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "The Hammer", "from": "Matilda the Musical", "composer": "Tim Minchin", "why": "Trunchbull's own terrifying athletic number — character baritone/alto with physicality and menace", "type": "same_show"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "Absolute conviction of one's own righteousness — Trunchbull believes entirely in her methods", "type": "style_match"},
+        {"title": "Epiphany", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "The gleeful expression of true malice — a character who enjoys causing harm", "type": "contrasting"},
+        {"title": "I've Got a Little List", "from": "The Mikado", "composer": "Arthur Sullivan", "why": "Character voice cataloguing everything that must be destroyed — Trunchbull's entire worldview", "type": "style_match"}
+      ],
+      "style_guidance": "Trunchbull is one of the great theatrical villains — baritone (traditional casting, often played by a man) or deep alto/character voice. The role demands physical extremity, total commitment, and genuine menace.",
+      "avoid": ["Comedic buffoon approach — Trunchbull is genuinely frightening. The comedy comes from scale, not from softness."]
+    },
+    "matilda/matilda-miss-honey": {
+      "role_name": "Miss Jennifer Honey",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "This Is Me", "from": "The Greatest Showman", "composer": "Benj Pasek / Justin Paul", "why": "A person who has been invisible claiming their place — Honey's arc expressed in contemporary soprano terms", "type": "contrasting"},
+        {"title": "I Dreamed a Dream", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Soprano/mezzo who has survived cruelty and is still trying to hope — Honey's backstory exactly", "type": "style_match"},
+        {"title": "When I'm Stuck with a Day", "from": "Matilda the Musical", "composer": "Tim Minchin", "why": "Miss Honey's own gentle number — warm soprano, protective love, and quiet courage", "type": "same_show"},
+        {"title": "So Big/So Small", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Maternal soprano with controlled emotion — a woman discovering her capacity to mother someone at last", "type": "contrasting"}
+      ],
+      "style_guidance": "Miss Honey is everything the show argues an adult should be — a soprano with warmth, gentleness, and quiet unflinching decency. She is timid in body and fearless in spirit. The voice should be clear and pure.",
+      "avoid": ["Operatic or heavy soprano approach — Honey is delicate light, not grandeur"]
+    },
+    "matilda/matilda-mr-wormwood": {
+      "role_name": "Mr. Wormwood",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The self-regarding idiot who genuinely believes he is brilliant — character baritone with physical comedy", "type": "style_match"},
+        {"title": "Razzle Dazzle", "from": "Chicago", "composer": "John Kander", "why": "The man who mistakes bluster for intelligence — baritone showmanship covering complete emptiness", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Broad character comedy energy for the show's resident buffoon who thinks he runs everything", "type": "contrasting"}
+      ],
+      "style_guidance": "Mr. Wormwood is the anti-Matilda — a character baritone who is loud, vain, stupid, and completely sincere about his own magnificence. Broad physical comedy essential. He should be genuinely funny, not just nasty.",
+      "avoid": ["Genuine malice — Wormwood is too stupid to be actually evil; he's a cartoon of ignorance"]
+    },
+    "matilda/matilda-mrs-wormwood": {
+      "role_name": "Mrs. Wormwood",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "I'm the Greatest Star", "from": "Funny Girl", "composer": "Jule Styne", "why": "The woman who is absolutely convinced of her own specialness despite no actual evidence — mezzo belt comedy", "type": "style_match"},
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "The mother who has invested entirely in the wrong things and will not examine why — belt and bravado", "type": "contrasting"},
+        {"title": "Loud", "from": "Matilda the Musical", "composer": "Tim Minchin", "why": "Mrs. Wormwood's own brash number — mezzo belt with sequins, self-delusion, and competitive dancing", "type": "same_show"}
+      ],
+      "style_guidance": "Mrs. Wormwood is sequins, spray tan, and competitive Latin dance — mezzo-soprano belt with enormous comic physicality. She resents Matilda personally for being clever instead of beautiful.",
+      "avoid": ["Subtlety — Mrs. Wormwood has never had a subtle thought in her life"]
+    },
+    "matilda/matilda-rudolpho": {
+      "role_name": "Rudolpho",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "The dancing partner who is entirely invested in his own glamour and Mrs. Wormwood's", "type": "contrasting"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character tenor/baritone who exists as the comedy vehicle for Mrs. Wormwood's delusions", "type": "style_match"}
+      ],
+      "style_guidance": "Rudolpho is the Latin dance partner — tenor/baritone character role with physical comedy, dance skill, and the specific flavour of someone thoroughly wrapped in Mrs. Wormwood's delusion.",
+      "avoid": ["Serious material — Rudolpho exists entirely within the comedy of the Wormwood world"]
+    },
+    "matilda/matilda-mrs-phelps": {
+      "role_name": "Mrs. Phelps",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "I Know", "from": "She Loves Me", "composer": "Jerry Bock", "why": "The warm, observant mezzo who sees Matilda's genius and quietly champions it — warm mezzo character", "type": "style_match"},
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Contrasting — about caring adults and what they give children — Phelps's relationship with Matilda in song", "type": "contrasting"}
+      ],
+      "style_guidance": "Mrs. Phelps is the children's librarian who takes Matilda's remarkable mind seriously — warm mezzo with quiet intelligence. A supporting but important role; she is Matilda's first real ally.",
+      "avoid": ["Secondary, throwaway reading — Mrs. Phelps is the first adult who truly sees Matilda"]
+    },
+    "matilda/matilda-lavender": {
+      "role_name": "Lavender",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "Do You Hear the People Sing", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The loyal comrade — child soprano who would follow Matilda anywhere and stands for justice", "type": "contrasting"},
+        {"title": "Big Bright Beautiful World", "from": "Shrek the Musical", "composer": "Jeanine Tesori", "why": "Cheerful child soprano with friendship energy — Lavender's devoted, loving nature", "type": "style_match"}
+      ],
+      "style_guidance": "Lavender is Matilda's best friend and most devoted ally — child soprano with warmth, bravery, and a willingness to put newts in cups. Happy, bright, loyal.",
+      "avoid": ["Passive child reading — Lavender is an active co-conspirator with courage of her own"]
+    },
+    "matilda/matilda-bruce": {
+      "role_name": "Bruce Bogtrotter",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "The optimistic child who bounces back from punishment — Bruce never stops being fundamentally okay", "type": "style_match"},
+        {"title": "You're a Good Man, Charlie Brown", "from": "You're a Good Man, Charlie Brown", "composer": "Clark Gesner", "why": "The good-natured kid who attracts misfortune without bitterness — Bruce completely", "type": "style_match"}
+      ],
+      "style_guidance": "Bruce eats a whole chocolate cake in front of the school. He is an icon. Child treble with the ability to convey both terror and extraordinary food-related resolve. Warm and good-natured.",
+      "avoid": ["Dramatic heavy material — Bruce is fundamentally, lovably normal"]
+    },
+    "matilda/matilda-escapologist": {
+      "role_name": "The Escapologist / Miss Honey's Father",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "If I Loved You", "from": "Carousel", "composer": "Richard Rodgers", "why": "The father whose love was real — tenor/baritone showing warmth and tragedy beneath the showman persona", "type": "style_match"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The performer who found meaning and ultimately lost it — the showman with a real story", "type": "contrasting"}
+      ],
+      "style_guidance": "The Escapologist appears in Matilda's stories as Miss Honey's father — tenor/baritone with theatrical flair and genuine warmth. He is a loving father and a victim. Brief but emotionally loaded role.",
+      "avoid": ["Cold or detached performance — the Escapologist must read as genuinely loving to make Honey's loss hurt"]
+    },
+    "matilda/matilda-acrobat": {
+      "role_name": "The Acrobat / Miss Honey's Mother",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "In My Own Little Corner", "from": "Cinderella", "composer": "Richard Rodgers", "why": "The brief, loving maternal presence — soprano who conveys warmth and swift loss", "type": "style_match"}
+      ],
+      "style_guidance": "The Acrobat is Miss Honey's mother — a fleeting soprano presence in the story that explains everything about who Honey became. Small role, enormous emotional impact.",
+      "avoid": ["Lengthy vocal showcasing — this is a brief appearance that carries specific grief"]
+    },
+    "matilda/matilda-children-ensemble": {
+      "role_name": "Children's Ensemble — Students of Crunchem Hall",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "Revolting Children", "from": "Matilda the Musical", "composer": "Tim Minchin", "why": "The ensemble's defining number — children who have decided to rise up, full of anger and joy", "type": "same_show"},
+        {"title": "We're Not Gonna Take It", "from": "Rock repertoire", "composer": "Dee Snider", "why": "If rock songs are accepted — Revolting Children energy in three words", "type": "style_match"},
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "Child ensemble soprano/treble quality — shows the youthful brightness the children's scenes need", "type": "contrasting"}
+      ],
+      "style_guidance": "The children of Crunchem Hall must be able to sing, act, and physically survive Trunchbull's school — youth ensemble with strong voices, physical commitment, and genuine ensemble storytelling instincts.",
+      "avoid": ["Adult performance style — the children must read as real children, not small adults pretending"]
+    },
+    "matilda/matilda-adult-ensemble": {
+      "role_name": "Adult Ensemble — Doctors, Parents, Teachers, Townspeople",
+      "musical": "Matilda the Musical",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Comic adult ensemble energy — the adults of Matilda's world are mostly oblivious and slightly satirised", "type": "style_match"},
+        {"title": "Anything Goes", "from": "Anything Goes", "composer": "Cole Porter", "why": "Shows the period-adjacent charm the adult ensemble needs with comic intelligence", "type": "contrasting"}
+      ],
+      "style_guidance": "The adult ensemble supports the heightened world — Roald Dahl adults are generally comic, oblivious, or vile. Strong character work, period flavour, physical expressiveness.",
+      "avoid": ["Naturalistic acting school choices — the Dahl adult world is intentionally heightened satire"]
+    },
+    "oliver/oliver-twist": {
+      "role_name": "Oliver Twist",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Where Is Love", "from": "Oliver!", "composer": "Lionel Bart", "why": "Oliver's own longing song — clear, pure treble with genuine emotional simplicity and longing", "type": "same_show"},
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The orphan's imagination sustaining them through grinding poverty — exact spiritual parallel", "type": "style_match"},
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "The optimistic orphan who has not yet been broken — clean treble with natural resilience", "type": "style_match"}
+      ],
+      "style_guidance": "Oliver is the show's moral centre — an pure boy treble with natural emotional vulnerability and an instinct for goodness. He must be genuinely sympathetic, which requires real vocal purity and emotional honesty.",
+      "avoid": ["Street-hardened performance — Oliver is the boy who has not yet been corrupted, and that is the whole point"]
+    },
+    "oliver/fagin": {
+      "role_name": "Fagin",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Reviewing the Situation", "from": "Oliver!", "composer": "Lionel Bart", "why": "Fagin's great self-examination — character baritone with range to Eb5, humour, and genuine vulnerability", "type": "same_show"},
+        {"title": "You've Got to Pick a Pocket or Two", "from": "Oliver!", "composer": "Lionel Bart", "why": "Fagin's teaching number — shows the comedic warmth and showman quality the role requires", "type": "same_show"},
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The canny operator who runs the criminal family — character baritone with warmth and calculation", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character energy of a man who manages chaos through personality — Fagin's fundamental skill", "type": "contrasting"}
+      ],
+      "style_guidance": "Fagin is the great character baritone role — warm, comic, genuinely caring in his criminal way, and ultimately a survivor. The voice needs enormous range (B2-Eb5), physical expressiveness, and the ability to be loveable and alarming simultaneously.",
+      "avoid": ["Playing Fagin as pure villain — he loves his boys; that's why Oliver trusts him and why the audience follows him"]
+    },
+    "oliver/nancy": {
+      "role_name": "Nancy",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "As Long as He Needs Me", "from": "Oliver!", "composer": "Lionel Bart", "why": "Nancy's defining ballad — alto/mezzo belt showing an abused woman who loves completely, tragically", "type": "same_show"},
+        {"title": "It's a Fine Life", "from": "Oliver!", "composer": "Lionel Bart", "why": "Nancy performing happiness — mezzo belt with the specific tragedy of enforced cheerfulness", "type": "same_show"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "The unstoppable woman who loves too much and pays for it — alto/mezzo belt anthem", "type": "style_match"},
+        {"title": "I'm Still Here", "from": "Follies", "composer": "Stephen Sondheim", "why": "The woman who has survived everything life threw at her and won't stop fighting — Nancy's spirit", "type": "contrasting"}
+      ],
+      "style_guidance": "Nancy is one of musical theatre's great tragic heroines — alto/mezzo with a belt from E3 to B4, enormous warmth, and the ability to make love's self-destruction feel like strength rather than weakness.",
+      "avoid": ["Weak or passive reading — Nancy chooses her fate with both eyes open, and that choice must read as powerful"]
+    },
+    "oliver/artful-dodger": {
+      "role_name": "The Artful Dodger",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Consider Yourself", "from": "Oliver!", "composer": "Lionel Bart", "why": "The Dodger's big recruitment number — treble/belt with showman charm and absolute street confidence", "type": "same_show"},
+        {"title": "I'd Do Anything", "from": "Oliver!", "composer": "Lionel Bart", "why": "Shows the Dodger's natural leadership and playful manipulation — belt with character and ease", "type": "same_show"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The street kid who wants to be extraordinary and actually is — youth with ambition and swagger", "type": "contrasting"}
+      ],
+      "style_guidance": "The Dodger is the show's energy source — treble/young belt with absolute physical swagger, leadership instinct, and the ability to charm every single person on stage and in the audience.",
+      "avoid": ["Playing criminal as dangerous — the Dodger is charming criminal, all performance and charisma, no genuine menace"]
+    },
+    "oliver/bill-sikes": {
+      "role_name": "Bill Sikes",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Stars", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Relentless pursuing bass-baritone who believes he is entitled — cold conviction, genuine threat", "type": "style_match"},
+        {"title": "Epiphany", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "The moment when a man commits to violence without turning back — chilling, controlled, bass-baritone", "type": "contrasting"},
+        {"title": "Old Man River", "from": "Show Boat", "composer": "Jerome Kern", "why": "Bass-baritone with physical weight and inevitability — Sikes as an immovable force", "type": "contrasting"}
+      ],
+      "style_guidance": "Bill Sikes is the show's genuine monster — bass-baritone who must be truly frightening without theatrical excess. He is small, vicious, and specific. The audience must fear what he will do to Nancy.",
+      "avoid": ["Theatrical villainy — Sikes's menace comes from cold, contained realism, not performance"]
+    },
+    "oliver/mr-bumble": {
+      "role_name": "Mr Bumble",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "The pompous authority figure who exists to be outwitted — character baritone with maximum self-importance", "type": "style_match"},
+        {"title": "I've Got the Horse Right Here", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Blustering comic character who believes his own nonsense entirely", "type": "contrasting"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character comedy baritone who cannot see what is obvious to the audience — Bumble in one song", "type": "style_match"}
+      ],
+      "style_guidance": "Mr Bumble is the beadle — pompous, venal, utterly self-important, and destined to be brought low. Comic baritone role requiring broad physical presence and delightful hypocrisy.",
+      "avoid": ["Menacing villain reading — Bumble is ridiculous, not dangerous"]
+    },
+    "oliver/widow-corney": {
+      "role_name": "Widow Corney",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The pragmatic woman calculating her romantic options with comic desperation — Corney exactly", "type": "style_match"},
+        {"title": "Before the Parade Passes By", "from": "Hello, Dolly!", "composer": "Jerry Herman", "why": "Soprano character deciding she is not going to miss her chance at status and comfort", "type": "contrasting"},
+        {"title": "I Know", "from": "She Loves Me", "composer": "Jerry Bock", "why": "Knowing comic soprano who is entirely aware of her own motivations and doesn't mind", "type": "style_match"}
+      ],
+      "style_guidance": "Widow Corney is the workhouse matron engineering her own social advancement — soprano character role with comic calculation, warmth, and the specific menace of a woman who controls resources.",
+      "avoid": ["Purely benevolent matron reading — Corney is calculating her options in every scene"]
+    },
+    "oliver/bet": {
+      "role_name": "Bet",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Big Spender", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "The working-class girl in a dangerous world — alto/mezzo with warmth and knowing street wisdom", "type": "style_match"},
+        {"title": "Don't Tell Mama", "from": "Cabaret", "composer": "John Kander", "why": "The cheerful companion who keeps her business to herself — alto with energy and comedy", "type": "contrasting"}
+      ],
+      "style_guidance": "Bet is Nancy's friend and the show's secondary female role — alto/mezzo with warmth, street energy, and loyal sidekick quality. A supporting role who roots the Nancy story in community.",
+      "avoid": ["Lead weight material — Bet is supportive ensemble, not featured lead"]
+    },
+    "oliver/ensemble-oliver": {
+      "role_name": "Ensemble — Workhouse Boys, Fagin's Gang, Street Sellers, Townspeople",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {"title": "Consider Yourself", "from": "Oliver!", "composer": "Lionel Bart", "why": "The show's great welcoming ensemble number — street kids with personality and physical energy", "type": "same_show"},
+        {"title": "Who Will Buy", "from": "Oliver!", "composer": "Lionel Bart", "why": "The street sellers' morning ensemble — shows the breadth of character types needed", "type": "same_show"},
+        {"title": "Food, Glorious Food", "from": "Oliver!", "composer": "Lionel Bart", "why": "The opening ensemble — shows the workhouse boy treble quality for younger ensemble members", "type": "same_show"}
+      ],
+      "style_guidance": "Oliver! ensemble plays everything from starving orphans to cockney street sellers — period style, physical variety, and the ability to sell both joy and desperation convincingly.",
+      "avoid": ["Contemporary pop style — Oliver! is firmly in the British music hall / Golden Age tradition"]
+    },
+    "pretty-woman/vivian": {
+      "role_name": "Vivian Ward",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "I'm Not That Girl", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The woman who does not believe she belongs in the beautiful world she has glimpsed — mezzo belt with hope and doubt", "type": "style_match"},
+        {"title": "And I Am Telling You I'm Not Going", "from": "Dreamgirls", "composer": "Henry Krieger", "why": "Mezzo-soprano belt powerhouse — if the show needs a moment of pure vocal declaration for the role", "type": "contrasting"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "The girl who refuses to be defined by others' limits — mezzo belt with joy and self-determination", "type": "style_match"},
+        {"title": "Still Hurting", "from": "The Last Five Years", "composer": "Jason Robert Brown", "why": "Contrasting — shows the raw emotional vulnerability beneath Vivian's performance of confidence", "type": "contrasting"}
+      ],
+      "style_guidance": "Vivian is contemporary pop-mezzo with heart and humour — she is street-smart, funny, and genuinely kind. The vulnerability must coexist with the confidence. This is a mezzo with belt to F5 and a gift for making people root for her.",
+      "avoid": ["Passive, soft-voiced ingenue — Vivian has survived by being capable, present, and smart"]
+    },
+    "pretty-woman/edward": {
+      "role_name": "Edward Lewis",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "The man who has everything and nothing — baritone confronting what is missing in a perfectly ordered life", "type": "style_match"},
+        {"title": "This Nearly Was Mine", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Romantic baritone who almost let happiness slip away — the moment Edward chooses to change", "type": "style_match"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "A controlled man claiming something he loves against all rational advice — Edward choosing Vivian", "type": "contrasting"}
+      ],
+      "style_guidance": "Edward is the closed-off, successful man who is opened by Vivian — baritone with intelligence, restrained warmth, and the capacity for a genuine transformation. He is not cold; he is defended.",
+      "avoid": ["Alpha villain-adjacent energy — Edward must be fundamentally a good man who lost his way, not a predator"]
+    },
+    "pretty-woman/kit-de-luca": {
+      "role_name": "Kit De Luca",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Broadway Baby", "from": "Follies", "composer": "Stephen Sondheim", "why": "The survivor with great dreams and a sharp tongue — alto/mezzo with wit and genuine loyalty", "type": "style_match"},
+        {"title": "Don't Tell Mama", "from": "Cabaret", "composer": "John Kander", "why": "The street-smart comedy mezzo who lives life on her own terms — Kit condensed", "type": "style_match"},
+        {"title": "I'm Still Here", "from": "Follies", "composer": "Stephen Sondheim", "why": "The woman who has been through it all and is absolutely still standing — belt with resilience and heart", "type": "contrasting"}
+      ],
+      "style_guidance": "Kit is the show's breakout comedy role — alto/mezzo belt with perfect comic timing, loyal heart, and the specific warmth of a best friend who speaks entirely in one-liners. She is funnier than the leads.",
+      "avoid": ["Tragic or self-pitying material — Kit's entire brand is defiant cheerfulness in the face of everything"]
+    },
+    "pretty-woman/happy-man": {
+      "role_name": "Happy Man (Hotel Manager / Narrator)",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The theatrical host who sets up the story — character baritone with warmth and narrator energy", "type": "style_match"},
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "The MC who welcomes the audience into the story's world — knowing, warm, a little bit magic", "type": "style_match"}
+      ],
+      "style_guidance": "The Happy Man is the story's theatrical guide — character baritone/tenor with warmth and the specific quality of someone who believes in the story they are telling. Both narrator and participant.",
+      "avoid": ["Detached narrator energy — the Happy Man loves this story and invests in its outcome"]
+    },
+    "pretty-woman/philip-stuckey": {
+      "role_name": "Philip Stuckey",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Stars", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The character who believes the rules give him rights — tenor/baritone with cold entitlement", "type": "style_match"},
+        {"title": "Epiphany", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "A man whose mask of civility slips to reveal ugliness — the real Stuckey under pressure", "type": "contrasting"}
+      ],
+      "style_guidance": "Stuckey is the villain who believes he is the victim — tenor/baritone with polished surface and genuine menace. He genuinely cannot comprehend that Vivian is more than a transaction.",
+      "avoid": ["Over-theatrical villainy — Stuckey's danger is in his plausibility and sense of entitlement"]
+    },
+    "pretty-woman/james-morse": {
+      "role_name": "James Morse",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Make Them Hear You", "from": "Ragtime", "composer": "Stephen Flaherty", "why": "The older industrialist who is being broken up — baritone with dignity and the sadness of seeing your life's work dismantled", "type": "style_match"}
+      ],
+      "style_guidance": "James Morse is the target of Edward's corporate raid who becomes Edward's conscience — bass-baritone with warmth, age, and the moral weight of someone who built something real.",
+      "avoid": ["Defeated or weak reading — Morse is dignified even in his situation; he is the show's moral anchor"]
+    },
+    "pretty-woman/david-morse": {
+      "role_name": "David Morse",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The son who has watched his father's world be threatened — baritone/tenor with complicated loyalty", "type": "style_match"}
+      ],
+      "style_guidance": "David Morse is a secondary supporting character — baritone/tenor relationship to James Morse. Shows the human cost of Edward's corporate world. Secondary ensemble role.",
+      "avoid": ["Scene-stealing choices — David is a supporting character who serves the larger moral story"]
+    },
+    "pretty-woman/violetta": {
+      "role_name": "Violetta Valery (from La Traviata)",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Sempre libera", "from": "La Traviata", "composer": "Giuseppe Verdi", "why": "This IS Violetta's number — soprano with genuine operatic technique showing the scene's parallel to Vivian", "type": "same_show"},
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "The operatic soprano with layers — the woman performing for the world while feeling everything", "type": "contrasting"}
+      ],
+      "style_guidance": "Violetta appears in the La Traviata opera sequence — a genuine operatic soprano with classical technique is required. This is not a musical theatre belt moment; it is a real opera scene.",
+      "avoid": ["Musical theatre belt approach — the opera sequence requires authentic classical soprano technique"]
+    },
+    "pretty-woman/giulio": {
+      "role_name": "Giulio",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Make Someone Happy", "from": "Do Re Mi", "composer": "Jule Styne", "why": "Warm hotel concierge tenor who genuinely wishes the characters well — service and sincerity", "type": "style_match"}
+      ],
+      "style_guidance": "Giulio is the Regent Beverly Wilshire concierge who sees everything — warm tenor with discretion, warmth, and the hotel-staff ability to understand without judging. Supporting character.",
+      "avoid": ["Flashy or foregrounded choices — Giulio enables the story, he does not compete with it"]
+    },
+    "pretty-woman/alfredo": {
+      "role_name": "Alfredo (from La Traviata)",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Brindisi (Libiamo)", "from": "La Traviata", "composer": "Giuseppe Verdi", "why": "Alfredo's operatic tenor number — requires authentic classical tenor technique in the opera scene", "type": "same_show"}
+      ],
+      "style_guidance": "Alfredo appears in the La Traviata opera sequence — genuine operatic tenor technique required. The scene's power depends on authentic classical performance.",
+      "avoid": ["Musical theatre belt approach — authentic opera is the requirement for this scene"]
+    },
+    "pretty-woman/ensemble-pretty": {
+      "role_name": "Ensemble — Beverly Hills Society, Hollywood Boulevard, Store Clerks, Opera Guests",
+      "musical": "Pretty Woman: The Musical",
+      "songs_to_prepare": [
+        {"title": "Shout", "from": "Pretty Woman: The Musical", "composer": "Bryan Adams / Jim Vallance", "why": "The show's contemporary pop-rock ensemble — shows the rock-musical voice required", "type": "same_show"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "Female ensemble belt energy — the Hollywood Boulevard women with attitude and drive", "type": "style_match"}
+      ],
+      "style_guidance": "Pretty Woman ensemble operates in two worlds: contemporary pop-rock Los Angeles and the classical opera house. Versatile voices that can handle both, with strong character work for both worlds.",
+      "avoid": ["Single-register approach — the ensemble must convincingly span street and society"]
+    }
+  }
+}

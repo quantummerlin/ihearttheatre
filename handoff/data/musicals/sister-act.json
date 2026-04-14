@@ -1,0 +1,652 @@
+{
+  "musical": {
+    "id": "sister-act",
+    "title": "Sister Act",
+    "music_by": "Alan Menken",
+    "lyrics_by": "Glenn Slater",
+    "book_by": "Cheri Steinkellner & Bill Steinkellner",
+    "based_on": "1992 Whoopi Goldberg film",
+    "year_premiered": 2006,
+    "broadway_opening": "2011-04-20",
+    "setting": "Philadelphia — a nightclub, a convent, and the streets",
+    "time_period": "Late 1970s (disco era)",
+    "themes": ["found family", "faith", "redemption", "sisterhood", "being yourself", "courage", "transformation", "community"],
+    "genre_tags": ["comedy", "disco", "motown", "gospel", "feel_good", "ensemble_heavy", "female_driven"],
+    "vocal_style": "Disco, Motown, gospel, and soul with big ensemble harmonies and belt numbers",
+    "dance_intensity": "high",
+    "orchestra_size": "full_pit_with_horns",
+    "typical_cast_size": "25-35",
+    "age_range": "18-70 (nuns range widely, plus club performers)",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Deloris Van Cartier, a disco diva wannabe, witnesses a murder by her gangster boyfriend Curtis. Placed in witness protection in a convent, she clashes with the strict Mother Superior but transforms the choir of tone-deaf nuns into a gospel sensation, finding unexpected sisterhood and purpose along the way."
+  },
+  "roles": [
+    {
+      "id": "sister-act-deloris",
+      "name": "Deloris Van Cartier",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 25, "max": 42},
+      "description": "A big-voiced, big-personality disco diva who dreams of stardom. She's brash, funny, warm, and ultimately discovers that real fulfillment comes from community, not fame. Must carry the entire show with vocal power, comedic chops, and genuine heart. The Whoopi Goldberg role.",
+      "vocal": {
+        "range": "G3-F5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "Bb3-F5",
+        "tessitura": "mid-high",
+        "style_notes": "MASSIVE belt required. Disco diva meets gospel powerhouse. Must be able to belt to the rafters in 'Fabulous, Baby!' and 'Raise Your Voice' while also showing vulnerability. R&B/soul vocal quality essential. This is a belt role — no two ways about it."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["disco", "motown", "choreographic_staging", "high_energy"],
+        "stamina": "very_high",
+        "notes": "Disco numbers require serious dance ability. Must look like a natural performer on stage. High energy throughout — she's the engine of the show."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["diva with heart", "fish out of water", "unlikely hero", "comedic lead"],
+        "emotional_range": "high — brash confidence, vulnerability, humor, genuine warmth, transformation, leadership",
+        "comedy_skills": true,
+        "notes": "Must be genuinely hilarious while having real emotional depth. The fish-out-of-water comedy in the convent must land. But the genuine bond she forms with the nuns must feel earned. She transforms them but they transform her too."
+      },
+      "performance": {
+        "stage_time_percentage": 80,
+        "solo_songs": 5,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 3,
+        "special_skills": ["disco_diva_performance", "gospel_choir_leading", "physical_comedy", "audience_engagement"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "One of the great female comedy-belt leads. Requires everything — voice, comedy, dance, heart. A star-making role for big-voiced performers who can also act and be funny.",
+        "common_casting": "Powerful belter with huge personality, comedy chops, and dance ability. Must be someone the audience falls in love with. Star quality essential.",
+        "standout_opportunity": "'Raise Your Voice' and the gospel transformation numbers are showstoppers. If you can belt AND be funny AND have heart, this role is career-defining."
+      },
+      "growth_profile": {
+        "skills_developed": ["belt_power", "comedic_lead", "disco_dance", "gospel_singing", "audience_connection", "leadership_on_stage"],
+        "challenge_areas": ["sustaining_enormous_energy", "belt_stamina", "balancing_comedy_and_heart"],
+        "recommended_for": ["powerful belters wanting a star vehicle", "comedic performers with vocal power", "anyone who dreams of being a leading lady with personality"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["BIG voice — belt is non-negotiable", "genuine comedy ability", "dance skills", "warmth and likeability", "star quality"],
+        "common_mistakes": ["all voice no personality", "not funny enough", "can't dance", "no vulnerability — all diva"],
+        "tips": ["Deloris LIVES to perform. Being stuck in a convent is her worst nightmare — until it isn't. The comedy comes from her big personality crashing into quiet convent life. But the heart comes from discovering she was looking for a family all along. Belt it, land the jokes, then break our hearts."]
+      },
+      "key_songs": [
+        {"title": "Fabulous, Baby!", "type": "solo", "notes": "Opening disco number. Deloris's dream of stardom. Big, brash, fabulous."},
+        {"title": "Take Me to Heaven", "type": "ensemble_lead", "notes": "Deloris transforms the choir. Gospel explosion. Showstopper."},
+        {"title": "Raise Your Voice", "type": "ensemble_lead", "notes": "The nuns find their voices. Empowerment anthem. Massive."},
+        {"title": "Sister Act", "type": "solo_with_ensemble", "notes": "Deloris realizes the nuns are her family. Emotional turn."},
+        {"title": "Spread the Love Around", "type": "ensemble_lead", "notes": "Finale. Celebration. Full disco gospel explosion."}
+      ]
+    },
+    {
+      "id": "sister-act-mother-superior",
+      "name": "Mother Superior",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 45, "max": 65},
+      "description": "The strict, traditional head of the convent who clashes with Deloris's brash personality. She's stern, devoted to her faith, and resistant to change — but beneath the rigid exterior is a woman who genuinely cares about her nuns and ultimately finds common ground with Deloris. Her comic timing must be impeccable.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "mezzo-soprano/alto",
+        "belt_required": true,
+        "belt_range": "A3-C5",
+        "tessitura": "mid",
+        "style_notes": "More theatrical belt than Deloris's R&B style. Must have power and authority. 'Here Within These Walls' is a beautiful mezzo showcase. Needs warmth underneath the sternness."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "light_movement"],
+        "stamina": "moderate",
+        "notes": "Minimal dance. Physical comedy in reactions to Deloris's antics. Dignified movement that occasionally breaks."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["strict authority", "stern mother figure", "reluctant ally", "hidden warmth"],
+        "emotional_range": "high — sternness, exasperation, hidden humor, faith, vulnerability, eventual acceptance",
+        "comedy_skills": true,
+        "notes": "Must be genuinely funny through sternness — the comedy comes from her reactions, not from clowning. Her growing respect for Deloris must be subtle and earned. The audience should love her BECAUSE she's difficult."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["authority_presence", "reaction_comedy", "dignified_physicality"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "The Maggie Smith role — stern exterior, heart of gold. Gets some of the biggest laughs through understatement. A brilliant showcase for mature actresses with comic timing and vocal power.",
+        "common_casting": "Experienced actress with authority, comic timing, and a strong singing voice. Must be able to hold the stage against Deloris's energy.",
+        "standout_opportunity": "Mother Superior's dry reactions to Deloris's chaos are comedy gold. A great Mother Superior steals the show through sheer dignity."
+      },
+      "growth_profile": {
+        "skills_developed": ["authority_roles", "reaction_comedy", "mezzo_belt", "dramatic_acting", "foil_work"],
+        "challenge_areas": ["not_being_overshadowed_by_Deloris", "finding_humor_in_sternness", "the_emotional_softening"],
+        "recommended_for": ["mature performers wanting a meaty role", "actresses with authority and comic timing", "those who excel at understated comedy"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["authority", "comic timing (especially reactions)", "vocal power", "genuine faith/sternness", "can she hold her own against Deloris?"],
+        "common_mistakes": ["being genuinely mean instead of stern", "no humor", "folding too quickly — the resistance must last"],
+        "tips": ["Mother Superior has devoted her ENTIRE life to this convent. When Deloris arrives and turns everything upside down, it's not just annoying — it threatens everything she believes in. Her resistance isn't stubbornness — it's faith. When she finally accepts Deloris, it should cost her something."]
+      },
+      "key_songs": [
+        {"title": "Here Within These Walls", "type": "solo", "notes": "Mother Superior's devotion to the convent. Beautiful, measured, reveals her depth."},
+        {"title": "Haven't Got a Prayer", "type": "duet", "notes": "Comic clash with Deloris. Battle of wills set to music."},
+        {"title": "Here Within These Walls (Reprise)", "type": "solo", "notes": "Mother Superior faces change. Emotional evolution."},
+        {"title": "Spread the Love Around", "type": "ensemble", "notes": "Finale — Mother Superior joins the celebration."}
+      ]
+    },
+    {
+      "id": "sister-act-curtis",
+      "name": "Curtis Jackson",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 50},
+      "description": "Deloris's smooth, dangerous gangster boyfriend. He's charming, menacing, and determined to silence Deloris before she can testify. Think Motown swagger meets genuine menace.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "baritone/tenor",
+        "belt_required": true,
+        "belt_range": "D3-F#4",
+        "tessitura": "mid",
+        "style_notes": "Smooth Motown/soul style with edge. Must be vocally charming and threatening. 'When I Find My Baby' is a great soul number."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["motown_choreography", "smooth_staging"],
+        "stamina": "moderate",
+        "notes": "Smooth mover. Motown-style choreography with his henchmen. Must look cool."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["charming villain", "smooth gangster", "dangerous lover", "comic antagonist"],
+        "emotional_range": "moderate — charm, menace, frustration, possessiveness, comic villainy",
+        "comedy_skills": true,
+        "notes": "Must balance genuine threat with comic energy. He's a competent gangster surrounded by incompetent henchmen. His frustration is funny; his menace is real."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["smooth_menace", "motown_performance", "comic_villain"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun villain role with great musical material. Gets to be smooth, funny, and dangerous. Good showcase for charismatic male performers.",
+        "common_casting": "Smooth, charismatic performer with strong voice and stage presence. Must look dangerous and sound like Motown.",
+        "standout_opportunity": "'When I Find My Baby' and the henchmen scenes are audience favorites."
+      },
+      "growth_profile": {
+        "skills_developed": ["villain_work", "motown_style", "charm_and_menace", "comic_antagonist"],
+        "challenge_areas": ["balancing_comedy_and_threat", "not_being_overshadowed_by_nuns"],
+        "recommended_for": ["charismatic baritones wanting villain experience", "performers with soul/R&B vocal quality"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["smooth charisma", "vocal quality", "genuine menace beneath comedy", "stage presence"],
+        "common_mistakes": ["too scary — Curtis is also funny", "too funny — Curtis is also scary", "can't sing the style"],
+        "tips": ["Curtis is James Brown if James Brown was a mob boss. He's the coolest person in every room — and he knows it. Play the swagger genuinely and let the menace simmer underneath."]
+      },
+      "key_songs": [
+        {"title": "When I Find My Baby", "type": "solo_with_ensemble", "notes": "Curtis hunts for Deloris. Smooth, menacing, great Motown number."},
+        {"title": "Lady in the Long Black Dress", "type": "ensemble", "notes": "With henchmen. Comic villain number."},
+        {"title": "It's Good to Be a Nun", "type": "ensemble", "notes": "Confrontation at the convent."}
+      ]
+    },
+    {
+      "id": "sister-act-eddie",
+      "name": "Eddie Souther (Sweaty Eddie)",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 25, "max": 40},
+      "description": "A nervous, sweaty cop who has been in love with Deloris since high school. He's tasked with protecting her in the convent. Sweet, bumbling, devoted, and ultimately heroic. The love interest who wins through genuine goodness.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "tenor",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Sweet tenor with belt capability. Must handle 'I Could Be That Guy' which is a fun, earnest solo. Pop/rock quality."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comedic_movement", "staging"],
+        "stamina": "moderate",
+        "notes": "Awkward character movement. Not a dancer — that's part of his charm."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["loveable nerd", "devoted admirer", "reluctant hero", "bumbling cop"],
+        "emotional_range": "moderate — nervousness, devotion, bravery, sweetness",
+        "comedy_skills": true,
+        "notes": "Must be endearing in his awkwardness. The audience should root for Eddie. His eventual heroism must feel earned — he's braver than he knows."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["endearing_awkwardness", "cop_physicality"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Sweet supporting role with a nice solo and genuine character arc. Good for tenors who are better at being charming than being cool.",
+        "common_casting": "Likeable, slightly nerdy tenor with genuine warmth.",
+        "standout_opportunity": "'I Could Be That Guy' is a sweet audience favorite. A loveable Eddie warms the whole show."
+      },
+      "growth_profile": {
+        "skills_developed": ["leading_man_basics", "comedic_acting", "tenor_solo", "character_arc"],
+        "challenge_areas": ["not_being_overshadowed_by_bigger_roles", "making_sweet_interesting"],
+        "recommended_for": ["tenors building featured role experience", "nice-guy actors wanting romantic interest roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["likeability", "sweet singing voice", "genuine nervousness", "chemistry with Deloris"],
+        "common_mistakes": ["too cool — Eddie is NOT cool", "no backbone — Eddie is nervous but not weak", "boring sweetness"],
+        "tips": ["Eddie has loved Deloris since high school and has never been cool enough to tell her. He's a good cop, a good man, and a terrible flirt. His heroism comes from love, not courage."]
+      },
+      "key_songs": [
+        {"title": "I Could Be That Guy", "type": "solo", "notes": "Eddie's determination to be worthy of Deloris. Sweet, earnest, funny."},
+        {"title": "Finale sequence", "type": "ensemble", "notes": "Eddie's heroic moment."}
+      ]
+    },
+    {
+      "id": "sister-act-mary-robert",
+      "name": "Sister Mary Robert",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 18, "max": 28},
+      "description": "The youngest, shyest, most timid nun who is most transformed by Deloris's influence. She starts as a whisper and ends as a powerhouse. Her vocal transformation is the most dramatic in the show — she's the one who goes from barely audible to bringing the house down.",
+      "vocal": {
+        "range": "A3-G5",
+        "voice_type": "soprano/mezzo with hidden belt",
+        "belt_required": true,
+        "belt_range": "C4-F5",
+        "tessitura": "mid-high",
+        "style_notes": "Must convincingly start quiet/timid and reveal a MASSIVE voice. The reveal is the whole point — quiet mouse becomes vocal powerhouse. The transformation must be thrilling."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["staging", "gentle_to_energetic_progression"],
+        "stamina": "moderate",
+        "notes": "Movement mirrors vocal transformation — from contained to liberated."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["shy wallflower", "hidden talent", "transformation story", "underdog"],
+        "emotional_range": "high — timidity, self-doubt, growing confidence, joy, power, triumph",
+        "comedy_skills": true,
+        "notes": "The transformation arc is crucial. Must be convincingly shy early so that the vocal reveal is thrilling. Her growing confidence should inspire the audience."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["vocal_transformation_acting", "shy_to_powerful_arc"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "The hidden gem role. When Sister Mary Robert finally unleashes her voice, it's the biggest audience reaction in the show. A star-making supporting role for big voices who can also act shy.",
+        "common_casting": "Young performer with a huge voice who can convincingly play timid. The gap between the shy exterior and the vocal power is the casting.",
+        "standout_opportunity": "The vocal reveal is the single most exciting moment in Sister Act. If you have the voice, this is your role."
+      },
+      "growth_profile": {
+        "skills_developed": ["transformation_acting", "belt_showcase", "confidence_arc", "emotional_range"],
+        "challenge_areas": ["convincing_shyness_when_you_have_a_big_voice", "timing_the_reveal"],
+        "recommended_for": ["big-voiced performers who relate to being shy", "young belters wanting a star-making supporting role", "performers who love transformation stories"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["BIG voice (essential)", "can they play shy convincingly?", "the transformation — do you get chills?", "genuine sweetness"],
+        "common_mistakes": ["not shy enough early — the reveal doesn't work", "not powerful enough at the reveal", "one-note characterization"],
+        "tips": ["Sister Mary Robert has a volcano inside her and has been taught her whole life to keep it quiet. When Deloris gives her permission to be loud, it's not just singing — it's liberation. Make us FEEL that release. Start so quiet we lean in, then blow the roof off."]
+      },
+      "key_songs": [
+        {"title": "The Life I Never Led", "type": "solo", "notes": "Mary Robert's quiet longing for a bigger life. Builds from whisper to power. Devastating."},
+        {"title": "Raise Your Voice", "type": "ensemble_featured", "notes": "Mary Robert's big vocal moment. The transformation revealed."},
+        {"title": "Take Me to Heaven", "type": "ensemble", "notes": "Part of the choir transformation."},
+        {"title": "Spread the Love Around", "type": "ensemble", "notes": "Finale. Mary Robert fully unleashed."}
+      ]
+    },
+    {
+      "id": "sister-act-mary-lazarus",
+      "name": "Sister Mary Lazarus",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 55, "max": 75},
+      "description": "The oldest, grumpiest nun who is most resistant to Deloris — but once she embraces the music, becomes the most enthusiastic. Comic gold. She's the cantankerous one with surprising hidden energy.",
+      "vocal": {
+        "range": "F3-C5",
+        "voice_type": "alto/mezzo",
+        "belt_required": false,
+        "belt_range": "G3-Bb4",
+        "tessitura": "low-mid",
+        "style_notes": "Character voice. Grumpy delivery that transforms to enthusiastic. Doesn't need big belt — needs personality."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comedic_movement"],
+        "stamina": "moderate",
+        "notes": "Physical comedy — old nun getting into the groove. The funnier the commitment, the better."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["grumpy elder", "resistant convert", "surprise enthusiast"],
+        "emotional_range": "moderate — grumpiness, resistance, grudging enjoyment, full enthusiasm",
+        "comedy_skills": true,
+        "notes": "The arc from grumpy holdout to the most enthusiastic convert is pure comedy. Must commit fully to both ends."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["grumpy_comedy", "transformation_comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Scene-stealing featured role for older performers. Gets huge laughs with great comic material. Fun and accessible.",
+        "common_casting": "Older character actress with comic timing. Must be willing to be ridiculous.",
+        "standout_opportunity": "When Mary Lazarus finally gets into the groove, the audience cheers."
+      },
+      "growth_profile": {
+        "skills_developed": ["comic_character_work", "transformation_comedy", "ensemble_skills"],
+        "challenge_areas": ["limited_material", "physical_demands_for_older_performer"],
+        "recommended_for": ["older performers wanting fun featured roles", "character actresses who love comedy"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["comic timing", "grumpy with heart", "physical comedy willingness", "age-appropriate casting"],
+        "common_mistakes": ["too mean — must be loveable underneath", "not committing to the musical conversion"],
+        "tips": ["Mary Lazarus has been doing things HER way for 50 years and she's NOT going to change. Except she does. And she LOVES it. The longer you resist, the funnier the conversion."]
+      },
+      "key_songs": [
+        {"title": "Take Me to Heaven", "type": "ensemble", "notes": "Grudging participant to enthusiastic convert."},
+        {"title": "Raise Your Voice", "type": "ensemble", "notes": "Fully committed to the new sound."},
+        {"title": "Sunday Morning Fever", "type": "ensemble", "notes": "Disco moves. The older the nun, the funnier the disco."}
+      ]
+    },
+    {
+      "id": "sister-act-mary-patrick",
+      "name": "Sister Mary Patrick",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 20, "max": 40},
+      "description": "The perpetually cheerful, enthusiastic, bubbly nun who is immediately delighted by Deloris. She's the convent's ray of sunshine — always happy, always supportive, always ready to party. Provides joyful energy throughout.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "soprano/mezzo",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid-high",
+        "style_notes": "Bright, energetic, joyful vocal quality. Must sustain bubbly energy vocally. Strong ensemble voice with featured moments."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["energetic_staging", "disco", "joyful_movement"],
+        "stamina": "high",
+        "notes": "Must maintain high-energy movement throughout. Always the most enthusiastic dancer."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["perpetual optimist", "joyful sidekick", "enthusiastic supporter"],
+        "emotional_range": "moderate — joy, excitement, bubbliness, occasional depth",
+        "comedy_skills": true,
+        "notes": "Must be genuinely joyful without being annoying. The audience should love her infectious energy."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["infectious_joy", "high_energy", "always_on"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun featured role for bubbly performers. Good visibility, accessible demands, great audience appeal.",
+        "common_casting": "Naturally bubbly performer with strong voice and high energy.",
+        "standout_opportunity": "Being the most enthusiastic nun is its own reward. The audience loves Mary Patrick."
+      },
+      "growth_profile": {
+        "skills_developed": ["sustained_energy", "ensemble_featured", "joyful_performance"],
+        "challenge_areas": ["maintaining_energy_without_burning_out", "finding_depth_in_joy"],
+        "recommended_for": ["naturally energetic performers", "those building featured ensemble credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine enthusiasm", "singing ability", "physical energy", "likeability"],
+        "common_mistakes": ["annoying instead of endearing", "running out of energy", "one-note happy"],
+        "tips": ["Mary Patrick finds joy in EVERYTHING. It's not naive — it's a choice. She chooses happiness and it's contagious. If you're naturally the person who lights up every room, this is your role."]
+      },
+      "key_songs": [
+        {"title": "Take Me to Heaven", "type": "ensemble", "notes": "The most enthusiastic participant."},
+        {"title": "Raise Your Voice", "type": "ensemble", "notes": "Joyful commitment."},
+        {"title": "Sunday Morning Fever", "type": "ensemble", "notes": "Peak joy."}
+      ]
+    },
+    {
+      "id": "sister-act-monsignor",
+      "name": "Monsignor O'Hara",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 40, "max": 65},
+      "description": "The well-meaning but slightly clueless monsignor who oversees the convent. He's charming, a bit vain, and enjoys the celebrity the choir's new sound brings. Comic relief from the male side of things.",
+      "vocal": {
+        "range": "B2-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "D3-D4",
+        "tessitura": "mid",
+        "style_notes": "Character singing with charm. Light, warm, slightly pompous."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging"],
+        "stamina": "low",
+        "notes": "Minimal movement. Dignified with occasional comedy."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["well-meaning authority", "slightly vain cleric", "comic churchman"],
+        "emotional_range": "low-moderate — charm, self-importance, warmth, cluelessness",
+        "comedy_skills": true,
+        "notes": "Must be charming and slightly self-important without being unlikeable. He genuinely cares about the convent but also loves the attention."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["clerical_charm", "light_comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Nice featured role for male performers in a largely female show. Fun material, low pressure.",
+        "common_casting": "Charming character actor with clerical bearing.",
+        "standout_opportunity": "A charming Monsignor adds warmth and comedy to the church scenes."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_comedy", "authority_roles", "ensemble_support"],
+        "challenge_areas": ["limited_material"],
+        "recommended_for": ["male performers in female-heavy shows", "character actors building credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["charm", "comic timing", "authority bearing", "warmth"],
+        "common_mistakes": ["too serious", "no personality"],
+        "tips": ["The Monsignor loves God and he loves being important. Both are genuine. He's not corrupt — he's just a little vain. And when the nuns sound amazing, he's the proudest man in the diocese."]
+      },
+      "key_songs": [
+        {"title": "Bless Our Show", "type": "ensemble", "notes": "Church scenes."},
+        {"title": "Spread the Love Around", "type": "ensemble", "notes": "Finale participation."}
+      ]
+    },
+    {
+      "id": "sister-act-henchmen",
+      "name": "TJ, Joey & Pablo (Curtis's Henchmen)",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 25, "max": 45},
+      "description": "Curtis's three incompetent henchmen tasked with finding and eliminating Deloris. They're hilariously bad at their jobs. Their scenes in and around the convent are comedy highlights — tough guys completely out of their depth with nuns.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "mixed male voices",
+        "belt_required": false,
+        "belt_range": "E3-F4",
+        "tessitura": "mid",
+        "style_notes": "Doo-wop/Motown backing vocal style. Character voices. Must harmonize as a trio."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["motown_choreography", "comedic_staging"],
+        "stamina": "moderate",
+        "notes": "Synchronized Motown-style choreography. The funnier the contrast with their tough-guy image, the better."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["comic thugs", "bumbling villains", "fish out of water"],
+        "emotional_range": "moderate — attempted menace, confusion, comedy",
+        "comedy_skills": true,
+        "notes": "Must be a great comedy trio. Each should have a distinct personality. Physical comedy essential — tough guys who are completely useless."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["trio_comedy", "motown_choreography", "physical_comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun trio roles with great comedy material. Good for male performers in a female-heavy show. The henchmen scenes are audience favorites.",
+        "common_casting": "Physical comedians who can sing harmony and move in sync. Distinct physical types help.",
+        "standout_opportunity": "The convent infiltration scenes are comedy gold. A great henchman trio brings the house down."
+      },
+      "growth_profile": {
+        "skills_developed": ["comedy_trio_work", "motown_harmony", "physical_comedy", "synchronized_movement"],
+        "challenge_areas": ["sharing_laughs_equally", "not_upstaging_each_other"],
+        "recommended_for": ["male performers wanting comedy ensemble work", "those who work well in groups"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical comedy", "trio chemistry", "harmony singing", "distinct character"],
+        "common_mistakes": ["all three playing the same character", "not enough physical commitment", "can't harmonize"],
+        "tips": ["Each henchman needs to be a distinct flavour of incompetent. One's the thinker who can't think, one's the muscle who's too gentle, one's the lookout who can't see. Find your specific brand of useless."]
+      },
+      "key_songs": [
+        {"title": "Lady in the Long Black Dress", "type": "trio", "notes": "The henchmen are confused by nuns. Hilarious number."},
+        {"title": "When I Find My Baby", "type": "ensemble", "notes": "Backing Curtis's hunt."},
+        {"title": "Finale", "type": "ensemble", "notes": "Even the henchmen join the celebration."}
+      ]
+    },
+    {
+      "id": "sister-act-nun-ensemble",
+      "name": "Ensemble — Nuns of the Convent",
+      "role_type": "ensemble",
+      "gender": "female",
+      "age_range": {"min": 18, "max": 70},
+      "description": "The sisters of the convent who form the choir. They start as a hilariously bad choir and transform into a gospel sensation. The nun ensemble IS the show — their transformation is the story. Must go from tone-deaf to transcendent. Often includes specific named nuns like Sister Mary Theresa, Sister Mary Martin-of-Tours, etc.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "full female chorus — soprano, mezzo, alto",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Must convincingly sing badly at the start and brilliantly by the climax. Gospel, disco, and soul harmony singing. The choir transformation is the musical spine of the show. Each part must be strong."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["disco", "gospel_movement", "choreographic_staging"],
+        "stamina": "high",
+        "notes": "Major choreographic demands in 'Take Me to Heaven', 'Raise Your Voice', and 'Sunday Morning Fever'. Must go from stiff convent movement to full disco choreography."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["individual nuns", "choir members", "community"],
+        "emotional_range": "moderate — devotion, confusion, growing joy, liberation, sisterhood",
+        "comedy_skills": true,
+        "notes": "Each nun should be a distinct character with her own personality and transformation arc. The comedy of nuns discovering disco must be genuine and joyful."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 7,
+        "quick_changes": 1,
+        "special_skills": ["choir_transformation_acting", "gospel_singing", "disco_choreography", "habit_management"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_get_cast"],
+        "why": "One of the most fun ensemble experiences in musical theatre. The transformation from terrible to amazing is thrilling to perform and watch. Develops harmony singing, dance, and character work.",
+        "common_casting": "Female performers of all ages who can sing harmony, dance, and create distinct nun characters.",
+        "standout_opportunity": "Create a memorable individual nun and the directors AND audience will notice you."
+      },
+      "growth_profile": {
+        "skills_developed": ["gospel_harmony", "disco_dance", "character_creation", "ensemble_transformation", "choir_skills"],
+        "challenge_areas": ["singing_badly_on_purpose_convincingly", "habit_choreography", "sustaining_energy"],
+        "recommended_for": ["female performers wanting ensemble experience", "singers building harmony skills", "performers who love the community aspect of theatre"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["strong harmony singing", "dance ability", "character individuality", "can they sing badly AND brilliantly?", "joy"],
+        "common_mistakes": ["generic nun characterization", "can't actually harmonize", "not committing to the transformation"],
+        "tips": ["Your nun has a name, a backstory, and a reason she joined the convent. Maybe she's a former teacher, a retired nurse, a lifelong believer. When Deloris arrives and turns everything upside down, your SPECIFIC nun reacts in her SPECIFIC way. That's what makes the ensemble come alive."]
+      },
+      "key_songs": [
+        {"title": "Take Me to Heaven", "type": "ensemble", "notes": "THE transformation number. From terrible to transcendent. The spine of the show."},
+        {"title": "Raise Your Voice", "type": "ensemble", "notes": "Empowerment anthem. Full gospel power."},
+        {"title": "Sunday Morning Fever", "type": "ensemble", "notes": "Disco nuns. Peak comedy and joy."},
+        {"title": "Spread the Love Around", "type": "ensemble", "notes": "Finale celebration."},
+        {"title": "It's Good to Be a Nun", "type": "ensemble", "notes": "Convent introduction number."},
+        {"title": "Bless Our Show", "type": "ensemble", "notes": "Prayer before performance."}
+      ]
+    }
+  ]
+}

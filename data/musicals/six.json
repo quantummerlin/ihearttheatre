@@ -1,0 +1,598 @@
+{
+  "musical": {
+    "id": "six",
+    "title": "SIX The Musical",
+    "music_by": "Toby Marlow and Lucy Moss",
+    "lyrics_by": "Toby Marlow and Lucy Moss",
+    "book_by": "Toby Marlow and Lucy Moss",
+    "based_on": "The lives of the six wives of Henry VIII",
+    "year_premiered": 2017,
+    "broadway_opening": "2021-10-03",
+    "setting": "Concert stage (pop concert format)",
+    "time_period": "Historical figures reimagined in contemporary pop concert setting",
+    "themes": [
+      "Women reclaiming their narratives",
+      "Sisterhood over competition",
+      "Identity beyond relationships with men",
+      "Female empowerment",
+      "Rewriting history from women's perspectives",
+      "Self-worth beyond suffering",
+      "Unity and solidarity"
+    ],
+    "genre_tags": [
+      "Pop concert",
+      "Historical reimagining",
+      "Female-driven",
+      "Contemporary pop",
+      "Feminist",
+      "Ensemble"
+    ],
+    "vocal_style": "Contemporary pop spanning multiple genres — dance-pop, R&B, power ballad, hip-hop, electro-pop, girl-group. Each queen has a distinct pop genre identity.",
+    "dance_intensity": "moderate_to_high",
+    "orchestra_size": "All-female band called the 'Ladies in Waiting' (4 players) — keys, guitar, bass, drums",
+    "typical_cast_size": "6 (queens) + 4 (band) — alternates common",
+    "age_range": "18-40",
+    "difficulty_overall": "advanced",
+    "junior_version_available": true,
+    "license_holder": "Theatrical Rights Worldwide (TRW) / iMTI (Junior/Teen)",
+    "synopsis": "The six wives of Henry VIII take the stage as a girl-group pop concert, each queen performing a solo number to prove SHE had it worst and therefore deserves to be the lead singer. From Catherine of Aragon's Beyoncé-inspired anthem through to Catherine Parr's reflective finale, the queens compete — until they realise that defining themselves by their suffering at the hands of one man misses the point entirely. Together, they choose to rewrite their stories on their own terms."
+  },
+  "roles": [
+    {
+      "id": "catherine-aragon",
+      "name": "Catherine of Aragon",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 35 },
+      "description": "The first wife — proud, powerful, and FURIOUS. Catherine was a Spanish princess, Queen of England for over 20 years, and refused to accept Henry's annulment. She opens the competition with fierce Beyoncé-inspired energy, demanding recognition for what she endured and never backing down.",
+      "vocal": {
+        "range": "G3-E5",
+        "voice_type": "Mezzo-Soprano / Power Belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "Upper belt with gospel/R&B power. Sustained belting throughout.",
+        "style_notes": "Beyoncé-inspired power pop with gospel and R&B influences. Must have extraordinary belt power and sustain. 'No Way' is a relentless belt showcase demanding vocal stamina and fierce attitude. Think Beyoncé meets Destiny's Child."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["Pop choreography", "Concert staging", "Power moves"],
+        "stamina": "High — opens the show with maximum energy",
+        "notes": "Concert-style pop choreography. Must command the stage with queen energy from the first note. Beyoncé-level confidence in movement."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["Fierce queen", "Wronged wife", "Unbreakable"],
+        "emotional_range": "Focused — righteous fury, pride, defiance, eventual solidarity",
+        "comedy_skills": true,
+        "notes": "Catherine sets the competitive tone. She's not just angry — she's REGAL. Must convey the gravity of a 24-year marriage and political betrayal while being a pop star. The audience script interactions require confidence and improvisation ability."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["Sustained power belting", "Concert-stage presence", "Audience interaction", "Pop choreography while belt singing"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "Aragon opens the show and must grab the audience immediately with vocal power and stage command. 'No Way' is one of the most demanding belt showcases in modern musical theatre. This role develops power belt technique, concert presence, and fierce confidence.",
+        "common_casting": "Powerhouse belters with natural authority and R&B/gospel vocal quality. Must own the stage from the first note.",
+        "standout_opportunity": "'No Way' is a vocal EVENT — when the belt is right, it sets the standard for the entire show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Power belt technique and sustain",
+          "Concert-stage presence and command",
+          "Pop/R&B vocal style",
+          "Audience interaction",
+          "Opening a show with maximum impact"
+        ],
+        "challenge_areas": [
+          "Sustained belting without vocal fatigue",
+          "Setting the energy bar for the entire show",
+          "Maintaining regal authority in pop concert format"
+        ],
+        "recommended_for": [
+          "Power belters wanting a showcase role",
+          "Performers with R&B/gospel vocal background",
+          "Those developing concert-style stage presence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Jaw-dropping belt power",
+          "Natural authority and queen energy",
+          "R&B/gospel vocal quality",
+          "Stage command and concert presence",
+          "The ability to open a show and set the bar"
+        ],
+        "common_mistakes": [
+          "All power, no emotional connection",
+          "Running out of voice on sustained belts",
+          "Not enough regal quality — she's a QUEEN, not just a singer"
+        ],
+        "tips": [
+          "Catherine was queen for 24 YEARS and refused to give up her crown — play that resolve",
+          "Study Beyoncé's stage presence — the confidence, the power, the control",
+          "Vocal health is crucial — 'No Way' demands sustained belt that must be sustainable",
+          "She's righteous, not bitter — there's an important difference"
+        ]
+      },
+      "key_songs": [
+        { "title": "No Way", "type": "Solo", "notes": "Beyoncé-inspired power anthem. Sustained belt showcase. Sets the bar for the entire show." },
+        { "title": "Ex-Wives", "type": "Ensemble", "notes": "Opening number introducing all six queens. Full company energy." },
+        { "title": "Six / Megasix", "type": "Ensemble", "notes": "Finale number. Unity anthem with all queens." }
+      ]
+    },
+    {
+      "id": "anne-boleyn",
+      "name": "Anne Boleyn",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 35 },
+      "description": "The second wife — witty, irreverent, and refuses to be defined by her beheading. Anne was the most provocative of Henry's wives, and in SIX she channels that energy into a cheeky, darkly funny pop-punk anthem. She turns her own execution into a punchline while making a powerful point about how history has treated her.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "Mezzo-Soprano / Pop Belt",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Upper belt with pop-punk edge and spoken-word elements",
+        "style_notes": "Lily Allen / Avril Lavigne inspired pop-punk with attitude. Cheeky, irreverent vocal delivery that mixes singing with spoken word and comedy timing. Must belt powerfully while maintaining comedic delivery."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["Pop-punk staging", "Concert choreography", "Playful movement"],
+        "stamina": "Moderate to high",
+        "notes": "Anne's movement is playful, provocative, and slightly chaotic — she's having the most fun of any queen. Physical comedy elements throughout."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["Provocateur", "Dark comedian", "Reclaimer", "Pop-punk rebel"],
+        "emotional_range": "Comedy with surprising depth — irreverence, dark humor, genuine anger at injustice, defiance",
+        "comedy_skills": true,
+        "notes": "Anne gets the biggest laughs in the show — her beheading jokes are legendary. But underneath the humor is a woman refusing to be a victim. The comedy must land while the underlying message hits even harder."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["Comedy timing in pop performance", "Audience interaction and banter", "Dark humor delivery", "Pop-punk vocal style"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out"],
+        "why": "Anne Boleyn is the audience favourite in most productions — she gets the most laughs and the most memorable moments. 'Don't Lose Ur Head' is a comedy masterpiece that also packs an emotional punch. This role develops comedy-in-concert skills and dark humor delivery.",
+        "common_casting": "Charismatic, funny performers with strong pop voices and natural comedic timing. The performer who makes the audition room laugh.",
+        "standout_opportunity": "'Don't Lose Ur Head' — the beheading puns, the audience interaction, the pop-punk energy — is often the most-quoted number from the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comedy within pop music performance",
+          "Dark humor and irreverent delivery",
+          "Pop-punk vocal style",
+          "Audience banter and interaction",
+          "Making serious points through comedy"
+        ],
+        "challenge_areas": [
+          "Keeping the comedy fresh every performance",
+          "Not letting the laughs overshadow the message",
+          "Balancing irreverence with genuine emotion"
+        ],
+        "recommended_for": [
+          "Natural comedians with strong pop voices",
+          "Performers who thrive on audience interaction",
+          "Those developing comedy-in-music skills",
+          "Pop-punk vocalists wanting a theatrical showcase"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Impeccable comedy timing",
+          "Strong pop belt with attitude",
+          "Natural audience rapport",
+          "The ability to be hilarious AND meaningful",
+          "Pop-punk energy and style"
+        ],
+        "common_mistakes": [
+          "All comedy, no substance — Anne has a point to make",
+          "Trying too hard to be funny — the material does the work if you commit",
+          "Not enough vocal power beneath the comedy"
+        ],
+        "tips": [
+          "Anne is the funniest queen but she's also making the most radical point — she RECLAIMS her death",
+          "Study Lily Allen's delivery — cheeky, sharp, darkly funny",
+          "The beheading jokes only work with total commitment — don't apologise for them",
+          "Audience interaction must feel spontaneous even though it's rehearsed"
+        ]
+      },
+      "key_songs": [
+        { "title": "Don't Lose Ur Head", "type": "Solo", "notes": "Pop-punk comedy anthem. Dark humor, beheading puns, audience interaction. The most-quoted number." },
+        { "title": "Ex-Wives", "type": "Ensemble", "notes": "Opening number. Anne's irreverent energy sets the tone." },
+        { "title": "Six / Megasix", "type": "Ensemble", "notes": "Finale. Unity and reclamation." }
+      ]
+    },
+    {
+      "id": "jane-seymour",
+      "name": "Jane Seymour",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 35 },
+      "description": "The third wife — gentle, maternal, and the only one Henry truly mourned. Jane died in childbirth giving Henry his longed-for son. In SIX, she channels Adele-inspired power ballad energy, presenting herself as the ultimate sacrifice. Her number is the emotional gut-punch of the show.",
+      "vocal": {
+        "range": "G3-F5",
+        "voice_type": "Soprano / Mezzo with power ballad belt",
+        "belt_required": true,
+        "belt_range": "C4-F5",
+        "tessitura": "Builds from tender low register to soaring high belt. The widest dynamic range of any queen.",
+        "style_notes": "Adele-inspired power ballad. Must start tender and intimate, then build to an overwhelming vocal climax. 'Heart of Stone' requires extraordinary dynamic range — whisper-soft verses exploding into massive belted chorus. This is the vocal showpiece of the entire show."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["Minimal staging", "Emotional performance"],
+        "stamina": "Moderate — the vocal demands are the main physical challenge",
+        "notes": "Jane's number is the most still in the show — standing and delivering vocal emotion rather than dancing. The power comes from the voice, not the movement."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["Gentle soul", "Self-sacrificer", "Power balladeer", "Mother figure"],
+        "emotional_range": "Primarily emotional depth — tenderness, sacrifice, love, quiet strength, devastating vulnerability",
+        "comedy_skills": false,
+        "notes": "Jane is the emotional centre of the show. Her number slows everything down and demands that the audience FEEL. Must convey genuine maternal love and the tragedy of dying for your child. The gentleness makes the vocal power all the more devastating."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["Extraordinary dynamic vocal range", "Power ballad delivery", "Standing-and-delivering emotional performance", "Making an audience cry"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "'Heart of Stone' is widely considered the vocal highlight of SIX — a power ballad that requires the greatest dynamic range and emotional delivery of any number in the show. This role develops ballad technique, emotional authenticity, and the ability to stop a show with pure vocal power.",
+        "common_casting": "The strongest pure singer in the company. Must have extraordinary dynamic range — genuine pianissimo to full-power belt. Adele-level vocal quality.",
+        "standout_opportunity": "'Heart of Stone' stops the show. When the belt kicks in, the audience physically reacts. This is a career-defining vocal moment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Power ballad technique and dynamic range",
+          "Emotional vocal delivery",
+          "Building from intimate to explosive",
+          "Standing-and-delivering performance",
+          "Making an audience feel through pure voice"
+        ],
+        "challenge_areas": [
+          "The dynamic range demand is extraordinary",
+          "Sustaining emotional truth over many performances",
+          "The transition from gentle to powerful must feel organic"
+        ],
+        "recommended_for": [
+          "Exceptional vocalists wanting THE ballad showcase",
+          "Performers who communicate emotion through voice",
+          "Those developing dynamic range and control",
+          "Singers who want to stop the show"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Extraordinary vocal range and dynamic control",
+          "The ability to start at a whisper and build to a roar",
+          "Genuine emotional connection",
+          "Adele-level power ballad quality",
+          "The ability to make a room silent with voice alone"
+        ],
+        "common_mistakes": [
+          "Starting too loud — the quiet beginning is essential",
+          "All technique, no emotion — Jane must FEEL",
+          "Rushing the build — let it breathe",
+          "Not enough power for the climax"
+        ],
+        "tips": [
+          "Jane died so her son could live — that's the emotional core of everything",
+          "Study Adele's live performances — the build, the control, the emotional devastation",
+          "'Heart of Stone' needs to build like a wave — start as a ripple, end as a tsunami",
+          "The gentleness makes the power shocking — protect the quiet moments"
+        ]
+      },
+      "key_songs": [
+        { "title": "Heart of Stone", "type": "Solo", "notes": "THE power ballad of the show. Whisper to belt. Emotional devastation. Stops the show." },
+        { "title": "Ex-Wives", "type": "Ensemble", "notes": "Opening number. Jane's gentler energy contrasts with the other queens." },
+        { "title": "Six / Megasix", "type": "Ensemble", "notes": "Finale. Jane's gentle strength within the unity." }
+      ]
+    },
+    {
+      "id": "anna-cleves",
+      "name": "Anna of Cleves",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 35 },
+      "description": "The fourth wife — the one who WON. Henry annulled their marriage after six months because she wasn't attractive enough (according to him), but Anna negotiated the best divorce settlement in history and lived happily ever after as the richest woman in England. She's the show's celebration queen — confident, savvy, and living her best life.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "Mezzo / Alto with hip-hop flow and belt",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "Lower to mid range with rap/spoken word sections and belt moments",
+        "style_notes": "Nicki Minaj / Lizzo inspired hip-hop pop with swagger. Must handle rap verses, spoken word, and belt chorus. 'Get Down' (or 'Haus of Holbein'/'Get Down') is a party anthem requiring vocal versatility and stage command. Attitude and flow over pure vocal power."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["Hip-hop", "Pop choreography", "Voguing", "Club dance"],
+        "stamina": "High — the most dance-heavy queen",
+        "notes": "Anna's number is the biggest dance party of the show. Must command hip-hop choreography with confidence and swagger. This is the party queen — movement should feel celebratory and powerful."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["Boss queen", "Survivor who thrived", "Party starter", "Shrewd negotiator"],
+        "emotional_range": "Primarily celebration and confidence — smugness, joy, independence, triumph",
+        "comedy_skills": true,
+        "notes": "Anna is the queen who refused to be a victim and came out on top. Her energy is pure celebration — she got the money, the houses, and the freedom. Must convey both the party energy and the shrewd intelligence that got her there."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["Rap/spoken word delivery", "Hip-hop dance", "Concert-level hype energy", "Audience engagement as party host"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out"],
+        "why": "Anna is the party of the show — her number lifts the entire audience to their feet. This role develops hip-hop performance, rap delivery, and the ability to turn a theatre into a nightclub. The swagger required is career-building.",
+        "common_casting": "Versatile performers with hip-hop dance skills, rap ability, and infectious party energy. Must own the room like a headliner.",
+        "standout_opportunity": "'Get Down' transforms the theatre into a party. When the energy is right, it's the most fun number in the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Hip-hop and rap performance",
+          "Party-energy stage command",
+          "Pop/hip-hop dance",
+          "Audience hype and engagement",
+          "Swagger and confidence performance"
+        ],
+        "challenge_areas": [
+          "Maintaining rap flow and precision",
+          "Sustaining party energy at concert level",
+          "Making the celebration feel genuine, not forced"
+        ],
+        "recommended_for": [
+          "Performers with hip-hop/rap skills wanting theatrical showcase",
+          "Dancers with pop/hip-hop background",
+          "Those developing stage command and swagger",
+          "Performers who naturally energise a room"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Infectious energy and natural swagger",
+          "Rap/spoken word ability",
+          "Hip-hop dance skills",
+          "The ability to turn any room into a party",
+          "Confident, commanding presence"
+        ],
+        "common_mistakes": [
+          "Forcing the party energy rather than letting it flow",
+          "Weak rap delivery — the flow must be tight",
+          "Not enough dance commitment",
+          "Playing Anna as just party without the intelligence underneath"
+        ],
+        "tips": [
+          "Anna OUTSMARTED Henry VIII — she's not just a party girl, she's the smartest person in the room",
+          "Study Nicki Minaj and Lizzo — the confidence, the flow, the ownership",
+          "The rap sections need practice — flow and rhythm must be effortless",
+          "Your number should make every person in the audience want to dance"
+        ]
+      },
+      "key_songs": [
+        { "title": "Get Down", "type": "Solo", "notes": "Hip-hop party anthem. Rap verses, belt chorus, dance breakdown. The party of the show." },
+        { "title": "Ex-Wives", "type": "Ensemble", "notes": "Opening number. Anna brings the sass." },
+        { "title": "Six / Megasix", "type": "Ensemble", "notes": "Finale. Anna's party energy in the collective." }
+      ]
+    },
+    {
+      "id": "katherine-howard",
+      "name": "Katherine Howard",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 30 },
+      "description": "The fifth wife — the youngest queen, beheaded at just 19. Katherine's story is the most tragic, dealing with grooming, abuse, and exploitation. In SIX, she initially presents a bubbly pop princess persona before revealing the devastating truth beneath. Her number is the emotional turning point of the entire show.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "Soprano / Pop Belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "Bright pop soprano that shifts to raw, emotional belt. The contrast is devastating.",
+        "style_notes": "Ariana Grande / Britney Spears inspired bubbly pop that transforms into raw emotional power. 'All You Wanna Do' starts as a sexy pop number and gradually reveals itself as a harrowing account of abuse. The vocal shift from performative pop to genuine pain is the show's most demanding acting-through-singing moment."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["Pop princess choreography", "Britney-inspired staging"],
+        "stamina": "High — vocally and emotionally demanding",
+        "notes": "Katherine's choreography starts as confident pop princess staging and gradually breaks down as the song reveals its true nature. The physical storytelling of the number's transformation is crucial."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Pop princess masking trauma", "Survivor", "Youngest victim", "Devastating reveal"],
+        "emotional_range": "Extreme — performed bubbly confidence, gradually revealing manipulation, abuse, desperation, and raw vulnerability",
+        "comedy_skills": false,
+        "notes": "The most emotionally demanding role in SIX. Katherine's number is essentially a trauma reveal disguised as a pop song. The performer must sell the bubbly exterior convincingly enough that the gradual revelation is devastating. This requires extraordinary emotional control and the ability to break the audience's hearts."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["Emotional transformation within a single song", "Pop princess performance that shifts to raw truth", "Handling sensitive content (grooming/abuse) with care", "Breaking the audience's hearts"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "Katherine Howard has the most dramatically complex number in SIX — a song that changes meaning as it unfolds. This role develops the incredibly sophisticated skill of performing one thing while gradually revealing another. The emotional demand is extraordinary and the growth potential is immense.",
+        "common_casting": "Young pop sopranos with genuine emotional depth and the maturity to handle sensitive content. Must be able to perform bubbly pop convincingly while carrying devastating subtext.",
+        "standout_opportunity": "'All You Wanna Do' is the moment the show transforms from entertainment to art. When this number works, the audience is shattered."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Performing subtext — saying one thing while revealing another",
+          "Emotional transformation within a single number",
+          "Handling sensitive content with maturity and care",
+          "Pop vocal technique with dramatic depth",
+          "Breaking the fourth wall of performance itself"
+        ],
+        "challenge_areas": [
+          "The emotional toll of performing trauma every show",
+          "Making the bubbly opening convincing enough for the reveal to work",
+          "Self-care and emotional management",
+          "The gradual transformation must be precisely calibrated"
+        ],
+        "recommended_for": [
+          "Emotionally mature young performers",
+          "Pop sopranos with acting depth",
+          "Those ready for the most challenging emotional performance in the show",
+          "Performers wanting to develop subtext performance skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The ability to be genuinely bubbly AND devastatingly vulnerable",
+          "Strong pop soprano/belt voice",
+          "Emotional maturity to handle the content",
+          "The precise calibration of the song's transformation",
+          "Genuine emotional depth"
+        ],
+        "common_mistakes": [
+          "Telegraphing the darkness too early — the bubbly opening must be convincing",
+          "Not being emotionally ready for the content",
+          "Rushing the reveal — it needs to dawn gradually",
+          "All emotion, no vocal control — the singing must remain strong"
+        ],
+        "tips": [
+          "Katherine was 19 when she was killed — hold that youth and vulnerability",
+          "The number works because Katherine doesn't realise at first what's happening to her — play the gradual awareness",
+          "This role requires emotional self-care — develop rituals for before and after performances",
+          "Study how pop music can mask pain — that's the entire mechanism of the number"
+        ]
+      },
+      "key_songs": [
+        { "title": "All You Wanna Do", "type": "Solo", "notes": "Pop number that transforms into a harrowing abuse reveal. The most emotionally complex number in the show." },
+        { "title": "Ex-Wives", "type": "Ensemble", "notes": "Opening. Katherine's bubbly persona established." },
+        { "title": "Six / Megasix", "type": "Ensemble", "notes": "Finale. Katherine's reclamation within the group." }
+      ]
+    },
+    {
+      "id": "catherine-parr",
+      "name": "Catherine Parr",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 35 },
+      "description": "The sixth and final wife — the survivor, scholar, and the one who changes the game. Catherine Parr was the most educated queen, a published author, and she outlived Henry. In SIX, she's the one who stops the competition and challenges the other queens to define themselves beyond their relationship with one man. Her number is the show's thesis statement.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "Mezzo-Soprano / Alto with building belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "Mid-range that builds to powerful belt. Reflective to triumphant.",
+        "style_notes": "Alicia Keys / Emeli Sandé inspired reflective pop that builds to anthemic power. 'I Don't Need Your Love' starts intimate and personal, building to a declaration of independence. The voice should feel wise, warm, and ultimately triumphant."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["Concert staging", "Minimal but powerful movement"],
+        "stamina": "Moderate — the vocal and emotional demands are primary",
+        "notes": "Catherine Parr's number is more about presence than dance. She's the philosopher of the group — her power is in her words and voice, not her movement."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Philosopher", "Survivor", "Game-changer", "Moral centre"],
+        "emotional_range": "Deep — reflection, wisdom, challenge, vulnerability, hope, triumph",
+        "comedy_skills": false,
+        "notes": "Catherine Parr has the most important dramatic function — she changes the entire direction of the show. She must convincingly challenge five powerful women to reconsider their approach. Her number needs to feel like a genuine revelation, not a lecture. She's the most mature queen emotionally."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["Philosophical performance", "Changing the direction of a show", "Building from intimate to anthemic", "Concert-level emotional authenticity"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "Catherine Parr delivers the show's thesis — and must do so with enough conviction to redirect an entire evening. This role develops the sophisticated skill of changing an audience's emotional direction, delivering philosophical ideas through pop music, and closing a show with meaning.",
+        "common_casting": "Emotionally intelligent performers with strong pop-belt voices and natural wisdom. Must feel like the most mature, thoughtful person in the room.",
+        "standout_opportunity": "'I Don't Need Your Love' is the moment the show transcends entertainment and becomes a statement. When it works, the audience's understanding of everything they've seen shifts."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Delivering thematic ideas through performance",
+          "Building from intimate to anthemic",
+          "Philosophical/reflective pop performance",
+          "Redirecting audience emotion",
+          "Closing a show with meaning and power"
+        ],
+        "challenge_areas": [
+          "The number must redirect the show without feeling preachy",
+          "Following Katherine Howard's devastating number is a huge challenge",
+          "Making philosophical ideas emotionally compelling"
+        ],
+        "recommended_for": [
+          "Thoughtful performers with genuine emotional intelligence",
+          "Pop belters wanting to deliver meaningful content",
+          "Those developing the ability to change an audience's emotional direction",
+          "Performers who want to close the show with purpose"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Emotional intelligence and wisdom beyond years",
+          "Strong pop belt that builds organically",
+          "The ability to deliver ideas through song convincingly",
+          "Natural authority earned through thoughtfulness, not force",
+          "The quality of a leader who leads by example"
+        ],
+        "common_mistakes": [
+          "Being preachy — the message must be felt, not lectured",
+          "Not enough vocal power for the anthemic climax",
+          "Lacking the gravitas to redirect the show",
+          "Playing too young — Catherine Parr needs maturity"
+        ],
+        "tips": [
+          "Catherine Parr was a published author and scholar — play the intellectual depth",
+          "She's not telling the other queens they're wrong — she's offering a better way forward",
+          "Study Alicia Keys' performance style — wise, warm, building, powerful",
+          "Your number follows Katherine Howard's devastation — you must lift the audience from that place"
+        ]
+      },
+      "key_songs": [
+        { "title": "I Don't Need Your Love", "type": "Solo", "notes": "The show's thesis statement. Reflective to anthemic. Redirects the entire evening's meaning." },
+        { "title": "Ex-Wives", "type": "Ensemble", "notes": "Opening number. Catherine Parr as the most observant queen." },
+        { "title": "Six / Megasix", "type": "Ensemble", "notes": "Finale. Unity anthem — all queens together, rewriting their stories." }
+      ]
+    }
+  ]
+}

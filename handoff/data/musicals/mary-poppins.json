@@ -1,0 +1,2078 @@
+{
+  "musical": {
+    "id": "mary-poppins",
+    "title": "Mary Poppins",
+    "music_by": "Richard M. Sherman and Robert B. Sherman (original film), George Stiles and Anthony Drewe (new songs)",
+    "lyrics_by": "Richard M. Sherman and Robert B. Sherman, George Stiles and Anthony Drewe",
+    "book_by": "Julian Fellowes",
+    "based_on": "The Mary Poppins stories by P.L. Travers and the 1964 Walt Disney film",
+    "year_premiered": 2004,
+    "broadway_opening": "2006-11-16",
+    "setting": "17 Cherry Tree Lane, London, and various magical locations",
+    "time_period": "Edwardian era, circa 1910",
+    "themes": [
+      "Family and parenting",
+      "The importance of play and imagination",
+      "Finding balance between discipline and joy",
+      "Magic in everyday life",
+      "Growing up while keeping wonder",
+      "Responsibility and kindness",
+      "Seeing beyond appearances"
+    ],
+    "genre_tags": [
+      "Classic",
+      "Family",
+      "Fantasy",
+      "Disney",
+      "British",
+      "Spectacle"
+    ],
+    "vocal_style": "Classic musical theatre with legit soprano, character tenor, and strong ensemble harmonies blending film classics with new theatrical numbers",
+    "dance_intensity": "high",
+    "orchestra_size": "Full pit orchestra (16-22 players)",
+    "typical_cast_size": "30-45",
+    "age_range": "7-65",
+    "difficulty_overall": "advanced",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "When the Banks family of 17 Cherry Tree Lane is in disarray \u2014 the children are unmanageable, George Banks is consumed by work, and Winifred Banks is struggling to hold everything together \u2014 a mysterious nanny arrives on the East Wind. Mary Poppins is practically perfect in every way, and through a series of magical adventures, she transforms not just the children but the entire family. With the help of her friend Bert the chimney sweep, Mary teaches the Banks family that love, imagination, and a spoonful of sugar can fix anything."
+  },
+  "roles": [
+    {
+      "id": "mary-poppins",
+      "name": "Mary Poppins",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": {
+        "min": 22,
+        "max": 45
+      },
+      "description": "The practically perfect nanny who descends from the sky to transform the Banks family. Mary is magical, enigmatic, firm but kind, immaculately composed, and never explains herself. She is warm without being sentimental, authoritative without being harsh, and mystical without being distant. One of the most demanding and rewarding roles in musical theatre.",
+      "vocal": {
+        "range": "A3-G5",
+        "voice_type": "Soprano / Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "E4-F5",
+        "tessitura": "Wide range \u2014 legit soprano for ballads, strong mix/belt for up-tempo numbers, precise diction throughout",
+        "style_notes": "Impeccable diction and vocal precision. Must handle both the classic film songs (legit soprano) and the newer theatrical numbers (stronger belt/mix). 'Practically Perfect' requires vocal agility; 'Anything Can Happen' needs soaring power. British RP accent essential."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Musical theatre",
+          "Edwardian movement",
+          "Tap (Step in Time)",
+          "Flying/harness work"
+        ],
+        "stamina": "Very high \u2014 physically demanding throughout including potential flying",
+        "notes": "Mary moves with supernatural grace and precision. 'Step in Time' requires strong tap skills. Many productions include flying sequences. Must maintain perfect composure while executing demanding choreography."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Enigmatic authority",
+          "Magical mentor",
+          "Perfectionist",
+          "Mystery"
+        ],
+        "emotional_range": "Carefully controlled \u2014 warmth beneath composure, mystery, gentle authority, rare vulnerability",
+        "comedy_skills": true,
+        "notes": "The greatest challenge is what Mary DOESN'T show. She rarely reveals emotion directly \u2014 her warmth comes through actions, not words. Must command every scene while maintaining an air of mystery. The audience should never quite figure her out."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 5,
+        "duets": 3,
+        "ensemble_numbers": 4,
+        "quick_changes": 3,
+        "special_skills": [
+          "Flying/harness work",
+          "Tap dancing",
+          "British RP accent",
+          "Carpet bag magic tricks",
+          "Umbrella choreography",
+          "Maintaining composure while performing physically demanding sequences"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "One of the most technically demanding and rewarding roles in musical theatre. Mary Poppins requires elite vocal technique, strong dance skills including tap, acting subtlety, flying, and the ability to carry an iconic role while making it your own. A career-defining performance.",
+        "common_casting": "Experienced triple-threat performers with strong classical training, impeccable diction, and the ability to project warmth through composure. This role demands excellence in every discipline.",
+        "standout_opportunity": "'Practically Perfect' establishes command immediately. 'Anything Can Happen' is a soaring Act 2 showstopper. The flying sequences create theatrical magic that audiences never forget."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Elite-level triple-threat skills",
+          "Vocal versatility (legit to belt)",
+          "Tap technique",
+          "Flying/harness technical skills",
+          "Subtle, controlled acting",
+          "British dialect work",
+          "Carrying an iconic role with originality",
+          "Stage presence and command"
+        ],
+        "challenge_areas": [
+          "Making an iconic role feel fresh",
+          "Sustaining physical demands (flying, tap, choreography)",
+          "Showing warmth while maintaining composure",
+          "Balancing supernatural qualities with human connection",
+          "Vocal stamina across demanding score"
+        ],
+        "recommended_for": [
+          "Advanced performers ready for a career-defining role",
+          "Triple threats wanting to test every skill simultaneously",
+          "Sopranos with strong belt seeking dream role",
+          "Performers with dance, particularly tap, background"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Vocal excellence across multiple styles",
+          "Impeccable diction with convincing British accent",
+          "Tap proficiency for 'Step in Time'",
+          "The indefinable quality of composed authority with warmth underneath",
+          "Physical fitness for flying and demanding choreography",
+          "The ability to be enigmatic and likable simultaneously"
+        ],
+        "common_mistakes": [
+          "Imitating Julie Andrews rather than creating an original Mary",
+          "Playing too cold \u2014 Mary is warm, she just doesn't show it openly",
+          "Neglecting the tap requirements",
+          "Overdoing the prim/strict without the twinkle",
+          "Weak British accent undermining authority"
+        ],
+        "tips": [
+          "Read P.L. Travers' books \u2014 the literary Mary is sharper and more mysterious than the film version",
+          "Mary's power is in what she withholds \u2014 practice restraint",
+          "The accent must be rock-solid RP British \u2014 work with a dialect coach",
+          "Prepare strong tap skills \u2014 'Step in Time' is non-negotiable",
+          "Find YOUR Mary \u2014 she should feel inevitable, not imitative"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Practically Perfect",
+          "type": "Solo",
+          "notes": "Mary's introduction \u2014 establishes her character completely. Needs vocal precision and charm."
+        },
+        {
+          "title": "A Spoonful of Sugar",
+          "type": "Solo/Group",
+          "notes": "Iconic film classic. Must feel magical and effortless."
+        },
+        {
+          "title": "Supercalifragilisticexpialidocious",
+          "type": "Duet/Ensemble",
+          "notes": "Signature tongue-twister with Bert and company. Diction is everything."
+        },
+        {
+          "title": "Anything Can Happen",
+          "type": "Solo/Ensemble",
+          "notes": "Act 2 showstopper. Soaring, powerful, triumphant."
+        },
+        {
+          "title": "Step in Time",
+          "type": "Ensemble/Tap",
+          "notes": "Major tap number led by Bert but Mary participates. Needs strong tap skills."
+        }
+      ]
+    },
+    {
+      "id": "bert",
+      "name": "Bert",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 45
+      },
+      "description": "A charming, versatile jack-of-all-trades who serves as narrator, friend, confidant, and the show's warmest human connection. Bert is a chimney sweep, one-man band, kite seller, and screever (pavement artist) \u2014 the common thread through every magical adventure. He's deeply connected to Mary Poppins (their relationship is lovingly ambiguous) and serves as the emotional bridge between the magical and the real.",
+      "vocal": {
+        "range": "A2-G4",
+        "voice_type": "Baritone / Tenor",
+        "belt_required": true,
+        "belt_range": "E4-G4",
+        "tessitura": "Mid-range with strong belt, warm character voice",
+        "style_notes": "Warm, charming singing voice with Cockney dialect coloring. Must handle both tender ballads ('Chim Chim Cher-ee') and high-energy numbers ('Step in Time'). Storytelling quality essential \u2014 Bert narrates to the audience."
+      },
+      "dance": {
+        "level": "expert",
+        "styles": [
+          "Tap",
+          "Musical theatre",
+          "Acrobatics",
+          "Chimney sweep choreography",
+          "Soft-shoe"
+        ],
+        "stamina": "Extremely high \u2014 'Step in Time' is one of the most demanding dance numbers in musical theatre",
+        "notes": "'Step in Time' is Bert's defining number \u2014 an extended, show-stopping tap spectacular that requires elite-level tap skills, stamina, and the ability to lead an ensemble through an increasingly complex routine. Many productions add acrobatic elements."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Narrator",
+          "Charmer",
+          "Everyman hero",
+          "Mentor"
+        ],
+        "emotional_range": "Wide \u2014 charm, warmth, authority (with Mr. Banks), tenderness (with children), wistfulness (with Mary)",
+        "comedy_skills": true,
+        "notes": "Bert breaks the fourth wall as narrator and must establish instant rapport with the audience. His scenes with George Banks are crucial \u2014 Bert's working-class wisdom challenges Banks' privileged worldview. The relationship with Mary is the show's romantic heart, expressed through looks and subtext rather than declaration."
+      },
+      "performance": {
+        "stage_time_percentage": 65,
+        "solo_songs": 3,
+        "duets": 3,
+        "ensemble_numbers": 4,
+        "quick_changes": 4,
+        "special_skills": [
+          "Expert tap dancing",
+          "Cockney accent",
+          "Direct audience address",
+          "Multiple costume changes (sweep, artist, etc.)",
+          "Potential acrobatics",
+          "Leading large ensemble dance numbers"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Bert is arguably the most demanding male role in family musical theatre. Expert tap is non-negotiable, the acting requires narration, charm, and depth, and the vocal demands cross multiple styles. 'Step in Time' alone makes this a career showcase.",
+        "common_casting": "Elite male triple threats with exceptional tap skills. The tap requirement is the primary filter \u2014 everything else can be developed, but the dance must be at professional level.",
+        "standout_opportunity": "'Step in Time' is one of the greatest show-stoppers in musical theatre. A great Bert stops the show cold with this number and owns the audience for the rest of the evening."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Elite tap technique and performance",
+          "Leading large ensemble dance numbers",
+          "Dialect work (Cockney)",
+          "Direct address narration",
+          "Multi-faceted character building",
+          "Sustained physical performance",
+          "Quick-change expertise"
+        ],
+        "challenge_areas": [
+          "Tap demands of 'Step in Time' \u2014 must be exceptional",
+          "Maintaining Cockney accent consistently",
+          "Physical stamina across a very demanding show",
+          "Supporting Mary's mystery while being the audience's friend"
+        ],
+        "recommended_for": [
+          "Advanced male dancers, especially tappers",
+          "Performers wanting the ultimate triple-threat challenge",
+          "Actors who excel at audience rapport and narration",
+          "Those ready for a physically demanding career-level role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Exceptional tap skills \u2014 this is the #1 requirement",
+          "Natural charm and audience connection",
+          "Convincing Cockney accent",
+          "Warm singing voice with character",
+          "Physical stamina and fitness",
+          "Chemistry with Mary Poppins actress"
+        ],
+        "common_mistakes": [
+          "Underestimating the tap demands \u2014 'Step in Time' requires professional-level tap",
+          "Copying Dick Van Dyke's accent (famously incorrect Cockney)",
+          "Being all charm without depth \u2014 Bert needs substance",
+          "Not preparing physically for the show's demands"
+        ],
+        "tips": [
+          "Your tap audition IS your Bert audition \u2014 make it extraordinary",
+          "Work with a dialect coach for authentic Cockney, not comedy Cockney",
+          "Study the relationship between Bert and Mary \u2014 it's unspoken love expressed through respect",
+          "The scene with Mr. Banks on the rooftop is your Oscar moment \u2014 prepare the emotional depth",
+          "Build stamina \u2014 Bert's track is one of the most physically demanding in musical theatre"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Chim Chim Cher-ee",
+          "type": "Solo/Duet",
+          "notes": "Iconic, haunting waltz. Tender and atmospheric. Sets Bert's storytelling tone."
+        },
+        {
+          "title": "Step in Time",
+          "type": "Solo/Ensemble",
+          "notes": "THE show-stopper. Extended tap spectacular that builds in complexity. Career-defining number."
+        },
+        {
+          "title": "Jolly Holiday",
+          "type": "Duet/Ensemble",
+          "notes": "Joyful duet with Mary in the park painting. Charm and warmth."
+        },
+        {
+          "title": "Supercalifragilisticexpialidocious",
+          "type": "Duet/Ensemble",
+          "notes": "Signature tongue-twister. Energy and precision with Mary and company."
+        }
+      ]
+    },
+    {
+      "id": "george-banks",
+      "name": "George Banks",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The strict, work-obsessed patriarch of the Banks family. George has lost sight of what matters \u2014 consumed by career ambitions and Edwardian expectations of a proper household, he's become cold, distant, and rigid. His transformation from uptight banker to loving father is the emotional spine of the show. The stage version deepens his backstory significantly.",
+      "vocal": {
+        "range": "Bb2-F4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range baritone, authoritative and precise",
+        "style_notes": "Clipped, precise singing that reflects his rigidity, gradually warming as his character transforms. Must convey authority and later vulnerability. British RP accent essential."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Period-appropriate movement",
+          "Stiff formal choreography"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "George's movement should be stiff and controlled early on, gradually loosening as Mary's influence takes hold. The physical transformation mirrors the emotional one."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Authority figure",
+          "Flawed father",
+          "Transformation arc",
+          "Tragic figure"
+        ],
+        "emotional_range": "Very wide \u2014 cold authority, frustration, buried grief (backstory), vulnerability, joy, love",
+        "comedy_skills": true,
+        "notes": "The most complex acting role in the show. George's transformation must feel earned \u2014 we need to understand why he became rigid (the stage version gives him a painful backstory with his own father) and then watch the walls come down. The rooftop scene with Bert is the emotional climax of the entire musical."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "British RP accent",
+          "Playing transformation arc convincingly",
+          "Authority and vulnerability in equal measure"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "George Banks is the most emotionally complex role in the show \u2014 more so than Mary herself. His transformation arc demands sophisticated acting, and the rooftop scene is one of the most powerful moments in family musical theatre. This role stretches acting abilities enormously.",
+        "common_casting": "Strong actor-singers with natural authority and the ability to show vulnerability. Often the best actor in the company regardless of vocal power.",
+        "standout_opportunity": "The rooftop scene with Bert \u2014 where George's walls finally crumble \u2014 can bring an audience to tears. This single scene can be the most powerful moment in the entire production."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Complex character arc execution",
+          "Playing unlikable characters sympathetically",
+          "Emotional vulnerability on stage",
+          "British dialect work",
+          "Balancing authority with humanity",
+          "Transformation acting across a full show"
+        ],
+        "challenge_areas": [
+          "Making George sympathetic even when he's being awful",
+          "Earning the transformation \u2014 it can't feel sudden",
+          "Playing the backstory without being heavy-handed",
+          "British accent consistency under emotional stress"
+        ],
+        "recommended_for": [
+          "Adult actor-singers seeking a meaty dramatic role",
+          "Performers wanting to develop emotional range",
+          "Baritones seeking a role that prioritises acting over vocals",
+          "Fathers wanting a transformative role experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural authority and commanding presence",
+          "The ability to show vulnerability beneath rigidity",
+          "Strong acting skills \u2014 this is an actor's role",
+          "Convincing British RP accent",
+          "Chemistry with Winifred and the children"
+        ],
+        "common_mistakes": [
+          "Making George one-dimensionally mean in Act 1",
+          "Rushing the transformation \u2014 it needs to build gradually",
+          "Weak accent undermining the Edwardian authority",
+          "Not investing in the backstory that drives his behaviour"
+        ],
+        "tips": [
+          "George isn't mean \u2014 he's afraid. Everything he does comes from fear of not being enough",
+          "Study the stage version backstory carefully \u2014 it deepens the character enormously",
+          "The tiny moments of warmth in Act 1 (a look at the children, a moment of doubt) make Act 2 payoff work",
+          "The rooftop with Bert is your showcase \u2014 bring everything to that scene"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "A Man Has Dreams",
+          "type": "Solo/Duet",
+          "notes": "George's realisation that his priorities are wrong. Powerful emotional turning point."
+        },
+        {
+          "title": "Being Mrs Banks / Cherry Tree Lane",
+          "type": "Ensemble",
+          "notes": "George establishing household authority. Rigid and precise."
+        },
+        {
+          "title": "Precision and Order",
+          "type": "Solo",
+          "notes": "George's manifesto of control. Must convey why he clings to structure while hinting at what's underneath."
+        }
+      ]
+    },
+    {
+      "id": "jane-banks",
+      "name": "Jane Banks",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": {
+        "min": 8,
+        "max": 12
+      },
+      "description": "The older Banks child \u2014 imaginative, spirited, and fiercely protective of her younger brother Michael. Jane is the more outspoken of the two children, often questioning authority and challenging the rules. She is deeply affected by her parents' emotional distance and craves connection, which is why Mary Poppins' arrival transforms her world. Jane leads many of the children's rebellious moments and is often the first to embrace Mary Poppins' magical adventures. By the end, she helps her father rediscover what truly matters.",
+      "vocal": {
+        "range": "C4-D5",
+        "voice_type": "Soprano (child/treble)",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "Bright, clear child soprano with belt capability for ensemble numbers",
+        "style_notes": "Jane needs a clear, confident child's voice that can handle both sweet ballad moments and energetic ensemble numbers. Must project well and blend with Michael in duets. The vocal quality should suggest intelligence and spirit."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Jazz",
+          "Character movement",
+          "Physical comedy",
+          "Step in Time choreography"
+        ],
+        "stamina": "High \u2014 onstage for large portions of the show",
+        "notes": "Jane must be able to participate fully in the major production numbers including Step in Time and Jolly Holiday. Strong enough to keep up with adult ensemble while maintaining childlike quality."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Spirited child",
+          "Protective older sibling",
+          "Imaginative adventurer",
+          "Emotional catalyst"
+        ],
+        "emotional_range": "Rebelliousness, longing for parental love, joy in magical adventures, fierce protectiveness of Michael, emotional growth",
+        "comedy_skills": true,
+        "notes": "Jane must feel like a real child \u2014 not a miniature adult. Her defiance comes from genuine emotional need, not brattiness. The audience must root for her and see the hurt behind her spirit. Must have natural chemistry with Michael and genuine warmth with Mary Poppins."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 1,
+        "duets": 3,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": [
+          "Playing a convincing child",
+          "Natural chemistry with child co-star",
+          "Physical comedy",
+          "Emotional maturity in young performer"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Jane Banks is one of the great children's roles in musical theatre \u2014 a leading part that demands real acting alongside singing and dancing. For young performers, this role builds every skill simultaneously and provides genuine lead experience.",
+        "common_casting": "Confident young performers (typically 8-12) with strong singing, acting, and dance skills. Must be emotionally mature enough to handle the dramatic material while maintaining genuine childlike quality.",
+        "standout_opportunity": "Jane is one half of the emotional heart of the show. A great Jane Banks performance launches young performers' careers."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Leading a professional production as a young performer",
+          "Emotional acting range",
+          "Strong vocal technique",
+          "Dance stamina",
+          "Working with adult professionals"
+        ],
+        "challenge_areas": [
+          "Maintaining performance energy across a long show",
+          "Emotional scenes require real depth",
+          "Must keep it fresh through a long run",
+          "Balancing school with performance schedule"
+        ],
+        "recommended_for": [
+          "Talented young performers ready for lead roles",
+          "Children with strong singing and acting training",
+          "Young performers with previous ensemble experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural, unaffected child quality",
+          "Strong singing voice for age",
+          "Genuine emotional range",
+          "Chemistry potential with Michael auditioner",
+          "Dance ability for production numbers"
+        ],
+        "common_mistakes": [
+          "Being too 'precocious' or adult",
+          "Not showing genuine emotional vulnerability",
+          "Lacking the spirit and defiance",
+          "Not preparing dance for Step in Time"
+        ],
+        "tips": [
+          "Be yourself \u2014 directors want a real child, not a performer playing a child",
+          "Show both the spirit and the vulnerability",
+          "Prepare a song that shows emotional range",
+          "Show you can take direction and work in a team"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Perfect Nanny",
+          "type": "duet_with_michael",
+          "notes": "The children's wish list for a nanny \u2014 charming, specific, and revealing of what they really need"
+        },
+        {
+          "title": "Jolly Holiday",
+          "type": "ensemble",
+          "notes": "The magical adventure \u2014 Jane's joy and wonder in Mary Poppins' world"
+        },
+        {
+          "title": "Step in Time",
+          "type": "ensemble",
+          "notes": "The chimney sweep spectacular \u2014 Jane must hold her own in this demanding number"
+        }
+      ]
+    },
+    {
+      "id": "michael-banks",
+      "name": "Michael Banks",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 7,
+        "max": 11
+      },
+      "description": "The younger Banks child \u2014 sweet, more cautious than Jane, and deeply sensitive to the emotional temperature of the household. Michael follows Jane's lead in their adventures but brings his own warmth and vulnerability. He is the more openly emotional of the two children, quicker to cry but also quicker to forgive. His relationship with his father George is particularly poignant \u2014 Michael wants his father's attention and love more than anything, and their reconciliation is one of the show's most moving moments.",
+      "vocal": {
+        "range": "C4-C5",
+        "voice_type": "Treble / Boy Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Sweet, clear treble voice \u2014 younger quality than Jane",
+        "style_notes": "Michael's voice should be sweeter and more innocent than Jane's \u2014 reflecting his younger age and more open emotional nature. Must blend well with Jane in duets and hold his own in ensemble numbers."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Jazz",
+          "Character movement",
+          "Physical comedy",
+          "Step in Time choreography"
+        ],
+        "stamina": "High \u2014 present throughout most of the show",
+        "notes": "Same dance demands as Jane but can be slightly less advanced given younger age. Must participate fully in Step in Time and other production numbers."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Sensitive younger child",
+          "Open-hearted boy",
+          "Daddy's boy",
+          "Emotional barometer"
+        ],
+        "emotional_range": "Open vulnerability, joy, fear, fierce love for family, the heartbreak of a child wanting his father's attention",
+        "comedy_skills": true,
+        "notes": "Michael's strength as a character is his emotional openness \u2014 he wears his heart on his sleeve. The actor must be comfortable showing vulnerability and genuine emotion. His scenes with George Banks are the emotional core of the father-child storyline."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 0,
+        "duets": 3,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": [
+          "Open emotional vulnerability",
+          "Natural child quality",
+          "Chemistry with Jane and George Banks",
+          "Physical comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Like Jane, Michael is a major lead role for a young performer. The emotional demands are significant \u2014 Michael's scenes with George Banks can make audiences cry. This role builds emotional acting, vocal skill, and the experience of carrying a professional production.",
+        "common_casting": "Sweet, emotionally open young performers (typically 7-11). Must be comfortable with emotional scenes and able to work with adult actors convincingly. Often slightly younger or smaller than the Jane performer.",
+        "standout_opportunity": "Michael's relationship with George is the emotional through-line. A great Michael makes the reconciliation scene devastatingly beautiful."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Emotional acting depth",
+          "Leading a professional production",
+          "Working with adult performers",
+          "Vocal and dance stamina",
+          "Playing vulnerability convincingly"
+        ],
+        "challenge_areas": [
+          "Emotional scenes require genuine depth",
+          "Stamina for a long show",
+          "Taking direction from adults while maintaining natural quality",
+          "Consistency across a run"
+        ],
+        "recommended_for": [
+          "Young performers with emotional depth",
+          "Boys with sweet singing voices",
+          "Children comfortable with vulnerability",
+          "Young actors with previous stage experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural, genuine child quality",
+          "Emotional openness and vulnerability",
+          "Sweet singing voice",
+          "Chemistry potential with Jane and George Banks",
+          "Ability to take direction"
+        ],
+        "common_mistakes": [
+          "Being too 'cute' or performing",
+          "Not showing genuine emotional range",
+          "Being too reserved \u2014 Michael is open-hearted",
+          "Not preparing for the emotional demands"
+        ],
+        "tips": [
+          "Show your real feelings \u2014 Michael feels everything openly",
+          "Prepare a song that shows sweetness and emotional range",
+          "Be comfortable being sad, happy, scared \u2014 show the full range",
+          "Have fun \u2014 Michael loves adventure"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Perfect Nanny",
+          "type": "duet_with_jane",
+          "notes": "Michael's contribution to the nanny wish list \u2014 revealing what he truly needs"
+        },
+        {
+          "title": "Jolly Holiday / Step in Time",
+          "type": "ensemble",
+          "notes": "Full participation in the magical adventure numbers"
+        }
+      ]
+    },
+    {
+      "id": "winifred-banks",
+      "name": "Winifred Banks",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 28,
+        "max": 50
+      },
+      "description": "The Banks family matriarch, caught between Edwardian expectations and her own desires. The stage version significantly expands Winifred from the film \u2014 she's a former actress who gave up her career for marriage, now struggling under George's rigid expectations. She's warm, slightly scatty, and desperate to reconnect with both her children and herself.",
+      "vocal": {
+        "range": "Bb3-E5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Mid-range mezzo with strong belt for her featured numbers",
+        "style_notes": "Warm, emotionally rich mezzo voice. 'Being Mrs Banks' needs both comedy and genuine pathos. Must convey someone suppressing their true self. British RP accent essential."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Period movement",
+          "Gentle choreography"
+        ],
+        "stamina": "Moderate",
+        "notes": "Winifred moves within Edwardian conventions but with more warmth and spontaneity than George. Her movement should subtly loosen as the show progresses."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Suppressed wife",
+          "Loving mother",
+          "Former performer",
+          "Woman finding herself"
+        ],
+        "emotional_range": "Wide \u2014 suppression, frustration, hope, maternal love, self-discovery",
+        "comedy_skills": true,
+        "notes": "The stage version's Winifred is a rich role \u2014 a woman who lost herself in marriage and is rediscovering who she is. Her journey parallels George's but is quieter and equally powerful. The 'Being Mrs Banks' sequence needs to balance comedy with genuine pain."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "British RP accent",
+          "Period acting",
+          "Playing suppressed emotions",
+          "Conveying backstory through subtext"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Winifred is a substantially expanded role from the film and offers adult female performers a rich character arc. She develops emotional acting skills, period performance, and the ability to convey complex internal life through subtext.",
+        "common_casting": "Strong actor-singers with warmth and emotional depth. Often cast with performers who have genuine maternal quality and the ability to convey suppressed feelings.",
+        "standout_opportunity": "'Being Mrs Banks' is a wonderful showcase \u2014 part comedy, part genuine pain, entirely sympathetic."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Complex emotional subtext",
+          "Period acting and movement",
+          "British dialect work",
+          "Playing transformation within marriage",
+          "Balancing comedy with drama"
+        ],
+        "challenge_areas": [
+          "Conveying rich inner life within Edwardian propriety",
+          "Making suppressed emotions read to the audience",
+          "British accent consistency"
+        ],
+        "recommended_for": [
+          "Adult female performers seeking substantial supporting role",
+          "Actresses developing emotional subtlety",
+          "Mezzo-sopranos wanting a richly written character"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Warmth and maternal quality",
+          "Ability to play suppressed emotions",
+          "Strong mezzo voice with emotional colour",
+          "Convincing British RP accent",
+          "Comedy timing for lighter moments"
+        ],
+        "common_mistakes": [
+          "Playing Winifred as simply a ditzy wife",
+          "Missing the depth of the 'former actress' backstory",
+          "Not enough emotional weight in 'Being Mrs Banks'",
+          "Weak accent"
+        ],
+        "tips": [
+          "Winifred gave up her IDENTITY for this marriage \u2014 that's the key to everything",
+          "Study Edwardian women's social constraints \u2014 they inform every choice",
+          "The comedy in 'Being Mrs Banks' works because the pain underneath is real",
+          "Your relationship with the children should radiate genuine love from the first scene"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Being Mrs Banks",
+          "type": "Solo",
+          "notes": "Comedy with pathos. Winifred listing her duties while revealing her frustration."
+        },
+        {
+          "title": "Cherry Tree Lane (reprises)",
+          "type": "Ensemble",
+          "notes": "Family scenes establishing and then resolving the Banks household dynamics."
+        }
+      ]
+    },
+    {
+      "id": "miss-andrew",
+      "name": "Miss Andrew",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 35,
+        "max": 65
+      },
+      "description": "The terrifying former nanny of George Banks himself \u2014 Miss Andrew is the 'Holy Terror' who scarred George's childhood and is the reason he became so rigid. She's a towering, fearsome villain who represents everything Mary Poppins is not: cruel discipline without love, authority without warmth, control without care.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "Mezzo-Soprano / Alto (power voice)",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "Mid to upper range with commanding belt",
+        "style_notes": "Powerful, commanding voice that fills the theatre with menace. 'Brimstone and Treacle' is a show-stopping villain number requiring vocal power, character, and comedic timing."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Imposing movement",
+          "Military precision"
+        ],
+        "stamina": "Low \u2014 concentrated scenes",
+        "notes": "Miss Andrew moves like a drill sergeant. Every step is deliberate, heavy, and terrifying. She takes up space and everyone else shrinks."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Villain",
+          "Tyrant",
+          "Dark mirror of Mary Poppins"
+        ],
+        "emotional_range": "Focused \u2014 menace, cruelty, dark satisfaction, fury when defeated",
+        "comedy_skills": true,
+        "notes": "Miss Andrew is the show's secret weapon \u2014 a villain so over-the-top terrifying that she's also hilarious. Must genuinely frighten while making the audience love to hate her. Her defeat by Mary Poppins is cathartic."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 0,
+        "quick_changes": 0,
+        "special_skills": [
+          "Theatrical menace",
+          "Commanding stage presence",
+          "Physical intimidation",
+          "Villain comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Miss Andrew appears briefly but is absolutely unforgettable. 'Brimstone and Treacle' is a show-stopping villain number. This role teaches maximum theatrical impact in minimum time.",
+        "common_casting": "Powerful female performers with commanding presence. Often cast with experienced character actresses who can terrify and entertain simultaneously.",
+        "standout_opportunity": "'Brimstone and Treacle' is a guaranteed show-stopper. A great Miss Andrew gets one of the biggest reactions of the night."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Theatrical villain performance",
+          "Maximum impact in limited stage time",
+          "Commanding vocal presence",
+          "Physical intimidation on stage"
+        ],
+        "challenge_areas": [
+          "Balancing genuine menace with entertainment",
+          "Creating a complete character in very few scenes"
+        ],
+        "recommended_for": [
+          "Powerful female performers wanting a scene-stealing role",
+          "Character actresses developing villain skills",
+          "Those wanting maximum impact with limited time commitment"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Commanding, intimidating presence",
+          "Powerful belt voice",
+          "Villain characterisation that's frightening AND entertaining",
+          "The ability to own the stage completely"
+        ],
+        "common_mistakes": [
+          "Not going big enough \u2014 Miss Andrew requires FULL theatrical commitment",
+          "Being scary without being fun",
+          "Underestimating the vocal demands of 'Brimstone and Treacle'"
+        ],
+        "tips": [
+          "Miss Andrew is the dark mirror of Mary Poppins \u2014 discipline without love",
+          "She genuinely believes her methods were correct \u2014 play the conviction",
+          "'Brimstone and Treacle' is your showcase \u2014 bring the house down",
+          "Her defeat by Mary should feel cathartic for the audience"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Brimstone and Treacle",
+          "type": "Solo",
+          "notes": "Show-stopping villain number. Requires vocal power, character, and comedy. One of the most memorable numbers in the show."
+        }
+      ]
+    },
+    {
+      "id": "bird-woman",
+      "name": "The Bird Woman",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 40,
+        "max": 70
+      },
+      "description": "The mysterious old woman who sits on the steps of St Paul's Cathedral selling bags of breadcrumbs to feed the birds. 'Feed the Birds' \u2014 her song \u2014 is the emotional heart of the entire show, the moment Walt Disney himself considered the greatest song ever written for one of his productions. The Bird Woman represents kindness, simplicity, and the things that truly matter in life, contrasting sharply with the Banks family's materialistic world. Her gentle presence reminds the audience (and eventually George Banks) that small acts of compassion matter more than wealth and status. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "Alto / Mezzo-Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Warm, gentle lower-middle range with a pure, simple quality",
+        "style_notes": "'Feed the Birds' must be sung with devastating simplicity \u2014 no vocal pyrotechnics, just pure, honest, heartbreaking beauty. The voice should sound weathered but warm, like someone who has spent a lifetime in quiet acts of kindness. This is not a showy vocal moment; it is an honest one. One of the most beloved songs in the Disney/musical theatre canon."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Minimal staging"
+        ],
+        "stamina": "Low \u2014 brief but powerful appearances",
+        "notes": "The Bird Woman is still, patient, grounded. Her physicality is about quiet presence \u2014 she has been sitting on those cathedral steps for years. She should move slowly, gently, as if she has all the time in the world."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Mysterious wise woman",
+          "Symbol of compassion",
+          "Quiet moral centre",
+          "Ethereal presence"
+        ],
+        "emotional_range": "Gentle warmth, quiet sadness, serene wisdom \u2014 an overwhelming tenderness expressed through simplicity",
+        "comedy_skills": false,
+        "notes": "The Bird Woman barely speaks but her presence transforms the show. She must radiate a quality of gentle, selfless kindness that contrasts with everything else on stage. 'Feed the Birds' should make the audience cry not through dramatic performance but through sheer, simple beauty. This is a role about being, not doing."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Devastating vocal simplicity",
+          "Creating profound impact in minimal time",
+          "Radiating warmth and compassion",
+          "Performing one of the most famous songs in musical theatre"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "The Bird Woman sings what may be the single most famous song in the show. 'Feed the Birds' is a career-defining moment \u2014 if you can make an audience cry with simplicity, you've proven something profound about your artistry. This role teaches that less is more, that honesty beats technique, and that one perfect moment can define a production.",
+        "common_casting": "Mature performers with warm, honest voices. Usually doubled from ensemble. The voice doesn't need to be powerful \u2014 it needs to be true. Often cast with performers who have a natural, gentle quality.",
+        "standout_opportunity": "'Feed the Birds' is the moment people remember. A beautiful, honest performance of this song is worth more than a hundred belt notes."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Vocal honesty and simplicity",
+          "Maximum emotional impact with minimal means",
+          "Performing iconic material",
+          "Presence through stillness",
+          "Creating character with limited stage time"
+        ],
+        "challenge_areas": [
+          "The pressure of singing one of the most beloved songs ever written",
+          "Not oversinging \u2014 simplicity is everything",
+          "Creating a full character in very brief appearances",
+          "Transitioning from ensemble to this ethereal character"
+        ],
+        "recommended_for": [
+          "Mature performers with honest, warm voices",
+          "Those developing vocal simplicity and emotional directness",
+          "Ensemble performers seeking a featured vocal moment",
+          "Singers who prioritise honesty over technique"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A warm, honest voice that moves people",
+          "Natural gentleness and warmth",
+          "The ability to be still and present",
+          "Ensemble skills for doubling",
+          "Emotional directness without sentimentality"
+        ],
+        "common_mistakes": [
+          "Oversinging 'Feed the Birds' \u2014 it must be simple",
+          "Being too dramatic \u2014 the Bird Woman is quiet",
+          "Not creating enough character in limited appearances",
+          "Treating it as a small role \u2014 it's the emotional heart of the show"
+        ],
+        "tips": [
+          "Sing simply, honestly, from the heart",
+          "Study the original recording for the tone and simplicity",
+          "Less is infinitely more for this role",
+          "Show you can be a strong ensemble member alongside this featured moment"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Feed the Birds",
+          "type": "solo",
+          "notes": "One of the most famous and beloved songs in musical theatre history. Must be sung with devastating simplicity and honest warmth. No showing off \u2014 just truth."
+        }
+      ]
+    },
+    {
+      "id": "katie-nanna",
+      "name": "Katie Nanna",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The exasperated nanny who quits the Banks household in the opening scene, unable to cope with Jane and Michael's behaviour. Katie Nanna's dramatic departure creates the vacancy that brings Mary Poppins into the family's life. She is a brief but important character \u2014 her frustration establishes how difficult the children are and how dysfunctional the Banks household has become. Her exit should be both comic and telling: this is a professional who has simply had enough. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "Variable",
+        "voice_type": "Spoken / Ensemble voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Primarily spoken role with ensemble singing participation",
+        "style_notes": "Katie Nanna is mainly a speaking role. Her voice should convey outraged professionalism \u2014 a woman at the absolute end of her rope. Clear projection for the opening scene complaints."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Jazz",
+          "Character movement"
+        ],
+        "stamina": "High if doubling ensemble, low for featured moments",
+        "notes": "Katie Nanna's exit should be physically comic \u2014 gathering belongings, expressing outrage, storming out. Strong dance skills needed for ensemble work if doubling."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Exasperated professional",
+          "Comic exit",
+          "Inciting incident character"
+        ],
+        "emotional_range": "Outrage, exasperation, righteous indignation, dramatic departure",
+        "comedy_skills": true,
+        "notes": "Katie Nanna sets the tone for the show \u2014 her exit must be funny and establish the household's dysfunction. The comedy should come from genuine professional frustration, not cartoon anger."
+      },
+      "performance": {
+        "stage_time_percentage": 3,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": [
+          "Comic opening scene",
+          "Establishing exposition through character",
+          "Quick transition to ensemble",
+          "Physical comedy exit"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A small but scene-setting role that teaches comic economy \u2014 you have one scene to establish the entire household's dysfunction. Good for ensemble performers wanting a named credit and a comic opening moment.",
+        "common_casting": "Strong character actress from the ensemble. Must land the comedy of the opening scene to set up the entire show. Usually doubled.",
+        "standout_opportunity": "A hilarious Katie Nanna exit gets the show off to a great start. It's the audience's first laugh."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comic opening scene delivery",
+          "Exposition through character",
+          "Physical comedy exit",
+          "Ensemble versatility"
+        ],
+        "challenge_areas": [
+          "Making a very brief role impactful",
+          "Setting the right comic tone from the first moment",
+          "Quick transition to ensemble work"
+        ],
+        "recommended_for": [
+          "Ensemble performers seeking featured comedy moments",
+          "Character actresses with strong comic timing",
+          "Those building varied ensemble credits"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong comic timing",
+          "Character actress quality",
+          "Ensemble dance and vocal skills",
+          "The ability to set a scene quickly"
+        ],
+        "common_mistakes": [
+          "Not committing fully to the brief scene",
+          "Overplaying the exit",
+          "Not preparing for ensemble requirements"
+        ],
+        "tips": [
+          "Make Katie Nanna's frustration specific and real",
+          "Study great comic exits for timing",
+          "Audition primarily as a strong ensemble member",
+          "Show character comedy as a bonus"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Opening scene",
+          "type": "dramatic_comedy",
+          "notes": "Katie Nanna's outraged departure \u2014 establishing the household chaos that necessitates Mary Poppins"
+        }
+      ]
+    },
+    {
+      "id": "admiral-boom",
+      "name": "Admiral Boom / Bank Chairman",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 45,
+        "max": 70
+      },
+      "description": "A delightful dual role: Admiral Boom is the eccentric retired naval officer who lives next door to the Banks family and runs his household like a ship, firing a cannon to mark the time. The Bank Chairman is George Banks' formidable superior at the bank \u2014 stern, authoritative, and representing the rigid establishment values that George must ultimately reject. The contrast between the two characters is wonderful: one is joyfully eccentric, the other oppressively conventional. Together they represent the two possible futures for George Banks \u2014 conformity or authentic happiness. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Strong, commanding baritone \u2014 booming for Admiral Boom, stern for Bank Chairman",
+        "style_notes": "Two distinct vocal qualities needed: Admiral Boom should have a hearty, jovial, slightly mad naval voice; the Bank Chairman should be clipped, authoritative, and intimidating. Both require strong projection."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Character movement",
+          "Staging"
+        ],
+        "stamina": "Low to moderate in featured moments, higher if doubling ensemble",
+        "notes": "Admiral Boom moves with naval precision and eccentric energy. The Bank Chairman moves with rigid, intimidating authority. Clear physical differentiation between the two characters."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Eccentric neighbour",
+          "Authority figure",
+          "Comic character",
+          "Dual role with contrasting personalities"
+        ],
+        "emotional_range": "Jovial eccentricity (Boom) and stern authority (Chairman) \u2014 must create two completely distinct characters",
+        "comedy_skills": true,
+        "notes": "The fun of this dual role is the contrast. Admiral Boom is loveable, eccentric, and hilarious; the Bank Chairman is everything Boom is not \u2014 rigid, humourless, and powerful. The actor must create two completely distinct characters, possibly with quick changes between them."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 3,
+        "special_skills": [
+          "Dual character creation",
+          "Strong character differentiation",
+          "Commanding presence",
+          "Physical comedy (Boom) and intimidation (Chairman)"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "This dual role develops character differentiation, physical comedy, and the ability to create two distinct people. Admiral Boom is a crowd favourite and the Bank Chairman adds dramatic weight. Together they showcase remarkable versatility.",
+        "common_casting": "Strong character actor with physical comedy skills and commanding presence. Must be able to switch between two completely different characters. Usually doubled from ensemble.",
+        "standout_opportunity": "Admiral Boom's scenes are comedy highlights. The contrast with the Bank Chairman shows range. Directors notice actors who can create two distinct characters convincingly."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Dual character creation and differentiation",
+          "Physical comedy",
+          "Commanding authority",
+          "Quick-change character switches",
+          "Character voice work"
+        ],
+        "challenge_areas": [
+          "Creating two genuinely distinct characters",
+          "Quick changes between Boom and Chairman",
+          "Not letting one character dominate",
+          "Maintaining ensemble work alongside featured roles"
+        ],
+        "recommended_for": [
+          "Character actors with strong physicality",
+          "Performers developing dual-role skills",
+          "Those who enjoy eccentric comedy AND dramatic authority",
+          "Ensemble members seeking varied featured work"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong character differentiation ability",
+          "Physical comedy skills",
+          "Commanding presence",
+          "Vocal versatility for two characters",
+          "Ensemble skills for doubling"
+        ],
+        "common_mistakes": [
+          "Making both characters too similar",
+          "Only preparing one character",
+          "Not showing range between comedy and authority",
+          "Neglecting ensemble dance/vocal requirements"
+        ],
+        "tips": [
+          "Prepare two contrasting character pieces",
+          "Find distinct physicalities for Boom and Chairman",
+          "Admiral Boom should be genuinely loveable and funny",
+          "The Bank Chairman should be genuinely intimidating"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Cherry Tree Lane scenes (Admiral Boom)",
+          "type": "comedy_scenes",
+          "notes": "Admiral Boom's eccentric naval-themed neighbourhood antics"
+        },
+        {
+          "title": "Bank scenes (Chairman)",
+          "type": "dramatic_scenes",
+          "notes": "The Bank Chairman's authority over George \u2014 representing the establishment George must choose to reject or embrace"
+        }
+      ]
+    },
+    {
+      "id": "mrs-corry",
+      "name": "Mrs Corry",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 60
+      },
+      "description": "The eccentric owner of a magical talking shop who sells conversations and words. Mrs Corry is one of Mary Poppins' magical acquaintances \u2014 ancient, tiny, slightly terrifying, and utterly wonderful. In the musical, she features in the 'Supercalifragilisticexpialidocious' sequence, which takes place in her shop. She is the embodiment of the show's celebration of language and imagination, and her manic energy drives one of the most beloved numbers in the score. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "Soprano / Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "High-energy belt with character quality \u2014 eccentric and powerful",
+        "style_notes": "Mrs Corry needs big, energetic vocal delivery for the Supercalifragilisticexpialidocious sequence. Her voice should be as eccentric as her personality \u2014 slightly wild, very confident, and infectiously joyful. Must be able to drive a large ensemble number."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Character dance",
+          "Music hall style",
+          "Physical comedy"
+        ],
+        "stamina": "Moderate \u2014 concentrated in key sequences",
+        "notes": "Mrs Corry's physicality is eccentric and energetic \u2014 she moves with the manic energy of someone who has been alive for centuries and still loves every minute. Physical comedy and character movement essential."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Magical eccentric",
+          "Ancient shopkeeper",
+          "Energy driver",
+          "Whimsical authority"
+        ],
+        "emotional_range": "Manic joy, eccentric authority, magical whimsy, infectious enthusiasm",
+        "comedy_skills": true,
+        "notes": "Mrs Corry is pure theatrical energy \u2014 she should explode onto the stage and drive the Supercalifragilisticexpialidocious sequence with infectious joy. She's ancient but more energetic than anyone else on stage. The audience should adore her immediately."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Driving a large ensemble number",
+          "Eccentric character energy",
+          "Physical comedy",
+          "Making a brief role unforgettable"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Mrs Corry drives one of the most beloved numbers in the show. Supercalifragilisticexpialidocious is pure joy, and Mrs Corry's energy sets the tone. This teaches you how to command a stage through sheer eccentric energy.",
+        "common_casting": "High-energy character actress with strong belt and comedy skills. Must be able to drive the Supercal number with infectious joy. Usually doubled from ensemble.",
+        "standout_opportunity": "Being at the centre of Supercalifragilisticexpialidocious is a gift. The audience is already having the time of their lives \u2014 Mrs Corry gets to be the reason why."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Driving large ensemble numbers",
+          "Eccentric character creation",
+          "High-energy comedy",
+          "Making brief appearances impactful",
+          "Physical comedy"
+        ],
+        "challenge_areas": [
+          "Maintaining energy without becoming exhausting",
+          "Finding character depth in a broadly comic role",
+          "Quick changes to/from ensemble",
+          "Not overshadowing the leads"
+        ],
+        "recommended_for": [
+          "High-energy character performers",
+          "Those who excel at eccentric comedy",
+          "Ensemble members seeking featured comedy moments",
+          "Performers who can command a stage through personality"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Infectious, high energy",
+          "Strong character belt",
+          "Physical comedy",
+          "The ability to drive an ensemble number",
+          "Eccentricity that is loveable, not irritating"
+        ],
+        "common_mistakes": [
+          "Being too subtle \u2014 Mrs Corry is BIG",
+          "Not bringing enough energy for the Supercal number",
+          "Making eccentricity annoying rather than charming",
+          "Not preparing ensemble skills"
+        ],
+        "tips": [
+          "Bring maximum energy to the audition \u2014 Mrs Corry is a force of nature",
+          "Show eccentric character comedy that makes people smile",
+          "Prepare a big, energetic number that shows you can drive a room",
+          "Make the eccentricity loveable"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Supercalifragilisticexpialidocious",
+          "type": "ensemble_featured",
+          "notes": "Mrs Corry at the centre of one of the most famous musical numbers ever written \u2014 pure, infectious joy"
+        }
+      ]
+    },
+    {
+      "id": "mrs-brill",
+      "name": "Mrs Brill",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 35,
+        "max": 60
+      },
+      "description": "The Banks family's housekeeper and cook \u2014 a no-nonsense, slightly grumpy domestic who runs the household from below stairs. Mrs Brill provides a working-class perspective on the Banks family's upper-middle-class problems, often commenting with dry wit on the chaos above. She has a comic dynamic with Robertson Ay, the lazy handyman, that provides consistent backstage humour. Mrs Brill represents the 'real world' within the fairy tale \u2014 practical, long-suffering, and secretly fond of the family she serves. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "F3-C5",
+        "voice_type": "Alto / Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "B3-C5",
+        "tessitura": "Strong, brassy character voice \u2014 working-class London quality",
+        "style_notes": "Mrs Brill has a robust, no-nonsense voice \u2014 the sound of someone who's been running a household for decades. Strong enough for featured ensemble moments with a character quality that distinguishes her from the 'prettier' voices in the show."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Character movement",
+          "Physical comedy"
+        ],
+        "stamina": "Moderate",
+        "notes": "Mrs Brill moves with busy, efficient energy \u2014 always working, always slightly put-upon. Her physicality is about practical domesticity."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Grumpy housekeeper",
+          "Comic commentary",
+          "Working-class observer",
+          "Secretly caring domestic"
+        ],
+        "emotional_range": "Grumpy efficiency, dry wit, hidden fondness, exasperation with Robertson Ay",
+        "comedy_skills": true,
+        "notes": "Mrs Brill's comedy is in her reactions \u2014 she sees everything, judges everything, and comments on everything with dry working-class wit. Her partnership with Robertson Ay is a consistent comic thread."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "Dry comic commentary",
+          "Working-class character voice",
+          "Comic partnership with Robertson Ay",
+          "Domestic physicality"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Mrs Brill is a solid character comedy role that provides consistent laughs throughout the show. Great for developing dry comedy, character voice work, and the art of comic observation.",
+        "common_casting": "Character actress with strong comedy skills and a distinctive voice. Must create good comic chemistry with Robertson Ay. Usually doubled from ensemble.",
+        "standout_opportunity": "A great Mrs Brill gets quiet, consistent laughs throughout the show \u2014 the kind of reliable comedy that directors value enormously."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Dry comic delivery",
+          "Working-class character creation",
+          "Comic partnership",
+          "Consistent character throughout a show",
+          "Character voice work"
+        ],
+        "challenge_areas": [
+          "Not being overshadowed by the magical elements",
+          "Keeping the comedy fresh",
+          "Finding the warmth beneath the grumpiness",
+          "Balancing featured and ensemble work"
+        ],
+        "recommended_for": [
+          "Character actresses building comedy credits",
+          "Performers developing dry wit delivery",
+          "Ensemble members seeking consistent featured presence",
+          "Those who enjoy below-stairs comedy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Distinctive character voice",
+          "Dry comic timing",
+          "Working-class authenticity",
+          "Chemistry potential with Robertson Ay",
+          "Ensemble skills"
+        ],
+        "common_mistakes": [
+          "Making Mrs Brill one-dimensionally grumpy",
+          "Not finding the hidden warmth",
+          "Overplaying the comedy",
+          "Neglecting ensemble skills"
+        ],
+        "tips": [
+          "Find the affection underneath the grumpiness",
+          "Study great British sitcom housekeepers for inspiration",
+          "Show dry wit \u2014 Mrs Brill is funny because she's deadpan",
+          "Prepare ensemble material alongside character comedy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Being Mrs Banks (reprise) / domestic scenes",
+          "type": "featured_comedy",
+          "notes": "Mrs Brill's running commentary on household chaos"
+        },
+        {
+          "title": "A Spoonful of Sugar / household scenes",
+          "type": "ensemble_featured",
+          "notes": "Mrs Brill reacting to Mary Poppins' magical housekeeping with incredulity"
+        }
+      ]
+    },
+    {
+      "id": "robertson-ay",
+      "name": "Robertson Ay",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 45
+      },
+      "description": "The Banks family's hilariously lazy servant and handyman who is perpetually falling asleep, avoiding work, and driving Mrs Brill to distraction. Robertson Ay is pure physical comedy \u2014 he dozes off in inappropriate places, botches every task he's given, and somehow never gets fired. His laziness is so extreme it becomes a kind of art form. The comic partnership with Mrs Brill provides a consistent below-stairs comedy thread throughout the show. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "Tenor / Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Light, pleasant voice \u2014 this is a physical comedy role more than a vocal one",
+        "style_notes": "Robertson Ay's vocal requirements are modest \u2014 strong enough for ensemble work with a pleasant, slightly dopey quality for featured moments. The real performance is physical."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Physical comedy",
+          "Slapstick",
+          "Character movement"
+        ],
+        "stamina": "Moderate \u2014 concentrated physical comedy moments plus ensemble work",
+        "notes": "Robertson Ay's physicality is all about comedy \u2014 falling asleep, stumbling, barely avoiding disasters, doing everything wrong with oblivious cheerfulness. Think classic slapstick within a domestic setting."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Lazy comic servant",
+          "Physical comedian",
+          "Loveable incompetent",
+          "Slapstick performer"
+        ],
+        "emotional_range": "Primarily comic \u2014 oblivious cheerfulness, genuine laziness raised to an art form, occasional moments of accidental usefulness",
+        "comedy_skills": true,
+        "notes": "Robertson Ay is a gift for physical comedians. His comedy comes from a complete commitment to laziness \u2014 he's not pretending to be lazy, he genuinely cannot stay awake. The audience should find him infuriating and adorable simultaneously."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "Physical comedy and slapstick",
+          "Comic timing",
+          "Partnership with Mrs Brill",
+          "Falling asleep convincingly",
+          "Below-stairs comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Robertson Ay is a dream role for physical comedians. It develops slapstick, comic timing, and the art of being lovably incompetent. Great for performers whose strengths are physical rather than vocal.",
+        "common_casting": "Physical comedians with natural comic timing. Must create great chemistry with Mrs Brill. Usually doubled from ensemble.",
+        "standout_opportunity": "A hilarious Robertson Ay gets reliable laughs and shows physical comedy mastery."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Physical comedy and slapstick",
+          "Comic partnership",
+          "Below-stairs character work",
+          "Consistent comedy through a show",
+          "Ensemble-to-featured transitions"
+        ],
+        "challenge_areas": [
+          "Keeping slapstick fresh across a run",
+          "Not disrupting serious scenes",
+          "Balancing featured comedy with ensemble discipline",
+          "Finding variety in one-note comedy premise"
+        ],
+        "recommended_for": [
+          "Physical comedians seeking featured ensemble work",
+          "Performers whose strength is physical comedy over vocals",
+          "Those developing slapstick and timing skills",
+          "Ensemble members wanting consistent featured presence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural physical comedy ability",
+          "Strong comic timing",
+          "The ability to be funny without being disruptive",
+          "Ensemble dance and vocal skills",
+          "Chemistry potential with Mrs Brill actress"
+        ],
+        "common_mistakes": [
+          "Going too broad with the slapstick",
+          "Not having ensemble skills to back up the comedy",
+          "Making Robertson Ay annoying rather than loveable",
+          "Forgetting he needs to blend into ensemble when not featured"
+        ],
+        "tips": [
+          "Study classic physical comedians \u2014 Buster Keaton, Jacques Tati",
+          "Make the laziness genuine, not performed",
+          "Show you can be disciplined in ensemble and loose in featured moments",
+          "Chemistry with Mrs Brill is essential \u2014 prepare for paired scenes"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Domestic scenes / below stairs comedy",
+          "type": "physical_comedy",
+          "notes": "Robertson Ay's ongoing battle with consciousness \u2014 falling asleep, botching tasks, driving Mrs Brill mad"
+        }
+      ]
+    },
+    {
+      "id": "miss-lark",
+      "name": "Miss Lark",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The Banks family's fussy, dog-obsessed neighbour who represents the prim propriety of Cherry Tree Lane. Miss Lark is a comic character \u2014 uptight, gossipy, and devoted to her pampered dog. She provides neighbourhood colour and represents the conventional world that Mary Poppins' magic disrupts. Her horror at unconventional behaviour and her commitment to appearances make her a reliable source of comedy. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "Variable",
+        "voice_type": "Spoken / Ensemble voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Primarily spoken with ensemble singing \u2014 fussy, high-pitched character voice",
+        "style_notes": "Miss Lark's voice should be distinctively prim and fussy \u2014 the sound of someone who judges everything and everyone. Mostly a speaking role with ensemble vocal participation."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Character movement",
+          "Staging"
+        ],
+        "stamina": "Low in featured moments, higher if doubling ensemble",
+        "notes": "Miss Lark moves with exaggerated propriety \u2014 everything is precise, correct, and slightly ridiculous. Her physicality is about maintaining appearances."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Fussy neighbour",
+          "Comic busybody",
+          "Prim and proper",
+          "Neighbourhood gossip"
+        ],
+        "emotional_range": "Prim outrage, fussy disapproval, gossipy excitement, horrified reactions to anything unconventional",
+        "comedy_skills": true,
+        "notes": "Miss Lark is a one-scene-wonder type \u2014 she doesn't need to be complex, just consistently funny. Her reactions to the magical events on Cherry Tree Lane should be priceless."
+      },
+      "performance": {
+        "stage_time_percentage": 3,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Comic character acting",
+          "Prim physicality",
+          "Reaction comedy",
+          "Neighbourhood colour"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A small but fun character comedy role that adds neighbourhood colour. Good for ensemble performers building character credits.",
+        "common_casting": "Comic character actress from the ensemble. Must be able to create a distinct, funny character quickly. Usually doubled.",
+        "standout_opportunity": "Miss Lark's horrified reactions to magic and unconventional behaviour provide reliable comedy moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Quick character creation",
+          "Comic reaction work",
+          "Prim character type",
+          "Ensemble versatility"
+        ],
+        "challenge_areas": [
+          "Making a very small role memorable",
+          "Not becoming a one-joke character",
+          "Balancing featured and ensemble work"
+        ],
+        "recommended_for": [
+          "Ensemble performers building character comedy credits",
+          "Those developing quick character creation skills",
+          "Comic actresses who enjoy fussy character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Character comedy ability",
+          "Distinct, funny character creation",
+          "Ensemble skills",
+          "Physical comedy"
+        ],
+        "common_mistakes": [
+          "Making Miss Lark too mean \u2014 she's funny, not nasty",
+          "Not committing enough to the character",
+          "Neglecting ensemble requirements"
+        ],
+        "tips": [
+          "Create a specific, detailed Miss Lark \u2014 the funnier the better",
+          "Show strong ensemble skills first",
+          "Make it quick, distinct, and memorable"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Cherry Tree Lane scenes",
+          "type": "character_comedy",
+          "notes": "Miss Lark's fussy neighbourhood presence and horrified reactions to magical events"
+        }
+      ]
+    },
+    {
+      "id": "neleus",
+      "name": "Neleus",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 16,
+        "max": 25
+      },
+      "description": "A statue in the park who comes to life during one of Mary Poppins' magical adventures. Neleus is a marble boy who longs to be free and experience the world beyond his pedestal. His story is a touching metaphor about longing for freedom and the sadness of being frozen in place while life moves around you. The park sequence where the statues come to life is one of the show's most magical theatrical moments. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Light, youthful tenor \u2014 the voice of a boy trapped in stone",
+        "style_notes": "Neleus sings with a quality that suggests wonder and longing \u2014 someone experiencing sensation for the first time. Pure, unaffected vocal quality."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "Contemporary",
+          "Physical theatre",
+          "Ballet elements",
+          "Statue-to-life movement"
+        ],
+        "stamina": "Moderate \u2014 concentrated in the park sequence",
+        "notes": "The transformation from statue to living being is a key physical performance challenge. Must convey the transition from frozen stillness to joyful movement. The park sequence often features beautiful, lyrical choreography."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Magical being",
+          "Symbol of longing",
+          "Innocent wonder",
+          "Living statue"
+        ],
+        "emotional_range": "Frozen longing, the joy of first movement, wonder at the world, sadness at returning to stone",
+        "comedy_skills": false,
+        "notes": "Neleus is a poignant character \u2014 his brief taste of freedom makes his return to stone heartbreaking. The audience should feel the wonder of coming alive and the sadness of losing it."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Statue-to-life physical transformation",
+          "Conveying wonder through movement",
+          "Poignant physical performance",
+          "Lyrical dance quality"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "Neleus teaches physical storytelling, the art of theatrical transformation, and how to create emotional impact through movement. The statue-to-life sequence develops skills that transfer to every physical performance.",
+        "common_casting": "Young male dancer-actor with lyrical movement quality and emotional sensitivity. Must be convincing as both frozen statue and joyful boy. Usually doubled from ensemble.",
+        "standout_opportunity": "The park sequence is one of the show's most magical moments. A beautiful Neleus performance creates genuine wonder."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Physical transformation performance",
+          "Lyrical movement",
+          "Emotional storytelling through body",
+          "Featured dance within ensemble",
+          "Poignant character creation"
+        ],
+        "challenge_areas": [
+          "The statue-to-life transition must be convincing",
+          "Creating emotion in a brief featured moment",
+          "Balancing ensemble work with featured physical performance"
+        ],
+        "recommended_for": [
+          "Young dancer-actors with lyrical quality",
+          "Performers developing physical storytelling",
+          "Ensemble members seeking emotionally rich featured moments",
+          "Those who combine dance with acting"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Beautiful lyrical movement quality",
+          "Convincing statue physicality",
+          "Emotional depth",
+          "Singing ability for featured moment",
+          "Ensemble dance and vocal skills"
+        ],
+        "common_mistakes": [
+          "Not committing to the statue physicality",
+          "Lacking emotional depth in the transformation",
+          "Not preparing ensemble skills alongside the featured moment"
+        ],
+        "tips": [
+          "Practice frozen-to-living transitions \u2014 this is your audition ace",
+          "Find the wonder of experiencing everything for the first time",
+          "Show lyrical dance ability alongside ensemble skills",
+          "Make the audience feel Neleus's longing and joy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Park sequence / Neleus's song",
+          "type": "featured_solo",
+          "notes": "The magical moment where the statue comes to life \u2014 wonder, joy, and the sadness of returning to stone"
+        }
+      ]
+    },
+    {
+      "id": "park-keeper",
+      "name": "The Park Keeper",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The rule-obsessed keeper of the park who serves as a comic foil to Mary Poppins' magical adventures. The Park Keeper represents order, rules, and conventional authority \u2014 everything that magic disrupts. He is perpetually flustered by the extraordinary events happening in his park (statues coming to life, people floating, kites carrying people away) and desperately trying to maintain order. His exasperation is a reliable source of comedy throughout the show. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "Tenor / Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Character voice \u2014 flustered, authoritative, increasingly desperate",
+        "style_notes": "The Park Keeper's vocal moments are mostly spoken or in ensemble contexts. His voice should convey officious authority that crumbles under magical pressure."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Physical comedy",
+          "Character movement"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "The Park Keeper's comedy is physical \u2014 chasing people off grass, reacting to magical events, trying to maintain dignity while the world goes mad around him."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Officious authority",
+          "Comic foil",
+          "Rule enforcer",
+          "Flustered bureaucrat"
+        ],
+        "emotional_range": "Officious authority, mounting panic, comic frustration, bewildered acceptance",
+        "comedy_skills": true,
+        "notes": "The Park Keeper is the straight man to Mary Poppins' magic. His comedy comes from the increasing gap between his need for order and the chaos around him. Think a traffic warden trying to give a ticket to a flying car."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Comic foil reactions",
+          "Authority crumbling under pressure",
+          "Physical comedy",
+          "Flustered bureaucrat character"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "The Park Keeper is a fun character comedy role that develops comic foil skills, reaction comedy, and the art of playing authority figures undone by chaos. Reliable laughs throughout the show.",
+        "common_casting": "Character actor with good comic reactions. Must be able to play officious authority that crumbles entertainingly. Usually doubled from ensemble.",
+        "standout_opportunity": "The Park Keeper's mounting bewilderment as magic takes over his park provides consistent comedy moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comic foil performance",
+          "Authority character type",
+          "Reaction comedy",
+          "Physical comedy",
+          "Character consistency"
+        ],
+        "challenge_areas": [
+          "Keeping reactions fresh",
+          "Not overplaying the bewilderment",
+          "Balancing featured and ensemble work"
+        ],
+        "recommended_for": [
+          "Character actors developing comic foil skills",
+          "Ensemble performers seeking named comedy roles",
+          "Those who enjoy authority-figure comedy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong comic reactions",
+          "Officious character quality",
+          "Ensemble skills",
+          "Physical comedy ability"
+        ],
+        "common_mistakes": [
+          "Making the Park Keeper too angry \u2014 he's flustered, not furious",
+          "Overplaying reactions",
+          "Not preparing ensemble requirements"
+        ],
+        "tips": [
+          "Study great comic foils \u2014 the Park Keeper reacts to magic, he doesn't initiate it",
+          "Find the desperation beneath the authority",
+          "Show ensemble skills first, character comedy as bonus"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Park scenes throughout",
+          "type": "comic_reactions",
+          "notes": "The Park Keeper's increasingly bewildered reactions to magical events in his park"
+        }
+      ]
+    },
+    {
+      "id": "ensemble-poppins",
+      "name": "Ensemble (Chimney Sweeps / Park Strollers / Statues / Toys / Bank Staff)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 18,
+        "max": 55
+      },
+      "description": "The Mary Poppins ensemble creates the vibrant world of Edwardian London \u2014 from the rooftops to the park to the streets of Cherry Tree Lane. Members play chimney sweeps (the high-energy Step in Time sequence), park strollers, living statues, animated toys, bank staff, party guests, and various London characters. Several ensemble tracks include named featured roles (Bird Woman, Katie Nanna, Mrs Corry, Mrs Brill, Robertson Ay, Admiral Boom/Bank Chairman, Miss Lark, Neleus, Park Keeper) \u2014 see individual entries. The chimney sweep sequence is one of the most demanding ensemble numbers in musical theatre, requiring exceptional dance stamina and aerial/acrobatic ability. Strong singers and dancers with character acting ability are essential.",
+      "vocal": {
+        "range": "Full range across voice types",
+        "voice_type": "SATB \u2014 full choral ensemble",
+        "belt_required": true,
+        "belt_range": "Varies by voice part",
+        "tessitura": "Full choral range with strong ensemble blend required",
+        "style_notes": "Classic musical theatre ensemble singing \u2014 must handle everything from the gentle 'Feed the Birds' backing to the explosive 'Step in Time' chorus. Strong blend and the ability to switch between styles."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Jazz",
+          "Tap",
+          "Character dance",
+          "Acrobatics (chimney sweeps)",
+          "Period movement",
+          "Physical theatre"
+        ],
+        "stamina": "Very high \u2014 Step in Time alone is one of the most demanding ensemble numbers in the repertoire",
+        "notes": "The chimney sweep sequence is legendary for its physical demands. Ensemble members must handle tap, jazz, acrobatics, and sustained high-energy choreography. Some productions include aerial work."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Edwardian Londoners",
+          "Chimney sweeps",
+          "Park visitors",
+          "Living statues",
+          "Animated toys",
+          "Bank staff"
+        ],
+        "emotional_range": "Wide \u2014 from the joy of magical sequences to the period authenticity of Edwardian London",
+        "comedy_skills": true,
+        "notes": "The ensemble must create a complete, believable world. Each member should have distinct character choices within group scenes."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 10,
+        "quick_changes": 5,
+        "special_skills": [
+          "Advanced dance including tap and acrobatics",
+          "Multiple character tracks",
+          "Quick changes between worlds",
+          "High physical stamina",
+          "Potential for named featured roles"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "The Mary Poppins ensemble is one of the most demanding and rewarding in musical theatre. Step in Time alone builds dance stamina and ensemble excellence. Multiple named tracks offer featured opportunities.",
+        "common_casting": "Strong dancer-singers with character acting ability. Must handle the physical demands of chimney sweep choreography. Versatility across multiple character types essential.",
+        "standout_opportunity": "Step in Time is a showstopper that showcases ensemble excellence. Named featured tracks offer individual moments within the group."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Advanced ensemble dance",
+          "Multiple character creation",
+          "Physical stamina",
+          "Quick-change discipline",
+          "Classic musical theatre ensemble skills"
+        ],
+        "challenge_areas": [
+          "Physical demands of Step in Time",
+          "Multiple quick changes",
+          "Creating distinct characters in each scene",
+          "Sustaining energy across demanding show"
+        ],
+        "recommended_for": [
+          "Strong dancer-singers seeking ensemble experience",
+          "Performers building classic musical theatre credits",
+          "Those developing physical stamina and versatility"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Exceptional dance ability \u2014 especially tap and jazz",
+          "Strong vocal blend",
+          "Physical stamina",
+          "Character acting versatility",
+          "Team player mentality"
+        ],
+        "common_mistakes": [
+          "Underestimating the physical demands",
+          "Not preparing tap material",
+          "Lacking character differentiation",
+          "Not showing vocal blend ability"
+        ],
+        "tips": [
+          "Lead with dance \u2014 this is a dancer's ensemble",
+          "Prepare tap and jazz equally",
+          "Show character versatility",
+          "Demonstrate physical stamina and energy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Step in Time",
+          "type": "ensemble_showstopper",
+          "notes": "One of the most famous and demanding ensemble numbers in musical theatre \u2014 chimney sweep spectacular"
+        },
+        {
+          "title": "Jolly Holiday",
+          "type": "ensemble",
+          "notes": "The magical park adventure \u2014 charm and period style"
+        },
+        {
+          "title": "Supercalifragilisticexpialidocious",
+          "type": "ensemble",
+          "notes": "The iconic word \u2014 high-energy ensemble number led by Mrs Corry"
+        }
+      ]
+    }
+  ]
+}

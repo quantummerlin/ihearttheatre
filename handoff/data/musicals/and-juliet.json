@@ -1,0 +1,1117 @@
+{
+  "musical": {
+    "id": "and-juliet",
+    "title": "& Juliet",
+    "music_by": "Max Martin (jukebox \u2014 existing pop hits)",
+    "book_by": "David West Read",
+    "based_on": "What if Juliet didn't die? Reimagining of Shakespeare's Romeo and Juliet",
+    "year_premiered": 2019,
+    "broadway_opening": "2022-11-17",
+    "setting": "Shakespeare's world reimagined \u2014 Verona, Paris, and a meta-theatrical framing with Shakespeare and Anne Hathaway arguing over the story",
+    "time_period": "Timeless (Shakespeare-era setting with contemporary attitudes and music)",
+    "themes": [
+      "female empowerment",
+      "self-discovery",
+      "identity",
+      "chosen family",
+      "rewriting your own story",
+      "gender fluidity",
+      "love on your own terms",
+      "second chances"
+    ],
+    "genre_tags": [
+      "jukebox",
+      "pop",
+      "comedy",
+      "contemporary",
+      "empowerment",
+      "LGBTQ_inclusive",
+      "meta_theatrical"
+    ],
+    "vocal_style": "Contemporary pop \u2014 Max Martin hits including Britney, Backstreet Boys, Katy Perry, Ariana Grande, Kelly Clarkson. Big pop belt and riffing required.",
+    "dance_intensity": "high",
+    "orchestra_size": "band",
+    "typical_cast_size": "18-24",
+    "age_range": "20s-50s (primarily young adult cast with Shakespeare/Anne as older)",
+    "difficulty_overall": "advanced",
+    "junior_version_available": false,
+    "license_holder": "Theatrical Rights Worldwide (expected)",
+    "synopsis": "What if Juliet didn't die at the end of Romeo and Juliet? Shakespeare's wife Anne Hathaway rewrites the ending, sending Juliet on a journey of self-discovery to Paris with her best friend May and nurse Angelique. Along the way, Juliet discovers who she really is \u2014 beyond being someone's love interest. Meanwhile, Shakespeare keeps trying to write Romeo back in, and the characters fight for control of their own stories."
+  },
+  "roles": [
+    {
+      "id": "and-juliet-juliet",
+      "name": "Juliet",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 20,
+        "max": 32
+      },
+      "description": "Shakespeare's Juliet \u2014 but rewritten. She chooses NOT to die, and instead goes on a journey to find out who she is beyond Romeo. She's fierce, vulnerable, discovering her own power, and learning that her story doesn't have to be defined by a man. The ultimate empowerment arc.",
+      "vocal": {
+        "range": "A3-G5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-F5",
+        "tessitura": "mid-high",
+        "style_notes": "Contemporary pop belt with riffing ability. Must handle massive pop hits with authenticity and power. Think Ariana Grande meets Kelly Clarkson. Must make pop songs feel emotionally genuine, not just performed."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "contemporary_pop_choreography",
+          "high_energy"
+        ],
+        "stamina": "very_high",
+        "notes": "High-energy pop choreography throughout. Must be a strong mover who can dance while belting."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "empowered heroine",
+          "self-discovery protagonist",
+          "rebellious romantic",
+          "modern woman in a Shakespeare story"
+        ],
+        "emotional_range": "extreme \u2014 grief, defiance, joy, vulnerability, empowerment, love, self-discovery",
+        "comedy_skills": true,
+        "notes": "Must balance the comedy of the meta-theatrical concept with genuine emotional depth. Juliet's journey from defined-by-Romeo to defining-herself must feel real. Must be funny AND moving."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 5,
+        "duets": 3,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "pop_belt",
+          "pop_riffing",
+          "emotional_pop_singing",
+          "dance_while_singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Dream pop-belt lead. Gets to sing some of the biggest pop hits ever written in a context that gives them emotional meaning. Career-defining for contemporary belters.",
+        "common_casting": "Powerful pop belter with genuine acting ability, dance skills, and star quality. Must look and sound like a pop star but act like a real person.",
+        "standout_opportunity": "'Since U Been Gone', 'Roar', and 'Larger Than Life' are anthemic showstoppers. A great Juliet becomes a star."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "pop_belt",
+          "riffing",
+          "contemporary_musical_theatre",
+          "empowerment_acting",
+          "pop_choreography",
+          "star_presence"
+        ],
+        "challenge_areas": [
+          "making_pop_songs_feel_emotionally_genuine",
+          "sustaining_energy_and_voice",
+          "balancing_comedy_and_drama"
+        ],
+        "recommended_for": [
+          "pop/R&B singers wanting musical theatre careers",
+          "belters wanting a contemporary star vehicle",
+          "performers who want to be a role model on stage"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "massive pop belt",
+          "genuine acting ability",
+          "dance skills",
+          "star quality",
+          "can they make pop songs feel real?"
+        ],
+        "common_mistakes": [
+          "all voice no acting",
+          "can't dance well enough",
+          "not enough emotional depth",
+          "performing songs instead of living them"
+        ],
+        "tips": [
+          "Juliet is discovering that she's more than a love story. Every pop song in this show is an emotional milestone on that journey. Don't just sing 'Since U Been Gone' \u2014 USE it to break free. The audience should feel YOUR liberation, not just hear a pop song."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Since U Been Gone (Kelly Clarkson)",
+          "type": "solo",
+          "notes": "Juliet breaks free from Romeo. Anthemic, empowering, the defining moment."
+        },
+        {
+          "title": "...Baby One More Time (Britney Spears)",
+          "type": "solo",
+          "notes": "Juliet's vulnerability. Recontextualized beautifully."
+        },
+        {
+          "title": "Roar (Katy Perry)",
+          "type": "solo_with_ensemble",
+          "notes": "Full empowerment anthem. Brings the house down."
+        },
+        {
+          "title": "I Want It That Way (Backstreet Boys)",
+          "type": "duet_ensemble",
+          "notes": "Romantic but recontextualized. Beautiful arrangement."
+        },
+        {
+          "title": "Larger Than Life (Backstreet Boys)",
+          "type": "ensemble_lead",
+          "notes": "Finale energy. Full company celebration."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-anne-hathaway",
+      "name": "Anne Hathaway (Shakespeare's wife)",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 35,
+        "max": 50
+      },
+      "description": "Shakespeare's real-life wife who is fed up with his tragic endings for women. She takes control of the quill and rewrites Juliet's story. She's sharp, funny, powerful, and the meta-theatrical engine of the show. She represents every woman who's been underwritten.",
+      "vocal": {
+        "range": "G3-E5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "Bb3-E5",
+        "tessitura": "mid",
+        "style_notes": "Big, powerful belt with emotional weight. Must handle power ballads and uptempo pop equally. Needs the vocal authority of a woman who's been quiet too long and is finally taking control."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": [
+          "staging",
+          "some_choreography"
+        ],
+        "stamina": "moderate",
+        "notes": "Less dance-intensive than Juliet but must hold the stage with presence."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "sharp wife",
+          "feminist rewriter",
+          "meta-narrator",
+          "truth-teller",
+          "empowered woman"
+        ],
+        "emotional_range": "high \u2014 frustration, wit, power, vulnerability, love, triumph",
+        "comedy_skills": true,
+        "notes": "Must be hilarious arguing with Shakespeare AND emotionally devastating in her own right. The meta-theatrical framing only works if Anne feels like a real woman with real frustrations, not just a narrative device."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "meta_theatrical_narration",
+          "breaking_fourth_wall",
+          "comedic_timing_with_shakespeare"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "The secret lead of the show. Anne's battle with Shakespeare over the story IS the show's thesis. Gets incredible material \u2014 funny, moving, and powerfully feminist. A dream role for mature belters.",
+        "common_casting": "Powerful, charismatic woman with big voice, sharp wit, and genuine emotional depth. Must be able to match Shakespeare joke-for-joke and still break your heart.",
+        "standout_opportunity": "Anne's power ballads stop the show. She represents every woman who ever wanted to rewrite her own story."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "meta_theatrical_performance",
+          "comedic_partnership",
+          "power_ballad_delivery",
+          "mature_leading_lady_skills"
+        ],
+        "challenge_areas": [
+          "balancing_comedy_and_drama",
+          "matching_energy_with_Shakespeare"
+        ],
+        "recommended_for": [
+          "mature belters wanting a contemporary star role",
+          "actresses with sharp comedy and big voices",
+          "women who want to play a feminist icon"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "big voice",
+          "sharp wit",
+          "genuine power",
+          "chemistry with Shakespeare",
+          "can she make us laugh AND cry?"
+        ],
+        "common_mistakes": [
+          "all comedy no heart",
+          "not powerful enough vocally",
+          "playing the feminism instead of the person"
+        ],
+        "tips": [
+          "Anne Hathaway has been watching her husband kill off women for years. She's not angry \u2014 she's DONE. She's rewriting the story because she can't stand watching one more woman die for a man's plot. That's not politics \u2014 it's personal. Play the personal."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "That's the Way It Is (Celine Dion)",
+          "type": "solo",
+          "notes": "Anne's power ballad. Devastating. The emotional core of HER story."
+        },
+        {
+          "title": "Show Me the Meaning of Being Lonely (BSB)",
+          "type": "duet",
+          "notes": "With Shakespeare. Their real relationship. Complex, painful, loving."
+        },
+        {
+          "title": "I'm Gonna Be (500 Miles) (Proclaimers)",
+          "type": "ensemble",
+          "notes": "Fun ensemble moment."
+        },
+        {
+          "title": "Blow / Can't Stop the Feeling",
+          "type": "ensemble",
+          "notes": "High energy ensemble numbers."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-shakespeare",
+      "name": "William Shakespeare",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 35,
+        "max": 55
+      },
+      "description": "The Bard himself \u2014 but played as a loveable, egotistical, slightly clueless husband who can't understand why his wife wants to change his masterpiece. He's the comic engine of the framing story, constantly trying to kill Romeo back into the plot while Anne keeps overruling him.",
+      "vocal": {
+        "range": "A2-G4",
+        "voice_type": "baritone/tenor",
+        "belt_required": true,
+        "belt_range": "D3-F#4",
+        "tessitura": "mid",
+        "style_notes": "Pop-rock male voice. Must handle both uptempo numbers and tender moments. Needs charisma and vocal personality more than pure technique."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "comedic_staging",
+          "light_choreography"
+        ],
+        "stamina": "moderate",
+        "notes": "Physical comedy more important than dance technique."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "loveable egotist",
+          "meta-narrator",
+          "frustrated genius",
+          "flawed husband learning"
+        ],
+        "emotional_range": "high \u2014 ego, humor, frustration, vulnerability, genuine love, growth",
+        "comedy_skills": true,
+        "notes": "Must be hilarious without being unlikeable. Shakespeare genuinely thinks his version is better \u2014 the comedy comes from his blind spots. But he must also show genuine growth and love for Anne. The audience should root for both of them."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "meta_theatrical_comedy",
+          "breaking_fourth_wall",
+          "egotistical_charm"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_get_cast"
+        ],
+        "why": "Hilarious comic lead role with great material. Gets to play THE most famous writer in history as a loveable idiot. Scene-stealing potential in every framing scene.",
+        "common_casting": "Charismatic comic actor with good voice and impeccable timing. Must be someone the audience loves despite his ego.",
+        "standout_opportunity": "Every argument with Anne is comedy gold. A great Shakespeare gets quoted endlessly."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "comic_leading_man",
+          "meta_theatrical_performance",
+          "pop_singing",
+          "comedic_partnership"
+        ],
+        "challenge_areas": [
+          "keeping_ego_character_likeable",
+          "genuine_vulnerability_beneath_comedy"
+        ],
+        "recommended_for": [
+          "comic actors with singing ability",
+          "performers who love audience interaction",
+          "charismatic men wanting contemporary musical roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "comic genius",
+          "chemistry with Anne",
+          "can he sing pop?",
+          "likeability despite ego",
+          "timing"
+        ],
+        "common_mistakes": [
+          "too smug \u2014 must be loveable",
+          "can't sing the style",
+          "no growth \u2014 Shakespeare must learn"
+        ],
+        "tips": [
+          "Shakespeare GENUINELY believes Romeo and Juliet is perfect. He's not wrong \u2014 it IS one of the greatest stories ever told. But he's blind to what it costs Juliet. That blind spot is both his flaw and his comedy. He's not a villain \u2014 he's a man who hasn't figured out that women have their own stories."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Show Me the Meaning of Being Lonely (BSB)",
+          "type": "duet",
+          "notes": "With Anne. Their real relationship beneath the comedy."
+        },
+        {
+          "title": "It's Gonna Be Me (NSYNC)",
+          "type": "solo",
+          "notes": "Shakespeare tries to insert himself. Hilarious pop performance."
+        },
+        {
+          "title": "As Long As You Love Me (BSB)",
+          "type": "duet_ensemble",
+          "notes": "Genuine romantic moment."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-may",
+      "name": "May",
+      "role_type": "supporting",
+      "gender": "non-binary/fluid",
+      "age_range": {
+        "min": 18,
+        "max": 30
+      },
+      "description": "Juliet's best friend \u2014 a non-binary character who is exploring their own identity alongside Juliet's journey. May's storyline celebrates gender fluidity and self-expression. They're funny, loyal, brave, and represent the show's commitment to inclusive storytelling.",
+      "vocal": {
+        "range": "C4-F5 (or A3-E5 depending on casting)",
+        "voice_type": "flexible \u2014 countertenor, mezzo, or tenor depending on performer",
+        "belt_required": true,
+        "belt_range": "varies by performer",
+        "tessitura": "mid-high",
+        "style_notes": "Pop voice with emotional range. Must handle both vulnerable and powerful moments. The vocal quality should feel authentic to the performer's own identity."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "contemporary_pop_choreography",
+          "expressive_movement"
+        ],
+        "stamina": "high",
+        "notes": "Strong dancer. Movement is part of May's self-expression."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "loyal friend",
+          "identity explorer",
+          "brave truth-teller",
+          "joyful rebel"
+        ],
+        "emotional_range": "high \u2014 joy, vulnerability, courage, self-discovery, loyalty, celebration",
+        "comedy_skills": true,
+        "notes": "Must bring genuine emotional truth to the identity exploration. Not a token \u2014 May is a fully realized character with their own arc. The friendship with Juliet must feel deep and real."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "gender_fluid_performance",
+          "authentic_identity_portrayal",
+          "pop_vocals"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Groundbreaking role for non-binary and gender-fluid performers. Gets beautiful material and a genuine character arc. One of the most important new roles in contemporary musical theatre.",
+        "common_casting": "Non-binary or gender-fluid performer with strong pop voice and acting ability. Authentic representation is key.",
+        "standout_opportunity": "May's identity journey is deeply moving. A great May makes audiences rethink what they thought they knew about gender in musical theatre."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "authentic_representation",
+          "pop_musical_theatre",
+          "emotional_vulnerability",
+          "identity_storytelling"
+        ],
+        "challenge_areas": [
+          "carrying_representational_weight",
+          "making_identity_story_universal",
+          "balancing_fun_and_depth"
+        ],
+        "recommended_for": [
+          "non-binary/gender-fluid performers wanting a landmark role",
+          "performers passionate about inclusive storytelling"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "authenticity",
+          "vocal ability",
+          "emotional depth",
+          "friendship chemistry with Juliet",
+          "joy"
+        ],
+        "common_mistakes": [
+          "making identity the ONLY character trait",
+          "not enough fun \u2014 May is joyful",
+          "not enough vulnerability"
+        ],
+        "tips": [
+          "May is on a journey of self-discovery that happens to be about gender. But it's really about the courage to be yourself in a world that wants you to be someone else. That's universal. Play the universal."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I'm Not a Girl, Not Yet a Woman (Britney)",
+          "type": "solo",
+          "notes": "Recontextualized brilliantly for May's identity journey. Powerful and moving."
+        },
+        {
+          "title": "Confident (Demi Lovato)",
+          "type": "solo_with_ensemble",
+          "notes": "May owns their identity. Empowering."
+        },
+        {
+          "title": "Larger Than Life",
+          "type": "ensemble",
+          "notes": "Full company celebration."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-romeo",
+      "name": "Romeo",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 20,
+        "max": 32
+      },
+      "description": "Shakespeare's Romeo \u2014 but he's been resurrected and can't understand why Juliet doesn't want him anymore. He's earnest, dramatic, over-the-top romantic, and hilariously oblivious. His journey is learning that love isn't about possession.",
+      "vocal": {
+        "range": "B2-A4",
+        "voice_type": "tenor",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Pop tenor with boy-band quality. Must be able to sell Backstreet Boys songs genuinely while being comedically over-the-top. Needs power AND charm."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "pop_choreography",
+          "boy_band_moves",
+          "comedic_dance"
+        ],
+        "stamina": "high",
+        "notes": "Boy-band choreography is a major feature. Must be able to dance like a pop star."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "dramatic romantic",
+          "lovesick fool",
+          "boy-band heartthrob",
+          "learning to grow up"
+        ],
+        "emotional_range": "high \u2014 dramatic love, confusion, humor, growth, acceptance",
+        "comedy_skills": true,
+        "notes": "Must be genuinely funny in his over-the-top romanticism while also showing real growth. He starts as a parody of toxic romance and ends as someone who understands real love."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "boy_band_performance",
+          "dramatic_romance_parody",
+          "pop_tenor"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_get_cast"
+        ],
+        "why": "Gets to sing Backstreet Boys and NSYNC songs while being hilariously romantic. A dream role for pop tenors who can be funny. The boy-band parody moments are showstoppers.",
+        "common_casting": "Hot, charming pop tenor who can dance and doesn't take himself too seriously. Must be willing to be the butt of the joke.",
+        "standout_opportunity": "Romeo's boy-band moments bring the house down. A great Romeo becomes the audience's guilty pleasure."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "pop_tenor_performance",
+          "comedic_romantic_lead",
+          "boy_band_choreography",
+          "character_growth"
+        ],
+        "challenge_areas": [
+          "being_funny_without_being_annoying",
+          "showing_genuine_growth"
+        ],
+        "recommended_for": [
+          "pop tenors wanting musical theatre roles",
+          "handsome performers who can be self-deprecating",
+          "boy-band fans who can ACTUALLY sing and dance"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong pop tenor",
+          "dance ability",
+          "comedy chops",
+          "willingness to be ridiculous AND genuine"
+        ],
+        "common_mistakes": [
+          "too sincere \u2014 Romeo is a parody (at first)",
+          "too much parody \u2014 Romeo must grow",
+          "can't dance"
+        ],
+        "tips": [
+          "Romeo genuinely believes he's the greatest lover who ever lived. He IS Shakespeare's creation, after all. The comedy is that the world has moved on and he hasn't. But his growth \u2014 learning that love is about the other person, not yourself \u2014 is real and touching. Start as a hilarious caricature, end as a genuine person."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I Want It That Way (BSB)",
+          "type": "duet_ensemble",
+          "notes": "Romeo's dramatic return. Boy-band energy at maximum. Hilarious and catchy."
+        },
+        {
+          "title": "It's My Life (Bon Jovi)",
+          "type": "solo",
+          "notes": "Romeo's dramatic moment. Over-the-top rock anthem."
+        },
+        {
+          "title": "As Long As You Love Me (BSB)",
+          "type": "ensemble",
+          "notes": "Genuine romantic moment amid the comedy."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-angelique",
+      "name": "Nurse Angelique",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 35,
+        "max": 55
+      },
+      "description": "Juliet's nurse reimagined as a fierce, fabulous, takes-no-nonsense older woman who joins Juliet on her journey. She's the voice of experience, the protector, and has her own romance subplot. A powerhouse supporting role.",
+      "vocal": {
+        "range": "F3-E5",
+        "voice_type": "alto/mezzo with big belt",
+        "belt_required": true,
+        "belt_range": "A3-E5",
+        "tessitura": "mid",
+        "style_notes": "Big, soulful belt. R&B/gospel influence. Must be able to blow the roof off. Think Tina Turner energy."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "pop_choreography",
+          "soulful_movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Not the primary dancer but must hold her own in ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "fierce protector",
+          "sassy mentor",
+          "experienced woman",
+          "unexpected romantic"
+        ],
+        "emotional_range": "high \u2014 fierceness, warmth, sass, vulnerability, romance, wisdom",
+        "comedy_skills": true,
+        "notes": "Must be commanding and hilarious. Her own romance subplot adds depth. She's not just Juliet's sidekick \u2014 she has her own story."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "big_belt",
+          "sass",
+          "mentor_energy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Scene-stealing supporting role for big-voiced mature performers. Gets at least one showstopping number and great comedy material.",
+        "common_casting": "Powerful belter with huge personality and warmth. Must command respect on stage.",
+        "standout_opportunity": "Angelique's big number stops the show. She's the audience's favorite grown-up."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "power_belt",
+          "mentor_roles",
+          "pop_musical_theatre",
+          "comedy_supporting"
+        ],
+        "challenge_areas": [
+          "limited_material_compared_to_leads"
+        ],
+        "recommended_for": [
+          "mature belters wanting contemporary material",
+          "powerful women who own every stage they're on"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "BIG voice",
+          "commanding presence",
+          "warmth AND sass",
+          "can she hold her own?"
+        ],
+        "common_mistakes": [
+          "all sass no heart",
+          "not powerful enough vocally"
+        ],
+        "tips": [
+          "Angelique has seen it all and survived it all. She's fierce because the world taught her to be. But she's soft with Juliet because she sees herself in that girl. Belt it, own it, love it."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Stronger (Kelly Clarkson / Britney)",
+          "type": "solo_ensemble",
+          "notes": "Angelique's powerhouse moment."
+        },
+        {
+          "title": "That's the Way It Is (Celine Dion)",
+          "type": "ensemble",
+          "notes": "Emotional ensemble moment."
+        },
+        {
+          "title": "Larger Than Life",
+          "type": "ensemble",
+          "notes": "Finale celebration."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-lance",
+      "name": "Lance",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "A new love interest introduced in Paris. He's charming, genuine, and represents the possibility of love on equal terms \u2014 unlike Romeo's possessive version. Often connected to May's storyline as well.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "tenor",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Pop tenor. Smooth, charming, genuine vocal quality."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "pop_choreography"
+        ],
+        "stamina": "high",
+        "notes": "Strong dancer. Full participation in pop choreography."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "genuine love interest",
+          "kind charmer",
+          "alternative romantic"
+        ],
+        "emotional_range": "moderate \u2014 charm, genuine affection, vulnerability",
+        "comedy_skills": true,
+        "notes": "Must contrast with Romeo \u2014 Lance is genuine where Romeo is performative."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "genuine_charm",
+          "pop_dance"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Fun featured role in a hit contemporary show. Good for pop tenors building credits.",
+        "common_casting": "Charming, attractive pop tenor who can dance.",
+        "standout_opportunity": "Being the genuine alternative to Romeo's drama has its own appeal."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "pop_musical_theatre",
+          "romantic_interest_role",
+          "contemporary_choreography"
+        ],
+        "challenge_areas": [
+          "limited_material"
+        ],
+        "recommended_for": [
+          "pop tenors wanting contemporary musical experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "charm",
+          "genuine quality",
+          "singing ability",
+          "dance skills",
+          "contrast with Romeo"
+        ],
+        "common_mistakes": [
+          "being boring compared to Romeo",
+          "not enough personality"
+        ],
+        "tips": [
+          "Lance doesn't need to be dramatic because he's real. His quiet confidence is what makes Juliet see that love doesn't have to be a Shakespeare tragedy."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I Want It That Way",
+          "type": "ensemble",
+          "notes": "Part of the romantic ensemble numbers."
+        },
+        {
+          "title": "Larger Than Life",
+          "type": "ensemble",
+          "notes": "Finale."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-francois",
+      "name": "Francois Du Bois",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 18,
+        "max": 28
+      },
+      "description": "Lance's son, raised by his father since the death of his mother. Francois feels the weight of Lance's expectations and is desperately looking for a way to escape his father's overcontrolling nature. He doesn't want to join the army like his father before him \u2014 instead, he's a romantic, a musician, and a dreamer caught between filial duty and personal freedom. Francois becomes Juliet's love interest in Anne Hathaway's rewritten story, representing the possibility of a healthier, more equal relationship than the toxic Romeo dynamic. A young adult tenor with pop vocal chops, requiring strong dance ability and genuine romantic chemistry.",
+      "vocal": {
+        "range": "C3\u2013Ab4",
+        "voice_type": "Tenor",
+        "belt_required": true,
+        "belt_range": "E4\u2013Ab4",
+        "tessitura": "E3\u2013F4",
+        "style_notes": "Pop tenor with contemporary musical theatre sensibility. Must handle Max Martin's pop songwriting style with authenticity \u2014 think boyband meets Broadway. Warm, romantic vocal colour with strong belt for the power pop numbers. Must blend well in duets with Juliet."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "contemporary",
+          "pop choreography",
+          "jazz",
+          "partnering"
+        ],
+        "stamina": "very high",
+        "notes": "& Juliet is one of the most dance-heavy shows in contemporary musical theatre. Francois must be a strong dancer capable of complex contemporary and pop choreography. Partnering work with Juliet is essential. Must sustain high-energy dance throughout the show."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "romantic lead",
+          "rebel",
+          "sensitive artist",
+          "son in conflict"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "Must convey the tension between wanting to please his father and needing to follow his own path. Francois is a genuinely good person \u2014 warm, sensitive, and artistic \u2014 which makes him the perfect contrast to the toxic masculinity of Romeo. His relationship with both Lance and Juliet requires real emotional depth. Must also handle the show's sharp wit and comedic timing."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 6,
+        "quick_changes": 3,
+        "special_skills": [
+          "pop vocal performance",
+          "contemporary dance",
+          "romantic partnering",
+          "comedic timing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "A substantial supporting role that functions almost as a secondary lead. Francois is Juliet's primary love interest in the rewritten story and has significant stage time, featured songs, and complex emotional material. The father-son dynamic with Lance adds dramatic depth. One of the most rewarding supporting roles in contemporary jukebox musicals.",
+        "common_casting": "Young triple-threat performer with strong pop tenor voice. Must be genuinely charming and romantic without being saccharine. Often cast with a performer who has real dance training and can handle the demanding choreography while singing and acting.",
+        "standout_opportunity": "Francois gets some of the show's most romantic and emotionally charged moments. His scenes with Juliet and his confrontation with Lance are highlights. A performer who brings genuine vulnerability and warmth can make this role a career-defining turn."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "pop vocal technique",
+          "advanced contemporary choreography",
+          "romantic leading man skills",
+          "father-son dramatic scenes",
+          "jukebox musical performance style"
+        ],
+        "challenge_areas": [
+          "sustaining dance-heavy performance while singing",
+          "finding emotional depth in a pop-driven show",
+          "balancing comedy with genuine romantic chemistry"
+        ],
+        "recommended_for": [
+          "young tenors developing leading man range",
+          "dancers with strong singing ability",
+          "performers building contemporary musical theatre skills",
+          "actors seeking romantic lead experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong pop tenor voice",
+          "advanced dance ability",
+          "genuine romantic warmth",
+          "chemistry read potential",
+          "emotional vulnerability"
+        ],
+        "common_mistakes": [
+          "being too 'nice' without edge \u2014 Francois has real conflict with his father",
+          "neglecting the dance component \u2014 this show demands it",
+          "not bringing pop authenticity to the vocal style"
+        ],
+        "tips": [
+          "Prepare a contemporary pop song that shows your range and emotional connection",
+          "Be ready for a demanding dance call \u2014 & Juliet choreography is no joke",
+          "Show both your romantic warmth and your rebellious streak",
+          "Chemistry reads are crucial \u2014 be open and generous with your scene partner"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I'm Gonna Be (500 Miles)",
+          "type": "featured/ensemble",
+          "notes": "Francois featured in this ensemble pop number. High energy with full choreography."
+        },
+        {
+          "title": "As Long as You Love Me",
+          "type": "duet",
+          "notes": "Romantic duet moment. Pop ballad requiring genuine emotional connection and vocal blend."
+        },
+        {
+          "title": "It's My Life",
+          "type": "featured",
+          "notes": "Francois's declaration of independence from his father's expectations. Power pop anthem with strong belt."
+        },
+        {
+          "title": "That's the Way It Is",
+          "type": "ensemble feature",
+          "notes": "Featured in ensemble number exploring relationships and choices."
+        }
+      ]
+    },
+    {
+      "id": "and-juliet-ensemble",
+      "name": "Ensemble \u2014 Party People, Veronese, Parisians",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {
+        "min": 18,
+        "max": 40
+      },
+      "description": "The ensemble of & Juliet is one of the most demanding in contemporary musical theatre, performing high-energy pop choreography throughout the show. Members portray Party People, Veronese citizens, Parisians, and various characters in Shakespeare and Anne Hathaway's competing narratives. This is a dance-heavy ensemble requiring strong contemporary, jazz, and pop choreography skills alongside solid vocal ability. The ensemble drives the show's infectious energy and transforms between Renaissance Verona and a modern pop concert aesthetic. Must sustain extraordinary physical energy across the entire show.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "mixed \u2014 strong pop voices",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Strong pop ensemble singing. Must handle Max Martin harmonies and big chorus moments. Pop vocal quality essential."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "contemporary_pop",
+          "hip_hop_fusion",
+          "commercial_dance",
+          "high_energy_choreography"
+        ],
+        "stamina": "very_high",
+        "notes": "This is one of the most dance-heavy ensembles in current musical theatre. Non-stop high-energy choreography. Must be a strong dancer first and foremost."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "energy providers",
+          "world creators",
+          "pop backup dancers"
+        ],
+        "emotional_range": "moderate \u2014 joy, energy, celebration",
+        "comedy_skills": true,
+        "notes": "Must bring genuine joy and energy to every number. The ensemble IS the party."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 10,
+        "quick_changes": 3,
+        "special_skills": [
+          "commercial_dance",
+          "pop_singing",
+          "sustained_high_energy",
+          "quick_changes"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_get_cast"
+        ],
+        "why": "One of the most exciting contemporary ensemble experiences. The choreography is world-class. Develops pop dance, vocal, and performance skills at the highest level.",
+        "common_casting": "Strong dancers with pop vocal ability. This is a dancer's show \u2014 movement first.",
+        "standout_opportunity": "The choreography showcases get individual attention. A standout dancer in this ensemble gets noticed by everyone."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "commercial_dance",
+          "pop_ensemble_singing",
+          "high_energy_performance",
+          "contemporary_musical_theatre",
+          "stamina"
+        ],
+        "challenge_areas": [
+          "extreme_physical_demands",
+          "maintaining_energy_nightly"
+        ],
+        "recommended_for": [
+          "dancers wanting pop musical theatre experience",
+          "commercial dancers building stage credits",
+          "high-energy performers"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "dance ability (primary)",
+          "pop vocal quality",
+          "energy",
+          "versatility",
+          "stamina"
+        ],
+        "common_mistakes": [
+          "can't keep up with choreography",
+          "no pop vocal quality",
+          "energy drops"
+        ],
+        "tips": [
+          "This ensemble lives at 11. Every number is a pop concert. If you're a dancer who can sing and you have endless energy, this is your dream gig. Train like an athlete, sing like a pop star, perform like your life depends on it."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Larger Than Life",
+          "type": "ensemble",
+          "notes": "Full company pop explosion. Maximum energy."
+        },
+        {
+          "title": "Since U Been Gone",
+          "type": "ensemble",
+          "notes": "Supporting Juliet's breakthrough. Big choreography."
+        },
+        {
+          "title": "Blow (Ke$ha)",
+          "type": "ensemble",
+          "notes": "Party number. Full ensemble showcase."
+        },
+        {
+          "title": "Can't Stop the Feeling (Timberlake)",
+          "type": "ensemble",
+          "notes": "Joy and celebration."
+        },
+        {
+          "title": "Roar",
+          "type": "ensemble",
+          "notes": "Empowerment anthem with full company."
+        }
+      ]
+    }
+  ]
+}

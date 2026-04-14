@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Production Companies | Theatre Companies in Melbourne &amp; Victoria | iHeartTheatre</title>
+    <meta name="description" content="Discover theatre production companies across Melbourne and Victoria. Professional, community, youth and independent companies — find who's making theatre happen.">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="css/shared.css">
+    <style>
+        :root {
+            --bg-primary: #050508;
+            --bg-secondary: #0a0a0f;
+            --bg-tertiary: #12121a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0b0;
+            --accent-primary: #667eea;
+            --accent-secondary: #764ba2;
+            --accent-gold: #ffd700;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        .page-hero {
+            padding: 130px 2rem 50px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(102,126,234,0.1) 0%, transparent 100%);
+        }
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .page-hero p { color: var(--text-secondary); font-size: 1.1rem; max-width: 660px; margin: 0 auto; line-height: 1.7; }
+
+        /* Stats Bar */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 1.25rem 2rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--glass-border);
+            flex-wrap: wrap;
+        }
+        .stat { text-align: center; }
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+        .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-top: 0.2rem; }
+
+        /* Controls */
+        .controls {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding: 0 2rem;
+        }
+        .search-wrap {
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+        .search-wrap input {
+            width: 100%;
+            padding: 0.85rem 1rem 0.85rem 2.9rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+        .search-wrap input:focus { outline: none; border-color: var(--accent-primary); }
+        .search-icon { position: absolute; left: 0.95rem; top: 50%; transform: translateY(-50%); color: var(--text-secondary); pointer-events: none; }
+
+        .filter-rows { display: flex; flex-direction: column; gap: 0.75rem; }
+        .filter-row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+        .filter-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); min-width: 60px; }
+        .filter-btn {
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .filter-btn:hover { border-color: rgba(102,126,234,0.5); color: var(--text-primary); }
+        .filter-btn.active { background: var(--gradient-primary); border-color: transparent; color: white; }
+
+        /* Company Grid */
+        .companies-container {
+            max-width: 1200px;
+            margin: 2rem auto 3rem;
+            padding: 0 2rem;
+        }
+        .companies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+        }
+
+        /* Company Card */
+        .company-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .company-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(102,126,234,0.3);
+            box-shadow: 0 12px 32px rgba(102,126,234,0.1);
+        }
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .company-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+        .company-badge {
+            flex-shrink: 0;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .badge-professional { background: rgba(102,126,234,0.2); color: var(--accent-primary); border: 1px solid rgba(102,126,234,0.3); }
+        .badge-community { background: rgba(255,215,0,0.12); color: #d4a843; border: 1px solid rgba(255,215,0,0.2); }
+        .badge-youth { background: rgba(39,174,96,0.12); color: #27ae60; border: 1px solid rgba(39,174,96,0.25); }
+        .badge-independent { background: rgba(232,121,249,0.12); color: #e879f9; border: 1px solid rgba(232,121,249,0.25); }
+        .badge-fringe { background: rgba(251,146,60,0.12); color: #fb923c; border: 1px solid rgba(251,146,60,0.25); }
+
+        .company-location { font-size: 0.88rem; color: var(--accent-primary); font-weight: 500; }
+        .company-desc {
+            font-size: 0.88rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .company-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+        .company-tag {
+            padding: 2px 8px;
+            background: rgba(102,126,234,0.1);
+            border-radius: 20px;
+            font-size: 0.74rem;
+            color: var(--accent-primary);
+        }
+        .company-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            flex-wrap: wrap;
+        }
+        .company-meta-item { display: flex; gap: 0.35rem; align-items: center; }
+        .company-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--glass-border);
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+        .company-btn {
+            padding: 0.45rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .company-btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+        }
+        .company-btn-primary:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(102,126,234,0.35); }
+        .company-btn-secondary {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+        }
+        .company-btn-secondary:hover { border-color: rgba(102,126,234,0.5); color: var(--text-primary); }
+
+        .no-results { display: none; text-align: center; padding: 4rem 2rem; color: var(--text-secondary); }
+
+        .submit-cta {
+            max-width: 700px;
+            margin: 0 auto 60px;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, rgba(102,126,234,0.1), rgba(118,75,162,0.1));
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 20px;
+            text-align: center;
+        }
+        .submit-cta h2 { font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 0.75rem; }
+        .submit-cta p { color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .btn-cta {
+            display: inline-block;
+            padding: 0.7rem 1.8rem;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(102,126,234,0.35); }
+
+        @media (max-width: 768px) {
+            .page-hero { padding: 110px 1.25rem 40px; }
+            .companies-grid { grid-template-columns: 1fr; }
+            .stats-bar { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">iHeartTheatre</a>
+            <div class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+            <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="companies.html" class="active">Companies</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1>🎭 Production Companies</h1>
+        <p>Discover the companies that make theatre happen — from major professional organisations to the community groups and indie creators bringing stories to life on stages across Melbourne and Victoria.</p>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stat"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Companies</div></div>
+        <div class="stat"><div class="stat-number" id="stat-professional">—</div><div class="stat-label">Professional</div></div>
+        <div class="stat"><div class="stat-number" id="stat-community">—</div><div class="stat-label">Community</div></div>
+        <div class="stat"><div class="stat-number" id="stat-youth">—</div><div class="stat-label">Youth</div></div>
+    </div>
+
+    <div class="controls">
+        <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="search" id="searchInput" placeholder="Search companies, genres, locations…" aria-label="Search companies">
+        </div>
+        <div class="filter-rows">
+            <div class="filter-row">
+                <span class="filter-label">Type:</span>
+                <button class="filter-btn active" data-type="all">All</button>
+                <button class="filter-btn" data-type="professional">Professional</button>
+                <button class="filter-btn" data-type="community">Community</button>
+                <button class="filter-btn" data-type="youth">Youth</button>
+                <button class="filter-btn" data-type="independent">Independent</button>
+                <button class="filter-btn" data-type="fringe">Fringe</button>
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Focus:</span>
+                <button class="filter-btn active" data-focus="all">All Genres</button>
+                <button class="filter-btn" data-focus="musical">Musicals</button>
+                <button class="filter-btn" data-focus="drama">Drama</button>
+                <button class="filter-btn" data-focus="comedy">Comedy</button>
+                <button class="filter-btn" data-focus="new-works">New Works</button>
+                <button class="filter-btn" data-focus="family">Family / Youth</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="companies-container">
+        <div class="companies-grid" id="companiesGrid"></div>
+    </div>
+    <div class="no-results" id="noResults" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+        <p>😕 No companies match your search — try different filters.</p>
+    </div>
+
+    <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+        <div class="submit-cta">
+            <h2>🎭 List Your Company</h2>
+            <p>Run a theatre company, community group, or production house? Get listed for free so performers and audiences can find you.</p>
+            <a href="mailto:contact@ihearttheatre.com?subject=Company%20Listing%20%E2%80%94%20%5BCompany%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20our%20company%3A%0A%0ACompany%3A%20%0AType%3A%20Professional%20%2F%20Community%20%2F%20Youth%20%2F%20Independent%0ALocation%3A%20%0AWebsite%3A%20%0AShort%20description%3A%20%0A%0AThanks!" class="btn-cta">Submit Your Company →</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="shows.html">Shows</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="companies.html">Companies</a>
+                <a href="services.html">Services</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+    <script src="js/shared.js"></script>
+    <script>
+    'use strict';
+    const companies = [
+        {
+            name: 'Melbourne Theatre Company (MTC)',
+            type: 'professional',
+            location: 'Southbank, Melbourne',
+            description: "Australia's oldest professional theatre company. World-class productions from classic drama to bold new Australian works at the Sumner and Lawler theatres.",
+            founded: 1953,
+            venue: 'Southbank Theatre',
+            tags: ['Drama', 'New works', 'Classics', 'Musicals'],
+            focus: ['drama', 'new-works'],
+            website: 'https://www.mtc.com.au',
+            auditions: true
+        },
+        {
+            name: 'Victorian Opera',
+            type: 'professional',
+            location: 'Melbourne',
+            description: "Victoria's state opera company producing grand opera, operetta, and music theatre at Arts Centre Melbourne and the Palais Theatre.",
+            founded: 2006,
+            venue: 'Arts Centre Melbourne',
+            tags: ['Opera', 'Operetta', 'Music theatre'],
+            focus: ['musical', 'drama'],
+            website: 'https://www.victorianopera.com.au',
+            auditions: true
+        },
+        {
+            name: 'Malthouse Theatre',
+            type: 'professional',
+            location: 'Southbank, Melbourne',
+            description: "A leading force in contemporary Australian theatre. Provocative, ambitious work that challenges and inspires.",
+            founded: 1990,
+            venue: 'Malthouse Theatre',
+            tags: ['Contemporary', 'New works', 'Australian', 'Experimental'],
+            focus: ['drama', 'new-works'],
+            website: 'https://www.malthousetheatre.com.au',
+            auditions: true
+        },
+        {
+            name: 'The Production Company',
+            type: 'professional',
+            location: 'Melbourne',
+            description: "Australia's premier producer of musical theatre. Spectacular productions of classic and contemporary musicals at Arts Centre Melbourne.",
+            founded: 1999,
+            venue: 'Arts Centre Melbourne',
+            tags: ['Musicals', 'Large-scale', 'Classic', 'Blockbuster'],
+            focus: ['musical'],
+            website: 'https://www.theproductioncompany.com.au',
+            auditions: true
+        },
+        {
+            name: 'StageArt',
+            type: 'professional',
+            location: 'Melbourne',
+            description: "Award-winning independent musical theatre company producing intimate, powerful productions of classic and contemporary musicals.",
+            founded: 2008,
+            venue: 'Various Melbourne venues',
+            tags: ['Musicals', 'Intimate', 'Award-winning'],
+            focus: ['musical'],
+            website: 'https://www.stageart.com.au',
+            auditions: true
+        },
+        {
+            name: 'Storyline Entertainment',
+            type: 'professional',
+            location: 'Melbourne',
+            description: "Commercial producer bringing West End and Broadway musicals to Australia. Behind some of Melbourne's biggest touring shows.",
+            founded: 2010,
+            venue: 'Regent Theatre / Her Majesty\'s',
+            tags: ['Musicals', 'Broadway', 'West End', 'Touring'],
+            focus: ['musical'],
+            website: 'https://www.storyline.com.au',
+            auditions: false
+        },
+        {
+            name: 'Red Stitch Actors\' Theatre',
+            type: 'independent',
+            location: 'St Kilda, Melbourne',
+            description: "Actor-driven ensemble creating rawly intimate theatre in a 70-seat space. Known for Australian premieres of international works.",
+            founded: 2002,
+            venue: 'Red Stitch Theatre',
+            tags: ['Drama', 'Intimate', 'Actor-driven', 'New writing'],
+            focus: ['drama', 'new-works'],
+            website: 'https://www.redstitch.net',
+            auditions: true
+        },
+        {
+            name: 'La Mama Theatre',
+            type: 'independent',
+            location: 'Carlton, Melbourne',
+            description: "The birthplace of Australian independent theatre. Nurturing new writers, performers, and experimental work since 1967.",
+            founded: 1967,
+            venue: 'La Mama Courthouse & HQ',
+            tags: ['Independent', 'New writing', 'Experimental', 'Risk-taking'],
+            focus: ['new-works', 'drama'],
+            website: 'https://www.lamama.com.au',
+            auditions: true
+        },
+        {
+            name: 'Theatre Works',
+            type: 'independent',
+            location: 'St Kilda, Melbourne',
+            description: "Independent performing arts centre supporting artists and companies creating bold new work. Two performance spaces in the heart of St Kilda.",
+            founded: 1980,
+            venue: 'Theatre Works',
+            tags: ['Independent', 'Contemporary', 'Diverse', 'New works'],
+            focus: ['new-works', 'drama'],
+            website: 'https://www.theatreworks.org.au',
+            auditions: true
+        },
+        {
+            name: 'fortyfivedownstairs',
+            type: 'independent',
+            location: 'Melbourne CBD',
+            description: "An intimate basement venue and arts space in the heart of the city. A platform for independent theatre makers, visual artists, and musicians.",
+            founded: 2003,
+            venue: 'fortyfivedownstairs',
+            tags: ['Independent', 'Visual art', 'Intimate', 'Cross-art'],
+            focus: ['drama', 'new-works'],
+            website: 'https://www.fortyfivedownstairs.com',
+            auditions: false
+        },
+        {
+            name: 'Babirra Music Theatre',
+            type: 'community',
+            location: 'Ringwood, Melbourne',
+            description: "One of Victoria's premier community theatre companies producing 3-4 musicals a year at Karralyka Centre. Open auditions for all shows.",
+            founded: 1961,
+            venue: 'Karralyka Centre',
+            tags: ['Musicals', 'Eastern suburbs', 'Community', 'Open auditions'],
+            focus: ['musical'],
+            website: 'https://www.babirra.org.au',
+            auditions: true
+        },
+        {
+            name: 'CLOC Musical Theatre',
+            type: 'community',
+            location: 'Clayton, Melbourne',
+            description: "Award-winning community musical theatre in the southeast. Consistently high production values with a strong community spirit.",
+            founded: 1966,
+            venue: 'National Theatre / Drum Theatre',
+            tags: ['Musicals', 'Award-winning', 'Southeast Melbourne'],
+            focus: ['musical'],
+            website: 'https://www.cloc.org.au',
+            auditions: true
+        },
+        {
+            name: 'PRL (Phoenix Rising with Lyrics)',
+            type: 'community',
+            location: 'Moorabbin, Melbourne',
+            description: "A vibrant community musical theatre company in the Bayside area producing quality musicals with open auditions and strong ensemble work.",
+            founded: 1974,
+            venue: 'Various Bayside venues',
+            tags: ['Musicals', 'Community', 'Bayside', 'Open auditions'],
+            focus: ['musical'],
+            website: 'https://www.prl.org.au',
+            auditions: true
+        },
+        {
+            name: 'PLOS Musical Productions',
+            type: 'community',
+            location: 'Port Melbourne',
+            description: "A well-established community company producing high-quality musicals. Strong focus on big-cast, full-orchestra shows.",
+            founded: 1935,
+            venue: 'Various Melbourne venues',
+            tags: ['Musicals', 'Traditional', 'Full orchestra', 'Community'],
+            focus: ['musical'],
+            website: 'https://www.plos.org.au',
+            auditions: true
+        },
+        {
+            name: 'Whitehorse Musical Theatre',
+            type: 'community',
+            location: 'Box Hill, Melbourne',
+            description: "Family-friendly community musicals in the eastern suburbs. Two full productions per year with open auditions for all ages.",
+            founded: 1960,
+            venue: 'Whitehorse Centre',
+            tags: ['Musicals', 'Family', 'Eastern suburbs', 'All ages'],
+            focus: ['musical', 'family'],
+            website: 'https://www.whitehorsemt.com.au',
+            auditions: true
+        },
+        {
+            name: 'Eltham Little Theatre',
+            type: 'community',
+            location: 'Eltham, Melbourne',
+            description: "Community theatre in Melbourne's northeast producing drama, comedy, and musicals in an intimate 100-seat venue. Open auditions.",
+            founded: 1956,
+            venue: 'Eltham Little Theatre',
+            tags: ['Drama', 'Comedy', 'Northeast', 'Intimate'],
+            focus: ['drama', 'comedy'],
+            website: 'https://www.elthamlittletheatre.org.au',
+            auditions: true
+        },
+        {
+            name: 'Heidelberg Theatre Company',
+            type: 'community',
+            location: 'Heidelberg, Melbourne',
+            description: "Long-running community company producing drama, comedy, and occasional musicals in the Heidelberg Theatre. All volunteer cast and crew.",
+            founded: 1953,
+            venue: 'Heidelberg Theatre',
+            tags: ['Drama', 'Comedy', 'Northeast Melbourne', 'Volunteer'],
+            focus: ['drama', 'comedy'],
+            website: 'https://www.htc.net.au',
+            auditions: true
+        },
+        {
+            name: 'Williamstown Musical Theatre',
+            type: 'community',
+            location: 'Williamstown, Melbourne',
+            description: "Community musical theatre in the western suburbs producing big-cast shows at Williamstown Town Hall and other local venues.",
+            founded: 1948,
+            venue: 'Williamstown Town Hall',
+            tags: ['Musicals', 'Western suburbs', 'Community'],
+            focus: ['musical'],
+            website: 'https://www.wmt.org.au',
+            auditions: true
+        },
+        {
+            name: 'Beaumaris Theatre Company',
+            type: 'community',
+            location: 'Beaumaris, Melbourne',
+            description: "Bayside community theatre producing drama, comedy, and variety in a purpose-built 150-seat theatre. Strong local following.",
+            founded: 1956,
+            venue: 'Beaumaris Theatre',
+            tags: ['Drama', 'Comedy', 'Bayside', 'Variety'],
+            focus: ['drama', 'comedy'],
+            website: 'https://www.beaumaristheatre.com.au',
+            auditions: true
+        },
+        {
+            name: 'Fab Nobs Music Theatre',
+            type: 'community',
+            location: 'Brighton, Melbourne',
+            description: "Community musical theatre in the Bayside area known for strong production values and enthusiastic performers. Open auditions every season.",
+            founded: 1975,
+            venue: 'Various Bayside venues',
+            tags: ['Musicals', 'Bayside', 'Quality productions'],
+            focus: ['musical'],
+            website: 'https://www.fabnobs.com.au',
+            auditions: true
+        },
+        {
+            name: 'Geelong Lyric Theatre Society',
+            type: 'community',
+            location: 'Geelong',
+            description: "One of regional Victoria's premier community musical theatre companies. Major musicals at the Geelong Arts Centre and Woodbin Theatre.",
+            founded: 1950,
+            venue: 'Woodbin Theatre / Geelong Arts Centre',
+            tags: ['Musicals', 'Regional', 'Geelong'],
+            focus: ['musical'],
+            website: 'https://www.geelonglyricstheatre.com.au',
+            auditions: true
+        },
+        {
+            name: 'Ballarat Light Opera Company',
+            type: 'community',
+            location: 'Ballarat',
+            description: "Provincial Victoria's beloved musical theatre company staging two or three major musicals a year at Her Majesty's Theatre, Ballarat.",
+            founded: 1952,
+            venue: "Her Majesty's Theatre, Ballarat",
+            tags: ['Musicals', 'Regional', 'Ballarat', 'Grand theatre'],
+            focus: ['musical'],
+            website: 'https://www.blocs.org.au',
+            auditions: true
+        },
+        {
+            name: 'Melbourne Shakespeare Company',
+            type: 'independent',
+            location: 'Melbourne',
+            description: "Free outdoor Shakespeare in Melbourne's parks each summer. Accessible, community-focused productions of the Bard's greatest works.",
+            founded: 2004,
+            venue: 'Royal Botanic Gardens & parks',
+            tags: ['Shakespeare', 'Outdoor', 'Free', 'Classic'],
+            focus: ['drama'],
+            website: 'https://www.melbourneshakespeare.com',
+            auditions: true
+        },
+        {
+            name: 'Hayloft Project',
+            type: 'independent',
+            location: 'Melbourne',
+            description: "Independent theatre company led by Simon Stone (early works). A key voice in Australia's new wave of daring, visceral storytelling.",
+            founded: 2007,
+            venue: 'Various venues',
+            tags: ['Contemporary', 'New writing', 'Bold', 'Daring'],
+            focus: ['drama', 'new-works'],
+            website: '#',
+            auditions: false
+        },
+        {
+            name: 'Doorstep Arts',
+            type: 'youth',
+            location: 'Belgrave, Melbourne',
+            description: "Youth performing arts in the Dandenong Ranges. Classes, workshops, and youth productions for ages 5-25 with a focus on creative confidence.",
+            founded: 2010,
+            venue: 'Belgrave Community Hub',
+            tags: ['Youth', 'Junior', 'Dandenong Ranges', 'Workshops'],
+            focus: ['family', 'musical'],
+            website: 'https://www.doorsteparts.com.au',
+            auditions: true
+        },
+        {
+            name: 'National Theatre Drama School',
+            type: 'professional',
+            location: 'St Kilda, Melbourne',
+            description: "One of Australia's oldest performing arts training institutions, staging student and graduate productions open to the public.",
+            founded: 1935,
+            venue: 'National Theatre',
+            tags: ['Training', 'Drama school', 'Student productions'],
+            focus: ['drama'],
+            website: 'https://www.nationaltheatre.org.au',
+            auditions: true
+        },
+        {
+            name: 'Victorian Youth Theatre (VYT)',
+            type: 'youth',
+            location: 'Melbourne',
+            description: "Youth theatre programs across Melbourne offering performance opportunities, training, and original productions for young people aged 8-25.",
+            founded: 1990,
+            venue: 'Various venues',
+            tags: ['Youth', 'Training', 'Original works', 'Inclusive'],
+            focus: ['family', 'drama'],
+            website: '#',
+            auditions: true
+        },
+        {
+            name: 'Monash Uni Performing Arts (MUPA)',
+            type: 'youth',
+            location: 'Clayton, Melbourne',
+            description: "University-based performing arts producing student-led musicals, plays, and cabarets. A launchpad for emerging talent.",
+            founded: 1970,
+            venue: 'Robert Blackwood Hall & others',
+            tags: ['University', 'Student-led', 'Musicals', 'Emerging talent'],
+            focus: ['musical', 'drama'],
+            website: 'https://www.monash.edu',
+            auditions: true
+        },
+        {
+            name: 'Melbourne Fringe',
+            type: 'fringe',
+            location: 'Melbourne CBD & surrounds',
+            description: "Australia's largest independent arts festival. Hundreds of shows across comedy, theatre, music, and performance art every October.",
+            founded: 1982,
+            venue: 'Various CBD venues',
+            tags: ['Festival', 'Fringe', 'Independent', 'Experimental'],
+            focus: ['comedy', 'drama', 'new-works'],
+            website: 'https://www.melbournefringe.com.au',
+            auditions: false
+        },
+        {
+            name: 'Melbourne International Comedy Festival',
+            type: 'fringe',
+            location: 'Melbourne CBD',
+            description: "One of the three largest comedy festivals in the world. Three weeks of comedy, theatre-comedy crossovers, and performance art every April.",
+            founded: 1987,
+            venue: 'Town Hall & various venues',
+            tags: ['Comedy', 'Festival', 'Annual', 'International'],
+            focus: ['comedy'],
+            website: 'https://www.comedyfestival.com.au',
+            auditions: false
+        },
+        {
+            name: 'Burn City Burlesque',
+            type: 'independent',
+            location: 'Melbourne',
+            description: "Melbourne's premier burlesque and variety production company. Cabaret, burlesque, and variety shows with flair and community.",
+            founded: 2014,
+            venue: 'Various Melbourne venues',
+            tags: ['Burlesque', 'Cabaret', 'Variety', 'Inclusive'],
+            focus: ['comedy'],
+            website: '#',
+            auditions: true
+        },
+        {
+            name: 'Fly On The Wall Theatre',
+            type: 'independent',
+            location: 'Melbourne',
+            description: "Independent theatre company creating new Australian works with a focus on social justice, diverse voices, and immersive storytelling.",
+            founded: 2011,
+            venue: 'Various venues',
+            tags: ['New works', 'Social justice', 'Diverse', 'Immersive'],
+            focus: ['new-works', 'drama'],
+            website: '#',
+            auditions: true
+        },
+        {
+            name: 'Impro Melbourne',
+            type: 'independent',
+            location: 'Melbourne',
+            description: "The home of improvised comedy and theatre in Melbourne. Productions, training, and the legendary Theatresports competition.",
+            founded: 1986,
+            venue: 'Arts House & various',
+            tags: ['Improv', 'Comedy', 'Theatresports', 'Training'],
+            focus: ['comedy'],
+            website: 'https://www.impromelbourne.com.au',
+            auditions: true
+        },
+        {
+            name: 'Lilydale Athenaeum Theatre Company',
+            type: 'community',
+            location: 'Lilydale, Melbourne',
+            description: "Community theatre in the Yarra Valley producing drama and comedy in the historic Athenaeum Theatre. Welcoming and inclusive.",
+            founded: 1979,
+            venue: 'Lilydale Athenaeum',
+            tags: ['Drama', 'Comedy', 'Yarra Valley', 'Historic'],
+            focus: ['drama', 'comedy'],
+            website: '#',
+            auditions: true
+        },
+        {
+            name: 'Peridot Theatre',
+            type: 'community',
+            location: 'Frankston, Melbourne',
+            description: "Community musical theatre on the Mornington Peninsula producing family-friendly musicals with emphasis on inclusion and participation.",
+            founded: 2002,
+            venue: 'Frankston Arts Centre',
+            tags: ['Musicals', 'Peninsula', 'Family', 'Inclusive'],
+            focus: ['musical', 'family'],
+            website: 'https://www.peridottheatre.com.au',
+            auditions: true
+        },
+        {
+            name: 'Windmill Theatre Co',
+            type: 'professional',
+            location: 'Touring — Melbourne seasons',
+            description: "Australia's leading theatre company for young audiences. Inventive, clever, and visually stunning productions for children and families.",
+            founded: 2002,
+            venue: 'Touring — Arts Centre Melbourne',
+            tags: ['Children', 'Family', 'Touring', 'Visual theatre'],
+            focus: ['family'],
+            website: 'https://www.windmill.org.au',
+            auditions: true
+        },
+        {
+            name: 'Arena Theatre Company',
+            type: 'professional',
+            location: 'South Melbourne',
+            description: "Professional company making theatre for and with young people. Innovative cross-artform works that tour nationally.",
+            founded: 1966,
+            venue: 'Various venues / national touring',
+            tags: ['Youth', 'Innovative', 'Touring', 'Cross-artform'],
+            focus: ['family', 'new-works'],
+            website: 'https://www.arenatheatre.com.au',
+            auditions: true
+        },
+        {
+            name: 'Burrinja Theatre',
+            type: 'community',
+            location: 'Upwey, Melbourne',
+            description: "Community cultural centre in the Dandenong Ranges hosting local and touring productions. A hub for arts in the hills.",
+            founded: 1999,
+            venue: 'Burrinja Cultural Centre',
+            tags: ['Community', 'Hills district', 'Touring', 'Cultural centre'],
+            focus: ['drama', 'musical'],
+            website: 'https://www.burrinja.org.au',
+            auditions: false
+        },
+        {
+            name: 'Gasworks Arts Park',
+            type: 'independent',
+            location: 'Albert Park, Melbourne',
+            description: "A multi-arts venue supporting independent theatre makers, comedians, musicians, and visual artists with affordable performance spaces.",
+            founded: 1994,
+            venue: 'Gasworks Arts Park',
+            tags: ['Independent', 'Multi-arts', 'Affordable space', 'Inner south'],
+            focus: ['drama', 'comedy', 'new-works'],
+            website: 'https://www.gasworks.org.au',
+            auditions: false
+        },
+        {
+            name: 'Bendigo Theatre Company',
+            type: 'community',
+            location: 'Bendigo',
+            description: "Central Victoria's community theatre company producing drama, comedy, and musicals. A cornerstone of regional arts.",
+            founded: 1940,
+            venue: 'Bendigo Theatre',
+            tags: ['Regional', 'Bendigo', 'Drama', 'Community'],
+            focus: ['drama', 'comedy', 'musical'],
+            website: 'https://www.bendigotheatrecompany.com',
+            auditions: true
+        }
+    ];
+
+    let activeType = 'all';
+    let activeFocus = 'all';
+
+    function init() {
+        updateStats();
+        render();
+        bindFilters();
+        document.getElementById('searchInput').addEventListener('input', render);
+    }
+
+    function updateStats() {
+        document.getElementById('stat-total').textContent = companies.length;
+        document.getElementById('stat-professional').textContent = companies.filter(c => c.type === 'professional').length;
+        document.getElementById('stat-community').textContent = companies.filter(c => c.type === 'community').length;
+        document.getElementById('stat-youth').textContent = companies.filter(c => c.type === 'youth').length;
+    }
+
+    function render() {
+        var query = (document.getElementById('searchInput').value || '').toLowerCase().trim();
+        var grid = document.getElementById('companiesGrid');
+        var noResults = document.getElementById('noResults');
+
+        var filtered = companies.filter(function(c) {
+            if (activeType !== 'all' && c.type !== activeType) return false;
+            if (activeFocus !== 'all' && !c.focus.includes(activeFocus)) return false;
+            if (query) {
+                var blob = (c.name + ' ' + c.location + ' ' + c.description + ' ' + c.tags.join(' ') + ' ' + c.type).toLowerCase();
+                return blob.indexOf(query) !== -1;
+            }
+            return true;
+        });
+
+        if (filtered.length === 0) {
+            grid.innerHTML = '';
+            noResults.style.display = 'block';
+            return;
+        }
+        noResults.style.display = 'none';
+
+        grid.innerHTML = filtered.map(function(c) {
+            var badgeClass = 'badge-' + c.type;
+            return '<div class="company-card">'
+                + '<div class="company-header">'
+                + '<div class="company-name">' + esc(c.name) + '</div>'
+                + '<span class="company-badge ' + badgeClass + '">' + esc(c.type) + '</span>'
+                + '</div>'
+                + '<div class="company-location">📍 ' + esc(c.location) + '</div>'
+                + '<div class="company-desc">' + esc(c.description) + '</div>'
+                + '<div class="company-tags">' + c.tags.map(function(t) { return '<span class="company-tag">' + esc(t) + '</span>'; }).join('') + '</div>'
+                + '<div class="company-meta">'
+                + (c.founded ? '<span class="company-meta-item">🏛 Est. ' + c.founded + '</span>' : '')
+                + (c.venue ? '<span class="company-meta-item">📍 ' + esc(c.venue) + '</span>' : '')
+                + (c.auditions ? '<span class="company-meta-item" style="color:#27ae60;">✅ Open auditions</span>' : '')
+                + '</div>'
+                + '<div class="company-footer">'
+                + (c.website && c.website !== '#' ? '<a href="' + esc(c.website) + '" target="_blank" rel="noopener" class="company-btn company-btn-primary">Visit Website</a>' : '')
+                + '<a href="contact.html" class="company-btn company-btn-secondary">Enquire</a>'
+                + '</div>'
+                + '</div>';
+        }).join('');
+    }
+
+    function esc(s) {
+        if (!s) return '';
+        var d = document.createElement('div');
+        d.appendChild(document.createTextNode(s));
+        return d.innerHTML;
+    }
+
+    function bindFilters() {
+        document.querySelectorAll('[data-type]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('[data-type]').forEach(function(b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                activeType = btn.dataset.type;
+                render();
+            });
+        });
+        document.querySelectorAll('[data-focus]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('[data-focus]').forEach(function(b) { b.classList.remove('active'); });
+                btn.classList.add('active');
+                activeFocus = btn.dataset.focus;
+                render();
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

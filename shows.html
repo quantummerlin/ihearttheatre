@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Melbourne &amp; Victoria Theatre Calendar | iHeartTheatre</title>
+    <meta name="description" content="The complete 2026 Melbourne and Victoria musical theatre calendar. Browse upcoming shows, filter by month, region and genre. Add shows to your calendar.">
+    <meta name="theme-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/shared.css">
+    <style>
+        :root {
+            --bg-primary: #050508;
+            --bg-secondary: #0a0a0f;
+            --bg-tertiary: #12121a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0b0;
+            --accent-primary: #667eea;
+            --accent-secondary: #764ba2;
+            --accent-gold: #ffd700;
+            --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-gold: linear-gradient(135deg, #ffd700 0%, #ffb347 100%);
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        .page-hero {
+            padding: 130px 2rem 60px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(102,126,234,0.12) 0%, transparent 100%);
+        }
+        .page-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            margin-bottom: 1rem;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .page-hero p { color: var(--text-secondary); font-size: 1.1rem; max-width: 640px; margin: 0 auto; }
+
+        /* ── STATS ─────────────────────────────────── */
+        .stats-bar {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            padding: 1.25rem 2rem;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--glass-border);
+            flex-wrap: wrap;
+        }
+        .stat { text-align: center; }
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            background: var(--gradient-gold);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+        .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-top: 0.2rem; }
+
+        /* ── CONTROLS ──────────────────────────────── */
+        .controls {
+            max-width: 1200px;
+            margin: 2rem auto 0;
+            padding: 0 2rem;
+        }
+        .search-wrap {
+            position: relative;
+            margin-bottom: 1.25rem;
+        }
+        .search-wrap input {
+            width: 100%;
+            padding: 0.85rem 1rem 0.85rem 2.9rem;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: border-color 0.3s;
+        }
+        .search-wrap input:focus { outline: none; border-color: var(--accent-primary); }
+        .search-icon { position: absolute; left: 0.95rem; top: 50%; transform: translateY(-50%); color: var(--text-secondary); pointer-events: none; }
+
+        .filter-rows { display: flex; flex-direction: column; gap: 0.75rem; }
+        .filter-row { display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+        .filter-label { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-secondary); min-width: 60px; }
+        .filter-btn {
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            background: transparent;
+            color: var(--text-secondary);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .filter-btn:hover { border-color: rgba(102,126,234,0.5); color: var(--text-primary); }
+        .filter-btn.active { background: var(--gradient-primary); border-color: transparent; color: white; }
+
+        /* ── MONTH GROUPS ──────────────────────────── */
+        .calendar-container {
+            max-width: 1200px;
+            margin: 2rem auto 3rem;
+            padding: 0 2rem;
+        }
+        .month-group { margin-bottom: 3rem; }
+        .month-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .month-count {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .shows-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 16px;
+        }
+
+        /* ── SHOW CARD ─────────────────────────────── */
+        .show-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 14px;
+            padding: 1.25rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6rem;
+        }
+        .show-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(102,126,234,0.3);
+            box-shadow: 0 12px 32px rgba(102,126,234,0.1);
+        }
+        .show-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .show-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+        .prod-badge {
+            flex-shrink: 0;
+            padding: 3px 9px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .prod-professional { background: rgba(102,126,234,0.2); color: var(--accent-primary); border: 1px solid rgba(102,126,234,0.3); }
+        .prod-community { background: rgba(255,215,0,0.12); color: #d4a843; border: 1px solid rgba(255,215,0,0.2); }
+        .prod-youth { background: rgba(39,174,96,0.12); color: #27ae60; border: 1px solid rgba(39,174,96,0.25); }
+
+        .show-company { font-size: 0.88rem; color: var(--accent-primary); font-weight: 500; }
+        .show-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+        .show-meta-item { display: flex; gap: 0.5rem; font-size: 0.84rem; color: var(--text-secondary); align-items: flex-start; }
+        .show-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+        .tag {
+            padding: 2px 8px;
+            background: rgba(102,126,234,0.1);
+            border-radius: 20px;
+            font-size: 0.74rem;
+            color: var(--accent-primary);
+        }
+        .show-card-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 0.6rem;
+            border-top: 1px solid var(--glass-border);
+            gap: 0.5rem;
+            margin-top: auto;
+        }
+        .btn-cal {
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            border: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-cal-ics {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--glass-border);
+            color: var(--text-secondary);
+        }
+        .btn-cal-ics:hover { border-color: rgba(102,126,234,0.5); color: var(--text-primary); }
+        .btn-cal-google {
+            background: var(--gradient-primary);
+            color: white;
+        }
+        .btn-cal-google:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(102,126,234,0.35); }
+
+        .no-results { display: none; text-align: center; padding: 4rem 2rem; color: var(--text-secondary); }
+
+        /* ── SUBMIT SHOW CTA ───────────────────────── */
+        .submit-cta {
+            max-width: 700px;
+            margin: 0 auto 80px;
+            padding: 2.5rem 2rem;
+            background: linear-gradient(135deg, rgba(102,126,234,0.1), rgba(118,75,162,0.1));
+            border: 1px solid rgba(102,126,234,0.25);
+            border-radius: 20px;
+            text-align: center;
+        }
+        .submit-cta h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            margin-bottom: 0.75rem;
+        }
+        .submit-cta p { color: var(--text-secondary); margin-bottom: 1.5rem; font-size: 0.95rem; }
+        .btn-cta {
+            display: inline-block;
+            padding: 0.7rem 1.8rem;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 25px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(102,126,234,0.35); }
+
+        @media (max-width: 768px) {
+            .page-hero { padding: 110px 1.25rem 50px; }
+            .shows-grid { grid-template-columns: 1fr; }
+            .stats-bar { gap: 1.5rem; }
+            .filter-rows { gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">iHeartTheatre</a>
+            <div class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+            <div class="nav-links"><a href="index.html">Home</a><a href="shows.html" class="active">Shows</a><a href="auditions.html">Auditions</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <h1>🎪 2026 Shows Calendar</h1>
+        <p>The complete Melbourne &amp; Victoria theatre calendar for 2026. Browse upcoming shows, add them to your calendar, and never miss a performance.</p>
+    </section>
+
+    <div class="stats-bar">
+        <div class="stat"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Shows Listed</div></div>
+        <div class="stat"><div class="stat-number" id="stat-upcoming">—</div><div class="stat-label">Still Upcoming</div></div>
+        <div class="stat"><div class="stat-number" id="stat-companies">—</div><div class="stat-label">Companies</div></div>
+        <div class="stat"><div class="stat-number" id="stat-venues">—</div><div class="stat-label">Venues</div></div>
+    </div>
+
+    <div class="controls">
+        <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="search" id="search-input" placeholder="Search shows, companies, venues, locations…" aria-label="Search shows">
+        </div>
+        <div class="filter-rows">
+            <div class="filter-row">
+                <span class="filter-label">Month:</span>
+                <button class="filter-btn active" data-month="all">All</button>
+                <button class="filter-btn" data-month="2">Feb</button>
+                <button class="filter-btn" data-month="3">Mar</button>
+                <button class="filter-btn" data-month="4">Apr</button>
+                <button class="filter-btn" data-month="5">May</button>
+                <button class="filter-btn" data-month="6">Jun</button>
+                <button class="filter-btn" data-month="7">Jul</button>
+                <button class="filter-btn" data-month="8">Aug</button>
+                <button class="filter-btn" data-month="9">Sep</button>
+                <button class="filter-btn" data-month="10">Oct</button>
+                <button class="filter-btn" data-month="11">Nov</button>
+                <button class="filter-btn" data-month="12">Dec</button>
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Type:</span>
+                <button class="filter-btn active" data-type="all">All Shows</button>
+                <button class="filter-btn" data-type="musical">Musicals</button>
+                <button class="filter-btn" data-type="professional">Professional</button>
+                <button class="filter-btn" data-type="community">Community</button>
+                <button class="filter-btn" data-type="youth">Youth / Junior</button>
+                <button class="filter-btn" data-type="upcoming">Upcoming Only</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="calendar-container" id="calendar-container"></div>
+    <div class="no-results" id="no-results" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+        <p>😕 No shows match your search — try different filters.</p>
+    </div>
+
+    <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
+        <div class="submit-cta">
+            <h2>🎭 Got a show on in 2026?</h2>
+            <p>Producers and companies — get your production listed on the calendar for free so performers and theatre lovers can find you.</p>
+            <a href="mailto:contact@ihearttheatre.com?subject=Show%20Listing%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20our%20show%20on%20the%20calendar%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AVenue%3A%20%0ALocation%3A%20%0ADates%3A%20%0ATickets%3A%20%0A%0AThanks!" class="btn-cta">Submit Your Show →</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="shows.html">Shows</a>
+                <a href="auditions.html">Auditions</a>
+                <a href="services.html">Services</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="about.html">About</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="disclaimer.html">Disclaimer</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+    <script src="js/shared.js"></script>
+    <script>
+    'use strict';
+    let allShows = [];
+    let activeMonth = 'all';
+    let activeType = 'all';
+
+    const MONTHS = ['','January','February','March','April','May','June','July','August','September','October','November','December'];
+
+    function escHtml(s) {
+        if (!s) return '';
+        return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function fmtDateRange(start, end) {
+        const s = new Date(start);
+        const e = end ? new Date(end) : null;
+        const opts = { day:'numeric', month:'short' };
+        if (!e || start === end) return s.toLocaleDateString('en-AU', {...opts, year:'numeric'});
+        if (s.getMonth() === e.getMonth()) return `${s.getDate()}–${e.toLocaleDateString('en-AU', {...opts, year:'numeric'})}`;
+        return `${s.toLocaleDateString('en-AU', opts)} – ${e.toLocaleDateString('en-AU', {...opts, year:'numeric'})}`;
+    }
+
+    function getProdType(show) {
+        const pt = (show.production_type||'').toLowerCase();
+        const tags = (show.tags||[]).map(t=>t.toLowerCase());
+        if (tags.some(t=>t.includes('youth')||t.includes('junior')||t.includes('school'))) return 'youth';
+        if (pt === 'professional') return 'professional';
+        if (pt === 'community' || pt === 'amateur') return 'community';
+        return '';
+    }
+
+    function getBadgeHtml(show) {
+        const type = getProdType(show);
+        if (!type) return '';
+        const map = { professional:{cls:'prod-professional',label:'Professional'}, community:{cls:'prod-community',label:'Community'}, youth:{cls:'prod-youth',label:'Youth'} };
+        const m = map[type];
+        return m ? `<span class="prod-badge ${m.cls}">${m.label}</span>` : '';
+    }
+
+    function generateICS(show) {
+        function fmt(dateStr) {
+            return dateStr.replace(/-/g,'') + 'T190000';
+        }
+        const ics = `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//iHeartTheatre//EN\r\nBEGIN:VEVENT\r\nDTSTART:${fmt(show.date_start)}\r\nDTEND:${fmt(show.date_end||show.date_start)}\r\nSUMMARY:${show.show_title}\r\nLOCATION:${(show.venue||'')+', '+(show.location||'')}\r\nDESCRIPTION:${show.company} — ${show.show_title}\\nMore info: ihearttheatre.com\r\nURL:https://ihearttheatre.com/shows.html\r\nEND:VEVENT\r\nEND:VCALENDAR`;
+        const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = (show.show_title||'show').replace(/[^a-z0-9]/gi,'-').toLowerCase() + '.ics';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(()=>URL.revokeObjectURL(url), 1000);
+    }
+
+    function googleCalUrl(show) {
+        const enc = encodeURIComponent;
+        function fmt(s) { return s.replace(/-/g,'') + 'T190000Z'; }
+        return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(show.show_title)}&dates=${fmt(show.date_start)}/${fmt(show.date_end||show.date_start)}&location=${enc((show.venue||'')+', '+(show.location||''))}&details=${enc(show.company+' — '+show.show_title+'\nihearttheatre.com')}`;
+    }
+
+    function toggleShowSave(id, btn) {
+        const show = SHOWS_DATA[id];
+        if (!show) return;
+        const summary = { id: show.id, title: show.show_title, company: show.company, venue: show.venue, location: show.location, date_start: show.date_start, date_end: show.date_end };
+        const saved = iHT.toggle('show', id, summary);
+        btn.innerHTML = saved ? '♥' : '♡';
+        btn.title = saved ? 'Saved — click to unsave' : 'Save this show';
+        btn.classList.toggle('saved', saved);
+    }
+
+    function renderCard(show) {
+        const tags = (show.genre||show.tags||[]).map(t=>`<span class="tag">${escHtml(t)}</span>`).join('');
+        const badge = getBadgeHtml(show);
+        const savedNow = window.iHT && iHT.isSaved('show', show.id);
+        return `
+<article class="show-card" data-id="${escHtml(show.id)}">
+    <div class="show-card-header">
+        <div class="show-title">${escHtml(show.show_title)}</div>
+        ${badge}
+    </div>
+    <div class="show-company">${escHtml(show.company)}</div>
+    <div class="show-meta">
+        <div class="show-meta-item">📅&nbsp;<span>${fmtDateRange(show.date_start, show.date_end)}</span></div>
+        <div class="show-meta-item">📍&nbsp;<span>${show.venue ? escHtml(show.venue)+', ' : ''}${escHtml(show.location)}</span></div>
+    </div>
+    ${tags ? `<div class="show-tags">${tags}</div>` : ''}
+    <div class="show-card-footer">
+        <button class="btn-cal btn-cal-ics" onclick="generateICS(SHOWS_DATA['${escHtml(show.id)}'])">+ .ics</button>
+        <a href="${googleCalUrl(show)}" target="_blank" rel="noopener noreferrer" class="btn-cal btn-cal-google">+ Google Cal</a>
+        <button class="btn-save${savedNow?' saved':''}" data-save-type="show" data-save-id="${escHtml(show.id)}" onclick="toggleShowSave('${escHtml(show.id)}',this)" title="${savedNow?'Saved — click to unsave':'Save this show'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:5px 10px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;margin-left:auto;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
+    </div>
+</article>`;
+    }
+
+    // Expose show data for onclick handlers
+    window.SHOWS_DATA = {};
+
+    function updateStats(shows) {
+        const now = new Date();
+        document.getElementById('stat-total').textContent = shows.length;
+        document.getElementById('stat-upcoming').textContent = shows.filter(s=>new Date(s.date_end||s.date_start)>=now).length;
+        document.getElementById('stat-companies').textContent = new Set(shows.map(s=>s.company)).size;
+        document.getElementById('stat-venues').textContent = new Set(shows.map(s=>s.venue).filter(Boolean)).size;
+    }
+
+    function getFiltered() {
+        const q = document.getElementById('search-input').value.toLowerCase().trim();
+        const now = new Date();
+        return allShows.filter(show => {
+            const startDate = new Date(show.date_start);
+            const endDate = new Date(show.date_end || show.date_start);
+            const prodType = getProdType(show);
+            const genre = (show.genre||[]).join(',').toLowerCase();
+            const tags = (show.tags||[]).join(',').toLowerCase();
+
+            if (activeMonth !== 'all') {
+                const m = parseInt(activeMonth);
+                const startM = startDate.getMonth()+1, endM = endDate.getMonth()+1;
+                if (m < startM || m > endM) return false;
+            }
+            if (activeType !== 'all') {
+                if (activeType === 'upcoming' && endDate < now) return false;
+                if (activeType === 'musical' && !genre.includes('musical') && !tags.includes('musical')) return false;
+                if (activeType === 'professional' && prodType !== 'professional') return false;
+                if (activeType === 'community' && prodType !== 'community') return false;
+                if (activeType === 'youth' && prodType !== 'youth') return false;
+            }
+            if (q) {
+                const s = [show.show_title,show.company,show.venue,show.location,genre,tags].join(' ').toLowerCase();
+                return s.includes(q);
+            }
+            return true;
+        });
+    }
+
+    function render() {
+        const filtered = getFiltered();
+        const container = document.getElementById('calendar-container');
+        const noRes = document.getElementById('no-results');
+
+        if (filtered.length === 0) {
+            container.innerHTML = '';
+            noRes.style.display = 'block';
+            updateStats(filtered);
+            return;
+        }
+        noRes.style.display = 'none';
+        updateStats(filtered);
+
+        // Group by month
+        const groups = {};
+        filtered.forEach(show => {
+            const m = new Date(show.date_start).getMonth() + 1;
+            if (!groups[m]) groups[m] = [];
+            groups[m].push(show);
+        });
+
+        let html = '';
+        Object.keys(groups).sort((a,b)=>a-b).forEach(m => {
+            const shows = groups[m];
+            html += `<div class="month-group">
+                <h2 class="month-heading">${MONTHS[m]} 2026 <span class="month-count">${shows.length} show${shows.length!==1?'s':''}</span></h2>
+                <div class="shows-grid">${shows.map(renderCard).join('')}</div>
+            </div>`;
+        });
+        container.innerHTML = html;
+    }
+
+    async function loadShows() {
+        try {
+            const res = await fetch('data/calendar.json');
+            if (!res.ok) throw new Error();
+            allShows = await res.json();
+        } catch {
+            // inline fallback — a handful of shows
+            allShows = [
+                {id:"mel-2026-001",show_title:"Mamma Mia!",company:"National Theatre",venue:"National Theatre",location:"St Kilda",date_start:"2026-02-07",date_end:"2026-02-18",production_type:"community",genre:["jukebox","comedy"],tags:["community"]},
+                {id:"mel-2026-003",show_title:"Ride the Cyclone",company:"PEP Productions",venue:"Doncaster Playhouse",location:"Doncaster",date_start:"2026-02-13",date_end:"2026-02-21",production_type:"community",genre:["comedy","contemporary"],tags:["community"]},
+                {id:"mel-2026-009",show_title:"& Juliet",company:"Ballarat Lyric Theatre",venue:"Her Majesty's Theatre",location:"Ballarat",date_start:"2026-02-26",date_end:"2026-03-08",production_type:"community",genre:["jukebox","musical"],tags:["community"]},
+                {id:"mel-2026-020",show_title:"Wicked",company:"Melbourne Theatre Company",venue:"Princess Theatre",location:"Melbourne CBD",date_start:"2026-04-01",date_end:"2026-05-15",production_type:"professional",genre:["musical","fantasy"],tags:["professional"]},
+                {id:"mel-2026-021",show_title:"Hamilton",company:"GFO Productions",venue:"Arts Centre Melbourne",location:"Melbourne CBD",date_start:"2026-06-10",date_end:"2026-08-01",production_type:"professional",genre:["musical","hip-hop"],tags:["professional"]}
+            ];
+        }
+        // Build lookup for onclick handlers
+        allShows.forEach(s => { window.SHOWS_DATA[s.id] = s; });
+        render();
+    }
+
+    // ── EVENT LISTENERS ────────────────────────────────
+    document.getElementById('search-input').addEventListener('input', render);
+
+    document.querySelectorAll('[data-month]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('[data-month]').forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+            activeMonth = btn.dataset.month;
+            render();
+        });
+    });
+    document.querySelectorAll('[data-type]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('[data-type]').forEach(b=>b.classList.remove('active'));
+            btn.classList.add('active');
+            activeType = btn.dataset.type;
+            render();
+        });
+    });
+
+    // Expose generateICS globally for onclick
+    window.generateICS = generateICS;
+
+    loadShows();
+    </script>
+</body>
+</html>

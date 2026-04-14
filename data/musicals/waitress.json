@@ -1,0 +1,647 @@
+{
+  "musical": {
+    "id": "waitress",
+    "title": "Waitress",
+    "music_by": "Sara Bareilles",
+    "book_by": "Jessie Nelson",
+    "based_on": "2007 film by Adrienne Shelly",
+    "year_premiered": 2015,
+    "broadway_opening": "2016-04-24",
+    "setting": "A small-town diner in the American South",
+    "time_period": "Contemporary",
+    "themes": ["self-discovery", "abusive relationships", "motherhood", "courage", "friendship", "following dreams", "pie as metaphor"],
+    "genre_tags": ["contemporary", "pop-rock", "comedy-drama", "intimate", "character-driven"],
+    "vocal_style": "Contemporary pop-rock with belt; Sara Bareilles singer-songwriter style",
+    "dance_intensity": "low",
+    "orchestra_size": "small_band",
+    "typical_cast_size": "15-20",
+    "age_range": "20s-60s (primarily adult cast)",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": false,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Jenna is an expert pie maker stuck in a loveless, abusive marriage. When she discovers she's pregnant, she sees a pie contest as her chance to escape. Along the way she begins an affair with her new gynecologist Dr. Pomatter, and with the support of her fellow waitresses Becky and Dawn, finds the strength to take control of her life."
+  },
+  "roles": [
+    {
+      "id": "waitress-jenna",
+      "name": "Jenna Hunterson",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 25, "max": 38},
+      "description": "A gifted pie maker trapped in an abusive marriage to Earl. She's warm, witty, creative, and deeply resilient but has lost sight of her own worth. Her journey from fear to self-empowerment is the heart of the show. Must carry the entire show with emotional depth and contemporary vocal power.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid-high",
+        "style_notes": "Sara Bareilles pop-rock style; must sound effortless and emotionally connected. Mix voice essential. Raw vulnerability in quiet moments, power in climactic numbers. Think singer-songwriter authenticity, not Broadway belt."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "light_movement"],
+        "stamina": "low",
+        "notes": "Minimal choreography. Movement is character-driven — nervous energy, physicality of baking, intimate staging."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["everywoman", "survivor", "creative dreamer", "reluctant rebel"],
+        "emotional_range": "extreme — fear, tenderness, humor, rage, joy, grief, empowerment",
+        "comedy_skills": true,
+        "notes": "Must navigate abuse storyline with nuance and truth. Needs to be likeable while making morally complex choices (affair). Comic timing essential for pie fantasy sequences. Enormous emotional arc from trapped to free."
+      },
+      "performance": {
+        "stage_time_percentage": 85,
+        "solo_songs": 6,
+        "duets": 3,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": ["baking/pie making mime", "physical comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "One of the most demanding female leads in contemporary musical theatre. Requires vulnerability, comedy, and vocal power in equal measure. Career-defining role that showcases range.",
+        "common_casting": "Strong contemporary singer-actress with emotional depth. Often cast with women who have singer-songwriter quality rather than traditional Broadway belt.",
+        "standout_opportunity": "If you can make the audience laugh and cry in the same scene, this role will define you. 'She Used to Be Mine' is one of the great contemporary audition pieces."
+      },
+      "growth_profile": {
+        "skills_developed": ["emotional_acting", "contemporary_belt", "comedic_timing", "vulnerability", "stage_presence", "storytelling"],
+        "challenge_areas": ["sustaining_emotional_arc", "abuse_narrative_sensitivity", "pop_rock_authenticity"],
+        "recommended_for": ["performers wanting to develop contemporary musical skills", "strong singers building acting depth", "anyone transitioning from pop/rock to musical theatre"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["authentic vulnerability", "contemporary vocal quality", "humor amid pain", "likeability", "emotional honesty"],
+        "common_mistakes": ["over-belting — this score rewards nuance", "playing victim instead of survivor", "ignoring the comedy", "too polished — needs rough edges"],
+        "tips": ["Show your singer-songwriter side. Directors want authentic, not operatic. Find the humor in Jenna's coping mechanism (pie). The quiet moments matter more than the big notes."]
+      },
+      "key_songs": [
+        {"title": "What Baking Can Do", "type": "solo", "notes": "Opening statement. Establishes Jenna's inner world through pie metaphor. Needs warmth and wit."},
+        {"title": "She Used to Be Mine", "type": "solo", "notes": "THE eleven o'clock number. Raw, devastating, empowering. Must feel like a real person breaking open, not a performance."},
+        {"title": "Bad Idea", "type": "duet", "notes": "Comedic/sexy duet with Dr. Pomatter. Needs chemistry and comic timing."},
+        {"title": "What's Inside", "type": "solo", "notes": "Recurring motif throughout the show. Evolves each time."},
+        {"title": "Everything Changes", "type": "solo", "notes": "Tender finale about becoming a mother. Simple and pure."},
+        {"title": "I Didn't Plan It", "type": "trio", "notes": "With Becky and Dawn. Fun, honest confession number."}
+      ]
+    },
+    {
+      "id": "waitress-becky",
+      "name": "Becky",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 30, "max": 50},
+      "description": "Jenna's brassy, confident fellow waitress and best friend. She's bold, warm, sassy, and hides her own vulnerabilities behind a tough exterior. Has a secret relationship with the diner's elderly owner Cal. Provides much of the show's comedy and heart.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "alto/mezzo with belt",
+        "belt_required": true,
+        "belt_range": "Bb3-D5",
+        "tessitura": "mid",
+        "style_notes": "Big, soulful, R&B-influenced belt. Think power ballad singer. Needs warmth and sass in equal measure."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "light_movement"],
+        "stamina": "low",
+        "notes": "Character movement. Confident physicality. No technical dance required."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["best friend", "tough exterior/soft heart", "comic relief with depth"],
+        "emotional_range": "high — comedy, vulnerability, warmth, defiance",
+        "comedy_skills": true,
+        "notes": "Must balance being the comic powerhouse with genuine emotional moments. Her reveal about Cal needs to land with truth. Scene-stealer energy but generous performer."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["physical comedy", "sassy delivery"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Scene-stealing supporting role with two killer numbers. Less pressure than Jenna but massive audience impact. Great showcase for belters with personality.",
+        "common_casting": "Strong belter with big personality and comedic chops. Often cast with women who can own the stage in smaller doses.",
+        "standout_opportunity": "'I Didn't Plan It' trio and 'I Love You Like a Table' bring the house down. Directors remember a great Becky."
+      },
+      "growth_profile": {
+        "skills_developed": ["belt_power", "comedic_acting", "character_depth", "scene_partner_skills"],
+        "challenge_areas": ["balancing_comedy_and_heart", "supporting_without_upstaging"],
+        "recommended_for": ["big belters wanting a great supporting turn", "comedic actresses building vocal chops", "performers who shine in ensemble but are ready for featured roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["big personality that doesn't overwhelm", "genuine warmth beneath sass", "powerful belt", "chemistry with ensemble"],
+        "common_mistakes": ["playing one-note sassy", "forgetting vulnerability", "trying to upstage Jenna"],
+        "tips": ["Show your range — brassy AND tender. Becky's power is that she cares deeply and covers it with humor. Let both show."]
+      },
+      "key_songs": [
+        {"title": "I Didn't Plan It", "type": "trio", "notes": "With Jenna and Dawn. Big confession number. Needs comedic timing and belt."},
+        {"title": "I Love You Like a Table", "type": "duet", "notes": "With Cal. Funny, surprising, tender. Unusual love song."},
+        {"title": "A Soft Place to Land", "type": "trio", "notes": "Beautiful harmony number with Jenna and Dawn. Emotional core of friendship."}
+      ]
+    },
+    {
+      "id": "waitress-dawn",
+      "name": "Dawn",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 25, "max": 40},
+      "description": "The third waitress — quirky, anxious, endearingly awkward, and deeply sweet. She's the comic heart of the show, navigating a hilarious and tender romance with the equally odd Ogie. Her journey from shy wallflower to confident woman mirrors Jenna's story.",
+      "vocal": {
+        "range": "B3-D5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Sweet, clear, slightly quirky vocal quality. Doesn't need big belt — needs character and charm. Think cute and earnest."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comedic_movement", "staging"],
+        "stamina": "low",
+        "notes": "Awkward character movement is the point. Endearing physical comedy more important than technique."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["quirky sidekick", "shy romantic", "comic ingenue", "wallflower"],
+        "emotional_range": "moderate — comedy, sweetness, anxiety, growing confidence",
+        "comedy_skills": true,
+        "notes": "Physical comedy and timing are essential. Must be genuinely funny without trying too hard. Her scenes with Ogie are comedic gold — needs impeccable timing and willingness to be silly."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["physical comedy", "awkward charm"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Accessible featured role with great comedic moments. Less vocally demanding than Jenna or Becky. Perfect for building confidence in named roles.",
+        "common_casting": "Character actress with great comic timing. Often cast with women who are genuinely funny and endearing.",
+        "standout_opportunity": "Dawn-Ogie scenes are audience favorites. A memorable Dawn gets callbacks."
+      },
+      "growth_profile": {
+        "skills_developed": ["comedic_acting", "physical_comedy", "character_voice", "romantic_scene_work"],
+        "challenge_areas": ["finding_depth_in_comedy", "not_playing_dumb"],
+        "recommended_for": ["comic actresses building musical theatre credits", "performers who excel at character roles", "singers with personality over power"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine quirkiness (not performed)", "comedic timing", "sweetness", "chemistry potential with Ogie"],
+        "common_mistakes": ["playing dumb instead of anxious", "over-the-top quirky", "forgetting Dawn has real feelings"],
+        "tips": ["Dawn is anxious, not stupid. She's smart and self-aware — she just doesn't know how to be brave yet. Find the real person inside the comedy."]
+      },
+      "key_songs": [
+        {"title": "When He Sees Me", "type": "solo", "notes": "Showstopper anxiety anthem. Neurotic, hilarious, deeply relatable. Must build in comic intensity."},
+        {"title": "I Didn't Plan It", "type": "trio", "notes": "With Jenna and Becky. Confession number."},
+        {"title": "A Soft Place to Land", "type": "trio", "notes": "Friendship trio. Beautiful harmonies."},
+        {"title": "Happy Birthday, Dear Lulu / You Matter to Me (reprise)", "type": "ensemble", "notes": "Part of the finale sequence."}
+      ]
+    },
+    {
+      "id": "waitress-dr-pomatter",
+      "name": "Dr. Jim Pomatter",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {"min": 28, "max": 42},
+      "description": "Jenna's new, awkwardly charming gynecologist who becomes her love interest. He's nervous, earnest, endearing, and completely disarming. Their affair is funny, tender, and complicated. He's not a hero — he's a flawed, good-hearted man making bad choices alongside Jenna.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "tenor/baritone",
+        "belt_required": false,
+        "belt_range": "D3-F4",
+        "tessitura": "mid",
+        "style_notes": "Contemporary pop-rock male voice. Doesn't need traditional belt — needs charm and vulnerability. Conversational singing quality. Think singer-songwriter or indie pop."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comedic_movement", "staging"],
+        "stamina": "low",
+        "notes": "Physical comedy in exam room scenes. Awkward movement is character-appropriate."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["awkward charmer", "accidental romantic lead", "good guy making bad choices"],
+        "emotional_range": "high — nervousness, humor, tenderness, guilt, earnestness",
+        "comedy_skills": true,
+        "notes": "Must have impeccable comic timing and genuine chemistry with Jenna. The exam room scenes are comedic highlights. Needs to be likeable despite the affair. Vulnerability is key."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 3,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["physical comedy", "romantic chemistry"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_get_cast"],
+        "why": "The male lead — requires subtle comedy and genuine connection. Less singing than Jenna but equal acting demands. Great role for actors who are also singers.",
+        "common_casting": "Charming actor-singer with comedic ability. Often cast with men who seem genuinely nice and slightly bumbling.",
+        "standout_opportunity": "The exam room physical comedy and 'Bad Idea' duet chemistry are what directors remember. A great Pomatter elevates the whole show."
+      },
+      "growth_profile": {
+        "skills_developed": ["comedic_acting", "romantic_scene_work", "contemporary_singing", "physical_comedy", "nuanced_character_work"],
+        "challenge_areas": ["making_flawed_character_likeable", "balancing_comedy_and_sincerity"],
+        "recommended_for": ["actors building musical theatre skills", "contemporary singers wanting character depth", "performers who lead with personality over vocal power"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine awkward charm", "chemistry potential", "comic timing", "likeability", "contemporary vocal quality"],
+        "common_mistakes": ["playing too smooth — Pomatter is NOT a leading man type", "missing the comedy", "not enough vulnerability"],
+        "tips": ["Pomatter should feel like a real person, not a musical theatre character. Think indie film more than Broadway. The awkwardness should be genuine, not performed."]
+      },
+      "key_songs": [
+        {"title": "Bad Idea", "type": "duet", "notes": "With Jenna. Comedic/romantic duet. Needs chemistry and building energy."},
+        {"title": "Bad Idea (Reprise)", "type": "duet", "notes": "Escalation of the affair. Funnier, more frantic."},
+        {"title": "You Matter to Me", "type": "duet", "notes": "Tender, stripped-back love song. Emotional core of their relationship. Beautiful simplicity."},
+        {"title": "It Only Takes a Taste", "type": "duet", "notes": "First meeting/pie tasting. Charming, tentative, the spark begins."}
+      ]
+    },
+    {
+      "id": "waitress-earl",
+      "name": "Earl Hunterson",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 28, "max": 45},
+      "description": "Jenna's controlling, abusive husband. He's menacing, manipulative, and volatile — but the writing makes him pathetic rather than purely villainous. He's insecure, jealous, and desperate to maintain control. A challenging role that requires restraint and nuance.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "C3-D4",
+        "tessitura": "low-mid",
+        "style_notes": "Raw, aggressive edge. More character singing than pure vocal. Think controlled menace, not pretty tone."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Physicality is about intimidation, control, and blocking."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["antagonist", "abuser", "pathetic villain", "controlling partner"],
+        "emotional_range": "high — rage, manipulation, false sweetness, desperation, self-pity",
+        "comedy_skills": false,
+        "notes": "Must portray abuse truthfully without glorifying it. The role requires restraint — Earl is scariest when he's quiet. Must make audience uncomfortable without going over the top. Needs to understand the psychology of abusive behavior."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 0,
+        "quick_changes": 0,
+        "special_skills": ["intimidation", "controlled physicality", "emotional intensity"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow"],
+        "why": "Challenging character actor role. Not a crowd-pleaser but an incredible acting exercise. Forces you to find humanity in a terrible person. Directors respect actors who can handle this material responsibly.",
+        "common_casting": "Strong dramatic actor with stage presence. Often cast with men who can be physically imposing but also show vulnerability.",
+        "standout_opportunity": "A nuanced Earl elevates the entire show. Directors remember actors who handle this role with maturity."
+      },
+      "growth_profile": {
+        "skills_developed": ["dramatic_acting", "emotional_restraint", "physicality", "villain_work", "sensitive_material_handling"],
+        "challenge_areas": ["avoiding_caricature", "finding_humanity_in_darkness", "physical_stage_combat"],
+        "recommended_for": ["serious actors wanting challenging dramatic work", "performers looking to expand beyond likeable roles", "actors interested in psychological complexity"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["restraint — less is more", "genuine menace without melodrama", "ability to handle sensitive content", "physicality and presence"],
+        "common_mistakes": ["going full villain from the start — Earl escalates", "enjoying the villainy too much", "forgetting Earl genuinely believes he loves Jenna"],
+        "tips": ["Earl thinks he's the good guy. He thinks he's protecting his family. Play his logic, not his evil. The audience should be uncomfortable, not entertained by the abuse."]
+      },
+      "key_songs": [
+        {"title": "You Will Still Be Mine", "type": "duet", "notes": "With Jenna. Controlling, creepy love song. False tenderness masking possession."},
+        {"title": "Never Ever Getting Rid of Me (reprise fragments)", "type": "ensemble", "notes": "Earl's menacing presence woven through the show."}
+      ]
+    },
+    {
+      "id": "waitress-ogie",
+      "name": "Ogie Anhorn",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 25, "max": 45},
+      "description": "Dawn's blind date turned obsessive (but loveable) suitor. He's wildly enthusiastic, completely without self-awareness, and absolutely devoted. Provides huge laughs and a surprising amount of heart. The role is a gift for a physical comedian.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "tenor/baritone",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "High energy, belt-heavy, comedic delivery. Needs power and control for 'Never Ever Getting Rid of Me' which is vocally demanding. Rock/pop influenced."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["comedic_choreography", "high_energy_movement", "physical_comedy"],
+        "stamina": "high",
+        "notes": "'Never Ever Getting Rid of Me' is essentially a one-man physical comedy show. Needs tremendous energy, coordination, and willingness to throw himself around."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["loveable weirdo", "over-the-top romantic", "comic relief", "persistent suitor"],
+        "emotional_range": "moderate — manic enthusiasm, earnest devotion, surprising tenderness",
+        "comedy_skills": true,
+        "notes": "Physical comedy is essential. Must commit 1000% to the character's energy without being annoying. The line between endearing and creepy is thin — must land on endearing. Needs to find genuine sweetness beneath the chaos."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["physical comedy", "high energy performance", "audience interaction"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "Scene-stealer with one of the most memorable numbers in the show. Small role, massive impact. Perfect for physical comedians who can sing.",
+        "common_casting": "High-energy character actor with strong vocal ability and zero inhibitions. Often cast with performers who have clown/improv backgrounds.",
+        "standout_opportunity": "'Never Ever Getting Rid of Me' is the showstopper audiences remember most. A great Ogie becomes legend."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_comedy", "high_energy_performance", "comedic_singing", "audience_engagement"],
+        "challenge_areas": ["maintaining_energy_without_burning_out", "finding_tender_moments", "not_crossing_into_annoying"],
+        "recommended_for": ["physical comedians building musical skills", "high-energy performers wanting showcase moments", "character actors who light up a room"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["explosive energy", "genuine commitment", "can they sustain the physical comedy?", "is there sweetness underneath?"],
+        "common_mistakes": ["being funny but not real", "running out of steam", "making Ogie annoying instead of endearing"],
+        "tips": ["Ogie genuinely loves Dawn with his whole heart. That's not a joke — that's the foundation. Build all the comedy on top of real devotion. Also: cardio. Seriously, get fit for this role."]
+      },
+      "key_songs": [
+        {"title": "Never Ever Getting Rid of Me", "type": "solo", "notes": "THE showstopper. Physical comedy masterpiece. Must be rehearsed to exhaustion. Audiences lose their minds."},
+        {"title": "I Love You Like a Table", "type": "ensemble", "notes": "Part of the double-date number. Comic chemistry with Dawn."},
+        {"title": "I Didn't Plan It", "type": "trio_support", "notes": "Ogie appears in the background of this number."}
+      ]
+    },
+    {
+      "id": "waitress-cal",
+      "name": "Cal",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 50, "max": 70},
+      "description": "The gruff, no-nonsense owner/manager of Joe's Pie Diner. He's crusty on the outside but deeply caring underneath. Has a secret romance with Becky. Provides dry wit and a steady paternal presence.",
+      "vocal": {
+        "range": "G2-D4",
+        "voice_type": "baritone/bass",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "low-mid",
+        "style_notes": "Character singing. Gruff, understated, talk-sing quality. Doesn't need vocal power — needs personality and warmth."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance required. Character movement only."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["gruff mentor", "father figure", "secret romantic", "dry wit"],
+        "emotional_range": "moderate — gruff exterior, hidden warmth, dry humor, tenderness",
+        "comedy_skills": true,
+        "notes": "Mostly a reactive role. Needs dry comic timing and the ability to convey care through grumpiness. His scenes with Becky reveal surprising tenderness."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["dry humor", "understated acting"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Accessible character role for older male performers. Not vocally demanding. Great for actors who bring quiet authority and humor.",
+        "common_casting": "Character actor with dry wit. Often cast with older men who have natural authority and can underplay comedy.",
+        "standout_opportunity": "The Becky romance reveal is a sweet surprise. A memorable Cal adds texture to the whole show."
+      },
+      "growth_profile": {
+        "skills_developed": ["understated_acting", "comic_timing", "character_work", "scene_support"],
+        "challenge_areas": ["not_being_forgettable", "finding_moments_in_small_role"],
+        "recommended_for": ["older performers entering musical theatre", "actors who excel at supporting roles", "performers building stage comfort"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["natural authority", "dry humor", "warmth beneath gruffness", "chemistry with Becky"],
+        "common_mistakes": ["being too cuddly too soon", "not finding the humor", "playing generic grump"],
+        "tips": ["Cal has been running this diner for decades and has seen everything. He cares about these women but won't say it. Let the caring leak through despite himself."]
+      },
+      "key_songs": [
+        {"title": "I Love You Like a Table", "type": "duet", "notes": "With Becky. Unexpected, funny, sweet love song."},
+        {"title": "Opening Up", "type": "ensemble", "notes": "Part of the diner opening sequence."}
+      ]
+    },
+    {
+      "id": "waitress-joe",
+      "name": "Old Joe",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 65, "max": 80},
+      "description": "The elderly original owner of the diner and Jenna's only true father figure. He's wise, cantankerous, and sees right through everyone's defenses. His relationship with Jenna is the emotional anchor of the show. A small but pivotal role.",
+      "vocal": {
+        "range": "F2-C4",
+        "voice_type": "bass/baritone",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "low",
+        "style_notes": "Speak-sing quality. Character voice. Warmth and wisdom matter more than vocal technique."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Limited movement appropriate for elderly character."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["wise elder", "father figure", "truth-teller", "cantankerous sage"],
+        "emotional_range": "moderate — wisdom, grumpiness, deep tenderness, tough love",
+        "comedy_skills": true,
+        "notes": "Despite limited stage time, Joe's scenes are among the most emotionally powerful. Must convey a lifetime of wisdom in small moments. The 'Take It from an Old Man' scene with Jenna is devastating."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["emotional depth in limited time", "wisdom delivery"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Beautiful small role for experienced older actors. Punches way above its size in emotional impact. Directors love casting this well.",
+        "common_casting": "Experienced older actor with gravitas. Often the most seasoned performer in the cast. Natural warmth essential.",
+        "standout_opportunity": "Joe's final scene can make the entire audience cry. A great Joe elevates the emotional impact of the whole show."
+      },
+      "growth_profile": {
+        "skills_developed": ["emotional_economy", "stage_presence", "mentorship_portrayal", "musical_theatre_basics"],
+        "challenge_areas": ["making_impact_in_limited_time", "avoiding_sentimentality"],
+        "recommended_for": ["older performers new to musical theatre", "experienced actors wanting meaningful small roles", "performers who bring gravitas"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine warmth", "gravitas", "ability to make a scene land emotionally", "natural presence"],
+        "common_mistakes": ["being too sweet", "overdoing the elderly act", "sentimentality instead of truth"],
+        "tips": ["Joe has seen it all and doesn't suffer fools. He loves Jenna like a daughter and that's exactly why he tells her the truth. Don't soften his edges — his honesty is his love."]
+      },
+      "key_songs": [
+        {"title": "Take It from an Old Man", "type": "solo", "notes": "Short, devastating song to Jenna about not wasting her life. Must land emotionally."},
+        {"title": "Opening Up", "type": "ensemble", "notes": "Brief appearance in diner scenes."}
+      ]
+    },
+    {
+      "id": "waitress-nurse-norma",
+      "name": "Nurse Norma",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 30, "max": 55},
+      "description": "Dr. Pomatter's no-nonsense nurse who sees everything and provides dry commentary. Small but memorable role that adds comedy and grounds the medical office scenes.",
+      "vocal": {
+        "range": "Bb3-C5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Ensemble-level vocals. Character voice with attitude."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging"],
+        "stamina": "low",
+        "notes": "Minimal. Character movement only."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["sassy professional", "observant commentator", "comic relief"],
+        "emotional_range": "low-moderate — dry wit, exasperation, amusement",
+        "comedy_skills": true,
+        "notes": "Reaction comedy. Must land lines with precision. A raised eyebrow can be worth more than a monologue."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["deadpan comedy", "reaction timing"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun small role for comedic performers. Low pressure, good experience, scene-stealing potential in small doses.",
+        "common_casting": "Comedic actress who can land a look. Often doubled with ensemble.",
+        "standout_opportunity": "A killer Norma reaction gets the biggest laugh of a scene without saying a word."
+      },
+      "growth_profile": {
+        "skills_developed": ["comedic_timing", "reaction_acting", "stage_presence", "ensemble_skills"],
+        "challenge_areas": ["making_impact_in_small_moments"],
+        "recommended_for": ["performers building featured role experience", "comedic actors wanting stage time", "ensemble members stepping into named roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["comic timing", "expressive face", "professional presence", "ensemble spirit"],
+        "common_mistakes": ["overplaying small moments", "trying too hard to be noticed"],
+        "tips": ["Less is more. Norma sees everything and judges accordingly. A look is worth a thousand words."]
+      },
+      "key_songs": [
+        {"title": "Opening Up", "type": "ensemble", "notes": "Part of ensemble numbers."},
+        {"title": "Ensemble numbers", "type": "ensemble", "notes": "Supports ensemble vocals throughout."}
+      ]
+    },
+    {
+      "id": "waitress-ensemble",
+      "name": "Ensemble — Diner Customers & Townspeople",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {"min": 18, "max": 60},
+      "description": "The ensemble creates the world of the small Southern town — diner regulars, townsfolk, hospital staff, pie contest attendees. They provide the fabric of community around Jenna's story. Often double as multiple minor roles.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "mixed",
+        "belt_required": false,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Contemporary pop-rock ensemble singing. Strong harmonies needed. Must blend well while maintaining individual character."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["staging", "light_choreography", "character_movement"],
+        "stamina": "moderate",
+        "notes": "Some shows have more choreography than others depending on production. Generally character-driven movement rather than technical dance."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["townspeople", "diner regulars", "community members"],
+        "emotional_range": "moderate — creating atmosphere, supporting storytelling",
+        "comedy_skills": true,
+        "notes": "Must create distinct diner customer characters. Strong ensemble acting skills — reacting, listening, creating environment. Small-town community feel is essential."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 6,
+        "quick_changes": 2,
+        "special_skills": ["character creation", "quick changes", "vocal harmony"]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "🔧 Ensemble Foundation",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Great introduction to contemporary musical theatre ensemble work. Intimate cast means more individual moments than typical large-ensemble shows.",
+        "common_casting": "Versatile singer-actors who can create distinct characters. Smaller cast means each ensemble member matters more.",
+        "standout_opportunity": "In a small cast, every ensemble member is visible. Creating memorable diner characters gets you noticed."
+      },
+      "growth_profile": {
+        "skills_developed": ["ensemble_singing", "character_creation", "contemporary_style", "quick_changes", "community_building"],
+        "challenge_areas": ["staying_engaged_in_small_cast", "creating_distinct_characters"],
+        "recommended_for": ["performers new to contemporary musicals", "those building ensemble credits", "singers developing pop-rock style"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["strong contemporary voice", "character versatility", "ensemble spirit", "reliability"],
+        "common_mistakes": ["bland characterization", "not committing to background moments", "ignoring the intimate scale"],
+        "tips": ["In Waitress's small ensemble, you will be seen. Create a real person — give your diner customer a name, a story, a favorite pie. Directors notice performers who bring life to every moment."]
+      },
+      "key_songs": [
+        {"title": "Opening Up", "type": "ensemble", "notes": "The opening number — sets the world. Vocal and staging showcase for ensemble."},
+        {"title": "A Soft Place to Land", "type": "ensemble", "notes": "Beautiful ensemble harmonies supporting the trio."},
+        {"title": "Finale", "type": "ensemble", "notes": "Full company celebration."}
+      ]
+    }
+  ]
+}

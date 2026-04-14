@@ -20,7 +20,7 @@
     top: 0;
     width: 50%;
     height: 100%;
-    background: linear-gradient(90deg, #1a0a1a 0%, #2d1b2d 50%, #1a0a1a 100%);
+    background: linear-gradient(90deg, #4a0000 0%, #b91c1c 45%, #dc2626 55%, #b91c1c 70%, #4a0000 100%);
     transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -52,8 +52,24 @@
         90deg,
         transparent,
         transparent 10px,
-        rgba(0,0,0,0.1) 10px,
-        rgba(0,0,0,0.1) 20px
+        rgba(0,0,0,0.15) 10px,
+        rgba(0,0,0,0.15) 20px
+    );
+    pointer-events: none;
+}
+
+/* Curtain fabric fold highlights */
+.curtain-left::before,
+.curtain-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.04) 8px,
+        transparent 8px,
+        transparent 30px
     );
     pointer-events: none;
 }

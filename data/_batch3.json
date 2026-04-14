@@ -1,0 +1,484 @@
+{
+  "songs": {
+    "frozen/frozen-elsa": {
+      "role_name": "Elsa",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Let It Go", "from": "Frozen", "composer": "Kristen Anderson-Lopez / Robert Lopez", "why": "Elsa's own defining number — shows the soprano-to-belt transformation and the character's emotional release", "type": "same_show"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The closest theatrical parallel — a misunderstood woman transforming her pain into freedom and power", "type": "style_match"},
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Contrasting — shows the isolated figure creating a world inside a fortress, dark and beautiful", "type": "contrasting"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "A woman facing hard truths about her power and what it costs — dramatic soprano/mezzo belt", "type": "contrasting"}
+      ],
+      "style_guidance": "Elsa needs a soprano who can do legit lyric AND a full mezzo-style belt to at least F5. The emotional journey is as important as the range. She is isolated, powerful, and terrified in equal measure.",
+      "avoid": ["Sweet Disney princess voices without the belt — Elsa needs real power behind the warmth"]
+    },
+    "frozen/frozen-anna": {
+      "role_name": "Anna",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "For the First Time in Forever", "from": "Frozen", "composer": "Kristen Anderson-Lopez / Robert Lopez", "why": "Anna's opening — warm, comic mezzo-soprano, hopeful and slightly over-excited", "type": "same_show"},
+        {"title": "Part of Your World", "from": "The Little Mermaid", "composer": "Alan Menken", "why": "Disney yearning mezzo-soprano who wants MORE — same energy as Anna, similar warmth", "type": "style_match"},
+        {"title": "Gimme Gimme", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Enthusiastic, heart-on-sleeve mezzo — big feelings delivered at full speed", "type": "style_match"},
+        {"title": "Not for the Life of Me", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Sunny contemporary mezzo — optimism, speed, and genuine warmth", "type": "contrasting"}
+      ],
+      "style_guidance": "Anna is all heart and no filter — mezzo-soprano who is warm, funny, physically committed, and emotionally transparent. She is the emotional opposite of Elsa.",
+      "avoid": ["Controlled, restrained material — Anna is about overflow, not elegance"]
+    },
+    "frozen/frozen-hans": {
+      "role_name": "Hans",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "If I Loved You", "from": "Carousel", "composer": "Richard Rodgers", "why": "Romantic legit baritone/tenor — Hans sells the love story with total conviction", "type": "style_match"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "A man with a hidden agenda delivering passionate conviction — the trick is he means everything", "type": "contrasting"},
+        {"title": "This Nearly Was Mine", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Contrasting — shows the baritone's romantic depth before the reveal", "type": "contrasting"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The young man who went out into the world with a plan — and found it complicated", "type": "style_match"}
+      ],
+      "style_guidance": "Hans must be utterly believable as the perfect romantic until the twist — baritone/tenor who is charming, warm, and invested. The audience must not see it coming. Save the edge.",
+      "avoid": ["Obvious villainous material for the audition — Hans must sell the romance completely first"]
+    },
+    "frozen/frozen-kristoff": {
+      "role_name": "Kristoff",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "A young man who is more emotionally complex than his rough exterior suggests — self-aware baritone", "type": "style_match"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "Passionate baritone who loves something deeply and won't apologise for it", "type": "style_match"},
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "Warm baritone showing unexpected emotional depth beneath the gruff surface", "type": "contrasting"}
+      ],
+      "style_guidance": "Kristoff is the reluctant romantic — baritone who projects gruffness and delivers warmth. He is defined by action over words, so let the song reveal what he won't say.",
+      "avoid": ["Smooth polished leading-man style — Kristoff is rough around every edge"]
+    },
+    "frozen/frozen-olaf": {
+      "role_name": "Olaf",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character tenor who lives to delight — innocent, enthusiastic, physically expressive", "type": "style_match"},
+        {"title": "In Summer", "from": "Frozen", "composer": "Kristen Anderson-Lopez / Robert Lopez", "why": "Olaf's own number — shows the innocent wonder and comedic sincerity the role requires", "type": "same_show"},
+        {"title": "You're a Good Man, Charlie Brown", "from": "You're a Good Man, Charlie Brown", "composer": "Clark Gesner", "why": "Pure-hearted character who finds joy in everything — character tenor with warm innocence", "type": "style_match"}
+      ],
+      "style_guidance": "Olaf is wonder and warmth in snowman form — character tenor voice, physical comedy, and absolute genuine innocence. He is never sarcastic; every word is sincere.",
+      "avoid": ["Knowing or world-weary material — Olaf does not understand cynicism"]
+    },
+    "frozen/frozen-sven": {
+      "role_name": "Sven",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "If I Only Had a Brain", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "Physical character performance — movement-based role requiring strong physicality and mime skill", "type": "contrasting"}
+      ],
+      "style_guidance": "Sven is a non-singing physical role — cast entirely on movement, mime, and puppy energy. Show physical work and character commitment rather than vocal pieces.",
+      "avoid": ["Trying to show a singing voice — this role is physical theatre first and last"]
+    },
+    "frozen/frozen-weselton": {
+      "role_name": "Duke of Weselton",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "Self-important puffed-up character tenor — pompous, ridiculous, completely convinced of his own importance", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Character who commands respect he has not earned — exasperated authority figure with comic pomposity", "type": "style_match"}
+      ],
+      "style_guidance": "Weselton is the petty, preening political villain — character/character tenor with maximum comic pomposity. Physical comedy essential. Much funnier than he is dangerous.",
+      "avoid": ["Genuine menace — Weselton is comic relief, not a real threat"]
+    },
+    "frozen/frozen-pabbie": {
+      "role_name": "Pabbie (Grand Pabbie)",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "Ancient, warm, paternal bass-baritone — the elder who knows more than he can say", "type": "style_match"},
+        {"title": "Make Them Hear You", "from": "Ragtime", "composer": "Stephen Flaherty", "why": "Deep, resonant character bass-baritone with gravitas and settled conviction", "type": "contrasting"}
+      ],
+      "style_guidance": "Pabbie is ancient wisdom — low bass-baritone with gentleness and depth. Settles the audience with calm authority. Secondary role.",
+      "avoid": ["Young or aggressive material — Pabbie is primordial gentleness"]
+    },
+    "frozen/frozen-oaken": {
+      "role_name": "Oaken",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "It's Today", "from": "Mame", "composer": "Jerry Herman", "why": "Warm, gregarious, overwhelming character baritone who is delighted by everything including you", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character who makes every transaction into a theatrical event", "type": "contrasting"}
+      ],
+      "style_guidance": "Oaken is cheerfully enormous — big voice, big personality, big family, big sauna. Character baritone with maximum warmth and zero social radar.",
+      "avoid": ["Restrained material — Oaken does everything at full volume with complete enthusiasm"]
+    },
+    "frozen/frozen-young-elsa": {
+      "role_name": "Young Elsa",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "A frightened child dreaming of safety and warmth — pure treble with emotional vulnerability", "type": "style_match"},
+        {"title": "In My Own Little Corner", "from": "Cinderella", "composer": "Richard Rodgers", "why": "The child who retreats into imagination from a world that doesn't understand her", "type": "style_match"}
+      ],
+      "style_guidance": "Young Elsa carries enormous fear in a small voice — clear treble with genuine emotional fragility. The opening scenes land on this actress.",
+      "avoid": ["Powerful or adult material — Young Elsa is a frightened little girl, not a star"]
+    },
+    "frozen/frozen-young-anna": {
+      "role_name": "Young Anna",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "The irrepressibly optimistic child — Young Anna condensed into three minutes", "type": "style_match"},
+        {"title": "Do Re Mi", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Pure childhood energy with a bright, clean treble — fun and absolutely zero filter", "type": "contrasting"}
+      ],
+      "style_guidance": "Young Anna is pure sunshine and chaos — bright, warm child voice with comedian instincts. She bounces off walls including Elsa.",
+      "avoid": ["Quiet or introspective material — Young Anna has one gear: enthusiastic"]
+    },
+    "frozen/frozen-ensemble-townspeople": {
+      "role_name": "Ensemble — Townspeople of Arendelle",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Gauntlet (Popular)", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Strong ensemble with character specificity — each Arendellian has a story", "type": "style_match"},
+        {"title": "Any Dream Will Do", "from": "Joseph and the Amazing Technicolor Dreamcoat", "composer": "Andrew Lloyd Webber", "why": "Warm, versatile ensemble voice with lyric quality — Disney-adjacent style", "type": "contrasting"}
+      ],
+      "style_guidance": "Arendelle townspeople — warm, lyric ensemble sound with the ability to convey both celebration and fear. Frozen is a big-emotion show requiring committed ensemble work.",
+      "avoid": ["Pop-only approach — Frozen's ensemble writing is predominantly lyric/legit"]
+    },
+    "frozen/frozen-ensemble-hidden-folk": {
+      "role_name": "Ensemble — Hidden Folk (Trolls)",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Be Our Guest", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "Ensemble magic creatures — committed physicality, character work, and ensemble singing", "type": "style_match"}
+      ],
+      "style_guidance": "Troll folk require strong physicality and character specificity — they are ancient, earthy, and lovingly meddlesome. Ensemble work with physical character transformation.",
+      "avoid": ["Realistic human physicality — trolls move and sing differently from humans"]
+    },
+    "frozen/frozen-ensemble-snow-chorus": {
+      "role_name": "Ensemble — Snow Chorus",
+      "musical": "Frozen",
+      "songs_to_prepare": [
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Soprano/alto ensemble with power behind lyricism — shows the choral voice Frozen requires", "type": "style_match"},
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "Demonstrates strong soprano/alto ensemble blend and musical precision", "type": "contrasting"}
+      ],
+      "style_guidance": "Snow Chorus is the ethereal choral body of the show — soprano/alto voices that blend beautifully, with the ability to convey both wonder and danger through pure tone.",
+      "avoid": ["Heavy belt for this ensemble — Snow Chorus is primarily lyric/legit in quality"]
+    },
+    "hunchback-of-notre-dame/hunchback-quasimodo": {
+      "role_name": "Quasimodo",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Out There", "from": "The Hunchback of Notre Dame", "composer": "Alan Menken", "why": "Quasimodo's defining number — a soaring tenor cry for freedom from someone who has never had it", "type": "same_show"},
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Another isolated, physically marked man believing in the world's beauty — tenor with ache", "type": "style_match"},
+        {"title": "Being Good Isn't Good Enough", "from": "Hallelujah, Baby!", "composer": "Jule Styne", "why": "Earnest tenor who has done everything right and still gets no recognition — Quasimodo's frustration", "type": "contrasting"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "Passionate tenor/high baritone claiming identity against an indifferent world — climactic power", "type": "style_match"}
+      ],
+      "style_guidance": "Quasimodo needs a high tenor with emotional rawness — out there to A4 is mandatory. The role requires genuine vulnerability and yearning, not just power. The bell tower is loneliness made musical.",
+      "avoid": ["Playing the disability — Quasimodo's spirit soars, the physical restriction is context, not character"]
+    },
+    "hunchback-of-notre-dame/hunchback-frollo": {
+      "role_name": "Judge Claude Frollo",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Hellfire", "from": "The Hunchback of Notre Dame", "composer": "Alan Menken", "why": "Frollo's terrifying soliloquy — bass-baritone who turns religious conviction into obsessive desire", "type": "same_show"},
+        {"title": "Stars", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The great antagonist bass-baritone who believes God is on his side — righteous and terrifying", "type": "style_match"},
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Obsessive, controlling baritone who believes his darkness is beautiful — the same shadow energy", "type": "style_match"},
+        {"title": "Epiphany", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "The moment a controlled man's darkness fully escapes — chilling bass-baritone of absolute conviction", "type": "contrasting"}
+      ],
+      "style_guidance": "Frollo is one of the great musical theatre villains — a bass-baritone whose terror comes from total sincerity. He is not evil to himself. He believes in his righteousness absolutely.",
+      "avoid": ["Broad pantomime villain energy — Frollo's menace comes from cold conviction, not twirling"]
+    },
+    "hunchback-of-notre-dame/hunchback-esmeralda": {
+      "role_name": "Esmeralda",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "God Help the Outcasts", "from": "The Hunchback of Notre Dame", "composer": "Alan Menken", "why": "Esmeralda's own prayer — mezzo-soprano with spiritual conviction and raw emotional truth", "type": "same_show"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "Unstoppable mezzo-soprano force — the woman who will not be contained or defined by others", "type": "style_match"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Dramatic mezzo belt — a woman with compassion and strength facing an unjust world", "type": "contrasting"},
+        {"title": "Somewhere", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The yearning for a world without persecution — Esmeralda's deepest wish in musical form", "type": "style_match"}
+      ],
+      "style_guidance": "Esmeralda is compassion and defiance in equal parts — mezzo-soprano who can deliver a folk-inflected belt and a spiritual legit line. She believes in justice with every note.",
+      "avoid": ["Passive, gentle material — Esmeralda is fierce, not soft, even in her most vulnerable moments"]
+    },
+    "hunchback-of-notre-dame/hunchback-phoebus": {
+      "role_name": "Captain Phoebus",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "The Impossible Dream", "from": "Man of La Mancha", "composer": "Mitch Leigh", "why": "The soldier becoming a man of conscience — baritone/tenor who discovers honour mid-story", "type": "style_match"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "A man who has served institutions and now serves something higher — passionate, climactic baritone", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "A man confronting what truly matters — Phoebus's arc is about awakening to real love and justice", "type": "contrasting"}
+      ],
+      "style_guidance": "Phoebus begins as a pragmatist and becomes a hero — baritone/tenor with inherent warmth and the capacity for moral growth. He needs to be believably both a soldier and a romantic.",
+      "avoid": ["Cold, calculating material — Phoebus's conversion to conscience must feel genuine"]
+    },
+    "hunchback-of-notre-dame/hunchback-clopin": {
+      "role_name": "Clopin",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The theatrical MC who sets the tone for the whole show — showman energy, control of the audience", "type": "style_match"},
+        {"title": "Not While I'm Around", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "Shows tenor baritone with complex moral ambiguity — Clopin protects his people but by any means", "type": "contrasting"},
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "The great theatrical host who welcomes you to a world that may or may not be safe — exactly Clopin", "type": "style_match"}
+      ],
+      "style_guidance": "Clopin is the trickster narrator — tenor/baritone with maximum theatrical flair, physical showmanship, and the ability to be charming and dangerous in the same breath.",
+      "avoid": ["Straight leading man energy — Clopin's power is unpredictability and total control over the audience's perspective"]
+    },
+    "hunchback-of-notre-dame/hunchback-gargoyles": {
+      "role_name": "The Gargoyles — Victor, Hugo & Laverne",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character voice trio — comic support for Quasimodo, each with a distinct physical and vocal personality", "type": "style_match"},
+        {"title": "I've Got a Little List", "from": "The Mikado", "composer": "Arthur Sullivan", "why": "Character voices with wit and physical expressiveness — the gargoyles are Quasi's imagination", "type": "contrasting"}
+      ],
+      "style_guidance": "The gargoyles are Quasimodo's fractured inner voices — comic, loving, and ultimately revealed as projections. Each needs a distinct physical and vocal identity. Character work over vocal range.",
+      "avoid": ["Realistic, grounded physicality — they are stone, imagination, and comic energy"]
+    },
+    "hunchback-of-notre-dame/hunchback-jehan": {
+      "role_name": "Jehan Frollo",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The young man who made bad choices looking for something real — tenor regret and longing", "type": "style_match"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "A man who went out into the world and found it darker than expected — tenor self-examination", "type": "contrasting"}
+      ],
+      "style_guidance": "Jehan is the wayward brother — tenor with tragedy baked in. His choices explain much of Frollo's severity. Lyric quality with underlying sadness.",
+      "avoid": ["Villainous or cold material — Jehan is a cautionary figure, not a villain"]
+    },
+    "hunchback-of-notre-dame/hunchback-saint-aphrodisius": {
+      "role_name": "Saint Aphrodisius",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Commanding baritone authority figure with historical gravity — saint as dramatic presence", "type": "style_match"}
+      ],
+      "style_guidance": "Saint Aphrodisius is a supporting spiritual role — baritone with gravitas and presence. Secondary character requiring dramatic commitment within limited material.",
+      "avoid": ["Comic treatment — this is a solemn historical/spiritual figure"]
+    },
+    "hunchback-of-notre-dame/hunchback-florika": {
+      "role_name": "Florika",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "My Man's Gone Now", "from": "Porgy and Bess", "composer": "George Gershwin", "why": "Mezzo-soprano of folk/ethnic musical heritage carrying grief and strength — Esmeralda's mother", "type": "style_match"},
+        {"title": "Somewhere", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The yearning for a safe place for your children — mezzo with tragedy and love", "type": "contrasting"}
+      ],
+      "style_guidance": "Florika is Esmeralda's Romani mother — mezzo-soprano with folk warmth and deep tragedy. Her brief role carries enormous backstory and emotional weight.",
+      "avoid": ["Legit classical soprano style — Florika's voice should carry the sound of the margins, not the concert hall"]
+    },
+    "hunchback-of-notre-dame/hunchback-father-dupin": {
+      "role_name": "Father Dupin",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Make Them Hear You", "from": "Ragtime", "composer": "Stephen Flaherty", "why": "Principled baritone character with moral conviction — a priest who actually means it", "type": "style_match"}
+      ],
+      "style_guidance": "Father Dupin is a supporting religious character — warm baritone who represents genuine faith rather than Frollo's weaponised version. Secondary role with moral clarity.",
+      "avoid": ["Dark or authoritarian material — Father Dupin is kindness, not power"]
+    },
+    "hunchback-of-notre-dame/hunchback-frederic": {
+      "role_name": "Lieutenant Frederic Charlus",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Military baritone/tenor following orders — the man who chose institution over conscience", "type": "style_match"}
+      ],
+      "style_guidance": "Lieutenant Charlus is a supporting military role — baritone/tenor who serves the system. Shows how ordinary people enable extraordinary evil through compliance.",
+      "avoid": ["Scene-stealing material — this is a supporting role that serves the larger moral picture"]
+    },
+    "hunchback-of-notre-dame/hunchback-king-louis": {
+      "role_name": "King Louis XI",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "I've Got the Horse Right Here", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Speaking/character role — shows commanding presence and timing without musical demand", "type": "contrasting"}
+      ],
+      "style_guidance": "King Louis XI is primarily a speaking royal authority role — cast for presence, bearing, and timing. Physical majesty required.",
+      "avoid": ["Singing-heavy audition pieces — this is a character speaking role"]
+    },
+    "hunchback-of-notre-dame/hunchback-congregation-choir": {
+      "role_name": "Congregation / Ensemble",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {"title": "Hellfire (choral section)", "from": "The Hunchback of Notre Dame", "composer": "Alan Menken", "why": "The show's choral writing is massive — four-part SATB with operatic scope", "type": "same_show"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "Shows operatic choral capacity — this ensemble is closer to oratorio than typical musical theatre", "type": "style_match"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Strong ensemble belt and choral blend — shows upper register capacity", "type": "contrasting"}
+      ],
+      "style_guidance": "Hunchback requires a real SATB choir — this is not standard musical theatre ensemble. Directors should cast singers with choral training who can also act. The choral passages have near-operatic scope.",
+      "avoid": ["Pop-belt only ensemble — the choir writing requires genuine four-part classical choral skill"]
+    },
+    "into-the-woods/the-baker": {
+      "role_name": "The Baker",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "No More", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The Baker's own defining number — baritone processing grief and responsibility with raw honesty", "type": "same_show"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "The everyman confronting what it means to truly connect — Sondheim in the Baker's exact register", "type": "style_match"},
+        {"title": "Take Me to the World", "from": "Evening Primrose", "composer": "Stephen Sondheim", "why": "Simple, aching domestic baritone — a man who wants the ordinary things that feel impossible", "type": "style_match"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Shows the range and style — can be used as contrasting material from the same composer/show", "type": "same_show"}
+      ],
+      "style_guidance": "The Baker is Sondheim's modern everyman — baritone with emotional intelligence and the specific quality of a good man overwhelmed by events. Conversational delivery, not operatic.",
+      "avoid": ["Heroic tenor material — The Baker is a baker, not a hero, and that is entirely the point"]
+    },
+    "into-the-woods/the-bakers-wife": {
+      "role_name": "The Baker's Wife",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Moments in the Woods", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The Baker's Wife's defining solo — mezzo-soprano processing a spontaneous choice with intelligence and honesty", "type": "same_show"},
+        {"title": "Not a Day Goes By", "from": "Merrily We Roll Along", "composer": "Stephen Sondheim", "why": "The Sondheim mezzo soprano voice — complex, simultaneous feelings, sophisticated delivery", "type": "style_match"},
+        {"title": "My Favorite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Contrasting — warm mezzo-soprano with aspiration and a gift for subtext", "type": "contrasting"},
+        {"title": "Losing My Mind", "from": "Follies", "composer": "Stephen Sondheim", "why": "Shows the complexity of desire that co-exists with genuine love — the Baker's Wife's specific dilemma", "type": "style_match"}
+      ],
+      "style_guidance": "The Baker's Wife is the show's most psychologically complex character — mezzo-soprano with intelligence, wit, and the ability to hold contradictions simultaneously. She is the smartest person on stage.",
+      "avoid": ["Simple romantic lead material — she is Sondheim's most complex woman, not a supporting wife"]
+    },
+    "into-the-woods/the-witch": {
+      "role_name": "The Witch",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The Witch's devastating conclusion — mezzo-soprano powerhouse stripping down to cold truth", "type": "same_show"},
+        {"title": "Last Midnight", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The moment the Witch declares herself done — chilling, precise, and requires full mezzo range", "type": "same_show"},
+        {"title": "Rose's Turn", "from": "Gypsy", "composer": "Jule Styne", "why": "The woman who controlled through love and is left with nothing — identical energy to the Witch's arc", "type": "style_match"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Another mezzo-soprano powerhouse who chooses not to be good — the same complex moral position", "type": "contrasting"}
+      ],
+      "style_guidance": "The Witch is the show's anchor — mezzo-soprano with genuine power to G5 combined with verbal precision. She is simultaneously right and wrong and she knows it. Never play her as a villain.",
+      "avoid": ["Panto witch clichés — the Witch's power is ambiguity and intelligence, not evil"]
+    },
+    "into-the-woods/cinderella": {
+      "role_name": "Cinderella",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "On the Steps of the Palace", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Shows Cinderella's specific voice — soprano with verbal agility, intelligence, and the famous frozen decision", "type": "same_show"},
+        {"title": "No One Is Alone", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Shows the lyric warmth and emotional generosity this soprano must carry", "type": "same_show"},
+        {"title": "Somewhere", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Legit soprano yearning with genuine emotional depth", "type": "style_match"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Shows the lighter, more comedic side — Cinderella in Act One before she has questions", "type": "contrasting"}
+      ],
+      "style_guidance": "ITW's Cinderella is the most complex version of this character — soprano who starts as a fairy tale type and becomes a thinking, questioning woman. Legit quality essential with the ability to deliver rapid Sondheim text.",
+      "avoid": ["Pure Disney princess soprano with no intelligence underneath — this Cinderella has agency and doubts"]
+    },
+    "into-the-woods/jack": {
+      "role_name": "Jack",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Jack's own defining number — tenor discovering a world beyond his imagination, wonder and terror", "type": "same_show"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "Young man who set out into the world and found more than he bargained for", "type": "style_match"},
+        {"title": "All I Need Is the Girl", "from": "Gypsy", "composer": "Jule Styne", "why": "Young male naivety and endearing confidence — the boy who doesn't know what he doesn't know", "type": "contrasting"}
+      ],
+      "style_guidance": "Jack is the boy who is too young for the consequences he triggers — tenor with genuine youth, wonder, and zero comprehension of cause and effect. He is never dumb, just incomplete.",
+      "avoid": ["Calculating or knowing performance — Jack's tragedy is that he acts from pure feeling, every time"]
+    },
+    "into-the-woods/little-red-riding-hood": {
+      "role_name": "Little Red Riding Hood",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "I Know Things Now", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Little Red's post-wolf education — soprano/belt showing the character's dawning awareness", "type": "same_show"},
+        {"title": "Not While I'm Around", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "Contrasting — shows the innocent child's fierce protective instinct, different tone from the comic scenes", "type": "contrasting"},
+        {"title": "Wouldn't It Be Loverly", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "Shows the young soprano with appetite and pragmatism — Little Red BEFORE the woods", "type": "contrasting"}
+      ],
+      "style_guidance": "Little Red is the show's most rapidly maturing character — bright soprano with physical energy and the ability to go from oblivious to knowing within a scene. Comic and then chilling.",
+      "avoid": ["Sweet, innocent-only performance — Little Red's whole arc is the loss of innocent obliviousness"]
+    },
+    "into-the-woods/cinderellas-prince": {
+      "role_name": "Cinderella's Prince",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Agony", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The Prince's own comic duet — everything about this character in two-and-a-half minutes of glorious self-obsession", "type": "same_show"},
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "Seductive baritone who is entirely aware of his own effect — glamour without depth", "type": "style_match"},
+        {"title": "Some Enchanted Evening", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Romantic baritone who falls completely for the fantasy — then proves entirely unable to live up to it", "type": "contrasting"}
+      ],
+      "style_guidance": "The Princes are the show's great comic deconstruction of romantic heroes — handsome, useless, completely sincere about their own suffering. Play it absolutely straight. The comedy comes from total earnestness.",
+      "avoid": ["Knowing winks about the comedy — any self-awareness kills the joke. These princes are perfectly serious."]
+    },
+    "into-the-woods/rapunzels-prince": {
+      "role_name": "Rapunzel's Prince",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Agony", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Both Princes share this comic masterpiece — identical guidance to Cinderella's Prince", "type": "same_show"},
+        {"title": "The Impossible Dream", "from": "Man of La Mancha", "composer": "Mitch Leigh", "why": "Delusional romantic conviction delivered with complete sincerity — the Prince believes every word", "type": "contrasting"}
+      ],
+      "style_guidance": "Same as Cinderella's Prince — comic romantic hero who is absolutely convinced of his own anguished nobility. The earnestness IS the performance. Baritone with range and complete self-belief.",
+      "avoid": ["Ironic performance — if either Prince seems to know they are funny, the show loses one of its best gags"]
+    },
+    "into-the-woods/rapunzel": {
+      "role_name": "Rapunzel",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "In My Own Little Corner", "from": "Cinderella", "composer": "Richard Rodgers", "why": "Pure soprano dreaming from isolation — the precise emotional reality of a girl in a tower", "type": "style_match"},
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The lonely child's dream of warmth and freedom — Rapunzel pre-wedding, all longing", "type": "style_match"},
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "If a more comic approach — shows soprano range and the brittle brightness of someone trying to adapt", "type": "contrasting"}
+      ],
+      "style_guidance": "Rapunzel is a pure lyric soprano — she goes mad quietly, which is one of the show's darkest moments. The contrast between her ethereal beauty and her fragmentation must be present from the start.",
+      "avoid": ["Belty or contemporary pop approach — Rapunzel is pure legit soprano, specifically chosen to contrast with the Witch"]
+    },
+    "into-the-woods/jacks-mother": {
+      "role_name": "Jack's Mother",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Rose's Turn", "from": "Gypsy", "composer": "Jule Styne", "why": "The mother at the end of her rope, loving and maddened — soprano/mezzo with exasperation and genuine fear", "type": "style_match"},
+        {"title": "Far From the Home I Love", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "A mother facing terrible choices to protect her child — warmth, grief, and pragmatism", "type": "contrasting"}
+      ],
+      "style_guidance": "Jack's Mother is poverty, love, and frustration in one package — soprano/mezzo with roughness under the warmth. She is managing disaster with dignity.",
+      "avoid": ["Gentle, refined soprano — Jack's Mother is poor, harried, and running out of options"]
+    },
+    "into-the-woods/narrator-mysterious-man": {
+      "role_name": "The Narrator / Mysterious Man",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Old Friends", "from": "Merrily We Roll Along", "composer": "Stephen Sondheim", "why": "A Sondheim baritone who carries the story's weight — observational, warm, slightly complicit", "type": "style_match"},
+        {"title": "The Road You Didn't Take", "from": "Follies", "composer": "Stephen Sondheim", "why": "The man watching other people's stories with full knowledge of outcome — the Mysterious Man in song form", "type": "style_match"}
+      ],
+      "style_guidance": "The Narrator/Mysterious Man is the show's meta-theatrical conscience — warm baritone with intelligence and slight sadness. He knows more than the characters and eventually must enter the story.",
+      "avoid": ["Detached or cold performance — the Narrator loves these characters even as he chronicles their mistakes"]
+    },
+    "into-the-woods/cinderellas-stepmother": {
+      "role_name": "Cinderella's Stepmother",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "The mother who will sacrifice everything — including her children's health — for social ambition", "type": "style_match"},
+        {"title": "I'm Still Here", "from": "Follies", "composer": "Stephen Sondheim", "why": "The woman who clawed her way to respectability and will die before she lets anyone take it — mezzo with teeth", "type": "style_match"}
+      ],
+      "style_guidance": "The Stepmother is social climbing with a beautiful veneer and vicious core — mezzo-soprano with sharp delivery and a smile that doesn't reach the eyes. She is the show's comic villain.",
+      "avoid": ["Broad cackling villain — the Stepmother thinks she is being entirely reasonable and that is far funnier"]
+    },
+    "into-the-woods/florinda": {
+      "role_name": "Florinda",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The girl who is convinced her mediocrity is excellence — mezzo with comedy and total self-belief", "type": "style_match"},
+        {"title": "I Enjoy Being a Girl", "from": "Flower Drum Song", "composer": "Richard Rodgers", "why": "Mezzo character who is thoroughly pleased with herself — charming, slightly dim, absolutely confident", "type": "contrasting"}
+      ],
+      "style_guidance": "Florinda is the stepsister who literally cuts off her heel to fit the slipper — mezzo with physical comedy and absolute conviction of her own worthiness. She and Lucinda are a double act.",
+      "avoid": ["Knowing self-deprecation — the stepsisters are completely sincere in their delusion"]
+    },
+    "into-the-woods/lucinda": {
+      "role_name": "Lucinda",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Same stepsister energy as Florinda — complete conviction of superiority", "type": "style_match"},
+        {"title": "Diamonds Are a Girl's Best Friend", "from": "Gentlemen Prefer Blondes", "composer": "Jule Styne", "why": "Mezzo character who is thoroughly invested in social status and completely sure of her own charm", "type": "contrasting"}
+      ],
+      "style_guidance": "Mirror image of Florinda — mezzo with the same combination of physical comedy, total self-belief, and complete obliviousness. The stepsisters should feel like an act.",
+      "avoid": ["Malicious reading — the stepsisters aren't evil, they're just spectacular idiots"]
+    },
+    "into-the-woods/the-wolf": {
+      "role_name": "The Wolf",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Hello, Young Lovers", "from": "The King and I", "composer": "Richard Rodgers", "why": "Seductive baritone who watches the young with predatory warmth — exactly The Wolf's register", "type": "style_match"},
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Dark seduction — the powerful figure drawing in the innocent with honeyed voice", "type": "style_match"}
+      ],
+      "style_guidance": "The Wolf is sexual menace in a top hat — baritone with pure seductive danger. The role is deliberately uncomfortable and that discomfort is the theatrical point. Lush voice, predatory physicality.",
+      "avoid": ["Comic reading — The Wolf is genuinely threatening beneath the theatrical glamour"]
+    },
+    "into-the-woods/cinderellas-mother": {
+      "role_name": "Cinderella's Mother",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Not While I'm Around", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "The spirit of pure protective motherhood from the grave — lyric soprano with warmth and gentle authority", "type": "style_match"},
+        {"title": "Climb Ev'ry Mountain", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Soprano with spiritual authority — gentle, elevated, and guiding from a safe remove", "type": "contrasting"}
+      ],
+      "style_guidance": "Cinderella's Mother is a pure lyric soprano spirit — ethereal, warm, and guiding. A small role with enormous impact when cast with a genuinely beautiful pure soprano tone.",
+      "avoid": ["Belt or character approach — Cinderella's Mother should float above the story, not anchor it"]
+    },
+    "into-the-woods/the-steward": {
+      "role_name": "The Steward",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The official functionary who represents institutional order — character presenter role", "type": "style_match"}
+      ],
+      "style_guidance": "The Steward is a small ensemble/character speaking role — cast for physical presence and timing. He represents the royal hierarchy at work.",
+      "avoid": ["Large vocal showcase — this is a supporting character role"]
+    },
+    "into-the-woods/milky-white": {
+      "role_name": "Milky White",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Physical Theatre Demonstration", "from": "N/A", "composer": "N/A", "why": "Milky White is a non-speaking physical role — show physical mime, relationship dynamics, and character commitment", "type": "contrasting"}
+      ],
+      "style_guidance": "Milky White is a pure physical theatre role — cast entirely on movement, comic timing, and the ability to form a convincing and endearing cow-actor relationship with Jack. Some productions give Milky White a spoken or sung moment.",
+      "avoid": ["Vocal audition showcase — this role is entirely about physical performance and character puppetry"]
+    },
+    "into-the-woods/the-giant": {
+      "role_name": "The Giant (Giant's Wife)",
+      "musical": "Into the Woods",
+      "songs_to_prepare": [
+        {"title": "Some Things Are Meant to Be", "from": "Little Women", "composer": "Jason Howland", "why": "Shows a large, powerful voice that can convey both grief and terrifying authority — the Giant's wife is mourning", "type": "contrasting"}
+      ],
+      "style_guidance": "The Giant is an amplified voice-only or enormous physical role — requires a voice that fills every corner of the theatre with both terror and grief. She is not a monster; she is bereaved.",
+      "avoid": ["Roaring, cartoon monster approach — the Giant's Wife is grieving, not malicious"]
+    }
+  }
+}

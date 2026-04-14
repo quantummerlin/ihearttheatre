@@ -1,0 +1,1713 @@
+{
+  "musical": {
+    "id": "42nd-street",
+    "title": "42nd Street",
+    "music_by": "Harry Warren",
+    "lyrics_by": "Al Dubin",
+    "book_by": "Michael Stewart & Mark Bramble",
+    "based_on": "1933 Warner Bros. film",
+    "year_premiered": 1980,
+    "broadway_opening": "1980-08-25",
+    "setting": "New York City \u2014 Broadway theatres, rehearsal halls, hotel rooms",
+    "time_period": "1933 (Great Depression era)",
+    "themes": [
+      "following your dreams",
+      "hard work and talent",
+      "backstage romance",
+      "the magic of Broadway",
+      "perseverance",
+      "the show must go on"
+    ],
+    "genre_tags": [
+      "classic_broadway",
+      "golden_age",
+      "tap_dance",
+      "backstage_musical",
+      "feel_good",
+      "dance_heavy"
+    ],
+    "vocal_style": "Classic Broadway \u2014 big band era, swing, ballads. Traditional musical theatre voice with jazz/swing influence.",
+    "dance_intensity": "very_high",
+    "orchestra_size": "full_pit_big_band",
+    "typical_cast_size": "30-40+",
+    "age_range": "18-60",
+    "difficulty_overall": "advanced (dance demands are extreme)",
+    "junior_version_available": true,
+    "license_holder": "Concord Theatricals",
+    "synopsis": "Young Peggy Sawyer arrives in New York from Allentown, Pennsylvania, dreaming of being a Broadway star. She lands a spot in the chorus of a new show directed by the legendary Julian Marsh. When the leading lady Dorothy Brock breaks her ankle on opening night, Peggy must go on in her place. 'You're going out a youngster, but you've got to come back a star!'"
+  },
+  "roles": [
+    {
+      "id": "42nd-peggy",
+      "name": "Peggy Sawyer",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 18,
+        "max": 28
+      },
+      "description": "A sweet, talented, small-town girl who arrives in New York with big dreams and extraordinary tap talent. She's naive but determined, clumsy offstage but brilliant onstage. Her journey from chorus girl to leading lady is the ultimate backstage fairy tale.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "soprano/mezzo-soprano",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid-high",
+        "style_notes": "Classic Broadway soprano with belt. Sweet, clear, golden-age quality. Must sound like the girl next door who happens to have a beautiful voice."
+      },
+      "dance": {
+        "level": "advanced_to_expert",
+        "styles": [
+          "tap_dance",
+          "broadway_jazz",
+          "big_production_numbers"
+        ],
+        "stamina": "extreme",
+        "notes": "TAP IS NON-NEGOTIABLE. Peggy must be a SPECTACULAR tap dancer \u2014 this is primarily a dance role. The finale '42nd Street' tap number is one of the most demanding dance sequences in musical theatre. Must dance at the highest level while making it look effortless."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "wide-eyed dreamer",
+          "small-town talent",
+          "underdog hero",
+          "classic ingenue"
+        ],
+        "emotional_range": "moderate \u2014 naivety, determination, heartbreak, triumph, joy",
+        "comedy_skills": true,
+        "notes": "Must be likeable and relatable. The transformation from nervous chorus girl to commanding leading lady must be believable. She's clumsy and sweet offstage, brilliant and magnetic onstage."
+      },
+      "performance": {
+        "stage_time_percentage": 65,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": [
+          "expert_tap_dance",
+          "quick_changes",
+          "dance_while_singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "THE classic dance leading lady role. If you can tap at the highest level AND sing AND act, this is your star vehicle. The '42nd Street' finale is one of the most thrilling moments in all of musical theatre.",
+        "common_casting": "Expert tap dancer with a sweet voice and girl-next-door charm. Dance ability is the PRIMARY casting criterion \u2014 this is a dancer's role.",
+        "standout_opportunity": "The '42nd Street' finale tap number. If you can command that stage with your feet, you'll never be forgotten."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "expert_tap",
+          "leading_lady_skills",
+          "classic_broadway_style",
+          "dance_stamina",
+          "quick_changes"
+        ],
+        "challenge_areas": [
+          "extreme_tap_demands",
+          "maintaining_character_while_dancing",
+          "the_stamina_required"
+        ],
+        "recommended_for": [
+          "expert tap dancers wanting a star vehicle",
+          "triple-threats whose strongest skill is dance",
+          "dancers who dream of being a leading lady"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "TAP ABILITY (essential \u2014 must be outstanding)",
+          "sweet voice",
+          "likeability",
+          "can she carry the finale?",
+          "girl-next-door quality"
+        ],
+        "common_mistakes": [
+          "can't tap well enough \u2014 deal-breaker",
+          "no acting ability",
+          "too polished \u2014 Peggy should feel unrehearsed offstage"
+        ],
+        "tips": [
+          "Peggy's magic is that she transforms when she dances. Offstage, she's a bumbling kid from Allentown. The second the music starts, she's a star. That transformation is the role. And your tap had better be FLAWLESS."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "42nd Street",
+          "type": "ensemble_lead",
+          "notes": "THE finale. Massive tap production number. The climax of the entire show. Must be spectacular."
+        },
+        {
+          "title": "Go Into Your Dance",
+          "type": "duet",
+          "notes": "With Billy. Romantic dance duet."
+        },
+        {
+          "title": "About a Quarter to Nine",
+          "type": "solo_with_ensemble",
+          "notes": "Peggy steps into the spotlight."
+        },
+        {
+          "title": "Lullaby of Broadway",
+          "type": "ensemble_lead",
+          "notes": "Another massive production number. Peggy commands the stage."
+        },
+        {
+          "title": "I Only Have Eyes for You",
+          "type": "duet",
+          "notes": "Romantic ballad. Sweet and genuine."
+        }
+      ]
+    },
+    {
+      "id": "42nd-julian",
+      "name": "Julian Marsh",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 40,
+        "max": 55
+      },
+      "description": "The legendary, tyrannical, brilliant Broadway director who is secretly ill and staking everything on this one last show. He's demanding, intimidating, charismatic, and underneath it all, deeply passionate about theatre. He sees Peggy's talent and makes the call that changes her life.",
+      "vocal": {
+        "range": "B2-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "C3-D4",
+        "tessitura": "mid",
+        "style_notes": "Mostly a speaking/acting role with some singing. Character baritone quality. Authority in every note. The famous line 'You're going out a youngster, but you've got to come back a star!' must land with devastating power."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "staging"
+        ],
+        "stamina": "moderate",
+        "notes": "Not a dancer \u2014 he directs the dancers. Physical authority more important than dance ability."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "tyrannical genius",
+          "demanding director",
+          "secretly vulnerable leader",
+          "mentoring taskmaster"
+        ],
+        "emotional_range": "high \u2014 authority, frustration, brilliance, vulnerability, tenderness (hidden), desperation",
+        "comedy_skills": true,
+        "notes": "Must command every scene with authority. The secret illness adds stakes to everything \u2014 this is his last chance. His harsh treatment of the cast must be balanced by genuine artistic passion. When he sends Peggy onstage, it should be the most important moment of both their lives."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "commanding_authority",
+          "directorial_presence",
+          "speech_delivery"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_get_cast"
+        ],
+        "why": "The authority figure who drives the plot. Gets the most famous line in backstage musicals. Less singing/dancing than other leads but immense stage presence required.",
+        "common_casting": "Commanding actor with strong stage presence. Must look and sound like someone who's been running Broadway for decades.",
+        "standout_opportunity": "'You're going out a youngster, but you've got to come back a star!' \u2014 deliver that line with everything you have and you own the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "commanding_presence",
+          "authority_roles",
+          "dramatic_acting",
+          "speech_delivery"
+        ],
+        "challenge_areas": [
+          "less_singing_than_typical_lead",
+          "being_demanding_while_likeable"
+        ],
+        "recommended_for": [
+          "actors with strong presence wanting musical theatre roles",
+          "mature performers who command a stage"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "PRESENCE \u2014 can they command a room?",
+          "authority",
+          "hidden vulnerability",
+          "acting chops",
+          "the speech delivery"
+        ],
+        "common_mistakes": [
+          "too mean \u2014 Julian loves theatre",
+          "no vulnerability",
+          "not enough authority"
+        ],
+        "tips": [
+          "Julian Marsh has spent his LIFE in the theatre and it's literally killing him. This show is everything. When he sees Peggy dance, he sees the future he won't live to enjoy. Every demand, every harsh word, is love \u2014 love for the show, love for the art."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Julian's speech / 'You're going out a youngster...'",
+          "type": "scene",
+          "notes": "THE moment. The speech that defines the show."
+        },
+        {
+          "title": "Lullaby of Broadway (scene)",
+          "type": "ensemble",
+          "notes": "Julian directing the big number."
+        },
+        {
+          "title": "42nd Street (finale)",
+          "type": "ensemble",
+          "notes": "Julian watches his creation come alive."
+        }
+      ]
+    },
+    {
+      "id": "42nd-dorothy",
+      "name": "Dorothy Brock",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 35,
+        "max": 50
+      },
+      "description": "The aging leading lady of the show-within-the-show. She's temperamental, insecure about her age, maintaining a relationship with the show's wealthy backer while secretly seeing her ex-boyfriend. When she breaks her ankle, it opens the door for Peggy. A great diva role.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "soprano/mezzo with belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid-high",
+        "style_notes": "Classic Broadway diva voice. Must sound like a genuine star \u2014 polished, powerful, slightly past her prime but still magnificent."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "musical_theatre_staging",
+          "classic_broadway"
+        ],
+        "stamina": "moderate",
+        "notes": "Must be a capable dancer \u2014 she IS the leading lady of a Broadway show. But the broken ankle makes the dance demands manageable."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "aging diva",
+          "insecure star",
+          "complicated woman",
+          "obstacle turned ally"
+        ],
+        "emotional_range": "high \u2014 vanity, insecurity, romance, anger, eventual grace",
+        "comedy_skills": true,
+        "notes": "Must balance being an obstacle to Peggy with being a sympathetic, complex woman. She's not a villain \u2014 she's a real person terrified of being replaced. Her eventual blessing of Peggy must feel generous."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "diva_presence",
+          "aging_star_vulnerability"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Great diva role for mature performers. Gets solid musical material and a real character arc. The kind of supporting role that makes a show richer.",
+        "common_casting": "Glamorous mature performer with a big voice and the ability to play insecurity underneath confidence.",
+        "standout_opportunity": "A Dorothy who makes you feel for her \u2014 not just against her \u2014 elevates the entire show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "diva_roles",
+          "complex_antagonist",
+          "classic_broadway_singing",
+          "vulnerability_beneath_confidence"
+        ],
+        "challenge_areas": [
+          "making_the_obstacle_sympathetic",
+          "age_insecurity_authenticity"
+        ],
+        "recommended_for": [
+          "mature performers wanting juicy featured roles",
+          "sopranos who can play complicated women"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "star quality \u2014 she must SEEM like a Broadway leading lady",
+          "voice",
+          "vulnerability",
+          "complexity"
+        ],
+        "common_mistakes": [
+          "playing a one-dimensional diva",
+          "no sympathy",
+          "not enough vocal power to be believable as a star"
+        ],
+        "tips": [
+          "Dorothy was Peggy once. She was the young girl with the big dream. Now she's watching that dream slip away. She's not mean \u2014 she's terrified. Every harsh word is fear of irrelevance."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I Know Now",
+          "type": "solo",
+          "notes": "Dorothy's star moment in the show-within-the-show. Classic Broadway ballad."
+        },
+        {
+          "title": "You're Getting to Be a Habit with Me",
+          "type": "duet",
+          "notes": "With Pat. The secret romance."
+        },
+        {
+          "title": "About a Quarter to Nine",
+          "type": "ensemble",
+          "notes": "Part of the show-within-the-show."
+        }
+      ]
+    },
+    {
+      "id": "42nd-billy",
+      "name": "Billy Lawlor",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 20,
+        "max": 32
+      },
+      "description": "The charming, confident juvenile lead of the show-within-the-show and Peggy's love interest. He's a classic leading man \u2014 handsome, talented, slightly cocky, and genuinely sweet underneath. A quintuple-threat: sings, dances, acts, charms, and taps.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "tenor/baritone",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Classic Broadway leading man voice with swing/jazz quality. Charming, smooth, confident."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "tap_dance",
+          "broadway_jazz",
+          "partner_dance"
+        ],
+        "stamina": "very_high",
+        "notes": "Must be an excellent tap dancer \u2014 not at Peggy's level perhaps but genuinely impressive. Partner dance sequences with Peggy are highlights."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "charming leading man",
+          "confident juvenile",
+          "romantic interest"
+        ],
+        "emotional_range": "moderate \u2014 charm, confidence, romance, genuine affection",
+        "comedy_skills": true,
+        "notes": "Classic Broadway leading man. Must have genuine chemistry with Peggy."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "tap_dance",
+          "partner_dance",
+          "leading_man_charm"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Classic Broadway leading man role. Great tap showcase and romantic material. Perfect for handsome triple-threats.",
+        "common_casting": "Handsome, charming triple-threat with strong tap skills.",
+        "standout_opportunity": "The duet dance numbers with Peggy are crowd-pleasers. A great Billy adds romance and flair."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "leading_man_skills",
+          "tap_dance",
+          "partner_work",
+          "classic_broadway_style"
+        ],
+        "challenge_areas": [
+          "not_being_overshadowed_by_Peggy's_dancing"
+        ],
+        "recommended_for": [
+          "male triple-threats building leading man credits",
+          "tap dancers wanting romantic lead experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "tap ability",
+          "charm",
+          "chemistry with Peggy",
+          "voice",
+          "leading man looks"
+        ],
+        "common_mistakes": [
+          "can't tap well enough",
+          "no chemistry",
+          "too bland"
+        ],
+        "tips": [
+          "Billy is the kind of guy who lights up a room when he walks in. He's confident because he's talented, not because he's arrogant. And when he dances with Peggy, sparks fly."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Young and Healthy",
+          "type": "solo_with_ensemble",
+          "notes": "Billy's showcase. Charming, energetic, classic."
+        },
+        {
+          "title": "Go Into Your Dance",
+          "type": "duet",
+          "notes": "With Peggy. Romantic tap duet."
+        },
+        {
+          "title": "I Only Have Eyes for You",
+          "type": "duet",
+          "notes": "Beautiful ballad with Peggy."
+        },
+        {
+          "title": "42nd Street",
+          "type": "ensemble",
+          "notes": "Part of the massive finale."
+        }
+      ]
+    },
+    {
+      "id": "42nd-bert",
+      "name": "Bert Barry",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The show's wisecracking, loveable dance director. He's funny, sarcastic, and has the best one-liners. Works closely with Julian and keeps the company's spirits up with humor.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "baritone/character",
+        "belt_required": false,
+        "belt_range": "D3-E4",
+        "tessitura": "mid",
+        "style_notes": "Character singing. Delivery more important than vocal power."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "tap_dance",
+          "broadway_jazz"
+        ],
+        "stamina": "moderate",
+        "notes": "Must be a competent dancer \u2014 he's the dance director. Tap ability expected."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "wisecracking sidekick",
+          "comic relief",
+          "dance director"
+        ],
+        "emotional_range": "moderate \u2014 humor, warmth, exasperation",
+        "comedy_skills": true,
+        "notes": "The comedy engine of many scenes. Quick wit, great timing, loveable personality."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "comic_timing",
+          "tap_dance",
+          "one_liners"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Fun comic featured role. Gets great lines and solid stage time without heavy vocal demands.",
+        "common_casting": "Funny character actor who can tap.",
+        "standout_opportunity": "A great Bert gets the biggest scene laughs."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "comic_timing",
+          "featured_role_work",
+          "tap_dance"
+        ],
+        "challenge_areas": [
+          "limited_musical_material"
+        ],
+        "recommended_for": [
+          "comic actors who can dance",
+          "performers building featured credits"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "comic timing",
+          "tap ability",
+          "personality",
+          "one-liner delivery"
+        ],
+        "common_mistakes": [
+          "not funny enough",
+          "can't dance"
+        ],
+        "tips": [
+          "Bert's seen it all in the theatre. Nothing surprises him and everything amuses him. He's the voice of sanity in the chaos \u2014 which is funny because he's the craziest one in the room."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "42nd Street",
+          "type": "ensemble",
+          "notes": "Part of production numbers."
+        },
+        {
+          "title": "We're in the Money",
+          "type": "ensemble",
+          "notes": "Rehearsal number."
+        }
+      ]
+    },
+    {
+      "id": "42nd-annie",
+      "name": "Annie Reilly (Anytime Annie)",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {
+        "min": 22,
+        "max": 35
+      },
+      "description": "A sassy, experienced chorus girl who befriends Peggy and shows her the ropes. She's streetwise, funny, flirtatious, and has a heart of gold. The veteran showgirl who becomes Peggy's guide to Broadway.",
+      "vocal": {
+        "range": "Bb3-D5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid",
+        "style_notes": "Brassy, confident, classic showgirl voice. Must sound like she's been singing in choruses for years."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "tap_dance",
+          "broadway_jazz",
+          "chorus_line_choreography"
+        ],
+        "stamina": "very_high",
+        "notes": "Must be an excellent dancer \u2014 she's a seasoned chorus girl. Full participation in all dance numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "streetwise chorus girl",
+          "loyal friend",
+          "sassy mentor",
+          "showgirl with heart"
+        ],
+        "emotional_range": "moderate \u2014 sass, warmth, loyalty, humor",
+        "comedy_skills": true,
+        "notes": "Annie is the friend everyone wants. Brassy exterior, gold heart. Must make the audience love her."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 5,
+        "quick_changes": 2,
+        "special_skills": [
+          "tap_dance",
+          "showgirl_presence",
+          "mentoring_scenes"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Great featured role for strong female dancer-singers. Gets personality-driven scenes and full participation in dance numbers.",
+        "common_casting": "Strong dancer with sass and warmth. Classic showgirl energy.",
+        "standout_opportunity": "A sassy, loveable Annie becomes Peggy's touchstone and audience favorite."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "tap_dance",
+          "showgirl_roles",
+          "featured_ensemble",
+          "classic_broadway"
+        ],
+        "challenge_areas": [
+          "standing_out_in_dance-heavy_ensemble"
+        ],
+        "recommended_for": [
+          "female tap dancers wanting featured roles",
+          "performers with showgirl energy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "tap ability",
+          "sass and personality",
+          "warmth",
+          "friendship chemistry with Peggy"
+        ],
+        "common_mistakes": [
+          "no personality",
+          "can't keep up with the dance"
+        ],
+        "tips": [
+          "Annie has been in the chorus for years. She's not bitter \u2014 she loves it. She helps Peggy because she remembers being that scared kid. Broadway runs on women like Annie."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Go Into Your Dance",
+          "type": "ensemble",
+          "notes": "Part of dance ensemble."
+        },
+        {
+          "title": "42nd Street",
+          "type": "ensemble",
+          "notes": "Full company finale."
+        },
+        {
+          "title": "We're in the Money / Dames",
+          "type": "ensemble",
+          "notes": "Showgirl ensemble numbers."
+        }
+      ]
+    },
+    {
+      "id": "42nd-maggie",
+      "name": "Maggie Jones",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 35,
+        "max": 55
+      },
+      "description": "The wisecracking, warm-hearted author of 'Pretty Lady,' the show-within-the-show. Maggie is a sharp, funny, no-nonsense Broadway veteran who has seen it all and survived with her sense of humour intact. She writes the book and lyrics alongside Bert Barry and serves as the voice of experience and reason in the chaotic rehearsal process. Maggie takes Peggy under her wing, offering maternal guidance alongside acidic wit. She represents the backbone of Broadway \u2014 the people who keep creating despite the madness.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "Alto / Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "Strong middle voice with character belt quality, brassy and warm",
+        "style_notes": "Maggie's voice has a brassy, seasoned quality \u2014 she sings like someone who's been belting in rehearsal rooms for decades. Think golden-age Broadway alto with warmth and wit. Must handle comedy numbers with timing and character while delivering genuine vocal power in ensemble moments."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Tap",
+          "Jazz",
+          "1930s social dance"
+        ],
+        "stamina": "Moderate \u2014 participates in several numbers but not the most demanding tap sequences",
+        "notes": "Maggie is a writer, not a dancer, but this is 42nd Street \u2014 everyone taps. She should move with the easy confidence of a Broadway veteran who can hold her own but isn't competing with the chorus girls. Her physicality is about sharp comic timing."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Wisecracking best friend",
+          "Broadway veteran",
+          "Maternal mentor",
+          "Comic relief with heart"
+        ],
+        "emotional_range": "Primarily comedic with genuine warmth \u2014 the kind of woman who hides real affection behind sarcastic one-liners",
+        "comedy_skills": true,
+        "notes": "Maggie is the comic engine of the show alongside Bert Barry. Her one-liners need impeccable timing, but she also needs genuine warmth in her scenes with Peggy. She's the mentor figure, the voice of experience, and often the audience's favourite character because she says what everyone's thinking."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "Razor-sharp comic timing",
+          "1930s comedy style",
+          "Mentoring dynamic with Peggy",
+          "Ensemble comedy with Bert Barry"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Maggie Jones is one of the great comic supporting roles in golden-age musical theatre. She teaches you how to be the funniest person on stage without upstaging the leads, how to deliver rapid-fire period comedy, and how to build a mentor relationship that the audience invests in. Incredible role for building comedy chops.",
+        "common_casting": "Character actresses with strong comic timing and genuine warmth. Often cast with mature performers who have real Broadway/theatre experience \u2014 the kind of actor who IS Maggie in many ways.",
+        "standout_opportunity": "Maggie's one-liners are quotable and memorable. A great Maggie Jones performance becomes the thing audiences talk about at interval. The comedy partnership with Bert Barry is a highlight of every production."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Period comedy delivery (1930s screwball style)",
+          "Comic timing in rapid-fire dialogue",
+          "Building a mentor/maternal relationship onstage",
+          "Comedy partnership dynamics (with Bert Barry)",
+          "Character belt and brassy vocal style"
+        ],
+        "challenge_areas": [
+          "Making 1930s comedy feel fresh and spontaneous",
+          "Balancing comedy with genuine emotional warmth",
+          "Not overshadowing the leads while being hilarious",
+          "Maintaining energy across long comedy scenes"
+        ],
+        "recommended_for": [
+          "Character actresses developing comedy skills",
+          "Performers who excel at witty, fast-talking roles",
+          "Those building a portfolio of strong supporting roles",
+          "Actors who combine humour with heart"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural comic timing \u2014 this cannot be taught, only refined",
+          "A warm, brassy voice with character quality",
+          "The ability to land a one-liner without telegraphing it",
+          "Genuine warmth underneath the wisecracks",
+          "Confidence and ease of a theatre veteran"
+        ],
+        "common_mistakes": [
+          "Playing Maggie as mean rather than sharp \u2014 she's funny, not cruel",
+          "Trying too hard for laughs instead of trusting the writing",
+          "Neglecting the genuine warmth in her relationship with Peggy",
+          "Not preparing for the tap/dance requirements"
+        ],
+        "tips": [
+          "Study 1930s screwball comedies for the rhythm and style",
+          "Find a real affection for Peggy \u2014 Maggie sees herself in this kid",
+          "The best comedy comes from conviction, not mugging",
+          "Prepare a comedy monologue that shows timing AND heart"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Go Into Your Dance",
+          "type": "ensemble_number",
+          "notes": "Maggie's participation in the backstage numbers, bringing veteran energy"
+        },
+        {
+          "title": "Getting Out of Town / Comedy scenes",
+          "type": "comedy_scenes",
+          "notes": "Maggie and Bert's comic partnership \u2014 the witty banter that drives the backstage comedy"
+        }
+      ]
+    },
+    {
+      "id": "42nd-andy",
+      "name": "Andy Lee",
+      "role_type": "supporting",
+      "gender": "Any",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "The high-energy dance director and choreographer of 'Pretty Lady,' the show-within-the-show. Andy is Julian Marsh's right hand in the rehearsal room \u2014 the person who actually teaches and drills the choreography while Julian focuses on the bigger picture. Andy is demanding, energetic, passionate about dance, and completely in their element when running a rehearsal. This role can be played by any gender. Andy must be a genuinely excellent dancer, as the character is literally the choreographer \u2014 audiences need to believe this person could create and teach the show's iconic tap numbers.",
+      "vocal": {
+        "range": "Variable (cast as needed)",
+        "voice_type": "Mezzo-Soprano or Baritone (depending on casting)",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range, functional singing voice \u2014 this is a dance-first role",
+        "style_notes": "Andy's vocal demands are moderate \u2014 strong enough to be heard calling out steps and participating in ensemble numbers, but the focus is on dance ability. Must project with authority in rehearsal scenes."
+      },
+      "dance": {
+        "level": "expert",
+        "styles": [
+          "Tap (advanced/expert)",
+          "Jazz",
+          "Ballroom",
+          "1930s Broadway style",
+          "Choreographic demonstration"
+        ],
+        "stamina": "Very high \u2014 Andy is dancing and demonstrating throughout rehearsal sequences",
+        "notes": "This is THE dance role of the show. Andy must be a visibly excellent tap dancer who can demonstrate combinations, drill the chorus, and make it look effortless. The audience must believe this person is a choreographer. Expert-level tap is non-negotiable."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Demanding taskmaster",
+          "Passionate artist",
+          "Energetic leader",
+          "Dance captain/choreographer"
+        ],
+        "emotional_range": "Primarily high energy and demanding \u2014 passionate about getting the choreography right, frustrated when it goes wrong, triumphant when it clicks",
+        "comedy_skills": true,
+        "notes": "Andy's comedy comes from passionate intensity about dance. The rehearsal scenes are both impressive and funny \u2014 Andy's exasperation with dancers who can't get it right, and their absolute joy when choreography comes together. Must have natural authority in a rehearsal room setting."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": [
+          "Expert-level tap dancing",
+          "Choreographic demonstration",
+          "Rehearsal room authority",
+          "Physical comedy within dance",
+          "Calling steps and counts"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Andy Lee is a showcase for exceptional tap dancers. If you can really dance, this role proves it \u2014 you're literally the choreographer on stage. It builds leadership skills, choreographic demonstration ability, and the art of making dance look both effortless and demanding. A career-defining role for dancers.",
+        "common_casting": "The best tap dancer available, regardless of gender. Often cast with performers who have real choreographic or dance captain experience. Must be genuinely impressive as a dancer \u2014 this cannot be faked.",
+        "standout_opportunity": "Every rehearsal sequence is Andy's showcase. When the choreographer demonstrates a combination, the audience should be wowed. This role makes dance captains and choreographers \u2014 it proves you can lead a room."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Expert tap performance in context",
+          "Choreographic leadership presence",
+          "Rehearsal room authority and energy",
+          "Dance demonstration and teaching physicality",
+          "Physical comedy within dance"
+        ],
+        "challenge_areas": [
+          "Maintaining peak dance energy across the full show",
+          "Making rehearsal scenes feel spontaneous, not rehearsed",
+          "Balancing authority with likability",
+          "Tap stamina for eight-show weeks"
+        ],
+        "recommended_for": [
+          "Expert tap dancers seeking featured roles",
+          "Performers with choreographic aspirations",
+          "Dance captains wanting to showcase leadership skills",
+          "Dancers developing their acting and comedy alongside technique"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Exceptional tap technique \u2014 this is the primary requirement",
+          "Natural authority and energy in a rehearsal setting",
+          "The ability to demonstrate choreography clearly and impressively",
+          "Personality and humour alongside technical skill",
+          "Confidence leading a room of dancers"
+        ],
+        "common_mistakes": [
+          "Assuming singing matters more than dance for this role",
+          "Not showing leadership quality alongside technique",
+          "Dancing beautifully but lacking the character's intensity",
+          "Forgetting that Andy is funny \u2014 the role has real comedy"
+        ],
+        "tips": [
+          "Lead with your tap skills \u2014 this is a tap audition first",
+          "Show you can call steps and counts with authority",
+          "Bring the energy of someone who LIVES for dance",
+          "Study real choreographers at work for Andy's intensity and joy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Audition / rehearsal sequences",
+          "type": "dance_feature",
+          "notes": "Andy leading the chorus through tap combinations \u2014 the choreographer in action"
+        },
+        {
+          "title": "42nd Street (title number)",
+          "type": "ensemble_feature",
+          "notes": "Andy's participation in the iconic finale tap number"
+        }
+      ]
+    },
+    {
+      "id": "42nd-pat",
+      "name": "Pat Denning",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 45
+      },
+      "description": "Dorothy Brock's former vaudeville partner and secret lover. Pat is a decent, honest man caught in an impossible situation \u2014 he genuinely loves Dorothy, but her career depends on her relationship with the wealthy Abner Dillon. Pat is the antithesis of the flashy Broadway world: sincere, modest, and loyal. His love for Dorothy is the emotional subplot that drives her character arc. When Dorothy ultimately chooses Pat over wealth and fame, it validates the show's theme that authenticity matters more than success. Often doubled from the ensemble in smaller productions.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Warm mid-range baritone, conversational and sincere",
+        "style_notes": "Pat's vocal moments are warm and sincere rather than showy. He's a vaudeville performer, so his voice has a pleasant, trained quality but without the bombast of the leading men. His singing should feel intimate and genuine \u2014 the antidote to Broadway excess."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Tap",
+          "Vaudeville soft-shoe",
+          "Social dance"
+        ],
+        "stamina": "Moderate \u2014 concentrated in specific scenes",
+        "notes": "Pat was a vaudeville performer, so he can dance, but his style is gentler and more old-fashioned than the 42nd Street chorus. A soft-shoe quality that contrasts with the high-energy tap numbers. If doubled from ensemble, stronger dance skills are needed."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Romantic interest",
+          "Honest man",
+          "Former partner",
+          "Moral compass"
+        ],
+        "emotional_range": "Quiet longing, genuine love, frustration with the situation, dignity in the face of wealth and power",
+        "comedy_skills": false,
+        "notes": "Pat Denning is the emotional heart of the Dorothy Brock subplot. He must be likeable enough that the audience roots for him over Abner Dillon, and sincere enough that Dorothy's final choice feels inevitable. The challenge is making a 'nice guy' role compelling and not bland."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Romantic sincerity",
+          "Quiet authority contrasting Broadway flash",
+          "Vaudeville-era physicality",
+          "Making a modest role memorable"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Pat Denning teaches the valuable skill of making a quiet, sincere character compelling in a loud, flashy show. It develops romantic acting, emotional authenticity, and the art of understatement. A good Pat grounds the show's emotional subplot and proves you can command a scene through stillness.",
+        "common_casting": "Warm, likeable actor-singers who project sincerity. Must be a believable romantic match for Dorothy Brock. Often doubled from ensemble in smaller productions, requiring stronger dance skills.",
+        "standout_opportunity": "The scenes with Dorothy are the emotional core of the subplot. A great Pat makes Dorothy's final choice feel like the most important moment in the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Playing sincerity in a comedy/spectacle context",
+          "Romantic subplot acting",
+          "Quiet authority and presence",
+          "Vaudeville-era performance style",
+          "Making understatement compelling"
+        ],
+        "challenge_areas": [
+          "Not being overshadowed by flashier roles",
+          "Making a 'nice guy' role interesting",
+          "Finding the tension in Pat's situation",
+          "Maintaining presence in limited stage time"
+        ],
+        "recommended_for": [
+          "Actor-singers developing romantic leading man skills",
+          "Performers who excel at sincerity and warmth",
+          "Those building experience in period musicals",
+          "Ensemble performers seeking featured supporting roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and likability",
+          "Chemistry potential with Dorothy Brock actress",
+          "A pleasant baritone voice with sincerity",
+          "Basic tap and dance ability",
+          "The ability to hold a scene through quiet conviction"
+        ],
+        "common_mistakes": [
+          "Playing Pat as boring \u2014 he's sincere, not dull",
+          "Not finding the frustration and longing in the role",
+          "Undervaluing the importance of the Dorothy subplot",
+          "Neglecting dance skills (especially if doubling from ensemble)"
+        ],
+        "tips": [
+          "Find what makes Pat passionate \u2014 he loves Dorothy AND he has principles",
+          "Study vaudeville performers for Pat's era-appropriate style",
+          "Show warmth and conviction in your audition \u2014 directors need to like Pat",
+          "Prepare a sincere ballad that shows emotional depth without volume"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Scenes with Dorothy Brock",
+          "type": "dramatic_scenes",
+          "notes": "The emotional subplot \u2014 Pat's love for Dorothy and the tension of her situation with Dillon"
+        },
+        {
+          "title": "Ensemble numbers",
+          "type": "ensemble",
+          "notes": "Participation in group numbers, particularly backstage and social scenes"
+        }
+      ]
+    },
+    {
+      "id": "42nd-abner",
+      "name": "Abner Dillon",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 45,
+        "max": 70
+      },
+      "description": "The wealthy, blustering financial backer of 'Pretty Lady' who is bankrolling the entire production because of his infatuation with Dorothy Brock. Abner is loud, vulgar, possessive, and completely out of his element in the theatre world \u2014 a rich man who thinks his money entitles him to everything, including Dorothy's affection. He is both a comic figure and a genuine threat: when he discovers Dorothy's relationship with Pat Denning, he threatens to pull his funding and destroy the show. Abner represents the collision of money and art that defines Broadway.",
+      "vocal": {
+        "range": "Speaking role primarily",
+        "voice_type": "Spoken / Character voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Primarily a spoken role \u2014 some ensemble participation in group numbers",
+        "style_notes": "Abner is primarily an acting role. When he sings, it's in group/ensemble contexts. His voice should be big, brash, and unrefined \u2014 the sound of money without taste. Any singing should have a blustery, untrained quality that contrasts with the polished Broadway performers around him."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Minimal staging",
+          "Social dance"
+        ],
+        "stamina": "Low \u2014 Abner is not a dancer",
+        "notes": "Abner's physical comedy comes from being awkward and ungainly in the elegant theatre world. He should NOT be graceful \u2014 his clumsiness contrasts with the dancers around him. Any movement should suggest a bull in a china shop."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Blowhard",
+          "Comic villain",
+          "Wealthy buffoon",
+          "Possessive older man"
+        ],
+        "emotional_range": "Loud possessiveness, jealous rage, comic bluster, genuine menace when threatened \u2014 must be both funny and genuinely threatening",
+        "comedy_skills": true,
+        "notes": "Abner is a classic Broadway character type: the rich fool who thinks money buys everything. The challenge is playing him as simultaneously ridiculous and genuinely dangerous. When he threatens to pull the funding, the stakes must feel real. When he blusters about Dorothy, it must be both funny and uncomfortable. He should never be sympathetic, but he should always be entertaining."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Broad comic character acting",
+          "Playing wealthy entitlement",
+          "Physical comedy of clumsiness",
+          "Scene-stealing bluster",
+          "Genuine menace beneath the comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Abner Dillon is a delicious character role \u2014 the kind of part that comedic character actors dream of. It develops broad comic skills, the ability to play a buffoon who is also genuinely menacing, and the art of stealing scenes without singing or dancing. Great for actors who act first and sing second.",
+        "common_casting": "Strong character actors with big comic energy and physical presence. Often cast with larger or older performers who can fill the stage with bluster. Must have the gravitas to make the funding threats feel real.",
+        "standout_opportunity": "Every Abner scene is a comedy highlight. A great Abner Dillon gets the biggest laughs in the show and makes the backstage drama feel urgent and real."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Broad comic character performance",
+          "Playing wealthy entitlement and bluster",
+          "Balancing comedy with genuine dramatic stakes",
+          "Physical comedy and stage presence",
+          "Period character work (1930s)"
+        ],
+        "challenge_areas": [
+          "Not becoming a one-note caricature",
+          "Finding the menace underneath the comedy",
+          "Making bluster entertaining eight shows a week",
+          "Not upstaging the emotional scenes he's involved in"
+        ],
+        "recommended_for": [
+          "Character actors with strong comic ability",
+          "Performers who act rather than sing/dance primarily",
+          "Those developing broad comedy and physical presence",
+          "Actors who want to play complex comic antagonists"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Big, confident comic presence",
+          "The ability to be both hilarious and threatening",
+          "Physical presence that fills the stage",
+          "Strong dramatic acting ability for confrontation scenes",
+          "Period-appropriate (1930s) character choices"
+        ],
+        "common_mistakes": [
+          "Playing Abner as purely comic \u2014 he must also be threatening",
+          "Going too broad \u2014 there's a fine line between big and cartoonish",
+          "Not finding any humanity in the character",
+          "Thinking this is a small role \u2014 Abner drives major plot points"
+        ],
+        "tips": [
+          "Study great blowhard characters \u2014 think WC Fields, Jackie Gleason",
+          "Find the genuine possessiveness and jealousy underneath the bluster",
+          "Practice filling a room with presence \u2014 Abner commands attention",
+          "Show both the comedy and the menace in your audition piece"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Backstage scenes / confrontations",
+          "type": "dramatic_comedy",
+          "notes": "Abner's bluster about Dorothy, his jealousy over Pat Denning, and his threats to pull funding"
+        },
+        {
+          "title": "Opening night / social scenes",
+          "type": "ensemble_staging",
+          "notes": "Abner in his element \u2014 showing off, being loud, demanding attention"
+        }
+      ]
+    },
+    {
+      "id": "42nd-phyllis",
+      "name": "Phyllis Dale",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "One of the named chorus girls in 'Pretty Lady' who serves as a distinct character within the ensemble. Phyllis is part of the tight-knit community of dancers auditioning and rehearsing for the show. She has featured lines and moments that give personality to the chorus \u2014 providing the audience with individual faces within the large ensemble. Along with Lorraine Fleming, Phyllis represents the hardworking, ambitious chorus girls who form the backbone of Broadway. Usually part of the dance ensemble with featured moments.",
+      "vocal": {
+        "range": "B3-E5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Strong ensemble soprano/mezzo blend with featured moments",
+        "style_notes": "Must have excellent ensemble blend for the large-scale vocal numbers while being able to step forward with a distinct vocal quality for featured lines. Golden-age Broadway style with bright, forward placement."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Tap (advanced)",
+          "Jazz",
+          "Ballroom",
+          "1930s Broadway choreography"
+        ],
+        "stamina": "Very high \u2014 full ensemble dance workload in one of the most dance-heavy shows ever written",
+        "notes": "42nd Street is THE tap-dancing musical. Every chorus girl must be an exceptional tap dancer. Phyllis must look like she belongs in the most famous chorus line in musical theatre. Advanced tap is absolutely non-negotiable."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Ambitious chorus girl",
+          "Backstage community member",
+          "Period character"
+        ],
+        "emotional_range": "Excitement, ambition, camaraderie, backstage drama \u2014 the life of a working chorus dancer",
+        "comedy_skills": true,
+        "notes": "Phyllis needs to be a distinct personality within the chorus. Her featured lines and moments should feel like glimpses into a fully realised person, not just a named extra. She's part of the backstage community that gives 42nd Street its warmth and authenticity."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 3,
+        "special_skills": [
+          "Advanced tap dancing",
+          "Individual character within ensemble",
+          "Featured lines and comic moments",
+          "Quick changes between backstage and onstage looks"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Phyllis is the ideal featured ensemble track for strong dancers who want to show they can act too. The featured lines and moments prove you can create a character beyond just dancing in the chorus. It builds the crucial skill of being individually memorable within a large ensemble.",
+        "common_casting": "Strong tap dancers with personality and comic timing. Must be able to handle the intense dance demands of 42nd Street while bringing individual character to featured moments.",
+        "standout_opportunity": "Making Phyllis a distinct, memorable character within the chorus shows directors you're ready for bigger roles. The featured lines are your chance to prove you're more than a dancer."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Featured character within demanding ensemble",
+          "Advanced tap performance in context",
+          "Individual characterisation within large cast",
+          "Period performance (1930s chorus girl)",
+          "Quick-change and backstage discipline"
+        ],
+        "challenge_areas": [
+          "Standing out without breaking ensemble unity",
+          "Maintaining character through exhausting dance numbers",
+          "Making featured moments count in limited time",
+          "Tap stamina across eight-show weeks"
+        ],
+        "recommended_for": [
+          "Strong dancers seeking featured ensemble work",
+          "Performers developing character acting alongside dance",
+          "Those building credits in classic musical theatre",
+          "Tap dancers who want to prove they can act"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Excellent tap technique \u2014 absolutely essential",
+          "Personality and individuality alongside ensemble skills",
+          "Strong vocal blend for ensemble numbers",
+          "The ability to create a character with limited material",
+          "Warmth and camaraderie with other chorus members"
+        ],
+        "common_mistakes": [
+          "Focusing only on dance and neglecting character moments",
+          "Not preparing for vocal demands of ensemble numbers",
+          "Treating the featured lines as unimportant",
+          "Not bringing enough individual personality to the role"
+        ],
+        "tips": [
+          "Lead with tap in your audition \u2014 it's the entry requirement",
+          "Create a backstory for Phyllis that informs your featured moments",
+          "Show you can be part of a team while bringing individual spark",
+          "Study 1930s chorus girls \u2014 the style, the grit, the ambition"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "We're In the Money",
+          "type": "ensemble_featured",
+          "notes": "Phyllis participating in one of the most famous ensemble numbers in musical theatre"
+        },
+        {
+          "title": "42nd Street / Lullaby of Broadway",
+          "type": "ensemble",
+          "notes": "Full ensemble tap numbers requiring advanced technique and stamina"
+        }
+      ]
+    },
+    {
+      "id": "42nd-lorraine",
+      "name": "Lorraine Fleming",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "Another named chorus girl in 'Pretty Lady' who brings individual personality to the ensemble. Lorraine is part of the sisterhood of chorus dancers and has featured lines and moments throughout the backstage scenes. Together with Phyllis Dale, she gives the audience relatable individuals within the spectacular chorus. Lorraine represents the grit and determination of Depression-era performers who pour everything into their craft. Usually part of the dance ensemble with featured moments.",
+      "vocal": {
+        "range": "B3-E5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Strong ensemble mezzo with ability to step forward for featured moments",
+        "style_notes": "Excellent ensemble blend with the ability to pop out for featured lines. Golden-age Broadway vocal quality \u2014 bright, forward, and energetic."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Tap (advanced)",
+          "Jazz",
+          "Ballroom",
+          "1930s Broadway choreography"
+        ],
+        "stamina": "Very high \u2014 full ensemble dance commitment in the most tap-intensive musical in the canon",
+        "notes": "Same demanding tap requirements as all 42nd Street chorus members. Must be genuinely excellent \u2014 this show's reputation rides on the quality of its tap ensemble."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Determined chorus girl",
+          "Backstage community member",
+          "Depression-era performer"
+        ],
+        "emotional_range": "Determination, camaraderie, humour, the joy and exhaustion of a working dancer",
+        "comedy_skills": true,
+        "notes": "Lorraine should feel like a real person \u2014 someone you'd want to share a dressing room with. Her featured moments should reveal character: wit, determination, the occasional vulnerability of someone working incredibly hard for a dream."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 3,
+        "special_skills": [
+          "Advanced tap dancing",
+          "Individual character within ensemble",
+          "Featured comedic lines",
+          "Period authenticity"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Like Phyllis, Lorraine is the perfect featured ensemble track for dancers who want to prove they can bring character to the chorus. The named role gives you specific moments to show acting ability alongside exceptional dance skills.",
+        "common_casting": "Excellent tap dancers with warmth and personality. Must be able to handle the physical demands of 42nd Street's ensemble while bringing individual life to featured moments.",
+        "standout_opportunity": "Making Lorraine a memorable, individual character within the chorus proves you're more than a dancing body. Directors remember ensemble members who bring real personality to featured tracks."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Featured character work within ensemble",
+          "Advanced tap in performance context",
+          "Creating individuality in a large cast",
+          "Period character work",
+          "Ensemble discipline with featured moments"
+        ],
+        "challenge_areas": [
+          "Differentiating Lorraine from other chorus characters",
+          "Maintaining character freshness across a long run",
+          "Balancing featured moments with ensemble unity",
+          "Physical demands of the tap-heavy show"
+        ],
+        "recommended_for": [
+          "Dancers seeking named ensemble credits",
+          "Performers building character skills within ensemble work",
+          "Tap dancers developing acting ability",
+          "Those building classic musical theatre experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong tap technique \u2014 the baseline requirement",
+          "Personality that shines through in ensemble context",
+          "Solid vocal skills for ensemble numbers",
+          "Warmth and team player mentality",
+          "The spark that makes a chorus member memorable"
+        ],
+        "common_mistakes": [
+          "Focusing only on tap and forgetting to show personality",
+          "Not preparing featured moment delivery",
+          "Treating the role as 'just chorus'",
+          "Not demonstrating ensemble awareness and teamwork"
+        ],
+        "tips": [
+          "Know the difference between Lorraine and Phyllis \u2014 create a distinct character",
+          "Show your tap skills first, character second \u2014 but show both",
+          "Bring warmth and camaraderie to the audition room",
+          "Research Depression-era Broadway dancers for authenticity"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "We're In the Money",
+          "type": "ensemble_featured",
+          "notes": "Featured participation in the iconic opening number"
+        },
+        {
+          "title": "42nd Street / Shuffle Off to Buffalo",
+          "type": "ensemble",
+          "notes": "Full ensemble tap participation in the show's most demanding numbers"
+        }
+      ]
+    },
+    {
+      "id": "42nd-mac",
+      "name": "Mac (Stage Manager)",
+      "role_type": "featured_ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 25,
+        "max": 55
+      },
+      "description": "The stage manager of 'Pretty Lady' who keeps the production running behind the scenes. Mac is the unsung hero of the backstage world \u2014 calling cues, managing crises, relaying messages, and holding everything together while the creative team and performers create chaos. A practical, no-nonsense professional who has seen it all and is unflappable in the face of theatrical disasters. Mac is often the first to know about problems and the last to get credit for solutions. Can be played by any gender. Usually doubled from the ensemble.",
+      "vocal": {
+        "range": "Variable (cast as needed)",
+        "voice_type": "Spoken role with ensemble singing",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Primarily spoken \u2014 strong projection for backstage commands and ensemble vocal participation",
+        "style_notes": "Mac is primarily a spoken role with ensemble singing. Must have a clear, authoritative voice that carries over backstage noise. Any singing is in ensemble context."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Tap",
+          "Jazz",
+          "Staging"
+        ],
+        "stamina": "Moderate in featured moments, high if doubling ensemble",
+        "notes": "Mac doesn't dance in character \u2014 a stage manager working, not performing. However, if doubled from ensemble (common in smaller productions), strong tap skills are needed for ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Practical professional",
+          "Unflappable crisis manager",
+          "Backstage authority",
+          "Comic reactor"
+        ],
+        "emotional_range": "Primarily practical and calm \u2014 comedy comes from deadpan reactions to theatrical chaos",
+        "comedy_skills": true,
+        "notes": "Mac's comedy is in the deadpan \u2014 the calm centre in a storm of theatrical egos and drama. Must project authority and competence while providing comic relief through underreaction. The backstage scenes live or die on Mac's grounding presence."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "Backstage authority",
+          "Deadpan comedy",
+          "Scene transitions",
+          "Practical stage business",
+          "Quick changes if doubling ensemble"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Mac is a great entry point for performers who are strong actors but perhaps not the strongest dancers. It develops deadpan comedy, professional authority, and the art of grounding a scene. If doubled from ensemble, it also builds the skill of transitioning between ensemble work and featured character moments.",
+        "common_casting": "Reliable character actors with strong presence and comic timing. Often cast with performers who have real backstage experience. Can be played by any gender.",
+        "standout_opportunity": "A great Mac gets consistent quiet laughs and grounds the entire backstage world. Directors notice performers who can hold a scene with deadpan authority."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Deadpan comic timing",
+          "Professional authority onstage",
+          "Scene-grounding presence",
+          "Backstage character authenticity",
+          "Ensemble-to-character transitions"
+        ],
+        "challenge_areas": [
+          "Making a small role memorable without scene-stealing",
+          "Maintaining character in brief appearances",
+          "Balancing ensemble and featured work",
+          "Finding fresh comedy in repeated scenes"
+        ],
+        "recommended_for": [
+          "Character actors building featured ensemble credits",
+          "Performers developing deadpan comedy skills",
+          "Those who excel at grounding presence",
+          "Ensemble members seeking distinct named roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural authority and calm presence",
+          "Deadpan comic timing",
+          "Clear, strong projection",
+          "Reliability and professionalism",
+          "Tap/dance ability if doubling ensemble"
+        ],
+        "common_mistakes": [
+          "Overplaying the comedy \u2014 Mac is funny because they're NOT trying to be",
+          "Not preparing for ensemble dance requirements",
+          "Treating the role as unimportant",
+          "Lacking the authority needed for backstage scenes"
+        ],
+        "tips": [
+          "Less is more \u2014 Mac's comedy is in the underreaction",
+          "Study real stage managers for the unflappable quality",
+          "Show you can hold a scene with minimal material",
+          "If doubling ensemble, prepare strong tap alongside character work"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Backstage scenes / transitions",
+          "type": "featured_scenes",
+          "notes": "Mac managing the chaos \u2014 calling cues, relaying messages, handling crises with deadpan authority"
+        },
+        {
+          "title": "Ensemble numbers (if doubling)",
+          "type": "ensemble",
+          "notes": "Full ensemble participation if the performer is doubling from the chorus"
+        }
+      ]
+    },
+    {
+      "id": "42nd-ensemble",
+      "name": "Ensemble \u2014 Chorus Girls & Boys",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {
+        "min": 18,
+        "max": 40
+      },
+      "description": "The legendary 42nd Street chorus \u2014 one of the most demanding and celebrated ensembles in all of musical theatre. These are the chorus girls and boys of 'Pretty Lady' who create the spectacular tap numbers that define the show. The ensemble must include exceptional tap dancers who can execute the complex, large-scale choreography that 42nd Street is famous for. Several tracks include named featured roles (Phyllis Dale, Lorraine Fleming, Mac) \u2014 see individual entries. Members create the world of Depression-era Broadway: auditioners, rehearsing dancers, backstage community members, opening night audience, and the dazzling performers of the show-within-the-show. This ensemble is the heart and soul of 42nd Street \u2014 the show literally cannot exist without extraordinary dancers.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "mixed \u2014 strong chorus voices",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Classic Broadway chorus singing. Strong unison and harmony. Big band style."
+      },
+      "dance": {
+        "level": "advanced_to_expert",
+        "styles": [
+          "tap_dance",
+          "broadway_jazz",
+          "classic_musical_theatre",
+          "precision_chorus_work"
+        ],
+        "stamina": "extreme",
+        "notes": "THIS IS A TAP SHOW. The ensemble must tap at a very high level. Multiple massive production numbers require precision, stamina, and synchronization. Tap is the PRIMARY skill."
+      },
+      "acting": {
+        "level": "basic_to_intermediate",
+        "character_types": [
+          "chorus performers",
+          "show people",
+          "Depression-era dancers"
+        ],
+        "emotional_range": "moderate \u2014 joy, determination, showbiz spirit",
+        "comedy_skills": false,
+        "notes": "Must embody the spirit of Depression-era performers who dance to survive. The joy of performing is genuine."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 4,
+        "special_skills": [
+          "expert_tap",
+          "precision_chorus",
+          "classic_showgirl_staging",
+          "rapid_costume_changes"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_get_cast"
+        ],
+        "why": "One of the greatest tap ensemble experiences in all of theatre. You will tap more in this show than in any other. Your feet will hate you and your soul will sing. If you love tap, this is your show.",
+        "common_casting": "Strong tap dancers who can sing. Tap is the primary audition criterion. Period.",
+        "standout_opportunity": "In the '42nd Street' finale, when 40 people are tapping in unison and the audience is on their feet \u2014 being part of that is worth everything."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "tap_mastery",
+          "precision_ensemble",
+          "classic_broadway_style",
+          "extreme_stamina",
+          "quick_changes"
+        ],
+        "challenge_areas": [
+          "tap_demands_are_relentless",
+          "stamina",
+          "precision_synchronization"
+        ],
+        "recommended_for": [
+          "tap dancers wanting the ultimate ensemble experience",
+          "dancers building classic Broadway credentials",
+          "anyone who LOVES to tap"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "TAP TAP TAP (essential)",
+          "can they keep up with the choreography?",
+          "vocal ability",
+          "stamina",
+          "precision"
+        ],
+        "common_mistakes": [
+          "can't actually tap well enough",
+          "great tapper but can't sing",
+          "no stamina for the full show"
+        ],
+        "tips": [
+          "Start taking tap class NOW if you want to audition for this show. Not tomorrow \u2014 NOW. The ensemble tap demands in 42nd Street are among the highest in musical theatre. But if you can deliver? There is no greater feeling than being part of that finale."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "42nd Street",
+          "type": "ensemble",
+          "notes": "THE finale. Massive tap extravaganza. The reason this show exists."
+        },
+        {
+          "title": "We're in the Money",
+          "type": "ensemble",
+          "notes": "Big opener. Showgirl energy and tap."
+        },
+        {
+          "title": "Dames",
+          "type": "ensemble",
+          "notes": "Showgirl production number."
+        },
+        {
+          "title": "Lullaby of Broadway",
+          "type": "ensemble",
+          "notes": "Epic production number. Full company."
+        },
+        {
+          "title": "Shuffle Off to Buffalo",
+          "type": "ensemble",
+          "notes": "Charming ensemble number."
+        },
+        {
+          "title": "Keep Young and Beautiful",
+          "type": "ensemble",
+          "notes": "Classic chorus number."
+        }
+      ]
+    }
+  ]
+}

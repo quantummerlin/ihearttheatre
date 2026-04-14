@@ -1,0 +1,388 @@
+{
+  "songs": {
+    "company/company-bobby": {
+      "role_name": "Robert (Bobby) / Bobbie",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "Bobby/Bobbie's defining number — the central character finally opening up to connection", "type": "same_show"},
+        {"title": "Marry Me a Little", "from": "Company", "composer": "Stephen Sondheim", "why": "Shows the character's ambivalence about commitment — intimate, unguarded, beautifully complex", "type": "same_show"},
+        {"title": "Finishing the Hat", "from": "Sunday in the Park with George", "composer": "Stephen Sondheim", "why": "The brilliant observer who holds themselves apart from life — the observer's internal world", "type": "style_match"},
+        {"title": "The Road You Didn't Take", "from": "Follies", "composer": "Stephen Sondheim", "why": "A person confronting what their choices have cost them — understated, chilling, sophisticated", "type": "contrasting"}
+      ],
+      "style_guidance": "Bobby/Bobbie is the ultimate ambivalent observer — intelligent, charming, slightly terrifying in their emotional withholding. Sondheim is the language of this role. Baritone (male) or mezzo-soprano belt (female revival).",
+      "avoid": ["Uncomplicated romantic leads — Bobby is not a simple love interest, they are a study in emotional avoidance"]
+    },
+    "company/company-joanne": {
+      "role_name": "Joanne",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "I'm Still Here", "from": "Follies", "composer": "Stephen Sondheim", "why": "THE Joanne archetype — world-weary, sardonic, brilliant, and absolutely undefeated", "type": "style_match"},
+        {"title": "The Lady Is a Tramp", "from": "Babes in Arms / Pal Joey (revival)", "composer": "Richard Rodgers", "why": "Sardonic alto who refuses the conventions that bind everyone else — Joanne's anthem by another name", "type": "style_match"},
+        {"title": "Losing My Mind", "from": "Follies", "composer": "Stephen Sondheim", "why": "Shows the devastating vulnerability beneath Joanne's armour — a different shade of the character", "type": "contrasting"},
+        {"title": "Rose's Turn", "from": "Gypsy", "composer": "Jule Styne", "why": "A woman who has spent her whole life watching others succeed and now demands her due", "type": "contrasting"}
+      ],
+      "style_guidance": "Joanne is sharp, witty, and devastatingly perceptive — alto/mezzo with a razor-edged belt and absolute command of a room. She is the most dangerous person at the party.",
+      "avoid": ["Sweet, earnest material — Joanne eats earnestness for breakfast"]
+    },
+    "company/company-sarah": {
+      "role_name": "Sarah",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Losing My Mind", "from": "Follies", "composer": "Stephen Sondheim", "why": "A woman whose passion for her husband overwhelms her — obsessive, aching, mezzo-soprano", "type": "style_match"},
+        {"title": "Much More", "from": "The Fantasticks", "composer": "Harvey Schmidt", "why": "Lyric mezzo yearning for something more than her constrained domestic life", "type": "style_match"},
+        {"title": "So Many People", "from": "Saturday Night", "composer": "Stephen Sondheim", "why": "An early Sondheim mezzo piece showing the longing and complex feeling underneath Sarah's behaviour", "type": "style_match"}
+      ],
+      "style_guidance": "Sarah is a bundle of contradictions — warmth and rage, the karate subplot says it all. Mezzo-soprano who can flip between sweetness and teeth.",
+      "avoid": ["One-dimensional nice-wife material — Sarah is fighting something enormous inside herself"]
+    },
+    "company/company-harry": {
+      "role_name": "Harry",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "If I Loved You", "from": "Carousel", "composer": "Richard Rodgers", "why": "Lyric baritone showing a man tangled up in what he wants but cannot quite say", "type": "style_match"},
+        {"title": "Old Friend", "from": "I'm Getting My Act Together and Taking It on the Road", "composer": "Nancy Ford", "why": "Reflective character baritone looking back with affectionate complexity", "type": "contrasting"}
+      ],
+      "style_guidance": "Harry is a secondary couple character — warm baritone presence, gently comedic, the 'relaxed' partner who isn't as relaxed as he seems.",
+      "avoid": ["Show-stopping material — Harry is a supporting role, understated is the note"]
+    },
+    "company/company-amy": {
+      "role_name": "Amy (or Jamie in revival)",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Getting Married Today", "from": "Company", "composer": "Stephen Sondheim", "why": "Amy's terrifying patter number — requires genuine soprano agility, extraordinary speed, and neurotic energy", "type": "same_show"},
+        {"title": "I'm Not Getting Married Today", "from": "Company", "composer": "Stephen Sondheim", "why": "Same as above — prepare the full version for this role", "type": "same_show"},
+        {"title": "My Favourite Year", "from": "My Favourite Year (musical)", "composer": "Stephen Flaherty", "why": "Soprano with comedic intelligence and emotional sincerity behind the chaos", "type": "contrasting"},
+        {"title": "What's the Use of Wond'rin", "from": "Carousel", "composer": "Richard Rodgers", "why": "Contrasting — shows the lyric quality and romantic yearning beneath Amy's hysteria", "type": "contrasting"}
+      ],
+      "style_guidance": "Amy is a comedic soprano set piece — the patter requires absolute technical mastery. Cast someone who can nail Getting Married Today and then show heart underneath it.",
+      "avoid": ["Slow, lyric material for the audition showcase — Amy needs to demonstrate speed and agility first"]
+    },
+    "company/company-paul": {
+      "role_name": "Paul (or Jamie in revival)",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "A young man who has seen something huge and is trying to process it — quiet, introspective baritone", "type": "style_match"},
+        {"title": "Some Enchanted Evening", "from": "South Pacific", "composer": "Richard Rodgers", "why": "The earnest man who found the one — romantic, committed, legit baritone", "type": "contrasting"}
+      ],
+      "style_guidance": "Paul is Amy's devoted, slightly bewildered partner — warm baritone sincerity. The steady one in a chaotic relationship.",
+      "avoid": ["Comic material — Paul plays straight to Amy's chaos"]
+    },
+    "company/company-peter": {
+      "role_name": "Peter",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "The Road You Didn't Take", "from": "Follies", "composer": "Stephen Sondheim", "why": "A man contemplating choices with a carefully managed sense of peace — secondary couple character", "type": "style_match"},
+        {"title": "Take Me to the World", "from": "Evening Primrose", "composer": "Stephen Sondheim", "why": "Gentle, reflective baritone — ideal for the quieter Company husbands", "type": "style_match"}
+      ],
+      "style_guidance": "Peter is a secondary couple husband — warm, present, slightly enigmatic. Supporting baritone role.",
+      "avoid": ["Large leading-man pieces — Peter is ensemble company rather than featured lead"]
+    },
+    "company/company-susan": {
+      "role_name": "Susan",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Losing My Mind", "from": "Follies", "composer": "Stephen Sondheim", "why": "Mezzo-soprano in a complicated marriage — aching, searching quality", "type": "style_match"},
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Simple, warm mezzo — a woman who has made peace with her choices", "type": "contrasting"}
+      ],
+      "style_guidance": "Susan is moving to Arizona — she has made a decision. Mezzo-soprano with ground beneath her feet, even if her marriage is complicated.",
+      "avoid": ["Showy material — Susan is quiet revelation, not spectacle"]
+    },
+    "company/company-jenny": {
+      "role_name": "Jenny",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "So Many People", "from": "Saturday Night", "composer": "Stephen Sondheim", "why": "Early Sondheim mezzo — warm, domestic, with complexity underneath", "type": "style_match"},
+        {"title": "I Know", "from": "She Loves Me", "composer": "Jerry Bock", "why": "Warm mezzo character moment — a woman who observes and understands", "type": "contrasting"}
+      ],
+      "style_guidance": "Jenny is the pot-smoking wife who is more relaxed than she appears — mezzo warmth with a surprise turn. Secondary role, but the surprise moment is memorable.",
+      "avoid": ["Uptight material — Jenny is notably more at ease than the other Company wives"]
+    },
+    "company/company-david": {
+      "role_name": "David",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Baritone with understated masculine vulnerability — the quiet one in the couple", "type": "style_match"},
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "Ensemble/character baritone energy — good for showing personality without leading-man weight", "type": "contrasting"}
+      ],
+      "style_guidance": "David is a secondary couple husband with minimal solo material — warm, present baritone. The role is about ensemble chemistry.",
+      "avoid": ["Heavy leading roles — David is part of the ensemble tapestry of Company"]
+    },
+    "company/company-marta": {
+      "role_name": "Marta",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Another Hundred People", "from": "Company", "composer": "Stephen Sondheim", "why": "Marta's own defining song — modern, city-driven, idealistic mezzo-soprano", "type": "same_show"},
+        {"title": "As Long as He Needs Me", "from": "Oliver!", "composer": "Lionel Bart", "why": "Passionate, committed mezzo — shows the emotional depth beneath Marta's urbane surface", "type": "contrasting"},
+        {"title": "Gimme Gimme", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Contemporary belt anthem — idealistic, yearning, passionate young mezzo-soprano", "type": "style_match"}
+      ],
+      "style_guidance": "Marta is the young New Yorker — idealistic, urban, passionate, and the most genuine of Bobby's romantic options. She speaks in run-on sentences and sings that way too.",
+      "avoid": ["Period Golden Age style — Marta is contemporary and raw"]
+    },
+    "company/company-april": {
+      "role_name": "April",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "A Little Bit in Love", "from": "Wonderful Town", "composer": "Leonard Bernstein", "why": "Sweet soprano with an innocent, slightly naive quality — April is famously not the brightest bulb but utterly charming", "type": "style_match"},
+        {"title": "Wouldn't It Be Loverly", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "Light soprano with guileless charm — not stupid, just uncomplicated in the best way", "type": "style_match"},
+        {"title": "Poor Baby", "from": "Company", "composer": "Stephen Sondheim", "why": "Shows April's particular vocal quality in context — sweet and slightly confused", "type": "same_show"}
+      ],
+      "style_guidance": "April is the flight attendant girlfriend — she says 'what?' a lot. Sweet soprano with natural charm who lands the comedy through genuine innocence, not affectation.",
+      "avoid": ["Sophisticated, knowing material — April is genuinely uncomplicated and that is her magic"]
+    },
+    "company/company-kathy": {
+      "role_name": "Kathy",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "Finishing the Hat", "from": "Sunday in the Park with George", "composer": "Stephen Sondheim", "why": "A person who understands what it costs to be with someone like Bobby — mezzo intelligence", "type": "style_match"},
+        {"title": "Not a Day Goes By", "from": "Merrily We Roll Along", "composer": "Stephen Sondheim", "why": "Shows the complicated romantic mezzo-soprano underpinning — someone who loved but had to move on", "type": "style_match"}
+      ],
+      "style_guidance": "Kathy is departing for someone willing to commit — she understands Bobby completely and is done waiting. Mezzo-soprano with quiet sadness and firm resolve.",
+      "avoid": ["Angry or bitter repertoire — Kathy's departure is clear-eyed, not dramatic"]
+    },
+    "company/company-larry": {
+      "role_name": "Larry",
+      "musical": "Company",
+      "songs_to_prepare": [
+        {"title": "The Road You Didn't Take", "from": "Follies", "composer": "Stephen Sondheim", "why": "A man in a comfortable marriage who is settled and domestic — reflective supporting baritone", "type": "style_match"},
+        {"title": "Green Finch and Linnet Bird", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "A character wondering what it means to be free and choose freedom or cage — philosophical baritone", "type": "contrasting"}
+      ],
+      "style_guidance": "Larry is Joanne's younger, much milder husband — a supporting baritone role. His job is to be the contrast to Joanne's overwhelming personality.",
+      "avoid": ["Commanding material — Larry is deliberately lower-energy than everyone else in the room"]
+    },
+    "diary-of-a-wimpy-kid/greg": {
+      "role_name": "Greg Heffley",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Waving Through a Window", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Contemporary teen male anxiety and outsider feeling — social awkwardness, desperate want to belong", "type": "style_match"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "Young man who wants to be special, important, and recognised — Greg's whole arc", "type": "style_match"},
+        {"title": "Michael in the Bathroom", "from": "Be More Chill", "composer": "Joe Iconis", "why": "Contemporary teen isolation and social mortification — the specific comedy of middle school terror", "type": "style_match"},
+        {"title": "The World According to Snoopy", "from": "You're a Good Man, Charlie Brown (revival)", "composer": "Andrew Lippa", "why": "The kid who has a very particular philosophical take on things and is entirely self-confident about it", "type": "contrasting"}
+      ],
+      "style_guidance": "Greg is contemporary middle-school energy — contemporary pop/rock young tenor, self-deprecating comedy, and genuine pathos under the bluster. He thinks he is far cooler than he is.",
+      "avoid": ["Adult dramatic material — Greg is very specifically a 12-year-old boy who is embarrassing himself"]
+    },
+    "diary-of-a-wimpy-kid/rowley": {
+      "role_name": "Rowley Jefferson",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "You're a Good Man, Charlie Brown", "from": "You're a Good Man, Charlie Brown", "composer": "Clark Gesner", "why": "Sincere, sweet, uncomplicated childlike joy — Rowley is Charlie Brown's optimism personified", "type": "style_match"},
+        {"title": "My New Philosophy", "from": "You're a Good Man, Charlie Brown (revival)", "composer": "Andrew Lippa", "why": "Innocent, guileless happiness — a genuinely sweet kid discovering life's simple lessons", "type": "style_match"},
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "Eternal optimism from a pure, sweet child voice — Rowley in three minutes", "type": "contrasting"}
+      ],
+      "style_guidance": "Rowley is pure of heart and sweet of nature — he is not naive exactly, just genuinely lovely. Treble/young tenor, absolutely no irony, complete sincerity.",
+      "avoid": ["Knowing or world-weary material — Rowley has zero cynicism and that is the whole joke and the whole heart"]
+    },
+    "diary-of-a-wimpy-kid/rodrick": {
+      "role_name": "Rodrick Heffley",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The older, lazier guy who thinks he runs everything — baritone swagger, comic energy", "type": "style_match"},
+        {"title": "Razzle Dazzle", "from": "Chicago", "composer": "John Kander", "why": "Baritone showman who believes his own hype entirely — teen rock star energy", "type": "style_match"},
+        {"title": "The Telephone Hour", "from": "Bye Bye Birdie", "composer": "Charles Strouse", "why": "Period teen energy, contemporary adaptation — shows the rock-adjacent teenage baritone quality", "type": "contrasting"}
+      ],
+      "style_guidance": "Rodrick is the older brother who is objectively terrible at everything but utterly convinced otherwise — low baritone with rock posturing, comedic self-delusion.",
+      "avoid": ["Earnest or vulnerable material — Rodrick does not do sincerity"]
+    },
+    "diary-of-a-wimpy-kid/frank-heffley": {
+      "role_name": "Frank Heffley (Dad)",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "Warm, slightly bewildered baritone father watching his kids become who they are", "type": "style_match"},
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "The calm, domestic parent presence — reassuring and slightly clueless about what the kids are going through", "type": "contrasting"}
+      ],
+      "style_guidance": "Frank is the well-meaning, slightly hapless dad — warm baritone, earnestly trying. He means well in every scene, which makes him consistently funny.",
+      "avoid": ["High-octane material — Frank is the steady parental foundation, not the comic engine"]
+    },
+    "diary-of-a-wimpy-kid/susan-heffley": {
+      "role_name": "Susan Heffley (Mom)",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Far From the Home I Love", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "Warm, earnest mezzo-soprano mother processing disappointment with love intact", "type": "style_match"},
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Mezzo with simple, genuine feeling — the mother's perspective on sacrifice and love", "type": "contrasting"},
+        {"title": "A Little More Homework", "from": "13 the Musical", "composer": "Jason Robert Brown", "why": "Contemporary mezzo mom comedy — the parent completely out of sync with the child's reality", "type": "style_match"}
+      ],
+      "style_guidance": "Susan is the loving, slightly mortifying mother — contemporary mezzo-soprano with warmth and comic obliviousness. She thinks she is connecting and she is absolutely not.",
+      "avoid": ["Distant or cold material — Susan loves her family desperately, she just has no idea what they actually need"]
+    },
+    "diary-of-a-wimpy-kid/patty-farrell": {
+      "role_name": "Patty Farrell",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "You Can't Stop the Beat", "from": "Hairspray", "composer": "Marc Shaiman", "why": "Type-A overachiever energy — competitive, unstoppable, completely convinced she is right", "type": "style_match"},
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The girl who knows the social rules and enforces them — soprano wit and edge with a belt", "type": "style_match"},
+        {"title": "Mama Who Bore Me", "from": "Spring Awakening", "composer": "Duncan Sheik", "why": "Shows the soprano range and contemporary belt quality — the driven girl's intensity", "type": "contrasting"}
+      ],
+      "style_guidance": "Patty is the overachieving antagonist — ambitious, rule-following, and completely unapologetic about it. Soprano/mezzo with sharp energy and no vulnerability on display.",
+      "avoid": ["Vulnerable or naive material — Patty is weapon-grade competent and she knows it"]
+    },
+    "diary-of-a-wimpy-kid/fregley": {
+      "role_name": "Fregley",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "I Believe", "from": "The Book of Mormon", "composer": "Trey Parker / Matt Stone / Robert Lopez", "why": "Completely earnest character voice with an unusual take on everything — genuine and bizarre simultaneously", "type": "style_match"},
+        {"title": "If I Only Had a Brain", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "Character voice with gleeful, innocent strangeness — Fregley's energy exactly", "type": "style_match"}
+      ],
+      "style_guidance": "Fregley is the strange kid — character voice, physical comedy, and utter lack of social awareness presented with complete sincerity. Funny because he is genuine, not because he is trying.",
+      "avoid": ["Normal, well-adjusted energy — Fregley is a specific flavour of wonderful weirdness"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-chirag": {
+      "role_name": "Chirag Gupta",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "The Telephone Hour", "from": "Bye Bye Birdie", "composer": "Charles Strouse", "why": "Ensemble kid energy — bright young changed voice, social and eager", "type": "style_match"},
+        {"title": "You're a Good Man, Charlie Brown", "from": "You're a Good Man, Charlie Brown", "composer": "Clark Gesner", "why": "Sweet young voice in ensemble context — sincere kid energy", "type": "contrasting"}
+      ],
+      "style_guidance": "Chirag is a supporting kid character — young unchanged or changing voice, good ensemble singer with personality. Comic side role.",
+      "avoid": ["Lead material — Chirag is a supporting ensemble kid role"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-manny": {
+      "role_name": "Manny Heffley",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Sweet child voice — innocent, small, gets everything he wants", "type": "style_match"},
+        {"title": "The Sun Will Come Out Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "The small child who is absolutely fine because they are the favourite — guileless and sweet", "type": "contrasting"}
+      ],
+      "style_guidance": "Manny is the toddler who is inexplicably perfect in his parents' eyes — young child voice, sweet and completely unaware of the chaos he causes.",
+      "avoid": ["Advanced material — Manny is a very young child, keep it simple and genuine"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-bryce": {
+      "role_name": "Bryce Anderson",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The impossibly cool kid who everyone admires — easy charisma, no effort required", "type": "style_match"},
+        {"title": "I Enjoy Being a Girl", "from": "Flower Drum Song", "composer": "Richard Rodgers", "why": "For female casting — effortless, charming, the one everyone wants to be", "type": "contrasting"}
+      ],
+      "style_guidance": "Bryce is the effortlessly popular kid — natural charisma, young unchanged voice, the kind of confidence that comes from never doubting yourself. A supporting role.",
+      "avoid": ["Tortured material — Bryce has no problems and does not understand why others do"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-joshie": {
+      "role_name": "Joshie",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "What Is This Feeling", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Pop idol showmanship — the completely unsubtle star who knows exactly what their fans want", "type": "style_match"},
+        {"title": "Big Star", "from": "Best of Both Worlds / Hannah Montana style", "composer": "N/A", "why": "If contemporary pop songs are accepted — the manufactured pop star energy", "type": "style_match"},
+        {"title": "There's No Business Like Show Business", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "The show business performer who is absolutely in love with being famous", "type": "contrasting"}
+      ],
+      "style_guidance": "Joshie is a parody pop idol — enormous stage presence, over-the-top performance energy, and a fanbase of six-year-olds. Pop tenor/mezzo with maximum theatrical commitment.",
+      "avoid": ["Understated material — Joshie is a walking exclamation mark"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-claire": {
+      "role_name": "Claire",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "My New Philosophy", "from": "You're a Good Man, Charlie Brown (revival)", "composer": "Andrew Lippa", "why": "Cheerful, slightly exasperated young girl with personality — supporting ensemble kid role", "type": "style_match"}
+      ],
+      "style_guidance": "Claire is a supporting ensemble kid — young female voice with character and charm. Supporting role.",
+      "avoid": ["Lead-weight material — Claire is an ensemble child role"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-mr-winsky": {
+      "role_name": "Mr. Winsky",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "The bumbling authority figure who is technically in charge and practically useless", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character baritone/tenor who is funnier than they intend to be", "type": "style_match"}
+      ],
+      "style_guidance": "Mr. Winsky is a teacher character — adult authority figure with comic obliviousness. Baritone/tenor character role.",
+      "avoid": ["Young or leading man material — this is clearly an adult authority figure role"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-bill-walter": {
+      "role_name": "Bill Walter",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Adult character baritone with exasperated authority — manages chaos that he did not ask for", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character energy for an adult male supporting role — presence and timing over vocal range", "type": "style_match"}
+      ],
+      "style_guidance": "Bill Walter is an adult supporting character — present, comic, adult baritone. Secondary ensemble role.",
+      "avoid": ["Youth or leading character material — purely an adult supporting role"]
+    },
+    "diary-of-a-wimpy-kid/wimpy-mrs-clayton": {
+      "role_name": "Mrs. Clayton",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "I Know", "from": "She Loves Me", "composer": "Jerry Bock", "why": "Warm, observant mezzo who understands more than she lets on — a good teacher", "type": "style_match"},
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Comic mezzo character — the long-suffering woman dealing with situations she deserved better than", "type": "contrasting"}
+      ],
+      "style_guidance": "Mrs. Clayton is a supporting adult female character — warm mezzo presence with comic awareness. Secondary role.",
+      "avoid": ["Heavy lead mezzo material — this is a supporting character part"]
+    },
+    "diary-of-a-wimpy-kid/ensemble-kids": {
+      "role_name": "Ensemble — Middle School Students",
+      "musical": "Diary of a Wimpy Kid",
+      "songs_to_prepare": [
+        {"title": "Wonder How It Feels", "from": "13 the Musical", "composer": "Jason Robert Brown", "why": "Contemporary kids' ensemble musical — the specific energy of early adolescence", "type": "style_match"},
+        {"title": "The Telephone Hour", "from": "Bye Bye Birdie", "composer": "Charles Strouse", "why": "Teen ensemble energy — social, quick, personality-driven", "type": "style_match"},
+        {"title": "Waving Through a Window", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Contemporary teen resonance — social anxuety, belonging, and adolescent isolation", "type": "contrasting"}
+      ],
+      "style_guidance": "This is a youth/young adult ensemble — contemporary pop-rock voice, genuine adolescent energy, physical movement, and character specificity over vocal perfection.",
+      "avoid": ["Old-fashioned, adult style — this ensemble needs to read as actual middle schoolers"]
+    },
+    "dirty-rotten-scoundrels/lawrence-jameson": {
+      "role_name": "Lawrence Jameson",
+      "musical": "Dirty Rotten Scoundrels",
+      "songs_to_prepare": [
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Cultured, effortless sophistication delivered as comedy — Lawrence's approach to everything", "type": "contrasting"},
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Smooth, seductive, sophisticated baritone with complete command — Lawrence selling the fantasy", "type": "style_match"},
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "The impossibly accomplished man listing his credentials — baritone self-assurance with wit", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "Contrasting — shows the intelligence and complexity beneath the con man's polish", "type": "contrasting"}
+      ],
+      "style_guidance": "Lawrence is the consummate confidence trickster — smooth, charming, witty, and completely in control at all times. Legit baritone with impeccable comic timing and absolute cool.",
+      "avoid": ["Slapstick or low-comedy material — Lawrence is sophisticated crime, not broad farce"]
+    },
+    "dirty-rotten-scoundrels/freddy-benson": {
+      "role_name": "Freddy Benson",
+      "musical": "Dirty Rotten Scoundrels",
+      "songs_to_prepare": [
+        {"title": "Anything You Can Do", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "The competitive, scrappy upstart who matches the professional blow for blow — Freddy's dynamic exactly", "type": "style_match"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The young man on the make who believes he deserves the big life — aspirational tenor belt", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Brash, pushy American who will not take no for an answer — Freddy condensed", "type": "contrasting"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "Unstoppable energy and drive — if playing Freddy as a female character (some productions)", "type": "contrasting"}
+      ],
+      "style_guidance": "Freddy is the scrappy American con man — physical, loud, belt-heavy tenor, and enormously funny. He trips over himself constantly and wins anyway.",
+      "avoid": ["Polished, sophisticated material — Freddy is Lawrence's comedic opposite: rough edges and raw energy"]
+    },
+    "dirty-rotten-scoundrels/christine-colgate": {
+      "role_name": "Christine Colgate",
+      "musical": "Dirty Rotten Scoundrels",
+      "songs_to_prepare": [
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "The apparent innocent masking extraordinary intelligence — Sophie Colgate in an opera house", "type": "style_match"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Shows the soprano quality and gleeful obliviousness that conceals sharp observation", "type": "contrasting"},
+        {"title": "I'm Not That Girl", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Contrasting — shows the emotional belt and soprano depth beneath the comedy", "type": "contrasting"},
+        {"title": "Shall We Dance", "from": "The King and I", "composer": "Richard Rodgers", "why": "Bright soprano with hidden wit — the girl everyone underestimates", "type": "style_match"}
+      ],
+      "style_guidance": "Christine is the punchline that turns into the winner — soprano with genuine innocence AND genuine intelligence playing simultaneously. The comedy is that she is always ten steps ahead.",
+      "avoid": ["Obvious knowing winks — Christine's magic is that her innocence appears completely genuine"]
+    },
+    "dirty-rotten-scoundrels/muriel-eubanks": {
+      "role_name": "Muriel Eubanks",
+      "musical": "Dirty Rotten Scoundrels",
+      "songs_to_prepare": [
+        {"title": "Before the Parade Passes By", "from": "Hello, Dolly!", "composer": "Jerry Herman", "why": "Big-hearted older woman deciding to live, love, and not be left behind — Muriel's entire arc", "type": "style_match"},
+        {"title": "I Know", "from": "She Loves Me", "composer": "Jerry Bock", "why": "Warm mezzo who sees right through the nonsense and loves it anyway", "type": "style_match"},
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Comic mezzo with a physical, character-specific delivery — the woman who got played but wins", "type": "contrasting"}
+      ],
+      "style_guidance": "Muriel is the exuberant, horseback-riding widow who is absolutely delighted by Lawrence — mezzo/character soprano with comedy, warmth, and genuine vivacity.",
+      "avoid": ["Restrained, dignified material — Muriel is joy at full volume, not decorum"]
+    },
+    "dirty-rotten-scoundrels/andre-thibault": {
+      "role_name": "André Thibault",
+      "musical": "Dirty Rotten Scoundrels",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Supporting character baritone with comic purpose — the loyal sidekick in French police uniform", "type": "style_match"},
+        {"title": "C'est Moi", "from": "Camelot", "composer": "Frederick Loewe", "why": "French self-important baritone character — takes himself very seriously, which is the comedy", "type": "contrasting"}
+      ],
+      "style_guidance": "André is the gendarme/inspector who is always one step behind — French character baritone, comedy through dignity and obliviousness. Supporting role.",
+      "avoid": ["Lead material — André is a supporting character role, his job is to enable the leads' comedy"]
+    },
+    "dirty-rotten-scoundrels/ensemble-dirty-rotten-scoundrels": {
+      "role_name": "Ensemble — Riviera Society, Jolene, Hotel Staff, Oklahoma Women",
+      "musical": "Dirty Rotten Scoundrels",
+      "songs_to_prepare": [
+        {"title": "There's No Business Like Show Business", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "Ensemble showbiz energy — this show is a theatrical caper and the ensemble sells the glamour", "type": "style_match"},
+        {"title": "Luck Be a Lady", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Sophisticated society energy with comic edge — the world these con men operate in", "type": "style_match"},
+        {"title": "Big Spender", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "For female ensemble — Jolene's Oklahoma women playing at society glamour", "type": "contrasting"}
+      ],
+      "style_guidance": "DRS ensemble plays both glamorous Riviera society AND the Oklahoma women pawns — breadth of character-switching is key. Belt for the women, legit for the society scenes.",
+      "avoid": ["Single-register vocal style — this ensemble needs to convincingly play opposite archetypes within the same show"]
+    }
+  }
+}

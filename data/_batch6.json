@@ -1,0 +1,285 @@
+{
+  "songs": {
+    "ride-the-cyclone/ocean-osheana-rosenberg": {
+      "role_name": "Ocean O'Connell Rosenberg",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "The overachiever who defines herself by accomplishment — mezzo-soprano confronting what she actually values", "type": "contrasting"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Mezzo belt — the person with the most to lose in the lottery of fate, facing it with fierce ambition", "type": "style_match"},
+        {"title": "Not for the Life of Me", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "The overachiever in transit — contemporary mezzo-soprano who has plans and a very clear idea about life", "type": "style_match"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The Type-A girl who refuses the constraints of fate — mezzo belt anthem for someone who was supposed to be extraordinary", "type": "style_match"}
+      ],
+      "style_guidance": "Ocean is the most Type-A character in dark comedy musical theatre — mezzo belt with hard-edged ambition, buried vulnerability, and the specific tragedy of someone who had so many plans. The comedy of her character comes from her unwillingness to accept death even while dead.",
+      "avoid": ["Passive or gentle material — Ocean has never had a passive thought in her life"]
+    },
+    "ride-the-cyclone/noel-gruber": {
+      "role_name": "Noel Gruber",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "Losing My Mind", "from": "Follies", "composer": "Stephen Sondheim", "why": "The romantic who has been lost in a beautiful fantasy — baritone with dark, swooning yearning", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "A man confronting what his fantasies cost him in terms of real connection — baritone with falsetto", "type": "contrasting"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "Passionate, isolated figure claiming something beautiful as his own — Noel claiming his Parisian cabaret life", "type": "style_match"}
+      ],
+      "style_guidance": "Noel is the small-town gay teenager who lives in a romantic French fantasy — baritone with falsetto to C5, melancholy glamour, and the specific tragedy of someone who never got to live in the world he loved.",
+      "avoid": ["Camp performance — Noel is sincere and romantic, not theatrical self-parody"]
+    },
+    "ride-the-cyclone/mischa-bachinski": {
+      "role_name": "Mischa Bachinski",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "The forceful, overwhelming presence who speaks in emphatic declarations — tenor with physical energy", "type": "contrasting"},
+        {"title": "Those Magic Changes", "from": "Grease", "composer": "Warren Casey / Jim Jacobs", "why": "Shows the contemporary pop-rock tenor quality — Mischa's musical world is Eastern European folk and internet rap", "type": "style_match"}
+      ],
+      "style_guidance": "Mischa is the Ukrainian death metal rapper/folk singer — contemporary pop-rock tenor with aggressive physical energy and the specific comedy of a death metal ethos applied to folk. Unique character, demanding equal parts rap skill and genuine emotion.",
+      "avoid": ["Legit or classical approach — Mischa is aggressively contemporary"]
+    },
+    "ride-the-cyclone/ricky-potts": {
+      "role_name": "Ricky Potts",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "Not While I'm Around", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "The protective innocent who gives everything for someone they love — Ricky's devotion to Jane", "type": "style_match"},
+        {"title": "You're a Good Man, Charlie Brown", "from": "You're a Good Man, Charlie Brown", "composer": "Clark Gesner", "why": "The good, simple soul who loves completely and is overlooked because of it — Ricky exactly", "type": "style_match"},
+        {"title": "What Do I Need with Love", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Contrasting — shows the range and warmth, the boy who would give up everything for his one person", "type": "contrasting"}
+      ],
+      "style_guidance": "Ricky has severe physical limitations and communicates through a speech device — the actor must create enormous emotional connection through the device's voice and their own physicality. The role is entirely about presence and stillness.",
+      "avoid": ["Direct singing approach — Ricky's voice is his device for most of the show; the character work is physical and emotional"]
+    },
+    "ride-the-cyclone/constance-blackwood": {
+      "role_name": "Constance Blackwood",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "The girl who was ordinary in every way and is suddenly asked to define her life — soprano with quiet dignity", "type": "style_match"},
+        {"title": "Somewhere That's Green", "from": "Little Shop of Horrors", "composer": "Alan Menken", "why": "The plain girl with a simple dream of contentment — soprano with genuine, unassuming warmth", "type": "style_match"},
+        {"title": "She Used to Be Mine", "from": "Waitress", "composer": "Sara Bareilles", "why": "Contrasting — a woman connecting to her own identity and worth that others never noticed", "type": "contrasting"}
+      ],
+      "style_guidance": "Constance is the girl who believed she was nothing — soprano belt with a quiet, collected approach that masks enormous emotional depth. Her victory is entirely internal and entirely earned.",
+      "avoid": ["Showboating material — Constance's power is restraint; she wins by being still and real"]
+    },
+    "ride-the-cyclone/the-amazing-karnak": {
+      "role_name": "The Amazing Karnak",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The cosmic MC who runs the game — character with theatrical flair and an agenda", "type": "style_match"},
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "The host of a morally ambiguous show who sets the entire world and its rules — Karnak precisely", "type": "style_match"}
+      ],
+      "style_guidance": "Karnak is the all-powerful, fully automated fortune telling machine who plays God — character voice with theatrical menace and the specific quality of someone who controls everything and feels nothing. Mechanical precision with cosmic weight.",
+      "avoid": ["Warm, relatable character work — Karnak is an authority figure without empathy; that is the source of all drama"]
+    },
+    "ride-the-cyclone/talia": {
+      "role_name": "Talia",
+      "musical": "Ride the Cyclone",
+      "songs_to_prepare": [
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The ambitious girl who was about to take off — mezzo belt with the specific quality of interrupted potential", "type": "style_match"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Mezzo-soprano confronting what her life actually was versus what it looked like — dramatic, precise", "type": "style_match"},
+        {"title": "Not While I'm Around", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "Contrasting — shows the warmth and protective love that coexisted with Talia's ambition", "type": "contrasting"}
+      ],
+      "style_guidance": "Talia is the other ambitious girl — mezzo-soprano belt with a specific quality of interrupted promise. She is Constance's foil: the girl who was someone and may or may not deserve the prize.",
+      "avoid": ["Passive energy — Talia has drive and a clear agenda even in the afterlife"]
+    },
+    "seussical/horton": {
+      "role_name": "Horton the Elephant",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "If I Only Had a Brain", "from": "The Wizard of Oz", "composer": "Harold Arlen", "why": "The good-hearted soul who believes in what others mock — baritone with earnestness and warmth", "type": "contrasting"},
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Warm bass-baritone who finds joy in simple commitments — Horton's devotion made musical", "type": "contrasting"},
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The adult who takes his responsibilities to children entirely seriously — Horton's whole philosophy", "type": "style_match"},
+        {"title": "This Is Me", "from": "The Greatest Showman", "composer": "Benj Pasek / Justin Paul", "why": "The person persisting through ridicule because they know they are right — Horton's resolve exactly", "type": "style_match"}
+      ],
+      "style_guidance": "Horton is the show's moral anchor — bass-baritone with natural warmth, physical gentleness (he is enormous but careful), and absolute, unshakeable conviction in what he believes. He is never ironic about his devotion.",
+      "avoid": ["Clever or witty performance — Horton is genuine and simple in the best possible sense; his power is sincerity"]
+    },
+    "seussical/cat-in-the-hat": {
+      "role_name": "The Cat in the Hat",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "The ultimate theatrical host who creates the entire world — the Cat IS the show", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The MC who announces what kind of show you are about to see — pure theatrical authority", "type": "style_match"},
+        {"title": "All That Jazz", "from": "Chicago", "composer": "John Kander", "why": "The showman who performs chaos with control — the Cat's gift in one number", "type": "style_match"},
+        {"title": "Big Bright Beautiful World", "from": "Shrek the Musical", "composer": "Jeanine Tesori", "why": "The guide character who opens the world for someone who has never seen it — the Cat's function", "type": "contrasting"}
+      ],
+      "style_guidance": "The Cat is an all-range, all-personality, completely elastic role — the performance requires maximum physical commitment, absolute theatrical authority, and an ability to be simultaneously charming and terrifying. The Cat IS Seussical.",
+      "avoid": ["Half-measures — the Cat gives 1000% in every moment. Restraint is not in this character's vocabulary."]
+    },
+    "seussical/jojo": {
+      "role_name": "JoJo",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Waving Through a Window", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "The child/young person who thinks differently and cannot make themselves understood — JoJo exactly", "type": "style_match"},
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "The child whose rich imagination is their world — soprano/treble with wonder and specificity", "type": "contrasting"},
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "A child dreaming of a place where thinking is valued — JoJo in Whoville before the adventure", "type": "style_match"}
+      ],
+      "style_guidance": "JoJo is the child who thinks too much and is about to discover that is exactly the right thing to be — youth soprano with dreamy intelligence, emotional warmth, and the ability to be both small and enormous in the same scene.",
+      "avoid": ["Performance of weirdness — JoJo is sincere and internal, the uniqueness is apparent, not performed"]
+    },
+    "seussical/gertrude": {
+      "role_name": "Gertrude McFuzz",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Somewhere That's Green", "from": "Little Shop of Horrors", "composer": "Alan Menken", "why": "The plain girl who loves truly and wants to be more than she is — mezzo-soprano with genuine longing", "type": "style_match"},
+        {"title": "I'm Not That Girl", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The girl who loves someone who doesn't see her — mezzo with specific, quiet hurt and yearning", "type": "style_match"},
+        {"title": "In My Own Little Corner", "from": "Cinderella", "composer": "Richard Rodgers", "why": "Shows the dreaming, slightly-overlooked girl finding courage — Gertrude before the tail", "type": "contrasting"}
+      ],
+      "style_guidance": "Gertrude is the show's gentle comic heroine — mezzo who grows a tail so enormous she cannot move and still tries to reach Horton. The comedy of her devotion is inseparable from its genuine beauty.",
+      "avoid": ["Sophisticated or world-weary material — Gertrude is earnest, sweet, and working class in her aspiration"]
+    },
+    "seussical/mayzie": {
+      "role_name": "Mayzie La Bird",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "The diva who is absolutely convinced of her own fabulous importance — mezzo belt, unearned confidence", "type": "style_match"},
+        {"title": "Don't Tell Mama", "from": "Cabaret", "composer": "John Kander", "why": "The fun, irresponsible girl who is absolutely not going to let responsibility cramp her style", "type": "style_match"},
+        {"title": "Popular", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The girl who is certain she knows what matters (her) and will tell you at length — mezzo comedy", "type": "contrasting"}
+      ],
+      "style_guidance": "Mayzie is the irresponsible diva — mezzo-soprano belt with maximum self-assurance, comedy, and zero guilt. She flies away from her egg without a second thought and floats back expecting everything to be fine.",
+      "avoid": ["Sympathetic victim reading — Mayzie chose the egg situation and then chose to leave it; the comedy is her complete lack of remorse"]
+    },
+    "seussical/sour-kangaroo": {
+      "role_name": "Sour Kangaroo",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Rose's Turn", "from": "Gypsy", "composer": "Jule Styne", "why": "The community authority figure who will not tolerate deviation — alto/mezzo with self-righteous power belt", "type": "style_match"},
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "The woman convinced her way is the only right way — control, power, and absolute certainty", "type": "contrasting"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "The character who defines their community and will destroy opposition — alto with teeth", "type": "style_match"}
+      ],
+      "style_guidance": "The Sour Kangaroo is the conformist bully who rules the Jungle of Nool — alto/mezzo with genuine power belt and the ability to make conventional wisdom sound like gospel. She is wrong but absolutely convincing.",
+      "avoid": ["Comedic buffoon approach — the Kangaroo wields real social power and Horton's humiliation is real"]
+    },
+    "seussical/seuss-bird-girls": {
+      "role_name": "Bird Girls",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Cell Block Tango", "from": "Chicago", "composer": "John Kander", "why": "Trio of female voices delivering commentary with attitude — shows the snarky chorus female trio dynamic", "type": "style_match"},
+        {"title": "Be Our Guest", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "Female trio ensemble with strong blend — the celebration/spectacle number the Bird Girls embody", "type": "contrasting"}
+      ],
+      "style_guidance": "The Bird Girls are the show's ironic Greek chorus — soprano/mezzo/alto trio with perfect blend and the ability to deliver social commentary with jazz-hand enthusiasm. Harmony skills and comedic timing essential.",
+      "avoid": ["Solo showcase approach — the Bird Girls are a trio and the magic is the blend and coordinated attitude"]
+    },
+    "seussical/seuss-general-schmitz": {
+      "role_name": "General Genghis Kahn Schmitz",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "Military authority character with puffed-up self-importance — the general who wants to boil Horton's clover", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Commanding, dismissive baritone who has decided Horton's beliefs are dangerous nonsense", "type": "contrasting"}
+      ],
+      "style_guidance": "General Schmitz is comic military authority — character baritone with maximum pomposity and the conviction that the kangaroo's law must be enforced. His threat is real even though he is funny.",
+      "avoid": ["Sympathetic character work — the General is the establishment arm of conformity and fully committed to it"]
+    },
+    "seussical/seuss-wickershams": {
+      "role_name": "Wickersham Brothers",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Razzle Dazzle", "from": "Chicago", "composer": "John Kander", "why": "Trio of energetic monkey troublemakers performing chaos with attitude — showmen of disruption", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character trio who exist to create chaos and delight in it — tenor/baritone/bass comedic ensemble", "type": "style_match"}
+      ],
+      "style_guidance": "The Wickershams are the show's chaos agents — tenor/baritone/bass trio with physical energy, harmony skills, and the ability to be simultaneously irritating and entertaining. Perfect comic timing as a unit.",
+      "avoid": ["Solo hero moments — the Wickershams are an ensemble and their power is collective mischief"]
+    },
+    "seussical/ensemble-seuss": {
+      "role_name": "Ensemble — Jungle Animals, Whos, Creatures",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {"title": "Be Our Guest", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "Character-specific ensemble who must each be a distinct Seuss creature — physical and vocal specificity", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Ensemble who must sell the show's world through pure theatrical commitment and variety", "type": "contrasting"}
+      ],
+      "style_guidance": "Seussical ensemble plays an enormous range of creatures — the key is character specificity (what KIND of creature are you?) and ensemble blend. Strong voices, strong physicality, strong imagination.",
+      "avoid": ["Generic ensemble approach — every Seussical creature should feel individually designed and specific"]
+    },
+    "sister-act/sister-act-deloris": {
+      "role_name": "Deloris Van Cartier",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "And I Am Telling You I'm Not Going", "from": "Dreamgirls", "composer": "Henry Krieger", "why": "The great R&B-soul mezzo belt powerhouse — Deloris's voice type and theatrical DNA exactly", "type": "style_match"},
+        {"title": "Ain't No Mountain High Enough", "from": "Motown repertoire", "composer": "Nickolas Ashford / Valerie Simpson", "why": "If Motown/R&B accepted — the soul-gospel energy Deloris brings to everything she touches", "type": "style_match"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "The unstoppable woman with a big voice and bigger plans — Deloris before the convent", "type": "contrasting"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Contemporary mezzo belt — the woman who decides to transform a situation through sheer force of personality", "type": "style_match"}
+      ],
+      "style_guidance": "Deloris needs a mezzo-soprano with genuine R&B/gospel belt and enormous stage presence — the kind of voice and personality that turns a convent choir into a show choir against everyone's better judgment.",
+      "avoid": ["Classical or legit soprano material — Deloris is R&B/gospel soul, the further from legit the better"]
+    },
+    "sister-act/sister-act-mother-superior": {
+      "role_name": "Mother Superior",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The authority figure who takes responsibility for her flock seriously — mezzo/alto with genuine gravitas", "type": "style_match"},
+        {"title": "Climb Ev'ry Mountain", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "The most famous Mother Superior song in musical theatre — and a benchmark for the required vocal authority", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "Shows the inner world of a woman who chose a constrained life because she believed in it — mezzo depth", "type": "contrasting"}
+      ],
+      "style_guidance": "Mother Superior begins as the antagonist and becomes a champion — mezzo/alto with absolute conviction, natural authority, and the capacity for a real arc. Her moment of joining Deloris is the show's turning point.",
+      "avoid": ["Rigid, unemotional performance — Mother Superior's journey is about learning to trust and expand, never about being permanently wrong"]
+    },
+    "sister-act/sister-act-curtis": {
+      "role_name": "Curtis Jackson",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Luck Be a Lady", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The mob boss who believes the universe belongs to him — baritone/tenor with swagger and criminal authority", "type": "style_match"},
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The charming criminal enterprise leader who runs everything and enjoys it enormously", "type": "style_match"},
+        {"title": "Stars", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The implacable pursuer who cannot accept that someone slipped out of his control — villain's conviction", "type": "contrasting"}
+      ],
+      "style_guidance": "Curtis is the villain who is more comic than terrifying — baritone/tenor with gangster swagger and the specific comedy of a Seventies crime boss who is genuinely baffled that anyone would choose a convent over him.",
+      "avoid": ["Genuinely menacing villain approach — Curtis is the loveable obstacle, not a real threat"]
+    },
+    "sister-act/sister-act-eddie": {
+      "role_name": "Eddie Souther (Sweaty Eddie)",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The young man who has loved from a distance and finally gets his moment — lyric tenor with warmth", "type": "style_match"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The sweetly awkward person discovering they are loved — tenor with genuine, bumbling warmth", "type": "contrasting"},
+        {"title": "Till There Was You", "from": "The Music Man", "composer": "Meredith Willson", "why": "The gentle, earnest tenor who has finally noticed something wonderful — Eddie and Deloris", "type": "style_match"}
+      ],
+      "style_guidance": "Eddie is the sweetheart cop who has loved Deloris his entire life — tenor with natural warmth, awkward charm, and the ability to be the best person in any room without knowing it.",
+      "avoid": ["Cool or confident material — Eddie's charm is his awkwardness and genuine heart"]
+    },
+    "sister-act/sister-act-mary-robert": {
+      "role_name": "Sister Mary Robert",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "The hidden soprano talent released from behind her veil — the voice that was there all along", "type": "style_match"},
+        {"title": "I Could Have Danced All Night", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "The awakened young soprano who has discovered joy through transformation — Mary Robert's arc", "type": "style_match"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The soprano who discovers she is more than her constraints — belt emerging from behind years of silence", "type": "contrasting"}
+      ],
+      "style_guidance": "Mary Robert is the show's secret weapon — a soprano with hidden belt who has been quiet her whole life and is about to find her voice. The arc from timid to triumphant depends entirely on the quality of her vocal revelation.",
+      "avoid": ["Showing the belt too early — the whole performance arc is about the slow emergence of what has always been there"]
+    },
+    "sister-act/sister-act-mary-lazarus": {
+      "role_name": "Sister Mary Lazarus",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The long-suffering church-music veteran dealing with the absolute chaos of the new regime", "type": "style_match"},
+        {"title": "I'm Going Back", "from": "Bells Are Ringing", "composer": "Jule Styne", "why": "Character alto who knows how things should be done and has had QUITE enough of innovation", "type": "style_match"}
+      ],
+      "style_guidance": "Sister Mary Lazarus is the musical comedy backbone — alto/mezzo character voice with comic timing, physical expressiveness, and the specific comedy of theatrical old-church resistance to change.",
+      "avoid": ["Warm or supportive material — Mary Lazarus believes everything was better before Deloris arrived, and she will tell you so at length"]
+    },
+    "sister-act/sister-act-mary-patrick": {
+      "role_name": "Sister Mary Patrick",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "Irrepressible optimism from a soprano who is enthusiastic about everything including being hit by a car", "type": "style_match"},
+        {"title": "I Enjoy Being a Girl", "from": "Flower Drum Song", "composer": "Richard Rodgers", "why": "Cheerful soprano who is completely thrilled by everything including the idea of being transformed into a disco nun", "type": "contrasting"}
+      ],
+      "style_guidance": "Sister Mary Patrick is joy in a habit — soprano who is enthusiastic about everything with zero filter and maximum commitment. She is the first to embrace Deloris. The comedy is her complete sincerity.",
+      "avoid": ["Irenic or measured quality — Mary Patrick operates entirely at maximum enthusiasm"]
+    },
+    "sister-act/sister-act-monsignor": {
+      "role_name": "Monsignor O'Hara",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The institutional authority figure being completely outmanoeuvred by events — baritone with comic helplessness", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "The churchman trying to maintain dignity while his convent becomes a disco — exhausted baritone authority", "type": "contrasting"}
+      ],
+      "style_guidance": "The Monsignor is the well-meaning church authority who is completely out of his depth with Deloris — baritone with natural dignity and the specific comedy of institutional irrelevance in the face of joyful chaos.",
+      "avoid": ["Villainous or obstructive energy — the Monsignor means well; he is just completely unable to handle the situation"]
+    },
+    "sister-act/sister-act-nun-ensemble": {
+      "role_name": "Ensemble — Nuns of the Convent",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {"title": "Raise Your Voice", "from": "Sister Act", "composer": "Alan Menken", "why": "The nun ensemble transformation number — shows the gospel-infused choir sound the show requires", "type": "same_show"},
+        {"title": "Joyful, Joyful", "from": "Sister Act 2 (film)", "composer": "Ludwig van Beethoven / arr. Mervyn Warren", "why": "Gospel-choir energy — the soul-infused choral style the convent ultimately adopts", "type": "style_match"},
+        {"title": "And I Am Telling You", "from": "Dreamgirls", "composer": "Henry Krieger", "why": "Gospel-adjacent soprano/mezzo ensemble belt — shows the voice type the show needs", "type": "contrasting"}
+      ],
+      "style_guidance": "The nun ensemble begins as a struggling church choir and becomes a gospel powerhouse — the arc requires genuine choral singers who can also belt gospel-style by Act Two. Versatility from hymn to soul is the core skill.",
+      "avoid": ["Static, unexpressive choral singing — the ensemble's transformation from grey to brilliant is the show's central visual and sonic story"]
+    }
+  }
+}

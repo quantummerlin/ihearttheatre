@@ -1,0 +1,835 @@
+{
+  "musical": {
+    "id": "matilda",
+    "title": "Matilda The Musical",
+    "music_by": "Tim Minchin",
+    "book_by": "Dennis Kelly",
+    "based_on": "Novel by Roald Dahl",
+    "year_premiered": 2010,
+    "broadway_opening": "2013-04-11",
+    "setting": "A small English village — the Wormwood home, Crunchem Hall school, a library",
+    "time_period": "Contemporary (with timeless fairy-tale quality)",
+    "themes": ["intelligence vs ignorance", "courage", "standing up to bullies", "the power of stories", "finding your people", "childhood resilience", "imagination"],
+    "genre_tags": ["british_musical", "comedy", "children_story", "dark_comedy", "ensemble_heavy", "character_driven"],
+    "vocal_style": "British pop-rock with theatrical flair; Tim Minchin's witty, rhythmic, word-dense style",
+    "dance_intensity": "high",
+    "orchestra_size": "full_pit",
+    "typical_cast_size": "25-35 (including child ensemble)",
+    "age_range": "6-60+ (significant child cast, wide adult range)",
+    "difficulty_overall": "advanced",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Matilda Wormwood is a genius child with terrible parents and a tyrannical headmistress. Armed with a vivid imagination, a sharp mind, and a kind teacher named Miss Honey, Matilda dares to take a stand and change her destiny — and the destinies of those around her. Based on the beloved Roald Dahl story."
+  },
+  "roles": [
+    {
+      "id": "matilda-matilda",
+      "name": "Matilda Wormwood",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 8, "max": 13},
+      "description": "A brilliant, book-loving child stuck with dreadful parents and a monstrous headmistress. She's brave, compassionate, fiercely intelligent, and discovers she has telekinetic powers. Must carry the entire show with both emotional depth and comedic timing. One of the most demanding child roles in musical theatre.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "child soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid-high",
+        "style_notes": "Must handle Tim Minchin's rapid-fire, word-heavy lyrics with absolute clarity. Needs genuine belt power for 'Naughty' and 'Revolting Children' but also pure, sweet tone for 'Quiet'. British accent required. The vocal demands are extraordinary for a child performer."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["choreographic_staging", "physical_theatre", "character_movement"],
+        "stamina": "high",
+        "notes": "High physical demands — running, climbing, physical theatre sequences. The telekinesis staging requires precise physical control. Must maintain energy through a very long show."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["child genius", "underdog hero", "brave rebel", "storyteller"],
+        "emotional_range": "extreme — intelligence, loneliness, courage, wonder, rage, compassion, triumph",
+        "comedy_skills": true,
+        "notes": "Must be genuinely convincing as a genius child — not precocious but authentically brilliant. Needs to hold audience attention against scene-stealing adult characters. The storytelling sequences require real narrative skill. Emotional arc from lonely to empowered must be earned."
+      },
+      "performance": {
+        "stage_time_percentage": 80,
+        "solo_songs": 5,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["rapid_diction", "storytelling", "telekinesis_staging", "british_accent"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "One of the greatest child roles ever written. Demands everything — vocal power, acting depth, physical stamina, diction, emotional range. Career-launching for young performers. Typically triple-cast due to demands.",
+        "common_casting": "Exceptional child performer with natural intelligence, strong voice, and work ethic. Must genuinely seem like the smartest person in the room.",
+        "standout_opportunity": "A great Matilda is unforgettable. This role has launched many careers. 'Quiet' and 'Naughty' are career-defining moments for young performers."
+      },
+      "growth_profile": {
+        "skills_developed": ["belt_technique", "diction", "emotional_acting", "stamina", "physical_theatre", "storytelling", "accent_work"],
+        "challenge_areas": ["sustaining_energy_over_long_show", "rapid_lyric_delivery", "emotional_depth_for_young_performer"],
+        "recommended_for": ["talented young performers ready for a major challenge", "strong child singers with acting ability", "young performers who love reading and stories (genuine connection to character)"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["natural intelligence — not performed", "strong clear voice with belt", "perfect diction", "genuine emotional depth", "stamina and focus", "British accent ability"],
+        "common_mistakes": ["being cute instead of smart", "poor diction on fast songs", "not enough emotional range", "running out of energy"],
+        "tips": ["Matilda is not a cute kid — she's a fierce, brilliant mind in a small body. Read voraciously before auditioning. Understand what it means to be the smartest person in a room full of adults. Practice Tim Minchin's lyrics until they feel like natural speech."]
+      },
+      "key_songs": [
+        {"title": "Naughty", "type": "solo", "notes": "Matilda's manifesto. Fast, word-dense, builds to triumphant belt. Must be crystal clear."},
+        {"title": "Quiet", "type": "solo", "notes": "The emotional heart. Starts intimate, builds to overwhelming power. Stunning contrast to the chaos around her."},
+        {"title": "My House", "type": "solo", "notes": "Tender, simple, devastating. About finding home with Miss Honey."},
+        {"title": "When I Grow Up", "type": "ensemble_lead", "notes": "Iconic number with children on swings. Matilda leads with hope and longing."},
+        {"title": "Revolting Children", "type": "ensemble_lead", "notes": "The revolution! High energy, triumphant, Matilda leads the uprising."},
+        {"title": "I'm Here", "type": "solo", "notes": "Final declaration of identity and belonging."}
+      ]
+    },
+    {
+      "id": "matilda-trunchbull",
+      "name": "Miss Agatha Trunchbull",
+      "role_type": "lead",
+      "gender": "traditionally_male_playing_female",
+      "age_range": {"min": 25, "max": 55},
+      "description": "The terrifying, hilarious, larger-than-life headmistress of Crunchem Hall. A former Olympic hammer-thrower who despises children and rules through fear and violence. Traditionally played by a man in drag, creating a pantomime-villain energy that is both terrifying and hysterically funny. One of the great comic villains in musical theatre.",
+      "vocal": {
+        "range": "G2-E4 (male) / C3-A4 (female)",
+        "voice_type": "baritone/character (if male) or alto/character (if female)",
+        "belt_required": true,
+        "belt_range": "C3-D4 (male) / F3-G4 (female)",
+        "tessitura": "mid",
+        "style_notes": "Big, brassy, intimidating vocal quality. Must fill the room with voice alone. Character singing — power and presence matter more than pretty tone. Military bark quality."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["physical_comedy", "acrobatics_light", "choreographic_staging", "hammer_throw_choreography"],
+        "stamina": "very_high",
+        "notes": "Extremely physical role — throwing children (stage combat), hammer throw sequences, acrobatic comedy. Must appear powerful and athletic. The PE lesson sequence is a massive physical set piece."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["comic villain", "pantomime antagonist", "physical comedian", "terrifying authority figure"],
+        "emotional_range": "high — rage, glee, menace, false sweetness, vulnerability (glimpses), triumph",
+        "comedy_skills": true,
+        "notes": "Must balance genuine menace with pantomime comedy. Children in the audience should be both terrified and delighted. If played by a man in drag, must commit fully to the character without making gender the joke. The comedy comes from the character's extremity, not the cross-dressing."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["physical_comedy", "stage_combat", "hammer_throw_staging", "intimidation", "cross_gender_performance"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "One of the most spectacular villain roles in musical theatre. Physically demanding, comedically brilliant, and deeply satisfying. Audiences LOVE a great Trunchbull. Career-defining for physical comedians.",
+        "common_casting": "Tall, physically commanding performer (traditionally male) with enormous comedic ability, vocal power, and athletic stamina. Must be fearless.",
+        "standout_opportunity": "A legendary Trunchbull steals every scene and becomes the talk of the show. This is the role audiences remember and tell their friends about."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_comedy", "villain_work", "vocal_power", "stage_combat", "stamina", "audience_interaction", "character_transformation"],
+        "challenge_areas": ["maintaining_physical_demands_nightly", "balancing_scary_and_funny", "if_cross_gender_respectful_portrayal"],
+        "recommended_for": ["physical comedians wanting a dream role", "performers with athletic ability and vocal power", "character actors ready to go BIG"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical presence — can they fill a stage?", "genuine comedic brilliance", "vocal power", "athletic ability", "willingness to be completely ridiculous AND terrifying"],
+        "common_mistakes": ["being scary without being funny", "being funny without being scary", "not committing to physicality", "making the cross-dressing the joke"],
+        "tips": ["Trunchbull 100% believes she is right and children are the enemy. She's not performing evil — she IS this person. The comedy comes from her absolute conviction. Get fit, get loud, get fearless."]
+      },
+      "key_songs": [
+        {"title": "The Hammer", "type": "solo", "notes": "Trunchbull's anthem about her Olympic glory. Physical, powerful, hilarious."},
+        {"title": "The Smell of Rebellion", "type": "solo_with_ensemble", "notes": "Trunchbull declares war on the children. Builds to comic frenzy. Massive physical set piece."},
+        {"title": "Chokey scene/Bruce sequence", "type": "scene", "notes": "Not a song per se, but the cake/Bruce Bogtrotter sequence is a masterclass in comic villainy."}
+      ]
+    },
+    {
+      "id": "matilda-miss-honey",
+      "name": "Miss Jennifer Honey",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 22, "max": 35},
+      "description": "Matilda's kind, gentle, timid teacher who recognizes her genius. She's sweet but not weak — she carries deep trauma from her own childhood under Trunchbull's guardianship. Her parallel journey with Matilda — both finding the courage to stand up — is the emotional spine of the show.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "soprano/mezzo-soprano",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid-high",
+        "style_notes": "Sweet, pure quality that builds to powerful belt in emotional climax. Must contrast with her quiet demeanor — when she sings full voice, it should be stunning. Legit soprano quality with contemporary belt capability."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "gentle_movement"],
+        "stamina": "moderate",
+        "notes": "Not a dance-heavy role. Movement reflects her timidity — small, contained, then gradually expanding as she gains courage."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["gentle teacher", "trauma survivor", "maternal figure", "reluctant hero"],
+        "emotional_range": "extreme — gentleness, fear, grief, hope, courage, love, triumph",
+        "comedy_skills": false,
+        "notes": "Must make timidity compelling rather than boring. Her backstory revelation (Trunchbull's niece, parents murdered/actually aunt killed her father) needs to be devastating. The mother-daughter bond with Matilda must feel earned and genuine. Must not be one-note sweet."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["emotional_depth", "vulnerability", "classroom_staging"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_get_cast"],
+        "why": "Beautiful leading role requiring emotional depth and vocal beauty. Less showy than Trunchbull but equally demanding. The emotional payoff roles — when Miss Honey finally stands up, audiences weep.",
+        "common_casting": "Warm, sympathetic actress with beautiful voice and genuine vulnerability. Often the performer audiences connect with most deeply.",
+        "standout_opportunity": "'My House' duet with Matilda is devastating. A great Miss Honey makes the audience cry and feel empowered simultaneously."
+      },
+      "growth_profile": {
+        "skills_developed": ["emotional_acting", "soprano_belt", "vulnerability", "scene_partner_work_with_children", "character_arc"],
+        "challenge_areas": ["making_quiet_interesting", "backstory_revelation", "not_being_overshadowed_by_comic_characters"],
+        "recommended_for": ["sopranos wanting dramatic depth", "actresses who excel at emotional roles", "performers building leading lady skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine warmth", "beautiful voice", "can they make quiet compelling?", "emotional truth", "chemistry with child performer"],
+        "common_mistakes": ["being saccharine instead of genuine", "no inner steel — Honey must have backbone beneath the gentleness", "upstaged by own timidity"],
+        "tips": ["Miss Honey is not weak — she's damaged. She's spent her whole life being controlled by fear. Finding the steel underneath the sweetness is what makes this role extraordinary. Her courage is the mirror of Matilda's."]
+      },
+      "key_songs": [
+        {"title": "Pathetic", "type": "solo", "notes": "Honey's self-assessment. Painful, honest, builds to determination. The turn in this song is everything."},
+        {"title": "My House", "type": "duet", "notes": "With Matilda. Tender, devastating, the moment they become family."},
+        {"title": "This Little Girl", "type": "solo", "notes": "About recognizing Matilda's genius. Warm, determined, protective."},
+        {"title": "When I Grow Up", "type": "ensemble", "notes": "Part of the iconic swings number. Honey's presence adds poignancy."}
+      ]
+    },
+    {
+      "id": "matilda-mr-wormwood",
+      "name": "Mr. Wormwood",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 50},
+      "description": "Matilda's dreadful father — a sleazy, dishonest used car dealer who thinks he's brilliant but is profoundly stupid. He's vain, ignorant, sexist, and hilariously awful. A big, broad, gloriously terrible parent.",
+      "vocal": {
+        "range": "A2-F4",
+        "voice_type": "baritone/character tenor",
+        "belt_required": true,
+        "belt_range": "D3-E4",
+        "tessitura": "mid",
+        "style_notes": "Big, brash, character voice. Needs to be loud, confident, and completely wrong. Think used car dealer energy — always selling, always lying, always loud."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["comedic_choreography", "physical_comedy"],
+        "stamina": "moderate",
+        "notes": "Some choreographic comedy sequences. Physical comedy more important than technical dance. Must move with misplaced swagger."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["buffoon father", "comic villain", "pompous idiot", "Dahl grotesque"],
+        "emotional_range": "moderate — pomposity, rage, greed, obliviousness, panic",
+        "comedy_skills": true,
+        "notes": "Big, broad Roald Dahl grotesque. Must be hilarious while being genuinely awful to Matilda. Physical comedy chops essential. The wig/hair gel running gag needs perfect timing."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": ["physical_comedy", "character_voice", "slimeball_energy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "Scene-stealing comic role with great material. Gets huge laughs and memorable moments. Less demanding than Trunchbull but still a fantastic showcase.",
+        "common_casting": "Physical comedian with strong vocal ability and zero shame. Must be willing to be completely ridiculous.",
+        "standout_opportunity": "'Telly' and the family scenes are audience favorites. A great Mr. Wormwood gets quoted in the car park."
+      },
+      "growth_profile": {
+        "skills_developed": ["broad_comedy", "character_voice", "physical_comedy", "antagonist_work", "british_style_comedy"],
+        "challenge_areas": ["sustaining_character_energy", "finding_variety_in_awfulness"],
+        "recommended_for": ["comedic actors who go big", "performers building villain/antagonist skills", "those who love Roald Dahl's style"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["big physical comedy", "character commitment", "vocal energy", "slimy charm"],
+        "common_mistakes": ["not going big enough — Dahl demands extremity", "being mean without being funny", "inconsistent character voice"],
+        "tips": ["Mr. Wormwood genuinely thinks he's the smartest person alive. He's not playing dumb — he IS this confident, this wrong, this oblivious. The comedy comes from his absolute certainty in his own genius."]
+      },
+      "key_songs": [
+        {"title": "Telly", "type": "ensemble", "notes": "Family number about the glory of television. Hilariously stupid, big energy."},
+        {"title": "All I Know", "type": "duet", "notes": "With Mrs. Wormwood. Arguing philosophy of life. Comedy gold."},
+        {"title": "Loud", "type": "ensemble", "notes": "The Wormwood family anthem. Garish, over-the-top, brilliantly awful."}
+      ]
+    },
+    {
+      "id": "matilda-mrs-wormwood",
+      "name": "Mrs. Wormwood",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 30, "max": 50},
+      "description": "Matilda's vain, self-absorbed mother — a competitive amateur ballroom dancer who cares only about her appearance and dancing. She's shallow, neglectful, and fabulously tacky. A big, glamorous, hilariously terrible parent.",
+      "vocal": {
+        "range": "Bb3-Eb5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid-high",
+        "style_notes": "Big, brassy belt with diva quality. Needs to sound confident, flashy, and slightly desperate. Think reality TV contestant energy."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["ballroom", "latin", "comedic_choreography"],
+        "stamina": "moderate_to_high",
+        "notes": "Must be a genuinely good dancer — ballroom/Latin sequences with Rudolpho are significant choreographic moments. The irony is she's actually talented at ONE thing."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["vain mother", "glamorous grotesque", "comic diva", "neglectful parent"],
+        "emotional_range": "moderate — vanity, irritation, ambition, obliviousness, occasional maternal guilt",
+        "comedy_skills": true,
+        "notes": "Must be fabulously awful while maintaining comedic appeal. The ballroom dancing sequences need to be both impressive and funny. She genuinely doesn't understand why Matilda reads books."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 2,
+        "special_skills": ["ballroom_dance", "glamorous_physicality", "diva_energy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_get_cast"],
+        "why": "Fun featured role requiring triple-threat skills — must sing, act, AND dance (ballroom). Great for performers who want to showcase dance alongside comedy.",
+        "common_casting": "Glamorous comic actress who can genuinely dance. Often the cast member who looks like they belong on Strictly Come Dancing.",
+        "standout_opportunity": "The ballroom sequences are visual highlights. A Mrs. Wormwood who can genuinely dance AND be hilarious is gold."
+      },
+      "growth_profile": {
+        "skills_developed": ["ballroom_dance", "comic_diva_work", "character_acting", "belt_technique", "costume_work"],
+        "challenge_areas": ["making_neglect_funny_without_losing_truth", "ballroom_technique"],
+        "recommended_for": ["dancers wanting acting/singing roles", "comedic actresses with movement skills", "performers who love playing fabulous villains"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["can they dance? (non-negotiable)", "comic glamour", "big personality", "belt power"],
+        "common_mistakes": ["can't actually dance — this role requires it", "playing generic mean mum", "not tacky enough"],
+        "tips": ["Mrs. Wormwood thinks she's Beyoncé and dresses like a Real Housewife. She's not evil — she's oblivious. The world revolves around her next dance competition and she genuinely can't understand why that's a problem."]
+      },
+      "key_songs": [
+        {"title": "Loud", "type": "ensemble", "notes": "Family number. Mrs. Wormwood's section is the most choreographed."},
+        {"title": "All I Know", "type": "duet", "notes": "With Mr. Wormwood. Comic argument."},
+        {"title": "Tango de Señora Wormwood", "type": "duet_with_dance", "notes": "With Rudolpho. Ballroom showpiece."}
+      ]
+    },
+    {
+      "id": "matilda-rudolpho",
+      "name": "Rudolpho",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 25, "max": 45},
+      "description": "Mrs. Wormwood's ridiculously handsome, over-the-top Latin ballroom dance partner. He's all smoulder, no substance — a walking parody of dance show professionals. Provides great physical comedy and gorgeous dance sequences.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor/baritone",
+        "belt_required": false,
+        "belt_range": "E3-F4",
+        "tessitura": "mid",
+        "style_notes": "Character singing with Latin flair. Accent work important. Doesn't need big vocal power — needs charm and comedic timing."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["ballroom", "latin", "tango", "salsa", "comedic_choreography"],
+        "stamina": "high",
+        "notes": "MUST be an excellent dancer — this is primarily a dance role. Ballroom/Latin technique is non-negotiable. The comedy comes from being genuinely good while being hilariously vain about it."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["vain dancer", "comic lothario", "parody", "scene stealer"],
+        "emotional_range": "low-moderate — vanity, smoulder, comedic passion",
+        "comedy_skills": true,
+        "notes": "Physical comedy and dance ability carry this role. Must commit to the parody completely. Every entrance should be an event."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": ["ballroom_dance_expert", "physical_comedy", "accent_work"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Dream role for male dancers. Small but memorable with great choreographic moments. Perfect for dancers building musical theatre credits.",
+        "common_casting": "Strong male dancer with comedy chops. Must look the part and move beautifully.",
+        "standout_opportunity": "The tango sequence is a visual highlight. A great Rudolpho gets remembered for the dance."
+      },
+      "growth_profile": {
+        "skills_developed": ["partner_dance_performance", "comedic_physicality", "character_dance", "stage_presence"],
+        "challenge_areas": ["singing_demands_(minimal)", "sustaining_character_through_limited_appearances"],
+        "recommended_for": ["male dancers wanting musical theatre roles", "performers with ballroom training", "physical comedians who can dance"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["excellent dance technique (ballroom/Latin)", "physical comedy", "smoulder ability", "stage presence"],
+        "common_mistakes": ["can't actually dance well enough", "playing it too real instead of parody", "not committing to the vanity"],
+        "tips": ["Rudolpho exists in a telenovela in his own mind. Every look is a smoulder, every step is perfection, every hair is in place. He's the greatest dancer who ever lived — just ask him."]
+      },
+      "key_songs": [
+        {"title": "Tango de Señora Wormwood", "type": "duet_with_dance", "notes": "With Mrs. Wormwood. THE dance showcase. Must be spectacular."},
+        {"title": "Loud", "type": "ensemble", "notes": "Part of the family number with dance break."}
+      ]
+    },
+    {
+      "id": "matilda-mrs-phelps",
+      "name": "Mrs. Phelps",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 40, "max": 65},
+      "description": "The kind, warm librarian who is Matilda's first true friend and ally. She listens to Matilda's stories with genuine wonder and encourages her imagination. A gentle, nurturing presence who represents the adult world as it should be.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Warm, inviting vocal quality. Supporting vocals. Doesn't need power — needs warmth and genuine engagement."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance required. Seated/standing staging in library scenes."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["nurturing mentor", "kind listener", "bookworm", "quiet ally"],
+        "emotional_range": "moderate — warmth, wonder, gentle encouragement, concern",
+        "comedy_skills": false,
+        "notes": "Must be genuinely captivated by Matilda's stories. The audience should feel safe whenever Mrs. Phelps is on stage. Her reactions to Matilda's storytelling carry the narrative sections."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["active_listening", "gentle_presence"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Lovely, low-pressure role for mature actresses. Important emotional function without heavy demands. Great for building stage confidence.",
+        "common_casting": "Warm, maternal actress. Often cast with women who radiate genuine kindness.",
+        "standout_opportunity": "A great Mrs. Phelps makes the library scenes feel like a sanctuary. Audiences love her."
+      },
+      "growth_profile": {
+        "skills_developed": ["supporting_role_technique", "active_listening_on_stage", "gentle_character_work"],
+        "challenge_areas": ["staying_engaged_through_long_storytelling_scenes", "making_quiet_presence_felt"],
+        "recommended_for": ["mature performers building stage experience", "actresses who excel at warmth", "ensemble performers stepping into named roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine warmth", "good listening skills", "maternal quality", "expressive reactions"],
+        "common_mistakes": ["being forgettable", "over-acting reactions to stories", "not enough investment in Matilda's narratives"],
+        "tips": ["Mrs. Phelps loves stories as much as Matilda does. She's not humoring a child — she's genuinely enthralled. That shared wonder is what makes their friendship special."]
+      },
+      "key_songs": [
+        {"title": "Library scenes", "type": "scene", "notes": "Primarily a speaking/listening role within narrative sequences."},
+        {"title": "Ensemble numbers", "type": "ensemble", "notes": "Supports ensemble vocals as needed."}
+      ]
+    },
+    {
+      "id": "matilda-lavender",
+      "name": "Lavender",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 8, "max": 14},
+      "description": "Matilda's brave, mischievous best friend at school. She's bold, loyal, and the first student to stand with Matilda. She places the newt in Trunchbull's water — a pivotal act of rebellion. A great child role with real character moments.",
+      "vocal": {
+        "range": "B3-D5",
+        "voice_type": "child soprano",
+        "belt_required": false,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Clear child voice with personality. Ensemble-level vocals with featured moments. Needs confidence and clarity."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["choreographic_staging", "children_ensemble_choreography"],
+        "stamina": "moderate",
+        "notes": "Part of children's ensemble choreography. Must keep up with energetic staging."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["loyal friend", "brave sidekick", "mischief maker"],
+        "emotional_range": "moderate — bravery, loyalty, mischief, fear, triumph",
+        "comedy_skills": true,
+        "notes": "Must have genuine chemistry with Matilda. The newt scene requires comic timing and bravery. Should feel like a real kid — not a performed version of one."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["comic_timing", "prop_work_newt"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Best friend role — great for young performers building named-role confidence. Visible, important, but less pressure than Matilda.",
+        "common_casting": "Confident, natural young performer with comedy chops. Must feel like a genuine kid.",
+        "standout_opportunity": "The newt scene is a highlight. A great Lavender gets the audience cheering."
+      },
+      "growth_profile": {
+        "skills_developed": ["stage_confidence", "scene_partner_work", "comic_timing", "ensemble_skills", "featured_moments"],
+        "challenge_areas": ["not_upstaging_Matilda", "maintaining_character_consistency"],
+        "recommended_for": ["young performers ready for their first named role", "confident kids building performance skills", "children who are natural leaders"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["natural confidence", "chemistry with Matilda actress", "comic timing", "genuine kid energy"],
+        "common_mistakes": ["trying to steal scenes", "overplaying the bravery", "losing character when not speaking"],
+        "tips": ["Lavender is the kid who always sits in the front row and raises her hand first. She's brave not because she's fearless, but because she thinks Matilda is worth being brave for."]
+      },
+      "key_songs": [
+        {"title": "When I Grow Up", "type": "ensemble", "notes": "Featured in the iconic children's number."},
+        {"title": "Revolting Children", "type": "ensemble", "notes": "Part of the rebellion. Lavender is prominent."},
+        {"title": "Bruce", "type": "ensemble", "notes": "Part of the cake scene support."}
+      ]
+    },
+    {
+      "id": "matilda-bruce",
+      "name": "Bruce Bogtrotter",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 9, "max": 15},
+      "description": "The sweet, round boy forced by Trunchbull to eat an entire enormous chocolate cake in front of the school. His scene is one of the most famous in the show — a triumph of the human spirit (via chocolate). A small role with MASSIVE audience impact.",
+      "vocal": {
+        "range": "C4-C5",
+        "voice_type": "child tenor/treble",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Minimal singing — this is primarily an acting/physical comedy role. Must be heard clearly in the cake scene."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["physical_comedy", "staging"],
+        "stamina": "moderate",
+        "notes": "The cake scene requires sustained physical comedy. Must eat (fake) cake convincingly while performing to the audience."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["loveable underdog", "audience champion", "brave everykid"],
+        "emotional_range": "moderate — fear, determination, nausea, triumph",
+        "comedy_skills": true,
+        "notes": "The cake scene is ALL about commitment. Must make the audience believe in the struggle and the triumph. Physical comedy and audience connection essential. This one scene can make a young performer's reputation."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["physical_comedy", "food_acting", "audience_connection"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_stand_out"],
+        "why": "Tiny role, HUGE moment. The cake scene is the most talked-about scene in the show. Perfect for a young performer who can commit to one incredible moment.",
+        "common_casting": "Loveable young performer, ideally larger build (though this is flexible in community/school theatre). Must have physical comedy ability and audience connection.",
+        "standout_opportunity": "If you nail the cake scene, you're the kid everyone remembers. One scene, lifetime memories."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_comedy", "audience_engagement", "commitment_to_moment", "working_under_pressure"],
+        "challenge_areas": ["making_one_scene_count", "staying_in_character_while_eating"],
+        "recommended_for": ["young performers who need a confidence boost", "physical comedy naturals", "kids who light up when they perform"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["loveable quality", "physical comedy ability", "audience connection", "willingness to be messy"],
+        "common_mistakes": ["not committing to the eating", "losing character during the scene", "not enough variety in reactions"],
+        "tips": ["Bruce is terrified but he never gives up. He eats that entire cake because the alternative is letting Trunchbull win. Make the audience root for every single bite."]
+      },
+      "key_songs": [
+        {"title": "Bruce (cake scene)", "type": "ensemble_feature", "notes": "The iconic cake eating scene. More physical theatre than song. Audience interaction is key."},
+        {"title": "Revolting Children", "type": "ensemble", "notes": "Part of the rebellion. Bruce is a hero now."}
+      ]
+    },
+    {
+      "id": "matilda-escapologist",
+      "name": "The Escapologist / Miss Honey's Father",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 50},
+      "description": "A mysterious figure from Matilda's stories who is gradually revealed to be Miss Honey's father. He appears in flashback/story sequences performing escape acts. His story parallels the themes of escape and freedom. A beautiful, ethereal role.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor/baritone",
+        "belt_required": false,
+        "belt_range": "E3-F4",
+        "tessitura": "mid",
+        "style_notes": "Warm, lyrical quality. Storytelling voice. Needs beauty and clarity for the narrative sequences."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["physical_theatre", "circus_skills", "mime"],
+        "stamina": "moderate",
+        "notes": "Escape act sequences require physical theatre skills — chains, boxes, acrobatic elements. Must appear skilled and graceful."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["mysterious performer", "tragic father", "story character", "escapist"],
+        "emotional_range": "moderate — wonder, love, determination, tragedy",
+        "comedy_skills": false,
+        "notes": "Must create a sense of wonder and mystery. The gradual reveal of his identity should be deeply moving. Works in a different theatrical register than the rest of the show — more poetic, more magical."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": ["physical_theatre", "circus_skills_basic", "ethereal_presence"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_grow"],
+        "why": "Unique, beautiful role that develops physical theatre skills. Not a standard musical theatre part — great for performers wanting to expand their range into physical storytelling.",
+        "common_casting": "Physically skilled performer with presence and warmth. Often cast with actors who have circus/physical theatre background.",
+        "standout_opportunity": "The escape sequences are magical theatrical moments. A great Escapologist adds a layer of wonder to the whole show."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_theatre", "narrative_performance", "circus_skills", "ethereal_acting"],
+        "challenge_areas": ["maintaining_mystery", "physical_skill_demands"],
+        "recommended_for": ["performers with circus/physical theatre interest", "actors wanting to develop movement skills", "performers who work well in non-naturalistic styles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical skill", "presence", "warmth", "ability to create wonder"],
+        "common_mistakes": ["being too grounded — this character lives in story", "not enough physical ability", "missing the emotional connection to Miss Honey's story"],
+        "tips": ["The Escapologist exists between reality and story. He's real AND magical. Find that balance between human warmth and theatrical wonder."]
+      },
+      "key_songs": [
+        {"title": "Story sequences", "type": "narrative", "notes": "Primarily a physical theatre/acting role within Matilda's stories."},
+        {"title": "I'm Here", "type": "ensemble", "notes": "Part of the emotional finale."}
+      ]
+    },
+    {
+      "id": "matilda-acrobat",
+      "name": "The Acrobat / Miss Honey's Mother",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 25, "max": 45},
+      "description": "The Escapologist's wife and Miss Honey's mother in Matilda's stories. She's beautiful, brave, and tragic — she dies in childbirth (or is killed by Trunchbull depending on the production). Appears in story sequences as a graceful, ethereal presence.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "soprano",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid-high",
+        "style_notes": "Pure, beautiful soprano quality. Ethereal and warm. Limited singing but what there is must be lovely."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["acrobatics", "aerial", "physical_theatre", "circus_skills"],
+        "stamina": "moderate",
+        "notes": "The acrobat sequences are the most physically demanding non-Trunchbull moments. Must be genuinely skilled — aerial/acrobatic ability required in most productions."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["tragic heroine", "ethereal mother", "story character", "graceful performer"],
+        "emotional_range": "moderate — love, bravery, grace, tragedy",
+        "comedy_skills": false,
+        "notes": "Like the Escapologist, operates in a poetic register. Must convey grace, love, and eventual tragedy through physical storytelling."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 1,
+        "quick_changes": 1,
+        "special_skills": ["acrobatics", "aerial_skills", "physical_theatre", "graceful_movement"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Unique physical theatre role. Perfect for dancers/acrobats wanting musical theatre experience. Beautiful, meaningful, and physically challenging.",
+        "common_casting": "Skilled acrobat or dancer with grace and presence. Physical ability is the primary casting criterion.",
+        "standout_opportunity": "The acrobatic sequences are breathtaking when done well. A great Acrobat creates genuine magic."
+      },
+      "growth_profile": {
+        "skills_developed": ["performance_acrobatics", "physical_storytelling", "theatrical_presence", "working_in_narrative_sequences"],
+        "challenge_areas": ["acrobatic_skill_requirements", "conveying_emotion_through_movement"],
+        "recommended_for": ["acrobats/aerial artists wanting theatre experience", "dancers with circus skills", "physically skilled performers building credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["acrobatic/aerial ability (essential)", "grace", "presence", "emotional connection through movement"],
+        "common_mistakes": ["not skilled enough physically", "too athletic and not enough artistry", "missing emotional connection"],
+        "tips": ["The Acrobat is a mother who performs incredible feats of bravery because she loves her family. The acrobatics aren't tricks — they're expressions of love and courage. Find the heart inside the physical skill."]
+      },
+      "key_songs": [
+        {"title": "Story sequences", "type": "narrative", "notes": "Primarily a physical theatre/acrobatic role."},
+        {"title": "My House", "type": "background", "notes": "May appear in emotional moments connecting to Miss Honey's story."}
+      ]
+    },
+    {
+      "id": "matilda-children-ensemble",
+      "name": "Children's Ensemble — Students of Crunchem Hall",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {"min": 7, "max": 15},
+      "description": "The students of Crunchem Hall who live under Trunchbull's reign of terror. They're Matilda's classmates, her army, and eventually her revolutionaries. The children's ensemble is the energy engine of this show — 'When I Grow Up' and 'Revolting Children' are their moments of glory.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "children's chorus",
+        "belt_required": false,
+        "belt_range": "C4-C5 (general)",
+        "tessitura": "mid",
+        "style_notes": "Strong unison and harmony singing. Tim Minchin's lyrics demand perfect diction from every child. Energy and clarity are more important than individual vocal power."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["high_energy_choreography", "swing_choreography", "physical_theatre", "character_movement"],
+        "stamina": "high",
+        "notes": "Significant choreographic demands — 'When I Grow Up' (swings!), 'Revolting Children' (rebellion choreography), classroom staging. Must maintain energy throughout a long show."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["school children", "rebels", "underdogs", "community"],
+        "emotional_range": "moderate — fear, joy, rebellion, triumph, friendship",
+        "comedy_skills": true,
+        "notes": "Each child should be a distinct character, not a generic 'kid'. Must react to Trunchbull believably — genuine fear that turns to courage. The revolution should feel earned."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 6,
+        "quick_changes": 1,
+        "special_skills": ["diction", "high_energy", "character_creation", "ensemble_unity"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_get_cast"],
+        "why": "Exceptional ensemble experience for young performers. The children ARE the show in many ways. Develops every skill — singing, dancing, acting, teamwork, stamina. Perfect stepping stone to named roles.",
+        "common_casting": "Energetic, focused young performers who can sing, move, and maintain character. Directors look for kids who work well as a team.",
+        "standout_opportunity": "'Revolting Children' is one of the great ensemble moments in musical theatre. Being part of this number is an experience young performers never forget."
+      },
+      "growth_profile": {
+        "skills_developed": ["ensemble_discipline", "diction", "choreography", "stamina", "teamwork", "character_creation", "high_energy_performance"],
+        "challenge_areas": ["maintaining_focus_through_long_show", "diction_on_fast_songs", "sustaining_energy"],
+        "recommended_for": ["young performers building fundamental skills", "children ready for their first big show", "young performers who thrive in team environments"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["focus and discipline", "clear singing voice", "movement ability", "team player attitude", "genuine energy"],
+        "common_mistakes": ["mugging to the audience", "not learning lyrics properly", "losing energy in Act 2", "forgetting character when not featured"],
+        "tips": ["You are Matilda's army. Every single one of you matters. Know every word, hit every move, create a real kid character, and when 'Revolting Children' kicks in — give it EVERYTHING. That's what this show is about."]
+      },
+      "key_songs": [
+        {"title": "Miracle", "type": "ensemble", "notes": "Opening number. Sets the world. Introduces the children's energy."},
+        {"title": "School Song", "type": "ensemble", "notes": "Alphabet acrobatics. Incredibly complex staging and lyrics. A showpiece."},
+        {"title": "When I Grow Up", "type": "ensemble", "notes": "THE iconic number. Children on swings. Hope, longing, and beauty. Unforgettable."},
+        {"title": "Revolting Children", "type": "ensemble", "notes": "The rebellion. Explosive, triumphant, the moment the show erupts. Audience goes wild."},
+        {"title": "Bruce", "type": "ensemble", "notes": "Supporting Bruce during the cake scene. Building chant and support."}
+      ]
+    },
+    {
+      "id": "matilda-adult-ensemble",
+      "name": "Adult Ensemble — Doctors, Parents, Teachers, Townspeople",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {"min": 18, "max": 65},
+      "description": "The adult ensemble creates the Dahl-esque world of grotesque parents, beleaguered doctors, and community figures. They play multiple roles — pushy parents in 'Miracle', doctors in the hospital, teachers at school, and various townspeople. The adult ensemble provides the satirical edge.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "mixed",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Strong ensemble singing with character voices. Must handle Tim Minchin's complex harmonies and rapid lyrics. Each track has its own vocal demands."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["choreographic_staging", "physical_comedy", "character_movement"],
+        "stamina": "high",
+        "notes": "'Miracle' opening number has significant choreography. Must be physically versatile — playing multiple characters requires quick physical transformations."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["grotesque parents", "authority figures", "comic characters", "Dahl archetypes"],
+        "emotional_range": "moderate — comedy, satire, grotesque, occasional warmth",
+        "comedy_skills": true,
+        "notes": "Must create multiple distinct characters quickly. Dahl's world requires big, bold character choices — nothing subtle about the adult world in Matilda. Think cartoon reality."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": ["quick_character_changes", "physical_comedy", "dahl_grotesque_style"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun ensemble work with great character-creation opportunities. Tim Minchin's writing gives even the ensemble memorable moments.",
+        "common_casting": "Versatile singer-actors who can play multiple characters convincingly. Physical comedy ability valued.",
+        "standout_opportunity": "'Miracle' gives every parent a featured moment of horrible parenting. Make yours the one the audience remembers."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_versatility", "quick_changes", "ensemble_discipline", "dahl_comedy_style", "physical_comedy"],
+        "challenge_areas": ["rapid_character_switching", "maintaining_energy", "diction_on_complex_lyrics"],
+        "recommended_for": ["character actors building credits", "ensemble performers who create distinct characters", "comedic actors wanting to develop physical skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["character versatility", "physical comedy", "strong ensemble voice", "diction", "willingness to go big"],
+        "common_mistakes": ["generic characters", "not committing to Dahl's world", "poor diction on Minchin's lyrics"],
+        "tips": ["Every parent in 'Miracle' thinks their child is the greatest gift to humanity. Find your parent's specific delusion. In Dahl's world, adults are either wonderful (Honey, Phelps) or grotesque (everyone else). Commit to the grotesque — it's more fun."]
+      },
+      "key_songs": [
+        {"title": "Miracle", "type": "ensemble", "notes": "Opening number. Each parent gets their moment of deluded pride. Big, bold, satirical."},
+        {"title": "School Song", "type": "ensemble", "notes": "Complex staging and vocal parts."},
+        {"title": "The Smell of Rebellion", "type": "ensemble", "notes": "Supporting Trunchbull's reign of terror."},
+        {"title": "Revolting Children", "type": "ensemble", "notes": "Part of the grand finale rebellion."},
+        {"title": "When I Grow Up", "type": "ensemble", "notes": "Adult perspectives woven into children's number."}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1633 @@
+{
+  "musical": {
+    "id": "jersey-boys",
+    "title": "Jersey Boys",
+    "music_by": "Bob Gaudio (original songs by The Four Seasons)",
+    "lyrics_by": "Bob Crewe (original songs)",
+    "book_by": "Marshall Brickman and Rick Elice",
+    "based_on": "The true story of Frankie Valli and The Four Seasons",
+    "year_premiered": 2005,
+    "broadway_opening": "2005-11-06",
+    "setting": "Newark, New Jersey; New York City; and various tour locations",
+    "time_period": "1950s through 1990s",
+    "themes": [
+      "Rise to fame and its cost",
+      "Loyalty and betrayal",
+      "Brotherhood and friendship",
+      "The price of success",
+      "Working-class ambition",
+      "Italian-American identity",
+      "Perseverance through adversity"
+    ],
+    "genre_tags": [
+      "Jukebox",
+      "Biographical",
+      "Rock/Pop",
+      "Drama",
+      "Period piece"
+    ],
+    "vocal_style": "1960s pop-rock with signature falsetto. Precise Four Seasons vocal harmonies are the foundation of the entire show.",
+    "dance_intensity": "moderate",
+    "orchestra_size": "Small rock band (7-10 players) \u2014 keys, guitars, bass, drums, reeds, trumpet",
+    "typical_cast_size": "15-25 (many actors play multiple roles)",
+    "age_range": "18-60",
+    "difficulty_overall": "advanced",
+    "junior_version_available": false,
+    "license_holder": "Theatrical Rights Worldwide (TRW)",
+    "synopsis": "Four guys from the wrong side of the tracks in Newark, New Jersey form a band and become one of the greatest pop groups of all time. Each season of the show is narrated by a different band member, revealing how Frankie Valli's extraordinary falsetto voice, Bob Gaudio's songwriting genius, Tommy DeVito's street connections, and Nick Massi's musical arrangements combined to create magic \u2014 and how success, mob debt, personal tragedy, and creative differences nearly destroyed everything. Featuring over 30 hit songs including 'Sherry,' 'Big Girls Don't Cry,' 'Walk Like a Man,' 'Can't Take My Eyes Off You,' and 'December 1963 (Oh, What a Night).'"
+  },
+  "roles": [
+    {
+      "id": "frankie-valli",
+      "name": "Frankie Valli",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 40
+      },
+      "description": "The legendary voice of The Four Seasons. Frankie is a sweet, loyal kid from the Newark streets who happens to possess one of the most distinctive voices in pop music history. His extraordinary falsetto carries the group to superstardom, but success brings devastating personal costs \u2014 a failed marriage, the death of his daughter, and the betrayal of friends. Through it all, Frankie keeps singing.",
+      "vocal": {
+        "range": "A2-C6 (full falsetto)",
+        "voice_type": "Tenor with exceptional falsetto",
+        "belt_required": true,
+        "belt_range": "E4-A4 (chest), falsetto to C6",
+        "tessitura": "Extremely wide \u2014 from conversational chest voice to stratospheric falsetto. Must seamlessly transition between registers.",
+        "style_notes": "THE most vocally demanding role in jukebox musical theatre. Must replicate Frankie Valli's signature falsetto on iconic songs the audience knows intimately. The voice must be powerful, sustained, and emotionally expressive across an extraordinary range. This is not an approximation \u2014 audiences expect the real thing."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "1960s pop choreography",
+          "Four Seasons signature moves",
+          "Period-specific staging"
+        ],
+        "stamina": "Extremely high \u2014 singing at extreme range for nearly the entire show",
+        "notes": "The Four Seasons' coordinated moves and stage presentation must be precise. The dancing is period-specific rather than technically demanding, but it must be performed while singing at full power."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Everyman hero",
+          "Musical genius",
+          "Loyal friend",
+          "Tragic figure"
+        ],
+        "emotional_range": "Very wide \u2014 youthful excitement, love, heartbreak, grief, betrayal, resilience, triumph",
+        "comedy_skills": true,
+        "notes": "Must age convincingly from teenager to middle-aged man. The personal tragedies \u2014 especially his daughter Francine's death \u2014 require devastating emotional truth. Despite being the star, Frankie is the most selfless of the four, which makes his suffering more poignant."
+      },
+      "performance": {
+        "stage_time_percentage": 85,
+        "solo_songs": 10,
+        "duets": 3,
+        "ensemble_numbers": 8,
+        "quick_changes": 6,
+        "special_skills": [
+          "Sustained falsetto singing over 2+ hours",
+          "Aging from teen to 50s",
+          "Period pop choreography while singing",
+          "Italian-American accent",
+          "Emotional devastation while maintaining vocal technique"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Frankie Valli is one of the most vocally demanding roles in all of musical theatre. The falsetto requirement is non-negotiable and eliminates most performers from contention. For those who can do it, this role develops vocal technique, emotional depth, aging performance, and stamina at the highest level.",
+        "common_casting": "Tenors with exceptional, sustained falsetto ability. This is the primary \u2014 often the only \u2014 casting criterion. The voice must be there. Everything else can be developed.",
+        "standout_opportunity": "'Can't Take My Eyes Off You' is a show-stopping solo that brings audiences to their feet. 'My Eyes Adored You' after Francine's death can devastate a theatre."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Extreme vocal range and falsetto technique",
+          "Vocal stamina over demanding score",
+          "Aging performance across decades",
+          "Emotional depth within pop music performance",
+          "Leading a biographical show",
+          "Italian-American dialect",
+          "Period performance styles across decades"
+        ],
+        "challenge_areas": [
+          "Vocal health \u2014 the falsetto demands are extreme",
+          "Making iconic songs feel fresh while meeting audience expectations",
+          "Emotional vulnerability during technically demanding singing",
+          "Aging convincingly from teen to middle age"
+        ],
+        "recommended_for": [
+          "Exceptional tenors with proven falsetto ability",
+          "Performers seeking the ultimate vocal challenge",
+          "Actor-singers wanting biographical role depth",
+          "Those with natural Italian-American cultural connection"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The falsetto. Period. Can you sustain it at performance level?",
+          "Vocal stamina across multiple demanding songs",
+          "Warmth, likability, and everyman quality",
+          "The ability to age and show emotional range",
+          "Italian-American authenticity"
+        ],
+        "common_mistakes": [
+          "Approximating the falsetto rather than owning it",
+          "Running out of voice by the audition's end",
+          "Playing Frankie as a star rather than a humble kid with a gift",
+          "Neglecting the dramatic scenes between songs"
+        ],
+        "tips": [
+          "If you don't have a strong, sustained falsetto \u2014 this isn't your role. Be honest with yourself.",
+          "Vocal health protocol is essential \u2014 steam, hydration, rest. You'll need it.",
+          "Listen to Frankie Valli's actual recordings obsessively \u2014 the nuances matter",
+          "The acting between the songs is what elevates good to great \u2014 invest in the drama",
+          "'Can't Take My Eyes Off You' is your calling card \u2014 make it unforgettable"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Sherry",
+          "type": "Group",
+          "notes": "The breakthrough hit. Falsetto showcase that electrifies the audience."
+        },
+        {
+          "title": "Big Girls Don't Cry",
+          "type": "Group",
+          "notes": "Signature Four Seasons hit. Falsetto harmonies."
+        },
+        {
+          "title": "Walk Like a Man",
+          "type": "Group",
+          "notes": "Power anthem. Full vocal group showcase."
+        },
+        {
+          "title": "Can't Take My Eyes Off You",
+          "type": "Solo",
+          "notes": "THE show-stopper. Builds from intimate to explosive. Standing ovation material."
+        },
+        {
+          "title": "My Eyes Adored You",
+          "type": "Solo",
+          "notes": "Devastating emotional solo after personal tragedy."
+        },
+        {
+          "title": "Working My Way Back to You",
+          "type": "Group",
+          "notes": "High-energy comeback number."
+        },
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "Ensemble",
+          "notes": "Finale number. Full company celebration that brings the house down."
+        }
+      ]
+    },
+    {
+      "id": "tommy-devito",
+      "name": "Tommy DeVito",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 45
+      },
+      "description": "The tough, streetwise founding member of The Four Seasons and narrator of the first season (Spring). Tommy is charismatic, dangerous, and deeply connected to the Newark mob world. He's the hustler who gets the group started but whose gambling debts and mob connections eventually threaten to destroy everything. Magnetic but destructive.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "Baritone / Low Tenor",
+        "belt_required": true,
+        "belt_range": "D4-E4",
+        "tessitura": "Mid-range with street-tough character delivery",
+        "style_notes": "Rock-influenced baritone with swagger. Must handle Four Seasons harmonies precisely while projecting tough-guy personality. The speaking/singing blend in narration scenes requires natural delivery."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "1960s pop choreography",
+          "Four Seasons staging",
+          "Street swagger"
+        ],
+        "stamina": "Moderate to high",
+        "notes": "Must nail the Four Seasons' coordinated performance style. Tommy's individual movement should project dangerous cool \u2014 street kid energy, mob swagger."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Hustler",
+          "Charismatic villain",
+          "Loyalty/betrayal",
+          "Street kid"
+        ],
+        "emotional_range": "Wide \u2014 charm, menace, desperation, loyalty, selfishness, regret",
+        "comedy_skills": true,
+        "notes": "Tommy narrates the first section with self-serving charm \u2014 he presents himself as the hero until the truth emerges. Must be enormously charismatic despite being fundamentally destructive. The audience should love him even when they know they shouldn't."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 8,
+        "quick_changes": 4,
+        "special_skills": [
+          "Italian-American accent",
+          "Direct address narration",
+          "Playing charismatic danger",
+          "Four Seasons choreography"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Tommy is the most complex dramatic role in the show \u2014 a charismatic destroyer who the audience can't stop watching. This role develops unreliable narrator technique, morally complex characterisation, and the ability to command an audience while playing someone deeply flawed.",
+        "common_casting": "Charismatic male performers with natural swagger and Italian-American authenticity. Street-smart energy is essential. Often the strongest actor in the Four Seasons lineup.",
+        "standout_opportunity": "Tommy's narration of the first season \u2014 presenting his self-serving version of events \u2014 is a masterclass in unreliable narration. The confrontation scenes where his debts are revealed are explosively dramatic."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Unreliable narrator technique",
+          "Morally complex characterisation",
+          "Charismatic villain performance",
+          "Italian-American dialect and culture",
+          "Direct audience address",
+          "Group vocal harmony"
+        ],
+        "challenge_areas": [
+          "Making Tommy likable despite his destructive behaviour",
+          "Handling the shift from narrator to antagonist",
+          "Maintaining vocal precision while acting intensely"
+        ],
+        "recommended_for": [
+          "Strong actors with vocal harmony ability",
+          "Performers who excel at morally complex characters",
+          "Those wanting to develop narration and direct address skills",
+          "Actors with natural street-smart charisma"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Charisma and dangerous charm",
+          "Strong vocal harmony ability",
+          "Italian-American authenticity",
+          "The ability to narrate directly to audience with confidence",
+          "Acting depth for the dramatic confrontation scenes"
+        ],
+        "common_mistakes": [
+          "Playing Tommy as purely a villain \u2014 he loves these guys",
+          "Not enough charm to justify why they keep him around",
+          "Weak harmonies \u2014 the Four Seasons sound is paramount",
+          "Italian accent becoming cartoonish"
+        ],
+        "tips": [
+          "Tommy believes his own narrative \u2014 he's the hero of HIS version",
+          "The charm must be REAL \u2014 we have to understand why they followed him",
+          "Study Jersey/Newark Italian-American culture \u2014 authenticity matters",
+          "The moment it all falls apart is your Oscar scene \u2014 prepare the emotional truth"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Sherry / Big Girls Don't Cry / Walk Like a Man",
+          "type": "Group",
+          "notes": "Four Seasons hits \u2014 Tommy must nail the harmony parts."
+        },
+        {
+          "title": "Earth Angel / Sunday Kind of Love",
+          "type": "Group",
+          "notes": "Early doo-wop numbers showing the group's origins."
+        },
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "Ensemble",
+          "notes": "Finale number \u2014 Tommy's section acknowledges his role in the story."
+        }
+      ]
+    },
+    {
+      "id": "bob-gaudio",
+      "name": "Bob Gaudio",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 18,
+        "max": 40
+      },
+      "description": "The songwriting genius of The Four Seasons and narrator of the third season (Fall). Bob is the youngest member \u2014 a prodigy who wrote 'Short Shorts' at 15 and went on to write virtually every Four Seasons hit. He's the most intelligent, measured, and articulate member, providing the intellectual counterpart to Frankie's emotional centre.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "Tenor",
+        "belt_required": true,
+        "belt_range": "E4-A4",
+        "tessitura": "Mid to upper tenor, clean pop-rock delivery",
+        "style_notes": "Clean, precise tenor voice for Four Seasons harmonies. Must blend perfectly in the group sound. Bob's solo moments tend to be more understated and intelligent rather than showy."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "1960s pop choreography",
+          "Four Seasons staging",
+          "Keyboard performance"
+        ],
+        "stamina": "Moderate",
+        "notes": "Must execute Four Seasons choreography while sometimes positioned at a keyboard. Bob's movement is less swagger than Tommy's \u2014 more controlled and measured."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Intellectual",
+          "Prodigy",
+          "Loyal friend",
+          "Observer"
+        ],
+        "emotional_range": "Moderate \u2014 thoughtfulness, frustration, loyalty, quiet determination",
+        "comedy_skills": true,
+        "notes": "Bob narrates the third section with intelligence and clarity \u2014 his perspective is the most balanced. Must convey genius-level creativity alongside genuine humility. The handshake agreement with Frankie is a pivotal trust scene."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 8,
+        "quick_changes": 3,
+        "special_skills": [
+          "Keyboard/piano performance (or convincing miming)",
+          "Italian-American/suburban accent",
+          "Narration",
+          "Four Seasons choreography"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Bob is the intellectual anchor of the four \u2014 less flashy than Frankie or Tommy but essential. This role develops ensemble harmony skills, narration technique, and the ability to convey intelligence and creativity on stage.",
+        "common_casting": "Clean-cut tenors with strong harmony skills and natural intelligence. Often the most musically skilled of the four performers.",
+        "standout_opportunity": "Bob's narration of the Fall section \u2014 where things start falling apart \u2014 is delivered with devastating clarity. His perspective is the most honest."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Precision vocal harmony",
+          "Playing intelligent characters authentically",
+          "Narration and direct address",
+          "Ensemble leadership through musicianship",
+          "Period authenticity"
+        ],
+        "challenge_areas": [
+          "Standing out in a less showy role",
+          "Making intelligence compelling on stage",
+          "Vocal blend precision"
+        ],
+        "recommended_for": [
+          "Strong tenors who excel at harmony",
+          "Actor-musicians with keyboard skills",
+          "Performers who prefer subtle, intelligent characters",
+          "Those building ensemble harmony experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Excellent vocal harmony ability",
+          "Clean tenor voice that blends",
+          "Natural intelligence and articulation",
+          "Keyboard skills (bonus)",
+          "Chemistry with the other three"
+        ],
+        "common_mistakes": [
+          "Trying to compete with Frankie or Tommy for attention",
+          "Not enough vocal precision in harmonies",
+          "Making Bob boring \u2014 he's a genius, not a wallflower"
+        ],
+        "tips": [
+          "Bob is the glue \u2014 his musicianship holds the group together",
+          "Study the real Bob Gaudio's songwriting \u2014 understand the creative mind",
+          "Your harmony part must be PERFECT \u2014 the Four Seasons sound depends on it",
+          "The handshake scene with Frankie defines both characters \u2014 invest in it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "All Four Seasons hits",
+          "type": "Group",
+          "notes": "Bob sings harmony on every hit. Precision is essential."
+        },
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "Ensemble",
+          "notes": "Bob's most featured vocal moment in many versions."
+        },
+        {
+          "title": "Cry for Me",
+          "type": "Group",
+          "notes": "Group number showcasing the Four Seasons harmonies."
+        }
+      ]
+    },
+    {
+      "id": "nick-massi",
+      "name": "Nick Massi",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 45
+      },
+      "description": "The bass singer and musical arranger of The Four Seasons, narrator of the fourth season (Winter). Nick is the quiet one \u2014 the steadfast foundation of the group's sound who arranges their distinctive vocal harmonies. He's loyal, frustrated at being overlooked, and eventually leaves the group because he's tired of being taken for granted. His narration is the most poignant.",
+      "vocal": {
+        "range": "E2-D4",
+        "voice_type": "Bass / Bass-Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Low bass range providing the foundation of Four Seasons harmonies",
+        "style_notes": "Deep, rich bass voice that anchors the group's sound. The Four Seasons harmonies are built on Nick's bass foundation. Must be pitch-perfect in the low range and blend seamlessly. His vocal colour should feel warm and solid."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "1960s pop choreography",
+          "Four Seasons staging"
+        ],
+        "stamina": "Moderate",
+        "notes": "Must execute all Four Seasons choreography in sync. Nick's movement should suggest quiet strength \u2014 he's the anchor, not the showboat."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "The quiet one",
+          "Unsung hero",
+          "Loyalist who reaches his limit"
+        ],
+        "emotional_range": "Builds slowly \u2014 patience, loyalty, frustration, hurt, dignity in departure",
+        "comedy_skills": true,
+        "notes": "Nick's narration of the Winter section is devastating because he's been silently observing throughout. His frustration at being overlooked builds until he quietly walks away \u2014 one of the show's most powerful moments. Must make silence and restraint compelling."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 3,
+        "special_skills": [
+          "Bass vocal foundation",
+          "Bass guitar performance (some productions)",
+          "Playing the quiet observer compellingly",
+          "Italian-American accent"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Nick is the most underrated role in the show \u2014 just as he's the most underrated member of the group. This role teaches the extraordinary skill of making silence compelling, building frustration gradually, and the dramatic power of a quiet departure. His Winter narration recontextualises everything.",
+        "common_casting": "Strong bass singers with natural quiet dignity. Often the most dramatically skilled bass in the company.",
+        "standout_opportunity": "Nick's Winter narration \u2014 breaking his silence to reveal what he's been thinking all along \u2014 is a masterclass in quiet power. His departure scene is devastating."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Making silence and observation compelling",
+          "Bass vocal technique and ensemble foundation",
+          "Building emotional arc through restraint",
+          "The power of quiet characterisation",
+          "Ensemble singing foundation skills"
+        ],
+        "challenge_areas": [
+          "Staying engaged and compelling while being 'the quiet one'",
+          "Building frustration gradually without tipping too early",
+          "Making the Winter narration land after being in the background"
+        ],
+        "recommended_for": [
+          "Bass singers seeking meaningful ensemble-lead role",
+          "Actors who excel at restraint and subtlety",
+          "Performers wanting to develop quiet stage presence",
+          "Those who understand the power of being the foundation"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Rich, solid bass voice",
+          "Natural quiet dignity",
+          "The ability to be compelling while saying nothing",
+          "Perfect pitch for the bass harmony parts",
+          "Emotional depth for the Winter narration"
+        ],
+        "common_mistakes": [
+          "Trying to compete with the louder personalities",
+          "Not being present in scenes where Nick is observing",
+          "Rushing the frustration \u2014 it needs to build across the whole show",
+          "Weak bass voice \u2014 the harmonies depend on Nick's foundation"
+        ],
+        "tips": [
+          "Study the real Nick Massi \u2014 his arrangements made the Four Seasons sound iconic",
+          "Every scene Nick is quiet in, he's OBSERVING. The audience should see him watching.",
+          "Your Winter narration only works if we've seen your patience running out gradually",
+          "The departure is your triumph \u2014 Nick leaves with dignity, not anger"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "All Four Seasons hits (bass parts)",
+          "type": "Group",
+          "notes": "Nick provides the bass foundation for every group number. Must be rock-solid."
+        },
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "Ensemble",
+          "notes": "Finale where all four get their moment."
+        },
+        {
+          "title": "Cry for Me / Beggin'",
+          "type": "Group",
+          "notes": "Group numbers where the bass foundation is particularly exposed."
+        }
+      ]
+    },
+    {
+      "id": "mary-delgado",
+      "name": "Mary Delgado",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 20,
+        "max": 40
+      },
+      "description": "Frankie Valli's second wife and the volatile love of his life. Mary is passionate, fiery, and glamorous \u2014 a woman who falls hard for Frankie's fame and charm but struggles with the reality of being married to a man constantly on the road. Their relationship is intense and turbulent, marked by arguments, reconciliations, and ultimately divorce. Mary narrates part of the story from her perspective, providing a raw and honest counterpoint to the boys' version of events. A strong alto actress who must convey both the allure and the pain of loving a famous man.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "Mezzo-Soprano / Belt",
+        "belt_required": true,
+        "belt_range": "D4-D5",
+        "tessitura": "Mid-range belt, Jersey-tough character voice",
+        "style_notes": "Strong belt with character. Mary needs Jersey attitude in her delivery. Other characters in the track may require different vocal colours. Must blend in ensemble numbers."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "1960s social dance",
+          "Period-specific movement"
+        ],
+        "stamina": "Moderate",
+        "notes": "Period-appropriate social dancing and staging. Must convey different eras through movement style."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Tough wife",
+          "Tragic mother",
+          "Multiple characters"
+        ],
+        "emotional_range": "Wide \u2014 love, frustration, heartbreak, strength",
+        "comedy_skills": true,
+        "notes": "Must create distinct characters across the multi-track. Mary Delgado is the most substantial \u2014 a Jersey woman who sees through Frankie's fame. The Francine scenes require devastating emotional truth in very limited time."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 4,
+        "special_skills": [
+          "Playing multiple characters",
+          "Jersey/Italian-American accent",
+          "Quick character transitions",
+          "Emotional devastation in brief scenes"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "The primary female track in a male-dominated show. While limited in stage time, the emotional moments are crucial \u2014 Mary's confrontations with Frankie and any Francine scenes carry enormous weight.",
+        "common_casting": "Strong actress-singers with Jersey authenticity and the ability to create impact in limited time.",
+        "standout_opportunity": "Mary's confrontation with Frankie about his absences, and any scene related to Francine's death, are the most emotionally devastating moments in the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Multi-character track management",
+          "Maximum emotional impact in limited time",
+          "Period authenticity across decades",
+          "Quick character transitions"
+        ],
+        "challenge_areas": [
+          "Creating full characters in very limited stage time",
+          "Quick transitions between different characters",
+          "Making the emotional scenes land powerfully"
+        ],
+        "recommended_for": [
+          "Versatile actresses who create impact quickly",
+          "Performers comfortable with multi-character tracks",
+          "Those who prefer quality over quantity of stage time"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong belt voice with character",
+          "Jersey/Italian-American authenticity",
+          "Ability to create distinct characters quickly",
+          "Emotional power in brief scenes",
+          "Quick-change reliability"
+        ],
+        "common_mistakes": [
+          "Playing all characters the same way",
+          "Not enough emotional investment in brief scenes",
+          "Weak Jersey accent"
+        ],
+        "tips": [
+          "Mary Delgado is NOT just 'the wife' \u2014 she's a complex woman in her own right",
+          "Every character in your track deserves a specific physical and vocal identity",
+          "The emotional scenes are brief but crucial \u2014 prepare them as thoroughly as any solo",
+          "Study Jersey women of the era \u2014 tough, loving, no-nonsense"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "My Boyfriend's Back",
+          "type": "Ensemble",
+          "notes": "Period girl-group number featuring female cast members."
+        },
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "Ensemble",
+          "notes": "Finale \u2014 full company."
+        }
+      ]
+    },
+    {
+      "id": "jersey-bob-crewe",
+      "name": "Bob Crewe",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "The flamboyant, brilliant record producer and songwriter who co-writes many of The Four Seasons' biggest hits with Bob Gaudio. Bob Crewe is eccentric, theatrical, and unapologetically himself \u2014 a visionary who recognises Frankie Valli's unique voice and knows how to craft hit records. He's one of the show's most colourful characters, providing comedy through his larger-than-life personality while also serving as a crucial business figure. His creative partnership with Gaudio is the engine that drives the band's success. Typically doubled from the ensemble in community productions.",
+      "vocal": {
+        "range": "C3\u2013G4",
+        "voice_type": "Tenor/Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013E4",
+        "style_notes": "Character voice with musical ability. Must be able to demonstrate songwriting/producing in performance. Flamboyant vocal delivery. Sings in ensemble numbers and has featured speaking/performing moments."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "period movement",
+          "character choreography"
+        ],
+        "stamina": "moderate",
+        "notes": "Character movement \u2014 flamboyant and theatrical. Participates in company numbers with period-appropriate choreography."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "flamboyant artist",
+          "music producer",
+          "eccentric genius",
+          "comic relief"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be fearlessly flamboyant and entertaining. Bob Crewe is a scene-stealer who lights up every room he enters. The role requires charisma, comedic timing, and the ability to convey genuine musical passion. Must also handle the more serious moments where Crewe's artistic vision drives the band's direction."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 2,
+        "special_skills": [
+          "flamboyant character work",
+          "period authenticity",
+          "comedic timing",
+          "music industry characterisation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "One of the most scene-stealing supporting roles in the show. Bob Crewe's flamboyant personality and crucial story function make him a memorable presence. This role offers significant stage time and comedy opportunities while developing character acting skills.",
+        "common_casting": "Charismatic character actor with fearless commitment to the flamboyant persona. Often cast with a performer who has natural theatrical flair and isn't afraid to be big and bold.",
+        "standout_opportunity": "Every Bob Crewe scene is a comedy opportunity. His entrance, his studio sessions, and his interactions with the boys are all highlights. A performer who fully commits to the character's larger-than-life personality will be remembered."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character comedy",
+          "flamboyant persona work",
+          "period characterisation",
+          "scene-stealing technique",
+          "music industry character types"
+        ],
+        "challenge_areas": [
+          "finding the heart beneath the flamboyance",
+          "not making the character a caricature"
+        ],
+        "recommended_for": [
+          "character actors seeking high-visibility supporting roles",
+          "performers developing comedic range",
+          "actors who excel at larger-than-life characters"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "fearless character commitment",
+          "comedic timing",
+          "flamboyant energy",
+          "ability to command a room"
+        ],
+        "common_mistakes": [
+          "being too timid with the character choice",
+          "making Crewe a one-note joke instead of a real person",
+          "not grounding the flamboyance in genuine artistic passion"
+        ],
+        "tips": [
+          "Go big \u2014 Bob Crewe demands it",
+          "Find the real artist beneath the persona",
+          "Study 1960s music producers for period authenticity",
+          "Bring your most theatrical energy to the audition"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "ensemble feature",
+          "notes": "Bob Crewe features in the full company number celebrating the Four Seasons' success."
+        },
+        {
+          "title": "Studio scenes",
+          "type": "scene work",
+          "notes": "Multiple featured scenes in the recording studio directing the band. Comedy goldmine."
+        }
+      ]
+    },
+    {
+      "id": "jersey-gyp-decarlo",
+      "name": "Gyp DeCarlo",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 40,
+        "max": 65
+      },
+      "description": "The neighbourhood mob boss who has a soft spot for Frankie Valli's voice. Gyp DeCarlo is a dangerous, powerful man who operates in the shadows of the New Jersey underworld, but he genuinely loves music and becomes a patron and protector of the group. His involvement with Tommy DeVito's debts creates one of the show's central dramatic tensions. Gyp is both menacing and avuncular \u2014 he can make you laugh one moment and terrify you the next. A character role typically doubled from the ensemble, requiring gravitas and understated menace.",
+      "vocal": {
+        "range": "B2\u2013E4",
+        "voice_type": "Baritone/Bass",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013C4",
+        "style_notes": "Deep, authoritative voice. Primarily a speaking role with ensemble singing. Must convey quiet menace and paternal warmth in equal measure. Italian-American accent often used."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "period movement"
+        ],
+        "stamina": "low",
+        "notes": "Gyp doesn't dance \u2014 he presides. Slow, deliberate, powerful movement. Participates in company numbers from a commanding position."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "mob boss",
+          "patron",
+          "menacing father figure",
+          "power broker"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must convey genuine danger alongside warmth and humour. Gyp is charming and terrifying \u2014 often in the same sentence. The audience should believe he could have someone killed while also believing he genuinely loves Frankie's voice. Understated menace is more effective than obvious villainy."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "understated menace",
+          "Italian-American characterisation",
+          "power presence"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "A compelling character role with significant dramatic impact. Gyp DeCarlo's scenes are among the show's most dramatically charged, and his relationship with the band adds stakes to the entire story. Excellent for character actors who can convey power through stillness.",
+        "common_casting": "Character actor with natural gravitas and authority. Often cast with an older performer who can convey decades of power and experience. Must be convincing as both a benefactor and a threat.",
+        "standout_opportunity": "The scene where Gyp handles Tommy's debt is one of the show's most powerful dramatic moments. A performer who plays the menace with quiet authority creates unforgettable tension."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character authority",
+          "understated menace",
+          "dramatic scene work",
+          "power dynamics",
+          "period characterisation"
+        ],
+        "challenge_areas": [
+          "finding the balance between menace and warmth",
+          "not resorting to mob boss clich\u00e9s"
+        ],
+        "recommended_for": [
+          "character actors developing dramatic range",
+          "performers building authority character types",
+          "actors seeking roles with dramatic weight"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "natural authority and gravitas",
+          "understated menace",
+          "warmth beneath the danger",
+          "Italian-American authenticity"
+        ],
+        "common_mistakes": [
+          "going full cartoon mob boss",
+          "being all menace without warmth",
+          "trying too hard with the accent"
+        ],
+        "tips": [
+          "Less is more \u2014 quiet power is scarier than shouting",
+          "Find Gyp's genuine love of music and Frankie",
+          "Study The Sopranos for the blend of charm and menace"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured dramatic scenes throughout the show, particularly in Act 2 dealing with Tommy's debts."
+        }
+      ]
+    },
+    {
+      "id": "jersey-joe-pesci",
+      "name": "Joey Pesci",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 16,
+        "max": 30
+      },
+      "description": "Yes, THAT Joe Pesci \u2014 the future Academy Award-winning actor who, as a teenager, introduced Tommy DeVito to Bob Gaudio, essentially creating The Four Seasons. In Jersey Boys, Pesci is a fast-talking, street-smart neighbourhood kid who hustles his way through the Jersey scene. His introduction of Gaudio to the group is the pivotal moment that changes everything. A high-energy supporting role typically doubled from the ensemble, requiring rapid-fire delivery and infectious charisma.",
+      "vocal": {
+        "range": "C3\u2013G4",
+        "voice_type": "Tenor/Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013E4",
+        "style_notes": "Character voice \u2014 fast-talking, high-energy delivery. Must be able to sing in ensemble numbers. The role is more about speaking and character than vocal power."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "period movement",
+          "street swagger"
+        ],
+        "stamina": "moderate",
+        "notes": "Street-smart physicality \u2014 swagger, hustle, nervous energy. Participates in company numbers. More about attitude than technique."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "street-smart hustler",
+          "fast talker",
+          "connector",
+          "neighbourhood kid"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be a whirlwind of energy and personality. Pesci talks fast, moves fast, and thinks fast. The audience should be delighted by his motor-mouth charm. The real trick is making the audience believe this hyper kid will grow up to be one of the greatest actors of his generation. Comic timing and rapid-fire delivery are essential."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "rapid-fire delivery",
+          "street-smart characterisation",
+          "Italian-American accent"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A crowd-pleasing supporting role with built-in audience recognition. Everyone loves discovering that Joe Pesci was the one who introduced the band members. The role gets laughs and audience reaction simply from the reveal, but a strong performer can make it much more.",
+        "common_casting": "High-energy character actor with rapid-fire delivery skills. Often cast with a shorter, scrappy performer who naturally reads as a street-smart Jersey kid.",
+        "standout_opportunity": "The introduction scene where Pesci brings Gaudio to meet Tommy is a pivotal comedy/dramatic moment. A performer who nails the fast-talking hustle creates one of the show's most entertaining sequences."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "rapid-fire comic delivery",
+          "character physicality",
+          "period characterisation",
+          "high-energy performance"
+        ],
+        "challenge_areas": [
+          "sustaining the energy without burning out",
+          "making the fast-talking feel natural"
+        ],
+        "recommended_for": [
+          "high-energy performers seeking character roles",
+          "actors developing comedy skills",
+          "performers building fast-paced delivery technique"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "infectious energy",
+          "rapid-fire delivery",
+          "street-smart charisma",
+          "natural comedy instincts"
+        ],
+        "common_mistakes": [
+          "doing a Joe Pesci impression instead of playing the character",
+          "talking fast without clarity",
+          "running out of energy"
+        ],
+        "tips": [
+          "Be energetic but clear \u2014 we need to understand every word",
+          "Don't do a Goodfellas impression \u2014 this is teenage Pesci",
+          "Bring nervous, hustling energy to the audition"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured speaking scenes establishing the band's formation. The introduction of Gaudio to the group is a show-defining moment."
+        }
+      ]
+    },
+    {
+      "id": "jersey-norm-waxman",
+      "name": "Norm Waxman",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The group's business manager who becomes entangled in the financial mess created by Tommy DeVito's debts and mismanagement. Norm is a professional caught between the music business and the mob world, trying to keep the financial house in order while the band's success spirals beyond anyone's control. He represents the unsexy business side of the music industry. A speaking-heavy supporting role typically doubled from the ensemble.",
+      "vocal": {
+        "range": "C3\u2013F4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013D4",
+        "style_notes": "Primarily a speaking role with ensemble singing. Professional, businesslike vocal delivery. Must be clear and authoritative in financial/business discussions."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "period movement"
+        ],
+        "stamina": "low",
+        "notes": "Business professional movement. No choreography but participates in company numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "business manager",
+          "professional",
+          "frustrated mediator"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must convey the stress and frustration of managing a group whose lead guitarist is secretly in massive debt to the mob. Norm is the voice of financial reality in a world of artistic dreams and criminal threats. Dry humour and exasperation are his comedy tools."
+      },
+      "performance": {
+        "stage_time_percentage": 6,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "business characterisation",
+          "financial exposition delivery"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named supporting role that provides crucial plot exposition. Norm delivers key financial information that drives the dramatic tension. Typically doubled from ensemble \u2014 good for performers who excel at clear, professional character work.",
+        "common_casting": "Character actor who reads as a business professional. Often doubled from ensemble with other adult male roles.",
+        "standout_opportunity": "The financial revelation scenes carry dramatic weight \u2014 Norm's delivery of bad news drives key plot points."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "professional character types",
+          "exposition delivery",
+          "dramatic scene support"
+        ],
+        "challenge_areas": [
+          "making financial exposition engaging",
+          "supporting without overshadowing"
+        ],
+        "recommended_for": [
+          "character actors seeking named ensemble roles",
+          "performers developing professional character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "clear diction",
+          "professional presence",
+          "ability to deliver exposition engagingly"
+        ],
+        "common_mistakes": [
+          "making financial scenes boring",
+          "not investing in Norm's frustration"
+        ],
+        "tips": [
+          "Find Norm's exasperation \u2014 he's dealing with impossible people",
+          "Clear, professional delivery is key"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured dramatic scenes dealing with the band's finances and Tommy's debt crisis."
+        }
+      ]
+    },
+    {
+      "id": "jersey-francine",
+      "name": "Francine Valli",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "Frankie Valli's first wife and the mother of his children. Francine represents the domestic life that Frankie leaves behind as fame takes over. Their relationship shows the cost of success \u2014 a loving marriage that can't survive the demands of stardom. Francine is loyal, patient, and ultimately heartbroken. Her story provides crucial emotional context for Frankie's character arc and the tragedy of fame's toll on family. Typically doubled from the ensemble.",
+      "vocal": {
+        "range": "A3\u2013E5",
+        "voice_type": "Soprano/Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "C5\u2013E5",
+        "tessitura": "C4\u2013C5",
+        "style_notes": "Warm, expressive voice with emotional depth. Must be able to convey heartbreak and hope through vocal colour. Sings in ensemble and has featured moments in group numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "period movement",
+          "1950s-60s social dance"
+        ],
+        "stamina": "moderate",
+        "notes": "Period-appropriate social dancing. Participates in company numbers with 50s/60s choreography."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "devoted wife",
+          "abandoned spouse",
+          "mother",
+          "tragic figure"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": false,
+        "notes": "Must convey the full arc from hopeful young bride to heartbroken single mother. Francine's scenes are some of the show's most emotionally honest moments. Requires the ability to generate genuine sympathy and to play the devastating domestic scenes opposite Frankie's charisma."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "emotional authenticity",
+          "period characterisation",
+          "domestic scene work"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "An emotionally significant supporting role that grounds the show in domestic reality. Francine's scenes provide the emotional counterweight to the boys' rock-and-roll success story. Excellent for actresses who can convey deep emotion in limited stage time.",
+        "common_casting": "Actress with genuine emotional depth and period authenticity. Must have chemistry with the Frankie Valli actor for the domestic scenes to land.",
+        "standout_opportunity": "The scenes showing the marriage's deterioration are dramatically powerful \u2014 a committed actress can break the audience's heart."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "emotional scene work",
+          "period characterisation",
+          "domestic drama",
+          "arc development in limited time"
+        ],
+        "challenge_areas": [
+          "maximum emotional impact with limited stage time",
+          "not being overshadowed by the male-dominated story"
+        ],
+        "recommended_for": [
+          "actresses developing dramatic range",
+          "performers building period characterisation",
+          "women seeking emotionally rich supporting roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "emotional authenticity",
+          "period presence",
+          "chemistry potential with Frankie",
+          "ability to generate sympathy"
+        ],
+        "common_mistakes": [
+          "playing the victim without showing Francine's strength",
+          "not grounding the emotion in reality"
+        ],
+        "tips": [
+          "Find Francine's love for Frankie \u2014 the heartbreak only works if we believe the love",
+          "Period authenticity in movement and voice",
+          "Emotional honesty is more powerful than dramatic display"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "My Eyes Adored You",
+          "type": "featured",
+          "notes": "Francine is featured in this emotional number about Frankie's romantic history. One of the show's most poignant moments."
+        }
+      ]
+    },
+    {
+      "id": "jersey-lorraine",
+      "name": "Lorraine",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "A journalist/reporter who interacts with the band during their rise to fame. Lorraine represents the media world that surrounds The Four Seasons and provides an outside perspective on the band's dynamic. She's smart, perceptive, and professionally savvy. Typically doubled from the ensemble, offering a named female role in a predominantly male show.",
+      "vocal": {
+        "range": "A3\u2013D5",
+        "voice_type": "Soprano/Mezzo-Soprano/Alto",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "C4\u2013A4",
+        "style_notes": "Versatile female voice for ensemble singing and featured moments. Clear, professional speaking voice for interview/reporter scenes."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "period movement",
+          "1960s choreography"
+        ],
+        "stamina": "moderate",
+        "notes": "Participates in company numbers with period choreography. Professional, confident movement."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "journalist",
+          "professional woman",
+          "outsider perspective"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be sharp and professional in interview scenes. Provides the outsider perspective on the band's internal dynamics. Smart and perceptive."
+      },
+      "performance": {
+        "stage_time_percentage": 6,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "interview scene work",
+          "professional characterisation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named female supporting role in a predominantly male show. Lorraine provides professional female perspective and has featured scene moments. Good for performers seeking named credits in a male-heavy cast.",
+        "common_casting": "Sharp, professional actress who can hold her own in scenes with the male leads. Typically doubled from ensemble.",
+        "standout_opportunity": "Interview and media scenes give Lorraine moments of smart, perceptive commentary that cut through the boys' bravado."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "professional character work",
+          "interview scene technique",
+          "period characterisation"
+        ],
+        "challenge_areas": [
+          "standing out in a male-dominated show",
+          "making limited scenes count"
+        ],
+        "recommended_for": [
+          "female performers seeking named roles in male-heavy shows",
+          "actresses developing professional character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "professional confidence",
+          "clear diction",
+          "ability to hold the stage with the male leads"
+        ],
+        "common_mistakes": [
+          "being too deferential to the male characters",
+          "not making Lorraine's intelligence and savvy clear"
+        ],
+        "tips": [
+          "Lorraine is smart and professional \u2014 bring that energy",
+          "Show you can hold your own in a room full of big personalities"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured in interview/media scenes throughout the show."
+        }
+      ]
+    },
+    {
+      "id": "jersey-nick-devito",
+      "name": "Nick DeVito",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "Tommy DeVito's brother who sings with the group in its early incarnation before The Four Seasons are formed. Nick DeVito is part of the pre-fame neighbourhood crew, singing doo-wop under streetlamps with the boys. He represents the broader DeVito family connection and the neighbourhood roots of the group. A tenor role typically doubled from the ensemble, featured in the early scenes and doo-wop numbers.",
+      "vocal": {
+        "range": "C3\u2013A4",
+        "voice_type": "Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013F4",
+        "style_notes": "Doo-wop tenor with ability to harmonize. Must blend with the early group formation numbers. 1950s vocal style \u2014 smooth and warm."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "1950s doo-wop staging",
+          "period movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Classic doo-wop group choreography \u2014 synchronized steps, hand gestures, group formation work."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "neighbourhood guy",
+          "brother",
+          "early band member"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": false,
+        "notes": "Represents the neighbourhood world before fame. Must convey the camaraderie and ambition of young guys trying to make it. Brief but characterful."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "doo-wop harmony",
+          "1950s style"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named featured ensemble role in the early band formation scenes. Nick DeVito provides connection to Tommy's family and the neighbourhood roots. Good for tenors who want a named credit with harmony singing.",
+        "common_casting": "Strong harmony singer from the ensemble. Often cast with a performer who naturally reads as Tommy's brother.",
+        "standout_opportunity": "The early doo-wop numbers have nostalgic charm \u2014 strong harmony singing in these scenes gets noticed."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "doo-wop harmony singing",
+          "period performance style",
+          "featured ensemble craft"
+        ],
+        "challenge_areas": [
+          "making impact in brief early scenes"
+        ],
+        "recommended_for": [
+          "tenors building harmony skills",
+          "ensemble performers seeking named credits"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong harmony singing",
+          "1950s period feel",
+          "natural neighbourhood-guy energy"
+        ],
+        "common_mistakes": [
+          "not blending in the doo-wop numbers",
+          "treating it as a throwaway role"
+        ],
+        "tips": [
+          "Harmony singing is the key skill \u2014 demonstrate it clearly",
+          "Bring authentic neighbourhood energy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Silhouettes",
+          "type": "ensemble feature",
+          "notes": "Early doo-wop number with the pre-Four Seasons lineup. Nick DeVito sings harmony."
+        },
+        {
+          "title": "You're the Apple of My Eye",
+          "type": "ensemble feature",
+          "notes": "Another early group number featuring Nick DeVito in the harmony blend."
+        }
+      ]
+    },
+    {
+      "id": "jersey-hank-majewski",
+      "name": "Hank Majewski",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "Another early member of the group in its pre-Four Seasons incarnation. Hank is part of the neighbourhood singing crew and participates in the early formation scenes. Like Nick DeVito, he represents the broader circle of guys who sang together before the iconic quartet crystallised. A brief featured ensemble role typically doubled from the ensemble, featured in early doo-wop numbers.",
+      "vocal": {
+        "range": "C3\u2013G4",
+        "voice_type": "Tenor/Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013E4",
+        "style_notes": "Doo-wop harmony voice. Must blend in early group numbers. 1950s vocal styling."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "1950s doo-wop staging",
+          "period movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Classic doo-wop group choreography in early numbers."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "neighbourhood guy",
+          "early band member"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": false,
+        "notes": "Brief character presence in the early formation scenes. Must convey the excitement and ambition of young guys trying to make it in music."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "doo-wop harmony"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named ensemble role in the early formation scenes. Brief but provides a credited character. Good for harmony singers seeking named ensemble credits.",
+        "common_casting": "Harmony singer from the ensemble. Often cast alongside Nick DeVito to complete the pre-Four Seasons lineup.",
+        "standout_opportunity": "Strong harmony singing in the early doo-wop numbers contributes to the nostalgic atmosphere that audiences love."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "doo-wop harmony",
+          "period performance",
+          "featured ensemble skills"
+        ],
+        "challenge_areas": [
+          "making impact in very brief scenes"
+        ],
+        "recommended_for": [
+          "ensemble singers building harmony credits",
+          "performers developing period performance skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "harmony singing ability",
+          "period feel",
+          "ensemble blend"
+        ],
+        "common_mistakes": [
+          "not investing in the brief role"
+        ],
+        "tips": [
+          "Harmony blend is everything \u2014 show it in your audition",
+          "These roles are cast from ensemble callbacks"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Early group numbers",
+          "type": "ensemble",
+          "notes": "Featured in the pre-Four Seasons doo-wop numbers. Harmony singing with the early lineup."
+        }
+      ]
+    },
+    {
+      "id": "ensemble-jersey",
+      "name": "Ensemble (Multi-Track)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 18,
+        "max": 60
+      },
+      "description": "The Jersey Boys ensemble is one of the most demanding multi-track ensembles in musical theatre. Members play numerous named and unnamed characters across three decades, often changing roles scene to scene. The ensemble portrays record producers, DJs, fans, mob associates, family members, reporters, and various 1950s-70s character types. Strong harmony singing is essential \u2014 the doo-wop and Four Seasons sound requires excellent vocal blend. Period authenticity across the show's span from the 1950s to the 2000s is crucial. Many named featured roles (Nick DeVito, Hank Majewski, and others) are doubled from this ensemble.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Mixed ensemble with strong pop/rock harmony skills",
+        "belt_required": true,
+        "belt_range": "Various",
+        "tessitura": "Varied \u2014 must handle doo-wop harmonies, pop backup, and character singing",
+        "style_notes": "Must handle 1950s-1990s vocal styles authentically. Doo-wop harmonies, girl-group sounds, rock backup vocals. The ensemble IS the musical landscape of each era."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "1960s pop",
+          "Period social dance",
+          "Staging across multiple decades"
+        ],
+        "stamina": "High \u2014 constant transformations",
+        "notes": "Movement must shift authentically across four decades. Each character should have distinct physicality. Quick changes between scenes require precision and efficiency."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Multiple characters spanning decades",
+          "Period types",
+          "Authority figures",
+          "Street characters"
+        ],
+        "emotional_range": "Varied by character \u2014 from comic mob boss to tragic family member",
+        "comedy_skills": true,
+        "notes": "The multi-track demands are extraordinary. Each performer must create fully realised characters who appear for sometimes only one scene. Gyp DeCarlo, Bob Crewe, and Joe Pesci are the most prominent ensemble roles."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 8,
+        "special_skills": [
+          "Rapid multi-character transformation",
+          "Period-authentic characterisation",
+          "Pop/doo-wop harmony singing",
+          "Quick changes between scenes",
+          "Italian-American accents"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "The Jersey Boys ensemble is a masterclass in multi-tracking. Playing 5-10 characters develops rapid character creation, quick-change skills, period authenticity, and versatility. Named ensemble roles like Gyp DeCarlo or Bob Crewe get genuine spotlight moments.",
+        "common_casting": "Versatile performer-singers with strong harmony skills and rapid character transformation ability. Italian-American performers especially valued for authenticity.",
+        "standout_opportunity": "Gyp DeCarlo (the mob boss) and Bob Crewe (the flamboyant producer) are scene-stealing featured ensemble roles that get significant laughs and dramatic moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Multi-character rapid transformation",
+          "Period-specific performance across decades",
+          "Pop/doo-wop vocal harmony",
+          "Quick-change expertise",
+          "Character voice variety",
+          "Italian-American cultural authenticity"
+        ],
+        "challenge_areas": [
+          "Managing 5-10 character changes per show",
+          "Maintaining character distinction across quick changes",
+          "Keeping energy high through constant transformation"
+        ],
+        "recommended_for": [
+          "Versatile performers who love playing multiple characters",
+          "Singers with strong harmony skills",
+          "Those wanting to develop quick-change and transformation skills",
+          "Performers building a range of character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Vocal harmony precision",
+          "Ability to create distinct characters quickly",
+          "Period authenticity across decades",
+          "Quick-change reliability",
+          "Italian-American cultural comfort"
+        ],
+        "common_mistakes": [
+          "Not differentiating between characters enough",
+          "Weak harmony singing",
+          "Period inauthenticity \u2014 each decade should look and feel different",
+          "Slow quick-changes disrupting scene transitions"
+        ],
+        "tips": [
+          "Create a character sheet for each role in your track \u2014 give each one specific physicality and voice",
+          "Study 1950s-1990s pop culture obsessively \u2014 the details sell the period",
+          "Practice quick changes at home \u2014 every second counts",
+          "If you get Gyp DeCarlo or Bob Crewe, these are star-making ensemble roles \u2014 prepare them like leads"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "December, 1963 (Oh, What a Night)",
+          "type": "Ensemble",
+          "notes": "Full company finale. The entire ensemble's celebration."
+        },
+        {
+          "title": "Various doo-wop/period numbers",
+          "type": "Ensemble",
+          "notes": "Ensemble provides the musical backdrop of each era \u2014 doo-wop, girl group, rock, disco."
+        },
+        {
+          "title": "Sherry / Big Girls / Walk Like a Man",
+          "type": "Ensemble backup",
+          "notes": "Ensemble provides staging, reactions, and period atmosphere for the hits."
+        }
+      ]
+    }
+  ]
+}

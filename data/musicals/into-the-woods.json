@@ -1,0 +1,2307 @@
+{
+  "musical": {
+    "id": "into-the-woods",
+    "title": "Into the Woods",
+    "music_by": "Stephen Sondheim",
+    "lyrics_by": "Stephen Sondheim",
+    "book_by": "James Lapine",
+    "based_on": "Multiple Brothers Grimm fairy tales interwoven with an original story",
+    "year_premiered": 1987,
+    "setting": "A fairy-tale kingdom \u2014 the village, the woods, and the world beyond",
+    "time_period": "Once upon a time (fairy-tale timeless)",
+    "themes": [
+      "wishes and their consequences",
+      "growing up",
+      "parenthood and legacy",
+      "community vs individualism",
+      "moral ambiguity",
+      "what happens after happily ever after",
+      "responsibility",
+      "loss and grief",
+      "the stories we tell children"
+    ],
+    "genre_tags": [
+      "Sondheim",
+      "fairy_tale",
+      "ensemble",
+      "dramatic",
+      "dark_comedy",
+      "classic",
+      "operatic_complexity",
+      "two_act_structure"
+    ],
+    "vocal_style": "Sondheim \u2014 intricate melodic lines, complex harmonies, conversational phrasing within demanding musical structures. Ranges from lyrical legit to character work to power ballad. Every note serves the text.",
+    "dance_intensity": "light",
+    "orchestra_size": "medium_to_full",
+    "typical_cast_size": "14-20",
+    "age_range": "10-60",
+    "difficulty_overall": "advanced_to_expert",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "A Baker and his Wife, desperate for a child, learn from a Witch that their family was cursed by the Baker's father who stole from her garden. To break the curse, they must venture into the woods and collect four items: a cow as white as milk, a cape as red as blood, hair as yellow as corn, and a slipper as pure as gold. Their quest interweaves with the stories of Jack (and his beanstalk), Little Red Riding Hood, Cinderella, and Rapunzel. Act One ends with all wishes granted and apparent happily-ever-afters. Act Two shatters those endings as a Giant's Wife descends seeking revenge, and the characters must face the consequences of their wishes, confront genuine loss, and learn that 'no one is alone' \u2014 community and responsibility matter more than individual happiness."
+  },
+  "roles": [
+    {
+      "id": "the-baker",
+      "name": "The Baker",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 45
+      },
+      "description": "An ordinary, good-hearted village baker who embarks on an extraordinary quest to break a family curse and have a child. The Baker is Sondheim's everyman \u2014 decent but flawed, loving but sometimes selfish, brave but often afraid. He learns to accept help, face his father's legacy, and ultimately choose responsibility over escape. His emotional arc across both acts \u2014 from hopeful father-to-be to grief-stricken single parent who must carry on \u2014 is the emotional spine of the entire show.",
+      "vocal": {
+        "range": "Bb2-F#4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Sondheim baritone \u2014 conversational, text-driven singing that must sound natural despite complex musical structures. Must handle rapid patter, intricate counterpoint, and emotionally devastating simplicity. 'No More' requires raw, unadorned vocal honesty."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "staged_movement"
+        ],
+        "stamina": "moderate",
+        "notes": "No dance requirements. Physical comedy during the quest sequences. Must convey exhaustion, determination, and vulnerability through physicality."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "everyman",
+          "reluctant_hero",
+          "flawed_father",
+          "grief_stricken_parent"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "The most emotionally demanding male role in the Sondheim canon. Must be funny, relatable, and flawed in Act One, then navigate devastating grief and the choice to persevere in Act Two. The Baker's final monologue to his child is one of the most moving moments in musical theatre. Requires absolute emotional truth."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 2,
+        "duets": 3,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "sondheim_phrasing",
+          "counterpoint_singing",
+          "comedic_physicality",
+          "emotional_devastation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "The Baker is the anchor of the entire show and one of the most rewarding roles in musical theatre. Develops every skill a performer needs \u2014 Sondheim musicianship, comedic timing, devastating emotional depth, and the ability to carry a complex narrative. A career-defining role.",
+        "common_casting": "Warm, relatable actor-singers with genuine emotional depth. Directors prioritise acting ability and Sondheim musicianship over pure vocal power.",
+        "standout_opportunity": "'No More' is one of the most emotionally raw moments in Sondheim, and the final narration to Jack is profoundly moving. Act Two transforms the Baker from a comic figure into a tragic hero."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sondheim_technique",
+          "emotional_range",
+          "comedic_to_dramatic_pivot",
+          "ensemble_leadership",
+          "text_driven_singing",
+          "grief_performance"
+        ],
+        "challenge_areas": [
+          "sondheim_musical_complexity",
+          "sustaining_two_act_emotional_arc",
+          "counterpoint_precision"
+        ],
+        "recommended_for": [
+          "serious_actor_singers",
+          "baritones_seeking_dramatic_showcase",
+          "performers_ready_for_sondheim_challenge"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Sondheim musicianship \u2014 can you handle the complex rhythms and counterpoint?",
+          "Genuine emotional availability \u2014 the Baker must make audiences cry",
+          "Warmth and relatability \u2014 the audience must see themselves in the Baker",
+          "Comic timing that doesn't undermine dramatic credibility",
+          "Strong text-driven singing where every word lands"
+        ],
+        "common_mistakes": [
+          "Focusing on vocal technique over emotional truth",
+          "Playing the Baker as merely bumbling without genuine heart",
+          "Not preparing for the musical complexity of Sondheim counterpoint",
+          "Underestimating the emotional demands of Act Two"
+        ],
+        "tips": [
+          "Prepare a Sondheim song \u2014 'Finishing the Hat' or 'Being Alive' shows relevant skills",
+          "Study the libretto as much as the score \u2014 Sondheim's text IS the music",
+          "Show range in the callback: directors need to see comedy AND grief",
+          "Listen to the original cast recording with Chip Zien for gold-standard interpretation"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "It Takes Two",
+          "type": "duet",
+          "notes": "Joyful duet with Baker's Wife about their growing partnership. Charming and musically intricate."
+        },
+        {
+          "title": "No More",
+          "type": "solo_duet_with_mysterious_man",
+          "notes": "Devastating Act Two moment of grief and the temptation to abandon responsibility. Raw and emotionally shattering."
+        },
+        {
+          "title": "No One Is Alone",
+          "type": "quartet",
+          "notes": "The thematic heart of the show. The Baker finds the words to comfort others despite his own loss."
+        }
+      ]
+    },
+    {
+      "id": "the-bakers-wife",
+      "name": "The Baker's Wife",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 25,
+        "max": 45
+      },
+      "description": "The Baker's pragmatic, resourceful, and increasingly independent wife. She is the driving force behind the quest \u2014 smarter and more capable than her husband, though societal expectations constrain her. Her journey is about self-discovery: she's the one who actually obtains most of the items, negotiates with fairy-tale characters, and makes the hardest choices. Her Act Two encounter with the Prince and its consequences represent one of Sondheim's most complex explorations of desire, regret, and the cost of stepping outside your story. 'Moments in the Woods' is her masterpiece of self-examination.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "mezzo_soprano_belt",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Sondheim mezzo \u2014 must handle rapid patter, complex rhythms, and the soaring emotional lines of 'Moments in the Woods'. Conversational singing that builds to powerful belt moments. Must sound intelligent and warm simultaneously."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "staged_movement"
+        ],
+        "stamina": "moderate",
+        "notes": "No dance. Physical comedy during quest sequences. Must convey both practicality and sensuality in different scenes."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "resourceful_wife",
+          "pragmatic_heroine",
+          "woman_discovering_herself",
+          "moral_complexity"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "One of the most complex female roles in musical theatre. Must be simultaneously practical and romantic, loyal and curious, moral and tempted. 'Moments in the Woods' requires an actress who can think out loud on stage \u2014 processing complex emotions in real time. Her death must be genuinely shocking and devastating."
+      },
+      "performance": {
+        "stage_time_percentage": 65,
+        "solo_songs": 2,
+        "duets": 3,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "sondheim_phrasing",
+          "thinking_out_loud_onstage",
+          "moral_complexity",
+          "comedic_negotiation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "The Baker's Wife is arguably the most rewarding female role in the Sondheim repertoire. 'Moments in the Woods' alone is a masterclass in musical theatre acting. The role develops every skill \u2014 Sondheim musicianship, comedic timing, dramatic depth, moral complexity. Career-defining.",
+        "common_casting": "Intelligent, warm actresses with excellent Sondheim chops. Directors look for someone who can think on stage \u2014 processing, not just performing emotions.",
+        "standout_opportunity": "'Moments in the Woods' is one of the most celebrated solos in musical theatre \u2014 a woman examining her own life choices in real time. When performed well, it's the moment people talk about."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sondheim_mastery",
+          "moral_complexity_performance",
+          "thinking_aloud_technique",
+          "comedic_to_dramatic_range",
+          "text_analysis"
+        ],
+        "challenge_areas": [
+          "sondheim_rhythmic_complexity",
+          "making_moral_ambiguity_sympathetic",
+          "the_prince_scene_nuance"
+        ],
+        "recommended_for": [
+          "strong_actress_singers_ready_for_sondheim",
+          "mezzos_seeking_dramatic_showcase",
+          "performers_wanting_complex_female_roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Intelligence that reads from the stage \u2014 this character thinks",
+          "Sondheim musicianship \u2014 rhythmic precision with emotional freedom",
+          "Warmth and practicality \u2014 not a victim, an agent",
+          "The ability to hold contradictory emotions simultaneously",
+          "Chemistry potential with the Baker \u2014 they must feel like a real couple"
+        ],
+        "common_mistakes": [
+          "Playing the Baker's Wife as merely supportive rather than the driving force",
+          "Judging the character for her Act Two choices instead of playing them honestly",
+          "Insufficient preparation for Sondheim's musical demands",
+          "Missing the humour \u2014 she's very funny before she's heartbreaking"
+        ],
+        "tips": [
+          "Prepare 'Moments in the Woods' if you can \u2014 it's the ultimate audition for this role",
+          "Otherwise, choose Sondheim that shows intelligence and warmth: 'In Buddy's Eyes' or 'Losing My Mind'",
+          "Study Joanna Gleason's Tony-winning original performance for the gold standard",
+          "Directors want to see you THINK on stage \u2014 show your process, not just your results"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "It Takes Two",
+          "type": "duet",
+          "notes": "Partnership celebration with the Baker. Joyful, intricate Sondheim counterpoint."
+        },
+        {
+          "title": "A Very Nice Prince / On the Steps of the Palace (shared material with Cinderella)",
+          "type": "duet_scene",
+          "notes": "Comic and philosophical exchanges about desire and choice"
+        },
+        {
+          "title": "Moments in the Woods",
+          "type": "solo",
+          "notes": "The crown jewel. A woman examines her life, her choices, her desires, and her regrets in real time. One of the greatest solos in musical theatre."
+        }
+      ]
+    },
+    {
+      "id": "the-witch",
+      "name": "The Witch",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The most vocally and dramatically demanding role in the show. The Witch is a complex figure who cursed the Baker's family, imprisoned Rapunzel out of overprotective love, and ultimately serves as the moral truth-teller of the story. She begins as a grotesque hag, transforms into a beautiful enchantress, and eventually loses her powers when she loses what she loves most. The Witch is the only character who consistently tells the truth \u2014 and she's punished for it. Her rage, grief, and love for Rapunzel are the most operatically intense moments in the score. Bernadette Peters originated the role; it has since become a benchmark for powerhouse musical theatre actresses.",
+      "vocal": {
+        "range": "G3-F#5",
+        "voice_type": "mezzo_soprano_powerhouse",
+        "belt_required": true,
+        "belt_range": "D4-F#5",
+        "tessitura": "mid_to_high",
+        "style_notes": "The most vocally demanding role Sondheim ever wrote. Requires legitimate legit voice for 'Stay With Me', devastating belt for 'Last Midnight', comedic character voice for Act One hag scenes, and the emotional control to navigate 'Children Will Listen'. Must handle extreme dynamic range \u2014 whisper to scream \u2014 within single phrases."
+      },
+      "dance": {
+        "level": "none_to_basic",
+        "styles": [
+          "dramatic_movement",
+          "transformation_physicality"
+        ],
+        "stamina": "moderate",
+        "notes": "No dance per se, but the transformation from hag to beauty requires dramatic physical change. Must command the stage through presence alone."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "dark_mother",
+          "truth_teller",
+          "overprotective_parent",
+          "tragic_figure",
+          "supernatural_being"
+        ],
+        "emotional_range": "extreme",
+        "comedy_skills": true,
+        "notes": "Requires the full spectrum of human emotion at operatic intensity. Must be terrifying, hilarious, heartbreaking, and wise \u2014 sometimes within the same scene. The Witch's relationship with Rapunzel is the show's most emotionally intense parent-child dynamic. 'Last Midnight' is one of the most cathartic moments in musical theatre \u2014 rage that strips away pretence."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "extreme_vocal_range",
+          "physical_transformation",
+          "operatic_intensity",
+          "truth_telling_power"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "The Witch is THE powerhouse role in the Sondheim repertoire and one of the most coveted in all of musical theatre. Every number is a potential showstopper. The role demands and develops the absolute highest level of vocal, dramatic, and physical performance skills.",
+        "common_casting": "Exceptional singer-actresses with powerhouse voices and fearless emotional commitment. Often the most experienced performer in the cast.",
+        "standout_opportunity": "'Last Midnight' is one of the most explosive moments in musical theatre \u2014 the Witch tears apart the other characters' hypocrisy in a volcanic rage that leaves audiences breathless. 'Children Will Listen' is equally powerful in its devastating quietness."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "powerhouse_singing",
+          "extreme_emotional_range",
+          "sondheim_at_highest_difficulty",
+          "physical_transformation",
+          "operatic_intensity_in_mt"
+        ],
+        "challenge_areas": [
+          "vocal_stamina_across_full_show",
+          "hag_to_beauty_transformation",
+          "making_rage_truthful_not_indulgent",
+          "sondheim_musical_precision_at_emotional_extremes"
+        ],
+        "recommended_for": [
+          "powerhouse_voices_seeking_ultimate_challenge",
+          "experienced_actresses_wanting_career_defining_role",
+          "performers_ready_for_sondheim_summit"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A voice that can shake the walls AND break your heart",
+          "Fearless emotional commitment \u2014 the Witch holds nothing back",
+          "Physical transformation capability \u2014 hag to beauty convincingly",
+          "The intelligence to navigate Sondheim's most complex score",
+          "Truth \u2014 the Witch must feel like the most honest person in the room"
+        ],
+        "common_mistakes": [
+          "All power, no vulnerability \u2014 the Witch's love for Rapunzel must be real",
+          "Playing the hag as cartoonish instead of genuinely threatening",
+          "Insufficient vocal preparation \u2014 this score demands Olympic-level singing",
+          "Missing the comedy in Act One \u2014 the Witch is darkly hilarious"
+        ],
+        "tips": [
+          "Prepare 'Last Midnight' or 'Stay With Me' \u2014 they show exactly what's needed",
+          "If not Sondheim, choose something that shows extreme vocal and emotional range",
+          "Study both Bernadette Peters and Donna Murphy interpretations for different valid approaches",
+          "Show directors you can be terrifying and tender \u2014 that's the whole role"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Stay With Me",
+          "type": "solo_ballad",
+          "notes": "Devastating plea from a mother losing her child. Legit soprano line of heartbreaking beauty and desperation."
+        },
+        {
+          "title": "Last Midnight",
+          "type": "solo_powerhouse",
+          "notes": "Volcanic rage number where the Witch calls out everyone's hypocrisy. One of the most explosive solos in musical theatre."
+        },
+        {
+          "title": "Children Will Listen",
+          "type": "solo_reflective",
+          "notes": "The thematic thesis of the show. Quiet devastation about the legacy we leave. Often the moment that stays with audiences longest."
+        }
+      ]
+    },
+    {
+      "id": "cinderella",
+      "name": "Cinderella",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "Sondheim's Cinderella is not the passive Disney princess \u2014 she is a young woman paralysed by indecision, terrified of making the wrong choice, who discovers that getting what you wish for is far more complicated than wanting it. Her signature trait is ambivalence: she runs from the ball not because of a curfew but because she's not sure she wants to be a princess. In Act Two, she must navigate a marriage that doesn't fulfil her, her Prince's infidelity, and genuine loss, ultimately finding her own agency and identity outside of any fairy tale.",
+      "vocal": {
+        "range": "A3-G5",
+        "voice_type": "soprano_legit_with_belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Sondheim lyrical soprano with contemporary belt moments. 'On the Steps of the Palace' is a masterpiece of sung thinking \u2014 must sound spontaneous despite extreme musical precision. Must handle Sondheim's characteristic rapid internal monologue style."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "waltz",
+          "ball_staging"
+        ],
+        "stamina": "low_to_moderate",
+        "notes": "Ball sequences require grace and poise. Running away must feel genuinely panicked, not choreographed."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "indecisive_heroine",
+          "fairy_tale_deconstructed",
+          "woman_finding_agency"
+        ],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Must make indecision dramatically compelling \u2014 the audience must understand why she can't choose while also wanting to shake her. The comedy in her ambivalence is crucial. Act Two demands real growth as she faces consequences and finds genuine strength."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "sondheim_patter",
+          "thinking_aloud_onstage",
+          "ball_gown_management",
+          "transformation_narrative"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Cinderella is the most recognisable character in the show and 'On the Steps of the Palace' is a signature Sondheim showcase. The role develops sophisticated acting skills \u2014 playing indecision as active choice \u2014 and Sondheim musicianship.",
+        "common_casting": "Lyrical sopranos with strong acting instincts and the intelligence to navigate Sondheim's text. Must be sympathetic despite frustrating ambivalence.",
+        "standout_opportunity": "'On the Steps of the Palace' is one of the most famous Sondheim solos \u2014 a woman literally stopping time to think through her life choices. When performed brilliantly, it's a showstopper."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sondheim_lyrical_singing",
+          "active_indecision_acting",
+          "internal_monologue_technique",
+          "fairy_tale_deconstruction",
+          "finding_agency"
+        ],
+        "challenge_areas": [
+          "making_indecision_dramatically_active",
+          "sondheim_rhythmic_precision",
+          "growth_arc_across_two_acts"
+        ],
+        "recommended_for": [
+          "sopranos_developing_sondheim_skills",
+          "actresses_seeking_complex_fairy_tale_roles",
+          "performers_building_dramatic_intelligence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A beautiful voice with intelligence behind it",
+          "The ability to think on stage \u2014 process in real time",
+          "Sympathy despite frustrating behaviour",
+          "Sondheim musicianship \u2014 precise yet emotionally free",
+          "Growth potential from Act One ingenue to Act Two woman"
+        ],
+        "common_mistakes": [
+          "Playing Cinderella as passive \u2014 her indecision is active avoidance",
+          "Treating 'On the Steps' as just a pretty song instead of a philosophical crisis",
+          "Not preparing adequately for Sondheim's musical demands",
+          "Missing the comedy in her ambivalence"
+        ],
+        "tips": [
+          "Prepare 'On the Steps of the Palace' or a Sondheim piece showing lyrical beauty AND intelligence",
+          "Study how indecision can be dramatically active \u2014 Cinderella CHOOSES not to choose",
+          "Watch the original 1987 and 2022 film interpretations for contrasting approaches",
+          "Show directors both the fairy-tale beauty and the real woman underneath"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "On the Steps of the Palace",
+          "type": "solo",
+          "notes": "Iconic Sondheim monologue-in-song. Cinderella freezes time to debate whether she wants her fairy tale. Musically and dramatically brilliant."
+        },
+        {
+          "title": "No One Is Alone",
+          "type": "quartet",
+          "notes": "Cinderella finds her voice and wisdom in Act Two, offering comfort to Little Red and Jack."
+        },
+        {
+          "title": "A Very Nice Prince",
+          "type": "duet",
+          "notes": "Comic exchange with Baker's Wife about the frustrating appeal of princes."
+        }
+      ]
+    },
+    {
+      "id": "jack",
+      "name": "Jack",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 14,
+        "max": 25
+      },
+      "description": "The Jack of beanstalk fame \u2014 simple, sweet, adventurous, and ultimately responsible for catastrophic consequences he never intended. Jack is childlike and brave, genuinely loves his cow Milky White, and is thrilled by the world of the giants. His innocence makes his Act Two reckoning all the more painful: the giants he robbed want revenge, and people die because of his adventure. Jack must grapple with guilt while remaining fundamentally good-hearted.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor_boy",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Bright, youthful tenor with wonder and excitement. 'Giants in the Sky' must convey genuine awe and discovery \u2014 it's an awakening song. Simple, unaffected vocal quality that contrasts with the musical sophistication of the writing."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "physical_comedy",
+          "climbing_staging"
+        ],
+        "stamina": "moderate",
+        "notes": "Physical agility for beanstalk sequences. Must convey youthful energy and the physical wonder of climbing into the sky."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "innocent_adventurer",
+          "naive_hero",
+          "guilt_ridden_youth"
+        ],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Must be genuinely childlike without being cutesy. The innocence must feel real so that Act Two's consequences land with appropriate weight. His relationship with Milky White (usually a puppet or stylised cow) requires committed imagination."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "childlike_wonder",
+          "cow_puppet_interaction",
+          "physical_agility",
+          "innocence_performance"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Jack's solo 'Giants in the Sky' is a beloved number and a wonderful showcase for young tenors. The role develops Sondheim skills, emotional range, and the ability to play innocence and guilt \u2014 essential tools for any developing performer.",
+        "common_casting": "Young-looking tenors with genuine warmth and boyish charm. Can be cast older playing younger or with actual young performers.",
+        "standout_opportunity": "'Giants in the Sky' is a star-making number for young tenors \u2014 pure wonder and discovery set to gorgeous Sondheim melody."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sondheim_tenor_singing",
+          "innocence_to_guilt_arc",
+          "physical_storytelling",
+          "puppet_interaction",
+          "wonder_performance"
+        ],
+        "challenge_areas": [
+          "maintaining_childlike_quality_without_infantilising",
+          "sondheim_musical_precision",
+          "act_two_emotional_weight"
+        ],
+        "recommended_for": [
+          "young_tenors_learning_sondheim",
+          "performers_developing_emotional_range",
+          "those_wanting_beloved_supporting_role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine youthful energy and wonder",
+          "A bright tenor voice with emotional warmth",
+          "The ability to be simple without being stupid",
+          "Physical expressiveness and agility",
+          "Emotional depth for Act Two guilt and grief"
+        ],
+        "common_mistakes": [
+          "Playing Jack as dim or idiotic \u2014 he's simple, not stupid",
+          "Over-performing wonder instead of genuinely feeling it",
+          "Neglecting Act Two's emotional demands",
+          "Insufficient Sondheim preparation"
+        ],
+        "tips": [
+          "Prepare 'Giants in the Sky' to show vocal warmth and wonder",
+          "Think about a time you discovered something amazing \u2014 bring that feeling",
+          "Show directors you can handle both joy and guilt in callbacks",
+          "Study the Milky White dynamic \u2014 committed imagination is key"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Giants in the Sky",
+          "type": "solo",
+          "notes": "Iconic tenor showcase of wonder and discovery. Jack describes the world above with breathless awe."
+        },
+        {
+          "title": "No One Is Alone",
+          "type": "quartet",
+          "notes": "Jack receives comfort and finds courage in the devastated Act Two."
+        }
+      ]
+    },
+    {
+      "id": "little-red-riding-hood",
+      "name": "Little Red Riding Hood",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 12,
+        "max": 22
+      },
+      "description": "Sondheim's Little Red is precocious, sassy, greedy, and hilariously blunt. She starts as a bratty child who learns a hard lesson from the Wolf, emerging tougher and more knowing. Her song 'I Know Things Now' is about the loss of innocence \u2014 framed in a child's language but carrying deeply adult implications. In Act Two, she faces real loss and must find genuine courage. The role is a wonderful showcase for young female performers \u2014 funny, smart, and unexpectedly moving.",
+      "vocal": {
+        "range": "B3-E5",
+        "voice_type": "soprano_belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Bright, forward, sassy belt with the ability to deliver Sondheim's text with rapid-fire clarity. Must sound young but musically sophisticated. Character voice that's bratty without being grating."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "skipping",
+          "comedic_movement"
+        ],
+        "stamina": "low_to_moderate",
+        "notes": "Minimal dance. Physical comedy and childlike energy are more important than technique."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "precocious_child",
+          "bratty_kid",
+          "loss_of_innocence",
+          "growing_wisdom"
+        ],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Must balance genuine childhood energy with the subtext of Sondheim's writing about innocence and experience. The Wolf scene has layered implications that the performer must understand even if playing it at surface level. Act Two demands genuine emotional growth."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "precocious_comedy",
+          "rapid_sondheim_delivery",
+          "loss_of_innocence_arc"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "An outstanding role for developing performers \u2014 builds Sondheim skills, comic timing, and emotional range in a beloved, high-visibility supporting role. 'I Know Things Now' is a wonderful audition piece for years to come.",
+        "common_casting": "Young, sassy female performers with belt voices and sharp comic timing. Can be cast with actual teenagers or young-looking adults.",
+        "standout_opportunity": "'I Know Things Now' is a signature Sondheim number that showcases a young performer's intelligence and vocal skill."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sondheim_belt_technique",
+          "comedic_timing",
+          "subtext_performance",
+          "emotional_growth_arc",
+          "rapid_fire_delivery"
+        ],
+        "challenge_areas": [
+          "sondheim_rhythmic_precision",
+          "navigating_the_wolf_scene_subtext",
+          "growth_from_comedy_to_drama"
+        ],
+        "recommended_for": [
+          "young_female_belt_performers",
+          "teen_performers_ready_for_sondheim",
+          "comedic_actresses_developing_dramatic_range"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Sass and personality that fill the room",
+          "A strong belt voice with clear diction",
+          "Intelligence \u2014 Little Red is smarter than she seems",
+          "Comic timing and physical comedy instincts",
+          "Emotional availability for Act Two growth"
+        ],
+        "common_mistakes": [
+          "Being annoying rather than entertaining \u2014 there's a crucial difference",
+          "Playing purely as a child without the layered subtext",
+          "Insufficient vocal power for Sondheim's demanding writing",
+          "Not showing emotional growth potential"
+        ],
+        "tips": [
+          "Prepare 'I Know Things Now' or a sassy contemporary musical theatre belt number",
+          "Find the intelligence beneath the brattiness \u2014 Little Red LEARNS",
+          "Show directors you can pivot from funny to real in callbacks",
+          "Study the original staging but bring your own personality \u2014 this role rewards individuality"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I Know Things Now",
+          "type": "solo",
+          "notes": "Post-Wolf reflection on lost innocence. Sassy surface with profound subtext. A Sondheim classic."
+        },
+        {
+          "title": "No One Is Alone",
+          "type": "quartet",
+          "notes": "Little Red finds comfort and courage in community."
+        }
+      ]
+    },
+    {
+      "id": "cinderellas-prince",
+      "name": "Cinderella's Prince",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 40
+      },
+      "description": "A dashing, charming, and deeply superficial prince who is captivated by Cinderella's beauty but struggles with the concept of commitment and fidelity. He is the romantic ideal \u2014 impossibly handsome, heroic, and utterly self-absorbed. In Act One, he is the fairy tale prince rescuing Cinderella. In Act Two, Sondheim brilliantly deconstructs him: he pursues the Baker's Wife, revealing that his 'charm' is actually compulsive and shallow. His duet 'Agony' with Rapunzel's Prince is one of the funniest numbers in all of musical theatre. Often doubled with the Wolf.",
+      "vocal": {
+        "range": "A2-F#4",
+        "voice_type": "Bass-Baritone / Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Strong mid-range baritone with the ability to sing operatic parody and legit musical theatre",
+        "style_notes": "Sondheim's writing for the Prince is deliberately grandiose and operatic \u2014 the vocal style parodies romantic leading men. 'Agony' requires both genuine vocal power and comedic timing. Must be able to sing beautifully while being hilariously pompous. The seduction scene with the Baker's Wife requires vocal charm."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Staging",
+          "Physical comedy",
+          "Heroic posing"
+        ],
+        "stamina": "Moderate \u2014 concentrated in key scenes",
+        "notes": "The Prince's physicality is about absurd heroism \u2014 dramatic poses, cape flourishes, earnest romance. The comedy comes from taking the Prince archetype completely seriously. 'Agony' often involves competitive physical comedy with Rapunzel's Prince."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Satirical romantic lead",
+          "Self-absorbed hero",
+          "Charming but shallow",
+          "Deconstructed fairy tale prince"
+        ],
+        "emotional_range": "Dramatic heroism, comedic pomposity, seductive charm, genuine confusion about why his nature is a problem \u2014 played with total sincerity",
+        "comedy_skills": true,
+        "notes": "The key to Cinderella's Prince is absolute sincerity. He is not playing a fool \u2014 he genuinely believes he is wonderful. The comedy comes from the audience seeing what he cannot. 'I was raised to be charming, not sincere' is his defining line. The seduction of the Baker's Wife must be both charming enough to be believable AND revealing of his fundamental shallowness. This is Sondheim at his most psychologically acute."
+      },
+      "performance": {
+        "stage_time_percentage": 18,
+        "solo_songs": 0,
+        "duets": 3,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "Operatic parody",
+          "Comedic heroism played straight",
+          "Physical comedy with cape/costume",
+          "Charm that reveals shallowness",
+          "Often doubled with the Wolf"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Cinderella's Prince is one of the great comic supporting roles in Sondheim. 'Agony' alone is worth the price of admission. The role teaches you how to play comedy with absolute sincerity, how to satirise a character type while inhabiting it completely, and how to make a shallow character psychologically complex. Invaluable Sondheim experience.",
+        "common_casting": "Handsome, charismatic baritones with strong comedy instincts. Must look the part of a fairy tale prince while being able to deconstruct it. Often doubled with the Wolf, which requires both charm and danger.",
+        "standout_opportunity": "'Agony' is guaranteed to be the comedy highlight of any production. A great Prince steals the show in the best possible way."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Sondheim vocal interpretation",
+          "Comedy through sincerity",
+          "Satirical character work",
+          "Physical comedy and heroic parody",
+          "Playing charming but flawed characters"
+        ],
+        "challenge_areas": [
+          "Not winking at the audience \u2014 the comedy must come from sincerity",
+          "Making the seduction scene both funny and genuinely charming",
+          "Sondheim's complex vocal writing",
+          "If doubled with Wolf, switching between charm and menace"
+        ],
+        "recommended_for": [
+          "Baritones with strong comedy skills",
+          "Performers looking for Sondheim experience",
+          "Actors who can play handsome and ridiculous simultaneously",
+          "Those developing satirical performance skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine charisma and traditional leading-man quality",
+          "The ability to be hilarious without trying to be funny",
+          "Strong Sondheim vocal skills \u2014 rhythm, pitch, diction",
+          "Physical comedy that comes from commitment to character",
+          "If doubling Wolf, the ability to shift from charm to danger"
+        ],
+        "common_mistakes": [
+          "Playing the Prince as if he knows he's ridiculous",
+          "Camping it up instead of playing it straight",
+          "Not taking the seduction scene seriously enough",
+          "Underestimating Sondheim's vocal demands"
+        ],
+        "tips": [
+          "Play the Prince with total conviction \u2014 he thinks he's magnificent",
+          "Study how great comedians commit fully to absurd characters",
+          "'Agony' should be performed with genuine anguish about beautiful women",
+          "Prepare Sondheim material that shows rhythmic precision and comedic timing"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Agony",
+          "type": "duet",
+          "notes": "The iconic comic duet with Rapunzel's Prince \u2014 competitive suffering over unattainable women. One of Sondheim's greatest comedy numbers."
+        },
+        {
+          "title": "Agony (Reprise)",
+          "type": "duet",
+          "notes": "Act Two reprise where the Princes have moved on to new unattainable women \u2014 Sleeping Beauty and Snow White"
+        },
+        {
+          "title": "Any Moment / Moments in the Woods",
+          "type": "scene_and_duet",
+          "notes": "The seduction of the Baker's Wife \u2014 charming, revealing, and consequential"
+        }
+      ]
+    },
+    {
+      "id": "rapunzels-prince",
+      "name": "Rapunzel's Prince",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 40
+      },
+      "description": "The brother of Cinderella's Prince who is equally dashing, equally self-absorbed, and equally ridiculous. He is desperately in love with Rapunzel and spends Act One trying to reach her tower, suffering beautifully along the way. His competitive dynamic with his brother \u2014 each insisting their romantic anguish is greater \u2014 creates some of the funniest moments in the show. In Act Two, Rapunzel goes mad and is killed by the Giant, and his Prince transfers his affections to Sleeping Beauty. Often doubled with the Steward in productions.",
+      "vocal": {
+        "range": "A2-F#4",
+        "voice_type": "Bass-Baritone / Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Strong mid-range baritone matching Cinderella's Prince for the duet sections",
+        "style_notes": "Must match Cinderella's Prince vocally for 'Agony' \u2014 same operatic parody quality, same grandiose delivery. The vocal blend between the two Princes is essential. Sondheim's writing demands precise rhythm and diction alongside the comedic delivery."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Staging",
+          "Physical comedy",
+          "Heroic posing",
+          "Competitive physicality"
+        ],
+        "stamina": "Moderate \u2014 concentrated in key scenes",
+        "notes": "Same heroic physical comedy as Cinderella's Prince. 'Agony' often becomes a physical competition \u2014 shirt-ripping, waterfall-standing, dramatic suffering. The two Princes should mirror and one-up each other physically."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Romantic prince parody",
+          "Competitive brother",
+          "Earnest fool",
+          "Grieving lover"
+        ],
+        "emotional_range": "Dramatic heroism, competitive anguish, genuine loss (when Rapunzel dies), quick recovery to chase the next princess",
+        "comedy_skills": true,
+        "notes": "Rapunzel's Prince has a slightly different arc than his brother \u2014 he actually experiences genuine loss when Rapunzel dies, but Sondheim's genius is showing that he moves on almost immediately. His grief is real but shallow. The actor must find the moment of genuine emotion before the character's nature reasserts itself. His competitive dynamic with his brother is the comic engine."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Comic duet partnership",
+          "Competitive physical comedy",
+          "Brief genuine grief within comedy",
+          "Operatic parody vocals",
+          "Often doubled with The Steward"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Rapunzel's Prince shares the glory of 'Agony' and offers the added complexity of a brief genuine emotional moment (Rapunzel's death). The role teaches comic duet partnership, Sondheim vocal technique, and the art of finding fleeting depth in a shallow character.",
+        "common_casting": "Must complement Cinderella's Prince \u2014 similar physicality and vocal quality. The two Princes should feel like brothers, competitive and matched. Charismatic baritones with comedy skills.",
+        "standout_opportunity": "'Agony' makes both Princes audience favourites. The brief moment of genuine grief for Rapunzel, if played well, adds unexpected depth."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comic duet partnership",
+          "Sondheim vocal precision",
+          "Finding depth in comic characters",
+          "Physical comedy and competitive staging",
+          "Playing genuine emotion within satire"
+        ],
+        "challenge_areas": [
+          "Not being overshadowed by Cinderella's Prince",
+          "Making the grief genuine without derailing the comedy",
+          "Vocal blend with the other Prince",
+          "If doubled with Steward, clear character differentiation"
+        ],
+        "recommended_for": [
+          "Baritones with comedy skills seeking Sondheim experience",
+          "Performers who enjoy comic duet/partnership work",
+          "Actors who can balance comedy with emotional depth",
+          "Those building a range of supporting roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Chemistry potential with Cinderella's Prince actor",
+          "Strong baritone voice with Sondheim capability",
+          "Natural charisma and commitment to comedy",
+          "The ability to match another performer in competitive comedy",
+          "Range to show brief genuine emotion amid the humour"
+        ],
+        "common_mistakes": [
+          "Trying to be funnier than the other Prince \u2014 it's a partnership",
+          "Missing the genuine grief moment for Rapunzel",
+          "Not matching vocal quality with the brother Prince",
+          "Underplaying the competitive dynamic"
+        ],
+        "tips": [
+          "Study great comedy duos \u2014 the Princes work best as a matched pair",
+          "Prepare 'Agony' as a partnership piece, not a solo",
+          "Find one moment of genuine feeling \u2014 Rapunzel's death \u2014 and play it fully",
+          "Show Sondheim readiness with rhythmically complex audition material"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Agony",
+          "type": "duet",
+          "notes": "The iconic comic duet \u2014 competitive romantic suffering with Cinderella's Prince"
+        },
+        {
+          "title": "Agony (Reprise)",
+          "type": "duet",
+          "notes": "Act Two reprise \u2014 now pining for Sleeping Beauty after Rapunzel's death"
+        }
+      ]
+    },
+    {
+      "id": "rapunzel",
+      "name": "Rapunzel",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 18,
+        "max": 30
+      },
+      "description": "The Witch's stolen daughter, kept locked in a tower, who represents the tragedy of overprotective love. Rapunzel is sheltered, fragile, and increasingly desperate for freedom. Her story is the emotional heart of the Witch's arc \u2014 the Witch imprisoned her out of love, but that love became possessive control. In Act Two, freed from her tower but psychologically damaged, Rapunzel goes mad and is killed by the Giant. Her death devastates the Witch and triggers the Witch's final transformation. Rapunzel's story is the show's clearest statement about how protective love can destroy what it tries to save. Often doubled from ensemble.",
+      "vocal": {
+        "range": "C4-A5",
+        "voice_type": "Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "High, pure soprano \u2014 ethereal and increasingly desperate",
+        "style_notes": "Rapunzel's vocal line is one of Sondheim's most haunting \u2014 a repeated, increasingly frantic melodic phrase that represents her isolation and growing madness. The voice must be genuinely beautiful (this is the Witch's precious treasure) but capable of expressing psychological fracture. Pure soprano quality that contrasts with the more complex vocal writing for other characters."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Minimal staging"
+        ],
+        "stamina": "Low \u2014 limited appearances",
+        "notes": "Rapunzel is confined \u2014 physically and metaphorically. Her physicality is about restriction, fragility, and ultimately the disturbing movement of madness. No dance required."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Imprisoned innocent",
+          "Psychological victim",
+          "Tragic figure",
+          "Metaphor for overprotection"
+        ],
+        "emotional_range": "Innocent longing, fear, desperation, madness, collapse \u2014 a compressed tragic arc in limited stage time",
+        "comedy_skills": false,
+        "notes": "Rapunzel is one of the most emotionally demanding small roles in Sondheim. She must go from sheltered innocence to psychological breakdown in very few scenes. Her madness should feel inevitable and devastating, not sudden. The relationship with the Witch \u2014 love, fear, resentment, loss \u2014 must be complex and felt in every moment."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Emotional compression \u2014 full tragic arc in limited time",
+          "Portraying madness authentically",
+          "Conveying the damage of overprotective love",
+          "Pure soprano singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "Rapunzel is a masterclass in compressed storytelling \u2014 you must convey an entire tragic arc in very few scenes. The role develops emotional depth, Sondheim vocal technique, and the ability to make a small role feel essential. Her death is the catalyst for the Witch's most powerful moment.",
+        "common_casting": "Beautiful soprano voices with genuine acting depth. Often younger performers who can convey innocence alongside the capacity for psychological collapse. Must have real emotional range despite limited stage time.",
+        "standout_opportunity": "Rapunzel's madness and death are devastating when played well. This small role can be the emotional gut-punch of the production."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Compressed emotional arc",
+          "Sondheim soprano vocal technique",
+          "Portraying psychological damage",
+          "Making limited stage time count",
+          "Complex parent-child dynamics"
+        ],
+        "challenge_areas": [
+          "Going from innocence to madness believably in few scenes",
+          "Sondheim's demanding soprano writing",
+          "Making the character more than a symbol",
+          "The psychological weight of the madness scenes"
+        ],
+        "recommended_for": [
+          "Sopranos seeking Sondheim experience",
+          "Actors who excel at emotional depth in small roles",
+          "Performers developing range in tragic material",
+          "Those building credits in complex musical theatre"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Pure, beautiful soprano voice",
+          "Genuine emotional depth and vulnerability",
+          "The ability to convey madness without melodrama",
+          "Chemistry potential with the Witch actress",
+          "An innocence that can fracture convincingly"
+        ],
+        "common_mistakes": [
+          "Playing Rapunzel as one-note \u2014 she has a complete arc",
+          "Overplaying the madness \u2014 it should be heartbreaking, not theatrical",
+          "Not connecting Rapunzel's story to the Witch's emotional journey",
+          "Underestimating Sondheim's vocal demands for this role"
+        ],
+        "tips": [
+          "Study the Witch's arc to understand Rapunzel's importance",
+          "Find the specific moments where innocence cracks",
+          "Prepare a Sondheim soprano piece that shows emotional range",
+          "Less is more with the madness \u2014 internal collapse, not external explosion"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Our Little World",
+          "type": "duet",
+          "notes": "Duet with the Witch \u2014 the complex, beautiful, suffocating love between mother and daughter"
+        },
+        {
+          "title": "Rapunzel's melodic theme",
+          "type": "recurring_motif",
+          "notes": "The repeated phrase that tracks her emotional state from longing to madness"
+        }
+      ]
+    },
+    {
+      "id": "jacks-mother",
+      "name": "Jack's Mother",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 35,
+        "max": 55
+      },
+      "description": "Jack's long-suffering, practical, exasperated mother who is struggling to survive in poverty with her dim but lovable son. She is the most grounded, realistic character in the show \u2014 while everyone else pursues fairy tale wishes, she just wants to feed her family. Her frustration with Jack is born of genuine desperation and fierce love. In Act Two, she is killed by the Giant, and her death transforms Jack from a boy into someone who must face consequences. She represents the ordinary parent \u2014 no magic, no wishes, just the exhausting reality of trying to keep your child alive.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "Soprano / Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "Strong, brassy belt with the energy of a woman at the end of her rope",
+        "style_notes": "Jack's Mother sings with frustrated urgency \u2014 she's always trying to get Jack's attention, make him understand the gravity of their situation, or react with exasperation to his latest adventure. Her vocal energy is high and insistent. Sondheim gives her some of the most rhythmically intricate ensemble passages."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Staging"
+        ],
+        "stamina": "Moderate \u2014 concentrated appearances with high energy",
+        "notes": "Jack's Mother's physicality is about exhaustion, frustration, and fierce protectiveness. She should move like a woman who works hard and has no patience for nonsense."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Exasperated mother",
+          "Comic realist",
+          "Fierce protector",
+          "Grounded ordinary person"
+        ],
+        "emotional_range": "Exasperation, desperation, fierce love, comedy through frustration, devastating absence in Act Two",
+        "comedy_skills": true,
+        "notes": "Jack's Mother is the audience's reality check \u2014 while fairy tale characters pursue wishes, she's trying not to starve. Her comedy comes from genuine frustration (selling the cow for five beans?!). But underneath the exasperation is fierce, unconditional love for Jack. Her death must feel like a real loss \u2014 suddenly the voice of reason is gone, and the characters (and audience) feel it."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "Comedy through exasperation",
+          "Fierce maternal love",
+          "Grounding reality within fantasy",
+          "Sondheim ensemble complexity",
+          "Making absence felt after death"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Jack's Mother is a scene-stealer who grounds the entire show in reality. She teaches you how to find comedy in genuine frustration, how to play fierce love through exasperation, and how Sondheim uses ordinary characters to anchor extraordinary stories. Her death is one of the most consequential in the show.",
+        "common_casting": "Character actresses with big energy, strong belt, and natural comedy. Must feel like a real mother \u2014 not a fairy tale character but an actual person dealing with impossible circumstances.",
+        "standout_opportunity": "The five-beans reveal is comedy gold. Jack's Mother consistently gets some of the biggest laughs and the biggest emotional reactions in the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Sondheim complex ensemble singing",
+          "Comedy through genuine frustration",
+          "Fierce maternal characterisation",
+          "Grounding fantasy with reality",
+          "Making a supporting role essential"
+        ],
+        "challenge_areas": [
+          "Sondheim's intricate rhythmic writing",
+          "Not becoming a one-note nag \u2014 she loves Jack",
+          "Making the death impactful despite limited development",
+          "Balancing comedy with the show's darker themes"
+        ],
+        "recommended_for": [
+          "Character actresses seeking Sondheim roles",
+          "Performers who excel at comedy with heart",
+          "Those developing complex ensemble vocal skills",
+          "Actors who want to play ordinary people in extraordinary circumstances"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong belt with character quality",
+          "Natural comedy through exasperation",
+          "Genuine maternal energy",
+          "Sondheim rhythmic readiness",
+          "The ability to ground fantasy in reality"
+        ],
+        "common_mistakes": [
+          "Playing Jack's Mother as simply angry \u2014 she loves her son",
+          "Not preparing for Sondheim's demanding ensemble writing",
+          "Making her too broad \u2014 she's funny because she's real",
+          "Forgetting that her death matters enormously to the story"
+        ],
+        "tips": [
+          "Find the love underneath every exasperated line",
+          "Study real parents dealing with impossible children \u2014 that's your source",
+          "Prepare Sondheim material that shows rhythmic precision and character belt",
+          "Show both the comedy and the heartbreak in your audition"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Act One Opening / Into the Woods sequence",
+          "type": "ensemble",
+          "notes": "Jack's Mother's frustrated participation in the opening \u2014 selling the cow, dealing with Jack's optimism"
+        },
+        {
+          "title": "Act Two ensemble passages",
+          "type": "ensemble",
+          "notes": "Complex Sondheim ensemble writing in the moral debate sections"
+        }
+      ]
+    },
+    {
+      "id": "narrator-mysterious-man",
+      "name": "The Narrator / Mysterious Man",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 65
+      },
+      "description": "A dual role that serves as both the storyteller guiding the audience through the fairy tale and a mysterious figure who proves to be the Baker's father. As the Narrator, he provides the 'once upon a time' framework \u2014 omniscient, detached, wryly amused by the characters' wishes and follies. As the Mysterious Man, he hovers at the edges of the Baker's story, dropping cryptic hints about the curse and the Baker's family history. In Act Two, the characters sacrifice the Narrator to the Giant, breaking the fourth wall and removing the safety net of storytelling itself. This is Sondheim's brilliant meta-theatrical statement: in the real world, there is no narrator to protect us. These roles are almost always doubled.",
+      "vocal": {
+        "range": "B2-E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Warm, authoritative mid-range \u2014 the voice of storytelling itself",
+        "style_notes": "The Narrator's vocal quality should be warm, assured, and slightly amused \u2014 the tone of someone who knows how the story ends. The Mysterious Man's vocal moments are cryptic and haunting. Sondheim's writing demands clarity of diction and the ability to deliver complex lyrics with apparent ease."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Staging"
+        ],
+        "stamina": "Moderate \u2014 present throughout but not physically demanding",
+        "notes": "The Narrator moves through the story like a ghost \u2014 present but apart. The Mysterious Man is more physical \u2014 lurking, appearing, disappearing. The transition between the two should be seamless."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Omniscient storyteller",
+          "Cryptic father figure",
+          "Meta-theatrical device",
+          "Fourth-wall breaker"
+        ],
+        "emotional_range": "Detached amusement as Narrator, cryptic warmth as Mysterious Man, shocking vulnerability when sacrificed to the Giant",
+        "comedy_skills": true,
+        "notes": "This dual role is intellectually demanding. The Narrator must control the audience's relationship with the story \u2014 drawing them in, commenting on the action, and then being violently removed in Act Two. The Mysterious Man adds emotional depth: the Baker's father who abandoned him, now trying to help from the shadows. The sacrifice of the Narrator is one of the great meta-theatrical moments \u2014 it should genuinely shock."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "Direct audience address",
+          "Meta-theatrical storytelling",
+          "Dual character portrayal",
+          "Building and breaking fourth wall",
+          "Sondheim's complex lyrical delivery"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "The Narrator/Mysterious Man is one of the most intellectually demanding roles in Sondheim. It develops direct audience address, meta-theatrical performance, dual characterisation, and the ability to control a show's relationship with its audience. Being sacrificed in Act Two is a stunning dramatic moment. This role teaches you things no other role can.",
+        "common_casting": "Authoritative actor-singers with warmth, wit, and the gravitas to command attention through storytelling. Often cast with mature performers who bring natural authority. Must be compelling enough that the audience feels genuine loss when the Narrator is sacrificed.",
+        "standout_opportunity": "The Narrator controls the audience's entire experience. A great Narrator defines the production \u2014 their sacrifice in Act Two is one of the most shocking, thrilling moments in musical theatre."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Direct audience address and storytelling",
+          "Meta-theatrical performance",
+          "Dual character differentiation",
+          "Sondheim vocal and lyrical interpretation",
+          "Building and shattering fourth-wall relationships"
+        ],
+        "challenge_areas": [
+          "Maintaining engagement during narration \u2014 this is active, not passive",
+          "Clear differentiation between Narrator and Mysterious Man",
+          "Making the sacrifice genuinely shocking",
+          "Sondheim's demanding lyrical complexity"
+        ],
+        "recommended_for": [
+          "Actor-singers with storytelling gifts",
+          "Performers seeking advanced Sondheim experience",
+          "Those developing meta-theatrical skills",
+          "Actors who command attention through voice and presence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural storytelling ability and audience command",
+          "Warm, authoritative vocal quality",
+          "The ability to play two distinct characters",
+          "Sondheim rhythmic and lyrical precision",
+          "Gravitas that makes the sacrifice meaningful"
+        ],
+        "common_mistakes": [
+          "Being passive as the Narrator \u2014 this is an active performance",
+          "Not differentiating between Narrator and Mysterious Man",
+          "Lacking the warmth needed for the audience to care about the sacrifice",
+          "Underestimating Sondheim's vocal demands"
+        ],
+        "tips": [
+          "Study great storytellers \u2014 the Narrator is performing narration, not just reading it",
+          "Find distinct physicalities for the Narrator and the Mysterious Man",
+          "The Narrator should have a relationship with the audience that develops over the show",
+          "Prepare Sondheim that shows lyrical clarity and storytelling ability"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Into the Woods (Opening)",
+          "type": "narration_with_singing",
+          "notes": "Setting up the entire fairy tale world \u2014 the Narrator's relationship with the audience begins here"
+        },
+        {
+          "title": "No More",
+          "type": "duet_with_baker",
+          "notes": "As the Mysterious Man \u2014 the emotional revelation scene with the Baker, father and son"
+        },
+        {
+          "title": "Act Two narration / sacrifice",
+          "type": "dramatic_scene",
+          "notes": "The meta-theatrical sacrifice \u2014 the characters feed the Narrator to the Giant, destroying the story's safety net"
+        }
+      ]
+    },
+    {
+      "id": "cinderellas-stepmother",
+      "name": "Cinderella's Stepmother",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 35,
+        "max": 55
+      },
+      "description": "The cruel, status-obsessed stepmother who torments Cinderella while desperately promoting her own daughters Florinda and Lucinda. She is vain, ruthless, and darkly funny \u2014 Sondheim's version of the Stepmother is more psychologically complex than the Disney version. She genuinely believes her cruelty is justified: Cinderella is beneath her daughters and must know her place. In the darker moments, she mutilates her daughters' feet to fit the golden slipper, revealing the horrifying lengths she'll go to for social advancement. Often doubled from ensemble.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "Strong character mezzo with dramatic bite",
+        "style_notes": "The Stepmother sings with imperious authority and biting cruelty. Her vocal quality should contrast sharply with Cinderella's warmer sound. Sondheim gives her sharp, rhythmically precise passages that require excellent diction and comic timing."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Staging"
+        ],
+        "stamina": "Low \u2014 concentrated appearances",
+        "notes": "The Stepmother's physicality is about superiority and cruelty. She should move with haughty disdain, controlling her space and the people in it."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Cruel authority figure",
+          "Social climber",
+          "Darkly comic villain",
+          "Stage mother"
+        ],
+        "emotional_range": "Imperious cruelty, desperate ambition, dark comedy, chilling ruthlessness in the foot-mutilation scene",
+        "comedy_skills": true,
+        "notes": "The Stepmother must be entertaining in her cruelty \u2014 audiences should enjoy hating her \u2014 while also being genuinely frightening in the darker moments. The foot-mutilation scene is one of the show's most disturbing moments and must be played with chilling determination, not comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Entertaining villainy",
+          "Physical comedy of superiority",
+          "Chilling dramatic moments",
+          "Comic trio with Florinda and Lucinda"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "The Stepmother is a classic villain role that teaches entertaining cruelty, period character work, and the ability to shift between dark comedy and genuine horror. The trio with Florinda and Lucinda is a comic highlight.",
+        "common_casting": "Strong character actresses who can be both hilarious and terrifying. Must command the Cinderella household scenes with imperious authority. Often doubled from ensemble.",
+        "standout_opportunity": "A great Stepmother is memorably wicked. The contrast between comic villainy and the genuinely dark foot-mutilation scene shows remarkable range."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Playing entertaining villainy",
+          "Comic trio dynamics",
+          "Shifting between comedy and horror",
+          "Sondheim ensemble precision",
+          "Imperious character physicality"
+        ],
+        "challenge_areas": [
+          "Balancing comedy with genuine cruelty",
+          "The foot-mutilation scene requires careful handling",
+          "Making a familiar character type feel fresh",
+          "Supporting Cinderella's story without dominating it"
+        ],
+        "recommended_for": [
+          "Character actresses who enjoy villainous roles",
+          "Performers developing comic villainy skills",
+          "Those seeking Sondheim ensemble experience",
+          "Actors comfortable with darker fairy tale material"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Imperious authority and comic timing",
+          "The ability to be funny and frightening",
+          "Strong character mezzo voice",
+          "Chemistry with Florinda/Lucinda actors",
+          "Comfort with the darker fairy tale elements"
+        ],
+        "common_mistakes": [
+          "Playing the Stepmother as pure pantomime villain",
+          "Not finding the genuine cruelty beneath the comedy",
+          "Overplaying and dominating scenes",
+          "Not preparing for Sondheim's vocal demands"
+        ],
+        "tips": [
+          "Find the Stepmother's genuine belief that she's right \u2014 she thinks Cinderella deserves it",
+          "The comedy should come from conviction, not camping",
+          "Study the trio dynamic \u2014 you lead Florinda and Lucinda",
+          "Show range: comedy AND dramatic weight"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Stepmother/Stepsister scenes",
+          "type": "comic_scenes",
+          "notes": "The trio of cruelty \u2014 Stepmother orchestrating Florinda and Lucinda's social climbing"
+        },
+        {
+          "title": "Act One ensemble",
+          "type": "ensemble",
+          "notes": "Participation in the complex Sondheim ensemble weaving"
+        }
+      ]
+    },
+    {
+      "id": "florinda",
+      "name": "Florinda",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "One of Cinderella's ugly stepsisters \u2014 vain, entitled, and hilariously oblivious. Florinda follows her mother's lead in tormenting Cinderella, but with less cunning and more petulance. She and Lucinda are a comic double act: competitive with each other, united against Cinderella. In the darker Sondheim version, she submits to having part of her foot cut off to fit the golden slipper, and is later blinded by birds at Cinderella's wedding. The stepsister scenes are broad comedy that takes dark turns. Often doubled from ensemble.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "Character mezzo with comic quality \u2014 deliberately unpolished compared to Cinderella",
+        "style_notes": "Florinda's voice should contrast with Cinderella's \u2014 less refined, more strident. The comedy is in the pretension: she thinks she sounds wonderful. Must handle Sondheim's ensemble writing with precision."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Physical comedy",
+          "Staging"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "Florinda's physicality is about vanity and entitlement. She should move as if she believes she's the most beautiful person in the room. Physical comedy of trying on the slipper is a key moment."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Vain stepsister",
+          "Comic sidekick to Stepmother",
+          "Entitled brat"
+        ],
+        "emotional_range": "Vanity, petulance, competition with Lucinda, desperate pain (foot mutilation), shock (blinding)",
+        "comedy_skills": true,
+        "notes": "Florinda is broad comedy with dark edges. The challenge is making her entertaining without becoming a cartoon, then handling the genuinely disturbing moments (foot cutting, blinding) with appropriate gravity."
+      },
+      "performance": {
+        "stage_time_percentage": 7,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Physical comedy",
+          "Comic double act with Lucinda",
+          "Dark fairy tale moments",
+          "Sondheim ensemble singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Florinda is a fun featured role that teaches broad comedy, comic partnership, and the challenge of handling dark material within a comedic framework. Great entry point for performers building Sondheim credits.",
+        "common_casting": "Comic actresses who can play vanity and entitlement with commitment. Must work well as a pair with Lucinda and a trio with the Stepmother. Often doubled from ensemble.",
+        "standout_opportunity": "The stepsister scenes are crowd-pleasers. A great Florinda gets consistent laughs and shows range in the darker moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Broad physical comedy",
+          "Comic partnership work",
+          "Handling dark material in comic context",
+          "Sondheim ensemble skills",
+          "Character comedy"
+        ],
+        "challenge_areas": [
+          "Not being overshadowed by Lucinda or Stepmother",
+          "Handling the foot-mutilation scene",
+          "Making vanity entertaining not irritating",
+          "Sondheim ensemble precision"
+        ],
+        "recommended_for": [
+          "Comic actresses seeking ensemble featured roles",
+          "Performers building Sondheim experience",
+          "Those developing physical comedy",
+          "Ensemble members wanting named character credits"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural comedy skills",
+          "Ability to work in a comic ensemble (trio)",
+          "Sondheim vocal readiness",
+          "Physical comedy ability",
+          "Range to handle dark moments"
+        ],
+        "common_mistakes": [
+          "Going too broad \u2014 even stepsisters need grounding",
+          "Not preparing for Sondheim's ensemble demands",
+          "Competing with Lucinda instead of complementing",
+          "Ignoring the darker elements of the role"
+        ],
+        "tips": [
+          "Find what makes Florinda distinct from Lucinda",
+          "Show comic timing AND vocal precision",
+          "Study the trio dynamic \u2014 you're part of a unit",
+          "Be prepared for the darker moments in callbacks"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Stepsister/Stepmother scenes",
+          "type": "comic_ensemble",
+          "notes": "The trio of vanity and cruelty \u2014 competing for the Prince's attention"
+        },
+        {
+          "title": "Ensemble passages",
+          "type": "ensemble",
+          "notes": "Complex Sondheim ensemble weaving throughout"
+        }
+      ]
+    },
+    {
+      "id": "lucinda",
+      "name": "Lucinda",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "The other ugly stepsister \u2014 equally vain and entitled as Florinda but with her own distinct personality. Lucinda is often played as the dimmer or more petulant of the two, following Florinda's lead while occasionally striking out on her own with disastrous results. Like Florinda, she suffers the Grimm fairy tale consequences: foot mutilation and blinding. The two stepsisters should be distinctly characterised \u2014 a comic double act, not interchangeable. Often doubled from ensemble.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "Character mezzo \u2014 should blend with but be distinct from Florinda",
+        "style_notes": "Like Florinda, Lucinda's voice should be less refined than Cinderella's. The two stepsisters should have distinct vocal qualities while blending for their shared moments. Sondheim ensemble precision required."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Physical comedy",
+          "Staging"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "Same physical comedy requirements as Florinda but with distinct characterisation. Find a different physicality \u2014 if Florinda is imperious, perhaps Lucinda is more petulant."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Dim stepsister",
+          "Comic follower",
+          "Competitive sibling"
+        ],
+        "emotional_range": "Same range as Florinda \u2014 vanity, petulance, dark moments \u2014 but with distinct characterisation",
+        "comedy_skills": true,
+        "notes": "The key to Lucinda is differentiation from Florinda. They are a double act, not clones. Find what makes Lucinda unique \u2014 her specific brand of vanity, her particular relationship with the Stepmother, her own comic rhythm."
+      },
+      "performance": {
+        "stage_time_percentage": 7,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Distinct characterisation within a comic pair",
+          "Physical comedy",
+          "Dark fairy tale moments",
+          "Sondheim ensemble"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Same developmental value as Florinda \u2014 broad comedy, partnership work, Sondheim ensemble experience. The additional challenge is creating a distinct character within a pair.",
+        "common_casting": "Comic actresses who complement the Florinda casting. Must be distinct from but compatible with the other stepsister. Often doubled from ensemble.",
+        "standout_opportunity": "Finding a unique, memorable Lucinda within the double act shows real character creation skills."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Character differentiation within a pair",
+          "Broad comedy skills",
+          "Sondheim ensemble work",
+          "Physical comedy",
+          "Comic timing"
+        ],
+        "challenge_areas": [
+          "Being distinct from Florinda",
+          "Not being overshadowed in the trio",
+          "Handling dark material",
+          "Sondheim precision"
+        ],
+        "recommended_for": [
+          "Comic actresses building featured ensemble credits",
+          "Performers developing Sondheim skills",
+          "Those learning comic pair dynamics",
+          "Ensemble members seeking character roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Distinct comedy characterisation",
+          "Compatibility with Florinda actress",
+          "Sondheim vocal readiness",
+          "Physical comedy",
+          "Range for dark moments"
+        ],
+        "common_mistakes": [
+          "Being interchangeable with Florinda",
+          "Going too broad",
+          "Not preparing Sondheim ensemble material",
+          "Ignoring the darker elements"
+        ],
+        "tips": [
+          "Make Lucinda YOUR character \u2014 find what makes her different from Florinda",
+          "Show you can work in an ensemble while bringing individuality",
+          "Prepare for Sondheim's demands",
+          "Show comedy range \u2014 broad AND subtle"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Stepsister scenes",
+          "type": "comic_ensemble",
+          "notes": "Comic pair work with Florinda and trio with the Stepmother"
+        },
+        {
+          "title": "Ensemble passages",
+          "type": "ensemble",
+          "notes": "Sondheim ensemble complexity throughout"
+        }
+      ]
+    },
+    {
+      "id": "the-wolf",
+      "name": "The Wolf",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 45
+      },
+      "description": "The Big Bad Wolf who pursues Little Red Riding Hood through the woods. In Sondheim's interpretation, the Wolf is explicitly predatory in a way that extends beyond the fairy tale \u2014 'Hello, Little Girl' is deliberately unsettling, with sexual overtones that transform a children's story into a commentary on innocence and danger. The Wolf is seductive, charming, and genuinely threatening. He appears in Act One and is killed by the Baker, but his encounter fundamentally changes Little Red, stripping away her naivety. Almost always doubled with Cinderella's Prince, which creates a brilliant thematic resonance: both characters use charm to pursue what they want.",
+      "vocal": {
+        "range": "A2-F#4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Smooth, seductive baritone with predatory undertones",
+        "style_notes": "'Hello, Little Girl' is one of Sondheim's most brilliantly disturbing songs \u2014 a vaudeville-style number with deeply unsettling subtext. The vocal quality must be charming and smooth, with an underlying menace that the audience feels before Little Red does. Jazz-influenced phrasing."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Vaudeville movement",
+          "Stalking physicality",
+          "Physical comedy"
+        ],
+        "stamina": "Low \u2014 one major scene",
+        "notes": "The Wolf's physicality should be fluid and predatory \u2014 slinky, confident, dangerous beneath the charm. Often costumed with some animal elements (ears, tail) while remaining clearly human-like, emphasising the metaphorical nature."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Charming predator",
+          "Fairy tale villain with adult subtext",
+          "Seductive threat"
+        ],
+        "emotional_range": "Seductive charm, barely contained hunger, predatory excitement \u2014 all played with disturbing smoothness",
+        "comedy_skills": true,
+        "notes": "The Wolf is one of the most challenging small roles in Sondheim because of the subtext. 'Hello, Little Girl' MUST work on both levels \u2014 as a fairy tale wolf encounter AND as a deeply uncomfortable metaphor for predation. The actor must navigate this dual meaning without either sanitising it or making it gratuitous. Directors will want to discuss this extensively."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 0,
+        "quick_changes": 1,
+        "special_skills": [
+          "Dual-level performance (fairy tale and subtext)",
+          "Seductive menace",
+          "Vaudeville-style song delivery",
+          "Almost always doubled with Cinderella's Prince"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "The Wolf is a masterclass in layered performance. 'Hello, Little Girl' requires you to perform on multiple levels simultaneously while navigating sensitive material with intelligence and artistry. The doubling with Cinderella's Prince creates a brilliant thematic resonance that deepens both roles. Extraordinary learning experience for actors.",
+        "common_casting": "Almost always doubled with Cinderella's Prince \u2014 the same charming baritone who uses charm as a weapon. The doubling is thematically essential to the show's meaning.",
+        "standout_opportunity": "'Hello, Little Girl' is one of the most discussed and analysed numbers in Sondheim. A great Wolf performance demonstrates sophisticated acting intelligence."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Multi-layered performance",
+          "Navigating sensitive material with artistry",
+          "Sondheim vaudeville vocal style",
+          "Predatory physicality with charm",
+          "Thematic character doubling"
+        ],
+        "challenge_areas": [
+          "Handling the sexual subtext responsibly",
+          "Not making it too comfortable OR too gratuitous",
+          "Working with the director on the right tone",
+          "Quick change to/from Prince if doubling"
+        ],
+        "recommended_for": [
+          "Actors ready for complex, layered material",
+          "Performers who enjoy intellectual performance challenges",
+          "Those developing Sondheim interpretation skills",
+          "Baritones doubling with Cinderella's Prince"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Intelligent handling of the dual-level material",
+          "Charm with underlying menace",
+          "Sondheim vocal readiness",
+          "Physical fluidity and predatory quality",
+          "Maturity to discuss and navigate sensitive content"
+        ],
+        "common_mistakes": [
+          "Making the subtext too explicit or gratuitous",
+          "Sanitising it so it loses all edge",
+          "Playing it as pure comedy",
+          "Not being prepared to discuss the role's implications"
+        ],
+        "tips": [
+          "Research how different productions have handled 'Hello, Little Girl'",
+          "Find the charm FIRST \u2014 the menace works because the charm is real",
+          "Be prepared for a conversation with the director about tone and boundaries",
+          "If doubling with Prince, find the connecting thread between both characters"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Hello, Little Girl",
+          "type": "solo",
+          "notes": "The brilliantly unsettling encounter with Little Red \u2014 fairy tale surface, adult subtext, Sondheim at his most layered"
+        }
+      ]
+    },
+    {
+      "id": "cinderellas-mother",
+      "name": "Cinderella's Mother",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "Cinderella's deceased mother who appears as a spirit at the grave, providing the magic that enables Cinderella's transformation. She is the fairy godmother of the Grimm version \u2014 no wand, but a wishing tree and a mother's love that transcends death. Her presence is ethereal, loving, and tinged with the sadness of a parent who can help but cannot stay. She sings one of the show's most beautiful passages, urging Cinderella to know her own worth. Often doubled from ensemble or with another role.",
+      "vocal": {
+        "range": "C4-A5",
+        "voice_type": "Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "High, pure soprano \u2014 ethereal and maternal",
+        "style_notes": "Cinderella's Mother's voice should be otherworldly and beautiful \u2014 the sound of love from beyond. Sondheim writes her with a purity that contrasts with the more complex vocal writing for living characters. Must be genuinely moving in limited singing."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Ethereal staging"
+        ],
+        "stamina": "Very low \u2014 brief appearances",
+        "notes": "Cinderella's Mother moves as a spirit \u2014 graceful, slightly otherworldly, present but not quite of this world."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Ghostly mother",
+          "Spiritual guide",
+          "Fairy godmother equivalent"
+        ],
+        "emotional_range": "Maternal love, gentle guidance, the bittersweetness of helping from beyond death",
+        "comedy_skills": false,
+        "notes": "Brief but important. Cinderella's Mother must create an immediate emotional connection \u2014 the audience must feel the love and loss in a few short moments. Her guidance to Cinderella is one of the show's most genuinely touching scenes."
+      },
+      "performance": {
+        "stage_time_percentage": 3,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 1,
+        "special_skills": [
+          "Creating emotional impact in minimal stage time",
+          "Ethereal presence",
+          "Pure soprano quality",
+          "Usually doubled from ensemble"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A beautiful small role that teaches maximum emotional impact in minimum time. Perfect for sopranos in the ensemble who want a moment of pure featured singing. The role is almost always doubled from ensemble.",
+        "common_casting": "Strong soprano from the ensemble with maternal warmth and ethereal quality. Must be able to create immediate emotional connection in brief appearances.",
+        "standout_opportunity": "The ghostly mother scene is one of the show's most moving moments. A beautiful voice and genuine emotion make this brief role unforgettable."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Maximum impact in minimal time",
+          "Pure soprano featured singing",
+          "Ethereal character creation",
+          "Emotional economy",
+          "Ensemble-to-featured transitions"
+        ],
+        "challenge_areas": [
+          "Creating a full character in very brief appearances",
+          "The pressure of a featured soprano moment",
+          "Transitioning from ensemble to ghostly character",
+          "Making limited material deeply moving"
+        ],
+        "recommended_for": [
+          "Sopranos in ensemble seeking featured moments",
+          "Performers developing emotional economy",
+          "Those building Sondheim credits",
+          "Ensemble members who want to show vocal beauty"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Beautiful soprano voice",
+          "Immediate emotional warmth",
+          "Ethereal quality",
+          "Ensemble skills alongside featured moment",
+          "Maternal presence"
+        ],
+        "common_mistakes": [
+          "Over-singing the brief featured moment",
+          "Not creating enough character in limited time",
+          "Being too 'ghostly' and losing the warmth",
+          "Not preparing ensemble skills alongside the featured aspect"
+        ],
+        "tips": [
+          "The beauty is in simplicity \u2014 don't over-complicate",
+          "Find genuine maternal love as your anchor",
+          "Prepare a Sondheim soprano piece that shows warmth and purity",
+          "Show you're a strong ensemble member first, featured artist second"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Cinderella's Mother's blessing / wishing tree scene",
+          "type": "featured_solo",
+          "notes": "The ethereal, beautiful guidance from beyond \u2014 pure soprano, pure love"
+        }
+      ]
+    },
+    {
+      "id": "the-steward",
+      "name": "The Steward",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "The Prince's steward and servant who carries out royal orders and manages practical matters. The Steward is a loyal, efficient functionary \u2014 the straight man to the Princes' absurdity. He manages the slipper search, delivers messages, and represents the practical machinery of the fairy tale kingdom. A small but useful role that provides grounding in the royal scenes. Often doubled with Rapunzel's Prince or played from ensemble.",
+      "vocal": {
+        "range": "Variable",
+        "voice_type": "Non-singer / Ensemble voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Primarily spoken role with ensemble singing participation",
+        "style_notes": "The Steward is primarily a speaking role. Any singing is in ensemble contexts. Must have clear diction and projection for announcements and royal orders."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Staging"
+        ],
+        "stamina": "Low",
+        "notes": "Minimal physical requirements. The Steward moves with efficient, professional purpose."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Loyal servant",
+          "Efficient functionary",
+          "Straight man",
+          "Royal attendant"
+        ],
+        "emotional_range": "Professional duty, quiet exasperation with royal absurdity, efficient competence",
+        "comedy_skills": true,
+        "notes": "The Steward's comedy is in being the competent professional surrounded by fairy tale chaos. His reactions to the Princes' behaviour provide quiet laughs. Small role but adds texture to the royal world."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Deadpan reactions",
+          "Professional efficiency",
+          "Scene support",
+          "Often doubled with other roles"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A small role that teaches efficient scene support and the art of the straight man. Good for ensemble performers wanting to add a named character to their track. Often doubled with Rapunzel's Prince.",
+        "common_casting": "Solid ensemble performer who can play efficient professionalism. Often doubled with another role. Must have clear diction for announcements.",
+        "standout_opportunity": "Quiet deadpan reactions to the Princes' absurdity can earn consistent laughs from observant audience members."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Straight-man comedy",
+          "Scene support",
+          "Professional character type",
+          "Ensemble-to-character transitions",
+          "Economy of performance"
+        ],
+        "challenge_areas": [
+          "Making a very small role worthwhile",
+          "Finding moments within limited material",
+          "Not disappearing entirely",
+          "Balancing with other doubled roles"
+        ],
+        "recommended_for": [
+          "Ensemble performers seeking additional character work",
+          "Actors learning scene support skills",
+          "Those building varied ensemble credits",
+          "Performers often doubling multiple roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Solid ensemble skills",
+          "Clean diction and projection",
+          "Professional bearing",
+          "Deadpan comedy potential",
+          "Flexibility for doubling"
+        ],
+        "common_mistakes": [
+          "Trying to make the Steward a bigger role than it is",
+          "Not preparing ensemble skills",
+          "Lacking presence in brief appearances",
+          "Not being flexible about doubling"
+        ],
+        "tips": [
+          "Approach this as an ensemble track with a named bonus",
+          "Find the comedy in professional competence amid chaos",
+          "Be prepared to discuss doubling options",
+          "Show you're a versatile ensemble player"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Royal/Prince scenes",
+          "type": "scene_support",
+          "notes": "The Steward's practical management of royal affairs \u2014 slipper search, messages, announcements"
+        }
+      ]
+    },
+    {
+      "id": "milky-white",
+      "name": "Milky White",
+      "role_type": "featured_ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 18,
+        "max": 40
+      },
+      "description": "Jack's beloved cow \u2014 a silent role that is surprisingly one of the most memorable in the show. Milky White is performed by an actor (not a puppet, in most productions) who must create a complete character without words. The cow is faithful, expressive, long-suffering, and often hilariously reactive to the chaos around her. She dies, is resurrected, and is a constant source of both comedy and pathos. A great Milky White steals the show through physical performance alone. Can be played by any gender. This role demonstrates that 'silent' does not mean 'unimportant.'",
+      "vocal": {
+        "range": "Silent",
+        "voice_type": "Non-speaking",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "No vocal requirements \u2014 entirely physical performance",
+        "style_notes": "Milky White does not sing or speak. All expression is through physical performance. This is one of the most purely physical acting challenges in musical theatre."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Physical theatre",
+          "Mime",
+          "Animal movement",
+          "Physical comedy"
+        ],
+        "stamina": "High \u2014 Milky White is present in many scenes and must maintain character physicality throughout",
+        "notes": "The performer must create convincing cow physicality while also being expressively human enough for the audience to read emotions. The balance between animal and character is the art of this role."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Silent physical comedian",
+          "Animal character",
+          "Scene stealer",
+          "Physical theatre performer"
+        ],
+        "emotional_range": "Expressed entirely through body \u2014 faithfulness, exhaustion, indignation, fear, comic resignation, love for Jack",
+        "comedy_skills": true,
+        "notes": "Milky White is a masterclass in physical performance. Without a single word, the actor must make the audience love this cow, laugh at her reactions, and feel genuine sadness when she dies. It requires the skills of a mime artist, the timing of a comedian, and the commitment of a method actor \u2014 all in a cow costume."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 0,
+        "quick_changes": 0,
+        "special_skills": [
+          "Silent physical performance",
+          "Animal characterisation",
+          "Physical comedy without words",
+          "Audience connection through body language alone",
+          "Maintaining character in a potentially restrictive costume"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Milky White is one of the most unique roles in musical theatre \u2014 a silent performance that regularly steals the show. It develops physical theatre, mime, physical comedy, and the ability to create a complete character without words. These skills are invaluable and transferable to every other role you'll ever play.",
+        "common_casting": "Physical performers with comedy instincts, mime training, or physical theatre background. The actor must be comfortable in a cow costume and able to express a full range of emotions through body alone. Any gender.",
+        "standout_opportunity": "A legendary Milky White becomes the thing everyone talks about. This silent role can be the most memorable performance in the production."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Pure physical performance",
+          "Silent storytelling",
+          "Animal characterisation",
+          "Physical comedy mastery",
+          "Audience connection without words"
+        ],
+        "challenge_areas": [
+          "Maintaining energy and character in a restrictive costume",
+          "Finding new physical comedy each show",
+          "Not upstaging speaking characters",
+          "Physical stamina for extended cow physicality"
+        ],
+        "recommended_for": [
+          "Physical theatre performers",
+          "Mime and movement artists",
+          "Comedians with strong physical skills",
+          "Actors wanting to develop non-verbal performance"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong physical comedy skills",
+          "The ability to express emotion without words",
+          "Cow physicality that is both convincing and expressive",
+          "Comedy timing in physical performance",
+          "Stamina and commitment"
+        ],
+        "common_mistakes": [
+          "Treating it as a minor role \u2014 Milky White is a featured part",
+          "Only doing 'cow' without character",
+          "Overplaying and upstaging spoken scenes",
+          "Not preparing physical audition material"
+        ],
+        "tips": [
+          "Prepare a physical comedy piece for audition",
+          "Study mime and physical theatre",
+          "Watch great Milky White performances for inspiration",
+          "Show you can create emotion through body alone"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Throughout the show",
+          "type": "silent_physical",
+          "notes": "Milky White's physical performance throughout \u2014 reactions, comedy, death, resurrection, all without words"
+        }
+      ]
+    },
+    {
+      "id": "the-giant",
+      "name": "The Giant (Giant's Wife)",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 25,
+        "max": 55
+      },
+      "description": "The Giant's Wife who descends from the beanstalk in Act Two seeking revenge for Jack's killing of her husband. She is the Act Two antagonist \u2014 an unstoppable force that terrifies the characters and drives the moral crisis of the second half. The Giant is typically performed with the actress off-stage or amplified, her voice booming over the terrified characters below. She is vengeful but not entirely unreasonable \u2014 Jack DID kill her husband and steal from her home. Sondheim uses her to ask: in fairy tales, who is really the villain? Her demand for justice forces the characters to confront their own moral compromises. Usually voiced/performed from offstage or doubled from ensemble.",
+      "vocal": {
+        "range": "Variable",
+        "voice_type": "Non-singer / Amplified speaking voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Powerful speaking voice \u2014 must project authority and menace, often amplified",
+        "style_notes": "The Giant is primarily a voice role \u2014 enormous, booming, and terrifying. Must be able to project a commanding voice that fills the theatre. The voice should convey both rage and a grieving wife's sense of justice."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "Low \u2014 vocal role",
+        "notes": "No physical performance typically required \u2014 the Giant is suggested through sound, staging, and the other characters' reactions."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Vengeful force of nature",
+          "Grieving wife",
+          "Moral challenger",
+          "Act Two antagonist"
+        ],
+        "emotional_range": "Rage, grief, righteous demand for justice, terrifying power",
+        "comedy_skills": false,
+        "notes": "The Giant must be genuinely frightening but also, on some level, sympathetic \u2014 she's a widow seeking justice. The audience should feel the moral complexity: the characters are terrified, but the Giant isn't wrong. This tension drives Act Two."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 0,
+        "quick_changes": 0,
+        "special_skills": [
+          "Powerful vocal projection",
+          "Conveying scale through voice alone",
+          "Moral ambiguity \u2014 villain with a point",
+          "Usually offstage or amplified"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "The Giant teaches vocal power, offstage performance, and the ability to create a terrifying presence without being seen. Small but essential \u2014 the entire Act Two crisis depends on the Giant feeling like a genuine, unstoppable threat.",
+        "common_casting": "A powerful female voice, usually doubled from ensemble. Must be able to project enormous authority and menace. The voice IS the performance.",
+        "standout_opportunity": "A terrifying Giant voice makes Act Two genuinely scary. The audience should feel the ground shake."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Vocal power and projection",
+          "Creating presence without being seen",
+          "Offstage performance",
+          "Moral complexity in antagonist roles",
+          "Voice acting"
+        ],
+        "challenge_areas": [
+          "Making an offstage role impactful",
+          "Conveying emotion through voice alone",
+          "Maintaining threat without becoming cartoonish",
+          "Timing with onstage performers"
+        ],
+        "recommended_for": [
+          "Performers with powerful voices seeking additional credits",
+          "Voice actors building theatre experience",
+          "Ensemble members wanting featured voice work",
+          "Those developing vocal power and projection"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Powerful, authoritative voice",
+          "The ability to convey scale and menace",
+          "Emotional range within vocal power",
+          "Strong ensemble skills if doubling",
+          "Timing with onstage action"
+        ],
+        "common_mistakes": [
+          "Making the Giant purely monstrous \u2014 she has legitimate grievance",
+          "Not projecting enough authority",
+          "Losing the grief underneath the rage",
+          "Not preparing for ensemble doubling requirements"
+        ],
+        "tips": [
+          "Focus on vocal power and authority in your audition",
+          "Find the grieving wife inside the terrifying giant",
+          "Practice projecting a voice that fills a space",
+          "Be prepared to discuss doubling with ensemble"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Act Two Giant scenes",
+          "type": "voice_role",
+          "notes": "The Giant's demands for justice, her terrifying pursuit of Jack, the moral crisis she creates \u2014 all through voice"
+        }
+      ]
+    }
+  ]
+}

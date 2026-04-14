@@ -1,0 +1,402 @@
+{
+  "songs": {
+    "42nd-street/42nd-peggy": {
+      "role_name": "Peggy Sawyer",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "I Know Now", "from": "42nd Street", "composer": "Harry Warren", "why": "Peggy's own ballad — clean legit soprano, emotional honesty without oversinging", "type": "same_show"},
+        {"title": "Wouldn't It Be Loverly", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "The yearning ingenue who wants more from life — bright tone, period-appropriate style", "type": "style_match"},
+        {"title": "Where Am I Going", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "Shows vulnerability and belt range — a young woman searching, emotionally honest", "type": "contrasting"},
+        {"title": "Broadway Baby", "from": "Follies", "composer": "Stephen Sondheim", "why": "Captures the desperate showbiz ambition at the heart of Peggy's story", "type": "style_match"}
+      ],
+      "style_guidance": "Bright soprano tone with a convincing belt. Peggy is luminous, not showy — think emotional clarity over power.",
+      "avoid": ["Heavy dramatic belting — Peggy is an ingenue, not a powerhouse"]
+    },
+    "42nd-street/42nd-julian": {
+      "role_name": "Julian Marsh",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Commanding, obsessive baritone with range up to F4 — the visionary who controls everything", "type": "contrasting"},
+        {"title": "Stars", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Authoritative, driving baritone — the man who cannot allow failure", "type": "style_match"},
+        {"title": "This Nearly Was Mine", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Romantic legit baritone showing the vulnerable side of a powerful man", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "A driven man confronting what he has sacrificed for his work", "type": "contrasting"}
+      ],
+      "style_guidance": "Julian is a stern, driven director — cast for authority and presence first. Legit baritone, clean tone, commanding delivery.",
+      "avoid": ["High lyric tenor material — this is a baritone role requiring gravitas, not sweetness"]
+    },
+    "42nd-street/42nd-dorothy": {
+      "role_name": "Dorothy Brock",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "Brassy, demanding leading lady who refuses to be sidelined — belt and attitude", "type": "style_match"},
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "Star quality and unstoppable drive — shows the big soprano/mezzo belt Dorothy needs", "type": "style_match"},
+        {"title": "I'm Still Here", "from": "Follies", "composer": "Stephen Sondheim", "why": "The veteran theatrical star who has survived everything and refuses to fade", "type": "contrasting"},
+        {"title": "You're Getting to Be a Habit with Me", "from": "42nd Street", "composer": "Harry Warren", "why": "Dorothy's signature number — shows the diva sparkle and period style", "type": "same_show"}
+      ],
+      "style_guidance": "Dorothy needs a theatrical powerhouse with diva instincts — period-appropriate golden-age belt, comedic presence, and total star quality.",
+      "avoid": ["Vulnerable, soft repertoire — Dorothy is tough, theatrical, and larger-than-life"]
+    },
+    "42nd-street/42nd-billy": {
+      "role_name": "Billy Lawlor",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "Youthful tenor with ambition and swing energy — charismatic juvenile lead", "type": "style_match"},
+        {"title": "Lucky to Be Me", "from": "On the Town", "composer": "Leonard Bernstein", "why": "Perfect leading-man swagger, period feel, bright tenor — exactly Billy's charm", "type": "style_match"},
+        {"title": "Luck Be a Lady", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Confident, showbiz-savvy leading man tenor/baritone", "type": "style_match"},
+        {"title": "There's No Business Like Show Business", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "Quintessential Golden Age showbiz energy — the ensemble galvaniser", "type": "style_match"}
+      ],
+      "style_guidance": "Billy is the charming juvenile male lead — bright, energetic, period Golden Age style. Tap skills and charm matter as much as voice.",
+      "avoid": ["Heavy dramatic ballads — Billy is light, fast, and fun"]
+    },
+    "42nd-street/42nd-bert": {
+      "role_name": "Bert Barry",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "It's Today", "from": "Mame", "composer": "Jerry Herman", "why": "Comic character baritone with showbiz enthusiasm — big personality, broad delivery", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Classic Broadway comedy baritone — announces the show's tone just like Bert does", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Character baritone who talks over everyone — comic exasperation, broad physicality", "type": "contrasting"}
+      ],
+      "style_guidance": "Pure character baritone — comic timing and stage presence over vocal brilliance. Bert is the lovable, flustered co-producer.",
+      "avoid": ["Romantic leading man material — this is a character comedy role"]
+    },
+    "42nd-street/42nd-annie": {
+      "role_name": "Annie Reilly (Anytime Annie)",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Broadway Baby", "from": "Follies", "composer": "Stephen Sondheim", "why": "The definitive showgirl survival anthem — world-weary wit, big mezzo belt, perfectly aligned with Annie's soul", "type": "style_match"},
+        {"title": "Big Spender", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "The showgirl with confidence and edge — great for showing character belt", "type": "style_match"},
+        {"title": "Don't Tell Mama", "from": "Cabaret", "composer": "John Kander", "why": "Witty, knowing showgirl humour — Annie would absolutely sing this", "type": "style_match"},
+        {"title": "Nothing", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Mezzo with comedic storytelling and self-awareness — the chorus girl's survival instinct", "type": "contrasting"}
+      ],
+      "style_guidance": "Annie is a survivor showgirl — knowing, funny, unflappable. Strong mezzo belt, comedic timing, and a wink. She has seen it all.",
+      "avoid": ["Sweet ingenue material — Annie is the opposite of innocent"]
+    },
+    "42nd-street/42nd-maggie": {
+      "role_name": "Maggie Jones",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "I'm Going Back", "from": "Bells Are Ringing", "composer": "Jule Styne", "why": "Character alto/mezzo song with warm humour and theatrical savviness", "type": "style_match"},
+        {"title": "I Know", "from": "She Loves Me", "composer": "Jerry Bock", "why": "Mezzo character moment — warm, perceptive, period-appropriate", "type": "style_match"},
+        {"title": "Before the Parade Passes By", "from": "Hello, Dolly!", "composer": "Jerry Herman", "why": "Alto/mezzo with heart and comic warmth — a woman who knows her value", "type": "style_match"}
+      ],
+      "style_guidance": "Maggie is warmly comic and supportive — a strong alto/mezzo with personality and period style. Showcase warmth and wit over power.",
+      "avoid": ["Lead ingenue or powerhouse repertoire — Maggie is a supporting character role"]
+    },
+    "42nd-street/42nd-andy": {
+      "role_name": "Andy Lee",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Steam Heat", "from": "The Pajama Game", "composer": "Richard Adler", "why": "Dance-captain energy with jazzy mezzo/baritone swing character — exactly Andy's type", "type": "style_match"},
+        {"title": "All That Jazz", "from": "Chicago", "composer": "John Kander", "why": "Showbiz swagger and energy — if cast as a mezzo belt, this is the audition song", "type": "style_match"},
+        {"title": "Whatever Lola Wants", "from": "Damn Yankees", "composer": "Richard Adler", "why": "Confident character, period feel, character baritone/mezzo quality", "type": "style_match"}
+      ],
+      "style_guidance": "Andy is the show's dance captain energy — versatile, punchy, physically committed. Voice supports the dance, not the other way around.",
+      "avoid": ["Subdued material — Andy needs presence and physicality above all"]
+    },
+    "42nd-street/42nd-pat": {
+      "role_name": "Pat Denning",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "If I Loved You", "from": "Carousel", "composer": "Richard Rodgers", "why": "Romantic baritone showing genuine feeling — Pat is Dorothy's true love, this shows sincerity", "type": "style_match"},
+        {"title": "I've Grown Accustomed to Her Face", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "Understated romantic baritone — a man who loves but is powerless to change things", "type": "style_match"},
+        {"title": "Some Enchanted Evening", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Legit romantic baritone, period appropriate — shows the earnest leading-man quality Pat needs", "type": "style_match"}
+      ],
+      "style_guidance": "Pat is Dorothy's genuine love — warm, earnest, mid-range baritone. No fireworks needed; natural romantic sincerity wins this role.",
+      "avoid": ["Showboating material — Pat is understated and genuine"]
+    },
+    "42nd-street/42nd-abner": {
+      "role_name": "Abner Dillon",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "I've Got the Horse Right Here", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Blustering, self-important comic character — the out-of-his-depth money man", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character comedy energy — broad, physical, fundamentally silly", "type": "contrasting"}
+      ],
+      "style_guidance": "Abner is primarily a spoken comedic role — cast for physical comedy and timing. Broad character voice over polished technique.",
+      "avoid": ["Legit singing numbers — this is a character/comic role first"]
+    },
+    "42nd-street/42nd-phyllis": {
+      "role_name": "Phyllis Dale",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Broadway Baby", "from": "Follies", "composer": "Stephen Sondheim", "why": "Quintessential ensemble showgirl mezzo — drive, wit, and a strong chorus-line belt", "type": "style_match"},
+        {"title": "Dance: Ten; Looks: Three", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Mezzo chorus girl with personality and comedic edge — the survival instinct", "type": "style_match"},
+        {"title": "Big Spender", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "Audition staple for showgirl mezzo roles of this era — attitude and belt", "type": "style_match"}
+      ],
+      "style_guidance": "Strong ensemble mezzo — personality, belt, period style, and the ability to tap dance while singing.",
+      "avoid": ["Soprano material — this role needs a real mezzo chest voice"]
+    },
+    "42nd-street/42nd-lorraine": {
+      "role_name": "Lorraine Fleming",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Broadway Baby", "from": "Follies", "composer": "Stephen Sondheim", "why": "Ensemble showgirl mezzo anthem — spirit, ambition, and a driven belt", "type": "style_match"},
+        {"title": "Nothing", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Mezzo character with personality and honesty — the chorus girl's perspective", "type": "style_match"},
+        {"title": "Somewhere That's Green", "from": "Little Shop of Horrors", "composer": "Alan Menken", "why": "Contrasting — lyric mezzo with dreamy vulnerability, shows range and softer qualities", "type": "contrasting"}
+      ],
+      "style_guidance": "Ensemble principal mezzo — strong personality, period chorus girl energy, belt notes to D5.",
+      "avoid": ["Soprano roles — the show needs genuine mezzo chorus depth"]
+    },
+    "42nd-street/42nd-mac": {
+      "role_name": "Mac (Stage Manager)",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The organiser who keeps the show running — gruff, knowledgeable, dry wit", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Commanding character baritone who herds chaos — the voice of authority and order", "type": "style_match"}
+      ],
+      "style_guidance": "Mac is the background authority figure who speaks command and efficiency. Character baritone precision over vocal range.",
+      "avoid": ["Leading man repertoire — Mac is a character/ensemble role"]
+    },
+    "42nd-street/42nd-ensemble": {
+      "role_name": "Ensemble — Chorus Girls & Boys",
+      "musical": "42nd Street",
+      "songs_to_prepare": [
+        {"title": "Broadway Baby", "from": "Follies", "composer": "Stephen Sondheim", "why": "The chorus line dream — ambition, resilience, big belt, period-perfect style", "type": "style_match"},
+        {"title": "Dance: Ten; Looks: Three", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Shows chorus performer personality and comedic awareness — ideal for mezzo ensemble audition", "type": "style_match"},
+        {"title": "Lullaby of Broadway", "from": "42nd Street", "composer": "Harry Warren", "why": "If auditioning for the production specifically — the show's showstopping chorus number", "type": "same_show"}
+      ],
+      "style_guidance": "This ensemble requires dancer-singers — tap skills are essential. Sing something Golden Age era that shows your belt and personality.",
+      "avoid": ["Contemporary pop/rock — this calls for 1930s Broadway style"]
+    },
+    "and-juliet/and-juliet-juliet": {
+      "role_name": "Juliet",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The perfect contemporary MT anthem — a woman breaking free of expectations, big belt to E5", "type": "contrasting"},
+        {"title": "Gimme Gimme", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Contemporary mezzo belt anthem — yearning, emotional, and delivers on the high notes", "type": "style_match"},
+        {"title": "Fight Song", "from": "Pop repertoire", "composer": "Rachel Platten", "why": "The spirit of the whole show — if pop songs are permitted in audition", "type": "style_match"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Dramatic mezzo belt — a woman processed pain into power, exactly Juliet's arc", "type": "style_match"}
+      ],
+      "style_guidance": "Juliet is the show's emotional engine — contemporary pop-musical belt, huge range, emotion over technique. Belt to at least E5 is essential.",
+      "avoid": ["Old-fashioned legit soprano — this is a contemporary pop-musical voice"]
+    },
+    "and-juliet/and-juliet-anne-hathaway": {
+      "role_name": "Anne Hathaway",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Anne is the feminist rewriter of the story — subversive, powerful, breaking the rules", "type": "style_match"},
+        {"title": "Still Hurting", "from": "The Last Five Years", "composer": "Jason Robert Brown", "why": "Contemporary mezzo-soprano processing the end of a relationship with intelligence and pain", "type": "style_match"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Dramatic mezzo belt — a woman of intelligence and power facing hard truths", "type": "contrasting"},
+        {"title": "Not for the Life of Me", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Contemporary, witty, bright mezzo — shows intelligence, comedy, and modern theatrical sensibility", "type": "style_match"}
+      ],
+      "style_guidance": "Anne Hathaway is Shakespeare's smart, subversive wife — contemporary mezzo-soprano with wit, emotional depth, and feminist energy. She is not just support.",
+      "avoid": ["Sweet soprano ingenue material — Anne has edge, intelligence, and strength"]
+    },
+    "and-juliet/and-juliet-shakespeare": {
+      "role_name": "William Shakespeare",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "A man confronting what he has actually contributed and sacrificed — complex, meaty contemporary baritone", "type": "contrasting"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The artist yearning to define his legacy — Shakespeare's internal struggle in song", "type": "style_match"},
+        {"title": "Agony", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Comic self-obsession perfectly matches Shakespeare's wounded ego — and shows baritone/tenor range", "type": "style_match"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The storyteller processing a life-changing experience — good tenor/baritone range showcase", "type": "contrasting"}
+      ],
+      "style_guidance": "Shakespeare is a wounded, funny, self-important man who slowly grows — contemporary baritone/tenor with comedic range and emotional vulnerability.",
+      "avoid": ["Straight-laced legit baritone — this role needs wit, neurosis, and contemporary pop-theatre sensibility"]
+    },
+    "and-juliet/and-juliet-may": {
+      "role_name": "May",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Somewhere", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Transcendent, gender-neutral longing — May's journey is about finding where they truly belong", "type": "style_match"},
+        {"title": "Stars and the Moon", "from": "Songs for a New World", "composer": "Jason Robert Brown", "why": "Contemporary musical theatre — a character asking profound questions about identity and love", "type": "contrasting"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "Identity, authenticity, and pride — perfectly captures May's arc of self-discovery", "type": "style_match"},
+        {"title": "For Good", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Shows emotional depth and range — transformative growth works beautifully as a solo", "type": "contrasting"}
+      ],
+      "style_guidance": "May is a non-binary role requiring flexibility — contemporary voice that can blend and lead. Emotional authenticity and range matter more than traditional classification.",
+      "avoid": ["Material with heavy binary gender framing — May's journey is about fluidity, not fitting in"]
+    },
+    "and-juliet/and-juliet-romeo": {
+      "role_name": "Romeo",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Maria", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "The original lovesick Romeo equivalent — bright lyric tenor, all-consuming young love", "type": "style_match"},
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "A young man discovering the world is bigger and more complicated than he thought", "type": "style_match"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "Youthful tenor longing — aspiration and identity, perfect for a young romantic lead", "type": "contrasting"}
+      ],
+      "style_guidance": "Romeo is more comic than tragic in & Juliet — a tenor who is sweet, slightly hapless, and learning. Lyric quality over dramatic weight.",
+      "avoid": ["Heavy dramatic tenor — Romeo in this show is charming and slightly oblivious, not intense"]
+    },
+    "and-juliet/and-juliet-angelique": {
+      "role_name": "Nurse Angelique",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "Overpowering maternal force with a huge mezzo belt — exactly Angelique at full volume", "type": "style_match"},
+        {"title": "Before the Parade Passes By", "from": "Hello, Dolly!", "composer": "Jerry Herman", "why": "A woman deciding she is not going to be left behind — big mezzo declaration with comic fire", "type": "style_match"},
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Comic mezzo/alto with personality and rubber-faced physicality — though Angelique is louder", "type": "contrasting"},
+        {"title": "I Will Survive", "from": "Pop repertoire", "composer": "Freddie Perren / Dino Fekaris", "why": "If pop is accepted — Angelique's entire character in three minutes", "type": "style_match"}
+      ],
+      "style_guidance": "Angelique is LOUD, loving, and impossible to ignore — alto/mezzo with a chest belt and enormous comic presence. The bigger the better.",
+      "avoid": ["Quiet, restrained repertoire — everything Angelique does is at full volume and full heart"]
+    },
+    "and-juliet/and-juliet-lance": {
+      "role_name": "Lance",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "A young man figuring out who he is and what he wants — lyric tenor with emotional openness", "type": "style_match"},
+        {"title": "Glad to Be Unhappy", "from": "On Your Toes", "composer": "Richard Rodgers", "why": "Tender, self-aware romantic tenor dealing with feelings he does not fully understand", "type": "contrasting"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Joyful self-discovery — if Lance is played with comic lightness about his own emotions", "type": "contrasting"}
+      ],
+      "style_guidance": "Lance is the sweet, earnest friend learning what real love and identity mean. Lyric tenor, gentle emotional intelligence.",
+      "avoid": ["Aggressive or showy material — Lance's appeal is his gentleness"]
+    },
+    "and-juliet/and-juliet-francois": {
+      "role_name": "Francois Du Bois",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Maria", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Ardent romantic tenor — lyrical, lush, and completely besotted, exactly Francois's energy", "type": "style_match"},
+        {"title": "On the Street Where You Live", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "Lyric tenor romantic lead with a slightly elevated sense of himself — comic potential too", "type": "style_match"},
+        {"title": "Till There Was You", "from": "The Music Man", "composer": "Meredith Willson", "why": "Charming warm tenor who has discovered something wonderful — French romantic energy", "type": "contrasting"}
+      ],
+      "style_guidance": "Francois is the charming, enthusiastic Frenchman — romantic, sincere, slightly comic. Lyric tenor with warmth.",
+      "avoid": ["Dark, brooding material — Francois is sunshine, not shadow"]
+    },
+    "and-juliet/and-juliet-ensemble": {
+      "role_name": "Ensemble — Party People, Veronese, Parisians",
+      "musical": "& Juliet",
+      "songs_to_prepare": [
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Contemporary pop-musical belt — shows the voice and drive this ensemble requires", "type": "style_match"},
+        {"title": "Gimme Gimme", "from": "Thoroughly Modern Millie", "composer": "Jeanine Tesori", "why": "Belt anthem with contemporary energy — shows the pop-theatre voice this show needs", "type": "style_match"},
+        {"title": "Any Dream Will Do", "from": "Joseph and the Amazing Technicolor Dreamcoat", "composer": "Andrew Lloyd Webber", "why": "Pop-theatre sensibility, strong ensemble energy — shows versatility in the pop-musical genre", "type": "contrasting"}
+      ],
+      "style_guidance": "& Juliet is a pop jukebox ensemble — strong contemporary pop voice, excellent movement, and the ability to make every Max Martin hit sound personal and live.",
+      "avoid": ["Golden Age style — this show lives in contemporary pop territory"]
+    },
+    "beauty-and-the-beast/batb-belle": {
+      "role_name": "Belle",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Belle (Opening)", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "Her defining opening — clean soprano tone, dramatic character, shows legit-to-belt transition", "type": "same_show"},
+        {"title": "Part of Your World", "from": "The Little Mermaid", "composer": "Alan Menken", "why": "Disney soprano sisters — the yearning girl who wants more, same composer, perfectly matched", "type": "style_match"},
+        {"title": "Wouldn't It Be Loverly", "from": "My Fair Lady", "composer": "Frederick Loewe", "why": "The girl who wants more from her small-town life — exactly Belle, classic soprano", "type": "style_match"},
+        {"title": "On My Own", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Shows the romantic depth and belt capacity Belle needs — emotional scale and vocal control", "type": "contrasting"}
+      ],
+      "style_guidance": "Belle needs a soprano who can do both legit lyric and a pop belt — clean classical tone in verse, big heart in chorus. Intelligence and warmth must read as genuine.",
+      "avoid": ["Belty pop-only singers — Belle has demanding legit soprano writing throughout"]
+    },
+    "beauty-and-the-beast/batb-beast": {
+      "role_name": "The Beast / Prince Adam",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "If I Can't Love Her", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "The Beast's own signature piece — a powerful, emotionally raw baritone/tenor ballad", "type": "same_show"},
+        {"title": "The Music of the Night", "from": "The Phantom of the Opera", "composer": "Andrew Lloyd Webber", "why": "Tortured, isolated figure with huge vocal range and emotional complexity", "type": "style_match"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "A man fighting for what he loves despite his own nature — dramatic, passionate tenor-baritone", "type": "contrasting"},
+        {"title": "This Nearly Was Mine", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Romantic leading-man baritone who thought he had lost everything — deeply felt, classic", "type": "style_match"}
+      ],
+      "style_guidance": "The Beast needs power and vulnerability in equal measure — big raw voice that can show rage and tenderness. Range up to G4. Physical transformation reads in the performance.",
+      "avoid": ["Pure lyric baritone with no edge — The Beast must sound dangerous, not just sad"]
+    },
+    "beauty-and-the-beast/batb-gaston": {
+      "role_name": "Gaston",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "Absolute conviction in one's own greatness — big baritone, total self-assurance", "type": "style_match"},
+        {"title": "The Impossible Dream", "from": "Man of La Mancha", "composer": "Mitch Leigh", "why": "Delusional heroism delivered with complete sincerity — exactly Gaston's worldview", "type": "contrasting"},
+        {"title": "Luck Be a Lady", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Swaggering baritone who believes destiny is on his side — showman energy, great range", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Baritone who commands every room and cannot comprehend opposition — pompous, physical", "type": "contrasting"}
+      ],
+      "style_guidance": "Gaston is athletic, arrogant, and enormous — baritone down to A2 with a powerful chest voice. Physical presence matters as much as voice. He believes every word he sings.",
+      "avoid": ["Humble, tender, or vulnerable material — Gaston has zero self-doubt"]
+    },
+    "beauty-and-the-beast/batb-lefou": {
+      "role_name": "LeFou",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Comic tenor/baritone who lives to entertain and support — pure physical comedy in song", "type": "style_match"},
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "Patter comedy for a tenor/baritone who needs fast delivery and physical commitment", "type": "style_match"},
+        {"title": "Buddy's Blues", "from": "Follies", "composer": "Stephen Sondheim", "why": "Self-aware comic character devoted to someone who doesn't deserve it — LeFou in a nutshell", "type": "style_match"},
+        {"title": "Springtime for Hitler", "from": "The Producers", "composer": "Mel Brooks", "why": "Outrageous comic tenor who sells the unsellable with complete commitment", "type": "contrasting"}
+      ],
+      "style_guidance": "LeFou is physical comedy first, voice second — character tenor/baritone who makes the audience howl. Modern productions give him a full arc; look for both comedy and heart.",
+      "avoid": ["Straight serious material — LeFou needs to be funny, committed, and rubber-faced"]
+    },
+    "beauty-and-the-beast/batb-lumiere": {
+      "role_name": "Lumière",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Be Our Guest", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "The showman's showstopper — everything Lumière is, all at once", "type": "same_show"},
+        {"title": "Make Someone Happy", "from": "Do Re Mi", "composer": "Jule Styne", "why": "Charming, romantic tenor/baritone — the lover who makes joy out of every moment", "type": "style_match"},
+        {"title": "C'est Moi", "from": "Camelot", "composer": "Frederick Loewe", "why": "The impossibly confident Frenchman who has never doubted his own magnificence", "type": "style_match"},
+        {"title": "Love, I Hear", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Romantic comic tenor — charming, light, period-adjacent showman energy", "type": "contrasting"}
+      ],
+      "style_guidance": "Lumière is the sophisticated French showman — warm, confident, romantic, and irresistible. Tenor-leaning baritone with a gift for spectacle and wit.",
+      "avoid": ["Heavy dramatic material — Lumière is lightness and charm, not weight"]
+    },
+    "beauty-and-the-beast/batb-cogsworth": {
+      "role_name": "Cogsworth",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "I Am the Very Model", "from": "The Pirates of Penzance", "composer": "Arthur Sullivan", "why": "The prissy, over-educated, rule-obsessed British character — Cogsworth's soul in one song", "type": "style_match"},
+        {"title": "I've Got a Little List", "from": "The Mikado", "composer": "Arthur Sullivan", "why": "Pedantic, listing, gleefully disapproving British character baritone — Cogsworth to a T", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "The character who needs ORDER and cannot cope when others won't comply — exasperated and comic", "type": "contrasting"}
+      ],
+      "style_guidance": "Cogsworth is an uptight, fussy, loveable British character baritone — comic timing and clipped delivery over vocal range. Think Gilbert and Sullivan crossed with Basil Fawlty.",
+      "avoid": ["Warm, relaxed material — Cogsworth is permanently tense and offended"]
+    },
+    "beauty-and-the-beast/batb-mrs-potts": {
+      "role_name": "Mrs. Potts",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Beauty and the Beast", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "Mrs. Potts's signature song — warm, lyric mezzo, gentle and wise", "type": "same_show"},
+        {"title": "So Big/So Small", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Maternal warmth and controlled emotion — a mother's love expressed with restraint and power", "type": "contrasting"},
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The wise, caring adult voice — mezzo with gentle authority, the emotional centre of the story", "type": "style_match"},
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Simple, heartfelt, warm mezzo — no tricks, just genuine feeling, exactly Mrs. Potts", "type": "style_match"}
+      ],
+      "style_guidance": "Mrs. Potts is warmth and reassurance incarnate — gentle alto/mezzo with natural authority and maternal love. No fireworks; pure sincerity.",
+      "avoid": ["Belt anthems — Mrs. Potts comforts, she does not overpower"]
+    },
+    "beauty-and-the-beast/batb-chip": {
+      "role_name": "Chip",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "Innocent child voice with sweet treble tone — vulnerable and pure", "type": "style_match"},
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "The classic child soprano audition piece — shows treble range and innocent optimism", "type": "style_match"}
+      ],
+      "style_guidance": "Chip is a sweet, curious child — clear treble tone, natural innocence, bright personality. Do not oversing; let the youth be the charm.",
+      "avoid": ["Adult material — Chip needs a genuinely childlike quality, not precocious performance"]
+    },
+    "beauty-and-the-beast/batb-babette": {
+      "role_name": "Babette (Fifi/Plumette)",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Diamonds Are a Girl's Best Friend", "from": "Gentlemen Prefer Blondes", "composer": "Jule Styne", "why": "Flirtatious, playful, French soprano — Babette's character in one iconic number", "type": "style_match"},
+        {"title": "Shall We Dance", "from": "The King and I", "composer": "Richard Rodgers", "why": "Sparkling soprano with warmth and physical joy — romantic and light", "type": "style_match"},
+        {"title": "I Can't Help Lovin' Dat Man", "from": "Show Boat", "composer": "Jerome Kern", "why": "Warm, flirtatious soprano/mezzo showing genuine romantic feeling with period feel", "type": "contrasting"}
+      ],
+      "style_guidance": "Babette is flirtatious, charming, and thoroughly French — soprano/mezzo with sparkle and wit. Light touch, great comic timing, physical expressiveness.",
+      "avoid": ["Heavy dramatic material — Babette is feathers and flirtation, not depth and gravitas"]
+    },
+    "beauty-and-the-beast/batb-maurice": {
+      "role_name": "Maurice",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "Warm, paternal bass-baritone cherishing the child who is his entire world", "type": "style_match"},
+        {"title": "The Impossible Dream", "from": "Man of La Mancha", "composer": "Mitch Leigh", "why": "The earnest eccentric who believes in impossible things — Maurice's whole spirit", "type": "style_match"},
+        {"title": "Make Them Hear You", "from": "Ragtime", "composer": "Stephen Flaherty", "why": "Character baritone moment of conviction — a man who will not stop believing in what he loves", "type": "contrasting"}
+      ],
+      "style_guidance": "Maurice is warm, bumbling, and genuinely eccentric — baritone/bass with natural warmth and slightly distracted otherworldliness. He loves Belle entirely and unconditionally.",
+      "avoid": ["Young leading man material — Maurice is clearly older, clearly odd, and clearly kind"]
+    },
+    "beauty-and-the-beast/batb-madame-wardrobe": {
+      "role_name": "Madame de la Grande Bouche (Wardrobe)",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "Operatic soprano comedy masterpiece — dramatic, self-aware, excessive, and brilliant", "type": "style_match"},
+        {"title": "The Saga of Jennie", "from": "Lady in the Dark", "composer": "Kurt Weill", "why": "Big theatrical soprano with comic intelligence — the wise woman who has seen everything", "type": "style_match"},
+        {"title": "Diva's Lament", "from": "Spamalot", "composer": "John Du Prez / Eric Idle", "why": "The theatrical diva who knows her worth and will not let anyone forget it — perfect for Wardrobe", "type": "contrasting"}
+      ],
+      "style_guidance": "The Wardrobe is an operatic diva trapped in furniture — soprano with genuine operatic range, theatrical excess, and wonderful comic self-importance. The bigger the voice and personality, the better.",
+      "avoid": ["Understated material — the Wardrobe does nothing quietly or without drama"]
+    },
+    "beauty-and-the-beast/batb-ensemble": {
+      "role_name": "Ensemble — Villagers, Enchanted Objects, Wolves",
+      "musical": "Beauty and the Beast",
+      "songs_to_prepare": [
+        {"title": "Belle (Opening)", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "The ensemble's big opening — shows ability to blend lyric soprano sound with period Disney style", "type": "same_show"},
+        {"title": "Be Our Guest", "from": "Beauty and the Beast", "composer": "Alan Menken", "why": "The showstopper — ensemble vitality, timing, and ability to be a specific character object", "type": "same_show"},
+        {"title": "Any Dream Will Do", "from": "Joseph and the Amazing Technicolor Dreamcoat", "composer": "Andrew Lloyd Webber", "why": "Versatile vocal style — lyric with warmth, good for showing ensemble blend quality", "type": "contrasting"}
+      ],
+      "style_guidance": "Disney ensemble — warm, clear tone that blends, strong physicality for transformative character work (you may play a teapot, a clock, or a wolf), commitment to the world.",
+      "avoid": ["Pop-heavy audition pieces — Beauty and the Beast calls for warm, legit ensemble sound"]
+    }
+  }
+}

@@ -1,0 +1,1666 @@
+{
+  "musical": {
+    "id": "lightning-thief",
+    "title": "The Lightning Thief: The Percy Jackson Musical",
+    "music_by": "Rob Rokicki",
+    "lyrics_by": "Rob Rokicki",
+    "book_by": "Joe Tracz",
+    "based_on": "The Lightning Thief by Rick Riordan",
+    "year_premiered": 2014,
+    "broadway_opening": "2019-10-16",
+    "setting": "Modern-day America \u2014 New York City, Camp Half-Blood, and a cross-country quest through mythological locations",
+    "time_period": "Contemporary",
+    "themes": [
+      "Identity and belonging",
+      "Found family",
+      "ADHD and dyslexia as superpowers",
+      "Parental relationships (mortal and divine)",
+      "Friendship and loyalty",
+      "The hero's journey",
+      "Being different is your strength"
+    ],
+    "genre_tags": [
+      "Contemporary",
+      "Rock/Pop",
+      "Fantasy",
+      "Adventure",
+      "Youth",
+      "Ensemble-driven"
+    ],
+    "vocal_style": "Contemporary pop-rock with indie and alternative influences. Raw, emotional singing prioritised over classical technique.",
+    "dance_intensity": "moderate",
+    "orchestra_size": "Small rock band (5-7 players) \u2014 guitar, bass, drums, keys, possible additional instruments played by cast",
+    "typical_cast_size": "7 (original) to 20+ (expanded versions)",
+    "age_range": "12-50",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": true,
+    "license_holder": "Theatrical Rights Worldwide (TRW)",
+    "synopsis": "Percy Jackson is a twelve-year-old kid who can't stop getting expelled from school. When he discovers he's actually a demigod \u2014 the son of Poseidon, god of the sea \u2014 his world turns upside down. Accused of stealing Zeus's lightning bolt, Percy must embark on a cross-country quest with his satyr protector Grover and Athena's daughter Annabeth to find the bolt, clear his name, and prevent a war among the gods. Along the way, he confronts monsters from Greek mythology, discovers the truth about his father, and learns that being different might just be the thing that saves the world."
+  },
+  "roles": [
+    {
+      "id": "percy",
+      "name": "Percy Jackson",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 12,
+        "max": 22
+      },
+      "description": "A sarcastic, brave, ADHD-diagnosed twelve-year-old who discovers he's the son of Poseidon. Percy is the quintessential underdog hero \u2014 he's been told he's a problem kid his whole life, only to discover his 'problems' are actually powers. Funny, loyal, impulsive, and deeply protective of the people he loves.",
+      "vocal": {
+        "range": "A3-A5",
+        "voice_type": "Tenor / Contemporary pop-rock",
+        "belt_required": true,
+        "belt_range": "E4-A5",
+        "tessitura": "Upper tenor belt, raw and emotional contemporary rock style",
+        "style_notes": "Contemporary pop-rock with raw emotional edge. Should sound like a real teenager, not a trained singer \u2014 authenticity over polish. 'Good Kid' needs vulnerability; 'Bring on the Monsters' needs defiant energy; 'Strong' requires devastating emotional truth."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Stage combat",
+          "Physical storytelling",
+          "Contemporary movement"
+        ],
+        "stamina": "Very high \u2014 onstage the entire show, physically active throughout",
+        "notes": "Percy's physicality is about ADHD energy \u2014 constant motion, restlessness, combat sequences. The show's staging often requires the cast to create environments physically, so Percy must be athletic and coordinated."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Underdog hero",
+          "Sarcastic narrator",
+          "Loyal friend",
+          "Reluctant chosen one"
+        ],
+        "emotional_range": "Very wide \u2014 humour, anger, fear, determination, grief (over his mother), defiance, love",
+        "comedy_skills": true,
+        "notes": "Percy narrates directly to the audience with self-deprecating humor. Must balance sarcasm with genuine vulnerability \u2014 underneath the jokes is a kid who just wants to belong. The relationship with his mother Sally is the emotional anchor. ADHD energy should inform every choice."
+      },
+      "performance": {
+        "stage_time_percentage": 90,
+        "solo_songs": 4,
+        "duets": 2,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": [
+          "Stage combat (sword fighting)",
+          "Direct audience address",
+          "ADHD-informed physicality",
+          "Conveying youthful energy and vulnerability simultaneously"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Percy is the dream role for young male rock-tenor performers. Onstage the entire show, he sings contemporary rock, fights monsters, narrates with humour, and carries devastating emotional moments. The ADHD representation makes this role deeply meaningful for many young performers.",
+        "common_casting": "Young male performers (teens to early 20s) with contemporary rock voices, natural humour, and genuine vulnerability. Actual connection to ADHD/learning difference experience is a powerful bonus.",
+        "standout_opportunity": "'Good Kid' is a devastating anthem about being misunderstood that resonates deeply with young audiences. 'Strong' can bring a theatre to tears."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Contemporary rock belt technique",
+          "Sustained leading role performance",
+          "Stage combat",
+          "Direct audience narration with humour",
+          "Emotional vulnerability within rock performance",
+          "ADHD-informed character physicality"
+        ],
+        "challenge_areas": [
+          "Vocal stamina for demanding rock score",
+          "Balancing sarcasm with vulnerability",
+          "Stage combat coordination while singing",
+          "Sustaining energy across marathon role"
+        ],
+        "recommended_for": [
+          "Young rock tenors wanting their signature role",
+          "Performers with ADHD who want to see themselves on stage",
+          "Those developing contemporary musical theatre skills",
+          "Actor-singers who thrive on audience interaction"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Contemporary rock voice with emotional authenticity",
+          "Natural humour and likability",
+          "Genuine vulnerability beneath the sarcasm",
+          "Physical energy and coordination",
+          "The quality of a kid who's been underestimated"
+        ],
+        "common_mistakes": [
+          "Playing Percy as too cool \u2014 he's a nerd and an underdog",
+          "All sarcasm, no heart \u2014 the vulnerability is essential",
+          "Vocal technique too polished \u2014 this needs to sound raw and real",
+          "Not enough physical energy \u2014 ADHD informs everything"
+        ],
+        "tips": [
+          "Percy uses humour to protect himself \u2014 every joke masks a genuine fear or hurt",
+          "The relationship with Sally is EVERYTHING \u2014 invest in those scenes completely",
+          "'Good Kid' is your audition for the role even if you sing something else \u2014 prepare that emotional truth",
+          "If you have ADHD or dyslexia, use your experience. This role was written for you."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Good Kid",
+          "type": "Solo",
+          "notes": "Devastating anthem about being a misunderstood kid. Raw vulnerability and defiance."
+        },
+        {
+          "title": "Bring on the Monsters",
+          "type": "Solo/Ensemble",
+          "notes": "Defiant rock anthem. Percy accepting his quest and powers."
+        },
+        {
+          "title": "Strong",
+          "type": "Solo/Duet",
+          "notes": "Emotional climax about his relationship with his mother. Can destroy an audience."
+        },
+        {
+          "title": "The Last Day of Summer",
+          "type": "Solo/Ensemble",
+          "notes": "Opening number establishing Percy's world and struggle."
+        }
+      ]
+    },
+    {
+      "id": "annabeth",
+      "name": "Annabeth Chase",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": {
+        "min": 12,
+        "max": 22
+      },
+      "description": "Daughter of Athena, goddess of wisdom. Annabeth is brilliant, fierce, strategic, and has been at Camp Half-Blood since age seven \u2014 longer than almost anyone. She's desperate to prove herself on a quest and initially sees Percy as her ticket to glory. Their relationship evolves from rivalry to deep partnership and trust.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "Mezzo-Soprano / Belt",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Mid to upper belt, powerful and driven contemporary rock",
+        "style_notes": "Strong, confident contemporary rock belt. Annabeth's singing should convey intelligence and determination. 'My Grand Plan' needs architectural precision and building intensity."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Stage combat",
+          "Athletic movement",
+          "Contemporary"
+        ],
+        "stamina": "High \u2014 active throughout the quest sequences",
+        "notes": "Annabeth is a warrior \u2014 her movement should be precise, strategic, and powerful. Stage combat skills essential. She fights with calculation, not impulse."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Strategist",
+          "Warrior",
+          "Overachiever",
+          "Guarded heart"
+        ],
+        "emotional_range": "Wide \u2014 determination, frustration, vulnerability (hidden), trust (slowly earned), fierce loyalty",
+        "comedy_skills": true,
+        "notes": "Annabeth's arc is about learning to trust and let people in. She starts guarded and superior, gradually revealing the lonely kid underneath. Must convey extraordinary intelligence without being condescending to the audience. Her dynamic with Percy evolves beautifully."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "Stage combat",
+          "Playing intelligence authentically",
+          "Character arc from guarded to open",
+          "Athletic performance"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Annabeth is a powerful female role that's intelligent, fierce, and emotionally complex \u2014 everything young female performers want to play. She fights, strategises, and has a genuine character arc. 'My Grand Plan' is a fantastic contemporary belt showcase.",
+        "common_casting": "Strong young female performer-singers with natural authority, intelligence, and the ability to show vulnerability beneath toughness.",
+        "standout_opportunity": "'My Grand Plan' is a building, intense solo that showcases both vocal power and character depth. The evolving dynamic with Percy provides beautiful scene work."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Contemporary belt technique",
+          "Stage combat",
+          "Playing intelligent, complex female characters",
+          "Character arc from guarded to vulnerable",
+          "Scene partnership and chemistry building"
+        ],
+        "challenge_areas": [
+          "Making intelligence engaging without being alienating",
+          "Earning the vulnerability \u2014 must build trust gradually",
+          "Stage combat while maintaining character"
+        ],
+        "recommended_for": [
+          "Young female belters wanting a powerful, smart role",
+          "Performers who relate to overachiever characters",
+          "Those developing stage combat skills",
+          "Actresses wanting complex female roles in youth-appropriate shows"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong contemporary belt voice",
+          "Natural authority and intelligence",
+          "The ability to show cracks in the armour",
+          "Physical fitness and stage combat readiness",
+          "Chemistry with Percy actor"
+        ],
+        "common_mistakes": [
+          "Playing Annabeth as mean rather than guarded",
+          "All toughness, no vulnerability",
+          "Not showing the lonely kid underneath the warrior",
+          "Weak vocals \u2014 Annabeth's songs need power"
+        ],
+        "tips": [
+          "Annabeth has been abandoned (by her mortal family and her goddess mother) \u2014 that's the key to everything",
+          "She's not mean to Percy \u2014 she's testing him to see if he'll leave too",
+          "'My Grand Plan' reveals her deepest fear: not being enough for Athena",
+          "The moment she starts trusting Percy should feel hard-won and beautiful"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "My Grand Plan",
+          "type": "Solo",
+          "notes": "Building intensity solo about proving herself to Athena. Belt showcase with emotional depth."
+        },
+        {
+          "title": "The Tree on the Hill",
+          "type": "Duet/Group",
+          "notes": "Annabeth revealing her backstory. Vulnerability and loss."
+        },
+        {
+          "title": "Bring on the Monsters",
+          "type": "Ensemble",
+          "notes": "Quest acceptance number with Percy and Grover."
+        }
+      ]
+    },
+    {
+      "id": "grover",
+      "name": "Grover Underwood",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 12,
+        "max": 25
+      },
+      "description": "Percy's best friend and protector \u2014 a satyr (half-boy, half-goat) assigned to watch over him. Grover is anxious, loyal, nature-loving, and desperately wants to earn his searcher's license to find the lost god Pan. He's the comedic heart of the trio and Percy's most unwavering friend.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "Baritone / Tenor",
+        "belt_required": true,
+        "belt_range": "E4-G4",
+        "tessitura": "Mid-range contemporary with character warmth",
+        "style_notes": "Warm, character-driven contemporary voice. Grover's singing should convey genuine sweetness and anxiety in equal measure. Comedy timing in vocal delivery is essential."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Physical comedy",
+          "Character movement (goat legs)",
+          "Contemporary"
+        ],
+        "stamina": "Moderate to high",
+        "notes": "Grover moves with slightly clumsy, goat-like energy. Must create convincing satyr physicality \u2014 nervous, nature-attuned, and endearingly awkward. Physical comedy is central."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Comic sidekick",
+          "Loyal friend",
+          "Anxious protector",
+          "Nature lover"
+        ],
+        "emotional_range": "Wide \u2014 anxiety, loyalty, comedy, bravery (when it counts), genuine caring",
+        "comedy_skills": true,
+        "notes": "Grover is the audience's comfort character \u2014 nervous and funny but brave when his friends need him. The comedy must come from genuine anxiety, not mugging. His scenes about wanting to find Pan reveal surprising depth."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "Satyr physicality",
+          "Physical comedy",
+          "Playing anxiety endearingly",
+          "Musical instrument (some productions have Grover play reed pipes)"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Grover is the heart of the trio \u2014 funny, loyal, and emotionally grounding. This role develops comedy through character, physical comedy, and the skill of making a sidekick feel essential rather than secondary.",
+        "common_casting": "Warm, naturally funny young performers with good character instincts. The kid everyone wants as their actual best friend.",
+        "standout_opportunity": "Grover's moment of bravery \u2014 stepping up when it counts \u2014 is the most crowd-pleasing payoff in the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Character comedy and physical comedy",
+          "Playing loyal sidekick with depth",
+          "Creature physicality (satyr)",
+          "Comedy through genuine anxiety",
+          "Emotional truth in comic role"
+        ],
+        "challenge_areas": [
+          "Not being one-note anxious",
+          "Making the satyr physicality consistent",
+          "Finding the bravery beneath the comedy"
+        ],
+        "recommended_for": [
+          "Young performers with natural comedy instincts",
+          "Those who relate to anxiety characters",
+          "Performers building physical comedy skills",
+          "Actors wanting a significant but not overwhelming role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural warmth and likability",
+          "Comedy instincts rooted in character",
+          "Physical comedy ability",
+          "Singing voice with character warmth",
+          "The quality of a genuinely good friend"
+        ],
+        "common_mistakes": [
+          "Playing Grover as stupid \u2014 he's anxious, not dumb",
+          "Comedy that's forced rather than character-driven",
+          "Forgetting the satyr physicality mid-show",
+          "No emotional depth \u2014 Grover cares deeply about nature and his friends"
+        ],
+        "tips": [
+          "Grover's anxiety is REAL \u2014 he genuinely worries about everything. Play it truthfully.",
+          "The goat element should inform everything \u2014 what does Grover eat, how does he move, what scares him?",
+          "His dream of finding Pan is genuine \u2014 this isn't just a joke, it's his life's purpose",
+          "When Grover is brave, it should cost him something \u2014 that's what makes it powerful"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Campfire Song / DOA",
+          "type": "Solo/Group",
+          "notes": "Grover's featured moments \u2014 character comedy and warmth."
+        },
+        {
+          "title": "Bring on the Monsters",
+          "type": "Group",
+          "notes": "Quest trio number. Grover's anxiety juxtaposed with Percy's defiance."
+        },
+        {
+          "title": "The Last Day of Summer",
+          "type": "Ensemble",
+          "notes": "Opening number establishing the world."
+        }
+      ]
+    },
+    {
+      "id": "luke",
+      "name": "Luke Castellan",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "Son of Hermes and the coolest, most capable demigod at Camp Half-Blood. Luke is everything Percy wants to be \u2014 confident, skilled, and respected. He befriends Percy genuinely before being revealed as the true lightning thief, driven by rage at the gods who abandoned their children.",
+      "vocal": {
+        "range": "B2-F#4",
+        "voice_type": "Baritone / Low Tenor",
+        "belt_required": true,
+        "belt_range": "D4-F#4",
+        "tessitura": "Mid-range rock baritone with edge",
+        "style_notes": "Edgy rock voice with underlying anger. Must sound charming and trustworthy in early scenes, then reveal dangerous intensity. The villain reveal song needs vocal power and raw emotion."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Stage combat (sword fighting)",
+          "Athletic movement"
+        ],
+        "stamina": "Moderate",
+        "notes": "Luke is the best swordsman at camp \u2014 his combat must look effortless and superior. Movement should project cool confidence."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Charming villain",
+          "Betrayer",
+          "Angry son",
+          "Fallen hero"
+        ],
+        "emotional_range": "Complex \u2014 genuine charm, suppressed rage, betrayal, righteous anger, pain",
+        "comedy_skills": false,
+        "notes": "Luke's betrayal must be genuinely shocking \u2014 which means his earlier friendship with Percy must be REAL. He's not acting nice; he genuinely likes Percy. His anger at the gods is justified, even if his methods aren't. The most complex villain in the show."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "Stage combat excellence",
+          "Playing genuine charm that hides betrayal",
+          "Rock vocal intensity",
+          "The ability to be sympathetic AND terrifying"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Luke is a brilliantly written villain whose betrayal only works if the audience genuinely liked him. This role develops the incredibly valuable skill of playing deception \u2014 being charming AND dangerous, sympathetic AND wrong.",
+        "common_casting": "Charismatic young male performers who project effortless cool. Must have genuine likability that makes the betrayal devastating.",
+        "standout_opportunity": "The villain reveal is one of the most dramatic moments in the show \u2014 and Luke's anger at the gods is compelling enough to make the audience question who the real villains are."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Playing charming deception",
+          "Complex villain characterisation",
+          "Stage combat at advanced level",
+          "Rock vocal intensity",
+          "Making villainy sympathetic"
+        ],
+        "challenge_areas": [
+          "Making the early friendship genuine, not telegraphing the twist",
+          "The reveal must feel both shocking and inevitable",
+          "Balancing sympathetic motivation with villainous actions"
+        ],
+        "recommended_for": [
+          "Young performers wanting complex antagonist roles",
+          "Those developing stage combat skills",
+          "Rock baritones seeking dramatic showcase",
+          "Actors interested in morally grey characters"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural charisma and coolness",
+          "Genuine likability that makes betrayal devastating",
+          "Strong rock voice with emotional edge",
+          "Stage combat ability",
+          "Complexity \u2014 Luke should feel like a real person, not a cartoon villain"
+        ],
+        "common_mistakes": [
+          "Playing Luke as obviously evil from the start",
+          "Not enough genuine warmth in the early friendship scenes",
+          "The anger feeling petulant rather than righteous",
+          "Weak stage combat \u2014 Luke must look like the best fighter in the room"
+        ],
+        "tips": [
+          "Luke genuinely cares about Percy \u2014 that's what makes the betrayal devastating",
+          "His anger at the gods is JUSTIFIED \u2014 they DID abandon their children",
+          "Study charismatic cult leaders \u2014 Luke has that quality of making you believe",
+          "The sword fight with Percy should be the best combat in the show"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Last Day of Summer (reprise) / Luke's reveal",
+          "type": "Solo/Scene",
+          "notes": "The villain reveal. Must shift from charm to dangerous intensity."
+        },
+        {
+          "title": "Put You in Your Place / Camp scenes",
+          "type": "Group",
+          "notes": "Luke establishing himself as camp leader. Cool and capable."
+        }
+      ]
+    },
+    {
+      "id": "sally-jackson",
+      "name": "Sally Jackson",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "Percy's hardworking, loving mother who has sacrificed everything for her son. Sally is warm, resilient, and fiercely protective \u2014 a single mom who works multiple jobs and endures a terrible marriage to Gabe Ugliano to keep Percy safe. She's the emotional heart of the show and her relationship with Percy grounds the mythological adventure in real human emotion. Sally knows about Percy's divine heritage and has been preparing him for the truth his whole life. Her strength, humour, and unconditional love make her one of the show's most beloved characters.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D4-D5",
+        "tessitura": "Mid-range mezzo with emotional warmth",
+        "style_notes": "Warm, emotionally rich voice. 'Strong' is a devastating duet/solo about motherhood and sacrifice. Must convey boundless love in limited vocal time."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Character movement"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "Sally's movement is grounded and protective. When she appears, she should feel like the safest person in the room."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Protective mother",
+          "Self-sacrificing hero",
+          "Emotional anchor"
+        ],
+        "emotional_range": "Wide \u2014 fierce love, fear, sacrifice, strength, pride",
+        "comedy_skills": false,
+        "notes": "Sally's scenes are few but carry enormous emotional weight. The audience must understand immediately why Percy would cross the underworld for her. Her sacrifice \u2014 and 'Strong' \u2014 must be genuinely devastating."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 1,
+        "quick_changes": 2,
+        "special_skills": [
+          "Maximum emotional impact in limited time",
+          "Conveying unconditional love",
+          "Playing multiple characters (if doubling)"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Sally is brief but essential \u2014 she's the emotional engine of the entire show. 'Strong' is one of the most powerful moments in the score. This role teaches maximum emotional impact in limited time.",
+        "common_casting": "Warm, emotionally available adult female performers. Genuine maternal quality is the primary casting criterion.",
+        "standout_opportunity": "'Strong' \u2014 Sally's song about being Percy's mother \u2014 can be the most devastating moment in the entire show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Emotional impact in limited stage time",
+          "Playing unconditional love authentically",
+          "Mezzo belt with emotional depth",
+          "Multi-character doubling"
+        ],
+        "challenge_areas": [
+          "Creating full emotional impact in very few scenes",
+          "Making the audience care deeply in limited time"
+        ],
+        "recommended_for": [
+          "Adult female performers wanting emotionally powerful role",
+          "Moms performing alongside their children",
+          "Those who excel at emotional authenticity over quantity of stage time"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine maternal warmth",
+          "Emotional depth in singing",
+          "The ability to break hearts quickly",
+          "Strength and sacrifice",
+          "Chemistry with Percy actor"
+        ],
+        "common_mistakes": [
+          "Not investing enough because the role is small",
+          "Playing Sally as weak \u2014 she's the strongest character in the show",
+          "Not enough emotional power in 'Strong'",
+          "Lacking the fierce protectiveness"
+        ],
+        "tips": [
+          "Sally chose to marry a horrible man to PROTECT her son \u2014 that's extraordinary strength",
+          "'Strong' is about every sacrifice a parent makes \u2014 bring your whole heart",
+          "Your scenes with Percy should make the audience understand why he'd fight through the underworld for you",
+          "Sally isn't a victim \u2014 she's a warrior disguised as a mom"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Strong",
+          "type": "Solo/Duet",
+          "notes": "Devastating song about motherhood and sacrifice. The emotional climax of the show."
+        },
+        {
+          "title": "The Last Day of Summer",
+          "type": "Ensemble",
+          "notes": "Sally in Percy's opening world. Establishing their bond."
+        }
+      ]
+    },
+    {
+      "id": "lt-mr-d",
+      "name": "Mr. D / Dionysus",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The God of Wine, sentenced by Zeus to serve as Camp Half-Blood's snarky, disinterested director. Mr. D (Dionysus) is perpetually annoyed by the campers, deliberately mispronounces everyone's names, and makes it clear he'd rather be anywhere else. He's forbidden from drinking wine as part of his punishment, which makes him even more irritable. Despite his apparent indifference, there are moments where genuine divine authority peeks through the sardonic exterior. A beloved comic character role typically doubled from the ensemble in community productions, requiring excellent deadpan comedy and a sense of weary divine authority.",
+      "vocal": {
+        "range": "B2\u2013E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013C4",
+        "style_notes": "Sarcastic, weary vocal delivery. Pop-rock style for ensemble numbers. Must sell deadpan comedy through vocal colour \u2014 bored, divine, perpetually annoyed. Joins ensemble in rock-driven company numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Mr. D doesn't so much dance as reluctantly participate. Character-driven movement \u2014 should convey a god who can't be bothered with mortal activities. Participates in ensemble numbers with appropriate lack of enthusiasm."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "snarky authority",
+          "reluctant mentor",
+          "bored deity",
+          "comic antagonist"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Deadpan comedy is essential. Mr. D is hilarious precisely because he takes nothing seriously and can't be bothered to remember anyone's name. The comedy comes from a supremely powerful being reduced to babysitting teenagers. Must find moments of genuine authority beneath the snark \u2014 he IS a god, after all."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "deadpan comedy",
+          "name mispronunciation running gag",
+          "divine authority"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A fan-favourite comic character that audiences who know the books adore. Mr. D's deadpan snark provides consistent comedy throughout the Camp Half-Blood scenes. Typically doubled with other roles from the ensemble \u2014 the contrast between Mr. D and the other characters the actor plays adds to the fun.",
+        "common_casting": "Character actor with excellent deadpan timing. Often doubled with Gabe Ugliano or other adult male roles. Works well for performers who excel at sardonic comedy.",
+        "standout_opportunity": "Every Mr. D scene is a comedy opportunity. The name mispronunciations alone get guaranteed laughs from fans of the books. A performer who fully commits to the divine boredom creates a show highlight."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "deadpan comedy technique",
+          "multi-role performance",
+          "authority character work",
+          "running gag delivery"
+        ],
+        "challenge_areas": [
+          "keeping the comedy fresh through multiple performances",
+          "finding the god beneath the snark"
+        ],
+        "recommended_for": [
+          "character actors developing comedy range",
+          "performers building multi-role skills",
+          "actors who excel at sardonic authority"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "deadpan comic timing",
+          "ability to play multiple roles",
+          "character versatility",
+          "snarky delivery without being mean"
+        ],
+        "common_mistakes": [
+          "being too angry instead of bored",
+          "not finding the subtle divine authority",
+          "overplaying the comedy instead of letting it come from character"
+        ],
+        "tips": [
+          "Bored is funnier than angry \u2014 Mr. D is ABOVE all this",
+          "Practice the name mispronunciations \u2014 they should sound genuinely casual",
+          "Show your range for multi-tracking \u2014 directors need to see versatility"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Campfire Song",
+          "type": "ensemble feature",
+          "notes": "Mr. D reluctantly participates in the camp activities. Comic moments within the ensemble number."
+        },
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in rock-driven ensemble numbers. Features deadpan character moments throughout."
+        }
+      ]
+    },
+    {
+      "id": "lt-chiron",
+      "name": "Chiron / Mr. Brunner",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 35,
+        "max": 60
+      },
+      "description": "The wise centaur who poses as Percy's wheelchair-bound Latin teacher, Mr. Brunner, before being revealed as the legendary trainer of heroes. Chiron is warm, patient, and deeply invested in Percy's success \u2014 the perfect mentor figure who sees Percy's potential when no one else does. He runs Camp Half-Blood with quiet authority and genuine care for his campers. As Mr. Brunner, he disguises his immortal nature with gentle professorial charm. Chiron represents the guiding wisdom of mythology and provides the show's moral compass. Often doubled with Poseidon in community productions.",
+      "vocal": {
+        "range": "A2\u2013E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "C3\u2013C4",
+        "style_notes": "Warm, authoritative baritone with paternal quality. Pop-rock style for ensemble numbers. Must convey wisdom and care through vocal colour. Gentle professorial tone as Mr. Brunner, more commanding as Chiron."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Must differentiate between Mr. Brunner (wheelchair-bound teacher) and Chiron (powerful centaur). The transformation is a key theatrical moment. Participates in ensemble numbers."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "wise mentor",
+          "disguised immortal",
+          "gentle teacher",
+          "camp director"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "Must play two versions of the same character \u2014 the mild Mr. Brunner and the powerful Chiron. The transition should feel like watching Clark Kent become Superman. Chiron's warmth and wisdom must feel genuine, not preachy. His belief in Percy provides crucial emotional support throughout the story."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": [
+          "dual character portrayal",
+          "mentor characterisation",
+          "transformation moment"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "A dramatically rich supporting role with dual character work. Chiron/Mr. Brunner is the show's moral compass and mentor figure \u2014 essential to Percy's journey. The transformation from teacher to centaur is always a theatrical highlight. Excellent for character actors who want to develop nuanced, warm authority.",
+        "common_casting": "Warm character actor with natural authority and paternal quality. Often doubled with Poseidon for thematic resonance. Must be able to play gentle and commanding with equal conviction.",
+        "standout_opportunity": "The Mr. Brunner-to-Chiron transformation is a show-defining theatrical moment. A performer who makes this transition feel magical and moving creates one of the show's most memorable sequences."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "dual role technique",
+          "mentor/authority characterisation",
+          "transformation performance",
+          "warm authority",
+          "multi-role ensemble work"
+        ],
+        "challenge_areas": [
+          "differentiating two aspects of the same character",
+          "conveying centuries of wisdom authentically"
+        ],
+        "recommended_for": [
+          "character actors developing mentor roles",
+          "performers building dual-role technique",
+          "actors seeking warm authority character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "warm authority",
+          "ability to play dual characters",
+          "genuine paternal care",
+          "versatility for multi-tracking"
+        ],
+        "common_mistakes": [
+          "making Mr. Brunner and Chiron too similar",
+          "being too stern without the warmth",
+          "forgetting that Chiron has a sense of humour"
+        ],
+        "tips": [
+          "Find two distinct physicalities for Brunner vs Chiron",
+          "The warmth is more important than the authority",
+          "Show your multi-role versatility \u2014 this show demands it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Strong",
+          "type": "ensemble feature",
+          "notes": "Chiron features in Percy's camp training/discovery sequence. Encouraging, mentor-driven moments."
+        },
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Features in multiple scenes as both Mr. Brunner and Chiron."
+        }
+      ]
+    },
+    {
+      "id": "lt-clarisse",
+      "name": "Clarisse La Rue",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 14,
+        "max": 25
+      },
+      "description": "Daughter of Ares and the toughest girl at Camp Half-Blood. Clarisse is a jock, a bully, and a warrior who immediately targets Percy as her punching bag. She's aggressive, competitive, and confrontational \u2014 but beneath the tough exterior is a fierce loyalty and a desperate need to prove herself worthy of her father's approval. Clarisse represents the camp's competitive culture and provides physical threat and comic conflict. A high-energy featured ensemble role typically doubled with other characters.",
+      "vocal": {
+        "range": "A3\u2013D5",
+        "voice_type": "Alto/Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "C5\u2013D5",
+        "tessitura": "C4\u2013A4",
+        "style_notes": "Aggressive, powerful belt voice. Pop-rock style with attitude. Must be vocally commanding \u2014 Clarisse doesn't sing quietly. Raw, fierce vocal quality."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "stage combat",
+          "athletic movement",
+          "rock choreography"
+        ],
+        "stamina": "high",
+        "notes": "Physical, athletic role requiring stage combat skills. Must be convincingly tough and physically dominant. Participates in the capture-the-flag and battle sequences."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "bully",
+          "tough girl",
+          "warrior",
+          "insecure competitor"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be genuinely intimidating while also being funny. Clarisse is a great comic antagonist \u2014 she's over-the-top aggressive in a way that's both threatening and hilarious. Under the bravado, there's a vulnerability about wanting to be good enough for Ares."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": [
+          "stage combat",
+          "athletic performance",
+          "bully characterisation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "A fan-favourite character with strong comic and dramatic potential. Clarisse's aggressive antics are always entertaining and her scenes with Percy crackle with conflict. Excellent for performers who can play tough and funny simultaneously.",
+        "common_casting": "Athletic female performer with belt voice and commanding physical presence. Must be convincingly tough. Often doubled with other female roles like The Oracle or Echidna.",
+        "standout_opportunity": "The capture-the-flag sequence and Clarisse's confrontations with Percy are always audience highlights. A performer who commits to the tough-girl persona while hinting at the vulnerability underneath creates a memorable character."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "stage combat",
+          "antagonist characterisation",
+          "belt technique",
+          "physical comedy",
+          "multi-role ensemble work"
+        ],
+        "challenge_areas": [
+          "being threatening without being unlikeable",
+          "stage combat safety while maintaining intensity"
+        ],
+        "recommended_for": [
+          "athletic female performers",
+          "belters developing character work",
+          "performers building antagonist repertoire"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "physical presence and toughness",
+          "strong belt voice",
+          "comedy timing",
+          "stage combat willingness"
+        ],
+        "common_mistakes": [
+          "being all aggression without the comedy",
+          "not finding the vulnerability",
+          "not committing to the physical demands"
+        ],
+        "tips": [
+          "Lead with the attitude \u2014 Clarisse enters every room like she owns it",
+          "Show you can be funny AND tough",
+          "Physical fitness and willingness to do stage combat are essential"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Put You in Your Place",
+          "type": "ensemble feature",
+          "notes": "Clarisse features in the camp competition number. Aggressive, physical, competitive."
+        },
+        {
+          "title": "The Campfire Song",
+          "type": "ensemble",
+          "notes": "Camp scene featuring all campers including Clarisse's competitive energy."
+        }
+      ]
+    },
+    {
+      "id": "lt-silena",
+      "name": "Silena Beauregard",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 14,
+        "max": 25
+      },
+      "description": "Daughter of Aphrodite and one of Percy's fellow campers at Camp Half-Blood. Silena is warm, fashionable, and kind \u2014 the opposite of Clarisse's aggression. She represents the gentler side of the demigod world and shows that not every child of the gods is a warrior. Silena befriends Percy and provides support during his adjustment to camp life. A featured ensemble role typically doubled with other characters.",
+      "vocal": {
+        "range": "A3\u2013E5",
+        "voice_type": "Mezzo-Soprano/Soprano",
+        "belt_required": true,
+        "belt_range": "D5\u2013E5",
+        "tessitura": "C4\u2013B4",
+        "style_notes": "Sweet, warm pop voice with belt capability. Must be able to sustain the show's pop-rock vocal style while maintaining Silena's warmer, gentler quality."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "contemporary",
+          "pop choreography"
+        ],
+        "stamina": "high",
+        "notes": "Participates in all camp ensemble numbers. Must be able to handle the show's energetic choreography while maintaining Silena's more graceful quality."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "kind friend",
+          "fashionable girl",
+          "supportive ally"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must convey genuine warmth and kindness. Silena is the camp's social connector and provides emotional support. Light comedy from her Aphrodite-daughter fashionista tendencies."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 3,
+        "special_skills": [
+          "warm character work",
+          "multi-role transitions"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named camper role providing warmth and friendship in the Camp Half-Blood scenes. Typically doubled with other female roles. Good for performers who bring natural kindness and warmth.",
+        "common_casting": "Warm, friendly female performer who contrasts with Clarisse's toughness. Often doubled with other featured characters.",
+        "standout_opportunity": "Silena's kindness provides crucial emotional texture to the camp scenes. A performer who brings genuine warmth makes the camp feel like a real community."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "warm character types",
+          "ensemble community building",
+          "multi-role work",
+          "pop-rock vocal style"
+        ],
+        "challenge_areas": [
+          "standing out with a gentle character among louder personalities"
+        ],
+        "recommended_for": [
+          "female performers building featured ensemble credits",
+          "singers developing pop-rock style",
+          "warm character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "natural warmth",
+          "pop vocal ability",
+          "multi-role versatility",
+          "ensemble energy"
+        ],
+        "common_mistakes": [
+          "being too bland \u2014 Silena has personality",
+          "not bringing enough energy to the ensemble numbers"
+        ],
+        "tips": [
+          "Lead with warmth and genuine kindness",
+          "Show your multi-role range",
+          "Bring pop-rock vocal energy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Campfire Song",
+          "type": "ensemble",
+          "notes": "Camp scenes featuring all campers."
+        },
+        {
+          "title": "Put You in Your Place",
+          "type": "ensemble",
+          "notes": "Camp competition number with all campers."
+        }
+      ]
+    },
+    {
+      "id": "lt-gabe",
+      "name": "Gabe Ugliano",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 50
+      },
+      "description": "Percy's foul, lazy, beer-swilling stepfather. Gabe is every kid's nightmare stepparent \u2014 rude, slovenly, and treats Percy and Sally terribly. He provides an immediate domestic villain that grounds the story in relatable kid frustration before the mythological adventure begins. Gabe is comedically repulsive and his eventual comeuppance is deeply satisfying. A character comedy role typically doubled from the ensemble with other antagonistic parts.",
+      "vocal": {
+        "range": "C3\u2013E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013C4",
+        "style_notes": "Slovenly character voice. Must be vocally repulsive while still being clear and entertaining. Joins ensemble in rock-driven company numbers."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "low",
+        "notes": "Gabe moves as little as possible \u2014 couch potato physicality. The laziness IS the character movement."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "terrible stepfather",
+          "comic villain",
+          "slovenly bully"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must be repulsive in a funny way. Gabe is a broad comedy villain \u2014 kids should boo him gleefully. The comedy comes from how outrageously terrible he is. Must avoid making him genuinely scary for younger audiences."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "comic villainy",
+          "broad character comedy",
+          "repulsive characterisation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A crowd-pleasing comic villain that audiences love to hate. Gabe's scenes are always comedy highlights, especially with younger audiences who relish booing him. Typically doubled with Mr. D or other adult male roles for comic contrast.",
+        "common_casting": "Character comedian who can be repulsive and funny simultaneously. Often doubled with Mr. D for the comedy of the same actor playing two very different terrible authority figures.",
+        "standout_opportunity": "Every Gabe scene gets a reaction \u2014 his repulsiveness is entertaining and his eventual fate is deeply satisfying. Lean into the grotesque comedy."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "broad comedy",
+          "villain characterisation",
+          "multi-role doubling",
+          "audience interaction"
+        ],
+        "challenge_areas": [
+          "being funny without being genuinely frightening",
+          "keeping the comedy appropriate for all ages"
+        ],
+        "recommended_for": [
+          "character comedians",
+          "performers developing villain repertoire",
+          "multi-role ensemble actors"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "broad comedy skills",
+          "repulsive characterisation",
+          "multi-role versatility"
+        ],
+        "common_mistakes": [
+          "being too scary for young audiences",
+          "not committing fully to the grossness"
+        ],
+        "tips": [
+          "Audiences WANT to hate Gabe \u2014 give them permission",
+          "Keep it funny, not frightening",
+          "Show your multi-role range"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured comic scenes in Percy's home life."
+        }
+      ]
+    },
+    {
+      "id": "lt-mrs-dodds",
+      "name": "Mrs. Dodds / The Fury",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 25,
+        "max": 55
+      },
+      "description": "A Fury (one of the three Furies of Greek mythology) disguised as Percy's substitute algebra teacher. Mrs. Dodds is the show's first monster reveal \u2014 she transforms from a seemingly ordinary (if terrifying) teacher into a full Fury during the museum field trip, confirming Percy's world is not what it seems. She's stern, menacing, and delivers one of the show's most thrilling theatrical transformation moments. Typically doubled from the ensemble with other monster/antagonist roles like Medusa or Echidna.",
+      "vocal": {
+        "range": "A3\u2013D5",
+        "voice_type": "Mezzo-Soprano/Alto",
+        "belt_required": true,
+        "belt_range": "B4\u2013D5",
+        "tessitura": "C4\u2013A4",
+        "style_notes": "Starts prim and proper (teacher voice), transforms to fierce and powerful (Fury voice). Must be able to shift vocal character dramatically. Rock-driven ensemble singing in company numbers."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "character movement",
+          "monster movement",
+          "stage combat"
+        ],
+        "stamina": "moderate",
+        "notes": "Must transition from prim teacher physicality to fierce Fury movement. The transformation is a key theatrical moment. Stage combat in the museum sequence."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "disguised monster",
+          "stern teacher",
+          "mythological fury",
+          "first antagonist"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must play the teacher disguise convincingly before the explosive transformation. The reveal should be thrilling and a bit scary \u2014 it's the first confirmation that monsters are real. Comedy comes from the terrifying teacher archetype before the reveal."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 3,
+        "special_skills": [
+          "character transformation",
+          "stage combat",
+          "monster performance"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "A memorable featured role with a show-defining transformation moment. Mrs. Dodds' reveal is the inciting incident of the entire story. Typically doubled with other monster roles (Medusa, Echidna, Oracle), making it an excellent multi-role vehicle.",
+        "common_casting": "Versatile female performer who can play both prim authority and fierce monster. Often doubled with Medusa/Aunty Em, Echidna, and/or The Oracle for a fantastic multi-role showcase.",
+        "standout_opportunity": "The teacher-to-Fury transformation is one of the show's most exciting theatrical moments. A performer who nails both sides of the character \u2014 prim propriety and unleashed fury \u2014 creates an unforgettable start to the adventure."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character transformation",
+          "monster performance",
+          "multi-role technique",
+          "stage combat",
+          "pop-rock ensemble singing"
+        ],
+        "challenge_areas": [
+          "making the transformation feel genuine",
+          "balancing multiple diverse roles"
+        ],
+        "recommended_for": [
+          "versatile female performers",
+          "actresses developing physical theatre skills",
+          "performers building multi-role experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "versatility between gentle and fierce",
+          "character transformation ability",
+          "stage combat willingness",
+          "multi-role range"
+        ],
+        "common_mistakes": [
+          "telegraphing the monster too early",
+          "not committing to the teacher disguise before the reveal"
+        ],
+        "tips": [
+          "The surprise is what makes it work \u2014 play the teacher convincingly",
+          "Show your range from prim to ferocious",
+          "Multi-role versatility is what will get you cast"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Strong",
+          "type": "ensemble",
+          "notes": "Participates in ensemble numbers. Featured dramatic moment in the museum transformation scene."
+        }
+      ]
+    },
+    {
+      "id": "lt-ares",
+      "name": "Ares / God of War",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 40
+      },
+      "description": "The God of War who appears as a swaggering, leather-clad rock star biker. Ares encounters Percy during the quest and gives him a side mission, ultimately revealed to be part of the larger conspiracy. He's arrogant, intimidating, and radiates raw violent power \u2014 think rock god meets motorcycle gang leader. Ares provides one of the quest's most physically threatening encounters and his eventual confrontation with Percy is a major climactic moment. Typically doubled from the ensemble.",
+      "vocal": {
+        "range": "A2\u2013E4",
+        "voice_type": "Baritone",
+        "belt_required": true,
+        "belt_range": "C4\u2013E4",
+        "tessitura": "D3\u2013C4",
+        "style_notes": "Aggressive rock vocal style. Raw, powerful, intimidating. Must sell the rock god persona vocally. Heavy belt for confrontation moments."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "rock performance",
+          "stage combat",
+          "intimidation movement"
+        ],
+        "stamina": "high",
+        "notes": "Physical, imposing movement. Stage combat is essential for the confrontation with Percy. Must be physically intimidating."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "war god",
+          "rock star villain",
+          "physical threat",
+          "manipulator"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must be genuinely intimidating \u2014 Ares is the most physically dangerous being Percy encounters. The rock star swagger should be cool and threatening simultaneously. Brief comedic moments from his arrogant swagger."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "stage combat",
+          "rock persona",
+          "physical intimidation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A brief but physically imposing featured role. Ares' confrontation with Percy is a major dramatic and physical highlight. Typically doubled with other male ensemble roles \u2014 the contrast between the rock-god Ares and other characters is always entertaining.",
+        "common_casting": "Physically imposing male performer with rock vocal ability and stage combat skills. Often doubled with Gabe Ugliano or Hades for contrasting villain types.",
+        "standout_opportunity": "The Ares confrontation is one of the quest's most thrilling moments. A performer who embodies rock-star menace creates a genuinely exciting theatrical encounter."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "stage combat",
+          "rock performance style",
+          "physical intimidation",
+          "multi-role technique"
+        ],
+        "challenge_areas": [
+          "being threatening while keeping it fun for young audiences",
+          "stage combat safety"
+        ],
+        "recommended_for": [
+          "physical male performers",
+          "rock singers entering theatre",
+          "performers developing villain/antagonist range"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "physical presence",
+          "rock vocal ability",
+          "stage combat willingness",
+          "intimidation factor"
+        ],
+        "common_mistakes": [
+          "being scary without being cool",
+          "not committing to the rock star swagger"
+        ],
+        "tips": [
+          "Ares should look like he belongs on a Harley Davidson album cover",
+          "Stage combat experience is a significant advantage",
+          "Show physical confidence and vocal power"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in rock-driven ensemble. Featured confrontation scene with Percy \u2014 one of the show's most physical moments."
+        }
+      ]
+    },
+    {
+      "id": "lt-medusa",
+      "name": "Medusa / Aunty Em",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "The infamous Gorgon disguised as a kindly garden sculpture shop owner called 'Aunty Em.' Medusa lures Percy, Annabeth, and Grover into her lair with promises of food and hospitality before revealing her true monstrous nature. She's charming, maternal, and deeply sinister \u2014 a villain who kills with kindness before killing with snake hair. The Aunty Em-to-Medusa transformation is one of the show's most thrilling set pieces. Typically doubled from the ensemble with other monster/antagonist roles.",
+      "vocal": {
+        "range": "A3\u2013D5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "B4\u2013D5",
+        "tessitura": "C4\u2013A4",
+        "style_notes": "Switches between sweet, maternal Aunty Em voice and menacing, seductive Medusa voice. Pop-rock ensemble singing. Must convey warmth and menace through vocal colour shifts."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "snake-like movement",
+          "character movement",
+          "stage combat"
+        ],
+        "stamina": "moderate",
+        "notes": "Medusa's movement should be hypnotic and serpentine. The transformation from kindly shop owner to Gorgon is a key physical moment. Stage combat in the encounter."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "disguised monster",
+          "seductive villain",
+          "maternal trap",
+          "mythological creature"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must master the art of the slow reveal \u2014 Aunty Em is genuinely welcoming before the horror sets in. The best Medusas make the audience forget she's dangerous until the moment she strikes. Seductive menace is more effective than obvious villainy."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 3,
+        "special_skills": [
+          "character transformation",
+          "serpentine movement",
+          "seductive villainy",
+          "stage combat"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "One of the show's most memorable featured roles. The Medusa encounter is a fan-favourite scene and the Aunty Em disguise allows for a brilliant slow-burn reveal. Typically doubled with Mrs. Dodds and/or other monster roles, creating a fantastic multi-role showcase for a versatile actress.",
+        "common_casting": "Versatile actress with charm and menace in equal measure. Often doubled with Mrs. Dodds, Echidna, and The Oracle \u2014 the 'monster track' is one of the most rewarding multi-role assignments.",
+        "standout_opportunity": "The Aunty Em scene is always a highlight \u2014 the slow transformation from hospitality to horror is theatrical gold. A performer who nails the 'sweet then deadly' dynamic creates one of the show's best moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "seductive villain technique",
+          "character transformation",
+          "physical theatre",
+          "multi-role performance",
+          "slow-burn reveal"
+        ],
+        "challenge_areas": [
+          "maintaining the Aunty Em disguise convincingly",
+          "making the transformation feel organic"
+        ],
+        "recommended_for": [
+          "versatile female performers building villain range",
+          "actresses developing physical theatre skills",
+          "performers seeking multi-role showcase opportunities"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "charm AND menace",
+          "transformation ability",
+          "physical theatre skills",
+          "multi-role versatility"
+        ],
+        "common_mistakes": [
+          "revealing the monster too early",
+          "not being convincingly kind as Aunty Em",
+          "making Medusa one-dimensionally evil"
+        ],
+        "tips": [
+          "The scariest Medusa is the one who's genuinely kind first",
+          "Practice the vocal shift from sweet to sinister",
+          "Physical theatre \u2014 especially serpentine movement \u2014 will set you apart"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured dramatic scene in Aunty Em's lair \u2014 one of the quest's most thrilling encounters."
+        }
+      ]
+    },
+    {
+      "id": "ensemble-gods",
+      "name": "Ensemble (Gods / Monsters / Campers \u2014 Multi-Track)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 12,
+        "max": 50
+      },
+      "description": "The Lightning Thief ensemble is one of the most demanding multi-track ensembles in musical theatre \u2014 the show is designed for approximately 7 performers playing dozens of roles. Ensemble members portray Greek Gods (Poseidon, Hades, Hermes), Monsters (Minotaur puppeteers, Cyclops), Camp Half-Blood campers (Katie Gardner and others), mortal characters (reporters, tourists), mythological figures (Charon, The Oracle, Echidna, Kronos), and even pop culture cameos (Mozart, Kurt Cobain, Janis Joplin). Many named featured roles (Mr. D, Chiron, Clarisse, Silena, Gabe, Mrs. Dodds, Ares, Medusa) are played by multi-tracking ensemble members. This requires extraordinary versatility \u2014 performers must shift between wildly different characters with minimal costume changes, using physicality, voice, and attitude to differentiate. Strong pop-rock singing, physical theatre, and stage combat skills are essential.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Mixed ensemble \u2014 contemporary rock",
+        "belt_required": true,
+        "belt_range": "Various",
+        "tessitura": "Varied \u2014 must handle rock ensemble, character voices, and potential featured solos",
+        "style_notes": "Contemporary rock ensemble with character voice variety. Each character should have a distinct vocal identity. Must blend in ensemble rock numbers while standing out in character moments."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Physical storytelling",
+          "Stage combat",
+          "Creature movement",
+          "Contemporary"
+        ],
+        "stamina": "Very high \u2014 constant character transformation",
+        "notes": "The ensemble physically creates the world \u2014 monsters, environments, vehicles, everything. Requires extraordinary physical creativity and stamina. Each creature/god should have distinct physicality."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Gods",
+          "Monsters",
+          "Mortals",
+          "Campers",
+          "Environment"
+        ],
+        "emotional_range": "Extremely varied \u2014 from comic monsters to terrifying gods to tender moments",
+        "comedy_skills": true,
+        "notes": "The most creatively demanding ensemble in youth-friendly musical theatre. Each performer creates multiple fully realised characters with distinct physicality, voice, and personality \u2014 often transforming in seconds. The theatrical magic of the show depends on the ensemble's commitment and creativity."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 10,
+        "special_skills": [
+          "Rapid multi-character transformation",
+          "Physical storytelling and world-building",
+          "Creature/monster creation",
+          "Stage combat",
+          "Playing gods with authority",
+          "Rock ensemble singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_get_cast"
+        ],
+        "why": "This is one of the highest-growth ensemble experiences available. Playing gods, monsters, and mortals in rapid succession develops creative versatility, physical storytelling, and rapid character transformation at an extraordinary rate. Named ensemble characters like Clarisse, Mr. D, or Medusa get genuine star moments.",
+        "common_casting": "Creative, physically dynamic performers willing to play anything. Fearlessness and imagination are more important than any specific skill.",
+        "standout_opportunity": "Medusa, Hades, Ares, and Clarisse are all scene-stealing featured ensemble roles. The creativity of the monster/environment creation is often what audiences talk about most."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Rapid multi-character transformation",
+          "Physical storytelling and world-building",
+          "Creature and character creation from scratch",
+          "Rock ensemble singing",
+          "Stage combat",
+          "Creative problem-solving in performance",
+          "Ensemble collaboration at highest level"
+        ],
+        "challenge_areas": [
+          "Managing 4-8 character tracks",
+          "Rapid physical and vocal transformations",
+          "Creating environments without sets",
+          "Sustaining creative energy throughout"
+        ],
+        "recommended_for": [
+          "Creative performers who love transformation",
+          "Percy Jackson fans wanting to inhabit the world",
+          "Performers building physical theatre skills",
+          "Those wanting maximum creative challenge in ensemble"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Creativity and fearlessness",
+          "Physical expressiveness and versatility",
+          "Rock ensemble singing ability",
+          "Willingness to play anything \u2014 god, monster, or furniture",
+          "Quick transformation ability"
+        ],
+        "common_mistakes": [
+          "Not differentiating characters enough",
+          "Being too literal with monster creation \u2014 imagination beats realism",
+          "Low energy in transformation moments",
+          "Not committing to the physical storytelling"
+        ],
+        "tips": [
+          "Every character deserves full commitment \u2014 even if you're a tree for 30 seconds",
+          "Study Greek mythology \u2014 understanding the gods makes them richer to play",
+          "The audience WANTS to believe \u2014 meet them halfway with committed physical choices",
+          "If you get Medusa or Hades, prepare them like lead roles \u2014 they're star turns"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Prologue / The Last Day of Summer",
+          "type": "Ensemble",
+          "notes": "Full company opening. Establishing the world and Percy's story."
+        },
+        {
+          "title": "Put You in Your Place",
+          "type": "Ensemble",
+          "notes": "Camp Half-Blood introduction. Ensemble as campers."
+        },
+        {
+          "title": "DOA",
+          "type": "Ensemble",
+          "notes": "Underworld sequence. Ensemble as dead souls and underworld denizens."
+        },
+        {
+          "title": "Bring on the Monsters",
+          "type": "Ensemble",
+          "notes": "Quest launch number. Full company energy."
+        },
+        {
+          "title": "The Last Day of Summer (Finale)",
+          "type": "Ensemble",
+          "notes": "Full company resolution. Triumphant rock finale."
+        }
+      ]
+    }
+  ]
+}

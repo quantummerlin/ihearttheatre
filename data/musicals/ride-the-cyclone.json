@@ -1,0 +1,662 @@
+{
+  "musical": {
+    "id": "ride-the-cyclone",
+    "title": "Ride the Cyclone",
+    "music_by": "Brooke Maxwell",
+    "lyrics_by": "Brooke Maxwell & Jacob Richmond",
+    "book_by": "Brooke Maxwell & Jacob Richmond",
+    "based_on": "Original work",
+    "year_premiered": 2008,
+    "setting": "The afterlife / Uranium City, Saskatchewan, Canada",
+    "time_period": "Contemporary",
+    "themes": [
+      "mortality",
+      "identity",
+      "what makes a life meaningful",
+      "fairness vs randomness",
+      "self-worth",
+      "community",
+      "second chances",
+      "small-town dreams",
+      "the overlooked ordinary life"
+    ],
+    "genre_tags": ["dark comedy", "ensemble", "contemporary", "quirky", "Canadian", "cult favourite", "small cast", "concert-style"],
+    "vocal_style": "Eclectic contemporary mix — indie rock, pop, rap, carnival/cabaret, classical, power ballad; each character has a distinct musical genre",
+    "dance_intensity": "light_to_moderate",
+    "orchestra_size": "small_band",
+    "typical_cast_size": "7-10",
+    "age_range": "16-35",
+    "difficulty_overall": "advanced",
+    "junior_version_available": false,
+    "license_holder": "Samuel French / Concord Theatricals",
+    "synopsis": "The Amazing Karnak, a fortune-telling mechanical carnival attraction, invites the audience to witness the stories of six teenagers from the Uranium City High School choir who perished on the Cyclone roller coaster at a travelling fair. Each teen gets the chance to plead their case for why they deserve to be the one brought back to life. Through their individual musical numbers, we learn about Ocean — the overachieving choir president, Noel — the romantic outsider, Mischa — the lovesick Ukrainian rapper, Ricky — the kind-hearted boy with a rare aging condition, Constance — the thoroughly average nice girl, and Talia — a headless corpse who channels a mysterious new persona. As the stories unfold, the show interrogates what makes any single life more valuable than another and whether being extraordinary is the only path to a meaningful existence."
+  },
+  "roles": [
+    {
+      "id": "ocean-osheana-rosenberg",
+      "name": "Ocean O'Connell Rosenberg",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "The overachieving, hyper-competitive president of the Uranium City High School choir. Ocean is the self-appointed leader of the group — ambitious, articulate, politically correct on the surface but deeply narcissistic underneath. She genuinely believes she deserves to live again because she has the most 'potential' and the most impressive resumé. Her journey forces her to confront the uncomfortable truth that being extraordinary on paper doesn't make a life more valuable. She is the comedic engine of the show, simultaneously hilarious and infuriating, and her eventual moment of genuine selflessness is the emotional crux of the story.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "mezzo-soprano_belt",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Broadway-pop belt with classical undertones. Must deliver rapid-fire patter with crystal-clear diction. 'Noel's Lament' parody section requires satirical sweetness. Title-adjacent number requires enormous vocal stamina and comedic timing simultaneously."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staged_movement", "comedic_physicality"],
+        "stamina": "moderate",
+        "notes": "Minimal choreography but constant stage presence. Physical comedy and precise gestural work are more important than dance technique."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["type_a_overachiever", "comic_antagonist", "secretly_vulnerable"],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "The most demanding comedic role in the show. Must be simultaneously insufferable and sympathetic. Requires razor-sharp comic timing, the ability to be deeply funny while also landing genuine emotional moments. The audience must eventually root for her despite her worst impulses. Comparable to Elle Woods meets Tracy Flick."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["comedic_timing", "patter_singing", "audience_interaction", "rapid_fire_dialogue"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "Ocean is the comedic centrepiece and arguably the most memorable role in the show. Casting directors look for someone who can carry enormous comic energy while still being likeable underneath. A star-making role for the right performer.",
+        "common_casting": "Strong comedic actresses with big personalities and excellent vocal technique. Often cast from musical comedy or improv backgrounds.",
+        "standout_opportunity": "Every moment on stage is a showcase. 'The New Birthday Song' is a comedic tour de force, and her eventual selfless choice is the emotional climax."
+      },
+      "growth_profile": {
+        "skills_developed": ["advanced_comedic_acting", "patter_singing", "audience_engagement", "vulnerability_within_comedy", "sustained_energy"],
+        "challenge_areas": ["maintaining_likeability_while_being_awful", "comic_timing_precision", "emotional_pivot_to_sincerity"],
+        "recommended_for": ["experienced_performers_seeking_comedic_showcase", "actors_transitioning_to_musical_theatre", "performers_wanting_to_develop_comic_range"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Impeccable comic timing with rapid-fire delivery",
+          "Ability to be hilarious and insufferable simultaneously",
+          "Strong belt voice with clear diction even at speed",
+          "A genuine emotional core beneath the comedy",
+          "High energy that sustains across the full show"
+        ],
+        "common_mistakes": [
+          "Playing Ocean as purely mean without any vulnerability",
+          "Mugging or over-indicating the comedy instead of committing to her reality",
+          "Neglecting the vocal demands in favour of the comedy",
+          "Missing the sincerity of her final choice"
+        ],
+        "tips": [
+          "Study Tracy Flick (Election) and Leslie Knope (Parks & Rec) for the mix of ambition and obliviousness",
+          "Prepare a comedic contemporary musical theatre song that shows belt and patter ability",
+          "Show range — directors want to see you can pivot from hilarious to heartfelt in the callback",
+          "Own the stage — Ocean believes she's the main character and the audience should feel that"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Noel's Lament (Ocean's interjections)",
+          "type": "comedic_interruption",
+          "notes": "Hijacks Noel's number with increasingly absurd self-promotion"
+        },
+        {
+          "title": "The New Birthday Song / Ocean's Monologue",
+          "type": "solo_comedic",
+          "notes": "Comedic showpiece arguing why she deserves to live; patter-heavy with escalating absurdity"
+        },
+        {
+          "title": "It's Not a Game",
+          "type": "ensemble",
+          "notes": "Group number where stakes become real; Ocean's leadership is challenged"
+        }
+      ]
+    },
+    {
+      "id": "noel-gruber",
+      "name": "Noel Gruber",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "A deeply romantic, theatrically inclined gay teenager who dreams of escaping Uranium City to live a glamorous, tragic life in the style of a French chanteuse. Noel is sensitive, dramatic, melancholy, and achingly sincere — he genuinely believes the most meaningful life is one of beautiful suffering. His fantasy life is lush and cinematic while his real life in small-town Saskatchewan is painfully ordinary. He is the emotional heart of the show's exploration of longing and the gap between the lives we imagine and the ones we live.",
+      "vocal": {
+        "range": "Bb2-G4 (with optional falsetto to C5)",
+        "voice_type": "baritone_with_falsetto",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Cabaret/chanson style with genuine emotional depth. Must navigate between theatrical French-inspired phrasing and raw sincerity. Falsetto moments add vulnerability. Think Jacques Brel meets Rufus Wainwright."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["theatrical_movement", "cabaret_style", "waltz"],
+        "stamina": "low_to_moderate",
+        "notes": "Noel's number has stylised cabaret staging. Movement should feel theatrical and deliberate rather than technically demanding."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["romantic_dreamer", "theatrical_outsider", "queer_teen", "melancholic_poet"],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "Must balance genuine pathos with self-aware theatricality. Noel is funny because he's so earnest about his dramatic fantasies, not because he's joking. The comedy comes from commitment. His vulnerability must feel real enough that the audience aches for him."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["french_accent_for_fantasy_sequence", "cabaret_performance_style", "emotional_vulnerability"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "Noel's Lament is one of the most beloved numbers in the show and a genuine star turn. The role develops sophisticated acting skills — balancing sincerity and theatricality — that translate to virtually any future role. A career-defining opportunity for young male performers.",
+        "common_casting": "Expressive young men with strong emotional availability and a flair for the theatrical. Often cast from drama or cabaret backgrounds.",
+        "standout_opportunity": "'Noel's Lament' is a showstopper that audiences remember long after the show. The role has become iconic in cult musical theatre circles."
+      },
+      "growth_profile": {
+        "skills_developed": ["cabaret_performance", "emotional_truth_in_comedy", "character_singing_style", "vulnerability_onstage", "accent_work"],
+        "challenge_areas": ["avoiding_caricature", "finding_real_emotion_within_theatrical_framework", "sustaining_sincerity"],
+        "recommended_for": ["young_male_performers_seeking_complex_roles", "actors_developing_emotional_range", "performers_interested_in_cabaret_style", "queer_performers_seeking_authentic_representation"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine emotional depth — not playing at sadness but feeling it",
+          "Theatrical flair without crossing into camp or mockery",
+          "A warm baritone voice with expressive phrasing",
+          "The ability to be simultaneously funny and heartbreaking",
+          "Comfort with queer identity in performance"
+        ],
+        "common_mistakes": [
+          "Playing Noel as a joke or a stereotype",
+          "Over-camping the French fantasy without grounding it in real longing",
+          "Losing the sincerity — Noel must never feel like he's in on the joke",
+          "Insufficient vocal warmth in the chanson style"
+        ],
+        "tips": [
+          "Listen to Edith Piaf and Jacques Brel to understand the chanson tradition Noel romanticises",
+          "Ground the audition in genuine longing — what did you dream of escaping to as a teenager?",
+          "Prepare something that shows emotional range: consider Sondheim or Pasek & Paul material",
+          "Don't be afraid to be earnest — directors want someone who commits fully to Noel's worldview"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Noel's Lament",
+          "type": "solo",
+          "notes": "Signature cabaret/chanson number; Noel's fantasy of living and dying as a Parisian woman of the night. Deeply moving and darkly funny."
+        },
+        {
+          "title": "It's Not a Game",
+          "type": "ensemble",
+          "notes": "Group confrontation where Noel's romantic fatalism meets reality"
+        }
+      ]
+    },
+    {
+      "id": "mischa-bachinski",
+      "name": "Mischa Bachinski",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "A Ukrainian exchange student adopted by a Canadian family, Mischa is a tough-talking aspiring rapper who hides a deeply romantic soul. He fell in love online with Talia — a girl from a small Russian town — and was saving money to bring her to Canada when he died. Beneath his aggressive exterior, Mischa is desperately tender and heartbroken. His rap number is simultaneously the funniest and most unexpectedly moving moment in the show when his tough persona cracks to reveal raw, aching love.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "tenor_rapper",
+        "belt_required": true,
+        "belt_range": "E4-A4",
+        "tessitura": "mid",
+        "style_notes": "Rap with melodic singing sections. Must deliver rapid Ukrainian-accented rap with precision and emotional build. The transition from aggressive rap to vulnerable singing is the key vocal moment. Think Eminem meets a broken love ballad."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["hip_hop_posturing", "staged_movement"],
+        "stamina": "moderate",
+        "notes": "Hip-hop influenced stage presence rather than technical dance. Physicality should convey toughness that gradually softens."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["tough_exterior_soft_interior", "immigrant_outsider", "hopeless_romantic", "rapper_persona"],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "The most dramatic emotional arc in a single number. Must convincingly portray aggressive bravado and then completely disarm the audience with raw vulnerability. The Ukrainian accent must be consistent and respectful — played with dignity, not for laughs. The comedy comes from the contrast between persona and reality."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["rap_delivery", "ukrainian_accent", "emotional_pivot", "physical_intensity"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "Mischa's number consistently gets the biggest emotional reaction from audiences. The role develops an extraordinary range of performance skills — rap, accent work, physical theatre, and profound emotional vulnerability. A transformative role for any young performer.",
+        "common_casting": "Versatile young men who can rap and act with emotional truth. Often surprises casting directors — the audition piece can come from unexpected backgrounds.",
+        "standout_opportunity": "'Talia' is the number audiences talk about at intermission and after the show. The emotional gut-punch of his vulnerability is unforgettable."
+      },
+      "growth_profile": {
+        "skills_developed": ["rap_performance", "accent_consistency", "emotional_range_extremes", "persona_vs_vulnerability", "audience_manipulation"],
+        "challenge_areas": ["maintaining_accent_through_emotional_peaks", "rap_breath_control", "not_telegraphing_the_vulnerability_too_early"],
+        "recommended_for": ["performers_wanting_to_develop_rap_skills", "actors_seeking_emotional_range_challenge", "young_men_wanting_breakout_role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Convincing rap delivery with genuine flow and rhythm",
+          "A consistent, respectful Ukrainian/Eastern European accent",
+          "The ability to make the audience cry mid-rap",
+          "Physical presence that commands the stage",
+          "Emotional availability beneath the tough exterior"
+        ],
+        "common_mistakes": [
+          "Making the accent a caricature or playing it for cheap laughs",
+          "Focusing only on the rap and neglecting the emotional core",
+          "Revealing the vulnerability too early — the surprise is everything",
+          "Insufficient contrast between the persona and the real Mischa"
+        ],
+        "tips": [
+          "Practice the rap until it's second nature so you can focus on the emotional journey",
+          "Research Ukrainian culture and accent work — authenticity matters",
+          "Prepare an audition that shows both intensity and tenderness",
+          "The key is the pivot: directors want to see you can break an audience's heart in a single line"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Talia",
+          "type": "solo_rap_to_ballad",
+          "notes": "Begins as aggressive rap posturing, transforms into devastating love song. The emotional centrepiece of the show."
+        },
+        {
+          "title": "It's Not a Game",
+          "type": "ensemble",
+          "notes": "Mischa's stakes feel highest — he has someone waiting for him"
+        }
+      ]
+    },
+    {
+      "id": "ricky-potts",
+      "name": "Ricky Potts",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "A sweet, gentle boy who suffers from a degenerative condition that causes rapid aging — he looks decades older than his actual age and has been mute for most of his life. In the afterlife, Ricky can finally speak and sing, and he uses this gift to share his secret inner world: a vivid, joyful fantasy of space travel, adventure, and belonging. Despite having every reason to be bitter, Ricky is fundamentally kind and optimistic. His number is pure theatrical joy — a celebration of imagination triumphing over limitation.",
+      "vocal": {
+        "range": "C3-G4 (with falsetto to B4)",
+        "voice_type": "tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Warm, sweet tenor with an indie-pop quality. Must convey wonder and joy. The voice should feel like it's being used for the first time — fresh, eager, delighted by its own existence. Think gentle indie rock with theatrical exuberance."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["physical_theatre", "expressive_movement", "imaginative_staging"],
+        "stamina": "moderate",
+        "notes": "Ricky's number often involves creative staging — puppetry, ensemble movement, imaginative physicality. Must be physically expressive and uninhibited."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["gentle_soul", "disabled_representation", "imaginative_dreamer", "silent_observer"],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": false,
+        "notes": "Must convey a full character largely without words for much of the show, then explode into joyful expression during his number. The contrast between silence and song is the core of his theatrical impact. Requires genuine sweetness without sentimentality."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["physical_acting", "silent_performance", "conveying_wonder", "potential_puppetry"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow"],
+        "why": "Ricky develops extraordinary physical acting skills — telling a story without words, then channelling pure joy into song. The role builds skills in physical theatre, emotional expression, and theatrical presence that are invaluable for any performing career.",
+        "common_casting": "Kind, expressive performers who radiate warmth. Often cast for emotional availability rather than conventional leading-man qualities.",
+        "standout_opportunity": "'Space Age Bachelor Man' is a pure celebration of imagination that audiences adore. The silent-to-singing arc is deeply theatrical and moving."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_storytelling", "silent_acting", "emotional_expression_without_words", "joyful_performance", "theatrical_presence"],
+        "challenge_areas": ["staying_engaged_during_silent_sections", "avoiding_sentimentality", "physical_expression_of_wonder"],
+        "recommended_for": ["performers_developing_physical_theatre_skills", "actors_seeking_non_traditional_roles", "young_performers_building_stage_presence"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and kindness that reads from the stage",
+          "Strong physical acting — can you tell a story without words?",
+          "A sweet, accessible singing voice",
+          "Joy that feels authentic, not performed",
+          "Comfort with stillness and observation"
+        ],
+        "common_mistakes": [
+          "Playing the disability as tragic or pitiful",
+          "Being passive during silent sections instead of actively observing and reacting",
+          "Overdoing the sweetness into saccharine territory",
+          "Not bringing enough energy to the solo number"
+        ],
+        "tips": [
+          "Practice physicality exercises — Lecoq or Viewpoints work is excellent preparation",
+          "Find the joy: Ricky isn't sad about his condition, he's delighted to finally have a voice",
+          "Prepare an upbeat, joyful song for the audition — show directors your capacity for wonder",
+          "Research progeria or similar conditions with respect and sensitivity"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Space Age Bachelor Man",
+          "type": "solo",
+          "notes": "Exuberant indie-pop fantasy number; Ricky's inner world made visible. Pure theatrical joy."
+        },
+        {
+          "title": "It's Not a Game",
+          "type": "ensemble",
+          "notes": "Ricky's quiet presence amid the group's conflict speaks volumes"
+        }
+      ]
+    },
+    {
+      "id": "constance-blackwood",
+      "name": "Constance Blackwood",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "The nicest girl in Uranium City — and the most thoroughly, statistically, devastatingly average person who has ever lived. Constance is kind, pleasant, well-liked, and utterly unremarkable by every measurable standard. She has no special talents, no dramatic backstory, no tragic flaw, and no extraordinary dream. Her struggle is the philosophical heart of the entire show: does an ordinary life have value? Is being 'nice' enough? Constance's quiet, devastating power ballad argues that it absolutely is — and it's the moment that typically reduces audiences to tears.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "soprano_belt",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Contemporary pop-rock belt with pure emotional sincerity. Must start gentle and build to a devastating climax. The voice should sound 'normal' — beautiful but not showy. The power comes from emotional truth, not vocal pyrotechnics."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["simple_staging"],
+        "stamina": "low",
+        "notes": "Constance's number is largely stationary — the power is in stillness and vocal delivery. Minimal movement requirements."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["everywoman", "ordinary_hero", "the_nice_one", "quiet_strength"],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": false,
+        "notes": "The hardest kind of acting: making ordinary compelling. Constance must be genuinely nice without being boring, and her final number must land as the most powerful moment in the show despite (because of) her ordinariness. Requires extraordinary emotional access and the ability to make an audience weep with sincerity alone."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["emotional_power_ballad_delivery", "making_ordinary_extraordinary", "audience_connection"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Constance's number is the emotional climax of the show. Despite being 'the ordinary one', the role demands extraordinary performance skills — the ability to devastate an audience with sincerity. Often the role that gets standing ovations.",
+        "common_casting": "Warm, relatable performers with powerful voices and genuine emotional depth. Directors look for someone the audience instantly roots for.",
+        "standout_opportunity": "'Talia (Part 2)' / 'Sugar Cloud' is the emotional gutpunch of the show. When it lands, it's the moment audiences remember forever."
+      },
+      "growth_profile": {
+        "skills_developed": ["emotional_truth", "power_ballad_delivery", "audience_connection", "making_simplicity_powerful", "vulnerability"],
+        "challenge_areas": ["avoiding_blandness", "building_emotional_arc_from_quiet_start", "sustaining_interest_during_ensemble_scenes"],
+        "recommended_for": ["strong_singers_seeking_dramatic_depth", "performers_who_connect_emotionally", "those_wanting_to_develop_subtlety_and_sincerity"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A voice that makes you feel something — technique in service of emotion",
+          "Genuine warmth and relatability",
+          "The ability to build from quiet to devastating",
+          "Someone the audience immediately cares about",
+          "Comfort with being 'ordinary' — no need to be quirky or showy"
+        ],
+        "common_mistakes": [
+          "Trying to make Constance interesting by adding quirks — her power IS her ordinariness",
+          "Starting the power ballad too big and having nowhere to build",
+          "Being forgettable in ensemble scenes — Constance must be present and reactive",
+          "Confusing 'nice' with 'passive'"
+        ],
+        "tips": [
+          "Prepare a sincere contemporary ballad — think Sara Bareilles or Carole King",
+          "The audition should make people feel, not just hear great singing",
+          "Think about what it means to be average — find the profound in the ordinary",
+          "Watch the original production recordings to understand the emotional build"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Sugar Cloud",
+          "type": "solo_power_ballad",
+          "notes": "The emotional climax of the show. A celebration of ordinary life that devastates audiences. Must build from gentle reflection to overwhelming power."
+        },
+        {
+          "title": "It's Not a Game",
+          "type": "ensemble",
+          "notes": "Constance's quiet presence provides grounding contrast to the louder personalities"
+        }
+      ]
+    },
+    {
+      "id": "the-amazing-karnak",
+      "name": "The Amazing Karnak",
+      "role_type": "lead",
+      "gender": "any",
+      "age_range": {
+        "min": 20,
+        "max": 50
+      },
+      "description": "A mechanical fortune-telling machine from the Uranium City carnival who gains sentience after being struck by lightning. Karnak serves as the show's narrator, host, judge, and quasi-divine figure — a mechanical being grappling with consciousness, mortality, and the impossible task of choosing which teenager deserves to live. Equal parts carnival barker, philosopher, and sympathetic god-figure, Karnak guides the audience through the stories with sardonic wit and increasing emotional engagement. By the end, the machine that was never alive becomes the character most affected by the question of what makes life meaningful.",
+      "vocal": {
+        "range": "flexible — depends on casting",
+        "voice_type": "character_voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "flexible",
+        "style_notes": "Carnival/cabaret host vocal style with theatrical grandeur. The voice should feel slightly artificial or stylised — a machine performing humanity. Spoken word delivery is as important as singing. Must command the room with authority and mystery."
+      },
+      "dance": {
+        "level": "none_to_basic",
+        "styles": ["mechanical_movement", "stylised_gestures"],
+        "stamina": "low",
+        "notes": "Movement should suggest a mechanical being — precise, slightly uncanny. Some productions use puppetry or physical theatre techniques for Karnak."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["narrator_host", "mechanical_being", "philosopher", "carnival_barker", "reluctant_god"],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Must command the entire show as narrator while gradually revealing emotional depth. The arc from detached mechanical host to emotionally engaged being is subtle and powerful. Requires excellent audience address, timing, and the ability to shift between sardonic commentary and genuine feeling."
+      },
+      "performance": {
+        "stage_time_percentage": 80,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["audience_address", "narration", "mechanical_physicality", "philosophical_monologue", "carnival_hosting"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Karnak is on stage for virtually the entire show and serves as the audience's guide. The role demands enormous stage presence, wit, and the ability to hold a room. A masterclass in theatrical hosting and character work.",
+        "common_casting": "Charismatic performers with strong presence and vocal authority. Gender-flexible casting — the role works brilliantly with any gender. Often cast for gravitas and wit.",
+        "standout_opportunity": "Being on stage for 80% of the show means constant visibility. The opening and closing sequences are Karnak's — the show lives and dies with this performance."
+      },
+      "growth_profile": {
+        "skills_developed": ["audience_address", "narrator_technique", "character_physicality", "comedic_hosting", "sustained_stage_presence"],
+        "challenge_areas": ["maintaining_energy_across_full_show", "finding_the_machine_becoming_human_arc", "balancing_host_duties_with_character_development"],
+        "recommended_for": ["experienced_performers_seeking_narrator_roles", "physical_theatre_performers", "those_wanting_to_develop_audience_engagement_skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Commanding stage presence that fills the room",
+          "Excellent spoken word delivery and audience address",
+          "A sense of mystery and theatricality",
+          "The ability to make mechanical movement feel characterful",
+          "Wit and intelligence in performance"
+        ],
+        "common_mistakes": [
+          "Playing Karnak as purely robotic without personality",
+          "Not developing the emotional arc — Karnak changes over the show",
+          "Upstaging the teenagers during their numbers instead of supporting them",
+          "Insufficient vocal authority for the narration"
+        ],
+        "tips": [
+          "Study great theatrical hosts and narrators — the Emcee in Cabaret, the Narrator in Into the Woods",
+          "Explore mechanical movement — watch automaton videos for inspiration",
+          "Prepare a monologue that shows audience address skills as well as a song",
+          "Find the moment Karnak starts to care — that's the key to the performance"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Karnak Introduction / Uranium",
+          "type": "opening_number",
+          "notes": "Sets the tone for the entire show. Carnival grandeur meets existential mystery."
+        },
+        {
+          "title": "It's Not a Game",
+          "type": "ensemble",
+          "notes": "Karnak must facilitate the impossible choice"
+        },
+        {
+          "title": "Finale — The Decision",
+          "type": "finale",
+          "notes": "Karnak's choice and its consequences. The emotional resolution of the show."
+        }
+      ]
+    },
+    {
+      "id": "talia",
+      "name": "Talia",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 16,
+        "max": 28
+      },
+      "description": "The most mysterious figure in the show — a headless body who was decapitated in the Cyclone accident and therefore has no memory of who she was. Without an identity, Talia channels a series of personas during her number, cycling through different archetypes in search of who she might have been. She represents the ultimate question: if you have no identity, no memories, no story — are you still someone? Her arc connects deeply with Mischa's story in ways that become clear in the show's resolution. The role is physically demanding and theatrically inventive.",
+      "vocal": {
+        "range": "Bb3-F5",
+        "voice_type": "mezzo_soprano_belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Must navigate multiple vocal styles within one number — shifting between personas. Think Lady Gaga's versatility: pop, rock, ballad, theatrical. The voice should feel like it's searching for its own identity."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["contemporary", "physical_theatre", "multiple_character_physicalities"],
+        "stamina": "high",
+        "notes": "The most physically demanding role. Must embody multiple distinct physicalities as Talia cycles through personas. Some productions use headless illusion staging that requires specific physical technique."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["mystery_figure", "shapeshifter", "identity_seeker", "multiple_personas"],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "Must create multiple distinct characters within one role while maintaining a throughline of searching. The headless concept requires creative physical solutions. The emotional revelation of who Talia was is the show's biggest twist and must land with devastating impact."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["multiple_character_shifts", "physical_theatre", "headless_staging_technique", "identity_transformation"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow"],
+        "why": "Talia develops an extraordinary range of performance skills — multiple characterisations, physical theatre, vocal versatility, and emotional depth. The role is a masterclass in transformation that builds skills applicable to virtually any future role.",
+        "common_casting": "Versatile female performers with strong physicality and vocal range. Often cast for their ability to shift between characters seamlessly.",
+        "standout_opportunity": "The persona-shifting number is a theatrical tour de force, and the identity reveal is one of the most emotionally powerful moments in the show."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_transformation", "physical_theatre", "vocal_versatility", "multiple_characterisation", "mystery_performance"],
+        "challenge_areas": ["creating_distinct_personas_quickly", "maintaining_throughline_through_transformations", "headless_staging_technique"],
+        "recommended_for": ["versatile_performers_seeking_physical_challenges", "actors_developing_character_range", "performers_wanting_to_develop_transformation_skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical versatility — can you transform your body language instantly?",
+          "Vocal range across multiple styles",
+          "An air of mystery and vulnerability",
+          "Strong ensemble awareness — Talia observes and connects with everyone",
+          "Creative problem-solving for the headless concept"
+        ],
+        "common_mistakes": [
+          "Making the persona shifts too similar — each must be completely distinct",
+          "Losing the emotional throughline of searching for identity",
+          "Not connecting with Mischa's storyline",
+          "Treating the headless concept as a gag rather than a genuine theatrical challenge"
+        ],
+        "tips": [
+          "Prepare two contrasting songs to show vocal versatility",
+          "Practice rapid physicality shifts — Viewpoints or Suzuki training helps enormously",
+          "Research the show's twist so you can layer the performance with dramatic irony",
+          "Show directors you can transform — bring contrasting characters to the callback"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Talia's Song / Every Story Has a Talia",
+          "type": "solo_transformation",
+          "notes": "Multi-persona showcase; Talia shifts through identities searching for her own. Theatrically inventive and vocally demanding."
+        },
+        {
+          "title": "Talia (reprise connection with Mischa)",
+          "type": "duet_emotional",
+          "notes": "The revelation connecting Talia and Mischa's stories. Devastating when it lands."
+        }
+      ]
+    }
+  ]
+}

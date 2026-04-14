@@ -4,7 +4,7 @@
  */
 
 // ============================================
-// Service Worker Registration
+// Service Worker Registration + Update Toast
 // ============================================
 if ('serviceWorker' in navigator) {
  window.addEventListener('load', () => {
@@ -12,7 +12,300 @@ if ('serviceWorker' in navigator) {
  .then(reg => console.log('[iHT] Service Worker registered:', reg.scope))
  .catch(err => console.log('[iHT] Service Worker registration failed:', err));
  });
+
+ // Listen for SW_UPDATED message from the new service worker
+ navigator.serviceWorker.addEventListener('message', event => {
+ if (event.data && event.data.type === 'SW_UPDATED') {
+ _showUpdateToast();
+ }
+ });
 }
+
+function _showUpdateToast() {
+ if (document.getElementById('iht-update-toast')) return;
+ const t = document.createElement('div');
+ t.id = 'iht-update-toast';
+ t.style.cssText = [
+ 'position:fixed', 'bottom:90px', 'left:50%', 'transform:translateX(-50%)',
+ 'background:#12121a', 'border:1px solid rgba(102,126,234,0.4)',
+ 'border-radius:12px', 'padding:12px 18px', 'display:flex',
+ 'align-items:center', 'gap:12px', 'z-index:9999',
+ 'box-shadow:0 4px 24px rgba(0,0,0,0.5)', 'font-size:0.9rem',
+ 'font-family:"Inter",-apple-system,sans-serif', 'color:#f5f5f5',
+ 'white-space:nowrap'
+ ].join(';');
+ t.innerHTML = '<span>🎭 Site updated!</span>'
+ + '<button onclick="location.reload()" style="background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;border-radius:8px;padding:6px 14px;cursor:pointer;font-size:0.85rem;font-family:inherit;">Refresh</button>'
+ + '<button onclick="document.getElementById(\'iht-update-toast\').remove()" style="background:none;border:none;color:#a0a0b0;cursor:pointer;font-size:1.2rem;padding:0 4px;" aria-label="Dismiss">&times;</button>';
+ document.body.appendChild(t);
+ // Auto-dismiss after 12 seconds
+ setTimeout(() => { const el = document.getElementById('iht-update-toast'); if (el) el.remove(); }, 12000);
+}
+
+// ============================================
+// iHT User Data — saves, export, import
+// All user data uses iht_ prefix in localStorage.
+// localStorage is NOT cleared during SW cache busts — data is always safe.
+// ============================================
+window.iHT = (function() {
+ var SAVES_KEY = 'iht_saves';
+ var DATA_VER_KEY = 'iht_data_version';
+ var CURRENT_VER = 1;
+
+ function _read(key) {
+ try { return JSON.parse(localStorage.getItem(key)); } catch(e) { return null; }
+ }
+
+ function _write(key, val) {
+ try { localStorage.setItem(key, JSON.stringify(val)); return true; }
+ catch(e) { console.warn('[iHT] localStorage write failed:', e); return false; }
+ }
+
+ function _getSaves() {
+ return _read(SAVES_KEY) || { shows: {}, auditions: {}, services: {} };
+ }
+
+ return {
+ /** Toggle save for an item. Returns new saved state (true/false) */
+ toggle: function(type, id, summary) {
+ var saves = _getSaves();
+ var bucket = type + 's';
+ if (!saves[bucket]) saves[bucket] = {};
+ if (saves[bucket][id]) {
+ delete saves[bucket][id];
+ _write(SAVES_KEY, saves);
+ this._updateBadge();
+ return false;
+ } else {
+ saves[bucket][id] = Object.assign({}, summary, { _savedAt: new Date().toISOString() });
+ _write(SAVES_KEY, saves);
+ this._updateBadge();
+ return true;
+ }
+ },
+
+ /** Check if an item is saved */
+ isSaved: function(type, id) {
+ var saves = _getSaves();
+ return !!(saves[type + 's'] && saves[type + 's'][id]);
+ },
+
+ /** Get all saves object */
+ getSaves: function() { return _getSaves(); },
+
+ /** Count all saved items across all types */
+ count: function() {
+ var s = _getSaves();
+ return Object.values(s).reduce(function(n, obj) { return n + Object.keys(obj).length; }, 0);
+ },
+
+ /** Export all iHT localStorage data as a JSON file download */
+ exportData: function() {
+ var out = { _exported: new Date().toISOString(), _version: CURRENT_VER };
+ for (var i = 0; i < localStorage.length; i++) {
+ var k = localStorage.key(i);
+ if (k && k.startsWith('iht_')) {
+ try { out[k] = JSON.parse(localStorage.getItem(k)); }
+ catch(e) { out[k] = localStorage.getItem(k); }
+ }
+ }
+ // Include legacy keys so nothing is lost
+ ['cookie-consent','visited','clickedReviews','reviewsSubmitted'].forEach(function(k) {
+ var v = localStorage.getItem(k);
+ if (v !== null) out['_legacy_' + k] = v;
+ });
+ var blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
+ var url = URL.createObjectURL(blob);
+ var a = document.createElement('a');
+ a.href = url;
+ a.download = 'ihearttheatre-my-data-' + new Date().toISOString().slice(0,10) + '.json';
+ document.body.appendChild(a);
+ a.click();
+ document.body.removeChild(a);
+ setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+ },
+
+ /** Import from a previously exported JSON file */
+ importData: function(jsonText) {
+ try {
+ var data = JSON.parse(jsonText);
+ var count = 0;
+ Object.entries(data).forEach(function(entry) {
+ var k = entry[0], v = entry[1];
+ if (k.startsWith('iht_')) {
+ localStorage.setItem(k, typeof v === 'string' ? v : JSON.stringify(v));
+ count++;
+ }
+ });
+ this._updateBadge();
+ return count;
+ } catch(e) { console.error('[iHT] Import failed:', e); return -1; }
+ },
+
+ /** Update the floating saves badge count */
+ _updateBadge: function() {
+ var btn = document.getElementById('iht-saves-btn');
+ if (!btn) return;
+ var n = this.count();
+ btn.dataset.count = n;
+ var badge = btn.querySelector('.iht-saves-badge');
+ if (badge) badge.textContent = n;
+ btn.style.opacity = n > 0 ? '1' : '0.6';
+ },
+
+ /** Initialise the floating saves button and panel */
+ _initPanel: function() {
+ var self = this;
+
+ // Floating button
+ var btn = document.createElement('button');
+ btn.id = 'iht-saves-btn';
+ btn.setAttribute('aria-label', 'My saved items');
+ btn.innerHTML = '<span style="font-size:1.1rem;">♡</span><span class="iht-saves-badge" style="background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border-radius:10px;padding:1px 7px;font-size:0.75rem;font-weight:700;min-width:18px;text-align:center;">' + this.count() + '</span>';
+ btn.style.cssText = [
+ 'position:fixed', 'bottom:76px', 'right:20px',
+ 'background:#12121a', 'border:1px solid rgba(255,255,255,0.1)',
+ 'border-radius:24px', 'padding:8px 14px', 'cursor:pointer',
+ 'display:flex', 'align-items:center', 'gap:7px',
+ 'color:#f5f5f5', 'font-family:"Inter",-apple-system,sans-serif',
+ 'font-size:0.9rem', 'z-index:9990',
+ 'box-shadow:0 2px 12px rgba(0,0,0,0.4)',
+ 'transition:all 0.2s ease',
+ 'opacity:' + (this.count() > 0 ? '1' : '0.6')
+ ].join(';');
+ btn.addEventListener('click', function() { self._openPanel(); });
+ document.body.appendChild(btn);
+
+ // Panel overlay
+ var overlay = document.createElement('div');
+ overlay.id = 'iht-saves-overlay';
+ overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:10000;opacity:0;pointer-events:none;transition:opacity 0.25s ease;';
+ overlay.addEventListener('click', function(e) { if (e.target === overlay) self._closePanel(); });
+ document.body.appendChild(overlay);
+
+ // Panel drawer
+ var panel = document.createElement('div');
+ panel.id = 'iht-saves-panel';
+ panel.style.cssText = [
+ 'position:fixed', 'top:0', 'right:0', 'bottom:0', 'width:min(420px,100vw)',
+ 'background:#0a0a0f', 'border-left:1px solid rgba(255,255,255,0.08)',
+ 'z-index:10001', 'display:flex', 'flex-direction:column',
+ 'transform:translateX(100%)', 'transition:transform 0.3s cubic-bezier(0.4,0,0.2,1)',
+ 'font-family:"Inter",-apple-system,sans-serif', 'color:#f5f5f5'
+ ].join(';');
+ panel.innerHTML = this._panelHTML();
+ document.body.appendChild(panel);
+
+ // Wire up panel buttons
+ panel.querySelector('#iht-panel-close').addEventListener('click', function() { self._closePanel(); });
+ panel.querySelector('#iht-export-btn').addEventListener('click', function() { self.exportData(); });
+ panel.querySelector('#iht-import-label').addEventListener('click', function() {
+ var inp = document.createElement('input');
+ inp.type = 'file'; inp.accept = '.json';
+ inp.addEventListener('change', function() {
+ if (!inp.files[0]) return;
+ var reader = new FileReader();
+ reader.onload = function(ev) {
+ var n = self.importData(ev.target.result);
+ if (n >= 0) { self._refreshPanelContent(); alert('Imported ' + n + ' data entries!'); }
+ else { alert('Import failed — file may be invalid.'); }
+ };
+ reader.readAsText(inp.files[0]);
+ });
+ inp.click();
+ });
+
+ document.addEventListener('keydown', function(e) {
+ if (e.key === 'Escape') self._closePanel();
+ });
+ },
+
+ _panelHTML: function() {
+ var s = this.getSaves();
+ var shows = Object.values(s.shows || {});
+ var auditions = Object.values(s.auditions || {});
+ var services = Object.values(s.services || {});
+
+ function itemCard(item, type) {
+ var title = item.title || item.show_title || item.name || '—';
+ var sub = item.company || item.tagline || '';
+ var date = item.date_start || item.audition_date || item.date_end || '';
+ if (date) { try { date = new Date(date).toLocaleDateString('en-AU', {day:'numeric',month:'short',year:'numeric'}); } catch(e) {} }
+ return '<div style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:flex-start;gap:8px;">'
+ + '<div style="flex:1;min-width:0;">'
+ + '<div style="font-weight:600;font-size:0.9rem;margin-bottom:3px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;" title="' + title + '">' + title + '</div>'
+ + (sub ? '<div style="color:#a0a0b0;font-size:0.8rem;margin-bottom:2px;">' + sub + '</div>' : '')
+ + (date ? '<div style="color:#a0a0b0;font-size:0.78rem;">📅 ' + date + '</div>' : '')
+ + '</div>'
+ + '<button onclick="iHT._removeFromPanel(\'' + type + '\',\'' + item.id + '\')" style="background:none;border:none;color:#a0a0b0;cursor:pointer;font-size:1.1rem;padding:2px 4px;flex-shrink:0;" aria-label="Remove" title="Remove">✕</button>'
+ + '</div>';
+ }
+
+ function section(label, items, type, emptyMsg) {
+ return '<div style="margin-bottom:16px;">'
+ + '<div style="font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#667eea;margin-bottom:8px;">' + label + ' (' + items.length + ')</div>'
+ + (items.length ? items.map(function(i) { return itemCard(i, type); }).join('') : '<div style="color:#a0a0b0;font-size:0.85rem;padding:8px 0;">' + emptyMsg + '</div>')
+ + '</div>';
+ }
+
+ return '<div style="padding:20px 18px 12px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.08);">'
+ + '<div style="font-family:\'Playfair Display\',serif;font-size:1.2rem;font-weight:600;">My Saved Items</div>'
+ + '<button id="iht-panel-close" style="background:none;border:none;color:#a0a0b0;font-size:1.4rem;cursor:pointer;padding:4px;" aria-label="Close">&times;</button>'
+ + '</div>'
+ + '<div id="iht-panel-body" style="flex:1;overflow-y:auto;padding:18px;">'
+ + section('Shows', shows, 'show', 'No shows saved yet — tap ♡ on any show card.')
+ + section('Auditions', auditions, 'audition', 'No auditions saved yet — tap ♡ on any audition.')
+ + section('Services', services, 'service', 'No services saved yet — tap ♡ on any provider.')
+ + '</div>'
+ + '<div style="padding:14px 18px;border-top:1px solid rgba(255,255,255,0.08);display:flex;gap:10px;flex-wrap:wrap;">'
+ + '<button id="iht-export-btn" style="flex:1;background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;border:none;border-radius:10px;padding:10px 16px;cursor:pointer;font-size:0.88rem;font-family:inherit;font-weight:600;">📥 Export My Data</button>'
+ + '<span id="iht-import-label" style="flex:1;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:10px 16px;cursor:pointer;font-size:0.88rem;text-align:center;color:#f5f5f5;">📤 Import Data</span>'
+ + '</div>';
+ },
+
+ _openPanel: function() {
+ var overlay = document.getElementById('iht-saves-overlay');
+ var panel = document.getElementById('iht-saves-panel');
+ if (!overlay || !panel) return;
+ overlay.style.opacity = '1';
+ overlay.style.pointerEvents = 'auto';
+ panel.style.transform = 'translateX(0)';
+ document.body.style.overflow = 'hidden';
+ },
+
+ _closePanel: function() {
+ var overlay = document.getElementById('iht-saves-overlay');
+ var panel = document.getElementById('iht-saves-panel');
+ if (!overlay || !panel) return;
+ overlay.style.opacity = '0';
+ overlay.style.pointerEvents = 'none';
+ panel.style.transform = 'translateX(100%)';
+ document.body.style.overflow = '';
+ },
+
+ _removeFromPanel: function(type, id) {
+ this.toggle(type, id, null); // toggle off
+ this._refreshPanelContent();
+ // Update save buttons on page
+ var btn = document.querySelector('[data-save-type="' + type + '"][data-save-id="' + id + '"]');
+ if (btn) { btn.innerHTML = '♡'; btn.title = 'Save'; btn.classList.remove('saved'); }
+ },
+
+ _refreshPanelContent: function() {
+ var panel = document.getElementById('iht-saves-panel');
+ if (!panel) return;
+ var body = panel.querySelector('#iht-panel-body');
+ if (body) {
+ // Re-render the full panel HTML and replace just the scrollable body
+ var tempDiv = document.createElement('div');
+ tempDiv.innerHTML = this._panelHTML();
+ var newBody = tempDiv.querySelector('#iht-panel-body');
+ if (newBody) body.replaceWith(newBody);
+ }
+ this._updateBadge();
+ }
+ };
+})();
 
 // ============================================
 // Progress Bar
@@ -283,4 +576,5 @@ document.addEventListener('DOMContentLoaded', () => {
  initAchievements();
  initCookieConsent();
  initLightbox();
+ iHT._initPanel();
 });

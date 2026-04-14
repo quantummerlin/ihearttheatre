@@ -1,0 +1,1384 @@
+{
+  "musical": {
+    "id": "pretty-woman",
+    "title": "Pretty Woman: The Musical",
+    "music_by": "Bryan Adams and Jim Vallance",
+    "lyrics_by": "Bryan Adams and Jim Vallance",
+    "book_by": "Garry Marshall and J.F. Lawton",
+    "based_on": "The 1990 Touchstone Pictures film Pretty Woman",
+    "year_premiered": 2018,
+    "broadway_opening": "2018-08-16",
+    "setting": "Hollywood Boulevard, Beverly Hills, and Los Angeles",
+    "time_period": "Contemporary (1990s original, updated for modern productions)",
+    "themes": [
+      "Fairy tale romance",
+      "Class and social mobility",
+      "Self-worth and transformation",
+      "Love changes everything",
+      "Being true to yourself",
+      "The power of kindness",
+      "Reinvention"
+    ],
+    "genre_tags": [
+      "Contemporary",
+      "Romance",
+      "Comedy",
+      "Pop-Rock",
+      "Film adaptation"
+    ],
+    "vocal_style": "Pop-rock with power ballads, Bryan Adams rock sensibility blended with Broadway belt",
+    "dance_intensity": "moderate_to_high",
+    "orchestra_size": "Full pit band (10-14 players) \u2014 rock-influenced with strings",
+    "typical_cast_size": "25-35",
+    "age_range": "18-60",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": false,
+    "license_holder": "Theatrical Rights Worldwide (TRW)",
+    "synopsis": "Vivian Ward is a spirited, quick-witted woman working on Hollywood Boulevard who catches the eye of Edward Lewis, a ruthless corporate raider. What starts as a business arrangement \u2014 Vivian as Edward's companion for a week of social events \u2014 transforms into something neither expected. As Vivian discovers a world of luxury and Edward rediscovers his humanity, both must confront who they really are and who they want to become. It's a modern fairy tale about two unlikely people finding love and changing each other's lives."
+  },
+  "roles": [
+    {
+      "id": "vivian",
+      "name": "Vivian Ward",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "A sharp, funny, resilient woman living on Hollywood Boulevard who is far more than her circumstances suggest. Vivian is street-smart, warm, authentic, and unintimidated by wealth or power. Her journey is about discovering her own worth \u2014 not because of Edward, but through the confidence to demand more from life. She transforms externally but was always extraordinary internally.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "Mezzo-Soprano / Belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "Strong upper belt with pop-rock power, vulnerable middle register for ballads",
+        "style_notes": "Pop-rock belt with emotional range. Must handle power ballads with genuine vulnerability and up-tempo rock numbers with confidence. The voice should evolve \u2014 raw and defensive early, open and soaring by the end. Bryan Adams' rock writing requires authentic rock vocal quality."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "Pop choreography",
+          "Jazz",
+          "Social dance",
+          "Physical comedy"
+        ],
+        "stamina": "Very high \u2014 onstage nearly the entire show",
+        "notes": "Vivian's physicality transforms throughout \u2014 confident street swagger early, awkward in high society, then gracefully commanding by the end. The shopping montage and social event sequences require strong dance skills."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Fairy tale heroine",
+          "Underdog",
+          "Romantic lead",
+          "Self-discovery"
+        ],
+        "emotional_range": "Very wide \u2014 street toughness, vulnerability, joy, humiliation, anger, love, self-discovery, triumph",
+        "comedy_skills": true,
+        "notes": "The most important quality is that Vivian must feel REAL \u2014 not a victim, not a fantasy, a genuine person with intelligence, humor, and resilience. The humiliation scenes (being refused service, being judged) need to sting. The romance must feel earned, not inevitable."
+      },
+      "performance": {
+        "stage_time_percentage": 80,
+        "solo_songs": 5,
+        "duets": 3,
+        "ensemble_numbers": 3,
+        "quick_changes": 6,
+        "special_skills": [
+          "Multiple costume transformations",
+          "Pop-rock belt",
+          "Physical comedy",
+          "Playing vulnerability beneath toughness",
+          "The iconic transformation moments"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Vivian is a powerhouse role \u2014 vocally demanding, emotionally complex, with multiple transformations and the responsibility of making an iconic character your own. This role develops pop-rock belt, comedy, emotional range, and the art of physical transformation on stage.",
+        "common_casting": "Strong pop-rock belters with natural charisma, comedy instincts, and genuine emotional depth. Must be equally convincing on Hollywood Boulevard and at the opera.",
+        "standout_opportunity": "The transformation moments are theatrical magic. The 'Big Mistake' shopping revenge is a guaranteed crowd-pleaser. The final love declaration is triumph personified."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Pop-rock belt technique",
+          "Physical and vocal transformation across a show",
+          "Comedy within romantic leading role",
+          "Playing vulnerability beneath confidence",
+          "Multiple quick-change management",
+          "Making an iconic role original"
+        ],
+        "challenge_areas": [
+          "Not imitating Julia Roberts \u2014 must find your own Vivian",
+          "The transformation must feel internal, not just costume changes",
+          "Balancing comedy with genuine emotional stakes",
+          "Vocal stamina across demanding pop-rock score"
+        ],
+        "recommended_for": [
+          "Pop-rock belters ready for a star vehicle",
+          "Performers who combine comedy with emotional depth",
+          "Those wanting a romantic lead with genuine character arc",
+          "Actresses who excel at transformation roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Pop-rock belt power with emotional authenticity",
+          "Natural charisma and likability",
+          "Comedy timing and physical comedy ability",
+          "The ability to be both tough and vulnerable",
+          "Star quality that fills the stage"
+        ],
+        "common_mistakes": [
+          "Doing a Julia Roberts impression",
+          "Playing Vivian as a victim rather than a survivor",
+          "All comedy, no emotional depth",
+          "Not enough vocal power for the rock numbers"
+        ],
+        "tips": [
+          "Vivian's worth is INHERENT \u2014 she doesn't discover it through Edward, she discovers the confidence to demand it",
+          "The humor is her defense mechanism \u2014 when she stops joking, the audience should lean forward",
+          "Find YOUR Vivian \u2014 the audience knows the film, show them something new",
+          "The transformation is internal first, external second \u2014 play the inner change"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Anywhere But Here",
+          "type": "Solo",
+          "notes": "Vivian's opening statement. Where she is and where she dreams of being."
+        },
+        {
+          "title": "This Is My Life",
+          "type": "Solo",
+          "notes": "Vivian's defiant self-declaration. Pop-rock belt showcase."
+        },
+        {
+          "title": "I Can't Go Back",
+          "type": "Solo",
+          "notes": "Emotional turning point \u2014 Vivian realising she deserves more. Power ballad."
+        },
+        {
+          "title": "Luckiest Girl in the World",
+          "type": "Solo/Ensemble",
+          "notes": "Shopping transformation. Joy and confidence emerging."
+        },
+        {
+          "title": "Together Forever",
+          "type": "Duet",
+          "notes": "Love duet with Edward. Romantic culmination."
+        }
+      ]
+    },
+    {
+      "id": "edward",
+      "name": "Edward Lewis",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 28,
+        "max": 50
+      },
+      "description": "A wealthy, emotionally closed-off corporate raider who has made a fortune dismantling companies. Edward is brilliant, controlled, and deeply lonely \u2014 he's forgotten how to connect with people and sees everything as a transaction. Vivian's authenticity and warmth crack his armor and remind him why he wanted to build things, not destroy them.",
+      "vocal": {
+        "range": "A2-F4",
+        "voice_type": "Baritone",
+        "belt_required": true,
+        "belt_range": "D4-F4",
+        "tessitura": "Mid-range baritone with pop-rock quality, building from restrained to emotionally open",
+        "style_notes": "Restrained, controlled baritone that gradually opens up emotionally. Early songs should feel measured and precise; later songs should show genuine emotional vulnerability. Bryan Adams rock-ballad style."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Social dance",
+          "Formal ballroom elements",
+          "Period staging"
+        ],
+        "stamina": "Moderate",
+        "notes": "Edward moves with controlled precision \u2014 everything measured and deliberate. As the character opens up, so does his physicality. Must be comfortable in formal social situations on stage."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Ice king melting",
+          "Corporate villain redeeming",
+          "Romantic lead",
+          "Emotionally closed"
+        ],
+        "emotional_range": "Wide \u2014 cold control, discomfort, wonder, vulnerability, genuine love, transformation",
+        "comedy_skills": true,
+        "notes": "Edward's transformation is the counterpart to Vivian's. He starts closed off and superior, gradually thawing as Vivian's authenticity reaches him. The audience must see both why he became cold AND why Vivian can reach him. The opera scene \u2014 where he's moved to tears \u2014 is often the turning point."
+      },
+      "performance": {
+        "stage_time_percentage": 65,
+        "solo_songs": 3,
+        "duets": 3,
+        "ensemble_numbers": 2,
+        "quick_changes": 2,
+        "special_skills": [
+          "Playing emotional reserve convincingly",
+          "Transformation from cold to warm",
+          "Formal social deportment",
+          "Chemistry with Vivian actress"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Edward is a complex romantic lead whose transformation arc requires sophisticated acting. Playing emotional walls coming down is one of the most challenging and rewarding acting exercises. This role develops restraint, vulnerability, and the art of the internal transformation.",
+        "common_casting": "Handsome baritones with natural authority, sophistication, and the ability to show vulnerability beneath a controlled exterior.",
+        "standout_opportunity": "The opera scene \u2014 Edward being moved to tears by art \u2014 is the moment the audience falls in love with him. It's pure acting craft."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Playing emotional restraint and gradual opening",
+          "Romantic leading man skills",
+          "Pop-rock baritone technique",
+          "Internal transformation acting",
+          "Authority and sophistication on stage"
+        ],
+        "challenge_areas": [
+          "Making a cold character likable from the start",
+          "The transformation must feel gradual, not sudden",
+          "Balancing control with vulnerability"
+        ],
+        "recommended_for": [
+          "Baritones seeking romantic lead roles",
+          "Actors developing emotional subtlety",
+          "Performers wanting to play transformation arcs",
+          "Those building leading man presence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural authority and sophistication",
+          "Warmth visible beneath the cold exterior",
+          "Strong baritone voice with emotional colour",
+          "Chemistry potential with Vivian",
+          "The ability to show walls crumbling"
+        ],
+        "common_mistakes": [
+          "Playing Edward as purely cold \u2014 there must be warmth underneath from the start",
+          "Not enough vocal power for the pop-rock score",
+          "Rushing the emotional transformation",
+          "Lacking the genuine sophistication the role requires"
+        ],
+        "tips": [
+          "Edward became cold because he was hurt \u2014 find that backstory and play it",
+          "Vivian doesn't change Edward \u2014 she reminds him who he used to be",
+          "The opera scene is your key moment \u2014 prepare it like a solo",
+          "Study controlled emotional performances \u2014 the less you show, the more the audience sees"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Freedom",
+          "type": "Solo",
+          "notes": "Edward's world of control and power. Restrained confidence."
+        },
+        {
+          "title": "Something About Her",
+          "type": "Solo",
+          "notes": "Edward beginning to feel. Vulnerability emerging through the cracks."
+        },
+        {
+          "title": "Together Forever",
+          "type": "Duet",
+          "notes": "Love duet with Vivian. Full emotional openness."
+        },
+        {
+          "title": "You and I",
+          "type": "Duet",
+          "notes": "Recognition that they've changed each other. Pop-rock ballad."
+        }
+      ]
+    },
+    {
+      "id": "kit-de-luca",
+      "name": "Kit De Luca",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "Vivian's sharp, funny, loyal best friend and roommate from Hollywood Boulevard. Kit is streetwise, protective, and genuinely cares about Vivian's safety and happiness. She provides comic relief and emotional grounding \u2014 the friend who tells you the truth even when you don't want to hear it.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "Alto / Mezzo Belt",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "Lower belt with attitude and character",
+        "style_notes": "Brassy, character-driven belt with street attitude. Kit's vocal style is edgier and rougher than Vivian's \u2014 more raw rock than polished pop. Comedy delivery in singing is essential."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Pop choreography",
+          "Street dance",
+          "Physical comedy"
+        ],
+        "stamina": "Moderate",
+        "notes": "Kit moves with street confidence and attitude. Her dance style is raw and unpolished compared to the Beverly Hills world."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Best friend",
+          "Comic relief",
+          "Street survivor",
+          "Truth-teller"
+        ],
+        "emotional_range": "Moderate \u2014 attitude, humor, genuine concern, loyalty, protectiveness",
+        "comedy_skills": true,
+        "notes": "Kit provides the audience with a reality check amidst the fairy tale. She's funny and tough but genuinely worried about Vivian. The friendship must feel real and deep."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Street-smart characterisation",
+          "Comedy delivery",
+          "Best friend chemistry with Vivian"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_get_cast"
+        ],
+        "why": "Kit is the best friend role everyone loves \u2014 funny, loyal, and scene-stealing. A great Kit gets laughs every time she appears and adds emotional weight to Vivian's journey.",
+        "common_casting": "Character belters with natural comedy instincts and attitude. The performer who delivers the best one-liners in auditions.",
+        "standout_opportunity": "Every Kit scene is a comedy highlight. Her protective moments add unexpected emotional depth."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Character belt singing",
+          "Comedy timing in supporting role",
+          "Best friend chemistry building",
+          "Street-smart characterisation"
+        ],
+        "challenge_areas": [
+          "Making Kit more than just comic relief",
+          "Balancing attitude with genuine caring"
+        ],
+        "recommended_for": [
+          "Character belters wanting a fun featured role",
+          "Performers who excel at comedy",
+          "Those building supporting role confidence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural attitude and comedy timing",
+          "Strong character belt voice",
+          "Genuine warmth beneath the tough exterior",
+          "Chemistry with Vivian actress"
+        ],
+        "common_mistakes": [
+          "All attitude, no heart",
+          "Playing Kit as a stereotype",
+          "Not enough vocal power"
+        ],
+        "tips": [
+          "Kit genuinely loves Vivian \u2014 every joke masks real concern",
+          "She's survived on the streets \u2014 play the intelligence and street smarts",
+          "Your comedy moments are the audience's relief valve \u2014 they need you"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Rodeo Drive",
+          "type": "Solo/Ensemble",
+          "notes": "Kit and Hollywood Boulevard life. Attitude and energy."
+        },
+        {
+          "title": "Anywhere But Here",
+          "type": "Duet",
+          "notes": "Opening with Vivian. Establishing the friendship."
+        }
+      ]
+    },
+    {
+      "id": "happy-man",
+      "name": "Happy Man (Hotel Manager / Narrator)",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 60
+      },
+      "description": "The elegant, wise hotel manager of the Beverly Wilshire who becomes Vivian's unlikely ally and fairy godfather figure. Happy Man often serves as a narrator and guide, orchestrating the fairy tale from behind the scenes with warmth and knowing smiles. He sees what others miss and helps Vivian navigate the world of wealth.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "Baritone / Character Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range baritone with warm, storytelling quality",
+        "style_notes": "Warm, avuncular singing voice with narrative quality. Think fairy godmother energy in a hotel manager's suit. Storytelling delivery."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Elegant movement",
+          "Musical staging"
+        ],
+        "stamina": "Moderate \u2014 appears throughout but not demanding",
+        "notes": "Moves with hotel-professional elegance and grace. Should feel like the calmest, most composed person in every scene."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Fairy godfather",
+          "Wise mentor",
+          "Narrator",
+          "Elegant professional"
+        ],
+        "emotional_range": "Moderate \u2014 warmth, wisdom, gentle humor, genuine kindness",
+        "comedy_skills": true,
+        "notes": "Happy Man is the show's moral compass and guardian angel. He sees Vivian's true worth immediately and quietly facilitates her transformation. Deadpan humor and genuine warmth make this role a quiet audience favourite."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "Narrative presence",
+          "Deadpan comedy",
+          "Elegant deportment",
+          "Playing the fairy godfather archetype"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Happy Man is a charming, scene-stealing supporting role with a beautiful narrative function. Perfect for sophisticated performers wanting a role with wisdom and warmth rather than flash.",
+        "common_casting": "Elegant, warm adult male performers with natural charm and deadpan comedy ability.",
+        "standout_opportunity": "Every scene where Happy Man quietly helps Vivian is a gem. The audience loves this character for his decency."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Narrative/storytelling presence",
+          "Deadpan comedy",
+          "Playing wisdom and authority with warmth",
+          "Elegant stage deportment"
+        ],
+        "challenge_areas": [
+          "Making a supporting guide role feel fully realised",
+          "Narrative function without being heavy-handed"
+        ],
+        "recommended_for": [
+          "Sophisticated adult performers",
+          "Those who prefer warmth and wit over flash",
+          "Actors developing narrator skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural elegance and warmth",
+          "Deadpan comedy timing",
+          "Warm baritone speaking and singing voice",
+          "The quality of quiet authority"
+        ],
+        "common_mistakes": [
+          "Being too obvious as the fairy godfather \u2014 keep it subtle",
+          "Lacking genuine warmth",
+          "Over-narrating"
+        ],
+        "tips": [
+          "Happy Man sees the real Vivian from moment one \u2014 play that recognition",
+          "Less is more \u2014 a raised eyebrow, a knowing smile, a perfect comment",
+          "He's the fairy tale's guardian \u2014 not drawing attention to himself but ensuring the right ending"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Welcome to Hollywood / Fairy tale narration",
+          "type": "Solo/Scene",
+          "notes": "Storytelling and scene-setting. Warm and welcoming."
+        },
+        {
+          "title": "You're Beautiful",
+          "type": "Duet/Scene",
+          "notes": "Guiding Vivian's transformation. Genuine kindness."
+        }
+      ]
+    },
+    {
+      "id": "philip-stuckey",
+      "name": "Philip Stuckey",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 45
+      },
+      "description": "Edward's ruthless lawyer and right-hand man who has been his partner on countless hostile corporate takeovers. Philip is driven, charming on the surface, and utterly obsessed with wealth and success. He initially views Vivian as an amusing diversion but grows increasingly threatened as Edward's relationship with her softens his business instincts. When Edward begins reconsidering the Morse deal, Philip transforms from smooth operator to genuinely dangerous antagonist, willing to cross every ethical and legal line to protect his interests. He is the show's primary villain \u2014 a wolf in expensive suits.",
+      "vocal": {
+        "range": "B2-A4",
+        "voice_type": "Tenor / Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range with strong mix voice, conversational singing that builds to intensity",
+        "style_notes": "Philip's vocals are more actor-singer driven than pure belt. He needs a powerful, commanding voice that conveys authority and menace. Strong rock edge in confrontational numbers. Must blend well in duets with Edward."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Social dance",
+          "Staging"
+        ],
+        "stamina": "Moderate \u2014 concentrated in key scenes rather than throughout",
+        "notes": "Philip is a boardroom character more than a physical one. His physicality comes from power and intimidation rather than dance. Must move with confident, predatory energy."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Villain",
+          "Power broker",
+          "Charming manipulator",
+          "Corporate shark"
+        ],
+        "emotional_range": "Controlled charm to explosive danger \u2014 the transition from ally to antagonist must be chillingly believable",
+        "comedy_skills": true,
+        "notes": "Philip is the hardest supporting role to land correctly. Too cartoonish and he's boring; too subtle and the audience misses the threat. He must be genuinely charming early \u2014 the audience should understand why Edward trusts him \u2014 before revealing his true nature. The assault on Vivian near the end must be played with real menace."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Playing charming villainy",
+          "Corporate physicality",
+          "Building threat gradually",
+          "Intense dramatic confrontation scenes"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Philip is the show's antagonist and every great musical needs a compelling villain. This role builds dramatic acting chops, the ability to play charming menace, and the challenge of making an audience turn against someone they initially liked. Invaluable experience for actors wanting to deepen their range.",
+        "common_casting": "Strong actors with natural authority and charisma who can play sophisticated and dangerous. Often cast with performers who have film/TV villainy experience. Must look credible as Edward's peer.",
+        "standout_opportunity": "The confrontation scenes are electric when played well. Philip's unmasking as the true villain is a pivotal dramatic moment that can define a production."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Playing multi-layered villainy",
+          "Arc from ally to antagonist",
+          "Corporate/power physicality",
+          "Intense dramatic scene work",
+          "Charming menace \u2014 acting duality"
+        ],
+        "challenge_areas": [
+          "Finding the charm before revealing the threat",
+          "Making the villain human, not cartoonish",
+          "The assault scene requires sensitivity and directorial collaboration",
+          "Maintaining tension without overplaying"
+        ],
+        "recommended_for": [
+          "Actors looking to develop villain/antagonist skills",
+          "Performers wanting to build dramatic range",
+          "Those comfortable with morally complex characters",
+          "Actors ready for high-stakes dramatic confrontation"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural authority and charisma",
+          "The ability to be likeable before being menacing",
+          "Strong vocal quality \u2014 actor-singer who can carry numbers",
+          "Physical presence that conveys power without being physically imposing necessarily",
+          "Comfort with morally dark material"
+        ],
+        "common_mistakes": [
+          "Playing the villain from scene one \u2014 Philip must be charming first",
+          "Going too broad or cartoon-villain",
+          "Neglecting the vocal requirements \u2014 Philip does sing",
+          "Not finding the human motivation (greed, fear of losing everything)"
+        ],
+        "tips": [
+          "Study corporate thriller villains \u2014 think Gordon Gekko, not Disney villain",
+          "Find Philip's genuine friendship with Edward early \u2014 the betrayal hits harder",
+          "The assault scene should be discussed with the director \u2014 approach with care",
+          "Show range in audition \u2014 charm and danger in the same piece"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "More Than a Woman (Stuckey sections)",
+          "type": "duet_with_edward",
+          "notes": "Philip and Edward's business dynamic, Philip pushing for the kill on the Morse deal"
+        },
+        {
+          "title": "Don't Forget to Dance",
+          "type": "ensemble_number",
+          "notes": "Social event scenes where Philip operates in his element"
+        }
+      ]
+    },
+    {
+      "id": "james-morse",
+      "name": "James Morse",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 50,
+        "max": 70
+      },
+      "description": "A self-made industrial tycoon who built a major shipbuilding company from the ground up. James Morse represents everything Edward Lewis is not \u2014 a man who creates things rather than dismantling them. Facing the threat of losing vital Naval contracts, his company becomes a target for Edward and Philip's hostile takeover. But James is a fighter, fiercely determined to protect his employees and preserve his legacy. His dignity, passion for his workers, and refusal to go quietly become the catalyst that forces Edward to reconsider his entire approach to business and life. Often specified as BIPOC in casting.",
+      "vocal": {
+        "range": "A2-F4",
+        "voice_type": "Baritone / Bass-Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Rich lower-middle range, warm and commanding with emotional depth",
+        "style_notes": "James's voice should carry the weight of experience and conviction. His singing is heartfelt rather than showy \u2014 a working man's voice with gravitas. Must convey decades of pride in what he's built. Strong pop-rock foundations with emotional sincerity."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Staging",
+          "Social dance"
+        ],
+        "stamina": "Low \u2014 concentrated appearances in key dramatic scenes",
+        "notes": "James is not a dance role. His physicality is about dignity, weariness, and the weight of fighting for his company. Should move with the authority of a man who built something with his own hands."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Dignified patriarch",
+          "Self-made man",
+          "Moral compass",
+          "Fighting underdog"
+        ],
+        "emotional_range": "Quiet dignity to passionate defence of his legacy \u2014 must convey decades of hard work and love for his employees in limited stage time",
+        "comedy_skills": false,
+        "notes": "James Morse has limited stage time but enormous dramatic impact. He is the moral heart of the business storyline \u2014 his humanity is what makes Edward question everything. The actor must make the audience care deeply about this man and his company in just a few scenes. Gravitas and authenticity are essential."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": [
+          "Commanding stage presence in limited appearances",
+          "Making audiences invest emotionally in a subplot",
+          "Conveying lifetime of experience",
+          "Dignity under pressure"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "James Morse is a masterclass in making a small role unforgettable. With limited stage time, you must convey an entire life story and become the emotional catalyst for the protagonist's transformation. This teaches economy of performance \u2014 making every moment count.",
+        "common_casting": "Mature actors with natural gravitas and warmth. Often cast BIPOC per the show's specifications. Must feel like a man who genuinely built something with his hands.",
+        "standout_opportunity": "The confrontation scene with Edward is a powerful dramatic moment. When James defends his workers and his legacy, it should be the emotional turning point of the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Maximum impact in minimal stage time",
+          "Playing dignity and authority",
+          "Emotional catalyst performance",
+          "Conveying backstory through presence alone",
+          "Dramatic confrontation scenes"
+        ],
+        "challenge_areas": [
+          "Making a limited role feel essential to the story",
+          "Avoiding sentimentality \u2014 James is strong, not pitiful",
+          "Building a full character with few scenes",
+          "Conveying the weight of a lifetime in moments"
+        ],
+        "recommended_for": [
+          "Mature performers seeking impactful supporting roles",
+          "Actors developing dramatic gravitas",
+          "Performers who excel at economy of performance",
+          "Those building a range of character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural authority and warmth",
+          "A voice that carries experience and conviction",
+          "The ability to command a scene without volume",
+          "Authentic emotional connection to the material",
+          "Physical presence that suggests a lifetime of hard work"
+        ],
+        "common_mistakes": [
+          "Playing James as weak or pitiable \u2014 he is a fighter",
+          "Over-emoting in what should be quiet dignity",
+          "Not investing enough in the business subplot",
+          "Treating it as a small role rather than a pivotal one"
+        ],
+        "tips": [
+          "Research real industrialists and company founders for inspiration",
+          "Find the fierce protectiveness underneath the dignity",
+          "Your scenes change everything for Edward \u2014 play the weight of that",
+          "Simple, grounded choices will serve this role best"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "I Can't Go Back",
+          "type": "solo_or_scene",
+          "notes": "James's passionate defence of his company and workers \u2014 the emotional core of the business subplot"
+        },
+        {
+          "title": "Never Give Up on a Dream",
+          "type": "ensemble_section",
+          "notes": "The thematic connection between James's fight and Vivian's journey"
+        }
+      ]
+    },
+    {
+      "id": "david-morse",
+      "name": "David Morse",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 22,
+        "max": 35
+      },
+      "description": "James Morse's grandson who is being trained to take over the family shipbuilding business. David is eager, creative, smart, and full of innovative ideas. He has devised a daring plan to save the company by retooling it to build cruise ships for the Hawaiian Islands. His youthful energy and vision for the future complement his grandfather's experience and legacy. David represents the next generation's determination to evolve rather than surrender. Usually doubled from the ensemble.",
+      "vocal": {
+        "range": "B2-G4",
+        "voice_type": "Baritone / Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Comfortable middle range, youthful and energetic quality",
+        "style_notes": "David's vocal moments are brief but need to convey intelligence and enthusiasm. A confident, clear pop-rock voice that suggests the next generation of leadership. Must blend well with James Morse in their shared scenes."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Jazz",
+          "Pop choreography",
+          "Social dance"
+        ],
+        "stamina": "High when in ensemble \u2014 moderate in featured moments",
+        "notes": "As a role typically doubled from ensemble, the performer needs strong dance skills for ensemble numbers while bringing a distinct character quality to David's featured moments."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Eager young professional",
+          "Visionary grandson",
+          "Next generation leader"
+        ],
+        "emotional_range": "Enthusiasm and determination with moments of genuine concern for his grandfather's wellbeing",
+        "comedy_skills": false,
+        "notes": "David must radiate the energy of someone with a genuine plan and the passion to execute it. His relationship with his grandfather should feel warm and authentic. In business scenes, he must hold his own against Edward and Philip despite being younger and less powerful."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 6,
+        "quick_changes": 2,
+        "special_skills": [
+          "Transitioning between ensemble and featured role",
+          "Playing youthful authority",
+          "Business scene credibility",
+          "Quick character switches"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "David Morse is an excellent stepping stone for ensemble performers looking to take on featured moments. The role teaches you how to create a distinct character within ensemble work and how to hold your own in dramatic business scenes alongside principal actors. Usually doubled from ensemble.",
+        "common_casting": "Strong ensemble performers with acting ability who can convincingly play a young business professional. Must have the charisma to make brief appearances memorable.",
+        "standout_opportunity": "The boardroom scene where David presents his cruise ship plan is a chance to show you can command a scene. Directors notice ensemble members who bring genuine character to featured moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Featured moment within ensemble track",
+          "Character differentiation between ensemble and named role",
+          "Business/professional scene work",
+          "Building a character with limited material",
+          "Ensemble-to-featured transition skills"
+        ],
+        "challenge_areas": [
+          "Making David distinct from your ensemble characters",
+          "Conveying intelligence and vision quickly",
+          "Quick changes between ensemble and David",
+          "Finding the emotional connection to James in limited scenes"
+        ],
+        "recommended_for": [
+          "Ensemble performers seeking featured opportunities",
+          "Young actors building versatility",
+          "Performers developing character acting skills",
+          "Those wanting experience in dramatic business scenes"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong ensemble dance and vocal skills first",
+          "Ability to create a distinct featured character",
+          "Youthful energy and intelligence",
+          "Chemistry potential with the actor playing James Morse",
+          "Professional, credible presence in business scenes"
+        ],
+        "common_mistakes": [
+          "Focusing only on the featured moments and neglecting ensemble audition",
+          "Playing David as too young or naive \u2014 he has a real business plan",
+          "Not preparing for both ensemble and featured aspects",
+          "Underestimating the role's importance to the plot"
+        ],
+        "tips": [
+          "Audition first as a strong ensemble member, then show featured character skills",
+          "Research startup founders for David's innovative energy",
+          "Show that you can switch between ensemble and character cleanly",
+          "Bring genuine enthusiasm \u2014 David believes his plan will work"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Business scenes / Morse Company sequences",
+          "type": "scene_work",
+          "notes": "David's featured moments presenting his cruise ship vision and supporting his grandfather"
+        },
+        {
+          "title": "Ensemble numbers",
+          "type": "ensemble",
+          "notes": "Full participation in ensemble choreography and vocals throughout the show"
+        }
+      ]
+    },
+    {
+      "id": "violetta",
+      "name": "Violetta Valery",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 21,
+        "max": 45
+      },
+      "description": "An ensemble member with a showstopping featured role as the opera singer portraying Violetta in the La Traviata sequence. This is the moment where Vivian attends the opera for the first time, and the La Traviata performance becomes a mirror for her own story \u2014 a woman judged by society who finds transcendent love. Violetta's operatic performance must be genuinely stunning, creating the emotional climax that transforms Vivian's understanding of herself. Requires a legitimate operatic soprano voice alongside pop-rock ensemble skills.",
+      "vocal": {
+        "range": "C4-Bb5",
+        "voice_type": "Soprano (Operatic / Legit)",
+        "belt_required": true,
+        "belt_range": "D4-F5 (pop-rock ensemble sections)",
+        "tessitura": "High soprano with operatic placement for La Traviata, switching to pop-rock belt for ensemble numbers",
+        "style_notes": "This is one of the most vocally unique roles in contemporary musical theatre \u2014 requiring genuine operatic soprano technique for the La Traviata sequence AND the ability to sing pop-rock in ensemble numbers. The operatic moments must be genuinely beautiful and emotionally devastating. The voice must transport the audience just as it transports Vivian."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Jazz",
+          "Pop choreography",
+          "Ballroom movement"
+        ],
+        "stamina": "High \u2014 full ensemble participation plus the demanding operatic featured moment",
+        "notes": "Strong movement skills are essential for ensemble work. The La Traviata sequence may involve stylised operatic staging. Must be able to switch from pop-rock dance energy to operatic poise."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Opera singer within a musical",
+          "Emotional mirror",
+          "Dual performance artist"
+        ],
+        "emotional_range": "Must convey the full tragedy and beauty of La Traviata in a condensed sequence \u2014 love, sacrifice, death, transcendence",
+        "comedy_skills": false,
+        "notes": "Violetta's performance IS the emotional turning point for Vivian. The actor must understand that they're not just singing opera \u2014 they're providing the moment where Vivian sees her own story reflected in art for the first time. The La Traviata sequence needs to be genuinely moving, not just technically impressive."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 6,
+        "quick_changes": 2,
+        "special_skills": [
+          "Operatic soprano voice",
+          "Switching between opera and pop-rock",
+          "Creating emotional climax through performance within performance",
+          "Dual vocal technique"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "This is a dream role for operatic sopranos looking to break into musical theatre. The La Traviata sequence is a genuine showstopper that can earn spontaneous applause. It develops the rare skill of switching between classical and pop-rock technique within the same show, making you incredibly versatile.",
+        "common_casting": "Classically trained sopranos who can also handle pop-rock ensemble work. Opera students and graduates who want musical theatre experience. The operatic voice must be genuine, not approximated.",
+        "standout_opportunity": "The La Traviata sequence is one of the most memorable moments in the show. A stunning operatic performance here will be remembered by every audience member and talked about in the lobby."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Cross-genre vocal versatility (opera to pop-rock)",
+          "Showstopping featured moment within ensemble",
+          "Performance-within-a-performance acting",
+          "Ensemble dance and vocal skills in pop-rock context",
+          "Building operatic technique for theatre contexts"
+        ],
+        "challenge_areas": [
+          "Switching vocal technique between operatic and pop-rock",
+          "Maintaining ensemble energy while preparing for featured moment",
+          "The pressure of a genuine operatic performance in a pop-rock show",
+          "Blending into ensemble without losing individual vocal quality"
+        ],
+        "recommended_for": [
+          "Classically trained sopranos entering musical theatre",
+          "Singers with opera training wanting to develop pop-rock skills",
+          "Performers seeking unique cross-genre featured opportunities",
+          "Those who want to demonstrate exceptional vocal versatility"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine operatic soprano quality \u2014 this cannot be faked",
+          "Ability to also sing pop-rock ensemble material convincingly",
+          "Strong movement and dance skills for ensemble work",
+          "Emotional depth in the La Traviata sequence",
+          "Versatility to be a team player in ensemble while shining in featured moment"
+        ],
+        "common_mistakes": [
+          "Only preparing operatic material \u2014 you must show pop-rock ability too",
+          "Treating ensemble work as beneath the operatic moment",
+          "Over-singing the La Traviata sequence \u2014 beauty over volume",
+          "Not understanding how Violetta's performance affects Vivian's story"
+        ],
+        "tips": [
+          "Prepare both an operatic aria AND a pop-rock song for auditions",
+          "Study La Traviata \u2014 understand Violetta's story and its parallels to Vivian's",
+          "Show you can be a team player in ensemble work, not just a soloist",
+          "Emphasise the emotional storytelling in your operatic piece, not just technique"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "La Traviata sequence (Sempre Libera / operatic passages)",
+          "type": "featured_solo",
+          "notes": "The showstopping operatic sequence that transforms Vivian \u2014 must be genuinely stunning"
+        },
+        {
+          "title": "Ensemble numbers (pop-rock)",
+          "type": "ensemble",
+          "notes": "Full participation in all ensemble singing and choreography in pop-rock style"
+        }
+      ]
+    },
+    {
+      "id": "giulio",
+      "name": "Giulio",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 18,
+        "max": 25
+      },
+      "description": "An ensemble member with a delightful featured role as the young bellhop at the Beverly Wilshire Hotel. Giulio is wide-eyed, innocent, eager to please, and has impeccable comic timing. He provides moments of warmth and humour in the hotel scenes, often reacting to the extraordinary events around him with barely concealed amazement. The casting brief specifies a performer on the shorter side in height, emphasising the youthful, earnest quality of the character. A strong technical dancer with featured comedy moments. Usually doubled from the ensemble.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "Tenor",
+        "belt_required": true,
+        "belt_range": "E4-A4",
+        "tessitura": "Bright, youthful tenor with pop-rock energy",
+        "style_notes": "Strong pop-rock singing skills for ensemble work with a bright, youthful quality for featured moments. Must have excellent ensemble blend while being able to step forward with a distinctive, charming vocal quality for Giulio's moments."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Jazz",
+          "Pop choreography",
+          "Ballroom",
+          "Partnering",
+          "Physical comedy"
+        ],
+        "stamina": "Very high \u2014 strong technical dancer carrying full ensemble workload plus featured moments",
+        "notes": "The casting brief specifically requires a 'strong technical dancer.' Giulio's physicality is a key part of his charm \u2014 he should move with the eager, slightly over-enthusiastic energy of a young person desperate to do a great job. Featured dance moments showcase technical skill within a comedic framework."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Comic sidekick",
+          "Eager young worker",
+          "Wide-eyed innocent",
+          "Physical comedian"
+        ],
+        "emotional_range": "Primarily comic \u2014 enthusiasm, nervousness, awe, and warmth",
+        "comedy_skills": true,
+        "notes": "Giulio is pure comic gold when played right. The humour comes from genuine earnestness, not mugging. He takes his bellhop duties incredibly seriously, which makes his reactions to the outrageous events at the hotel hilarious. Think Buttons in Cinderella \u2014 loyal, sweet, and genuinely funny."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 7,
+        "quick_changes": 2,
+        "special_skills": [
+          "Physical comedy",
+          "Technical dance within comic character",
+          "Quick-witted reactions",
+          "Youthful charm",
+          "Shorter stature preferred per casting brief"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Giulio is a crowd favourite \u2014 the kind of featured ensemble role that audiences remember and love. This role develops physical comedy, technical dance within character, and the art of stealing scenes without upstaging principals. Perfect for young performers building their comedy and dance skills.",
+        "common_casting": "Young, technically strong dancers on the shorter side with natural comic timing. Must be able to deliver laughs while maintaining ensemble discipline. The kind of performer who lights up the stage with energy and charm.",
+        "standout_opportunity": "Giulio's hotel scenes are guaranteed audience favourites. A great bellhop performance gets talked about and remembered \u2014 it's the kind of role that builds a reputation for comic talent."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Physical comedy within technical dance",
+          "Featured character within ensemble track",
+          "Comic timing and audience connection",
+          "Scene-stealing without upstaging",
+          "Playing youthful energy and innocence"
+        ],
+        "challenge_areas": [
+          "Keeping comedy fresh eight shows a week",
+          "Not overplaying \u2014 the humour comes from sincerity",
+          "Maintaining ensemble discipline in non-featured moments",
+          "Technical dance while staying in comic character"
+        ],
+        "recommended_for": [
+          "Young dancers with comedy instincts",
+          "Performers who combine technical dance with character work",
+          "Those seeking featured ensemble roles in professional productions",
+          "Actors developing physical comedy skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Exceptional dance technique \u2014 this is a dancer's role first",
+          "Natural, unforced comic timing",
+          "Youthful energy and genuine charm",
+          "Strong pop-rock vocal ability for ensemble",
+          "A smaller physical frame is preferred per casting specifications"
+        ],
+        "common_mistakes": [
+          "Overplaying the comedy \u2014 Giulio is sincere, not wacky",
+          "Neglecting dance audition in favour of acting choices",
+          "Not showing ensemble skills alongside featured character work",
+          "Trying to make the role bigger than it is \u2014 its charm is its economy"
+        ],
+        "tips": [
+          "Lead with dance in your audition \u2014 this is how you'll be cast",
+          "Find comedy in genuine reactions, not faces or mugging",
+          "Study great physical comedians for inspiration (Charlie Chaplin, Buster Keaton)",
+          "Show you can be part of a team while bringing individual character"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Hotel scenes / Beverly Wilshire sequences",
+          "type": "featured_comedy",
+          "notes": "Giulio's featured comic moments as the eager, wide-eyed bellhop"
+        },
+        {
+          "title": "Ensemble numbers",
+          "type": "ensemble",
+          "notes": "Full participation in all ensemble dance and vocal numbers \u2014 this is a dancer's track"
+        }
+      ]
+    },
+    {
+      "id": "alfredo",
+      "name": "Alfredo",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 45
+      },
+      "description": "An ensemble member with a featured role as the opera singer portraying Alfredo in the La Traviata sequence, performing alongside Violetta. Alfredo is Violetta's lover in the opera \u2014 their duet is the emotional centrepiece that parallels Vivian and Edward's story. Requires a magnificent high tenor operatic voice with the ability to also sing in pop-rock style for ensemble numbers. The performer must bring genuine operatic artistry to the La Traviata sequence while being a fully contributing ensemble member throughout the show. Usually doubled from the ensemble.",
+      "vocal": {
+        "range": "C3-A4 (B4 in operatic passages)",
+        "voice_type": "Tenor (Operatic / Legit)",
+        "belt_required": true,
+        "belt_range": "E4-A4 (pop-rock ensemble sections)",
+        "tessitura": "High tenor with operatic placement for La Traviata, switching to pop-rock for ensemble work",
+        "style_notes": "Like Violetta, this role demands genuine operatic technique \u2014 a real tenor voice that can handle La Traviata passages convincingly \u2014 alongside the ability to sing pop-rock in ensemble numbers. The operatic moments must match Violetta's soprano in power and beauty. Must be able to convincingly perform a love duet in operatic style."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Jazz",
+          "Pop choreography",
+          "Ballroom movement",
+          "Partnering"
+        ],
+        "stamina": "High \u2014 full ensemble workload plus featured operatic sequence",
+        "notes": "Strong movement ability is essential for ensemble work. The La Traviata sequence may involve partnering with Violetta in stylised operatic staging. Must be able to switch between pop-rock ensemble choreography and operatic poise."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Opera singer within a musical",
+          "Romantic lead within featured sequence",
+          "Dual performance artist"
+        ],
+        "emotional_range": "Romantic passion and devotion within the La Traviata sequence \u2014 must convey the love story that mirrors Vivian and Edward",
+        "comedy_skills": false,
+        "notes": "Alfredo's featured moment is about pure romantic artistry. He and Violetta together create the world that transforms Vivian. The acting challenge is performing opera convincingly within a pop-rock musical \u2014 it must feel like genuine, transporting art, not a parody."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 6,
+        "quick_changes": 2,
+        "special_skills": [
+          "Operatic tenor voice",
+          "Cross-genre vocal technique",
+          "Romantic duet performance",
+          "Opera-to-pop-rock versatility"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "An ideal role for operatic tenors crossing into musical theatre. The La Traviata duet with Violetta is a genuine performance moment, and the ensemble work builds pop-rock versatility. Develops the rare and marketable skill of cross-genre vocal technique.",
+        "common_casting": "Classically trained tenors who can also handle pop-rock ensemble singing. Opera students and graduates looking to build musical theatre experience. Must have strong enough technique for the operatic moments to be convincing.",
+        "standout_opportunity": "The La Traviata duet is a shared spotlight moment. A beautiful operatic performance alongside Violetta creates a memorable, goosebump-inducing moment that elevates the entire production."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Cross-genre vocal versatility (opera to pop-rock)",
+          "Featured duet performance within ensemble track",
+          "Romantic partnering in operatic context",
+          "Pop-rock ensemble dance and vocal skills",
+          "Building musical theatre credits from classical training"
+        ],
+        "challenge_areas": [
+          "Switching vocal technique between operatic and pop-rock",
+          "Blending into pop-rock ensemble with an operatic voice",
+          "Maintaining ensemble energy alongside featured preparation",
+          "Partnering convincingly with Violetta in limited rehearsal of operatic sequence"
+        ],
+        "recommended_for": [
+          "Classically trained tenors entering musical theatre",
+          "Singers wanting to develop cross-genre versatility",
+          "Performers seeking featured ensemble opportunities",
+          "Opera-trained performers building pop-rock skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine operatic tenor quality \u2014 convincing La Traviata performance",
+          "Ability to also sing pop-rock ensemble material",
+          "Strong movement and dance skills for ensemble",
+          "Romantic chemistry potential with Violetta performer",
+          "Team player mentality for ensemble work"
+        ],
+        "common_mistakes": [
+          "Only preparing operatic repertoire \u2014 show pop-rock ability too",
+          "Viewing ensemble work as secondary to the operatic feature",
+          "Over-singing the operatic moments at the expense of beauty",
+          "Not preparing dance audition material"
+        ],
+        "tips": [
+          "Prepare both an operatic piece and a pop-rock song",
+          "Study Alfredo's role in La Traviata for context and emotional depth",
+          "Demonstrate ensemble skills \u2014 dance, blend, teamwork",
+          "Show emotional connection in your operatic piece, not just vocal power"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "La Traviata sequence (Alfredo / tenor passages)",
+          "type": "featured_duet",
+          "notes": "The operatic duet with Violetta \u2014 must be genuinely beautiful and emotionally transporting"
+        },
+        {
+          "title": "Ensemble numbers (pop-rock)",
+          "type": "ensemble",
+          "notes": "Full participation in all ensemble singing and choreography in pop-rock style"
+        }
+      ]
+    },
+    {
+      "id": "ensemble-pretty",
+      "name": "Ensemble (Beverly Hills Society / Hollywood Boulevard / Store Clerks / Opera Guests)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 18,
+        "max": 55
+      },
+      "description": "The Pretty Woman ensemble creates two contrasting worlds: the gritty reality of Hollywood Boulevard and the glamorous excess of Beverly Hills high society. Members play store clerks (both the snobbish Rodeo Drive staff and the helpful ones who later serve Vivian), hotel staff, opera patrons, socialites, business associates, and various Hollywood Boulevard characters. The ensemble carries significant choreographic demands including ballroom partnering, pop-rock dance, and the iconic shopping montage. Several ensemble tracks include featured named roles (Giulio, David Morse, Violetta, Alfredo) \u2014 see individual role entries. Highly skilled technical dancers with strong proficiency in ballroom and partnering are required. Strong pop-rock singers with high belt and soprano registers for females or high baritone/tenor ranges for males. Having a legit operatic soprano/tenor range is a plus for certain tracks. Strong character acting ability is essential, as ensemble members may also be asked to cover lead roles.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Mixed pop-rock chorus",
+        "belt_required": true,
+        "belt_range": "Various",
+        "tessitura": "Contemporary pop-rock ensemble with strong belt requirements",
+        "style_notes": "Pop-rock ensemble singing requiring strong blend with powerful individual voices. High belt and soprano registers for females, high baritone/tenor for males. Some tracks require operatic capability for La Traviata sequence. Must handle Bryan Adams' rock-influenced writing with authentic rock vocal quality while maintaining ensemble blend."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "Pop choreography",
+          "Jazz",
+          "Social dance",
+          "Rodeo Drive shopping montage"
+        ],
+        "stamina": "High \u2014 several big production numbers",
+        "notes": "The shopping montage and social scenes require polished ensemble choreography. Must shift convincingly between street energy and high-society elegance."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "Society types",
+          "Street characters",
+          "Store personnel",
+          "Various"
+        ],
+        "emotional_range": "Varied \u2014 snobbish disdain, street toughness, joy, celebration",
+        "comedy_skills": true,
+        "notes": "The store clerk scenes are comedy gold \u2014 the snobbish clerks who refuse Vivian service and her triumphant return ('Big mistake!') depend on the ensemble's commitment to their characters."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 7,
+        "quick_changes": 4,
+        "special_skills": [
+          "World-building across contrasting environments",
+          "Pop-rock ensemble singing",
+          "Quick transitions between street and society",
+          "The shopping montage energy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A fun, energetic ensemble experience with strong production numbers and the chance to play both glamorous and gritty characters. The shopping sequences are some of the most enjoyable ensemble work in modern musical theatre.",
+        "common_casting": "Strong pop-rock singers and dancers who can shift between street and sophistication. The snobbish store clerk roles are especially fun for character actors.",
+        "standout_opportunity": "The snobbish store clerks who refuse Vivian service get one of the biggest audience reactions of the show \u2014 everyone loves the 'Big Mistake' revenge."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Pop-rock ensemble singing",
+          "Contrasting world creation",
+          "Production number performance",
+          "Quick-change between styles",
+          "Character ensemble comedy"
+        ],
+        "challenge_areas": [
+          "Shifting convincingly between street and society",
+          "Maintaining energy across big production numbers"
+        ],
+        "recommended_for": [
+          "Pop-rock singers wanting ensemble experience",
+          "Dancers who enjoy production numbers",
+          "Performers building versatility in contrasting styles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong pop-rock singing voice",
+          "Dance ability for production numbers",
+          "Versatility between character types",
+          "Energy and commitment",
+          "Quick-change reliability"
+        ],
+        "common_mistakes": [
+          "Not differentiating between street and society characters",
+          "Low energy in production numbers",
+          "Playing snobbish characters without commitment"
+        ],
+        "tips": [
+          "The shopping sequences are the ensemble's star moment \u2014 bring maximum energy",
+          "If you're a snobbish store clerk, commit FULLY to the disdain \u2014 it makes the revenge better",
+          "Study the contrast between Hollywood Boulevard and Rodeo Drive \u2014 sell both worlds"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Rodeo Drive",
+          "type": "Ensemble",
+          "notes": "Big production number. Shopping transformation with full company."
+        },
+        {
+          "title": "Welcome to Hollywood",
+          "type": "Ensemble",
+          "notes": "Opening establishing the Boulevard. Street energy."
+        },
+        {
+          "title": "Never Give Up on a Dream",
+          "type": "Ensemble",
+          "notes": "Uplifting company number. Pop-rock celebration."
+        },
+        {
+          "title": "Together Forever (Finale)",
+          "type": "Ensemble",
+          "notes": "Full company celebration of the fairy tale ending."
+        }
+      ]
+    }
+  ]
+}

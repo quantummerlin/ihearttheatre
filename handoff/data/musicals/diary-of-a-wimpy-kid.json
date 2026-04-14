@@ -1,0 +1,1762 @@
+{
+  "musical": {
+    "id": "diary-of-a-wimpy-kid",
+    "title": "Diary of a Wimpy Kid: The Musical",
+    "music_by": "Michael Mahler and Alan Schmuckler",
+    "lyrics_by": "Michael Mahler and Alan Schmuckler",
+    "book_by": "Kevin Del Aguila",
+    "based_on": "Diary of a Wimpy Kid book series by Jeff Kinney",
+    "year_premiered": 2016,
+    "setting": "Suburban middle school and Greg's neighbourhood",
+    "time_period": "Contemporary",
+    "themes": [
+      "Middle school survival",
+      "Friendship and loyalty",
+      "Popularity and social hierarchy",
+      "Family dynamics",
+      "Growing up",
+      "Being true to yourself",
+      "The awkwardness of adolescence"
+    ],
+    "genre_tags": [
+      "Contemporary",
+      "Comedy",
+      "Family",
+      "Youth",
+      "Coming-of-age"
+    ],
+    "vocal_style": "Contemporary pop-rock with comedic character songs and ensemble numbers",
+    "dance_intensity": "moderate",
+    "orchestra_size": "Small band (5-8 players) \u2014 keyboards, guitar, bass, drums, reeds",
+    "typical_cast_size": "15-30",
+    "age_range": "10-50 (primarily youth cast with adult roles)",
+    "difficulty_overall": "beginner_to_intermediate",
+    "junior_version_available": true,
+    "license_holder": "Theatrical Rights Worldwide (TRW)",
+    "synopsis": "Greg Heffley is convinced middle school is the dumbest idea ever invented. Navigating the treacherous hallways, he's determined to become popular and rise above his 'wimpy' status. With his best friend Rowley Jefferson by his side (sort of), Greg schemes, plots, and stumbles through the social minefield of sixth grade \u2014 dealing with his annoying older brother Rodrick, his embarrassing parents, the dreaded Cheese Touch, and the painful realization that being popular might not be worth losing your best friend."
+  },
+  "roles": [
+    {
+      "id": "greg",
+      "name": "Greg Heffley",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 11,
+        "max": 18
+      },
+      "description": "The self-proclaimed protagonist of his own story. Greg is a scheming, ambitious, socially awkward middle schooler who wants desperately to be popular. He's funny, self-aware (in his narration but not in practice), and frequently makes terrible decisions that he narrates with total confidence. An anti-hero who the audience roots for despite his flaws.",
+      "vocal": {
+        "range": "B3-E5",
+        "voice_type": "Tenor / Boy Soprano (depending on age of performer)",
+        "belt_required": true,
+        "belt_range": "E4-E5",
+        "tessitura": "Upper range contemporary belt, energetic and conversational",
+        "style_notes": "Contemporary pop-rock style with strong storytelling quality. Must sound like a real kid, not a trained singer performing \u2014 authenticity is key. Comedy in vocal delivery is essential."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Contemporary pop",
+          "Comedy choreography",
+          "Physical comedy"
+        ],
+        "stamina": "Very high \u2014 onstage nearly the entire show",
+        "notes": "Greg is constantly moving, reacting, and narrating. Dance is integrated with storytelling \u2014 the Cheese Touch sequence, school hallway choreography, and various physical comedy bits require coordination and energy."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Narrator",
+          "Anti-hero",
+          "Comic lead",
+          "Everykid"
+        ],
+        "emotional_range": "Wide \u2014 confidence, embarrassment, scheming, regret, genuine friendship, vulnerability",
+        "comedy_skills": true,
+        "notes": "The most demanding youth role in the show. Greg narrates directly to the audience while also living the scenes \u2014 this dual consciousness requires sophisticated comic acting. Must be sympathetic despite often selfish behaviour. The friendship arc with Rowley needs genuine emotional stakes."
+      },
+      "performance": {
+        "stage_time_percentage": 90,
+        "solo_songs": 4,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "Breaking the fourth wall / direct address",
+          "Physical comedy",
+          "Sustained comic energy",
+          "Audience engagement"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Greg is a dream role for young male performers \u2014 he's onstage the entire show, narrates directly to the audience, sings multiple solos, and gets to be both funny and emotionally real. This role accelerates every skill simultaneously.",
+        "common_casting": "Charismatic young male performers (typically 12-16) with natural comedy instincts and the ability to carry a show. Must be likable despite Greg's flaws.",
+        "standout_opportunity": "The direct-address narration means Greg literally owns the audience. A great Greg makes every person in the theatre feel like they're his best friend."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Leading role stamina and responsibility",
+          "Direct address and audience engagement",
+          "Comedy acting and timing",
+          "Contemporary belt technique",
+          "Character narration (dual consciousness)",
+          "Emotional vulnerability within comedy"
+        ],
+        "challenge_areas": [
+          "Sustaining energy for 90+ minutes",
+          "Making an anti-hero sympathetic",
+          "Balancing narration with scene work",
+          "Managing audience interaction naturally"
+        ],
+        "recommended_for": [
+          "Young male performers ready for their first major lead",
+          "Comic actors developing leading role skills",
+          "Teens building contemporary musical theatre skills",
+          "Performers who thrive on audience interaction"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural charisma and likability",
+          "Strong comedy instincts and timing",
+          "Ability to talk directly to audience naturally",
+          "Contemporary singing voice with personality",
+          "Energy and stamina for a marathon role"
+        ],
+        "common_mistakes": [
+          "Playing Greg as mean rather than misguided",
+          "Performing AT the audience instead of WITH them",
+          "Lacking the vulnerability that makes the friendship arc work",
+          "Running out of energy \u2014 pace yourself"
+        ],
+        "tips": [
+          "Greg genuinely believes his plans are brilliant \u2014 play the confidence, not the outcome",
+          "Practice talking to the audience like they're your diary \u2014 personal and honest",
+          "The Rowley friendship is the heart of the show \u2014 invest in those scenes",
+          "Study the books and films but create YOUR Greg"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Diary of a Wimpy Kid",
+          "type": "Solo",
+          "notes": "Opening number establishing Greg's world and philosophy. Sets the tone for the entire show."
+        },
+        {
+          "title": "The Cheese Touch",
+          "type": "Solo/Ensemble",
+          "notes": "Hilarious number about the legendary school curse. Big comedy showcase."
+        },
+        {
+          "title": "Best Friend (reprise/finale)",
+          "type": "Duet",
+          "notes": "Emotional resolution of the Greg/Rowley friendship. Needs genuine feeling."
+        }
+      ]
+    },
+    {
+      "id": "rowley",
+      "name": "Rowley Jefferson",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 10,
+        "max": 16
+      },
+      "description": "Greg's sweet, innocent, loyal best friend. Rowley is everything Greg pretends not to want to be \u2014 genuine, kind, dorky, and unashamed of who he is. He's the heart of the show and the moral compass. When Greg's schemes hurt Rowley, it's devastating because Rowley's friendship is so pure and unconditional.",
+      "vocal": {
+        "range": "C4-D5",
+        "voice_type": "Tenor / Boy Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid to upper range, sweet and unaffected",
+        "style_notes": "Sweet, genuine singing voice. Should sound earnest and un-ironic \u2014 the polar opposite of Greg's knowing delivery. Innocence in the vocal quality is key."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Comedy movement",
+          "Awkward/endearing choreography"
+        ],
+        "stamina": "Moderate",
+        "notes": "Rowley's movement should be slightly uncoordinated and endearing. He tries hard but isn't naturally cool \u2014 that's what makes him lovable."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Best friend",
+          "Innocent",
+          "Heart of the story",
+          "Lovable dork"
+        ],
+        "emotional_range": "Moderate \u2014 joy, loyalty, hurt, confusion, forgiveness",
+        "comedy_skills": true,
+        "notes": "Rowley is funny without trying to be \u2014 the comedy comes from his sincerity in a world of middle school cynicism. The most important acting moments are when Greg hurts him \u2014 must show genuine pain while remaining sympathetic."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "Playing genuine innocence without it being annoying",
+          "Comedic timing through sincerity",
+          "Emotional vulnerability"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Rowley is the emotional heart of the show and often the audience's favourite character. This role teaches young performers how to be funny through sincerity rather than jokes, and how to carry emotional weight in a comedy.",
+        "common_casting": "Sweet, genuine young performers who can be endearing without being cloying. Often slightly younger or younger-presenting than Greg.",
+        "standout_opportunity": "When Rowley stands up to Greg or shows genuine hurt \u2014 these moments land like a truck because the audience loves him so much."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Emotional authenticity",
+          "Comedy through sincerity",
+          "Scene partnership and chemistry",
+          "Playing the 'straight man' in comedy",
+          "Vulnerability in performance"
+        ],
+        "challenge_areas": [
+          "Avoiding making innocence annoying or fake",
+          "Finding the comedy without mugging",
+          "Playing genuine hurt convincingly"
+        ],
+        "recommended_for": [
+          "Young performers with natural warmth",
+          "Actors developing emotional range",
+          "Those who need a significant role that's less pressure than the lead",
+          "Performers building comedy skills through character work"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and likability",
+          "Natural innocence that doesn't feel performed",
+          "Strong chemistry potential with Greg",
+          "Ability to show real hurt and vulnerability",
+          "Innate comedic quality through sincerity"
+        ],
+        "common_mistakes": [
+          "Playing Rowley as stupid \u2014 he's innocent, not dumb",
+          "Trying to be funny instead of being genuine",
+          "Not investing enough in the friendship with Greg",
+          "Overplaying the dorkiness"
+        ],
+        "tips": [
+          "Rowley genuinely loves being Greg's friend \u2014 that's not pathetic, it's beautiful",
+          "The comedy comes from you being sincere while everyone else is trying to be cool",
+          "When Greg hurts you, let the audience feel it \u2014 this is the emotional climax",
+          "Rowley is the hero of the story, even if Greg doesn't know it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Best Friend",
+          "type": "Solo/Duet",
+          "notes": "A sweet, earnest song about friendship. Must be genuine and unironic."
+        },
+        {
+          "title": "The Cheese Touch",
+          "type": "Ensemble",
+          "notes": "Rowley's involvement in the Cheese Touch sequence."
+        }
+      ]
+    },
+    {
+      "id": "rodrick",
+      "name": "Rodrick Heffley",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 14,
+        "max": 22
+      },
+      "description": "Greg's cool, mean, drummer older brother. Rodrick is the quintessential teenage nightmare sibling \u2014 he torments Greg, plays in a terrible band, and is effortlessly cooler than Greg will ever be. But underneath the bullying exterior, there are hints of genuine brotherly connection.",
+      "vocal": {
+        "range": "A2-D4",
+        "voice_type": "Baritone / Low Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Lower, edgier range with rock inflection",
+        "style_notes": "Rock-influenced character voice. Should sound like a teenager who thinks he's a rock star. Attitude matters more than technique."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Rock posturing",
+          "Physical comedy"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "Rodrick moves with teenage swagger and deliberate cool. Air drumming and rock star posturing are his movement vocabulary."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Bully sibling",
+          "Cool kid",
+          "Comic antagonist"
+        ],
+        "emotional_range": "Moderate \u2014 menacing cool, genuine amusement, occasional brotherly moments",
+        "comedy_skills": true,
+        "notes": "Rodrick is hilarious because he takes himself SO seriously. Must have genuine teen cool-kid energy while being clearly ridiculous to adults. The best Rodricks let you see that they actually care about Greg underneath."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "Playing drums or miming drumming convincingly",
+          "Teen swagger",
+          "Sibling dynamic chemistry"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Rodrick is a fan favourite from the books/films and gets reliable laughs. A fun, low-pressure role that lets a teen performer build confidence with comedy while not carrying the show.",
+        "common_casting": "Slightly older teen males with natural cool-kid energy and deadpan comedy skills. Actual drummers are a bonus.",
+        "standout_opportunity": "Every Rodrick scene is a comedy highlight. The band performance (L\u00f6ded Diper) is a guaranteed crowd-pleaser."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Character comedy",
+          "Deadpan delivery",
+          "Physical swagger and stage presence",
+          "Supporting role impact"
+        ],
+        "challenge_areas": [
+          "Making a bully character likable",
+          "Finding the right level of meanness without being genuinely unpleasant"
+        ],
+        "recommended_for": [
+          "Teen performers building comedy confidence",
+          "Those wanting a fun, manageable featured role",
+          "Performers who naturally project cool-kid energy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural cool-kid swagger",
+          "Deadpan comedy instincts",
+          "Chemistry with whoever plays Greg",
+          "Ability to be funny without trying too hard"
+        ],
+        "common_mistakes": [
+          "Making Rodrick genuinely mean rather than amusingly awful",
+          "Trying too hard to be cool \u2014 real cool is effortless",
+          "Playing one-note bully without any humanity"
+        ],
+        "tips": [
+          "Rodrick genuinely thinks he's the coolest person alive \u2014 that's the comedy",
+          "Study the films for the perfect level of sibling torment",
+          "Less is more with comedy \u2014 deadpan lands harder than mugging"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Rodrick's Song / L\u00f6ded Diper",
+          "type": "Solo/Group",
+          "notes": "Rock number showcasing Rodrick's terrible but confident band. Comedy gold."
+        }
+      ]
+    },
+    {
+      "id": "frank-heffley",
+      "name": "Frank Heffley (Dad)",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "Greg's well-meaning, slightly clueless dad. Frank tries his best to connect with his sons but is frequently baffled by their behaviour. He's a loving but bewildered parent navigating the chaos of the Heffley household.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Comfortable mid-range, character singing",
+        "style_notes": "Character voice with warmth and comic bewilderment. Dad-energy singing \u2014 earnest but slightly out of touch."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Embarrassing dad dancing"
+        ],
+        "stamina": "Low",
+        "notes": "Frank's movement vocabulary is 'embarrassing dad' \u2014 any dancing should be intentionally awkward and mortifying to Greg."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Sitcom dad",
+          "Bewildered parent",
+          "Well-meaning authority"
+        ],
+        "emotional_range": "Moderate \u2014 exasperation, pride, confusion, love",
+        "comedy_skills": true,
+        "notes": "Classic sitcom dad energy. Must be simultaneously authoritative and clueless. The comedy comes from genuine love expressed through total misunderstanding of kid culture."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": [
+          "Dad comedy",
+          "Parental bewilderment"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A fun, low-commitment adult role with reliable comedy moments. Perfect for adult performers wanting to participate in a youth show without heavy time demands.",
+        "common_casting": "Adult male performers with natural dad energy and deadpan comedy. Parents of cast members often cast well here.",
+        "standout_opportunity": "Every Frank scene gets laughs \u2014 the key is genuine bewilderment at his children's world."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comedy character work",
+          "Naturalistic acting",
+          "Supporting cast ensemble skills"
+        ],
+        "challenge_areas": [
+          "Making a small role feel complete",
+          "Finding fresh comedy in familiar 'sitcom dad' territory"
+        ],
+        "recommended_for": [
+          "Adult performers wanting low-commitment role",
+          "Dads wanting to perform alongside their kids",
+          "Actors building comedy character skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural dad energy and warmth",
+          "Deadpan comedy skills",
+          "Likability and audience rapport",
+          "Ability to play authority while being clueless"
+        ],
+        "common_mistakes": [
+          "Playing Frank as angry rather than bewildered",
+          "Not committing to the comedy moments",
+          "Being too competent \u2014 Frank should be lovably hopeless"
+        ],
+        "tips": [
+          "Think of the most embarrassing dad you know \u2014 that's Frank's energy",
+          "Every suggestion Frank makes should make Greg cringe",
+          "Love is the foundation \u2014 everything Frank does comes from caring"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Heffley Family scenes",
+          "type": "Dialogue/Underscore",
+          "notes": "Primarily dialogue scenes with ensemble underscoring."
+        }
+      ]
+    },
+    {
+      "id": "susan-heffley",
+      "name": "Susan Heffley (Mom)",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "Greg's enthusiastic, well-meaning, slightly overbearing mom. Susan is optimistic, involved, and determined to give her kids the best childhood possible \u2014 often to Greg's mortification. She's the emotional backbone of the Heffley family and genuinely the most competent person in the house.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range with warmth and energy",
+        "style_notes": "Warm, enthusiastic singing voice. Mom-energy \u2014 genuine and slightly too much for a middle schooler to handle. Should sound like someone who signs up for every school volunteer opportunity."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Enthusiastic mom choreography"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "Susan moves with PTA-mom energy \u2014 enthusiastic, slightly embarrassing, completely genuine."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Helicopter parent",
+          "Optimistic mom",
+          "Family anchor"
+        ],
+        "emotional_range": "Moderate \u2014 enthusiasm, concern, pride, determination",
+        "comedy_skills": true,
+        "notes": "The comedy comes from Susan's genuine enthusiasm being completely mortifying to Greg. Must play total sincerity \u2014 she doesn't know she's embarrassing, she thinks she's being supportive."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": [
+          "Embarrassing parent energy",
+          "Genuine warmth and enthusiasm"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A fun adult female role in a youth-focused show. Susan gets reliable laughs and has a lovely emotional beat. Great for moms wanting to perform alongside their kids.",
+        "common_casting": "Warm, energetic adult female performers. PTA-president energy is the casting brief.",
+        "standout_opportunity": "Susan's song about wanting the best for her kids can be surprisingly moving when played with genuine maternal love."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comedy through sincerity",
+          "Character work",
+          "Warm vocal delivery"
+        ],
+        "challenge_areas": [
+          "Making the role three-dimensional beyond 'embarrassing mom'",
+          "Balancing comedy with genuine emotion"
+        ],
+        "recommended_for": [
+          "Adult female performers wanting fun, manageable role",
+          "Moms performing alongside their kids",
+          "Actresses developing comedy character skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural warmth and maternal energy",
+          "Enthusiasm that's genuine, not performed",
+          "Comedy instincts",
+          "Likability"
+        ],
+        "common_mistakes": [
+          "Playing Susan as mean or nagging",
+          "Being too aware that she's embarrassing \u2014 she should be oblivious",
+          "Lacking genuine warmth underneath the comedy"
+        ],
+        "tips": [
+          "Susan truly believes she's being helpful \u2014 that's the comedy",
+          "Channel the most enthusiastic PTA mom you know",
+          "The emotional moments work because we've seen how much she genuinely cares"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Susan's Song",
+          "type": "Solo",
+          "notes": "A sweet, slightly overwhelming song about wanting the best for your children. Genuine maternal warmth."
+        }
+      ]
+    },
+    {
+      "id": "patty-farrell",
+      "name": "Patty Farrell",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 10,
+        "max": 16
+      },
+      "description": "Greg's nemesis and the school overachiever. Patty is bossy, competitive, and determined to outshine everyone \u2014 especially Greg. She's the star of the school play (The Wizard of Oz, ironically) and represents everything Greg finds insufferable about school. But she's also genuinely talented and hardworking.",
+      "vocal": {
+        "range": "C4-F5",
+        "voice_type": "Soprano / Mezzo",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Mid to upper range, bright and confident",
+        "style_notes": "Strong, confident singing voice \u2014 Patty is the 'theatre kid' of the show, so her singing should be noticeably polished and slightly show-offy."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Musical theatre",
+          "School show choreography"
+        ],
+        "stamina": "Moderate",
+        "notes": "Patty moves with the confidence of someone who's been taking dance classes since age 3. Polished and slightly insufferable."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Overachiever",
+          "Rival",
+          "Theatre kid"
+        ],
+        "emotional_range": "Moderate \u2014 confidence, competitiveness, smugness, determination",
+        "comedy_skills": true,
+        "notes": "Patty is the classic school rival. Must be genuinely talented and confident \u2014 the comedy isn't that she's bad, it's that she's annoyingly good at everything. Play the competence and let the audience find the comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Scene-stealing confidence",
+          "Playing 'the theatre kid'"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Patty is a great showcase for confident young female performers \u2014 she gets to be the 'theatre kid' within a theatre show, which is wonderfully meta. Good comedy moments and a strong character arc.",
+        "common_casting": "Confident young female performers who are genuine triple threats. The real-life theatre kids of the cast.",
+        "standout_opportunity": "The school play sequence where Patty performs is hilarious and lets the performer show genuine talent within a comedy context."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Character comedy",
+          "Confidence in featured role",
+          "Antagonist characterisation with likability",
+          "Meta-theatrical performance"
+        ],
+        "challenge_areas": [
+          "Making Patty annoying but not hateable",
+          "Balancing genuine talent with comedic smugness"
+        ],
+        "recommended_for": [
+          "Young female performers with natural confidence",
+          "Triple threats wanting a fun featured role",
+          "Performers developing comedy antagonist skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine confidence and presence",
+          "Strong singing and performance skills",
+          "Comedy instincts",
+          "The ability to be amusingly insufferable"
+        ],
+        "common_mistakes": [
+          "Playing Patty as a mean girl rather than an overachiever",
+          "Being deliberately bad to get laughs \u2014 Patty should be genuinely talented",
+          "Not enjoying the meta-theatrical school play moments"
+        ],
+        "tips": [
+          "Patty is the kid who's been in every school play since kindergarten \u2014 OWN that",
+          "She genuinely works hard and deserves her success \u2014 play the merit",
+          "The comedy is that she's SO competent it's annoying \u2014 don't undercut her talent"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "School Play / Patty's Moment",
+          "type": "Solo/Scene",
+          "notes": "Patty performing in the school Wizard of Oz. Meta-theatrical comedy gold."
+        }
+      ]
+    },
+    {
+      "id": "fregley",
+      "name": "Fregley",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 10,
+        "max": 16
+      },
+      "description": "The eccentric, unpredictable class weirdo. Fregley is gloriously strange \u2014 he does things no one understands, makes everyone uncomfortable, and is completely unbothered by social norms. He's a walking wild card who disrupts every scene he enters.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Character voice",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Flexible \u2014 character singing",
+        "style_notes": "Character voice \u2014 strange, unpredictable vocal choices. Comedy delivery matters more than vocal quality. Should sound like no one else in the cast."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Eccentric movement",
+          "Physical comedy"
+        ],
+        "stamina": "Low to moderate",
+        "notes": "Fregley moves in ways no one expects. Unpredictable, bizarre, committed physical choices."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Eccentric",
+          "Wild card",
+          "Scene-stealer"
+        ],
+        "emotional_range": "Narrow but intense \u2014 Fregley exists in his own emotional universe",
+        "comedy_skills": true,
+        "notes": "The ultimate scene-stealer. Every Fregley moment should be unexpected and hilarious. Must commit fully to bizarre choices without breaking character or going for easy laughs."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "Physical comedy",
+          "Eccentric character commitment",
+          "Unpredictable timing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Despite limited stage time, Fregley is often the most-quoted character after the show. This role teaches young performers how to make maximum impact with minimum time \u2014 and the value of total commitment to a character choice.",
+        "common_casting": "Fearless young performers who aren't afraid to be weird. The kid who always makes unexpected choices in class.",
+        "standout_opportunity": "Every Fregley appearance is a highlight. One perfectly timed weird moment can be the thing the audience remembers most."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Character commitment",
+          "Physical comedy",
+          "Maximum impact in limited time",
+          "Fearless performance choices"
+        ],
+        "challenge_areas": [
+          "Not overdoing it \u2014 Fregley should be weird, not manic",
+          "Finding new weird choices rather than repeating the same bit"
+        ],
+        "recommended_for": [
+          "Young performers who love character work",
+          "Those building confidence with bold choices",
+          "Performers who thrive in eccentric roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Fearless commitment to weird choices",
+          "Natural unpredictability",
+          "Physical comedy instincts",
+          "The ability to be genuinely strange without being mean-spirited"
+        ],
+        "common_mistakes": [
+          "Playing random instead of committed \u2014 Fregley is weird, not scattered",
+          "Going too big and becoming annoying",
+          "Breaking character to check if the audience is laughing"
+        ],
+        "tips": [
+          "Fregley doesn't know he's weird \u2014 he thinks he's completely normal",
+          "Less is more \u2014 one perfectly weird moment beats ten mediocre ones",
+          "Total commitment is the secret. Don't half-do anything."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Ensemble numbers",
+          "type": "Ensemble",
+          "notes": "Fregley participates in group numbers with his own unique interpretation of the choreography."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-chirag",
+      "name": "Chirag Gupta",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 10,
+        "max": 14
+      },
+      "description": "Greg's quick-witted and wily classmate of South Asian descent, enthusiastically engaged in a years-long prank battle with Greg. Chirag is clever, confident, and gives as good as he gets in the social warfare of middle school. He features prominently in several scenes including the 'Invisible Chirag' prank and the Halloween sequence. A strong comedic young performer with a powerful unchanged singing voice. NOTE: Per the licensing requirements, every effort should be made to cast an actor of South Asian descent. The actor should speak with their natural accent.",
+      "vocal": {
+        "range": "unchanged voice",
+        "voice_type": "Child/unchanged tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Strong, confident unchanged singing voice. Must be able to hold featured vocal lines in ensemble numbers. Natural speaking voice \u2014 should speak with their own natural accent."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement",
+          "contemporary"
+        ],
+        "stamina": "moderate",
+        "notes": "Participates in school ensemble numbers with energy. Character-driven movement \u2014 must convey confidence and wit through physicality."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "quick-witted classmate",
+          "prankster",
+          "rival/friend"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be genuinely funny and quick-witted. Chirag holds his own against Greg in their prank battles and needs to be a worthy comedic adversary. Confidence and timing are essential. The role requires an actor who can land jokes and react sharply."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": [
+          "comedic timing",
+          "quick-witted delivery",
+          "prank physicality"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "A substantial supporting role with several featured scenes. Chirag's prank battles with Greg are comedy highlights of the show. This is also a meaningful representation role \u2014 the show specifically calls for South Asian casting, making it particularly significant.",
+        "common_casting": "Confident young comedic performer, ideally of South Asian descent per the show's casting note. Must have excellent timing and the ability to match Greg's energy.",
+        "standout_opportunity": "The 'Invisible Chirag' sequence and the Halloween scenes are comedy gold. A performer who commits to Chirag's confidence and wit can create some of the show's biggest laughs."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "comedic scene work",
+          "prank/physical comedy",
+          "confidence building",
+          "featured role development"
+        ],
+        "challenge_areas": [
+          "matching energy with the lead actor consistently",
+          "landing comedy in different styles of scenes"
+        ],
+        "recommended_for": [
+          "young comedic actors seeking featured roles",
+          "performers of South Asian descent seeking representation roles",
+          "actors developing quick-witted character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "natural confidence and wit",
+          "comedic timing",
+          "ability to hold the stage against Greg",
+          "strong singing voice"
+        ],
+        "common_mistakes": [
+          "being too subdued \u2014 Chirag is bold and confident",
+          "not committing to the physical comedy"
+        ],
+        "tips": [
+          "Bring your natural confidence to the audition",
+          "Show quick-witted reactions, not just memorised lines",
+          "Demonstrate that you can match energy with any scene partner"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "All About the Mom Bucks",
+          "type": "ensemble feature",
+          "notes": "Featured in this comedic number with Greg and Rowley."
+        },
+        {
+          "title": "The Fight",
+          "type": "ensemble feature",
+          "notes": "Key participant in the climactic confrontation. Featured vocal and dramatic moments."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-manny",
+      "name": "Manny Heffley",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 5,
+        "max": 10
+      },
+      "description": "Greg and Rodrick's impossibly adorable and spoiled baby brother. Manny enjoys exalted status as the family baby \u2014 his parents dote on him and make constant excuses for his behaviour. He's a scene-stealing comedic presence who drives Greg crazy with the unfair treatment he receives. A role for a strong young comedic performer of any gender portraying a toddler. Manny appears in family scenes throughout and his spoiled antics provide consistent comedy.",
+      "vocal": {
+        "range": "unchanged voice",
+        "voice_type": "Child/unchanged",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Child performer with natural, unchanged voice. Must be able to sing in company numbers with confidence. Comedic vocal delivery for toddler-like spoken lines."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement",
+          "comedic physicality"
+        ],
+        "stamina": "moderate",
+        "notes": "Toddler-like movement and physicality. Must be adorable and funny simultaneously. Participates in family and ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "spoiled child",
+          "scene stealer",
+          "comic relief"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be naturally adorable and comedically talented. The humour comes from Manny getting away with everything while Greg suffers. Young performers who can deliver lines with deadpan innocence excel in this role."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "comedic timing",
+          "adorable stage presence"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_get_cast"
+        ],
+        "why": "A fun featured role for a young performer. Manny's spoiled antics provide consistent comedy in the family scenes. Great first featured role for a child performer building confidence and stage presence.",
+        "common_casting": "Youngest cast member \u2014 must be naturally charming and comedically gifted. Often cast with the smallest, most adorable auditioner who can deliver lines clearly.",
+        "standout_opportunity": "Every Manny moment is a comedy opportunity. A naturally funny young performer can steal scenes effortlessly."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "stage confidence",
+          "comedic delivery",
+          "working with adult cast members",
+          "ensemble participation"
+        ],
+        "challenge_areas": [
+          "maintaining focus during long rehearsals and performances",
+          "delivering comedy consistently"
+        ],
+        "recommended_for": [
+          "young performers in their first featured role",
+          "naturally comedic children",
+          "young actors building stage confidence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "natural charm and adorability",
+          "ability to deliver lines clearly",
+          "comedic instinct",
+          "comfort on stage"
+        ],
+        "common_mistakes": [
+          "being too shy to commit to the comedy",
+          "not projecting clearly enough"
+        ],
+        "tips": [
+          "Be yourself \u2014 natural charm is what directors want",
+          "Practice speaking loudly and clearly",
+          "Have fun \u2014 Manny is a fun role!"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Animal Heart",
+          "type": "ensemble",
+          "notes": "Appears in the Joshie-led number with the family. Brief featured moment."
+        },
+        {
+          "title": "The Middle of it All (Finale)",
+          "type": "ensemble",
+          "notes": "Full company finale including all family members."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-bryce",
+      "name": "Bryce Anderson",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 10,
+        "max": 14
+      },
+      "description": "The dreamboat classmate who enjoys unfettered adoration and popularity at school. Infamous for his cutting remarks and cute-butt status, Bryce has hit his growth spurt early and presents as more mature than many of his peers. He represents everything Greg aspires to be \u2014 effortlessly popular and admired. A comedic young performer role typically featured from the student ensemble.",
+      "vocal": {
+        "range": "unchanged voice",
+        "voice_type": "Child/unchanged",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Confident singing voice in ensemble and featured numbers. Cool, assured vocal delivery matching the character's popular status."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "contemporary",
+          "character movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Must move with easy confidence. Participates in school ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "popular kid",
+          "dreamboat",
+          "cool rival"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must exude effortless popularity and confidence. The comedy comes from how naturally everything comes to Bryce while Greg struggles for any social standing. Cutting remarks delivered with casual charm."
+      },
+      "performance": {
+        "stage_time_percentage": 6,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "effortless cool",
+          "comedic superiority"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "A fun featured ensemble role representing middle school popularity. Bryce's effortless cool provides great contrast to Greg's desperate social climbing. Good for confident young performers.",
+        "common_casting": "Tall, confident young performer who naturally reads as 'the popular kid.' Often cast with someone who has hit their growth spurt and carries themselves with easy assurance.",
+        "standout_opportunity": "Every Bryce moment is a comedy contrast with Greg \u2014 the effortless cool vs. the desperate try-hard. A performer who nails the casual superiority gets guaranteed laughs."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "confidence on stage",
+          "character type development",
+          "comedic contrast",
+          "ensemble featured work"
+        ],
+        "challenge_areas": [
+          "not making Bryce mean-spirited",
+          "finding the comedy in minimal stage time"
+        ],
+        "recommended_for": [
+          "confident young performers seeking featured ensemble roles",
+          "actors developing 'cool' character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "natural confidence",
+          "height/physical presence",
+          "ability to be casually funny",
+          "ensemble versatility"
+        ],
+        "common_mistakes": [
+          "trying too hard to be cool \u2014 it should look effortless",
+          "being mean instead of casually superior"
+        ],
+        "tips": [
+          "Less is more \u2014 Bryce doesn't try to be popular, he just IS",
+          "Casual delivery of cutting remarks is funnier than aggressive delivery"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Better Than You",
+          "type": "ensemble feature",
+          "notes": "Featured in this competition number. Represents the social hierarchy Greg is trying to climb."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-joshie",
+      "name": "Joshie",
+      "role_type": "featured_ensemble",
+      "gender": "Either",
+      "age_range": {
+        "min": 14,
+        "max": 25
+      },
+      "description": "A European teen pop star and Rowley's idol. A cross between a boy band star and KidzBop performer, Joshie is obviously manufactured to make responsibility sound cool to 6-8 year old girls. His/her motto: 'Follow your dreams and respect your parents!' Joshie appears in a fantasy sequence and leads 'Animal Heart,' one of the show's catchiest numbers. A gender-flexible role requiring pop vocal chops, dance ability, and committed over-the-top pop star energy.",
+      "vocal": {
+        "range": "C4\u2013G5 (flexible)",
+        "voice_type": "Pop tenor/mezzo",
+        "belt_required": true,
+        "belt_range": "E5\u2013G5",
+        "tessitura": "E4\u2013D5",
+        "style_notes": "Pop star vocal style \u2014 breathy, autotuned-adjacent delivery with big belt moments. Must sell the manufactured pop star persona vocally. Think Disney Channel/KidzBop meets boy band."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "pop choreography",
+          "boy band moves",
+          "contemporary"
+        ],
+        "stamina": "high",
+        "notes": "Full pop star choreography with backup dancers. Must move with polished pop star precision. The number should look like a real pop concert."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "manufactured pop star",
+          "fantasy figure",
+          "over-the-top entertainer"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must commit 100% to the manufactured pop star persona. The comedy comes from Joshie being obviously fake and corporate while Rowley thinks he's genuine. Over-the-top sincerity that's clearly performative."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "pop star performance",
+          "choreography",
+          "over-the-top commitment"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A brief but show-stopping featured role. 'Animal Heart' is one of the most entertaining numbers in the show and Joshie gets to lead it with full pop star treatment. Gender-flexible casting opens it to many performers.",
+        "common_casting": "Triple-threat performer who can fully commit to the pop star parody. Gender-flexible \u2014 any performer who can sell the manufactured pop persona. Often cast with someone who has real dance training.",
+        "standout_opportunity": "'Animal Heart' is a guaranteed crowd-pleaser. A performer who fully commits to the pop star fantasy creates one of the show's most memorable moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "pop performance style",
+          "choreography",
+          "comedic commitment",
+          "parody and satire performance"
+        ],
+        "challenge_areas": [
+          "committing to the over-the-top persona without breaking",
+          "making the parody funny without being mean"
+        ],
+        "recommended_for": [
+          "dancers seeking singing/acting featured roles",
+          "performers with pop vocal style",
+          "actors who excel at parody and commitment"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "pop vocal ability",
+          "strong dance skills",
+          "willingness to be ridiculously over the top",
+          "charisma and stage presence"
+        ],
+        "common_mistakes": [
+          "not committing fully to the pop star persona",
+          "winking at the audience instead of playing it straight"
+        ],
+        "tips": [
+          "Play Joshie with 100% sincerity \u2014 the comedy is in the earnestness",
+          "Prepare a pop-style audition piece",
+          "Show your dance skills \u2014 this role needs them"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Animal Heart",
+          "type": "solo/featured",
+          "notes": "Joshie's signature pop number. Full choreography with backup dancers. The show's most infectious earworm."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-claire",
+      "name": "Claire",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 10,
+        "max": 14
+      },
+      "description": "A Wednesday Addams-lite, goth-in-training middle schooler. Claire is the keeper of the lore of the Cheese Touch and takes it upon herself to make sure nobody starts the dreaded curse again. She narrates 'The Cheese Touch' sequence with deadpan gothic intensity, making her a memorable character presence despite limited stage time. A featured ensemble role for a young performer with excellent deadpan delivery.",
+      "vocal": {
+        "range": "unchanged voice",
+        "voice_type": "Child/unchanged mezzo",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Deadpan, slightly spooky vocal delivery. Must be able to narrate with gothic intensity while singing in ensemble numbers with the student body."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Deliberate, slightly creepy character movement. Participates in student ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "goth kid",
+          "narrator",
+          "deadpan comedian"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Deadpan comedy is the key skill. Claire takes the Cheese Touch absolutely seriously and her gothic intensity about a piece of cheese is inherently hilarious. Must deliver narration with conviction and dramatic gravity."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "deadpan delivery",
+          "gothic character work",
+          "narration"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A memorable featured ensemble role with a signature sequence. 'The Cheese Touch' is one of the show's most iconic moments and Claire leads it. Perfect for deadpan comedic performers.",
+        "common_casting": "Young performer with natural deadpan comedy instincts. Often cast with someone who has a slightly alternative/gothic presentation or can convincingly portray one.",
+        "standout_opportunity": "'The Cheese Touch' narration is a comedy highlight \u2014 Claire's deadly seriousness about the curse is always hilarious. A performer who nails the deadpan delivery becomes instantly memorable."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "deadpan comedy",
+          "narrative delivery",
+          "character comedy",
+          "ensemble featured work"
+        ],
+        "challenge_areas": [
+          "maintaining deadpan without cracking",
+          "being heard clearly with understated delivery"
+        ],
+        "recommended_for": [
+          "young performers with deadpan comedy skills",
+          "alternative character types seeking featured roles",
+          "actors developing narration skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "deadpan delivery",
+          "clear narration skills",
+          "gothic character commitment",
+          "ensemble versatility"
+        ],
+        "common_mistakes": [
+          "being too animated \u2014 Claire's power is in her stillness",
+          "not projecting the deadpan delivery clearly enough"
+        ],
+        "tips": [
+          "Practice telling a ridiculous story with complete seriousness",
+          "Wednesday Addams is a good reference point",
+          "Show you can be perfectly still and commanding"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Cheese Touch",
+          "type": "narration/ensemble",
+          "notes": "Claire's signature sequence. Leads the narration of the Cheese Touch legend with gothic intensity."
+        },
+        {
+          "title": "He Made It",
+          "type": "ensemble feature",
+          "notes": "Featured in the ensemble number about Greg's social status."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-mr-winsky",
+      "name": "Mr. Winsky",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "Faculty advisor of the school's Safety Patrol. Mr. Winsky takes his job super seriously, as though he's head of the FBI or Special Ops. He leads 'Safety Patrol,' one of the show's funniest numbers, treating school hallway safety with the gravity of a military operation. A comedic adult role typically doubled from the ensemble, requiring the ability to play overwrought authority with deadpan commitment.",
+      "vocal": {
+        "range": "C3\u2013G4",
+        "voice_type": "Baritone/Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013E4",
+        "style_notes": "Military-style vocal delivery with comedic precision. Must sell the ridiculousness of treating Safety Patrol like a special ops mission. Strong projection for the drill-sergeant style number."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "military drill",
+          "comedic marching"
+        ],
+        "stamina": "moderate",
+        "notes": "Military-style movement in the Safety Patrol number. Comedic precision rather than technical dance."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "overzealous authority",
+          "comic drill sergeant",
+          "teacher"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must play the Safety Patrol role with absolute conviction \u2014 the comedy comes from how seriously Winsky takes something so trivial. Think military movie parody. Can be doubled with Bill Walter for a comedic contrast."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "military parody",
+          "comedic authority"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A scene-stealing featured role with a signature comedy number. 'Safety Patrol' is one of the show's funniest sequences and Winsky leads it. Typically doubled with Bill Walter from ensemble.",
+        "common_casting": "Adult comedic performer who can play overwrought authority. Often doubled with Bill Walter for efficient casting.",
+        "standout_opportunity": "The Safety Patrol number is a comedy highlight \u2014 full military parody applied to school hallways. Guaranteed laughs for a committed performer."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "comedy authority roles",
+          "musical number leadership",
+          "parody performance",
+          "featured ensemble craft"
+        ],
+        "challenge_areas": [
+          "playing it straight while being hilarious",
+          "leading a number with limited overall stage time"
+        ],
+        "recommended_for": [
+          "adult performers seeking featured comedy moments",
+          "character actors in ensemble",
+          "comedic performers developing musical theatre skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "comedic authority",
+          "ability to lead a number",
+          "military parody skills",
+          "ensemble versatility"
+        ],
+        "common_mistakes": [
+          "breaking character \u2014 Winsky BELIEVES in Safety Patrol",
+          "not projecting enough military gravitas"
+        ],
+        "tips": [
+          "Study drill sergeant movie scenes for inspiration",
+          "Play it 100% straight \u2014 the humour is inherent",
+          "Show you can lead a number with confidence"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Safety Patrol",
+          "type": "featured",
+          "notes": "Mr. Winsky's signature number. Military-style comedy about school hallway safety. Leads the Safety Patrol officers, Greg, and Rowley."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-bill-walter",
+      "name": "Bill Walter",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 40
+      },
+      "description": "A 35-year-old unemployed rocker dude who still lives with his folks and plays in Rodrick's high school band, L\u00f6ded Diper. Bill is the adult member of a teenage band and doesn't see anything wrong with that arrangement. He provides comedy through the contrast of a grown man enthusiastically participating in Rodrick's garage band life. A featured ensemble role often doubled with Mr. Winsky.",
+      "vocal": {
+        "range": "A2\u2013E4",
+        "voice_type": "Baritone/Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013C4",
+        "style_notes": "Rock vocal style for the L\u00f6ded Diper scenes. Raspy, garage-band quality. Must blend with Rodrick in band numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "rock performance",
+          "headbanging"
+        ],
+        "stamina": "moderate",
+        "notes": "Rock band stage movement \u2014 guitar poses, headbanging, crowd surfing energy. No technical dance but must sell the rock performance."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "man-child rocker",
+          "comic loser",
+          "oblivious adult"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "The comedy is entirely in the contrast \u2014 a 35-year-old man enthusiastically participating in a high school garage band. Must play it with zero self-awareness. Oblivious commitment to the rock dream."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "rock performance",
+          "man-child characterisation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 1,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A fun character cameo that gets guaranteed laughs. The adult-in-a-teen-band concept is inherently hilarious. Typically doubled with Mr. Winsky from ensemble.",
+        "common_casting": "Adult performer who can sell the oblivious man-child rocker. Often doubled with Mr. Winsky for contrasting comedy.",
+        "standout_opportunity": "Every Bill Walter appearance gets a laugh just from the concept. A performer who fully embraces the pathetic rock star persona creates memorable comedy."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character comedy",
+          "rock performance style",
+          "cameo impact"
+        ],
+        "challenge_areas": [
+          "making maximum impact in very limited stage time"
+        ],
+        "recommended_for": [
+          "adult ensemble members seeking character comedy moments",
+          "performers with rock/band experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "rock performance energy",
+          "man-child comedy",
+          "ensemble versatility"
+        ],
+        "common_mistakes": [
+          "not being pathetic enough \u2014 Bill thinks he's cool but he's NOT"
+        ],
+        "tips": [
+          "Channel your inner never-grew-up rocker",
+          "The lack of self-awareness is the comedy",
+          "Often cast from ensemble callbacks alongside Mr. Winsky"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Rodrick Rules",
+          "type": "ensemble feature",
+          "notes": "Performs with L\u00f6ded Diper. Rock number featuring Rodrick's band with Bill as the embarrassingly old member."
+        }
+      ]
+    },
+    {
+      "id": "wimpy-mrs-clayton",
+      "name": "Mrs. Clayton",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "Greg's no-nonsense English teacher who loves to host the Winter Talent Show every year. Mrs. Clayton is the kind of teacher who takes the school talent show as seriously as Broadway takes opening night. She provides adult authority and comedy in the school scenes. A featured ensemble role often doubled with Fregley's Mom.",
+      "vocal": {
+        "range": "A3\u2013D5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "C4\u2013A4",
+        "style_notes": "Teacher-authority vocal delivery. Must be able to project over a classroom of kids. Sings in ensemble numbers."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "low",
+        "notes": "Teacher physicality. No technical dance but participates in ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "strict teacher",
+          "talent show enthusiast",
+          "authority figure"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must balance no-nonsense authority with genuine enthusiasm for the talent show. Character comedy from a teacher who cares way too much about a middle school talent show."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "teacher authority",
+          "talent show hosting"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named featured role with clear character function. Mrs. Clayton anchors the school scenes with adult authority. Typically doubled with Fregley's Mom for efficient casting.",
+        "common_casting": "Adult female performer from ensemble. Often doubled with Fregley's Mom for contrasting character comedy.",
+        "standout_opportunity": "The Winter Talent Show sequence gives Mrs. Clayton several funny hosting moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "authority character work",
+          "teacher characterisation",
+          "ensemble featured craft"
+        ],
+        "challenge_areas": [
+          "making a brief authority role memorable"
+        ],
+        "recommended_for": [
+          "adult female ensemble members seeking named roles",
+          "character actresses"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "teacher energy",
+          "clear authority",
+          "comedy instincts",
+          "ensemble versatility"
+        ],
+        "common_mistakes": [
+          "being too stern without the enthusiasm",
+          "not projecting over the young cast"
+        ],
+        "tips": [
+          "Find Mrs. Clayton's genuine passion for the talent show",
+          "Teacher roles need clear, projecting voices"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Winter Talent Show",
+          "type": "ensemble feature",
+          "notes": "Hosts the talent show sequence. Featured spoken moments introducing acts."
+        },
+        {
+          "title": "Better Than You",
+          "type": "ensemble feature",
+          "notes": "Present in the school number as a teacher authority."
+        }
+      ]
+    },
+    {
+      "id": "ensemble-kids",
+      "name": "Ensemble (Middle School Students / Adults)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 10,
+        "max": 18
+      },
+      "description": "The ensemble of Diary of a Wimpy Kid portrays the bustling world of middle school \u2014 students, teachers, parents, and various featured cameos. Many named roles (Bryce Anderson, Joshie, Claire, Mr. Winsky, Bill Walter, Mrs. Clayton, Manny) are typically drawn from this ensemble. Additional ensemble characters include Creighton the Cretin, Vice Principal Roy, Teen Hooligans, Reporters, Valentines Students, Chris/Christine Hosey, Lionel/Leona James, Paulene, Yvette, and Fregley's Mom. The ensemble drives the high-energy school scenes and must sustain youthful energy and comedic timing throughout. A mix of young performers and adults.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Mixed youth chorus",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Varied \u2014 pop-rock ensemble singing",
+        "style_notes": "Contemporary pop-rock ensemble sound. Should sound like real kids, not a trained choir. Energy and personality matter more than polish."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Contemporary pop",
+          "School hallway choreography",
+          "Comedy ensemble work"
+        ],
+        "stamina": "High \u2014 big group numbers with lots of energy",
+        "notes": "The ensemble drives the energy of the big numbers. Choreography is fun, accessible, and high-energy rather than technically demanding."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "School kids",
+          "Various clique types",
+          "World-building"
+        ],
+        "emotional_range": "Varied \u2014 the ensemble creates the emotional landscape of middle school",
+        "comedy_skills": true,
+        "notes": "Each ensemble member should create a specific middle school character \u2014 the jock, the nerd, the popular kid, the quiet one. This world-building makes Greg's story feel real."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 6,
+        "quick_changes": 1,
+        "special_skills": [
+          "Creating individual middle school characters",
+          "High-energy group performance",
+          "Contemporary pop ensemble singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "A welcoming, fun ensemble experience that's perfect for young performers. The contemporary pop-rock style is accessible and relatable, and the school setting lets kids play characters close to their own experience.",
+        "common_casting": "Young performers of varying experience levels. This is an excellent entry-point ensemble for first-time musical theatre performers.",
+        "standout_opportunity": "The Cheese Touch sequence gives ensemble members individual moments. Named ensemble characters (Chirag, Holly, etc.) get featured beats."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Ensemble performance skills",
+          "Contemporary pop-rock singing",
+          "Group choreography",
+          "Character creation within ensemble",
+          "Show energy and stamina"
+        ],
+        "challenge_areas": [
+          "Maintaining individual character within group numbers",
+          "Sustaining energy across the show"
+        ],
+        "recommended_for": [
+          "Young performers getting their first musical theatre experience",
+          "Kids who love the Wimpy Kid books and want to live in that world",
+          "Performers building confidence in ensemble work",
+          "Those developing contemporary musical theatre skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Energy and enthusiasm",
+          "Ability to create a specific school character",
+          "Decent singing voice with contemporary style",
+          "Willingness to commit to ensemble work",
+          "Physical expressiveness"
+        ],
+        "common_mistakes": [
+          "Being generic rather than creating a specific character",
+          "Not bringing enough energy to group numbers",
+          "Standing out for the wrong reasons (distracting rather than contributing)"
+        ],
+        "tips": [
+          "Create a specific middle school character \u2014 give them a name, a clique, a personality",
+          "The Cheese Touch sequence is your chance to shine \u2014 react BIG",
+          "Watch the Wimpy Kid films for the vibe of the school world",
+          "Have fun \u2014 this show is pure joy to perform"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Cheese Touch",
+          "type": "Ensemble",
+          "notes": "The signature ensemble number. High-energy comedy about the school's dreaded curse."
+        },
+        {
+          "title": "School opening number",
+          "type": "Ensemble",
+          "notes": "Sets up the world of middle school. Full company energy."
+        },
+        {
+          "title": "Finale",
+          "type": "Ensemble",
+          "notes": "Full company closing number bringing all themes together."
+        }
+      ]
+    }
+  ]
+}

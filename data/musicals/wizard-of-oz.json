@@ -1,0 +1,873 @@
+{
+  "musical": {
+    "id": "wizard-of-oz",
+    "title": "The Wizard of Oz",
+    "music_by": "Harold Arlen",
+    "lyrics_by": "E.Y. Harburg",
+    "book_by": "John Kane (original), adapted by various (RSC version by John Kane for the Royal Shakespeare Company)",
+    "based_on": "The Wonderful Wizard of Oz by L. Frank Baum and the 1939 MGM film",
+    "year_premiered": 1987,
+    "setting": "Kansas and the Land of Oz",
+    "time_period": "1900s (timeless fantasy)",
+    "themes": [
+      "Home and belonging",
+      "Self-discovery",
+      "Courage, heart, and brains",
+      "Friendship and loyalty",
+      "Good vs evil",
+      "Growing up",
+      "Believing in yourself"
+    ],
+    "genre_tags": [
+      "Classic",
+      "Fantasy",
+      "Family",
+      "Adventure",
+      "Golden Age adaptation"
+    ],
+    "vocal_style": "Classic musical theatre with legit soprano lead, character voices, and ensemble harmony",
+    "dance_intensity": "moderate",
+    "orchestra_size": "Full pit orchestra (12-20 players)",
+    "typical_cast_size": "30-50",
+    "age_range": "8-70",
+    "difficulty_overall": "intermediate",
+    "junior_version_available": true,
+    "license_holder": "Tams-Witmark / Concord Theatricals (RSC version) or R&H Theatricals (Andrew Lloyd Webber version)",
+    "synopsis": "Young Dorothy Gale is swept away from her Kansas farm by a tornado into the magical Land of Oz. To find her way home, she must follow the Yellow Brick Road to the Emerald City and seek the help of the great and powerful Wizard. Along the way, she befriends a Scarecrow who wants a brain, a Tin Man who wants a heart, and a Cowardly Lion who wants courage. Together they face the Wicked Witch of the West, discover the Wizard's true nature, and learn that the qualities they sought were within them all along."
+  },
+  "roles": [
+    {
+      "id": "dorothy",
+      "name": "Dorothy Gale",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 12, "max": 25 },
+      "description": "A brave, kind-hearted Kansas farm girl who is swept into Oz by a tornado. Dorothy is the emotional centre of the entire show — earnest, curious, determined, and deeply loyal to her friends. She carries nearly every scene and must connect with both child and adult audiences.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "Soprano / Mezzo-Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Middle to upper register, sustained legit singing",
+        "style_notes": "Pure, clear legit soprano with emotional vulnerability. 'Over the Rainbow' requires sustained phrasing, breath control, and genuine emotional depth. Must sound youthful but vocally mature."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["Musical theatre", "Character movement", "Skipping/travelling"],
+        "stamina": "High — onstage nearly the entire show",
+        "notes": "The Yellow Brick Road sequences require coordinated movement with trio. Must move naturally through many set transitions and maintain energy throughout."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Ingenue", "Everywoman", "Hero"],
+        "emotional_range": "Very wide — homesickness, wonder, fear, determination, joy, grief, love",
+        "comedy_skills": true,
+        "notes": "Must be utterly sincere without being saccharine. Dorothy's journey is the audience's journey — she needs to carry genuine emotional weight while remaining accessible to children. The Kansas/Oz contrast demands range."
+      },
+      "performance": {
+        "stage_time_percentage": 85,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": ["Working with a dog (Toto)", "Conveying wonder and innocence", "Carrying emotional arc of entire show"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_get_cast", "best_to_grow", "best_to_stand_out"],
+        "why": "Dorothy is the quintessential leading role — onstage almost continuously, sings the most iconic song in musical theatre history, and carries the entire emotional arc. This role builds every skill simultaneously.",
+        "common_casting": "Young women with genuine warmth, clear soprano voices, and natural likability. Often cast younger (teens to early 20s) for community/school productions.",
+        "standout_opportunity": "'Over the Rainbow' is one of the most recognizable songs ever written. A truly great Dorothy can make an audience weep with this single number."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Sustained leading role stamina",
+          "Legit soprano technique and phrasing",
+          "Emotional authenticity across wide range",
+          "Audience connection and likability",
+          "Working with animal actors",
+          "Scene partner generosity (supporting trio)"
+        ],
+        "challenge_areas": [
+          "Sustaining energy across 2+ hour show",
+          "Making iconic role feel fresh and personal",
+          "Balancing sincerity with avoiding sentimentality",
+          "Vocal stamina for legit singing throughout"
+        ],
+        "recommended_for": [
+          "Young sopranos ready for their first major lead",
+          "Performers with strong emotional connection",
+          "Singers who excel in legit/classical style",
+          "Actors who connect naturally with family audiences"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and likability from the first moment",
+          "Clean, clear soprano voice with emotional depth",
+          "Ability to carry 'Over the Rainbow' with fresh sincerity",
+          "Natural chemistry with scene partners",
+          "Physical stamina and energy"
+        ],
+        "common_mistakes": [
+          "Imitating Judy Garland instead of finding own interpretation",
+          "Playing Dorothy as too young or too mature",
+          "Over-singing 'Over the Rainbow' — it needs simplicity",
+          "Lacking genuine emotional stakes in the Kansas scenes"
+        ],
+        "tips": [
+          "Make Dorothy YOUR Dorothy — directors have seen every Judy impression",
+          "The Kansas scenes set up everything — invest fully in the homesickness",
+          "Show range by contrasting wonder in Oz with determination against the Witch",
+          "Practice sustaining energy and vocal stamina for the full run"
+        ]
+      },
+      "key_songs": [
+        { "title": "Over the Rainbow", "type": "Solo", "notes": "THE iconic song. Requires sustained legit phrasing, emotional vulnerability, and simplicity. Less is more." },
+        { "title": "Follow the Yellow Brick Road / We're Off to See the Wizard", "type": "Group", "notes": "Joyful travelling number with Scarecrow, Tin Man, and Lion. Must maintain energy and character." },
+        { "title": "Merry Old Land of Oz", "type": "Ensemble", "notes": "Ensemble celebration in Emerald City. Dorothy participates with full cast." }
+      ]
+    },
+    {
+      "id": "scarecrow",
+      "name": "Scarecrow",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": { "min": 16, "max": 55 },
+      "description": "A lovable, floppy scarecrow who wants a brain. The Scarecrow is Dorothy's first friend in Oz and often the comic heart of the show. He is physically inventive, warm-hearted, and ironically the smartest of the trio. Typically doubled with Hunk in Kansas.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "Baritone / Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range, conversational singing with character inflection",
+        "style_notes": "Character voice with warmth. Needs to blend well in trio/quartet numbers. Comedy timing in vocal delivery is more important than vocal power."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["Physical comedy", "Soft-shoe", "Character movement", "Pratfalls"],
+        "stamina": "High — physically demanding role throughout",
+        "notes": "The Scarecrow is defined by movement. Must create convincing floppy, boneless physicality while maintaining enough control for choreography. 'If I Only Had a Brain' typically features extended physical comedy/dance."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Physical comedian", "Lovable fool", "Sidekick"],
+        "emotional_range": "Moderate — comedy to genuine tenderness in farewell scene",
+        "comedy_skills": true,
+        "notes": "Physical comedy is paramount. Must sustain distinctive physicality for the entire show without it becoming gimmicky. The farewell with Dorothy needs genuine emotional weight."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["Physical comedy", "Pratfalls and tumbling", "Sustained character physicality", "Doubling as Hunk"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "The Scarecrow is often the audience favourite due to the physical comedy. This role develops physical theatre skills enormously and allows a performer to build a complete character through movement. The farewell scene tests emotional depth.",
+        "common_casting": "Physically agile performers with strong comedy instincts. Often cast with dancers or physical theatre specialists who can sustain floppy physicality.",
+        "standout_opportunity": "'If I Only Had a Brain' is a showstopper when the physicality is inventive. A great Scarecrow steals scenes without upstaging Dorothy."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Physical comedy and character movement",
+          "Sustained character physicality over full show",
+          "Scene-stealing without upstaging",
+          "Comedic timing",
+          "Emotional vulnerability beneath comedy"
+        ],
+        "challenge_areas": [
+          "Maintaining floppy physicality without injury",
+          "Finding fresh physical choices for iconic role",
+          "Balancing comedy with genuine heart",
+          "Sustaining energy in physically demanding role"
+        ],
+        "recommended_for": [
+          "Physical theatre enthusiasts",
+          "Performers wanting to develop comedy skills",
+          "Dancers looking to expand into character work",
+          "Actors who love building characters through movement"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Inventive, committed physicality from the first moment",
+          "Warmth and likability beneath the comedy",
+          "Ability to sustain character movement without flagging",
+          "Natural chemistry and generosity with scene partners",
+          "Vocal clarity and comedy timing"
+        ],
+        "common_mistakes": [
+          "Playing the Scarecrow as stupid rather than lovably naive",
+          "Physicality that looks rehearsed rather than spontaneous",
+          "Overdoing comedy at the expense of heart",
+          "Neglecting the vocal requirements of the role"
+        ],
+        "tips": [
+          "Develop a specific physical vocabulary — how does YOUR scarecrow move?",
+          "Study physical comedians (Buster Keaton, Charlie Chaplin) for inspiration",
+          "The straw stuffing affects everything — how do you sit, stand, walk, fall?",
+          "Show emotional depth in the farewell — this is what elevates good to great"
+        ]
+      },
+      "key_songs": [
+        { "title": "If I Only Had a Brain", "type": "Solo/Dance", "notes": "Signature number combining character singing with extended physical comedy. The dance break is the highlight." },
+        { "title": "We're Off to See the Wizard", "type": "Group", "notes": "Recurring travelling number with Dorothy and companions." },
+        { "title": "Merry Old Land of Oz", "type": "Ensemble", "notes": "Full company number in the Emerald City." }
+      ]
+    },
+    {
+      "id": "tin-man",
+      "name": "Tin Man",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": { "min": 18, "max": 55 },
+      "description": "A rusted tin woodsman who longs for a heart. Despite claiming he cannot feel emotions, the Tin Man is the most emotional of the trio — easily moved to tears and deeply caring. His journey is about recognising the love he already possesses. Typically doubled with Hickory in Kansas.",
+      "vocal": {
+        "range": "Bb2-F4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range baritone with warm, emotional quality",
+        "style_notes": "Warm, resonant tone that conveys longing and tenderness. 'If I Only Had a Heart' needs genuine emotional ache. Must blend in trio harmonies."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["Character movement", "Stiff/mechanical movement", "Musical theatre"],
+        "stamina": "Moderate — costume can be physically restrictive",
+        "notes": "Must create convincing mechanical/stiff movement while still being endearing. The costume significantly restricts movement, so all choreography must work within those constraints. Oil can scene is key physical comedy moment."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["Gentle giant", "Romantic", "Sensitive soul"],
+        "emotional_range": "Wide — the irony is he's the MOST emotional character despite wanting a heart",
+        "comedy_skills": true,
+        "notes": "The comedy comes from the contrast between claiming to have no heart and being overwhelmingly emotional. Must play genuine tenderness without sentimentality. Crying/emotional moments need to land."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["Performing in restrictive costume/makeup", "Mechanical movement", "Emotional authenticity", "Doubling as Hickory"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_get_cast", "best_to_grow"],
+        "why": "A beloved role that teaches performers to act through heavy costume/makeup restrictions. The Tin Man develops emotional authenticity and the ability to convey character through limited physical means — invaluable skills.",
+        "common_casting": "Warm baritones with natural emotional expressiveness. Actors who can convey feeling through voice and eyes when body is restricted by costume.",
+        "standout_opportunity": "The oil can/unfreezing scene is a wonderful comic moment, and the farewell with Dorothy can be genuinely moving."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Acting through costume restrictions",
+          "Vocal expressiveness when physical expression is limited",
+          "Emotional authenticity and vulnerability",
+          "Character physicality within constraints",
+          "Ensemble work and scene partner generosity"
+        ],
+        "challenge_areas": [
+          "Heavy costume management (heat, visibility, mobility)",
+          "Projecting emotion through makeup/mask",
+          "Maintaining vocal quality in restrictive costume",
+          "Finding variety within mechanical movement"
+        ],
+        "recommended_for": [
+          "Baritones seeking iconic character roles",
+          "Performers wanting to develop emotional range",
+          "Actors interested in character work with physical constraints",
+          "Those building experience with heavy costume/makeup work"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Warm, resonant singing voice with emotional depth",
+          "Natural tenderness and likability",
+          "Understanding of physical comedy within constraints",
+          "Ability to convey emotion through voice and eyes",
+          "Good ensemble chemistry"
+        ],
+        "common_mistakes": [
+          "Playing the mechanical movement as robotic rather than rusty",
+          "Overplaying the crying — it should be endearing, not annoying",
+          "Neglecting the warmth that makes the irony work",
+          "Not considering the practical challenges of the costume"
+        ],
+        "tips": [
+          "Study how emotion reads when your body can't move freely — it's all in the voice and eyes",
+          "The irony IS the character: he already has the biggest heart of anyone",
+          "Practice singing with restricted movement — you'll need this skill",
+          "Make the farewell with Dorothy genuinely moving"
+        ]
+      },
+      "key_songs": [
+        { "title": "If I Only Had a Heart", "type": "Solo", "notes": "Tender, longing ballad. Must convey genuine emotional ache while managing mechanical physicality." },
+        { "title": "We're Off to See the Wizard", "type": "Group", "notes": "Recurring group number. Must integrate mechanical movement into the choreography." },
+        { "title": "Merry Old Land of Oz", "type": "Ensemble", "notes": "Full company celebration." }
+      ]
+    },
+    {
+      "id": "cowardly-lion",
+      "name": "Cowardly Lion",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": { "min": 18, "max": 55 },
+      "description": "A timid, theatrical lion who desperately wants courage. The Lion is the biggest comedy role in the show — a bombastic, dramatic personality masking deep insecurity. He provides much of the second-act energy and his courage arc is both funny and genuinely touching. Typically doubled with Zeke in Kansas.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "Baritone / Character Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Mid-range with strong character voice, big personality in delivery",
+        "style_notes": "Character voice with comedic flair. Needs vocal variety — bluster, whimpering, bravado, and genuine tenderness. 'If I Only Had the Nerve' is a comedy number that needs vocal personality."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["Physical comedy", "Character movement", "Comedic choreography"],
+        "stamina": "Moderate to high — big physical performance in costume",
+        "notes": "The Lion is physically expressive — cowering, puffing up, sneaking, trembling. Heavy lion costume/suit requires stamina. Movement should be big and expressive."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Comic lead", "Coward with hidden courage", "Scene-stealer"],
+        "emotional_range": "Wide — terror, bravado, vulnerability, genuine courage",
+        "comedy_skills": true,
+        "notes": "The premier comedy role. Must have impeccable timing and the ability to get big laughs while still making the audience root for the character. The moment of genuine courage needs to land after all the comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["Physical comedy", "Character voice work", "Performing in heavy costume", "Doubling as Zeke"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "The Lion is the audience-favourite comedy role and often gets the biggest laughs of the night. This role develops comedy chops, character voice work, and the crucial skill of balancing big comedy with genuine heart.",
+        "common_casting": "Big personality performers with strong comedy instincts. Often cast with larger-framed actors who can be physically imposing yet endearingly cowardly.",
+        "standout_opportunity": "'If I Only Had the Nerve' and the 'King of the Forest' sequence are guaranteed crowd-pleasers. A great Lion can dominate every scene he's in."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comedy leading role skills",
+          "Character voice and vocal variety",
+          "Physical comedy in heavy costume",
+          "Audience interaction and energy management",
+          "Emotional arc within comedy role"
+        ],
+        "challenge_areas": [
+          "Not overplaying comedy at expense of story",
+          "Performing in heavy, hot costume",
+          "Finding genuine courage moment after sustained comedy",
+          "Supporting Dorothy's arc while getting big laughs"
+        ],
+        "recommended_for": [
+          "Comedic performers ready for a signature role",
+          "Actors wanting to develop character comedy",
+          "Performers who need to learn balancing laughs with heart",
+          "Those building comedy confidence in a forgiving role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong comedy instincts and timing",
+          "Big, expressive personality that fills the stage",
+          "Character voice variety (bluster vs whimper vs genuine)",
+          "Ability to shift from comedy to genuine emotion",
+          "Physical expressiveness and stamina"
+        ],
+        "common_mistakes": [
+          "Making the Lion one-note — all cowardice, no variety",
+          "Overdoing it so much that the character becomes annoying",
+          "Ignoring the genuine emotional arc beneath the comedy",
+          "Not considering the physical demands of the costume"
+        ],
+        "tips": [
+          "The comedy comes from the contrast between bravado and cowardice — play BOTH",
+          "Study great comic actors who balance big comedy with real heart",
+          "The courage moment near the end only works if we've believed the cowardice",
+          "'King of the Forest' is your moment to SHINE — make it theatrical and fun"
+        ]
+      },
+      "key_songs": [
+        { "title": "If I Only Had the Nerve", "type": "Solo", "notes": "Big comedy number. Needs vocal personality, physical comedy, and audience engagement." },
+        { "title": "King of the Forest", "type": "Solo/Ensemble", "notes": "Bravado sequence where Lion gets to be theatrical and commanding — before falling apart." },
+        { "title": "We're Off to See the Wizard", "type": "Group", "notes": "Recurring group number with full quartet." }
+      ]
+    },
+    {
+      "id": "wicked-witch",
+      "name": "Wicked Witch of the West",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": { "min": 20, "max": 60 },
+      "description": "The terrifying, cackling villain of Oz. The Wicked Witch is pure theatrical evil — commanding, menacing, and deliciously over-the-top. She commands the Winged Monkeys, threatens Dorothy and her friends, and meets a spectacular end. Despite limited stage time, she dominates every scene she appears in. Typically doubled with Miss Gulch in Kansas.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "Mezzo-Soprano / Alto",
+        "belt_required": true,
+        "belt_range": "D4-D5",
+        "tessitura": "Lower mezzo with powerful, cutting belt for dramatic moments",
+        "style_notes": "Character voice — cackling, sneering, commanding. Vocal power matters more than beauty. Must cut through ensemble and be terrifying. Some versions include extended musical passages."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["Dramatic movement", "Staging"],
+        "stamina": "Low to moderate — intense scenes but with offstage recovery time",
+        "notes": "Minimal dance but maximum physical presence. Every movement must be deliberate and menacing. The melting scene requires physical commitment."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Villain", "Scene-stealer", "Theatrical menace"],
+        "emotional_range": "Focused — rage, cunning, malice, with occasional dark humor",
+        "comedy_skills": true,
+        "notes": "Must dominate every scene despite limited time onstage. The Witch needs to genuinely frighten younger audience members while remaining theatrical enough for adults to enjoy. The line between scary and campy is the sweet spot."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 2,
+        "special_skills": ["Green makeup application/removal", "Cackling technique", "Doubling as Miss Gulch", "Theatrical menace", "Pyrotechnic safety (some productions)"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out"],
+        "why": "Despite only 20% stage time, the Wicked Witch is one of the most memorable roles in the show. Every entrance is an event. This role teaches maximum impact with minimum time — a masterclass in theatrical presence.",
+        "common_casting": "Powerful female performers with commanding presence and strong character voice. Often cast with experienced actresses who can terrify and entertain simultaneously.",
+        "standout_opportunity": "Every single appearance is a star turn. The cackle, the threats, the melting — all iconic moments that audiences remember forever."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Theatrical presence and stage command",
+          "Villain characterisation",
+          "Maximum impact in limited stage time",
+          "Character voice and vocal projection",
+          "Green makeup/heavy costume work",
+          "Quick character transitions (Gulch/Witch doubling)"
+        ],
+        "challenge_areas": [
+          "Finding the right balance of scary and entertaining",
+          "Making the role your own when everyone knows the character",
+          "Green makeup management across multiple shows",
+          "Quick transitions between Gulch and Witch"
+        ],
+        "recommended_for": [
+          "Experienced performers wanting a villainous showcase",
+          "Actors developing stage presence and command",
+          "Those who want maximum impact in a beloved show",
+          "Character actresses with powerful voices"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Commanding presence that fills the room immediately",
+          "A distinctive, powerful cackle",
+          "Ability to balance genuine menace with theatrical entertainment",
+          "Strong character voice and vocal projection",
+          "Physical authority and deliberate movement"
+        ],
+        "common_mistakes": [
+          "Going full camp without any genuine threat",
+          "Copying Margaret Hamilton too closely",
+          "Neglecting Miss Gulch — she should foreshadow the Witch",
+          "A weak or unconvincing cackle"
+        ],
+        "tips": [
+          "Develop YOUR cackle — practice until it's second nature and always consistent",
+          "Miss Gulch and the Witch should rhyme but not be identical",
+          "Less is more with movement — a slow, deliberate Witch is scarier than a frantic one",
+          "Find moments of dark humour — the best Witches make the audience laugh AND flinch"
+        ]
+      },
+      "key_songs": [
+        { "title": "Red Shoes Blues / Witch scenes", "type": "Underscore/Scene", "notes": "Musical underscoring for entrances and confrontations. Some versions include a full Witch number." },
+        { "title": "Poppies/Jitterbug sequence", "type": "Ensemble", "notes": "The Witch's magical assault. Some versions include the cut 'Jitterbug' number." }
+      ]
+    },
+    {
+      "id": "glinda",
+      "name": "Glinda the Good Witch",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": { "min": 18, "max": 50 },
+      "description": "The beautiful, sparkling Good Witch of the North (or South, depending on version). Glinda is warm, gracious, ethereal, and slightly mysterious — she guides Dorothy at key moments and ultimately reveals that Dorothy always had the power to go home. A fairy godmother figure who bookends the Oz narrative.",
+      "vocal": {
+        "range": "C4-A5",
+        "voice_type": "Soprano",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Upper soprano, light and silvery",
+        "style_notes": "Pure, ethereal soprano with warmth. Must sound otherworldly and reassuring. Some versions include a full Glinda number; others are primarily dialogue with underscoring."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["Graceful movement", "Staging"],
+        "stamina": "Low — appears in key scenes but not continuously",
+        "notes": "Glinda moves with grace and poise. Often makes dramatic entrances (bubble, light effect). Movement should feel effortless and magical."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["Fairy godmother", "Mentor", "Ethereal guide"],
+        "emotional_range": "Moderate — warmth, wisdom, gentle authority, reassurance",
+        "comedy_skills": false,
+        "notes": "Must convey genuine warmth and wisdom. Glinda's key moments — the arrival, the advice, and the revelation about the ruby slippers — need to feel genuinely magical and moving."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["Ethereal stage presence", "Working with special effects (bubble, lights)", "Grace and poise"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Glinda is a lovely, visible role with limited demands. Perfect for a soprano wanting a named role without the pressure of carrying the show. Every appearance is special and memorable.",
+        "common_casting": "Beautiful sopranos with natural grace and warmth. Often cast with performers who have a genuine quality of kindness.",
+        "standout_opportunity": "The final scene revelation — 'You've always had the power' — is one of the most beautiful moments in the show when played with genuine warmth."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Stage presence and poise",
+          "Soprano technique",
+          "Grace and movement quality",
+          "Making limited stage time impactful",
+          "Audience connection through warmth"
+        ],
+        "challenge_areas": [
+          "Making a brief role feel fully realised",
+          "Avoiding one-note sweetness",
+          "Creating genuine authority alongside warmth"
+        ],
+        "recommended_for": [
+          "Sopranos building confidence in named roles",
+          "Performers developing stage presence and poise",
+          "Those wanting a beautiful role with manageable demands",
+          "Young performers stepping up from ensemble"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Beautiful, clear soprano voice",
+          "Natural warmth and genuine kindness",
+          "Grace and poise in movement",
+          "Ability to command attention through serenity rather than force",
+          "A quality of magic and otherworldliness"
+        ],
+        "common_mistakes": [
+          "Being so sweet it becomes saccharine",
+          "Lacking authority — Glinda is powerful, not just pretty",
+          "Flat characterisation — she should feel genuinely magical",
+          "Ignoring the wisdom aspect — Glinda knows more than she reveals"
+        ],
+        "tips": [
+          "Find the mystery in Glinda — she knows Dorothy has the power all along",
+          "Warmth and authority are not opposites — embody both",
+          "Your entrances are events — prepare for how you arrive onstage",
+          "Less is more — a genuine smile from Glinda should light up the theatre"
+        ]
+      },
+      "key_songs": [
+        { "title": "Come Out, Come Out (Munchkinland)", "type": "Ensemble/Solo", "notes": "Introduction in Munchkinland. Sets the tone for Glinda's character." },
+        { "title": "Glinda's Waltz / Finale", "type": "Scene", "notes": "Musical underscoring for the ruby slipper revelation. Some versions include a full musical number." }
+      ]
+    },
+    {
+      "id": "wizard",
+      "name": "The Wizard of Oz / Professor Marvel",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": { "min": 35, "max": 70 },
+      "description": "A humbug showman from Omaha who has been posing as the great and powerful Wizard. The Wizard is all bluster and spectacle hiding a fundamentally decent but cowardly ordinary man. His unmasking is a pivotal moment, and his genuine attempt to help after being exposed reveals his true character. Doubled with Professor Marvel in Kansas.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "Baritone / Character Bass-Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Comfortable mid-range, character voice",
+        "style_notes": "Two contrasting voices: the booming, amplified Wizard voice and the small, apologetic real voice. Character singing rather than vocal showcase."
+      },
+      "dance": {
+        "level": "none",
+        "styles": ["Staging"],
+        "stamina": "Low — concentrated scenes",
+        "notes": "Minimal movement required. The role is about vocal and facial acting rather than physical performance."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["Charlatan", "Father figure", "Showman", "Comic character"],
+        "emotional_range": "Wide — bombastic authority to vulnerable honesty to genuine kindness",
+        "comedy_skills": true,
+        "notes": "A masterclass in transitions: the terrifying Wizard voice, the embarrassed unmasking, and the genuine warmth of trying to help. Professor Marvel in Kansas should hint at the Wizard's theatrical nature."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 1,
+        "quick_changes": 1,
+        "special_skills": ["Voice modulation (Wizard booming voice)", "Doubling as Professor Marvel", "Working with special effects/pyrotechnics", "Physical comedy in unmasking"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "A wonderful character role for experienced performers. Limited time commitment but high impact scenes. The unmasking sequence is a beautiful acting moment that showcases range.",
+        "common_casting": "Experienced character actors with strong vocal presence. Often cast with older, distinguished performers who can play authority convincingly.",
+        "standout_opportunity": "The unmasking — transitioning from terrifying all-powerful Wizard to embarrassed ordinary man — is a brilliant acting moment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Voice modulation and projection",
+          "Character transitions within scenes",
+          "Playing dual roles with connected characterisation",
+          "Working with technical effects",
+          "Making brief appearances impactful"
+        ],
+        "challenge_areas": [
+          "Making the transition from Wizard to ordinary man believable",
+          "Finding genuine warmth in a fundamentally deceptive character",
+          "Connecting Professor Marvel and Wizard characterisations"
+        ],
+        "recommended_for": [
+          "Experienced actors wanting impactful supporting role",
+          "Performers developing voice work and modulation",
+          "Character actors seeking a dual-role challenge",
+          "Those wanting a significant role with limited rehearsal demands"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong, commanding vocal presence for the Wizard",
+          "Warmth and vulnerability for the unmasked man",
+          "Smooth transition between the two modes",
+          "Natural authority and theatrical showmanship",
+          "Likability despite the character's deception"
+        ],
+        "common_mistakes": [
+          "Making the Wizard only scary without the showmanship",
+          "Not making the unmasked Wizard sympathetic enough",
+          "Neglecting Professor Marvel as a separate character",
+          "Playing the role too small — the Wizard moments need to be BIG"
+        ],
+        "tips": [
+          "Professor Marvel should be charming but slightly dodgy — he foreshadows the Wizard",
+          "The Wizard voice should be genuinely impressive — practice projection",
+          "The unmasking is your Oscar moment — play the embarrassment fully",
+          "Genuine kindness in giving the gifts — he really IS trying his best"
+        ]
+      },
+      "key_songs": [
+        { "title": "Emerald City / Wizard's Entrance", "type": "Underscore/Scene", "notes": "Musical underscoring for the reveal. The vocal demands are more about voice acting than singing." },
+        { "title": "Balloon Farewell", "type": "Scene", "notes": "The Wizard's departure. Emotional moment requiring paternal warmth." }
+      ]
+    },
+    {
+      "id": "uncle-henry-auntie-em",
+      "name": "Auntie Em / Uncle Henry",
+      "role_type": "supporting",
+      "gender": "Female (Em) / Male (Henry)",
+      "age_range": { "min": 40, "max": 70 },
+      "description": "Dorothy's Kansas guardians. Auntie Em is the more prominent of the two — a hardworking, practical farm woman who loves Dorothy deeply but struggles to express it. Uncle Henry is quieter and more supportive. They bookend the show and Dorothy's desire to return to them drives the entire plot. Em's voice calling 'Dorothy!' is a crucial emotional trigger.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Character voices — no major singing required",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Speaking roles with minimal singing (ensemble harmonies)",
+        "style_notes": "Auntie Em needs a warm, strong speaking voice. Some productions include Em in ensemble singing."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "Low — Kansas scenes only",
+        "notes": "No dance requirements. Natural, grounded movement appropriate for Kansas farm life."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["Parent figure", "Working class", "Emotional anchor"],
+        "emotional_range": "Moderate — worry, love, relief",
+        "comedy_skills": false,
+        "notes": "Auntie Em's scenes are few but critical. The opening needs to establish why Dorothy loves her, the crystal ball vision must be heartbreaking, and the finale reunion must be genuinely moving."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["Establishing strong emotional connection in limited time"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "A small but emotionally important role. Perfect for experienced performers who don't want heavy time commitment but still want to contribute meaningfully. The crystal ball moment and finale are genuinely affecting.",
+        "common_casting": "Warm, maternal performers for Em. Reliable character actors for Henry.",
+        "standout_opportunity": "The crystal ball scene — Em calling out to Dorothy — can be devastating when played with genuine love and fear."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Establishing character quickly",
+          "Emotional impact in limited scenes",
+          "Grounded, naturalistic acting"
+        ],
+        "challenge_areas": [
+          "Creating full character in very limited stage time",
+          "Making Kansas feel real and worth returning to"
+        ],
+        "recommended_for": [
+          "Performers wanting manageable time commitment",
+          "Actors building confidence in named roles",
+          "Those developing emotional authenticity"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Warmth and genuine maternal/paternal quality",
+          "Ability to establish deep relationship with Dorothy quickly",
+          "Grounded, authentic presence",
+          "Emotional availability for key moments"
+        ],
+        "common_mistakes": [
+          "Playing Em as cold or dismissive in opening scenes",
+          "Not investing enough because the role is small",
+          "Forgetting that Dorothy's love for Em drives the ENTIRE plot"
+        ],
+        "tips": [
+          "Every moment Em has with Dorothy must radiate love — even when she's busy or worried",
+          "The crystal ball moment is your star turn — make it count",
+          "Dorothy wants to come HOME — make home feel like somewhere worth returning to"
+        ]
+      },
+      "key_songs": [
+        { "title": "Kansas scenes", "type": "Dialogue/Underscore", "notes": "Primarily acting scenes with musical underscoring." }
+      ]
+    },
+    {
+      "id": "ensemble",
+      "name": "Ensemble (Munchkins / Emerald City Citizens / Winkies / Flying Monkeys)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": { "min": 8, "max": 65 },
+      "description": "The Wizard of Oz ensemble creates multiple distinct worlds: the cheerful Munchkins of Munchkinland, the elegant citizens of Emerald City, the Witch's fearsome Winkies/guards, and the Flying Monkeys. Many productions also use child ensembles for Munchkins. The ensemble transforms between these groups, creating the magical variety of Oz.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Mixed chorus",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Varies by section — Munchkins often higher/lighter, guards lower/darker",
+        "style_notes": "Strong choral singing for Munchkinland ('Ding Dong the Witch is Dead'), Emerald City ('Merry Old Land of Oz'), and guard chant ('O-Ee-Yah! Eoh-Ah!'). Must adapt vocal color to each world."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["Musical theatre", "Character movement", "Marching/military (Winkies)", "Joyful celebration (Munchkins)"],
+        "stamina": "High — multiple transformations and group numbers",
+        "notes": "Each ensemble group has distinct movement vocabulary: Munchkins are small and lively, Emerald City citizens are elegant, Winkies are military and menacing, Flying Monkeys are acrobatic/athletic."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": ["Multiple ensemble roles", "World-building"],
+        "emotional_range": "Varies by scene — joyful, fearful, celebratory, menacing",
+        "comedy_skills": true,
+        "notes": "Must create distinct characters for each world. Munchkins need individual personality, Winkies need genuine menace, Emerald City citizens need sophistication."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 6,
+        "quick_changes": 4,
+        "special_skills": ["Quick costume changes between worlds", "Multiple character creation", "Choral singing", "Physical versatility"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_grow"],
+        "why": "The Oz ensemble is uniquely varied — you play 3-4 completely different groups in one show. This builds versatility, quick-change skills, and the ability to create distinct characters rapidly. Great training ground.",
+        "common_casting": "Versatile performers of all ages. Child ensembles common for Munchkins. Need strong singers and movers who can transform between worlds.",
+        "standout_opportunity": "Individual Munchkin characters can be scene-stealers. The 'Ding Dong' sequence often features fun solo moments within the ensemble."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Versatility across multiple character types",
+          "Quick costume changes",
+          "Choral singing technique",
+          "Creating distinct characters within ensemble",
+          "World-building as a team"
+        ],
+        "challenge_areas": [
+          "Managing multiple costumes and quick changes",
+          "Switching character completely between scenes",
+          "Maintaining energy across varied ensemble roles"
+        ],
+        "recommended_for": [
+          "New performers getting first musical experience",
+          "Young performers (especially Munchkins)",
+          "Versatile performers who enjoy variety",
+          "Those building foundational ensemble skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Versatility and willingness to play multiple roles",
+          "Strong choral singing voice",
+          "Physical expressiveness",
+          "Ability to create distinct characters quickly",
+          "Reliability and team spirit"
+        ],
+        "common_mistakes": [
+          "Playing all ensemble roles the same way",
+          "Not committing to the world-building in each scene",
+          "Underestimating quick-change demands",
+          "Fading into the background instead of creating character"
+        ],
+        "tips": [
+          "Create a specific character for each world — give each one a name and story",
+          "Practice quick changes at home — speed and organization matter",
+          "'Ding Dong the Witch is Dead' is one of the most fun ensemble numbers ever — bring the joy!",
+          "The Winkie march is menacing — commit fully to the military precision"
+        ]
+      },
+      "key_songs": [
+        { "title": "Ding Dong! The Witch Is Dead", "type": "Ensemble", "notes": "Iconic Munchkinland celebration. One of the most famous ensemble numbers in musical theatre." },
+        { "title": "Merry Old Land of Oz", "type": "Ensemble", "notes": "Emerald City celebration featuring full ensemble." },
+        { "title": "March of the Winkies (O-Ee-Yah! Eoh-Ah!)", "type": "Ensemble", "notes": "The Witch's guards. Menacing chant and military precision." },
+        { "title": "Jitterbug (if included)", "type": "Ensemble", "notes": "A cut film number sometimes restored in stage versions. High-energy dance number." }
+      ]
+    }
+  ]
+}

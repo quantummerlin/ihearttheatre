@@ -1,0 +1,780 @@
+{
+  "musical": {
+    "id": "beauty-and-the-beast",
+    "title": "Beauty and the Beast",
+    "music_by": "Alan Menken",
+    "lyrics_by": "Howard Ashman & Tim Rice",
+    "book_by": "Linda Woolverton",
+    "based_on": "1991 Disney animated film / French fairy tale",
+    "year_premiered": 1994,
+    "broadway_opening": "1994-04-18",
+    "setting": "A provincial French village and an enchanted castle",
+    "time_period": "18th century France (fairy tale)",
+    "themes": ["inner beauty", "transformation", "love", "prejudice", "courage", "selflessness", "breaking curses", "looking beyond appearances"],
+    "genre_tags": ["disney", "fairy_tale", "family", "romance", "spectacle", "classic_musical_theatre"],
+    "vocal_style": "Classic Broadway/Disney — legit soprano, character voices, big ensemble numbers",
+    "dance_intensity": "moderate_to_high",
+    "orchestra_size": "full_pit",
+    "typical_cast_size": "30-45",
+    "age_range": "10-70 (wide range across enchanted objects, villagers, etc.)",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Belle, a bright and independent young woman, is taken prisoner by a fearsome Beast in his enchanted castle. With the help of the castle's enchanted staff — Lumiere, Cogsworth, Mrs. Potts, and others — Belle begins to see beneath the Beast's exterior and discovers the kind prince within. But time is running out: if the Beast cannot learn to love and be loved in return before the last petal falls from an enchanted rose, the spell will never be broken."
+  },
+  "roles": [
+    {
+      "id": "batb-belle",
+      "name": "Belle",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 18, "max": 30},
+      "description": "A beautiful, intelligent, book-loving young woman who refuses to conform to her provincial village's expectations. She's brave, compassionate, curious, and fiercely independent. Her willingness to see beyond appearances transforms the Beast and breaks the curse. The emotional and moral center of the show.",
+      "vocal": {
+        "range": "A3-G5",
+        "voice_type": "soprano/mezzo-soprano",
+        "belt_required": true,
+        "belt_range": "C4-F5",
+        "tessitura": "mid-high",
+        "style_notes": "Classic Disney soprano with belt capability. Must sound pure and warm in lyrical sections ('Home') and powerful in climactic moments. Legit soprano technique with contemporary belt blend. Think Paige O'Hara meets Broadway power."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["waltz", "staging", "ballroom"],
+        "stamina": "moderate",
+        "notes": "The ballroom waltz is the signature moment — must be graceful and convincing. General staging throughout. Not a heavy dance role but must move beautifully."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["independent heroine", "bookworm", "compassionate rebel", "Disney princess with backbone"],
+        "emotional_range": "high — curiosity, defiance, fear, tenderness, love, grief, courage",
+        "comedy_skills": true,
+        "notes": "Must be genuinely smart and independent — not just pretty. Belle's strength is her mind and her heart. Chemistry with Beast is crucial — the audience must believe in the transformation. Must hold her own against the spectacle."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 4,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 3,
+        "special_skills": ["ballroom_waltz", "book_handling_prop", "costume_management_ball_gown"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "Iconic Disney leading lady. Every little girl in the audience wants to be Belle. Requires classical vocal technique, acting depth, and genuine charisma. One of the most recognizable roles in musical theatre.",
+        "common_casting": "Beautiful soprano with genuine intelligence and warmth. Must be someone the audience roots for AND respects. Not a passive princess.",
+        "standout_opportunity": "'Home' is the audition piece that showcases everything. A great Belle owns this show — she's the reason the spectacle has heart."
+      },
+      "growth_profile": {
+        "skills_developed": ["soprano_technique", "legit_singing", "romantic_lead_work", "disney_style", "ballroom_dance", "costume_work"],
+        "challenge_areas": ["making_princess_role_feel_real", "chemistry_with_Beast", "competing_with_spectacle"],
+        "recommended_for": ["sopranos building leading lady skills", "performers who want Disney-style romantic lead experience", "actresses with strong vocal technique wanting character depth"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["beautiful soprano voice", "genuine intelligence", "warmth and strength equally", "can she hold the stage against spectacle?", "chemistry range"],
+        "common_mistakes": ["being too sweet/passive — Belle has backbone", "vocal technique without emotional connection", "ignoring the comedy in village scenes"],
+        "tips": ["Belle is the smartest person in her village and she knows it. She's not rude about it, but she's quietly frustrated. That intelligence must come through in every scene. Also: 'Home' is your moment. Make it devastating."]
+      },
+      "key_songs": [
+        {"title": "Belle", "type": "ensemble_lead", "notes": "Opening number. Belle navigates the village while singing about wanting more. Must feel natural amid complex staging."},
+        {"title": "Home", "type": "solo", "notes": "Belle alone in the castle. Grief, fear, determination. THE soprano showcase. Must be emotionally devastating."},
+        {"title": "A Change in Me", "type": "solo", "notes": "Belle realizes she loves the Beast. Added for Broadway. Tender, honest, transformative."},
+        {"title": "Something There", "type": "duet_with_ensemble", "notes": "With Beast and enchanted objects. The falling-in-love montage. Charming and genuine."},
+        {"title": "Beauty and the Beast (ballroom)", "type": "scene", "notes": "The waltz. Belle doesn't sing but must dance beautifully. Iconic visual."}
+      ]
+    },
+    {
+      "id": "batb-beast",
+      "name": "The Beast / Prince Adam",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {"min": 20, "max": 40},
+      "description": "A prince cursed to live as a monstrous Beast until he learns to love. He's angry, isolated, wounded, and terrified of being vulnerable. His transformation from rage to tenderness is the emotional engine of the show. Must convey humanity through prosthetics/costume and vocal performance.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "baritone/tenor",
+        "belt_required": true,
+        "belt_range": "D3-F#4",
+        "tessitura": "mid",
+        "style_notes": "Must convey emotion through what may be heavy prosthetics/mask. Needs powerful belt for 'If I Can't Love Her' and tender control for quiet moments. Classic Broadway baritone with emotional depth."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["waltz", "physical_character_movement", "staging"],
+        "stamina": "moderate",
+        "notes": "Ballroom waltz is signature moment. Character movement as Beast must evolve from animalistic to graceful. Potentially in heavy costume/prosthetics which affects movement."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["tortured soul", "wounded prince", "romantic lead in disguise", "reformed monster"],
+        "emotional_range": "extreme — rage, isolation, vulnerability, tenderness, humor, love, sacrifice",
+        "comedy_skills": true,
+        "notes": "Must create compelling character through potentially restrictive costume. The rage must be frightening but the vulnerability must shine through. Comedy in learning-to-be-human scenes (dinner, birds) is essential. Must make audience believe in transformation."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": ["performing_in_prosthetics", "physical_transformation_acting", "ballroom_waltz", "rage_control"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "One of the great transformation roles. Demands physical acting, vocal power, and emotional depth — all through restrictive costume. Incredibly rewarding and career-developing.",
+        "common_casting": "Strong baritone actor with physical presence and emotional vulnerability. Must be someone who can make you cry while wearing a monster suit.",
+        "standout_opportunity": "'If I Can't Love Her' is a showstopper. A great Beast makes the entire audience forget they're watching someone in a costume."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_acting", "performing_in_costume", "emotional_range", "baritone_belt", "transformation_arc", "romantic_lead_skills"],
+        "challenge_areas": ["acting_through_prosthetics", "physicality_in_heavy_costume", "making_Beast_sympathetic_from_start"],
+        "recommended_for": ["baritones wanting a challenging leading role", "physical actors who can convey emotion", "performers interested in transformation work"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["vocal power AND vulnerability", "physical presence", "can they act through a mask?", "emotional range from rage to tenderness", "chemistry with Belle"],
+        "common_mistakes": ["all rage no heart", "too gentle too soon — the transformation must be earned", "forgetting the comedy", "not committing to physical Beast characterization"],
+        "tips": ["The Beast is a frightened boy in a monster's body. Every roar is covering pain. Find the wounded child underneath the fury and let that gradually emerge. Also: get comfortable being uncomfortable — this role is physically demanding in costume."]
+      },
+      "key_songs": [
+        {"title": "If I Can't Love Her", "type": "solo", "notes": "Act 1 closer. Devastating power ballad. The Beast's emotional core. Must bring the house down."},
+        {"title": "Something There", "type": "duet_with_ensemble", "notes": "With Belle. Gentle, tentative, charming. The Beast learning to be kind."},
+        {"title": "How Long Must This Go On?", "type": "solo", "notes": "Beast alone, questioning the curse. Vulnerability and pain."},
+        {"title": "Transformation/Finale", "type": "ensemble", "notes": "The curse breaks. Must convey genuine transformation in final moments."}
+      ]
+    },
+    {
+      "id": "batb-gaston",
+      "name": "Gaston",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {"min": 22, "max": 38},
+      "description": "The handsome, arrogant, narcissistic village hero who is determined to marry Belle. He's vain, charismatic, casually cruel, and dangerously entitled. Starts as a buffoon, becomes genuinely menacing. One of Disney's greatest villains because he looks like the hero.",
+      "vocal": {
+        "range": "A2-G4",
+        "voice_type": "baritone",
+        "belt_required": true,
+        "belt_range": "C3-F4",
+        "tessitura": "mid",
+        "style_notes": "Big, brash, confident baritone. Must fill the room with swagger. 'Gaston' and 'Me' require bombastic vocal quality. Needs to sound like the hero of his own story."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["choreographic_staging", "physical_comedy", "fight_choreography"],
+        "stamina": "high",
+        "notes": "'Gaston' tavern number has significant choreography. Fight scene at the end requires stage combat. Must appear physically impressive throughout."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["narcissistic villain", "entitled hero", "charming predator", "buffoon turned dangerous"],
+        "emotional_range": "high — vanity, charm, fury, entitlement, obsession, genuine menace",
+        "comedy_skills": true,
+        "notes": "Must balance hilarious vanity with genuine threat. The arc from buffoon to murderous mob leader must be believable. He's the real monster of the story — not the Beast. Must be genuinely charming enough that the audience understands why the village loves him."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["stage_combat", "physical_presence", "charm_and_menace"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "One of the great Disney villain roles. Gets the biggest laughs AND the most hisses. 'Gaston' tavern number is a guaranteed showstopper. Career-defining for charismatic baritones.",
+        "common_casting": "Tall, physically imposing, classically handsome baritone with massive charisma and comic ability. Must be genuinely attractive enough to be believable as the 'town hero'.",
+        "standout_opportunity": "'Gaston' tavern number brings the house down every single time. This role makes careers."
+      },
+      "growth_profile": {
+        "skills_developed": ["villain_work", "physical_presence", "baritone_belt", "stage_combat", "charm_and_menace_balance", "comedy_to_drama_transition"],
+        "challenge_areas": ["the_turn_from_funny_to_dangerous", "not_being_one_note", "stage_combat_demands"],
+        "recommended_for": ["charismatic baritones wanting villain experience", "performers with physical presence and comedy chops", "anyone who wants to steal every scene they're in"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical presence — tall, imposing, handsome", "genuine charisma", "big baritone voice", "comedy AND menace", "stage combat ability"],
+        "common_mistakes": ["playing villain from the start — Gaston thinks he's the HERO", "not handsome/charming enough to be believable", "forgetting the menace in favor of comedy"],
+        "tips": ["Gaston genuinely cannot understand why Belle won't marry him. He's the best-looking, strongest, most popular man in town. In HIS story, HE'S the hero. Play that conviction — the villainy comes from entitlement, not malice. Until it becomes malice."]
+      },
+      "key_songs": [
+        {"title": "Me", "type": "solo_with_belle", "notes": "Gaston's proposal. Hilariously vain. He genuinely thinks this is romantic."},
+        {"title": "Gaston", "type": "ensemble_lead", "notes": "THE tavern showstopper. Everyone sings about how great Gaston is. He agrees. Massive choreography."},
+        {"title": "Gaston (Reprise)", "type": "duet_with_lefou", "notes": "Darker turn. Plans to lock up Maurice. The menace emerges."},
+        {"title": "The Mob Song", "type": "ensemble_lead", "notes": "'Kill the Beast!' Gaston turns the village into a mob. Genuinely terrifying."}
+      ]
+    },
+    {
+      "id": "batb-lefou",
+      "name": "Lefou",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 18, "max": 40},
+      "description": "Gaston's devoted, long-suffering sidekick. He's loyal to a fault, frequently abused by Gaston, and provides much of the show's physical comedy. A classic comic sidekick with more depth than he initially appears.",
+      "vocal": {
+        "range": "C3-A4",
+        "voice_type": "tenor/character baritone",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Character voice with comedic delivery. Must be able to carry 'Gaston' number alongside Gaston. High energy vocal performance."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["physical_comedy", "choreographic_staging", "slapstick"],
+        "stamina": "high",
+        "notes": "Very physical role — gets thrown around, falls, physical comedy throughout. Must be robust and fearless. Tavern choreography is demanding."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["loyal sidekick", "comic relief", "bumbling henchman", "sycophant"],
+        "emotional_range": "moderate — devotion, comedy, fear, fleeting self-awareness",
+        "comedy_skills": true,
+        "notes": "Physical comedy is essential. Must have genuine chemistry with Gaston. The relationship is funny AND slightly sad — Lefou is devoted to someone who treats him terribly. Finding that pathos elevates the role."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 0,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["physical_comedy", "slapstick", "taking_hits", "comic_timing"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Classic comic sidekick role with great material. Gets huge laughs and memorable physical comedy moments. Less pressure than leads but high visibility in 'Gaston' number.",
+        "common_casting": "Shorter/contrasting physically with Gaston. Physical comedian with strong singing voice and zero self-consciousness.",
+        "standout_opportunity": "A great Lefou steals the 'Gaston' number. Physical comedy moments get the biggest laughs in the show."
+      },
+      "growth_profile": {
+        "skills_developed": ["physical_comedy", "sidekick_work", "ensemble_leading", "comic_singing", "slapstick"],
+        "challenge_areas": ["finding_depth_in_comedy", "sustaining_physical_demands", "not_upstaging_Gaston"],
+        "recommended_for": ["physical comedians building musical credits", "shorter performers wanting great featured roles", "actors who excel at physical comedy"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical comedy ability", "chemistry with Gaston", "can they take a hit?", "vocal ability for tavern number", "genuine commitment"],
+        "common_mistakes": ["just playing dumb", "not enough physical commitment", "no pathos — just clowning"],
+        "tips": ["Lefou genuinely worships Gaston. He's not performing devotion — he means it. The comedy comes from how far he'll go for someone who barely notices him. That devotion should be slightly heartbreaking underneath the laughs."]
+      },
+      "key_songs": [
+        {"title": "Gaston", "type": "duet_with_ensemble", "notes": "Leads the tavern number. Must match Gaston's energy while being comedically subordinate."},
+        {"title": "Gaston (Reprise)", "type": "duet", "notes": "With Gaston. Scheming. Comedy with darker edge."},
+        {"title": "The Mob Song", "type": "ensemble", "notes": "Part of the mob. Lefou's complicity in the violence."}
+      ]
+    },
+    {
+      "id": "batb-lumiere",
+      "name": "Lumiere",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {"min": 25, "max": 50},
+      "description": "The charming, flirtatious French maître d' transformed into a candelabra. He's warm, romantic, rebellious, and the life of every party. He leads the staff's efforts to make Belle feel welcome and break the curse. 'Be Our Guest' is HIS number — one of the greatest production numbers in musical theatre.",
+      "vocal": {
+        "range": "C3-Ab4",
+        "voice_type": "tenor/baritone",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Warm, charming, French-accented delivery. Must sustain 'Be Our Guest' which is vocally demanding and very long. Classic showman voice — think Maurice Chevalier meets Broadway."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["musical_theatre_choreography", "can_can_style", "showman_staging", "comedic_dance"],
+        "stamina": "very_high",
+        "notes": "'Be Our Guest' is one of the most elaborate production numbers in musical theatre — massive choreography, potentially with candelabra props/costume restrictions. Must maintain energy through the entire number."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["charming host", "romantic Frenchman", "loyal servant", "showman", "rebel with a heart"],
+        "emotional_range": "high — charm, warmth, rebellion, fear, hope, flirtation, determination",
+        "comedy_skills": true,
+        "notes": "Must have natural charisma and showmanship. French accent work important. Chemistry with Cogsworth (his foil) drives many comic scenes. Must convey genuine warmth and care for both Belle and the Beast."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["french_accent", "showmanship", "candelabra_prop_management", "audience_engagement"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "'Be Our Guest' is one of the most iconic numbers in musical theatre. Lumiere OWNS it. This role makes audiences fall in love with you. Perfect showcase for charismatic performers.",
+        "common_casting": "Charming triple-threat with natural showmanship and warmth. Must command a stage. French accent ability required.",
+        "standout_opportunity": "'Be Our Guest' will be the number everyone talks about. A great Lumiere becomes the audience's favorite character."
+      },
+      "growth_profile": {
+        "skills_developed": ["showmanship", "accent_work", "production_number_stamina", "charm_acting", "prop_work", "leading_ensemble"],
+        "challenge_areas": ["sustaining_Be_Our_Guest_energy", "accent_consistency", "performing_in_potential_costume_restrictions"],
+        "recommended_for": ["charismatic performers wanting a show-stealing role", "triple-threats who love entertaining", "performers building leading man skills through character work"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["natural charm and showmanship", "vocal stamina", "French accent ability", "can they sustain 'Be Our Guest'?", "chemistry with ensemble"],
+        "common_mistakes": ["bad French accent", "running out of steam in 'Be Our Guest'", "charm without warmth — Lumiere genuinely CARES", "upstaging other characters"],
+        "tips": ["Lumiere is the heart of the castle staff. He believes in love, beauty, and hospitality with every fiber of his being. 'Be Our Guest' isn't just a song — it's his SOUL. He's been waiting YEARS to serve someone and he's going to make it SPECTACULAR. That joy must be genuine."]
+      },
+      "key_songs": [
+        {"title": "Be Our Guest", "type": "ensemble_lead", "notes": "THE production number. Lumiere hosts the greatest dinner show ever. Massive, elaborate, exhausting, unforgettable."},
+        {"title": "Human Again", "type": "ensemble_lead", "notes": "The staff imagines being human. Lumiere leads with hope and charm."},
+        {"title": "Something There", "type": "ensemble", "notes": "Observing Belle and Beast falling in love. Commentary with Cogsworth and Mrs. Potts."},
+        {"title": "Beauty and the Beast (finale)", "type": "ensemble", "notes": "Transformation celebration."}
+      ]
+    },
+    {
+      "id": "batb-cogsworth",
+      "name": "Cogsworth",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 60},
+      "description": "The uptight, fussy, rule-following majordomo transformed into a mantel clock. He's Lumiere's perfect foil — cautious where Lumiere is bold, rigid where Lumiere is romantic. But beneath his pomposity, he genuinely cares about everyone. Their double act drives much of the comedy.",
+      "vocal": {
+        "range": "B2-F4",
+        "voice_type": "baritone/character",
+        "belt_required": false,
+        "belt_range": "D3-E4",
+        "tessitura": "mid",
+        "style_notes": "Precise, clipped, British character voice. Gilbert & Sullivan patter quality. Must be crystal clear in rapid dialogue and ensemble singing. Pompous vocal quality."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["comedic_movement", "staging", "clock_characterization"],
+        "stamina": "moderate",
+        "notes": "Physical comedy more important than technical dance. Clock physicality — tick-tock movement, rigid posture — is character work. Part of 'Be Our Guest' staging."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["pompous authority", "loyal servant", "uptight foil", "hidden romantic"],
+        "emotional_range": "high — pomposity, anxiety, loyalty, hidden warmth, comedy, frustration",
+        "comedy_skills": true,
+        "notes": "Must have impeccable comic timing and chemistry with Lumiere. The double act is the comic heart of the show. Cogsworth's fussiness is funny because of what it's covering — genuine love for the household. British accent essential."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["british_accent", "comic_timing", "clock_physicality", "patter"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Beloved comic role with great material. Less vocally demanding than Lumiere or leads but equally memorable. Perfect for character actors with impeccable timing.",
+        "common_casting": "Character actor with British accent ability, comic timing, and ability to play straight man to Lumiere's showman. Often older casting.",
+        "standout_opportunity": "The Lumiere-Cogsworth double act is audience gold. Every scene they share gets laughs. A great Cogsworth makes Lumiere even funnier."
+      },
+      "growth_profile": {
+        "skills_developed": ["comic_timing", "double_act_skills", "accent_work", "character_physicality", "supporting_role_craft"],
+        "challenge_areas": ["not_being_one_note_fussy", "finding_warmth", "accent_consistency"],
+        "recommended_for": ["character actors who excel at comedy", "performers with British accent skills", "actors who work well in double acts"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["comic timing", "British accent", "chemistry with Lumiere", "pompous but loveable", "character commitment"],
+        "common_mistakes": ["just playing fussy — must have heart", "bad accent", "no chemistry with Lumiere", "too much mugging"],
+        "tips": ["Cogsworth runs the Beast's household and takes it VERY seriously because it's all he has. His rules and fussiness are how he shows love. He's not mean — he's anxious. And underneath all that anxiety is a man who would do anything for his family."]
+      },
+      "key_songs": [
+        {"title": "Be Our Guest", "type": "ensemble", "notes": "Trying (and failing) to control Lumiere's spectacle. Comedy gold."},
+        {"title": "Human Again", "type": "ensemble", "notes": "Dreams of being human. Reveals his softer side."},
+        {"title": "Something There", "type": "ensemble", "notes": "Commentary on Belle and Beast with Lumiere and Mrs. Potts."},
+        {"title": "Maison Des Lunes", "type": "duet_scene", "notes": "Scene with Lefou at the asylum. Comedy and plot."}
+      ]
+    },
+    {
+      "id": "batb-mrs-potts",
+      "name": "Mrs. Potts",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 40, "max": 65},
+      "description": "The warm, motherly head housekeeper transformed into a teapot. She's the emotional anchor of the enchanted staff — wise, nurturing, and no-nonsense. She sings the title song, one of the most beloved songs in Disney history. Mother to Chip.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "mezzo-soprano/alto",
+        "belt_required": false,
+        "belt_range": "Bb3-C5",
+        "tessitura": "mid",
+        "style_notes": "Warm, maternal, effortless vocal quality. 'Beauty and the Beast' must sound like a lullaby — simple, pure, timeless. Think Angela Lansbury. Don't over-sing it."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "gentle_movement"],
+        "stamina": "low",
+        "notes": "Minimal dance. Character movement. Part of ensemble staging in 'Be Our Guest' and 'Human Again' but not technically demanding."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["maternal figure", "wise servant", "no-nonsense caretaker", "emotional anchor"],
+        "emotional_range": "high — warmth, wisdom, worry, joy, gentle authority, love",
+        "comedy_skills": true,
+        "notes": "Must feel like everyone's mother. She keeps the household running emotionally. Her interactions with Chip are tender. Her quiet wisdom guides the staff. When she sings the title song, the audience should feel the love of the entire show."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": ["maternal_warmth", "title_song_delivery", "teapot_characterization"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Sings the title song — one of the most famous songs in Disney history. Beloved character. Less demanding than leads but with one of the most important musical moments in the show.",
+        "common_casting": "Warm, maternal mezzo/alto with beautiful tone. Often cast with experienced character actresses. Must radiate genuine love.",
+        "standout_opportunity": "'Beauty and the Beast' — sing it with Angela Lansbury's simplicity and warmth. The audience will love you forever."
+      },
+      "growth_profile": {
+        "skills_developed": ["featured_song_delivery", "maternal_character_work", "ensemble_support", "emotional_singing"],
+        "challenge_areas": ["title_song_pressure", "not_over_singing", "standing_out_in_supporting_role"],
+        "recommended_for": ["mature mezzos wanting a beloved role", "character actresses with beautiful voices", "performers who radiate warmth"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["warm voice", "maternal quality", "can they sing the title song simply and beautifully?", "genuine warmth"],
+        "common_mistakes": ["over-singing 'Beauty and the Beast' — simplicity is key", "playing generic nice lady", "no authority — Mrs. Potts runs this household"],
+        "tips": ["Angela Lansbury recorded 'Beauty and the Beast' in one take. It's perfect because it's simple and true. Don't try to make it bigger than it is. Just be a mother singing about love. That's all it needs."]
+      },
+      "key_songs": [
+        {"title": "Beauty and the Beast", "type": "solo", "notes": "THE title song. Simple, beautiful, iconic. Sing it like a lullaby. Don't oversell it."},
+        {"title": "Be Our Guest", "type": "ensemble", "notes": "Supporting Lumiere's spectacle."},
+        {"title": "Human Again", "type": "ensemble", "notes": "Dreams of being human with the staff."},
+        {"title": "Something There", "type": "ensemble", "notes": "Commentary on Belle and Beast falling in love."}
+      ]
+    },
+    {
+      "id": "batb-chip",
+      "name": "Chip",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 7, "max": 12},
+      "description": "Mrs. Potts' son, transformed into a teacup. He's curious, brave, innocent, and provides the child's perspective on the story. Small but beloved role — the audience adores Chip. He's the one who helps Belle escape the cellar.",
+      "vocal": {
+        "range": "C4-C5",
+        "voice_type": "child treble",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Sweet, clear child voice. Minimal solo singing. Must be audible and endearing."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "character_movement"],
+        "stamina": "moderate",
+        "notes": "Teacup characterization — bouncy, energetic. Part of ensemble staging."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["curious child", "innocent observer", "brave little helper"],
+        "emotional_range": "moderate — curiosity, excitement, fear, bravery",
+        "comedy_skills": true,
+        "notes": "Must be genuinely endearing without being saccharine. Natural child energy is perfect. The audience should want to protect Chip."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["cuteness_that_isnt_forced", "teacup_prop_work"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Perfect first named role for a young performer. Beloved character, low pressure, high audience affection. Great confidence builder.",
+        "common_casting": "Natural, engaging young performer. Must be genuinely cute and brave without performing it.",
+        "standout_opportunity": "The audience LOVES Chip. A natural, charming Chip gets enormous affection."
+      },
+      "growth_profile": {
+        "skills_developed": ["stage_confidence", "character_work", "ensemble_discipline", "audience_connection"],
+        "challenge_areas": ["staying_in_character", "not_upstaging_leads", "managing_long_show_attention"],
+        "recommended_for": ["young performers in their first named role", "children who are naturally engaging", "young performers building stage confidence"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["natural charm", "ability to follow direction", "genuine child energy", "not forced cuteness"],
+        "common_mistakes": ["trying too hard to be cute", "losing focus during long scenes", "upstaging other performers"],
+        "tips": ["Just be yourself! Chip is a curious kid who wants to help. If you're naturally curious and brave, that's all you need."]
+      },
+      "key_songs": [
+        {"title": "Be Our Guest", "type": "ensemble", "notes": "Part of the spectacle."},
+        {"title": "Human Again", "type": "ensemble", "notes": "Chip dreams of being a real boy again."},
+        {"title": "Chip's scenes", "type": "scene", "notes": "Key dialogue moments with Belle and Mrs. Potts."}
+      ]
+    },
+    {
+      "id": "batb-babette",
+      "name": "Babette (Fifi/Plumette)",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 20, "max": 40},
+      "description": "The flirtatious French maid transformed into a feather duster. Lumiere's love interest. She's sassy, confident, and adds sparkle and romance to the castle staff. A fun featured role that highlights dance ability.",
+      "vocal": {
+        "range": "B3-E5",
+        "voice_type": "soprano/mezzo",
+        "belt_required": false,
+        "belt_range": "C4-D5",
+        "tessitura": "mid-high",
+        "style_notes": "French-accented, flirtatious vocal quality. Featured ensemble vocals. Sweet with sass."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["can_can", "musical_theatre_choreography", "flirtatious_staging"],
+        "stamina": "moderate",
+        "notes": "Featured dancer in 'Be Our Guest' with significant choreography. Must move gracefully and flirtatiously."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["flirtatious maid", "romantic interest", "sassy servant"],
+        "emotional_range": "moderate — flirtation, sass, warmth, playfulness",
+        "comedy_skills": true,
+        "notes": "Chemistry with Lumiere essential. Must balance being sexy and being family-friendly (it's Disney). French accent work."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["french_accent", "flirtatious_staging", "feather_duster_characterization"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun featured role for dancers/singer-actresses. Good visibility in 'Be Our Guest'. Chemistry with Lumiere adds sparkle.",
+        "common_casting": "Attractive singer-dancer with personality and French accent ability.",
+        "standout_opportunity": "A flirtatious, charming Babette adds romance and fun to every scene she's in."
+      },
+      "growth_profile": {
+        "skills_developed": ["featured_dance", "accent_work", "character_work", "romantic_scene_skills"],
+        "challenge_areas": ["limited_material", "accent_consistency", "standing_out_in_ensemble"],
+        "recommended_for": ["dancers wanting featured musical theatre roles", "performers building French accent skills", "those who shine in small featured moments"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["dance ability", "French accent", "personality", "chemistry with Lumiere"],
+        "common_mistakes": ["being too overtly sexy for a Disney show", "bad accent", "no character beyond 'flirty'"],
+        "tips": ["Babette loves Lumiere and she loves being fabulous. She's a French maid who takes pride in everything she does — especially flirting. Keep it playful and warm."]
+      },
+      "key_songs": [
+        {"title": "Be Our Guest", "type": "ensemble_featured", "notes": "Featured dance moments. Potential solo lines."},
+        {"title": "Human Again", "type": "ensemble", "notes": "Dreams of being human with Lumiere."},
+        {"title": "Finale", "type": "ensemble", "notes": "Transformation celebration."}
+      ]
+    },
+    {
+      "id": "batb-maurice",
+      "name": "Maurice",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 50, "max": 70},
+      "description": "Belle's eccentric, loving father — an inventor in the musical version. He's warm, slightly dotty, completely devoted to his daughter, and brave despite being terrified. His imprisonment by the Beast sets the story in motion.",
+      "vocal": {
+        "range": "G2-D4",
+        "voice_type": "baritone/bass",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "low-mid",
+        "style_notes": "Character singing with warmth. Doesn't need vocal power — needs personality, warmth, and eccentricity."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance required. Character movement — eccentric inventor physicality."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["eccentric father", "loving parent", "inventor", "unlikely hero"],
+        "emotional_range": "moderate — love, eccentricity, fear, bravery, distress",
+        "comedy_skills": true,
+        "notes": "Must convey genuine love for Belle. His eccentricity should be endearing. The scene where he offers himself as prisoner for Belle is deeply moving."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["eccentric_inventor_physicality", "warmth"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Lovely character role for older male performers. Not demanding but important to the heart of the story.",
+        "common_casting": "Warm character actor with eccentric charm. Older casting preferred.",
+        "standout_opportunity": "The father-daughter scenes with Belle set up the entire emotional story. A loveable Maurice makes the audience invest immediately."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_acting", "eccentric_roles", "paternal_roles", "stage_presence"],
+        "challenge_areas": ["not_being_forgettable", "making_eccentricity_believable"],
+        "recommended_for": ["older performers building credits", "character actors", "those who love playing warm eccentric roles"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["warmth", "eccentricity", "genuinely loveable quality", "father-daughter chemistry potential"],
+        "common_mistakes": ["playing too crazy", "no warmth", "forgetting Maurice is brave when it counts"],
+        "tips": ["Maurice would walk through fire for Belle. His inventions may not work, but his love is the most reliable thing in her world. Find that fierce paternal love under the eccentricity."]
+      },
+      "key_songs": [
+        {"title": "No Matter What", "type": "duet_with_belle", "notes": "Father-daughter song. Establishes their bond. Sweet, simple, essential."},
+        {"title": "Belle", "type": "ensemble", "notes": "Part of the opening number. Inventor introduction."}
+      ]
+    },
+    {
+      "id": "batb-madame-wardrobe",
+      "name": "Madame de la Grande Bouche (Wardrobe)",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 35, "max": 60},
+      "description": "The operatic former court singer transformed into a wardrobe. She's dramatic, flamboyant, and provides comic moments dressing Belle. A fun featured role for a bigger voice.",
+      "vocal": {
+        "range": "G3-Bb5",
+        "voice_type": "soprano/mezzo with operatic capability",
+        "belt_required": true,
+        "belt_range": "C4-F5",
+        "tessitura": "mid-high",
+        "style_notes": "Operatic flair with musical theatre belt. Must be able to parody opera while being genuinely good. Big voice, bigger personality."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comedic_staging"],
+        "stamina": "low",
+        "notes": "Limited movement — wardrobe costume may be restrictive. Character staging."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["dramatic diva", "comic opera singer", "flamboyant helper"],
+        "emotional_range": "moderate — drama, comedy, warmth, theatrical flair",
+        "comedy_skills": true,
+        "notes": "Must commit to the diva personality. Every moment is a performance for Madame. She's dramatic about EVERYTHING."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["operatic_comedy", "diva_energy", "wardrobe_costume_management"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun featured role for big voices. Great comedy moments dressing Belle. Low pressure, good fun.",
+        "common_casting": "Big soprano/mezzo with comedic ability and diva energy.",
+        "standout_opportunity": "A flamboyant Wardrobe steals every scene she's in. The dressing Belle sequence is a highlight."
+      },
+      "growth_profile": {
+        "skills_developed": ["comedic_character_work", "operatic_comedy", "featured_ensemble_skills"],
+        "challenge_areas": ["limited_material", "costume_restrictions"],
+        "recommended_for": ["big voices wanting featured ensemble roles", "operatic singers exploring musical theatre", "performers who love being dramatic"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["big voice", "diva energy", "comedy chops", "willingness to be ridiculous"],
+        "common_mistakes": ["not committing to the drama", "singing too much/not enough", "not enough fun"],
+        "tips": ["Madame was a STAR before the curse. She was THE voice of the court. Being a wardrobe is beneath her — but she makes it work because she's a PROFESSIONAL. Channel your inner diva."]
+      },
+      "key_songs": [
+        {"title": "Be Our Guest", "type": "ensemble", "notes": "Potential operatic moment within the number."},
+        {"title": "Human Again", "type": "ensemble", "notes": "Dreams of performing again."},
+        {"title": "Dressing Belle scenes", "type": "scene", "notes": "Comic scene preparing Belle for dinner."}
+      ]
+    },
+    {
+      "id": "batb-ensemble",
+      "name": "Ensemble — Villagers, Enchanted Objects, Wolves",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {"min": 14, "max": 65},
+      "description": "The ensemble plays villagers in the opening number, enchanted objects in the castle (forks, spoons, plates, napkins), and wolves in the forest. They create the entire world of the show — from the bustling provincial town to the magical castle. Heavy costume/prop demands.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "mixed",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Strong ensemble singing required. 'Belle' opening, 'Be Our Guest', 'Gaston', and 'The Mob Song' all demand powerful ensemble vocals with tight harmonies."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["musical_theatre_choreography", "character_dance", "tavern_choreography", "production_number_staging"],
+        "stamina": "very_high",
+        "notes": "'Be Our Guest' is one of the most demanding ensemble numbers in musical theatre. 'Gaston' tavern choreography is also major. Multiple full production numbers requiring sustained energy."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["villagers", "enchanted objects", "wolves", "multiple characters"],
+        "emotional_range": "moderate — village life, enchanted wonder, mob mentality",
+        "comedy_skills": true,
+        "notes": "Must create distinct village characters AND enchanted object characters. The transformation between worlds (village/castle) requires quick physical and character changes. 'The Mob Song' requires genuine menace from the same people who were jolly villagers."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 4,
+        "special_skills": ["multiple_character_creation", "heavy_costume_work", "production_number_stamina", "mob_mentality_acting"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_get_cast"],
+        "why": "One of the best ensemble experiences in musical theatre. Multiple iconic production numbers, character creation opportunities, and costume/prop challenges. Develops every skill.",
+        "common_casting": "Strong singer-dancers who can handle demanding choreography and multiple quick changes. Must be versatile.",
+        "standout_opportunity": "In 'Be Our Guest', every enchanted object matters. Creating a memorable fork or napkin character might sound silly — but it gets you noticed."
+      },
+      "growth_profile": {
+        "skills_developed": ["production_number_skills", "quick_changes", "character_versatility", "ensemble_dance", "costume_work", "stamina"],
+        "challenge_areas": ["physical_demands_of_multiple_numbers", "quick_character_switches", "costume_management"],
+        "recommended_for": ["dancers wanting full musical theatre ensemble experience", "performers building stamina and versatility", "those who love the magic of big production numbers"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["strong dance ability", "vocal strength", "versatility", "stamina", "team player"],
+        "common_mistakes": ["not prepared for physical demands", "generic characterization", "energy dropping in Act 2"],
+        "tips": ["Beauty and the Beast ensemble is one of the hardest-working ensembles in musical theatre. You'll play villagers, forks, wolves, and maybe a napkin — and you need to make each one count. Bring your stamina, bring your character chops, bring your dance shoes."]
+      },
+      "key_songs": [
+        {"title": "Belle", "type": "ensemble", "notes": "Opening number. Village comes alive. Everyone has a character."},
+        {"title": "Gaston", "type": "ensemble", "notes": "Tavern showstopper. Big choreography, big singing, big mugs of ale."},
+        {"title": "Be Our Guest", "type": "ensemble", "notes": "THE production number. Enchanted objects create the greatest dinner show ever."},
+        {"title": "Human Again", "type": "ensemble", "notes": "Cleaning/preparing the castle. Hope and joy."},
+        {"title": "The Mob Song", "type": "ensemble", "notes": "'Kill the Beast!' Village turns dark. Torches, pitchforks, genuine menace."},
+        {"title": "Finale", "type": "ensemble", "notes": "Transformation and celebration. The curse breaks."}
+      ]
+    }
+  ]
+}

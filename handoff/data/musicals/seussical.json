@@ -1,0 +1,1918 @@
+{
+  "musical": {
+    "id": "seussical",
+    "title": "Seussical (Seussical the Musical)",
+    "music_by": "Stephen Flaherty",
+    "lyrics_by": "Lynn Ahrens",
+    "book_by": "Lynn Ahrens and Stephen Flaherty",
+    "based_on": "The works of Dr. Seuss, primarily Horton Hears a Who! and Horton Hatches the Egg, with elements from many other stories",
+    "year_premiered": 2000,
+    "broadway_opening": "2000-11-30",
+    "setting": "The Jungle of Nool, the land of the Whos, and other Seussian locations",
+    "time_period": "Timeless fantasy",
+    "themes": [
+      "A person's a person no matter how small",
+      "Loyalty and keeping promises",
+      "Imagination and creativity",
+      "Being true to yourself",
+      "Standing up for what's right",
+      "The power of thinking and believing",
+      "Acceptance and diversity"
+    ],
+    "genre_tags": [
+      "Family",
+      "Fantasy",
+      "Comedy",
+      "Contemporary",
+      "Ensemble-driven",
+      "Youth-friendly"
+    ],
+    "vocal_style": "Contemporary musical theatre with jazz, pop, gospel, and Latin influences. Wide vocal variety across characters.",
+    "dance_intensity": "moderate_to_high",
+    "orchestra_size": "Small to medium band (6-12 players)",
+    "typical_cast_size": "20-50 (extremely flexible)",
+    "age_range": "6-70 (one of the most inclusive cast ranges)",
+    "difficulty_overall": "intermediate",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "The Cat in the Hat narrates the intertwined stories of Horton the Elephant, who discovers a tiny world of Whos on a speck of dust and vows to protect them, and JoJo, a young Who boy sent to military school for 'thinking too many thinks.' When Horton's jungle neighbours mock him for talking to a speck and a scheming Mayzie La Bird convinces him to sit on her egg, Horton faces ridicule and danger but never wavers from his promises. Through imagination, loyalty, and the power of believing, the smallest voice saves the day."
+  },
+  "roles": [
+    {
+      "id": "horton",
+      "name": "Horton the Elephant",
+      "role_type": "lead",
+      "gender": "Male",
+      "age_range": {
+        "min": 16,
+        "max": 55
+      },
+      "description": "A big-hearted, gentle elephant who discovers the Whos on a speck of dust and vows to protect them no matter what. Horton is the moral centre of the show \u2014 loyal, sincere, brave, and unshakably committed to doing the right thing even when everyone thinks he's crazy. He's the classic gentle giant whose kindness ultimately saves everyone.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "Baritone / Bass-Baritone",
+        "belt_required": true,
+        "belt_range": "E4-G4",
+        "tessitura": "Low to mid-range with strong belt for emotional peaks",
+        "style_notes": "Warm, rich baritone with genuine emotional depth. Must handle tender ballads ('Alone in the Universe') and powerful belt moments. The voice should feel big and kind, like the character. Jazz and gospel influences in some numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Character movement",
+          "Gentle physical comedy"
+        ],
+        "stamina": "Moderate \u2014 onstage frequently but not heavily choreographed",
+        "notes": "Horton moves with elephantine gentleness \u2014 big, careful, deliberate. Must convey massive size through movement while remaining endearing. Sitting on the egg requires sustained physical commitment."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Gentle giant",
+          "Moral hero",
+          "Everyman",
+          "Protector"
+        ],
+        "emotional_range": "Very wide \u2014 determination, loneliness, joy, heartbreak, steadfast courage, tenderness",
+        "comedy_skills": true,
+        "notes": "Horton carries the emotional weight of the entire show. 'Alone in the Universe' must be devastating; his commitment to the egg must be both funny and heroic; his trial must feel genuinely high-stakes. The audience needs to love him immediately and completely."
+      },
+      "performance": {
+        "stage_time_percentage": 70,
+        "solo_songs": 4,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "Elephantine physicality",
+          "Sustained emotional performance",
+          "Audience empathy",
+          "Sitting on a prop egg for extended periods"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "Horton is one of the most emotionally rewarding leading roles in family musical theatre. He develops vocal power, emotional depth, physical character work, and the ability to carry an audience's heart for two hours. 'Alone in the Universe' alone makes this role transformative.",
+        "common_casting": "Warm, likable performers with strong baritone voices and natural kindness. Often cast with larger-framed performers but personality and voice matter more than physicality.",
+        "standout_opportunity": "'Alone in the Universe' is one of the most beautiful duets in modern musical theatre. Horton's steadfast refusal to abandon the Whos can bring audiences to tears."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Emotional leading role performance",
+          "Baritone vocal technique and belt",
+          "Physical character creation",
+          "Sustained audience connection",
+          "Carrying emotional weight of a show",
+          "Playing sincerity without sentimentality"
+        ],
+        "challenge_areas": [
+          "Maintaining emotional authenticity over many performances",
+          "Physical demands of elephant characterisation",
+          "Keeping the role fresh and genuine",
+          "The egg-sitting endurance"
+        ],
+        "recommended_for": [
+          "Baritones seeking their first major leading role",
+          "Performers with natural warmth and emotional depth",
+          "Those wanting to develop emotional range in a supportive show",
+          "Actors who excel at audience connection"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and likability from the first moment",
+          "Strong, warm baritone voice",
+          "Emotional depth \u2014 can you make us cry with 'Alone in the Universe'?",
+          "Physical commitment to elephant character",
+          "The quality of unshakeable goodness"
+        ],
+        "common_mistakes": [
+          "Playing Horton as dumb \u2014 he's deeply thoughtful",
+          "Being too jokey \u2014 Horton's sincerity is the entire point",
+          "Not enough emotional investment in the Who protection arc",
+          "Neglecting the physicality \u2014 Horton IS an elephant"
+        ],
+        "tips": [
+          "Horton's defining quality is that he MEANS what he says \u2014 'I meant what I said and I said what I meant'",
+          "'Alone in the Universe' is your audition song even if you sing something else \u2014 prepare that emotional depth",
+          "Find specific physical choices that say 'elephant' without being cartoonish",
+          "The trial scene needs genuine stakes \u2014 Horton's friends have all abandoned him"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Horton Hears a Who",
+          "type": "Solo",
+          "notes": "Discovery of the Whos. Wonder and determination."
+        },
+        {
+          "title": "Alone in the Universe",
+          "type": "Duet (with JoJo)",
+          "notes": "The emotional heart of the show. Two lonely souls connecting across impossible distance. Devastating."
+        },
+        {
+          "title": "Horton Sits on the Egg",
+          "type": "Solo/Ensemble",
+          "notes": "Extended comic/heroic sequence of Horton's egg-sitting commitment through seasons and hardship."
+        },
+        {
+          "title": "How Lucky You Are (reprise)",
+          "type": "Solo",
+          "notes": "Horton at his lowest point. Genuine despair before the triumph."
+        }
+      ]
+    },
+    {
+      "id": "cat-in-the-hat",
+      "name": "The Cat in the Hat",
+      "role_type": "lead",
+      "gender": "Any",
+      "age_range": {
+        "min": 16,
+        "max": 55
+      },
+      "description": "The mischievous, anarchic narrator and ringmaster of the Seussian universe. The Cat breaks the fourth wall constantly, plays multiple minor characters, creates chaos, and guides the audience through the story with gleeful unpredictability. Part narrator, part trickster, part stage manager \u2014 the Cat is pure theatrical energy.",
+      "vocal": {
+        "range": "C3-F5 (extremely wide, depends on performer)",
+        "voice_type": "Character voice \u2014 any range, all about personality",
+        "belt_required": true,
+        "belt_range": "Varies by performer",
+        "tessitura": "Flexible \u2014 character singing across full range",
+        "style_notes": "The most vocally versatile role in the show. Must handle jazz, pop, comedy, and storytelling styles. Voice should be distinctive, memorable, and infinitely varied. Every number the Cat sings should sound different."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Jazz",
+          "Physical comedy",
+          "Vaudeville",
+          "Character movement",
+          "Everything"
+        ],
+        "stamina": "Extremely high \u2014 never stops moving",
+        "notes": "The Cat is pure kinetic energy. Constantly moving, dancing, sneaking, posing, reacting. Must be physically inventive and tireless. The Cat plays multiple characters throughout and must transform physically for each."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Narrator",
+          "Trickster",
+          "Shapeshifter",
+          "Ringmaster",
+          "Anarchist"
+        ],
+        "emotional_range": "Primarily comedy and mischief, with surprising moments of genuine tenderness",
+        "comedy_skills": true,
+        "notes": "The ultimate theatrical showman role. Must command the audience, break the fourth wall naturally, play multiple characters convincingly, create chaos while keeping the story on track, and occasionally show genuine heart. Improv skills and audience interaction ability are essential."
+      },
+      "performance": {
+        "stage_time_percentage": 80,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 5,
+        "quick_changes": 8,
+        "special_skills": [
+          "Breaking fourth wall",
+          "Playing multiple characters",
+          "Audience interaction/improv",
+          "Physical comedy",
+          "Quick character transformations",
+          "Costume pieces and props manipulation"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "The Cat in the Hat is a once-in-a-lifetime performance role \u2014 total freedom within structure. This role develops improvisation, physical comedy, audience interaction, character transformation, and theatrical presence at an extraordinary rate. Every performance can be different.",
+        "common_casting": "High-energy, physically dynamic performers with improv skills, incredible stamina, and the ability to command any room. Gender-neutral casting is common and encouraged.",
+        "standout_opportunity": "The Cat owns the show. Every single scene is an opportunity to create something magical. A great Cat in the Hat becomes legendary in community theatre circles."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Improvisation and audience interaction",
+          "Playing multiple characters",
+          "Physical comedy mastery",
+          "Theatrical narration",
+          "Comedy timing and rhythm",
+          "Sustained high-energy performance",
+          "Quick character transformations"
+        ],
+        "challenge_areas": [
+          "Sustaining manic energy without burning out",
+          "Keeping the chaos controlled \u2014 serving the story, not overshadowing it",
+          "Multiple quick changes and character shifts",
+          "Knowing when to step back and let other characters shine"
+        ],
+        "recommended_for": [
+          "High-energy performers who thrive on audience interaction",
+          "Physical comedians wanting the ultimate showcase",
+          "Performers with improv experience",
+          "Those wanting a role with unprecedented creative freedom"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Explosive, sustained energy",
+          "Natural audience interaction ability",
+          "Physical comedy and inventiveness",
+          "Distinctive character voice and presence",
+          "The ability to be anarchic while still serving the story",
+          "Versatility in playing multiple characters"
+        ],
+        "common_mistakes": [
+          "Going so big that it becomes exhausting rather than exciting",
+          "Upstaging other performers' important moments",
+          "Being random rather than purposeful \u2014 the Cat has a plan",
+          "Running out of energy by Act 2"
+        ],
+        "tips": [
+          "The Cat is the stage manager of this universe \u2014 you control the reality",
+          "Study great theatrical hosts and narrators \u2014 the Emcee from Cabaret, the Narrator from Into the Woods",
+          "Energy management is crucial \u2014 pace yourself, save your biggest moments for when they count",
+          "The Cat genuinely cares about the story ending well \u2014 play that underneath the chaos"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Oh, the Thinks You Can Think!",
+          "type": "Solo/Ensemble",
+          "notes": "Opening number setting up the Seussian universe. Pure energy and imagination."
+        },
+        {
+          "title": "It's Possible (McElligot's Pool)",
+          "type": "Solo/Group",
+          "notes": "Encouraging JoJo to think bigger. Jazz-influenced, imaginative."
+        },
+        {
+          "title": "The Cat's various character songs",
+          "type": "Various",
+          "notes": "The Cat plays multiple characters throughout and sings in each persona."
+        }
+      ]
+    },
+    {
+      "id": "jojo",
+      "name": "JoJo",
+      "role_type": "lead",
+      "gender": "Any",
+      "age_range": {
+        "min": 8,
+        "max": 16
+      },
+      "description": "A young Who whose imagination is too big for the tiny world of Who-ville. JoJo 'thinks too many thinks' and is sent to military school by his worried parents. His story parallels Horton's \u2014 both are outsiders dismissed for believing in something others can't see. JoJo's voice ultimately saves the Whos, proving that even the smallest person matters.",
+      "vocal": {
+        "range": "C4-E5",
+        "voice_type": "Soprano / Treble (youth voice) or Tenor (older casting)",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Upper range with strong belt for emotional peaks",
+        "style_notes": "Clear, pure voice with emotional depth beyond the performer's years. 'Alone in the Universe' requires sustained, soaring vocal quality. 'It's Possible' needs brightness and wonder. Must convey both vulnerability and eventual triumph."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Character movement",
+          "Imaginative play"
+        ],
+        "stamina": "Moderate",
+        "notes": "JoJo's movement is about imagination \u2014 he's constantly thinking, dreaming, and creating worlds in his mind. The physicality should convey a busy, creative brain."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Imaginative child",
+          "Outsider",
+          "Hidden hero",
+          "Dreamer"
+        ],
+        "emotional_range": "Wide \u2014 imagination, loneliness, defiance, fear, determination, triumph",
+        "comedy_skills": false,
+        "notes": "JoJo is the emotional counterpart to Horton's story. The character arc moves from a kid who's told to stop thinking to a kid whose thinking saves the world. 'Alone in the Universe' must connect across the stage with Horton in a devastating way. The final 'YOPP!' moment needs to feel triumphant."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "Conveying imagination physically",
+          "Emotional connection across stage (with Horton)",
+          "The iconic 'YOPP!' moment"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "JoJo is an extraordinary role for young performers \u2014 emotionally complex, vocally demanding, and with one of the most powerful payoff moments in musical theatre (the final YOPP). This role builds emotional depth, vocal technique, and the confidence that comes from saving the day.",
+        "common_casting": "Talented young performers (typically 10-15) with strong emotional ability and clear singing voice. Often cast with kids who are genuinely imaginative and slightly quirky.",
+        "standout_opportunity": "'Alone in the Universe' and the final 'YOPP!' moment \u2014 when JoJo's voice breaks through and saves the Whos \u2014 can be the most powerful moments in the entire show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Emotional depth in youth performance",
+          "Belt technique and vocal power",
+          "Playing an arc from outcast to hero",
+          "Connecting with scene partner across distance",
+          "Building to a climactic moment"
+        ],
+        "challenge_areas": [
+          "Sustaining emotional intensity",
+          "The vocal demands of 'Alone in the Universe'",
+          "Making the 'YOPP!' payoff feel earned and spontaneous every performance"
+        ],
+        "recommended_for": [
+          "Young performers with strong emotional ability",
+          "Kids who are natural dreamers and thinkers",
+          "Youth singers with developing belt technique",
+          "Young actors ready for their first emotionally complex role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine emotional depth unusual for age",
+          "Clear, strong singing voice",
+          "The quality of a thoughtful outsider",
+          "Ability to convey imagination physically",
+          "The potential for a triumphant vocal moment"
+        ],
+        "common_mistakes": [
+          "Playing JoJo as simply sad \u2014 he's also wonderfully imaginative",
+          "Not enough vocal power for the climactic moments",
+          "Being too cute rather than genuinely complex",
+          "Not connecting with Horton during 'Alone in the Universe'"
+        ],
+        "tips": [
+          "JoJo's 'thinks' are not a problem \u2014 they're his superpower. Play the joy of imagination first",
+          "'Alone in the Universe' is about CONNECTION \u2014 find Horton across the stage and hold on",
+          "The 'YOPP!' must come from your whole body and soul \u2014 it saves the world",
+          "You represent every kid who's ever been told they're too much. Honour that."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Alone in the Universe",
+          "type": "Duet (with Horton)",
+          "notes": "The emotional centrepiece of the show. Two lonely souls connecting. Devastating and beautiful."
+        },
+        {
+          "title": "It's Possible (McElligot's Pool)",
+          "type": "Duet/Group (with Cat)",
+          "notes": "JoJo's imagination runs wild. Bright, joyful, full of wonder."
+        },
+        {
+          "title": "A Day for the Cat in the Hat / Finale",
+          "type": "Ensemble",
+          "notes": "The triumphant finale where JoJo's voice saves the day."
+        }
+      ]
+    },
+    {
+      "id": "gertrude",
+      "name": "Gertrude McFuzz",
+      "role_type": "lead",
+      "gender": "Female",
+      "age_range": {
+        "min": 14,
+        "max": 40
+      },
+      "description": "A shy, plain bird with a one-feather tail who is secretly in love with Horton. Gertrude is the show's hidden heroine \u2014 insecure about her appearance but brave enough to go on a dangerous journey to save Horton. Her arc from self-doubt to self-acceptance is one of the most relatable in the show.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "Mezzo-Soprano / Soprano",
+        "belt_required": true,
+        "belt_range": "D4-E5",
+        "tessitura": "Mid to upper range, sweet with growing power",
+        "style_notes": "Starts sweet and tentative, grows to powerful belt. 'Notice Me, Horton' evolves from shy to soaring. Must convey insecurity in vocal delivery that transforms into confidence. Beautiful contrast with Mayzie's brassy belt."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Musical theatre",
+          "Character movement",
+          "Physical comedy"
+        ],
+        "stamina": "Moderate",
+        "notes": "Gertrude's movement evolves \u2014 initially small and self-conscious, then hilariously over-feathered (after the pill), then finally confident and natural. The oversized tail sequence is a physical comedy highlight."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Wallflower",
+          "Unrequited love",
+          "Hidden hero",
+          "Transformation arc"
+        ],
+        "emotional_range": "Wide \u2014 insecurity, longing, determination, physical comedy, self-acceptance, courage",
+        "comedy_skills": true,
+        "notes": "Gertrude is the audience's secret favourite because her insecurities are so relatable. Must play genuine shyness without being boring, and genuine bravery without losing the vulnerability. The oversized tail sequence requires brilliant physical comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Physical comedy with oversized tail prop",
+          "Vocal and emotional transformation",
+          "Playing unrequited love sympathetically"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "Gertrude is a beautifully written role that combines vocal development, physical comedy, and genuine emotional depth. Her transformation from wallflower to hero mirrors what many performers experience in real life. Incredibly rewarding to play.",
+        "common_casting": "Talented singer-actresses who may not have the 'leading lady look' but have genuine warmth and comedy skills. Often the most skilled performer not in a lead role.",
+        "standout_opportunity": "'Notice Me, Horton' transforms from a shy whisper to a powerful belt \u2014 when this lands, it's one of the most moving moments in the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Vocal transformation (shy to powerful)",
+          "Physical comedy with props",
+          "Playing vulnerability authentically",
+          "Character transformation arc",
+          "Belt development within character context"
+        ],
+        "challenge_areas": [
+          "Making shyness interesting on stage",
+          "Managing the oversized tail prop comedically",
+          "The vocal transformation \u2014 must feel earned, not sudden"
+        ],
+        "recommended_for": [
+          "Performers who relate to Gertrude's insecurity journey",
+          "Belt voices wanting a role that builds from soft to powerful",
+          "Actresses who love combining comedy with heart",
+          "Those wanting a significant role that isn't the typical 'leading lady'"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and likability",
+          "Vocal ability that can start tender and build to a belt",
+          "Physical comedy instincts",
+          "The quality of real vulnerability",
+          "The transformation from shy to brave"
+        ],
+        "common_mistakes": [
+          "Being too meek \u2014 shy Gertrude still needs to be engaging",
+          "Not committing to the oversized tail physical comedy",
+          "Rushing the emotional transformation",
+          "Playing Gertrude as a victim rather than a quiet hero"
+        ],
+        "tips": [
+          "Gertrude's bravery is the most genuine in the show \u2014 she doesn't have to help Horton, she chooses to",
+          "The one-feather tail isn't just a joke \u2014 it represents real insecurity about being 'enough'",
+          "'Notice Me, Horton' should break hearts. Start tiny, end triumphant.",
+          "The oversized tail sequence is a gift \u2014 mine it for every possible laugh"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Notice Me, Horton",
+          "type": "Solo",
+          "notes": "Beautiful ballad that transforms from shy to powerful. The emotional arc in miniature."
+        },
+        {
+          "title": "Amazing Gertrude",
+          "type": "Solo/Comedy",
+          "notes": "Gertrude's disastrous attempt to get a bigger tail. Physical comedy highlight."
+        },
+        {
+          "title": "All for You",
+          "type": "Solo",
+          "notes": "Gertrude's determination to save Horton. Courage and selflessness."
+        }
+      ]
+    },
+    {
+      "id": "mayzie",
+      "name": "Mayzie La Bird",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 16,
+        "max": 40
+      },
+      "description": "A glamorous, self-centred tropical bird who convinces Horton to sit on her egg while she takes a 'quick vacation' \u2014 and never comes back. Mayzie is fabulous, selfish, hilarious, and utterly unapologetic. She's the show's diva antagonist who ultimately gets her comeuppance.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "Mezzo-Soprano / Belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "Upper belt range, brassy and powerful",
+        "style_notes": "Big, brassy belt voice with diva quality. Latin/jazz influenced numbers require vocal swagger. 'Amazing Mayzie' is a full-on showgirl number. Must sound fabulous and completely self-absorbed."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "Jazz",
+          "Latin",
+          "Showgirl",
+          "Musical theatre"
+        ],
+        "stamina": "Moderate to high \u2014 dance-heavy featured numbers",
+        "notes": "Mayzie moves like a star \u2014 every entrance is a production number. Jazz and Latin choreography feature heavily. She should look like the most glamorous creature in the jungle."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Diva",
+          "Femme fatale",
+          "Comic villain",
+          "Glamour queen"
+        ],
+        "emotional_range": "Focused \u2014 vanity, charm, manipulation, brief regret",
+        "comedy_skills": true,
+        "notes": "Mayzie is pure fun to play. She's not evil, just spectacularly selfish. Every moment should be played with total self-assurance and glamour. The audience should simultaneously love and hate her."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Diva performance",
+          "Jazz/Latin dance",
+          "Comic timing",
+          "Glamorous stage presence"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Mayzie is the ultimate diva showcase \u2014 every scene is a star turn. This role develops belt technique, jazz dance, comic timing, and the joy of playing a fabulously selfish character. She's the role everyone remembers.",
+        "common_casting": "Strong belt voices with dance ability and natural star quality. The performer who walks into the room and owns it \u2014 that's Mayzie.",
+        "standout_opportunity": "'Amazing Mayzie' is a full showgirl production number that stops the show. The role is pure spotlight."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Belt vocal technique",
+          "Jazz/Latin dance",
+          "Diva character performance",
+          "Comic timing in featured role",
+          "Stage presence and star quality"
+        ],
+        "challenge_areas": [
+          "Making Mayzie entertainingly selfish rather than genuinely unlikable",
+          "Sustaining glamour in potentially silly costumes",
+          "The brief moment of vulnerability when she returns to the egg"
+        ],
+        "recommended_for": [
+          "Belt voices wanting a show-off role",
+          "Dancers with strong jazz skills",
+          "Performers who love playing the villain",
+          "Those developing star presence and confidence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Star quality \u2014 you walk in and own the room",
+          "Strong belt voice with diva quality",
+          "Jazz/Latin dance ability",
+          "Comedy timing and self-assurance",
+          "The ability to be fabulously awful"
+        ],
+        "common_mistakes": [
+          "Being genuinely mean instead of glamorously selfish",
+          "Not enough vocal power for the belt numbers",
+          "Lacking the physical confidence for the dance requirements",
+          "Playing it small \u2014 Mayzie is ALWAYS large"
+        ],
+        "tips": [
+          "Mayzie genuinely believes she's doing everyone a favour just by existing \u2014 play that conviction",
+          "'Amazing Mayzie' is your audition piece for life \u2014 make it SPECTACULAR",
+          "Think Beyonc\u00e9 meets a tropical bird \u2014 unapologetic, fabulous, larger than life",
+          "The tiny moment of regret when she sees the egg-elephant baby makes her human"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Amazing Mayzie",
+          "type": "Solo/Ensemble",
+          "notes": "Full-on showgirl number. Belt, jazz dance, and pure star power."
+        },
+        {
+          "title": "Amazing Gertrude",
+          "type": "Scene",
+          "notes": "Mayzie's influence on the egg-sitting plot. Comedy and glamour."
+        },
+        {
+          "title": "How Lucky You Are",
+          "type": "Solo",
+          "notes": "Mayzie's self-justification number. Jazz-influenced and deliciously selfish."
+        }
+      ]
+    },
+    {
+      "id": "sour-kangaroo",
+      "name": "Sour Kangaroo",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 18,
+        "max": 55
+      },
+      "description": "The sceptical, sharp-tongued leader of the jungle who refuses to believe Horton can hear Whos on a speck. Sour Kangaroo is the main antagonist \u2014 she organises the other animals against Horton, brings him to trial, and represents the danger of mob mentality and refusing to believe in what you can't see.",
+      "vocal": {
+        "range": "G3-E5",
+        "voice_type": "Alto / Mezzo with power belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "Mid to upper range, gospel and R&B influenced",
+        "style_notes": "The most vocally powerful role in the show. Gospel and R&B influenced with a massive belt. 'Biggest Blame Fool' is a gospel-choir showstopper. Must have vocal authority that commands the entire jungle."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Gospel movement",
+          "Character swagger",
+          "Musical theatre"
+        ],
+        "stamina": "Moderate",
+        "notes": "Sour Kangaroo moves with authority and swagger. Kangaroo pouch with Young Kangaroo is a physical comedy element. Must command the ensemble with physical presence."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "Antagonist",
+          "Authority figure",
+          "Mob leader",
+          "Sceptic"
+        ],
+        "emotional_range": "Focused \u2014 authority, contempt, self-righteousness, possible softening",
+        "comedy_skills": true,
+        "notes": "Sour Kangaroo is the most dangerous kind of villain \u2014 she's not evil, she genuinely believes she's right. Must convey absolute moral certainty while the audience knows she's wrong. The gospel-choir backing gives her scenes enormous power."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 2,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "Gospel/R&B belt singing",
+          "Commanding ensemble as leader",
+          "Working with Young Kangaroo puppet/child actor"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Sour Kangaroo is a vocal powerhouse role \u2014 'Biggest Blame Fool' with the gospel choir backing is one of the most electrifying moments in family musical theatre. This role develops belt technique, stage authority, and the skill of playing a compelling antagonist.",
+        "common_casting": "Power belters with gospel/R&B vocal quality. Often the strongest female singer in the company. Must have commanding presence.",
+        "standout_opportunity": "'Biggest Blame Fool' with full gospel choir is one of the biggest vocal showcases in modern musical theatre. This number alone makes the role a career highlight."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Gospel/R&B belt technique",
+          "Vocal power and projection",
+          "Playing compelling antagonist",
+          "Stage authority and ensemble leadership",
+          "Working with backing choir/ensemble"
+        ],
+        "challenge_areas": [
+          "Making the antagonist three-dimensional",
+          "Vocal demands of gospel-style belting",
+          "Being convincingly wrong while being vocally dominant"
+        ],
+        "recommended_for": [
+          "Power belters wanting a vocal showcase",
+          "Performers with gospel/R&B vocal background",
+          "Those developing stage authority and presence",
+          "Singer-actresses wanting a strong antagonist role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Exceptional belt voice with gospel quality",
+          "Commanding stage presence",
+          "The ability to lead an ensemble vocally",
+          "Authority and conviction in performance",
+          "Physical presence that demands attention"
+        ],
+        "common_mistakes": [
+          "Making Sour Kangaroo purely mean \u2014 she believes she's protecting the jungle",
+          "Not enough vocal power for the gospel numbers",
+          "Lacking the authority to command the ensemble",
+          "Playing one-note scepticism without any dimension"
+        ],
+        "tips": [
+          "Sour Kangaroo genuinely believes she's right \u2014 play the conviction, not the villainy",
+          "'Biggest Blame Fool' is a gospel revival meeting \u2014 bring that energy and vocal power",
+          "She's protecting the jungle from what she sees as dangerous nonsense \u2014 that's relatable",
+          "The moment the Whos are finally heard should shake Sour Kangaroo's certainty \u2014 play that"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Biggest Blame Fool",
+          "type": "Solo/Ensemble",
+          "notes": "Gospel-choir showstopper. Massive vocal showcase with full ensemble backing."
+        },
+        {
+          "title": "The Jungle of Nool",
+          "type": "Ensemble",
+          "notes": "Establishing the jungle world. Sour Kangaroo as community leader."
+        },
+        {
+          "title": "Havin' a Hunch",
+          "type": "Ensemble",
+          "notes": "The mob turns against Horton. Sour Kangaroo leads the charge."
+        }
+      ]
+    },
+    {
+      "id": "mr-mayor",
+      "name": "Mr. Mayor of Who-ville",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The Mayor of Who-ville and JoJo's father. Mr. Mayor is a well-meaning but anxious civic leader who struggles to balance his duties to the community with his concern for his imaginative son. He wants JoJo to conform and behave, but ultimately learns to value his son's unique perspective. A tenor role requiring warm comedy skills and genuine paternal concern. Mr. Mayor represents the pressure of conformity and the fear parents have when their children are different.",
+      "vocal": {
+        "range": "C3\u2013A4",
+        "voice_type": "Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013F4",
+        "style_notes": "Character tenor with warmth and comedic timing. Conversational singing style with moments of genuine emotion. Must blend well in family numbers with Mrs. Mayor and JoJo."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement",
+          "comedic timing"
+        ],
+        "stamina": "moderate",
+        "notes": "Character-driven movement rather than technical dance. Must be able to participate in Who-ville ensemble numbers with energy."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "worried father",
+          "civic leader",
+          "everyman"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must balance comedy with genuine parental concern. The audience needs to see that his desire for JoJo to conform comes from love, not malice. Strong comedic timing essential for the Who-ville scenes."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "comedic timing",
+          "paternal warmth"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "A rewarding supporting role with strong comedic and emotional material. Mr. Mayor gets several memorable scenes and his journey from conformist parent to accepting father mirrors the show's themes. Great for character tenors.",
+        "common_casting": "Character tenor with natural dad energy and good comedy instincts. Often cast with a performer who has genuine warmth and likeability.",
+        "standout_opportunity": "The moments where Mr. Mayor chooses his son over conformity are genuinely moving and can elevate a good performance to a memorable one."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character comedy",
+          "emotional arc development",
+          "family scene dynamics",
+          "supporting role leadership"
+        ],
+        "challenge_areas": [
+          "balancing comedy with genuine emotion",
+          "not being overshadowed by flashier roles"
+        ],
+        "recommended_for": [
+          "character tenors seeking supporting roles",
+          "comedic actors developing musical theatre skills",
+          "performers building parental role experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "warmth and likeability",
+          "comedy timing",
+          "genuine concern for JoJo",
+          "strong character tenor voice"
+        ],
+        "common_mistakes": [
+          "playing Mr. Mayor as purely comic without heart",
+          "making him unlikeable in his conformist moments"
+        ],
+        "tips": [
+          "Show the love beneath the anxiety",
+          "Comedy should come from character, not mugging",
+          "Demonstrate warmth in your audition interactions"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Here on Who",
+          "type": "ensemble feature",
+          "notes": "Introduces Who-ville and Mr. Mayor's civic pride. Upbeat character number."
+        },
+        {
+          "title": "How to Raise a Child",
+          "type": "duet",
+          "notes": "Duet with Mrs. Mayor about parenting JoJo. Comedic but with underlying paternal anxiety."
+        }
+      ]
+    },
+    {
+      "id": "mrs-mayor",
+      "name": "Mrs. Mayor of Who-ville",
+      "role_type": "supporting",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "The Mayor's wife and JoJo's mother. Mrs. Mayor is more sympathetic to JoJo's imaginative nature than her husband, serving as a mediating force between father and son. She understands that JoJo is special but also fears for his future. A mezzo-soprano role requiring maternal warmth, quiet strength, and the ability to ground the family scenes with emotional honesty.",
+      "vocal": {
+        "range": "A3\u2013E5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "D5\u2013E5",
+        "tessitura": "C4\u2013C5",
+        "style_notes": "Warm mezzo with maternal quality. Must convey emotional depth in both comedic and dramatic moments. Strong belt for the more emotional numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Character-driven movement. Participates in Who-ville ensemble numbers."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "concerned mother",
+          "mediator",
+          "quiet strength"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "Must convey a mother's deep understanding of her child balanced against the social pressure to conform. More emotionally grounded than Mr. Mayor \u2014 she's the heart of the family scenes."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "maternal warmth",
+          "emotional grounding"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "A meaningful supporting role with strong emotional material. Mrs. Mayor's quiet understanding of JoJo provides some of the show's most touching moments. Great for mezzos who excel at emotional authenticity.",
+        "common_casting": "Warm mezzo-soprano with natural maternal quality. Often cast with a performer who can ground the Seussical comedy with real emotional depth.",
+        "standout_opportunity": "The moments between Mrs. Mayor and JoJo can be genuinely moving \u2014 a performer who invests in this relationship creates the emotional anchor for the Who-ville storyline."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "emotional authenticity",
+          "family scene dynamics",
+          "supporting role craft",
+          "balancing comedy and drama"
+        ],
+        "challenge_areas": [
+          "not being overshadowed by more comedic roles",
+          "finding the emotional truth in a fantastical setting"
+        ],
+        "recommended_for": [
+          "mezzo-sopranos seeking supporting roles",
+          "performers developing maternal character types",
+          "actors building emotional range"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "maternal warmth",
+          "emotional depth",
+          "strong mezzo voice",
+          "ability to ground comedy with heart"
+        ],
+        "common_mistakes": [
+          "playing Mrs. Mayor as one-dimensionally worried",
+          "not finding her own comedic moments"
+        ],
+        "tips": [
+          "Show both the warmth and the quiet strength",
+          "Find the humour in the parenting struggles",
+          "Your emotional honesty will set you apart"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "How to Raise a Child",
+          "type": "duet",
+          "notes": "Duet with Mr. Mayor. Comedic parenting number with emotional undertones."
+        },
+        {
+          "title": "Havin' a Hunch",
+          "type": "solo/ensemble",
+          "notes": "Mrs. Mayor's emotional expression of hope and intuition about JoJo. Tender mezzo feature."
+        }
+      ]
+    },
+    {
+      "id": "seuss-bird-girls",
+      "name": "Bird Girls",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 16,
+        "max": 35
+      },
+      "description": "A trio of fabulous backup singers who follow Mayzie La Bird and provide Motown-style vocal accompaniment throughout the show. The Bird Girls (typically three performers) serve as a Greek chorus with attitude, commenting on the action with tight harmonies and stylish choreography. They are Mayzie's entourage and mirror her vanity, but also function as the show's signature vocal texture. One of the most recognisable and coveted featured ensemble roles in community theatre. Often performed with glamorous bird-inspired costumes and synchronized choreography.",
+      "vocal": {
+        "range": "A3\u2013F5",
+        "voice_type": "Soprano / Mezzo-Soprano / Alto (trio)",
+        "belt_required": true,
+        "belt_range": "D5\u2013F5",
+        "tessitura": "C4\u2013D5",
+        "style_notes": "Tight three-part harmony is essential. Motown/girl-group style with strong belt. Must blend perfectly while each voice remains distinct. Pop/R&B vocal colour with musical theatre projection."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "jazz",
+          "Motown-style choreography",
+          "synchronized movement"
+        ],
+        "stamina": "high",
+        "notes": "Significant choreography throughout the show. Must move as a synchronized unit. Jazz and character dance skills essential. High energy sustained across the entire show."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "diva backup singers",
+          "Greek chorus",
+          "comic commentary"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must function as a comic unit while maintaining individual personality. Sass, attitude, and comedic timing are essential. They comment on the action like a Motown girl group providing theatrical narration."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 3,
+        "special_skills": [
+          "tight harmony singing",
+          "synchronized choreography",
+          "comedic ensemble work"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "One of the most visible and coveted featured ensemble roles in musical theatre. The Bird Girls are on stage for a huge percentage of the show, providing the signature vocal texture and comedic commentary. Audiences love them and they're often the roles people remember most vividly.",
+        "common_casting": "Strong female singers with belt ability and dance skills. Chemistry between the three performers is crucial \u2014 they must function as a seamless unit. Often cast with triple-threat performers.",
+        "standout_opportunity": "The Bird Girls are inherently attention-grabbing \u2014 their Motown style, synchronized choreography, and comedic attitude make them impossible to ignore. A strong trio can steal the show."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "harmony singing",
+          "synchronized performance",
+          "comedic ensemble work",
+          "sustained energy and stamina",
+          "girl-group vocal style"
+        ],
+        "challenge_areas": [
+          "maintaining synchronization while staying individual",
+          "sustaining high energy across the full show"
+        ],
+        "recommended_for": [
+          "strong female singers seeking high-visibility ensemble work",
+          "dancers with vocal ability",
+          "performers developing trio/group performance skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong belt voice",
+          "ability to harmonize",
+          "dance ability",
+          "sass and personality",
+          "chemistry with other performers"
+        ],
+        "common_mistakes": [
+          "trying to stand out instead of blending as a trio",
+          "neglecting the dance component",
+          "not bringing enough attitude and personality"
+        ],
+        "tips": [
+          "Prepare a Motown/girl-group style audition piece",
+          "Show you can harmonize and blend",
+          "Bring the sass \u2014 these girls have ATTITUDE",
+          "Dance call is crucial \u2014 prepare your jazz technique"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Oh, the Thinks You Can Think!",
+          "type": "ensemble feature",
+          "notes": "Bird Girls provide vocal backdrop with signature harmonies."
+        },
+        {
+          "title": "Biggest Blame Fool",
+          "type": "ensemble feature",
+          "notes": "Major Bird Girls feature number with Sour Kangaroo. Motown-style backup vocals."
+        },
+        {
+          "title": "Amayzing Mayzie",
+          "type": "ensemble feature",
+          "notes": "Backing Mayzie as her entourage. Full choreography and vocal harmonies."
+        },
+        {
+          "title": "How Lucky You Are (Reprise)",
+          "type": "ensemble feature",
+          "notes": "Bird Girls commentary throughout the show. Signature vocal texture."
+        }
+      ]
+    },
+    {
+      "id": "seuss-general-schmitz",
+      "name": "General Genghis Kahn Schmitz",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 25,
+        "max": 55
+      },
+      "description": "The pompous military general who runs the military academy where JoJo is sent after being expelled from school. General Schmitz is a comic authority figure who represents the rigid conformity that stifles JoJo's imagination. He runs his academy with absurd military precision and provides some of the show's broadest comedy. A baritone character role typically doubled from the ensemble, requiring strong comedic chops and a commanding presence.",
+      "vocal": {
+        "range": "A2\u2013E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "C3\u2013C4",
+        "style_notes": "Character baritone with military bark. Comedic vocal delivery \u2014 must be able to sing with bombastic authority while being funny. Strong projection essential for the drill sergeant moments."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "military drill",
+          "comedic marching"
+        ],
+        "stamina": "moderate",
+        "notes": "Military-style movement and comedic physicality. Must march with exaggerated precision. No technical dance but strong physical comedy skills needed."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "military authority",
+          "comic villain",
+          "pompous official"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Broad comedy role requiring excellent timing and physical comedy. Must be intimidating enough to be a genuine threat to JoJo while being ridiculous enough for the audience to laugh. Think Gilbert & Sullivan patter-style authority figure."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "physical comedy",
+          "military bearing",
+          "comedic timing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A scene-stealing comic character role with a featured song and memorable moments. General Schmitz's military academy sequence is a comedy highlight of the show. Typically doubled from ensemble, giving a strong character actor a chance to shine.",
+        "common_casting": "Character baritone with strong comedy skills. Often cast with a larger-than-life performer who can command the stage with bombastic energy. Works well for performers who excel at broad comedy.",
+        "standout_opportunity": "The military academy sequence is a guaranteed laugh \u2014 a performer who fully commits to the absurd military pomposity can create one of the show's most memorable moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "broad comedy performance",
+          "character baritone technique",
+          "physical comedy",
+          "comedic authority roles"
+        ],
+        "challenge_areas": [
+          "finding the right level of comedy without going too far",
+          "making the character threatening enough to matter dramatically"
+        ],
+        "recommended_for": [
+          "baritones developing comedy skills",
+          "character actors seeking featured ensemble roles",
+          "performers building physical comedy repertoire"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong comedic timing",
+          "commanding baritone voice",
+          "physical comedy ability",
+          "ability to be funny while staying in character"
+        ],
+        "common_mistakes": [
+          "going too over-the-top too early \u2014 save the biggest moments",
+          "forgetting that Schmitz is a real threat to JoJo",
+          "mugging instead of playing the character truthfully"
+        ],
+        "tips": [
+          "Play it straight \u2014 the comedy comes from the character's sincerity",
+          "Military bearing should be exaggerated but consistent",
+          "Show your comedic range in the audition"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Military",
+          "type": "featured",
+          "notes": "General Schmitz's signature number. Military march with comedic lyrics about conformity and discipline. Baritone patter-style delivery."
+        }
+      ]
+    },
+    {
+      "id": "seuss-wickershams",
+      "name": "Wickersham Brothers",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 16,
+        "max": 35
+      },
+      "description": "A gang of mischievous monkeys who antagonise Horton and steal the clover containing Who-ville. The Wickersham Brothers (typically three performers) are the show's physical comedy villains \u2014 acrobatic, energetic troublemakers who provide slapstick humour and physical threat. They work as a coordinated pack, using agility and numbers to torment Horton. A high-energy featured ensemble role requiring strong physical theatre skills and comedic timing.",
+      "vocal": {
+        "range": "B2\u2013G4",
+        "voice_type": "Tenor / Baritone / Bass (trio)",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013D4",
+        "style_notes": "Character voices with percussive, rhythmic singing style. Monkey-like vocalisations and chanting. Must harmonize in a rough, aggressive style contrasting with the Bird Girls' smooth harmonies."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "acrobatics",
+          "physical comedy",
+          "animal movement"
+        ],
+        "stamina": "very high",
+        "notes": "Highly physical role requiring monkey-like movement, acrobatics or tumbling ability, and sustained high-energy performance. Must move as a coordinated pack. Physical fitness is essential."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "troublemakers",
+          "bullies",
+          "comic villains"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must function as a comedic unit while maintaining menace. Physical comedy and slapstick skills essential. The humour comes from their coordinated mischief and their inability to understand why Horton cares about the Whos."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 2,
+        "special_skills": [
+          "acrobatics",
+          "physical comedy",
+          "animal movement",
+          "synchronized performance"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "A highly physical, highly visible featured ensemble role. The Wickershams are audience favourites due to their acrobatic antics and coordinated mischief. Excellent for physical performers who want to develop their comedy and movement skills.",
+        "common_casting": "Athletic male performers with acrobatic or tumbling ability. Chemistry and coordination between the three is crucial. Often cast with dancers or physical theatre performers.",
+        "standout_opportunity": "The Wickersham sequences are physical comedy highlights \u2014 performers who bring genuine acrobatic skill and comedic timing create unforgettable moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "physical comedy",
+          "acrobatic performance",
+          "ensemble coordination",
+          "animal characterisation",
+          "sustained high-energy performance"
+        ],
+        "challenge_areas": [
+          "maintaining physical intensity throughout the show",
+          "coordinating as a trio while staying safe"
+        ],
+        "recommended_for": [
+          "physical performers seeking featured roles",
+          "dancers developing comedy skills",
+          "athletic performers entering musical theatre"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "physical fitness and agility",
+          "tumbling or acrobatic skills",
+          "comedic timing",
+          "ability to work as a coordinated group",
+          "high energy"
+        ],
+        "common_mistakes": [
+          "prioritising individual tricks over group coordination",
+          "running out of energy before the show ends",
+          "being menacing without being funny"
+        ],
+        "tips": [
+          "Demonstrate your physical skills in the movement call",
+          "Show you can work cooperatively with others",
+          "Bring monkey-like energy to your audition \u2014 physicality matters more than vocal power here"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Monkey Around",
+          "type": "featured ensemble",
+          "notes": "The Wickershams' signature number. High-energy physical comedy with percussive vocals and acrobatic choreography."
+        },
+        {
+          "title": "Biggest Blame Fool",
+          "type": "ensemble feature",
+          "notes": "Join forces with Sour Kangaroo to antagonise Horton. Aggressive, rhythmic ensemble number."
+        }
+      ]
+    },
+    {
+      "id": "seuss-vlad-vladikoff",
+      "name": "Vlad Vladikoff",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 45
+      },
+      "description": "A villainous black-bottomed eagle hired by the Sour Kangaroo to steal Horton's clover and drop it into a massive field of identical clovers. Vlad is a menacing mercenary bird who provides a dramatic threat in the second act. A brief but memorable featured ensemble role typically doubled from the ensemble, requiring a strong character voice and imposing physical presence.",
+      "vocal": {
+        "range": "A2\u2013E4",
+        "voice_type": "Tenor/Baritone/Bass",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013C4",
+        "style_notes": "Dark, menacing character voice. Eastern European accent often used. Must be vocally imposing in a brief appearance. Joins ensemble singing in company numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "bird movement",
+          "character movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Must create convincing eagle/bird-of-prey movement. Swooping, soaring physicality. Brief but impactful physical presence."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "mercenary",
+          "villain",
+          "menacing creature"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must be genuinely threatening while fitting the show's whimsical tone. A character actor's delight \u2014 the Eastern European villain eagle is inherently theatrical and fun. Brief stage time requires instant impact."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": [
+          "bird-of-prey movement",
+          "character voice work",
+          "accent work"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A brief but scene-stealing cameo role. Vlad Vladikoff is one of those small roles that audiences remember because of the character's inherent theatricality. Typically doubled from ensemble \u2014 great for character actors.",
+        "common_casting": "Character actor from the ensemble with strong physical presence and accent ability. Often cast with a tall, imposing performer.",
+        "standout_opportunity": "Vlad's entrance is always a memorable moment \u2014 a performer who commits fully to the menacing eagle character can steal focus in seconds."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character voice and accent work",
+          "physical character creation",
+          "making impact in minimal time",
+          "villain characterisation"
+        ],
+        "challenge_areas": [
+          "maximum impact with minimal stage time",
+          "transitioning quickly between ensemble and featured character"
+        ],
+        "recommended_for": [
+          "character actors seeking memorable ensemble roles",
+          "performers developing physical character skills",
+          "actors building villain repertoire"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong character instincts",
+          "imposing physical presence",
+          "accent/voice ability",
+          "commitment to character"
+        ],
+        "common_mistakes": [
+          "not committing fully to the character choice",
+          "being silly instead of genuinely menacing"
+        ],
+        "tips": [
+          "Make a bold character choice and commit to it completely",
+          "Physical presence matters \u2014 use your body to create the eagle",
+          "This role is usually cast from ensemble callbacks"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Ensemble numbers",
+          "type": "ensemble",
+          "notes": "Sings in ensemble. Featured character moments are primarily spoken/acted rather than sung."
+        }
+      ]
+    },
+    {
+      "id": "seuss-yertle",
+      "name": "Judge Yertle the Turtle",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 60
+      },
+      "description": "The self-important judge who presides over Horton's trial in the second act. Yertle the Turtle is a beloved Dr. Seuss character who appears here as an authority figure dispensing justice with pompous absurdity. A baritone cameo role typically doubled from the ensemble, requiring comedic authority and the ability to command a courtroom scene.",
+      "vocal": {
+        "range": "Bb2\u2013D4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013Bb3",
+        "style_notes": "Authoritative baritone with comedic delivery. Must project judicial pomposity. Joins ensemble in company numbers."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "low",
+        "notes": "Turtle-like movement. Slow, deliberate, self-important physicality. No technical dance required."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "pompous judge",
+          "authority figure",
+          "comic cameo"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must command the courtroom scene with absurd judicial authority. Comedy comes from the contrast between Yertle's self-importance and the ridiculous situation. Character actors who can play authority with deadpan comedy excel."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "comedic authority",
+          "character physicality"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "A fun character cameo that audiences recognise from Dr. Seuss. The trial scene is a comedy highlight and Yertle gets to command it. Typically doubled from ensemble \u2014 perfect for character baritones.",
+        "common_casting": "Character baritone from the ensemble. Often cast with a performer who has natural comedic authority and deadpan timing.",
+        "standout_opportunity": "The trial scene is all yours \u2014 a performer who plays Yertle with committed pomposity gets guaranteed laughs."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "comedic authority roles",
+          "character acting",
+          "scene command",
+          "courtroom staging"
+        ],
+        "challenge_areas": [
+          "making maximum comic impact in a brief scene",
+          "turtle physicality while maintaining audibility"
+        ],
+        "recommended_for": [
+          "character baritones seeking featured cameos",
+          "comic actors building ensemble credits",
+          "performers developing authority character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "comedic timing",
+          "authoritative baritone",
+          "character commitment",
+          "ability to command a scene"
+        ],
+        "common_mistakes": [
+          "rushing the comedy \u2014 let the laughs land",
+          "not committing to the turtle physicality"
+        ],
+        "tips": [
+          "Play the authority completely straight \u2014 the comedy is inherent",
+          "Deadpan is funnier than mugging",
+          "Show character range in ensemble callbacks"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Ensemble numbers",
+          "type": "ensemble",
+          "notes": "Sings in full company numbers. Featured spoken/character moments in the trial scene."
+        }
+      ]
+    },
+    {
+      "id": "seuss-grinch",
+      "name": "The Grinch",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 18,
+        "max": 50
+      },
+      "description": "The iconic Dr. Seuss villain makes a brief cameo appearance in Seussical, appearing as part of the Seussian world. The Grinch is instantly recognisable and his appearance is always a crowd-pleasing moment. A very brief cameo typically doubled from the ensemble, requiring strong character commitment and the ability to make an instant impression. Some productions expand this role, but typically it's a walk-on/featured moment.",
+      "vocal": {
+        "range": "C3\u2013D4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013B3",
+        "style_notes": "Character voice \u2014 gravelly, menacing, iconic Grinch quality. Minimal singing but must blend in ensemble numbers when not in character."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "character movement"
+        ],
+        "stamina": "low",
+        "notes": "Grinch-like physicality \u2014 hunched, sneaky, expressive. Iconic character movement that audiences expect."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "iconic villain",
+          "comic cameo"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Must embody one of the most recognisable characters in children's literature in a brief moment. Physical comedy and character voice essential. The audience will cheer the moment they recognise the Grinch."
+      },
+      "performance": {
+        "stage_time_percentage": 2,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "iconic character embodiment",
+          "physical comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 1,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A tiny but crowd-pleasing cameo. The Grinch's appearance always gets a reaction from the audience. Typically doubled from ensemble \u2014 a fun bonus role for a character actor.",
+        "common_casting": "Character actor from the ensemble who can embody the iconic Grinch physicality. Green makeup/costume does a lot of the work, but the performer must commit fully.",
+        "standout_opportunity": "Even a two-second Grinch appearance gets applause if done with commitment. It's the ultimate 'small role, big reaction' moment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "iconic character embodiment",
+          "physical character work",
+          "making impact in seconds"
+        ],
+        "challenge_areas": [
+          "living up to audience expectations of such an iconic character"
+        ],
+        "recommended_for": [
+          "character actors seeking fun ensemble cameos",
+          "physical performers",
+          "anyone who wants to play the Grinch!"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "physical comedy ability",
+          "character commitment",
+          "ensemble versatility"
+        ],
+        "common_mistakes": [
+          "halfhearted Grinch \u2014 you must commit 100%",
+          "overdoing it \u2014 the costume and makeup help, trust the character"
+        ],
+        "tips": [
+          "This is usually cast from ensemble callbacks \u2014 be a great ensemble member first",
+          "Show your character range",
+          "Physical comedy skills will help"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Ensemble numbers",
+          "type": "ensemble",
+          "notes": "Sings as ensemble member. Grinch cameo is primarily a physical/character moment."
+        }
+      ]
+    },
+    {
+      "id": "seuss-thing1-thing2",
+      "name": "Thing 1 & Thing 2",
+      "role_type": "featured_ensemble",
+      "gender": "Either",
+      "age_range": {
+        "min": 14,
+        "max": 30
+      },
+      "description": "The Cat in the Hat's chaotic companions \u2014 a pair of identical, red-suited troublemakers who create mayhem wherever they go. Thing 1 and Thing 2 are iconic Dr. Seuss characters who serve as the Cat's physical comedy sidekicks, causing destruction and delight in equal measure. A paired featured ensemble role requiring strong physical comedy, acrobatic ability, and perfect synchronization. These roles are gender-flexible and often cast with performers of similar build.",
+      "vocal": {
+        "range": "flexible",
+        "voice_type": "Any",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Minimal singing \u2014 primarily physical comedy roles. Must blend with ensemble in company numbers. Occasional unison vocal moments with playful, childlike quality."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": [
+          "acrobatics",
+          "physical comedy",
+          "synchronized movement",
+          "tumbling"
+        ],
+        "stamina": "very high",
+        "notes": "Highly physical roles requiring tumbling, acrobatic skills, and perfect mirror-image synchronization. Must match each other's physicality precisely. Some of the most physically demanding ensemble roles in the show."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "mischief makers",
+          "physical comedians",
+          "iconic duo"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": true,
+        "notes": "Physical comedy is the primary acting skill required. Must communicate entirely through movement and physical expression. Work as a perfectly synchronized pair \u2014 finishing each other's movements and creating chaos as a unit."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 2,
+        "special_skills": [
+          "acrobatics",
+          "tumbling",
+          "synchronized movement",
+          "physical comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Highly visible, highly physical featured ensemble roles. Thing 1 and Thing 2 are beloved characters whose physical comedy antics are always crowd favourites. Excellent for physical performers who want to develop their comedy skills in a recognisable role.",
+        "common_casting": "Physical performers of similar build who can synchronize perfectly. Gymnasts, acrobats, and physical theatre performers excel. Gender-flexible casting \u2014 any combination works.",
+        "standout_opportunity": "Every entrance is a spectacle \u2014 audiences love the chaos of Thing 1 and Thing 2. Physical performers who bring genuine acrobatic skill create unforgettable moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "synchronized performance",
+          "physical comedy",
+          "acrobatic stagecraft",
+          "non-verbal communication",
+          "ensemble partnership"
+        ],
+        "challenge_areas": [
+          "maintaining perfect synchronization",
+          "sustaining physical intensity",
+          "telling a story through movement alone"
+        ],
+        "recommended_for": [
+          "physical performers and gymnasts entering theatre",
+          "dancers seeking featured comedic roles",
+          "performers developing physical comedy skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "physical agility and acrobatic skill",
+          "ability to synchronize with a partner",
+          "high energy and stamina",
+          "comedic timing through movement"
+        ],
+        "common_mistakes": [
+          "trying to stand out individually instead of working as a pair",
+          "running out of energy",
+          "being chaotic without comedic structure"
+        ],
+        "tips": [
+          "If possible, audition with a partner you've rehearsed with",
+          "Demonstrate tumbling/acrobatic skills in the movement call",
+          "Show that you can be physically wild while remaining safe and in control"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Oh, the Thinks You Can Think!",
+          "type": "ensemble feature",
+          "notes": "Physical comedy feature as the Cat's chaotic sidekicks. Minimal vocals, maximum physical comedy."
+        },
+        {
+          "title": "Cat's various numbers",
+          "type": "ensemble feature",
+          "notes": "Accompany the Cat in the Hat in several numbers, providing physical comedy backdrop."
+        }
+      ]
+    },
+    {
+      "id": "ensemble-seuss",
+      "name": "Ensemble (Jungle Animals / Whos / Creatures)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 6,
+        "max": 65
+      },
+      "description": "The Seussical ensemble brings the entire Dr. Seuss universe to life, portraying Jungle Animals, Whos, Fish, Citizens of Nool, and various Seussian creatures. Many named featured roles (Bird Girls, Wickersham Brothers, Thing 1 & Thing 2, General Schmitz, Vlad Vladikoff, Judge Yertle, The Grinch) are typically doubled from this ensemble, providing performers with numerous opportunities for featured character moments. The ensemble drives the show's high-energy, colourful production numbers and must sustain tremendous physicality and vocal energy throughout. Strong singers, dancers, and physical performers are all needed for this versatile ensemble.",
+      "vocal": {
+        "range": "Various",
+        "voice_type": "Mixed chorus with gospel/pop ensemble style",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Varied \u2014 strong harmony singing, gospel choir moments",
+        "style_notes": "Must handle multiple vocal styles \u2014 gospel backing for Sour Kangaroo, pop ensemble, character singing for Wickershams. The Bird Girls especially need strong belt/harmony skills. Full ensemble numbers require tight harmonies."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "Musical theatre",
+          "Jazz",
+          "Character movement",
+          "Physical comedy"
+        ],
+        "stamina": "High \u2014 multiple transformations and group numbers",
+        "notes": "Each ensemble group has distinct movement: Wickershams are aggressive and simian, Bird Girls are sassy and coordinated, Whos are tiny and fussy, jungle animals are varied. High creativity required."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "Multiple animal/Who characters",
+          "World-building",
+          "Greek chorus"
+        ],
+        "emotional_range": "Varied \u2014 joyful, menacing, comic, communal",
+        "comedy_skills": true,
+        "notes": "The ensemble creates the entire Seussian universe. Each performer typically plays 3-5 distinct characters/groups. Must commit fully to each transformation."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 4,
+        "special_skills": [
+          "Multiple character creation",
+          "Gospel/pop ensemble singing",
+          "Animal physicality",
+          "Quick character transformations"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_grow"
+        ],
+        "why": "The Seussical ensemble is one of the most fun and varied in musical theatre \u2014 you get to play monkeys, birds, fish, tiny Whos, and more. The gospel choir backing for Sour Kangaroo gives the ensemble genuine vocal spotlight. Wonderful for all ages and experience levels.",
+        "common_casting": "Performers of ALL ages and abilities \u2014 Seussical is one of the most inclusive casts possible. Strong singers valued for Bird Girls and Wickershams. Children welcome for Whos.",
+        "standout_opportunity": "The Bird Girls (Sour Kangaroo's backup trio) get significant vocal moments. Wickersham Brothers get great physical comedy. The ensemble's final 'YOPP!' is a collective triumph."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Versatility across multiple characters",
+          "Gospel/pop ensemble singing",
+          "Character physicality for animals",
+          "Quick-change and transformation skills",
+          "Ensemble cohesion and teamwork"
+        ],
+        "challenge_areas": [
+          "Managing multiple character tracks",
+          "Maintaining energy across varied roles",
+          "Quick transitions between worlds"
+        ],
+        "recommended_for": [
+          "First-time performers of any age",
+          "Young performers getting initial ensemble experience",
+          "Versatile performers who love playing multiple roles",
+          "Singers wanting gospel/pop ensemble experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Versatility and creativity",
+          "Strong ensemble singing voice",
+          "Physical expressiveness",
+          "Enthusiasm and commitment",
+          "Team spirit"
+        ],
+        "common_mistakes": [
+          "Playing all animal characters the same way",
+          "Not committing to the Seussian style \u2014 go bigger than you think",
+          "Losing energy in ensemble tracks"
+        ],
+        "tips": [
+          "Create specific, distinct characters for each group you play",
+          "The Bird Girls especially \u2014 practice tight harmonies and coordinated movement",
+          "Seussical encourages creativity \u2014 bring wild ideas to rehearsal",
+          "The final 'YOPP!' where the Whos are heard should feel like the most important sound you've ever made"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Oh, the Thinks You Can Think!",
+          "type": "Ensemble",
+          "notes": "Opening number. Full company creating the Seussian universe."
+        },
+        {
+          "title": "Biggest Blame Fool",
+          "type": "Ensemble (Bird Girls featured)",
+          "notes": "Gospel choir backing for Sour Kangaroo. Bird Girls get significant vocal spotlight."
+        },
+        {
+          "title": "Monkey Around",
+          "type": "Ensemble (Wickershams)",
+          "notes": "The Wickersham Brothers' menacing number. Physical and vocal."
+        },
+        {
+          "title": "Green Eggs and Ham",
+          "type": "Ensemble",
+          "notes": "Fun, silly ensemble number that's a guaranteed crowd-pleaser."
+        },
+        {
+          "title": "Finale: Oh, the Thinks You Can Think!",
+          "type": "Ensemble",
+          "notes": "Full company triumphant finale. The collective 'YOPP!' moment."
+        }
+      ]
+    }
+  ]
+}

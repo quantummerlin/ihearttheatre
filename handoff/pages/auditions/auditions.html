@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audition Noticeboard — iHeartTheatre</title>
+  <link rel="stylesheet" href="auditions.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-brand">
+      <span class="heart">♥</span> iHeartTheatre
+    </a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#" class="active">Auditions</a>
+      <a href="/services">Services</a>
+      <a href="#">Shows</a>
+      <a href="#">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>🎭 Audition Noticeboard</h1>
+    <p>Your one-stop board for musical theatre auditions across Melbourne & Victoria. Updated by the community, always free.</p>
+  </section>
+
+  <!-- SUBMIT BANNER -->
+  <div class="submit-banner">
+    <p>🎤 <strong>Theatre companies:</strong> Share your audition announcements with hundreds of local performers!</p>
+    <a href="mailto:auditions@ihearttheatre.com.au?subject=Audition%20Announcement%20—%20[Show%20Name]&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20add%20our%20audition%20to%20the%20noticeboard%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AAudition%20Date%3A%20%0ALocation%3A%20%0ALink%3A%20%0ARoles%20Available%3A%20%0ANotes%3A%20%0A%0AThanks!" class="btn">Submit an Audition →</a>
+  </div>
+
+  <!-- STATS BAR -->
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-number" id="stat-total">—</div>
+      <div class="stat-label">Total Listings</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" id="stat-open">—</div>
+      <div class="stat-label">Open Now</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" id="stat-companies">—</div>
+      <div class="stat-label">Companies</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number" id="stat-month">—</div>
+      <div class="stat-label">This Month</div>
+    </div>
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search shows, companies, roles...">
+    </div>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="open">Open Now</button>
+      <button class="filter-btn" data-filter="soon">Auditions Soon</button>
+      <button class="filter-btn" data-filter="musical">Musicals</button>
+      <button class="filter-btn" data-filter="melbourne">Melbourne</button>
+      <button class="filter-btn" data-filter="regional">Regional</button>
+      <button class="filter-btn" data-filter="junior">Junior/Youth</button>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards-container">
+    <div class="cards-grid" id="cards-grid"></div>
+    <div class="no-results" id="no-results">
+      <p>😕 No auditions match your search. Try different keywords or clear filters.</p>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Companies Submit</h3>
+        <p>Theatre companies email us a link to their audition announcement. That's it — just a link.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>We Post It</h3>
+        <p>We add the listing to the noticeboard within 24 hours, with all key details front and centre.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Performers Find It</h3>
+        <p>Performers browse, search and filter to discover auditions perfectly matched to their skills.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Always Free</h3>
+        <p>No fees for companies or performers. We're here to connect the Victorian theatre community.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 <a href="#">iHeartTheatre</a> — Built with ♥ for Melbourne's musical theatre community</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Auditions</a>
+      <a href="/services">Services</a>
+      <a href="mailto:auditions@ihearttheatre.com.au">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================
+    // DATA & STATE
+    // ============================================
+    let allSubmissions = [];
+    let activeFilter = 'all';
+
+    // ============================================
+    // DEMO DATA (fallback if JSON fetch fails)
+    // ============================================
+    function getDemoData() {
+      return [
+        {
+          id: "demo-001",
+          show_title: "Into the Woods",
+          company: "Fab Nobs Theatre",
+          type: "musical",
+          audition_date: "2026-07-15",
+          closing_date: "2026-07-10",
+          audition_location: "Wangaratta Performing Arts Centre, Wangaratta",
+          region: "regional",
+          submission_link: "https://www.fabnobs.com.au/auditions",
+          roles_available: "All principal and ensemble roles",
+          notes: "Seeking strong singers and actors of all ages. Prepare 32 bars in the style of the show. Cold reads from script.",
+          date_posted: "2025-06-15",
+          status: "active",
+          tags: ["musical", "all ages", "regional", "sondheim"]
+        },
+        {
+          id: "demo-002",
+          show_title: "Jersey Boys",
+          company: "CLOC Musical Theatre",
+          type: "musical",
+          audition_date: "2026-05-20",
+          closing_date: "2026-05-15",
+          audition_location: "National Theatre, St Kilda",
+          region: "melbourne",
+          submission_link: "https://www.cloc.org.au/auditions",
+          roles_available: "Frankie Valli, Tommy DeVito, Bob Gaudio, Nick Massi, Bob Crewe, Gyp DeCarlo, Mary Delgado + ensemble",
+          notes: "Strong male vocalists essential. Falsetto range required for Frankie Valli.",
+          date_posted: "2025-06-10",
+          status: "active",
+          tags: ["musical", "adults", "melbourne", "jukebox"]
+        },
+        {
+          id: "demo-003",
+          show_title: "Frozen Jr.",
+          company: "Babirra Music Theatre",
+          type: "musical",
+          audition_date: "2026-03-01",
+          closing_date: "2026-02-25",
+          audition_location: "Karralyka Centre, Ringwood",
+          region: "melbourne",
+          submission_link: "https://www.babirra.org.au/auditions",
+          roles_available: "Elsa, Anna, Hans, Kristoff, Olaf, Sven, Duke of Weselton + ensemble",
+          notes: "Junior production for performers aged 8-18. Strong belt required for Elsa. Dance audition included.",
+          date_posted: "2025-06-01",
+          status: "active",
+          tags: ["musical", "junior", "melbourne", "disney"]
+        },
+        {
+          id: "demo-004",
+          show_title: "Sister Act",
+          company: "Whitehorse Musical Theatre",
+          type: "musical",
+          audition_date: "2026-02-10",
+          closing_date: "2026-02-05",
+          audition_location: "Whitehorse Centre, Nunawading",
+          region: "melbourne",
+          submission_link: "https://www.wmtc.org.au/auditions",
+          roles_available: "Deloris Van Cartier, Mother Superior, Curtis Jackson, Eddie Souther, all nuns and ensemble",
+          notes: "Seeking powerful female vocalists. Motown/soul style. All ethnicities encouraged.",
+          date_posted: "2025-05-28",
+          status: "active",
+          tags: ["musical", "adults", "melbourne", "comedy"]
+        },
+        {
+          id: "demo-005",
+          show_title: "Mary Poppins",
+          company: "Geelong Lyric Theatre",
+          type: "musical",
+          audition_date: "2026-04-05",
+          closing_date: "2026-03-30",
+          audition_location: "Geelong Arts Centre, Geelong",
+          region: "regional",
+          submission_link: "https://www.geelonglyric.com.au/auditions",
+          roles_available: "Mary Poppins, Bert, George Banks, Winifred Banks, Jane, Michael, Bird Woman + ensemble",
+          notes: "Flying involved for Mary Poppins. Strong soprano for Mary. Triple-threat Bert. Child auditions separate day.",
+          date_posted: "2025-05-20",
+          status: "active",
+          tags: ["musical", "all ages", "regional", "disney", "family"]
+        },
+        {
+          id: "demo-006",
+          show_title: "The Lightning Thief",
+          company: "Pumphouse Theatre",
+          type: "musical",
+          audition_date: "2026-04-20",
+          closing_date: "2026-04-15",
+          audition_location: "Pumphouse Theatre, Takapuna",
+          region: "melbourne",
+          submission_link: "https://www.trybooking.com/events/example",
+          roles_available: "Percy Jackson, Annabeth Chase, Grover, Luke, Sally Jackson, Mr. D, Chiron, Clarisse + ensemble",
+          notes: "Young adult cast preferred (16-30). High energy pop-rock score. Guitar skills a plus.",
+          date_posted: "2025-05-15",
+          status: "active",
+          tags: ["musical", "young adult", "melbourne", "pop-rock"]
+        }
+      ];
+    }
+
+    // ============================================
+    // LOAD DATA
+    // ============================================
+    async function loadSubmissions() {
+      try {
+        const res = await fetch('/data/noticeboard/submissions.json') /* UPDATE PATH TO MATCH YOUR SETUP */;
+        const data = await res.json();
+        allSubmissions = data.submissions || [];
+      } catch (e) {
+        console.log('Using demo data (JSON fetch failed)');
+        allSubmissions = getDemoData();
+      }
+      render();
+    }
+
+    // ============================================
+    // STATUS HELPERS
+    // ============================================
+    function getStatus(item) {
+      const now = new Date();
+      const audDate = new Date(item.audition_date);
+      const closeDate = item.closing_date ? new Date(item.closing_date) : null;
+
+      if (closeDate && now > closeDate) return 'closed';
+      const daysUntil = Math.ceil((audDate - now) / (1000 * 60 * 60 * 24));
+      if (daysUntil < 0) return 'closed';
+      if (daysUntil <= 14) return 'soon';
+      return 'open';
+    }
+
+    function getCountdown(dateStr) {
+      const now = new Date();
+      const target = new Date(dateStr);
+      const days = Math.ceil((target - now) / (1000 * 60 * 60 * 24));
+      if (days < 0) return 'Past';
+      if (days === 0) return 'Today!';
+      if (days === 1) return 'Tomorrow';
+      if (days <= 7) return days + ' days away';
+      if (days <= 30) return Math.ceil(days / 7) + ' weeks away';
+      return Math.ceil(days / 30) + ' months away';
+    }
+
+    function formatDate(dateStr) {
+      const d = new Date(dateStr);
+      return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+    }
+
+    // ============================================
+    // RENDER CARD
+    // ============================================
+    function renderCard(item) {
+      const status = getStatus(item);
+      const badgeClass = status === 'open' ? 'badge-open' : status === 'soon' ? 'badge-soon' : 'badge-closed';
+      const badgeText = status === 'open' ? '● Open' : status === 'soon' ? '⏰ Soon' : '○ Closed';
+
+      const tagsHtml = (item.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
+
+      return `
+        <article class="card" data-status="${status}" data-region="${item.region || ''}" data-tags="${(item.tags || []).join(',')}" data-type="${item.type || 'musical'}">
+          <div class="card-header">
+            <div>
+              <div class="card-title">${item.show_title}</div>
+              <div class="card-company">${item.company}</div>
+            </div>
+            <span class="badge ${badgeClass}">${badgeText}</span>
+          </div>
+
+          <div class="card-meta">
+            <div class="card-meta-item">
+              <span class="icon">📅</span>
+              <span>${formatDate(item.audition_date)} <em style="color:var(--text-muted);font-size:0.8rem;">(${getCountdown(item.audition_date)})</em></span>
+            </div>
+            <div class="card-meta-item">
+              <span class="icon">📍</span>
+              <span>${item.audition_location}</span>
+            </div>
+          </div>
+
+          ${item.roles_available ? `<div class="card-roles"><strong>Roles:</strong> ${item.roles_available}</div>` : ''}
+          ${item.notes ? `<div class="card-notes">"${item.notes}"</div>` : ''}
+
+          <div class="card-tags">${tagsHtml}</div>
+
+          <div class="card-footer">
+            <span class="card-date">Posted ${formatDate(item.date_posted)}</span>
+            <a href="${item.submission_link}" target="_blank" class="card-link">Full Details →</a>
+          </div>
+        </article>
+      `;
+    }
+
+    // ============================================
+    // STATS
+    // ============================================
+    function updateStats(items) {
+      const total = items.length;
+      const open = items.filter(i => getStatus(i) === 'open').length;
+      const companies = new Set(items.map(i => i.company)).size;
+      const now = new Date();
+      const thisMonth = items.filter(i => {
+        const d = new Date(i.audition_date);
+        return d.getMonth() === now.getMonth() && d.getFullYear() === now.getFullYear();
+      }).length;
+
+      document.getElementById('stat-total').textContent = total;
+      document.getElementById('stat-open').textContent = open;
+      document.getElementById('stat-companies').textContent = companies;
+      document.getElementById('stat-month').textContent = thisMonth;
+    }
+
+    // ============================================
+    // FILTER & SEARCH
+    // ============================================
+    function getFilteredItems() {
+      const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+      return allSubmissions.filter(item => {
+        // Apply category filter
+        const status = getStatus(item);
+        const tags = (item.tags || []).join(',').toLowerCase();
+
+        if (activeFilter === 'open' && status !== 'open') return false;
+        if (activeFilter === 'soon' && status !== 'soon') return false;
+        if (activeFilter === 'musical' && item.type !== 'musical') return false;
+        if (activeFilter === 'melbourne' && item.region !== 'melbourne') return false;
+        if (activeFilter === 'regional' && item.region !== 'regional') return false;
+        if (activeFilter === 'junior' && !tags.includes('junior') && !tags.includes('youth')) return false;
+
+        // Apply search
+        if (query) {
+          const searchable = [
+            item.show_title, item.company, item.roles_available,
+            item.notes, item.audition_location, tags
+          ].join(' ').toLowerCase();
+          return searchable.includes(query);
+        }
+
+        return true;
+      });
+    }
+
+    // ============================================
+    // RENDER
+    // ============================================
+    function render() {
+      const filtered = getFilteredItems();
+      const grid = document.getElementById('cards-grid');
+      const noResults = document.getElementById('no-results');
+
+      // Sort: open first, then soon, then closed. Within each group, nearest date first.
+      filtered.sort((a, b) => {
+        const order = { open: 0, soon: 1, closed: 2 };
+        const sa = order[getStatus(a)] ?? 3;
+        const sb = order[getStatus(b)] ?? 3;
+        if (sa !== sb) return sa - sb;
+        return new Date(a.audition_date) - new Date(b.audition_date);
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        noResults.style.display = 'block';
+      } else {
+        grid.innerHTML = filtered.map(renderCard).join('');
+        noResults.style.display = 'none';
+      }
+
+      updateStats(filtered);
+    }
+
+    // ============================================
+    // EVENT LISTENERS
+    // ============================================
+    document.getElementById('search-input').addEventListener('input', render);
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeFilter = btn.dataset.filter;
+        render();
+      });
+    });
+
+    // ============================================
+    // INIT
+    // ============================================
+    loadSubmissions();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,270 @@
+﻿42nd-street|||42nd-peggy|||Peggy Sawyer|||soprano/mezzo-soprano|||A3-E5|||True
+42nd-street|||42nd-julian|||Julian Marsh|||baritone|||B2-E4|||False
+42nd-street|||42nd-dorothy|||Dorothy Brock|||soprano/mezzo with belt|||A3-F5|||True
+42nd-street|||42nd-billy|||Billy Lawlor|||tenor/baritone|||C3-A4|||True
+42nd-street|||42nd-bert|||Bert Barry|||baritone/character|||C3-F4|||False
+42nd-street|||42nd-annie|||Annie Reilly (Anytime Annie)|||mezzo-soprano/belt|||Bb3-D5|||True
+42nd-street|||42nd-maggie|||Maggie Jones|||Alto / Mezzo-Soprano|||G3-D5|||True
+42nd-street|||42nd-andy|||Andy Lee|||Mezzo-Soprano or Baritone (depending on casting)|||Variable (cast as needed)|||False
+42nd-street|||42nd-pat|||Pat Denning|||Baritone|||A2-E4|||False
+42nd-street|||42nd-abner|||Abner Dillon|||Spoken / Character voice|||Speaking role primarily|||False
+42nd-street|||42nd-phyllis|||Phyllis Dale|||Mezzo-Soprano|||B3-E5|||True
+42nd-street|||42nd-lorraine|||Lorraine Fleming|||Mezzo-Soprano|||B3-E5|||True
+42nd-street|||42nd-mac|||Mac (Stage Manager)|||Spoken role with ensemble singing|||Variable (cast as needed)|||False
+42nd-street|||42nd-ensemble|||Ensemble — Chorus Girls & Boys|||mixed — strong chorus voices|||varies by part|||True
+and-juliet|||and-juliet-juliet|||Juliet|||mezzo-soprano/belt|||A3-G5|||True
+and-juliet|||and-juliet-anne-hathaway|||Anne Hathaway (Shakespeare's wife)|||mezzo-soprano/belt|||G3-E5|||True
+and-juliet|||and-juliet-shakespeare|||William Shakespeare|||baritone/tenor|||A2-G4|||True
+and-juliet|||and-juliet-may|||May|||flexible — countertenor, mezzo, or tenor depending on performer|||C4-F5 (or A3-E5 depending on casting)|||True
+and-juliet|||and-juliet-romeo|||Romeo|||tenor|||B2-A4|||True
+and-juliet|||and-juliet-angelique|||Nurse Angelique|||alto/mezzo with big belt|||F3-E5|||True
+and-juliet|||and-juliet-lance|||Lance|||tenor|||C3-A4|||True
+and-juliet|||and-juliet-francois|||Francois Du Bois|||Tenor|||C3–Ab4|||True
+and-juliet|||and-juliet-ensemble|||Ensemble — Party People, Veronese, Parisians|||mixed — strong pop voices|||varies by part|||True
+beauty-and-the-beast|||batb-belle|||Belle|||soprano/mezzo-soprano|||A3-G5|||True
+beauty-and-the-beast|||batb-beast|||The Beast / Prince Adam|||baritone/tenor|||Bb2-G4|||True
+beauty-and-the-beast|||batb-gaston|||Gaston|||baritone|||A2-G4|||True
+beauty-and-the-beast|||batb-lefou|||Lefou|||tenor/character baritone|||C3-A4|||True
+beauty-and-the-beast|||batb-lumiere|||Lumiere|||tenor/baritone|||C3-Ab4|||True
+beauty-and-the-beast|||batb-cogsworth|||Cogsworth|||baritone/character|||B2-F4|||False
+beauty-and-the-beast|||batb-mrs-potts|||Mrs. Potts|||mezzo-soprano/alto|||G3-D5|||False
+beauty-and-the-beast|||batb-chip|||Chip|||child treble|||C4-C5|||False
+beauty-and-the-beast|||batb-babette|||Babette (Fifi/Plumette)|||soprano/mezzo|||B3-E5|||False
+beauty-and-the-beast|||batb-maurice|||Maurice|||baritone/bass|||G2-D4|||False
+beauty-and-the-beast|||batb-madame-wardrobe|||Madame de la Grande Bouche (Wardrobe)|||soprano/mezzo with operatic capability|||G3-Bb5|||True
+beauty-and-the-beast|||batb-ensemble|||Ensemble â€” Villagers, Enchanted Objects, Wolves|||mixed|||varies by part|||True
+company|||company-bobby|||Robert (Bobby) / Bobbie (revival)|||baritone (original) / mezzo-soprano belt (revival)|||A2-G#4 (male) / A3-F#5 (female)|||True
+company|||company-joanne|||Joanne|||alto/mezzo with belt|||G3-D5|||True
+company|||company-sarah|||Sarah|||mezzo-soprano|||Bb3-E5|||True
+company|||company-harry|||Harry|||baritone|||Bb2-F4|||False
+company|||company-amy|||Amy (or Jamie in revival)|||soprano/mezzo-soprano|||A3-F5|||True
+company|||company-paul|||Paul (or Jamie in revival)|||baritone|||C3-E4|||False
+company|||company-peter|||Peter|||baritone|||C3-F4|||False
+company|||company-susan|||Susan|||mezzo-soprano|||A3-D5|||False
+company|||company-jenny|||Jenny|||mezzo-soprano|||Bb3-D5|||False
+company|||company-david|||David|||baritone|||C3-E4|||False
+company|||company-marta|||Marta|||mezzo-soprano/belt|||A3-E5|||True
+company|||company-april|||April|||soprano/mezzo|||B3-D5|||False
+company|||company-kathy|||Kathy|||mezzo-soprano|||A3-D5|||False
+company|||company-larry|||Larry|||baritone|||C3-E4|||False
+diary-of-a-wimpy-kid|||greg|||Greg Heffley|||Tenor / Boy Soprano (depending on age of performer)|||B3-E5|||True
+diary-of-a-wimpy-kid|||rowley|||Rowley Jefferson|||Tenor / Boy Soprano|||C4-D5|||False
+diary-of-a-wimpy-kid|||rodrick|||Rodrick Heffley|||Baritone / Low Tenor|||A2-D4|||False
+diary-of-a-wimpy-kid|||frank-heffley|||Frank Heffley (Dad)|||Baritone|||C3-E4|||False
+diary-of-a-wimpy-kid|||susan-heffley|||Susan Heffley (Mom)|||Mezzo-Soprano|||A3-D5|||False
+diary-of-a-wimpy-kid|||patty-farrell|||Patty Farrell|||Soprano / Mezzo|||C4-F5|||True
+diary-of-a-wimpy-kid|||fregley|||Fregley|||Character voice|||Various|||False
+diary-of-a-wimpy-kid|||wimpy-chirag|||Chirag Gupta|||Child/unchanged tenor|||unchanged voice|||False
+diary-of-a-wimpy-kid|||wimpy-manny|||Manny Heffley|||Child/unchanged|||unchanged voice|||False
+diary-of-a-wimpy-kid|||wimpy-bryce|||Bryce Anderson|||Child/unchanged|||unchanged voice|||False
+diary-of-a-wimpy-kid|||wimpy-joshie|||Joshie|||Pop tenor/mezzo|||C4–G5 (flexible)|||True
+diary-of-a-wimpy-kid|||wimpy-claire|||Claire|||Child/unchanged mezzo|||unchanged voice|||False
+diary-of-a-wimpy-kid|||wimpy-mr-winsky|||Mr. Winsky|||Baritone/Tenor|||C3–G4|||False
+diary-of-a-wimpy-kid|||wimpy-bill-walter|||Bill Walter|||Baritone/Tenor|||A2–E4|||False
+diary-of-a-wimpy-kid|||wimpy-mrs-clayton|||Mrs. Clayton|||Mezzo-Soprano|||A3–D5|||False
+diary-of-a-wimpy-kid|||ensemble-kids|||Ensemble (Middle School Students / Adults)|||Mixed youth chorus|||Various|||False
+dirty-rotten-scoundrels|||lawrence-jameson|||Lawrence Jameson|||baritone_legit_with_character|||A2-F#4|||False
+dirty-rotten-scoundrels|||freddy-benson|||Freddy Benson|||tenor_belt|||C3-Ab4|||True
+dirty-rotten-scoundrels|||christine-colgate|||Christine Colgate|||soprano_belt|||A3-F5|||True
+dirty-rotten-scoundrels|||muriel-eubanks|||Muriel Eubanks|||mezzo_character|||Bb3-D5|||True
+dirty-rotten-scoundrels|||andre-thibault|||Andre Thibault|||baritone_character|||C3-F4|||False
+dirty-rotten-scoundrels|||ensemble-dirty-rotten-scoundrels|||Ensemble (Riviera Society / Jolene / Hotel Staff / Oklahoma Women)|||mixed_ensemble|||varies_by_part|||True
+|||frozen-elsa|||Elsa|||soprano mezzo-soprano||||||True
+|||frozen-anna|||Anna|||mezzo-soprano||||||True
+|||frozen-hans|||Hans|||baritone tenor||||||False
+|||frozen-kristoff|||Kristoff|||baritone||||||False
+|||frozen-olaf|||Olaf|||tenor character-voice||||||False
+|||frozen-sven|||Sven|||non-singing||||||False
+|||frozen-weselton|||Duke of Weselton|||tenor character-tenor||||||False
+|||frozen-pabbie|||Pabbie (Grand Pabbie)|||bass baritone||||||False
+|||frozen-oaken|||Oaken|||baritone character-voice||||||False
+|||frozen-young-elsa|||Young Elsa|||treble soprano||||||False
+|||frozen-young-anna|||Young Anna|||treble||||||False
+|||frozen-ensemble-townspeople|||Ensemble â€” Townspeople of Arendelle|||mixed||||||False
+|||frozen-ensemble-hidden-folk|||Ensemble â€” Hidden Folk (Trolls)|||mixed||||||False
+|||frozen-ensemble-snow-chorus|||Ensemble â€” Snow Chorus|||soprano alto||||||False
+hunchback-of-notre-dame|||hunchback-quasimodo|||Quasimodo|||tenor/high baritone|||A2-A4|||True
+hunchback-of-notre-dame|||hunchback-frollo|||Judge Claude Frollo|||bass-baritone/baritone|||G2-F4|||True
+hunchback-of-notre-dame|||hunchback-esmeralda|||Esmeralda|||mezzo-soprano/belt|||A3-F5|||True
+hunchback-of-notre-dame|||hunchback-phoebus|||Captain Phoebus|||baritone/tenor|||Bb2-G4|||True
+hunchback-of-notre-dame|||hunchback-clopin|||Clopin|||tenor/baritone|||C3-G4|||True
+hunchback-of-notre-dame|||hunchback-gargoyles|||The Gargoyles — Victor, Hugo & Laverne|||character voices|||varies — Victor (tenor), Hugo (baritone), Laverne (alto/mezzo)|||False
+hunchback-of-notre-dame|||hunchback-jehan|||Jehan Frollo|||Tenor|||F3–Eb5|||True
+hunchback-of-notre-dame|||hunchback-saint-aphrodisius|||Saint Aphrodisius|||Baritone|||E3–E4|||False
+hunchback-of-notre-dame|||hunchback-florika|||Florika|||Mezzo-Soprano|||E4–Gb5|||True
+hunchback-of-notre-dame|||hunchback-father-dupin|||Father Dupin|||Baritone|||Bb2–D4|||False
+hunchback-of-notre-dame|||hunchback-frederic|||Lieutenant Frederic Charlus|||Baritone/Tenor|||C3–A4|||False
+hunchback-of-notre-dame|||hunchback-king-louis|||King Louis XI|||Speaking role|||spoken|||False
+hunchback-of-notre-dame|||hunchback-tribunal|||Tribunal|||Speaking role|||spoken|||False
+hunchback-of-notre-dame|||hunchback-madam|||Madam|||Speaking role|||spoken|||False
+hunchback-of-notre-dame|||hunchback-congregation-choir|||Congregation / Ensemble|||soprano, alto, tenor, bass — full four-part choir|||full SATB choir range|||False
+into-the-woods|||the-baker|||The Baker|||baritone|||Bb2-F#4|||False
+into-the-woods|||the-bakers-wife|||The Baker's Wife|||mezzo_soprano_belt|||A3-E5|||True
+into-the-woods|||the-witch|||The Witch|||mezzo_soprano_powerhouse|||G3-F#5|||True
+into-the-woods|||cinderella|||Cinderella|||soprano_legit_with_belt|||A3-G5|||True
+into-the-woods|||jack|||Jack|||tenor_boy|||C3-G4|||False
+into-the-woods|||little-red-riding-hood|||Little Red Riding Hood|||soprano_belt|||B3-E5|||True
+into-the-woods|||cinderellas-prince|||Cinderella's Prince|||Bass-Baritone / Baritone|||A2-F#4|||False
+into-the-woods|||rapunzels-prince|||Rapunzel's Prince|||Bass-Baritone / Baritone|||A2-F#4|||False
+into-the-woods|||rapunzel|||Rapunzel|||Soprano|||C4-A5|||False
+into-the-woods|||jacks-mother|||Jack's Mother|||Soprano / Mezzo-Soprano|||A3-F5|||True
+into-the-woods|||narrator-mysterious-man|||The Narrator / Mysterious Man|||Baritone|||B2-E4|||False
+into-the-woods|||cinderellas-stepmother|||Cinderella's Stepmother|||Mezzo-Soprano|||G3-D5|||True
+into-the-woods|||florinda|||Florinda|||Mezzo-Soprano|||A3-E5|||True
+into-the-woods|||lucinda|||Lucinda|||Mezzo-Soprano|||A3-E5|||True
+into-the-woods|||the-wolf|||The Wolf|||Baritone|||A2-F#4|||False
+into-the-woods|||cinderellas-mother|||Cinderella's Mother|||Soprano|||C4-A5|||False
+into-the-woods|||the-steward|||The Steward|||Non-singer / Ensemble voice|||Variable|||False
+into-the-woods|||milky-white|||Milky White|||Non-speaking|||Silent|||False
+into-the-woods|||the-giant|||The Giant (Giant's Wife)|||Non-singer / Amplified speaking voice|||Variable|||False
+jersey-boys|||frankie-valli|||Frankie Valli|||Tenor with exceptional falsetto|||A2-C6 (full falsetto)|||True
+jersey-boys|||tommy-devito|||Tommy DeVito|||Baritone / Low Tenor|||A2-E4|||True
+jersey-boys|||bob-gaudio|||Bob Gaudio|||Tenor|||C3-A4|||True
+jersey-boys|||nick-massi|||Nick Massi|||Bass / Bass-Baritone|||E2-D4|||False
+jersey-boys|||mary-delgado|||Mary Delgado|||Mezzo-Soprano / Belt|||A3-D5|||True
+jersey-boys|||jersey-bob-crewe|||Bob Crewe|||Tenor/Baritone|||C3–G4|||False
+jersey-boys|||jersey-gyp-decarlo|||Gyp DeCarlo|||Baritone/Bass|||B2–E4|||False
+jersey-boys|||jersey-joe-pesci|||Joey Pesci|||Tenor/Baritone|||C3–G4|||False
+jersey-boys|||jersey-norm-waxman|||Norm Waxman|||Baritone|||C3–F4|||False
+jersey-boys|||jersey-francine|||Francine Valli|||Soprano/Mezzo-Soprano|||A3–E5|||True
+jersey-boys|||jersey-lorraine|||Lorraine|||Soprano/Mezzo-Soprano/Alto|||A3–D5|||False
+jersey-boys|||jersey-nick-devito|||Nick DeVito|||Tenor|||C3–A4|||False
+jersey-boys|||jersey-hank-majewski|||Hank Majewski|||Tenor/Baritone|||C3–G4|||False
+jersey-boys|||ensemble-jersey|||Ensemble (Multi-Track)|||Mixed ensemble with strong pop/rock harmony skills|||Various|||True
+lightning-thief|||percy|||Percy Jackson|||Tenor / Contemporary pop-rock|||A3-A5|||True
+lightning-thief|||annabeth|||Annabeth Chase|||Mezzo-Soprano / Belt|||A3-E5|||True
+lightning-thief|||grover|||Grover Underwood|||Baritone / Tenor|||C3-G4|||True
+lightning-thief|||luke|||Luke Castellan|||Baritone / Low Tenor|||B2-F#4|||True
+lightning-thief|||sally-jackson|||Sally Jackson|||Mezzo-Soprano|||A3-D5|||True
+lightning-thief|||lt-mr-d|||Mr. D / Dionysus|||Baritone|||B2–E4|||False
+lightning-thief|||lt-chiron|||Chiron / Mr. Brunner|||Baritone|||A2–E4|||False
+lightning-thief|||lt-clarisse|||Clarisse La Rue|||Alto/Mezzo-Soprano|||A3–D5|||True
+lightning-thief|||lt-silena|||Silena Beauregard|||Mezzo-Soprano/Soprano|||A3–E5|||True
+lightning-thief|||lt-gabe|||Gabe Ugliano|||Baritone|||C3–E4|||False
+lightning-thief|||lt-mrs-dodds|||Mrs. Dodds / The Fury|||Mezzo-Soprano/Alto|||A3–D5|||True
+lightning-thief|||lt-ares|||Ares / God of War|||Baritone|||A2–E4|||True
+lightning-thief|||lt-medusa|||Medusa / Aunty Em|||Mezzo-Soprano|||A3–D5|||True
+lightning-thief|||ensemble-gods|||Ensemble (Gods / Monsters / Campers — Multi-Track)|||Mixed ensemble — contemporary rock|||Various|||True
+mary-poppins|||mary-poppins|||Mary Poppins|||Soprano / Mezzo-Soprano|||A3-G5|||True
+mary-poppins|||bert|||Bert|||Baritone / Tenor|||A2-G4|||True
+mary-poppins|||george-banks|||George Banks|||Baritone|||Bb2-F4|||False
+mary-poppins|||jane-banks|||Jane Banks|||Soprano (child/treble)|||C4-D5|||True
+mary-poppins|||michael-banks|||Michael Banks|||Treble / Boy Soprano|||C4-C5|||False
+mary-poppins|||winifred-banks|||Winifred Banks|||Mezzo-Soprano|||Bb3-E5|||True
+mary-poppins|||miss-andrew|||Miss Andrew|||Mezzo-Soprano / Alto (power voice)|||G3-D5|||True
+mary-poppins|||bird-woman|||The Bird Woman|||Alto / Mezzo-Soprano|||G3-D5|||False
+mary-poppins|||katie-nanna|||Katie Nanna|||Spoken / Ensemble voice|||Variable|||False
+mary-poppins|||admiral-boom|||Admiral Boom / Bank Chairman|||Baritone|||A2-E4|||False
+mary-poppins|||mrs-corry|||Mrs Corry|||Soprano / Mezzo-Soprano|||A3-F5|||True
+mary-poppins|||mrs-brill|||Mrs Brill|||Alto / Mezzo-Soprano|||F3-C5|||True
+mary-poppins|||robertson-ay|||Robertson Ay|||Tenor / Baritone|||C3-G4|||False
+mary-poppins|||miss-lark|||Miss Lark|||Spoken / Ensemble voice|||Variable|||False
+mary-poppins|||neleus|||Neleus|||Tenor|||C3-G4|||False
+mary-poppins|||park-keeper|||The Park Keeper|||Tenor / Baritone|||C3-G4|||False
+mary-poppins|||ensemble-poppins|||Ensemble (Chimney Sweeps / Park Strollers / Statues / Toys / Bank Staff)|||SATB — full choral ensemble|||Full range across voice types|||True
+matilda|||matilda-matilda|||Matilda Wormwood|||child soprano/belt|||A3-E5|||True
+matilda|||matilda-trunchbull|||Miss Agatha Trunchbull|||baritone/character (if male) or alto/character (if female)|||G2-E4 (male) / C3-A4 (female)|||True
+matilda|||matilda-miss-honey|||Miss Jennifer Honey|||soprano/mezzo-soprano|||A3-F5|||True
+matilda|||matilda-mr-wormwood|||Mr. Wormwood|||baritone/character tenor|||A2-F4|||True
+matilda|||matilda-mrs-wormwood|||Mrs. Wormwood|||mezzo-soprano/belt|||Bb3-Eb5|||True
+matilda|||matilda-rudolpho|||Rudolpho|||tenor/baritone|||C3-G4|||False
+matilda|||matilda-mrs-phelps|||Mrs. Phelps|||mezzo-soprano|||A3-D5|||False
+matilda|||matilda-lavender|||Lavender|||child soprano|||B3-D5|||False
+matilda|||matilda-bruce|||Bruce Bogtrotter|||child tenor/treble|||C4-C5|||False
+matilda|||matilda-escapologist|||The Escapologist / Miss Honey's Father|||tenor/baritone|||C3-G4|||False
+matilda|||matilda-acrobat|||The Acrobat / Miss Honey's Mother|||soprano|||A3-F5|||False
+matilda|||matilda-children-ensemble|||Children's Ensemble â€” Students of Crunchem Hall|||children's chorus|||varies by part|||False
+matilda|||matilda-adult-ensemble|||Adult Ensemble â€” Doctors, Parents, Teachers, Townspeople|||mixed|||varies by part|||True
+oliver|||oliver-twist|||Oliver Twist|||treble_boy_soprano|||A3-F5|||False
+oliver|||fagin|||Fagin|||baritone_character|||B2-Eb5|||True
+oliver|||nancy|||Nancy|||alto_mezzo_belt|||E3-B4|||True
+oliver|||artful-dodger|||The Artful Dodger|||treble_boy_soprano_belt|||A3-F5|||True
+oliver|||bill-sikes|||Bill Sikes|||bass_baritone|||C#3-C4|||False
+oliver|||mr-bumble|||Mr Bumble|||baritone_comic|||C3-A4|||True
+oliver|||widow-corney|||Widow Corney|||soprano_character|||C4-E5|||True
+oliver|||mr-brownlow|||Mr Brownlow|||speaking_role|||non_singing_or_minimal|||False
+oliver|||bet|||Bet|||alto_mezzo|||C4-C5|||True
+oliver|||mr-sowerberry|||Mr Sowerberry|||baritone_character|||Bb3-F4|||False
+oliver|||mrs-sowerberry|||Mrs Sowerberry|||mezzo_soprano_character|||Bb4-F5|||False
+oliver|||noah-claypole|||Noah Claypole|||speaking_role|||non_singing_or_minimal|||False
+oliver|||charley-bates|||Charley Bates|||treble_ensemble|||varies|||False
+oliver|||ensemble-oliver|||Ensemble (Workhouse Boys / Fagin's Gang / Street Sellers / Townspeople / Who Will Buy? Soloists)|||mixed_ensemble|||varies_by_part|||True
+pretty-woman|||vivian|||Vivian Ward|||Mezzo-Soprano / Belt|||A3-F5|||True
+pretty-woman|||edward|||Edward Lewis|||Baritone|||A2-F4|||True
+pretty-woman|||kit-de-luca|||Kit De Luca|||Alto / Mezzo Belt|||G3-D5|||True
+pretty-woman|||happy-man|||Happy Man (Hotel Manager / Narrator)|||Baritone / Character Baritone|||C3-E4|||False
+pretty-woman|||philip-stuckey|||Philip Stuckey|||Tenor / Baritone|||B2-A4|||False
+pretty-woman|||james-morse|||James Morse|||Baritone / Bass-Baritone|||A2-F4|||False
+pretty-woman|||david-morse|||David Morse|||Baritone / Tenor|||B2-G4|||False
+pretty-woman|||violetta|||Violetta Valery|||Soprano (Operatic / Legit)|||C4-Bb5|||True
+pretty-woman|||giulio|||Giulio|||Tenor|||C3-A4|||True
+pretty-woman|||alfredo|||Alfredo|||Tenor (Operatic / Legit)|||C3-A4 (B4 in operatic passages)|||True
+pretty-woman|||ensemble-pretty|||Ensemble (Beverly Hills Society / Hollywood Boulevard / Store Clerks / Opera Guests)|||Mixed pop-rock chorus|||Various|||True
+ride-the-cyclone|||ocean-osheana-rosenberg|||Ocean O'Connell Rosenberg|||mezzo-soprano_belt|||A3-F5|||True
+ride-the-cyclone|||noel-gruber|||Noel Gruber|||baritone_with_falsetto|||Bb2-G4 (with optional falsetto to C5)|||False
+ride-the-cyclone|||mischa-bachinski|||Mischa Bachinski|||tenor_rapper|||C3-A4|||True
+ride-the-cyclone|||ricky-potts|||Ricky Potts|||tenor|||C3-G4 (with falsetto to B4)|||False
+ride-the-cyclone|||constance-blackwood|||Constance Blackwood|||soprano_belt|||A3-E5|||True
+ride-the-cyclone|||the-amazing-karnak|||The Amazing Karnak|||character_voice|||flexible â€” depends on casting|||False
+ride-the-cyclone|||talia|||Talia|||mezzo_soprano_belt|||Bb3-F5|||True
+seussical|||horton|||Horton the Elephant|||Baritone / Bass-Baritone|||Bb2-G4|||True
+seussical|||cat-in-the-hat|||The Cat in the Hat|||Character voice — any range, all about personality|||C3-F5 (extremely wide, depends on performer)|||True
+seussical|||jojo|||JoJo|||Soprano / Treble (youth voice) or Tenor (older casting)|||C4-E5|||True
+seussical|||gertrude|||Gertrude McFuzz|||Mezzo-Soprano / Soprano|||A3-E5|||True
+seussical|||mayzie|||Mayzie La Bird|||Mezzo-Soprano / Belt|||A3-F5|||True
+seussical|||sour-kangaroo|||Sour Kangaroo|||Alto / Mezzo with power belt|||G3-E5|||True
+seussical|||mr-mayor|||Mr. Mayor of Who-ville|||Tenor|||C3–A4|||False
+seussical|||mrs-mayor|||Mrs. Mayor of Who-ville|||Mezzo-Soprano|||A3–E5|||True
+seussical|||seuss-bird-girls|||Bird Girls|||Soprano / Mezzo-Soprano / Alto (trio)|||A3–F5|||True
+seussical|||seuss-general-schmitz|||General Genghis Kahn Schmitz|||Baritone|||A2–E4|||False
+seussical|||seuss-wickershams|||Wickersham Brothers|||Tenor / Baritone / Bass (trio)|||B2–G4|||False
+seussical|||seuss-vlad-vladikoff|||Vlad Vladikoff|||Tenor/Baritone/Bass|||A2–E4|||False
+seussical|||seuss-yertle|||Judge Yertle the Turtle|||Baritone|||Bb2–D4|||False
+seussical|||seuss-grinch|||The Grinch|||Baritone|||C3–D4|||False
+seussical|||seuss-thing1-thing2|||Thing 1 & Thing 2|||Any|||flexible|||False
+seussical|||ensemble-seuss|||Ensemble (Jungle Animals / Whos / Creatures)|||Mixed chorus with gospel/pop ensemble style|||Various|||False
+sister-act|||sister-act-deloris|||Deloris Van Cartier|||mezzo-soprano/belt|||G3-F5|||True
+sister-act|||sister-act-mother-superior|||Mother Superior|||mezzo-soprano/alto|||G3-D5|||True
+sister-act|||sister-act-curtis|||Curtis Jackson|||baritone/tenor|||Bb2-G4|||True
+sister-act|||sister-act-eddie|||Eddie Souther (Sweaty Eddie)|||tenor|||C3-A4|||True
+sister-act|||sister-act-mary-robert|||Sister Mary Robert|||soprano/mezzo with hidden belt|||A3-G5|||True
+sister-act|||sister-act-mary-lazarus|||Sister Mary Lazarus|||alto/mezzo|||F3-C5|||False
+sister-act|||sister-act-mary-patrick|||Sister Mary Patrick|||soprano/mezzo|||A3-E5|||True
+sister-act|||sister-act-monsignor|||Monsignor O'Hara|||baritone|||B2-E4|||False
+sister-act|||sister-act-henchmen|||TJ, Joey & Pablo (Curtis's Henchmen)|||mixed male voices|||C3-G4|||False
+sister-act|||sister-act-nun-ensemble|||Ensemble â€” Nuns of the Convent|||full female chorus â€” soprano, mezzo, alto|||varies by part|||True
+six|||catherine-aragon|||Catherine of Aragon|||Mezzo-Soprano / Power Belt|||G3-E5|||True
+six|||anne-boleyn|||Anne Boleyn|||Mezzo-Soprano / Pop Belt|||A3-E5|||True
+six|||jane-seymour|||Jane Seymour|||Soprano / Mezzo with power ballad belt|||G3-F5|||True
+six|||anna-cleves|||Anna of Cleves|||Mezzo / Alto with hip-hop flow and belt|||G3-D5|||True
+six|||katherine-howard|||Katherine Howard|||Soprano / Pop Belt|||A3-F5|||True
+six|||catherine-parr|||Catherine Parr|||Mezzo-Soprano / Alto with building belt|||A3-E5|||True
+waitress|||waitress-jenna|||Jenna Hunterson|||mezzo-soprano/belt|||A3-E5|||True
+waitress|||waitress-becky|||Becky|||alto/mezzo with belt|||G3-D5|||True
+waitress|||waitress-dawn|||Dawn|||mezzo-soprano|||B3-D5|||False
+waitress|||waitress-dr-pomatter|||Dr. Jim Pomatter|||tenor/baritone|||Bb2-G4|||False
+waitress|||waitress-earl|||Earl Hunterson|||baritone|||A2-E4|||False
+waitress|||waitress-ogie|||Ogie Anhorn|||tenor/baritone|||C3-A4|||True
+waitress|||waitress-cal|||Cal|||baritone/bass|||G2-D4|||False
+waitress|||waitress-joe|||Old Joe|||bass/baritone|||F2-C4|||False
+waitress|||waitress-nurse-norma|||Nurse Norma|||mezzo-soprano|||Bb3-C5|||False
+waitress|||waitress-ensemble|||Ensemble â€” Diner Customers & Townspeople|||mixed|||varies by part|||False
+wizard-of-oz|||dorothy|||Dorothy Gale|||Soprano / Mezzo-Soprano|||A3-F5|||False
+wizard-of-oz|||scarecrow|||Scarecrow|||Baritone / Tenor|||C3-G4|||False
+wizard-of-oz|||tin-man|||Tin Man|||Baritone|||Bb2-F4|||False
+wizard-of-oz|||cowardly-lion|||Cowardly Lion|||Baritone / Character Tenor|||C3-G4|||False
+wizard-of-oz|||wicked-witch|||Wicked Witch of the West|||Mezzo-Soprano / Alto|||A3-D5|||True
+wizard-of-oz|||glinda|||Glinda the Good Witch|||Soprano|||C4-A5|||False
+wizard-of-oz|||wizard|||The Wizard of Oz / Professor Marvel|||Baritone / Character Bass-Baritone|||C3-E4|||False
+wizard-of-oz|||uncle-henry-auntie-em|||Auntie Em / Uncle Henry|||Character voices â€” no major singing required|||Various|||False
+wizard-of-oz|||ensemble|||Ensemble (Munchkins / Emerald City Citizens / Winkies / Flying Monkeys)|||Mixed chorus|||Various|||False
+young-frankenstein|||dr-frederick-frankenstein|||Dr. Frederick Frankenstein|||baritone_musical_comedy|||Bb2-G4|||True
+young-frankenstein|||the-monster|||The Monster|||bass_baritone_character|||C3-E4|||False
+young-frankenstein|||inga|||Inga|||soprano_belt|||Bb3-F5|||True
+young-frankenstein|||igor|||Igor|||character_baritone|||C3-F4|||False
+young-frankenstein|||elizabeth-benning|||Elizabeth Benning|||soprano_belt_comedic|||B3-F#5|||True
+young-frankenstein|||frau-blucher|||Frau Blücher|||mezzo_alto_character|||A3-D5|||True
+young-frankenstein|||inspector-kemp|||Inspector Hans Kemp|||Baritone / Bass-Baritone|||A2-E4|||False
+young-frankenstein|||harold-hermit|||Harold the Blind Hermit|||Baritone / Bass|||B2-E4|||False
+young-frankenstein|||victor-frankenstein|||Dr. Victor von Frankenstein|||Baritone / Bass|||A2-D4|||False
+young-frankenstein|||ensemble-young-frankenstein|||Ensemble (Villagers / Transylvanians / Laboratory Assistants)|||Mixed ensemble|||Full SATB range|||True

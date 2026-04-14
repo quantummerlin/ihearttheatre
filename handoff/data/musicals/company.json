@@ -1,0 +1,892 @@
+{
+  "musical": {
+    "id": "company",
+    "title": "Company",
+    "music_by": "Stephen Sondheim",
+    "book_by": "George Furth",
+    "based_on": "Original",
+    "year_premiered": 1970,
+    "broadway_opening": "1970-04-26",
+    "setting": "New York City — various apartments and locations",
+    "time_period": "Contemporary (updates well to any era)",
+    "themes": ["marriage", "commitment", "loneliness", "urban life", "fear of intimacy", "growing up", "the meaning of love", "chosen family"],
+    "genre_tags": ["sondheim", "concept_musical", "comedy_drama", "sophisticated", "adult", "ensemble"],
+    "vocal_style": "Sondheim — complex harmonies, intricate rhythms, word-painting, conversational to soaring. Demands musicianship.",
+    "dance_intensity": "low_to_moderate",
+    "orchestra_size": "full_pit",
+    "typical_cast_size": "14-16",
+    "age_range": "25-50 (adult cast)",
+    "difficulty_overall": "advanced",
+    "junior_version_available": false,
+    "license_holder": "Concord Theatricals",
+    "synopsis": "Bobby (or Bobbie in the 2018 gender-swapped revival) is single, turning 35, and surrounded by five married couples who love, exasperate, and worry about them. Through a series of vignettes exploring each couple's relationship, Bobby confronts the fundamental question: is being alive the same as really living? A groundbreaking concept musical about love, marriage, and the terror of commitment.",
+    "notes": "The 2018 Marianne Elliott revival gender-swapped Bobby to Bobbie (female) with some couples also adjusted. Both versions are commonly produced. This data covers the original version with notes on the revival where relevant."
+  },
+  "roles": [
+    {
+      "id": "company-bobby",
+      "name": "Robert (Bobby) / Bobbie (revival)",
+      "role_type": "lead",
+      "gender": "male (original) / female (revival)",
+      "age_range": {"min": 30, "max": 40},
+      "description": "A charming, attractive, perpetually single person turning 35 who is the connecting thread between five married couples. Bobby is everyone's best friend but nobody's partner. Witty, evasive, terrified of commitment, and slowly realizing that being safe is not the same as being alive. The entire show is filtered through Bobby's perspective.",
+      "vocal": {
+        "range": "A2-G#4 (male) / A3-F#5 (female)",
+        "voice_type": "baritone (original) / mezzo-soprano belt (revival)",
+        "belt_required": true,
+        "belt_range": "D3-G4 (male) / D4-F5 (female)",
+        "tessitura": "mid",
+        "style_notes": "Sondheim demands precise pitch, rhythm, and diction. 'Being Alive' is one of the great musical theatre climaxes — must build from conversational to devastating power. Must handle complex rhythms and harmonies. Emotional truth in every note."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["staging", "light_movement"],
+        "stamina": "moderate",
+        "notes": "Not a dance role. Physical presence and staging. Must be present and reactive even when not singing."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["charming commitmentphobe", "observer", "everyperson", "reluctant protagonist"],
+        "emotional_range": "extreme — charm, evasion, wit, loneliness, fear, breakthrough, vulnerability",
+        "comedy_skills": true,
+        "notes": "One of the most demanding acting roles in musical theatre. Bobby is onstage almost constantly, often reacting rather than acting. Must convey the inner journey through a character who spends most of the show hiding their feelings. The breakthrough in 'Being Alive' must feel earned by everything that came before."
+      },
+      "performance": {
+        "stage_time_percentage": 90,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 5,
+        "quick_changes": 0,
+        "special_skills": ["sondheim_musicianship", "reactive_acting", "charm_that_masks_pain"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "One of Sondheim's greatest roles. Demands extraordinary acting, vocal musicianship, and emotional depth. 'Being Alive' is a career-defining moment. This role elevates performers permanently.",
+        "common_casting": "Charismatic, attractive performer with genuine Sondheim chops and deep emotional access. Must be someone you'd want as your best friend — and someone who makes you worry about them.",
+        "standout_opportunity": "'Being Alive' is one of the 5 greatest moments in musical theatre. Nail it, and you'll never be forgotten."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_technique", "emotional_depth", "reactive_acting", "musical_complexity", "vulnerability", "stage_presence"],
+        "challenge_areas": ["sustaining_90_percent_stage_time", "the_passive_protagonist_problem", "earning_Being_Alive"],
+        "recommended_for": ["serious musical theatre performers ready for their biggest challenge", "singers with strong musicianship wanting dramatic depth", "actors who can carry a show through presence"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["musicianship — can they handle Sondheim?", "charm that covers vulnerability", "genuine emotional access", "stage presence", "the ability to LISTEN"],
+        "common_mistakes": ["playing Bobby as sad from the start", "insufficient musicianship", "not earning the emotional climax", "being boring when reacting"],
+        "tips": ["Bobby's superpower is charm. Everyone loves Bobby because Bobby never lets anyone close enough to hurt them. That's not sadness — it's strategy. Play the charm genuinely, and let the cracks show slowly. By 'Being Alive', the walls should come down completely."]
+      },
+      "key_songs": [
+        {"title": "Company", "type": "ensemble_lead", "notes": "Opening. Bobby's friends calling. The cacophony of love surrounding them. Complex ensemble piece."},
+        {"title": "Someone Is Waiting", "type": "solo", "notes": "Bobby imagines the ideal partner (composed of all friends' qualities). Beautiful, tentative, revealing."},
+        {"title": "Marry Me a Little", "type": "solo", "notes": "Bobby wants commitment... but on their terms. Conditional love. Heartbreaking in its limitations."},
+        {"title": "Being Alive", "type": "solo", "notes": "THE climax. Bobby breaks through fear into genuine desire for connection. One of the greatest songs ever written. Must be devastating."},
+        {"title": "Barcelona", "type": "duet", "notes": "Morning-after scene. Comedic, sexy, evasive. Bobby trying not to commit."}
+      ]
+    },
+    {
+      "id": "company-joanne",
+      "name": "Joanne",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 40, "max": 55},
+      "description": "The sharpest, most cynical, most truthful of the wives. She's on her third marriage, drinks too much, and sees through everyone's pretense — especially Bobby's. She sings 'The Ladies Who Lunch' — one of the greatest songs in musical theatre. She's terrifying because she tells the truth.",
+      "vocal": {
+        "range": "G3-D5",
+        "voice_type": "alto/mezzo with belt",
+        "belt_required": true,
+        "belt_range": "A3-D5",
+        "tessitura": "low-mid",
+        "style_notes": "Powerful, sardonic belt. 'Ladies Who Lunch' is a volcanic eruption of bitterness and truth. Needs a voice that can cut glass. Think Elaine Stritch — conversational to explosive."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Presence is everything."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["cynical truth-teller", "sharp-tongued socialite", "wounded wit", "dangerous friend"],
+        "emotional_range": "high — wit, bitterness, vulnerability beneath acid, truth-telling, seduction, self-loathing",
+        "comedy_skills": true,
+        "notes": "Must be simultaneously terrifying and sympathetic. Joanne says the things nobody else will. Her proposition to Bobby at the end is a pivotal moment — it can be played many ways but must be charged. She's the character who forces Bobby's breakthrough."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["devastating_delivery", "acid_wit", "sondheim_musicianship"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out"],
+        "why": "'The Ladies Who Lunch' stops the show cold. It's one of the 10 most famous songs in musical theatre. This is a role that makes reputations. Joanne dominates every scene she's in.",
+        "common_casting": "Formidable actress-singer with razor wit and a voice that could strip paint. Often the most experienced performer in the cast.",
+        "standout_opportunity": "'Ladies Who Lunch' is a career-making song. One performance can define a career. Elaine Stritch, Patti LuPone — this role creates legends."
+      },
+      "growth_profile": {
+        "skills_developed": ["showstopper_delivery", "acid_comedy", "sondheim_technique", "commanding_presence", "truth_in_performance"],
+        "challenge_areas": ["not_being_one_note_bitter", "finding_vulnerability", "the_enormous_expectations_of_the_role"],
+        "recommended_for": ["powerful belters wanting a defining role", "actresses with razor wit", "performers ready to own the stage"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["can they deliver 'Ladies Who Lunch'?", "genuine danger", "wit AND heart", "commanding presence", "Sondheim musicianship"],
+        "common_mistakes": ["all acid no heart", "trying to be Elaine Stritch instead of finding your own Joanne", "not enough vocal power for the song"],
+        "tips": ["Joanne is the most honest person in the room and it's killing her. She drinks because she sees too clearly. She's not mean — she's heartbroken by the gap between what love promises and what it delivers. Find THAT, and 'Ladies Who Lunch' becomes nuclear."]
+      },
+      "key_songs": [
+        {"title": "The Ladies Who Lunch", "type": "solo", "notes": "THE showstopper. Joanne eviscerates her social class and herself. Builds from sardonic observation to primal scream. Must stop the show."},
+        {"title": "The Little Things You Do Together", "type": "ensemble", "notes": "Sardonic commentary on marriage. Joanne's wit shines."},
+        {"title": "Company (finale)", "type": "ensemble", "notes": "Part of the ensemble supporting Bobby's journey."}
+      ]
+    },
+    {
+      "id": "company-sarah",
+      "name": "Sarah",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 28, "max": 42},
+      "description": "One half of the most physical couple — she and Harry are always either fighting or exercising. Sarah is competitive, intense about food/diet, and a karate expert. Their scenes are among the funniest in the show.",
+      "vocal": {
+        "range": "Bb3-E5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid",
+        "style_notes": "Strong ensemble voice. Must handle Sondheim's complex harmonies and rhythms. Character voice with energy."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["physical_comedy", "karate_staging"],
+        "stamina": "moderate",
+        "notes": "Karate/physical combat scene with Harry is a highlight. Physical comedy more than dance."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["competitive wife", "physical comedian", "intense personality"],
+        "emotional_range": "moderate — competitiveness, love, frustration, comedy",
+        "comedy_skills": true,
+        "notes": "Physical comedy essential. The karate scene must be hilarious and slightly unhinged. Must show genuine love underneath the competition."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["physical_comedy", "karate_staging", "competitive_energy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun featured role with a great comedy scene. Good Sondheim introduction without the pressure of a solo. The karate scene is memorable.",
+        "common_casting": "Physical actress with comedy chops and musical ability.",
+        "standout_opportunity": "The karate scene gets huge laughs. A committed Sarah makes it a highlight."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "physical_comedy", "scene_work", "couple_dynamics"],
+        "challenge_areas": ["limited_material", "making_vignette_count"],
+        "recommended_for": ["performers wanting Sondheim experience", "physical comedians in musical theatre", "those building featured role credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical comedy", "Sondheim musicianship", "chemistry with Harry", "competitive energy"],
+        "common_mistakes": ["not physical enough", "playing too broad", "poor Sondheim singing"],
+        "tips": ["Sarah MUST win. At everything. Always. It's not aggression — it's how she shows love. She and Harry are perfect for each other because they're both insane in the same way."]
+      },
+      "key_songs": [
+        {"title": "The Little Things You Do Together", "type": "ensemble", "notes": "Ensemble number about marriage."},
+        {"title": "Side by Side by Side / What Would We Do Without You", "type": "ensemble", "notes": "Major ensemble number. Couples celebrate Bobby."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening and closing ensemble."}
+      ]
+    },
+    {
+      "id": "company-harry",
+      "name": "Harry",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 28, "max": 42},
+      "description": "Sarah's husband — equally competitive, slightly less intense. Their relationship is defined by constant one-upmanship disguised as love. The recovering-from-something aspect adds depth beneath the comedy.",
+      "vocal": {
+        "range": "Bb2-F4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "C3-E4",
+        "tessitura": "mid",
+        "style_notes": "Sondheim ensemble. Must be precise and musical. Character delivery."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["physical_comedy", "karate_staging"],
+        "stamina": "moderate",
+        "notes": "Physical combat scene with Sarah. Physical comedy focus."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["competitive husband", "reluctant combatant", "patient partner"],
+        "emotional_range": "moderate — competitiveness, exasperation, love, comedy",
+        "comedy_skills": true,
+        "notes": "Foil to Sarah. Must play the straight man to her intensity while being equally competitive."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["physical_comedy", "straight_man_skills"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Solid supporting role in a Sondheim show. Good introduction to the material without heavy vocal demands.",
+        "common_casting": "Physical actor with comic timing and musical ability.",
+        "standout_opportunity": "The couple's scenes are comedy gold when both performers commit fully."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "physical_comedy", "couple_work"],
+        "challenge_areas": ["limited_material", "supporting_Sarah's_energy"],
+        "recommended_for": ["actors wanting Sondheim experience", "physical performers building musical credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["chemistry with Sarah", "physical comedy", "Sondheim musicianship", "comic timing"],
+        "common_mistakes": ["too passive against Sarah", "not musical enough"],
+        "tips": ["Harry loves Sarah AND is terrified of Sarah. That combination is the comedy. He's as competitive as she is — he's just learned to hide it better."]
+      },
+      "key_songs": [
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Major ensemble number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."},
+        {"title": "The Little Things You Do Together", "type": "ensemble", "notes": "Marriage commentary."}
+      ]
+    },
+    {
+      "id": "company-amy",
+      "name": "Amy (or Jamie in revival)",
+      "role_type": "supporting",
+      "gender": "female (original) / male (revival)",
+      "age_range": {"min": 25, "max": 38},
+      "description": "Half of the about-to-be-married couple (with Paul/Jamie). Amy is having a full breakdown on her wedding day, singing 'Getting Married Today' — one of the most virtuosic patter songs in musical theatre. She's panicking, hilarious, and deeply relatable to anyone who's ever been terrified of commitment.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "soprano/mezzo-soprano",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid-high",
+        "style_notes": "'Getting Married Today' is one of the hardest songs in the canon — rapid-fire patter at breakneck speed with perfect diction, building to hysteria. Must be rhythmically precise while appearing to fall apart. Extraordinary vocal control required."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "moderate",
+        "notes": "No dance. Physical comedy and frantic staging in 'Getting Married Today'."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["panicking bride", "neurotic romantic", "commitment-phobe in crisis"],
+        "emotional_range": "extreme — panic, hysteria, love, fear, humor, eventual peace",
+        "comedy_skills": true,
+        "notes": "'Getting Married Today' is a masterclass in controlled hysteria. Must appear to be completely falling apart while executing incredibly precise vocal technique. The comedy must be real — she's genuinely terrified."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["rapid_patter_singing", "controlled_hysteria", "sondheim_precision"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "best_to_grow"],
+        "why": "'Getting Married Today' is one of the most talked-about moments in any Company production. It's a viral-worthy performance when done well. Incredible showcase for technical vocal ability and comedic acting.",
+        "common_casting": "Technically gifted singer-actress who can handle the patter AND the comedy. Must be sympathetic even in full meltdown mode.",
+        "standout_opportunity": "'Getting Married Today' makes careers. If you can sing it, everyone in the audience will know your name."
+      },
+      "growth_profile": {
+        "skills_developed": ["patter_singing", "sondheim_technique", "comedic_acting", "vocal_precision", "controlled_chaos"],
+        "challenge_areas": ["the_sheer_difficulty_of_the_song", "making_panic_sympathetic", "diction_at_speed"],
+        "recommended_for": ["technically gifted singers wanting a defining moment", "comedic actresses with vocal chops", "performers who thrive under pressure"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["can they actually sing 'Getting Married Today'? (non-negotiable)", "comedy within precision", "sympathetic panic", "Sondheim musicianship"],
+        "common_mistakes": ["can't actually execute the patter", "all panic no comedy", "losing diction at speed", "not sympathetic enough"],
+        "tips": ["Amy loves Paul. She wants to marry Paul. She just happens to be absolutely terrified of marriage. The comedy comes from the gap between how she FEELS (love) and how she's BEHAVING (total meltdown). Practice the patter until it's in your bones — then forget technique and play the panic."]
+      },
+      "key_songs": [
+        {"title": "Getting Married Today", "type": "solo_with_ensemble", "notes": "One of the hardest songs in musical theatre. Rapid patter over a hymn. Hysteria, humor, genius. THE Amy showcase."},
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    },
+    {
+      "id": "company-paul",
+      "name": "Paul (or Jamie in revival)",
+      "role_type": "supporting",
+      "gender": "male (original) / female (revival)",
+      "age_range": {"min": 25, "max": 38},
+      "description": "Amy's patient, loving fiancé/husband. He's calm, steady, and the perfect counterbalance to Amy's hysteria. Minimal singing but an important grounding presence.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Ensemble vocals. Minimal solo demands. Must be solid Sondheim ensemble singer."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Staging only."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["patient partner", "grounding presence", "calm in chaos"],
+        "emotional_range": "moderate — patience, love, quiet concern, steadiness",
+        "comedy_skills": false,
+        "notes": "The straight man to Amy's panic. Must convey genuine love and patience. Often the most grounded person in the room."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["calm_presence", "reactive_acting"]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "🔧 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Small but important role. Great introduction to Sondheim without heavy demands. Good for building stage confidence.",
+        "common_casting": "Warm, grounded actor who can be a calm center.",
+        "standout_opportunity": "Paul's quiet presence makes Amy's scenes work. A good Paul is essential even if not flashy."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "supporting_role_craft", "straight_man_technique"],
+        "challenge_areas": ["very_limited_material", "being_present_without_focus"],
+        "recommended_for": ["performers new to Sondheim", "actors who excel at supporting work"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["calm presence", "genuine warmth", "Sondheim musicianship", "chemistry with Amy"],
+        "common_mistakes": ["being forgettable", "not enough investment in limited scenes"],
+        "tips": ["Paul loves Amy enough to wait through a meltdown. That patience isn't passive — it's the most active form of love in the show."]
+      },
+      "key_songs": [
+        {"title": "Getting Married Today", "type": "ensemble", "notes": "Calm presence against Amy's chaos."},
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    },
+    {
+      "id": "company-peter",
+      "name": "Peter",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 45},
+      "description": "Susan's husband — the couple who are getting divorced but seem happier than anyone. Their scenes explore the irony that ending a marriage can sometimes be the most loving thing to do.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "D3-E4",
+        "tessitura": "mid",
+        "style_notes": "Sondheim ensemble. Precise, musical, character-driven delivery."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "Staging only."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["amicable ex", "sophisticated urbanite", "unexpected romantic"],
+        "emotional_range": "moderate — contentment, irony, genuine care",
+        "comedy_skills": true,
+        "notes": "The comedy of being happier divorced than married must land without being cruel. Genuine warmth with Susan."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["ironic_delivery", "chemistry_work"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Supporting role in a Sondheim classic. Good experience, manageable demands.",
+        "common_casting": "Likeable actor with musical ability.",
+        "standout_opportunity": "The divorcing couple scenes are poignant and funny. Good material to work with."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "scene_work", "ironic_comedy"],
+        "challenge_areas": ["limited_material"],
+        "recommended_for": ["performers building Sondheim credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["likability", "chemistry with Susan", "musicianship", "ironic humor"],
+        "common_mistakes": ["playing bitter about divorce", "not enough warmth"],
+        "tips": ["Peter and Susan are genuinely happier apart. That's not sad — it's liberating. Play the joy of a good divorce."]
+      },
+      "key_songs": [
+        {"title": "Sorry-Grateful", "type": "ensemble", "notes": "Husbands reflect on marriage. One of Sondheim's most beautiful ensemble pieces."},
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    },
+    {
+      "id": "company-susan",
+      "name": "Susan",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 30, "max": 45},
+      "description": "Peter's wife/ex-wife. Sophisticated, content, part of the ironic divorcing couple. In the revival, this character was merged with others.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Sondheim ensemble. Clean, precise, musical."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "Staging only."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["content divorcee", "sophisticate", "truth-teller"],
+        "emotional_range": "moderate — contentment, irony, genuine care, independence",
+        "comedy_skills": true,
+        "notes": "Similar to Peter — must sell the happy divorce concept with warmth and humor."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["sophisticated_delivery"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Solid supporting role in a Sondheim classic.",
+        "common_casting": "Sophisticated actress with musical ability.",
+        "standout_opportunity": "The divorce scenes offer sharp comedy and genuine insight."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "sophisticated_comedy"],
+        "challenge_areas": ["limited_material"],
+        "recommended_for": ["performers building Sondheim experience"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["sophistication", "chemistry with Peter", "musicianship"],
+        "common_mistakes": ["too cold", "no ironic warmth"],
+        "tips": ["Susan chose freedom and she's thriving. Show that without smugness."]
+      },
+      "key_songs": [
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    },
+    {
+      "id": "company-jenny",
+      "name": "Jenny",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 30, "max": 45},
+      "description": "David's wife — the pot-smoking couple who are trying too hard to be cool. Their scene where they share marijuana with Bobby is a comedy highlight. Jenny is nervous, eager to please, and slightly manic.",
+      "vocal": {
+        "range": "Bb3-D5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Sondheim ensemble. Character voice with nervous energy."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Physical comedy in the marijuana scene."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["nervous hostess", "trying-too-hard wife", "suburban rebel"],
+        "emotional_range": "moderate — nervousness, eagerness, comedy, genuine warmth",
+        "comedy_skills": true,
+        "notes": "The marijuana scene is all about comic timing. Must play the desperation to be seen as cool while being deeply uncool."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["nervous_comedy", "couple_dynamics"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun supporting role with a great comedy scene. Low pressure Sondheim introduction.",
+        "common_casting": "Comic actress with musical chops.",
+        "standout_opportunity": "The marijuana scene gets big laughs. A great Jenny makes it a highlight."
+      },
+      "growth_profile": {
+        "skills_developed": ["comic_scene_work", "sondheim_ensemble", "nervous_character_comedy"],
+        "challenge_areas": ["limited_material", "making_one_scene_count"],
+        "recommended_for": ["comic actresses building Sondheim credits"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["comic timing", "nervous energy", "chemistry with David", "musicianship"],
+        "common_mistakes": ["one-note nervousness", "not enough commitment to the bit"],
+        "tips": ["Jenny wants Bobby to think she's cool. She's not cool. She's a suburban wife who bought pot for the first time. That gap is everything."]
+      },
+      "key_songs": [
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    },
+    {
+      "id": "company-david",
+      "name": "David",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 45},
+      "description": "Jenny's husband. The other half of the pot-smoking couple. Slightly more relaxed than Jenny but equally uncool in his attempts to be hip.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Sondheim ensemble singer."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["suburban husband", "trying-to-be-cool", "amiable everyman"],
+        "emotional_range": "low-moderate — amiability, mild panic, comedy",
+        "comedy_skills": true,
+        "notes": "Supports Jenny's energy. Complicit in the pot scene comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 7,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["straight_man_comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "🔧 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Small role in a great show. Good Sondheim introduction.",
+        "common_casting": "Likeable actor with musical ability.",
+        "standout_opportunity": "Solid supporting work that builds ensemble experience."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "scene_work"],
+        "challenge_areas": ["very_limited_material"],
+        "recommended_for": ["performers wanting any Sondheim stage time"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["likeability", "chemistry with Jenny", "musicianship"],
+        "common_mistakes": ["being forgettable"],
+        "tips": ["David goes along with Jenny's plans because he loves her. Simple as that."]
+      },
+      "key_songs": [
+        {"title": "Sorry-Grateful", "type": "ensemble", "notes": "Husbands reflect on marriage."},
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    },
+    {
+      "id": "company-marta",
+      "name": "Marta",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 22, "max": 35},
+      "description": "One of Bobby's three girlfriends. Marta is a passionate, free-spirited New Yorker who loves the city with fierce intensity. She sings 'Another Hundred People' — a brilliant, complex Sondheim number about urban loneliness and connection.",
+      "vocal": {
+        "range": "A3-E5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-E5",
+        "tessitura": "mid-high",
+        "style_notes": "'Another Hundred People' is rhythmically complex, lyrically dense, and emotionally layered. Must handle Sondheim's intricate rhythms while conveying genuine passion for the city."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Staging and presence."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["free spirit", "passionate urbanite", "bohemian girlfriend"],
+        "emotional_range": "moderate — passion, intensity, joy, longing",
+        "comedy_skills": false,
+        "notes": "Must embody New York energy. Passionate, intelligent, slightly overwhelming."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["sondheim_solo_delivery", "passionate_presence"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_grow", "best_to_stand_out"],
+        "why": "'Another Hundred People' is a Sondheim masterpiece and a great solo showcase. Small role, big song. Perfect for building Sondheim credentials.",
+        "common_casting": "Powerful mezzo-belt with intelligence and intensity.",
+        "standout_opportunity": "'Another Hundred People' is unforgettable when performed well. It's the hidden gem song of Company."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_solo", "complex_rhythm_singing", "passionate_character_work"],
+        "challenge_areas": ["mastering_the_song's_complexity", "making_impact_in_limited_time"],
+        "recommended_for": ["singers wanting a Sondheim solo", "performers building audition repertoire", "mezzos wanting showcase material"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["can they handle 'Another Hundred People'?", "genuine passion", "Sondheim musicianship", "intensity"],
+        "common_mistakes": ["losing the rhythm", "all intensity no variation", "not connecting emotionally to the lyrics"],
+        "tips": ["Marta loves New York the way some people love a person — completely, irrationally, and with open eyes. 'Another Hundred People' is a love letter to a city that doesn't love you back. Sing it like you mean every word."]
+      },
+      "key_songs": [
+        {"title": "Another Hundred People", "type": "solo", "notes": "Sondheim masterpiece about NYC. Complex rhythms, dense lyrics, builds beautifully."},
+        {"title": "Company", "type": "ensemble", "notes": "Part of the ensemble."}
+      ]
+    },
+    {
+      "id": "company-april",
+      "name": "April",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 22, "max": 32},
+      "description": "Another of Bobby's girlfriends — a slightly ditzy flight attendant. Her 'Barcelona' scene/duet with Bobby is a comedy highlight about the morning after and the desperate attempt to avoid real connection.",
+      "vocal": {
+        "range": "B3-D5",
+        "voice_type": "soprano/mezzo",
+        "belt_required": false,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Must handle 'Barcelona' duet — conversational, funny, sexy. Character singing quality."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance. Intimate staging."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["ditzy girlfriend", "morning-after comedy", "airhead with depth"],
+        "emotional_range": "low-moderate — comedy, sweetness, cluelessness",
+        "comedy_skills": true,
+        "notes": "'Barcelona' requires impeccable comic timing in a very intimate scene. Must be funny without being cruel to the character."
+      },
+      "performance": {
+        "stage_time_percentage": 6,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["intimate_comedy", "morning_after_staging"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Fun small role with one great scene. 'Barcelona' is memorable and fun to perform.",
+        "common_casting": "Attractive, funny singer-actress with good comic timing.",
+        "standout_opportunity": "'Barcelona' is a comic gem. A great April makes it a highlight."
+      },
+      "growth_profile": {
+        "skills_developed": ["intimate_scene_work", "comic_duet", "sondheim_performance"],
+        "challenge_areas": ["very_limited_material"],
+        "recommended_for": ["performers wanting Sondheim experience in a manageable role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["comic timing", "chemistry with Bobby", "attractiveness", "can she sing 'Barcelona'?"],
+        "common_mistakes": ["playing dumb instead of oblivious", "no chemistry"],
+        "tips": ["April isn't stupid — she's just not thinking about the same things Bobby is. She had a nice time and is going to work. Bobby's the one making it complicated."]
+      },
+      "key_songs": [
+        {"title": "Barcelona", "type": "duet", "notes": "Morning-after comedy duet with Bobby. Sexy, funny, evasive."},
+        {"title": "Company", "type": "ensemble", "notes": "Part of the ensemble."}
+      ]
+    },
+    {
+      "id": "company-kathy",
+      "name": "Kathy",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 25, "max": 35},
+      "description": "The third girlfriend — the one who could have been 'the one.' She's smart, warm, and genuinely cares about Bobby. She's the missed opportunity that haunts the show.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "C4-C5",
+        "tessitura": "mid",
+        "style_notes": "Ensemble vocals. Featured in some numbers. Sweet, genuine vocal quality."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["the one that got away", "genuine connection", "warm and real"],
+        "emotional_range": "moderate — warmth, disappointment, genuine affection",
+        "comedy_skills": false,
+        "notes": "Must convey genuine connection with Bobby that he's too afraid to pursue. The missed-opportunity poignancy is essential."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["emotional_authenticity"]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "🔧 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Small but emotionally important role. Good Sondheim introduction.",
+        "common_casting": "Warm, genuine actress who makes you believe she could have been Bobby's person.",
+        "standout_opportunity": "If the audience feels the missed connection, Kathy has done her job beautifully."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "emotional_subtlety", "small_role_impact"],
+        "challenge_areas": ["extremely_limited_material"],
+        "recommended_for": ["performers new to Sondheim"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["warmth", "genuine quality", "chemistry with Bobby"],
+        "common_mistakes": ["being forgettable", "not enough emotional weight"],
+        "tips": ["Kathy is the real thing and Bobby knows it. She's the person who makes 'Being Alive' necessary."]
+      },
+      "key_songs": [
+        {"title": "Company", "type": "ensemble", "notes": "Part of the ensemble."},
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Part of the couples/girlfriends number."}
+      ]
+    },
+    {
+      "id": "company-larry",
+      "name": "Larry",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 45, "max": 60},
+      "description": "Joanne's third husband. Patient, wealthy, slightly defeated. He's learned to navigate Joanne's barbs with quiet grace. Their dynamic reveals volumes about marriage as negotiation.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "N/A",
+        "tessitura": "mid",
+        "style_notes": "Sondheim ensemble. Solid musical support."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "low",
+        "notes": "No dance."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["patient husband", "quiet strength", "resigned romantic"],
+        "emotional_range": "moderate — patience, quiet love, resignation, dignity",
+        "comedy_skills": true,
+        "notes": "Must convey that he stays with Joanne by choice, not weakness. His patience is a form of love."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["quiet_strength", "reactive_acting"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "🌱 Gentle Growth",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Quiet supporting role opposite the showiest character. Good for performers who excel at understatement.",
+        "common_casting": "Distinguished, patient actor with quiet presence.",
+        "standout_opportunity": "Being the calm in Joanne's storm is its own art form."
+      },
+      "growth_profile": {
+        "skills_developed": ["sondheim_ensemble", "understated_acting", "reactive_work"],
+        "challenge_areas": ["not_being_overshadowed_by_Joanne"],
+        "recommended_for": ["mature performers in Sondheim productions"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["quiet dignity", "patience", "chemistry with Joanne", "musicianship"],
+        "common_mistakes": ["being invisible", "playing pushover instead of patient"],
+        "tips": ["Larry chose to marry Joanne THREE times. He knows exactly who she is and loves her anyway. That's not weakness — it's the strongest love in the show."]
+      },
+      "key_songs": [
+        {"title": "Sorry-Grateful", "type": "ensemble", "notes": "Husbands reflecting. Larry's perspective is uniquely earned."},
+        {"title": "Side by Side by Side", "type": "ensemble", "notes": "Couples number."},
+        {"title": "Company", "type": "ensemble", "notes": "Opening/closing."}
+      ]
+    }
+  ]
+}

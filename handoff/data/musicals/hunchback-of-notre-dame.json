@@ -1,0 +1,1697 @@
+{
+  "musical": {
+    "id": "hunchback-of-notre-dame",
+    "title": "The Hunchback of Notre Dame",
+    "music_by": "Alan Menken",
+    "lyrics_by": "Stephen Schwartz",
+    "book_by": "Peter Parnell",
+    "based_on": "1996 Disney animated film / Victor Hugo novel",
+    "year_premiered": 2014,
+    "setting": "Medieval Paris \u2014 the Cathedral of Notre Dame and surrounding streets",
+    "time_period": "15th century Paris",
+    "themes": [
+      "outcasts and belonging",
+      "religious hypocrisy",
+      "compassion",
+      "justice",
+      "obsession",
+      "sanctuary",
+      "what makes a monster"
+    ],
+    "genre_tags": [
+      "disney",
+      "epic",
+      "dramatic",
+      "choral",
+      "dark",
+      "operatic",
+      "ensemble_heavy"
+    ],
+    "vocal_style": "Operatic choral meets Broadway belt. Menken/Schwartz at their most epic. Massive choir throughout. Latin liturgical elements.",
+    "dance_intensity": "moderate",
+    "orchestra_size": "full_pit_with_choir",
+    "typical_cast_size": "25-40 (including large choir)",
+    "age_range": "18-65",
+    "difficulty_overall": "very_advanced",
+    "junior_version_available": false,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Quasimodo, the deformed bell-ringer of Notre Dame, has been raised in isolation by the ruthless Judge Claude Frollo. When he ventures out during the Festival of Fools, he meets the Romani woman Esmeralda and discovers a world of beauty, cruelty, and compassion. As Frollo's obsession with Esmeralda turns to murderous rage, Quasimodo must find the courage to defy his master and fight for what's right."
+  },
+  "roles": [
+    {
+      "id": "hunchback-quasimodo",
+      "name": "Quasimodo",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "The deformed bell-ringer of Notre Dame \u2014 gentle, brilliant, artistic, and desperately lonely. He's been told his whole life that he's a monster, and struggles between his longing for connection and his fear of the outside world. One of the most vocally and emotionally demanding roles in the Disney canon.",
+      "vocal": {
+        "range": "A2-A4",
+        "voice_type": "tenor/high baritone",
+        "belt_required": true,
+        "belt_range": "D3-A4",
+        "tessitura": "mid-high",
+        "style_notes": "Soaring, powerful, emotionally devastating tenor. 'Out There' is one of the great tenor showpieces \u2014 must be thrilling AND heartbreaking. 'Made of Stone' requires raw power. Must contrast gentle vulnerability with massive vocal climaxes. Menken's most demanding male score."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": [
+          "physical_character_work",
+          "bell_ringing_choreography",
+          "hunched_physicality"
+        ],
+        "stamina": "very_high",
+        "notes": "The physical demands of maintaining Quasimodo's deformity throughout the show are enormous. Bell-ringing sequences require strength and coordination. Must sustain hunched physicality while singing full voice."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "gentle outcast",
+          "hidden hero",
+          "innocent discovering the world",
+          "physically transformed character"
+        ],
+        "emotional_range": "extreme \u2014 isolation, wonder, joy, heartbreak, rage, courage, selfless love",
+        "comedy_skills": true,
+        "notes": "Must make the audience see past the physical deformity to the beautiful soul underneath \u2014 that's literally the theme of the show. The gargoyle scenes require comedic ability. His unrequited love for Esmeralda must be devastating. Physical acting is as important as vocal."
+      },
+      "performance": {
+        "stage_time_percentage": 70,
+        "solo_songs": 4,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "sustained_physical_deformity",
+          "bell_ringing_staging",
+          "singing_while_physically_contorted",
+          "puppet_interaction"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "One of the most demanding roles in all of musical theatre \u2014 vocally, physically, and emotionally. 'Out There' alone is career-defining. A great Quasimodo is unforgettable.",
+        "common_casting": "Powerful tenor with extraordinary emotional access, physical commitment, and stamina. Must be someone who can make you weep while singing impossibly high notes in a hunched position.",
+        "standout_opportunity": "'Out There' is one of the 10 greatest tenor moments in musical theatre. If you can nail it while maintaining the physical characterization, you will be remembered forever."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "tenor_power",
+          "physical_character_work",
+          "emotional_depth",
+          "stamina",
+          "transformation_acting"
+        ],
+        "challenge_areas": [
+          "maintaining_physicality_while_singing",
+          "vocal_stamina_in_demanding_score",
+          "unrequited_love_acting"
+        ],
+        "recommended_for": [
+          "powerful tenors wanting the ultimate challenge",
+          "physical actors with great voices",
+          "performers who want to play characters that change audiences"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "extraordinary tenor voice",
+          "physical commitment",
+          "emotional depth",
+          "stamina",
+          "can they sing 'Out There' AND maintain the physicality?"
+        ],
+        "common_mistakes": [
+          "all voice no character",
+          "dropping the physicality when singing",
+          "not enough emotional range",
+          "playing Quasimodo as pathetic instead of heroic"
+        ],
+        "tips": [
+          "Quasimodo has spent his entire life being told he's ugly, stupid, and unlovable. And yet he's created a beautiful world in his bell tower \u2014 he's an artist, a dreamer, and the kindest person in Paris. He's not pitiful \u2014 he's extraordinary. 'Out There' should feel like a soul breaking free, not a sad boy singing."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Out There",
+          "type": "solo",
+          "notes": "THE showpiece. Quasimodo's longing for the outside world. Builds from whispered dream to soaring, roof-shaking power. Career-defining."
+        },
+        {
+          "title": "Made of Stone",
+          "type": "solo",
+          "notes": "Quasimodo retreats into isolation after heartbreak. Raw, powerful, devastating."
+        },
+        {
+          "title": "Heaven's Light",
+          "type": "solo",
+          "notes": "Gentle, beautiful \u2014 Quasimodo in love. Tender and pure. Immediately followed by Frollo's dark 'Hellfire'."
+        },
+        {
+          "title": "Top of the World",
+          "type": "duet",
+          "notes": "With Esmeralda on the cathedral. Joy, wonder, connection."
+        },
+        {
+          "title": "Finale",
+          "type": "ensemble",
+          "notes": "Quasimodo's ultimate act of courage."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-frollo",
+      "name": "Judge Claude Frollo",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 40,
+        "max": 65
+      },
+      "description": "The terrifying, self-righteous judge who raised Quasimodo in isolation and convinced him he's a monster. Frollo believes he is God's instrument of justice, and his obsessive desire for Esmeralda drives him to madness and murder. One of Disney's greatest villains \u2014 because he believes he's the hero.",
+      "vocal": {
+        "range": "G2-F4",
+        "voice_type": "bass-baritone/baritone",
+        "belt_required": true,
+        "belt_range": "C3-E4",
+        "tessitura": "low-mid",
+        "style_notes": "'Hellfire' is one of the greatest villain songs ever written \u2014 operatic, terrifying, sexually charged, and vocally massive. Must have genuine low-end power AND dramatic climax capability. Classical/operatic technique beneficial. The Latin choir backdrop requires a voice that can cut through."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [],
+        "stamina": "moderate",
+        "notes": "No dance. Physical presence and intimidation. Controlled, rigid physicality that masks inner turmoil."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "religious fanatic",
+          "self-righteous villain",
+          "obsessive predator",
+          "psychological abuser"
+        ],
+        "emotional_range": "extreme \u2014 righteousness, control, obsession, lust, madness, rage, self-delusion",
+        "comedy_skills": false,
+        "notes": "Must be genuinely terrifying. Frollo is not a cartoon villain \u2014 he's a real monster who believes God is on his side. His obsession with Esmeralda is deeply disturbing and must be played with unflinching truth. He's abused Quasimodo for decades and believes it's love. The audience should be disturbed, not entertained."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "psychological_menace",
+          "operatic_delivery",
+          "controlled_physicality",
+          "religious_authority"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "'Hellfire' alone makes this one of the greatest villain roles ever written. The psychological complexity is unmatched. A career-defining role for dramatic baritones.",
+        "common_casting": "Powerful bass-baritone with operatic capability, commanding presence, and the ability to be genuinely frightening. Classical training hugely beneficial.",
+        "standout_opportunity": "'Hellfire' is arguably the greatest villain song in all of Disney/musical theatre. Perform it well and you will be legendary."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "operatic_technique",
+          "dramatic_villainy",
+          "psychological_complexity",
+          "vocal_power",
+          "commanding_presence"
+        ],
+        "challenge_areas": [
+          "the_psychological_darkness",
+          "making_righteousness_believable",
+          "hellfire_vocal_demands"
+        ],
+        "recommended_for": [
+          "dramatic baritones wanting the ultimate villain role",
+          "classically trained singers exploring musical theatre",
+          "actors who can handle dark material with integrity"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "massive voice \u2014 classical/operatic quality",
+          "genuine menace",
+          "psychological depth",
+          "can they sing 'Hellfire'?",
+          "commanding presence"
+        ],
+        "common_mistakes": [
+          "pantomime villain instead of real monster",
+          "not enough vocal power for the score",
+          "playing evil instead of playing righteous",
+          "making it campy"
+        ],
+        "tips": [
+          "Frollo genuinely believes he is saving souls. He believes Quasimodo is better off locked in the tower. He believes the Romani are a plague. He believes his desire for Esmeralda is HER sin, not his. Play the conviction \u2014 the horror comes from how certain he is that he's right."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Hellfire",
+          "type": "solo_with_choir",
+          "notes": "One of the greatest songs ever written for a villain. Frollo's obsession and self-delusion set against a Latin choir. Operatic, terrifying, magnificent."
+        },
+        {
+          "title": "The Bells of Notre Dame",
+          "type": "ensemble_featured",
+          "notes": "Frollo's backstory and cruelty established. Narrative power."
+        },
+        {
+          "title": "In Here / Out There (counterpoint)",
+          "type": "duet_concept",
+          "notes": "Frollo's control over Quasimodo contrasted with Quasi's longing."
+        },
+        {
+          "title": "Esmeralda",
+          "type": "ensemble",
+          "notes": "Frollo's hunt. Menacing, relentless."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-esmeralda",
+      "name": "Esmeralda",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "A fierce, compassionate Romani woman who sees the humanity in Quasimodo when no one else does. She's brave, defiant, and refuses to be anyone's victim or prize. She stands up to Frollo's persecution and inspires Quasimodo's courage. A strong, complex woman in a world that wants to control her.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-F5",
+        "tessitura": "mid-high",
+        "style_notes": "Powerful belt with emotional depth. 'God Help the Outcasts' is one of the most beautiful prayers in musical theatre \u2014 must be simple and devastating. Must also handle fiery, defiant numbers. World music influence in some numbers."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "romani_influenced",
+          "festival_dance",
+          "sensual_staging"
+        ],
+        "stamina": "high",
+        "notes": "The Festival of Fools performance is a significant dance moment. Must move with grace, strength, and defiance."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "defiant heroine",
+          "compassionate rebel",
+          "persecuted outsider",
+          "three men's obsession"
+        ],
+        "emotional_range": "extreme \u2014 defiance, compassion, fear, courage, tenderness, righteous anger",
+        "comedy_skills": false,
+        "notes": "Must navigate being the object of three men's desire (Quasi's innocent love, Frollo's obsession, Phoebus's genuine attraction) while maintaining her own agency. She is NOT a prize \u2014 she's a person. Her compassion for Quasimodo must be genuine, not pitying."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "festival_performance",
+          "defiant_physicality",
+          "prayer_singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_stand_out"
+        ],
+        "why": "A powerful, complex leading lady role. 'God Help the Outcasts' is one of the most moving songs in the Disney canon. Esmeralda is the moral center of the show.",
+        "common_casting": "Powerful mezzo-belt with fierce independence, dance ability, and genuine compassion. Must be someone who commands respect.",
+        "standout_opportunity": "'God Help the Outcasts' stops the show with its beauty and sincerity."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "dramatic_leading_lady",
+          "belt_power",
+          "dance_performance",
+          "complex_character_navigation"
+        ],
+        "challenge_areas": [
+          "navigating_multiple_male_gazes",
+          "maintaining_agency",
+          "the_weight_of_representation"
+        ],
+        "recommended_for": [
+          "strong mezzo-belts wanting a complex leading role",
+          "performers who want to play women with agency and depth"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "powerful voice",
+          "fierce independence",
+          "genuine compassion",
+          "dance ability",
+          "can she sing 'God Help the Outcasts' and make us believe it?"
+        ],
+        "common_mistakes": [
+          "being a passive love interest",
+          "not enough fire",
+          "oversexualizing the Festival scene",
+          "pity instead of compassion for Quasimodo"
+        ],
+        "tips": [
+          "Esmeralda has been persecuted her entire life for being Romani. She's not angry \u2014 she's righteous. She helps Quasimodo not because she pities him but because she RECOGNIZES him. They're both outcasts. 'God Help the Outcasts' should feel like she's praying for the first time and really meaning it."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "God Help the Outcasts",
+          "type": "solo",
+          "notes": "One of the most beautiful prayers in musical theatre. Simple, devastating, sincere. Must feel real, not performed."
+        },
+        {
+          "title": "Rhythm of the Tambourine",
+          "type": "solo_with_ensemble",
+          "notes": "Festival of Fools performance. Fiery, defiant, celebratory."
+        },
+        {
+          "title": "Top of the World",
+          "type": "duet",
+          "notes": "With Quasimodo. Beauty, connection, wonder."
+        },
+        {
+          "title": "Someday",
+          "type": "solo_or_duet",
+          "notes": "Hope for a better world. Tender and powerful."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-phoebus",
+      "name": "Captain Phoebus",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 40
+      },
+      "description": "The Captain of Frollo's guard who gradually realizes the horror of what he's serving. He's charming, brave, and falls genuinely in love with Esmeralda. He represents the possibility of conscience \u2014 a good man trapped in a corrupt system who eventually chooses to do right.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "baritone/tenor",
+        "belt_required": true,
+        "belt_range": "D3-F#4",
+        "tessitura": "mid",
+        "style_notes": "Strong, warm baritone with heroic quality. Must sound like a soldier who's also a romantic. Classic leading man voice."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "staging",
+          "fight_choreography"
+        ],
+        "stamina": "moderate",
+        "notes": "Fight scenes require stage combat ability. Military bearing throughout."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "reluctant hero",
+          "soldier of conscience",
+          "romantic lead",
+          "authority figure who rebels"
+        ],
+        "emotional_range": "high \u2014 duty, conflict, romance, defiance, courage",
+        "comedy_skills": true,
+        "notes": "Must show the genuine internal conflict of serving Frollo while knowing it's wrong. His decision to defy orders must feel earned and costly. Chemistry with Esmeralda essential."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "stage_combat",
+          "military_bearing",
+          "romantic_chemistry"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Classic leading man supporting role. Gets romantic material, heroic moments, and good character development. Less demanding than the three leads but still substantial.",
+        "common_casting": "Handsome, strong baritone with military bearing and romantic charm.",
+        "standout_opportunity": "The moral choice \u2014 defying Frollo \u2014 is a powerful dramatic moment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "leading_man_skills",
+          "stage_combat",
+          "moral_complexity",
+          "romantic_acting"
+        ],
+        "challenge_areas": [
+          "not_being_generic_hero",
+          "finding_the_internal_conflict"
+        ],
+        "recommended_for": [
+          "baritones building leading man credits",
+          "actors with military/authority bearing"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong voice",
+          "physical presence",
+          "chemistry with Esmeralda",
+          "can he convey internal conflict?",
+          "heroic quality"
+        ],
+        "common_mistakes": [
+          "generic Disney prince",
+          "no internal conflict",
+          "not enough warmth"
+        ],
+        "tips": [
+          "Phoebus has been a soldier his whole life. He's followed orders because that's what soldiers do. When he finally disobeys, it costs him everything he's built. That cost must show."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Rest and Recreation",
+          "type": "solo",
+          "notes": "Phoebus arrives in Paris. Establishing charm and military swagger."
+        },
+        {
+          "title": "Someday",
+          "type": "duet_or_ensemble",
+          "notes": "With Esmeralda. Hope for justice."
+        },
+        {
+          "title": "The Bells of Notre Dame",
+          "type": "ensemble",
+          "notes": "Part of the narrative."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-clopin",
+      "name": "Clopin",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 50
+      },
+      "description": "The charismatic King of the Romani and narrator of the story. He's a showman, a trickster, and a fiercely protective leader. He opens the show and guides the audience through the tale. A gift of a role for a charismatic performer.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor/baritone",
+        "belt_required": true,
+        "belt_range": "E3-G4",
+        "tessitura": "mid-high",
+        "style_notes": "Theatrical, storytelling voice with range from intimate narration to full belt. Must command attention from the first note. Showman quality."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "theatrical_staging",
+          "festival_choreography",
+          "storytelling_movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Physical storytelling. Festival of Fools staging. Must be a dynamic mover."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "narrator/showman",
+          "trickster king",
+          "protective leader",
+          "master of ceremonies"
+        ],
+        "emotional_range": "high \u2014 showmanship, humor, menace, protectiveness, narrative gravity",
+        "comedy_skills": true,
+        "notes": "Must own the audience from moment one. Clopin is both entertainer and protector \u2014 he tells this story because it matters. The Court of Miracles scene shows his dangerous side."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 2,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "audience_narration",
+          "showmanship",
+          "puppet_work",
+          "festival_MC"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_get_cast"
+        ],
+        "why": "Opens the show and sets the entire tone. Gets 'The Bells of Notre Dame' opening and 'Topsy Turvy'. A showman's dream \u2014 if you can command an audience, this role is your showcase.",
+        "common_casting": "Charismatic performer with big stage presence, vocal power, and storytelling ability.",
+        "standout_opportunity": "The opening of 'Bells of Notre Dame' is one of the most thrilling openings in musical theatre. Own that and you own the audience."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "narration",
+          "showmanship",
+          "audience_command",
+          "versatile_performance"
+        ],
+        "challenge_areas": [
+          "sustaining_narrator_energy",
+          "balancing_showman_and_leader"
+        ],
+        "recommended_for": [
+          "charismatic performers wanting narrator/MC roles",
+          "those who love owning an audience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "can they open the show? (essential)",
+          "charisma",
+          "vocal power",
+          "storytelling ability",
+          "stage command"
+        ],
+        "common_mistakes": [
+          "not enough gravity \u2014 this story is serious",
+          "too much clowning",
+          "losing the audience between big moments"
+        ],
+        "tips": [
+          "Clopin tells this story because the world needs to hear it. He's not just entertaining \u2014 he's bearing witness. The showmanship is the hook, but the truth is the point. Open with spectacle, end with meaning."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Bells of Notre Dame",
+          "type": "ensemble_lead",
+          "notes": "THE opening. Clopin introduces the story with epic grandeur. Sets the entire show."
+        },
+        {
+          "title": "Topsy Turvy",
+          "type": "ensemble_lead",
+          "notes": "Festival of Fools. Carnival energy, MC showmanship."
+        },
+        {
+          "title": "The Court of Miracles",
+          "type": "solo_with_ensemble",
+          "notes": "Clopin's dangerous side. Protector of his people."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-gargoyles",
+      "name": "The Gargoyles \u2014 Victor, Hugo & Laverne",
+      "role_type": "supporting",
+      "gender": "mixed",
+      "age_range": {
+        "min": 20,
+        "max": 55
+      },
+      "description": "Quasimodo's only friends \u2014 three stone gargoyles who come to life (or do they? Are they his imagination?). Victor is proper and sophisticated, Hugo is crude and funny, Laverne is sarcastic and wise. They provide comic relief and emotional support in Quasimodo's isolation.",
+      "vocal": {
+        "range": "varies \u2014 Victor (tenor), Hugo (baritone), Laverne (alto/mezzo)",
+        "voice_type": "character voices",
+        "belt_required": false,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Character singing with trio harmonies. Comic delivery more important than vocal power. Each gargoyle needs a distinct vocal personality."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "physical_comedy",
+          "statue_characterization"
+        ],
+        "stamina": "moderate",
+        "notes": "Physical comedy of being stone coming to life. Each has distinct physical character."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "comic relief trio",
+          "imaginary friends",
+          "stone coming to life",
+          "each distinct personality"
+        ],
+        "emotional_range": "moderate \u2014 comedy, warmth, wisdom, encouragement",
+        "comedy_skills": true,
+        "notes": "Must work as a trio with distinct personalities. The question of whether they're real or Quasimodo's imagination adds depth. They're funny but they also represent his only source of love and support."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "stone_characterization",
+          "trio_comedy",
+          "emotional_support_scenes"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Fun comic trio with audience-favorite moments. Each gargoyle gets distinct personality. Good for performers who work well in small groups.",
+        "common_casting": "Three distinct character actors/comedians with contrasting physical types and personalities.",
+        "standout_opportunity": "A great gargoyle trio provides essential comic relief in this dark show. Audiences love them."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "trio_comedy",
+          "physical_character",
+          "supporting_emotional_scenes"
+        ],
+        "challenge_areas": [
+          "balancing_comedy_with_show_tone",
+          "working_as_unit"
+        ],
+        "recommended_for": [
+          "character actors who love comedy",
+          "performers who work well in trios/groups"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "distinct character",
+          "comedy chops",
+          "trio chemistry",
+          "warmth"
+        ],
+        "common_mistakes": [
+          "too broad \u2014 this isn't a kids' show",
+          "not enough warmth",
+          "no distinction between gargoyles"
+        ],
+        "tips": [
+          "The gargoyles are Quasimodo's entire social world. They might be imaginary but their love is real. Find the heart underneath every joke."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "A Guy Like You",
+          "type": "trio",
+          "notes": "The gargoyles encourage Quasimodo about Esmeralda. Comedy with genuine warmth."
+        },
+        {
+          "title": "In Here / Top of the World",
+          "type": "ensemble",
+          "notes": "Supporting Quasimodo's scenes."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-jehan",
+      "name": "Jehan Frollo",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "Claude Frollo's younger brother and Quasimodo's biological father. Jehan is passionate, curious, and reckless \u2014 the polar opposite of the pious Claude. Despite their differences, Claude truly loves his brother. Jehan is banished from Notre Dame for bringing a gypsy woman (Florika) into the cathedral. He dies early in the story, but his presence drives the entire narrative \u2014 his choices create the circumstances that lead to Quasimodo's birth and Frollo's guilt-ridden guardianship. A tenor role requiring warmth, youthful energy, and genuine emotional connection.",
+      "vocal": {
+        "range": "F3\u2013Eb5",
+        "voice_type": "Tenor",
+        "belt_required": true,
+        "belt_range": "Ab4\u2013Eb5",
+        "tessitura": "A3\u2013B4",
+        "style_notes": "Legit and belt mix required. Must convey youthful passion and tenderness. Sings in the prologue sequence and 'The Bells of Notre Dame' opening."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "period movement",
+          "stage combat basics"
+        ],
+        "stamina": "low",
+        "notes": "Primarily an acting role with minimal choreography. Must move with youthful energy and physicality that contrasts Claude's rigidity."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "rebellious youth",
+          "romantic",
+          "tragic figure"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": false,
+        "notes": "Must establish a deeply affecting brotherly relationship with Frollo in very limited stage time. The audience must understand what Claude lost when Jehan died. Requires ability to convey love, defiance, and vulnerability simultaneously."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "period physicality",
+          "dramatic death scene"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "A compact but dramatically essential supporting role. Jehan's scenes set the entire story in motion and his relationship with Frollo is the emotional engine of the show. Despite limited stage time, this role makes an outsized impact.",
+        "common_casting": "Young tenor with strong acting chops. Often cast with performers who have a natural warmth and charisma that makes the audience immediately root for them. Must have strong vocal blend with the Frollo actor.",
+        "standout_opportunity": "The prologue sequence where Jehan defies Claude and brings Florika to the cathedral is one of the show's most dramatically charged moments. A powerful actor can make this role unforgettable despite its brevity."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "dramatic storytelling in limited time",
+          "period acting",
+          "vocal blend and harmony",
+          "establishing character quickly"
+        ],
+        "challenge_areas": [
+          "making maximum impact with minimal stage time",
+          "conveying complex family dynamics rapidly"
+        ],
+        "recommended_for": [
+          "emerging tenors building dramatic range",
+          "performers developing narrative efficiency",
+          "actors seeking intense character work"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "warmth and charisma",
+          "genuine connection with scene partners",
+          "ability to convey rebellion without being unlikeable",
+          "strong tenor voice with emotional colour"
+        ],
+        "common_mistakes": [
+          "playing Jehan as purely rebellious without showing love for Claude",
+          "underestimating the vocal demands of the prologue",
+          "not differentiating sufficiently from Quasimodo's youthful energy"
+        ],
+        "tips": [
+          "Focus on the brotherly love \u2014 the audience needs to feel the loss",
+          "Study the prologue carefully as it sets up the entire show",
+          "Find moments of vulnerability beneath the bravado"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Bells of Notre Dame (Prologue)",
+          "type": "ensemble feature",
+          "notes": "Jehan's key singing moments are woven into the prologue narrative. Must blend with full company while standing out dramatically."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-saint-aphrodisius",
+      "name": "Saint Aphrodisius",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 30,
+        "max": 60
+      },
+      "description": "A stone saint statue in Notre Dame Cathedral who comes to life to guide and comfort Quasimodo. Saint Aphrodisius is the saint who hid the Holy Family as they fled to Egypt and was martyred for it. Quasimodo learns about him in a religious lesson with Frollo, and later recalls him when struggling to decide whether to help Esmeralda and defy his master. A baritone role typically doubled from the ensemble/congregation, requiring gravitas and a warm, reassuring presence. This role replaces the comic gargoyle concept from the film with a more dramatic, spiritual dimension.",
+      "vocal": {
+        "range": "E3\u2013E4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "G3\u2013D4",
+        "style_notes": "Legit baritone with warm, resonant tone. Must project authority and comfort. Choral/hymnal style singing in the cathedral sequences."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "stylised movement"
+        ],
+        "stamina": "low",
+        "notes": "Moves with deliberate, statuesque quality when 'coming to life.' No choreography required but must have excellent physical control and stillness."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "spiritual guide",
+          "mentor figure",
+          "authority"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": false,
+        "notes": "Must convey wisdom and compassion with minimal dialogue. The role requires the ability to create a sense of the sacred and otherworldly. Physical presence and gravitas are key."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "statue-like stillness",
+          "choral singing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A meaningful featured ensemble role that adds spiritual depth to the show. Typically doubled from the congregation ensemble, making it an excellent way to gain a named credit while contributing to the choral backbone of the production.",
+        "common_casting": "Strong baritone from the ensemble/congregation. Often cast with a performer who has natural gravitas and can command attention through stillness rather than movement.",
+        "standout_opportunity": "The moment Saint Aphrodisius guides Quasimodo's moral decision is a quietly powerful scene. A performer who brings genuine warmth and weight to this guidance can create a memorable theatrical moment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "physical control and stage presence",
+          "choral technique",
+          "creating character through minimal movement",
+          "ensemble-to-featured transition skills"
+        ],
+        "challenge_areas": [
+          "maintaining engagement with minimal stage time",
+          "transitioning between ensemble and featured moments"
+        ],
+        "recommended_for": [
+          "baritones building stage presence",
+          "ensemble performers seeking featured moments",
+          "performers developing physical theatre skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "rich baritone tone",
+          "physical gravitas",
+          "ability to be still and commanding",
+          "strong choral blend"
+        ],
+        "common_mistakes": [
+          "overplaying the supernatural element",
+          "breaking the statuesque quality with unnecessary fidgeting",
+          "projecting too much personality instead of quiet authority"
+        ],
+        "tips": [
+          "Practice absolute stillness \u2014 it's harder than it sounds",
+          "Find the warmth in the saint's guidance, not just the authority",
+          "Strong choral singing will likely be assessed in ensemble auditions"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Congregation numbers",
+          "type": "ensemble",
+          "notes": "Sings as part of the cathedral congregation with occasional featured lines during Quasimodo's spiritual moments."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-florika",
+      "name": "Florika",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 18,
+        "max": 30
+      },
+      "description": "A Romani woman brought to Notre Dame by Jehan Frollo \u2014 an action that ultimately leads to his banishment from the church. Florika and Jehan have a son together: Quasimodo. She dies shortly after his birth, making her a brief but narratively essential presence. In the stage musical, Florika appears primarily in the prologue sequence and represents the innocent victim of Frollo's prejudice. A mezzo-soprano role typically doubled from the ensemble, requiring dance ability and emotional vulnerability.",
+      "vocal": {
+        "range": "E4\u2013Gb5",
+        "voice_type": "Mezzo-Soprano",
+        "belt_required": true,
+        "belt_range": "E5\u2013Gb5",
+        "tessitura": "A4\u2013D5",
+        "style_notes": "Belt and legit mix. Brief but must be vocally impactful in the prologue. Expressive mezzo colour with ability to convey desperation and tenderness."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "folk dance",
+          "period movement",
+          "expressive contemporary"
+        ],
+        "stamina": "moderate",
+        "notes": "As a Romani character, some productions feature dance in festival scenes. Must be able to move expressively and with cultural sensitivity."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "mother",
+          "romantic",
+          "tragic victim"
+        ],
+        "emotional_range": "wide",
+        "comedy_skills": false,
+        "notes": "Must convey a full character arc \u2014 love, hope, fear, and sacrifice \u2014 in very limited stage time. The audience must understand that Florika is Quasimodo's mother and feel the weight of her loss. Requires ability to create immediate emotional impact."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "dramatic death scene",
+          "cultural movement"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_grow"
+        ],
+        "why": "A brief but dramatically significant featured role. Florika's fate is the catalyst for the entire story \u2014 her death in the prologue sets Frollo's guilt and Quasimodo's isolation in motion. Typically doubled from ensemble, making it an excellent growth opportunity.",
+        "common_casting": "Young mezzo-soprano with dance ability. Often cast with a performer who has natural vulnerability and can create immediate emotional connection with the audience.",
+        "standout_opportunity": "The prologue sequence is one of the show's most powerful moments. Florika's desperation to protect her baby and her ultimate fate can be devastating when performed with commitment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "creating character in minimal time",
+          "emotional storytelling",
+          "dance integration",
+          "ensemble versatility"
+        ],
+        "challenge_areas": [
+          "maximum emotional impact with minimal stage time",
+          "cultural sensitivity in portrayal"
+        ],
+        "recommended_for": [
+          "mezzo-sopranos seeking featured ensemble work",
+          "dancers with acting ambitions",
+          "performers developing dramatic range"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "emotional vulnerability",
+          "dance ability",
+          "strong mezzo voice",
+          "ability to tell a story quickly"
+        ],
+        "common_mistakes": [
+          "playing the victim without agency",
+          "not committing fully to the brief dramatic moments",
+          "underestimating the importance of the prologue"
+        ],
+        "tips": [
+          "The prologue is everything for this role \u2014 invest deeply in those moments",
+          "Find Florika's strength and love, not just her victimhood",
+          "Strong dance skills will help in ensemble sections too"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Bells of Notre Dame (Prologue)",
+          "type": "ensemble feature",
+          "notes": "Florika's vocal moments are embedded in the prologue narrative. Brief but must be vocally and dramatically compelling."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-father-dupin",
+      "name": "Father Dupin",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 35,
+        "max": 65
+      },
+      "description": "A priest at Notre Dame Cathedral who serves as part of the religious establishment. Father Dupin represents the institutional church and provides context for Frollo's position of power within the cathedral hierarchy. A baritone role typically doubled from the congregation ensemble, requiring dignified presence and strong choral singing ability.",
+      "vocal": {
+        "range": "Bb2\u2013D4",
+        "voice_type": "Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "D3\u2013Bb3",
+        "style_notes": "Legit baritone with choral expertise. Hymnal and liturgical singing style. Must blend beautifully with the congregation while being able to deliver spoken lines with authority."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "processional movement"
+        ],
+        "stamina": "low",
+        "notes": "No choreography. Moves with ecclesiastical dignity and purpose. Processional staging in cathedral scenes."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "religious authority",
+          "institutional figure"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": false,
+        "notes": "Must convey the weight of religious authority and the complexity of the institutional church's relationship with Frollo. Brief speaking moments require clarity and gravitas."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 5,
+        "quick_changes": 0,
+        "special_skills": [
+          "choral singing",
+          "liturgical movement"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named ensemble role that provides a credited part within the congregation. Ideal for strong choral singers who want a specific character identity. This role is typically doubled from the ensemble and offers a way to contribute meaningfully to the show's religious atmosphere.",
+        "common_casting": "Experienced baritone choral singer. Often cast with an older performer who naturally conveys ecclesiastical authority.",
+        "standout_opportunity": "While small, the role offers moments of institutional presence that ground the show's themes of religious power and moral authority."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "choral technique",
+          "ensemble discipline",
+          "character acting in ensemble context"
+        ],
+        "challenge_areas": [
+          "maintaining engagement with minimal featured time",
+          "contributing to atmosphere without drawing focus"
+        ],
+        "recommended_for": [
+          "choral singers entering musical theatre",
+          "baritones building ensemble credits",
+          "performers developing stage presence"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong choral blend",
+          "dignified stage presence",
+          "clear diction for spoken lines",
+          "reliability in ensemble work"
+        ],
+        "common_mistakes": [
+          "trying to make the role bigger than it is",
+          "breaking ensemble discipline for personal moments"
+        ],
+        "tips": [
+          "Excellence in choral work is the primary path to this role",
+          "Bring quiet authority to audition \u2014 no need to overplay",
+          "Demonstrate versatility in ensemble callbacks"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Congregation numbers",
+          "type": "ensemble",
+          "notes": "Sings as part of the cathedral congregation throughout the show. Featured spoken lines in select scenes."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-frederic",
+      "name": "Lieutenant Frederic Charlus",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 22,
+        "max": 40
+      },
+      "description": "Captain Phoebus's lieutenant and subordinate officer. Frederic serves as Phoebus's right hand and provides military context for the soldier scenes. A primarily spoken role typically doubled from the ensemble, requiring a commanding physical presence and ability to take orders and relay them convincingly. In some productions, this role is gender-flexible.",
+      "vocal": {
+        "range": "C3\u2013A4",
+        "voice_type": "Baritone/Tenor",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "E3\u2013F4",
+        "style_notes": "Primarily a spoken role with ensemble singing. Must be able to carry military barked orders clearly. Joins ensemble in large company numbers."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "military drill",
+          "period movement"
+        ],
+        "stamina": "moderate",
+        "notes": "Must move with military precision. Some productions include stylised soldier choreography. Physical fitness important for the military bearing."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "soldier",
+          "authority figure",
+          "loyal subordinate"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": false,
+        "notes": "Must convey military discipline and loyalty to Phoebus. Primarily reactive \u2014 follows orders and reports information. Clear, projecting voice essential for spoken lines."
+      },
+      "performance": {
+        "stage_time_percentage": 4,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 1,
+        "special_skills": [
+          "military bearing",
+          "stage combat basics"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named ensemble role with clear character function. Provides a military identity within the ensemble and a credited character. Typically doubled from ensemble \u2014 an easy entry point for performers seeking named roles.",
+        "common_casting": "Physical performer with clear diction and military bearing. Often doubles as a soldier in ensemble scenes.",
+        "standout_opportunity": "Strong physical presence and crisp military delivery can make this role noticeable in the soldier scenes."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "military physicality",
+          "ensemble discipline",
+          "stage combat",
+          "spoken projection"
+        ],
+        "challenge_areas": [
+          "maintaining military bearing consistently",
+          "being present without upstaging"
+        ],
+        "recommended_for": [
+          "physical performers building ensemble credits",
+          "actors developing military/authority character types",
+          "performers new to musical theatre ensemble work"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "physical presence and bearing",
+          "clear diction",
+          "ability to take direction precisely",
+          "ensemble reliability"
+        ],
+        "common_mistakes": [
+          "breaking military bearing",
+          "overacting in background moments"
+        ],
+        "tips": [
+          "Stand tall, move with purpose, speak clearly",
+          "Military roles are about discipline \u2014 show that in your audition",
+          "Strong ensemble singing will strengthen your candidacy"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings as part of the full company. Featured spoken lines in military scenes with Phoebus."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-king-louis",
+      "name": "King Louis XI",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 40,
+        "max": 70
+      },
+      "description": "The King of France who makes a brief but memorable appearance. King Louis XI represents the highest secular authority in the story and his presence underscores the political stakes of Frollo's actions. A spoken cameo role typically doubled from the ensemble, requiring regal bearing and commanding presence in a brief scene.",
+      "vocal": {
+        "range": "spoken",
+        "voice_type": "Speaking role",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Primarily spoken with ensemble singing in company numbers. Must have a commanding, authoritative speaking voice."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "regal movement"
+        ],
+        "stamina": "low",
+        "notes": "Moves with regal bearing. No choreography required."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "royalty",
+          "authority",
+          "political figure"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": false,
+        "notes": "Must command the stage instantly in a brief appearance. Requires the ability to project absolute authority. Character actors excel in this cameo."
+      },
+      "performance": {
+        "stage_time_percentage": 2,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "regal physicality",
+          "commanding voice"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 1,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A brief cameo typically doubled from the ensemble. Offers a named royal character credit with minimal stage time commitment. Perfect for character actors who can make a strong impression quickly.",
+        "common_casting": "Character actor from the ensemble. Often cast with a performer who has natural authority and gravitas.",
+        "standout_opportunity": "A single scene to command the stage as the King of France. Character actors who fully commit to the regal bearing can steal focus in their brief moment."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character acting",
+          "quick character establishment",
+          "regal physicality"
+        ],
+        "challenge_areas": [
+          "making impact in extremely limited time",
+          "transitioning between ensemble and featured quickly"
+        ],
+        "recommended_for": [
+          "character actors building credits",
+          "ensemble performers seeking variety",
+          "mature performers in ensemble roles"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "commanding presence",
+          "strong speaking voice",
+          "ability to embody royalty instantly"
+        ],
+        "common_mistakes": [
+          "overplaying the brief moment",
+          "not committing fully to the regal bearing"
+        ],
+        "tips": [
+          "Less is more \u2014 quiet authority reads better than bombastic royalty",
+          "This role is usually cast from ensemble callbacks",
+          "Show range between your ensemble and character work"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings as ensemble member in company numbers. Featured spoken appearance as the King."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-tribunal",
+      "name": "Tribunal",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 35,
+        "max": 65
+      },
+      "description": "A member of the judicial tribunal who participates in the trial and sentencing scenes. The Tribunal represents the legal authority that Frollo manipulates to persecute the Romani people. A spoken role typically doubled from the ensemble/congregation, adding institutional weight to the courtroom scenes.",
+      "vocal": {
+        "range": "spoken",
+        "voice_type": "Speaking role",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Spoken role with ensemble singing in company numbers. Authoritative, judicial speaking voice required."
+      },
+      "dance": {
+        "level": "minimal",
+        "styles": [
+          "period movement"
+        ],
+        "stamina": "low",
+        "notes": "No choreography. Moves with judicial formality."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "judge",
+          "authority figure",
+          "institutional power"
+        ],
+        "emotional_range": "narrow",
+        "comedy_skills": false,
+        "notes": "Must convey judicial authority and institutional power. Brief spoken moments require clarity and weight."
+      },
+      "performance": {
+        "stage_time_percentage": 2,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "judicial bearing"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 1,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A small named ensemble role providing a specific character identity in the trial scenes. Typically doubled from ensemble \u2014 ideal for performers wanting a credited speaking role alongside their ensemble work.",
+        "common_casting": "Ensemble member with strong speaking voice and authoritative presence.",
+        "standout_opportunity": "The trial scenes carry dramatic weight \u2014 a performer who invests in the judicial authority can contribute meaningfully to these pivotal moments."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "spoken stage presence",
+          "ensemble discipline",
+          "character acting"
+        ],
+        "challenge_areas": [
+          "maintaining investment in a very brief role"
+        ],
+        "recommended_for": [
+          "ensemble performers seeking named credits",
+          "actors developing authority character types"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "clear diction",
+          "authoritative presence",
+          "ensemble reliability"
+        ],
+        "common_mistakes": [
+          "not taking the brief role seriously enough"
+        ],
+        "tips": [
+          "Strong ensemble work is the pathway to this kind of named role",
+          "Bring gravitas to callbacks"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings as ensemble in company numbers. Featured spoken lines in trial/tribunal scenes."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-madam",
+      "name": "Madam",
+      "role_type": "featured_ensemble",
+      "gender": "Female",
+      "age_range": {
+        "min": 30,
+        "max": 55
+      },
+      "description": "A Parisian woman who appears in street scenes and provides a civilian perspective on the events unfolding in the city. Madam represents the ordinary citizens caught between Frollo's tyranny and the Romani community. A spoken role typically doubled from the ensemble/townspeople, adding texture to the street scenes.",
+      "vocal": {
+        "range": "spoken",
+        "voice_type": "Speaking role",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "N/A",
+        "style_notes": "Spoken role with ensemble singing in company numbers. Character voice \u2014 must convey everyday Parisian citizen."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "festival dance",
+          "period movement"
+        ],
+        "stamina": "low",
+        "notes": "Participates in street and festival scenes as a townsperson. Basic movement and crowd choreography."
+      },
+      "acting": {
+        "level": "basic",
+        "character_types": [
+          "townswoman",
+          "everywoman",
+          "civilian"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": false,
+        "notes": "Represents the common people's reaction to events. Must be reactive and expressive in crowd scenes. Brief spoken moments require personality and clarity."
+      },
+      "performance": {
+        "stage_time_percentage": 3,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "crowd scene work"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "\ud83d\udd27 Ensemble Foundation",
+        "growth_value": 1,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A named ensemble role offering a specific character identity within the townspeople. Typically doubled from ensemble \u2014 provides a credited speaking part with minimal additional responsibility.",
+        "common_casting": "Female ensemble member with character acting instincts. Often cast with a performer who brings natural warmth and personality to crowd scenes.",
+        "standout_opportunity": "A performer who fully invests in the civilian perspective can add genuine emotional texture to the street scenes."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character acting in ensemble context",
+          "reactive acting",
+          "crowd scene technique"
+        ],
+        "challenge_areas": [
+          "making a small role meaningful",
+          "staying invested in brief moments"
+        ],
+        "recommended_for": [
+          "female ensemble performers seeking named credits",
+          "character actresses building experience"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "personality and character instincts",
+          "strong ensemble singing",
+          "willingness to commit to small moments"
+        ],
+        "common_mistakes": [
+          "treating ensemble work as less important than the named moments"
+        ],
+        "tips": [
+          "Show character instincts in ensemble auditions",
+          "Directors notice performers who are always 'alive' in crowd scenes"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Company numbers",
+          "type": "ensemble",
+          "notes": "Sings as ensemble in company numbers. Featured spoken lines in street/crowd scenes."
+        }
+      ]
+    },
+    {
+      "id": "hunchback-congregation-choir",
+      "name": "Congregation / Ensemble",
+      "role_type": "ensemble",
+      "gender": "any",
+      "age_range": {
+        "min": 16,
+        "max": 70
+      },
+      "description": "The ensemble of The Hunchback of Notre Dame forms the show's extraordinary choral backbone \u2014 one of the most demanding ensemble assignments in musical theatre. Members portray the Cathedral Congregation, Townspeople, Gypsies, Soldiers, and Choral Ensemble. Many named featured roles (Saint Aphrodisius, Father Dupin, Lieutenant Frederic, King Louis XI, Tribunal, Madam) are typically doubled from this ensemble, giving performers opportunities for credited character moments alongside the show's stunning choral work. The ensemble drives the show's signature sound \u2014 a rich, cathedral-filling choral texture inspired by sacred music traditions. Strong choral singing ability is essential, and the vocal demands are among the highest of any ensemble in musical theatre.",
+      "vocal": {
+        "range": "full SATB choir range",
+        "voice_type": "soprano, alto, tenor, bass \u2014 full four-part choir",
+        "belt_required": false,
+        "belt_range": "N/A \u2014 choral technique",
+        "tessitura": "varies by part",
+        "style_notes": "CHORAL SINGING is paramount. Must handle Latin liturgical text, complex four-part harmonies, and Menken's demanding choral writing. This is closer to choral music than typical musical theatre ensemble. Sight-reading ability hugely valued. The choir makes or breaks this show."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "processional_staging",
+          "minimal_choreography"
+        ],
+        "stamina": "moderate",
+        "notes": "Minimal dance. Mostly staged as congregation, citizens, and chorus. The voice carries everything."
+      },
+      "acting": {
+        "level": "basic_to_intermediate",
+        "character_types": [
+          "congregation",
+          "citizens of Paris",
+          "voice of the cathedral",
+          "mob"
+        ],
+        "emotional_range": "moderate \u2014 worship, fear, mob mentality, hope",
+        "comedy_skills": false,
+        "notes": "The choir provides the emotional atmosphere of the show. They are the cathedral. Their singing must create the sense of divine presence and moral weight."
+      },
+      "performance": {
+        "stage_time_percentage": 65,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 10,
+        "quick_changes": 1,
+        "special_skills": [
+          "choral_singing",
+          "latin_pronunciation",
+          "four_part_harmony",
+          "sight_reading"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_grow",
+          "best_to_get_cast"
+        ],
+        "why": "One of the most musically rewarding ensemble experiences in theatre. The choral writing is magnificent. Develops serious musicianship. If you love SINGING, this is the ensemble for you.",
+        "common_casting": "Strong choral singers. Sight-reading ability valued over dance skill. Church choir and choral society members often excel.",
+        "standout_opportunity": "The choir IS the sound of Notre Dame. When 'Bells of Notre Dame' hits full chorus, the audience feels God. That's the choir's doing."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "choral_technique",
+          "latin_singing",
+          "four_part_harmony",
+          "musical_discipline",
+          "sight_reading"
+        ],
+        "challenge_areas": [
+          "demands_of_choral_precision",
+          "latin_text",
+          "stamina_of_singing_throughout"
+        ],
+        "recommended_for": [
+          "choral singers wanting theatre experience",
+          "singers who prioritize musicianship",
+          "church choir members exploring musical theatre"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "strong choral voice",
+          "ability to hold a part",
+          "sight-reading",
+          "blend",
+          "stamina"
+        ],
+        "common_mistakes": [
+          "not strong enough chorally",
+          "can't hold a harmony",
+          "poor Latin pronunciation"
+        ],
+        "tips": [
+          "If you've ever sung in a church choir or choral society, this show is made for you. The choral writing is Alan Menken at his most inspired. You'll be singing some of the most magnificent music written for the stage. Take it seriously \u2014 you ARE the cathedral."
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Bells of Notre Dame",
+          "type": "ensemble",
+          "notes": "Opening epic. Full choral power. Sets the entire show. Magnificent."
+        },
+        {
+          "title": "Hellfire (choir backing)",
+          "type": "ensemble",
+          "notes": "Latin liturgy behind Frollo's breakdown. Chilling, powerful, essential."
+        },
+        {
+          "title": "God Help the Outcasts",
+          "type": "ensemble",
+          "notes": "Congregation during Esmeralda's prayer."
+        },
+        {
+          "title": "Esmeralda",
+          "type": "ensemble",
+          "notes": "Frollo's hunt. Choral intensity."
+        },
+        {
+          "title": "Sanctuary",
+          "type": "ensemble",
+          "notes": "Full choral climax. Quasimodo claims sanctuary."
+        },
+        {
+          "title": "Finale Ultimo",
+          "type": "ensemble",
+          "notes": "Resolution. Full choral power."
+        }
+      ]
+    }
+  ]
+}

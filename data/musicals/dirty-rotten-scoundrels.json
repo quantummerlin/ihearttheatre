@@ -1,0 +1,583 @@
+{
+  "musical": {
+    "id": "dirty-rotten-scoundrels",
+    "title": "Dirty Rotten Scoundrels",
+    "music_by": "David Yazbek",
+    "lyrics_by": "David Yazbek",
+    "book_by": "Jeffrey Lane",
+    "based_on": "The 1988 film 'Dirty Rotten Scoundrels' starring Steve Martin and Michael Caine",
+    "year_premiered": 2005,
+    "setting": "The French Riviera — Beaumont-sur-Mer",
+    "time_period": "Contemporary",
+    "themes": [
+      "deception and honesty",
+      "class and sophistication vs authenticity",
+      "the art of the con",
+      "unexpected love",
+      "intelligence and wit",
+      "never underestimate your opponent",
+      "style vs substance",
+      "partnership and rivalry"
+    ],
+    "genre_tags": ["comedy", "con_artist", "buddy_comedy", "sophisticated", "French_Riviera", "David_Yazbek", "movie_musical", "caper"],
+    "vocal_style": "Sophisticated contemporary Broadway with pop, jazz, and French influences. David Yazbek's trademark witty, literate lyrics set to catchy, character-driven melodies. Ranges from suave crooning to broad comedy numbers to genuine romantic ballads.",
+    "dance_intensity": "moderate",
+    "orchestra_size": "medium_to_full",
+    "typical_cast_size": "15-25",
+    "age_range": "20-60",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": false,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Lawrence Jameson is a suave, sophisticated British con man who has made a luxurious living swindling wealthy women on the French Riviera. His elegant world is disrupted by the arrival of Freddy Benson, a crude, small-time American hustler who threatens to ruin Lawrence's carefully cultivated territory. Unable to get rid of Freddy, Lawrence reluctantly agrees to a wager: the first to extract $50,000 from their chosen mark — the seemingly innocent 'American Soap Queen' Christine Colgate — wins the Riviera and the loser leaves town forever. What follows is an escalating battle of wits featuring elaborate disguises, outrageous schemes, and a twist ending that reveals nothing and no one is quite what they appear. The show celebrates the joy of being cleverer than everyone thinks you are."
+  },
+  "roles": [
+    {
+      "id": "lawrence-jameson",
+      "name": "Lawrence Jameson",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 35,
+        "max": 55
+      },
+      "description": "A devastatingly suave, cultured British con man who has perfected the art of separating wealthy women from their money through charm, sophistication, and elaborate personas. Lawrence is the Michael Caine of the pair — urbane, imperious, meticulous, and utterly convinced of his own superiority. His world is one of fine wine, bespoke suits, and carefully planned deceptions. When the uncouth Freddy threatens his operation, Lawrence's desperate attempts to maintain his composure provide much of the show's comedy. Beneath the sophistication, Lawrence is genuinely lonely and discovers through Christine that real connection is more valuable than any con.",
+      "vocal": {
+        "range": "A2-F#4",
+        "voice_type": "baritone_legit_with_character",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Suave, polished baritone with impeccable phrasing and sophisticated delivery. Must handle Yazbek's witty, complex lyrics with crystal clarity. The voice should sound like expensive champagne — smooth, assured, with hidden depth. Character voices for various disguises add vocal versatility demands."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["smooth_social_dance", "waltz", "sophisticated_staging"],
+        "stamina": "moderate",
+        "notes": "Must move with elegance and grace — the physicality of a man born to wear a tuxedo. Social dance skills are valuable. No demanding choreography but must look completely at home in the Riviera setting."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["suave_con_man", "british_sophisticate", "reluctant_mentor", "secretly_lonely_romantic"],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Must be effortlessly charming, genuinely intimidating, and progressively funnier as Freddy unravels his composure. The comedy escalates as Lawrence loses control of the situation. Multiple disguise personas require quick character shifts. The romantic sincerity that emerges with Christine must feel genuine beneath the layers of deception. Think Michael Caine's elegant menace with increasing comic desperation."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 2,
+        "duets": 3,
+        "ensemble_numbers": 3,
+        "quick_changes": 3,
+        "special_skills": ["british_accent", "multiple_disguise_personas", "sophisticated_physicality", "quick_character_changes", "straight_man_comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_get_cast", "best_to_stand_out"],
+        "why": "Lawrence is the anchor of the show — on stage for nearly the entire production, driving every scene with charm and wit. The role develops sophisticated comedy skills, character work, accent and disguise performance, and Yazbek's demanding lyrical style. A star vehicle for charismatic baritones.",
+        "common_casting": "Charismatic, distinguished baritones with impeccable comic timing and genuine elegance. Directors look for performers who can make sophistication feel natural, not affected. Often cast with experienced performers who command a stage.",
+        "standout_opportunity": "Every scene is a Lawrence showcase. His escalating desperation as his plans unravel provides the show's biggest comic arc, and his genuine romantic moments with Christine are surprisingly touching."
+      },
+      "growth_profile": {
+        "skills_developed": ["sophisticated_comedy", "accent_and_disguise_work", "yazbek_lyrical_singing", "straight_man_escalation", "romantic_sincerity_within_comedy"],
+        "challenge_areas": ["maintaining_elegance_while_increasingly_desperate", "multiple_character_quick_changes", "british_accent_consistency", "yazbek_lyrical_complexity"],
+        "recommended_for": ["charismatic_baritones_seeking_star_vehicle", "experienced_actors_wanting_sophisticated_comedy", "performers_developing_accent_and_character_skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural elegance and charm that fills the room",
+          "A polished baritone voice with excellent diction",
+          "Impeccable comic timing — especially the slow burn",
+          "A convincing, consistent British accent",
+          "The ability to be both the straight man and the funniest person in the room"
+        ],
+        "common_mistakes": [
+          "Playing Lawrence as purely arrogant without the loneliness underneath",
+          "Insufficient British accent preparation",
+          "Not escalating the comedy as things go wrong",
+          "Missing Yazbek's lyrical subtleties — every word matters"
+        ],
+        "tips": [
+          "Watch Michael Caine in the film for the template of elegant menace",
+          "Prepare a sophisticated Yazbek or Sondheim song that shows wit and vocal polish",
+          "Show directors the escalation: start composed, show the cracks, build to comic desperation",
+          "British accent must be bulletproof — work with a dialect coach if needed"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Give Them What They Want",
+          "type": "solo",
+          "notes": "Lawrence's philosophy of the con — sophisticated, seductive, and utterly charming. Sets up his character and worldview."
+        },
+        {
+          "title": "Nothing Is Too Wonderful to Be True",
+          "type": "solo_romantic",
+          "notes": "Lawrence discovers genuine feeling for Christine. Surprisingly tender and sincere beneath the suave exterior."
+        },
+        {
+          "title": "The Reckoning",
+          "type": "ensemble_act_two",
+          "notes": "The schemes collapse and rebuild. Lawrence at his most desperately inventive."
+        }
+      ]
+    },
+    {
+      "id": "freddy-benson",
+      "name": "Freddy Benson",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 40
+      },
+      "description": "A crass, scrappy, irrepressibly enthusiastic American small-time con man whose specialty is swindling women out of dinner money by pretending to need cash to visit his sick grandmother. Freddy is the Steve Martin of the pair — loud, physical, shameless, and secretly much cleverer than he appears. His crude approach horrifies Lawrence, but his relentless energy and surprising resourcefulness make him a formidable opponent. The role is a powerhouse comedy showcase requiring enormous physical energy, broad comedy skills, and the vocal chops to deliver Yazbek's deceptively demanding score.",
+      "vocal": {
+        "range": "C3-Ab4",
+        "voice_type": "tenor_belt",
+        "belt_required": true,
+        "belt_range": "E4-Ab4",
+        "tessitura": "mid_to_high",
+        "style_notes": "High-energy contemporary Broadway belt with pop-rock influences. Must deliver rapid-fire comedy lyrics with crystal clarity at high tempo. Yazbek writes demanding tenor lines that require both power and agility. The voice should feel like a force of nature — unstoppable, irrepressible energy."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["physical_comedy", "broad_musical_comedy", "slapstick"],
+        "stamina": "very_high",
+        "notes": "Enormously physical role. Not traditional dance but constant physical comedy — pratfalls, slapstick, wheelchair sequences (Freddy's 'Ruprecht' disguise), and high-energy staging. Must sustain extraordinary physical output for the entire show."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["loveable_rogue", "crude_genius", "physical_comedian", "underdog_con_man"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "The comedy engine of the show. Must be simultaneously repulsive and loveable — the audience should cringe at his crudeness while rooting for his success. The 'Ruprecht' disguise (pretending to be Lawrence's mentally impaired brother) is one of the most outrageously funny sequences in modern musical comedy and requires fearless commitment. Beneath the brashness, Freddy is genuinely clever and ultimately good-hearted."
+      },
+      "performance": {
+        "stage_time_percentage": 70,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 2,
+        "special_skills": ["extreme_physical_comedy", "ruprecht_characterisation", "wheelchair_comedy", "pratfalls", "shameless_performance"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "🔥 Strong Development",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "Freddy is the role audiences remember — the physical comedy, the Ruprecht disguise, the irrepressible energy. The role develops extraordinary physical comedy skills, vocal stamina, and the ability to sustain maximum energy across a full show. A dream role for high-energy comic performers.",
+        "common_casting": "High-energy comic performers with strong tenor voices and fearless physical comedy skills. Directors look for someone who can fill the stage with chaotic energy while maintaining precise comic timing. The role rewards performers with backgrounds in physical comedy or clowning.",
+        "standout_opportunity": "The Ruprecht sequences are among the funniest in modern musical theatre. Freddy's energy makes him the audience favourite — every entrance is an event."
+      },
+      "growth_profile": {
+        "skills_developed": ["extreme_physical_comedy", "vocal_stamina", "sustained_high_energy_performance", "disguise_character_work", "comedic_timing_precision"],
+        "challenge_areas": ["physical_stamina_for_full_show", "maintaining_comedy_freshness_over_a_run", "balancing_crude_with_loveable"],
+        "recommended_for": ["physical_comedy_specialists", "high_energy_tenors", "performers_wanting_ultimate_comedy_showcase"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Infectious energy that fills the audition room",
+          "Fearless physical comedy — you will do absurd things",
+          "A strong tenor belt that cuts through the comedy",
+          "The ability to be gross and loveable simultaneously",
+          "Stamina — this role is a marathon of physical comedy"
+        ],
+        "common_mistakes": [
+          "All energy, no timing — the comedy requires precision within the chaos",
+          "Being genuinely unpleasant rather than lovably crude",
+          "Insufficient vocal power — Yazbek's score is demanding",
+          "Not showing intelligence — Freddy is smarter than he appears"
+        ],
+        "tips": [
+          "Watch Steve Martin in the film for the energy template",
+          "Prepare a high-energy comedy number — think 'King of the World' from Songs for a New World or Yazbek material",
+          "Physical comedy preparation is essential — pratfalls, slapstick, willingness to be ridiculous",
+          "Show directors the intelligence underneath — the twist only works if Freddy is actually clever"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Great Big Stuff",
+          "type": "solo_comedy",
+          "notes": "Freddy's aspirational anthem about wanting the high life. High-energy, hilarious, and vocally demanding. A showstopper."
+        },
+        {
+          "title": "All About Ruprecht",
+          "type": "comedy_scene_number",
+          "notes": "The introduction of Freddy's most outrageous disguise. Physical comedy at its peak."
+        },
+        {
+          "title": "Dirty Rotten Number",
+          "type": "duet_comedy",
+          "notes": "Lawrence and Freddy's competitive duet. Two con men trying to out-con each other."
+        }
+      ]
+    },
+    {
+      "id": "christine-colgate",
+      "name": "Christine Colgate",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 22,
+        "max": 38
+      },
+      "description": "The seemingly naive 'American Soap Queen' who becomes the target of both Lawrence and Freddy's wager. Christine appears to be the perfect mark — sweet, trusting, newly wealthy from a soap company inheritance, and charmingly out of place on the sophisticated Riviera. She is funny, warm, self-deprecating, and apparently guileless. The twist, of course, is that Christine is far more than she appears, and the revelation recontextualises every scene she's been in. The role requires an actress who can play genuine sweetness while layering in the dramatic irony that makes the ending explosive.",
+      "vocal": {
+        "range": "A3-F5",
+        "voice_type": "soprano_belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Warm, accessible contemporary belt with genuine emotional power. Must sound disarmingly sweet and sincere while handling Yazbek's sophisticated melodic lines. Her Act Two revelations require vocal authority that contrasts with earlier apparent naivety. Think Kristin Chenoweth's combination of sweetness and steel."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["musical_comedy_staging", "romantic_movement"],
+        "stamina": "moderate",
+        "notes": "Must move with both apparent awkwardness (Riviera-fish-out-of-water comedy) and underlying grace. Not a heavy dance role but requires comfortable musical comedy staging."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["apparent_ingenue", "hidden_genius", "romantic_lead", "the_real_con_artist"],
+        "emotional_range": "wide",
+        "comedy_skills": true,
+        "notes": "The most demanding acting challenge in the show. Must play two characters simultaneously — the Christine everyone sees and the Christine who actually is. Every scene must work on two levels: as a sweet, funny ingenue romance AND as a masterclass in deception visible only in retrospect. The final revelation must rewrite the audience's understanding of the entire show. Requires intelligence, charm, and the ability to be genuinely loveable while concealing everything."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 2,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": ["playing_two_levels", "apparent_naivety_masking_intelligence", "romantic_comedy", "dramatic_revelation"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "⭐ High Visibility",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_get_cast", "best_to_grow"],
+        "why": "Christine is the most technically demanding acting role in the show — playing on two levels throughout. The role develops extraordinary skills in layered performance, romantic comedy, and the ability to rewrite an audience's perception with a single revelation. A masterclass in theatrical deception.",
+        "common_casting": "Charming, intelligent actresses with warm belt voices and the ability to appear completely transparent while hiding everything. Directors look for someone the audience will never suspect — genuine warmth is essential.",
+        "standout_opportunity": "The twist ending is Christine's ultimate moment — when the audience realises they've been watching the best con artist in the room all along. When it lands, it's theatrical magic."
+      },
+      "growth_profile": {
+        "skills_developed": ["layered_performance", "playing_subtext", "romantic_comedy_leading_lady", "dramatic_revelation_technique", "audience_misdirection"],
+        "challenge_areas": ["maintaining_two_levels_throughout", "making_the_ingenue_genuinely_loveable", "the_revelation_must_rewrite_everything"],
+        "recommended_for": ["intelligent_actress_singers", "performers_developing_subtext_skills", "romantic_comedy_leads_seeking_depth"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and likeability — the audience must love Christine",
+          "Intelligence behind the eyes — directors watch for layers",
+          "A beautiful belt voice with emotional range",
+          "Romantic chemistry potential with both male leads",
+          "The ability to seem completely open while revealing nothing"
+        ],
+        "common_mistakes": [
+          "Telegraphing the twist — Christine must seem completely genuine",
+          "Being too sweet without substance — there must be a person underneath",
+          "Insufficient vocal power for Yazbek's demanding score",
+          "Not developing enough romantic chemistry with both Lawrence and Freddy"
+        ],
+        "tips": [
+          "Study the film's twist and work backwards — how does knowing the ending change every scene?",
+          "Prepare a warm, funny audition song that shows intelligence and charm",
+          "The audition should make directors think 'she's too sweet to be a con artist' — that's the point",
+          "Show layers: warmth on the surface, steel underneath, visible only to those looking for it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Here I Am",
+          "type": "solo",
+          "notes": "Christine's arrival on the Riviera — disarmingly sweet, funny, and (in retrospect) brilliantly strategic."
+        },
+        {
+          "title": "Nothing Is Too Wonderful to Be True (Reprise)",
+          "type": "duet_romantic",
+          "notes": "The romantic climax with Lawrence — genuine emotion within layers of deception."
+        },
+        {
+          "title": "Dirty Rotten Number (Finale)",
+          "type": "company_reveal",
+          "notes": "The twist revelation and Christine's true nature. The audience's mind is blown."
+        }
+      ]
+    },
+    {
+      "id": "muriel-eubanks",
+      "name": "Muriel Eubanks",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 40,
+        "max": 65
+      },
+      "description": "A wealthy, lonely, romantically hopeful American tourist and one of Lawrence's regular marks. Muriel is the comedic embodiment of the women Lawrence charms out of their money — she's so desperate for romance that she eagerly falls for his elaborate deceptions, returning to the Riviera season after season despite being swindled. She is hilarious but also genuinely touching — her loneliness is real, and her eventual dignity gives her unexpected depth. A gift for character comedienness.",
+      "vocal": {
+        "range": "Bb3-D5",
+        "voice_type": "mezzo_character",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid",
+        "style_notes": "Big, brassy character voice with strong belt. Must handle comedy lyrics with precision and energy. Think Kaye Ballard or Patti LuPone territory — a voice with personality, power, and comedic sting."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": ["comedic_movement", "social_dance_parody"],
+        "stamina": "low_to_moderate",
+        "notes": "Minimal dance requirements. Physical comedy and awkward romantic staging are more important than technical dance."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["desperate_romantic", "comic_foil", "wealthy_tourist", "loveable_mark"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must be both hilarious and sympathetic — the audience must laugh at Muriel's eagerness while feeling for her loneliness. The comedy comes from her total lack of awareness that she's being conned, combined with her irrepressible romantic hope. A classic character comedy role."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["romantic_desperation_comedy", "american_tourist_characterisation", "scene_stealing_in_limited_time"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_stand_out", "best_to_get_cast"],
+        "why": "Muriel is a scene-stealer with limited stage time — maximum impact in every appearance. The role develops character comedy skills and the ability to make an outsized impression quickly. Audience favourite despite being a supporting role.",
+        "common_casting": "Character comedienness with big personalities and strong voices. Directors look for someone who can steal a scene in ten seconds and make the audience love Muriel instantly.",
+        "standout_opportunity": "Every Muriel entrance gets laughs. Her solo number is a comic highlight, and her moments with Lawrence are consistently hilarious."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_comedy", "scene_stealing_efficiency", "sympathy_within_comedy", "brassy_belt_character"],
+        "challenge_areas": ["avoiding_one_note_characterisation", "finding_genuine_feeling_within_broad_comedy", "maximum_impact_in_limited_time"],
+        "recommended_for": ["character_actresses_seeking_comedy_showcase", "performers_developing_scene_stealing_skills", "mezzos_wanting_character_comedy_role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A big personality that fills the room instantly",
+          "Strong character voice with belt power",
+          "The ability to be funny and sympathetic simultaneously",
+          "Physical comedy instincts",
+          "Efficiency — can you establish a complete character in seconds?"
+        ],
+        "common_mistakes": [
+          "Playing Muriel as pathetic instead of hopeful",
+          "One-note desperation without variation",
+          "Insufficient vocal power for the character demands",
+          "Not finding the dignity beneath the comedy"
+        ],
+        "tips": [
+          "Prepare a brassy, funny character number — think 'Adelaide's Lament' territory",
+          "Find the hope: Muriel genuinely believes in love, and that's what makes her funny AND touching",
+          "Show directors you can make an impression fast — you have limited stage time",
+          "The best Muriels are always a little bit heartbreaking beneath the laughs"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "What Was a Woman to Do",
+          "type": "solo_comedy",
+          "notes": "Muriel's hilarious account of being swindled — told with such romantic hope that the audience laughs and aches simultaneously."
+        },
+        {
+          "title": "Like Zis / Like Zat",
+          "type": "ensemble",
+          "notes": "Muriel featured in the Riviera social scene numbers."
+        }
+      ]
+    },
+    {
+      "id": "andre-thibault",
+      "name": "Andre Thibault",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 55
+      },
+      "description": "Lawrence's loyal, impeccably French accomplice and the local chief of police. Andre is Lawrence's straight man and enabler — he assists with the cons, provides alibis, and serves as the voice of reason that Lawrence consistently ignores. He is suave, perpetually amused by the chaos around him, and unflappably French. His dry wit provides a wonderful counterpoint to the broader comedy of Lawrence and Freddy's antics.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "baritone_character",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Smooth baritone with French-accented character voice. Must handle Yazbek's ensemble writing and featured comic moments with style. The voice should convey relaxed sophistication and dry amusement."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": ["french_elegance", "musical_comedy_staging"],
+        "stamina": "moderate",
+        "notes": "Must move with French elegance and participate in production numbers. Social dance skills are valuable."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["loyal_accomplice", "dry_wit", "french_sophisticate", "straight_man"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "The best straight man in the show — Andre's dry reactions to escalating chaos are consistently funny. Must maintain a French accent throughout while delivering deadpan comedy. The character's unflappable cool is both his charm and his comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": ["french_accent", "deadpan_comedy", "straight_man_technique", "ensemble_anchor"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_get_cast"],
+        "why": "Andre is a rewarding supporting role that develops dry comedy skills, accent work, and the art of being a superb straight man. Consistent stage time with quality material in every scene.",
+        "common_casting": "Suave character actors with strong French accent skills and impeccable deadpan timing. Directors look for the quiet comedy that makes everyone else funnier.",
+        "standout_opportunity": "Andre's dry reactions consistently get some of the show's biggest laughs. The straight man who's funnier than the comedians."
+      },
+      "growth_profile": {
+        "skills_developed": ["french_accent_maintenance", "deadpan_comedy", "straight_man_artistry", "supporting_role_excellence"],
+        "challenge_areas": ["accent_consistency_across_full_show", "finding_fresh_reactions_nightly", "supporting_without_disappearing"],
+        "recommended_for": ["character_actors_developing_accent_skills", "performers_learning_straight_man_technique", "baritones_seeking_quality_supporting_role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A convincing, consistent French accent",
+          "Deadpan comedy timing — less is more",
+          "Suave, relaxed stage presence",
+          "Ensemble awareness and generosity",
+          "The ability to get laughs with a look"
+        ],
+        "common_mistakes": [
+          "Overplaying the French accent into caricature",
+          "Trying to steal scenes instead of supporting them",
+          "Not finding enough variation in the deadpan",
+          "Insufficient vocal ability for ensemble demands"
+        ],
+        "tips": [
+          "Work on a genuine French accent — not Inspector Clouseau",
+          "Prepare material that shows dry wit and understated comedy",
+          "Study great straight men — Andre's power is in restraint",
+          "Show directors you make everyone around you better"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Like Zis / Like Zat",
+          "type": "featured_ensemble",
+          "notes": "Andre anchors the French Riviera social scene with suave charm."
+        },
+        {
+          "title": "The Reckoning",
+          "type": "ensemble",
+          "notes": "Andre's dry commentary on the escalating chaos between Lawrence and Freddy."
+        }
+      ]
+    },
+    {
+      "id": "ensemble-dirty-rotten-scoundrels",
+      "name": "Ensemble (Riviera Society / Jolene / Hotel Staff / Oklahoma Women)",
+      "role_type": "featured_ensemble",
+      "gender": "any",
+      "age_range": {
+        "min": 18,
+        "max": 60
+      },
+      "description": "The ensemble creates the glamorous world of the French Riviera — wealthy tourists, hotel staff, café patrons, and assorted Riviera society. Featured ensemble tracks include Jolene (Freddy's early mark from Oklahoma — a broad comedy cameo), various hotel and restaurant staff, and the society women who populate Lawrence's world. The ensemble drives the production numbers with energy, sophistication, and comedy, creating the sun-drenched, champagne-soaked atmosphere essential to the show's appeal.",
+      "vocal": {
+        "range": "varies_by_part",
+        "voice_type": "mixed_ensemble",
+        "belt_required": true,
+        "belt_range": "varies",
+        "tessitura": "mid",
+        "style_notes": "Yazbek's ensemble writing is witty, rhythmically sharp, and requires excellent diction to deliver comedy lyrics. Must handle sophisticated harmony and unison singing with energy. French-influenced musical style with contemporary Broadway foundations."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["musical_comedy", "riviera_social", "production_numbers", "french_influenced"],
+        "stamina": "moderate_to_high",
+        "notes": "Production numbers require polished musical comedy dance skills. Must convey Riviera glamour through movement. The ensemble creates the show's visual world through choreographed sophistication."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["riviera_society", "hotel_staff", "tourists", "featured_cameos"],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must create distinct characters within the Riviera world while supporting the principal storyline. Featured tracks like Jolene require strong individual comedy. All ensemble members must commit to the show's sophisticated comedy style."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 6,
+        "quick_changes": 2,
+        "special_skills": ["riviera_glamour", "ensemble_comedy", "yazbek_lyrics_precision", "quick_character_changes"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "💡 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "📈 Solid Builder",
+        "decision_tags": ["best_to_grow"],
+        "why": "The Dirty Rotten Scoundrels ensemble develops sophisticated musical comedy skills — Yazbek's demanding lyrics, polished production number technique, and comedy ensemble work. Featured tracks offer individual showcase moments within the glamorous world.",
+        "common_casting": "Polished dancer-singers who can convey sophistication and handle witty ensemble material. Directors look for versatile performers who can create the Riviera world while delivering Yazbek's tricky lyrics.",
+        "standout_opportunity": "Featured tracks like Jolene are coveted comedy cameos. Strong ensemble dancers shine in the production numbers."
+      },
+      "growth_profile": {
+        "skills_developed": ["yazbek_ensemble_singing", "sophisticated_musical_comedy", "riviera_character_work", "production_number_technique", "comedy_ensemble"],
+        "challenge_areas": ["yazbek_lyrical_precision", "maintaining_sophistication_in_staging", "quick_character_changes"],
+        "recommended_for": ["ensemble_performers_building_musical_comedy_skills", "dancer_singers_seeking_sophisticated_material", "comedic_performers_wanting_ensemble_experience"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Polished musical comedy dance skills",
+          "Strong ensemble singing with precise diction",
+          "Sophistication and glamour in presentation",
+          "Comedy instincts within ensemble work",
+          "Versatility for multiple character tracks"
+        ],
+        "common_mistakes": [
+          "Insufficient diction for Yazbek's word-dense lyrics",
+          "Not conveying Riviera sophistication",
+          "Generic ensemble performance without individual character",
+          "Weak dance skills for the production numbers"
+        ],
+        "tips": [
+          "Prepare a sophisticated, witty audition number — Yazbek, Sondheim, or Jason Robert Brown",
+          "Dance call preparation: brush up musical comedy and jazz technique",
+          "Show directors you can create a specific character quickly — Riviera glam",
+          "Diction, diction, diction — Yazbek's lyrics require crystal clarity"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Give Them What They Want (Ensemble)",
+          "type": "opening_production",
+          "notes": "Sets the Riviera world with glamour and energy. The ensemble establishes the show's tone."
+        },
+        {
+          "title": "Like Zis / Like Zat",
+          "type": "production_number",
+          "notes": "The Riviera lifestyle showcase — champagne, sunshine, and sophisticated comedy."
+        },
+        {
+          "title": "Dirty Rotten Number (Finale)",
+          "type": "full_company",
+          "notes": "Big, joyous finale celebrating the art of the con. Full company energy."
+        }
+      ]
+    }
+  ]
+}

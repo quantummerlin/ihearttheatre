@@ -1,0 +1,1250 @@
+{
+  "musical": {
+    "id": "young-frankenstein",
+    "title": "Young Frankenstein",
+    "music_by": "Mel Brooks",
+    "lyrics_by": "Mel Brooks",
+    "book_by": "Mel Brooks & Thomas Meehan",
+    "based_on": "The 1974 film 'Young Frankenstein' by Mel Brooks",
+    "year_premiered": 2007,
+    "setting": "New York City and Transylvania, Romania",
+    "time_period": "1930s",
+    "themes": [
+      "legacy and family expectations",
+      "acceptance of who you are",
+      "creation and responsibility",
+      "love conquers prejudice",
+      "finding where you belong",
+      "comedy as liberation",
+      "the monster within us all"
+    ],
+    "genre_tags": [
+      "comedy",
+      "parody",
+      "Mel_Brooks",
+      "movie_musical",
+      "broad_comedy",
+      "horror_spoof",
+      "classic_Hollywood"
+    ],
+    "vocal_style": "Classic Broadway belt and legit with comedic character work. Big, brassy musical comedy numbers with vaudeville, soft-shoe, and classic Hollywood influences. Mel Brooks' signature style \u2014 broad, joyful, unashamedly theatrical.",
+    "dance_intensity": "moderate_to_high",
+    "orchestra_size": "full",
+    "typical_cast_size": "20-30",
+    "age_range": "18-65",
+    "difficulty_overall": "intermediate_to_advanced",
+    "junior_version_available": false,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "Dr. Frederick Frankenstein (that's 'Fronkensteen') is a brilliant New York neurosurgeon who wants nothing to do with his infamous grandfather's legacy. When he inherits the family castle in Transylvania, he travels there intending to sell it \u2014 only to discover grandfather's private library and the seductive lure of reanimation. Assisted by the hunchbacked Igor, the buxom lab assistant Inga, and the mysterious housekeeper Frau Bl\u00fccher, Frederick creates a Monster and must deal with the hilarious consequences. Meanwhile, his uptight fianc\u00e9e Elizabeth arrives from New York, the local Inspector Kemp investigates, and the Monster escapes to discover the world \u2014 including a memorable encounter with a blind hermit. Through slapstick, wordplay, and showstopping musical numbers, Frederick embraces his family name and the Monster finds love and acceptance."
+  },
+  "roles": [
+    {
+      "id": "dr-frederick-frankenstein",
+      "name": "Dr. Frederick Frankenstein",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 25,
+        "max": 45
+      },
+      "description": "A brilliant, neurotic neurosurgeon desperately trying to distance himself from his grandfather's mad-scientist legacy. Frederick is the straight man in a world of absurdity \u2014 intelligent, exasperated, and gradually seduced by the thrill of creation. His journey from uptight denial ('It's Fronkensteen!') to enthusiastic mad scientist ('It's Frankenstein!') is the comic spine of the show. Must carry the narrative while reacting to the chaos around him. Think Gene Wilder's iconic performance \u2014 manic energy contained within a veneer of respectability that progressively unravels.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "baritone_musical_comedy",
+        "belt_required": true,
+        "belt_range": "E4-G4",
+        "tessitura": "mid",
+        "style_notes": "Classic Broadway baritone with comedic flair. Must handle patter, romantic singing, and big musical comedy numbers. 'The Transylvania Mania' requires sustained energy and vocal stamina. 'Puttin' on the Ritz' with the Monster is the iconic showstopper. Voice should convey intelligence and increasing mania."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "soft_shoe",
+          "vaudeville",
+          "musical_comedy",
+          "tap_basics"
+        ],
+        "stamina": "high",
+        "notes": "'Puttin' on the Ritz' requires confident stage movement and synchronisation with the Monster. 'The Transylvania Mania' is a high-energy production number. Must move well even if not a dancer \u2014 the comedy demands physical commitment."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "straight_man",
+          "neurotic_intellectual",
+          "reluctant_mad_scientist",
+          "romantic_lead"
+        ],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "The hardest comedy job: being the straight man who gradually becomes the craziest person in the room. Must be genuinely funny while grounding the story. Physical comedy, verbal wit, and the ability to play intelligent exasperation are essential. The Gene Wilder comparison is inevitable \u2014 must honour the spirit while finding a personal interpretation."
+      },
+      "performance": {
+        "stage_time_percentage": 80,
+        "solo_songs": 2,
+        "duets": 3,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "straight_man_comedy",
+          "physical_comedy",
+          "transatlantic_accent",
+          "mad_scientist_transformation",
+          "puttin_on_the_ritz_choreography"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Frederick is on stage for virtually the entire show and drives every scene. The role demands and develops an enormous range of comedy skills \u2014 physical, verbal, musical \u2014 while carrying the emotional arc. A career-defining comedic lead.",
+        "common_casting": "Charismatic actor-singers with strong comedic instincts and the intelligence to play a neurotic genius. Directors look for performers who can channel Gene Wilder's manic energy while making it their own.",
+        "standout_opportunity": "'Puttin' on the Ritz' with the Monster is the show's most iconic moment. Frederick's transformation from uptight to unhinged is a comedy masterclass when done well."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "comedic_leading_man_skills",
+          "straight_man_technique",
+          "physical_comedy",
+          "musical_comedy_singing",
+          "carrying_a_full_show"
+        ],
+        "challenge_areas": [
+          "sustaining_comic_energy_across_full_show",
+          "finding_personal_interpretation_vs_gene_wilder",
+          "balancing_straight_man_with_comic_moments"
+        ],
+        "recommended_for": [
+          "strong_comic_actors_with_singing_ability",
+          "performers_seeking_to_lead_a_comedy",
+          "baritones_wanting_high_energy_musical_comedy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Intelligence and comic timing in equal measure",
+          "The ability to be the straight man AND get laughs",
+          "Physical comedy willingness \u2014 you will do absurd things",
+          "A strong baritone voice that can handle Mel Brooks' score",
+          "Energy that sustains across a long, demanding show"
+        ],
+        "common_mistakes": [
+          "Doing a Gene Wilder impression instead of finding your own Frederick",
+          "Overplaying the comedy at the expense of the grounding intelligence",
+          "Insufficient vocal preparation for the demanding score",
+          "Not committing fully to the physical comedy"
+        ],
+        "tips": [
+          "Watch the film but then put it aside \u2014 find YOUR Frederick",
+          "Prepare a classic musical comedy baritone number that shows wit and energy",
+          "Physical comedy preparation: be ready for anything in callbacks",
+          "Show directors the transformation \u2014 buttoned-up to unhinged is the whole arc"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "The Transylvania Mania",
+          "type": "solo_production_number",
+          "notes": "Frederick's seduction by his grandfather's work. High-energy, building frenzy of scientific excitement."
+        },
+        {
+          "title": "Puttin' on the Ritz",
+          "type": "duet_with_monster",
+          "notes": "The iconic showstopper. Frederick and the Monster perform a vaudeville number to prove the Monster's sophistication. Legendary comedy moment."
+        },
+        {
+          "title": "Together Again (For the First Time)",
+          "type": "duet_romantic",
+          "notes": "Romantic duet with Inga. Genuine sweetness within the comedy."
+        }
+      ]
+    },
+    {
+      "id": "the-monster",
+      "name": "The Monster",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {
+        "min": 20,
+        "max": 45
+      },
+      "description": "Frederick's creation \u2014 a towering, initially mute, childlike being who gradually discovers speech, movement, music, and love. The Monster is simultaneously terrifying and adorable, powerful and vulnerable. His journey from reanimated corpse to tap-dancing performer to romantic lead is the heart of the show's sweetness beneath the comedy. The role is enormously physical \u2014 must convey the Monster's gradually improving motor skills \u2014 and eventually requires strong singing and dancing. The 'Puttin' on the Ritz' number is the show's centrepiece and the Monster's triumphant moment.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "bass_baritone_character",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "low_to_mid",
+        "style_notes": "Begins with grunts and limited vocalisation, gradually developing into singing. The voice should feel like it's discovering itself. Deep, resonant quality that contrasts with childlike wonder. Must handle the 'Puttin' on the Ritz' vocal demands while maintaining character physicality."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "tap",
+          "vaudeville",
+          "physical_comedy",
+          "monster_physicality"
+        ],
+        "stamina": "high",
+        "notes": "'Puttin' on the Ritz' requires genuine dance ability \u2014 typically tap or soft-shoe \u2014 performed in full Monster makeup and costume with restricted movement. The comedy comes from a Monster who shouldn't be able to dance but does so with increasing flair. Must also handle the physical demands of Monster movement throughout."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "childlike_giant",
+          "misunderstood_creature",
+          "physical_comedian",
+          "romantic_innocent"
+        ],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Almost entirely physical performance for the first half. Must create a complete character through movement, gesture, and sound before language arrives. The Monster's gradual humanisation is deeply moving when done well. Think Boris Karloff meets a toddler discovering the world. The Elizabeth seduction scene requires surprisingly nuanced physical comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 2,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": [
+          "monster_physicality",
+          "physical_comedy_at_scale",
+          "tap_or_soft_shoe",
+          "gradual_humanisation_arc",
+          "heavy_prosthetic_performance"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "\ud83c\udf1f Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "\ud83d\ude80 Skill Accelerator",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "The Monster steals the show. Despite limited dialogue, the physical performance demands are extraordinary and develop skills that few other roles require \u2014 sustained physical character work, dance in restrictive conditions, gradual vocal development, and enormous comedic physicality. The audience's favourite character.",
+        "common_casting": "Tall, physically imposing performers who are also skilled physical comedians and dancers. Often cast for their combination of size and surprising grace. Height is a significant advantage.",
+        "standout_opportunity": "'Puttin' on the Ritz' is the moment audiences wait for and the number they talk about afterwards. A Monster who can genuinely dance and charm the audience is unforgettable."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sustained_physical_character",
+          "dance_in_character",
+          "non_verbal_acting",
+          "prosthetic_performance",
+          "audience_connection_without_dialogue"
+        ],
+        "challenge_areas": [
+          "maintaining_monster_physicality_consistently",
+          "dancing_in_heavy_costume",
+          "gradual_vocal_development_arc",
+          "stamina_in_restrictive_makeup"
+        ],
+        "recommended_for": [
+          "physical_comedy_specialists",
+          "dancers_seeking_acting_challenge",
+          "tall_performers_wanting_showcase_role",
+          "performers_developing_non_verbal_skills"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical presence \u2014 height and build matter for this role",
+          "Extraordinary physical comedy skills",
+          "Dance ability (especially tap or soft-shoe) that can work within restrictions",
+          "The ability to create character entirely through physicality",
+          "Sweetness and vulnerability beneath the Monster exterior"
+        ],
+        "common_mistakes": [
+          "Playing the Monster as purely menacing without the childlike wonder",
+          "Insufficient dance preparation \u2014 'Puttin' on the Ritz' is demanding",
+          "Not considering the practical challenges of performing in heavy prosthetics",
+          "Forgetting that the Monster's journey is fundamentally sweet and moving"
+        ],
+        "tips": [
+          "Watch Peter Boyle in the film for the definitive Monster characterisation",
+          "Prepare physical comedy material and demonstrate dance skills in audition",
+          "Practice sustained character physicality \u2014 can you maintain Monster movement for 2+ hours?",
+          "Show directors both the comedy and the heart \u2014 the Monster is loveable"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Puttin' on the Ritz",
+          "type": "duet_showstopper",
+          "notes": "THE signature number. Frederick and the Monster perform a vaudeville routine proving the Monster can be civilised. Tap/soft-shoe, comedy, and pure theatrical magic."
+        },
+        {
+          "title": "Deep Love",
+          "type": "duet_with_elizabeth",
+          "notes": "The Monster and Elizabeth discover unexpected compatibility. Hilarious and surprisingly sweet."
+        }
+      ]
+    },
+    {
+      "id": "inga",
+      "name": "Inga",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "Frederick's gorgeous, enthusiastic, and surprisingly brilliant Transylvanian lab assistant. Inga appears to be the classic 'dumb blonde' archetype but repeatedly proves herself to be intelligent, capable, and genuinely sweet. Her thick Transylvanian accent and bombshell appearance are played for comedy, but Mel Brooks gives her genuine agency \u2014 she's the one who helps Frederick succeed and who sees the real man beneath his neuroses. Her warmth and positivity are the antidote to Frederick's anxiety. A classic leading lady role with outstanding comic opportunities.",
+      "vocal": {
+        "range": "Bb3-F5",
+        "voice_type": "soprano_belt",
+        "belt_required": true,
+        "belt_range": "D4-F5",
+        "tessitura": "mid_to_high",
+        "style_notes": "Big Broadway belt with a playful quality. Must maintain a consistent Transylvanian/Germanic accent while singing full-voice production numbers. Think classic golden-age leading lady with comedic sparkle. Yodelling ability is a major bonus for her featured number."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "musical_comedy",
+          "folk_dance",
+          "production_numbers"
+        ],
+        "stamina": "moderate_to_high",
+        "notes": "Must move well in production numbers and potentially handle folk/Bavarian-style dance. Physical comedy involving her attractiveness is a significant component."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": [
+          "bombshell_with_brains",
+          "comic_leading_lady",
+          "warm_hearted_assistant",
+          "accent_character"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must subvert the dumb-blonde stereotype without losing the comedy of it. Inga is funny BECAUSE she's smarter than she appears, not because she's stupid. The accent must be consistent, charming, and never cruel. Genuine warmth and romantic chemistry with Frederick are essential."
+      },
+      "performance": {
+        "stage_time_percentage": 55,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "transylvanian_accent",
+          "physical_comedy",
+          "potential_yodelling",
+          "romantic_chemistry"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Inga is the romantic lead and a major comedic presence. The role offers a wonderful showcase for soprano belters with comedy chops \u2014 a classic leading lady who's also very funny. High visibility and audience appeal.",
+        "common_casting": "Attractive soprano belters with genuine comedic talent and strong accent skills. Directors look for warmth, intelligence beneath the comedy, and real chemistry with Frederick.",
+        "standout_opportunity": "Her solo number and the romantic duet with Frederick are highlights. The role offers the rare combination of being the leading lady AND getting big laughs."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "accent_maintenance_while_singing",
+          "comedy_leading_lady_skills",
+          "subverting_stereotypes",
+          "romantic_comedy_performance"
+        ],
+        "challenge_areas": [
+          "accent_consistency_across_full_show",
+          "avoiding_one_dimensional_characterisation",
+          "balancing_comedy_with_romantic_sincerity"
+        ],
+        "recommended_for": [
+          "soprano_belters_seeking_comedic_roles",
+          "performers_developing_accent_work",
+          "leading_ladies_wanting_comedy_showcase"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A big, beautiful belt voice with comic sparkle",
+          "A convincing and charming Germanic/Transylvanian accent",
+          "Genuine warmth and intelligence \u2014 not playing dumb",
+          "Physical comedy ability and comfort with bombshell comedy",
+          "Romantic chemistry potential"
+        ],
+        "common_mistakes": [
+          "Playing Inga as actually stupid \u2014 she's smart with an accent",
+          "Inconsistent accent \u2014 must be bulletproof",
+          "All comedy, no heart \u2014 the romance must feel genuine",
+          "Insufficient vocal power for the belt numbers"
+        ],
+        "tips": [
+          "Prepare a big Broadway belt number with a character voice \u2014 think Adelaide from Guys and Dolls territory",
+          "Work the accent thoroughly before auditions \u2014 it must be second nature",
+          "Show directors you can be funny AND romantic in the same scene",
+          "Watch Teri Garr in the film for the template, then make it your own"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Roll in the Hay",
+          "type": "solo_comedy",
+          "notes": "Inga's featured number. Classic Mel Brooks innuendo comedy with a big belt finish. Potential yodelling."
+        },
+        {
+          "title": "Together Again (For the First Time)",
+          "type": "duet_romantic",
+          "notes": "Genuine romantic duet with Frederick. Sweet and funny."
+        },
+        {
+          "title": "The Transylvania Mania",
+          "type": "ensemble_production",
+          "notes": "Major presence in the show's big production number."
+        }
+      ]
+    },
+    {
+      "id": "igor",
+      "name": "Igor",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {
+        "min": 18,
+        "max": 50
+      },
+      "description": "The Frankenstein family's devoted, scheming, and hilariously untrustworthy hunchbacked servant. Igor (pronounced 'Eye-gor') is a classic Mel Brooks comic creation \u2014 loyal yet self-serving, helpful yet chaotic, with a hump that mysteriously shifts sides. He's the show's chaos agent, driving the plot forward through a combination of good intentions and terrible judgment. A constant source of one-liners, physical comedy, and gleeful mischief. The role is a gift for comedic character actors.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "character_baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "mid",
+        "style_notes": "Character voice with comedic delivery. Must sing well enough for ensemble and featured moments while maintaining Igor's distinctive vocal quality. The voice should be as physically characterful as the body \u2014 slightly off-kilter, energetic, with impeccable comedic timing in delivery."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": [
+          "physical_comedy",
+          "vaudeville",
+          "hunchback_characterisation"
+        ],
+        "stamina": "high",
+        "notes": "Must maintain hunchback physicality throughout while executing physical comedy and production number choreography. The shifting hump is a recurring gag that requires precise physical awareness."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "comic_sidekick",
+          "chaos_agent",
+          "loveable_rogue",
+          "physical_comedian"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Pure comedy role requiring exceptional physical comedy, timing, and the ability to land one-liners consistently. Must maintain the hunchback characterisation for the entire show without it becoming stale. The shifting hump, the pronunciation gags, and the scheming must all feel fresh night after night. Think Marty Feldman's definitive film performance."
+      },
+      "performance": {
+        "stage_time_percentage": 60,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 4,
+        "quick_changes": 0,
+        "special_skills": [
+          "sustained_physical_characterisation",
+          "one_liner_delivery",
+          "shifting_hump_gag",
+          "vaudeville_comedy",
+          "audience_mugging"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_get_cast"
+        ],
+        "why": "Igor is one of the most beloved comic sidekick roles in musical theatre. High stage time, constant laughs, and enormous audience appeal. The role develops sustained physical comedy skills and comedic timing that are invaluable for any performing career.",
+        "common_casting": "Natural comedians with strong physical skills. Directors look for performers who can maintain character physicality consistently while finding new comedy every night. Often cast from comedy or physical theatre backgrounds.",
+        "standout_opportunity": "Igor gets more consistent laughs than any other character. The role is an audience favourite and a showcase for comedic genius."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "sustained_physical_character",
+          "one_liner_comedy",
+          "vaudeville_technique",
+          "comic_sidekick_skills",
+          "audience_engagement"
+        ],
+        "challenge_areas": [
+          "maintaining_hunchback_physicality_for_full_show",
+          "keeping_gags_fresh_over_a_run",
+          "supporting_without_upstaging"
+        ],
+        "recommended_for": [
+          "physical_comedians_seeking_musical_theatre_roles",
+          "character_actors_with_comedy_chops",
+          "performers_wanting_high_visibility_supporting_role"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural comic instinct \u2014 you either have it or you don't",
+          "Physical comedy skills and stamina for sustained characterisation",
+          "The ability to land one-liners with precision",
+          "Supportive ensemble awareness \u2014 Igor helps Frederick shine",
+          "Adequate singing ability to handle ensemble and featured moments"
+        ],
+        "common_mistakes": [
+          "Doing a Marty Feldman impression instead of creating your own Igor",
+          "Inconsistent hunchback \u2014 the physical characterisation must be airtight",
+          "Upstaging the leads instead of supporting them",
+          "Running out of physical comedy energy by Act Two"
+        ],
+        "tips": [
+          "Watch the film for inspiration but develop your own physical vocabulary",
+          "Prepare comedic material that shows physical and verbal comedy skills",
+          "Demonstrate stamina \u2014 directors need to know you can sustain the hunchback",
+          "Show generosity \u2014 the best Igors make everyone around them funnier"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Together Again (For the First Time)",
+          "type": "ensemble",
+          "notes": "Featured comedy moments within ensemble numbers"
+        },
+        {
+          "title": "The Transylvania Mania",
+          "type": "production_number",
+          "notes": "Igor is the engine of chaos in the big production number"
+        }
+      ]
+    },
+    {
+      "id": "elizabeth-benning",
+      "name": "Elizabeth Benning",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 22,
+        "max": 40
+      },
+      "description": "Frederick's impossibly uptight, self-obsessed New York fianc\u00e9e who is horrified by anything physical, emotional, or Transylvanian. Elizabeth is a brilliant comic creation \u2014 a woman so repressed she flinches at human touch, delivers every line with imperious self-importance, and has an elaborate 'don't touch me' routine that is one of the show's most reliable laugh generators. Her unexpected transformation when she encounters the Monster \u2014 discovering her own passionate nature \u2014 is one of Mel Brooks' most outrageous and hilarious plot twists. The role is a showcase for fearless comedic actresses.",
+      "vocal": {
+        "range": "B3-F#5",
+        "voice_type": "soprano_belt_comedic",
+        "belt_required": true,
+        "belt_range": "D4-F#5",
+        "tessitura": "mid_to_high",
+        "style_notes": "High, affected soprano that parodies operatic/classical singing. Must be technically impressive while being hilarious. The voice should sound like someone performing 'proper' singing at all times. Her post-Monster transformation number requires full-throated, uninhibited belt."
+      },
+      "dance": {
+        "level": "basic_to_intermediate",
+        "styles": [
+          "comedic_movement",
+          "stiff_upper_body_comedy",
+          "transformation_physicality"
+        ],
+        "stamina": "moderate",
+        "notes": "Physical comedy of repression is the primary movement requirement \u2014 rigid, flinching, recoiling from all contact. Post-Monster transformation requires dramatically different, uninhibited physicality."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "uptight_socialite",
+          "comic_diva",
+          "repressed_woman",
+          "transformation_role"
+        ],
+        "emotional_range": "moderate_to_wide",
+        "comedy_skills": true,
+        "notes": "Must be hilariously repressed without becoming one-note. The 'don't touch me' physicality must be fresh every time. The transformation is the comedic high point \u2014 from rigid to ecstatic must be total and committed. Think Madeline Kahn's legendary film performance \u2014 fearless, specific, and completely committed."
+      },
+      "performance": {
+        "stage_time_percentage": 35,
+        "solo_songs": 2,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "physical_repression_comedy",
+          "affected_vocal_style",
+          "dramatic_transformation",
+          "operatic_parody"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_stand_out"
+        ],
+        "why": "Elizabeth is scene-stealing every time she appears. Despite moderate stage time, she makes an outsized impression. Her transformation scene is one of the show's biggest laughs. The role demands and rewards fearless comedic commitment.",
+        "common_casting": "Fearless comedic actresses with strong soprano/belt voices. Directors look for someone willing to go completely over the top while maintaining impeccable comic timing. Diva presence with zero vanity.",
+        "standout_opportunity": "The Monster encounter and subsequent transformation is a highlight the audience anticipates and loves. Elizabeth's big number post-transformation brings the house down."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "fearless_physical_comedy",
+          "affected_character_voice",
+          "comedic_transformation",
+          "operatic_parody_skills",
+          "scene_stealing_technique"
+        ],
+        "challenge_areas": [
+          "maintaining_repression_comedy_consistently",
+          "committing_fully_to_the_transformation",
+          "vocal_parody_precision"
+        ],
+        "recommended_for": [
+          "soprano_belters_with_comedic_fearlessness",
+          "character_actresses_seeking_show_stealing_role",
+          "performers_wanting_to_develop_physical_comedy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Fearlessness \u2014 this role requires zero vanity",
+          "A strong voice that can parody classical singing convincingly",
+          "Physical comedy of repression \u2014 can you make flinching hilarious?",
+          "The willingness to commit fully to the transformation",
+          "Diva presence that commands the stage from the moment you enter"
+        ],
+        "common_mistakes": [
+          "Not going big enough \u2014 Elizabeth requires operatic-scale comedy",
+          "Playing the repression as realistic instead of stylised and hilarious",
+          "Insufficient vocal technique for the parody demands",
+          "Being afraid of the transformation's outrageousness"
+        ],
+        "tips": [
+          "Watch Madeline Kahn in the film \u2014 she's the blueprint for fearless comedy",
+          "Prepare something that shows vocal power AND comedic commitment",
+          "Physical comedy preparation is essential \u2014 practice the repression physicality",
+          "Show directors you have zero limits when it comes to comedy \u2014 this role rewards bravery"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Please Don't Touch Me",
+          "type": "solo_comedy",
+          "notes": "Elizabeth's signature number of extreme repression. Hilarious affected soprano with increasingly absurd physical flinching."
+        },
+        {
+          "title": "Deep Love",
+          "type": "duet_transformation",
+          "notes": "Post-Monster encounter. Elizabeth discovers passion. One of the biggest laughs in the show."
+        }
+      ]
+    },
+    {
+      "id": "frau-blucher",
+      "name": "Frau Bl\u00fccher",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {
+        "min": 35,
+        "max": 65
+      },
+      "description": "The Frankenstein castle's imposing, mysterious housekeeper whose very name causes horses to whinny in terror. Frau Bl\u00fccher is a gothic presence who conceals a secret: she was the old Dr. Frankenstein's lover and is devoted to continuing his work. She is simultaneously terrifying, hilarious, and unexpectedly vulnerable. The horse-whinny running gag is one of the show's most beloved comedy bits. Her featured number reveals her romantic past with surprising emotional depth beneath the comedy.",
+      "vocal": {
+        "range": "A3-D5",
+        "voice_type": "mezzo_alto_character",
+        "belt_required": true,
+        "belt_range": "C4-D5",
+        "tessitura": "mid",
+        "style_notes": "Deep, Germanic character voice that must be both imposing and capable of genuine singing. Her featured number requires unexpected vocal beauty beneath the character voice \u2014 revealing the woman behind the housekeeper. Must maintain accent and character voice while handling Mel Brooks' musical demands."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "comic_movement",
+          "gothic_presence",
+          "unexpected_grace"
+        ],
+        "stamina": "low_to_moderate",
+        "notes": "Movement should be imposing and slightly menacing. The comedy comes from an intimidating presence doing unexpected things. Limited choreographic demands."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "gothic_housekeeper",
+          "secret_romantic",
+          "intimidating_comic",
+          "running_gag_anchor"
+        ],
+        "emotional_range": "moderate",
+        "comedy_skills": true,
+        "notes": "Must anchor the horse-whinny running gag with perfect timing while also delivering genuine character depth. The reveal of her romantic past must be simultaneously funny and touching. A great comic character actress role that rewards specificity and fearless commitment."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": [
+          "germanic_accent",
+          "running_gag_timing",
+          "gothic_presence",
+          "intimidation_comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast",
+          "best_to_stand_out"
+        ],
+        "why": "Frau Bl\u00fccher is an audience favourite thanks to the horse-whinny gag and her surprising solo. The role offers a wonderful showcase for character actresses \u2014 high impact with moderate stage time. Scene-stealing potential in every appearance.",
+        "common_casting": "Strong character actresses with imposing presence and expert comic timing. Often cast with theatre veterans who can command a scene with a look. Germanic accent must be convincing.",
+        "standout_opportunity": "The horse-whinny gag gets consistent huge laughs, and her solo revealing her romantic past is an unexpected emotional highlight."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "character_comedy",
+          "running_gag_precision",
+          "accent_maintenance",
+          "gothic_character_work",
+          "unexpected_vulnerability"
+        ],
+        "challenge_areas": [
+          "keeping_the_horse_gag_fresh_nightly",
+          "balancing_menace_with_comedy",
+          "accent_consistency"
+        ],
+        "recommended_for": [
+          "character_actresses_seeking_scene_stealing_role",
+          "performers_developing_accent_and_character_skills",
+          "experienced_performers_wanting_featured_comedy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "An imposing presence that commands the stage",
+          "Expert comedic timing \u2014 the horse gag requires precision",
+          "A convincing Germanic accent maintained throughout",
+          "Genuine vocal ability beneath the character voice",
+          "The ability to be terrifying and hilarious simultaneously"
+        ],
+        "common_mistakes": [
+          "One-note menace without comedic variation",
+          "Weak accent work \u2014 must be rock-solid",
+          "Not finding the vulnerability in the solo number",
+          "Milking the horse gag instead of playing it straight"
+        ],
+        "tips": [
+          "Watch Cloris Leachman's iconic film performance for inspiration",
+          "Prepare character comedy material with a Germanic accent",
+          "Show directors you can surprise them \u2014 menace then vulnerability",
+          "The horse gag works best when Frau Bl\u00fccher is completely unaware of it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "He Vas My Boyfriend",
+          "type": "solo_comedy_ballad",
+          "notes": "Frau Bl\u00fccher reveals her romantic past with the old Dr. Frankenstein. Unexpectedly touching within outrageous comedy."
+        },
+        {
+          "title": "The Transylvania Mania",
+          "type": "ensemble",
+          "notes": "Frau Bl\u00fccher's presence adds gothic comedy to the production number."
+        }
+      ]
+    },
+    {
+      "id": "inspector-kemp",
+      "name": "Inspector Hans Kemp",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 35,
+        "max": 60
+      },
+      "description": "The one-armed, wooden-legged, monocled police inspector of the Transylvanian village \u2014 a parody of the classic horror movie authority figure. Inspector Kemp is a comic tour de force: he speaks with an incomprehensible German accent, has more prosthetic limbs than real ones, and takes his job with deadly seriousness despite being completely inept. He leads the villagers' angry mob against the Monster with unwavering determination and absolutely no competence. A beloved Mel Brooks character that requires a fearless physical comedian who can sustain an accent and physicality that gets funnier with every appearance.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "Baritone / Bass-Baritone",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Strong character baritone with heavy German accent colouring everything",
+        "style_notes": "Kemp's vocal quality is defined by the accent \u2014 thick, German, and increasingly incomprehensible. When he sings, the accent stays. His voice should have military authority underneath the comedy. Must project through the accent while keeping it funny."
+      },
+      "dance": {
+        "level": "basic",
+        "styles": [
+          "Physical comedy",
+          "Slapstick",
+          "Character movement with prosthetic limbs"
+        ],
+        "stamina": "Moderate \u2014 concentrated comic scenes with high physical demand",
+        "notes": "Kemp's physicality is defined by his prosthetic arm, wooden leg, and monocle \u2014 he's constantly fighting his own body. The comedy is in the struggle to be authoritative while literally falling apart. Physical comedy of the highest order."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Mel Brooks authority parody",
+          "Incompetent inspector",
+          "Fearless physical comedian",
+          "Accent comedy specialist"
+        ],
+        "emotional_range": "Deadly seriousness played for maximum comedy \u2014 outrage, determination, confusion, and the unshakeable conviction that he's in charge despite all evidence to the contrary",
+        "comedy_skills": true,
+        "notes": "Inspector Kemp is one of the great Mel Brooks comic creations. The key is absolute commitment \u2014 he NEVER acknowledges that anything about him is funny. His accent is impenetrable, his body is falling apart, and he conducts himself with total authority. The bigger his problems, the more seriously he takes himself. This requires a comedian who can sustain a character that escalates in absurdity throughout the show."
+      },
+      "performance": {
+        "stage_time_percentage": 15,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": [
+          "Sustained comic German accent",
+          "Physical comedy with prosthetic limbs",
+          "Mob leadership",
+          "Deadpan authority amid chaos",
+          "Mel Brooks comedy style"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "\u2b50 High Visibility",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "Inspector Kemp is a comedian's dream \u2014 a role that demands sustained character comedy, accent work, physical comedy, and the Mel Brooks skill of playing absurdity with total sincerity. This role builds every comic muscle simultaneously.",
+        "common_casting": "Fearless physical comedians with strong accent skills and the ability to commit fully to absurd premises. Must be willing to look ridiculous and maintain absolute dignity while doing so.",
+        "standout_opportunity": "Kemp consistently gets some of the biggest laughs in the show. A great Inspector Kemp becomes legendary in community theatre circles."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Sustained accent comedy",
+          "Physical comedy with prosthetics/limitations",
+          "Mel Brooks comedy style",
+          "Escalating absurdity while staying grounded",
+          "Authority figure parody"
+        ],
+        "challenge_areas": [
+          "Maintaining the accent consistently",
+          "Physical comedy with props/prosthetics eight shows a week",
+          "Not breaking character when the audience laughs",
+          "Keeping the comedy fresh in a long run"
+        ],
+        "recommended_for": [
+          "Physical comedians seeking showcase roles",
+          "Actors with strong accent skills",
+          "Performers who enjoy Mel Brooks comedy",
+          "Those developing sustained character comedy"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Fearless comedy commitment",
+          "Strong German accent that's funny but sustainable",
+          "Physical comedy ability",
+          "The ability to play absolute seriousness in absurd situations",
+          "Vocal strength underneath the character work"
+        ],
+        "common_mistakes": [
+          "Making the accent so thick nobody can understand plot points",
+          "Not committing fully \u2014 half measures don't work for Kemp",
+          "Winking at the audience instead of playing it straight",
+          "Neglecting the vocal requirements"
+        ],
+        "tips": [
+          "Watch Kenneth Mars in the original film \u2014 that's your template",
+          "Practice the accent until it's second nature, then make it funny",
+          "Play Kemp with 100% conviction \u2014 he thinks he's brilliant",
+          "Show physical comedy skills in your audition \u2014 stumble, fight with your body"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Kemp's rallying song / mob scenes",
+          "type": "comedy_number",
+          "notes": "Inspector Kemp leading the angry mob with incomprehensible speeches and deadly serious authority"
+        },
+        {
+          "title": "Village scenes",
+          "type": "comedy_scenes",
+          "notes": "Kemp investigating the Monster's activities with total ineptitude and absolute confidence"
+        }
+      ]
+    },
+    {
+      "id": "harold-hermit",
+      "name": "Harold the Blind Hermit",
+      "role_type": "supporting",
+      "gender": "Male",
+      "age_range": {
+        "min": 35,
+        "max": 65
+      },
+      "description": "The lonely blind hermit living in a woodland shack who becomes the Monster's unlikely first friend. This is one of the most beloved comedy scenes in the Mel Brooks canon \u2014 the Hermit is genuinely kind, desperately lonely, and accidentally injures the Monster at every turn while trying to be hospitable. He pours hot soup on the Monster's lap, sets his thumb on fire instead of lighting a cigar, and generally wreaks havoc while being the sweetest person imaginable. His loneliness is real, his kindness is genuine, and the disaster is unintentional \u2014 which makes it funnier than any deliberate comedy.",
+      "vocal": {
+        "range": "B2-E4",
+        "voice_type": "Baritone / Bass",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Warm, gentle baritone \u2014 the voice of a lonely, kind man",
+        "style_notes": "The Hermit's voice should be warm and sincere \u2014 genuinely lovely. His song about loneliness should be genuinely moving before descending into slapstick chaos. The contrast between beautiful sincerity and physical disaster is the core of the comedy."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Slapstick",
+          "Physical comedy",
+          "Blind character movement"
+        ],
+        "stamina": "Low \u2014 one major scene",
+        "notes": "The Hermit's physicality is about blindness \u2014 he reaches for things and misses, walks into furniture, and accidentally causes mayhem. The comedy must feel accidental, not deliberate. Study great blind-character comedy for the timing."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "Lonely innocent",
+          "Accidental slapstick artist",
+          "Sweetest person in the show",
+          "Comic disaster"
+        ],
+        "emotional_range": "Genuine loneliness, overwhelming joy at having company, sincere kindness that accidentally causes pain \u2014 the comedy of good intentions gone horribly wrong",
+        "comedy_skills": true,
+        "notes": "The Hermit scene only works if the audience believes his loneliness and kindness are REAL. The comedy comes from the gap between his beautiful intentions and disastrous execution. If you play it as slapstick first, it fails. Play the sincerity first, and the slapstick is hilarious. This is a one-scene role that requires genuine acting underneath the comedy."
+      },
+      "performance": {
+        "stage_time_percentage": 7,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 1,
+        "quick_changes": 1,
+        "special_skills": [
+          "Slapstick with sincerity",
+          "Playing blind convincingly",
+          "Accidental physical comedy",
+          "Genuine emotional vulnerability in a comedy context",
+          "Usually doubled from ensemble"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "\u2728 Solid Spotlight",
+        "growth_value": 4,
+        "growth_label": "\ud83d\udd25 Strong Development",
+        "decision_tags": [
+          "best_to_stand_out",
+          "best_to_grow"
+        ],
+        "why": "The Blind Hermit scene is one of the comedy highlights of the show and one of the most famous scenes in Mel Brooks' entire career. It teaches the invaluable lesson that the best comedy comes from genuine emotion \u2014 play the loneliness and kindness truthfully, and the slapstick takes care of itself.",
+        "common_casting": "Warm character actors who can be genuinely sweet and accidentally hilarious. Must have strong slapstick timing and the ability to play sincerity while causing chaos.",
+        "standout_opportunity": "The Hermit scene is a guaranteed showstopper. A great Blind Hermit performance gets talked about for years."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Comedy through sincerity",
+          "Slapstick timing and execution",
+          "Playing physical limitations convincingly",
+          "Genuine emotion within broad comedy",
+          "One-scene memorable performance"
+        ],
+        "challenge_areas": [
+          "The slapstick must look accidental, not rehearsed",
+          "Maintaining genuine sweetness amid chaos",
+          "Timing the physical comedy precisely with the Monster actor",
+          "Playing blind convincingly"
+        ],
+        "recommended_for": [
+          "Character actors with slapstick ability",
+          "Performers who can combine sincerity with comedy",
+          "Those developing physical comedy skills",
+          "Actors who want to prove comedy comes from truth"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and kindness",
+          "Strong slapstick timing",
+          "The ability to be both touching and hilarious",
+          "A warm singing voice for the loneliness song",
+          "Physical comedy that looks accidental"
+        ],
+        "common_mistakes": [
+          "Leading with slapstick instead of sincerity",
+          "Making the blindness cartoonish",
+          "Not investing in the genuine loneliness",
+          "Breaking character during the comedy"
+        ],
+        "tips": [
+          "Watch Gene Hackman in the original film \u2014 sweetness first, disaster second",
+          "Practice blind physicality until it's natural",
+          "Find the REAL loneliness \u2014 the Hermit hasn't had a visitor in years",
+          "The funnier it gets, the more sincere you should play it"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Please Send Me Someone / Hermit scene",
+          "type": "solo_with_scene",
+          "notes": "The Hermit's genuine song of loneliness that transitions into the most famous slapstick scene in the show \u2014 hot soup, fire, and unintentional chaos"
+        }
+      ]
+    },
+    {
+      "id": "victor-frankenstein",
+      "name": "Dr. Victor von Frankenstein",
+      "role_type": "featured_ensemble",
+      "gender": "Male",
+      "age_range": {
+        "min": 40,
+        "max": 70
+      },
+      "description": "Frederick's grandfather \u2014 the original mad scientist whose shadow looms over the entire story. Victor appears as a ghost or vision, beckoning Frederick to continue his work and embrace the Frankenstein legacy. He is the catalyst for Frederick's journey from respectable American doctor to enthusiastic mad scientist. Victor is grand, dramatic, slightly terrifying, and represents the seductive pull of dangerous genius. Usually doubled from ensemble.",
+      "vocal": {
+        "range": "A2-D4",
+        "voice_type": "Baritone / Bass",
+        "belt_required": false,
+        "belt_range": null,
+        "tessitura": "Deep, resonant, dramatic \u2014 the voice of mad science itself",
+        "style_notes": "Victor's voice should be imposing and seductive \u2014 beckoning Frederick toward his destiny with the authority of a ghost who was once the most brilliant (and dangerous) mind in the world."
+      },
+      "dance": {
+        "level": "none",
+        "styles": [
+          "Ghostly staging"
+        ],
+        "stamina": "Low \u2014 brief appearances",
+        "notes": "Victor moves with ghostly authority \u2014 commanding, dramatic, and otherworldly. His presence should feel like fate itself calling."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Ghost of a mad scientist",
+          "Seductive legacy",
+          "Catalyst figure",
+          "Dramatic apparition"
+        ],
+        "emotional_range": "Grand dramatic presence, seductive beckoning, the irresistible pull of genius",
+        "comedy_skills": false,
+        "notes": "Victor is one of the few non-comedic elements \u2014 his appearances should be genuinely dramatic and slightly eerie, providing contrast to the comedy. He represents the serious undercurrent beneath the jokes: the Frankenstein legacy is both thrilling and dangerous."
+      },
+      "performance": {
+        "stage_time_percentage": 5,
+        "solo_songs": 0,
+        "duets": 1,
+        "ensemble_numbers": 2,
+        "quick_changes": 1,
+        "special_skills": [
+          "Dramatic ghostly presence",
+          "Creating atmosphere in a comedy",
+          "Seductive authority",
+          "Usually doubled from ensemble"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 2,
+        "growth_label": "\ud83c\udf31 Gentle Growth",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "Victor provides a rare dramatic contrast in a comedy show. Playing a serious ghostly presence amid Mel Brooks comedy teaches the valuable skill of maintaining different tones within the same production.",
+        "common_casting": "Distinguished-looking actor with a deep, commanding voice. Must be able to play it straight in a comedy. Usually doubled from ensemble.",
+        "standout_opportunity": "Victor's ghostly appearances provide dramatic gravitas. A commanding Victor makes the Frankenstein legacy feel genuinely seductive."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Dramatic presence in comedy context",
+          "Ghostly character creation",
+          "Deep voice authority",
+          "Ensemble versatility with featured dramatic moment"
+        ],
+        "challenge_areas": [
+          "Playing it straight amid comedy",
+          "Making brief appearances impactful",
+          "Creating atmosphere quickly",
+          "Transitioning from ensemble comedy to dramatic featured role"
+        ],
+        "recommended_for": [
+          "Actors with commanding presence seeking featured ensemble work",
+          "Performers with deep, resonant voices",
+          "Those who enjoy dramatic roles within comedies",
+          "Ensemble members wanting named character credits"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Commanding, deep voice",
+          "Dramatic presence",
+          "The ability to play it straight in a comedy",
+          "Ensemble skills for doubling",
+          "Distinguished appearance"
+        ],
+        "common_mistakes": [
+          "Playing Victor for laughs \u2014 he should be genuinely dramatic",
+          "Not creating enough impact in brief appearances",
+          "Lacking the vocal gravitas",
+          "Not preparing ensemble comedy skills"
+        ],
+        "tips": [
+          "Study classic mad scientist portrayals \u2014 Victor is the original",
+          "Play it completely straight \u2014 you're the dramatic anchor",
+          "A deep, resonant voice is your greatest asset",
+          "Show you can do both: ensemble comedy AND dramatic intensity"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Victor's ghostly appearances / 'Join the Family Business'",
+          "type": "featured_dramatic",
+          "notes": "Victor beckoning Frederick toward the Frankenstein legacy \u2014 dramatic, seductive, and slightly terrifying"
+        }
+      ]
+    },
+    {
+      "id": "ensemble-young-frankenstein",
+      "name": "Ensemble (Villagers / Transylvanians / Laboratory Assistants)",
+      "role_type": "ensemble",
+      "gender": "Any",
+      "age_range": {
+        "min": 18,
+        "max": 60
+      },
+      "description": "The Young Frankenstein ensemble creates the world of Transylvania and beyond \u2014 angry villagers wielding pitchforks, spooky Transylvanian townsfolk, laboratory assistants, medical students, and the various characters populating Mel Brooks' comic horror universe. The ensemble is crucial for the big comedy production numbers and the mob scenes. Several tracks include named featured roles (Dr. Victor von Frankenstein and others) \u2014 see individual entries. Must be strong singer-dancer-actors with excellent comedy skills and the ability to commit fully to Mel Brooks' brand of broad, fearless humour.",
+      "vocal": {
+        "range": "Full SATB range",
+        "voice_type": "Mixed ensemble",
+        "belt_required": true,
+        "belt_range": "Varies by part",
+        "tessitura": "Full ensemble range \u2014 strong unison singing for mob numbers and comedy choruses",
+        "style_notes": "Comedy singing that ranges from mock-operatic Transylvanian style to full-belt production numbers. Must be able to sell comedy through vocal performance. Strong blend for ensemble numbers."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": [
+          "Jazz",
+          "Broadway",
+          "Comedy choreography",
+          "Tap",
+          "Puttin' on the Ritz style"
+        ],
+        "stamina": "High \u2014 'Puttin' on the Ritz' alone is enormously demanding",
+        "notes": "The big production numbers require strong dance technique within a comedy framework. 'Puttin' on the Ritz' is the show's centrepiece and requires excellent ensemble choreography. Transylvania Dance is another major number."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": [
+          "Angry villagers",
+          "Spooky townsfolk",
+          "Medical students",
+          "Various Mel Brooks characters"
+        ],
+        "emotional_range": "Broad comedy \u2014 fear, rage, mob mentality, spooky atmosphere, joyful production numbers",
+        "comedy_skills": true,
+        "notes": "Every ensemble member must be a committed comedian. Mel Brooks comedy requires total commitment to absurd premises. The mob scenes must be both funny and energetic."
+      },
+      "performance": {
+        "stage_time_percentage": 50,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 4,
+        "special_skills": [
+          "Mel Brooks comedy commitment",
+          "Mob scene energy",
+          "Multiple character tracks",
+          "Comedy choreography",
+          "Broad physical comedy"
+        ]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "\ud83d\udca1 Supporting Glow",
+        "growth_value": 3,
+        "growth_label": "\ud83d\udcc8 Solid Builder",
+        "decision_tags": [
+          "best_to_get_cast"
+        ],
+        "why": "A fun, demanding ensemble that builds comedy skills, dance technique, and the ability to commit fully to broad humour. Several featured character tracks available.",
+        "common_casting": "Strong singer-dancer-actors with fearless comedy skills. Must be willing to go big and commit to absurd premises.",
+        "standout_opportunity": "'Puttin' on the Ritz' showcases the full ensemble. Individual comedy moments within mob scenes let personalities shine."
+      },
+      "growth_profile": {
+        "skills_developed": [
+          "Broad comedy ensemble skills",
+          "Comedy choreography",
+          "Mob scene energy",
+          "Multiple character creation",
+          "Mel Brooks comedy style"
+        ],
+        "challenge_areas": [
+          "Sustaining high comedy energy",
+          "Multiple quick changes",
+          "Comedy dancing at high level",
+          "Staying committed to broad humour"
+        ],
+        "recommended_for": [
+          "Performers who love comedy",
+          "Dancer-singers with strong acting",
+          "Those building broad comedy skills",
+          "Ensemble members who want to have fun"
+        ]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Comedy commitment",
+          "Strong dance ability",
+          "Vocal ensemble skills",
+          "Physical comedy",
+          "Energy and fearlessness"
+        ],
+        "common_mistakes": [
+          "Being too subtle for Mel Brooks comedy",
+          "Not showing dance skills",
+          "Not committing fully to the comedy",
+          "Lacking energy"
+        ],
+        "tips": [
+          "Go big \u2014 this is Mel Brooks, not Sondheim",
+          "Show dance skills and comedy simultaneously",
+          "Be fearless and committed",
+          "Have fun \u2014 it shows"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Puttin' on the Ritz",
+          "type": "ensemble_showstopper",
+          "notes": "The iconic production number \u2014 the Monster's big debut. Demanding choreography with huge comedy."
+        },
+        {
+          "title": "Transylvania Mania",
+          "type": "ensemble",
+          "notes": "The spooky, comedic ensemble number establishing the Transylvanian world"
+        },
+        {
+          "title": "Mob scenes",
+          "type": "ensemble_comedy",
+          "notes": "The angry villager numbers \u2014 pitchforks, torches, and comic outrage"
+        }
+      ]
+    }
+  ]
+}

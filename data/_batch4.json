@@ -1,0 +1,438 @@
+{
+  "songs": {
+    "jersey-boys/frankie-valli": {
+      "role_name": "Frankie Valli",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Big Girls Don't Cry", "from": "Jersey Boys", "composer": "Bob Gaudio / Bob Crewe", "why": "The signature Four Seasons sound — requires the authentic falsetto that defines this role", "type": "same_show"},
+        {"title": "Can't Take My Eyes Off You", "from": "Jersey Boys", "composer": "Bob Gaudio / Bob Crewe", "why": "Shows the tenor's full range from chest to falsetto — the climactic number every Frankie must nail", "type": "same_show"},
+        {"title": "Oh, What a Night", "from": "Jersey Boys", "composer": "Bob Gaudio", "why": "Shows period pop tenor energy and the ability to carry the Four Seasons sound authentically", "type": "same_show"},
+        {"title": "How Deep Is Your Love", "from": "Pop repertoire", "composer": "Barry Gibb / Maurice Gibb / Robin Gibb", "why": "If period pop is accepted — shows the sweet falsetto tenor that Frankie Valli requires", "type": "style_match"}
+      ],
+      "style_guidance": "Frankie Valli is the most technically specific role in jukebox musical theatre — a genuine falsetto to C6 is non-negotiable. The role cannot be faked. Voice first, acting follows.",
+      "avoid": ["Falsetto approximations — either you have the Frankie Valli voice or this is not the role for you"]
+    },
+    "jersey-boys/tommy-devito": {
+      "role_name": "Tommy DeVito",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "My Way", "from": "Pop repertoire", "composer": "Claude François / Jacques Revaux / Paul Anka", "why": "If pop songs are accepted — Tommy's entire arc condensed, the unapologetic mobster who made it on his terms", "type": "style_match"},
+        {"title": "Luck Be a Lady", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "Low baritone with swagger and criminal adjacent confidence — the street smart operator", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Commanding baritone who leads through personality and intimidation — Tommy demanding his due", "type": "contrasting"},
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The charming operator who manipulates everyone around him through personality — Tommy's mode", "type": "style_match"}
+      ],
+      "style_guidance": "Tommy is the dangerous charm at the heart of the Four Seasons story — low baritone with street authority and natural criminality. He needs to be persuasive enough that everyone keeps following him despite themselves.",
+      "avoid": ["Clean-cut or guileless energy — Tommy's appeal is his knowingness and implied threat"]
+    },
+    "jersey-boys/bob-gaudio": {
+      "role_name": "Bob Gaudio",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Short People", "from": "Pop repertoire", "composer": "Randy Newman", "why": "If pop songs accepted — the clever wit of the group's songwriter and intellectual heart", "type": "style_match"},
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The young composer finding his place and his purpose — bright tenor who carries the harmony", "type": "style_match"},
+        {"title": "Till There Was You", "from": "The Music Man", "composer": "Meredith Willson", "why": "Period-adjacent lyric tenor — warm, clean, the emotional anchor of the group", "type": "contrasting"}
+      ],
+      "style_guidance": "Bob Gaudio is the Four Seasons' moral compass and artistic engine — tenor with intelligence, steadiness, and the songwriting soul. He narrates a significant portion; clarity and warmth are essential.",
+      "avoid": ["Tommy's street energy — Bob is the deal-maker who keeps his word, the opposite of Tommy's chaos"]
+    },
+    "jersey-boys/nick-massi": {
+      "role_name": "Nick Massi",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Old Man River", "from": "Show Boat", "composer": "Jerome Kern", "why": "Deep bass-baritone anchor — Nick is the low voice that grounds the Four Seasons harmony", "type": "style_match"},
+        {"title": "Some Enchanted Evening", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Rich bass-baritone romantic conviction — Nick as the quiet emotional core", "type": "contrasting"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Deep character bass-baritone with authority — shows the voice quality below the high tenor parts", "type": "style_match"}
+      ],
+      "style_guidance": "Nick Massi is the bass anchor of the group — the one in the background who eventually has had enough. Low voice, dry wit, and accumulating quiet resentment. He leaves without drama.",
+      "avoid": ["High register material — Nick's purpose is the deep harmonic foundation, not the top line"]
+    },
+    "jersey-boys/mary-delgado": {
+      "role_name": "Mary Delgado",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Don't Rain on My Parade", "from": "Funny Girl", "composer": "Jule Styne", "why": "Jersey girl with a belt and no time for anyone's nonsense — street smart and completely undaunted", "type": "style_match"},
+        {"title": "Big Spender", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "Period pop-adjacent belt — the kind of woman you meet in bars in the 1960s who is nobody's fool", "type": "style_match"},
+        {"title": "Losing My Mind", "from": "Follies", "composer": "Stephen Sondheim", "why": "Contrasting — shows the vulnerability beneath the tough exterior, what Tommy's mess actually costs her", "type": "contrasting"}
+      ],
+      "style_guidance": "Mary is the tough, loyal, eventually broken Jersey girlfriend — mezzo-soprano belt with attitude and a core of genuine pain. She loved Tommy before the money ruined everything.",
+      "avoid": ["Sweet or compliant material — Mary is a fighter who got unlucky in her choice of man"]
+    },
+    "jersey-boys/jersey-bob-crewe": {
+      "role_name": "Bob Crewe",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Willkommen", "from": "Cabaret", "composer": "John Kander", "why": "The theatrical music producer/industry figure — knowing, sophisticated, a gate to pass through", "type": "style_match"},
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "The fully realised, unapologetic character whose identity is entirely his own — Bob Crewe exactly", "type": "style_match"}
+      ],
+      "style_guidance": "Bob Crewe is the flamboyant music producer who believes in the group — theatrical tenor/baritone with wit and industry confidence. He is camp and effective. His confidence opens the door.",
+      "avoid": ["Straight, square energy — Crewe's theatricality is part of his brand and his gift"]
+    },
+    "jersey-boys/jersey-gyp-decarlo": {
+      "role_name": "Gyp DeCarlo",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Old Man River", "from": "Show Boat", "composer": "Jerome Kern", "why": "The deep authority of a man who actually runs things — bass/bass-baritone with genuine weight", "type": "style_match"},
+        {"title": "Some Enchanted Evening", "from": "South Pacific", "composer": "Richard Rodgers", "why": "Bass-baritone who commands rooms through presence alone — the benevolent mob boss", "type": "contrasting"}
+      ],
+      "style_guidance": "Gyp DeCarlo is the mob patron who keeps Tommy in check — low bass/baritone with genuine physical authority. Warm to Frankie, cold to everyone who causes trouble. A supporting role that reads as power.",
+      "avoid": ["Theatrical villainy — Gyp is measured, respected, and quietly terrifying precisely because he is not theatrical"]
+    },
+    "jersey-boys/jersey-joe-pesci": {
+      "role_name": "Joey Pesci",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The neighbourhood kid who connects the group — character tenor with street energy and personality", "type": "style_match"}
+      ],
+      "style_guidance": "Joey Pesci is a supporting character role — the connector who brings the Four Seasons together. Tenor with street energy and the ability to make an impression quickly.",
+      "avoid": ["Heavy leading material — this is a featured supporting character who serves the plot"]
+    },
+    "jersey-boys/jersey-norm-waxman": {
+      "role_name": "Norm Waxman",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Character baritone in an industry role — the obstacle/helper figure in the music business", "type": "style_match"}
+      ],
+      "style_guidance": "Norm Waxman is a record label/music industry supporting character — baritone with authority and the specific polished cool of 1960s music business. A small role requiring presence.",
+      "avoid": ["Over-large choices — Norm is a supporting industry role, not a scene-stealer"]
+    },
+    "jersey-boys/jersey-francine": {
+      "role_name": "Francine Valli",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Far From the Home I Love", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "The daughter caught between worlds — soprano/mezzo with love and pain in equal measure", "type": "style_match"},
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "Contrasting — about what parents teach children, and what the cost of that is", "type": "contrasting"}
+      ],
+      "style_guidance": "Francine is Frankie's troubled daughter — soprano/mezzo who carries the personal cost of the Four Seasons' success. Her tragedy is the show's emotional low point. Small but devastating role.",
+      "avoid": ["Bright or upbeat material — Francine is grief waiting to happen"]
+    },
+    "jersey-boys/jersey-lorraine": {
+      "role_name": "Lorraine",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Big Spender", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "The woman in the orbit of famous men — soprano/mezzo with period pop energy and survivalism", "type": "style_match"}
+      ],
+      "style_guidance": "Lorraine is a supporting female role in the world of the Four Seasons — one of the women who passes through. Soprano/mezzo with 1960s character and the ability to register quickly.",
+      "avoid": ["Heavy roles — Lorraine is a passing encounter, vibrant but brief"]
+    },
+    "jersey-boys/jersey-nick-devito": {
+      "role_name": "Nick DeVito",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The older De Vito brother — character tenor with street energy and affectionate comic menace", "type": "style_match"}
+      ],
+      "style_guidance": "Nick DeVito is Tommy's older brother — the original group member who makes way for the real Four Seasons. Tenor with neighborhood character. Supporting role.",
+      "avoid": ["Leading man energy — Nick steps aside and that gracious exit defines him"]
+    },
+    "jersey-boys/jersey-hank-majewski": {
+      "role_name": "Hank Majewski",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Oh, What a Night", "from": "Jersey Boys", "composer": "Bob Gaudio", "why": "The pre-Gaudio member — shows the original Four Seasons sound before the transformation", "type": "same_show"}
+      ],
+      "style_guidance": "Hank Majewski is the outgoing member when Gaudio joins — tenor who forms part of the original group. Small role requiring period harmony skills.",
+      "avoid": ["Stand-out soloistic material — Hank is ensemble, his role is defined by the harmony not the spotlight"]
+    },
+    "jersey-boys/ensemble-jersey": {
+      "role_name": "Ensemble — Multi-Track",
+      "musical": "Jersey Boys",
+      "songs_to_prepare": [
+        {"title": "Sherry", "from": "Jersey Boys", "composer": "Bob Gaudio / Bob Crewe", "why": "The Four Seasons' first hit — shows ability to sing in tight period pop harmony", "type": "same_show"},
+        {"title": "Runaround Sue", "from": "Doo Wop repertoire", "composer": "Dion DiMucci / Ernie Maresca", "why": "If period pop is accepted — shows the doo-wop/early rock harmony skills the show demands", "type": "style_match"}
+      ],
+      "style_guidance": "Jersey Boys ensemble are multi-track performers playing many roles — period pop/rock voices, the ability to harmonise in the doo-wop style, and strong character-switching throughout.",
+      "avoid": ["Contemporary pop-only voices — the show requires authentic 1960s pop harmony sensibility"]
+    },
+    "lightning-thief/percy": {
+      "role_name": "Percy Jackson",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Waving Through a Window", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Contemporary teen anxiety and outsider identity — the specific flavour of Percy before he discovers himself", "type": "style_match"},
+        {"title": "Good for You", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Contemporary teen pop-rock tenor with building intensity — Percy in conflict", "type": "style_match"},
+        {"title": "Stranger", "from": "The Lightning Thief", "composer": "Rob Rokicki", "why": "Percy's own opening song — shows the specific rock tenor the show requires", "type": "same_show"},
+        {"title": "Michael in the Bathroom", "from": "Be More Chill", "composer": "Joe Iconis", "why": "Contemporary teen boy rock isolation — the ADHD outsider who is about to discover he is extraordinary", "type": "style_match"}
+      ],
+      "style_guidance": "Percy is a contemporary pop-rock leading tenor — ADHD, impulsive, brave, and deeply loyal. The voice needs rock energy and teenage rawness. This is not a legit show.",
+      "avoid": ["Classical or Golden Age style — The Lightning Thief is contemporary rock musical through and through"]
+    },
+    "lightning-thief/annabeth": {
+      "role_name": "Annabeth Chase",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "The most intelligent person in the room who still has to fight for her place — mezzo belt with conviction", "type": "style_match"},
+        {"title": "What I Need", "from": "The Lightning Thief", "composer": "Rob Rokicki", "why": "Annabeth's own moment — shows the specific rock mezzo the show requires", "type": "same_show"},
+        {"title": "Warrior", "from": "Contemporary rock repertoire", "composer": "Ke$ha / Pebe Sebert / others", "why": "If contemporary songs accepted — the warrior girl who fights with her brain and will not back down", "type": "style_match"},
+        {"title": "I Know the Truth", "from": "Aida", "composer": "Elton John", "why": "Mezzo-soprano with intelligence and conviction — Annabeth when events exceed expectation", "type": "contrasting"}
+      ],
+      "style_guidance": "Annabeth is the smartest character in the show and she knows it — mezzo-soprano with rock belt and intellectual authority. She does not need rescuing. She does the rescuing.",
+      "avoid": ["Passive or sweet material — Annabeth is decisive, analytical, and formidable"]
+    },
+    "lightning-thief/grover": {
+      "role_name": "Grover Underwood",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Corner of the Sky", "from": "Pippin", "composer": "Stephen Schwartz", "why": "The young man searching for his purpose and worth — Grover looking for Pan in musical form", "type": "style_match"},
+        {"title": "I Believe", "from": "The Book of Mormon", "composer": "Trey Parker / Matt Stone / Robert Lopez", "why": "Earnest commitment to a mission despite self-doubt — Grover's entire character in three minutes", "type": "style_match"},
+        {"title": "Not While I'm Around", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "Contrasting — shows the genuine protective love beneath Grover's anxiety", "type": "contrasting"}
+      ],
+      "style_guidance": "Grover is the anxious, loving best friend who desperately wants his searcher's license — baritone/tenor with warmth, physical comedy, and genuine emotional investment in Percy's safety.",
+      "avoid": ["Cool, confident performance — Grover is perpetually unsure of himself, and that is exactly why we love him"]
+    },
+    "lightning-thief/luke": {
+      "role_name": "Luke Castellan",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Giants in the Sky", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "A young man who went out into the world, found it unfair, and came back changed — Luke's whole arc", "type": "style_match"},
+        {"title": "Anthem", "from": "Chess", "composer": "Björn Ulvaeus / Benny Andersson", "why": "Passionate baritone who believes the system is corrupt and is taking action — exactly Luke's manifesto", "type": "style_match"},
+        {"title": "Epiphany", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "The moment a bitter man decides to act on his fury — dark, precise, and chilling in its conviction", "type": "contrasting"}
+      ],
+      "style_guidance": "Luke is the betrayed golden child turned antagonist — low baritone with intensity and the specific quality of someone who was genuinely wronged and cannot stop. His anger is understandable, which is what makes it dangerous.",
+      "avoid": ["Pure villain energy — Luke's power is that he is right about the gods being unjust, he just handles it catastrophically"]
+    },
+    "lightning-thief/sally-jackson": {
+      "role_name": "Sally Jackson",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "So Big/So Small", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "The mother who did everything she could and still could not protect her child from the world", "type": "style_match"},
+        {"title": "Far From the Home I Love", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "A mother watching her child leave for a dangerous world — warmth, courage, and devastating love", "type": "style_match"},
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "About what mothers teach children, knowingly or not — mezzo with depth and protective love", "type": "contrasting"}
+      ],
+      "style_guidance": "Sally Jackson is the mother who chose love over safety and will do it again — contemporary mezzo-soprano with warmth, strength, and the specific courage of single parenthood in impossible circumstances.",
+      "avoid": ["Passive maternal warmth — Sally is intensely protective and would do anything for Percy"]
+    },
+    "lightning-thief/lt-mr-d": {
+      "role_name": "Mr. D / Dionysus",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The reluctant authority figure with contempt for everyone around him — character baritone comedy", "type": "style_match"},
+        {"title": "I've Got a Little List", "from": "The Mikado", "composer": "Arthur Sullivan", "why": "The god who resents being in charge of demigod brats — sarcastic omnipotence finds patter song perfect", "type": "style_match"}
+      ],
+      "style_guidance": "Mr. D is a god doing camp counsellor as punishment — contemptuous baritone with magnificent comic disdain. He is genuinely omnipotent and cannot be bothered. Every line should feel like an eye-roll.",
+      "avoid": ["Engaged or enthusiastic character — Dionysus's entire comedy is spectacular, theatrical indifference"]
+    },
+    "lightning-thief/lt-chiron": {
+      "role_name": "Chiron / Mr. Brunner",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Make Them Hear You", "from": "Ragtime", "composer": "Stephen Flaherty", "why": "The teacher/mentor who prepares warriors — baritone with gravitas and genuine belief in his students", "type": "style_match"},
+        {"title": "Sunrise, Sunset", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "The ancient figure watching a child leave the nest knowing what lies ahead — warm, paternal baritone", "type": "contrasting"}
+      ],
+      "style_guidance": "Chiron is the great mentor — warm baritone with the weight of ancient wisdom and genuine love for his students. He knows what's coming and must send them anyway.",
+      "avoid": ["Detached or cold material — Chiron cares deeply even when he cannot show it"]
+    },
+    "lightning-thief/lt-clarisse": {
+      "role_name": "Clarisse La Rue",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "You Can't Stop the Beat", "from": "Hairspray", "composer": "Marc Shaiman", "why": "Unstoppable, aggressive, competitive force — alto/mezzo with pure dominant energy", "type": "style_match"},
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "Someone who will crush whatever stands between her and her goal — forceful mezzo-soprano", "type": "contrasting"}
+      ],
+      "style_guidance": "Clarisse is the bully who is eventually more complex — alto/mezzo with physical aggression and the ability to show unexpected vulnerability when pushed. She is defined by competition.",
+      "avoid": ["Gentle or lyric approach — Clarisse opens doors with her fist, not a key"]
+    },
+    "lightning-thief/lt-silena": {
+      "role_name": "Silena Beauregard",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Somewhere That's Green", "from": "Little Shop of Horrors", "composer": "Alan Menken", "why": "The romantic who wants something simple and beautiful — mezzo-soprano with warmth and idealism", "type": "style_match"},
+        {"title": "I Feel Pretty", "from": "West Side Story", "composer": "Leonard Bernstein", "why": "Love-struck mezzo-soprano glowing with uncomplicated happiness — before the complications", "type": "contrasting"}
+      ],
+      "style_guidance": "Silena is a supporting character — mezzo-soprano with warmth and romantic idealism. Her arc has depth when the show's backstory is explored.",
+      "avoid": ["Heavy material — Silena is a supporting role, not a lead"]
+    },
+    "lightning-thief/lt-gabe": {
+      "role_name": "Gabe Ugliano",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Master of the House", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "The unearned authority figure who exploits everyone around him — character baritone comedy with menace", "type": "style_match"},
+        {"title": "I've Got the Horse Right Here", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The blustering, entitled character who everyone else endures — comedy through total self-assurance", "type": "contrasting"}
+      ],
+      "style_guidance": "Gabe is the abusive stepfather played for comedy and contempt — character baritone with enough theatricality to make the audience hate-laugh. He must be genuinely unpleasant but navigated with theatrical craft.",
+      "avoid": ["Sympathetic energy — Gabe is meant to be deeply satisfying when dealt with by Medusa"]
+    },
+    "lightning-thief/lt-mrs-dodds": {
+      "role_name": "Mrs. Dodds / The Fury",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "The Lady Is a Tramp", "from": "Babes in Arms", "composer": "Richard Rodgers", "why": "The woman who shows one face and means another — mezzo-soprano with the ability to flip terrifyingly", "type": "contrasting"},
+        {"title": "Nothing", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Character mezzo — good teacher front concealing something predatory", "type": "contrasting"}
+      ],
+      "style_guidance": "Mrs. Dodds is the monster in teacher's clothing — mezzo/alto who plays warmth until the mask comes off. The shock of the transformation is everything. Dual nature, physical commitment.",
+      "avoid": ["Obvious villain energy from the start — the reveal must be a genuine surprise"]
+    },
+    "lightning-thief/lt-ares": {
+      "role_name": "Ares / God of War",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Epiphany", "from": "Sweeney Todd", "composer": "Stephen Sondheim", "why": "Pure, controlled homicidal purpose — baritone who enjoys what he does and does not hide it", "type": "style_match"},
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "Commanding baritone who exists to create conflict — Ares as the force of belligerence in a room", "type": "contrasting"}
+      ],
+      "style_guidance": "Ares is the god who wants war and is delighted by it — baritone with genuine menace and physical authority. He should be genuinely frightening while being undeniably cool.",
+      "avoid": ["Comedic treatment — Ares is one of the show's genuine threats, not played for laughs"]
+    },
+    "lightning-thief/lt-medusa": {
+      "role_name": "Medusa / Aunty Em",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "I Am What I Am", "from": "La Cage aux Folles", "composer": "Jerry Herman", "why": "A creature defined by what was done to her who refuses to apologise for surviving it", "type": "style_match"},
+        {"title": "The Saga of Jennie", "from": "Lady in the Dark", "composer": "Kurt Weill", "why": "The theatrical woman with a complicated history and considerable power — mezzo with dramatic presence", "type": "style_match"}
+      ],
+      "style_guidance": "Medusa in this show is sympathetic as well as monstrous — a woman wronged by the gods who turned the rules to her advantage. Mezzo-soprano with dramatic presence and a gift for playing warmth-as-predation.",
+      "avoid": ["Pure monster — Medusa's tragedy is that her victims come to her willingly because she is charming"]
+    },
+    "lightning-thief/ensemble-gods": {
+      "role_name": "Ensemble — Gods, Monsters, Campers",
+      "musical": "The Lightning Thief",
+      "songs_to_prepare": [
+        {"title": "Good for You", "from": "Dear Evan Hansen", "composer": "Benj Pasek / Justin Paul", "why": "Contemporary pop-rock ensemble energy — the show's sound is rock musical, ensemble must match", "type": "style_match"},
+        {"title": "Defying Gravity", "from": "Wicked", "composer": "Stephen Schwartz", "why": "Contemporary belt with rock adjacent power — shows the ensemble range the show requires", "type": "contrasting"}
+      ],
+      "style_guidance": "The Lightning Thief ensemble plays an enormous variety — gods, monsters, camp counsellors, and mythological creatures. Contemporary pop-rock voices with physical versatility and character range.",
+      "avoid": ["Period or legit style — this show is written in contemporary rock musical language"]
+    },
+    "mary-poppins/mary-poppins": {
+      "role_name": "Mary Poppins",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "A Spoonful of Sugar", "from": "Mary Poppins", "composer": "Richard M. Sherman / Robert B. Sherman", "why": "The character's most famous number — shows the crisp, bright soprano quality and cheerful authority", "type": "same_show"},
+        {"title": "Practically Perfect", "from": "Mary Poppins (stage)", "composer": "George Stiles / Anthony Drewe", "why": "The stage version's character introduction — shows the precision and dry wit the role requires", "type": "same_show"},
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Warm soprano with specific opinions and domestic authority — precision and warmth", "type": "style_match"},
+        {"title": "Anything You Can Do", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "Soprano with absolute conviction of superiority and no tolerance for being second — exactly Mary", "type": "contrasting"}
+      ],
+      "style_guidance": "Mary Poppins is practically perfect — soprano who is warm but never soft, authoritative but never cold, comic but entirely sincere about her own perfection. Crisp diction is non-negotiable.",
+      "avoid": ["Gushing or sentimental approach — Mary Poppins is not sentimental; she is magical and pragmatic"]
+    },
+    "mary-poppins/bert": {
+      "role_name": "Bert",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Step in Time", "from": "Mary Poppins", "composer": "Richard M. Sherman / Robert B. Sherman", "why": "Bert's big physical number — baritone/tenor with dance energy and warmth for the children", "type": "same_show"},
+        {"title": "Supercalifragilisticexpialidocious", "from": "Mary Poppins", "composer": "Richard M. Sherman / Robert B. Sherman", "why": "Shows the fun, versatile, audience-connecting quality Bert needs", "type": "same_show"},
+        {"title": "Make Someone Happy", "from": "Do Re Mi", "composer": "Jule Styne", "why": "Warm baritone/tenor who genuinely wants others to flourish — Bert's soul in a single song", "type": "contrasting"},
+        {"title": "There's Gotta Be Something Better Than This", "from": "Sweet Charity", "composer": "Cy Coleman", "why": "Shows the working-class optimist who believes in magic and dreams — Bert's philosophical foundation", "type": "contrasting"}
+      ],
+      "style_guidance": "Bert is the warm, magnetic link between Mary's world and ours — baritone/tenor who is profoundly likeable, physically extraordinary (tap and acrobatics are expected), and genuine in his warmth.",
+      "avoid": ["Cynicism or world-weariness — Bert is pure optimism and delight in every scene"]
+    },
+    "mary-poppins/george-banks": {
+      "role_name": "George Banks",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "The Road You Didn't Take", "from": "Follies", "composer": "Stephen Sondheim", "why": "A man who chose order over feeling and slowly pays for it — the Banks redemption arc in music form", "type": "style_match"},
+        {"title": "Soliloquy", "from": "Carousel", "composer": "Richard Rodgers", "why": "The father confronting his responsibilities and his love for his children — baritone with genuine stakes", "type": "style_match"},
+        {"title": "Being Alive", "from": "Company", "composer": "Stephen Sondheim", "why": "The man who has organised his life to avoid feeling and is beginning to understand the cost", "type": "contrasting"}
+      ],
+      "style_guidance": "George Banks begins as a control-obsessed stuffed shirt and becomes a real father — baritone who must carry both the comedy of rigidity and the genuine emotional transformation. The audience's affection depends on seeing the real man inside.",
+      "avoid": ["One-note cold/uptight performance — George must be sympathetic even at his worst, or the arc means nothing"]
+    },
+    "mary-poppins/jane-banks": {
+      "role_name": "Jane Banks",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Castle on a Cloud", "from": "Les Misérables", "composer": "Claude-Michel Schönberg", "why": "A lonely, imaginative child dreaming of warmth and understanding — Jane's unspoken longing", "type": "style_match"},
+        {"title": "My Favourite Things", "from": "The Sound of Music", "composer": "Richard Rodgers", "why": "Bright, clear child soprano with intelligence — the daughter who needs something to believe in", "type": "style_match"}
+      ],
+      "style_guidance": "Jane is the Banks child with the sharper mind and the deeper longing — child soprano with intelligence and genuine emotional awareness. She is often the first to understand what Mary is really teaching.",
+      "avoid": ["Loud or scene-grabbing choices — Jane's power is in observation and quiet understanding"]
+    },
+    "mary-poppins/michael-banks": {
+      "role_name": "Michael Banks",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Tomorrow", "from": "Annie", "composer": "Charles Strouse", "why": "The optimistic child who bounces back from everything — bright treble, genuine warmth", "type": "style_match"},
+        {"title": "Where Is Love", "from": "Oliver!", "composer": "Lionel Bart", "why": "The child who simply wants to be loved and seen — sweet treble with emotional simplicity", "type": "contrasting"}
+      ],
+      "style_guidance": "Michael is the child who acts up because he wants attention — treble with natural comedy and genuine sweetness underneath the mischief. His transformation should feel real, not just cute.",
+      "avoid": ["Playing Michael as purely naughty — there is a lonely child underneath every tantrum"]
+    },
+    "mary-poppins/winifred-banks": {
+      "role_name": "Winifred Banks",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Far From the Home I Love", "from": "Fiddler on the Roof", "composer": "Jerry Bock", "why": "A woman who gave up her identity for her marriage and is slowly reclaiming it — mezzo with warmth and courage", "type": "style_match"},
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Simple, genuine mezzo feeling — Winifred choosing her family with full knowledge of the cost", "type": "style_match"},
+        {"title": "Being Good Isn't Good Enough", "from": "Hallelujah, Baby!", "composer": "Jule Styne", "why": "A woman who did everything right and is not getting her due — mezzo with restrained frustration", "type": "contrasting"}
+      ],
+      "style_guidance": "Winifred is the secret anchor of Cherry Tree Lane — mezzo-soprano who has made herself small and must learn to take up space again. Warm, intelligent, quietly brave.",
+      "avoid": ["Doormat performance — Winifred is capable of tremendous strength, she has just forgotten"]
+    },
+    "mary-poppins/miss-andrew": {
+      "role_name": "Miss Andrew",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "I've Got a Little List", "from": "The Mikado", "composer": "Arthur Sullivan", "why": "The joyfully disapproving authority figure who catalogues everyone's failures — the anti-Mary Poppins", "type": "style_match"},
+        {"title": "Ol' Man River", "from": "Show Boat", "composer": "Jerome Kern", "why": "Dark, rolling mezzo/alto power — Miss Andrew as force of nature and oppression", "type": "contrasting"},
+        {"title": "Everything's Coming Up Roses", "from": "Gypsy", "composer": "Jule Styne", "why": "The woman certain of her own correctness — mezzo belt with absolute conviction of righteousness", "type": "contrasting"}
+      ],
+      "style_guidance": "Miss Andrew is Mary Poppins's dark mirror — the nanny who uses fear instead of love, power instead of magic. Mezzo/alto powerhouse, deeply physical, genuinely terrifying to the children.",
+      "avoid": ["Comedic buffoon approach — Miss Andrew is the show's legitimate monster before she gets her comeuppance"]
+    },
+    "mary-poppins/bird-woman": {
+      "role_name": "The Bird Woman",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Feed the Birds", "from": "Mary Poppins", "composer": "Richard M. Sherman / Robert B. Sherman", "why": "The Bird Woman's own gentle anthem — alto with warmth, dignity, and the weight of being overlooked", "type": "same_show"},
+        {"title": "What I Did for Love", "from": "A Chorus Line", "composer": "Marvin Hamlisch", "why": "Simple, heartfelt alto — a woman who has chosen love as her life's work without regret", "type": "contrasting"}
+      ],
+      "style_guidance": "The Bird Woman is simplicity and wisdom in one small role — alto with inner peace and the gentleness of someone who has let the world pass by. Every word counts. Shows what authentic goodness sounds like.",
+      "avoid": ["Heavy or dramatic material — the Bird Woman is quiet holiness, not grandeur"]
+    },
+    "mary-poppins/mrs-corry": {
+      "role_name": "Mrs Corry",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Glitter and Be Gay", "from": "Candide", "composer": "Leonard Bernstein", "why": "The theatrical mysterious shopkeeper — soprano with magic and theatrical excess", "type": "style_match"},
+        {"title": "The Saga of Jennie", "from": "Lady in the Dark", "composer": "Kurt Weill", "why": "The knowing, ancient theatrical woman who moves outside normal time — soprano character presence", "type": "style_match"}
+      ],
+      "style_guidance": "Mrs Corry is the magical shopkeeper who exists slightly outside of time — soprano/mezzo with warmth and theatrical mystery. A featured supporting role in the show's fantastical world.",
+      "avoid": ["Ordinary or grounded character work — Mrs Corry is connected to Mary's world of magic"]
+    },
+    "mary-poppins/mrs-brill": {
+      "role_name": "Mrs Brill",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Adelaide's Lament", "from": "Guys and Dolls", "composer": "Frank Loesser", "why": "The long-suffering character mezzo who has seen too much and endures too many — the Cook's lament", "type": "style_match"},
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "Character mezzo with timing and comic earthiness — Mrs Brill managing chaos with resigned dignity", "type": "contrasting"}
+      ],
+      "style_guidance": "Mrs Brill is the harried Cook — alto/mezzo with broad comedy, physicality, and the enduring warmth of a woman who keeps the household running against all odds.",
+      "avoid": ["Refined or elegant material — Mrs Brill is resolutely below stairs and proud of it"]
+    },
+    "mary-poppins/robertson-ay": {
+      "role_name": "Robertson Ay",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Comedy Tonight", "from": "A Funny Thing Happened on the Way to the Forum", "composer": "Stephen Sondheim", "why": "The character who exists to be confused and get things wrong — tenor/baritone physical comedy", "type": "style_match"}
+      ],
+      "style_guidance": "Robertson Ay is the perpetually confused, accident-prone handyman — tenor/baritone character role, broad physical comedy, and the ability to deliver chaos with complete sincerity.",
+      "avoid": ["Competent energy — Robertson Ay's defining trait is lovable incompetence"]
+    },
+    "mary-poppins/neleus": {
+      "role_name": "Neleus",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Children Will Listen", "from": "Into the Woods", "composer": "Stephen Sondheim", "why": "The statue come to life — tenor with wonder at a world he has watched but never touched", "type": "contrasting"}
+      ],
+      "style_guidance": "Neleus is the park statue brought to life by Mary Poppins — tenor speciality role requiring physicality (marble stillness transitioning to life) and a quality of discovered wonder.",
+      "avoid": ["Naturalistic movement — Neleus has been stone; every movement should carry the memory of it"]
+    },
+    "mary-poppins/park-keeper": {
+      "role_name": "The Park Keeper",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Sit Down, John", "from": "1776", "composer": "Sherman Edwards", "why": "The frustrated authority figure whose rules are constantly flouted — character tenor/baritone with exasperation", "type": "style_match"}
+      ],
+      "style_guidance": "The Park Keeper is a comic supporting character — character tenor/baritone whose entire purpose is maintaining ORDER in a park that will not cooperate. Exasperation is the character note.",
+      "avoid": ["Heavy material — this is a light supporting comic role"]
+    },
+    "mary-poppins/ensemble-poppins": {
+      "role_name": "Ensemble — Chimney Sweeps, Park Strollers, Statues, Toys, Bank Staff",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {"title": "Step in Time", "from": "Mary Poppins", "composer": "Richard M. Sherman / Robert B. Sherman", "why": "The show's big tap number — dance skills are as important as voice for this ensemble", "type": "same_show"},
+        {"title": "Anything Goes", "from": "Anything Goes", "composer": "Cole Porter", "why": "Period-style ensemble energy — charm, precision, and period show style", "type": "style_match"},
+        {"title": "There's No Business Like Show Business", "from": "Annie Get Your Gun", "composer": "Irving Berlin", "why": "Showbiz ensemble who must transform into many types within the show's physical world", "type": "contrasting"}
+      ],
+      "style_guidance": "Mary Poppins ensemble must dance-sing-act at a high level — tap technique especially important. They play many worlds: the working-class Edwardian street, the magical interiors, and the stuffy bank.",
+      "avoid": ["Contemporary vocal style — this is a period-style ensemble requirement"]
+    }
+  }
+}

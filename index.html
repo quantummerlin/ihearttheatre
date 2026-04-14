@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>iHeartTheatre | The Home of Victorian Theatre</title>
- <meta name="description" content="Victoria's theatre hub. Find shows, discover venues and companies, explore auditions — everything happening across Melbourne and Victorian theatre in one place.">
- <meta name="keywords" content="Melbourne theatre, Victorian theatre, iHeartTheatre, Deanna Amato, Penelope Quinn, community theatre, school theatre, Melbourne shows">
+ <title>iHeartTheatre | For Theatre Lovers Everywhere</title>
+ <meta name="description" content="The home for theatre lovers. Find shows, discover companies, explore auditions — everything you need to celebrate theatre, from community stages to grand theatres.">
+ <meta name="keywords" content="theatre, musical theatre, iHeartTheatre, Deanna Amato, Penelope Quinn, community theatre, school theatre, auditions, shows">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+ <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
  <style>
  * {
  margin: 0;
@@ -134,13 +135,13 @@
 
  /* Hero Section */
  .hero {
- min-height: 100vh;
+ min-height: 90vh;
  display: flex;
  align-items: center;
  justify-content: center;
  position: relative;
  overflow: hidden;
- padding: 8rem 2rem 4rem;
+ padding: 7rem 2rem 4rem;
  }
 
  .hero::before {
@@ -270,7 +271,7 @@
 
  /* Mission Section */
  .mission-section {
- padding: 8rem 2rem;
+ padding: 5rem 2rem 4rem;
  position: relative;
  }
 
@@ -322,7 +323,7 @@
 
  /* Energy Flow Section */
  .energy-section {
- padding: 8rem 2rem;
+ padding: 4rem 2rem;
  background: var(--bg-secondary);
  position: relative;
  }
@@ -337,7 +338,7 @@
  font-size: clamp(2rem, 4vw, 3rem);
  font-weight: 700;
  text-align: center;
- margin-bottom: 4rem;
+ margin-bottom: 2.5rem;
  }
 
  .energy-flow {
@@ -393,7 +394,7 @@
 
  /* Reviews Preview */
  .reviews-preview {
- padding: 8rem 2rem;
+ padding: 4rem 2rem;
  background: var(--bg-secondary);
  }
 
@@ -404,7 +405,7 @@
 
  .reviews-header {
  text-align: center;
- margin-bottom: 4rem;
+ margin-bottom: 2.5rem;
  }
 
  .reviews-header h2 {
@@ -729,7 +730,7 @@
 
  /* CTA Section */
  .cta-section {
- padding: 8rem 2rem;
+ padding: 4rem 2rem;
  text-align: center;
  position: relative;
  overflow: hidden;
@@ -992,7 +993,6 @@
  }
  }
  </style>
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#667eea">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1008,7 +1008,7 @@
  "@type": "WebSite",
  "name": "iHeartTheatre",
  "url": "https://ihearttheatre.com",
- "description": "Victoria's theatre hub. Find shows, venues, auditions and companies across Melbourne and Victoria.",
+ "description": "The home for theatre lovers. Find shows, companies, auditions and reviews.",
  "publisher": {
  "@type": "Organization",
  "name": "iHeartTheatre",
@@ -1033,30 +1033,21 @@
  <span></span>
  <span></span>
  </div>
- <div class="nav-links">
- <a href="index.html" class="active">Home</a>
- <a href="whats-on.html">What's On</a>
- <a href="venues.html">Venues</a>
- <a href="auditions.html">Auditions</a>
- <a href="reviews.html">Reviews</a>
- <a href="actors.html">Actors</a>
- <a href="about.html">About</a>
- <a href="contact.html">Contact</a>
- </div>
+ <div class="nav-links"><a href="index.html" class="active">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
  </div>
  </nav>
 
  <section class="hero" id="home">
  <div class="hero-content">
-   <div class="hero-badge">Victoria's Theatre Hub</div>
-   <h1>The Home of<br>Victorian Theatre</h1>
+   <div class="hero-badge">For Theatre Lovers Everywhere</div>
+   <h1>Welcome to<br>iHeartTheatre</h1>
    <p class="hero-subtitle">
     From community halls to grand stages — discover what's on, find auditions,
-    and connect with the companies and venues that make Victoria's theatre scene come alive.
+    and connect with the companies that bring theatre to life.
    </p>
    <div class="hero-buttons">
-    <a href="whats-on.html" class="btn btn-primary">
-     What's On Now
+    <a href="shows.html" class="btn btn-primary">
+     2026 Shows Calendar
      <span>→</span>
     </a>
     <a href="auditions.html" class="btn btn-secondary">
@@ -1067,9 +1058,9 @@
  <section class="mission-section">
  <div class="mission-content">
    <div class="section-badge">Our Mission</div>
-   <h2>Everything Victorian Theatre, In One Place</h2>
+   <h2>Everything Theatre, In One Place</h2>
    <p class="mission-text">
-    iHeartTheatre is the community hub for Melbourne and Victoria's theatre scene — built for audiences, performers, families, and companies alike.
+    iHeartTheatre is the community hub for theatre lovers — built for audiences, performers, families, and companies alike.
     <br><br>
     <span class="emphasis">Find shows. Discover companies. Land auditions. Celebrate every stage.</span>
     <br><br>
@@ -1078,22 +1069,22 @@
 
  <section class="energy-section">
  <div class="energy-content">
-   <h2>Your Gateway to Victorian Theatre</h2>
+   <h2>Your Gateway to Theatre</h2>
    <div class="energy-flow" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;max-width:1000px;margin:0 auto;">
-    <a href="whats-on.html" class="energy-step" style="text-decoration:none;display:block;">
-     <div class="energy-icon">🎭</div>
-     <div class="energy-label">What's On</div>
-     <div class="energy-desc" style="max-width:200px;">Shows across Melbourne &amp; Victoria right now</div>
+    <a href="shows.html" class="energy-step" style="text-decoration:none;display:block;">
+     <div class="energy-icon">🎪</div>
+     <div class="energy-label">2026 Shows</div>
+     <div class="energy-desc" style="max-width:200px;">The complete 2026 theatre calendar</div>
     </a>
     <a href="auditions.html" class="energy-step" style="text-decoration:none;display:block;">
      <div class="energy-icon">🎤</div>
      <div class="energy-label">Auditions</div>
      <div class="energy-desc" style="max-width:200px;">Open calls for performers, crew &amp; volunteers</div>
     </a>
-    <a href="venues.html" class="energy-step" style="text-decoration:none;display:block;">
-     <div class="energy-icon">🏛️</div>
-     <div class="energy-label">Venues</div>
-     <div class="energy-desc" style="max-width:200px;">Every stage in Victoria, from halls to grand theatres</div>
+    <a href="services.html" class="energy-step" style="text-decoration:none;display:block;">
+     <div class="energy-icon">🌟</div>
+     <div class="energy-label">Services</div>
+     <div class="energy-desc" style="max-width:200px;">Vocal coaches, dance schools &amp; more for performers</div>
     </a>
     <a href="junior-kids-schools.html" class="energy-step" style="text-decoration:none;display:block;">
      <div class="energy-icon">⭐</div>
@@ -1102,42 +1093,36 @@
     </a>
  </section>
 
- <section class="whats-on-preview" id="whats-on">
+ <section class="whats-on-preview" id="whats-on" style="padding: 4rem 2rem;">
  <div class="reviews-content">
  <div class="reviews-header">
- <h2>What's On in Melbourne</h2>
- <p>Current shows and upcoming productions across Melbourne's theatre scene</p>
+ <h2>Upcoming Shows</h2>
+ <p>The latest productions — from community stages to grand theatres</p>
  </div>
- <div class="whats-on-cards" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
- <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; transition: all 0.3s ease;">
- <div style="color: var(--accent-primary); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Musical</div>
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px;">Mamma Mia!</h3>
- <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 4px;">Princess Theatre</p>
- <p style="color: var(--text-secondary); font-size: 0.85rem;">Now showing</p>
+ <div class="whats-on-cards" id="showsPreview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
+ <!-- Dynamically loaded -->
  </div>
- <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; transition: all 0.3s ease;">
- <div style="color: var(--accent-primary); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Musical</div>
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px;">Mary Poppins</h3>
- <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 4px;">Her Majesty's Theatre</p>
- <p style="color: var(--text-secondary); font-size: 0.85rem;">Now showing</p>
- </div>
- <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 24px; transition: all 0.3s ease;">
- <div style="color: var(--accent-primary); font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">Play</div>
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 8px;">Romeo and Juliet</h3>
- <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 4px;">Arts Centre Melbourne</p>
- <p style="color: var(--text-secondary); font-size: 0.85rem;">March &ndash; April 2026</p>
- </div>
- </div>
- <a href="whats-on.html" class="btn btn-secondary" style="display: inline-block;">See All Shows &rarr;</a>
+ <a href="shows.html" class="btn btn-secondary" style="display: inline-block;">View Full 2026 Calendar &rarr;</a>
  </div>
  </section>
 
-
+ <section class="whats-on-preview" id="auditions-preview" style="padding: 4rem 2rem; background: var(--bg-secondary);">
+ <div class="reviews-content">
+ <div class="reviews-header">
+ <h2>Open Auditions</h2>
+ <p>Find your next role — auditions now open</p>
+ </div>
+ <div class="whats-on-cards" id="auditionsPreview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
+ <!-- Dynamically loaded -->
+ </div>
+ <a href="auditions.html" class="btn btn-secondary" style="display: inline-block;">View All Auditions &rarr;</a>
+ </div>
+ </section>
 
  <section class="cta-section" id="join">
  <div class="cta-content">
-   <h2>Get Your Show in Front of Victoria</h2>
-   <p>List your production, find an audience, or promote your season to Melbourne's theatre community</p>
+   <h2>Get Your Show Seen</h2>
+   <p>List your production, find an audience, or promote your season to the theatre community</p>
    <div class="cta-buttons">
     <a href="submit-show.html" class="btn btn-primary">List Your Show</a>
  </div>
@@ -1147,13 +1132,17 @@
  <div class="footer-content">
  <div class="footer-links">
  <a href="index.html">Home</a>
+ <a href="shows.html">Shows</a>
+ <a href="auditions.html">Auditions</a>
+ <a href="services.html">Services</a>
  <a href="reviews.html">Reviews</a>
+ <a href="junior-kids-schools.html">Junior &amp; Kids</a>
  <a href="about.html">About</a>
  <a href="privacy.html">Privacy</a>
  <a href="disclaimer.html">Disclaimer</a>
  <a href="contact.html">Contact</a>
  </div>
- <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Home of Victorian Theatre</p>
+ <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
  </div>
  </footer>
 
@@ -1638,6 +1627,81 @@
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
  <script src="js/shared.js"></script>
- <script src="js/magic-effects.js"></script>
-</body>
+ <script src="js/magic-effects.js" defer></script>
+ <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js" async></script>
+ <script>
+ // Dynamic homepage previews
+ (function() {
+   const today = new Date(); today.setHours(0,0,0,0);
+
+   function cardStyle(extra) {
+     return 'background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px;transition:all 0.3s ease;' + (extra||'');
+   }
+
+   // Shows preview
+   fetch('data/calendar.json')
+     .then(r => r.json())
+     .then(data => {
+       const shows = (data.events || data || [])
+         .filter(s => {
+           const end = s.end_date ? new Date(s.end_date) : new Date(s.start_date);
+           end.setHours(23,59,59);
+           return end >= today;
+         })
+         .sort((a,b) => new Date(a.start_date) - new Date(b.start_date))
+         .slice(0, 6);
+       const el = document.getElementById('showsPreview');
+       if (!el) return;
+       if (!shows.length) { el.innerHTML = '<p style="color:var(--text-secondary)">No upcoming shows found.</p>'; return; }
+       const typeColors = { professional: 'var(--accent-primary)', community: 'var(--accent-gold)', youth: '#4caf50', junior: '#4caf50' };
+       el.innerHTML = shows.map(s => {
+         const sDate = new Date(s.start_date);
+         const mon = sDate.toLocaleString('en-AU', {month:'short', year:'numeric'});
+         const type = (s.production_type||s.type||'').toLowerCase();
+         const col = typeColors[type] || 'var(--accent-primary)';
+         return `<div style="${cardStyle()}">
+           <div style="color:${col};font-size:0.8rem;font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;">${s.production_type||s.type||'Show'}</div>
+           <h3 style="font-family:'Playfair Display',serif;font-size:1.2rem;margin-bottom:8px;">${s.title}</h3>
+           <p style="color:var(--text-secondary);font-size:0.9rem;margin-bottom:4px;">${s.venue||''}</p>
+           <p style="color:var(--text-secondary);font-size:0.85rem;">${mon}</p>
+         </div>`;
+       }).join('');
+     })
+     .catch(() => {});
+
+   // Auditions preview
+   fetch('data/noticeboard/submissions.json')
+     .then(r => r.json())
+     .then(data => {
+       const auditions = (data.submissions || data || [])
+         .filter(a => {
+           const status = (a.status||'').toLowerCase();
+           if (status === 'closed') return false;
+           if (a.closing_date) { const c = new Date(a.closing_date); c.setHours(23,59,59); return c >= today; }
+           return true;
+         })
+         .slice(0, 6);
+       const el = document.getElementById('auditionsPreview');
+       if (!el) return;
+       if (!auditions.length) { el.innerHTML = '<p style="color:var(--text-secondary)">Check back soon for upcoming auditions.</p>'; return; }
+       el.innerHTML = auditions.map(a => {
+         const closing = a.closing_date ? new Date(a.closing_date).toLocaleDateString('en-AU',{day:'numeric',month:'short'}) : '';
+         const closingSoon = a.closing_date && (new Date(a.closing_date) - today) / 86400000 <= 7;
+         const badge = closingSoon
+           ? '<span style="background:rgba(255,152,0,0.15);color:#ff9800;border-radius:6px;padding:2px 8px;font-size:0.75rem;">⏰ Closing Soon</span>'
+           : '<span style="background:rgba(76,175,80,0.15);color:#4caf50;border-radius:6px;padding:2px 8px;font-size:0.75rem;">● Open</span>';
+         return `<div style="${cardStyle()}">
+           <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+             <div style="color:var(--accent-primary);font-size:0.8rem;font-weight:600;text-transform:uppercase;">${a.show_type||a.type||'Audition'}</div>
+             ${badge}
+           </div>
+           <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:6px;">${a.show_title||a.title||''}</h3>
+           <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:4px;">${a.company||''}</p>
+           ${closing ? `<p style="color:var(--text-secondary);font-size:0.8rem;">Closes ${closing}</p>` : ''}
+         </div>`;
+       }).join('');
+     })
+     .catch(() => {});
+ })();
+ </script></body>
 </html>

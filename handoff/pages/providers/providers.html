@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Provider Directory — iHeartTheatre</title>
+  <link rel="stylesheet" href="providers.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#" class="nav-brand">
+      <span class="heart">♥</span> iHeartTheatre
+    </a>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="/auditions">Auditions</a>
+      <a href="/services" class="active">Services</a>
+      <a href="#">Shows</a>
+      <a href="#">About</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>🌟 Service Provider Directory</h1>
+    <p>Find the best vocal coaches, dance schools, accompanists, photographers and more to level up your musical theatre career across Melbourne & Victoria.</p>
+  </section>
+
+  <!-- SUBMIT BANNER -->
+  <div class="submit-banner">
+    <p>✨ <strong>Service providers:</strong> Get listed for free and reach hundreds of performers looking for exactly what you offer!</p>
+    <a href="mailto:promotions@ihearttheatre.com.au?subject=Service%20Provider%20Listing%20—%20[Your%20Business%20Name]&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20add%20my%20service%20to%20the%20directory%3A%0A%0ABusiness%20Name%3A%20%0ACategory%20(vocal%20coach%2C%20dance%20school%2C%20etc.)%3A%20%0AShort%20Description%3A%20%0AServices%20Offered%3A%20%0ALocation%3A%20%0AWebsite%3A%20%0AEmail%3A%20%0APhone%20(optional)%3A%20%0APrice%20Range%20(%24%2C%20%24%24%2C%20%24%24%24)%3A%20%0A%0AThanks!" class="btn">Get Listed Free →</a>
+  </div>
+
+  <!-- CATEGORY PILLS -->
+  <div class="category-bar" id="category-bar">
+    <!-- Populated by JS -->
+  </div>
+
+  <!-- CONTROLS -->
+  <div class="controls">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search providers, services, locations...">
+    </div>
+    <div class="region-toggle">
+      <button class="region-btn active" data-region="all">All Areas</button>
+      <button class="region-btn" data-region="melbourne">Melbourne</button>
+      <button class="region-btn" data-region="regional">Regional VIC</button>
+    </div>
+  </div>
+
+  <!-- CARDS -->
+  <div class="cards-container">
+    <div class="cards-grid" id="cards-grid"></div>
+    <div class="no-results" id="no-results">
+      <p>😕 No providers match your search. Try different keywords or clear filters.</p>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <h3>Browse or Search</h3>
+        <p>Filter by category, location, or search for specific services. Find exactly what you need for your next audition or show.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <h3>Connect Directly</h3>
+        <p>Every listing links straight to the provider. Visit their website, email them, or call — no middleman.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <h3>Get Listed Free</h3>
+        <p>Service providers can email us to get a free listing. We want this directory to be the most complete resource in Victoria.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">4</div>
+        <h3>Community Built</h3>
+        <p>Know a great coach or school? Let us know! We rely on the community to keep this directory growing and accurate.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 <a href="#">iHeartTheatre</a> — Built with ♥ for Melbourne's musical theatre community</p>
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="/auditions">Auditions</a>
+      <a href="/services">Services</a>
+      <a href="mailto:promotions@ihearttheatre.com.au">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================
+    // DATA & STATE
+    // ============================================
+    let allProviders = [];
+    let categories = [];
+    let activeCategory = 'all';
+    let activeRegion = 'all';
+
+    // ============================================
+    // CATEGORIES
+    // ============================================
+    const defaultCategories = [
+      { id: "vocal-coach", label: "Vocal Coaches", icon: "🎤" },
+      { id: "dance-school", label: "Dance Schools", icon: "💃" },
+      { id: "acting-coach", label: "Acting Coaches", icon: "🎭" },
+      { id: "accompanist", label: "Accompanists", icon: "🎹" },
+      { id: "headshots", label: "Headshots", icon: "📸" },
+      { id: "audition-prep", label: "Audition Prep", icon: "⭐" },
+      { id: "music-director", label: "Music Directors", icon: "🎼" },
+      { id: "choreographer", label: "Choreographers", icon: "🩰" },
+      { id: "costume", label: "Costumes", icon: "👗" },
+      { id: "other", label: "Other", icon: "🔧" }
+    ];
+
+    // ============================================
+    // DEMO DATA
+    // ============================================
+    function getDemoData() {
+      return [
+        {
+          id: "demo-v01", name: "Sarah Mitchell Vocal Studio", category: "vocal-coach",
+          tagline: "Musical theatre voice specialist — belt, mix, legit",
+          description: "Private vocal coaching for musical theatre performers of all levels. Specialising in belt technique, mix voice, and audition preparation. 15+ years performing and teaching across Melbourne's community and professional theatre scene.",
+          services: ["Private lessons", "Audition coaching", "Song interpretation", "Belt technique", "Group workshops"],
+          location: "Richmond, Melbourne", region: "melbourne",
+          website: "https://www.example.com/sarah-mitchell", email: "sarah@example.com", phone: "0412 345 678",
+          price_range: "$$", experience: "15+ years",
+          tags: ["musical theatre", "belt", "audition prep", "adults", "teens"], featured: true, date_listed: "2025-06-15"
+        },
+        {
+          id: "demo-d01", name: "TurnOut Dance Academy", category: "dance-school",
+          tagline: "Jazz, tap, ballet & MT dance for performers",
+          description: "Melbourne's premier dance training for musical theatre performers. Classes in jazz, tap, ballet, and contemporary with a focus on theatre-style choreography. Adult beginner classes available.",
+          services: ["Jazz classes", "Tap classes", "Ballet (open level)", "MT dance combo", "Adult beginner program", "Audition dance prep"],
+          location: "South Yarra, Melbourne", region: "melbourne",
+          website: "https://www.example.com/turnout-dance", email: "info@example.com", phone: "0398 765 432",
+          price_range: "$$", experience: "10+ years",
+          tags: ["jazz", "tap", "ballet", "adults", "teens", "beginners welcome"], featured: true, date_listed: "2025-06-12"
+        },
+        {
+          id: "demo-a01", name: "Michael Chen — Acting & Scene Work", category: "acting-coach",
+          tagline: "Meisner-trained. Scene work, monologues & cold reading",
+          description: "One-on-one and small group acting coaching with a focus on truthful, grounded performance. Meisner technique adapted for musical theatre. Ideal for performers wanting to strengthen their acting.",
+          services: ["Private coaching", "Scene study groups", "Cold reading technique", "Monologue prep", "Callback coaching"],
+          location: "Fitzroy, Melbourne", region: "melbourne",
+          website: "https://www.example.com/michael-chen", email: "michael@example.com", phone: null,
+          price_range: "$$$", experience: "12 years",
+          tags: ["meisner", "scene work", "audition prep", "adults"], featured: false, date_listed: "2025-06-10"
+        },
+        {
+          id: "demo-p01", name: "Alex Rossi — Audition Accompanist", category: "accompanist",
+          tagline: "Reliable keys for your next audition or rehearsal",
+          description: "Experienced accompanist available for auditions, rehearsals, and private coaching sessions. Comfortable sight-reading all MT repertoire. Can also provide transpositions and cut arrangements.",
+          services: ["Audition accompaniment", "Rehearsal pianist", "Transpositions & cuts", "Coaching sessions"],
+          location: "Available across Melbourne metro", region: "melbourne",
+          website: null, email: "alex.rossi@example.com", phone: "0401 234 567",
+          price_range: "$$", experience: "8 years",
+          tags: ["piano", "sight-reading", "auditions", "rehearsals"], featured: false, date_listed: "2025-06-08"
+        },
+        {
+          id: "demo-h01", name: "Spotlight Studios — Performer Headshots", category: "headshots",
+          tagline: "Headshots that book auditions. Theatre-focused.",
+          description: "Specialising in performer headshots for musical theatre, acting, and dance. Natural light studio and outdoor options. Quick turnaround — edited gallery within 48 hours.",
+          services: ["Standard headshot session", "Multiple-look packages", "Outdoor/natural light", "Quick retouching", "Digital delivery"],
+          location: "Brunswick, Melbourne", region: "melbourne",
+          website: "https://www.example.com/spotlight-studios", email: "bookings@example.com", phone: "0423 456 789",
+          price_range: "$$", experience: "6 years",
+          tags: ["headshots", "performer photos", "quick turnaround"], featured: true, date_listed: "2025-06-05"
+        },
+        {
+          id: "demo-ap01", name: "Triple Threat Coaching", category: "audition-prep",
+          tagline: "Complete audition preparation — song, scene, dance",
+          description: "Full-service audition coaching covering song selection, interpretation, monologue work, and dance combination prep. Run by a team of three specialists who work together to prepare you.",
+          services: ["Full audition coaching", "Song selection & cuts", "Monologue coaching", "Dance combo prep", "Mock auditions", "Self-tape coaching"],
+          location: "Prahran, Melbourne", region: "melbourne",
+          website: "https://www.example.com/triple-threat", email: "team@example.com", phone: null,
+          price_range: "$$$", experience: "5 years (team collective 30+)",
+          tags: ["audition prep", "triple threat", "mock auditions", "self-tapes"], featured: true, date_listed: "2025-06-01"
+        },
+        {
+          id: "demo-co01", name: "Stagewear Costumes Melbourne", category: "costume",
+          tagline: "Costume hire & custom builds for community theatre",
+          description: "Extensive costume hire library for musical theatre productions, plus custom builds for specific shows. Period costumes, character pieces, and ensemble packages available.",
+          services: ["Costume hire", "Custom builds", "Ensemble packages", "Fittings & alterations", "Delivery available"],
+          location: "Moorabbin, Melbourne", region: "melbourne",
+          website: "https://www.example.com/stagewear", email: "hire@example.com", phone: "0399 876 543",
+          price_range: "$$", experience: "20+ years",
+          tags: ["costume hire", "custom costumes", "community theatre"], featured: false, date_listed: "2025-05-28"
+        },
+        {
+          id: "demo-rd01", name: "Ballarat School of Dance", category: "dance-school",
+          tagline: "Regional Victoria's home for musical theatre dance",
+          description: "Offering jazz, tap, ballet, and contemporary classes with a strong musical theatre focus. Located in the heart of Ballarat, serving regional performers who want to build their dance skills.",
+          services: ["Jazz classes", "Tap classes", "Ballet", "Contemporary", "MT combo class", "Exam preparation"],
+          location: "Ballarat, VIC", region: "regional",
+          website: "https://www.example.com/ballarat-dance", email: "info@example.com", phone: "0353 456 789",
+          price_range: "$", experience: "25+ years",
+          tags: ["jazz", "tap", "ballet", "regional", "ballarat", "all ages"], featured: false, date_listed: "2025-05-25"
+        }
+      ];
+    }
+
+    // ============================================
+    // LOAD DATA
+    // ============================================
+    async function loadProviders() {
+      try {
+        const res = await fetch('/data/providers/providers.json') /* UPDATE PATH TO MATCH YOUR SETUP */;
+        const data = await res.json();
+        allProviders = data.providers || [];
+        categories = data.categories || defaultCategories;
+      } catch (e) {
+        console.log('Using demo data (JSON fetch failed)');
+        allProviders = getDemoData();
+        categories = defaultCategories;
+      }
+      renderCategoryPills();
+      render();
+    }
+
+    // ============================================
+    // CATEGORY PILLS
+    // ============================================
+    function renderCategoryPills() {
+      const bar = document.getElementById('category-bar');
+      const allCount = allProviders.length;
+
+      let html = `<button class="cat-pill active" data-cat="all">
+        <span class="cat-icon">📋</span> All <span class="cat-count">${allCount}</span>
+      </button>`;
+
+      categories.forEach(cat => {
+        const count = allProviders.filter(p => p.category === cat.id).length;
+        if (count > 0) {
+          html += `<button class="cat-pill" data-cat="${cat.id}">
+            <span class="cat-icon">${cat.icon}</span> ${cat.label} <span class="cat-count">${count}</span>
+          </button>`;
+        }
+      });
+
+      bar.innerHTML = html;
+
+      // Attach listeners
+      bar.querySelectorAll('.cat-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          bar.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          activeCategory = pill.dataset.cat;
+          render();
+        });
+      });
+    }
+
+    // ============================================
+    // RENDER CARD
+    // ============================================
+    function getCategoryIcon(catId) {
+      const cat = categories.find(c => c.id === catId);
+      return cat ? cat.icon : '🔧';
+    }
+
+    function renderCard(provider) {
+      const servicesHtml = (provider.services || [])
+        .slice(0, 6)
+        .map(s => `<span class="service-chip">${s}</span>`)
+        .join('');
+
+      const tagsHtml = (provider.tags || [])
+        .slice(0, 5)
+        .map(t => `<span class="tag">${t}</span>`)
+        .join('');
+
+      const featuredClass = provider.featured ? ' featured' : '';
+
+      let contactHtml = '';
+      if (provider.website) {
+        contactHtml += `<a href="${provider.website}" target="_blank" class="contact-link">🌐 Website</a>`;
+      }
+      if (provider.email) {
+        contactHtml += `<a href="mailto:${provider.email}" class="contact-link">✉️ Email</a>`;
+      }
+      if (provider.phone) {
+        contactHtml += `<a href="tel:${provider.phone}" class="contact-link">📞 Call</a>`;
+      }
+
+      return `
+        <article class="card${featuredClass}" data-category="${provider.category}" data-region="${provider.region || ''}">
+          <div class="card-top">
+            <span class="card-category-icon">${getCategoryIcon(provider.category)}</span>
+            <div class="card-info">
+              <div class="card-name">${provider.name}</div>
+              <div class="card-tagline">${provider.tagline}</div>
+            </div>
+            <span class="price-badge">${provider.price_range || '—'}</span>
+          </div>
+
+          <div class="card-description">${provider.description}</div>
+
+          <div class="card-services">${servicesHtml}</div>
+
+          <div class="card-meta">
+            <div class="card-meta-item">
+              <span class="icon">📍</span>
+              <span>${provider.location}</span>
+            </div>
+          </div>
+
+          <div class="card-tags">${tagsHtml}</div>
+
+          <div class="card-footer">
+            <div class="card-contact">${contactHtml}</div>
+            <span class="card-exp">${provider.experience || ''}</span>
+          </div>
+        </article>
+      `;
+    }
+
+    // ============================================
+    // FILTER & SEARCH
+    // ============================================
+    function getFilteredProviders() {
+      const query = document.getElementById('search-input').value.toLowerCase().trim();
+
+      return allProviders.filter(p => {
+        // Category filter
+        if (activeCategory !== 'all' && p.category !== activeCategory) return false;
+
+        // Region filter
+        if (activeRegion !== 'all' && p.region !== activeRegion) return false;
+
+        // Search
+        if (query) {
+          const searchable = [
+            p.name, p.tagline, p.description, p.location,
+            (p.services || []).join(' '),
+            (p.tags || []).join(' ')
+          ].join(' ').toLowerCase();
+          return searchable.includes(query);
+        }
+
+        return true;
+      });
+    }
+
+    // ============================================
+    // RENDER
+    // ============================================
+    function render() {
+      const filtered = getFilteredProviders();
+      const grid = document.getElementById('cards-grid');
+      const noResults = document.getElementById('no-results');
+
+      // Sort: featured first, then alphabetical
+      filtered.sort((a, b) => {
+        if (a.featured && !b.featured) return -1;
+        if (!a.featured && b.featured) return 1;
+        return a.name.localeCompare(b.name);
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        noResults.style.display = 'block';
+      } else {
+        grid.innerHTML = filtered.map(renderCard).join('');
+        noResults.style.display = 'none';
+      }
+    }
+
+    // ============================================
+    // EVENT LISTENERS
+    // ============================================
+    document.getElementById('search-input').addEventListener('input', render);
+
+    document.querySelectorAll('.region-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.region-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        activeRegion = btn.dataset.region;
+        render();
+      });
+    });
+
+    // ============================================
+    // INIT
+    // ============================================
+    loadProviders();
+  </script>
+
+</body>
+</html>

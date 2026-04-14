@@ -311,45 +311,6 @@
  margin: 0;
  }
 
- .achievement {
- position: fixed;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%);
- background: rgba(5, 5, 8, 0.95);
- border: 1px solid rgba(102, 126, 234, 0.3);
- border-radius: 16px;
- padding: 32px 48px;
- text-align: center;
- z-index: 1001;
- opacity: 0;
- visibility: hidden;
- transition: all 0.3s ease;
- backdrop-filter: blur(10px);
- }
-
- .achievement.show {
- opacity: 1;
- visibility: visible;
- }
-
- .achievement-icon {
- font-size: 48px;
- margin-bottom: 16px;
- }
-
- .achievement h4 {
- font-family: 'Playfair Display', serif;
- font-size: 1.5rem;
- color: #f5f5f5;
- margin-bottom: 8px;
- }
-
- .achievement p {
- color: #a0a0b0;
- margin: 0;
- }
-
  @media (max-width: 768px) {
  .container {
  padding: 100px 20px 60px;
@@ -375,6 +336,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar"></div>
@@ -469,11 +438,6 @@
  </div>
  </div>
 
- <div class="achievement" id="achievement">
- <div class="achievement-icon"></div>
- <h4 id="achievement-title">Achievement Unlocked!</h4>
- <p id="achievement-message">You've discovered something special</p>
- </div>
 
  <script>
  // Progress bar
@@ -493,75 +457,6 @@
  particle.style.animationDelay = Math.random() * 15 + 's';
  particle.style.animationDuration = (15 + Math.random() * 10) + 's';
  particlesContainer.appendChild(particle);
- }
-
- // Achievements
- const achievements = [
- { threshold: 25, title: 'Getting Into It', message: 'You\'re diving deep into this review!' },
- { threshold: 50, title: 'Dedicated Reader', message: 'Halfway through and still going strong!' },
- { threshold: 75, title: 'True Theatre Lover', message: 'You really appreciate the art!' },
- { threshold: 90, title: 'Renaissance Champion', message: 'You\'ve unlocked the full experience!' }
- ];
-
- let unlockedAchievements = new Set();
-
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
-
- achievements.forEach(achievement => {
- if (scrolled >= achievement.threshold && !unlockedAchievements.has(achievement.title)) {
- unlockedAchievements.add(achievement.title);
- showAchievement(achievement.title, achievement.message);
- 
- if (achievement.title === 'Renaissance Champion') {
- triggerConfetti();
- }
- }
- });
- });
-
- function showAchievement(title, message) {
- const achievement = document.getElementById('achievement');
- document.getElementById('achievement-title').textContent = title;
- document.getElementById('achievement-message').textContent = message;
- achievement.classList.add('show');
- 
- setTimeout(() => {
- achievement.classList.remove('show');
- }, 3000);
- }
-
- function triggerConfetti() {
- const colors = ['#667eea', '#764ba2', '#ffd700', '#ff6b6b'];
- for (let i = 0; i < 100; i++) {
- setTimeout(() => {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${colors[Math.floor(Math.random() * colors.length)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1002;
- border-radius: 2px;
- pointer-events: none;
- `;
- document.body.appendChild(confetti);
- 
- const animation = confetti.animate([
- { transform: 'translateY(0) rotate(0deg)', opacity: 1 },
- { transform: `translateY(100vh) rotate(${Math.random() * 720}deg)`, opacity: 0 }
- ], {
- duration: 3000 + Math.random() * 2000,
- easing: 'cubic-bezier(0.25, 0.46, 0.45, 0.94)'
- });
- 
- animation.onfinish = () => confetti.remove();
- }, i * 20);
- }
  }
  </script>
  <footer>

@@ -392,63 +392,6 @@ function initBackToTop() {
 }
 
 // ============================================
-// Achievement System
-// ============================================
-let scrollDepth = 0;
-
-function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.className = 'achievement-toast';
- achievement.textContent = text;
- document.body.appendChild(achievement);
- setTimeout(() => achievement.remove(), 3000);
-}
-
-function triggerConfetti() {
- const colors = ['#667eea', '#764ba2', '#ffd700', '#ff6b6b', '#f093fb'];
- for (let i = 0; i < 50; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: ${Math.random() * 8 + 4}px;
- height: ${Math.random() * 8 + 4}px;
- background: ${colors[Math.floor(Math.random() * colors.length)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 10001;
- border-radius: ${Math.random() > 0.5 ? '50%' : '0'};
- animation: confettiFall ${Math.random() * 2 + 2}s ease-out forwards;
- animation-delay: ${Math.random() * 0.5}s;
- `;
- document.body.appendChild(confetti);
- setTimeout(() => confetti.remove(), 4000);
- }
-}
-
-function initAchievements() {
- window.addEventListener('scroll', () => {
- const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
- const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (scrollTop / scrollHeight) * 100;
-
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Theatre Explorer');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-}
-
-// ============================================
 // Cookie/Privacy Consent Banner
 // ============================================
 function initCookieConsent() {
@@ -568,13 +511,47 @@ function initLightbox() {
 // ============================================
 // Initialize Everything
 // ============================================
+// ============================================
+// Scroll Reveal
+// ============================================
+function initScrollReveal() {
+ if (!window.IntersectionObserver) {
+  // Fallback: reveal everything instantly
+  document.querySelectorAll('[data-reveal]').forEach(function(el) { el.classList.add('revealed'); });
+  return;
+ }
+ var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+   if (entry.isIntersecting) {
+    entry.target.classList.add('revealed');
+    io.unobserve(entry.target);
+   }
+  });
+ }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+ // Auto-stagger children of [data-reveal-stagger] parents
+ document.querySelectorAll('[data-reveal-stagger]').forEach(function(parent) {
+  var children = Array.prototype.slice.call(parent.querySelectorAll('[data-reveal]'));
+  children.forEach(function(child, i) {
+   if (i < 4) child.setAttribute('data-reveal-delay', String(i + 1));
+  });
+ });
+
+ document.querySelectorAll('[data-reveal]').forEach(function(el) {
+  io.observe(el);
+ });
+
+ // Expose so dynamically injected elements can also be observed
+ window.iHTReveal = io;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
  initProgressBar();
  initParticles();
  initHamburger();
  initBackToTop();
- initAchievements();
  initCookieConsent();
  initLightbox();
  iHT._initPanel();
+ initScrollReveal();
 });

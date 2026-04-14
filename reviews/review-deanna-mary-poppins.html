@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -397,7 +405,7 @@
  <div class="content">
  <p>From the very first moment, MDMS's Mary Poppins at Karralyka Theatre, swept us up and transported us to Cherry Tree Lane, where a full-scale, life-sized dollhouse opens to reveal the Banks family residence. It's impossible not to be wowed by the sheer magnitude of the giant painted box that opens to reveal a gorgeous multi-level home with period arches, stained glass windows and a banister staircase leading to the children's bedroom in the attic, a whole new set & scene, topped off with a terrace perched high above the rooftop with a sublimely animated skyline of active chimney tops.</p>
 
- <p>During some transitions, the house glided to the front or back of stage, adding to the illusion of zooming in and out of the action unfolding, we were constantly wowed by the contrast between backdrops, décor and tailored costumes — an absolute feast for the senses.</p>
+ <p>During some transitions, the house glided to the front or back of stage, adding to the illusion of zooming in and out of the action unfolding, we were constantly wowed by the contrast between backdrops, décor and tailored costumes, an absolute feast for the senses.</p>
 
  <p>Director Anne Dewar masterfully navigates a massive cast with remarkable cohesion. The entire production pulses with momentum and heart. At every turn, Amber Orchard's choreography is sensational! The perfectly synchronised movement had all that fabulous fabric swishing and skirts swirling. A show-stopping tap routine had the whole cast joyously filling the stage with rhythmic magic enticing the audience to clap along gleefully to every step in time!</p>
 
@@ -413,7 +421,7 @@
 
  <p>Cale Maclaren and Kelliann Brady are most endearing, bringing nuance and sincerity as George and Winifred Banks, while standout Felicity Eastwood is a comedic gem as the sharp-tongued housekeeper Mrs Brill, delivering impeccable timing & wit. And all the children in the cast held their own with confidence and charm, lighting up every scene they were in.</p>
 
- <p>With too many amazing moments to mention, musical director Vicki Quinn kept the orchestra crisp and buoyant, Mary Poppins by MDMS is an expertly crafted wonder. Brimstone Cast's practically perfect opening was filled with laughter, wonder and joy. Unexpected magic, chimney smoke, moonlit rooftops and heart-melting penguins — this production has it all!</p>
+ <p>With too many amazing moments to mention, musical director Vicki Quinn kept the orchestra crisp and buoyant, Mary Poppins by MDMS is an expertly crafted wonder. Brimstone Cast's practically perfect opening was filled with laughter, wonder and joy. Unexpected magic, chimney smoke, moonlit rooftops and heart-melting penguins, this production has it all!</p>
  </div>
 
  <div class="cta-section">
@@ -461,87 +469,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- bottom: 20px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1000;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- setTimeout(() => achievement.remove(), 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 50; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b'][Math.floor(Math.random() * 4)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1000;
- animation: confettiFall 3s ease-out forwards;
- `;
- document.body.appendChild(confetti);
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

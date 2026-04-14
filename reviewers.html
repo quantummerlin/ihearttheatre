@@ -385,38 +385,6 @@
  display: none;
  }
  }
-
- /* Achievement Popup */
- .achievement-popup {
- position: fixed;
- bottom: 2rem;
- right: 2rem;
- background: rgba(255, 255, 255, 0.05);
- backdrop-filter: blur(20px);
- border: 1px solid rgba(255, 255, 255, 0.1);
- border-radius: 12px;
- padding: 1.5rem;
- z-index: 1000;
- transform: translateX(400px);
- transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
- max-width: 350px;
- }
-
- .achievement-popup.show {
- transform: translateX(0);
- }
-
- .achievement-popup h3 {
- font-family: 'Playfair Display', serif;
- font-size: 1.2rem;
- margin-bottom: 0.5rem;
- color: #ffd700;
- }
-
- .achievement-popup p {
- color: #a0a0b0;
- font-size: 0.9rem;
- }
  </style>
 <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#667eea">
@@ -428,6 +396,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
  <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -449,7 +425,7 @@
  <div class="main-content">
  <div class="page-header">
  <h1>Meet Our Reviewers</h1>
- <p>The passionate voices behind Melbourne's theatre reviews</p>
+ <p>The passionate voices behind iHeartTheatre</p>
  </div>
 
  <!-- Deanna Amato Section -->
@@ -458,8 +434,8 @@
  <img src="generated_images/deanna-profile.png" alt="Deanna Amato">
  <div class="reviewer-header-info">
  <h2>Deanna Amato</h2>
- <div class="role">Adult Reviews Editor</div>
- <p class="bio">With over 15 years of theatre experience, Deanna brings a wealth of knowledge and passion to every review. From Broadway blockbusters to intimate fringe productions, she celebrates the art of live performance with insight and enthusiasm.</p>
+ <div class="role">Reviewer</div>
+ <p class="bio">Deanna writes about theatre because she loves it. There is beauty in every show, in the people on stage, the work behind it, the moment it all comes together, and that's what she writes about. She covers everything from professional seasons to community halls across Melbourne and Victoria.</p>
  <div class="reviewer-stats">
  <div class="stat">
  <div class="stat-value">26</div>
@@ -484,8 +460,8 @@
  <img src="generated_images/penelope-profile.png" alt="Penelope Quinn">
  <div class="reviewer-header-info">
  <h2>Penelope Quinn</h2>
- <div class="role">Junior Reviews Editor</div>
- <p class="bio">At just 7 years old, Penelope brings a unique and refreshing perspective to family theatre. Her honest and enthusiastic reviews help families discover the best shows for young audiences across Melbourne.</p>
+ <div class="role">Reviewer</div>
+ <p class="bio">Penelope has been part of Melbourne's theatre world since she was five. She's performed, she's been backstage, she knows how much work goes into a show, and she writes from that place. Her reviews are honest, enthusiastic, and genuinely from a kid who loves this stuff.</p>
  <div class="reviewer-stats">
  <div class="stat">
  <div class="stat-value">7</div>
@@ -522,12 +498,6 @@
  <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
  </div>
  </footer>
-
- <div class="achievement-popup" id="achievementPopup">
- <h3 id="achievementTitle">Achievement Unlocked!</h3>
- <p id="achievementText">You've discovered something special</p>
- </div>
-
  <script>
  // Review Data
  const reviews = [
@@ -1017,46 +987,6 @@
  }
  }
 
- // Achievement system
- let achievementsUnlocked = {
- 'Getting Into It': false,
- 'Dedicated Reader': false,
- 'True Theatre Lover': false,
- 'Renaissance Champion': false
- };
-
- function showAchievement(title, text) {
- if (achievementsUnlocked[title]) return;
- 
- achievementsUnlocked[title] = true;
- const popup = document.getElementById('achievementPopup');
- document.getElementById('achievementTitle').textContent = title;
- document.getElementById('achievementText').textContent = text;
- popup.classList.add('show');
- 
- setTimeout(() => {
- popup.classList.remove('show');
- }, 3000);
- }
-
- window.addEventListener('scroll', () => {
- const scrollTop = window.scrollY;
- const docHeight = document.documentElement.scrollHeight - window.innerHeight;
- const scrollPercent = (scrollTop / docHeight) * 100;
- 
- if (scrollPercent >= 25 && !achievementsUnlocked['Getting Into It']) {
- showAchievement('Getting Into It', 'You\'ve started exploring our reviewers!');
- }
- if (scrollPercent >= 50 && !achievementsUnlocked['Dedicated Reader']) {
- showAchievement('Dedicated Reader', 'Halfway through our reviewer profiles!');
- }
- if (scrollPercent >= 75 && !achievementsUnlocked['True Theatre Lover']) {
- showAchievement('True Theatre Lover', 'You\'re truly dedicated to theatre!');
- }
- if (scrollPercent >= 90 && !achievementsUnlocked['Renaissance Champion']) {
- showAchievement('Renaissance Champion', 'You\'ve explored it all! ');
- }
- });
 
  // Initialize
  createParticles();

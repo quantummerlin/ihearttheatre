@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -394,17 +402,17 @@
  <div class="content">
  <p>A clever and moving portrait of a family unravelling, Mother Play holds up a mirror to intergenerational trauma, queer identity and the lifelong push-pull of parental obligation. This is a production that will land differently for everyone. There was a hush that fell over the theatre when Mother Play started; Yael Stone as Martha Herman opened & sunk hearts in the first few moments. This Paula Vogel memory-piece unfolded at Melbourne's Southbank Theatre like an old family photograph album long tucked away, full of bruised truths and the peculiar ache of growing through the decades with a constrained mother who unravels.</p>
 
- <p>Directed with a silken sensitivity by Lee Lewis, this production walks the delicate tightrope between cruelty and compassion, much like the woman at its centre: Phyllis Herman. Played with terrifying intensity & contemptuous precision, Sigrid Thornton — in all her glory and retro refinement — gives us a mother who is as hilarious as she is horrifying: a performance you want to look away from but can't. Phyllis is a mother forged by hard times; brittle, biting and burdened by a world that rarely made room for softness.</p>
+ <p>Directed with a silken sensitivity by Lee Lewis, this production walks the delicate tightrope between cruelty and compassion, much like the woman at its centre: Phyllis Herman. Played with terrifying intensity & contemptuous precision, Sigrid Thornton, in all her glory and retro refinement, gives us a mother who is as hilarious as she is horrifying: a performance you want to look away from but can't. Phyllis is a mother forged by hard times; brittle, biting and burdened by a world that rarely made room for softness.</p>
 
- <p>Alongside her, Stone and Flanders' presence are luminous — all three, the kind of performers who manage to fill silence with meaning. Stone distinctly portrays Martha as perceptive, withheld and slowly worn down by the gravitational pull of her mother's need for control. Meanwhile, Ash Flanders brings a delicate electricity to Carl — witty, wounded, but still understanding in equal measure. Together, they form a sibling dynamic that glows with unspoken love and exhausted loyalty.</p>
+ <p>Alongside her, Stone and Flanders' presence are luminous, all three, the kind of performers who manage to fill silence with meaning. Stone distinctly portrays Martha as perceptive, withheld and slowly worn down by the gravitational pull of her mother's need for control. Meanwhile, Ash Flanders brings a delicate electricity to Carl, witty, wounded, but still understanding in equal measure. Together, they form a sibling dynamic that glows with unspoken love and exhausted loyalty.</p>
 
  <div class="highlight">
- "The moments between the dialogue speak just as loudly as the ones within them. The five evictions of the play — metaphoric and literal — map the gradual distancing of children from the mother who shaped & stifled them, but never fully let them go. These transitions are stunningly rendered, with the seamless shifts in set layout carrying us fluidly through time and space, evoking the disorientation and fatigue of constant upheaval."
+ "The moments between the dialogue speak just as loudly as the ones within them. The five evictions of the play, metaphoric and literal, map the gradual distancing of children from the mother who shaped & stifled them, but never fully let them go. These transitions are stunningly rendered, with the seamless shifts in set layout carrying us fluidly through time and space, evoking the disorientation and fatigue of constant upheaval."
  </div>
 
- <p>Glimpses of changing decades — from the 60s to the 80s — aren't just referenced in dialogue but viscerally felt through the design. Christina Smith has done an outstanding job as set & costume designer, meticulously using vintage furnishings and layered details to immerse us in each era. The progression of Phyllis's character is accentuated not only through performance, but through a brilliant series of costume and wig transformations that reflect the passage of time and each shift tells its own story.</p>
+ <p>Glimpses of changing decades, from the 60s to the 80s, aren't just referenced in dialogue but viscerally felt through the design. Christina Smith has done an outstanding job as set & costume designer, meticulously using vintage furnishings and layered details to immerse us in each era. The progression of Phyllis's character is accentuated not only through performance, but through a brilliant series of costume and wig transformations that reflect the passage of time and each shift tells its own story.</p>
 
- <p>Niklas Pajanti's lighting dissolves time fluidly, often evoking the pale flicker of recollection and the brightness of now. And Kelly Ryall's sound design is subtle, present like breath, undeniably felt. The highlight of the show is when all these elements glisten together in the disco scene — a moment that lights up the entire theatre and the inner lives of the characters, if only briefly.</p>
+ <p>Niklas Pajanti's lighting dissolves time fluidly, often evoking the pale flicker of recollection and the brightness of now. And Kelly Ryall's sound design is subtle, present like breath, undeniably felt. The highlight of the show is when all these elements glisten together in the disco scene, a moment that lights up the entire theatre and the inner lives of the characters, if only briefly.</p>
 
  <p>There is something unmistakably intimate about Mother Play. It offers a quiet reckoning with the past, one that feels uncomfortably familiar. You may recognise your own family in the fragments: a sharp tone, a withdrawn glance, the unspoken apology that never quite arrives. Mother Play reminds us of theatre's quietest power: to sit with the uncomfortable, to honour memory and to hold space for stories that don't always end with resolution. This is a beautifully calibrated production that lingers long after curtain with its tender truths.</p>
  </div>
@@ -454,91 +462,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- top: 80px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1001;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- 
- setTimeout(() => {
- achievement.remove();
- }, 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 100; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b', '#4ecdc4'][Math.floor(Math.random() * 5)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1002;
- animation: confettiFall 3s ease forwards;
- `;
- document.body.appendChild(confetti);
- 
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

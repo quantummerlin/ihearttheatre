@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -399,7 +407,7 @@
  <div class="content">
  <p>As soon as we stepped into the venue, we noticed pine trees in the foyer and around the stage made everything feel like we were already in the woods before the show even began. The whole atmosphere was magical and everyone from the WSP team was super kind and welcoming, complete with a yummy selection of snacks available before the performance began.</p>
 
- <p>The show itself was a vibrant reimagining of Into the Woods Jr. and it had the coolest twist — the costumes! They gave everything a modern flair that was clever and totally characterful. Rapunzel wore funky, jazzy pants that made her look like a fairytale fashion icon and Red Riding Hood had total popstar vibes. Jack rocked a snazzy puffer vest and glasses and the Witch, the Baker and his Wife wore plainer, pieces that perfectly showed their storybook struggles. It was a visual treat, so inventive and playful!</p>
+ <p>The show itself was a vibrant reimagining of Into the Woods Jr. and it had the coolest twist, the costumes! They gave everything a modern flair that was clever and totally characterful. Rapunzel wore funky, jazzy pants that made her look like a fairytale fashion icon and Red Riding Hood had total popstar vibes. Jack rocked a snazzy puffer vest and glasses and the Witch, the Baker and his Wife wore plainer, pieces that perfectly showed their storybook struggles. It was a visual treat, so inventive and playful!</p>
 
  <p>Wendy Samantha Productions has created a version of Into the Woods Jr. that was joyful and modern, full of heart and youth-powered magic. The Witch was old and a bit mean (but in a funny way). Cinderella had a gorgeous voice and Jack sang with so much feeling. The Prince Charmings were absolutely hilarious and also had amazing voices and personalities.</p>
 
@@ -457,87 +465,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- bottom: 20px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1000;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- setTimeout(() => achievement.remove(), 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 50; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b'][Math.floor(Math.random() * 4)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1000;
- animation: confettiFall 3s ease-out forwards;
- `;
- document.body.appendChild(confetti);
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

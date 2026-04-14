@@ -322,38 +322,6 @@ footer {
     font-weight: 600;
 }
 
-/* === Achievement Toast === */
-.achievement-toast {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--gradient-primary);
-    color: white;
-    padding: 16px 24px;
-    border-radius: 12px;
-    font-weight: 600;
-    z-index: 10000;
-    animation: slideInRight 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
-    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
-}
-
-@keyframes slideInRight {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
-}
-
-@keyframes confettiFall {
-    to {
-        transform: translateY(100vh) rotate(720deg);
-        opacity: 0;
-    }
-}
-
 /* === Unified Gallery & Image System === */
 
 /* Review Hero Image — full-width featured image at top of review */
@@ -874,4 +842,23 @@ a {
         width: 100%;
         justify-content: center;
     }
+}
+
+/* === Scroll Reveal === */
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+[data-reveal].revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-reveal-delay="1"] { transition-delay: 0.08s; }
+[data-reveal-delay="2"] { transition-delay: 0.16s; }
+[data-reveal-delay="3"] { transition-delay: 0.24s; }
+[data-reveal-delay="4"] { transition-delay: 0.32s; }
+@media (prefers-reduced-motion: reduce) {
+    [data-reveal] { opacity: 1; transform: none; transition: none; }
+    [data-reveal].revealed { opacity: 1; transform: none; }
 }

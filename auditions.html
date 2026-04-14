@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audition Noticeboard | Melbourne &amp; Victoria | iHeartTheatre</title>
-    <meta name="description" content="Open auditions and casting calls across Melbourne and Victoria. Musical theatre, community theatre, professional productions — find your next role here.">
+    <meta name="description" content="Open auditions and casting calls across Melbourne and Victoria. Musical theatre, community theatre, professional productions, find your next role here.">
     <meta name="theme-color" content="#667eea">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -340,6 +340,14 @@
             .stats-bar { gap: 1.5rem; }
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -354,25 +362,25 @@
     </nav>
 
     <section class="page-hero">
-        <h1>🎭 Audition Noticeboard</h1>
+        <h1>Audition Noticeboard</h1>
         <p>Your one-stop board for musical theatre auditions across Melbourne &amp; Victoria. Updated by the community, always free.</p>
     </section>
 
     <div class="submit-banner">
-        <p>🎤 <strong>Theatre companies:</strong> Share your auditions with hundreds of local performers!</p>
+        <p><strong>Theatre companies:</strong> Share your auditions with hundreds of local performers!</p>
         <a href="mailto:auditions@ihearttheatre.com?subject=Audition%20Announcement%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20add%20our%20audition%20to%20the%20noticeboard%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AAudition%20Date%3A%20%0ALocation%3A%20%0ALink%20to%20full%20details%3A%20%0ARoles%20Available%3A%20%0ANotes%3A%20%0A%0AThanks!" class="btn-submit">Submit an Audition →</a>
     </div>
 
     <div class="stats-bar">
-        <div class="stat"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Total Listings</div></div>
-        <div class="stat"><div class="stat-number" id="stat-open">—</div><div class="stat-label">Open Now</div></div>
-        <div class="stat"><div class="stat-number" id="stat-companies">—</div><div class="stat-label">Companies</div></div>
-        <div class="stat"><div class="stat-number" id="stat-month">—</div><div class="stat-label">This Month</div></div>
+        <div class="stat"><div class="stat-number" id="stat-total"> - </div><div class="stat-label">Total Listings</div></div>
+        <div class="stat"><div class="stat-number" id="stat-open"> - </div><div class="stat-label">Open Now</div></div>
+        <div class="stat"><div class="stat-number" id="stat-companies"> - </div><div class="stat-label">Companies</div></div>
+        <div class="stat"><div class="stat-number" id="stat-month"> - </div><div class="stat-label">This Month</div></div>
     </div>
 
     <div class="controls">
         <div class="search-wrap">
-            <span class="search-icon">🔍</span>
+            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
             <input type="search" id="search-input" placeholder="Search shows, companies, roles, locations…" aria-label="Search auditions">
         </div>
         <div class="filter-row">
@@ -390,14 +398,14 @@
     <div class="cards-container">
         <div class="cards-grid" id="cards-grid"></div>
         <div class="no-results" id="no-results">
-            <p>😕 No auditions match your search — try different keywords or clear filters.</p>
+            <p>No auditions match your search, try different keywords or clear filters.</p>
         </div>
     </div>
 
     <section class="how-it-works">
         <h2 class="section-heading">How It Works</h2>
         <div class="steps">
-            <div class="step"><div class="step-num">1</div><h3>Companies Submit</h3><p>Theatre companies email us a link to their audition announcement. That's it — just a link.</p></div>
+            <div class="step"><div class="step-num">1</div><h3>Companies Submit</h3><p>Theatre companies email us a link to their audition announcement. That's it, just a link.</p></div>
             <div class="step"><div class="step-num">2</div><h3>We Post It</h3><p>We add the listing to the noticeboard within 24 hours with all key details front and centre.</p></div>
             <div class="step"><div class="step-num">3</div><h3>Performers Find It</h3><p>Browse, search and filter to discover auditions perfectly matched to your skills and location.</p></div>
             <div class="step"><div class="step-num">4</div><h3>Always Free</h3><p>No fees for companies or performers. Here to connect the Victorian theatre community.</p></div>
@@ -463,14 +471,14 @@
         const summary = { id: item.id, title: item.show_title, company: item.company, audition_date: item.audition_date, location: item.audition_location };
         const saved = iHT.toggle('audition', id, summary);
         btn.innerHTML = saved ? '♥' : '♡';
-        btn.title = saved ? 'Saved — click to unsave' : 'Save this audition';
+        btn.title = saved ? 'Saved - click to unsave' : 'Save this audition';
         btn.style.color = saved ? '#ff6b9d' : '#a0a0b0';
     }
 
     function renderCard(item) {
         const st = getStatus(item);
         const badgeMap = { open:'badge-open', soon:'badge-soon', closed:'badge-closed' };
-        const labelMap = { open:'● Open', soon:'⏰ Closing Soon', closed:'○ Closed' };
+        const labelMap = { open:'● Open', soon:'◑ Closing Soon', closed:'○ Closed' };
         const cd = st !== 'closed' ? getCountdown(item.audition_date) : '';
         const tags = (item.tags||[]).map(t=>`<span class="tag">${escHtml(t)}</span>`).join('');
         const savedNow = window.iHT && iHT.isSaved('audition', item.id);
@@ -484,8 +492,8 @@
         <span class="status-badge ${badgeMap[st]}">${labelMap[st]}</span>
     </div>
     <div class="card-meta">
-        <div class="card-meta-item">📅&nbsp;<span>${fmtDate(item.audition_date)}${cd ? ` <span class="card-countdown">(${cd})</span>` : ''}</span></div>
-        <div class="card-meta-item">📍&nbsp;<span>${escHtml(item.audition_location)}</span></div>
+        <div class="card-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.55;flex-shrink:0"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>&nbsp;<span>${fmtDate(item.audition_date)}${cd ? ` <span class="card-countdown">(${cd})</span>` : ''}</span></div>
+        <div class="card-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.55;flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>&nbsp;<span>${escHtml(item.audition_location)}</span></div>
     </div>
     ${item.roles_available ? `<div class="card-roles"><strong>Roles:</strong> ${escHtml(item.roles_available)}</div>` : ''}
     ${item.notes ? `<div class="card-notes">${escHtml(item.notes)}</div>` : ''}
@@ -494,7 +502,7 @@
         <span class="card-posted">Posted ${fmtDate(item.date_posted)}</span>
         <div style="display:flex;align-items:center;gap:8px;">
             <a href="${escUrl(item.submission_link)}" target="_blank" rel="noopener noreferrer" class="card-cta">Full Details →</a>
-            <button class="btn-save${savedNow?' saved':''}" data-save-type="audition" data-save-id="${escHtml(item.id)}" onclick="toggleAuditionSave('${escHtml(item.id)}',this)" title="${savedNow?'Saved — click to unsave':'Save this audition'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:4px 9px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
+            <button class="btn-save${savedNow?' saved':''}" data-save-type="audition" data-save-id="${escHtml(item.id)}" onclick="toggleAuditionSave('${escHtml(item.id)}',this)" title="${savedNow?'Saved - click to unsave':'Save this audition'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:4px 9px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
         </div>
     </div>
 </article>`;

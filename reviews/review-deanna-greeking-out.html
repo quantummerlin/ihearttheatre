@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -392,9 +400,9 @@
  </div>
 
  <div class="content">
- <p>Greeking Out, created and performed by Rebecca Perich feels a little like first day of class — if your teacher was equal parts mythologist, stand-up comic and exuberant ringleader. Professor Ari strides out, lays down the rules with the authority of a strict but cheeky (and pretty convincing Grecian) history teacher. Suddenly, we're being revved & lectured; trifles take on a new meaning and call-and-response is less about discipline and more about delight.</p>
+ <p>Greeking Out, created and performed by Rebecca Perich feels a little like first day of class, if your teacher was equal parts mythologist, stand-up comic and exuberant ringleader. Professor Ari strides out, lays down the rules with the authority of a strict but cheeky (and pretty convincing Grecian) history teacher. Suddenly, we're being revved & lectured; trifles take on a new meaning and call-and-response is less about discipline and more about delight.</p>
 
- <p>The show anchors itself in myth, but not as you've read it in textbooks. Annotated story-time sequences and bursts of analogies, twist familiar tales into something fresh. Whether you lean into the audience participation or hang back, it's funny either way — a mark of a performer who knows how to keep the reins loose while still steering the ride.</p>
+ <p>The show anchors itself in myth, but not as you've read it in textbooks. Annotated story-time sequences and bursts of analogies, twist familiar tales into something fresh. Whether you lean into the audience participation or hang back, it's funny either way, a mark of a performer who knows how to keep the reins loose while still steering the ride.</p>
 
  <div class="highlight">
  "There's a steady layering at play here. Anecdotes are folded in with mythic retellings, landing with eerie modern relevance. At one point, I caught myself questioning if the accent was a performance, her pronunciation seemed precise. By the halfway mark, I wondered if this might be a woman stepping into her own Goddess hood, broadcasting her passion, filtering ancestry, academia and comedy into one living myth buster."
@@ -402,7 +410,7 @@
 
  <p>Lighting and sound effects transport us from classroom to labyrinth, weaving in side quests that give the whole performance surprising depth & sense. Vocabulary lessons become acts of cultural translation, joining the dots between ancient Greece and archetypes in today's pop culture, while surprisingly delivering a multi-sensory experience.</p>
 
- <p>Myths continue to be unpacked — all threaded through the framework of the hero's journey. And yet, with a wicked grin, she undercuts the very narrative she's tracing: suddenly the punchline lands and a plot twist clicks into place: she's been straddling past and present in order to set a few records straight.</p>
+ <p>Myths continue to be unpacked, all threaded through the framework of the hero's journey. And yet, with a wicked grin, she undercuts the very narrative she's tracing: suddenly the punchline lands and a plot twist clicks into place: she's been straddling past and present in order to set a few records straight.</p>
 
  <p>An absolutely joyous, triumphant offering to Fringe: funny, thoughtful, layered and alive with the hottest ancient gossip.</p>
  </div>
@@ -452,91 +460,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- top: 80px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1001;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- 
- setTimeout(() => {
- achievement.remove();
- }, 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 100; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b', '#4ecdc4'][Math.floor(Math.random() * 5)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1002;
- animation: confettiFall 3s ease forwards;
- `;
- document.body.appendChild(confetti);
- 
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

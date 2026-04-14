@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>iHeartTheatre | For Theatre Lovers Everywhere</title>
- <meta name="description" content="The home for theatre lovers. Find shows, discover companies, explore auditions — everything you need to celebrate theatre, from community stages to grand theatres.">
+ <meta name="description" content="The home for theatre lovers. Find shows, discover companies, explore auditions, everything you need to celebrate theatre, from community stages to grand theatres.">
  <meta name="keywords" content="theatre, musical theatre, iHeartTheatre, Deanna Amato, Penelope Quinn, community theatre, school theatre, auditions, shows">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -847,70 +847,6 @@
  }
  }
 
- .confetti {
- position: fixed;
- width: 8px;
- height: 8px;
- pointer-events: none;
- z-index: 9999;
- animation: confetti-fall 3s ease-out forwards;
- }
-
- @keyframes confetti-fall {
- 0% {
- transform: translateY(-100vh) rotate(0deg);
- opacity: 1;
- }
- 100% {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
-
- .achievement-popup {
- position: fixed;
- top: 100px;
- right: 20px;
- background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
- color: white;
- padding: 1rem 1.5rem;
- border-radius: 15px;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- z-index: 9999;
- animation: slideIn 0.5s ease-out, fadeOut 0.5s ease-out 2.5s forwards;
- display: flex;
- align-items: center;
- gap: 1rem;
- }
-
- @keyframes slideIn {
- from {
- transform: translateX(100%);
- opacity: 0;
- }
- to {
- transform: translateX(0);
- opacity: 1;
- }
- }
-
- @keyframes fadeOut {
- from {
- opacity: 1;
- }
- to {
- opacity: 0;
- }
- }
-
- .achievement-icon {
- font-size: 1.5rem;
- }
-
- .achievement-text {
- font-weight: 600;
- }
-
  /* Responsive */
  @media (max-width: 768px) {
  .nav-links {
@@ -1022,6 +958,14 @@
  }
  }
  </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -1043,7 +987,7 @@
    <div class="hero-badge">For Theatre Lovers Everywhere</div>
    <h1>Welcome to<br>iHeartTheatre</h1>
    <p class="hero-subtitle">
-    From community halls to grand stages — discover what's on, find auditions,
+    From community halls to grand stages, discover what's on, find auditions,
     and connect with the companies that bring theatre to life.
    </p>
    <div class="hero-buttons">
@@ -1061,11 +1005,11 @@
    <div class="section-badge">Our Mission</div>
    <h2>Everything Theatre, In One Place</h2>
    <p class="mission-text">
-    iHeartTheatre is the community hub for theatre lovers — built for audiences, performers, families, and companies alike.
+    iHeartTheatre is the community hub for theatre lovers, built for audiences, performers, families, and companies alike.
     <br><br>
     <span class="emphasis">Find shows. Discover companies. Land auditions. Celebrate every stage.</span>
     <br><br>
-    Whether you're looking for tonight's show, hunting for your next role, or wanting to reach more people with your production — this is your home.
+    Whether you're looking for tonight's show, hunting for your next role, or wanting to reach more people with your production, this is your home.
  </section>
 
  <section class="energy-section">
@@ -1073,22 +1017,22 @@
    <h2>Your Gateway to Theatre</h2>
    <div class="energy-flow" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;max-width:1000px;margin:0 auto;">
     <a href="shows.html" class="energy-step" style="text-decoration:none;display:block;">
-     <div class="energy-icon">🎪</div>
+     <div class="energy-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
      <div class="energy-label">2026 Shows</div>
      <div class="energy-desc" style="max-width:200px;">The complete 2026 theatre calendar</div>
     </a>
     <a href="auditions.html" class="energy-step" style="text-decoration:none;display:block;">
-     <div class="energy-icon">🎤</div>
+     <div class="energy-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></div>
      <div class="energy-label">Auditions</div>
      <div class="energy-desc" style="max-width:200px;">Open calls for performers, crew &amp; volunteers</div>
     </a>
     <a href="services.html" class="energy-step" style="text-decoration:none;display:block;">
-     <div class="energy-icon">🌟</div>
+     <div class="energy-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><circle cx="3" cy="6" r="1"/><circle cx="3" cy="12" r="1"/><circle cx="3" cy="18" r="1"/></svg></div>
      <div class="energy-label">Services</div>
      <div class="energy-desc" style="max-width:200px;">Vocal coaches, dance schools &amp; more for performers</div>
     </a>
     <a href="junior-kids-schools.html" class="energy-step" style="text-decoration:none;display:block;">
-     <div class="energy-icon">⭐</div>
+     <div class="energy-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
      <div class="energy-label">Junior &amp; Kids</div>
      <div class="energy-desc" style="max-width:200px;">School productions, youth theatre &amp; family shows</div>
     </a>
@@ -1098,12 +1042,12 @@
  <div class="reviews-content">
  <div class="reviews-header">
  <h2>Upcoming Shows</h2>
- <p>The latest productions — from community stages to grand theatres</p>
+ <p>The latest productions, from community stages to grand theatres</p>
  </div>
  <div class="whats-on-cards" id="showsPreview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
  <!-- Dynamically loaded -->
  </div>
- <a href="shows.html" class="btn btn-secondary" style="display: inline-block;">View Full 2026 Calendar &rarr;</a>
+ <div style="text-align:center;margin-top:2rem;"><a href="shows.html" class="btn btn-secondary">View Full 2026 Calendar &rarr;</a></div>
  </div>
  </section>
 
@@ -1111,12 +1055,12 @@
  <div class="reviews-content">
  <div class="reviews-header">
  <h2>Open Auditions</h2>
- <p>Find your next role — auditions now open</p>
+ <p>Find your next role, auditions now open</p>
  </div>
  <div class="whats-on-cards" id="auditionsPreview" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; margin-bottom: 32px;">
  <!-- Dynamically loaded -->
  </div>
- <a href="auditions.html" class="btn btn-secondary" style="display: inline-block;">View All Auditions &rarr;</a>
+ <div style="text-align:center;margin-top:2rem;"><a href="auditions.html" class="btn btn-secondary">View All Auditions &rarr;</a></div>
  </div>
  </section>
 
@@ -1148,147 +1092,7 @@
  </footer>
 
  <script>
- // Dopamine Optimization System
- const DopamineSystem = {
- achievements: new Set(),
- flipCount: 0,
- scrollDepth: 0,
- 
- init() {
- this.setupProgressBar();
- this.setupParticles();
- this.setupCardFlips();
- this.setupScrollTracking();
- this.checkFirstVisit();
- },
- 
- setupProgressBar() {
- const progressBar = document.getElementById('progressBar');
- window.addEventListener('scroll', () => {
- const scrollTop = window.scrollY;
- const docHeight = document.documentElement.scrollHeight - window.innerHeight;
- const scrollPercent = (scrollTop / docHeight) * 100;
- progressBar.style.width = scrollPercent + '%';
- });
- },
- 
- setupParticles() {
- for (let i = 0; i < 15; i++) {
- setTimeout(() => this.createParticle(), i * 200);
- }
- setInterval(() => this.createParticle(), 4000);
- },
- 
- createParticle() {
- const particle = document.createElement('div');
- particle.className = 'particle';
- particle.style.left = Math.random() * 100 + 'vw';
- particle.style.top = Math.random() * 100 + 'vh';
- particle.style.animationDuration = (Math.random() * 3 + 2) + 's';
- document.body.appendChild(particle);
- setTimeout(() => particle.remove(), 5000);
- },
- 
- setupCardFlips() {
- const cards = document.querySelectorAll('.review-card');
- cards.forEach(card => {
- card.addEventListener('click', () => {
- this.flipCount++;
- this.checkFlipAchievements();
- this.createConfettiBurst();
- });
- });
- },
- 
- setupScrollTracking() {
- let maxScroll = 0;
- window.addEventListener('scroll', () => {
- const scrollTop = window.scrollY;
- const docHeight = document.documentElement.scrollHeight - window.innerHeight;
- const scrollPercent = (scrollTop / docHeight) * 100;
- 
- if (scrollPercent > maxScroll) {
- maxScroll = scrollPercent;
- this.scrollDepth = maxScroll;
- this.checkScrollAchievements();
- }
- });
- },
- 
- checkFirstVisit() {
- if (!localStorage.getItem('visited')) {
- localStorage.setItem('visited', 'true');
- this.showAchievement('Welcome to the Renaissance', 'Your journey begins!');
- }
- },
- 
- checkFlipAchievements() {
- if (this.flipCount === 1 && !this.achievements.has('first-flip')) {
- this.achievements.add('first-flip');
- this.showAchievement('First Discovery', 'You found the magic!');
- }
- if (this.flipCount === 3 && !this.achievements.has('flip-3')) {
- this.achievements.add('flip-3');
- this.showAchievement('Curious Mind', 'You love exploring!');
- }
- if (this.flipCount === 5 && !this.achievements.has('flip-5')) {
- this.achievements.add('flip-5');
- this.showAchievement('Renaissance Explorer', 'Keep discovering!');
- }
- },
- 
- checkScrollAchievements() {
- if (this.scrollDepth >= 25 && !this.achievements.has('scroll-25')) {
- this.achievements.add('scroll-25');
- this.showAchievement('Getting Into It', 'Keep reading!');
- }
- if (this.scrollDepth >= 50 && !this.achievements.has('scroll-50')) {
- this.achievements.add('scroll-50');
- this.showAchievement('Dedicated Reader', 'Halfway there!');
- }
- if (this.scrollDepth >= 75 && !this.achievements.has('scroll-75')) {
- this.achievements.add('scroll-75');
- this.showAchievement('True Theatre Lover', 'Almost there!');
- }
- if (this.scrollDepth >= 90 && !this.achievements.has('scroll-90')) {
- this.achievements.add('scroll-90');
- this.showAchievement('Renaissance Champion', 'You made it!');
- this.createConfettiBurst(50);
- }
- },
- 
- showAchievement(title, message) {
- const popup = document.createElement('div');
- popup.className = 'achievement-popup';
- popup.innerHTML = `
- <div class="achievement-icon"></div>
- <div>
- <div class="achievement-text">${title}</div>
- <div style="font-size: 0.85rem; opacity: 0.9;">${message}</div>
- </div>
- `;
- document.body.appendChild(popup);
- setTimeout(() => popup.remove(), 3000);
- },
- 
- createConfettiBurst(count = 20) {
- const colors = ['#667eea', '#764ba2', '#ffd700', '#f093fb', '#4facfe'];
- for (let i = 0; i < count; i++) {
- setTimeout(() => {
- const confetti = document.createElement('div');
- confetti.className = 'confetti';
- confetti.style.left = Math.random() * 100 + 'vw';
- confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
- confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
- document.body.appendChild(confetti);
- setTimeout(() => confetti.remove(), 4000);
- }, i * 50);
- }
- }
- };
- 
  document.addEventListener('DOMContentLoaded', () => {
- DopamineSystem.init();
   if (document.getElementById('slideshowWrapper')) initSlideshow();
  // Slideshow with Badges and localStorage tracking
  const allSlideshowReviews = [
@@ -1689,7 +1493,7 @@
          const closing = a.closing_date ? new Date(a.closing_date).toLocaleDateString('en-AU',{day:'numeric',month:'short'}) : '';
          const closingSoon = a.closing_date && (new Date(a.closing_date) - today) / 86400000 <= 7;
          const badge = closingSoon
-           ? '<span style="background:rgba(255,152,0,0.15);color:#ff9800;border-radius:6px;padding:2px 8px;font-size:0.75rem;">⏰ Closing Soon</span>'
+           ? '<span style="background:rgba(255,152,0,0.15);color:#ff9800;border-radius:6px;padding:2px 8px;font-size:0.75rem;">◑ Closing Soon</span>'
            : '<span style="background:rgba(76,175,80,0.15);color:#4caf50;border-radius:6px;padding:2px 8px;font-size:0.75rem;">● Open</span>';
          return `<div style="${cardStyle()}">
            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

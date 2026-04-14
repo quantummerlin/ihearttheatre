@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -366,7 +374,7 @@
  </div>
 
  <h1>Asexual Fantasies and Hopeless Aromantics</h1>
- <p class="subtitle">Sophie Harvey - Cabaret Fringe Festival 2025 at The Butterfly Club</p>
+ <p class="subtitle">Sophie Harvey, Cabaret Fringe Festival 2025 at The Butterfly Club</p>
 
  <div class="meta">
  <div class="meta-item">
@@ -375,7 +383,7 @@
  </div>
  <div class="meta-item">
  <span class="meta-label">Company</span>
- <span class="meta-value">Sophie Harvey - Cabaret Fringe Festival 2025</span>
+ <span class="meta-value">Sophie Harvey, Cabaret Fringe Festival 2025</span>
  </div>
  <div class="meta-item">
  <span class="meta-label">Published</span>
@@ -394,13 +402,13 @@
  <div class="content">
  <p>Sophie Harvey's Asexual Fantasies and Hopeless Aromantics is not your typical cabaret. It gently and powerfully invites you into the deeply personal, quietly radical act of simply existing truthfully. With a voice that can just as easily melt you with soprano as it can rouse you with theatrical bravado, Harvey humbly commands the space with a sweetness that is both disarming and grounding.</p>
 
- <p>What truly elevates this show isn't just her range of vocals & live piano accompaniment — though that alone is enough to warrant the ticket — it's the vulnerability in her storytelling. In a genre known for its overt emotionality, Harvey reclaims the cabaret form as a space for nuance. She explores the messiness of living on the aromantic spectrum and the quiet loneliness of growing up without seeing herself in love songs, teen rom-coms or Broadway ballads topped off with dry, self-aware humour.</p>
+ <p>What truly elevates this show isn't just her range of vocals & live piano accompaniment, though that alone is enough to warrant the ticket, it's the vulnerability in her storytelling. In a genre known for its overt emotionality, Harvey reclaims the cabaret form as a space for nuance. She explores the messiness of living on the aromantic spectrum and the quiet loneliness of growing up without seeing herself in love songs, teen rom-coms or Broadway ballads topped off with dry, self-aware humour.</p>
 
  <div class="highlight">
  "When she sings, you feel it: the ache of not being represented and the hope in carving a space for it. Ironically, the standout moment came in her performance of Creatures of the Night. Dripping in theatrical seduction, the number was delivered with electrifying flair, even though earlier Harvey let us in on her inner conflict: admitting it once felt disingenuous to embody roles rooted in desire she couldn't personally connect to."
  </div>
 
- <p>By the end, she gently reframes the narrative, giving herself permission to play roles she may not relate to offstage — by reconciling the tension between her personal truth and her passion for performance. She allows herself the freedom to step into roles she doesn't personally identify with, not as a betrayal of self, but as an act of artistic agency.</p>
+ <p>By the end, she gently reframes the narrative, giving herself permission to play roles she may not relate to offstage, by reconciling the tension between her personal truth and her passion for performance. She allows herself the freedom to step into roles she doesn't personally identify with, not as a betrayal of self, but as an act of artistic agency.</p>
 
  <p>It lands like a revolutionary act, a full circle moment of acceptance and finally an admission; of longing for connection, inadvertently inviting the universe to bring her somebody to love.</p>
  </div>
@@ -450,91 +458,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- top: 80px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1001;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- 
- setTimeout(() => {
- achievement.remove();
- }, 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 100; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b', '#4ecdc4'][Math.floor(Math.random() * 5)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1002;
- animation: confettiFall 3s ease forwards;
- `;
- document.body.appendChild(confetti);
- 
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Role guides for 22 musicals — find your perfect role, hear audition song suggestions, and understand what directors are looking for.">
+<meta name="description" content="Role guides for 22 musicals, find your perfect role, hear audition song suggestions, and understand what directors are looking for.">
 <meta name="theme-color" content="#667eea">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Musical Role Guides — iHeartTheatre</title>
+<title>Musical Role Guides - iHeartTheatre</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/icon-192x192.png">
 <link rel="stylesheet" href="css/shared.css">
@@ -84,7 +84,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     transition: border-color 0.2s;
 }
 .search-wrap input:focus { border-color: var(--accent-primary); }
-.search-wrap::before { content: '🔍'; position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: 0.9rem; }
+.search-wrap::before { content: ''; width: 16px; height: 16px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23a0a0b0' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") no-repeat center; background-size: contain; position: absolute; left: 14px; top: 50%; transform: translateY(-50%); }
 .filter-pills { display: flex; flex-wrap: wrap; gap: 8px; }
 .pill {
     background: var(--glass-bg);
@@ -346,6 +346,14 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     .musicals-grid { grid-template-columns: 1fr; padding: 0 12px 40px; }
 }
 </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
 <div class="progress-bar" id="progressBar"></div>
@@ -360,7 +368,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 </nav>
 
 <div class="page-hero">
-  <div class="page-badge">🎭 22 Musicals</div>
+  <div class="page-badge">22 Musicals</div>
   <h1>Musical Role Guides</h1>
   <p>Find your perfect role. Discover what directors are looking for and which songs to prepare for your audition.</p>
 </div>
@@ -375,7 +383,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     <button class="pill" data-filter="intermediate">Intermediate</button>
     <button class="pill" data-filter="advanced">Advanced</button>
     <button class="pill" data-filter="expert">Expert</button>
-    <button class="pill" data-filter="junior">🌟 Jr Available</button>
+    <button class="pill" data-filter="junior">Jr Available</button>
   </div>
 </div>
 
@@ -391,7 +399,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
   <div class="modal-panel" id="modal-panel">
     <div class="modal-header">
       <div>
-        <div class="modal-musical-title" id="modal-title">—</div>
+        <div class="modal-musical-title" id="modal-title"> - </div>
         <div class="modal-musical-composer" id="modal-composer"></div>
       </div>
       <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
@@ -473,10 +481,10 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
             <div class="musical-composer">${escHtml(m.music_by)}${m.year_premiered?' &bull; '+m.year_premiered:''}</div>
             <div class="musical-meta">
                 ${dl ? `<span class="meta-chip ${dc}">${escHtml(dl)}</span>` : ''}
-                ${m.dance_intensity ? `<span class="meta-chip">💃 ${escHtml(danceLabel(m.dance_intensity))}</span>` : ''}
-                ${m.typical_cast_size ? `<span class="meta-chip">👥 ${escHtml(m.typical_cast_size)}</span>` : ''}
-                ${m.age_range ? `<span class="meta-chip">🎂 ${escHtml(m.age_range)}</span>` : ''}
-                ${m.junior_version_available ? `<span class="meta-chip junior-yes">⭐ Jr Available</span>` : ''}
+                ${m.dance_intensity ? `<span class="meta-chip">${escHtml(danceLabel(m.dance_intensity))}</span>` : ''}
+                ${m.typical_cast_size ? `<span class="meta-chip">${escHtml(m.typical_cast_size)}</span>` : ''}
+                ${m.age_range ? `<span class="meta-chip">${escHtml(m.age_range)}</span>` : ''}
+                ${m.junior_version_available ? `<span class="meta-chip junior-yes">Jr Available</span>` : ''}
             </div>
             ${genres ? `<div class="genre-tags">${genres}</div>` : ''}
             <div class="card-footer-row">
@@ -577,7 +585,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 
     function renderRoleCard(role, musicalId) {
         var typeClass = { lead: 'type-lead', supporting: 'type-supporting', character: 'type-character', ensemble: 'type-ensemble' };
-        var typeLabel = { lead: '⭐ Lead', supporting: '🎭 Supporting', character: '🎪 Character', ensemble: '🎵 Ensemble' };
+        var typeLabel = { lead: 'Lead', supporting: 'Supporting', character: 'Character', ensemble: 'Ensemble' };
 
         var rt = (role.role_type || 'supporting').toLowerCase();
         var tc = typeClass[rt] || 'type-supporting';
@@ -597,9 +605,9 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         // Vocal chips
         if (role.vocal) {
             html += '<div class="vocal-row">';
-            if (role.vocal.voice_type) html += '<span class="vocal-chip">🎤 ' + escHtml(role.vocal.voice_type.replace(/_/g,' ')) + '</span>';
-            if (role.vocal.range) html += '<span class="vocal-chip">🎵 ' + escHtml(role.vocal.range) + '</span>';
-            if (role.vocal.belt_required) html += '<span class="vocal-chip belt">🔥 Belt required ' + (role.vocal.belt_range ? '(' + escHtml(role.vocal.belt_range) + ')' : '') + '</span>';
+            if (role.vocal.voice_type) html += '<span class="vocal-chip">' + escHtml(role.vocal.voice_type.replace(/_/g,' ')) + '</span>';
+            if (role.vocal.range) html += '<span class="vocal-chip">' + escHtml(role.vocal.range) + '</span>';
+            if (role.vocal.belt_required) html += '<span class="vocal-chip belt">Belt required ' + (role.vocal.belt_range ? '(' + escHtml(role.vocal.belt_range) + ')' : '') + '</span>';
             if (ageStr) html += '<span class="vocal-chip" style="background:rgba(255,255,255,0.05);color:var(--text-secondary);border-color:var(--glass-border);">Age ' + escHtml(ageStr) + '</span>';
             html += '</div>';
         }
@@ -613,7 +621,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         // Songs from the show
         var keySongs = role.key_songs || [];
         html += '<div class="songs-section">';
-        html += '<div class="songs-label show-songs">🎭 Songs in the show</div>';
+        html += '<div class="songs-label show-songs">Songs in the show</div>';
         if (keySongs.length) {
             keySongs.forEach(function(s) {
                 html += '<div class="song-item show-song">';
@@ -628,15 +636,15 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         }
         html += '</div>';
 
-        // Audition song suggestions — use curated database if available, else fall back to tips
+        // Audition song suggestions - use curated database if available, else fall back to tips
         var curatedKey = (musicalId || '') + '/' + (role.id || '');
         var curated = AUDITION_SONGS[curatedKey];
 
         html += '<div class="songs-section">';
-        html += '<div class="songs-label audition-songs">🌟 What to prepare for auditions</div>';
+        html += '<div class="songs-label audition-songs">What to prepare for auditions</div>';
         if (curated && curated.songs_to_prepare && curated.songs_to_prepare.length) {
             curated.songs_to_prepare.forEach(function(s) {
-                var typeIcon = s.type === 'same_show' ? '🎭' : s.type === 'contrasting' ? '⚡' : '🎵';
+                var typeIcon = '\u266a';
                 html += '<div class="song-item audition-tip">';
                 html += '<span class="song-item-icon">' + typeIcon + '</span>';
                 html += '<div><div style="font-weight:600;color:var(--text-primary);">' + escHtml(s.title) + '</div>';
@@ -648,7 +656,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
                 html += '<div style="margin-top:8px;padding:8px 10px;background:rgba(102,126,234,0.06);border-left:2px solid var(--accent-primary);border-radius:0 6px 6px 0;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;">' + escHtml(curated.style_guidance) + '</div>';
             }
             if (curated.avoid && curated.avoid.length) {
-                html += '<div style="margin-top:6px;font-size:0.75rem;color:#ff8080;">⚠ Avoid: ' + curated.avoid.map(function(a){ return escHtml(a); }).join(' · ') + '</div>';
+                html += '<div style="margin-top:6px;font-size:0.75rem;color:#ff8080;">Avoid: ' + curated.avoid.map(function(a){ return escHtml(a); }).join(' · ') + '</div>';
             }
         } else {
             var tips = (role.audition_guidance || {}).tips || [];

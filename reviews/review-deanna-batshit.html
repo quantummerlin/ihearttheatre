@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -396,7 +404,7 @@
  </div>
 
  <div class="content">
- <p>I was looking forward to seeing Batsh*t at The Arts Centre for its warm ambience, luxe carpet & comfy seats that invite an exhale before the house lights have even dipped. We are met with what looks like a playful photo booth setup on our journey into the auditorium — a backdrop and a selection of placards neatly arranged in a box with a sign: "Which one are you today?" with instructions: "Take a sign, snap a photo." At first, it reads like light-hearted audience engagement, slogans like BRING ME THE AXE, MY OVARIES MADE ME DO IT, HYSTERICAL and OVER SENSITIVE, all certainly cheeky & funny. But I'll come to regret that laugh.</p>
+ <p>I was looking forward to seeing Batsh*t at The Arts Centre for its warm ambience, luxe carpet & comfy seats that invite an exhale before the house lights have even dipped. We are met with what looks like a playful photo booth setup on our journey into the auditorium, a backdrop and a selection of placards neatly arranged in a box with a sign: "Which one are you today?" with instructions: "Take a sign, snap a photo." At first, it reads like light-hearted audience engagement, slogans like BRING ME THE AXE, MY OVARIES MADE ME DO IT, HYSTERICAL and OVER SENSITIVE, all certainly cheeky & funny. But I'll come to regret that laugh.</p>
 
  <p>The show opens like a lightning bolt. A disarming strobe sequence slices through the darkness, startling the audience into immediate attention. There's no gentle ushering; you're thrust in, blinking and breathless, already bracing. And it doesn't let go.</p>
 
@@ -406,13 +414,13 @@
  "Haunted by a glamorous figure, radiant in a gown, bound and gagged with a belted clinical contraption that steals even our breath. She sings through the strap that is gagging her and it makes me realise how tense I am witnessing this beautiful yet unbearable act, torn between awe and horror."
  </div>
 
- <p>The set is straightforward; a retro TV & couch, a potted plant and what appears to be boxes full of files. Stark lighting bleeds into a ward-like stillness. Together, the props conjure a decade-specific domesticity — what unfolds are themes of 60s repression colliding with 80s denial, where hysteria was finally scrubbed from the medical dictionary.</p>
+ <p>The set is straightforward; a retro TV & couch, a potted plant and what appears to be boxes full of files. Stark lighting bleeds into a ward-like stillness. Together, the props conjure a decade-specific domesticity, what unfolds are themes of 60s repression colliding with 80s denial, where hysteria was finally scrubbed from the medical dictionary.</p>
 
- <p>The projections are what gutted me. Medical records. Prescription dosages. Psychiatric assessments. The scrolling documents seem real or at least rendered with clinical precision. Watching it all, knowing I'm around the same age as the woman at the centre of this story? Chilling — not knowing what was worse- the cold diagnoses or the complicity of her husband?</p>
+ <p>The projections are what gutted me. Medical records. Prescription dosages. Psychiatric assessments. The scrolling documents seem real or at least rendered with clinical precision. Watching it all, knowing I'm around the same age as the woman at the centre of this story? Chilling, not knowing what was worse- the cold diagnoses or the complicity of her husband?</p>
 
- <p>At its core, Batsh*t is a love letter to the misunderstood. A granddaughter reaching back through time to honour and vindicate a woman erased by history's margins. And the crocheted hanky, so tender and heartbreakingly nostalgic — isn't just a prop, but a thread pulled straight from the past landing with the weight of a linages legacy. It wasn't just a performance — it was a personal excavation. The show's creator doesn't just portray her grandmother; in a world that failed to understand her, this felt like a resurrection through tenderness.</p>
+ <p>At its core, Batsh*t is a love letter to the misunderstood. A granddaughter reaching back through time to honour and vindicate a woman erased by history's margins. And the crocheted hanky, so tender and heartbreakingly nostalgic, isn't just a prop, but a thread pulled straight from the past landing with the weight of a linages legacy. It wasn't just a performance, it was a personal excavation. The show's creator doesn't just portray her grandmother; in a world that failed to understand her, this felt like a resurrection through tenderness.</p>
 
- <p>Hauntingly. Fully. Physically. There's a moment, where the actress sinks — literally — into the couch. Subtle, devastating. A woman dissolving into the furniture of her life, the architecture of her erasure. And just when we thought we'd adjusted to the discomfort, the mention of the unopened letter plunged us into new depths of panic.</p>
+ <p>Hauntingly. Fully. Physically. There's a moment, where the actress sinks, literally, into the couch. Subtle, devastating. A woman dissolving into the furniture of her life, the architecture of her erasure. And just when we thought we'd adjusted to the discomfort, the mention of the unopened letter plunged us into new depths of panic.</p>
 
  <p>Batsh*t is not easy. It is polite, clever, raw, exquisitely crafted and heartfelt performance, masterfully delivered and grounded in love and terror. A touching tribute to the misunderstood, the misdiagnosed and the misremembered.</p>
  </div>
@@ -462,91 +470,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- top: 80px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1001;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- 
- setTimeout(() => {
- achievement.remove();
- }, 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 100; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b', '#4ecdc4'][Math.floor(Math.random() * 5)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1002;
- animation: confettiFall 3s ease forwards;
- `;
- document.body.appendChild(confetti);
- 
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

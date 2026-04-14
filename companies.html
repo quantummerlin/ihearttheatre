@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Production Companies | Theatre Companies in Melbourne &amp; Victoria | iHeartTheatre</title>
-    <meta name="description" content="Discover theatre production companies across Melbourne and Victoria. Professional, community, youth and independent companies — find who's making theatre happen.">
+    <meta name="description" content="Discover theatre production companies across Melbourne and Victoria. Professional, community, youth and independent companies, find who's making theatre happen.">
     <meta name="theme-color" content="#667eea">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -256,6 +256,14 @@
             .stats-bar { gap: 1.5rem; }
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -270,20 +278,20 @@
     </nav>
 
     <section class="page-hero">
-        <h1>🎭 Production Companies</h1>
-        <p>Discover the companies that make theatre happen — from major professional organisations to the community groups and indie creators bringing stories to life on stages across Melbourne and Victoria.</p>
+        <h1>Production Companies</h1>
+        <p>Discover the companies that make theatre happen, from major professional organisations to the community groups and indie creators bringing stories to life on stages across Melbourne and Victoria.</p>
     </section>
 
     <div class="stats-bar">
-        <div class="stat"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Companies</div></div>
-        <div class="stat"><div class="stat-number" id="stat-professional">—</div><div class="stat-label">Professional</div></div>
-        <div class="stat"><div class="stat-number" id="stat-community">—</div><div class="stat-label">Community</div></div>
-        <div class="stat"><div class="stat-number" id="stat-youth">—</div><div class="stat-label">Youth</div></div>
+        <div class="stat"><div class="stat-number" id="stat-total"> - </div><div class="stat-label">Companies</div></div>
+        <div class="stat"><div class="stat-number" id="stat-professional"> - </div><div class="stat-label">Professional</div></div>
+        <div class="stat"><div class="stat-number" id="stat-community"> - </div><div class="stat-label">Community</div></div>
+        <div class="stat"><div class="stat-number" id="stat-youth"> - </div><div class="stat-label">Youth</div></div>
     </div>
 
     <div class="controls">
         <div class="search-wrap">
-            <span class="search-icon">🔍</span>
+            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
             <input type="search" id="searchInput" placeholder="Search companies, genres, locations…" aria-label="Search companies">
         </div>
         <div class="filter-rows">
@@ -312,12 +320,12 @@
         <div class="companies-grid" id="companiesGrid"></div>
     </div>
     <div class="no-results" id="noResults" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
-        <p>😕 No companies match your search — try different filters.</p>
+        <p>No companies match your search, try different filters.</p>
     </div>
 
     <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
         <div class="submit-cta">
-            <h2>🎭 List Your Company</h2>
+            <h2>List Your Company</h2>
             <p>Run a theatre company, community group, or production house? Get listed for free so performers and audiences can find you.</p>
             <a href="mailto:contact@ihearttheatre.com?subject=Company%20Listing%20%E2%80%94%20%5BCompany%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20our%20company%3A%0A%0ACompany%3A%20%0AType%3A%20Professional%20%2F%20Community%20%2F%20Youth%20%2F%20Independent%0ALocation%3A%20%0AWebsite%3A%20%0AShort%20description%3A%20%0A%0AThanks!" class="btn-cta">Submit Your Company →</a>
         </div>
@@ -769,10 +777,10 @@
         {
             name: 'Windmill Theatre Co',
             type: 'professional',
-            location: 'Touring — Melbourne seasons',
+            location: 'Touring - Melbourne seasons',
             description: "Australia's leading theatre company for young audiences. Inventive, clever, and visually stunning productions for children and families.",
             founded: 2002,
-            venue: 'Touring — Arts Centre Melbourne',
+            venue: 'Touring - Arts Centre Melbourne',
             tags: ['Children', 'Family', 'Touring', 'Visual theatre'],
             focus: ['family'],
             website: 'https://www.windmill.org.au',
@@ -874,13 +882,13 @@
                 + '<div class="company-name">' + esc(c.name) + '</div>'
                 + '<span class="company-badge ' + badgeClass + '">' + esc(c.type) + '</span>'
                 + '</div>'
-                + '<div class="company-location">📍 ' + esc(c.location) + '</div>'
+                + '<div class="company-location"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.55;flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ' + esc(c.location) + '</div>'
                 + '<div class="company-desc">' + esc(c.description) + '</div>'
                 + '<div class="company-tags">' + c.tags.map(function(t) { return '<span class="company-tag">' + esc(t) + '</span>'; }).join('') + '</div>'
                 + '<div class="company-meta">'
-                + (c.founded ? '<span class="company-meta-item">🏛 Est. ' + c.founded + '</span>' : '')
-                + (c.venue ? '<span class="company-meta-item">📍 ' + esc(c.venue) + '</span>' : '')
-                + (c.auditions ? '<span class="company-meta-item" style="color:#27ae60;">✅ Open auditions</span>' : '')
+                + (c.founded ? '<span class="company-meta-item">Est. ' + c.founded + '</span>' : '')
+                + (c.venue ? '<span class="company-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.55"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> ' + esc(c.venue) + '</span>' : '')
+                + (c.auditions ? '<span class="company-meta-item" style="color:#27ae60;">Open auditions</span>' : '')
                 + '</div>'
                 + '<div class="company-footer">'
                 + (c.website && c.website !== '#' ? '<a href="' + esc(c.website) + '" target="_blank" rel="noopener" class="company-btn company-btn-primary">Visit Website</a>' : '')

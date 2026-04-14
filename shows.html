@@ -288,6 +288,14 @@
             .filter-rows { gap: 0.5rem; }
         }
     </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -302,20 +310,20 @@
     </nav>
 
     <section class="page-hero">
-        <h1>🎪 2026 Shows Calendar</h1>
+        <h1>2026 Shows Calendar</h1>
         <p>The complete Melbourne &amp; Victoria theatre calendar for 2026. Browse upcoming shows, add them to your calendar, and never miss a performance.</p>
     </section>
 
     <div class="stats-bar">
-        <div class="stat"><div class="stat-number" id="stat-total">—</div><div class="stat-label">Shows Listed</div></div>
-        <div class="stat"><div class="stat-number" id="stat-upcoming">—</div><div class="stat-label">Still Upcoming</div></div>
-        <div class="stat"><div class="stat-number" id="stat-companies">—</div><div class="stat-label">Companies</div></div>
-        <div class="stat"><div class="stat-number" id="stat-venues">—</div><div class="stat-label">Venues</div></div>
+        <div class="stat"><div class="stat-number" id="stat-total"> - </div><div class="stat-label">Shows Listed</div></div>
+        <div class="stat"><div class="stat-number" id="stat-upcoming"> - </div><div class="stat-label">Still Upcoming</div></div>
+        <div class="stat"><div class="stat-number" id="stat-companies"> - </div><div class="stat-label">Companies</div></div>
+        <div class="stat"><div class="stat-number" id="stat-venues"> - </div><div class="stat-label">Venues</div></div>
     </div>
 
     <div class="controls">
         <div class="search-wrap">
-            <span class="search-icon">🔍</span>
+            <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
             <input type="search" id="search-input" placeholder="Search shows, companies, venues, locations…" aria-label="Search shows">
         </div>
         <div class="filter-rows">
@@ -351,13 +359,13 @@
 
     <div class="calendar-container" id="calendar-container"></div>
     <div class="no-results" id="no-results" style="max-width:1200px;margin:0 auto;padding:0 2rem;">
-        <p>😕 No shows match your search — try different filters.</p>
+        <p>No shows match your search, try different filters.</p>
     </div>
 
     <div style="max-width:1200px;margin:0 auto;padding:0 2rem;">
         <div class="submit-cta">
-            <h2>🎭 Got a show on in 2026?</h2>
-            <p>Producers and companies — get your production listed on the calendar for free so performers and theatre lovers can find you.</p>
+            <h2>Got a show on in 2026?</h2>
+            <p>Producers and companies, get your production listed on the calendar for free so performers and theatre lovers can find you.</p>
             <a href="mailto:contact@ihearttheatre.com?subject=Show%20Listing%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20our%20show%20on%20the%20calendar%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AVenue%3A%20%0ALocation%3A%20%0ADates%3A%20%0ATickets%3A%20%0A%0AThanks!" class="btn-cta">Submit Your Show →</a>
         </div>
     </div>
@@ -427,7 +435,7 @@
         function fmt(dateStr) {
             return dateStr.replace(/-/g,'') + 'T190000';
         }
-        const ics = `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//iHeartTheatre//EN\r\nBEGIN:VEVENT\r\nDTSTART:${fmt(show.date_start)}\r\nDTEND:${fmt(show.date_end||show.date_start)}\r\nSUMMARY:${show.show_title}\r\nLOCATION:${(show.venue||'')+', '+(show.location||'')}\r\nDESCRIPTION:${show.company} — ${show.show_title}\\nMore info: ihearttheatre.com\r\nURL:https://ihearttheatre.com/shows.html\r\nEND:VEVENT\r\nEND:VCALENDAR`;
+        const ics = `BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-//iHeartTheatre//EN\r\nBEGIN:VEVENT\r\nDTSTART:${fmt(show.date_start)}\r\nDTEND:${fmt(show.date_end||show.date_start)}\r\nSUMMARY:${show.show_title}\r\nLOCATION:${(show.venue||'')+', '+(show.location||'')}\r\nDESCRIPTION:${show.company} - ${show.show_title}\\nMore info: ihearttheatre.com\r\nURL:https://ihearttheatre.com/shows.html\r\nEND:VEVENT\r\nEND:VCALENDAR`;
         const blob = new Blob([ics], {type:'text/calendar;charset=utf-8'});
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -442,7 +450,7 @@
     function googleCalUrl(show) {
         const enc = encodeURIComponent;
         function fmt(s) { return s.replace(/-/g,'') + 'T190000Z'; }
-        return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(show.show_title)}&dates=${fmt(show.date_start)}/${fmt(show.date_end||show.date_start)}&location=${enc((show.venue||'')+', '+(show.location||''))}&details=${enc(show.company+' — '+show.show_title+'\nihearttheatre.com')}`;
+        return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(show.show_title)}&dates=${fmt(show.date_start)}/${fmt(show.date_end||show.date_start)}&location=${enc((show.venue||'')+', '+(show.location||''))}&details=${enc(show.company+' - '+show.show_title+'\nihearttheatre.com')}`;
     }
 
     function toggleShowSave(id, btn) {
@@ -451,7 +459,7 @@
         const summary = { id: show.id, title: show.show_title, company: show.company, venue: show.venue, location: show.location, date_start: show.date_start, date_end: show.date_end };
         const saved = iHT.toggle('show', id, summary);
         btn.innerHTML = saved ? '♥' : '♡';
-        btn.title = saved ? 'Saved — click to unsave' : 'Save this show';
+        btn.title = saved ? 'Saved - click to unsave' : 'Save this show';
         btn.classList.toggle('saved', saved);
     }
 
@@ -473,14 +481,14 @@
     </div>
     <div class="show-company">${escHtml(show.company)}</div>
     <div class="show-meta">
-        <div class="show-meta-item">📅&nbsp;<span>${fmtDateRange(show.date_start, show.date_end)}</span></div>
-        <div class="show-meta-item">📍&nbsp;<span>${show.venue ? escHtml(show.venue)+', ' : ''}${escHtml(show.location)}</span></div>
+        <div class="show-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.55;flex-shrink:0"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>&nbsp;<span>${fmtDateRange(show.date_start, show.date_end)}</span></div>
+        <div class="show-meta-item"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.55;flex-shrink:0"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>&nbsp;<span>${show.venue ? escHtml(show.venue)+', ' : ''}${escHtml(show.location)}</span></div>
     </div>
     ${tags ? `<div class="show-tags">${tags}</div>` : ''}
     <div class="show-card-footer">
         <button class="btn-cal btn-cal-ics" onclick="generateICS(SHOWS_DATA['${escHtml(show.id)}'])">+ .ics</button>
         <a href="${googleCalUrl(show)}" target="_blank" rel="noopener noreferrer" class="btn-cal btn-cal-google">+ Google Cal</a>
-        <button class="btn-save${savedNow?' saved':''}" data-save-type="show" data-save-id="${escHtml(show.id)}" onclick="toggleShowSave('${escHtml(show.id)}',this)" title="${savedNow?'Saved — click to unsave':'Save this show'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:5px 10px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;margin-left:auto;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
+        <button class="btn-save${savedNow?' saved':''}" data-save-type="show" data-save-id="${escHtml(show.id)}" onclick="toggleShowSave('${escHtml(show.id)}',this)" title="${savedNow?'Saved - click to unsave':'Save this show'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:5px 10px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;margin-left:auto;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
     </div>
 </article>`;
     }
@@ -567,7 +575,7 @@
             if (!res.ok) throw new Error();
             allShows = await res.json();
         } catch {
-            // inline fallback — a handful of shows
+            // inline fallback - a handful of shows
             allShows = [
                 {id:"mel-2026-001",show_title:"Mamma Mia!",company:"National Theatre",venue:"National Theatre",location:"St Kilda",date_start:"2026-02-07",date_end:"2026-02-18",production_type:"community",genre:["jukebox","comedy"],tags:["community"]},
                 {id:"mel-2026-003",show_title:"Ride the Cyclone",company:"PEP Productions",venue:"Doncaster Playhouse",location:"Doncaster",date_start:"2026-02-13",date_end:"2026-02-21",production_type:"community",genre:["comedy","contemporary"],tags:["community"]},

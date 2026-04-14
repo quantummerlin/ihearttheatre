@@ -715,7 +715,308 @@
    -webkit-box-orient: vertical;
    overflow: hidden;
   }
+
+  /* ── View Toolbar ── */
+  .cal-toolbar {
+   max-width: 1200px;
+   margin: 32px auto 0;
+   padding: 0 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 16px;
+   flex-wrap: wrap;
+  }
+  .cal-view-toggle {
+   display: flex;
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   border-radius: 12px;
+   padding: 4px;
+   gap: 0;
+  }
+  .cal-view-btn {
+   padding: 8px 20px;
+   border: none;
+   background: transparent;
+   color: var(--text-secondary);
+   font-size: .85rem;
+   font-weight: 500;
+   border-radius: 8px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   transition: all .2s;
+   font-family: 'Inter', sans-serif;
+  }
+  .cal-view-btn.active { background: var(--gradient-primary); color: white; }
+  .cal-view-btn:not(.active):hover { color: var(--text-primary); background: rgba(255,255,255,.05); }
+  .cal-nav { display: flex; align-items: center; gap: 16px; }
+  .cal-nav-btn {
+   width: 36px; height: 36px;
+   border-radius: 50%;
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   color: var(--text-primary);
+   font-size: 1.3rem;
+   cursor: pointer;
+   display: flex; align-items: center; justify-content: center;
+   transition: background .2s, border-color .2s;
+   line-height: 1;
+  }
+  .cal-nav-btn:hover { background: rgba(102,126,234,.15); border-color: rgba(102,126,234,.4); }
+  .cal-month-label {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.2rem;
+   font-weight: 600;
+   min-width: 150px;
+   text-align: center;
+  }
+  .cal-nav.hidden { display: none; }
+
+  /* ── Calendar Month Grid ── */
+  .shows-section.cal-active .shows-grid { display: block; }
+  .cal-month-wrapper { width: 100%; }
+  .cal-day-headers {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   gap: 1px;
+   border-bottom: 1px solid var(--glass-border);
+   margin-bottom: 0;
+  }
+  .cal-day-header {
+   text-align: center;
+   font-size: .72rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: .8px;
+   color: var(--text-secondary);
+   padding: 10px 0 8px;
+  }
+  .cal-day-header.weekend { color: rgba(102,126,234,.75); }
+  .cal-week { border-bottom: 1px solid var(--glass-border); }
+  .cal-week-cells {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   gap: 1px;
+  }
+  .cal-cell {
+   min-height: 38px;
+   padding: 6px 8px 4px;
+   border-right: 1px solid rgba(255,255,255,.03);
+  }
+  .cal-cell:nth-child(7n) { border-right: none; }
+  .cal-date-num {
+   font-size: .78rem;
+   font-weight: 500;
+   width: 24px; height: 24px;
+   display: inline-flex;
+   align-items: center; justify-content: center;
+   border-radius: 50%;
+   transition: background .2s;
+   color: var(--text-secondary);
+  }
+  .cal-cell.in-month .cal-date-num { color: var(--text-primary); }
+  .cal-cell.today .cal-date-num {
+   background: var(--gradient-primary);
+   color: white;
+   font-weight: 700;
+  }
+  .cal-cell.other-month .cal-date-num { color: rgba(255,255,255,.18); }
+  .cal-week-events {
+   padding: 3px 0 5px;
+   min-height: 0;
+  }
+  .cal-lane {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   min-height: 22px;
+   padding: 1px 2px;
+  }
+  .cal-show-bar {
+   height: 20px;
+   border-radius: 4px;
+   padding: 0 6px;
+   font-size: .7rem;
+   font-weight: 600;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   transition: filter .18s, transform .15s;
+   position: relative;
+   margin: 0 1px;
+  }
+  .cal-show-bar:hover { filter: brightness(1.2); transform: translateY(-1px); }
+  .cal-bar-professional { background: rgba(102,126,234,.82); color: #fff; }
+  .cal-bar-community    { background: rgba(220,175,0,.82); color: #1a1400; }
+  .cal-bar-amateur      { background: rgba(255,140,0,.82); color: #2a1000; }
+  .cal-bar-school       { background: rgba(56,178,96,.82); color: #081e11; }
+  .cal-show-bar.starts-before::before { content: '\2039'; margin-right: 3px; opacity: .7; }
+  .cal-show-bar.ends-after::after     { content: '\203A'; margin-left: 3px; opacity: .7; }
+  .cal-overflow-row {
+   display: grid;
+   grid-template-columns: repeat(7, 1fr);
+   min-height: 18px;
+   padding: 0 2px;
+  }
+  .cal-overflow {
+   font-size: .68rem;
+   color: var(--accent-primary);
+   cursor: pointer;
+   padding: 2px 4px;
+   display: flex;
+   align-items: center;
+  }
+  .cal-overflow:hover { color: var(--text-primary); text-decoration: underline; }
+
+  /* ── Calendar transition ── */
+  .cal-month-wrapper { transition: opacity .18s ease, transform .18s ease; }
+  .cal-month-wrapper.leaving { opacity: 0; transform: translateY(5px); }
+  .cal-month-wrapper.entering { opacity: 0; transform: translateY(-5px); }
+  .fil-chip:active { transform: scale(0.94); }
+
+  /* ── Show Detail Modal ── */
+  .show-modal-overlay {
+   position: fixed; inset: 0;
+   background: rgba(0,0,0,.72);
+   z-index: 2000;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity .3s ease;
+   padding: 0;
+  }
+  .show-modal-overlay.open { opacity: 1; pointer-events: auto; }
+  @media (min-width: 640px) {
+   .show-modal-overlay { align-items: center; }
+   .show-modal { border-radius: 20px !important; transform: translateY(40px) scale(.97); }
+   .show-modal-overlay.open .show-modal { transform: translateY(0) scale(1); }
+  }
+  .show-modal {
+   background: #0d0d14;
+   border: 1px solid var(--glass-border);
+   border-radius: 20px 20px 0 0;
+   max-width: 640px;
+   width: 100%;
+   max-height: 92vh;
+   overflow-y: auto;
+   transform: translateY(60px);
+   opacity: 0;
+   transition: transform .35s cubic-bezier(.22,1,.36,1), opacity .3s ease;
+  }
+  .show-modal-overlay.open .show-modal { transform: translateY(0); opacity: 1; }
+  .modal-header-band { height: 8px; border-radius: 20px 20px 0 0; flex-shrink: 0; }
+  .modal-inner { padding: 24px 28px 32px; position: relative; }
+  @media (max-width: 480px) { .modal-inner { padding: 20px 18px 28px; } }
+  .modal-close-btn {
+   position: absolute; top: 20px; right: 20px;
+   width: 30px; height: 30px;
+   border-radius: 50%;
+   background: rgba(255,255,255,.07);
+   border: 1px solid var(--glass-border);
+   color: var(--text-secondary);
+   font-size: 1rem; cursor: pointer;
+   display: flex; align-items: center; justify-content: center;
+   transition: background .2s, color .2s;
+   font-family: 'Inter', sans-serif;
+  }
+  .modal-close-btn:hover { background: rgba(255,255,255,.14); color: var(--text-primary); }
+  .modal-badges { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; padding-right: 38px; }
+  .modal-title {
+   font-family: 'Playfair Display', serif;
+   font-size: clamp(1.4rem, 4vw, 1.9rem);
+   font-weight: 700; line-height: 1.2;
+   margin-bottom: 16px;
+  }
+  .modal-meta-row {
+   display: flex; flex-direction: column; gap: 6px;
+   margin-bottom: 18px; padding: 14px 16px;
+   background: var(--glass-bg);
+   border: 1px solid var(--glass-border);
+   border-radius: 10px;
+  }
+  .modal-meta-item {
+   font-size: .875rem; color: var(--text-secondary);
+   display: flex; align-items: flex-start; gap: 8px;
+  }
+  .modal-meta-item strong { color: var(--text-primary); font-weight: 600; }
+  .modal-desc { font-size: .94rem; line-height: 1.65; color: var(--text-secondary); margin-bottom: 18px; }
+  .modal-warning-wrap { margin-bottom: 18px; }
+  .modal-warning-wrap summary {
+   cursor: pointer; font-size: .82rem; color: #ff9800;
+   font-weight: 600; list-style: none; display: flex; align-items: center; gap: 6px; padding: 6px 0;
+  }
+  .modal-warning-wrap summary::-webkit-details-marker { display: none; }
+  .modal-warning-content { font-size: .82rem; color: var(--text-secondary); padding: 8px 0 4px; line-height: 1.55; }
+  .modal-auditions-section {
+   margin-bottom: 20px; padding: 16px;
+   background: rgba(56,178,96,.05);
+   border: 1px solid rgba(56,178,96,.15);
+   border-radius: 12px;
+  }
+  .modal-auditions-title {
+   font-size: .78rem; font-weight: 700; text-transform: uppercase;
+   letter-spacing: .8px; color: #50c878; margin-bottom: 10px;
+  }
+  .modal-auditions-show { font-family: 'Playfair Display', serif; font-size: .98rem; font-weight: 600; margin-bottom: 4px; }
+  .modal-auditions-detail { font-size: .84rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 8px; }
+  .modal-roles-list { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+  .modal-role-chip {
+   font-size: .72rem; padding: 3px 10px; border-radius: 12px;
+   background: rgba(56,178,96,.12); color: #50c878;
+   border: 1px solid rgba(56,178,96,.25); font-weight: 500;
+  }
+  .modal-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+  .btn-modal-tickets {
+   display: inline-flex; align-items: center; gap: 8px;
+   padding: 12px 28px; border-radius: 24px;
+   background: var(--gradient-primary); color: white;
+   text-decoration: none; font-size: .9rem; font-weight: 700;
+   transition: transform .2s, box-shadow .2s;
+  }
+  .btn-modal-tickets:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(102,126,234,.35); }
+  .btn-modal-close {
+   display: inline-flex; align-items: center;
+   padding: 11px 22px; border-radius: 24px;
+   border: 1px solid var(--glass-border);
+   color: var(--text-secondary); font-size: .88rem; font-weight: 600;
+   transition: border-color .2s, color .2s;
+   background: transparent; cursor: pointer; font-family: 'Inter', sans-serif;
+  }
+  .btn-modal-close:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+
+  /* ── Micro-interactions ── */
+  .filter-chip:active { transform: scale(0.94); }
+
+  /* ── Responsive calendar ── */
+  @media (max-width: 768px) {
+   .cal-toolbar { flex-direction: column; align-items: stretch; gap: 12px; }
+   .cal-view-toggle { justify-content: center; }
+   .cal-nav { justify-content: center; }
+   .cal-show-bar { font-size: .65rem; padding: 0 3px; }
+   .cal-day-header { font-size: .68rem; padding: 8px 0 6px; }
+   .cal-cell { min-height: 28px; padding: 4px 4px 2px; }
+   .cal-date-num { font-size: .72rem; width: 20px; height: 20px; }
+  }
+  @media (max-width: 480px) {
+   .cal-show-bar { height: 16px; font-size: .6rem; }
+   .cal-day-header { font-size: .6rem; letter-spacing: 0; }
+  }
  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
 
@@ -757,10 +1058,10 @@
 
  <!-- â•â•â•â•â•â• Submit Banner â•â•â•â•â•â• -->
  <div class="submit-banner">
-  <div class="submit-banner-inner">
+  <div class="submit-banner-inner" data-reveal>
    <div class="submit-banner-text">
-    <h3>Get your show, audition or promo listed &mdash; it&rsquo;s free</h3>
-    <p>iHeartTheatre celebrates Victorian theatre in every form. Community halls, school productions, amateur companies, fringe shows, professional seasons &mdash; send us the details and we&rsquo;ll get it listed.</p>
+    <h3>Get your show, audition or promo listed, it&rsquo;s free</h3>
+    <p>iHeartTheatre celebrates Victorian theatre in every form. Community halls, school productions, amateur companies, fringe shows, professional seasons, send us the details and we&rsquo;ll get it listed.</p>
    </div>
    <div class="submit-banner-actions">
     <a href="submit-show.html" class="btn btn-primary">Submit a Show</a>
@@ -770,6 +1071,34 @@
  </div>
 
  <!-- â•â•â•â•â•â• Filters â•â•â•â•â•â• -->
+ <!-- Cal Toolbar -->
+ <div class="cal-toolbar" data-reveal>
+  <div class="cal-view-toggle">
+   <button class="cal-view-btn active" id="btnCalView" aria-label="Calendar view">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+     <rect x="1" y="2" width="14" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/>
+     <line x1="1" y1="6" x2="15" y2="6" stroke="currentColor" stroke-width="1.5"/>
+     <line x1="5" y1="1" x2="5" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+     <line x1="11" y1="1" x2="11" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    Calendar
+   </button>
+   <button class="cal-view-btn" id="btnListView" aria-label="List view">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+     <line x1="2" y1="4" x2="14" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+     <line x1="2" y1="8" x2="14" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+     <line x1="2" y1="12" x2="14" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+    </svg>
+    List
+   </button>
+  </div>
+  <div class="cal-nav" id="calNav">
+   <button class="cal-nav-btn" id="calPrevBtn" aria-label="Previous month">&#8249;</button>
+   <span class="cal-month-label" id="calMonthLabel">April 2026</span>
+   <button class="cal-nav-btn" id="calNextBtn" aria-label="Next month">&#8250;</button>
+  </div>
+ </div>
+
  <section class="filters-section">
   <div class="filter-row" id="statusFilters">
    <span class="filter-label">Status</span>
@@ -783,7 +1112,7 @@
  </section>
 
  <!-- â•â•â•â•â•â• Shows Section Heading â•â•â•â•â•â• -->
- <div class="section-heading">
+ <div class="section-heading" data-reveal>
   <h2>Upcoming Shows Across Victoria</h2>
   <p>From the main strip to community halls &amp; school stages</p>
  </div>
@@ -796,7 +1125,7 @@
  </section>
 
  <!-- â•â•â•â•â•â• Auditions Heading â•â•â•â•â•â• -->
- <div class="section-heading">
+ <div class="section-heading" data-reveal>
   <h2>Auditions &amp; Casting Calls</h2>
   <p>Open auditions across Victoria â€” community, school &amp; professional</p>
  </div>
@@ -809,7 +1138,7 @@
  </section>
 
  <!-- â•â•â•â•â•â• Promos Heading â•â•â•â•â•â• -->
- <div class="section-heading">
+ <div class="section-heading" data-reveal>
   <h2>Deals &amp; Promotions</h2>
   <p>Special offers, group discounts &amp; last-minute deals</p>
  </div>
@@ -822,7 +1151,7 @@
  </section>
 
  <!-- â•â•â•â•â•â• Reviews Heading â•â•â•â•â•â• -->
- <div class="section-heading">
+ <div class="section-heading" data-reveal>
   <h2>Shows We've Celebrated</h2>
   <a href="reviews.html">Read all our write-ups &rarr;</a>
  </div>
@@ -835,7 +1164,7 @@
  </div>
 
  <!-- â•â•â•â•â•â• CTA â•â•â•â•â•â• -->
- <section class="cta-section">
+ <section class="cta-section" data-reveal>
   <h2>Be part of the celebration</h2>
   <p>iHeartTheatre exists to celebrate Victorian theatre in every form â€” from community halls and school stages to the professional seasons. Whether you want to submit a show, share an audition notice, or just say hello, we'd love to hear from you.</p>
   <div class="cta-buttons">
@@ -844,6 +1173,23 @@
    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
   </div>
  </section>
+
+ <!-- ═════ Show Detail Modal ═════ -->
+ <div class="show-modal-overlay" id="showModalOverlay" role="dialog" aria-modal="true" aria-labelledby="showModalTitle">
+  <div class="show-modal" id="showModalPanel">
+   <div class="modal-header-band" id="modalHeaderBand"></div>
+   <div class="modal-inner">
+    <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">&#215;</button>
+    <div class="modal-badges" id="modalBadges"></div>
+    <h2 class="modal-title" id="showModalTitle"></h2>
+    <div class="modal-meta-row" id="modalMeta"></div>
+    <p class="modal-desc" id="modalDesc"></p>
+    <div id="modalWarning"></div>
+    <div id="modalAuditions"></div>
+    <div class="modal-actions" id="modalActions"></div>
+   </div>
+  </div>
+ </div>
 
  <footer>
   <div class="footer-content">
@@ -2318,6 +2664,253 @@
   { stars: 5, show: 'The Little Mermaid Junior', reviewer: 'Penelope Quinn', excerpt: 'Best thing I have EVER seen. I want to see it again!', url: '../reviews/review-penelope-the-little-mermaid-junior.html' }
  ];
 
+
+ /* ═══════════════════════════════════════════
+    Calendar Engine
+    ═══════════════════════════════════════════ */
+
+ var currentView = 'calendar';
+ var calYear = TODAY.getFullYear();
+ var calMonth = TODAY.getMonth();
+
+ var MONTH_NAMES = ['January','February','March','April','May','June',
+                    'July','August','September','October','November','December'];
+ var DAY_NAMES   = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+
+ function setView(v) {
+  currentView = v;
+  document.getElementById('btnCalView').classList.toggle('active', v === 'calendar');
+  document.getElementById('btnListView').classList.toggle('active', v === 'list');
+  document.getElementById('calNav').classList.toggle('hidden', v !== 'calendar');
+  document.querySelector('.shows-section').classList.toggle('cal-active', v === 'calendar');
+  renderShows();
+ }
+
+ function prevMonth() {
+  calMonth--;
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  renderShows();
+ }
+
+ function nextMonth() {
+  calMonth++;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  renderShows();
+ }
+
+ function monDow(d) { return (d.getDay() + 6) % 7; }
+ function calCol(d)  { return monDow(d) + 1; }
+
+ function filterShows() {
+  return shows.filter(function(s) {
+   if (activeStatusFilter !== 'all' && getStatus(s) !== activeStatusFilter) return false;
+   if (activeVtypeFilter  !== 'all' && s.venueType !== activeVtypeFilter)   return false;
+   if (activeCategoryFilter !== 'all' && s.category !== activeCategoryFilter) return false;
+   return true;
+  });
+ }
+
+ function renderCalendar() {
+  var grid = document.getElementById('showsGrid');
+  var existing = grid.querySelector('.cal-month-wrapper');
+  if (existing) {
+   existing.classList.add('leaving');
+   setTimeout(function() { doRenderCalendar(grid); }, 180);
+  } else {
+   doRenderCalendar(grid);
+  }
+  document.getElementById('calMonthLabel').textContent = MONTH_NAMES[calMonth] + ' ' + calYear;
+ }
+
+ function doRenderCalendar(grid) {
+  grid.innerHTML = '';
+  var wrapper = document.createElement('div');
+  wrapper.className = 'cal-month-wrapper entering';
+
+  var monthStart = new Date(calYear, calMonth, 1);
+  var monthEnd   = new Date(calYear, calMonth + 1, 0);
+
+  var weeks = [];
+  var cursor = new Date(monthStart);
+  cursor.setDate(cursor.getDate() - monDow(cursor));
+  while (true) {
+   var week = [];
+   for (var di = 0; di < 7; di++) {
+    week.push(new Date(cursor));
+    cursor.setDate(cursor.getDate() + 1);
+   }
+   weeks.push(week);
+   if (cursor > monthEnd && monDow(cursor) === 0) break;
+  }
+
+  var activeShows = filterShows().filter(function(s) {
+   return new Date(s.startDate) <= monthEnd && new Date(s.endDate) >= monthStart;
+  });
+  activeShows.forEach(function(s) { s._idx = shows.indexOf(s); });
+
+  var headersRow = document.createElement('div');
+  headersRow.className = 'cal-day-headers';
+  DAY_NAMES.forEach(function(n, i) {
+   var h = document.createElement('div');
+   h.className = 'cal-day-header' + (i >= 5 ? ' weekend' : '');
+   h.textContent = n;
+   headersRow.appendChild(h);
+  });
+  wrapper.appendChild(headersRow);
+
+  var TODAY_STR = TODAY.toDateString();
+
+  weeks.forEach(function(week) {
+   var weekWrap = document.createElement('div');
+   weekWrap.className = 'cal-week';
+
+   var cellsRow = document.createElement('div');
+   cellsRow.className = 'cal-week-cells';
+   week.forEach(function(day) {
+    var cell = document.createElement('div');
+    var inMonth = day.getMonth() === calMonth;
+    var isToday = day.toDateString() === TODAY_STR;
+    cell.className = 'cal-cell' + (inMonth ? ' in-month' : ' other-month') + (isToday ? ' today' : '');
+    var num = document.createElement('span');
+    num.className = 'cal-date-num';
+    num.textContent = day.getDate();
+    cell.appendChild(num);
+    cellsRow.appendChild(cell);
+   });
+   weekWrap.appendChild(cellsRow);
+
+   var weekStart = week[0], weekEnd = week[6];
+   var weekShows = activeShows.filter(function(s) {
+    return new Date(s.startDate) <= weekEnd && new Date(s.endDate) >= weekStart;
+   });
+   weekShows.sort(function(a, b) { return new Date(a.startDate) - new Date(b.startDate); });
+
+   var lanes = [];
+   weekShows.forEach(function(show) {
+    var se = new Date(show.startDate), ee = new Date(show.endDate);
+    var barStart = se < weekStart ? weekStart : se;
+    var barEnd   = ee > weekEnd   ? weekEnd   : ee;
+    var sc = calCol(barStart), ec = calCol(barEnd);
+    var placed = false;
+    for (var li = 0; li < lanes.length; li++) {
+     var conflict = lanes[li].some(function(ex) {
+      var se2 = new Date(ex.startDate), ee2 = new Date(ex.endDate);
+      var bs2 = se2 < weekStart ? weekStart : se2;
+      var be2 = ee2 > weekEnd   ? weekEnd   : ee2;
+      return calCol(bs2) <= ec && calCol(be2) >= sc;
+     });
+     if (!conflict) { lanes[li].push(show); placed = true; break; }
+    }
+    if (!placed) lanes.push([show]);
+   });
+
+   var MAX_LANES = 3;
+   var eventsWrap = document.createElement('div');
+   eventsWrap.className = 'cal-week-events';
+   var overflowShows = [];
+
+   lanes.forEach(function(laneShows, li) {
+    if (li >= MAX_LANES) { overflowShows = overflowShows.concat(laneShows); return; }
+    var laneEl = document.createElement('div');
+    laneEl.className = 'cal-lane';
+    laneShows.forEach(function(show) {
+     var se = new Date(show.startDate), ee = new Date(show.endDate);
+     var barStart = se < weekStart ? weekStart : se;
+     var barEnd   = ee > weekEnd   ? weekEnd   : ee;
+     var sc = calCol(barStart), sp = calCol(barEnd) - sc + 1;
+     var bar = document.createElement('div');
+     bar.className = 'cal-show-bar cal-bar-' + show.venueType +
+      (se < weekStart ? ' starts-before' : '') +
+      (ee > weekEnd   ? ' ends-after'    : '');
+     bar.style.gridColumn = sc + ' / span ' + sp;
+     bar.title = show.title + ' \u2022 ' + show.venue;
+     bar.textContent = show.title;
+     bar.addEventListener('click', (function(s) { return function() { openModal(s._idx); }; })(show));
+     laneEl.appendChild(bar);
+    });
+    eventsWrap.appendChild(laneEl);
+   });
+
+   if (overflowShows.length > 0) {
+    var overflowByCol = {};
+    overflowShows.forEach(function(show) {
+     var se = new Date(show.startDate);
+     var bs = se < weekStart ? weekStart : se;
+     var c = calCol(bs);
+     if (!overflowByCol[c]) overflowByCol[c] = [];
+     overflowByCol[c].push(show);
+    });
+    var overflowRow = document.createElement('div');
+    overflowRow.className = 'cal-overflow-row';
+    Object.keys(overflowByCol).forEach(function(col) {
+     var items = overflowByCol[col];
+     var chip = document.createElement('div');
+     chip.className = 'cal-overflow';
+     chip.style.gridColumn = col;
+     chip.textContent = '+' + items.length + ' more';
+     chip.addEventListener('click', (function(arr) { return function() { openModal(arr[0]._idx); }; })(items));
+     overflowRow.appendChild(chip);
+    });
+    eventsWrap.appendChild(overflowRow);
+   }
+
+   weekWrap.appendChild(eventsWrap);
+   wrapper.appendChild(weekWrap);
+  });
+
+  grid.appendChild(wrapper);
+  requestAnimationFrame(function() { requestAnimationFrame(function() { wrapper.classList.remove('entering'); }); });
+ }
+
+
+ /* ═══════════════════════════════════════════
+    Show Detail Modal
+    ═══════════════════════════════════════════ */
+
+ function openModal(idx) {
+  var show = shows[idx];
+  if (!show) return;
+  document.getElementById('modalHeaderBand').style.background = show.gradient;
+  var status = getStatus(show);
+  document.getElementById('modalBadges').innerHTML =
+   '<span class="slide-badge ' + statusBadgeClass(status) + '">' + statusLabel(status) + '</span>' +
+   '<span class="vtype-badge vtype-' + show.venueType + '">' + vtypeLabel(show.venueType) + '</span>' +
+   '<span class="show-tag">' + show.category + '</span>';
+  document.getElementById('showModalTitle').textContent = show.title;
+  var metaItems = [
+   '<div class="modal-meta-item"><strong>Venue\u00a0\u00a0</strong><span>' + show.venue + '</span></div>',
+   '<div class="modal-meta-item"><strong>Dates\u00a0\u00a0</strong><span>' + show.dates + '</span></div>',
+   '<div class="modal-meta-item"><strong>Company</strong><span>' + show.company + '</span></div>'
+  ];
+  if (show.runtime && show.runtime !== 'TBC') {
+   metaItems.push('<div class="modal-meta-item"><strong>Runtime</strong><span>' + show.runtime + '</span></div>');
+  }
+  document.getElementById('modalMeta').innerHTML = metaItems.join('');
+  document.getElementById('modalDesc').textContent = show.description;
+  var warnEl = document.getElementById('modalWarning');
+  if (show.warning) {
+   warnEl.innerHTML = '<details class="modal-warning-wrap"><summary>&#9888; Content warnings</summary><p class="modal-warning-content">' + show.warning + '</p></details>';
+  } else { warnEl.innerHTML = ''; }
+  var matched = auditions.filter(function(a) { return a.show === show.title || a.company === show.company; });
+  var audEl = document.getElementById('modalAuditions');
+  if (matched.length > 0) {
+   var a = matched[0];
+   var roles = a.roles.split(',').map(function(r) { return '<span class="modal-role-chip">' + r.trim() + '</span>'; }).join('');
+   audEl.innerHTML = '<div class="modal-auditions-section"><div class="modal-auditions-title">Auditions Open</div><p class="modal-auditions-show">' + a.show + '</p><p class="modal-auditions-detail">' + a.details + '</p><div class="modal-roles-list">' + roles + '</div></div>';
+  } else { audEl.innerHTML = ''; }
+  var target = show.ticketUrl && show.ticketUrl.startsWith('http') ? ' target="_blank" rel="noopener"' : '';
+  document.getElementById('modalActions').innerHTML =
+   '<a href="' + show.ticketUrl + '" class="btn-modal-tickets"' + target + '>Get Tickets</a>' +
+   '<button class="btn-modal-close" onclick="closeModal()">Close</button>';
+  document.getElementById('showModalOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+ }
+
+ function closeModal() {
+  document.getElementById('showModalOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+ }
+
  /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
     Helpers
     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
@@ -2541,6 +3134,10 @@
  }
 
  function renderShows() {
+  if (currentView === 'calendar') { renderCalendar(); } else { renderGrid(); }
+ }
+
+ function renderGrid() {
   var grid = document.getElementById('showsGrid');
   grid.innerHTML = '';
 
@@ -2692,7 +3289,24 @@
   buildSlideshow();
   buildStats();
   buildFilters();
+
+  // Calendar toolbar wiring
+  document.getElementById('btnCalView').addEventListener('click', function() { setView('calendar'); });
+  document.getElementById('btnListView').addEventListener('click', function() { setView('list'); });
+  document.getElementById('calPrevBtn').addEventListener('click', prevMonth);
+  document.getElementById('calNextBtn').addEventListener('click', nextMonth);
+
+  // Modal backdrop close
+  document.getElementById('showModalOverlay').addEventListener('click', function(e) {
+   if (e.target === this) closeModal();
+  });
+  document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeModal(); });
+
+  // Default to calendar view
+  document.querySelector('.shows-section').classList.add('cal-active');
   renderShows();
+
   buildAuditions();
   buildPromos();
   buildReviewsTeaser();

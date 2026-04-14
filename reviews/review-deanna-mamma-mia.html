@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -397,9 +405,9 @@
  </div>
 
  <div class="content">
- <p>Stepping into the Playhouse, the atmosphere was already set — mist drifting, the low rumble of waves complete with birds chirping and the glow of an ambient auditorium. From first glimpse, the design of the sets transported us to a sun-kissed Greek island paradise. The attention to detail in the painting, Greek branding & bursts of climbing greenery made it all the more credible alongside the crisp brightness of the Mediterranean palette.</p>
+ <p>Stepping into the Playhouse, the atmosphere was already set, mist drifting, the low rumble of waves complete with birds chirping and the glow of an ambient auditorium. From first glimpse, the design of the sets transported us to a sun-kissed Greek island paradise. The attention to detail in the painting, Greek branding & bursts of climbing greenery made it all the more credible alongside the crisp brightness of the Mediterranean palette.</p>
 
- <p>The cast wasted no time in matching the vibrancy of their surroundings. Caitlyn Lear as Lisa, lit up the stage with her expressiveness — every line, every look was delivered with such commitment that it was impossible not to be drawn into her. The ensemble were an absolute spectacle in themselves. The choreography was outstanding, elevating numbers like "Money, Money, Money" with movement that was sharp, synchronised and filled with character. At times it was almost overwhelming to watch, in the best way — an intensity of energy from so many people at once was a remarkable effort.</p>
+ <p>The cast wasted no time in matching the vibrancy of their surroundings. Caitlyn Lear as Lisa, lit up the stage with her expressiveness, every line, every look was delivered with such commitment that it was impossible not to be drawn into her. The ensemble were an absolute spectacle in themselves. The choreography was outstanding, elevating numbers like "Money, Money, Money" with movement that was sharp, synchronised and filled with character. At times it was almost overwhelming to watch, in the best way, an intensity of energy from so many people at once was a remarkable effort.</p>
 
  <p>Katie Loxston was a playful and powerful Sophie, brimming with personality; her voice cut through with an effortless clarity that seemed to lift "Thank You for the Music" into another realm. Ruth McGurk as Donna, delivered a performance of depth and laughter, layered with emotion that struck hard in the quiet moments and sparkled through the fun.</p>
 
@@ -409,7 +417,7 @@
 
  <p>A cheeky, jaw-dropping flipper dance had the audience roaring. And when "Does Your Mother Know" rolled in, it became a sultry comedic highlight between Dom Rousetty as Pepper and the absolutely fabulous Cara Oliver as Tanya.</p>
 
- <p>What struck me most was the sheer scale of the production — the number of props & synchronised ensemble, the thought poured into every detail, the little surprises that made even familiar numbers feel new. A "Take a Chance on Me" moment complete with slip-and-slide antics from the wonderful Shayne Lowe as Rosie and Shane Lee as Bill, summed up the night perfectly: bold, unexpected and utterly delightful.</p>
+ <p>What struck me most was the sheer scale of the production, the number of props & synchronised ensemble, the thought poured into every detail, the little surprises that made even familiar numbers feel new. A "Take a Chance on Me" moment complete with slip-and-slide antics from the wonderful Shayne Lowe as Rosie and Shane Lee as Bill, summed up the night perfectly: bold, unexpected and utterly delightful.</p>
 
  <p>Geelong Lyric Theatre Society have delivered a Mamma Mia! that feels as sparkling and effervescent as a Mediterranean summer. It's a production overflowing with colour & heart. A joyous invitation to sing, dance and fall in love with ABBA all over again.</p>
  </div>
@@ -459,87 +467,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- bottom: 20px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1000;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- setTimeout(() => achievement.remove(), 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 50; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b'][Math.floor(Math.random() * 4)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1000;
- animation: confettiFall 3s ease-out forwards;
- `;
- document.body.appendChild(confetti);
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

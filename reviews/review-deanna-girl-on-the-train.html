@@ -337,6 +337,14 @@
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css">
     <link rel="stylesheet" href="../css/magic-effects.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -394,25 +402,25 @@
  <div class="content">
  <p>Entering the theatre, you'll be greeted with a warm sense of nostalgia as you pass the Hall of Fame where cast photos from productions past, line the walls as a beautiful tribute to the enduring legacy of The Mount Players.</p>
 
- <p>Moving through to the comfortable theatre, the set immediately captures your attention — presented with a lounge area in what appears to be a studio apartment kitchenette, scattered with different types of empty alcohol and wine bottles, a pizza box, a wall intercom and even an eviction notice pinned to the background noticeboard. In stark contrast, the other side of the stage is darker and more ominous, layered with rigging later suggestive of a train underpass & used also as the elevated terrace that can be seen from the train.</p>
+ <p>Moving through to the comfortable theatre, the set immediately captures your attention, presented with a lounge area in what appears to be a studio apartment kitchenette, scattered with different types of empty alcohol and wine bottles, a pizza box, a wall intercom and even an eviction notice pinned to the background noticeboard. In stark contrast, the other side of the stage is darker and more ominous, layered with rigging later suggestive of a train underpass & used also as the elevated terrace that can be seen from the train.</p>
 
- <p>Throughout the show, spotlights artfully direct our focus to different scenes and characters. The stage is rich with props, and at any moment we find ourselves in a lounge room, a therapy office, a balcony, or beneath the train underpass. Between scenes, darkness falls as we're transported by the bombarding sounds and light projections of train movements — a monumental feat in sound and lighting design that makes each spotlit moment of the mystery feel like a new revelation.</p>
+ <p>Throughout the show, spotlights artfully direct our focus to different scenes and characters. The stage is rich with props, and at any moment we find ourselves in a lounge room, a therapy office, a balcony, or beneath the train underpass. Between scenes, darkness falls as we're transported by the bombarding sounds and light projections of train movements, a monumental feat in sound and lighting design that makes each spotlit moment of the mystery feel like a new revelation.</p>
 
  <div class="highlight">
  "The Gala Night experience added even more charm: sherry offered on arrival, tea and biscuits during interval and a generous tapas spread to finish the evening. The post-show mingle offered the perfect opportunity to congratulate the cast and soak in the buzz of a well-received performance."
  </div>
 
- <p>There's a distinctly warm, inviting atmosphere in the space — it's a testament to the amazing community theatre spirit that defines The Mount Players.</p>
+ <p>There's a distinctly warm, inviting atmosphere in the space, it's a testament to the amazing community theatre spirit that defines The Mount Players.</p>
 
  <p>Onstage, the performances are dynamic and emotionally rich. It was remarkable to watch the cast freeze mid-scene as memories unfolded around them, then snap out of it, shifting seamlessly back into the present. These transitions were handled with impressive control and clarity.</p>
 
- <p>The attention to detail throughout the production was phenomenal. The foyer was adorned with missing person signs, puzzle pieces bearing the characters' faces and caution tape — even the bar joined in, serving a themed crime scene cocktail.</p>
+ <p>The attention to detail throughout the production was phenomenal. The foyer was adorned with missing person signs, puzzle pieces bearing the characters' faces and caution tape, even the bar joined in, serving a themed crime scene cocktail.</p>
 
- <p>The sound design, operation and lighting worked in perfect unison to deliver both visual and auditory impact. At times, the audience was confronted by eerie elements — dripping water, the caw of crows — and at others, soothed by the gentle chirping of birds. It built an atmosphere that constantly shifted between foreboding and fragility.</p>
+ <p>The sound design, operation and lighting worked in perfect unison to deliver both visual and auditory impact. At times, the audience was confronted by eerie elements, dripping water, the caw of crows, and at others, soothed by the gentle chirping of birds. It built an atmosphere that constantly shifted between foreboding and fragility.</p>
 
- <p>Standout performances included Tanya Rich as Megan Hipwell — a graceful apparition, she portrayed her character's tragic memories with sincerity and heartbreaking clarity, even triggering sobbing from members of the audience. Duncan McGauchie as Detective Gaskell brought a comedic and endearing presence, lightening the tension with every entrance. And Claire McCulloch as Rachel gave a powerful performance — a convincing drunk, but more than that, she delivered a fully embodied arc as Rachel stumbles, spirals and slowly rebuilds her sense of self on a journey to coherence.</p>
+ <p>Standout performances included Tanya Rich as Megan Hipwell, a graceful apparition, she portrayed her character's tragic memories with sincerity and heartbreaking clarity, even triggering sobbing from members of the audience. Duncan McGauchie as Detective Gaskell brought a comedic and endearing presence, lightening the tension with every entrance. And Claire McCulloch as Rachel gave a powerful performance, a convincing drunk, but more than that, she delivered a fully embodied arc as Rachel stumbles, spirals and slowly rebuilds her sense of self on a journey to coherence.</p>
 
- <p>As the story unfolds, the gripping tension continues to build and build, until it lands — with full force — in a collective, breath-held chilling realisation. Girl on the Train at The Mount Players is a captivating, immersive night of theatre — emotionally charged, technically sharp and infused with the love and craft that defines great community storytelling.</p>
+ <p>As the story unfolds, the gripping tension continues to build and build, until it lands, with full force, in a collective, breath-held chilling realisation. Girl on the Train at The Mount Players is a captivating, immersive night of theatre, emotionally charged, technically sharp and infused with the love and craft that defines great community storytelling.</p>
  </div>
 
  <div class="cta-section">
@@ -460,87 +468,6 @@
  }
  }
  createParticles();
-
- // Scroll Achievement
- let scrollDepth = 0;
- window.addEventListener('scroll', () => {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- 
- if (scrolled >= 25 && scrollDepth < 25) {
- scrollDepth = 25;
- showAchievement('Getting Into It');
- } else if (scrolled >= 50 && scrollDepth < 50) {
- scrollDepth = 50;
- showAchievement('Dedicated Reader');
- } else if (scrolled >= 75 && scrollDepth < 75) {
- scrollDepth = 75;
- showAchievement('True Theatre Lover');
- } else if (scrolled >= 90 && scrollDepth < 90) {
- scrollDepth = 90;
- showAchievement('Renaissance Champion');
- triggerConfetti();
- }
- });
-
- function showAchievement(text) {
- const achievement = document.createElement('div');
- achievement.style.cssText = `
- position: fixed;
- bottom: 20px;
- right: 20px;
- background: linear-gradient(135deg, #667eea, #764ba2);
- color: white;
- padding: 16px 24px;
- border-radius: 12px;
- font-weight: 600;
- z-index: 1000;
- animation: slideIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
- box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
- `;
- achievement.textContent = text;
- document.body.appendChild(achievement);
- setTimeout(() => achievement.remove(), 3000);
- }
-
- function triggerConfetti() {
- for (let i = 0; i < 50; i++) {
- const confetti = document.createElement('div');
- confetti.style.cssText = `
- position: fixed;
- width: 10px;
- height: 10px;
- background: ${['#667eea', '#764ba2', '#ffd700', '#ff6b6b'][Math.floor(Math.random() * 4)]};
- left: ${Math.random() * 100}vw;
- top: -10px;
- z-index: 1000;
- animation: confettiFall 3s ease-out forwards;
- `;
- document.body.appendChild(confetti);
- setTimeout(() => confetti.remove(), 3000);
- }
- }
-
- // Add confetti animation
- const style = document.createElement('style');
- style.textContent = `
- @keyframes slideIn {
- from { transform: translateX(100%); opacity: 0; }
- to { transform: translateX(0); opacity: 1; }
- }
- @keyframes fadeOut {
- from { opacity: 1; }
- to { opacity: 0; }
- }
- @keyframes confettiFall {
- to {
- transform: translateY(100vh) rotate(720deg);
- opacity: 0;
- }
- }
- `;
- document.head.appendChild(style);
  </script>
  <footer>
  <div class="footer-content">

@@ -31,7 +31,7 @@
         }
 
         .page-hero {
-            padding: 130px 2rem 60px;
+            padding: 120px 2rem 45px;
             text-align: center;
             background: linear-gradient(180deg, rgba(102,126,234,0.12) 0%, transparent 100%);
         }
@@ -44,7 +44,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .page-hero p { color: var(--text-secondary); font-size: 1.1rem; max-width: 640px; margin: 0 auto; }
+        .page-hero p { color: var(--text-secondary); font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
 
         /* ── STATS ─────────────────────────────────── */
         .stats-bar {
@@ -232,6 +232,25 @@
 
         .no-results { display: none; text-align: center; padding: 4rem 2rem; color: var(--text-secondary); }
 
+        .toggle-past {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+            user-select: none;
+        }
+        .toggle-past input {
+            accent-color: var(--accent-primary);
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+        }
+        .show-card.past-show { opacity: 0.55; }
+        .show-card.now-showing { border-color: rgba(39,174,96,0.4); }
+        .badge-now { background: rgba(39,174,96,0.15); color: #27ae60; border: 1px solid rgba(39,174,96,0.3); padding: 3px 9px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
+
         /* ── SUBMIT SHOW CTA ───────────────────────── */
         .submit-cta {
             max-width: 700px;
@@ -321,7 +340,10 @@
                 <button class="filter-btn" data-type="professional">Professional</button>
                 <button class="filter-btn" data-type="community">Community</button>
                 <button class="filter-btn" data-type="youth">Youth / Junior</button>
-                <button class="filter-btn" data-type="upcoming">Upcoming Only</button>
+            </div>
+            <div class="filter-row">
+                <span class="filter-label">Time:</span>
+                <label class="toggle-past"><input type="checkbox" id="showPast"> <span>Include past shows</span></label>
             </div>
         </div>
     </div>
@@ -363,6 +385,9 @@
     let allShows = [];
     let activeMonth = 'all';
     let activeType = 'all';
+    let showPast = false;
+    const TODAY = new Date();
+    TODAY.setHours(0,0,0,0);
 
     const MONTHS = ['','January','February','March','April','May','June','July','August','September','October','November','December'];
 
@@ -433,11 +458,17 @@
         const tags = (show.genre||show.tags||[]).map(t=>`<span class="tag">${escHtml(t)}</span>`).join('');
         const badge = getBadgeHtml(show);
         const savedNow = window.iHT && iHT.isSaved('show', show.id);
+        const endDate = new Date(show.date_end || show.date_start);
+        const startDate = new Date(show.date_start);
+        const isPast = endDate < TODAY;
+        const isNow = startDate <= TODAY && endDate >= TODAY;
+        const extraClass = isPast ? ' past-show' : (isNow ? ' now-showing' : '');
+        const nowBadge = isNow ? '<span class="badge-now">On Now</span>' : '';
         return `
-<article class="show-card" data-id="${escHtml(show.id)}">
+<article class="show-card${extraClass}" data-id="${escHtml(show.id)}">
     <div class="show-card-header">
         <div class="show-title">${escHtml(show.show_title)}</div>
-        ${badge}
+        ${badge}${nowBadge}
     </div>
     <div class="show-company">${escHtml(show.company)}</div>
     <div class="show-meta">
@@ -479,8 +510,10 @@
                 const startM = startDate.getMonth()+1, endM = endDate.getMonth()+1;
                 if (m < startM || m > endM) return false;
             }
+            // Hide past shows unless toggled on
+            if (!showPast && endDate < TODAY) return false;
+
             if (activeType !== 'all') {
-                if (activeType === 'upcoming' && endDate < now) return false;
                 if (activeType === 'musical' && !genre.includes('musical') && !tags.includes('musical')) return false;
                 if (activeType === 'professional' && prodType !== 'professional') return false;
                 if (activeType === 'community' && prodType !== 'community') return false;
@@ -549,6 +582,10 @@
 
     // ── EVENT LISTENERS ────────────────────────────────
     document.getElementById('search-input').addEventListener('input', render);
+    document.getElementById('showPast').addEventListener('change', function() {
+        showPast = this.checked;
+        render();
+    });
 
     document.querySelectorAll('[data-month]').forEach(btn => {
         btn.addEventListener('click', () => {
@@ -570,7 +607,17 @@
     // Expose generateICS globally for onclick
     window.generateICS = generateICS;
 
-    loadShows();
+    // Auto-select current month on load
+    loadShows().then(() => {
+        const curMonth = TODAY.getMonth() + 1;
+        const monthBtn = document.querySelector(`[data-month="${curMonth}"]`);
+        if (monthBtn) {
+            document.querySelectorAll('[data-month]').forEach(b => b.classList.remove('active'));
+            monthBtn.classList.add('active');
+            activeMonth = String(curMonth);
+            render();
+        }
+    });
     </script>
 </body>
 </html>

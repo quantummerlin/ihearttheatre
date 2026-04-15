@@ -419,7 +419,7 @@
  <span></span>
  <span></span>
  </div>
- <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+ <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
  </div>
  </nav>
 
@@ -557,14 +557,16 @@
  <a href="index.html">Home</a>
  <a href="shows.html">Shows</a>
  <a href="auditions.html">Auditions</a>
- <a href="services.html">Services</a>
  <a href="reviews.html">Reviews</a>
  <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="services.html">Services</a>
+ <a href="musicals.html">Role Guides</a>
+ <a href="companies.html">Companies</a>
  <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
  <a href="privacy.html">Privacy</a>
  <a href="disclaimer.html">Disclaimer</a>
- <a href="contact.html">Contact</a>
- </div>
+</div>
  <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
  </div>
  </footer>
@@ -574,19 +576,27 @@
  document.getElementById('submissionForm').addEventListener('submit', function(e) {
  e.preventDefault();
  
- // Validate form
+ const btn = this.querySelector('button[type="submit"]');
+ btn.disabled = true;
+ btn.textContent = 'Sending...';
+
  const formData = new FormData(this);
  const data = Object.fromEntries(formData);
- 
- // Here you would typically send the data to your backend
- console.log('Form submitted:', data);
- 
- // Show success message
- document.getElementById('showForm').style.display = 'none';
- document.getElementById('successMessage').classList.add('show');
- 
- // Scroll to top
- window.scrollTo({ top: 0, behavior: 'smooth' });
+ data._subject = 'New Show Submission: ' + (data.showTitle || 'Untitled');
+
+ fetch('https://formsubmit.co/ajax/submissions@ihearttheatre.com', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+  body: JSON.stringify(data)
+ }).then(function() {
+  document.getElementById('showForm').style.display = 'none';
+  document.getElementById('successMessage').classList.add('show');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+ }).catch(function() {
+  btn.disabled = false;
+  btn.textContent = 'Submit Show';
+  alert('Something went wrong. Please try again or email submissions@ihearttheatre.com directly.');
+ });
  });
 
  // Progress bar

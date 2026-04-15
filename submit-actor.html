@@ -713,12 +713,23 @@
    submittedAt: new Date().toISOString()
   };
 
-  // TODO: wire to backend / form service (e.g. formsubmit.co, Netlify Forms)
-  console.log('[iHeartTheatre] Profile submission:', data);
+  var btn = document.getElementById('submitBtn');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
 
-  document.getElementById('profileForm').style.display = 'none';
-  document.getElementById('successMsg').classList.add('show');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  fetch('https://formsubmit.co/ajax/submissions@ihearttheatre.com', {
+   method: 'POST',
+   headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+   body: JSON.stringify(Object.assign({ _subject: 'New Performer Profile: ' + name }, data))
+  }).then(function() {
+   document.getElementById('profileForm').style.display = 'none';
+   document.getElementById('successMsg').classList.add('show');
+   window.scrollTo({ top: 0, behavior: 'smooth' });
+  }).catch(function() {
+   btn.disabled = false;
+   btn.textContent = 'Submit Profile';
+   alert('Something went wrong. Please try again or email submissions@ihearttheatre.com directly.');
+  });
  }
  </script>
 </body>

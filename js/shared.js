@@ -552,6 +552,35 @@ document.addEventListener('DOMContentLoaded', () => {
  initBackToTop();
  initCookieConsent();
  initLightbox();
- iHT._initPanel();
  initScrollReveal();
+ initFilterAccordion();
 });
+
+// ============================================
+// Filter Accordion
+// ============================================
+function initFilterAccordion() {
+ var headers = document.querySelectorAll('.filter-accordion-header');
+ headers.forEach(function(header) {
+  var body = document.getElementById(header.dataset.target);
+  if (!body) return;
+  header.addEventListener('click', function() {
+   var isOpen = header.classList.contains('open');
+   // Close all
+   document.querySelectorAll('.filter-accordion-header.open').forEach(function(h) {
+    h.classList.remove('open');
+    var b = document.getElementById(h.dataset.target);
+    if (b) b.classList.remove('open');
+   });
+   // Open this one if it was closed
+   if (!isOpen) {
+    header.classList.add('open');
+    body.classList.add('open');
+   }
+  });
+ });
+}
+
+// Expose so pages with dynamic filters can call after render
+window.iHTInitFilterAccordion = initFilterAccordion;
+

@@ -370,7 +370,7 @@
         <div class="nav-container">
             <a href="index.html" class="logo">iHeartTheatre</a>
             <div class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
-            <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html" class="active">Auditions</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+            <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html" class="active">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
         </div>
     </nav>
 
@@ -396,15 +396,25 @@
             <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
             <input type="search" id="search-input" placeholder="Search shows, companies, roles, locations…" aria-label="Search auditions">
         </div>
-        <div class="filter-row">
-            <span class="filter-label">Filter:</span>
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="open">Open Now</button>
-            <button class="filter-btn" data-filter="soon">Closing Soon</button>
-            <button class="filter-btn" data-filter="musical">Musicals</button>
-            <button class="filter-btn" data-filter="melbourne">Melbourne</button>
-            <button class="filter-btn" data-filter="regional">Regional VIC</button>
-            <button class="filter-btn" data-filter="junior">Junior / Youth</button>
+        <button class="filter-accordion-header" data-target="audition-filters-body" aria-expanded="false">
+            <span class="filter-acc-label">
+                <svg class="filter-acc-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Filter Auditions
+            </span>
+        </button>
+        <div class="filter-accordion-body" id="audition-filters-body">
+            <div class="filter-accordion-inner">
+                <div class="filter-row">
+                    <span class="filter-label">Filter:</span>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="open">Open Now</button>
+                    <button class="filter-btn" data-filter="soon">Closing Soon</button>
+                    <button class="filter-btn" data-filter="musical">Musicals</button>
+                    <button class="filter-btn" data-filter="melbourne">Melbourne</button>
+                    <button class="filter-btn" data-filter="regional">Regional VIC</button>
+                    <button class="filter-btn" data-filter="junior">Junior / Youth</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -428,16 +438,19 @@
     <footer>
         <div class="footer-content">
             <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="shows.html">Shows</a>
-                <a href="auditions.html">Auditions</a>
-                <a href="services.html">Services</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="about.html">About</a>
-                <a href="privacy.html">Privacy</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="contact.html">Contact</a>
-            </div>
+ <a href="index.html">Home</a>
+ <a href="shows.html">Shows</a>
+ <a href="auditions.html">Auditions</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="services.html">Services</a>
+ <a href="musicals.html">Role Guides</a>
+ <a href="companies.html">Companies</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+</div>
             <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
         </div>
     </footer>
@@ -494,7 +507,7 @@
         const labelMap = { open:'● Open', soon:'◑ Closing Soon', closed:'○ Closed' };
         const cd = st !== 'closed' ? getCountdown(item.audition_date) : '';
         const tags = (item.tags||[]).map(t=>`<span class="tag">${escHtml(t)}</span>`).join('');
-        const savedNow = window.iHT && iHT.isSaved('audition', item.id);
+        const savedNow = false;
         return `
 <article class="audition-card">
     <div class="card-header">
@@ -515,7 +528,6 @@
         <span class="card-posted">Posted ${fmtDate(item.date_posted)}</span>
         <div style="display:flex;align-items:center;gap:8px;">
             <a href="${escUrl(item.submission_link)}" target="_blank" rel="noopener noreferrer" class="card-cta">Full Details →</a>
-            <button class="btn-save${savedNow?' saved':''}" data-save-type="audition" data-save-id="${escHtml(item.id)}" onclick="toggleAuditionSave('${escHtml(item.id)}',this)" title="${savedNow?'Saved - click to unsave':'Save this audition'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:4px 9px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
         </div>
     </div>
 </article>`;

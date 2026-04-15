@@ -486,7 +486,6 @@
     function renderCard(show) {
         const tags = (show.genre||show.tags||[]).map(t=>`<span class="tag">${escHtml(t)}</span>`).join('');
         const badge = getBadgeHtml(show);
-        const savedNow = window.iHT && iHT.isSaved('show', show.id);
         const endDate = new Date(show.date_end || show.date_start);
         const startDate = new Date(show.date_start);
         const isPast = endDate < TODAY;
@@ -508,7 +507,6 @@
     <div class="show-card-footer">
         <button class="btn-cal btn-cal-ics" onclick="generateICS(SHOWS_DATA['${escHtml(show.id)}'])">+ .ics</button>
         <a href="${googleCalUrl(show)}" target="_blank" rel="noopener noreferrer" class="btn-cal btn-cal-google">+ Google Cal</a>
-        <button class="btn-save${savedNow?' saved':''}" data-save-type="show" data-save-id="${escHtml(show.id)}" onclick="toggleShowSave('${escHtml(show.id)}',this)" title="${savedNow?'Saved - click to unsave':'Save this show'}" style="background:none;border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:5px 10px;cursor:pointer;color:${savedNow?'#ff6b9d':'#a0a0b0'};font-size:1rem;margin-left:auto;transition:all 0.2s;">${savedNow?'♥':'♡'}</button>
     </div>
 </article>`;
     }

@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Submit Your Performer Profile | iHeartTheatre.com</title>
+ <meta name="description" content="Create your free performer profile on iHeartTheatre. Showcase your skills, experience and headshots to the Victorian theatre community.">
+ <meta name="theme-color" content="#667eea">
+ <meta name="apple-mobile-web-app-capable" content="yes">
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+ <link rel="manifest" href="manifest.json">
+ <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+ <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+ <link rel="stylesheet" href="css/shared.css?v=202604150813">
+ <link rel="canonical" href="https://ihearttheatre.com/submit-actor.html">
+ <meta property="og:type" content="website">
+ <meta property="og:site_name" content="iHeartTheatre">
+ <meta property="og:title" content="Submit Your Performer Profile | iHeartTheatre.com">
+ <meta property="og:description" content="Create your free performer profile on iHeartTheatre. Showcase your skills, experience and headshots to the Victorian theatre community.">
+ <meta property="og:url" content="https://ihearttheatre.com/submit-actor.html">
+ <meta property="og:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta name="twitter:card" content="summary_large_image">
+ <meta name="twitter:title" content="Submit Your Performer Profile | iHeartTheatre.com">
+ <meta name="twitter:description" content="Create your free performer profile on iHeartTheatre.">
+ <meta name="twitter:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <style>
+ .page-hero {
+  padding: 7rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+ }
+ .page-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+ }
+ .page-hero p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+ }
+
+ /* Layout */
+ .builder-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  align-items: start;
+ }
+ @media (max-width: 900px) {
+  .builder-wrap {
+   grid-template-columns: 1fr;
+  }
+  .profile-preview {
+   order: -1;
+  }
+ }
+
+ /* Form */
+ .form-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 2rem;
+ }
+ .form-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+ }
+ .form-section {
+  margin-bottom: 1.75rem;
+ }
+ .form-section-title {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--glass-border);
+ }
+ .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+ }
+ @media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+ }
+ .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+ }
+ .form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+ }
+ .form-group input,
+ .form-group select,
+ .form-group textarea {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  padding: 0.7rem 1rem;
+  transition: border-color 0.2s ease;
+  width: 100%;
+ }
+ .form-group input:focus,
+ .form-group select:focus,
+ .form-group textarea:focus {
+  outline: none;
+  border-color: rgba(102,126,234,0.5);
+ }
+ .form-group input::placeholder,
+ .form-group textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+ }
+ .form-group select option {
+  background: #12121a;
+  color: var(--text-primary);
+ }
+ .form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+ }
+
+ /* Skills grid */
+ .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.5rem;
+ }
+ .skill-check {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+ }
+ .skill-check:has(input:checked) {
+  background: rgba(102,126,234,0.12);
+  border-color: rgba(102,126,234,0.4);
+ }
+ .skill-check input {
+  accent-color: var(--accent-primary);
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+ }
+ .skill-check span {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+ }
+ .skill-check:has(input:checked) span {
+  color: var(--text-primary);
+ }
+
+ /* Photo preview */
+ .photo-preview-wrap {
+  position: relative;
+ }
+ .photo-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--glass-border);
+  display: none;
+  margin-top: 0.5rem;
+ }
+ .photo-thumb.show { display: block; }
+
+ /* Submit button */
+ .btn-submit {
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--gradient-primary);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(102,126,234,0.3);
+  margin-top: 0.5rem;
+ }
+ .btn-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(102,126,234,0.45);
+ }
+ .btn-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+ }
+
+ /* Success state */
+ .success-message {
+  display: none;
+  text-align: center;
+  padding: 3rem 2rem;
+ }
+ .success-message.show { display: block; }
+ .success-icon {
+  width: 64px;
+  height: 64px;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+ }
+ .success-message h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ }
+ .success-message p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+ }
+
+ /* Profile Preview Panel */
+ .profile-preview {
+  position: sticky;
+  top: 90px;
+ }
+ .preview-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+ }
+ .preview-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+ }
+ .preview-header-band {
+  height: 90px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+ }
+ .preview-body {
+  padding: 0 1.5rem 1.5rem;
+  margin-top: -40px;
+  position: relative;
+ }
+ .preview-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--bg-secondary);
+  background: var(--bg-tertiary);
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+  background: #12121a;
+ }
+ .preview-avatar svg {
+  opacity: 0.3;
+ }
+ .preview-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ }
+ .preview-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+ }
+ .preview-role {
+  font-size: 0.85rem;
+  color: var(--accent-primary);
+  margin-bottom: 0.5rem;
+ }
+ .preview-location {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+ }
+ .preview-bio {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+ }
+ .preview-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+ }
+ .preview-skill-chip {
+  padding: 0.25rem 0.65rem;
+  background: rgba(102,126,234,0.12);
+  border: 1px solid rgba(102,126,234,0.25);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--accent-primary);
+ }
+ .preview-empty-chip {
+  padding: 0.25rem 0.65rem;
+  background: var(--glass-bg);
+  border: 1px dashed var(--glass-border);
+  border-radius: 20px;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  opacity: 0.5;
+ }
+ .preview-social {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+ }
+ .preview-social a {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.7rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+ }
+ </style>
+</head>
+<body>
+ <div class="progress-bar" id="progressBar"></div>
+ <div class="particles" id="particles"></div>
+
+ <nav>
+  <div class="nav-container">
+   <a href="index.html" class="logo">iHeartTheatre</a>
+   <div class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+   <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+  </div>
+ </nav>
+
+ <section class="page-hero">
+  <div class="section-badge" style="display:inline-block;background:rgba(102,126,234,0.1);border:1px solid rgba(102,126,234,0.3);padding:0.4rem 1rem;border-radius:25px;font-size:0.8rem;color:var(--accent-primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:1.5rem;">Free Performer Profiles</div>
+  <h1>Build Your Performer Profile</h1>
+  <p>Showcase your skills, experience and contact details to directors, companies and audiences across Victoria. Profiles are reviewed and published by the iHeartTheatre team.</p>
+ </section>
+
+ <div class="builder-wrap">
+
+  <!-- FORM -->
+  <div>
+   <div class="form-card" id="profileForm">
+    <h2>Your Profile Details</h2>
+
+    <div class="form-section">
+     <div class="form-section-title">Basic Info</div>
+     <div class="form-row">
+      <div class="form-group">
+       <label for="f-name">Display Name <span style="color:#667eea">*</span></label>
+       <input type="text" id="f-name" placeholder="Your stage or full name" required>
+      </div>
+      <div class="form-group">
+       <label for="f-pronouns">Pronouns</label>
+       <input type="text" id="f-pronouns" placeholder="she/her, he/him, they/them…">
+      </div>
+     </div>
+     <div class="form-row">
+      <div class="form-group">
+       <label for="f-role">Primary Role <span style="color:#667eea">*</span></label>
+       <select id="f-role" required>
+        <option value="">Select...</option>
+        <option>Actor / Performer</option>
+        <option>Singer</option>
+        <option>Dancer</option>
+        <option>Musical Theatre Performer</option>
+        <option>Director</option>
+        <option>Musical Director</option>
+        <option>Choreographer</option>
+        <option>Stage Manager</option>
+        <option>Lighting / Sound Designer</option>
+        <option>Costume / Set Designer</option>
+        <option>Producer</option>
+        <option>Crew / Technician</option>
+       </select>
+      </div>
+      <div class="form-group">
+       <label for="f-location">Location <span style="color:#667eea">*</span></label>
+       <input type="text" id="f-location" placeholder="Melbourne, Geelong, Ballarat…" required>
+      </div>
+     </div>
+     <div class="form-group photo-preview-wrap">
+      <label for="f-photo">Headshot URL</label>
+      <input type="url" id="f-photo" placeholder="https://… paste a link to your headshot image">
+      <img class="photo-thumb" id="photoThumb" src="" alt="Headshot preview">
+      <span style="font-size:0.78rem;color:var(--text-secondary);margin-top:0.25rem;display:block;">Paste a public image URL, e.g. from your website or Google Drive. The iHeartTheatre team can help format this.</span>
+     </div>
+    </div>
+
+    <div class="form-section">
+     <div class="form-section-title">About You</div>
+     <div class="form-group">
+      <label for="f-bio">Bio <span style="color:#667eea">*</span></label>
+      <textarea id="f-bio" placeholder="Write a short bio: your background, training, recent credits and what drives you in theatre…" rows="5" required></textarea>
+      <span id="bio-count" style="font-size:0.78rem;color:var(--text-secondary);text-align:right;">0 / 500</span>
+     </div>
+     <div class="form-group">
+      <label for="f-training">Training / Education</label>
+      <textarea id="f-training" placeholder="NIDA, VCA, private coaching, community groups…" rows="3"></textarea>
+     </div>
+     <div class="form-group">
+      <label for="f-credits">Recent Credits</label>
+      <textarea id="f-credits" placeholder="Show / Role / Company — list your recent work…" rows="4"></textarea>
+     </div>
+    </div>
+
+    <div class="form-section">
+     <div class="form-section-title">Skills</div>
+     <div class="skills-grid" id="skillsGrid">
+      <!-- Generated by JS -->
+     </div>
+    </div>
+
+    <div class="form-section">
+     <div class="form-section-title">Links &amp; Contact</div>
+     <div class="form-row">
+      <div class="form-group">
+       <label for="f-instagram">Instagram</label>
+       <input type="text" id="f-instagram" placeholder="@yourhandle">
+      </div>
+      <div class="form-group">
+       <label for="f-website">Website</label>
+       <input type="url" id="f-website" placeholder="https://yourwebsite.com">
+      </div>
+     </div>
+     <div class="form-row">
+      <div class="form-group">
+       <label for="f-spotlight">Spotlight / Showcast Profile URL</label>
+       <input type="url" id="f-spotlight" placeholder="https://www.spotlight.com/…">
+      </div>
+      <div class="form-group">
+       <label for="f-email">Contact Email <span style="color:#667eea">*</span></label>
+       <input type="email" id="f-email" placeholder="your@email.com" required>
+       <span style="font-size:0.78rem;color:var(--text-secondary);">Not displayed publicly. Used by our team only.</span>
+      </div>
+     </div>
+     <div class="form-group">
+      <label for="f-availability">Current Availability</label>
+      <select id="f-availability">
+       <option value="">Select...</option>
+       <option>Available now</option>
+       <option>Available from mid-2026</option>
+       <option>Available from late 2026</option>
+       <option>Booked until end of 2026</option>
+       <option>Not actively seeking roles</option>
+      </select>
+     </div>
+    </div>
+
+    <div class="form-section">
+     <div class="form-section-title">Final Details</div>
+     <div class="form-group">
+      <label>
+       <input type="checkbox" id="f-consent" required style="accent-color:var(--accent-primary);margin-right:0.5rem;">
+       I give iHeartTheatre permission to publish my profile and understand I can request removal at any time.
+      </label>
+     </div>
+    </div>
+
+    <button class="btn-submit" id="submitBtn" type="button" onclick="submitProfile()">Submit Profile</button>
+   </div>
+
+   <div class="success-message form-card" id="successMsg">
+    <div class="success-icon">
+     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h2>Profile Submitted!</h2>
+    <p>Thanks for submitting your profile. Our team will review it and get back to you within a few days. Once approved, your profile will be live on the iHeartTheatre Performers directory.</p>
+    <a href="actors.html" style="display:inline-block;padding:0.85rem 2rem;background:var(--gradient-primary);color:white;border-radius:50px;text-decoration:none;font-weight:600;">View Performers Directory</a>
+   </div>
+  </div>
+
+  <!-- LIVE PREVIEW -->
+  <div class="profile-preview">
+   <div class="preview-label">Live Preview</div>
+   <div class="preview-card">
+    <div class="preview-header-band" id="pre-band"></div>
+    <div class="preview-body">
+     <div class="preview-avatar" id="pre-avatar">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+     </div>
+     <div class="preview-name" id="pre-name">Your Name</div>
+     <div class="preview-role" id="pre-role">Role / Discipline</div>
+     <div class="preview-location" id="pre-loc">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Melbourne, VIC</span>
+     </div>
+     <div class="preview-bio" id="pre-bio" style="display:none;"></div>
+     <div class="preview-skills" id="pre-skills">
+      <span class="preview-empty-chip">Acting</span>
+      <span class="preview-empty-chip">Singing</span>
+      <span class="preview-empty-chip">Dancing</span>
+     </div>
+     <div class="preview-social" id="pre-social"></div>
+    </div>
+   </div>
+  </div>
+
+ </div>
+
+ <footer>
+  <div class="footer-content">
+   <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="shows.html">Shows</a>
+    <a href="auditions.html">Auditions</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+    <a href="services.html">Services</a>
+    <a href="musicals.html">Role Guides</a>
+    <a href="companies.html">Companies</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+   </div>
+   <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
+  </div>
+ </footer>
+
+ <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+ <script src="js/shared.js?v=202604150813"></script>
+ <script>
+ var SKILLS = [
+  'Acting','Singing','Dancing','Musical Theatre','Physical Theatre',
+  'Improvisation','Devising','Shakespeare / Classical',
+  'Screen Acting','Voice Over','Clowning / Circus',
+  'Stage Combat','Ballet','Tap','Jazz / Contemporary',
+  'Hip Hop','Piano','Guitar','Violin','Drumkit',
+  'Directing','Stage Management','Choreography',
+  'Lighting Design','Sound Design','Set Design','Costume Design'
+ ];
+
+ // Build skills grid
+ var grid = document.getElementById('skillsGrid');
+ SKILLS.forEach(function(s) {
+  var id = 'sk-' + s.toLowerCase().replace(/[^a-z]/g,'-');
+  var label = document.createElement('label');
+  label.className = 'skill-check';
+  label.innerHTML = '<input type="checkbox" id="' + id + '" value="' + s + '"> <span>' + s + '</span>';
+  grid.appendChild(label);
+ });
+
+ // Live preview updates
+ function bind(id, fn) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('input', fn);
+  el.addEventListener('change', fn);
+ }
+
+ bind('f-name', function() {
+  document.getElementById('pre-name').textContent = this.value || 'Your Name';
+ });
+ bind('f-role', function() {
+  document.getElementById('pre-role').textContent = this.value || 'Role / Discipline';
+ });
+ bind('f-location', function() {
+  document.getElementById('pre-loc').querySelector('span').textContent = this.value || 'Melbourne, VIC';
+ });
+ bind('f-bio', function() {
+  var bio = document.getElementById('pre-bio');
+  document.getElementById('bio-count').textContent = this.value.length + ' / 500';
+  if (this.value) {
+   bio.textContent = this.value;
+   bio.style.display = 'block';
+  } else {
+   bio.style.display = 'none';
+  }
+ });
+ bind('f-photo', function() {
+  var url = this.value.trim();
+  var thumb = document.getElementById('photoThumb');
+  var avatar = document.getElementById('pre-avatar');
+  if (url) {
+   thumb.src = url;
+   thumb.classList.add('show');
+   avatar.innerHTML = '<img src="' + url + '" alt="Headshot" onerror="this.style.display=\'none\'">';
+  } else {
+   thumb.classList.remove('show');
+   avatar.innerHTML = '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+  }
+ });
+
+ // Skills checkboxes update preview
+ grid.addEventListener('change', function() {
+  var checked = Array.from(grid.querySelectorAll('input:checked')).map(function(i) { return i.value; });
+  var container = document.getElementById('pre-skills');
+  if (checked.length === 0) {
+   container.innerHTML = '<span class="preview-empty-chip">Acting</span><span class="preview-empty-chip">Singing</span><span class="preview-empty-chip">Dancing</span>';
+  } else {
+   container.innerHTML = checked.map(function(s) {
+    return '<span class="preview-skill-chip">' + s + '</span>';
+   }).join('');
+  }
+ });
+
+ // Social links update preview
+ function updateSocial() {
+  var instagram = document.getElementById('f-instagram').value.trim();
+  var website = document.getElementById('f-website').value.trim();
+  var spotlight = document.getElementById('f-spotlight').value.trim();
+  var html = '';
+  if (instagram) {
+   var handle = instagram.startsWith('@') ? instagram.slice(1) : instagram;
+   html += '<a href="https://instagram.com/' + handle + '" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/></svg> ' + instagram + '</a>';
+  }
+  if (website) {
+   html += '<a href="' + website + '" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Website</a>';
+  }
+  if (spotlight) {
+   html += '<a href="' + spotlight + '" target="_blank" rel="noopener"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Spotlight</a>';
+  }
+  document.getElementById('pre-social').innerHTML = html;
+ }
+ ['f-instagram','f-website','f-spotlight'].forEach(function(id) {
+  var el = document.getElementById(id);
+  if (el) el.addEventListener('input', updateSocial);
+ });
+
+ // Submit
+ function submitProfile() {
+  var name = document.getElementById('f-name').value.trim();
+  var role = document.getElementById('f-role').value;
+  var location = document.getElementById('f-location').value.trim();
+  var bio = document.getElementById('f-bio').value.trim();
+  var email = document.getElementById('f-email').value.trim();
+  var consent = document.getElementById('f-consent').checked;
+
+  if (!name || !role || !location || !bio || !email || !consent) {
+   alert('Please fill in all required fields and agree to the terms.');
+   return;
+  }
+
+  var skills = Array.from(document.querySelectorAll('#skillsGrid input:checked')).map(function(i) { return i.value; });
+
+  var data = {
+   name: name,
+   pronouns: document.getElementById('f-pronouns').value.trim(),
+   role: role,
+   location: location,
+   bio: bio,
+   training: document.getElementById('f-training').value.trim(),
+   credits: document.getElementById('f-credits').value.trim(),
+   skills: skills,
+   instagram: document.getElementById('f-instagram').value.trim(),
+   website: document.getElementById('f-website').value.trim(),
+   spotlight: document.getElementById('f-spotlight').value.trim(),
+   availability: document.getElementById('f-availability').value,
+   email: email,
+   submittedAt: new Date().toISOString()
+  };
+
+  // TODO: wire to backend / form service (e.g. formsubmit.co, Netlify Forms)
+  console.log('[iHeartTheatre] Profile submission:', data);
+
+  document.getElementById('profileForm').style.display = 'none';
+  document.getElementById('successMsg').classList.add('show');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+ }
+ </script>
+</body>
+</html>

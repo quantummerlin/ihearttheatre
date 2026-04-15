@@ -1,5 +1,5 @@
 // iHeartTheatre Service Worker v2.2
-const CACHE_NAME = 'ihearttheatre-v10';
+const CACHE_NAME = 'ihearttheatre-v11';
 const OFFLINE_URL = '/404.html';
 
 // ── Bump CACHE_NAME (e.g. v6, v7) on every deploy to ensure everyone gets fresh assets ──
@@ -12,6 +12,7 @@ const PRECACHE_URLS = [
   '/auditions.html',
   '/services.html',
   '/musicals.html',
+  '/career-builder.html',
   '/data/musicals-index.json',
   '/data/audition-songs.json',
   '/reviews.html',

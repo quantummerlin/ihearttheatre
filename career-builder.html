@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Build your performer career — find roles that match your voice and skills, get audition guidance, and create a professional resume. Free for every performer.">
+<meta name="theme-color" content="#667eea">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Career Builder — iHeartTheatre</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-192x192.png">
+<link rel="canonical" href="https://ihearttheatre.com/career-builder.html">
+<meta property="og:title" content="Career Builder — iHeartTheatre">
+<meta property="og:description" content="Find roles that match your voice, get audition prep, and build your professional performing resume.">
+<meta property="og:url" content="https://ihearttheatre.com/career-builder.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/shared.css?v=20260415">
+<style>
+:root {
+  --bg-primary: #050508;
+  --bg-secondary: #0a0a0f;
+  --bg-tertiary: #12121a;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a0a0b0;
+  --accent-primary: #667eea;
+  --accent-secondary: #764ba2;
+  --accent-gold: #ffd700;
+  --glass-bg: rgba(255,255,255,0.03);
+  --glass-border: rgba(255,255,255,0.08);
+  --grad: linear-gradient(135deg, #667eea, #764ba2);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg-primary); color: var(--text-primary); font-family: 'Inter', -apple-system, sans-serif; min-height: 100vh; }
+
+/* Hero */
+.cb-hero {
+  padding: 100px 20px 40px;
+  text-align: center;
+  background: radial-gradient(ellipse at top, rgba(102,126,234,0.10) 0%, transparent 65%);
+}
+.cb-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(102,126,234,0.2), rgba(118,75,162,0.2));
+  border: 1px solid rgba(102,126,234,0.3);
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent-primary);
+  margin-bottom: 16px;
+}
+.cb-hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+.cb-hero p { color: var(--text-secondary); font-size: 1rem; max-width: 520px; margin: 0 auto 8px; }
+.cb-autosave { font-size: 0.78rem; color: rgba(102,126,234,0.6); display: flex; align-items: center; justify-content: center; gap: 5px; margin-top: 6px; }
+.cb-autosave::before { content: '●'; color: #4caf50; font-size: 0.6rem; }
+
+/* Tab strip */
+.tab-strip { display: flex; justify-content: center; gap: 4px; padding: 0 20px 32px; flex-wrap: wrap; }
+.tab-btn {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  display: flex; align-items: center; gap: 8px;
+}
+.tab-btn:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+.tab-btn.active { background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25)); border-color: var(--accent-primary); color: var(--text-primary); }
+.tab-btn .tab-count {
+  background: var(--accent-primary);
+  color: #fff;
+  font-size: 0.7rem;
+  border-radius: 10px;
+  padding: 1px 7px;
+  display: none;
+}
+.tab-btn .tab-count.show { display: inline; }
+
+/* Tab panels */
+.tab-panel { display: none; max-width: 900px; margin: 0 auto; padding: 0 20px 60px; }
+.tab-panel.active { display: block; }
+
+/* Section headers */
+.section-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--accent-primary);
+  margin-bottom: 14px;
+  margin-top: 28px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-label::after { content: ''; flex: 1; height: 1px; background: var(--glass-border); }
+
+/* Card base */
+.cb-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+}
+
+/* Profile form */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) { .profile-grid { grid-template-columns: 1fr; } }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); }
+.form-input {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 11px 14px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+.form-input:focus { border-color: var(--accent-primary); }
+.form-input option { background: #12121a; }
+textarea.form-input { resize: vertical; min-height: 90px; }
+
+/* Pill-style selector */
+.pill-group { display: flex; flex-wrap: wrap; gap: 8px; }
+.pill-option {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.pill-option.selected, .pill-option:hover {
+  background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25));
+  border-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+/* Skills grid */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; }
+.skill-check {
+  display: flex; align-items: center; gap: 8px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  user-select: none;
+}
+.skill-check input { display: none; }
+.skill-check.checked { border-color: var(--accent-primary); color: var(--text-primary); background: rgba(102,126,234,0.1); }
+.skill-check::before {
+  content: '○';
+  font-size: 1rem;
+  color: var(--glass-border);
+  transition: color 0.2s;
+  flex-shrink: 0;
+}
+.skill-check.checked::before { content: '●'; color: var(--accent-primary); }
+
+/* CTA button */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--grad);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 32px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s, transform 0.2s;
+  text-decoration: none;
+}
+.btn-primary:hover { opacity: 0.9; transform: translateY(-1px); }
+.btn-primary:disabled { opacity: 0.5; cursor: default; transform: none; }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 9px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.btn-secondary:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+
+/* Match results */
+#matches-list { }
+.matches-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 20px; flex-wrap: wrap; gap: 10px;
+}
+.matches-count { font-size: 0.85rem; color: var(--text-secondary); }
+.matches-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.match-filter-pill {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  padding: 5px 12px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.match-filter-pill.active { background: rgba(102,126,234,0.2); border-color: var(--accent-primary); color: var(--text-primary); }
+
+.role-match-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  padding: 18px 20px;
+  margin-bottom: 12px;
+  display: flex; gap: 16px; align-items: flex-start;
+  transition: border-color 0.2s;
+  position: relative;
+}
+.role-match-card:hover { border-color: rgba(102,126,234,0.35); }
+.role-match-card.saved-card { border-color: rgba(255,215,0,0.3); }
+
+.match-pct-col {
+  flex-shrink: 0;
+  width: 56px;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.match-pct-ring {
+  width: 52px; height: 52px;
+  position: relative;
+}
+.match-pct-ring svg { width: 52px; height: 52px; transform: rotate(-90deg); }
+.match-pct-ring .ring-bg { fill: none; stroke: rgba(255,255,255,0.06); stroke-width: 4; }
+.match-pct-ring .ring-fill { fill: none; stroke-width: 4; stroke-linecap: round; stroke-dasharray: 138.2; transition: stroke-dashoffset 0.8s ease; }
+.match-pct-num {
+  position: absolute; inset: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+.match-pct-label { font-size: 0.65rem; color: var(--text-secondary); text-align: center; }
+
+.match-content { flex: 1; min-width: 0; }
+.match-role-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; margin-bottom: 3px; }
+.match-musical { font-size: 0.83rem; color: var(--accent-primary); margin-bottom: 8px; }
+.match-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 10px; }
+.match-chip {
+  font-size: 0.72rem;
+  border-radius: 5px;
+  padding: 2px 8px;
+  font-weight: 600;
+  border: 1px solid;
+}
+.chip-type-lead { color: var(--accent-gold); border-color: rgba(255,215,0,0.3); background: rgba(255,215,0,0.08); }
+.chip-type-supporting { color: var(--accent-primary); border-color: rgba(102,126,234,0.3); background: rgba(102,126,234,0.08); }
+.chip-type-character { color: #c084fc; border-color: rgba(192,132,252,0.3); background: rgba(192,132,252,0.08); }
+.chip-type-ensemble { color: #4caf50; border-color: rgba(76,175,80,0.3); background: rgba(76,175,80,0.08); }
+.chip-junior { color: var(--accent-gold); border-color: rgba(255,215,0,0.3); background: rgba(255,215,0,0.08); }
+.chip-vocal { color: var(--text-secondary); border-color: var(--glass-border); background: rgba(255,255,255,0.04); }
+.chip-label { color: #c084fc; border-color: rgba(192,132,252,0.25); background: rgba(192,132,252,0.07); }
+
+.match-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.btn-save-role {
+  background: none; border: 1px solid var(--glass-border);
+  border-radius: 8px; padding: 6px 12px;
+  font-size: 0.8rem; font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer; font-family: inherit;
+  transition: all 0.2s;
+}
+.btn-save-role:hover, .btn-save-role.saved { border-color: var(--accent-gold); color: var(--accent-gold); }
+.btn-view-role {
+  background: var(--grad);
+  border: none; border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 0.8rem; font-weight: 600;
+  color: #fff; cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-flex; align-items: center; gap: 4px;
+  transition: opacity 0.2s;
+}
+.btn-view-role:hover { opacity: 0.85; }
+
+/* Empty state */
+.empty-state {
+  text-align: center; padding: 60px 20px;
+  color: var(--text-secondary);
+}
+.empty-state-icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.4; }
+.empty-state h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--text-primary); margin-bottom: 8px; }
+.empty-state p { font-size: 0.9rem; max-width: 380px; margin: 0 auto 20px; }
+
+/* Resume */
+.resume-print-area { }
+
+.resume-header-row {
+  display: flex; gap: 24px; align-items: flex-start;
+  margin-bottom: 20px;
+}
+.resume-headshot-wrap {
+  flex-shrink: 0;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--glass-border);
+  overflow: hidden;
+  background: var(--bg-tertiary);
+  display: flex; align-items: center; justify-content: center;
+}
+.resume-headshot-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.resume-headshot-wrap .headshot-placeholder {
+  font-size: 2.5rem; color: var(--text-secondary); opacity: 0.3;
+}
+.resume-name-fields { flex: 1; display: flex; flex-direction: column; gap: 10px; }
+.resume-full-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.credits-table {
+  width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 0.85rem;
+}
+.credits-table th {
+  text-align: left; padding: 8px 10px;
+  border-bottom: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  font-weight: 600; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.credits-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  vertical-align: middle;
+}
+.credits-table td input {
+  background: transparent; border: none;
+  color: var(--text-primary); font-family: inherit;
+  font-size: 0.85rem; width: 100%; outline: none;
+  padding: 2px 0;
+}
+.credits-table td input:focus { border-bottom: 1px solid var(--accent-primary); }
+.credits-table .btn-remove-row {
+  background: none; border: none;
+  color: rgba(255,100,100,0.5); cursor: pointer;
+  font-size: 1rem; padding: 2px 6px;
+  transition: color 0.2s;
+}
+.credits-table .btn-remove-row:hover { color: rgba(255,100,100,1); }
+.btn-add-row {
+  background: none;
+  border: 1px dashed rgba(102,126,234,0.3);
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  transition: all 0.2s;
+  margin-top: 4px;
+}
+.btn-add-row:hover { border-color: var(--accent-primary); background: rgba(102,126,234,0.06); }
+
+.resume-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; padding-top: 24px; border-top: 1px solid var(--glass-border); margin-top: 24px; }
+
+/* Saved grid */
+.saved-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.saved-role-card {
+  background: var(--glass-bg);
+  border: 1px solid rgba(255,215,0,0.15);
+  border-radius: 14px;
+  padding: 18px;
+}
+.saved-role-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 600; margin-bottom: 4px; }
+.saved-musical { font-size: 0.82rem; color: var(--accent-primary); margin-bottom: 10px; }
+.btn-unsave { background: none; border: 1px solid rgba(255,100,100,0.3); border-radius: 7px; padding: 5px 12px; font-size: 0.78rem; color: rgba(255,120,120,0.7); cursor: pointer; font-family: inherit; transition: all 0.2s; }
+.btn-unsave:hover { border-color: rgba(255,100,100,0.8); color: #ff8080; }
+
+/* Loading */
+.loading-state { display: flex; flex-direction: column; align-items: center; padding: 60px 20px; gap: 16px; color: var(--text-secondary); }
+.spinner { width: 40px; height: 40px; border: 3px solid rgba(102,126,234,0.2); border-top-color: var(--accent-primary); border-radius: 50%; animation: spin 0.8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-progress { font-size: 0.82rem; color: var(--accent-primary); }
+
+/* Print styles */
+@media print {
+  nav, .progress-bar, .particles, .tab-strip, #backToTop,
+  .resume-actions, .btn-remove-row, .btn-add-row,
+  .tab-panel:not(.active), .cb-hero, footer { display: none !important; }
+  body { background: #fff; color: #111; }
+  .tab-panel.active { display: block; max-width: 100%; padding: 0; }
+  .cb-card { border: 1px solid #ddd; padding: 16px; break-inside: avoid; }
+  .resume-full-name { -webkit-text-fill-color: #111; color: #111; background: none; }
+  .credits-table th { color: #555; }
+  .credits-table td input { color: #111; }
+  .form-input, textarea.form-input { border: none; padding: 0; background: transparent; color: #111; }
+  @page { margin: 20mm; }
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .role-match-card { flex-direction: column; }
+  .match-pct-col { flex-direction: row; align-items: center; width: 100%; gap: 10px; }
+  .match-pct-label { font-size: 0.75rem; }
+  .resume-header-row { flex-direction: column; align-items: center; }
+  .tab-btn { padding: 9px 14px; font-size: 0.82rem; }
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RS9LV72HK8');
+</script>
+</head>
+<body>
+<div class="progress-bar" id="progressBar"></div>
+<div class="particles" id="particles"></div>
+
+<nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo">iHeartTheatre</a>
+    <div class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shows.html">Shows</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="musicals.html">Musicals</a>
+      <a href="career-builder.html" class="active">Career Builder</a>
+    </div>
+  </div>
+</nav>
+
+<div class="cb-hero">
+  <div class="cb-badge">Free Performer Tool</div>
+  <h1>Career Builder</h1>
+  <p>Find roles that suit your voice, get audition prep guidance, and build your professional resume — all in one place.</p>
+  <div class="cb-autosave" id="autosaveStatus">Your profile saves automatically</div>
+</div>
+
+<div class="tab-strip">
+  <button class="tab-btn active" data-tab="profile" onclick="switchTab('profile')">My Profile</button>
+  <button class="tab-btn" data-tab="matches" onclick="switchTab('matches')">
+    Role Matches <span class="tab-count" id="matchCount"></span>
+  </button>
+  <button class="tab-btn" data-tab="resume" onclick="switchTab('resume')">My Resume</button>
+  <button class="tab-btn" data-tab="saved" onclick="switchTab('saved')">
+    Saved Roles <span class="tab-count" id="savedCount"></span>
+  </button>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     TAB 1: MY PROFILE
+═══════════════════════════════════════════════════ -->
+<div class="tab-panel active" id="tab-profile">
+
+  <div class="cb-card">
+    <div class="section-label">About You</div>
+    <div class="profile-grid">
+      <div class="form-group">
+        <label for="p-name">Your Name</label>
+        <input class="form-input" type="text" id="p-name" placeholder="First Last" autocomplete="name">
+      </div>
+      <div class="form-group">
+        <label for="p-age">Age</label>
+        <input class="form-input" type="number" id="p-age" min="5" max="80" placeholder="e.g. 14">
+      </div>
+    </div>
+
+    <div class="section-label">Voice Type</div>
+    <div class="pill-group" id="vocal-type-pills">
+      <button class="pill-option" data-val="soprano">Soprano</button>
+      <button class="pill-option" data-val="mezzo-soprano">Mezzo-Soprano</button>
+      <button class="pill-option" data-val="alto">Alto</button>
+      <button class="pill-option" data-val="tenor">Tenor</button>
+      <button class="pill-option" data-val="baritone">Baritone</button>
+      <button class="pill-option" data-val="bass">Bass</button>
+      <button class="pill-option" data-val="child-treble">Child Treble</button>
+    </div>
+
+    <div class="section-label">Vocal Range</div>
+    <div class="profile-grid">
+      <div class="form-group">
+        <label for="p-range-low">Lowest Comfortable Note</label>
+        <input class="form-input" type="text" id="p-range-low" placeholder="e.g. A3">
+      </div>
+      <div class="form-group">
+        <label for="p-range-high">Highest Comfortable Note</label>
+        <input class="form-input" type="text" id="p-range-high" placeholder="e.g. G5">
+      </div>
+    </div>
+
+    <div class="section-label">Experience Level</div>
+    <div class="pill-group" id="experience-pills">
+      <button class="pill-option" data-val="first-show">First Show</button>
+      <button class="pill-option" data-val="community">Community Theatre</button>
+      <button class="pill-option" data-val="semi-pro">Semi-Professional</button>
+    </div>
+
+    <div class="section-label">Dance Level</div>
+    <div class="pill-group" id="dance-pills">
+      <button class="pill-option" data-val="none">None / Minimal</button>
+      <button class="pill-option" data-val="beginner">Beginner</button>
+      <button class="pill-option" data-val="intermediate">Intermediate</button>
+      <button class="pill-option" data-val="advanced">Advanced</button>
+    </div>
+
+    <div class="section-label">Skills</div>
+    <div class="skills-grid" id="skills-grid">
+      <label class="skill-check"><input type="checkbox" value="tap"> Tap Dance</label>
+      <label class="skill-check"><input type="checkbox" value="ballet"> Ballet</label>
+      <label class="skill-check"><input type="checkbox" value="contemporary"> Contemporary</label>
+      <label class="skill-check"><input type="checkbox" value="jazz"> Jazz Dance</label>
+      <label class="skill-check"><input type="checkbox" value="acrobatics"> Acrobatics / Tumbling</label>
+      <label class="skill-check"><input type="checkbox" value="musical-theatre"> Musical Theatre Style</label>
+      <label class="skill-check"><input type="checkbox" value="acting"> Strong Acting Focus</label>
+      <label class="skill-check"><input type="checkbox" value="comedy"> Comedy</label>
+      <label class="skill-check"><input type="checkbox" value="physical-theatre"> Physical Theatre</label>
+      <label class="skill-check"><input type="checkbox" value="dialect"> Dialect Work</label>
+      <label class="skill-check"><input type="checkbox" value="stage-combat"> Stage Combat</label>
+      <label class="skill-check"><input type="checkbox" value="opera-trained"> Classical / Opera</label>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top: 8px;">
+    <button class="btn-primary" onclick="runMatching()">
+      Find My Roles →
+    </button>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     TAB 2: ROLE MATCHES
+═══════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-matches">
+
+  <div id="matches-loading" class="loading-state" style="display:none;">
+    <div class="spinner"></div>
+    <div class="loading-progress" id="loadingProgress">Loading musicals…</div>
+  </div>
+
+  <div id="matches-no-profile" class="empty-state">
+    <div class="empty-state-icon">🎭</div>
+    <h3>Set Up Your Profile First</h3>
+    <p>Fill in your voice type, age, and experience level on the Profile tab, then hit Find My Roles.</p>
+    <button class="btn-primary" onclick="switchTab('profile')">Go to My Profile</button>
+  </div>
+
+  <div id="matches-content" style="display:none;">
+    <div class="matches-header">
+      <div class="matches-count" id="matchesCount"></div>
+      <div class="matches-filters">
+        <button class="match-filter-pill active" data-filter="all" onclick="filterMatches('all', this)">All</button>
+        <button class="match-filter-pill" data-filter="lead" onclick="filterMatches('lead', this)">Leads</button>
+        <button class="match-filter-pill" data-filter="supporting" onclick="filterMatches('supporting', this)">Supporting</button>
+        <button class="match-filter-pill" data-filter="junior" onclick="filterMatches('junior', this)">Jr Available</button>
+        <button class="match-filter-pill" data-filter="high-score" onclick="filterMatches('high-score', this)">Best Matches</button>
+      </div>
+    </div>
+    <div id="matches-list"></div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     TAB 3: MY RESUME
+═══════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-resume">
+
+  <div class="resume-print-area">
+    <div class="cb-card">
+      <div class="section-label">Profile Header</div>
+      <div class="resume-header-row">
+        <div class="resume-headshot-wrap" id="headshotPreview">
+          <div class="headshot-placeholder">☺</div>
+        </div>
+        <div class="resume-name-fields">
+          <div class="resume-full-name" id="resumeNamePreview">Your Name</div>
+          <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
+            <input class="form-input" type="url" id="r-headshot" placeholder="Headshot URL (paste an image link)">
+            <input class="form-input" type="text" id="r-pronouns" placeholder="Pronouns (optional, e.g. she/her)">
+            <div class="profile-grid" style="margin-bottom:0;">
+              <input class="form-input" type="text" id="r-location" placeholder="Location (e.g. Melbourne, VIC)">
+              <input class="form-input" type="email" id="r-email" placeholder="Contact email">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-label">Bio / Statement</div>
+      <textarea class="form-input" id="r-bio" placeholder="A short sentence or two about yourself as a performer. What drives you, what you bring to the stage."></textarea>
+    </div>
+
+    <div class="cb-card">
+      <div class="section-label" style="display:flex; justify-content:space-between; align-items:center;">
+        <span>Performance Credits</span>
+      </div>
+      <table class="credits-table" id="credits-table">
+        <thead>
+          <tr>
+            <th>Show</th>
+            <th>Role / Position</th>
+            <th>Company</th>
+            <th>Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="credits-tbody"></tbody>
+      </table>
+      <button class="btn-add-row" onclick="addCredit()">+ Add Credit</button>
+    </div>
+
+    <div class="cb-card">
+      <div class="section-label">Training</div>
+      <table class="credits-table" id="training-table">
+        <thead>
+          <tr>
+            <th>School / Teacher</th>
+            <th>Discipline</th>
+            <th>Duration / Year</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="training-tbody"></tbody>
+      </table>
+      <button class="btn-add-row" onclick="addTraining()">+ Add Training</button>
+    </div>
+
+    <div class="cb-card">
+      <div class="section-label">Special Skills</div>
+      <textarea class="form-input" id="r-special-skills" placeholder="List any special skills relevant to performing: e.g. Tap (Grade 4), Acrobatics (basic tumbling), British & American accents, Stage combat (unarmed)…"></textarea>
+    </div>
+  </div>
+
+  <div class="resume-actions">
+    <button class="btn-primary" onclick="window.print()">Print / Save as PDF</button>
+    <span style="font-size:0.8rem; color: var(--text-secondary);">Use your browser's Print → Save as PDF option</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     TAB 4: SAVED ROLES
+═══════════════════════════════════════════════════ -->
+<div class="tab-panel" id="tab-saved">
+
+  <div id="saved-empty" class="empty-state">
+    <div class="empty-state-icon">♥</div>
+    <h3>No Saved Roles Yet</h3>
+    <p>Save roles from the Role Matches tab or from the Musicals page to build your shortlist.</p>
+    <button class="btn-primary" onclick="switchTab('matches')">Browse My Matches</button>
+  </div>
+
+  <div id="saved-content" style="display:none;">
+    <div class="matches-header">
+      <div class="matches-count" id="savedRolesCount"></div>
+      <button class="btn-secondary" onclick="clearAllSaved()" style="font-size:0.78rem;">Clear All</button>
+    </div>
+    <div class="saved-grid" id="saved-grid"></div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="whats-on.html">What's On</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="musicals.html">Musicals</a>
+      <a href="career-builder.html">Career Builder</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Home of Victorian Theatre</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+
+<script>
+// ═══════════════════════════════════════════════════════
+// STATE MANAGEMENT
+// ═══════════════════════════════════════════════════════
+const STATE_KEY = 'iht_career_builder_v2';
+let appState = {
+  profile: {
+    name: '', age: '',
+    vocal_type: '',
+    range_low: '', range_high: '',
+    experience: 'community',
+    dance_level: 'beginner',
+    skills: []
+  },
+  resume: {
+    headshot: '', pronouns: '', location: '', email: '',
+    bio: '',
+    credits: [],
+    training: [],
+    special_skills: ''
+  },
+  saved: [] // [{musicalId, roleId, roleName, musicalTitle, voiceType, roleType, jr}]
+};
+
+let allMatchedRoles = []; // computed on run
+let matchFilter = 'all';
+let matchesLoaded = false;
+
+function saveAppState() {
+  try {
+    localStorage.setItem(STATE_KEY, JSON.stringify(appState));
+    showAutosave();
+  } catch(e) {}
+}
+
+function loadAppState() {
+  try {
+    const raw = localStorage.getItem(STATE_KEY);
+    if (!raw) return;
+    const saved = JSON.parse(raw);
+    // Deep merge
+    appState.profile = Object.assign({}, appState.profile, saved.profile || {});
+    appState.resume = Object.assign({}, appState.resume, saved.resume || {});
+    if (!Array.isArray(appState.resume.credits)) appState.resume.credits = [];
+    if (!Array.isArray(appState.resume.training)) appState.resume.training = [];
+    appState.saved = Array.isArray(saved.saved) ? saved.saved : [];
+  } catch(e) {}
+}
+
+function showAutosave() {
+  const el = document.getElementById('autosaveStatus');
+  if (!el) return;
+  el.textContent = 'Saved';
+  el.style.color = '#4caf50';
+  setTimeout(() => {
+    el.textContent = 'Your profile saves automatically';
+    el.style.color = '';
+  }, 2000);
+}
+
+// ═══════════════════════════════════════════════════════
+// TAB SWITCHING
+// ═══════════════════════════════════════════════════════
+function switchTab(tabId) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  const panel = document.getElementById('tab-' + tabId);
+  if (panel) panel.classList.add('active');
+  const btn = document.querySelector('[data-tab="' + tabId + '"]');
+  if (btn) btn.classList.add('active');
+
+  if (tabId === 'matches' && !matchesLoaded && hasProfile()) {
+    runMatching();
+  } else if (tabId === 'matches') {
+    updateMatchesView();
+  }
+  if (tabId === 'saved') renderSaved();
+  if (tabId === 'resume') syncResumeFromProfile();
+}
+
+function hasProfile() {
+  return !!(appState.profile.vocal_type || appState.profile.experience || appState.profile.age);
+}
+
+// ═══════════════════════════════════════════════════════
+// PROFILE FORM BINDINGS
+// ═══════════════════════════════════════════════════════
+function bindProfileForm() {
+  // Text inputs
+  ['p-name','p-age','p-range-low','p-range-high'].forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const key = id.replace('p-', '').replace(/-/g, '_');
+    el.value = appState.profile[key] || appState.profile[id.replace('p-','')] || '';
+    el.addEventListener('input', () => {
+      if (id === 'p-name') appState.profile.name = el.value;
+      else if (id === 'p-age') appState.profile.age = el.value;
+      else if (id === 'p-range-low') appState.profile.range_low = el.value;
+      else if (id === 'p-range-high') appState.profile.range_high = el.value;
+      saveAppState();
+      if (id === 'p-name') {
+        const preview = document.getElementById('resumeNamePreview');
+        if (preview) preview.textContent = el.value || 'Your Name';
+      }
+    });
+  });
+
+  // Pill groups
+  bindPillGroup('vocal-type-pills', 'vocal_type', false);
+  bindPillGroup('experience-pills', 'experience', false);
+  bindPillGroup('dance-pills', 'dance_level', false);
+
+  // Skills checkboxes
+  document.querySelectorAll('#skills-grid .skill-check').forEach(label => {
+    const cb = label.querySelector('input');
+    if (appState.profile.skills.includes(cb.value)) {
+      cb.checked = true;
+      label.classList.add('checked');
+    }
+    label.addEventListener('click', () => {
+      const checked = !label.classList.contains('checked');
+      label.classList.toggle('checked', checked);
+      cb.checked = checked;
+      if (checked && !appState.profile.skills.includes(cb.value)) {
+        appState.profile.skills.push(cb.value);
+      } else {
+        appState.profile.skills = appState.profile.skills.filter(s => s !== cb.value);
+      }
+      saveAppState();
+    });
+  });
+}
+
+function bindPillGroup(groupId, profileKey, multiSelect) {
+  const group = document.getElementById(groupId);
+  if (!group) return;
+  const current = appState.profile[profileKey];
+  group.querySelectorAll('.pill-option').forEach(btn => {
+    if (current === btn.dataset.val || (Array.isArray(current) && current.includes(btn.dataset.val))) {
+      btn.classList.add('selected');
+    }
+    btn.addEventListener('click', () => {
+      if (!multiSelect) {
+        group.querySelectorAll('.pill-option').forEach(b => b.classList.remove('selected'));
+      }
+      btn.classList.toggle('selected');
+      appState.profile[profileKey] = btn.classList.contains('selected') ? btn.dataset.val : '';
+      saveAppState();
+    });
+  });
+}
+
+// ═══════════════════════════════════════════════════════
+// MATCHING ALGORITHM
+// ═══════════════════════════════════════════════════════
+const VOCAL_FAMILIES = {
+  soprano: ['soprano'],
+  mezzo: ['mezzo'],
+  alto: ['alto', 'contralto'],
+  tenor: ['tenor'],
+  baritone: ['baritone'],
+  bass: ['bass'],
+  treble: ['treble', 'child treble', 'child soprano', 'boy soprano', 'unchanged']
+};
+
+const VOCAL_ADJACENT = {
+  soprano: ['mezzo'],
+  mezzo: ['soprano', 'alto'],
+  alto: ['mezzo'],
+  tenor: ['baritone'],
+  baritone: ['tenor', 'bass'],
+  bass: ['baritone'],
+  treble: ['soprano', 'mezzo']
+};
+
+function getUserVocalFamily(userVocalType) {
+  if (!userVocalType) return null;
+  const uv = userVocalType.toLowerCase();
+  if (uv === 'child-treble') return 'treble';
+  for (const [fam, kws] of Object.entries(VOCAL_FAMILIES)) {
+    if (kws.some(kw => uv.includes(kw))) return fam;
+  }
+  return null;
+}
+
+function scoreVocal(userVocalType, roleVoiceType) {
+  if (!roleVoiceType || !userVocalType) return 1;
+  const rv = roleVoiceType.toLowerCase();
+  if (rv.includes('character') && !rv.includes('soprano') && !rv.includes('tenor') && !rv.includes('baritone') && !rv.includes('mezzo') && !rv.includes('alto')) return 1;
+  if (rv.includes('spoken') || rv === 'variable') return 1;
+
+  const userFam = getUserVocalFamily(userVocalType);
+  if (!userFam) return 1;
+  const famKws = VOCAL_FAMILIES[userFam] || [];
+  if (famKws.some(kw => rv.includes(kw))) return 3;
+  const adjFams = VOCAL_ADJACENT[userFam] || [];
+  for (const adj of adjFams) {
+    const adjKws = VOCAL_FAMILIES[adj] || [];
+    if (adjKws.some(kw => rv.includes(kw))) return 2;
+  }
+  return 0;
+}
+
+const DANCE_SCALE = {
+  'none': 0, 'minimal': 0.5, 'light': 0.5,
+  'beginner': 1, 'low': 1, 'low_to_moderate': 1.5,
+  'moderate': 2, 'intermediate': 2, 'moderate_to_high': 2.5,
+  'intermediate_to_advanced': 2.5, 'high': 3,
+  'advanced': 3, 'very_high': 3.5
+};
+
+function parseDanceScale(lvl) {
+  if (!lvl) return 1.5;
+  const k = lvl.toLowerCase().replace(/[ -]/g, '_');
+  return DANCE_SCALE[k] ?? 1.5;
+}
+
+function scoreDance(userDanceLvl, roleDanceLvl) {
+  const us = parseDanceScale(userDanceLvl);
+  const rs = parseDanceScale(roleDanceLvl);
+  const diff = rs - us;
+  if (diff <= 0) return 2;
+  if (diff <= 1) return 1;
+  return 0;
+}
+
+function scoreAge(userAge, ageRange) {
+  if (!userAge || !ageRange || (!ageRange.min && !ageRange.max)) return 1;
+  const age = parseInt(userAge);
+  if (isNaN(age)) return 1;
+  const min = ageRange.min || 0;
+  const max = ageRange.max || 99;
+  if (age >= min && age <= max) return 3;
+  if (age >= min - 3 && age <= max + 3) return 1;
+  return 0;
+}
+
+function scoreDifficulty(userExp, musicalDifficulty) {
+  if (!musicalDifficulty) return 2;
+  const d = musicalDifficulty.toLowerCase();
+  switch (userExp) {
+    case 'first-show':
+      if (d.includes('beginner')) return 3;
+      if (d.includes('intermediate') && !d.includes('advanced')) return 2;
+      if (d.includes('advanced')) return 0;
+      return 1;
+    case 'community':
+      if (d.includes('expert')) return 1;
+      return 3;
+    case 'semi-pro':
+      return 3;
+    default:
+      return 2;
+  }
+}
+
+function scoreRole(role, musical, profile) {
+  const vScore = scoreVocal(profile.vocal_type, role.vocal ? role.vocal.voice_type : '');
+  const aScore = scoreAge(profile.age, role.age_range);
+  const dScore = scoreDance(profile.dance_level, role.dance ? role.dance.level : null);
+  const diffScore = scoreDifficulty(profile.experience, musical.difficulty_overall || '');
+
+  const maxPts = 11;
+  let pts = vScore + aScore + dScore + diffScore;
+
+  // Jr boost for young performers
+  const age = parseInt(profile.age) || 0;
+  const jrBoost = (age > 0 && age < 18 && musical.junior_version_available) ? 1 : 0;
+  pts += jrBoost;
+
+  const pct = Math.round(Math.min(pts / (maxPts + 1), 1) * 100);
+
+  return {
+    pct,
+    jrBoost: jrBoost > 0,
+    breakdown: { vocal: vScore, age: aScore, dance: dScore, difficulty: diffScore }
+  };
+}
+
+// ═══════════════════════════════════════════════════════
+// LOAD & RUN MATCHING
+// ═══════════════════════════════════════════════════════
+async function runMatching() {
+  switchTab('matches');
+  if (!hasProfile()) {
+    document.getElementById('matches-no-profile').style.display = 'block';
+    document.getElementById('matches-loading').style.display = 'none';
+    document.getElementById('matches-content').style.display = 'none';
+    return;
+  }
+
+  document.getElementById('matches-no-profile').style.display = 'none';
+  document.getElementById('matches-content').style.display = 'none';
+  document.getElementById('matches-loading').style.display = 'flex';
+
+  try {
+    const progress = document.getElementById('loadingProgress');
+    progress.textContent = 'Loading musical index…';
+
+    const indexResp = await fetch('data/musicals-index.json');
+    const index = await indexResp.json();
+    const musicalIds = index.filter(m => m.id).map(m => m.id);
+
+    progress.textContent = `Loading ${musicalIds.length} musicals…`;
+
+    const musicalJsons = await Promise.allSettled(
+      musicalIds.map(id => fetch('data/musicals/' + id + '.json').then(r => r.json()))
+    );
+
+    const profile = appState.profile;
+    const results = [];
+
+    musicalJsons.forEach((res, i) => {
+      if (res.status !== 'fulfilled') return;
+      const data = res.value;
+      const musical = data.musical || {};
+      const roles = data.roles || [];
+      const indexEntry = index.find(m => m.id === musicalIds[i]) || {};
+
+      roles.forEach(role => {
+        const score = scoreRole(role, { ...musical, ...indexEntry }, profile);
+        results.push({
+          musicalId: musicalIds[i],
+          musicalTitle: musical.title || indexEntry.title || musicalIds[i],
+          roleId: role.id,
+          roleName: role.name,
+          roleType: role.role_type || 'ensemble',
+          voiceType: role.vocal ? role.vocal.voice_type : '',
+          ageRange: role.age_range,
+          danceLevel: role.dance ? role.dance.level : '',
+          difficulty: musical.difficulty_overall || indexEntry.difficulty_overall || '',
+          jrAvailable: !!(musical.junior_version_available || indexEntry.junior_version_available),
+          castingLabel: role.casting_insights ? role.casting_insights.spotlight_label : '',
+          growthLabel: role.casting_insights ? role.casting_insights.growth_label : '',
+          score
+        });
+      });
+    });
+
+    results.sort((a, b) => b.score.pct - a.score.pct);
+    allMatchedRoles = results;
+    matchesLoaded = true;
+
+    document.getElementById('matches-loading').style.display = 'none';
+    document.getElementById('matches-content').style.display = 'block';
+
+    updateMatchesView();
+  } catch(err) {
+    document.getElementById('matches-loading').style.display = 'none';
+    document.getElementById('matches-content').style.display = 'block';
+    document.getElementById('matches-list').innerHTML =
+      '<div class="empty-state"><div class="empty-state-icon">⚠</div><h3>Couldn\'t load musicals</h3><p>' + err.message + '</p></div>';
+  }
+}
+
+function updateMatchesView() {
+  if (!matchesLoaded || !allMatchedRoles.length) return;
+
+  const savedIds = new Set(appState.saved.map(s => s.musicalId + '/' + s.roleId));
+  let roles = allMatchedRoles;
+
+  if (matchFilter === 'lead') roles = roles.filter(r => r.roleType === 'lead' || r.roleType === 'leading');
+  else if (matchFilter === 'supporting') roles = roles.filter(r => r.roleType === 'supporting' || r.roleType === 'featured_ensemble');
+  else if (matchFilter === 'junior') roles = roles.filter(r => r.jrAvailable);
+  else if (matchFilter === 'high-score') roles = roles.filter(r => r.score.pct >= 60);
+
+  const count = document.getElementById('matchesCount');
+  if (count) count.textContent = roles.length + ' roles found';
+
+  const countBadge = document.getElementById('matchCount');
+  if (countBadge) {
+    countBadge.textContent = allMatchedRoles.length;
+    countBadge.classList.add('show');
+  }
+
+  const list = document.getElementById('matches-list');
+  if (!roles.length) {
+    list.innerHTML = '<div class="empty-state"><div class="empty-state-icon">🔍</div><h3>No roles match that filter</h3><p>Try a different filter or adjust your profile.</p></div>';
+    return;
+  }
+
+  list.innerHTML = roles.map(r => renderMatchCard(r, savedIds)).join('');
+  // Animate rings after render
+  setTimeout(() => {
+    list.querySelectorAll('[data-pct]').forEach(el => {
+      const pct = parseInt(el.dataset.pct);
+      const fill = el.querySelector('.ring-fill');
+      if (fill) {
+        const dash = 138.2;
+        fill.style.strokeDashoffset = dash - (dash * pct / 100);
+        fill.style.stroke = pct >= 80 ? '#667eea' : pct >= 55 ? '#ffd700' : pct >= 35 ? '#ff9800' : '#a0a0b0';
+      }
+    });
+  }, 50);
+}
+
+function renderMatchCard(r, savedIds) {
+  const key = r.musicalId + '/' + r.roleId;
+  const isSaved = savedIds.has(key);
+  const typeClass = 'chip-type-' + (r.roleType || 'ensemble').replace('featured_ensemble','ensemble').replace('leading','lead');
+  const typeLabel = { lead: 'Lead', leading: 'Lead', supporting: 'Supporting', featured_ensemble: 'Featured', ensemble: 'Ensemble', character: 'Character' }[r.roleType] || r.roleType;
+  const ageStr = r.ageRange ? ((r.ageRange.min || '?') + '–' + (r.ageRange.max || '?') + ' yrs') : '';
+  const musicalUrl = 'musicals.html?musical=' + encodeURIComponent(r.musicalId) + '&role=' + encodeURIComponent(r.roleId);
+
+  return `<div class="role-match-card${isSaved ? ' saved-card' : ''}" id="card-${key.replace(/\//g,'-')}">
+  <div class="match-pct-col">
+    <div class="match-pct-ring" data-pct="${r.score.pct}">
+      <svg viewBox="0 0 52 52">
+        <circle class="ring-bg" cx="26" cy="26" r="22"/>
+        <circle class="ring-fill" cx="26" cy="26" r="22" style="stroke-dashoffset:138.2; stroke: #a0a0b0;"/>
+      </svg>
+      <div class="match-pct-num">${r.score.pct}%</div>
+    </div>
+    <div class="match-pct-label">match</div>
+  </div>
+  <div class="match-content">
+    <div class="match-role-name">${escHtml(r.roleName)}</div>
+    <div class="match-musical">${escHtml(r.musicalTitle)}</div>
+    <div class="match-chips">
+      <span class="match-chip ${typeClass}">${typeLabel}</span>
+      ${r.voiceType ? `<span class="match-chip chip-vocal">${escHtml(r.voiceType.split('/')[0].split(' belt')[0].trim())}</span>` : ''}
+      ${ageStr ? `<span class="match-chip chip-vocal">${ageStr}</span>` : ''}
+      ${r.jrAvailable ? `<span class="match-chip chip-junior">Jr Edition</span>` : ''}
+      ${r.castingLabel ? `<span class="match-chip chip-label">${escHtml(r.castingLabel)}</span>` : ''}
+    </div>
+    <div class="match-actions">
+      <button class="btn-save-role${isSaved ? ' saved' : ''}" onclick="toggleSave('${r.musicalId}','${r.roleId}','${escAttr(r.roleName)}','${escAttr(r.musicalTitle)}','${escAttr(r.voiceType)}','${r.roleType}',${r.jrAvailable})" id="savebtn-${key.replace(/\//g,'-')}">
+        ${isSaved ? '♥ Saved' : '♡ Save'}
+      </button>
+      <a class="btn-view-role" href="${musicalUrl}">View Full Role →</a>
+    </div>
+  </div>
+</div>`;
+}
+
+function filterMatches(filter, btn) {
+  matchFilter = filter;
+  document.querySelectorAll('.match-filter-pill').forEach(p => p.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  updateMatchesView();
+}
+
+// ═══════════════════════════════════════════════════════
+// SAVE / UNSAVE ROLES
+// ═══════════════════════════════════════════════════════
+function toggleSave(musicalId, roleId, roleName, musicalTitle, voiceType, roleType, jrAvailable) {
+  const key = musicalId + '/' + roleId;
+  const idx = appState.saved.findIndex(s => s.musicalId === musicalId && s.roleId === roleId);
+  if (idx > -1) {
+    appState.saved.splice(idx, 1);
+  } else {
+    appState.saved.push({ musicalId, roleId, roleName, musicalTitle, voiceType, roleType, jrAvailable });
+  }
+  saveAppState();
+  updateSavedBadge();
+  // Update card state
+  const cardEl = document.getElementById('card-' + key.replace(/\//g,'-'));
+  const btnEl = document.getElementById('savebtn-' + key.replace(/\//g,'-'));
+  const saved = appState.saved.some(s => s.musicalId === musicalId && s.roleId === roleId);
+  if (cardEl) cardEl.classList.toggle('saved-card', saved);
+  if (btnEl) {
+    btnEl.classList.toggle('saved', saved);
+    btnEl.textContent = saved ? '♥ Saved' : '♡ Save';
+  }
+}
+
+function clearAllSaved() {
+  if (!confirm('Remove all saved roles?')) return;
+  appState.saved = [];
+  saveAppState();
+  renderSaved();
+  updateSavedBadge();
+}
+
+function updateSavedBadge() {
+  const badge = document.getElementById('savedCount');
+  if (!badge) return;
+  const n = appState.saved.length;
+  badge.textContent = n;
+  badge.classList.toggle('show', n > 0);
+}
+
+function renderSaved() {
+  const empty = document.getElementById('saved-empty');
+  const content = document.getElementById('saved-content');
+  const grid = document.getElementById('saved-grid');
+  const count = document.getElementById('savedRolesCount');
+  if (!appState.saved.length) {
+    empty.style.display = 'block';
+    content.style.display = 'none';
+    return;
+  }
+  empty.style.display = 'none';
+  content.style.display = 'block';
+  if (count) count.textContent = appState.saved.length + ' saved role' + (appState.saved.length !== 1 ? 's' : '');
+  grid.innerHTML = appState.saved.map(s => `
+    <div class="saved-role-card">
+      <div class="saved-role-name">${escHtml(s.roleName)}</div>
+      <div class="saved-musical">${escHtml(s.musicalTitle)}</div>
+      ${s.voiceType ? `<div style="font-size:0.78rem;color:var(--text-secondary);margin-bottom:8px;">${escHtml(s.voiceType.split('/')[0])}</div>` : ''}
+      <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
+        <a class="btn-view-role" href="musicals.html?musical=${encodeURIComponent(s.musicalId)}&role=${encodeURIComponent(s.roleId)}" style="font-size:0.78rem;padding:5px 10px;">View Role →</a>
+        <button class="btn-unsave" onclick="unsaveRole('${s.musicalId}','${s.roleId}')">Remove</button>
+      </div>
+    </div>`).join('');
+}
+
+function unsaveRole(musicalId, roleId) {
+  appState.saved = appState.saved.filter(s => !(s.musicalId === musicalId && s.roleId === roleId));
+  saveAppState();
+  renderSaved();
+  updateSavedBadge();
+}
+
+// ═══════════════════════════════════════════════════════
+// RESUME
+// ═══════════════════════════════════════════════════════
+function bindResumeForm() {
+  const fields = [
+    {id:'r-headshot',key:'headshot'}, {id:'r-pronouns',key:'pronouns'},
+    {id:'r-location',key:'location'}, {id:'r-email',key:'email'},
+    {id:'r-bio',key:'bio'}, {id:'r-special-skills',key:'special_skills'}
+  ];
+  fields.forEach(({id,key}) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    el.value = appState.resume[key] || '';
+    el.addEventListener('input', () => {
+      appState.resume[key] = el.value;
+      if (key === 'headshot') updateHeadshotPreview(el.value);
+      saveAppState();
+    });
+  });
+  // Render saved credits/training
+  (appState.resume.credits || []).forEach((c, i) => addCredit(c, i));
+  (appState.resume.training || []).forEach((t, i) => addTraining(t, i));
+}
+
+function syncResumeFromProfile() {
+  const namePreview = document.getElementById('resumeNamePreview');
+  if (namePreview && appState.profile.name) namePreview.textContent = appState.profile.name;
+}
+
+function updateHeadshotPreview(url) {
+  const wrap = document.getElementById('headshotPreview');
+  if (!wrap) return;
+  if (url && url.startsWith('http')) {
+    wrap.innerHTML = `<img src="${escAttr(url)}" alt="Headshot" onerror="this.parentNode.innerHTML='<div class=\\'headshot-placeholder\\'>☺</div>'">`;
+  } else {
+    wrap.innerHTML = '<div class="headshot-placeholder">☺</div>';
+  }
+}
+
+let creditIdx = 0, trainingIdx = 0;
+
+function addCredit(data, idx) {
+  data = data || { show: '', role: '', company: '', year: '' };
+  const i = idx !== undefined ? idx : creditIdx++;
+  const tbody = document.getElementById('credits-tbody');
+  if (!tbody) return;
+  const tr = document.createElement('tr');
+  tr.dataset.idx = i;
+  tr.innerHTML = `
+    <td><input type="text" class="cr-show" value="${escAttr(data.show || '')}" placeholder="Show title"></td>
+    <td><input type="text" class="cr-role" value="${escAttr(data.role || '')}" placeholder="Role / Position"></td>
+    <td><input type="text" class="cr-company" value="${escAttr(data.company || '')}" placeholder="Company"></td>
+    <td><input type="text" class="cr-year" value="${escAttr(data.year || '')}" placeholder="Year" style="width:60px;"></td>
+    <td><button class="btn-remove-row" onclick="removeRow(this,'credits')">✕</button></td>`;
+  tbody.appendChild(tr);
+  if (idx === undefined) {
+    appState.resume.credits = appState.resume.credits || [];
+    appState.resume.credits.push(data);
+    saveAppState();
+  }
+  tr.querySelectorAll('input').forEach(input => {
+    input.addEventListener('input', () => saveCreditsState());
+  });
+  creditIdx = Math.max(creditIdx, i + 1);
+}
+
+function addTraining(data, idx) {
+  data = data || { school: '', discipline: '', duration: '' };
+  const i = idx !== undefined ? idx : trainingIdx++;
+  const tbody = document.getElementById('training-tbody');
+  if (!tbody) return;
+  const tr = document.createElement('tr');
+  tr.dataset.idx = i;
+  tr.innerHTML = `
+    <td><input type="text" class="tr-school" value="${escAttr(data.school || '')}" placeholder="School / Teacher name"></td>
+    <td><input type="text" class="tr-discipline" value="${escAttr(data.discipline || '')}" placeholder="e.g. Tap, Vocal, MT"></td>
+    <td><input type="text" class="tr-duration" value="${escAttr(data.duration || '')}" placeholder="e.g. 2 years / 2024–present"></td>
+    <td><button class="btn-remove-row" onclick="removeRow(this,'training')">✕</button></td>`;
+  tbody.appendChild(tr);
+  if (idx === undefined) {
+    appState.resume.training = appState.resume.training || [];
+    appState.resume.training.push(data);
+    saveAppState();
+  }
+  tr.querySelectorAll('input').forEach(input => {
+    input.addEventListener('input', () => saveTrainingState());
+  });
+  trainingIdx = Math.max(trainingIdx, i + 1);
+}
+
+function removeRow(btn, type) {
+  const tr = btn.closest('tr');
+  const idx = parseInt(tr.dataset.idx);
+  tr.remove();
+  if (type === 'credits') saveCreditsState();
+  else saveTrainingState();
+}
+
+function saveCreditsState() {
+  const rows = document.querySelectorAll('#credits-tbody tr');
+  appState.resume.credits = Array.from(rows).map(tr => ({
+    show: tr.querySelector('.cr-show')?.value || '',
+    role: tr.querySelector('.cr-role')?.value || '',
+    company: tr.querySelector('.cr-company')?.value || '',
+    year: tr.querySelector('.cr-year')?.value || ''
+  }));
+  saveAppState();
+}
+
+function saveTrainingState() {
+  const rows = document.querySelectorAll('#training-tbody tr');
+  appState.resume.training = Array.from(rows).map(tr => ({
+    school: tr.querySelector('.tr-school')?.value || '',
+    discipline: tr.querySelector('.tr-discipline')?.value || '',
+    duration: tr.querySelector('.tr-duration')?.value || ''
+  }));
+  saveAppState();
+}
+
+// ═══════════════════════════════════════════════════════
+// UTILS
+// ═══════════════════════════════════════════════════════
+function escHtml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+function escAttr(str) {
+  if (!str) return '';
+  return String(str).replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+// ═══════════════════════════════════════════════════════
+// CHECK FOR URL PARAMS (deep-link from musicals.html)
+// ═══════════════════════════════════════════════════════
+function handleUrlParams() {
+  const params = new URLSearchParams(window.location.search);
+  const musical = params.get('musical');
+  const role = params.get('role');
+  if (musical && role) {
+    // Auto-run matching and highlight the shared role
+    if (hasProfile()) {
+      runMatching().then && runMatching();
+    } else {
+      switchTab('profile');
+      // Store intent
+      sessionStorage.setItem('highlight_role', musical + '/' + role);
+    }
+  }
+}
+
+// ═══════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════
+document.addEventListener('DOMContentLoaded', function() {
+  loadAppState();
+  bindProfileForm();
+  bindResumeForm();
+  updateSavedBadge();
+  syncResumeFromProfile();
+  if (appState.resume.headshot) updateHeadshotPreview(appState.resume.headshot);
+  handleUrlParams();
+  // Check if matches tab is default from URL
+  const hash = window.location.hash;
+  if (hash === '#matches') switchTab('matches');
+  else if (hash === '#resume') switchTab('resume');
+  else if (hash === '#saved') switchTab('saved');
+});
+</script>
+
+<script src="js/shared.js?v=20260415"></script>
+</body>
+</html>

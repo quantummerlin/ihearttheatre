@@ -454,7 +454,7 @@
  <span></span>
  <span></span>
  </div>
- <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></div>
+ <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a></div>
  </div>
  </nav>
 
@@ -599,14 +599,16 @@
  <a href="index.html">Home</a>
  <a href="shows.html">Shows</a>
  <a href="auditions.html">Auditions</a>
- <a href="services.html">Services</a>
  <a href="reviews.html">Reviews</a>
  <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="services.html">Services</a>
+ <a href="musicals.html">Role Guides</a>
+ <a href="companies.html">Companies</a>
  <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
  <a href="privacy.html">Privacy</a>
  <a href="disclaimer.html">Disclaimer</a>
- <a href="contact.html">Contact</a>
- </div>
+</div>
  <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
  </div>
  </footer>
@@ -623,18 +625,27 @@
  // Form submission handler
  document.getElementById('contactForm').addEventListener('submit', function(e) {
  e.preventDefault();
- 
- const name = document.getElementById('name').value;
- const email = document.getElementById('email').value;
- const subject = document.getElementById('subject').value;
- const message = document.getElementById('message').value;
 
- // In a real implementation, this would send data to a server
- // For now, show a success message
- alert(`Thank you ${name}! Your message has been received. We'll get back to you at ${email} soon.\n\nSubject: ${subject}\nMessage: ${message}`);
- 
- // Reset form
- this.reset();
+ const btn = this.querySelector('button[type="submit"]');
+ btn.disabled = true;
+ btn.textContent = 'Sending...';
+
+ const formData = new FormData(this);
+ const data = Object.fromEntries(formData);
+ data._subject = 'iHeartTheatre Contact: ' + (data.subject || 'Message');
+
+ fetch('https://formsubmit.co/ajax/submissions@ihearttheatre.com', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+  body: JSON.stringify(data)
+ }).then(function() {
+  document.querySelector('.contact-form').innerHTML = '<div style="text-align:center;padding:3rem 1rem"><div style="width:64px;height:64px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="font-family:Playfair Display,serif;font-size:1.8rem;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem">Message Sent!</h2><p style="color:#a0a0b0;line-height:1.7">Thanks for getting in touch. We\'ll get back to you soon.</p></div>';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+ }).catch(function() {
+  btn.disabled = false;
+  btn.textContent = 'Send Message';
+  alert('Something went wrong. Please email us directly at submissions@ihearttheatre.com');
+ });
  });
 
  // Smooth scroll for navigation

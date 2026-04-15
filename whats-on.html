@@ -1044,18 +1044,7 @@
     <span></span>
     <span></span>
    </div>
-   <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="shows.html" class="active">Shows</a>
-    <a href="auditions.html">Auditions</a>
-    <a href="companies.html">Companies</a>
-    <a href="musicals.html">Role Guides</a>
-    <a href="services.html">Services</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="junior-kids-schools.html">Junior &amp; Kids</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-   </div>
+   <div class="nav-links"><a href="index.html">Home</a><a href="shows.html" class="active">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
   </div>
  </nav>
 
@@ -1113,6 +1102,9 @@
  </div>
 
  <section class="filters-section">
+  <button class="filter-accordion-header" data-target="whatson-filters-body">Filters <span class="filter-acc-arrow">&#8964;</span></button>
+  <div class="filter-accordion-body" id="whatson-filters-body">
+  <div class="filter-accordion-inner">
   <div class="filter-row" id="statusFilters">
    <span class="filter-label">Status</span>
   </div>
@@ -1122,6 +1114,7 @@
   <div class="filter-row" id="categoryFilters">
    <span class="filter-label">Genre</span>
   </div>
+  </div></div>
  </section>
 
  <!-- â•â•â•â•â•â• Shows Section Heading â•â•â•â•â•â• -->
@@ -1207,16 +1200,19 @@
  <footer>
   <div class="footer-content">
    <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="whats-on.html">What's On</a>
-    <a href="auditions.html">Auditions</a>
-    <a href="companies.html">Companies</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="about.html">About</a>
-    <a href="privacy.html">Privacy</a>
-    <a href="disclaimer.html">Disclaimer</a>
-    <a href="contact.html">Contact</a>
-   </div>
+ <a href="index.html">Home</a>
+ <a href="shows.html">Shows</a>
+ <a href="auditions.html">Auditions</a>
+ <a href="reviews.html">Reviews</a>
+ <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="services.html">Services</a>
+ <a href="musicals.html">Role Guides</a>
+ <a href="companies.html">Companies</a>
+ <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
+ <a href="privacy.html">Privacy</a>
+ <a href="disclaimer.html">Disclaimer</a>
+</div>
    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
   </div>
  </footer>
@@ -3302,6 +3298,7 @@
   buildSlideshow();
   buildStats();
   buildFilters();
+  if (window.iHTInitFilterAccordion) window.iHTInitFilterAccordion();
 
   // Calendar toolbar wiring
   document.getElementById('btnCalView').addEventListener('click', function() { setView('calendar'); });

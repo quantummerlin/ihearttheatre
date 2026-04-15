@@ -471,13 +471,13 @@ textarea.form-input { resize: vertical; min-height: 90px; }
     <div class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></div>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="shows.html">Shows</a>
+      <a href="whats-on.html">What's On</a>
+      <a href="venues.html">Venues</a>
       <a href="auditions.html">Auditions</a>
+      <a href="junior-kids-schools.html">Junior &amp; Kids</a>
       <a href="reviews.html">Reviews</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a href="musicals.html">Musicals</a>
-      <a href="career-builder.html" class="active">Career Builder</a>
     </div>
   </div>
 </nav>
@@ -987,14 +987,66 @@ function scoreDifficulty(userExp, musicalDifficulty) {
   }
 }
 
+// Score bonus points for matching user skills against role requirements
+function scoreSkills(userSkills, role) {
+  if (!userSkills || userSkills.length === 0) return 0;
+
+  const styles = (role.dance && Array.isArray(role.dance.styles))
+    ? role.dance.styles.map(s => s.toLowerCase()) : [];
+  const vocalNotes = ((role.vocal && role.vocal.style_notes) || '').toLowerCase();
+  const actingNotes = ((role.acting && role.acting.notes) || '').toLowerCase();
+  const specialSkills = (role.performance && Array.isArray(role.performance.special_skills))
+    ? role.performance.special_skills.map(s => s.toLowerCase()) : [];
+  const comedyRole = !!(role.acting && role.acting.comedy_skills);
+
+  let bonus = 0;
+
+  // Dance-style skill match (max 1 pt): user's specific style overlaps role's dance styles
+  const danceStyleMap = {
+    'tap': ['tap'],
+    'ballet': ['ballet', 'classical'],
+    'contemporary': ['contemporary', 'modern'],
+    'jazz': ['jazz', 'musical_theatre_jazz'],
+    'acrobatics': ['acrobatics', 'tumbling', 'gymnastics', 'aerial'],
+    'physical-theatre': ['physical_theatre', 'physical_comedy', 'mime', 'clown']
+  };
+  for (const [skill, keywords] of Object.entries(danceStyleMap)) {
+    if (userSkills.includes(skill) && keywords.some(kw => styles.includes(kw))) {
+      bonus += 1;
+      break;
+    }
+  }
+
+  // Specialty skill match (max 1 additional pt)
+  let specialtyBonus = 0;
+  if (userSkills.includes('comedy') && comedyRole) specialtyBonus = 1;
+  if (!specialtyBonus && userSkills.includes('stage-combat') &&
+      specialSkills.some(s => s.includes('fight') || s.includes('combat') || s.includes('stage_combat')))
+    specialtyBonus = 1;
+  if (!specialtyBonus && userSkills.includes('dialect') &&
+      (vocalNotes.includes('accent') || vocalNotes.includes('dialect') ||
+       vocalNotes.includes('cockney') || vocalNotes.includes('french') ||
+       vocalNotes.includes('british') || vocalNotes.includes('american')))
+    specialtyBonus = 1;
+  if (!specialtyBonus && userSkills.includes('opera-trained') &&
+      (vocalNotes.includes('operatic') || vocalNotes.includes('classical') || vocalNotes.includes('opera')))
+    specialtyBonus = 1;
+  bonus += specialtyBonus;
+
+  return Math.min(bonus, 2);
+}
+
 function scoreRole(role, musical, profile) {
   const vScore = scoreVocal(profile.vocal_type, role.vocal ? role.vocal.voice_type : '');
   const aScore = scoreAge(profile.age, role.age_range);
   const dScore = scoreDance(profile.dance_level, role.dance ? role.dance.level : null);
   const diffScore = scoreDifficulty(profile.experience, musical.difficulty_overall || '');
+  const skillsBonus = scoreSkills(profile.skills || [], role);
 
+  // maxPts denominator stays at 12 — skills bonus lifts near-matches to 100%
+  // without inflating already-perfect scores (capped at 100% via Math.min)
   const maxPts = 11;
-  let pts = vScore + aScore + dScore + diffScore;
+  let pts = vScore + aScore + dScore + diffScore + skillsBonus;
 
   // Jr boost for young performers
   const age = parseInt(profile.age) || 0;
@@ -1006,7 +1058,8 @@ function scoreRole(role, musical, profile) {
   return {
     pct,
     jrBoost: jrBoost > 0,
-    breakdown: { vocal: vScore, age: aScore, dance: dScore, difficulty: diffScore }
+    skillsBonus,
+    breakdown: { vocal: vScore, age: aScore, dance: dScore, difficulty: diffScore, skills: skillsBonus }
   };
 }
 

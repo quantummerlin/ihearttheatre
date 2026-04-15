@@ -7638,6 +7638,561 @@
         "Treating this as a secondary ambition — directors cast the ensemble with the same intensity as the leads in Newsies",
         "Not showing your full physical range at auditions"
       ]
+    },
+    "mary-poppins/katie-nanna": {
+      "role_name": "Katie Nanna",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {
+          "title": "A Little Bit of Good",
+          "from": "Chicago",
+          "composer": "John Kander",
+          "why": "A character who tried to do right and gets overwhelmed — exasperated virtue in musical form",
+          "type": "contrasting"
+        },
+        {
+          "title": "Housewife!",
+          "from": "Company",
+          "composer": "Stephen Sondheim",
+          "why": "Physical comedy and exhausted character energy — a woman at the end of her rope",
+          "type": "contrasting"
+        },
+        {
+          "title": "Master of the House",
+          "from": "Les Miserables",
+          "composer": "Claude-Michel Schonberg",
+          "why": "Character comedy with specific, physical performance energy — shows comic timing",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Katie Nanna is a character comedy role. Her dramatic exit is the comic launching pad for the show. Strong physical comedy and a clear character voice matter more than vocal power. Show that you can play exasperation, indignation, and total defeat.",
+      "avoid": [
+        "Over-singing — she has minimal vocal demands and character matters entirely",
+        "Being too chaotic — Katie Nanna is a professional who has reached her absolute limit"
+      ]
+    },
+    "mary-poppins/admiral-boom": {
+      "role_name": "Admiral Boom / Bank Chairman",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {
+          "title": "A British Bank",
+          "from": "Mary Poppins",
+          "composer": "Richard Sherman / Robert Sherman",
+          "why": "The Bank Chairman side of this dual role — stiff, proper, authoritative",
+          "type": "same_show"
+        },
+        {
+          "title": "There Is Nothing Like a Dame",
+          "from": "South Pacific",
+          "composer": "Richard Rodgers",
+          "why": "Bluff, enthusiastic, genially eccentric baritone — Admiral Boom in excelsis",
+          "type": "contrasting"
+        },
+        {
+          "title": "Sit Down You're Rockin' the Boat",
+          "from": "Guys and Dolls",
+          "composer": "Frank Loesser",
+          "why": "Character baritone comedy with physical commitment and broad charm",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "This dual role requires a confident character baritone who can shift between pompous naval officer (Admiral Boom) and stiffly authoritative banker (Bank Chairman). The comedy is in the specificity — two very British, very eccentric men. Physical commitment is key.",
+      "avoid": [
+        "Playing either character as generic — find what makes each specifically ridiculous"
+      ]
+    },
+    "mary-poppins/miss-lark": {
+      "role_name": "Miss Lark",
+      "musical": "Mary Poppins",
+      "songs_to_prepare": [
+        {
+          "title": "Anything Goes",
+          "from": "Anything Goes",
+          "composer": "Cole Porter",
+          "why": "Upper-class English lady with strong opinions and comic self-importance",
+          "type": "contrasting"
+        },
+        {
+          "title": "Adelaide's Lament",
+          "from": "Guys and Dolls",
+          "composer": "Frank Loesser",
+          "why": "A woman obsessively attached to something that causes her grief — Miss Lark and her dog",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Miss Lark is a tiny gem of a character — prim, dog-obsessed, and utterly convinced of her own propriety. The comedy is in her complete sincerity. A character actor's treat. Show comic precision and period English diction.",
+      "avoid": [
+        "Being too broad — Miss Lark believes she's perfectly reasonable",
+        "Letting the comedy tip into caricature"
+      ]
+    },
+    "oliver/mr-brownlow": {
+      "role_name": "Mr Brownlow",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {
+          "title": "My Favourite Things",
+          "from": "The Sound of Music",
+          "composer": "Richard Rodgers",
+          "why": "Warm, kind, paternal baritone with genuine decency — Mr Brownlow's spirit in song",
+          "type": "contrasting"
+        },
+        {
+          "title": "Bring Him Home",
+          "from": "Les Miserables",
+          "composer": "Claude-Michel Schonberg",
+          "why": "A good man's prayers for a vulnerable child — the emotional core of Mr Brownlow",
+          "type": "contrasting"
+        },
+        {
+          "title": "Where Is Love?",
+          "from": "Oliver!",
+          "composer": "Lionel Bart",
+          "why": "Understanding the world Oliver comes from — knowing what Mr Brownlow is saving him from",
+          "type": "same_show"
+        }
+      ],
+      "style_guidance": "Mr Brownlow is a speaking/minimal singing role. The weight of the performance is entirely in acting — he must be genuinely warm and convincingly upper-class Victorian without condescension. Directors want a baritone with natural authority and kindness.",
+      "avoid": [
+        "Playing him as pompous — Brownlow's distinction comes from genuine goodness, not class superiority"
+      ]
+    },
+    "oliver/mr-sowerberry": {
+      "role_name": "Mr Sowerberry",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {
+          "title": "Master of the House",
+          "from": "Les Miserables",
+          "composer": "Claude-Michel Schonberg",
+          "why": "A slimy small businessman who exploits the vulnerable — character baritone comedy",
+          "type": "contrasting"
+        },
+        {
+          "title": "Pick-a-Little, Talk-a-Little",
+          "from": "The Music Man",
+          "composer": "Meredith Willson",
+          "why": "Small-town petty authority figure with comedy bluster — Sowerberry's world",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Sowerberry is a character comic — squeamish about bad smells, dominated by his wife, and sees Oliver as a business transaction. Find the physical comedy of a man who works with the dead but is deeply uncomfortable with his own life. A genuine character actor's role.",
+      "avoid": [
+        "Straight-up nastiness — Sowerberry is pathetic and comic, not menacing",
+        "Being too broad — find the specific squeamishness"
+      ]
+    },
+    "oliver/mrs-sowerberry": {
+      "role_name": "Mrs Sowerberry",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {
+          "title": "The Worst Pies in London",
+          "from": "Sweeney Todd",
+          "composer": "Stephen Sondheim",
+          "why": "A character woman who runs her household with fierce, eccentric conviction — mezzo character comedy",
+          "type": "contrasting"
+        },
+        {
+          "title": "I Hate Men",
+          "from": "Kiss Me Kate",
+          "composer": "Cole Porter",
+          "why": "Domineering comic mezzo who is utterly in charge — Mrs Sowerberry's absolute conviction",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Mrs Sowerberry is the boss — she runs the undertaker's business while her husband quakes. She's mean to Oliver, mean to her husband, and completely happy about it. Big character mezzo with comedic authority and physical dominance.",
+      "avoid": [
+        "Playing her as too cartoonishly evil — she genuinely thinks she's being reasonable",
+        "Underpowering the mezzo belt — she fills the room"
+      ]
+    },
+    "oliver/noah-claypole": {
+      "role_name": "Noah Claypole",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {
+          "title": "Gee, Officer Krupke",
+          "from": "West Side Story",
+          "composer": "Leonard Bernstein",
+          "why": "A kid who bullies younger kids while complaining about his own disadvantages — Noah's psychology",
+          "type": "contrasting"
+        },
+        {
+          "title": "Consider Yourself",
+          "from": "Oliver!",
+          "composer": "Lionel Bart",
+          "why": "The world Noah was rejected from — understanding what drives his cruelty toward Oliver",
+          "type": "same_show"
+        }
+      ],
+      "style_guidance": "Noah is primarily a speaking/physical role. He's a bully who torments Oliver about his dead mother — which makes the audience emphatically root for Oliver to escape. The comedy comes from his self-importance and the fact that he's ultimately a pathetic coward.",
+      "avoid": [
+        "Making him too genuinely frightening — Noah is a petit bully who gets his eventually"
+      ]
+    },
+    "oliver/charley-bates": {
+      "role_name": "Charley Bates",
+      "musical": "Oliver!",
+      "songs_to_prepare": [
+        {
+          "title": "Consider Yourself",
+          "from": "Oliver!",
+          "composer": "Lionel Bart",
+          "why": "Charley's world — he is the essence of the Dodger's gang energy",
+          "type": "same_show"
+        },
+        {
+          "title": "I Can Do That",
+          "from": "A Chorus Line",
+          "composer": "Marvin Hamlisch",
+          "why": "Physical enthusiasm and cheerful commitment to the gang — Charley's energy in one song",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Charley is the most purely joyful member of Fagin's gang — he laughs at everything, loves the life, and is completely loyal to Dodger. Light treble/tenor ensemble voice with physical comic energy. The comedy is in his guileless enthusiasm.",
+      "avoid": [
+        "Playing him as street-tough — Charley is cheerful, not menacing",
+        "Over-singing — bright presence matters more than choral power"
+      ]
+    },
+    "seussical/mr-mayor": {
+      "role_name": "Mr. Mayor of Who-ville",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {
+          "title": "Try to Remember",
+          "from": "The Fantasticks",
+          "composer": "Harvey Schmidt",
+          "why": "A gentle, sincere tenor with community feeling — Mr Mayor's caring civic nature",
+          "type": "contrasting"
+        },
+        {
+          "title": "My Favourite Things",
+          "from": "The Sound of Music",
+          "composer": "Richard Rodgers",
+          "why": "Warm, earnest quality with musical heart — the Mayor believes in his town",
+          "type": "contrasting"
+        },
+        {
+          "title": "I Met a Girl",
+          "from": "Bells Are Ringing",
+          "composer": "Jule Styne",
+          "why": "Light, warm, optimistic tenor for a genuinely good-natured civic figure",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Mr Mayor is a good man in an impossible situation — he loves his community but struggles to understand his son JoJo. A warm, sincere tenor with real emotional access. The comedy comes from his anxiety, not from him being foolish.",
+      "avoid": [
+        "Playing him as excessively bumbling — he's a caring father who is genuinely out of his depth",
+        "Losing the genuine love for his town and son beneath the comedy"
+      ]
+    },
+    "seussical/mrs-mayor": {
+      "role_name": "Mrs. Mayor of Who-ville",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {
+          "title": "Mama, I'm a Big Girl Now",
+          "from": "Hairspray",
+          "composer": "Marc Shaiman",
+          "why": "A mother trying to understand her unconventional child while managing her own expectations",
+          "type": "contrasting"
+        },
+        {
+          "title": "My Favourite Things",
+          "from": "The Sound of Music",
+          "composer": "Richard Rodgers",
+          "why": "Warm mezzo maternal quality with genuine love for family — Mrs Mayor's heart",
+          "type": "contrasting"
+        },
+        {
+          "title": "Vanilla Ice Cream",
+          "from": "She Loves Me",
+          "composer": "Jerry Bock",
+          "why": "Warm soprano/mezzo with genuine sweetness and comedy — the Mayor's Wife energy",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Mrs Mayor is the empathetic bridge between the Mayor's anxiety and JoJo's imagination. She understands her son's differentness even if she doesn't fully share it. Warm, grounded mezzo with genuine maternal warmth. Comedy through love, not ridicule.",
+      "avoid": [
+        "Playing her as another worried parent — she's more insightful than her husband",
+        "Over-playing the comedy at the expense of genuine warmth"
+      ]
+    },
+    "seussical/seuss-vlad-vladikoff": {
+      "role_name": "Vlad Vladikoff",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {
+          "title": "Willkommen",
+          "from": "Cabaret",
+          "composer": "John Kander",
+          "why": "A theatrical villain with commanding stage presence and comic menace",
+          "type": "contrasting"
+        },
+        {
+          "title": "I Am the Very Model of a Modern Major-General",
+          "from": "The Pirates of Penzance",
+          "composer": "Gilbert and Sullivan",
+          "why": "Flexible comic baritone/tenor who can handle rapid character work — Vlad's opportunistic villain energy",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Vlad is a comic villain — he is hired to do something moustache-twirlingly wicked and proceeds to do exactly that with theatrical gusto. A wide vocal range (marked as flexible) allows a variety of performer types. Physical comedy and theatrical presence are paramount.",
+      "avoid": [
+        "Being too genuinely threatening — Vlad is a Dr. Seuss villain, which means he's gloriously theatrical"
+      ]
+    },
+    "seussical/seuss-yertle": {
+      "role_name": "Judge Yertle the Turtle",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {
+          "title": "A Little Priest",
+          "from": "Sweeney Todd",
+          "composer": "Stephen Sondheim",
+          "why": "Comic pomposity from an authority figure who believes his own superiority entirely",
+          "type": "contrasting"
+        },
+        {
+          "title": "Sit Down You're Rockin' the Boat",
+          "from": "Guys and Dolls",
+          "composer": "Frank Loesser",
+          "why": "Authority figure comedy — someone who tells others to settle down while being the most outrageous presence in the room",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Yertle is the gold standard of comic pomposity — he KNOWS he is the most important turtle. Low baritone with complete self-conviction. Every ounce of authority put to comedic ends. The laugh is in Yertle's absolute certainty that he is right.",
+      "avoid": [
+        "Any uncertainty — Yertle has never doubted himself for a single second in his life"
+      ]
+    },
+    "seussical/seuss-grinch": {
+      "role_name": "The Grinch",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {
+          "title": "You're a Mean One, Mr. Grinch",
+          "from": "How the Grinch Stole Christmas",
+          "composer": "Albert Hague",
+          "why": "THE song — if you can perform this well, the cameo will land",
+          "type": "contrasting"
+        },
+        {
+          "title": "The Wizard and I",
+          "from": "Wicked",
+          "composer": "Stephen Schwartz",
+          "why": "No — wrong energy. Go for the direct Grinch reference.",
+          "type": "contrasting"
+        },
+        {
+          "title": "Epiphany",
+          "from": "Sweeney Todd",
+          "composer": "Stephen Sondheim",
+          "why": "Baritone rage and theatrical menace — shows you can fill the room with dark comic energy",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "The Grinch is a cameo but an ICONIC one — audiences will have strong expectations. Dark baritone with maximum theatrical grumpiness and physical presence. Must be immediately, unmistakably THE Grinch. Physical transformation to warmth at the end is the acting payoff.",
+      "avoid": [
+        "Being a Grinch impression rather than a characterisation — find the genuine grumpiness beneath the iconic persona"
+      ]
+    },
+    "seussical/seuss-thing1-thing2": {
+      "role_name": "Thing 1 & Thing 2",
+      "musical": "Seussical",
+      "songs_to_prepare": [
+        {
+          "title": "I Can Do That",
+          "from": "A Chorus Line",
+          "composer": "Marvin Hamlisch",
+          "why": "Pure physical energy and gymnastic commitment — Thing 1&2 in human form",
+          "type": "contrasting"
+        },
+        {
+          "title": "Consider Yourself",
+          "from": "Oliver!",
+          "composer": "Lionel Bart",
+          "why": "Infectious chaotic enthusiasm — Things don't care about rules or order",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Thing 1 and Thing 2 are physically driven roles — acrobatics, tumbling, synchronised movement, and chaos are the job. Any vocalist can handle the ensemble singing demands. Show maximum physical commitment and genuine physical comedy partnership. The joy is in EXACTLY matching your partner in movement.",
+      "avoid": [
+        "Prioritising voice over physicality — this is a physical theatre acrobatic role first",
+        "Any hesitation or carefulness — Things are uncontrollable, joyful chaos"
+      ]
+    },
+    "sister-act/sister-act-henchmen": {
+      "role_name": "TJ, Joey & Pablo (Curtis's Henchmen)",
+      "musical": "Sister Act",
+      "songs_to_prepare": [
+        {
+          "title": "Gee, Officer Krupke",
+          "from": "West Side Story",
+          "composer": "Leonard Bernstein",
+          "why": "Criminals who are incompetent and comedic — the henchmen's spiritual cousins",
+          "type": "contrasting"
+        },
+        {
+          "title": "Sit Down You're Rockin' the Boat",
+          "from": "Guys and Dolls",
+          "composer": "Frank Loesser",
+          "why": "Physical character comedy with genuine ensemble energy — shows group dynamic and comedic bluster",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "The henchmen are gloriously bad at their jobs. Their incompetence is the comedy — they are outwitted by nuns at every turn. Strong ensemble male voices with physical comedy instincts and a genuine comic partnership between the three. They should feel like a unit.",
+      "avoid": [
+        "Genuine menace — these men are comedy relief whose chief characteristic is failure",
+        "Breaking the unit — the three must feel like a believable hapless gang"
+      ]
+    },
+    "hunchback-of-notre-dame/hunchback-tribunal": {
+      "role_name": "Tribunal",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {
+          "title": "Sit Down John",
+          "from": "1776",
+          "composer": "Sherman Edwards",
+          "why": "An authoritative institutional voice — legal/civic power delivered with conviction",
+          "type": "contrasting"
+        },
+        {
+          "title": "Stars",
+          "from": "Les Miserables",
+          "composer": "Claude-Michel Schonberg",
+          "why": "A character who believes in the absolute authority of the legal order — earnest institutional voice",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Tribunal is a speaking/featured ensemble role in the trial scene. Commanding projection and specific character authority are the requirements. Directors need someone who reads immediately as institutional power — a voice that sounds like the law and its punishment.",
+      "avoid": [
+        "Being too generic — even a brief institutional role needs a specific point of view"
+      ]
+    },
+    "hunchback-of-notre-dame/hunchback-madam": {
+      "role_name": "Madam",
+      "musical": "The Hunchback of Notre Dame",
+      "songs_to_prepare": [
+        {
+          "title": "Pigalle",
+          "from": "Irma La Douce",
+          "composer": "Marguerite Monnot",
+          "why": "A Parisian woman who has seen everything and judges nothing — earthy Parisian street character",
+          "type": "contrasting"
+        },
+        {
+          "title": "La Vie en Rose",
+          "from": "traditional",
+          "composer": "Edith Piaf",
+          "why": "The Parisian spirit — romantic, lived-in, deeply specific. A warm mezzo with Parisian soul.",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Madam is a speaking/featured Parisian street character — warmth, specificity, and a lived-in quality. Think of someone who has walked Paris's streets for decades and has an opinion about everything she sees. Character acting showcase in a brief but vivid role.",
+      "avoid": [
+        "Generic French accent without character specificity",
+        "Over-playing the comedy — she is a real person, not a sketch impression"
+      ]
+    },
+    "waitress/waitress-nurse-norma": {
+      "role_name": "Nurse Norma",
+      "musical": "Waitress",
+      "songs_to_prepare": [
+        {
+          "title": "I've Seen It All",
+          "from": "Dancer in the Dark",
+          "composer": "Bjork",
+          "why": "A woman who has seen everything in a medical setting and has stopped being surprised by any of it",
+          "type": "contrasting"
+        },
+        {
+          "title": "Adelaide's Lament",
+          "from": "Guys and Dolls",
+          "composer": "Frank Loesser",
+          "why": "Dry, deadpan mezzo character comedy — the comedic resignation Nurse Norma embodies",
+          "type": "contrasting"
+        },
+        {
+          "title": "Housewife!",
+          "from": "Company",
+          "composer": "Stephen Sondheim",
+          "why": "A woman with a job to do who finds everything around her gently exhausting — Nurse Norma's energy",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Nurse Norma is a small but beloved comic role — Dr Pomatter's dry, seen-it-all nurse who delivers commentary on the romantic chaos with the deadpan of someone who has worked in obstetrics for thirty years. Mezzo with perfect comic timing and absolute neutrality in her delivery.",
+      "avoid": [
+        "Playing her as cold — she's warm underneath, she just doesn't show surprise anymore",
+        "Over-singing — the comedy is in her restraint"
+      ]
+    },
+    "young-frankenstein/harold-hermit": {
+      "role_name": "Harold the Blind Hermit",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {
+          "title": "So Far",
+          "from": "Allegro",
+          "composer": "Richard Rodgers",
+          "why": "A gentle, somewhat confused man grateful for any connection — Harold's gratitude for the Monster's company",
+          "type": "contrasting"
+        },
+        {
+          "title": "If I Were a Bell",
+          "from": "Guys and Dolls",
+          "composer": "Frank Loesser",
+          "why": "Light, warm baritone comedy from someone completely unselfconsciously enthusiastic — Harold's grateful innocence",
+          "type": "contrasting"
+        },
+        {
+          "title": "Till There Was You",
+          "from": "The Music Man",
+          "composer": "Meredith Willson",
+          "why": "Warm, simple, sincere feeling — Harold who has been utterly alone and is overwhelmed by kindness",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Harold the Blind Hermit is one of the most loved scenes in Mel Brooks history (from the film and show). His total obliviousness — spilling soup, setting the Monster's finger on fire — must play as completely genuine, not as performed incompetence. A warm baritone/bass with natural comic sincerity. The laughs come from his absolute good intentions.",
+      "avoid": [
+        "Winking at the audience about how bad things are going — Harold doesn't know",
+        "Broad physical sloppiness — he's not clumsy on purpose; he's just blind"
+      ]
+    },
+    "young-frankenstein/victor-frankenstein": {
+      "role_name": "Dr. Victor von Frankenstein",
+      "musical": "Young Frankenstein",
+      "songs_to_prepare": [
+        {
+          "title": "Putting It Together",
+          "from": "Sunday in the Park with George",
+          "composer": "Stephen Sondheim",
+          "why": "A visionary who believed in his work at all costs — Victor's scientific obsession in song",
+          "type": "contrasting"
+        },
+        {
+          "title": "Being Alive",
+          "from": "Company",
+          "composer": "Stephen Sondheim",
+          "why": "A ghost/vision of the original — haunted quality, commanding baritone, the shadow that drives the story",
+          "type": "contrasting"
+        },
+        {
+          "title": "Impossible Dream",
+          "from": "Man of La Mancha",
+          "composer": "Mitch Leigh",
+          "why": "The original mad idealist whose dream became monstrosity — Victor's spirit exactly",
+          "type": "contrasting"
+        }
+      ],
+      "style_guidance": "Victor appears as a ghost or vision — the original Dr Frankenstein calling Frederick back to the family legacy. He should feel genuinely compelling and slightly ominous. A deep baritone/bass with presence and gravitas. The comedy of the show rests partly on Victor being played absolutely straight — he believed in what he did.",
+      "avoid": [
+        "Playing the ghost role as comedic — Victor is played entirely seriously, which makes Frederick's situation funnier"
+      ]
     }
   }
 }

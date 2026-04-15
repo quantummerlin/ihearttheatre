@@ -1,19 +1,5 @@
 ﻿[
     {
-        "id":  null,
-        "title":  null,
-        "music_by":  null,
-        "year_premiered":  null,
-        "difficulty_overall":  null,
-        "dance_intensity":  null,
-        "vocal_style":  null,
-        "typical_cast_size":  null,
-        "age_range":  null,
-        "junior_version_available":  null,
-        "genre_tags":  null,
-        "role_count":  14
-    },
-    {
         "id":  "and-juliet",
         "title":  "\u0026 Juliet",
         "music_by":  "Max Martin (jukebox — existing pop hits)",
@@ -460,5 +446,27 @@
                            "classic_Hollywood"
                        ],
         "role_count":  10
+    },
+    {
+        "id": "newsies",
+        "title": "Newsies The Musical",
+        "music_by": "Alan Menken",
+        "year_premiered": 2011,
+        "difficulty_overall": "advanced",
+        "dance_intensity": "very_high",
+        "vocal_style": "Powerhouse pop-rock with belting leads; Alan Menken combines Disney theatrical lyricism with driving anthemic choruses. Big tenor belts, strong ensemble harmony, and massive anthems.",
+        "typical_cast_size": "20-35",
+        "age_range": "14-55",
+        "junior_version_available": true,
+        "genre_tags": [
+            "dance_heavy",
+            "ensemble_heavy",
+            "historical",
+            "inspirational",
+            "athletically_demanding",
+            "youth_friendly",
+            "Disney"
+        ],
+        "role_count": 14
     }
 ]

@@ -1,0 +1,937 @@
+{
+  "musical": {
+    "id": "newsies",
+    "title": "Newsies The Musical",
+    "music_by": "Alan Menken",
+    "book_by": "Harvey Fierstein",
+    "based_on": "1992 Disney film Newsies",
+    "year_premiered": 2011,
+    "broadway_opening": "2012-03-29",
+    "setting": "New York City — Manhattan streets, Pulitzer's office, Medda's theatre, rooftops",
+    "time_period": "1899",
+    "themes": ["standing up to power", "unity and brotherhood", "finding your voice", "justice for workers", "dreams vs duty", "loyalty", "courage under pressure"],
+    "genre_tags": ["dance_heavy", "ensemble_heavy", "historical", "inspirational", "athletically_demanding", "youth_friendly"],
+    "vocal_style": "Powerhouse pop-rock with belting leads; Menken combines his Disney theatrical lyricism with driving anthemic choruses. Big tenor leads, strong ensemble harmony.",
+    "dance_intensity": "very_high",
+    "orchestra_size": "full_pit",
+    "typical_cast_size": "20-35 (newsie ensemble is the backbone)",
+    "age_range": "15-45 (most roles are young men 16-25; some adult authority figures)",
+    "difficulty_overall": "advanced",
+    "junior_version_available": true,
+    "license_holder": "Music Theatre International (MTI)",
+    "synopsis": "New York City, 1899. When publishing tycoon Joseph Pulitzer raises the price of papers for the newsboys who sell them, teenage newsie Jack Kelly leads his ragtag band of brothers in a strike. With the help of aspiring journalist Katherine Plumber, the newsies learn that together they can change the world. Based on the real Newsboys Strike of 1899."
+  },
+  "roles": [
+    {
+      "id": "newsies-jack",
+      "name": "Jack Kelly",
+      "role_type": "lead",
+      "gender": "male",
+      "age_range": {"min": 16, "max": 28},
+      "description": "The charismatic, dreaming leader of the Manhattan newsies. An orphan with a burning desire to escape to Santa Fe, Jack becomes the unexpected face of the strike. He's passionate, impulsive, occasionally conflicted — but always magnetic. The show's emotional and physical centre. One of the great leading male roles in contemporary musical theatre.",
+      "vocal": {
+        "range": "Bb2-A4",
+        "voice_type": "tenor/baritone",
+        "belt_required": true,
+        "belt_range": "E4-A4",
+        "tessitura": "mid-high",
+        "style_notes": "Strong, driving rock-influenced tenor belt. Must handle both intimate ballad moments ('Santa Fe' as internal monologue) and massive anthemic belt ('Seize the Day', 'King of New York'). Clarity on fast ensemble passages essential. Raw, honest vocal quality — not polished, but powerful."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["jazz", "tap", "acrobatics", "breakdance_elements", "lifts_and_tricks"],
+        "stamina": "very_high",
+        "notes": "Jack is in almost every major dance number. Must have strong jazz and acrobatic foundation. 'Seize the Day' and 'King of New York' are massive full-company numbers demanding constant high energy. Partnering required for Katherine scenes."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["inspirational leader", "street-smart dreamer", "reluctant hero", "romantic lead"],
+        "emotional_range": "very high — charisma, vulnerability, rage, tenderness, doubt, resolve",
+        "comedy_skills": true,
+        "notes": "Must be genuinely magnetic — the ensemble follows Jack, so the audience must believe they would too. The Santa Fe dream sequence requires real solo acting. Romance with Katherine must feel earned, not performative."
+      },
+      "performance": {
+        "stage_time_percentage": 75,
+        "solo_songs": 3,
+        "duets": 2,
+        "ensemble_numbers": 8,
+        "quick_changes": 2,
+        "special_skills": ["acrobatics", "tap", "partnering", "crowd_leadership_presence"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "best_to_grow", "most_demanding"],
+        "why": "Jack Kelly is one of the defining leading male roles of the modern era. Demands complete performer integration — singing, dancing, acting, physical theatre, leading an ensemble. A career-defining role for the right performer.",
+        "common_casting": "A triple threat male performer who leads by presence, not by volume. Must be physically capable (acrobatics a strong advantage) and have genuine charisma that reads from the back row.",
+        "standout_opportunity": "'Santa Fe' (the ballad) is a signature audition moment. 'Seize the Day' is an ensemble showstopper. Casting directors look for someone who the ensemble naturally defers to."
+      },
+      "growth_profile": {
+        "skills_developed": ["acrobatic_dance", "belt_stamina", "ensemble_leadership", "romantic_acting", "physical_stamina"],
+        "challenge_areas": ["sustaining_energy_through_full_show", "managing_vocal_strain_on_high_belt_nights", "keeping_comedy_alive_during_serious_scenes"],
+        "recommended_for": ["strong triple-threat males aged 16-28", "performers with acrobatic or gymnastics background", "any male performer wanting a breakthrough role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical power and acrobatic ability", "strong tenor belt to A4", "natural charisma and leadership presence", "genuine emotional depth in ballad moments", "can hold a room without trying"],
+        "common_mistakes": ["generic hero energy without specificity", "prioritising tricks over character", "treating Santa Fe as a showcase number instead of a private moment", "not connecting with ensemble members during group numbers"],
+        "tips": ["Jack is a dreamer who hides vulnerability behind bravado. Find the boy inside the leader. 'Santa Fe' should feel like he's talking to himself — the audience is eavesdropping. Your acrobatic ability will be crucial — come prepared to move."]
+      },
+      "key_songs": [
+        {"title": "Carrying the Banner", "type": "ensemble_lead", "notes": "Opening number establishing the newsies' world. Jack drives the energy."},
+        {"title": "Santa Fe", "type": "solo", "notes": "The ballad. Jack's private dream. Starts small, builds to massive belt. The emotional core of Act 1."},
+        {"title": "Seize the Day", "type": "ensemble_lead", "notes": "The strike anthem. Huge acrobatic dance number. Jack's call to action."},
+        {"title": "Once and For All", "type": "ensemble_lead", "notes": "Act 2 climax. The newsies' final declaration. Must sustain intensity from start to finish."},
+        {"title": "Something to Believe In", "type": "duet", "notes": "Romance duet with Katherine. Tender, hopeful, vocally demanding."}
+      ]
+    },
+    {
+      "id": "newsies-katherine",
+      "name": "Katherine Plumber",
+      "role_type": "lead",
+      "gender": "female",
+      "age_range": {"min": 17, "max": 30},
+      "description": "An ambitious young journalist covering the newsboys' strike, who secretly is the daughter of Pulitzer. Katherine is smart, witty, principled, and gradually falls for Jack while pursuing the story. Arguably Newsies' most vocally demanding lead. Must balance comedy, romance, and fierce conviction.",
+      "vocal": {
+        "range": "G3-Eb6",
+        "voice_type": "soprano/mezzo belt",
+        "belt_required": true,
+        "belt_range": "D4-Bb5",
+        "tessitura": "high",
+        "style_notes": "Extraordinary vocal demands — 'Watch What Happens' changes tempo and mood constantly and requires complete technical control. Must sing through fast dialogue-rhythm sections with clarity. Big soprano top notes and powerful belt in the same song. The hardest female lead role in Menken's catalogue."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["jazz", "character_movement", "partnering"],
+        "stamina": "high",
+        "notes": "Less acrobatically demanding than the newsies, but must hold her own in partnered numbers and ensemble scenes. 'King of New York' passage requires strong jazz."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["sharp-tongued journalist", "romantic lead", "feminist heroine", "clever underdog"],
+        "emotional_range": "high — wit, conviction, vulnerability, joy, frustration, love",
+        "comedy_skills": true,
+        "notes": "Katherine gets some of the sharpest comedy in the show. Her relationship with Jack must feel like a real sparring match of equals. Must not be passive — Katherine drives scenes."
+      },
+      "performance": {
+        "stage_time_percentage": 45,
+        "solo_songs": 1,
+        "duets": 2,
+        "ensemble_numbers": 5,
+        "quick_changes": 1,
+        "special_skills": ["rapid_diction", "comedic_timing", "physical_awareness_in_ensemble"]
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "🌟 Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_stand_out", "most_vocally_demanding"],
+        "why": "'Watch What Happens' is one of the most technically demanding soprano solos in contemporary musical theatre. Casting directors regularly cite it as a peak vocal showcase. A great Katherine is remembered.",
+        "common_casting": "A high soprano with strong belt who can handle complex rhythmic material. The wit must be genuine — comedy can't be forced. Usually cast older than the newsies.",
+        "standout_opportunity": "'Watch What Happens' — both the original and reprise. Directors specifically look for performers who can handle the rapid-fire exposition while keeping it fresh and funny."
+      },
+      "growth_profile": {
+        "skills_developed": ["soprano_extension", "belt_technique", "comedic_timing", "rhythmic_diction", "romantic_acting"],
+        "challenge_areas": ["maintaining_clarity_on_rapid_sections", "pacing_the_role_correctly_so_vocals_last_full_run", "not_upstaging_the_newsies_ensemble"],
+        "recommended_for": ["high sopranos who also have belt capability", "performers who love witty, fast-talking characters", "strong female leads who want a technically complex showcase"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["soprano top notes + genuine belt power", "crystal clear diction at speed", "natural comedic wit — not performed", "real chemistry with Jack actor", "confidence and self-possession"],
+        "common_mistakes": ["belting through passages that should be soprano", "letting comedy make Katherine seem silly rather than smart", "rushing Watch What Happens — it must breathe", "underplaying the conviction scenes"],
+        "tips": ["Katherine is not impressed by the newsies at first — she's a journalist doing a job. Let the admiration grow gradually. 'Watch What Happens' is a character revelation just as much as a vocal showcase — find the moment she commits to the story."]
+      },
+      "key_songs": [
+        {"title": "Watch What Happens", "type": "solo", "notes": "The defining Katherine moment. Fast, complex, brilliant. Two distinct sections — uncertainty becoming conviction."},
+        {"title": "Watch What Happens (Reprise)", "type": "solo", "notes": "Shorter reprise building to high soprano climax."},
+        {"title": "Something to Believe In", "type": "duet", "notes": "Romance duet with Jack. Tender, honest, beautifully crafted."},
+        {"title": "Once and For All", "type": "ensemble_lead", "notes": "Katherine finds her voice fully in the climax. Powerful soprano presence required."}
+      ]
+    },
+    {
+      "id": "newsies-davey",
+      "name": "Davey Jacobs",
+      "role_type": "supporting_lead",
+      "gender": "male",
+      "age_range": {"min": 15, "max": 25},
+      "description": "Jack's earnest, book-smart best friend. Davey is the brains and moral conscience of the newsies — he's cautious where Jack is impulsive, and becomes the strike's strategist. He sells papers to help his family after his father's accident. A wonderful second lead with genuine dramatic weight.",
+      "vocal": {
+        "range": "Bb2-G4",
+        "voice_type": "tenor/baritone",
+        "belt_required": false,
+        "belt_range": "E4-F#4",
+        "tessitura": "mid",
+        "style_notes": "Solid, warm tenor/baritone — doesn't need Jack's power but must hold ensemble harmonies and have his own moments. More conversational than belted. Earnest quality."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["jazz", "ensemble_staging", "tap_basics"],
+        "stamina": "high",
+        "notes": "Not the acrobatic lead but must participate fully in all ensemble numbers. Solid jazz base required. Tap literacy helpful."
+      },
+      "acting": {
+        "level": "intermediate_to_advanced",
+        "character_types": ["intellectual friend", "moral compass", "reluctant revolutionary", "protective older brother"],
+        "emotional_range": "high — worry, conviction, loyalty, courage, growth",
+        "comedy_skills": true,
+        "notes": "Davey's arc from cautious follower to committed revolutionary is the secondary emotional journey of the show. His relationship with Jack must feel like a genuine intellectual-meets-dreamer friendship."
+      },
+      "performance": {
+        "stage_time_percentage": 40,
+        "solo_songs": 1,
+        "duets": 1,
+        "ensemble_numbers": 8,
+        "quick_changes": 0,
+        "special_skills": ["strong_harmonics", "brotherly_dynamic_with_les"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Standout Supporter",
+        "growth_value": 4,
+        "growth_label": "📈 Strong Growth Role",
+        "decision_tags": ["great_for_first_major_lead", "good_for_resume"],
+        "why": "Davey is the ideal first big lead for a developing performer — significant stage time, clear arc, duets with the lead, and always in the exciting ensemble numbers without carrying the full show weight.",
+        "common_casting": "A confident, warm performer who reads as smart. Often slightly older than the actor playing Jack even if the characters are similar ages. Natural brotherly dynamic required.",
+        "standout_opportunity": "'Seize the Day' — Davey's moment of transformation from cautious to committed is a clear acting beat visible to the audience."
+      },
+      "growth_profile": {
+        "skills_developed": ["ensemble_harmony", "acting_under_pressure", "brotherly_dynamic_acting", "sustained_ensemble_participation"],
+        "challenge_areas": ["not_being_overshadowed_by_the_more_flashy_newsies", "finding_daveys_own_specificity_within_the_group"],
+        "recommended_for": ["strong baritones/tenors who want a major supporting lead", "performers who read as intelligent and thoughtful", "anyone ready to step up from ensemble to named lead"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["warm, clear baritone or tenor", "genuine intellectual quality — reads as smart", "real chemistry with Jack and Les", "can hold harmonies in fast ensemble numbers"],
+        "common_mistakes": ["playing Davey as generic nice guy", "being too passive — Davey has genuine conviction", "not building the arc from hesitant to brave"],
+        "tips": ["Davey is the audience's gateway into the newsies' world — we understand the strike through his eyes. He starts worried about his family and ends believing in something bigger than himself. That journey is your scene-by-scene objective."]
+      },
+      "key_songs": [
+        {"title": "Carrying the Banner", "type": "ensemble_lead", "notes": "Establishes Davey as new to the world of newsies."},
+        {"title": "Seize the Day", "type": "ensemble", "notes": "Davey's moment of full commitment to the cause."}
+      ]
+    },
+    {
+      "id": "newsies-crutchie",
+      "name": "Crutchie Morris",
+      "role_type": "supporting_lead",
+      "gender": "male",
+      "age_range": {"min": 14, "max": 24},
+      "description": "Jack's best friend since childhood — an orphan who walks with a crutch but has more spirit and optimism than anyone. Crutchie is the emotional heart of the show, a character whose genuine joy makes his suffering in the Refuge devastating. His letter to Jack in Act 2 is one of musical theatre's most affecting moments.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "baritone/tenor character",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Warm, clear, honest singing voice. Not a showboating role — sincerity matters more than technical fireworks. Must handle the emotional weight of 'Letter from the Refuge' with simple, direct delivery."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["modified_jazz", "character_movement", "tap_basics"],
+        "stamina": "high",
+        "notes": "Crutchie performs all numbers adapted around his crutch — this actually makes him more striking visually. Must be physically confident using the prop. High stamina — in most ensemble numbers."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["optimistic underdog", "loyal friend", "suffering hero", "emotional anchor"],
+        "emotional_range": "very high — joy, loyalty, pain, hope, grief, courage",
+        "comedy_skills": true,
+        "notes": "Crutchie's warmth and optimism make his Act 2 capture devastating. Must play the joy as completely genuine — the audience falls in love with him so that his absence hurts. The letter scene requires nuanced, honest acting without sentimentality."
+      },
+      "performance": {
+        "stage_time_percentage": 30,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 7,
+        "quick_changes": 1,
+        "special_skills": ["crutch_performance", "letter_scene_acting", "physical_warmth"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "💫 Audience Favourite",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["audience_favourite", "best_to_grow", "career_building"],
+        "why": "Crutchie consistently emerges as the most beloved character in productions. Audiences follow his arc intensely. The role demands genuine acting ability and rewards performers who can be completely authentic on stage.",
+        "common_casting": "A warm, genuinely likeable performer who can physically handle the crutch without it being a limitation. Should have real charm and optimism — not performed happiness but authentic light.",
+        "standout_opportunity": "'Letter from the Refuge' — Crutchie reads his letter to Jack from the Refuge. A devastating solo acting/singing moment that leaves audiences in tears when done right."
+      },
+      "growth_profile": {
+        "skills_developed": ["authentic_emotional_acting", "physical_character_performance", "solo_vocal_presence", "endearing_character_work"],
+        "challenge_areas": ["keeping_joy_genuine_not_cloying", "the_letter_scene_emotional_truth", "maintaining_physical_integrity_with_crutch_across_long_run"],
+        "recommended_for": ["performers with genuine warm stage presence", "anyone who wants to develop authentic emotional acting", "performers who want an audience-favourite role without carrying full show weight"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine warmth and likability — must not be performed", "can handle crutch naturally and confidently", "authentic emotional range for the Act 2 letter scene", "real connection with Jack actor"],
+        "common_mistakes": ["playing Crutchie as pathetic or pitiable — he is NOT a sad character", "sentimentalising the letter scene", "treating the crutch as a disability instead of just part of who he is"],
+        "tips": ["Crutchie doesn't feel sorry for himself — ever. He is simply joyful. The crutch is not a metaphor in his mind — it's part of his body and his life. His joy is earned and real. When things go wrong in Act 2, the devastation hits because we believed the joy completely."]
+      },
+      "key_songs": [
+        {"title": "Letter from the Refuge", "type": "solo", "notes": "The show's most emotionally affecting scene. Crutchie's letter to Jack from the Refuge. Devastating if played with complete honesty."},
+        {"title": "Carrying the Banner", "type": "ensemble", "notes": "Establishes Crutchie's irrepressible optimism from the first moments."}
+      ]
+    },
+    {
+      "id": "newsies-pulitzer",
+      "name": "Joseph Pulitzer",
+      "role_type": "supporting_lead",
+      "gender": "male",
+      "age_range": {"min": 40, "max": 65},
+      "description": "The powerful newspaper tycoon whose price-hike sparks the strike. Pulitzer is complex — not a cardboard villain but a pragmatic power broker who genuinely believes the marketplace is all there is. He has a complicated relationship with Katherine (his daughter). One of the show's most sophisticated roles.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "baritone/bass-baritone",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "low-mid",
+        "style_notes": "Low, authoritative baritone. Commanding voice quality. 'The Bottom Line' requires a character power voice rather than a lyric approach. Subtle — carries weight through presence, not volume."
+      },
+      "dance": {
+        "level": "low",
+        "styles": ["refined_staging", "character_movement"],
+        "stamina": "moderate",
+        "notes": "Pulitzer is not a dancing role. Minimal movement requirements — presence and stillness are his tools."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["ruthless tycoon", "pragmatic villain", "complex father figure", "formidable adversary"],
+        "emotional_range": "high — intimidation, fleeting vulnerability (daughter), cunning, begrudging respect",
+        "comedy_skills": false,
+        "notes": "Pulitzer must be genuinely formidable — Jack must seem brave for standing up to him. The most effective Pulitzers play him as someone who actually believes in his worldview rather than as a sneering villain. The scene with Katherine adds real complexity."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["commanding_stillness", "vocal_authority"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Standout Supporter",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["great_for_experienced_adult", "good_for_resume"],
+        "why": "Scene-stealing villain role with real dramatic complexity. Perfect for experienced baritones who want a character role with weight. The father-daughter dynamic with Katherine adds unexpected depth.",
+        "common_casting": "Strong, experienced baritone with commanding stage presence. Should read as genuinely powerful — weight in every word.",
+        "standout_opportunity": "'The Bottom Line' — Pulitzer's brutal commercial pragmatism in musical form. Must be chillingly logical, not cartoonishly evil."
+      },
+      "growth_profile": {
+        "skills_developed": ["commanding_character_acting", "vocal_authority", "complex_antagonist_work"],
+        "challenge_areas": ["not_playing_him_as_pure_villain", "finding_the_genuine_belief_system_behind_his_decisions"],
+        "recommended_for": ["experienced baritone/bass performers", "older performers wanting a meaty character role", "anyone developing complex antagonist skillset"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["commanding baritone with real authority", "can fill stage with presence, not volume", "genuine complexity — not a caricature", "physical power even in stillness"],
+        "common_mistakes": ["playing Pulitzer as simply evil — he believes he is right", "not projecting genuine threat", "underplaying the scene with Katherine"],
+        "tips": ["Pulitzer has built an empire from nothing. He's not cruel — he's efficient. When he says the market decides everything, he genuinely means it. Find the man who built the World and understand that worldview before you play him as wrong."]
+      },
+      "key_songs": [
+        {"title": "The Bottom Line", "type": "solo_ensemble", "notes": "Pulitzer's commercial pragmatism. Dark, sharp, frighteningly logical."},
+        {"title": "Seize the Day (counterpoint)", "type": "ensemble_counterpoint", "notes": "Acts in counterpoint to the newsies' anthem — the establishment vs the revolution."}
+      ]
+    },
+    {
+      "id": "newsies-medda",
+      "name": "Medda Larkin",
+      "role_type": "supporting",
+      "gender": "female",
+      "age_range": {"min": 30, "max": 55},
+      "description": "A flamboyant, generous vaudeville star who gives the newsies sanctuary in her theatre and has a maternal relationship with Jack. Medda is loud, funny, warm-hearted, and has a spectacular showbiz moment in 'That's Rich'. Often the comic highlight of Act 1.",
+      "vocal": {
+        "range": "G3-Eb5",
+        "voice_type": "mezzo-soprano/belt",
+        "belt_required": true,
+        "belt_range": "C4-Eb5",
+        "tessitura": "mid-high",
+        "style_notes": "Big, brassy, vaudeville-inflected mezzo belt. Must sell 'That's Rich' with complete commitment and charisma. Think Ethel Merman energy but with specificity. The number should stop the show."
+      },
+      "dance": {
+        "level": "low_to_intermediate",
+        "styles": ["vaudeville_staging", "character_performance"],
+        "stamina": "moderate",
+        "notes": "Medda's performance moments are theatrical rather than technically demanding. Must carry full vaudeville production energy — thinks with her whole body."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["warm mother figure", "showbiz veteran", "comic relief", "loyal ally"],
+        "emotional_range": "moderate — warmth, comic timing, maternal protectiveness",
+        "comedy_skills": true,
+        "notes": "Medda is pure theatrical joy. The comedy must feel effortless. Her warmth toward Jack must feel genuinely maternal — not performed affection. Often a scene-stealer in act 1."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 1,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["vaudeville_performance", "show_stopper_energy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "💫 Audience Favourite",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["audience_favourite", "great_for_experienced_female_performer"],
+        "why": "Medda consistently gets the biggest hand of Act 1. 'That's Rich' is a showstopper by design. A strong performer in this role will be talked about long after the curtain falls.",
+        "common_casting": "A confident, larger-than-life mezzo with genuine showbiz presence. Should own every room she enters. Often cast with a big personality — someone who makes everyone laugh just by appearing.",
+        "standout_opportunity": "'That's Rich' — vaudeville showstopper. If the number lands, the audience is yours for the rest of the show."
+      },
+      "growth_profile": {
+        "skills_developed": ["showstopper_delivery", "vaudeville_style", "maternal_character_work", "comedic_timing"],
+        "challenge_areas": ["making_the_comedy_seem_effortless", "sustaining_the_big_energy_without_it_seeming_forced"],
+        "recommended_for": ["experienced mezzo-sopranos with big personality", "performers who want a showstopper moment without full lead demands", "anyone developing vaudeville or character performance skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["big, belting mezzo soprano voice", "unstoppable stage presence", "genuine comedic warmth — not sarcasm", "ability to fill a theatre with personality"],
+        "common_mistakes": ["being too modern or hip in the delivery — lean into vaudeville", "underplaying the showbiz elements", "not committing fully to the theatricality"],
+        "tips": ["Medda has been a performer her entire life. Every room is her stage. She adores Jack like a son. Everything she does is BIG but never cheap — she's a professional who knows exactly what she's doing."]
+      },
+      "key_songs": [
+        {"title": "That's Rich", "type": "solo", "notes": "The Act 1 showstopper. Vaudeville at its most glorious. Must stop the show — directors expect a standing ovation opportunity."}
+      ]
+    },
+    {
+      "id": "newsies-les",
+      "name": "Les Jacobs",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 8, "max": 14},
+      "description": "Davey's younger brother — a charming, energetic kid who takes to the newsie life immediately and becomes a mascot for the group. Les is endearing, funny, and provides comedic relief while giving Davey his protective older-sibling arc.",
+      "vocal": {
+        "range": "C4-D5",
+        "voice_type": "child treble/soprano",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Clear, bright child voice. Must be able to hold his own in ensemble numbers without being lost. Charm and confidence more important than technical power."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["jazz", "tap_basics", "acrobatics_optional"],
+        "stamina": "high",
+        "notes": "An eager, energetic kid in all the big numbers. Energy and commitment carry the role. Any acrobatic trick ability is a major asset."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["enthusiastic kid", "comic relief", "endearing mascot", "brave little brother"],
+        "emotional_range": "moderate — excitement, loyalty, brief moments of fear, triumph",
+        "comedy_skills": true,
+        "notes": "Les's natural charm carries most of his scenes. Must feel like a real kid — not 'performed cute'. The comedy with the older newsies should feel genuine."
+      },
+      "performance": {
+        "stage_time_percentage": 20,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 7,
+        "quick_changes": 0,
+        "special_skills": ["kid_natural_charm", "acrobatics_bonus"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Standout Supporter",
+        "growth_value": 4,
+        "growth_label": "📈 Strong Growth Role",
+        "decision_tags": ["great_for_young_performers", "audience_favourite"],
+        "why": "Les is the perfect breakout role for a talented young performer. Significant stage time, genuine character moments, audience naturally adores the character. No vocal pressure — all presence and energy.",
+        "common_casting": "A genuinely charming, energetic young boy who can be trusted to stay in character. Must have real presence — should seem absolutely thrilled to be a newsie.",
+        "standout_opportunity": "Les earning the older newsies' acceptance in the opening scenes. Small moments of genuine chemistry with Davey read beautifully from the audience."
+      },
+      "growth_profile": {
+        "skills_developed": ["natural_stage_presence", "ensemble_participation", "sibling_dynamic_acting", "high_energy_performance"],
+        "challenge_areas": ["keeping_energy_sustainable_across_full_show", "not_playing_cute_but_being_real"],
+        "recommended_for": ["talented young male performers aged 8-14", "kids with genuine natural energy and charm", "young performers ready for their first significant stage role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuine natural charm — not performed cuteness", "physical energy and willingness to throw himself into numbers", "clear singing voice in ensemble", "real sibling dynamic with Davey actor"],
+        "common_mistakes": ["being too precious or careful — Les is a kid, not a little adult", "trying too hard to be funny", "losing energy in the long ensemble sections"],
+        "tips": ["Les just wants to be a newsie. He thinks this is the greatest thing that's ever happened to him. That genuine enthusiasm is contagious. Don't plan your charm — just show up as a genuinely excited kid."]
+      },
+      "key_songs": [
+        {"title": "Carrying the Banner", "type": "ensemble", "notes": "Les's initiation into newsie life."},
+        {"title": "King of New York", "type": "ensemble", "notes": "Les participates fully in the celebration number."}
+      ]
+    },
+    {
+      "id": "newsies-race",
+      "name": "Race (Antonio Higgins)",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 15, "max": 26},
+      "description": "The fast-talking, streetwise newsie who always has an angle. Race (short for Racetrack) is one of the most distinctive featured newsies — quick-witted, always betting on the horses, and one of the key faces within the ensemble. Typically has more featured moments than standard ensemble.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "tenor/baritone",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Energy and personality over technical demands. Must cut through ensemble. Confident, punchy delivery."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["jazz", "tap", "acrobatics"],
+        "stamina": "very_high",
+        "notes": "Race is typically given featured dance moments. Strong jazz and tap base required. Acrobatic tricks are regularly highlighted in staging."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["streetwise comedian", "loyal crew member", "risk-taker"],
+        "emotional_range": "moderate — wit, loyalty, bravado",
+        "comedy_skills": true,
+        "notes": "Race's comedy is built on fast delivery and timing. Must feel like a real street kid — the jokes come from survival."
+      },
+      "performance": {
+        "stage_time_percentage": 25,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 0,
+        "special_skills": ["featured_dance_moments", "comedic_line_delivery"]
+      },
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "✨ Standout Supporter",
+        "growth_value": 4,
+        "growth_label": "📈 Strong Growth Role",
+        "decision_tags": ["great_for_dancers", "audience_favourite"],
+        "why": "Race consistently gets his own moments and audience recognition despite being technically ensemble. A strong dancer with natural comedy instincts will shine.",
+        "common_casting": "Strong dancer, charming screen presence, naturally funny. Often cast as a physical standout within the ensemble.",
+        "standout_opportunity": "Featured moments in 'King of New York' and 'Seize the Day'. A great Race is mentioned in reviews even without solo lines."
+      },
+      "growth_profile": {
+        "skills_developed": ["featured_ensemble_performance", "comedic_line_delivery", "advanced_dance", "ensemble_harmony"],
+        "challenge_areas": ["staying_specific_within_the_ensemble_dynamic", "not_overshadowing_the_leads"],
+        "recommended_for": ["strong male dancers with natural comedy instincts", "performers wanting a featured ensemble role with real moments", "anyone developing acrobatic and jazz performance skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["exceptional dancer — particularly jazz and tap", "natural quick-witted comedy", "strong ensemble presence", "acrobatic tricks a major advantage"],
+        "common_mistakes": ["playing Race as a generic background newsie — he has genuine character", "underselling the physical performance"],
+        "tips": ["Race lives for the moment. He's always got a bet running and a scheme going. His joy is infectious but always grounded in the reality of street life."]
+      },
+      "key_songs": [
+        {"title": "King of New York", "type": "ensemble_featured", "notes": "Race typically has featured moments here — tap and acrobatics on display."},
+        {"title": "Seize the Day", "type": "ensemble_featured", "notes": "High-energy featured dance presence."}
+      ]
+    },
+    {
+      "id": "newsies-albert",
+      "name": "Albert",
+      "role_type": "featured_ensemble",
+      "gender": "male",
+      "age_range": {"min": 15, "max": 25},
+      "description": "A loyal, dependable newsie and one of the core featured ensemble. Albert is one of the first to commit to Jack's cause and often leads ensemble moments within the group. A solid featured role with great dance opportunities.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "baritone/tenor",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Strong ensemble voice with some featured moments. Confidence and clarity in harmony."
+      },
+      "dance": {
+        "level": "advanced",
+        "styles": ["jazz", "tap", "acrobatics"],
+        "stamina": "very_high",
+        "notes": "Albert typically features in the key dance moments. Strong technical dance base required."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["loyal supporter", "brave newsie", "ensemble leader"],
+        "emotional_range": "moderate",
+        "comedy_skills": false,
+        "notes": "Albert's character is defined by loyalty and commitment to the cause. Reads as one of the most trustworthy of the newsies."
+      },
+      "performance": {
+        "stage_time_percentage": 22,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 8,
+        "quick_changes": 0,
+        "special_skills": ["featured_dance", "ensemble_harmony_leadership"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "🎭 Ensemble Standout",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["great_for_dancers", "good_for_resume"],
+        "why": "Strong featured ensemble role that gives dancers real performance opportunities without the full burden of principal dialogue.",
+        "common_casting": "Technically strong dancer with solid vocal presence and genuine warmth.",
+        "standout_opportunity": "Featured moments across the big dance numbers — a great Albert earns recognition from loyal audience members."
+      },
+      "growth_profile": {
+        "skills_developed": ["featured_ensemble_dance", "ensemble_vocal_harmony", "stage_group_dynamics"],
+        "challenge_areas": ["finding_albert's_specificity_within_the_group"],
+        "recommended_for": ["strong male dancers at advanced level", "performers developing ensemble leadership skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["strong technical dancing — jazz, tap, acrobatics", "dependable, warm stage presence", "solid ensemble harmony"],
+        "common_mistakes": ["being too flashy and competing with the leads"],
+        "tips": ["Albert is the heart of the ensemble — dependable, warm, committed. Find specific moments of loyalty and brotherhood."]
+      },
+      "key_songs": [
+        {"title": "Seize the Day", "type": "ensemble_featured", "notes": "Featured ensemble dance."},
+        {"title": "King of New York", "type": "ensemble_featured", "notes": "Key ensemble number."}
+      ]
+    },
+    {
+      "id": "newsies-spot",
+      "name": "Spot Conlon",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 16, "max": 26},
+      "description": "The legendary, feared leader of the Brooklyn newsies — his endorsement of the strike changes everything. Spot Conlon has maybe five minutes on stage but leaves an indelible impression. His appearance is an event. Often described as the coolest character in the show.",
+      "vocal": {
+        "range": "D3-F4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Cool, commanding baritone. Spot doesn't need to be loud — he needs to be the kind of voice that makes everything go quiet."
+      },
+      "dance": {
+        "level": "intermediate_to_advanced",
+        "styles": ["jazz", "character_staging"],
+        "stamina": "moderate",
+        "notes": "Spot's limited stage time means the dance moments are sharp and definitive. Must be physically commanding."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["legendary leader", "too-cool-to-care alpha", "unexpected ally"],
+        "emotional_range": "low range, very high precision — coolness, intimidation, a flash of genuine belief",
+        "comedy_skills": false,
+        "notes": "The challenge with Spot is doing more with less. Every line must land — he has very few of them. The moment he commits to the strike is one of the show's great theatrical payoffs."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["commanding_entrance", "maximum_stage_presence_in_minimum_time"]
+      },
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "💫 Audience Favourite",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["great_for_experienced_performer", "audience_favourite", "memorable_cameo"],
+        "why": "Spot Conlon is one of the most remembered characters in Newsies productions despite minimal stage time. A great Spot is talked about. Requires supreme confidence and physical presence.",
+        "common_casting": "The most effortlessly cool person in the room. Often the best dancer in the company. Commands attention without demanding it.",
+        "standout_opportunity": "Every entrance. The moment of commitment to the strike. Spot walking on stage should shift the energy of the entire building."
+      },
+      "growth_profile": {
+        "skills_developed": ["commanding_presence", "economy_of_performance", "entrance_technique"],
+        "challenge_areas": ["resisting_the_urge_to_overplay_the_coolness", "making_every_line_count"],
+        "recommended_for": ["confident performers who want a highly memorable short role", "dancers who want a character showcase", "anyone developing commanding stage presence"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["effortless, magnetic stage presence", "physical cool", "ability to fill stage without doing much", "strong dancer"],
+        "common_mistakes": ["trying too hard to be cool — it kills the character immediately", "not landing the commitment moment with enough weight"],
+        "tips": ["Spot Conlon would rather be anywhere else. He came because they asked and he's deciding whether they're worth his time. The moment he commits is the moment he truly sees something worth believing in. Play the decision, not the outcome."]
+      },
+      "key_songs": [
+        {"title": "Brooklyn's Here", "type": "ensemble_lead", "notes": "Spot leads the Brooklyn newsies' entrance. The show's great theatrical reveal moment."}
+      ]
+    },
+    {
+      "id": "newsies-hannah",
+      "name": "Hannah",
+      "role_type": "featured_ensemble",
+      "gender": "female",
+      "age_range": {"min": 18, "max": 35},
+      "description": "One of Medda's showgirls and a featured performer in the vaudeville sequences. Hannah provides colour and theatrical energy in the Medda scenes. A good introductory featured role for female performers.",
+      "vocal": {
+        "range": "C4-C5",
+        "voice_type": "mezzo-soprano",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Strong ensemble voice. Vaudeville-adjacent style — warm, theatrical, confident."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["vaudeville_staging", "jazz", "period_staging"],
+        "stamina": "moderate",
+        "notes": "Hannah participates in Medda's vaudeville sequences. Strong jazz base with period awareness."
+      },
+      "acting": {
+        "level": "beginner_to_intermediate",
+        "character_types": ["showgirl", "vaudeville performer"],
+        "emotional_range": "low — theatrical warmth, comedy support",
+        "comedy_skills": true,
+        "notes": "Must support Medda without overshadowing. Genuine theatrical energy and warmth."
+      },
+      "performance": {
+        "stage_time_percentage": 10,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 1,
+        "special_skills": ["vaudeville_style", "period_wardrobe_staging"]
+      },
+      "casting_insights": {
+        "spotlight_score": 1,
+        "spotlight_label": "🎭 Ensemble Role",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["great_for_developing_performers", "good_for_resume"],
+        "why": "Hannah is a good introductory role for female performers who want ensemble experience in a major musical.",
+        "common_casting": "Strong dancer with warm stage presence and vaudeville awareness.",
+        "standout_opportunity": "The vaudeville sequences with Medda are always popular with audiences — featured ensemble performers who commit to the style make an impression."
+      },
+      "growth_profile": {
+        "skills_developed": ["vaudeville_style", "ensemble_performance", "period_staging"],
+        "challenge_areas": ["finding_specificity_within_the_chorus"],
+        "recommended_for": ["female performers wanting ensemble experience in Newsies", "dancers developing period style"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["strong jazz dancer", "warm, theatrical presence", "period style awareness"],
+        "common_mistakes": ["being too contemporary in movement — find the 1899 vaudeville quality"],
+        "tips": ["Hannah is a professional performer in 1899 New York — she's seen it all and loves every minute of it. Find the genuine theatrical joy."]
+      },
+      "key_songs": [
+        {"title": "That's Rich", "type": "ensemble_featured", "notes": "Featured in Medda's showstopper."}
+      ]
+    },
+    {
+      "id": "newsies-snyder",
+      "name": "Snyder the Spider",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 55},
+      "description": "The sinister warden of the Refuge reformatory and Jack's nemesis. Snyder is a threatening, physical presence — a pure antagonist who represents the brutal adult authority bearing down on street children. Less nuanced than Pulitzer — his function is to be genuinely threatening.",
+      "vocal": {
+        "range": "A2-D4",
+        "voice_type": "bass-baritone",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "low",
+        "style_notes": "Dark, menacing bass quality. Snyder works best with a voice that sounds inherently threatening."
+      },
+      "dance": {
+        "level": "low",
+        "styles": ["physical_menace", "chase_staging"],
+        "stamina": "moderate",
+        "notes": "Snyder's physicality is about threat, not technique. Chase sequences require agility."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": ["pure antagonist", "institutional bully", "menacing authority figure"],
+        "emotional_range": "moderate — menace, cunning, brutal satisfaction",
+        "comedy_skills": false,
+        "notes": "Snyder must be genuinely frightening. His appearance should change the atmosphere of any scene. The audience must believe he is a real threat to Jack."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 2,
+        "quick_changes": 0,
+        "special_skills": ["physical_menace", "intimidation_acting"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "🎭 Ensemble Standout",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["good_for_character_actors", "great_for_antagonist_work"],
+        "why": "A pure antagonist role — every production needs a genuinely frightening Snyder to make the stakes real. Character acting showcase.",
+        "common_casting": "Large, physically imposing bass-baritone with natural menace.",
+        "standout_opportunity": "The chase and capture sequences. When Snyder threatens Jack, the audience must hold its breath."
+      },
+      "growth_profile": {
+        "skills_developed": ["antagonist_acting", "physical_menace", "creating_real_stakes"],
+        "challenge_areas": ["not_becoming_cartoonish", "finding_the_institutional_authority_behind_the_brutality"],
+        "recommended_for": ["bass-baritones wanting a character antagonist role", "performers developing physical menace skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["genuinely threatening physical presence", "dark bass-baritone voice", "can make child actors visibly afraid"],
+        "common_mistakes": ["being too obviously theatrical — Snyder is a real bureaucratic monster, not a pantomime villain"],
+        "tips": ["Snyder believes the boys in his care are property. He's not emotional about his cruelty — it's just management. Find the terrifying banality of institutional power."]
+      },
+      "key_songs": []
+    },
+    {
+      "id": "newsies-wiesel",
+      "name": "Wiesel / Jacobi",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 30, "max": 55},
+      "description": "The print shop foreman / news distributor who represents Pulitzer's front-line enforcement of the price hike. Often doubled with Jacobi in some productions. A comic-menace role that pairs with Pulitzer's more refined villainy.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "character baritone",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Character voice — gruff, broad, practical. Sells the role more through attitude than technical quality."
+      },
+      "dance": {
+        "level": "low",
+        "styles": ["character_movement"],
+        "stamina": "low",
+        "notes": "Minimal dance demands. Character movement and physical comedy."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["working-class villain", "authority figure", "comic antagonist"],
+        "emotional_range": "moderate — bullying authority, blustering frustration",
+        "comedy_skills": true,
+        "notes": "Wiesel/Jacobi are not subtle — broad, blustering comedy. The newsies getting the better of them is built on clear audience investment in seeing this character lose."
+      },
+      "performance": {
+        "stage_time_percentage": 8,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 1,
+        "quick_changes": 0,
+        "special_skills": ["physical_comedy", "blustering_authority"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "🎭 Ensemble Standout",
+        "growth_value": 2,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["good_for_character_actors"],
+        "why": "A solid character supporting role that provides clear narrative function and audience satisfaction.",
+        "common_casting": "A broad character actor who can project blustering authority convincingly.",
+        "standout_opportunity": "The confrontations with the newsies where he ends up humiliated. The audience loves to see him lose."
+      },
+      "growth_profile": {
+        "skills_developed": ["character_comedy", "antagonist_physicality"],
+        "challenge_areas": ["not_being_too_cartoonish"],
+        "recommended_for": ["character baritones wanting a supporting antagonist role"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical presence and bluster", "character comedy instincts", "can lose with humour"],
+        "common_mistakes": ["playing it too mean — he needs to be the kind of bully who gets his comeuppance"],
+        "tips": ["Wiesel is used to pushing around boys who have no power. The moment they organise is baffling to him — he has no framework for workers fighting back."]
+      },
+      "key_songs": []
+    },
+    {
+      "id": "newsies-oscar-morris",
+      "name": "Oscar & Morris Delancey",
+      "role_type": "supporting",
+      "gender": "male",
+      "age_range": {"min": 18, "max": 30},
+      "description": "The thuggish Delancey brothers who work for Wiesel and serve as recurring physical antagonists for the newsies. They're menacing, brutal, and provide conflict throughout — but get their comeuppance when the newsies fight back. Often double-cast or played by strong physical performers.",
+      "vocal": {
+        "range": "C3-E4",
+        "voice_type": "baritone/tenor",
+        "belt_required": false,
+        "belt_range": "",
+        "tessitura": "mid",
+        "style_notes": "Muscle, not melody. Character voice quality. Must project threat without much singing."
+      },
+      "dance": {
+        "level": "intermediate",
+        "styles": ["fight_choreography", "physical_theatre", "jazz_basics"],
+        "stamina": "high",
+        "notes": "Fight sequences are the key physical element. Must handle combat choreography safely and convincingly."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["bully", "hired muscle", "comic antagonist"],
+        "emotional_range": "low — menace, stupid aggression, humiliation",
+        "comedy_skills": true,
+        "notes": "The Delanceys are bullies who are ultimately beaten. Their humiliation in the fight sequences is a crowd-pleasing moment. Physical threat and comedy bluster work simultaneously."
+      },
+      "performance": {
+        "stage_time_percentage": 12,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 3,
+        "quick_changes": 0,
+        "special_skills": ["fight_choreography", "physical_comedy"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "🎭 Ensemble Standout",
+        "growth_value": 3,
+        "growth_label": "🎯 Confident Performer Role",
+        "decision_tags": ["good_for_physical_performers", "good_for_resume"],
+        "why": "The Delanceys are satisfying antagonist roles — the audience hates them and loves seeing them beaten. Fight choreography skills are directly showcased.",
+        "common_casting": "Physically imposing performers who can convey threat. Fight choreography experience valued.",
+        "standout_opportunity": "The fight sequences and their ultimate defeat. A great Delancey gets booed in the best possible way."
+      },
+      "growth_profile": {
+        "skills_developed": ["fight_choreography", "physical_antagonist_acting", "partner_work"],
+        "challenge_areas": ["making_threats_feel_real_while_staying_safe"],
+        "recommended_for": ["physically strong performers wanting antagonist experience", "performers developing fight choreography skills"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["physical presence and genuine threat", "fight choreography ability or quick learning", "can be convincingly menacing"],
+        "common_mistakes": ["playing them as too stupid — they're thugs, not idiots"],
+        "tips": ["The Delanceys are professionals at what they do — intimidation and enforcement. They're not silly bullies, they're working muscle. The satisfaction of their defeat comes from their genuine threat earlier."]
+      },
+      "key_songs": []
+    },
+    {
+      "id": "newsies-ensemble",
+      "name": "Ensemble — Newsies, Showgirls, Citizens",
+      "role_type": "ensemble",
+      "gender": "mixed",
+      "age_range": {"min": 14, "max": 35},
+      "description": "The newsies ensemble is the backbone and spectacular centrepiece of the show. The newsies — primarily male — execute some of the most physically demanding ensemble choreography in any musical. Female ensemble members appear as showgirls in Medda's theatre and as New York citizens. The ensemble carries 'Seize the Day', 'King of New York', and 'Once and For All' — the three most iconic numbers in the show.",
+      "vocal": {
+        "range": "varies by part",
+        "voice_type": "mixed — strong chorus voices required",
+        "belt_required": true,
+        "belt_range": "ensemble dependent",
+        "tessitura": "mid",
+        "style_notes": "Ensemble must deliver powerful choral sound in anthems. 'Seize the Day' and 'Once and For All' require a wall of sound that carries conviction as well as volume. Eight-part harmony in 'King of New York'."
+      },
+      "dance": {
+        "level": "very_high",
+        "styles": ["jazz", "tap", "acrobatics", "breakdance_elements", "partnering", "lifts"],
+        "stamina": "very_high",
+        "notes": "This is one of the most physically demanding ensemble in musical theatre. Acrobatics, tumbling, and gymnastic tricks are central to 'Seize the Day' and 'King of New York'. Cast members regularly describe this as the hardest ensemble work they've done. Tap literacy is important for 'King of New York'."
+      },
+      "acting": {
+        "level": "intermediate",
+        "character_types": ["newsboys", "workers", "street kids", "vaudeville performers"],
+        "emotional_range": "moderate — genuine brotherhood required; the ensemble must feel like a real community",
+        "comedy_skills": true,
+        "notes": "The newsies' brotherhood is central to why audiences invest in the show. Each ensemble member needs a specific character — a name, a background, a reason to be there. Generic chorus work will feel hollow."
+      },
+      "performance": {
+        "stage_time_percentage": 70,
+        "solo_songs": 0,
+        "duets": 0,
+        "ensemble_numbers": 10,
+        "quick_changes": 2,
+        "special_skills": ["acrobatics", "tap", "tumbling", "lifts", "strong_ensemble_harmony"]
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "🎭 Ensemble Role",
+        "growth_value": 5,
+        "growth_label": "🚀 Skill Accelerator",
+        "decision_tags": ["best_to_grow", "great_for_dancers", "physically_demanding"],
+        "why": "The Newsies ensemble is a masterclass in physical performance. Performers who do this show develop acrobatic, tap, and jazz skills faster than almost any other production. The brotherhood of the ensemble is also a real asset — Newsies companies are famously tight-knit.",
+        "common_casting": "The strongest dancers in the audition room. Acrobatic and tumbling ability separates candidates. Tap literacy is important. Brotherhood chemistry is assessed in callbacks.",
+        "standout_opportunity": "Every ensemble number is a visual feast. A performer who executes 'Seize the Day' and 'King of New York' at the highest level will be mentioned in reviews."
+      },
+      "growth_profile": {
+        "skills_developed": ["advanced_jazz_dance", "tap_performance", "acrobatics", "tumbling", "partner_lifting", "ensemble_stamina", "brotherhood_acting"],
+        "challenge_areas": ["physical_demands_across_full_run", "maintaining_individual_character_within_ensemble", "stamina_across_long_rehearsal_periods"],
+        "recommended_for": ["strong male dancers ready for maximum physical challenge", "performers with acrobatic or gymnastics foundation", "anyone wanting the most intense dance ensemble experience available in musical theatre"]
+      },
+      "audition_guidance": {
+        "what_directors_look_for": ["exceptional dance technique — jazz, tap, acrobatics", "tumbling and gymnastics are major advantages", "genuine ensemble energy and teamwork", "strong belt for anthem numbers", "physical stamina and health"],
+        "common_mistakes": ["treating the ensemble as a secondary aspiration — directors need extraordinary dancers for this specific ensemble", "not showing your full physical range at auditions"],
+        "tips": ["Newsies is completely built on its ensemble. The stars of this show are the collective — 'Seize the Day' only works when every single newsie is giving everything. Come to auditions with every physical skill you have. Gymnastics, tumbling, parkour — show it all. The ensemble in Newsies is where careers are made."]
+      },
+      "key_songs": [
+        {"title": "Carrying the Banner", "type": "ensemble", "notes": "Opening. Establishes the newsies as a brotherhood."},
+        {"title": "Seize the Day", "type": "ensemble", "notes": "The strike anthem. Acrobatic centrepiece. Demands everything."},
+        {"title": "King of New York", "type": "ensemble", "notes": "The celebration number. Tap showcase, eight-part harmony."},
+        {"title": "Brooklyn's Here", "type": "ensemble", "notes": "Brooklyn newsies arrival — ensemble expansion."},
+        {"title": "Once and For All", "type": "ensemble", "notes": "The climactic anthem. Full company. Must be overwhelming."}
+      ]
+    }
+  ]
+}

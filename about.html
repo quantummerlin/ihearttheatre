@@ -369,6 +369,45 @@
  text-align: center;
  }
  }
+
+ /* Story/philosophy block accordion (details/summary) */
+ .story-accordion > summary {
+ list-style: none;
+ font-family: 'Playfair Display', serif;
+ font-size: 1.5rem;
+ font-weight: 600;
+ color: #ffd700;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ user-select: none;
+ margin-bottom: 0;
+ gap: 12px;
+ }
+ .story-accordion > summary::-webkit-details-marker { display: none; }
+ .story-accordion > summary::marker { content: ''; }
+ .story-accordion > summary::after {
+ content: '+';
+ font-size: 1.8rem;
+ line-height: 1;
+ font-weight: 300;
+ display: inline-block;
+ transition: transform 0.3s ease;
+ color: #667eea;
+ flex-shrink: 0;
+ font-family: 'Inter', sans-serif;
+ }
+ .story-accordion[open] > summary::after {
+ transform: rotate(45deg);
+ }
+ .story-accordion:not([open]) {
+ padding-top: 20px;
+ padding-bottom: 20px;
+ }
+ .story-accordion .accordion-body {
+ padding-top: 20px;
+ }
  </style>
 <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#667eea">
@@ -413,7 +452,7 @@
  <span></span>
  <span></span>
  </div>
- <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="musicals.html">Role Guides</a><a href="services.html">Services</a><a href="reviews.html">Reviews</a><a href="junior-kids-schools.html">Junior &amp; Kids</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a></div>
+ <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a></div>
  </div>
  </nav>
 
@@ -426,17 +465,20 @@
  <section class="section">
  <h2>Our Journey</h2>
  
- <div class="story-block">
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 20px; color: #ffd700;">Nonna's Legacy</h3>
+ <details class="story-block story-accordion" open>
+ <summary>Nonna's Legacy</summary>
+ <div class="accordion-body">
  <p>Penelope's <span class="highlight">Nonna</span> loved the stage and the shows her whole life. As a teenager, she and her sister would go to the cinema together. When Penelope's mum came along, Nonna took her to shows too. And when <span class="highlight">Penelope</span> arrived, Nonna carried on that tradition, taking her granddaughter along too.</p>
  
  <p>The last show they saw together was an opera version of <em>The Wizard of Oz</em>. Penelope was five years old and absolutely loved it. We had no idea how much that night would matter.</p>
  
  <p class="emphasis">Then Nonna passed away.</p>
  </div>
+ </details>
 
- <div class="story-block">
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 20px; color: #ffd700;">The Night Everything Changed</h3>
+ <details class="story-block story-accordion">
+ <summary>The Night Everything Changed</summary>
+ <div class="accordion-body">
  <p>Seven months after Nonna passed, her former work colleague Maria posted that her daughter was performing in <span class="highlight">Theatrical's production of The Wizard of Oz</span>. We knew we had to take Penelope.</p>
  
  <p>Opening night was one we'd never forget, and not just because of what happened on stage. There was flooding at the <span class="highlight">National Theatre</span>. The foyer and main entrance were closed. Everyone had to enter through the fire escape. But the show must go on, and it did.</p>
@@ -455,9 +497,11 @@
  
  <p class="highlight" style="font-size: 1.2rem; text-align: center; margin-top: 25px;">That was it.</p>
  </div>
+ </details>
 
- <div class="story-block">
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 20px; color: #ffd700;">Becoming Gretl</h3>
+ <details class="story-block story-accordion">
+ <summary>Becoming Gretl</summary>
+ <div class="accordion-body">
  <p>Penelope got stuck into preparation. She took cheerleading classes for choreography and teamwork, trained with <span class="highlight">Sarah DiBono</span> in local sessions, and took dancing lessons with Matilda at <span class="highlight">ELS Dance</span>. By the time auditions came around, she was ready.</p>
  
  <p>She went in with two of Nonna's favourites: <span class="highlight">"I Can't Help Falling in Love"</span> by Elvis and <span class="highlight">"A Spoonful of Sugar"</span>. While waiting and shivering with nerves, a girl named <span class="highlight">Stephanie Stevenson</span>, who was auditioning just before her, came over and told Penelope how beautiful she looked in her dress. That helped more than anything. Stephanie was later cast too, in one of the roles under Liesl.</p>
@@ -468,15 +512,18 @@
  
  <p>Then came the call. Tears of joy. And a feeling we couldn't shake that <span class="highlight">Nonna had something to do with it</span>.</p>
  </div>
+ </details>
 
- <div class="story-block">
- <h3 style="font-family: 'Playfair Display', serif; font-size: 1.6rem; margin-bottom: 20px; color: #ffd700;">The Sound of Music Season</h3>
+ <details class="story-block story-accordion">
+ <summary>The Sound of Music Season</summary>
+ <div class="accordion-body">
  <p>Three months of rehearsals followed. Long sessions, full days, learning every part of how a production works. There were two casts, and Penelope was part of one, but she attended <span class="highlight">every single show</span>. She helped sell programs, getting into every part of it.</p>
  
  <p>It was a really talented cast, and the families around them had done this before. They welcomed us in. Through selling programs and watching a whole season of performances, we began to understand how every little thing affects an audience, and how the audience in turn affects those on stage.</p>
  
  <p class="emphasis">That understanding of the relationship between performer and audience is what drives everything we do at iHeartTheatre.</p>
  </div>
+ </details>
 
  <div class="journey-timeline">
  <div class="timeline-item">
@@ -525,8 +572,9 @@
  <p class="emphasis">It can feel weird where you are with a big crowd who are seeing a show you are in, but that night you are almost anonymous. But they are a star in their own right.</p>
  </div>
 
- <div class="philosophy">
- <h3>The Theatre Renaissance</h3>
+ <details class="philosophy story-accordion">
+ <summary>The Theatre Renaissance</summary>
+ <div class="accordion-body">
  <p>We believe we are stepping into a world where AI has had such a profound effect on digital entertainment that the future is very much <span class="highlight">LIVE performance</span>. Humanity craves something real. Real emotion, real stories.</p>
  
  <p>As the love from the audience grows, so will the performance for those on stage. The energy and safety of knowing that everyone there is willing them to be fantastic transforms the experience.</p>
@@ -535,24 +583,29 @@
  
  <p>We've seen many times how a misstep or break in concentration can shake a performer. But in that moment of recovery, when they can be unsure of themselves for a moment, a cheer of encouragement can see the performer <span class="highlight">thrive</span>.</p>
  </div>
+ </details>
 
- <div class="story-block">
- <h3>The Audience's Role</h3>
+ <details class="story-block story-accordion">
+ <summary>The Audience's Role</summary>
+ <div class="accordion-body">
  <p>Through selling programs and watching a whole season of performances as we completely immersed ourselves into every experience of it, we could tell how little things could affect the audience, which in turn affects those on stage.</p>
  
  <p>It starts before they even get to the venue. If the journey is a hassle, or something happens on the way or just before, if the venue is hard to find or no parking, the energy can start to shift.</p>
  
  <p>The second they walk through the door, <span class="highlight">we are in charge</span>. We can control that energy between the door and the threshold to the auditorium.</p>
  </div>
+ </details>
 
- <div class="philosophy">
- <h3>How We Celebrate</h3>
+ <details class="philosophy story-accordion">
+ <summary>How We Celebrate</summary>
+ <div class="accordion-body">
  <p><span class="highlight">We are celebrators, not critics.</span></p>
  
  <p>Our write-ups aim to show the positives of every show, knowing that it is possible to not enjoy a performance and still appreciate the art, the effort, the production, the dedication, and still find something wonderful in it.</p>
  
  <p>We write about school shows, community groups, holiday programmes, all shows. We are building a bridge of connections across Victoria in all aspects of live performance.</p>
  </div>
+ </details>
  </section>
 
  <section class="section">
@@ -626,14 +679,16 @@
  <a href="index.html">Home</a>
  <a href="shows.html">Shows</a>
  <a href="auditions.html">Auditions</a>
- <a href="services.html">Services</a>
  <a href="reviews.html">Reviews</a>
  <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+ <a href="services.html">Services</a>
+ <a href="musicals.html">Role Guides</a>
+ <a href="companies.html">Companies</a>
  <a href="about.html">About</a>
+ <a href="contact.html">Contact</a>
  <a href="privacy.html">Privacy</a>
  <a href="disclaimer.html">Disclaimer</a>
- <a href="contact.html">Contact</a>
- </div>
+</div>
    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
  // Progress bar
  window.onscroll = function() {

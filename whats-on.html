@@ -1191,6 +1191,13 @@
     <option value="all">All Genres</option>
    </select>
   </div>
+  <div class="fb-group">
+   <label class="fb-label" for="filterAuditions">Auditions</label>
+   <select class="fb-select" id="filterAuditions">
+    <option value="all">All Shows</option>
+    <option value="open">Auditions Open</option>
+   </select>
+  </div>
  </div>
 
  <!-- â•â•â•â•â•â• Shows Section Heading â•â•â•â•â•â• -->
@@ -2791,6 +2798,7 @@
    if (activeStatusFilter !== 'all' && getStatus(s) !== activeStatusFilter) return false;
    if (activeVtypeFilter  !== 'all' && s.venueType !== activeVtypeFilter)   return false;
    if (activeCategoryFilter !== 'all' && s.category !== activeCategoryFilter) return false;
+   if (activeAuditionsFilter === 'open' && !showHasAuditions(s)) return false;
    return true;
   });
  }
@@ -3143,6 +3151,14 @@
  var activeVtypeFilter = 'all';
  var activeCategoryFilter = 'all';
  var activeMonthFilter = 'all';
+ var activeAuditionsFilter = 'all';
+
+ function showHasAuditions(show) {
+  return auditions.some(function(a) {
+   return a.company !== 'iHeartTheatre' &&
+    (a.show === show.title || a.company === show.company);
+  });
+ }
 
  function buildFilters() {
   // Month — collect unique year-month keys across all shows
@@ -3202,6 +3218,12 @@
    activeCategoryFilter = genreSel.value;
    renderShows();
   });
+
+  // Auditions
+  document.getElementById('filterAuditions').addEventListener('change', function() {
+   activeAuditionsFilter = this.value;
+   renderShows();
+  });
  }
 
 
@@ -3238,6 +3260,7 @@
     var mEnd = new Date(parseInt(mp[0]), parseInt(mp[1]), 0);
     if (new Date(s.endDate) < mStart || new Date(s.startDate) > mEnd) return false;
    }
+   if (activeAuditionsFilter === 'open' && !showHasAuditions(s)) return false;
    return true;
   });
 

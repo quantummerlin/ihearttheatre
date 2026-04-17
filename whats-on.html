@@ -716,6 +716,55 @@
    overflow: hidden;
   }
 
+  /* ── Filter Bar (separate select menus) ── */
+  .filters-bar {
+   max-width: 1200px;
+   margin: 40px auto 0;
+   padding: 0 2rem;
+   display: flex;
+   gap: 16px;
+   flex-wrap: wrap;
+   align-items: flex-end;
+  }
+  .fb-group {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   flex: 1;
+   min-width: 150px;
+  }
+  .fb-label {
+   color: var(--text-secondary);
+   font-size: .75rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+  }
+  .fb-select {
+   appearance: none;
+   -webkit-appearance: none;
+   background: var(--glass-bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23a0a0b0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 14px center;
+   border: 1px solid var(--glass-border);
+   border-radius: 10px;
+   padding: 10px 36px 10px 14px;
+   color: var(--text-primary);
+   font-size: .88rem;
+   font-family: 'Inter', sans-serif;
+   cursor: pointer;
+   outline: none;
+   transition: border-color .2s;
+   width: 100%;
+  }
+  .fb-select option { background: #12121a; color: var(--text-primary); }
+  .fb-select:focus, .fb-select:hover { border-color: var(--accent-primary); }
+  @media (max-width: 600px) {
+   .filters-bar { gap: 12px; }
+   .fb-group { min-width: calc(50% - 6px); flex: none; }
+  }
+  @media (max-width: 360px) {
+   .fb-group { min-width: 100%; }
+  }
+
   /* ── View Toolbar ── */
   .cal-toolbar {
    max-width: 1200px;
@@ -1044,7 +1093,16 @@
     <span></span>
     <span></span>
    </div>
-   <div class="nav-links"><a href="index.html">Home</a><a href="shows.html" class="active">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="musicals.html">Musicals</a><a href="career-builder.html">Career Builder</a></div>
+   <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="whats-on.html" class="active">What's On</a>
+    <a href="venues.html">Venues</a>
+    <a href="auditions.html">Auditions</a>
+    <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
   </div>
  </nav>
 
@@ -1101,21 +1159,39 @@
   </div>
  </div>
 
- <section class="filters-section">
-  <button class="filter-accordion-header" data-target="whatson-filters-body">Filters <span class="filter-acc-arrow">&#8964;</span></button>
-  <div class="filter-accordion-body" id="whatson-filters-body">
-  <div class="filter-accordion-inner">
-  <div class="filter-row" id="statusFilters">
-   <span class="filter-label">Status</span>
+ <div class="filters-bar" id="filtersBar">
+  <div class="fb-group">
+   <label class="fb-label" for="filterMonth">Month</label>
+   <select class="fb-select" id="filterMonth">
+    <option value="all">All Months</option>
+   </select>
   </div>
-  <div class="filter-row" id="vtypeFilters">
-   <span class="filter-label">Type</span>
+  <div class="fb-group">
+   <label class="fb-label" for="filterStatus">Status</label>
+   <select class="fb-select" id="filterStatus">
+    <option value="all">All Status</option>
+    <option value="now-playing">Now Playing</option>
+    <option value="closing-soon">Closing Soon</option>
+    <option value="coming-soon">Coming Soon</option>
+   </select>
   </div>
-  <div class="filter-row" id="categoryFilters">
-   <span class="filter-label">Genre</span>
+  <div class="fb-group">
+   <label class="fb-label" for="filterType">Type</label>
+   <select class="fb-select" id="filterType">
+    <option value="all">All Types</option>
+    <option value="professional">Professional</option>
+    <option value="community">Community</option>
+    <option value="amateur">Amateur</option>
+    <option value="school">School</option>
+   </select>
   </div>
-  </div></div>
- </section>
+  <div class="fb-group">
+   <label class="fb-label" for="filterGenre">Genre</label>
+   <select class="fb-select" id="filterGenre">
+    <option value="all">All Genres</option>
+   </select>
+  </div>
+ </div>
 
  <!-- â•â•â•â•â•â• Shows Section Heading â•â•â•â•â•â• -->
  <div class="section-heading" data-reveal>
@@ -3066,65 +3142,65 @@
  var activeStatusFilter = 'all';
  var activeVtypeFilter = 'all';
  var activeCategoryFilter = 'all';
+ var activeMonthFilter = 'all';
 
  function buildFilters() {
+  // Month — collect unique year-month keys across all shows
+  var monthSet = [];
+  shows.forEach(function(s) {
+   var cur = new Date(new Date(s.startDate).getFullYear(), new Date(s.startDate).getMonth(), 1);
+   var endM = new Date(new Date(s.endDate).getFullYear(), new Date(s.endDate).getMonth(), 1);
+   while (cur <= endM) {
+    var key = cur.getFullYear() + '-' + String(cur.getMonth() + 1).padStart(2, '0');
+    if (monthSet.indexOf(key) === -1) monthSet.push(key);
+    cur.setMonth(cur.getMonth() + 1);
+   }
+  });
+  monthSet.sort();
+  var monthSel = document.getElementById('filterMonth');
+  monthSet.forEach(function(key) {
+   var parts = key.split('-');
+   var opt = document.createElement('option');
+   opt.value = key;
+   opt.textContent = MONTH_NAMES[parseInt(parts[1]) - 1] + ' ' + parts[0];
+   monthSel.appendChild(opt);
+  });
+  monthSel.addEventListener('change', function() {
+   activeMonthFilter = monthSel.value;
+   if (activeMonthFilter !== 'all') {
+    var parts = activeMonthFilter.split('-');
+    calYear = parseInt(parts[0]);
+    calMonth = parseInt(parts[1]) - 1;
+   }
+   renderShows();
+  });
+
   // Status
-  var statuses = ['all', 'now-playing', 'closing-soon', 'coming-soon'];
-  var statusContainer = document.getElementById('statusFilters');
-  statuses.forEach(function(s) {
-   var btn = document.createElement('button');
-   btn.className = 'filter-chip' + (s === 'all' ? ' active' : '');
-   btn.textContent = s === 'all' ? 'All Shows' : statusLabel(s);
-   btn.addEventListener('click', function() {
-    activeStatusFilter = s;
-    var chips = document.querySelectorAll('#statusFilters .filter-chip');
-    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
-    btn.classList.add('active');
-    renderShows();
-   });
-   statusContainer.appendChild(btn);
+  document.getElementById('filterStatus').addEventListener('change', function() {
+   activeStatusFilter = this.value;
+   renderShows();
   });
 
-  // Venue Type
-  var vtypes = [
-   { key: 'all',          label: 'All Types' },
-   { key: 'professional', label: 'Professional' },
-   { key: 'community',    label: 'Community' },
-   { key: 'amateur',      label: 'Amateur' },
-   { key: 'school',       label: 'School' }
-  ];
-  var vtypeContainer = document.getElementById('vtypeFilters');
-  vtypes.forEach(function(vt) {
-   var btn = document.createElement('button');
-   btn.className = 'filter-chip' + (vt.key === 'all' ? ' active' : '');
-   btn.textContent = vt.label;
-   btn.addEventListener('click', function() {
-    activeVtypeFilter = vt.key;
-    var chips = document.querySelectorAll('#vtypeFilters .filter-chip');
-    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
-    btn.classList.add('active');
-    renderShows();
-   });
-   vtypeContainer.appendChild(btn);
+  // Type
+  document.getElementById('filterType').addEventListener('change', function() {
+   activeVtypeFilter = this.value;
+   renderShows();
   });
 
-  // Category / Genre
+  // Genre — populate dynamically
   var catSet = [];
   shows.forEach(function(s) { if (catSet.indexOf(s.category) === -1) catSet.push(s.category); });
-  var categories = ['all'].concat(catSet);
-  var catContainer = document.getElementById('categoryFilters');
-  categories.forEach(function(c) {
-   var btn = document.createElement('button');
-   btn.className = 'filter-chip' + (c === 'all' ? ' active' : '');
-   btn.textContent = c === 'all' ? 'All' : c;
-   btn.addEventListener('click', function() {
-    activeCategoryFilter = c;
-    var chips = document.querySelectorAll('#categoryFilters .filter-chip');
-    for (var i = 0; i < chips.length; i++) chips[i].classList.remove('active');
-    btn.classList.add('active');
-    renderShows();
-   });
-   catContainer.appendChild(btn);
+  catSet.sort();
+  var genreSel = document.getElementById('filterGenre');
+  catSet.forEach(function(c) {
+   var opt = document.createElement('option');
+   opt.value = c;
+   opt.textContent = c;
+   genreSel.appendChild(opt);
+  });
+  genreSel.addEventListener('change', function() {
+   activeCategoryFilter = genreSel.value;
+   renderShows();
   });
  }
 
@@ -3156,6 +3232,12 @@
    if (activeStatusFilter !== 'all' && status !== activeStatusFilter) return false;
    if (activeVtypeFilter !== 'all' && s.venueType !== activeVtypeFilter) return false;
    if (activeCategoryFilter !== 'all' && s.category !== activeCategoryFilter) return false;
+   if (activeMonthFilter !== 'all') {
+    var mp = activeMonthFilter.split('-');
+    var mStart = new Date(parseInt(mp[0]), parseInt(mp[1]) - 1, 1);
+    var mEnd = new Date(parseInt(mp[0]), parseInt(mp[1]), 0);
+    if (new Date(s.endDate) < mStart || new Date(s.startDate) > mEnd) return false;
+   }
    return true;
   });
 

@@ -459,6 +459,20 @@
   .vtype-school       { background: rgba(80,200,120,.12); color: #50c878; border: 1px solid rgba(80,200,120,.25); }
   .vtype-amateur      { background: rgba(255,140,0,.12); color: #ff8c00; border: 1px solid rgba(255,140,0,.25); }
 
+  /* ── Auditions-open badge ── */
+  .badge-auditions {
+   font-size: .65rem;
+   padding: 3px 9px;
+   border-radius: 12px;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: .5px;
+   background: rgba(56,178,96,.18);
+   color: #50c878;
+   border: 1px solid rgba(56,178,96,.35);
+   white-space: nowrap;
+  }
+
   /* â”€â”€ Submit Banner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .submit-banner {
    max-width: 1200px;
@@ -1283,19 +1297,16 @@
  <footer>
   <div class="footer-content">
    <div class="footer-links">
- <a href="index.html">Home</a>
- <a href="shows.html">Shows</a>
- <a href="auditions.html">Auditions</a>
- <a href="reviews.html">Reviews</a>
- <a href="junior-kids-schools.html">Junior &amp; Kids</a>
- <a href="services.html">Services</a>
- <a href="musicals.html">Role Guides</a>
- <a href="companies.html">Companies</a>
- <a href="about.html">About</a>
- <a href="contact.html">Contact</a>
- <a href="privacy.html">Privacy</a>
- <a href="disclaimer.html">Disclaimer</a>
-</div>
+   <a href="index.html">Home</a>
+   <a href="whats-on.html">What's On</a>
+   <a href="auditions.html">Auditions</a>
+   <a href="venues.html">Venues</a>
+   <a href="reviews.html">Reviews</a>
+   <a href="about.html">About</a>
+   <a href="privacy.html">Privacy</a>
+   <a href="disclaimer.html">Disclaimer</a>
+   <a href="contact.html">Contact</a>
+  </div>
    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
   </div>
  </footer>
@@ -3271,6 +3282,9 @@
    return new Date(a.startDate) - new Date(b.startDate);
   });
 
+  var countEl = document.getElementById('showsResultCount');
+  if (countEl) countEl.textContent = filtered.length === 0 ? '' : 'Showing ' + filtered.length + ' show' + (filtered.length === 1 ? '' : 's');
+
   if (filtered.length === 0) {
    grid.innerHTML = '<div class="no-results"><h3>No shows match your filters</h3><p>Try adjusting your selection above.</p></div>';
    return;
@@ -3299,6 +3313,10 @@
 
    var ticketTarget = show.ticketUrl.startsWith('http') ? ' target="_blank" rel="noopener"' : '';
 
+   var audBadge = showHasAuditions(show)
+    ? '<span class="badge-auditions">&#127908; Auditions Open</span>'
+    : '';
+
    card.innerHTML =
     '<div class="show-card-header">' +
      headerInner +
@@ -3317,6 +3335,7 @@
       '<div class="show-card-tags">' + tagsHTML + '</div>' +
       '<a href="' + show.ticketUrl + '" class="show-card-link"' + ticketTarget + '>Tickets</a>' +
      '</div>' +
+     (audBadge ? '<div style="margin-top:10px;">' + audBadge + '</div>' : '') +
      detailHTML +
     '</div>';
    grid.appendChild(card);
@@ -3403,7 +3422,6 @@
   buildSlideshow();
   buildStats();
   buildFilters();
-  if (window.iHTInitFilterAccordion) window.iHTInitFilterAccordion();
 
   // Calendar toolbar wiring
   document.getElementById('btnCalView').addEventListener('click', function() { setView('calendar'); });

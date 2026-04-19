@@ -410,7 +410,6 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
   </div>
   <div class="filter-pills" id="filter-pills">
     <button class="pill active" data-filter="all">All Musicals</button>
-    <button class="pill" data-filter="junior">Jr Version Available</button>
   </div>
 </div>
 
@@ -526,7 +525,6 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
                 ${dl ? `<span class="meta-chip ${dc}">${escHtml(dl)}</span>` : ''}
                 ${m.dance_intensity ? `<span class="meta-chip meta-dance">${escHtml(danceLabel(m.dance_intensity))}</span>` : ''}
                 ${ageChip}
-                ${m.junior_version_available ? `<span class="meta-chip junior-yes">Jr Available</span>` : ''}
             </div>
             ${genres ? `<div class="genre-tags">${genres}</div>` : ''}
             <div class="card-footer-row">
@@ -539,7 +537,6 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     function getFiltered() {
         const q = document.getElementById('search-input').value.toLowerCase().trim();
         return allMusicals.filter(m => {
-            if (activeFilter === 'junior' && !m.junior_version_available) return false;
             if (q) {
                 const s = [m.title, m.music_by, (m.genre_tags||[]).join(' '), m.vocal_style].join(' ').toLowerCase();
                 return s.includes(q);
@@ -601,8 +598,11 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         var html = '';
 
         // Musical overview strip
-        if (musical.vocal_style || musical.synopsis) {
+        if (musical.vocal_style || musical.synopsis || musical.junior_version_available) {
             html += '<div style="background:rgba(102,126,234,0.07);border:1px solid rgba(102,126,234,0.2);border-radius:12px;padding:14px 16px;margin-bottom:20px;">';
+            if (musical.junior_version_available) {
+                html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:0.8rem;color:#a78bfa;font-weight:600;">&#10024; A Junior/Kids edition of this musical exists — role names, song keys and casting ages may differ. These guides cover the standard version.</div>';
+            }
             if (musical.vocal_style) html += '<div style="font-size:0.83rem;color:var(--text-secondary);margin-bottom:6px;font-style:italic;">' + escHtml(musical.vocal_style) + '</div>';
             if (musical.synopsis) {
                 var synopsisId = 'synopsis-' + (musical.id || 'x');

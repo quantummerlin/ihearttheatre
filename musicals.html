@@ -735,8 +735,21 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     window.toggleExpand = function(id, btn) {
         var el = document.getElementById(id);
         if (!el) return;
-        el.classList.toggle('expanded');
-        btn.textContent = el.classList.contains('expanded') ? 'Show less ↑' : 'Read more ↓';
+        var isExpanded = el.dataset.expanded === '1';
+        if (isExpanded) {
+            el.style.display = '-webkit-box';
+            el.style.webkitLineClamp = '3';
+            el.style.webkitBoxOrient = 'vertical';
+            el.style.overflow = 'hidden';
+            el.dataset.expanded = '0';
+            btn.textContent = 'Read more \u2193';
+        } else {
+            el.style.display = 'block';
+            el.style.webkitLineClamp = 'none';
+            el.style.overflow = 'visible';
+            el.dataset.expanded = '1';
+            btn.textContent = 'Show less \u2191';
+        }
     };
 
     // Close modal

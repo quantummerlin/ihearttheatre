@@ -144,6 +144,8 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 .meta-chip.diff-intermediate { color: #4caf50; border-color: rgba(76,175,80,0.3); background: rgba(76,175,80,0.08); }
 .meta-chip.diff-beginner { color: #2196f3; border-color: rgba(33,150,243,0.3); background: rgba(33,150,243,0.08); }
 .meta-chip.junior-yes { color: var(--accent-gold); border-color: rgba(255,215,0,0.3); background: rgba(255,215,0,0.08); }
+.meta-chip.meta-age { color: #c084fc; border-color: rgba(192,132,252,0.3); background: rgba(192,132,252,0.08); }
+.meta-chip.meta-dance { color: #4dd0e1; border-color: rgba(77,208,225,0.3); background: rgba(77,208,225,0.07); }
 .genre-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
 .genre-tag { font-size: 0.72rem; color: var(--accent-primary); background: rgba(102,126,234,0.1); border-radius: 4px; padding: 2px 7px; }
 .card-footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--glass-border); }
@@ -376,7 +378,16 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
   <div class="nav-container">
     <a href="index.html" class="logo">iHeartTheatre</a>
     <div class="hamburger"><span></span><span></span><span></span></div>
-    <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="musicals.html">Musicals</a><a href="career-builder.html">Career Builder</a></div>
+    <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="whats-on.html">What's On</a>
+    <a href="venues.html">Venues</a>
+    <a href="auditions.html">Auditions</a>
+    <a href="junior-kids-schools.html">Junior &amp; Kids</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
   </div>
 </nav>
 
@@ -426,18 +437,17 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 <footer>
   <div class="footer-content">
     <div class="footer-links">
- <a href="index.html">Home</a>
- <a href="shows.html">Shows</a>
- <a href="auditions.html">Auditions</a>
- <a href="reviews.html">Reviews</a>
- <a href="junior-kids-schools.html">Junior &amp; Kids</a>
- <a href="services.html">Services</a>
- <a href="musicals.html">Role Guides</a>
- <a href="companies.html">Companies</a>
- <a href="about.html">About</a>
- <a href="contact.html">Contact</a>
- <a href="privacy.html">Privacy</a>
- <a href="disclaimer.html">Disclaimer</a>
+      <a href="index.html">Home</a>
+      <a href="whats-on.html">What's On</a>
+      <a href="auditions.html">Auditions</a>
+      <a href="venues.html">Venues</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="musicals.html">Musicals</a>
+      <a href="career-builder.html">Career Builder</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact</a>
 </div>
     <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
   </div>
@@ -480,31 +490,45 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     }
 
     function danceLabel(d) {
-        const m = { none: 'No Dance', light: 'Light Dance', medium: 'Some Dance', high: 'Dance Heavy', very_high: 'Dance Intensive', choreography_heavy: 'Choreo Heavy' };
-        return m[d] || d;
+        if (!d) return '';
+        const map = {
+            none: 'No Dance', minimal: 'Minimal Dance', light: 'Light Dance',
+            low: 'Low Dance', low_to_moderate: 'Some Dance', moderate: 'Some Dance',
+            medium: 'Some Dance', moderate_to_high: 'High Dance',
+            high: 'Dance Heavy', very_high: 'Very Dance Heavy',
+            choreography_heavy: 'Choreo Heavy', intermediate_to_advanced: 'High Dance'
+        };
+        return map[String(d).toLowerCase().replace(/[ \-]/g,'_')] || d;
     }
 
     function renderMusicalCard(m, idx) {
-        const genres = (m.genre_tags || []).slice(0, 4).map(g =>
+        const genres = (m.genre_tags || []).slice(0, 3).map(g =>
             `<span class="genre-tag">${escHtml(g.replace(/_/g,' '))}</span>`
         ).join('');
         const dc = diffClass(m.difficulty_overall);
         const dl = diffLabel(m.difficulty_overall);
 
-        return `<div class="musical-card" style="animation-delay:${idx * 0.04}s" data-id="${escHtml(m.id)}">
+        // Parse age range — take text before first '(' and truncate
+        var ageChip = '';
+        if (m.age_range) {
+            var ageText = String(m.age_range).split('(')[0].trim().replace(/\s+/g, ' ');
+            if (ageText.length > 22) ageText = ageText.slice(0, 22).replace(/\s+\S*$/, '') + '\u2026';
+            if (ageText) ageChip = `<span class="meta-chip meta-age">Ages: ${escHtml(ageText)}</span>`;
+        }
+
+        return `<div class="musical-card" style="animation-delay:${idx * 0.04}s" data-id="${escHtml(m.id)}" onclick="openModal('${escHtml(m.id)}')">
             <div class="musical-title">${escHtml(m.title)}</div>
             <div class="musical-composer">${escHtml(m.music_by)}${m.year_premiered?' &bull; '+m.year_premiered:''}</div>
             <div class="musical-meta">
                 ${dl ? `<span class="meta-chip ${dc}">${escHtml(dl)}</span>` : ''}
-                ${m.dance_intensity ? `<span class="meta-chip">${escHtml(danceLabel(m.dance_intensity))}</span>` : ''}
-                ${m.typical_cast_size ? `<span class="meta-chip">${escHtml(m.typical_cast_size)}</span>` : ''}
-                ${m.age_range ? `<span class="meta-chip">${escHtml(m.age_range)}</span>` : ''}
+                ${m.dance_intensity ? `<span class="meta-chip meta-dance">${escHtml(danceLabel(m.dance_intensity))}</span>` : ''}
+                ${ageChip}
                 ${m.junior_version_available ? `<span class="meta-chip junior-yes">Jr Available</span>` : ''}
             </div>
             ${genres ? `<div class="genre-tags">${genres}</div>` : ''}
             <div class="card-footer-row">
                 <span class="role-count">${m.role_count || '?'} roles</span>
-                <button class="view-roles-btn" onclick="openModal('${escHtml(m.id)}')">View Roles →</button>
+                <button class="view-roles-btn">View Roles &rarr;</button>
             </div>
         </div>`;
     }

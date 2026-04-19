@@ -409,12 +409,8 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     <input type="search" id="search-input" placeholder="Search musical title, composer, style…" autocomplete="off">
   </div>
   <div class="filter-pills" id="filter-pills">
-    <button class="pill active" data-filter="all">All</button>
-    <button class="pill" data-filter="beginner">Beginner</button>
-    <button class="pill" data-filter="intermediate">Intermediate</button>
-    <button class="pill" data-filter="advanced">Advanced</button>
-    <button class="pill" data-filter="expert">Expert</button>
-    <button class="pill" data-filter="junior">Jr Available</button>
+    <button class="pill active" data-filter="all">All Musicals</button>
+    <button class="pill" data-filter="junior">Jr Version Available</button>
   </div>
 </div>
 
@@ -544,10 +540,6 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         const q = document.getElementById('search-input').value.toLowerCase().trim();
         return allMusicals.filter(m => {
             if (activeFilter === 'junior' && !m.junior_version_available) return false;
-            if (activeFilter === 'beginner' && !(m.difficulty_overall||'').toLowerCase().includes('beginner')) return false;
-            if (activeFilter === 'intermediate' && !(m.difficulty_overall||'').toLowerCase().includes('intermediate')) return false;
-            if (activeFilter === 'advanced' && !(m.difficulty_overall||'').toLowerCase().includes('advanced')) return false;
-            if (activeFilter === 'expert' && !(m.difficulty_overall||'').toLowerCase().includes('expert')) return false;
             if (q) {
                 const s = [m.title, m.music_by, (m.genre_tags||[]).join(' '), m.vocal_style].join(' ').toLowerCase();
                 return s.includes(q);

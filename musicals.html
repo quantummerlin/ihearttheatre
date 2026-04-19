@@ -401,7 +401,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 <div class="page-hero">
   <div class="page-badge">22 Musicals</div>
   <h1>Musical Role Guides</h1>
-  <p>Find your perfect role. Discover what directors are looking for and which songs to prepare for your audition.</p>
+  <p>Every role is yours to discover. Explore what each character needs, what directors love to see, and exactly which songs to bring to your audition.</p>
 </div>
 
 <div class="controls">
@@ -598,7 +598,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
                 renderRoles(bodyEl, data);
             })
             .catch(() => {
-                bodyEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px;">Could not load role data.</p>';
+                bodyEl.innerHTML = '<p style="color:var(--text-secondary);padding:20px;">Couldn\'t load roles right now — try refreshing the page!</p>';
             });
     };
 
@@ -620,7 +620,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
             html += '</div>';
         }
 
-        html += '<div class="modal-roles-label">' + roles.length + ' Roles</div>';
+        html += '<div class="modal-roles-label">' + roles.length + ' roles to explore — click any role to see everything</div>';
 
         roles.forEach(function(role) {
             html += renderRoleCard(role, musical.id);
@@ -630,8 +630,8 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     }
 
     function renderRoleCard(role, musicalId) {
-        var typeClass = { lead: 'type-lead', supporting: 'type-supporting', character: 'type-character', ensemble: 'type-ensemble' };
-        var typeLabel = { lead: 'Lead', supporting: 'Supporting', character: 'Character', ensemble: 'Ensemble' };
+        var typeClass = { lead: 'type-lead', supporting: 'type-supporting', featured_ensemble: 'type-character', character: 'type-character', ensemble: 'type-ensemble' };
+        var typeLabel = { lead: 'Lead', supporting: 'Supporting', featured_ensemble: 'Featured', character: 'Character', ensemble: 'Ensemble' };
 
         var rt = (role.role_type || 'supporting').toLowerCase();
         var tc = typeClass[rt] || 'type-supporting';
@@ -667,7 +667,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         // Songs from the show
         var keySongs = role.key_songs || [];
         html += '<div class="songs-section">';
-        html += '<div class="songs-label show-songs">Songs in the show</div>';
+        html += '<div class="songs-label show-songs">Songs from this show</div>';
         if (keySongs.length) {
             keySongs.forEach(function(s) {
                 html += '<div class="song-item show-song">';
@@ -678,7 +678,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
                 html += '</div></div>';
             });
         } else {
-            html += '<div class="no-songs">Song data not yet available</div>';
+            html += '<div class="no-songs">Song details coming soon — check back!</div>';
         }
         html += '</div>';
 
@@ -687,7 +687,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         var curated = AUDITION_SONGS[curatedKey];
 
         html += '<div class="songs-section">';
-        html += '<div class="songs-label audition-songs">What to prepare for auditions</div>';
+        html += '<div class="songs-label audition-songs">Songs to bring to your audition</div>';
         if (curated && curated.songs_to_prepare && curated.songs_to_prepare.length) {
             curated.songs_to_prepare.forEach(function(s) {
                 var typeIcon = '\u266a';
@@ -709,12 +709,17 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
             var songTips = tips.filter(function(t) {
                 return /prepare|song|sing|32 bar|bars|repertoire|material/i.test(t);
             });
+            var isEnsemble = rt === 'ensemble' || rt === 'featured_ensemble';
             if (songTips.length) {
                 songTips.forEach(function(tip) {
-                    html += '<div class="song-item audition-tip"><span class="song-item-icon">→</span><div>' + escHtml(tip) + '</div></div>';
+                    html += '<div class="song-item audition-tip"><span class="song-item-icon">★</span><div>' + escHtml(tip) + '</div></div>';
                 });
+            } else if (isEnsemble) {
+                html += '<div class="song-item audition-tip"><span class="song-item-icon">♪</span><div><div style="font-weight:600;color:var(--text-primary);">Pick a song that shows your character commitment</div><div class="song-note">For ensemble, directors want to see you fully inhabit a character — not just sing. Choose something that lets your personality shine and matches the energy of this show.</div></div></div>';
+                html += '<div class="song-item audition-tip"><span class="song-item-icon">♪</span><div><div style="font-weight:600;color:var(--text-primary);">Favour uptempo + ballad contrast</div><div class="song-note">If you get two slots, bring one uptempo and one ballad. Show range in both voice and emotional storytelling. Stay in the style of the show.</div></div></div>';
+                html += '<div class="song-item audition-tip"><span class="song-item-icon">♪</span><div><div style="font-weight:600;color:var(--text-primary);">32 bars is plenty</div><div class="song-note">Keep it tight and memorable. A killer 32-bar cut beats a full song that loses focus. Know your start note and nail that first phrase.</div></div></div>';
             } else {
-                html += '<div class="no-songs">Prepare a song that matches this character\'s vocal type and emotional range</div>';
+                html += '<div class="song-item audition-tip"><span class="song-item-icon">★</span><div><div style="font-weight:600;color:var(--text-primary);">Choose something that feels like YOU</div><div class="song-note">Pick a song that sits beautifully in your voice and connects you emotionally to this type of character. There\'s no single right answer — authenticity always wins the room.</div></div></div>';
             }
         }
         html += '</div>';
@@ -723,7 +728,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         var lookFor = (role.audition_guidance || {}).what_directors_look_for || [];
         if (lookFor.length) {
             html += '<div class="director-section">';
-            html += '<div class="director-label">What directors are looking for</div>';
+            html += '<div class="director-label">What directors love to see</div>';
             html += '<ul class="director-list">' + lookFor.slice(0, 4).map(function(f) {
                 return '<li>' + escHtml(f) + '</li>';
             }).join('') + '</ul>';
@@ -732,7 +737,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 
         // Career Builder CTA
         html += '<div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);display:flex;gap:8px;flex-wrap:wrap;">';
-        html += '<a href="career-builder.html?musical=' + encodeURIComponent((musicalId||'')) + '&role=' + encodeURIComponent((role.id||'')) + '" style="display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));border:1px solid rgba(102,126,234,0.3);border-radius:8px;padding:7px 14px;font-size:0.8rem;font-weight:600;color:#667eea;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor=\'#667eea\'" onmouseout="this.style.borderColor=\'rgba(102,126,234,0.3)\'">Does this suit me? →</a>';
+        html += '<a href="career-builder.html?musical=' + encodeURIComponent((musicalId||'')) + '&role=' + encodeURIComponent((role.id||'')) + '" style="display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));border:1px solid rgba(102,126,234,0.3);border-radius:8px;padding:7px 14px;font-size:0.8rem;font-weight:600;color:#667eea;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor=\'#667eea\'" onmouseout="this.style.borderColor=\'rgba(102,126,234,0.3)\'">Could this be my role? →</a>';
         html += '</div>';
 
         html += '</div>'; // end role-body

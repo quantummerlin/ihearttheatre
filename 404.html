@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="UTF-8">
@@ -87,6 +87,16 @@
  color: var(--accent-primary);
  }
 
+ .error-illustration {
+ width: 100%;
+ max-width: 380px;
+ height: 220px;
+ object-fit: cover;
+ border-radius: 16px;
+ margin-bottom: 1.5rem;
+ opacity: 0.85;
+ }
+
  @media (max-width: 480px) {
  .error-code {
  font-size: 5rem;
@@ -112,11 +122,11 @@
  <meta property="og:title" content="Page Not Found | iHeartTheatre">
  <meta property="og:description" content="The page you're looking for doesn't exist. Let's get you back to the show!">
  <meta property="og:url" content="https://ihearttheatre.com/404.html">
- <meta property="og:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="Page Not Found | iHeartTheatre">
  <meta name="twitter:description" content="The page you're looking for doesn't exist. Let's get you back to the show!">
- <meta name="twitter:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 </head>
 <body>
  <div class="progress-bar" id="progressBar"></div>
@@ -136,6 +146,7 @@
 
  <div class="error-page">
  <div class="error-content">
+ <img src="/images/global/404-lost-in-wings.jpg" alt="Lost in the wings" class="error-illustration">
  <span class="error-emoji"></span>
  <div class="error-code">404</div>
  <h1 class="error-title">The Curtain Has Fallen</h1>

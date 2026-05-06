@@ -1,0 +1,444 @@
+{
+  "musical": {
+    "id": "les-miserables",
+    "title": "Les Misérables",
+    "music_by": "Claude-Michel Schönberg",
+    "year_premiered": 1985,
+    "vocal_style": "Through-sung operatic musical theatre. Valjean requires a heroic tenor that soars in falsetto for Bring Him Home. Javert needs a powerful bass-baritone. Éponine is a belt mezzo. Fantine is lyric soprano. All principals are vocally demanding throughout.",
+    "synopsis": "Set in 19th century France, Les Misérables follows Jean Valjean, a former convict who seeks redemption, pursued relentlessly by the inflexible Inspector Javert. Against the backdrop of the 1832 student uprising, stories of love, sacrifice, and the struggle for justice are woven together in one of the most emotionally powerful shows in musical theatre history.",
+    "junior_version_available": false,
+    "difficulty_overall": "advanced_to_expert",
+    "dance_intensity": "low_to_moderate",
+    "typical_cast_size": "25-40",
+    "age_range": "16-65",
+    "genre_tags": ["classic_broadway", "operatic", "dramatic", "through_sung", "historical", "revolution", "tragedy"]
+  },
+  "roles": [
+    {
+      "id": "lm-valjean",
+      "name": "Jean Valjean",
+      "role_type": "lead",
+      "age_range": {"min": 35, "max": 60},
+      "description": "Valjean is one of the great heroic roles in musical theatre — a former convict who rebuilds his soul through acts of compassion and sacrifice, carrying the entire show dramatically and vocally across decades of stage time. The role ages from bitter ex-prisoner to saintly surrogate father and demands a performer of the highest calibre. 'Bring Him Home' is one of the most technically demanding tenor solos ever written.",
+      "vocal": {
+        "range": "D2-Bb4",
+        "voice_type": "heroic tenor",
+        "belt_required": false,
+        "style_notes": "Requires sustained, pure head voice for Bring Him Home (quietly, on a high A/Bb). Also needs dramatic chest voice for Confrontation and Who Am I. A rare combination of lyric beauty and dramatic power. This is not a role for voices still developing."
+      },
+      "dance": {"level": "none", "styles": ["staged movement"], "notes": "Physical stamina and the ability to age convincingly across the show. No dance requirements but sustained physical performance throughout."},
+      "acting": {"level": "advanced", "character_types": ["redemptive hero", "loving father", "moral philosopher", "aging leader"], "notes": "Must carry the show's moral weight without turning Valjean into a saint. He must feel human — flawed and frightened — while being genuinely heroic. The aging arc must be physically believable."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "Skill Accelerator",
+        "why": "One of the most demanding and rewarding roles in the canon. Every vocal technique, dramatic skill, and physical stamina is tested to the limit.",
+        "common_casting": "Experienced tenor or high baritone with years of vocal development. Both singing and acting must be at an elite level. This is not a debut principal role."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Bring Him Home — the quiet, sustained falsetto/head voice on a high A/Bb is the defining challenge",
+          "Physical and emotional stamina — Valjean is on stage for most of a 3-hour show",
+          "The arc from bitterness to transcendent peace must be fully plotted and genuinely felt",
+          "Acting depth that matches the vocal power — the singing won't win it alone"
+        ],
+        "tips": [
+          "Prepare both 'Bring Him Home' AND 'Who Am I?' — directors need to see the full range",
+          "Book a vocal coach specialising in mixed voice well in advance — the falsetto demands are extreme",
+          "Study the physical arc as closely as the vocal one — how does Valjean's body change across 30 years?",
+          "Listen to Alfie Boe and Philip Quast recordings for two widely different but valid approaches"
+        ],
+        "common_mistakes": [
+          "Belting 'Bring Him Home' rather than floating it in head voice — the softness is what breaks hearts",
+          "Playing Valjean as saintly from the start — the early bitterness makes the redemption meaningful",
+          "Underestimating the stamina required for the full show"
+        ]
+      },
+      "key_songs": [
+        {"title": "What Have I Done?", "type": "solo", "notes": "The emotional opening after the Bishop's mercy. Establishes the character and the moral framework."},
+        {"title": "Who Am I?", "type": "solo", "notes": "Dramatic confrontation of identity. Requires both dramatic chest voice and vocal control."},
+        {"title": "Bring Him Home", "type": "solo", "notes": "The iconic prayer for Marius. Sustained head voice on A/Bb — the most technically perilous moment in the show."},
+        {"title": "One Day More", "type": "company lead", "notes": "The Act 1 closer. Valjean opens the number and weaves through the counterpoint."}
+      ]
+    },
+    {
+      "id": "lm-javert",
+      "name": "Javert",
+      "role_type": "lead",
+      "age_range": {"min": 30, "max": 55},
+      "description": "Javert is one of musical theatre's greatest roles because he is never the villain in his own eyes. He is a man of absolute principle whose worldview collapses when those principles prove inadequate. 'Stars' is one of the great bass-baritone showpieces in the repertoire.",
+      "vocal": {
+        "range": "F#2-F4",
+        "voice_type": "bass-baritone",
+        "belt_required": false,
+        "style_notes": "True bass-baritone richness is essential. Stars requires a top F that is clean and powerful. The voice should sound like absolute certainty made audible — dark, rich, authoritative."
+      },
+      "dance": {"level": "none", "styles": ["military bearing", "staged movement"], "notes": "Physical bearing is everything. Javert should move like a man who has never doubted himself — until he does."},
+      "acting": {"level": "advanced", "character_types": ["principled absolutist", "tragic pursuer", "philosophical villain"], "notes": "Must never play Javert as evil — play him as completely certain he is right and that certainty must be completely convincing. The suicide must feel philosophically inevitable, not dramatic contrivance."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the most powerful antagonist roles in the canon. 'Stars' alone is a career showpiece.",
+        "common_casting": "Deep, authoritative bass-baritones with genuine physical presence. Acting intelligence is equally essential."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A genuine bass-baritone — this role doesn't work with a light baritone voice",
+          "Stars — the top F must be clean and powerful, and the whole song must feel like absolute certainty",
+          "Physical authority — Javert never shows uncertainty until Act 2",
+          "The collapse in Act 2 must feel as inevitable and powerful as his certainty in Act 1"
+        ],
+        "tips": [
+          "Prepare 'Stars' and nothing else if time is short — it tells directors everything",
+          "Show physical authority from the moment you enter the room",
+          "Don't play Javert as a villain — play him as a man who knows with perfect confidence what justice is"
+        ],
+        "common_mistakes": [
+          "Playing Javert as menacing rather than certain — his threat comes from conviction, not malice",
+          "A baritone voice that doesn't have the real depth — the low notes define the character"
+        ]
+      },
+      "key_songs": [
+        {"title": "Stars", "type": "solo", "notes": "The definitive bass-baritone moment in the show. Javert's manifesto of order and justice. Requires a powerful, clean top F."},
+        {"title": "The Confrontation", "type": "duet", "notes": "The direct clash with Valjean. Must be an even match — two immovable forces."},
+        {"title": "Javert's Suicide", "type": "solo", "notes": "The philosophical collapse. A man who cannot reconcile what he has been shown with what he believes. Must feel tragic, not dramatic."}
+      ]
+    },
+    {
+      "id": "lm-fantine",
+      "name": "Fantine",
+      "role_type": "supporting",
+      "age_range": {"min": 20, "max": 40},
+      "description": "Fantine appears for only the first part of Act 1 but 'I Dreamed a Dream' has become one of the most iconic songs in musical theatre history. Her arc from hopeful seamstress to dying prostitute must be played with absolute conviction and vocal beauty. The role requires a genuine soprano with the technical control to save her power for when it counts.",
+      "vocal": {
+        "range": "Bb3-Bb5",
+        "voice_type": "soprano lyric",
+        "belt_required": false,
+        "style_notes": "Lyric soprano with genuine beauty and emotional range. I Dreamed a Dream requires restraint in the early verses to make the climactic key change devastating."
+      },
+      "dance": {"level": "none", "styles": ["physical deterioration"], "notes": "The arc of physical decline must be played convincingly. Brief stage time makes each moment essential."},
+      "acting": {"level": "advanced", "character_types": ["hopeful", "desperate", "mother", "dying"], "notes": "Every scene is crucial because there are so few of them. Must generate profound empathy in very limited time. 'I Dreamed a Dream' is a complete dramatic arc in itself."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "'I Dreamed a Dream' is one of the most celebrated songs in musical theatre. A brief role with enormous impact.",
+        "common_casting": "Pure lyric sopranos with real emotional depth. The song is widely auditioned — a genuinely distinguished interpretation is required."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'I Dreamed a Dream' — the vocal beauty must be genuine and the emotional journey fully inhabited",
+          "The physical decline from hope to despair must be completely committed",
+          "The love for Cosette must be the emotional spine of every scene"
+        ],
+        "tips": [
+          "Don't oversing the opening verses — save the power for the final section",
+          "The despair must come from real love that was destroyed, not just from sadness",
+          "Show the whole arc in the song: hope, loss, rage, grief — they're all there in those 4 verses"
+        ],
+        "common_mistakes": [
+          "Starting too loud and loud and having nowhere to go",
+          "Missing the anger in the middle section — Fantine is furious, not just sad"
+        ]
+      },
+      "key_songs": [
+        {"title": "I Dreamed a Dream", "type": "solo", "notes": "One of the most iconic songs in musical theatre. A complete emotional arc from hope to devastated disillusionment."}
+      ]
+    },
+    {
+      "id": "lm-eponine",
+      "name": "Éponine",
+      "role_type": "supporting",
+      "age_range": {"min": 16, "max": 30},
+      "description": "Éponine is the fan favourite of Les Mis — a street girl who loves Marius with everything she has while he pursues another. 'On My Own' is one of the most performed songs in musical theatre auditions worldwide. Her sacrifice on the barricade is one of the show's most affecting moments.",
+      "vocal": {
+        "range": "G3-F5",
+        "voice_type": "mezzo-soprano belt",
+        "belt_required": true,
+        "belt_range": "B4-F5",
+        "style_notes": "Street-smart mezzo with a raw, real quality. 'On My Own' should sound like someone telling the truth, not performing a ballad. The key change must feel like emotional escalation, not just volume."
+      },
+      "dance": {"level": "none", "styles": ["physical street movement"], "notes": "Street physicality and the ability to convey poverty through the body."},
+      "acting": {"level": "advanced", "character_types": ["street-smart", "tender", "selfless", "tragic"], "notes": "The contrast between Éponine's tough surface and her tender reality is the whole character. The love for Marius must be totally real — her sacrifice only matters if we believe it."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "'On My Own' is one of the most beloved songs in the repertoire. Éponine is often the audience's favourite character.",
+        "common_casting": "Belt mezzos with natural warmth and genuine street quality. On My Own is widely auditioned — a fresh, honest interpretation is critical."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'On My Own' — emotional truth above all technique. Distinguish your interpretation",
+          "The street-smart physicality that reveals a tender interior",
+          "The love for Marius must be completely real — Éponine's sacrifice carries the whole Act 2 barricade"
+        ],
+        "tips": [
+          "'On My Own' is the natural audition but because it's SO common, a distinctive personal interpretation is crucial",
+          "Show the street kid before you show the romantic — the contrast IS the character",
+          "A Little Fall of Rain requires genuine emotional intimacy — the death scene is unguarded"
+        ],
+        "common_mistakes": [
+          "Playing the performance of the song rather than the truth of it",
+          "Making Éponine too polished — she should feel raw and real",
+          "Missing the anger underneath the love — Éponine knows she will never have what she wants"
+        ]
+      },
+      "key_songs": [
+        {"title": "On My Own", "type": "solo", "notes": "The iconic unrequited love ballad. One of the most famous songs in musical theatre."},
+        {"title": "A Little Fall of Rain", "type": "duet", "notes": "The heartbreaking death scene with Marius. Requires absolute emotional intimacy."}
+      ]
+    },
+    {
+      "id": "lm-enjolras",
+      "name": "Enjolras",
+      "role_type": "supporting",
+      "age_range": {"min": 18, "max": 30},
+      "description": "Enjolras is the passionate leader of the student revolutionaries — a true believer whose fire and conviction make the political personal. Physical charisma and absolute commitment are as important as vocal ability. He must be someone people would genuinely follow into battle.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor-baritone",
+        "belt_required": false,
+        "style_notes": "Clear, strong tenor or high baritone with good top notes for the ensemble leads. Red and Black requires both lyrical legato and dramatic intensity."
+      },
+      "dance": {"level": "none", "styles": ["barricade movement", "physical theatre"], "notes": "Physical leadership and the ability to rally a group through presence alone."},
+      "acting": {"level": "advanced", "character_types": ["idealist", "leader", "believer", "tragic"], "notes": "Must make the revolution feel urgent and real, not like period drama. His death must feel like the end of an idea, not just a person."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "One of the most charismatic supporting roles in the canon. Gets moments of real theatrical power.",
+        "common_casting": "Tenors or high baritones with natural leadership presence. Actors who can inspire others on stage."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural leadership — people on stage must believe in Enjolras",
+          "Conviction and fire — the revolution is everything, and it must feel that way",
+          "A voice strong enough to lead ensemble numbers, particularly Do You Hear the People Sing"
+        ],
+        "tips": [
+          "Show your physical presence and leadership quality in every moment in the room",
+          "The politics must feel personal and urgent, not historical"
+        ],
+        "common_mistakes": [
+          "Playing Enjolras as a poster rather than a person — his conviction must feel genuine, not rhetorical"
+        ]
+      },
+      "key_songs": [
+        {"title": "Red and Black", "type": "ensemble lead", "notes": "The political debate turned passionate declaration. Enjolras must lead with total conviction."},
+        {"title": "Do You Hear the People Sing?", "type": "company lead", "notes": "The revolutionary anthem. One of the most stirring ensemble numbers in musical theatre."},
+        {"title": "One Day More", "type": "company", "notes": "Act 1 closer. All storylines converge. Enjolras leads the revolutionary thread."}
+      ]
+    },
+    {
+      "id": "lm-thenardier",
+      "name": "Thénardier",
+      "role_type": "character",
+      "age_range": {"min": 35, "max": 60},
+      "description": "Thénardier is one of musical theatre's great comic villain roles — an innkeeper turned criminal who makes audiences laugh while being genuinely horrible. Master of the House is an iconic duet that requires precise comic timing, theatrical excess, and real baritone grunt.",
+      "vocal": {
+        "range": "Ab2-E4",
+        "voice_type": "baritone character",
+        "belt_required": false,
+        "style_notes": "Character baritone with rough, unpolished quality. Master of the House is about character and comedy — technical perfection is not the point."
+      },
+      "dance": {"level": "light", "styles": ["character comedy", "mugging"], "notes": "Physical comedy and theatrical excess. The choreography of Master of the House is broad and fun, not technically demanding."},
+      "acting": {"level": "advanced", "character_types": ["corrupt", "theatrical", "opportunistic", "darkly comic"], "notes": "Must be funny AND genuinely unpleasant. The audience should laugh at him while knowing he's terrible. Never plays himself as a villain — Thénardier always has excellent reasons for everything he does."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "One of the most entertaining scene-stealer roles in the show. Master of the House is a guaranteed crowd moment.",
+        "common_casting": "Character actors with natural dark comedy and theatrical self-confidence. Often the most entertaining performer in the cast."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Dark comedy that lands precisely — Thénardier is funny because he's so completely without shame",
+          "Physical excess and theatrical flair",
+          "The ability to deliver Master of the House as genuine entertainment while playing a wholly corrupt man"
+        ],
+        "tips": [
+          "'Master of the House' is the natural audition — perform it with total commitment and no apology",
+          "Don't play the character as too knowing — Thénardier believes he's a shrewd businessman, not a villain"
+        ],
+        "common_mistakes": [
+          "Winking at the audience about how bad he is — Thénardier is proud of himself at all times"
+        ]
+      },
+      "key_songs": [
+        {"title": "Master of the House", "type": "duet / ensemble", "notes": "The show's great comedy number. Thénardier and Madame trading verses about their corrupt hospitality business."},
+        {"title": "Beggars at the Feast", "type": "duet", "notes": "Act 2 reprise of their schemes. Dark comedy in the context of genuine celebration."}
+      ]
+    },
+    {
+      "id": "lm-mme-thenardier",
+      "name": "Madame Thénardier",
+      "role_type": "character",
+      "age_range": {"min": 30, "max": 55},
+      "description": "Madame Thénardier is the ideal comedy villain partner — physically imposing, outrageously shameless, and completely certain she is doing nothing wrong. 'Master of the House' needs a performer with total commitment to the role's theatrical excess and a genuine mezzo voice.",
+      "vocal": {
+        "range": "G2-E4",
+        "voice_type": "mezzo contralto character",
+        "belt_required": false,
+        "style_notes": "Rich, character mezzo. Big, unsubtle qualities work here. Should sound like someone who enjoys themselves enormously."
+      },
+      "dance": {"level": "light", "styles": ["character comedy"], "notes": "Physical comedy and theatrical bravado. The character's physicality is central to the comedy."},
+      "acting": {"level": "advanced", "character_types": ["monstrous", "self-righteous", "darkly comic", "theatrical"], "notes": "Should be as funny as possible while being genuinely unpleasant. Total shamelessness is the key."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "One of the few great comic contralto/mezzo character roles in the standard repertoire.",
+        "common_casting": "Character actresses with big personalities and natural comic timing. Often paired with the funniest actor playing Thénardier."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical comedy and total theatrical commitment",
+          "A genuine mezzo/contralto voice with character texture",
+          "The complete absence of self-awareness — Madame Thénardier has no idea she is terrible"
+        ],
+        "tips": [
+          "Master of the House is the obvious audition — or any broad character comedy number",
+          "Bigger is usually better for this role — total commitment to the excess"
+        ],
+        "common_mistakes": [
+          "Being too self-aware about the comedy — play it straight and let the audience laugh"
+        ]
+      },
+      "key_songs": [
+        {"title": "Master of the House", "type": "duet", "notes": "The perfect comedy double act with Thénardier."}
+      ]
+    },
+    {
+      "id": "lm-cosette",
+      "name": "Cosette",
+      "role_type": "supporting",
+      "age_range": {"min": 16, "max": 28},
+      "description": "Cosette is the classic soprano ingenue — Fantine's daughter, Valjean's ward, and Marius's love. Her innocence and vocal beauty are both assets and challenges: she must hold her own surrounded by significantly more complex characters by radiating pure warmth and lyric grace.",
+      "vocal": {
+        "range": "C4-Bb5",
+        "voice_type": "soprano lyric",
+        "belt_required": false,
+        "style_notes": "Pure lyric soprano. Cosette's voice should be beautiful, bright, and uncomplicated. A Heart Full of Love requires genuine sweetness without ingenue blandness."
+      },
+      "dance": {"level": "none", "styles": ["romantic movement"], "notes": "Graceful physical presence. The role is about radiance more than movement."},
+      "acting": {"level": "moderate", "character_types": ["innocent", "romantic", "sheltered", "growing"], "notes": "The challenge is making Cosette interesting despite her uncomplicated nature — she must radiate genuine warmth and love rather than just being the object of the plot."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "A beautiful soprano showcase with touching moments. Good for developing lyric soprano technique in a major show.",
+        "common_casting": "Pure lyric sopranos with genuine stage warmth."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine lyric soprano beauty — Cosette's voice must be lovely",
+          "Natural warmth and radiance — she should feel loved and loving",
+          "The ability to hold your own in 'A Heart Full of Love' alongside Éponine's dramatic presence"
+        ],
+        "tips": [
+          "Castle on a Cloud or A Heart Full of Love are natural audition choices",
+          "Show your vocal purity — Cosette's sound should be clear and beautiful above all"
+        ],
+        "common_mistakes": [
+          "Playing Cosette as passive — she makes real choices, she just makes them with love"
+        ]
+      },
+      "key_songs": [
+        {"title": "Castle on a Cloud", "type": "solo", "notes": "Young Cosette's dream of safety and love. Sweet, lyrical, uncomplicated."},
+        {"title": "A Heart Full of Love", "type": "trio", "notes": "The romantic triangle between Cosette, Marius, and Éponine. Cosette's joy contrasts with Éponine's heartbreak."}
+      ]
+    },
+    {
+      "id": "lm-marius",
+      "name": "Marius",
+      "role_type": "supporting",
+      "age_range": {"min": 16, "max": 28},
+      "description": "The romantic student lead — passionate idealist and devoted lover. Marius is swept up in both the revolution and love, and is the character through whose grief we experience the aftermath of the barricade. 'Empty Chairs at Empty Tables' is one of the most devastating solos in the show.",
+      "vocal": {
+        "range": "B2-G4",
+        "voice_type": "tenor lyric",
+        "belt_required": false,
+        "style_notes": "Lyric tenor with romantic quality. 'Empty Chairs at Empty Tables' requires genuine emotional depth without vocal forcing."
+      },
+      "dance": {"level": "none", "styles": [], "notes": "Barricade movement. No dance requirements."},
+      "acting": {"level": "moderate", "character_types": ["romantic idealist", "survivor", "lover", "grieving"], "notes": "The survivor's guilt in Act 2 is the character's most demanding moment. Must make the audience feel how much was lost at the barricade."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "'Empty Chairs at Empty Tables' is a genuine tenor showcase. Strong lyrical role in a major production.",
+        "common_casting": "Young lyric tenors with natural romantic quality and genuine emotional availability."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Romantic tenor quality and genuine physical charisma",
+          "The idealism of youth — Marius truly believes in the revolution",
+          "The emotional depth for Empty Chairs — survivor's guilt must feel real and specific"
+        ],
+        "tips": [
+          "'Empty Chairs' or 'A Heart Full of Love' are natural audition pieces",
+          "Show your emotional openness — Marius is passionate and unguarded"
+        ],
+        "common_mistakes": [
+          "Playing Marius as dramatically passive — he's emotionally intense, just focused on love"
+        ]
+      },
+      "key_songs": [
+        {"title": "Empty Chairs at Empty Tables", "type": "solo", "notes": "The haunting Act 2 solo where Marius visits the empty café where his friends died. One of the show's most devastating moments."},
+        {"title": "A Heart Full of Love", "type": "trio", "notes": "The romantic meeting with Cosette, shadowed by Éponine's unrequited love."}
+      ]
+    },
+    {
+      "id": "lm-ensemble",
+      "name": "Students / Ensemble",
+      "role_type": "ensemble",
+      "age_range": {"min": 16, "max": 65},
+      "description": "The ensemble of Les Misérables carries the show's emotional power in its choral numbers. Do You Hear the People Sing, One Day More, and the barricade sequences require committed ensemble performers who can sustain operatic-level vocal intensity across a full show.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "varied",
+        "belt_required": false,
+        "style_notes": "Strong choral singing is the absolute foundation. Les Mis ensemble is where the show's overwhelming emotional power lives. All voice types are needed."
+      },
+      "dance": {"level": "low_to_moderate", "styles": ["barricade movement", "period staging"], "notes": "Staging rather than dance. Physical commitment and the ability to portray poverty, industry, and revolution convincingly."},
+      "acting": {"level": "moderate", "character_types": ["citizens", "factory workers", "students", "soldiers"], "notes": "Must embody specific, real people — not theatrical background. The ensemble's humanity is what makes the tragedy land."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Ensemble",
+        "growth_value": 3,
+        "growth_label": "Strong Choral Development",
+        "why": "Exceptional choral experience in one of the most demanding ensemble shows ever written. Develops vocal power, stamina, and ensemble precision.",
+        "common_casting": "Singers with strong voices and the ability to sustain demanding choral material."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong, trained choral voice — this ensemble requires real vocal power and blend",
+          "Emotional commitment — every person in the ensemble has a story",
+          "Physical stamina for a 3-hour through-sung show"
+        ],
+        "tips": [
+          "Show your vocal training and choral work in the audition",
+          "Give your character in the ensemble a specific story — directors notice"
+        ],
+        "common_mistakes": [
+          "Treating the ensemble as background — in Les Mis the ensemble IS the show"
+        ]
+      },
+      "key_songs": [
+        {"title": "Do You Hear the People Sing?", "type": "ensemble", "notes": "The revolutionary anthem. One of the most stirring ensemble numbers in musical theatre — requires real power and commitment."},
+        {"title": "One Day More", "type": "company", "notes": "The Act 1 closer. All storylines converge in complex counterpoint. Technically and emotionally demanding."}
+      ]
+    }
+  ]
+}

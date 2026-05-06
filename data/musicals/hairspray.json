@@ -1,0 +1,352 @@
+{
+  "musical": {
+    "id": "hairspray",
+    "title": "Hairspray",
+    "music_by": "Marc Shaiman",
+    "year_premiered": 2002,
+    "vocal_style": "1960s pop, R&B, and soul. Tracy needs a full mezzo belt. Motormouth Maybelle requires a powerhouse gospel belt. Link is a clean rock tenor. The whole score is energetic, joyful, and inclusive — one of the happiest sounds in contemporary musical theatre.",
+    "synopsis": "Baltimore, 1962. Tracy Turnblad is a plump, big-hearted teenager who just wants to dance on The Corny Collins Show. When she lands a spot on the show, she falls for the dreamboat Link Larkin and gets swept up in the civil rights movement — all while battling the show's racist producer and her nemesis Amber. Pure joy.",
+    "junior_version_available": true,
+    "difficulty_overall": "intermediate_to_advanced",
+    "dance_intensity": "high",
+    "typical_cast_size": "20-35",
+    "age_range": "12-60",
+    "genre_tags": ["60s", "pop_rock", "civil_rights", "comedy", "family_friendly", "feel_good", "dance_heavy", "inclusive", "body_positivity"]
+  },
+  "roles": [
+    {
+      "id": "hs-tracy",
+      "name": "Tracy Turnblad",
+      "role_type": "lead",
+      "age_range": {"min": 14, "max": 25},
+      "description": "Tracy is one of musical theatre's great heroines — not because she's superhuman, but because her joy is completely genuine and her goodness is never smug. She dances not because she's the best dancer but because dancing is pure happiness. Tracy doesn't see colour or size — she just sees people she wants to include. She's one of the most infectious leading characters in contemporary musical theatre.",
+      "vocal": {
+        "range": "Bb3-G5",
+        "voice_type": "mezzo belt",
+        "belt_required": true,
+        "belt_range": "D5-G5",
+        "style_notes": "Full, warm mezzo belt in the Motown/soul tradition. 'Good Morning Baltimore' should feel effortlessly joyful — the belt is big but the character carries it lightly. 'I Know Where I've Been' (if doubled with Maybelle) is a different quality entirely."
+      },
+      "dance": {"level": "high", "styles": ["60s pop", "Motown", "Madison", "the Twist", "soul"], "notes": "Tracy must be a genuinely great dancer — her talent is the premise of the whole show. She should feel like someone who has danced to every record in every room since she was six."},
+      "acting": {"level": "moderate", "character_types": ["joyful", "inclusive", "brave", "genuine", "body-positive"], "notes": "Tracy's goodness must never feel preachy. She includes everyone because it literally doesn't occur to her to do otherwise. Her confrontation of racism is driven by joy and love, not seriousness."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the great contemporary female leads. Infectiously joyful role that carries the entire emotional world of the show.",
+        "common_casting": "Belt mezzos with genuine stage warmth, strong dance ability, and natural likability. Tracy is frequently cast against type in terms of body — the role celebrates real diversity."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The joy must be completely genuine — Tracy's energy is the show's entire engine",
+          "'Good Morning Baltimore' — the belt must be big but the character must be bigger",
+          "Dance ability in the 60s Motown style — Tracy's dancing IS the premise"
+        ],
+        "tips": [
+          "Good Morning Baltimore is the definitive audition piece — show the joy first and foremost",
+          "Don't play Tracy as a plucky underdog — she genuinely doesn't see herself as disadvantaged",
+          "The 60s dance vocabulary should feel natural, not studied"
+        ],
+        "common_mistakes": [
+          "Playing Tracy as sweet — she's joyful, which is different and more infectious",
+          "Underestimating the dance requirements — Tracy's success depends on her dancing"
+        ]
+      },
+      "key_songs": [
+        {"title": "Good Morning Baltimore", "type": "solo", "notes": "The perfect show-starter. Tracy's pure joy and ambition laid out in 3 minutes."},
+        {"title": "I Can Hear the Bells", "type": "solo/fantasy", "notes": "Tracy's romantic daydream about Link. Hilarious and heartfelt."},
+        {"title": "You Can't Stop the Beat", "type": "company finale", "notes": "One of the most joyful finale numbers in musical theatre."}
+      ]
+    },
+    {
+      "id": "hs-link",
+      "name": "Link Larkin",
+      "role_type": "supporting",
+      "age_range": {"min": 17, "max": 26},
+      "description": "The dreamboat teen idol of The Corny Collins Show — gorgeous, talented, and on the right side of history when it counts. Link isn't the deepest character in Hairspray but he is absolutely essential — his sincerity in falling for Tracy makes the audience's own investment complete.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor rock",
+        "belt_required": false,
+        "style_notes": "Clean, bright rock tenor in the early 60s pop idol tradition. Think Bobby Darin/Ricky Nelson adjacent. 'It Takes Two' requires genuine charm and vocal ease."
+      },
+      "dance": {"level": "high", "styles": ["60s teen idol performance", "Motown", "Madison"], "notes": "Link is one of the best dancers on the show. Natural, charismatic, effortlessly cool 60s movement."},
+      "acting": {"level": "moderate", "character_types": ["charming", "romantic", "growing", "decent"], "notes": "Link's arc is about choosing Tracy over his career. The choice must feel real — he has something to lose."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "Excellent featured role with strong dance and vocal requirements. Great show experience.",
+        "common_casting": "Natural rock tenor-dancers with genuine physical charm and easy charisma."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural charisma — Link should be genuinely, believably the most attractive person in the room to Tracy",
+          "60s dance style feels effortless and natural",
+          "Vocal ease in the pop tenor range"
+        ],
+        "tips": [
+          "'Ladies' Choice' or 'It Takes Two' are the natural audition pieces",
+          "The chemistry with Tracy is everything — show warmth and genuine connection"
+        ],
+        "common_mistakes": [
+          "Playing Link as a heartthrob who knows he's a heartthrob — he's genuinely nice, not just shiny"
+        ]
+      },
+      "key_songs": [
+        {"title": "Ladies' Choice", "type": "solo/ensemble", "notes": "Link's charming introduction and the show's tribute to the 60s pop idol."},
+        {"title": "It Takes Two", "type": "duet", "notes": "The romantic duet with Tracy. Needs genuine sweetness and chemistry."}
+      ]
+    },
+    {
+      "id": "hs-edna",
+      "name": "Edna Turnblad",
+      "role_type": "supporting",
+      "age_range": {"min": 35, "max": 60},
+      "description": "Tracy's mother — traditionally played by a man in drag, following the Divine original. Edna is agoraphobic, self-conscious about her size, and slowly brought out of her shell by Tracy's love and confidence. 'Welcome to the 60s' is the show's funniest and most touching moment. The Edna/Wilbur relationship is one of the most genuinely sweet in all of musical theatre.",
+      "vocal": {
+        "range": "B2-E4",
+        "voice_type": "mezzo baritone character",
+        "belt_required": false,
+        "style_notes": "Rich lower voice in the character mezzo or baritone range. Edna's voice should feel warm, big, and real — however it gets there. Welcome to the 60s requires enough range to be exciting."
+      },
+      "dance": {"level": "moderate", "styles": ["character comedy dance", "60s pop"], "notes": "Edna's physicality is central to the comedy and the heart. The transformation from reluctant participant to fully unleashed dancer is a major arc."},
+      "acting": {"level": "advanced", "character_types": ["self-conscious", "loving", "comedic", "transforming", "protective"], "notes": "Edna has genuine depth beneath the comedy. Her journey of self-acceptance mirrors Tracy's story about the whole community. The love between Edna and Wilbur must be completely real."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the iconic character roles in contemporary musical theatre. Welcome to the 60s and Timeless to Me are guaranteed crowd moments.",
+        "common_casting": "Traditionally a male performer in character comedy. The role requires genuine warmth, physical commitment, and the voice to deliver Welcome to the 60s."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The warmth beneath the comedy — Edna's love for Tracy must be completely genuine",
+          "Physical commitment to the transformation",
+          "'Welcome to the 60s' — the song must be genuinely joyful"
+        ],
+        "tips": [
+          "The comedy comes from Edna's self-consciousness, not from playing a man in a dress",
+          "The relationship with Wilbur must feel genuinely loving — they're the show's sentimental heart"
+        ],
+        "common_mistakes": [
+          "Playing Edna as pure drag comedy — she's a real character with real feelings"
+        ]
+      },
+      "key_songs": [
+        {"title": "Welcome to the 60s", "type": "duet/company", "notes": "Tracy and Edna's mother-daughter shopping number that becomes a spectacular street celebration."},
+        {"title": "Timeless to Me", "type": "duet", "notes": "The sweetest love song in the show — Edna and Wilbur's genuine, funny, touching devotion."},
+        {"title": "You Can't Stop the Beat", "type": "company", "notes": "Edna fully unleashed in the finale."}
+      ]
+    },
+    {
+      "id": "hs-wilbur",
+      "name": "Wilbur Turnblad",
+      "role_type": "supporting",
+      "age_range": {"min": 40, "max": 65},
+      "description": "Tracy's ebullient, novelty-shop-owning father — one of the most genuinely loveable characters in the show. Wilbur adores his wife and daughter completely and unconditionally. 'Timeless to Me' is the show's warmest moment: a goofy, loving celebration of a genuinely happy marriage.",
+      "vocal": {
+        "range": "A2-D4",
+        "voice_type": "baritone light character",
+        "belt_required": false,
+        "style_notes": "Light, warm character baritone. Timeless to Me should feel like someone who's been happily singing to his wife for 30 years."
+      },
+      "dance": {"level": "light", "styles": ["character comedy", "60s pop"], "notes": "Character comedy dance. Wilbur's physical energy is goofy and genuine."},
+      "acting": {"level": "moderate", "character_types": ["sweet", "supportive", "funny", "loving"], "notes": "Wilbur is pure heart. He loves his family, his novelties, and his life. Zero internal conflict. Plays mostly for genuine warmth."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 2,
+        "growth_label": "Featured Character",
+        "why": "'Timeless to Me' is a genuine show highlight. Warm, funny, impossible not to love.",
+        "common_casting": "Character actors with natural warmth and genuine physical comedy."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth — Wilbur must be someone the audience immediately loves",
+          "The goofy, sweet quality that makes Timeless to Me so charming",
+          "Complete believability as the man Edna has happily loved for decades"
+        ],
+        "tips": [
+          "Timeless to Me is the natural audition piece",
+          "Show the genuine warmth first — Wilbur is uncomplicated love"
+        ],
+        "common_mistakes": [
+          "Playing Wilbur as just comic relief — he has real heart"
+        ]
+      },
+      "key_songs": [
+        {"title": "Timeless to Me", "type": "duet", "notes": "The sweet, funny, touching marriage celebration with Edna. A guaranteed crowd moment."}
+      ]
+    },
+    {
+      "id": "hs-motormouth",
+      "name": "Motormouth Maybelle",
+      "role_type": "supporting",
+      "age_range": {"min": 35, "max": 60},
+      "description": "The owner of the black record store and the moral spine of the show. Motormouth Maybelle is the character who reminds you what Hairspray is really about. 'I Know Where I've Been' is one of the most powerful gospel numbers in contemporary musical theatre.",
+      "vocal": {
+        "range": "G3-G5",
+        "voice_type": "gospel contralto belt",
+        "belt_required": true,
+        "belt_range": "D5-G5",
+        "style_notes": "Powerhouse gospel belt with real contralto depth. 'I Know Where I've Been' is a complete tonal shift from the rest of the show — it must feel like a real civil rights-era gospel number, earned and true, not theatrical."
+      },
+      "dance": {"level": "moderate", "styles": ["soul", "R&B", "60s pop"], "notes": "Strong physical presence and soul/R&B movement. The Record Shop scenes require genuine groove."},
+      "acting": {"level": "advanced", "character_types": ["strong", "wise", "fierce", "loving", "battle-scarred"], "notes": "Motormouth has earned everything she says. Her strength comes from real experience and real love. 'I Know Where I've Been' must be completely grounded in genuine emotion."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stopper",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "'I Know Where I've Been' is one of the most powerful dramatic moments in contemporary musical theatre. The role carries the show's deeper meaning.",
+        "common_casting": "Powerful gospel-trained belt contraltos with real dramatic presence and the authority to deliver the show's most emotionally serious number."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'I Know Where I've Been' — this must feel genuine, not performed",
+          "Physical authority — Motormouth is the moral centre of the show",
+          "Gospel vocal training — the style is very specific"
+        ],
+        "tips": [
+          "This song should come from something real if possible — the material deserves that depth",
+          "Show the warmth and love along with the strength — Motormouth is fierce because she loves people"
+        ],
+        "common_mistakes": [
+          "Treating 'I Know Where I've Been' as a showstopper first and a civil rights statement second",
+          "Insufficient gospel vocal training — the style is distinct and demanding"
+        ]
+      },
+      "key_songs": [
+        {"title": "I Know Where I've Been", "type": "solo", "notes": "One of the most powerful dramatic showstoppers in contemporary musical theatre. The show's moral and emotional centre."},
+        {"title": "Big, Blonde and Beautiful", "type": "solo/company", "notes": "The joyful celebration of real beauty, real bodies, real people."}
+      ]
+    },
+    {
+      "id": "hs-penny",
+      "name": "Penny Pingleton / Seaweed",
+      "role_type": "supporting",
+      "age_range": {"min": 15, "max": 25},
+      "description": "Penny is Tracy's shy best friend who discovers herself through her relationship with Seaweed — Motormouth's son. Their interracial romance is central to the show's civil rights themes and is played with genuine joy. Seaweed is the coolest dancer in the show and one of the most warmly charismatic supporting roles.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "varying",
+        "belt_required": false,
+        "style_notes": "Penny: bright soprano mezzo. Seaweed: warm soul tenor or baritone. Both need strong 60s R&B sensibility."
+      },
+      "dance": {"level": "high", "styles": ["soul", "R&B", "60s Motown", "Madison"], "notes": "Seaweed in particular must be an exceptional dancer — he teaches Tracy the new dances from the black community. One of the show's central dance requirements."},
+      "acting": {"level": "moderate", "character_types": ["shy to brave (Penny)", "confident and warm (Seaweed)", "romantic leads"], "notes": "The innocence and genuine sweetness of both characters makes their romance the show's most uncomplicated joy."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "Two genuinely strong supporting roles with real arcs and featured musical moments.",
+        "common_casting": "Seaweed: exceptional dancer-singer with natural charm. Penny: bright soprano with a convincing transformation from shy to brave."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Seaweed: dance ability is the primary requirement — he must be the best dancer in the room",
+          "Penny: the transformation from mousy to brave must be earned and genuine",
+          "Chemistry between Penny and Seaweed — their romance must feel innocent and real"
+        ],
+        "tips": [
+          "Seaweed: show your dance skills prominently — that's where the role lives",
+          "Penny: show the courage that emerges, not just the shyness that starts"
+        ],
+        "common_mistakes": [
+          "Playing Penny as purely comic relief — she has a genuine, meaningful arc"
+        ]
+      },
+      "key_songs": [
+        {"title": "Without Love", "type": "quartet", "notes": "The jailbreak/escape fantasy number. All four principals."},
+        {"title": "The Big Doll House", "type": "ensemble", "notes": "Penny's first real defiant moment."},
+        {"title": "Run and Tell That", "type": "Seaweed solo/ensemble", "notes": "Seaweed's confident, irresistible showcase in the Record Shop."}
+      ]
+    },
+    {
+      "id": "hs-velma",
+      "name": "Velma Von Tussle",
+      "role_type": "supporting",
+      "age_range": {"min": 35, "max": 55},
+      "description": "The racist, classist producer-handler of The Corny Collins Show — Amber's mother and the show's chief obstacle. Velma is the best kind of musical theatre villain: she's completely convinced her prejudices are just sensible taste.",
+      "vocal": {
+        "range": "B3-F5",
+        "voice_type": "soprano mezzo character",
+        "belt_required": false,
+        "style_notes": "Polished, affected soprano with the sound of someone who considers herself much more refined than everyone around her."
+      },
+      "dance": {"level": "moderate", "styles": ["60s showbiz performance"], "notes": "Velma moves like a woman who used to be a performer and wants everyone to know it."},
+      "acting": {"level": "advanced", "character_types": ["racist", "class-conscious", "manipulative", "self-righteous"], "notes": "The key is that Velma never thinks of herself as racist — she is simply maintaining standards. Her complete self-righteousness is what makes her funny and infuriating simultaneously."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 3,
+        "growth_label": "Character Role",
+        "why": "A great character comedy role with real teeth. Velma's complete conviction in her awfulness is a joy to play.",
+        "common_casting": "Character actresses who can make prejudice funny without excusing it."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Complete conviction in Velma's self-righteousness — she must believe she's the reasonable one",
+          "Physical polish and affected refinement",
+          "The ability to be the obstacle without becoming boring"
+        ],
+        "tips": [
+          "Show the vanity first — Velma was the pretty one and she knows it",
+          "Never play the racism as conscious — Velma would be deeply offended by the suggestion"
+        ],
+        "common_mistakes": [
+          "Playing Velma as a moustache-twirling villain rather than someone completely certain she is right"
+        ]
+      },
+      "key_songs": [
+        {"title": "The Nicest Kids in Town", "type": "company", "notes": "The Corny Collins Show opener. Velma controls the whole enterprise."},
+        {"title": "Miss Baltimore Crabs", "type": "solo", "notes": "Velma's great number about her past glory and present bitterness."}
+      ]
+    },
+    {
+      "id": "hs-corny",
+      "name": "Corny Collins",
+      "role_type": "supporting",
+      "age_range": {"min": 25, "max": 40},
+      "description": "The beloved TV dance show host — charming, well-meaning, and on the right side of history in the end. Corny is the show's glamorous centre — he hosts, he dances, he charms, and he's the key to integration when it finally comes.",
+      "vocal": {
+        "range": "C3-F4",
+        "voice_type": "tenor baritone",
+        "belt_required": false,
+        "style_notes": "Clean, bright 60s TV host delivery. Easy, natural pop."
+      },
+      "dance": {"level": "high", "styles": ["60s TV dance show", "Motown", "Madison", "the Twist"], "notes": "Corny is a professional TV dance host and must move accordingly — slick, professional, effortlessly cool."},
+      "acting": {"level": "moderate", "character_types": ["charming host", "decently motivated", "growing conscience"], "notes": "Corny is fundamentally decent but hasn't quite found his courage until the show forces it. He genuinely loves the kids on his show."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "A stylish, high-energy featured role with great dance requirements.",
+        "common_casting": "Charismatic tenors or lighter baritones with strong 60s dance vocabulary and natural stage presence."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural TV host charisma — Corny is comfortable in every room",
+          "60s dance authority",
+          "The warmth that makes his descent into conscience believable"
+        ],
+        "tips": [
+          "Show the effortless charisma first — Corny is the most comfortable person in the building"
+        ],
+        "common_mistakes": [
+          "Playing the 60s style as too studied — Corny lived it, he didn't learn it"
+        ]
+      },
+      "key_songs": [
+        {"title": "The Nicest Kids in Town", "type": "solo/company", "notes": "The perfect 60s TV dance show opener."},
+        {"title": "You Can't Stop the Beat", "type": "company", "notes": "Corny fully on the right side of history in the finale."}
+      ]
+    }
+  ]
+}

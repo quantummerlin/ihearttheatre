@@ -1,0 +1,351 @@
+{
+  "musical": {
+    "id": "grease",
+    "title": "Grease",
+    "music_by": "Jim Jacobs & Warren Casey",
+    "year_premiered": 1971,
+    "vocal_style": "Rock and roll 50s pop. Sandy ranges from pure soprano ingenue to a full belt at the end. Danny is a rock baritone. The whole score is energetic, fun, and accessible to a wide range of voices.",
+    "synopsis": "It's 1959 at Rydell High School. Danny Zuko, king of the T-Birds, and Sandy Olsson, the sweet Australian newcomer, fell in love over summer. But fitting in at Rydell means they'll both have to figure out who they really are — and whether love is worth a little reinvention.",
+    "junior_version_available": true,
+    "difficulty_overall": "intermediate",
+    "dance_intensity": "high",
+    "typical_cast_size": "20-35",
+    "age_range": "16-40",
+    "genre_tags": ["classic_broadway", "rock_and_roll", "50s", "high_school", "comedy", "romance", "nostalgic", "dance_heavy"]
+  },
+  "roles": [
+    {
+      "id": "grease-sandy",
+      "name": "Sandy Olsson",
+      "role_type": "lead",
+      "age_range": {"min": 17, "max": 28},
+      "description": "Sandy starts the show as the sweetest, most wholesome character on stage — and ends it as the most transformed. The arc from wholesome Australian ingenue to confident woman (in that iconic black outfit) is one of the great character journeys in popular theatre. Vocally, Sandy spans from pure soprano to a driving belt across the show.",
+      "vocal": {
+        "range": "C4-Bb5",
+        "voice_type": "soprano to belt mezzo",
+        "belt_required": true,
+        "belt_range": "G4-Bb5",
+        "style_notes": "Sandy's early songs (Hopelessly Devoted) sit in a pure lyric soprano range. You're the One That I Want requires a pop belt that matches Danny's energy. The contrast between Act 1 sweetness and Act 2 confidence is the whole vocal arc."
+      },
+      "dance": {"level": "moderate_to_high", "styles": ["50s jive", "rock and roll", "hand jive"], "notes": "Sandy's Act 2 transformation requires genuine physical confidence and dancing ability. The Hand Jive and finale numbers are central."},
+      "acting": {"level": "moderate", "character_types": ["innocent", "romantic", "transforming", "self-discovering"], "notes": "The arc from sweet to confident must feel earned, not just like a costume change. Sandy should be intelligently good, not simply naive — her choices at the end are hers, made freely."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the most beloved female lead roles in popular musical theatre. Strong vocal range showcase with a satisfying character arc.",
+        "common_casting": "Lyric sopranos who can develop a belt by Act 2. Natural warmth and physical presence essential."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'Hopelessly Devoted' shows the pure soprano quality and emotional vulnerability",
+          "Physical transformation ability — the Act 2 Sandy must feel genuinely different",
+          "Chemistry with Danny in the audition room"
+        ],
+        "tips": [
+          "Show both aspects — the innocent early Sandy AND the confident finale Sandy if possible",
+          "Hopelessly Devoted is a beautiful audition piece; don't oversell the emotion — let the song do the work",
+          "The physical transformation should feel like confidence, not just a costume — work on that quality"
+        ],
+        "common_mistakes": [
+          "Playing Sandy as empty-headed — she's sweet AND smart",
+          "Making the Act 2 transformation too abrupt — it should feel like she found herself, not just changed for a boy"
+        ]
+      },
+      "key_songs": [
+        {"title": "Hopelessly Devoted to You", "type": "solo", "notes": "The beautiful Act 1 ballad. Pure lyric soprano in its natural habitat."},
+        {"title": "You're the One That I Want", "type": "duet", "notes": "The finale duet showcasing Sandy's transformation. Belt required."},
+        {"title": "Sandy (reprise in film not original, but often included)", "type": "ensemble", "notes": "Context varies by production."}
+      ]
+    },
+    {
+      "id": "grease-danny",
+      "name": "Danny Zuko",
+      "role_type": "lead",
+      "age_range": {"min": 17, "max": 28},
+      "description": "Danny is the coolest guy at Rydell — and beneath the leather jacket, a genuinely sweet boy who's fallen in love and doesn't know how to reconcile that with his image. The role requires physical charisma, genuine rock and roll energy, and the ability to make Danny's insecurity charming rather than irritating.",
+      "vocal": {
+        "range": "Bb2-F4",
+        "voice_type": "rock baritone",
+        "belt_required": true,
+        "belt_range": "D4-F4",
+        "style_notes": "Rock baritone with 50s pop swagger. Danny You're Lousy requires the full range of emotional expression from soft vulnerability to rock swagger. Summer Nights should feel effortless and fun."
+      },
+      "dance": {"level": "high", "styles": ["50s rock and roll", "hand jive", "athletic movement"], "notes": "Danny should move like one of the coolest guys in the room — athletic, confident, with genuine 50s swagger. Hand Jive featured number."},
+      "acting": {"level": "moderate", "character_types": ["cool", "vulnerable", "romantic", "comedic"], "notes": "The tension between Danny's self-image and his real feelings is the whole show. He's funny because he's trying so hard to be cool while clearly being completely smitten."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the iconic male leads in popular musical theatre. Strong combination of vocal, dance, and comedy.",
+        "common_casting": "Rock baritones with natural physical confidence and genuine comic instinct."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural physical charisma and 50s swagger",
+          "Comedy — Danny's gang scenes should be genuinely funny",
+          "The vulnerability that breaks through the cool exterior in the romantic scenes",
+          "Strong dance ability, particularly the Hand Jive"
+        ],
+        "tips": [
+          "Sandy must be clearly the most important thing in his life even when he's pretending otherwise",
+          "The comedy of trying-to-be-cool-while-being-besotted is most of the role — lean into it"
+        ],
+        "common_mistakes": [
+          "Playing Danny as genuinely cool rather than desperately trying to be cool",
+          "Missing the sweetness under the swagger"
+        ]
+      },
+      "key_songs": [
+        {"title": "Summer Nights", "type": "duet/ensemble", "notes": "The show opener. Danny tells his version of the summer romance to the T-Birds."},
+        {"title": "Sandy", "type": "solo", "notes": "Danny's vulnerable moment alone. The leather jacket comes off emotionally."},
+        {"title": "Greased Lightnin'", "type": "solo/ensemble", "notes": "The big rock showstopper. Pure energy and swagger."},
+        {"title": "You're the One That I Want", "type": "duet", "notes": "The finale. Danny must match Sandy's transformation with his own growth."}
+      ]
+    },
+    {
+      "id": "grease-rizzo",
+      "name": "Betty Rizzo",
+      "role_type": "supporting",
+      "age_range": {"min": 17, "max": 28},
+      "description": "Rizzo is the best role in Grease. She's tough, funny, and privately vulnerable — a woman who uses cynicism as armour and shows her real self only in the song 'There Are Worse Things I Could Do'. The show's most complex character and its most emotionally satisfying arc for a non-lead.",
+      "vocal": {
+        "range": "G3-F5",
+        "voice_type": "mezzo belt",
+        "belt_required": true,
+        "belt_range": "C5-F5",
+        "style_notes": "Street-smart mezzo with a wisecracking edge. 'There Are Worse Things I Could Do' should feel like armour being lowered — the voice should get softer and more vulnerable as the song progresses."
+      },
+      "dance": {"level": "moderate", "styles": ["50s pop", "gang swagger"], "notes": "Physical confidence and 50s bad girl swagger. The character's body language tells her story as much as her words."},
+      "acting": {"level": "advanced", "character_types": ["tough", "vulnerable", "funny", "leader", "hiding pain"], "notes": "'There Are Worse Things I Could Do' is one of the great character revelations in the musical theatre canon. The cynicism must be earned and the vulnerability must feel genuinely private."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "Rizzo is frequently cited as the most satisfying role in Grease — complex, funny, heartfelt, and dramatically substantial.",
+        "common_casting": "Belt mezzos with natural wit and strong physical presence. Acting depth is as important as vocal quality."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'There Are Worse Things I Could Do' — the emotional honesty is the whole audition",
+          "Natural wit and timing — Rizzo's comedy should land without apparent effort",
+          "The physical swagger that hides genuine vulnerability"
+        ],
+        "tips": [
+          "'There Are Worse Things I Could Do' is the definitive audition for this character",
+          "The cynicism must feel earned — Rizzo has been hurt and she's not going to pretend otherwise",
+          "Let the vulnerability in 'TAWTCDO' actually be vulnerable — don't perform it, live it"
+        ],
+        "common_mistakes": [
+          "Playing Rizzo as just mean — she's tough because she's been hurt, not because she's bad",
+          "Missing the dark comedy — Rizzo is genuinely funny"
+        ]
+      },
+      "key_songs": [
+        {"title": "Look at Me, I'm Sandra Dee", "type": "solo/comedy", "notes": "The funny mocking number that reveals Rizzo's jealousy and wit."},
+        {"title": "There Are Worse Things I Could Do", "type": "solo", "notes": "The heart of the character and the show's most emotionally complex song. Rizzo's armour comes down."},
+        {"title": "Summer Nights", "type": "ensemble", "notes": "Rizzo's commentary on Sandy and Danny's romance drives the Pink Ladies' side of the number."}
+      ]
+    },
+    {
+      "id": "grease-kenickie",
+      "name": "Kenickie",
+      "role_type": "supporting",
+      "age_range": {"min": 17, "max": 28},
+      "description": "Danny's best friend and Rizzo's love interest. Kenickie is a classic muscle car and machismo character whose relationship with Rizzo is the show's most adult subplot. He needs to be genuinely cool (not just trying), and 'Greased Lightnin'' is a genuine showstopper opportunity.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "rock baritone",
+        "belt_required": false,
+        "style_notes": "Rock baritone with authentic swagger. The car song is all attitude."
+      },
+      "dance": {"level": "moderate", "styles": ["50s rock and roll", "car choreography"], "notes": "Strong physical energy. Greased Lightnin' has spectacular choreography around the car."},
+      "acting": {"level": "moderate", "character_types": ["macho", "loyal", "romantic underneath"], "notes": "The genuinely caring side of Kenickie appears in his relationship with Rizzo. Must not play him as just posturing."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "Greased Lightnin' is one of the great 'moment' numbers in popular musical theatre. Strong ensemble scenes.",
+        "common_casting": "Rock baritones with genuine physical presence. Greased Lightnin' needs a performer who can own the stage."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical swagger and genuine cool",
+          "Chemistry with Rizzo — their subplot carries real emotional weight",
+          "'Greased Lightnin'' ownership — the song should feel like Kenickie's finest moment"
+        ],
+        "tips": [
+          "Show the loyalty and warmth under the machismo — Kenickie genuinely loves his friends"
+        ],
+        "common_mistakes": [
+          "Playing Kenickie as just Danny's sidekick — he has his own strong arc"
+        ]
+      },
+      "key_songs": [
+        {"title": "Greased Lightnin'", "type": "solo/ensemble", "notes": "The spectacular car showstopper."}
+      ]
+    },
+    {
+      "id": "grease-frenchy",
+      "name": "Frenchy",
+      "role_type": "supporting",
+      "age_range": {"min": 17, "max": 26},
+      "description": "The Pink Ladies' dreamer and drop-out beauty school aspirant. Frenchy is one of the most loveable characters in the show — kind, ditzy, genuinely sweet — and her scene with Teen Angel is a crowd favourite moment of pure theatrical fun.",
+      "vocal": {
+        "range": "D4-G5",
+        "voice_type": "soprano light",
+        "belt_required": false,
+        "style_notes": "Bright, light soprano. Beauty School Dropout requires a sweet, angelic tone (playing the fantasy) that contrasts with the comedic reality."
+      },
+      "dance": {"level": "moderate", "styles": ["50s pop", "girl gang movement"], "notes": "Light, fun, good ensemble presence."},
+      "acting": {"level": "moderate", "character_types": ["dreamer", "sweet", "loyal", "comedic"], "notes": "Frenchy's genuine sweetness is what makes her likeable. She's not the sharpest knife in the drawer but she's got the biggest heart."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "A beloved character with a genuine show-stopping scene. Great for developing light soprano work and comedic timing.",
+        "common_casting": "Light sopranos with natural sweetness and genuine comedic warmth."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural sweetness and likeable quality",
+          "Light, pretty soprano voice",
+          "Good ensemble chemistry with the Pink Ladies"
+        ],
+        "tips": [
+          "Frenchy is warm and genuine — don't play her as just comic relief"
+        ],
+        "common_mistakes": [
+          "Playing her as pure ditz — she has real heart"
+        ]
+      },
+      "key_songs": [
+        {"title": "Beauty School Dropout", "type": "featured with ensemble", "notes": "Frenchy's dream sequence with Teen Angel. Pure fun — the Pink Ladies back up a 50s angel telling Frenchy to go back to school."}
+      ]
+    },
+    {
+      "id": "grease-teen-angel",
+      "name": "Teen Angel",
+      "role_type": "featured_ensemble",
+      "age_range": {"min": 20, "max": 50},
+      "description": "Teen Angel appears for one scene — Frenchy's beauty school dropout dream sequence — and must make an absolutely indelible impression in that brief time. The role demands a genuine big voice, perfect period style, and total stage presence.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "tenor to baritone soul",
+        "belt_required": false,
+        "style_notes": "Must have full 50s soul and rock-and-roll authority. Beauty School Dropout should feel like genuine celestial guidance from an angel who's also a rock star."
+      },
+      "dance": {"level": "light", "styles": ["50s performance style"], "notes": "The role is about vocal and theatrical presence. The choreography is fun but secondary."},
+      "acting": {"level": "moderate", "character_types": ["angelic adviser", "performer", "theatrical presence"], "notes": "Must be equally hilarious and genuinely charismatic — Teen Angel is both a comedy moment and a real show production number."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 2,
+        "growth_label": "Featured Moment",
+        "why": "A single scene that stops the show when played perfectly. One of the great one-scene roles in the genre.",
+        "common_casting": "Performers with exceptional charisma and a big voice who can deliver a complete theatrical moment in limited stage time."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Absolute stage presence — you have one scene to make an impression",
+          "Genuine vocal power in the period style",
+          "The ability to be funny AND genuinely commanding simultaneously"
+        ],
+        "tips": [
+          "Own the room from the moment you arrive — Teen Angel acts like a genuine star"
+        ],
+        "common_mistakes": [
+          "Playing purely for comedy and losing the genuine performance quality that makes the scene work"
+        ]
+      },
+      "key_songs": [
+        {"title": "Beauty School Dropout", "type": "solo/featured", "notes": "The only scene. It must be perfect."}
+      ]
+    },
+    {
+      "id": "grease-doody",
+      "name": "Doody / Roger / Putzie",
+      "role_type": "ensemble",
+      "age_range": {"min": 17, "max": 26},
+      "description": "The supporting T-Birds — Danny and Kenickie's gang members. They provide the comedy backbone of the male ensemble and have strong featured moments in the gang scenes.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "baritone tenor ensemble",
+        "belt_required": false,
+        "style_notes": "Rock and roll ensemble. Good blend and period style."
+      },
+      "dance": {"level": "high", "styles": ["50s rock and roll", "hand jive", "athletic"], "notes": "Strong dance skills are essential for the gang numbers. The Hand Jive competition is a featured ensemble moment."},
+      "acting": {"level": "moderate", "character_types": ["gang comedic", "loyal", "teenage"], "notes": "Each T-Bird should feel like a distinct individual with their own comedic personality."},
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "Ensemble",
+        "growth_value": 3,
+        "growth_label": "Strong Dance Development",
+        "why": "High-energy ensemble experience with real dance requirements. Great fun.",
+        "common_casting": "Strong dancer-singers with comedic energy and 50s swagger."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Strong dance ability — the T-Bird gang numbers are physically demanding",
+          "Individual comedic personality",
+          "Good ensemble energy and genuine chemistry"
+        ],
+        "tips": [
+          "Show your dance skills prominently — the gang scenes live or die on the ensemble's physical performance"
+        ],
+        "common_mistakes": [
+          "Blending into the background — directors need T-Birds with distinct individual energy"
+        ]
+      },
+      "key_songs": [
+        {"title": "Summer Nights (T-Birds)", "type": "ensemble", "notes": "The T-Birds' version of Danny's summer romance story."},
+        {"title": "Greased Lightnin'", "type": "ensemble", "notes": "The big gang number around the car."}
+      ]
+    },
+    {
+      "id": "grease-pink-ladies",
+      "name": "Pink Ladies Ensemble (Jan / Marty)",
+      "role_type": "ensemble",
+      "age_range": {"min": 17, "max": 26},
+      "description": "The core female ensemble — Sandy's world and her support network. Jan and Marty both have strong character comedic moments and contribute to the show's best ensemble numbers. Marty in particular has genuine depth.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "mezzo soprano ensemble",
+        "belt_required": false,
+        "style_notes": "Strong female ensemble blend. Period pop and rock and roll style."
+      },
+      "dance": {"level": "high", "styles": ["50s pop", "girl group choreography", "hand jive"], "notes": "Strong dance skills and period style essential."},
+      "acting": {"level": "moderate", "character_types": ["loyal friend", "comedic", "teenage", "genuine"], "notes": "Jan and Marty each have distinctive personalities — Jan is the food-obsessed anxious one; Marty is the sophisticated one who writes to pen pals."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Ensemble",
+        "growth_value": 3,
+        "growth_label": "Strong Development",
+        "why": "A genuinely fun ensemble experience in one of the most produced musicals in the world.",
+        "common_casting": "Strong dancer-singers with comedic instinct and good ensemble chemistry."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Dance ability — the Pink Ladies numbers are physically demanding",
+          "Individual comedic personality that distinguishes Jan from Marty",
+          "Genuine ensemble chemistry and warmth"
+        ],
+        "tips": [
+          "Show which specific Pink Lady you're right for — they're distinct characters"
+        ],
+        "common_mistakes": [
+          "Playing them as interchangeable — directors need Pink Ladies with real individual personality"
+        ]
+      },
+      "key_songs": [
+        {"title": "Summer Nights (Pink Ladies)", "type": "ensemble", "notes": "Sandy's version of the summer romance, enthusiastically interrogated."},
+        {"title": "There Are Worse Things I Could Do", "type": "ensemble context", "notes": "The Pink Ladies' world that gives Rizzo's song its meaning."}
+      ]
+    }
+  ]
+}

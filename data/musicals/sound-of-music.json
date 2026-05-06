@@ -1,0 +1,314 @@
+{
+  "musical": {
+    "id": "sound-of-music",
+    "title": "The Sound of Music",
+    "music_by": "Richard Rodgers",
+    "year_premiered": 1959,
+    "vocal_style": "Classic Rodgers & Hammerstein — lyrical, soaring, and exquisitely crafted. Maria is a warm lyric soprano with genuine warmth. Mother Abbess demands operatic soprano power for 'Climb Every Mountain'. Captain von Trapp is a rich baritone. The score is one of the most tonally beautiful in the entire canon.",
+    "synopsis": "Austria, 1938. Free-spirited postulant Maria is hired as governess to seven children by the stern, recently-widowed Captain von Trapp. Music, love, and family are discovered as the shadow of the Anschluss falls over their happy valley. Based on the true story of the von Trapp family.",
+    "junior_version_available": true,
+    "difficulty_overall": "intermediate_to_advanced",
+    "dance_intensity": "low_to_moderate",
+    "typical_cast_size": "20-40",
+    "age_range": "8-65",
+    "genre_tags": ["classic_broadway", "golden_age", "family", "historical", "feel_good", "romantic", "kids_roles", "rogers_hammerstein"]
+  },
+  "roles": [
+    {
+      "id": "som-maria",
+      "name": "Maria",
+      "role_type": "lead",
+      "age_range": {"min": 20, "max": 38},
+      "description": "Maria is one of the great soprano roles of the Golden Age — joyful, warm, genuine, and completely alive. She is the force that brings music back to a household that had become silent. The role requires a lyric soprano with genuine stage charisma who can be believably both a postulant novice AND a fully confident woman. The Sound of Music is Maria's show.",
+      "vocal": {
+        "range": "C4-C6",
+        "voice_type": "soprano lyric",
+        "belt_required": false,
+        "style_notes": "Warm, clear lyric soprano in the classic Rodgers & Hammerstein tradition. 'The Sound of Music' and 'My Favourite Things' should feel effortless and joyful. 'Climb Every Mountain' reprise (if included) requires dramatic expansion. 'Do-Re-Mi' must make learning feel genuinely playful."
+      },
+      "dance": {"level": "low_to_moderate", "styles": ["folk dance", "Ländler", "period movement"], "notes": "The Ländler with Captain von Trapp is the show's most romantic dance moment. More about natural joyful movement than technical precision."},
+      "acting": {"level": "advanced", "character_types": ["spontaneous", "warm", "honest", "growing", "loving"], "notes": "Maria's combination of total honesty and complete aliveness is the character in its entirety. She says what she thinks, feels what she feels, and doesn't know how to be otherwise. Her relationship with Captain von Trapp must develop completely organically and believably."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "Skill Accelerator",
+        "why": "One of the most beloved soprano roles in the entire musical theatre canon. Every lyric soprano eventually considers Maria.",
+        "common_casting": "Warm lyric sopranos with genuine stage warmth, natural charisma, and the acting intelligence to make the transformation from postulant to family matriarch completely believable."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Vocal warmth and lyric purity — the voice must feel like music made human",
+          "Natural stage presence and physical aliveness",
+          "'The Sound of Music' should feel like breathing for this performer",
+          "Acting intelligence — Maria's honesty in difficult scenes (confronting the Captain, the Baroness) must feel genuinely courageous"
+        ],
+        "tips": [
+          "Show the joy first — Maria is alive in a way that other people aren't, and that should be immediately apparent",
+          "'My Favourite Things' and 'The Sound of Music' are natural audition pieces — but show something fresh in your interpretation",
+          "The transition from carefree to deeply thoughtful must be believable — Maria is both"
+        ],
+        "common_mistakes": [
+          "Over-sweetening Maria — she's also direct, brave, and sometimes awkward",
+          "Losing the aliveness in favour of the sweetness — Maria is ALIVE, not just nice"
+        ]
+      },
+      "key_songs": [
+        {"title": "The Sound of Music", "type": "solo", "notes": "The opening number. Maria alone on the mountain. The voice of pure joy."},
+        {"title": "My Favourite Things", "type": "solo & duet", "notes": "Maria's comfort coping mechanism. The most famous lullaby in the show."},
+        {"title": "Do-Re-Mi", "type": "solo & ensemble with children", "notes": "The music lesson becomes a full musical number. One of the most famous songs in the world."},
+        {"title": "Sixteen Going on Seventeen (reprise)", "type": "duet", "notes": "Maria and Liesl — the tenderness of a new family relationship."}
+      ]
+    },
+    {
+      "id": "som-captain",
+      "name": "Captain von Trapp",
+      "role_type": "lead",
+      "age_range": {"min": 35, "max": 55},
+      "description": "The Captain is the show's other complete transformation arc — from emotionally closed widower running his household like a naval vessel to fully open, loving father and husband. The journey must feel completely earned. 'Edelweiss' is one of the most quietly devastating songs in musical theatre — a simple folk song that becomes a patriot's farewell to his country.",
+      "vocal": {
+        "range": "G2-E4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "style_notes": "Rich, warm baritone with authority and depth. 'Edelweiss' should sound like someone singing to themselves, completely unguarded. 'Something Good' should sound like gratitude and wonder in equal measure."
+      },
+      "dance": {"level": "light", "styles": ["Ländler folk dance", "period"], "notes": "The Ländler with Maria is the show's most pivotal romantic scene — the moment neither of them can deny. Must feel absolutely genuine."},
+      "acting": {"level": "advanced", "character_types": ["controlled", "grieving", "opening to love", "patriot", "father"], "notes": "The Captain must start the show as genuinely forbidding — otherwise the transformation has nowhere to go. The opening of his heart must be completely gradual and completely believable. His love of Austria must feel real for 'Edelweiss' to work."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "'Edelweiss' alone is one of the most affecting baritone moments in the repertoire. The role requires the full range of a skilled actor.",
+        "common_casting": "Rich baritones with genuine physical authority and the acting ability to be equally forbidding and tender in different scenes."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical authority — the Captain must be believably the most commanding person in any room",
+          "'Edelweiss' — the complete emotional nakedness of the final performance must be earned across the whole show",
+          "The gradual opening to Maria — showing that capacity for tenderness underneath the authority",
+          "Acting range — from rigid military discipline to completely loving father"
+        ],
+        "tips": [
+          "'Edelweiss' is the definitive audition piece — treat it as a private moment, not a performance",
+          "Show the grief that explains the coldness — the Captain isn't cruel, he's protected",
+          "The Ländler must feel like the first moment he's surprised by himself in years"
+        ],
+        "common_mistakes": [
+          "Playing the Captain as harsh rather than controlled — he's not unkind, he's defended",
+          "Starting the show with too much warmth — the transformation only works if the starting point is genuinely forbidding"
+        ]
+      },
+      "key_songs": [
+        {"title": "Edelweiss", "type": "solo & reprise", "notes": "The Captain's love for Austria expressed in the simplest song in the show. Heartbreaking in the final reprise."},
+        {"title": "Something Good", "type": "duet", "notes": "Maria and the Captain's love duet. Pure sweetness."},
+        {"title": "The Sound of Music (finale reprise)", "type": "company", "notes": "The family's determination and love in the face of everything."}
+      ]
+    },
+    {
+      "id": "som-mother-abbess",
+      "name": "Mother Abbess",
+      "role_type": "supporting",
+      "age_range": {"min": 45, "max": 70},
+      "description": "The wise, warm superior of Nonnberg Abbey and Maria's spiritual mother. Mother Abbess has a limited stage presence but her impact is enormous — both 'Maria' (the nun's comedic choral number) and 'Climb Every Mountain' are centrepieces of the show. The latter requires operatic soprano power.",
+      "vocal": {
+        "range": "G3-C6",
+        "voice_type": "dramatic soprano",
+        "belt_required": false,
+        "style_notes": "Full dramatic soprano required — 'Climb Every Mountain' is vocally demanding and must build to a true climax on a top C. This is not a role for a lighter soprano. The voice must carry real authority and transcendent warmth."
+      },
+      "dance": {"level": "none", "styles": [], "notes": "Mother Abbess moves with complete dignity and quiet authority. No dance requirements."},
+      "acting": {"level": "advanced", "character_types": ["wise", "warm", "spiritually authoritative", "loving guide"], "notes": "The Mother Abbess must be someone who has genuinely wrestled with difficult questions and found peace through faith — her counsel to Maria must feel earned, not platitudinous."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Show-Stopper",
+        "growth_value": 3,
+        "growth_label": "Character Showcase",
+        "why": "'Climb Every Mountain' stops the show when sung by the right voice. One of the great soprano character moments in musical theatre.",
+        "common_casting": "Dramatic sopranos — often casting calls reach into classical and opera training for this role. The top C is non-negotiable."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'Climb Every Mountain' — a genuine dramatic soprano climax is essential",
+          "Physical wisdom and spiritual gravitas",
+          "The warmth and love for Maria that gives the song its credibility"
+        ],
+        "tips": [
+          "Show the full soprano power in the audition — directors need to know the top C is reliable",
+          "The hymn-like quality of the phrasing is as important as the voice",
+          "Mother Abbess must feel like she has real authority — earned through genuine faith and wisdom"
+        ],
+        "common_mistakes": [
+          "Attempting the role without the genuine dramatic soprano required — 'Climb Every Mountain' will not work with a lighter voice"
+        ]
+      },
+      "key_songs": [
+        {"title": "Climb Every Mountain", "type": "solo", "notes": "One of the great dramatic soprano showstoppers. Requires a genuine top C with full dramatic soprano power."},
+        {"title": "Maria", "type": "ensemble comedy", "notes": "The nuns' affectionate lament about their impossible postulant. Mother Abbess leads with gentle warmth."}
+      ]
+    },
+    {
+      "id": "som-liesl",
+      "name": "Liesl",
+      "role_type": "supporting",
+      "age_range": {"min": 16, "max": 22},
+      "description": "The eldest von Trapp child — sixteen going on seventeen and completely convinced she doesn't need a governess. Her romance with Rolf is the show's young love subplot and 'Sixteen Going on Seventeen' is one of musical theatre's most charming duets.",
+      "vocal": {
+        "range": "D4-G5",
+        "voice_type": "soprano light",
+        "belt_required": false,
+        "style_notes": "Light, bright soprano with youthful quality. 'Sixteen Going on Seventeen' should feel like genuine breathless first love."
+      },
+      "dance": {"level": "moderate", "styles": ["folk dance", "Gazebo dancing", "period"], "notes": "The gazebo dance with Rolf is one of the most romantic scenes in the show and requires genuine physical chemistry."},
+      "acting": {"level": "moderate", "character_types": ["independent", "romantic", "growing up", "brave"], "notes": "Liesl's arc is about discovering that growing up means accepting love AND taking responsibility. The final scene where Rolf betrays the family must land as a genuine heartbreak."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "'Sixteen Going on Seventeen' is one of the most beloved duets in the Golden Age repertoire. A beautiful role for a young soprano.",
+        "common_casting": "Young lyric sopranos with natural charm and genuine romantic quality."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical charm and youthful confidence",
+          "The 'Sixteen Going on Seventeen' quality — breathless, romantic, completely committed",
+          "The ability to play the heartbreak when Rolf turns informer — it must feel genuinely devastating"
+        ],
+        "tips": [
+          "'Sixteen Going on Seventeen' is the natural audition piece",
+          "Show the confidence and the vulnerability in equal measure — Liesl is sixteen"
+        ],
+        "common_mistakes": [
+          "Playing Liesl as too sophisticated — she's only sixteen and it should show"
+        ]
+      },
+      "key_songs": [
+        {"title": "Sixteen Going on Seventeen", "type": "duet", "notes": "The gazebo romance. One of the most charming duets in the Golden Age repertoire."},
+        {"title": "Sixteen Going on Seventeen (reprise)", "type": "duet", "notes": "Maria and Liesl — the new family relationship. Tender and genuine."}
+      ]
+    },
+    {
+      "id": "som-von-trapp-children",
+      "name": "Von Trapp Children (Friedrich, Louisa, Kurt, Brigitta, Marta, Gretl)",
+      "role_type": "featured_ensemble",
+      "age_range": {"min": 6, "max": 16},
+      "description": "The six younger von Trapp children — each with a distinct personality and together forming the emotional core of the show's family drama. The children's openness to Maria and their father's gradual transformation must be completely believable. These are real children, not stage children.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "treble children's voices",
+        "belt_required": false,
+        "style_notes": "Natural children's treble voices. 'Do-Re-Mi' requires clean pitch and ensemble precision. The children's parts of 'The Sound of Music' finale must be emotionally moving."
+      },
+      "dance": {"level": "low_to_moderate", "styles": ["folk dance", "character movement", "period"], "notes": "The Ländler and 'Do-Re-Mi' scenes require genuine physical joyfulness. The children should move like children having the best time of their lives."},
+      "acting": {"level": "moderate", "character_types": ["distinct individual children", "real family unit", "genuine"], "notes": "Each child has a specific personality (Brigitta reads, Louisa is cheeky, Marta is sweet, etc.) and must feel like a real, specific child. The ensemble family dynamics must be completely believable."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Ensemble Feature",
+        "growth_value": 5,
+        "growth_label": "Outstanding Young Performer Experience",
+        "why": "One of the most beloved family ensemble experiences in musical theatre history. Career-defining experience for young performers.",
+        "common_casting": "Young performers with genuine individual personalities and the ability to create a believable family unit."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine individual personality — each child must feel like a specific, real person",
+          "Natural group dynamic — the six must feel like a real family",
+          "Clean pitch in the 'Do-Re-Mi' musical numbers"
+        ],
+        "tips": [
+          "Know which specific von Trapp child you're right for and show their personality clearly",
+          "The ensemble scenes are as important as the individual moments — show genuine listening and response"
+        ],
+        "common_mistakes": [
+          "Generic sweet child performance — each von Trapp is a specific individual"
+        ]
+      },
+      "key_songs": [
+        {"title": "Do-Re-Mi", "type": "ensemble lead with Maria", "notes": "The music lesson turned theatrical spectacle. One of the most famous songs in the world."},
+        {"title": "So Long, Farewell", "type": "ensemble", "notes": "The children's sweet farewell at the party. Each child has a moment."},
+        {"title": "The Sound of Music (finale)", "type": "company", "notes": "The family united and determined. The show's emotional climax."}
+      ]
+    },
+    {
+      "id": "som-baroness",
+      "name": "Elsa Schraeder (The Baroness)",
+      "role_type": "supporting",
+      "age_range": {"min": 30, "max": 50},
+      "description": "The Captain's sophisticated, worldly fiancée — not quite a villain, not quite sympathetic. Elsa is elegant, amusing, and sharp enough to understand exactly what she's up against with Maria. Her graceful exit from the Captain's life is one of the most underwritten and quietly affecting scenes in the show.",
+      "vocal": {
+        "range": "B3-E5",
+        "voice_type": "mezzo soprano",
+        "belt_required": false,
+        "style_notes": "Polished, elegant mezzo with dry wit. Elsa should sound like someone who knows exactly how to be charming in every social situation."
+      },
+      "dance": {"level": "light", "styles": ["period ballroom"], "notes": "Elegant, assured movement. Elsa moves like someone who knows how to be perfect at every social occasion."},
+      "acting": {"level": "advanced", "character_types": ["sophisticated", "intelligent", "self-aware", "gracefully conceding"], "notes": "The key to Elsa is that she sees exactly what is happening and handles it with complete class. She is not the villain — she is a woman losing something gracefully. Her final scene must be played with real dignity."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 2,
+        "growth_label": "Character Role",
+        "why": "A dramatically sophisticated supporting role that rewards a skilled character actress.",
+        "common_casting": "Elegant mezzos with genuine intelligence and dry wit. The ability to make Elsa likeable despite being the obstacle."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Sophisticated, dry intelligence",
+          "The ability to be a sympathetic obstacle — we shouldn't want Elsa to lose but we know she must",
+          "The graceful exit — performed with complete class and no self-pity"
+        ],
+        "tips": [
+          "Show the intelligence — Elsa is one of the cleverest characters in the show",
+          "The bitterness must be completely controlled — Elsa has too much class to show it"
+        ],
+        "common_mistakes": [
+          "Playing Elsa as the villain — she's a sophisticated woman in a difficult situation, handling it with grace"
+        ]
+      },
+      "key_songs": [
+        {"title": "How Can Love Survive?", "type": "trio", "notes": "Elsa and Max's witty take on the Captain and Maria's unlikely romance."},
+        {"title": "No Way to Stop It", "type": "trio", "notes": "The ironic 'head in the sand' number as the political situation darkens."}
+      ]
+    },
+    {
+      "id": "som-max",
+      "name": "Max Detweiler",
+      "role_type": "character",
+      "age_range": {"min": 30, "max": 55},
+      "description": "The Captain's cheerfully amoral impresario friend — the man who sees opportunity in everything including the Anschluss. Max provides much of the show's comedy and is refreshingly honest about his complete lack of principle. A wonderful character role for a warm comic baritone.",
+      "vocal": {
+        "range": "Bb2-Eb4",
+        "voice_type": "baritone light character",
+        "belt_required": false,
+        "style_notes": "Light, warm character baritone with an eye for comic timing. 'No Way to Stop It' should feel like someone genuinely cheerful about refusing to engage with reality."
+      },
+      "dance": {"level": "light", "styles": ["period comedy"], "notes": "Light period movement with character comedy flair."},
+      "acting": {"level": "moderate", "character_types": ["opportunistic", "charming", "amoral", "darkly funny"], "notes": "Max's willingness to work within the Nazi regime for commercial advantage is the show's darkest comedy. It must be played with complete commitment to his total self-interest without turning him into a villain."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 2,
+        "growth_label": "Character Showcase",
+        "why": "One of the show's great comedy character moments. 'No Way to Stop It' is a delight when played with commitment.",
+        "common_casting": "Light comic baritones with natural warmth and genuine dark comedy instinct."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The cheerful amorality — Max must be completely convincing in his self-interest",
+          "Comedy timing — Max's best moments are about wit and wit-timing",
+          "The warmth that makes him likeable despite everything"
+        ],
+        "tips": [
+          "Max genuinely likes the Captain — the friendship must feel real even though Max is looking for an angle"
+        ],
+        "common_mistakes": [
+          "Playing Max as too self-aware about his amorality — he thinks he's actually quite reasonable"
+        ]
+      },
+      "key_songs": [
+        {"title": "No Way to Stop It", "type": "trio", "notes": "The comic trio with the Captain and Elsa choosing to look away. Darkly funny."}
+      ]
+    }
+  ]
+}

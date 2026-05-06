@@ -1,0 +1,274 @@
+{
+  "musical": {
+    "id": "chicago",
+    "title": "Chicago",
+    "music_by": "John Kander",
+    "year_premiered": 1975,
+    "vocal_style": "Jazz, vaudeville, and blues. Roxie is a soprano-adjacent belt with pop sensibility. Velma is a powerhouse mezzo belt. Billy Flynn is smooth baritone showmanship. Every number is a distinct vaudeville act — style and performance quality are as important as vocal technique.",
+    "synopsis": "Chicago, the jazzy, cynical masterpiece set in 1920s Prohibition-era Chicago. Two murderesses — Roxie Hart and Velma Kelly — compete for fame, freedom, and the best lawyer in town. A savage satire of celebrity culture, criminal justice, and the media — still disturbingly current.",
+    "junior_version_available": false,
+    "difficulty_overall": "advanced",
+    "dance_intensity": "very_high",
+    "typical_cast_size": "18-25",
+    "age_range": "18-55",
+    "genre_tags": ["jazz", "vaudeville", "classic_broadway", "satire", "adults", "dance_heavy", "noir", "comedy"]
+  },
+  "roles": [
+    {
+      "id": "chi-roxie",
+      "name": "Roxie Hart",
+      "role_type": "lead",
+      "age_range": {"min": 20, "max": 38},
+      "description": "Roxie is the ultimate theatrical narcissist — a wannabe showgirl who accidentally becomes a celebrity murderess and manipulates everyone around her to stay famous. She's funny, ruthless, delusional, and, in the right hands, oddly endearing. The role demands a triple threat performer who can make Roxie's complete moral bankruptcy genuinely charming.",
+      "vocal": {
+        "range": "D4-Bb5",
+        "voice_type": "soprano pop belt",
+        "belt_required": true,
+        "belt_range": "G4-Bb5",
+        "style_notes": "Jazz-adjacent pop belt. Roxie Me is an introspective waltz. Funny Honey is breathlessly naive and comedic. Mr. Cellophane's counterpart in the finale requires pure pop belt power. The style should feel like a would-be performer — slightly overdone, completely calculated."
+      },
+      "dance": {"level": "very_high", "styles": ["Fosse jazz", "vaudeville", "contemporary Broadway jazz"], "notes": "This is primarily a dance show. Fosse technique is essential — the isolations, the style, the precision. Chicago requires the full Fosse package. Dance is not optional."},
+      "acting": {"level": "advanced", "character_types": ["narcissist", "manipulator", "star wannabe", "darkly comedic"], "notes": "The challenge is making Roxie someone the audience roots for while she's demonstrably awful. She must be funny about her awfulness — conscious enough to be strategic, naive enough to be endearing."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "Skill Accelerator",
+        "why": "One of the great comedic leading roles in jazz-influenced musical theatre. Demands triple threat excellence — vocal, dance, and acting must all be at an elite level.",
+        "common_casting": "Triple threat performers with genuine jazz sensibility, Fosse technique, and comedic intelligence."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Fosse technique — the isolations, the style, the precision — this is the core requirement",
+          "Jazz vocal sensibility, not classical technique",
+          "The dark comedy — Roxie must be funny about being terrible",
+          "Acting intelligence — Roxie's manipulation is always calculated"
+        ],
+        "tips": [
+          "Take a Fosse-style jazz class before auditioning — if you don't have the technique, this isn't the role",
+          "Show the comedy first — directors need to see Roxie's delusional charm",
+          "Jazz standard audition pieces work well for demonstrating vocal style"
+        ],
+        "common_mistakes": [
+          "Playing Roxie as purely cynical — her delusion is what makes her funny and oddly sweet",
+          "Using operatic or theatre belt technique instead of jazz pop belt"
+        ]
+      },
+      "key_songs": [
+        {"title": "Funny Honey", "type": "solo", "notes": "Roxie's breathlessly naive ballad about her husband, who she's just shot."},
+        {"title": "Roxie", "type": "solo/company", "notes": "The fantasy production number in Roxie's imagination. Pure vaudeville narcissism. A complete performance showcase."},
+        {"title": "Me and My Baby", "type": "solo/company", "notes": "The fake pregnancy fantasy number. Comic gold if played with complete commitment."},
+        {"title": "Nowadays", "type": "duet / finale", "notes": "Roxie and Velma's tentative détente in the finale. The show's most elegant number."}
+      ]
+    },
+    {
+      "id": "chi-velma",
+      "name": "Velma Kelly",
+      "role_type": "lead",
+      "age_range": {"min": 22, "max": 42},
+      "description": "Velma is the real deal — a genuine performer with actual talent who opened the show with one of the best opening numbers in all of musical theatre. Her problem is that Roxie stole her spotlight and she has to figure out what to do about it. She's smarter than Roxie, more controlled, and in many ways more dangerous.",
+      "vocal": {
+        "range": "G3-G5",
+        "voice_type": "mezzo belt",
+        "belt_required": true,
+        "belt_range": "Eb5-G5",
+        "style_notes": "Powerhouse mezzo belt with genuine jazz and blues swagger. 'All That Jazz' requires immediate, explosive authority. The voice should sound like someone who has performed in Chicago supper clubs for years — polished, powerful, dangerous."
+      },
+      "dance": {"level": "very_high", "styles": ["Fosse jazz", "vaudeville", "jazz dance"], "notes": "Velma's dance technique must be slightly sharper than Roxie's — she IS the professional performer. Fosse technique is absolutely essential."},
+      "acting": {"level": "advanced", "character_types": ["calculating", "sophisticated", "competitive", "survivor"], "notes": "Velma is always thinking strategically. She watches everyone to assess their usefulness. The détente with Roxie at the end must feel like genuine partnership forged from mutual necessity."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "Skill Accelerator",
+        "why": "Velma opens the show with one of the greatest opening numbers in musical theatre, then must maintain presence while ostensibly losing focus to Roxie. Requires supreme triple threat ability.",
+        "common_casting": "Powerhouse belt mezzos with exceptional Fosse technique and genuine stage authority."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'All That Jazz' — the opening requires explosive authority from the first note",
+          "Fosse technique at the highest level — Velma is the professional in the room",
+          "Strategic intelligence — Velma is always running the play",
+          "The ability to cede focus to Roxie while retaining her dominant energy"
+        ],
+        "tips": [
+          "Show the authority first — 'All That Jazz' should feel like a done deal",
+          "Velma and Roxie are equals who need each other — show you can play that dynamic"
+        ],
+        "common_mistakes": [
+          "Playing Velma as overly aggressive — her threat comes from total control, not aggression"
+        ]
+      },
+      "key_songs": [
+        {"title": "All That Jazz", "type": "solo / company opener", "notes": "One of the greatest opening numbers in musical theatre. Sets the entire world of the show. Must be perfect."},
+        {"title": "All I Care About", "type": "response", "notes": "Velma watches Billy Flynn work and is calculating everything."},
+        {"title": "I Can't Do It Alone", "type": "solo", "notes": "Velma's Act 1 pitch to Roxie to be her partner. Brilliant manipulative performance."},
+        {"title": "Nowadays", "type": "duet / finale", "notes": "The elegant détente with Roxie."}
+      ]
+    },
+    {
+      "id": "chi-billy-flynn",
+      "name": "Billy Flynn",
+      "role_type": "supporting",
+      "age_range": {"min": 30, "max": 55},
+      "description": "Billy Flynn is the greatest criminal lawyer in Chicago — all charm, all performance, completely amoral. He manages both Roxie and Velma while barely bothering to learn their actual names. 'Razzle Dazzle' is perhaps the most self-aware show-business number in musical theatre history.",
+      "vocal": {
+        "range": "A2-E4",
+        "voice_type": "baritone smooth",
+        "belt_required": false,
+        "style_notes": "Smooth, slick baritone with complete confidence. Billy sells everything — his voice should sound like someone who believes every word he says while knowing none of it is true."
+      },
+      "dance": {"level": "high", "styles": ["Fosse jazz", "showman", "vaudeville"], "notes": "The ventriloquist dummy sequence requires complete physical performance. Razzle Dazzle is a full production number."},
+      "acting": {"level": "advanced", "character_types": ["showman", "manipulator", "amoral charmer", "performer"], "notes": "Billy knows exactly what he's doing at all times. The performance of sincerity is the whole character. Must be genuinely charming while being clearly completely untrustworthy."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "'Razzle Dazzle' is one of the great theatrical showpieces. Billy gets the best lines and the funniest scenes.",
+        "common_casting": "Smooth baritones with genuine showman instincts and comic intelligence."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Absolute confidence and showman quality",
+          "The ability to be completely insincere while seeming completely sincere",
+          "Jazz baritone quality — polished, smooth, authoritative",
+          "Fosse dance ability — Razzle Dazzle is a full production number"
+        ],
+        "tips": [
+          "'Razzle Dazzle' or 'All I Care About' are the natural audition pieces",
+          "Show the showman first — Billy is always performing, always selling"
+        ],
+        "common_mistakes": [
+          "Playing Billy as a villain — he's a performer who happens to be morally flexible",
+          "Losing the charm — Billy must be genuinely likeable despite everything"
+        ]
+      },
+      "key_songs": [
+        {"title": "All I Care About", "type": "solo / company", "notes": "Billy's entrance number. Pure showmanship disguised as sincerity."},
+        {"title": "Razzle Dazzle", "type": "solo / company", "notes": "The courtroom as entertainment spectacle. One of the great theatrical self-awareness numbers."}
+      ]
+    },
+    {
+      "id": "chi-mama-morton",
+      "name": "Mama Morton",
+      "role_type": "supporting",
+      "age_range": {"min": 35, "max": 60},
+      "description": "The warden of the Cook County Jail — she'll give you anything you need as long as you make it worth her while. 'When You're Good to Mama' is a masterclass in comically corrupt authority. One of the great character roles for a mature contralto or mezzo.",
+      "vocal": {
+        "range": "F3-D5",
+        "voice_type": "contralto mezzo character",
+        "belt_required": false,
+        "style_notes": "Rich, deep contralto or lower mezzo with full authority. When You're Good to Mama should sound like a corrupt queen on her throne — relaxed, confident, irresistible."
+      },
+      "dance": {"level": "moderate", "styles": ["character jazz", "burlesque"], "notes": "Character jazz in the vaudeville tradition. Physicality is more about authority and presence than technical precision."},
+      "acting": {"level": "advanced", "character_types": ["corrupt authority", "matriarch", "deal-maker", "darkly funny"], "notes": "Mama Morton runs her jail like a glamorous protection racket. She must be genuinely powerful and completely unashamed."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 3,
+        "growth_label": "Character Role Development",
+        "why": "'When You're Good to Mama' is a genuine showstopper character piece. One of the great contralto character moments in the standard repertoire.",
+        "common_casting": "Rich contralto or deep mezzo character performers with natural authority and dark comedy."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "A genuinely deep, rich voice — this role requires real contralto quality",
+          "Physical authority — Mama Morton owns every room she walks into",
+          "Dark comedy — the corruption must be funny"
+        ],
+        "tips": [
+          "'When You're Good to Mama' is the definitive audition piece",
+          "Mama should feel like she COULD be threatening — but would rather make a deal"
+        ],
+        "common_mistakes": [
+          "Playing Mama as menacing rather than comfortably corrupt and in charge"
+        ]
+      },
+      "key_songs": [
+        {"title": "When You're Good to Mama", "type": "solo", "notes": "The majestic showstopper. Mama explains how the jail works. Pure dark comedy authority."}
+      ]
+    },
+    {
+      "id": "chi-amos",
+      "name": "Amos Hart",
+      "role_type": "supporting",
+      "age_range": {"min": 25, "max": 50},
+      "description": "Roxie's hapless husband — so invisible that people literally walk through him. 'Mr. Cellophane' is one of musical theatre's most heartbreaking-yet-funny songs, and Amos is the role that makes the show's dark comedy sting with something unexpectedly real.",
+      "vocal": {
+        "range": "Bb2-E4",
+        "voice_type": "baritone light",
+        "belt_required": false,
+        "style_notes": "Soft, self-effacing baritone. Mr. Cellophane should sound like the song of someone who has entirely internalised their own invisibility. There is no bitterness — just a defeated kind of acceptance."
+      },
+      "dance": {"level": "light", "styles": ["soft shoe", "vaudeville"], "notes": "Soft shoe routine in the vaudeville tradition. The physical smallness of Amos is the whole character — he moves like someone trying not to take up space."},
+      "acting": {"level": "advanced", "character_types": ["hapless", "kind", "invisible", "genuinely loving"], "notes": "The tragedy of Amos is that he's the most decent person in the entire show — and nobody notices. The song must be funny AND genuinely touching simultaneously."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 3,
+        "growth_label": "Character Role Development",
+        "why": "'Mr. Cellophane' is one of the most affecting comic character moments in musical theatre. The role is brief but unforgettable when played correctly.",
+        "common_casting": "Lighter baritones with genuine comedic vulnerability. Physical smallness (literal or performed) is a significant asset."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'Mr. Cellophane' — the comedy and the genuine pathos must coexist in equal measure",
+          "Physical invisibility — Amos moves like someone who has learned not to be noticed",
+          "Playing the kindness, not the victimhood"
+        ],
+        "tips": [
+          "The song is funny because Amos genuinely accepts his invisibility — not because he's playing for sympathy",
+          "The soft shoe should feel like something Amos has practised alone in his kitchen"
+        ],
+        "common_mistakes": [
+          "Playing Amos as pathetic — he's actually quite sweet and the audience should feel that"
+        ]
+      },
+      "key_songs": [
+        {"title": "Mr. Cellophane", "type": "solo", "notes": "The heartbreaking-funny lament of total invisibility. One of the most uniquely affecting songs in the musical theatre canon."}
+      ]
+    },
+    {
+      "id": "chi-cell-block-tango",
+      "name": "Six Merry Murderesses (Cell Block Tango)",
+      "role_type": "featured_ensemble",
+      "age_range": {"min": 18, "max": 45},
+      "description": "The six women of the Cell Block Tango sequence — each with her own perfect murder story, each with her own reason. Pop, Six, Squish, Uh-Oh, Cicero, Lipschitz. This is one of the most iconic ensemble sequences in all of musical theatre and requires exceptional Fosse dance technique and individual character precision.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "varied",
+        "belt_required": false,
+        "style_notes": "Each woman's spoken monologue (mostly spoken/sung) needs its own distinctive voice. The ensemble singing requires strong jazz intonation."
+      },
+      "dance": {"level": "very_high", "styles": ["Fosse jazz", "tango", "sensual jazz"], "notes": "The Cell Block Tango is ballet-adjacent in its precision requirements. Fosse technique is essential — every accent, every isolation, every leg extension must be exact."},
+      "acting": {"level": "advanced", "character_types": ["lethal", "self-justifying", "darkly comedic", "distinct individuals"], "notes": "Each woman has a unique perspective and personality that must be crystal clear. The comedy comes from the utter conviction with which each woman explains her completely justifiable murder."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Ensemble Feature",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the most prestigious ensemble sequences in musical theatre audition culture. A highlight of any resume.",
+        "common_casting": "Exceptional dancer-actors with strong Fosse jazz training and the ability to create a complete character in minimal time."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Fosse jazz technique — Cell Block Tango is one of the most technically demanding ensemble sequences in the repertoire",
+          "Individual character distinctness — each of the six must feel like a full human being",
+          "The dark comedy — each story is horrifying and completely funny simultaneously"
+        ],
+        "tips": [
+          "Know which of the six you're right for before you audition",
+          "The dance call will be the most important part of this audition — prepare accordingly"
+        ],
+        "common_mistakes": [
+          "Treating the sequence as a dance showcase rather than a character showcase",
+          "Fosse technique that isn't precise enough — the style is very specific and unforgiving"
+        ]
+      },
+      "key_songs": [
+        {"title": "Cell Block Tango", "type": "ensemble feature", "notes": "The defining sequence of the show. Six characters, six murders, six self-justifications. Absolute precision required."}
+      ]
+    }
+  ]
+}

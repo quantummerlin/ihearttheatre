@@ -1,0 +1,269 @@
+{
+  "musical": {
+    "id": "annie",
+    "title": "Annie",
+    "music_by": "Charles Strouse",
+    "year_premiered": 1977,
+    "vocal_style": "Classic Broadway show tunes with a 1930s Depression-era flavour. Annie requires a real belt soprano with genuine brightness. Miss Hannigan is a character belt mezzo who should sound like someone whose cheerfulness has long since curdled. The score is warm, tuneful, and wonderfully accessible.",
+    "synopsis": "New York City, 1933. Annie is an irrepressibly optimistic orphan who escapes the miserable care of Miss Hannigan for a weekend with billionaire Oliver Warbucks — and discovers that, with enough spirit, anything is possible. Features one of the most famous songs in all of musical theatre.",
+    "junior_version_available": true,
+    "difficulty_overall": "intermediate",
+    "dance_intensity": "moderate",
+    "typical_cast_size": "20-40",
+    "age_range": "8-65",
+    "genre_tags": ["classic_broadway", "family", "feel_good", "1930s", "kids_roles", "comedy", "heartwarming"]
+  },
+  "roles": [
+    {
+      "id": "annie-annie",
+      "name": "Annie",
+      "role_type": "lead",
+      "age_range": {"min": 8, "max": 16},
+      "description": "One of the most iconic child roles in all of musical theatre. Annie is indestructible optimism in the face of genuine hardship — she has had a terrible life and she is completely, unshakeably certain that it will get better. 'Tomorrow' is the most famous song about hope in the commercial musical theatre canon.",
+      "vocal": {
+        "range": "C4-Bb5",
+        "voice_type": "soprano belt",
+        "belt_required": true,
+        "belt_range": "G4-Bb5",
+        "style_notes": "Bright, clear belt soprano — 'Tomorrow' must feel genuinely confident, not wistful. The voice should sound like someone who has decided to believe. Must be bright, warm, and real — not the performed brightness of a competition singer."
+      },
+      "dance": {"level": "moderate", "styles": ["1930s tap", "character movement", "Broadway"], "notes": "Annie should be an energetic, natural mover. Not technically demanding but must feel completely free and joyful in her body."},
+      "acting": {"level": "moderate", "character_types": ["optimistic", "brave", "genuine", "resourceful"], "notes": "The optimism must be completely real, not forced. Annie has chosen hope — it's not naivety or ignorance. She knows her situation is bad and she has decided it will get better anyway. That specificity is everything."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "Skill Accelerator",
+        "why": "One of the great iconic child roles in musical theatre history. 'Tomorrow' is known worldwide. An Annie performance is a career-defining moment.",
+        "common_casting": "Young belt sopranos with natural charisma and real emotional intelligence. 'Tomorrow' is widely performed — a fresh, genuine interpretation is critical."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'Tomorrow' — the belt must be genuine and the optimism must be completely real",
+          "Natural stage presence and movement confidence",
+          "The emotional intelligence to make the hope feel chosen, not assumed"
+        ],
+        "tips": [
+          "Tomorrow is widely known — show something specific and real in your interpretation",
+          "The belt should feel effortless — Annie doesn't perform, she just sings",
+          "Don't play Annie as cute — she's practical, resourceful, and genuinely brave"
+        ],
+        "common_mistakes": [
+          "Playing the cuteness rather than the character",
+          "A warbly or wavering belt — 'Tomorrow' requires a strong, clear tone",
+          "Making Annie too precious — she's a scrappy kid, not a china doll"
+        ]
+      },
+      "key_songs": [
+        {"title": "Tomorrow", "type": "solo", "notes": "The signature song of the show and one of the most famous in musical theatre history. Must feel completely genuine."},
+        {"title": "Maybe", "type": "solo", "notes": "Annie's yearning for her birth parents. Vulnerability beneath the optimism."},
+        {"title": "It's the Hard-Knock Life", "type": "ensemble lead", "notes": "The orphans' sardonic commentary on their situation. Annie leads with genuine spirit."},
+        {"title": "I Don't Need Anything But You", "type": "duet", "notes": "Annie and Warbucks's warming relationship — completely touching."}
+      ]
+    },
+    {
+      "id": "annie-hannigan",
+      "name": "Miss Hannigan",
+      "role_type": "supporting",
+      "age_range": {"min": 30, "max": 65},
+      "description": "The gin-addled, orphan-loathing head of the Hudson Street Home for Girls. Miss Hannigan is one of the great comic villains of family musical theatre — she's completely horrible but the audience secretly understands her. 'Little Girls' is one of the most hilariously committed complaint songs ever written.",
+      "vocal": {
+        "range": "Bb3-F5",
+        "voice_type": "mezzo belt character",
+        "belt_required": true,
+        "belt_range": "D5-F5",
+        "style_notes": "Character belt mezzo with the quality of someone who once had talent and has been professionally disappointed ever since. 'Little Girls' should sound like genuine despair delivered with tremendous flair."
+      },
+      "dance": {"level": "moderate", "styles": ["1930s character comedy", "musical comedy"], "notes": "Physical comedy is central. Miss Hannigan's physicality tells the whole story — she moves like someone who has given up on elegance but not on theatrical effect."},
+      "acting": {"level": "advanced", "character_types": ["bitter", "darkly funny", "put-upon", "secretly pathetic"], "notes": "The key to Hannigan is that she is genuine — she really does hate children and her situation really is awful. She's not a caricature villain but a specific person whose life has deeply disappointed her. The comedy comes from total commitment."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "One of the most beloved character comedy roles in family musical theatre. Miss Hannigan is frequently the audience favourite.",
+        "common_casting": "Character belt mezzos with genuine dark comedy and physical commitment. Both voice and acting must be excellent."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'Little Girls' — the genuine commitment to the horror of children is the whole audition",
+          "Physical character specificity — every choice Hannigan makes tells us exactly who she is",
+          "The belt mezzo voice with character texture"
+        ],
+        "tips": [
+          "'Little Girls' is the definitive audition — commit to it completely",
+          "Show the genuine despair underneath the comedy — Hannigan is not performing, she really feels this way",
+          "The gin-soaked quality of the character must feel physically real, not just indicated"
+        ],
+        "common_mistakes": [
+          "Playing Hannigan as pantomime villain — she's a specific, genuinely suffering person",
+          "Missing the dark comedy — Hannigan's horror at children must also be genuinely funny"
+        ]
+      },
+      "key_songs": [
+        {"title": "Little Girls", "type": "solo", "notes": "The definitive Miss Hannigan piece. A hymn to the horror of children, delivered with absolute conviction."},
+        {"title": "Easy Street", "type": "trio", "notes": "Hannigan with Rooster and Lily. The scheming number — darkly funny fantasy."}
+      ]
+    },
+    {
+      "id": "annie-warbucks",
+      "name": "Oliver Warbucks",
+      "role_type": "supporting",
+      "age_range": {"min": 40, "max": 65},
+      "description": "The billionaire who discovers he has a heart through his weekend with Annie. Warbucks is a classic character transformation role — cold, efficient, and powerful at the start; genuinely loving and changed by the end. 'Something Was Missing' is one of the most quietly moving songs in the show.",
+      "vocal": {
+        "range": "Bb2-Eb4",
+        "voice_type": "baritone",
+        "belt_required": false,
+        "style_notes": "Warm, authoritative baritone. Warbucks doesn't have the most technically demanding material but every song should feel genuine and earned."
+      },
+      "dance": {"level": "light", "styles": ["character", "period"], "notes": "Warbucks moves with authority and dignity. Limited dance requirements but physical presence is important."},
+      "acting": {"level": "advanced", "character_types": ["powerful", "transforming", "discovering love", "paternal"], "notes": "The transformation must feel completely genuine — Warbucks doesn't just change, he discovers a capacity for love he didn't know he had. The relationship with Annie must build organically."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "'Something Was Missing' and 'I Don't Need Anything But You' are genuinely touching character moments. An important anchor role for the show.",
+        "common_casting": "Warm, authoritative baritones with genuine acting ability and the stage presence to be convincingly the most powerful man in every room."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical authority and genuine warmth that emerges across the show",
+          "The transformation must be believable — Warbucks must start genuinely cold",
+          "'Something Was Missing' — quiet, real, not sentimental"
+        ],
+        "tips": [
+          "Start the show as someone who has organised his life to not need love",
+          "Let Annie visibly unguard you — don't telegraph the transformation"
+        ],
+        "common_mistakes": [
+          "Starting the show as too warm — the transformation has nowhere to go if Warbucks is already soft"
+        ]
+      },
+      "key_songs": [
+        {"title": "Something Was Missing", "type": "solo", "notes": "Warbucks's quiet realisation of what he's been missing in his life."},
+        {"title": "I Don't Need Anything But You", "type": "duet", "notes": "The genuinely touching celebration of the new family."}
+      ]
+    },
+    {
+      "id": "annie-rooster",
+      "name": "Rooster Hannigan & Lily St. Regis",
+      "role_type": "character",
+      "age_range": {"min": 25, "max": 50},
+      "description": "Miss Hannigan's scheming brother and his dim, glamorous girlfriend. Rooster is slick, smooth, and completely amoral. Lily is wonderfully vapid. 'Easy Street' is a deliciously entertaining villainy number that gives both characters their best moments.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "varying character",
+        "belt_required": false,
+        "style_notes": "Rooster: smooth character tenor or baritone. Lily: bright, breathy soprano with comedic quality. Both need 1930s musical comedy style."
+      },
+      "dance": {"level": "moderate", "styles": ["1930s musical comedy", "vaudeville adjacent"], "notes": "Easy Street requires specific 1930s style choreography with genuine entertainment value."},
+      "acting": {"level": "moderate", "character_types": ["smooth villain/Rooster", "dumb blonde/Lily", "scheming duo"], "notes": "Rooster and Lily should feel like a specific type of 1930s entertainment duo — slick, unreliable, and genuinely funny about their own awfulness."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 3,
+        "growth_label": "Character Showcase",
+        "why": "'Easy Street' is one of the show's great entertainment numbers. Both roles are genuinely fun to play.",
+        "common_casting": "Rooster: smooth character performers with period style and dark comedy. Lily: a comic soprano with genuine physical comedy and the ability to play wonderfully dim."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "'Easy Street' can be used as an audition trio with Hannigan",
+          "1930s musical comedy style — the characters live entirely in a specific aesthetic",
+          "Genuine comic chemistry between Rooster and Lily"
+        ],
+        "tips": [
+          "Find the specific 1930s quality — they're not modern comedy characters in period costume"
+        ],
+        "common_mistakes": [
+          "Missing the period style — the whole comedy depends on living in the 1930s aesthetic"
+        ]
+      },
+      "key_songs": [
+        {"title": "Easy Street", "type": "trio", "notes": "The scheming fantasy number with Hannigan. Perfectly judged comic villainy."}
+      ]
+    },
+    {
+      "id": "annie-grace",
+      "name": "Grace Farrell",
+      "role_type": "supporting",
+      "age_range": {"min": 25, "max": 40},
+      "description": "Warbucks's devoted secretary who selects Annie and becomes central to the family that forms. Grace is warm, efficient, and quietly romantic. She is the bridge between Warbucks's world and Annie's world.",
+      "vocal": {
+        "range": "C4-G5",
+        "voice_type": "soprano mezzo",
+        "belt_required": false,
+        "style_notes": "Warm, clear soprano mezzo. Grace's vocal quality should match her character — capable, warm, real."
+      },
+      "dance": {"level": "light", "styles": ["period", "character"], "notes": "Grace moves with professional efficiency and natural warmth."},
+      "acting": {"level": "moderate", "character_types": ["capable", "warm", "loving", "professional"], "notes": "Grace is the heart of the show's adult world — she feels what Warbucks hasn't yet let himself feel."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 2,
+        "growth_label": "Featured Supporting",
+        "why": "An important supporting role that holds the adult emotional world together.",
+        "common_casting": "Warm sopranos with genuine stage presence and professional grace."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural warmth and professional capability",
+          "The genuine love for Annie that develops — Grace sees her clearly from the start",
+          "Clean, warm soprano quality"
+        ],
+        "tips": [
+          "Show the warmth before the professional quality — Grace's feeling is her defining characteristic"
+        ],
+        "common_mistakes": [
+          "Playing Grace as entirely functional — she has real emotional investment in the story"
+        ]
+      },
+      "key_songs": [
+        {"title": "I Think I'm Gonna Like It Here", "type": "ensemble lead", "notes": "Grace introduces Annie to Warbucks's household. Warm, gentle, full of real feeling."}
+      ]
+    },
+    {
+      "id": "annie-orphans",
+      "name": "Orphan Ensemble (Molly, Kate, Pepper, Duffy, July, Tessie)",
+      "role_type": "featured_ensemble",
+      "age_range": {"min": 7, "max": 16},
+      "description": "The six named orphans are the beating heart of the show — their ensemble scenes, particularly 'It's the Hard-Knock Life' and 'You're Never Fully Dressed Without a Smile', are among the show's most joyful moments. Each orphan has a distinct personality and needs to feel like a specific, real child.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "treble voices",
+        "belt_required": false,
+        "style_notes": "Natural children's voices. Genuine brightness and energy rather than performed sweetness."
+      },
+      "dance": {"level": "moderate", "styles": ["Broadway character", "1930s kids movement"], "notes": "The orphan choreography should feel energetic and slightly chaotic — these are unsupervised children. Hard-Knock Life requires committed physical performance."},
+      "acting": {"level": "moderate", "character_types": ["individual children", "distinct personalities", "genuine", "resilient"], "notes": "Each orphan must feel like a real, specific child. The ensemble's spirit is what makes the orphanage scenes come alive."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Ensemble",
+        "growth_value": 4,
+        "growth_label": "Excellent Young Performer Development",
+        "why": "Outstanding early stage experience in one of the most beloved family musicals ever written.",
+        "common_casting": "Young performers with genuine energy and stage presence. Natural, individual character work over polished technique."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Individual character distinctness — each orphan is a specific person, not a generic child",
+          "Genuine energy and physicality",
+          "The ability to be genuinely funny in the ensemble scenes"
+        ],
+        "tips": [
+          "Know which orphan you're right for and show their specific personality",
+          "Hard-Knock Life should feel genuinely rebellious, not just cute"
+        ],
+        "common_mistakes": [
+          "Playing generic sweet child rather than a specific, distinct character"
+        ]
+      },
+      "key_songs": [
+        {"title": "It's the Hard-Knock Life", "type": "ensemble", "notes": "The show's great comic orphan number. Physical, energetic, genuinely funny."},
+        {"title": "You're Never Fully Dressed Without a Smile", "type": "ensemble", "notes": "The radio broadcast number — pure joy."}
+      ]
+    }
+  ]
+}

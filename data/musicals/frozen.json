@@ -1,940 +1,508 @@
 {
-  "id": "frozen",
-  "title": "Frozen",
-  "subtitle": "The Broadway Musical",
-  "year_premiered": 2018,
-  "genre": ["fantasy", "family", "adventure", "disney"],
-  "era": "modern",
-  "composer": "Kristen Anderson-Lopez & Robert Lopez",
-  "lyricist": "Kristen Anderson-Lopez & Robert Lopez",
-  "book_writer": "Jennifer Lee",
-  "setting_period": "Mythical past",
-  "setting_location": "Kingdom of Arendelle",
-  "themes": ["sisterhood", "self-acceptance", "love", "fear", "isolation", "sacrifice"],
-  "vocal_style": ["belt", "contemporary-musical-theatre", "pop-influenced"],
-  "dance_intensity": 3,
-  "acting_intensity": 4,
-  "overall_difficulty": 4,
-  "cast_size_min": 25,
-  "cast_size_max": 45,
-  "ensemble_importance": 3,
-  "age_range_overall": { "min": 8, "max": 50 },
-  "description": "Based on the blockbuster Disney film, Frozen brings the story of sisters Anna and Elsa to life on stage with an expanded score featuring new songs alongside the beloved originals. When Elsa's secret powers plunge Arendelle into an eternal winter, fearless Anna sets off on an epic journey to find her sister and save the kingdom. A visually stunning production with powerful vocal demands and rich character work.",
-  "tags": ["family-friendly", "disney", "female-led", "youth-cast-friendly", "spectacle", "empowerment"],
-
+  "musical": {
+    "id": "frozen",
+    "title": "Frozen",
+    "music_by": "Kristen Anderson-Lopez & Robert Lopez",
+    "year_premiered": 2018,
+    "vocal_style": "Contemporary Broadway belt with pop influences. Elsa demands a soaring soprano-mezzo belt to a top C. Anna is a warm bright mezzo belt. The score is lush, emotional, and vocally demanding throughout.",
+    "synopsis": "Elsa has always feared her magical ice powers. On the day of her coronation they are exposed and she flees into the mountains, accidentally plunging Arendelle into eternal winter. Her younger sister Anna sets off to find her with the help of Kristoff, his reindeer Sven, and the loveable snowman Olaf.",
+    "junior_version_available": true,
+    "difficulty_overall": "intermediate_to_advanced",
+    "dance_intensity": "moderate",
+    "typical_cast_size": "25-45",
+    "age_range": "8-50",
+    "genre_tags": [
+      "Disney",
+      "family",
+      "fantasy",
+      "female_led",
+      "spectacle",
+      "empowerment"
+    ]
+  },
   "roles": [
     {
       "id": "frozen-elsa",
-      "musical_id": "frozen",
       "name": "Elsa",
       "role_type": "lead",
-      "gender": "female",
-      "gender_notes": "Traditionally female; some youth productions may explore flexible casting",
-      "age_range": { "min": 18, "max": 35 },
-      "age_ideal": { "min": 20, "max": 30 },
+      "age_range": {
+        "min": 18,
+        "max": 35
+      },
+      "description": "The Snow Queen. Isolated, controlled, and carrying an enormous secret. Elsa is one of the great contemporary female leads: a woman whose power is also her wound. She must be regal, vulnerable, and explosive in equal measure.",
       "vocal": {
-        "range_low": "G3",
-        "range_high": "F#5",
-        "tessitura_low": "C4",
-        "tessitura_high": "D5",
-        "voice_type": ["soprano", "mezzo-soprano"],
+        "range": "Bb3-C6",
+        "voice_type": "soprano mezzo belt",
         "belt_required": true,
-        "belt_level": 5,
-        "mix_required": true,
-        "head_voice_required": true,
-        "vocal_stamina": 5,
-        "harmony_required": true,
-        "solo_singing": true,
-        "vocal_difficulty": 5
+        "belt_range": "F5-C6",
+        "style_notes": "Requires a powerful contemporary Broadway belt that can sound both icy and deeply emotional. Let It Go demands a full belt to a top C. The voice should feel like power and pain simultaneously."
       },
       "dance": {
-        "level": 2,
-        "styles_required": ["movement"],
-        "styles_beneficial": ["ballet", "contemporary"],
-        "choreography_complexity": 2,
-        "stamina_required": 3,
-        "pickup_speed_needed": 2,
-        "dance_difficulty": 2
+        "level": "moderate",
+        "styles": [
+          "contemporary",
+          "character",
+          "spectacle"
+        ],
+        "notes": "Elsa's physicality is about controlled power and sudden freedom. The staging of Let It Go is among the most spectacular in contemporary musical theatre."
       },
       "acting": {
-        "level": 5,
-        "emotional_depth": 5,
-        "comedic_timing": 2,
-        "dramatic_intensity": 5,
-        "accent_required": null,
-        "character_type": ["regal", "isolated", "powerful", "vulnerable", "conflicted"],
-        "acting_difficulty": 5
-      },
-      "performance": {
-        "energy_type": ["intense", "controlled", "powerful", "emotional"],
-        "stage_presence_needed": 5,
-        "confidence_level_needed": 5,
-        "improvisation_needed": 1,
-        "audience_interaction": false
+        "level": "advanced",
+        "character_types": [
+          "isolated",
+          "powerful",
+          "frightened",
+          "transforming"
+        ],
+        "notes": "The arc from frozen isolation to full acceptance of self and love must be completely real."
       },
       "casting_insights": {
-        "spotlight_level": 5,
+        "spotlight_score": 5,
         "spotlight_label": "Show-Stealer",
-        "growth_value": 4,
-        "growth_label": "Strong Development",
-        "casting_competitiveness": 5,
-        "typical_cast_description": "Exceptional vocalist with a soaring belt and the ability to convey deep emotional isolation followed by powerful liberation. Must command the stage through stillness as much as power.",
-        "who_this_role_is_best_for": "Powerful sopranos/mezzos with strong belt who can convey vulnerability beneath strength. Requires someone who can carry enormous vocal demands while staying emotionally grounded.",
-        "not_ideal_for": "Performers whose primary strength is dance or comedy. This is a vocal and acting powerhouse role."
-      },
-      "growth_profile": {
-        "skills_developed": ["belt technique", "emotional range", "vocal stamina", "stage presence through stillness"],
-        "career_value": "A-tier lead credit that demonstrates vocal excellence and dramatic depth",
-        "stepping_stone_to": ["Wicked (Elphaba)", "Les Mis (Fantine/Eponine)", "Next to Normal (Diana)"],
-        "stepping_stone_from": ["Supporting vocal roles", "Ensemble vocal leads", "Anna in Frozen"]
-      },
-      "audition_guidance": {
-        "what_directors_look_for": "The voice first — can you sing 'Let It Go' and make people feel? Then the arc from fear to freedom. Elsa must be sympathetic even when pushing people away.",
-        "common_mistakes": "Over-playing the ice queen without showing vulnerability underneath. Trying to mimic Idina Menzel instead of finding your own Elsa.",
-        "song_styles_recommended": ["power ballad", "contemporary belt", "emotional soprano"],
-        "song_styles_avoid": ["comedic", "jazz", "character songs"],
-        "audition_tips": "Choose a song that shows your belt AND your vulnerability. Start controlled, build to power. Show the emotional journey in 16 bars."
-      },
-      "key_songs": [
-        { "title": "Let It Go", "type": "solo", "difficulty": 5, "notes": "The defining number — soaring belt, massive range, emotional liberation" },
-        { "title": "Dangerous to Dream", "type": "solo", "difficulty": 4, "notes": "New stage song — shows Elsa's internal conflict and fear" },
-        { "title": "Monster", "type": "solo", "difficulty": 5, "notes": "Act 2 power number — dark, intense, requires stamina" },
-        { "title": "I Can't Lose You", "type": "duet", "difficulty": 4, "notes": "Duet with Anna — emotional resolution" }
-      ],
-      "description": "Elsa is the emotional core of Frozen — a young queen burdened by magical powers she cannot control. Her journey from terrified isolation to powerful self-acceptance is told primarily through extraordinary vocal performances. This role requires a voice that can fill a theatre and a heart that can break one."
-    },
-
-    {
-      "id": "frozen-anna",
-      "musical_id": "frozen",
-      "name": "Anna",
-      "role_type": "lead",
-      "gender": "female",
-      "gender_notes": "Traditionally female",
-      "age_range": { "min": 16, "max": 30 },
-      "age_ideal": { "min": 18, "max": 26 },
-      "vocal": {
-        "range_low": "A3",
-        "range_high": "E5",
-        "tessitura_low": "C4",
-        "tessitura_high": "C5",
-        "voice_type": ["mezzo-soprano"],
-        "belt_required": true,
-        "belt_level": 4,
-        "mix_required": true,
-        "head_voice_required": false,
-        "vocal_stamina": 4,
-        "harmony_required": true,
-        "solo_singing": true,
-        "vocal_difficulty": 4
-      },
-      "dance": {
-        "level": 3,
-        "styles_required": ["jazz", "movement"],
-        "styles_beneficial": ["physical-comedy"],
-        "choreography_complexity": 3,
-        "stamina_required": 4,
-        "pickup_speed_needed": 3,
-        "dance_difficulty": 3
-      },
-      "acting": {
-        "level": 5,
-        "emotional_depth": 4,
-        "comedic_timing": 4,
-        "dramatic_intensity": 4,
-        "accent_required": null,
-        "character_type": ["optimistic", "clumsy", "brave", "warm", "determined", "comedic"],
-        "acting_difficulty": 4
-      },
-      "performance": {
-        "energy_type": ["bubbly", "warm", "energetic", "comedic", "passionate"],
-        "stage_presence_needed": 5,
-        "confidence_level_needed": 4,
-        "improvisation_needed": 2,
-        "audience_interaction": false
-      },
-      "casting_insights": {
-        "spotlight_level": 5,
-        "spotlight_label": "Show-Stealer",
-        "growth_value": 4,
-        "growth_label": "Strong Development",
-        "casting_competitiveness": 5,
-        "typical_cast_description": "A charming, naturally funny actress with a strong mezzo belt who can carry the audience's emotional journey. Anna is on stage more than any other character — needs incredible stamina and likability.",
-        "who_this_role_is_best_for": "Performers with natural warmth and comedic instinct combined with a solid belt voice. If you light up a room when you walk in, this could be your role.",
-        "not_ideal_for": "Performers who are strongest in stillness or classical vocal style. Anna requires constant energy and physicality."
-      },
-      "growth_profile": {
-        "skills_developed": ["comedic timing", "physical comedy", "emotional range", "stamina", "audience connection"],
-        "career_value": "A-tier lead credit, demonstrates versatility — comedy + drama + vocals",
-        "stepping_stone_to": ["Elle (Legally Blonde)", "Katherine (Newsies)", "Tracy (Hairspray)"],
-        "stepping_stone_from": ["Supporting comedic roles", "Ensemble featured roles", "Youth leads"]
-      },
-      "audition_guidance": {
-        "what_directors_look_for": "Likability above everything. Can you make us laugh and then break our hearts? Natural physical comedy and genuine warmth.",
-        "common_mistakes": "Playing Anna as just bubbly without showing her determination and bravery. Also: trying too hard to be cute.",
-        "song_styles_recommended": ["uptempo belt", "comedic", "warm mezzo"],
-        "song_styles_avoid": ["dark dramatic", "classical soprano", "slow ballads"],
-        "audition_tips": "Show your personality. Pick a song that lets your natural charm and humour shine through, with a belt moment to prove the voice is there."
-      },
-      "key_songs": [
-        { "title": "Do You Want to Build a Snowman?", "type": "solo-growing", "difficulty": 3, "notes": "Spans childhood to adulthood — shows emotional range" },
-        { "title": "Love Is an Open Door", "type": "duet", "difficulty": 3, "notes": "Duet with Hans — comedic, charming, fast-paced" },
-        { "title": "What Do You Know About Love?", "type": "duet", "difficulty": 4, "notes": "New stage song with Kristoff — shows growth" },
-        { "title": "True Love", "type": "solo", "difficulty": 4, "notes": "Act 2 — emotional depth, realisation about sacrifice" }
-      ],
-      "description": "Anna is the heart of Frozen — endlessly optimistic, physically clumsy, and fiercely determined. She carries more stage time than Elsa and must sustain audience engagement through comedy, warmth, and genuine emotional moments. A triple-threat role that rewards natural charisma above all."
-    },
-
-    {
-      "id": "frozen-hans",
-      "musical_id": "frozen",
-      "name": "Hans",
-      "role_type": "supporting",
-      "gender": "male",
-      "gender_notes": "Traditionally male",
-      "age_range": { "min": 18, "max": 35 },
-      "age_ideal": { "min": 20, "max": 30 },
-      "vocal": {
-        "range_low": "Bb2",
-        "range_high": "G4",
-        "tessitura_low": "D3",
-        "tessitura_high": "E4",
-        "voice_type": ["baritone", "tenor"],
-        "belt_required": false,
-        "belt_level": 2,
-        "mix_required": true,
-        "head_voice_required": false,
-        "vocal_stamina": 3,
-        "harmony_required": true,
-        "solo_singing": true,
-        "vocal_difficulty": 3
-      },
-      "dance": {
-        "level": 3,
-        "styles_required": ["jazz", "waltz"],
-        "styles_beneficial": ["ballroom"],
-        "choreography_complexity": 3,
-        "stamina_required": 3,
-        "pickup_speed_needed": 3,
-        "dance_difficulty": 3
-      },
-      "acting": {
-        "level": 5,
-        "emotional_depth": 4,
-        "comedic_timing": 3,
-        "dramatic_intensity": 4,
-        "accent_required": null,
-        "character_type": ["charming", "deceptive", "villain", "charismatic", "manipulative"],
-        "acting_difficulty": 5
-      },
-      "performance": {
-        "energy_type": ["charming", "smooth", "controlled", "dark"],
-        "stage_presence_needed": 4,
-        "confidence_level_needed": 5,
-        "improvisation_needed": 1,
-        "audience_interaction": false
-      },
-      "casting_insights": {
-        "spotlight_level": 4,
-        "spotlight_label": "High Visibility",
-        "growth_value": 4,
-        "growth_label": "Strong Development",
-        "casting_competitiveness": 4,
-        "typical_cast_description": "A charismatic actor who can convincingly play the charming prince before the villain reveal. The twist must genuinely surprise the audience — requires subtle, intelligent acting.",
-        "who_this_role_is_best_for": "Strong actors with natural charisma who can play layers. If you enjoy playing complex characters with hidden motives, this is your role.",
-        "not_ideal_for": "Performers who struggle with subtlety or tend toward one-dimensional character work."
-      },
-      "growth_profile": {
-        "skills_developed": ["playing duality", "subtle villainy", "charm as weapon", "character transformation"],
-        "career_value": "Strong supporting credit — demonstrates acting range and complexity",
-        "stepping_stone_to": ["Billy Flynn (Chicago)", "The Phantom", "Javert (Les Mis)"],
-        "stepping_stone_from": ["Ensemble featured", "Comedic supporting roles"]
-      },
-      "audition_guidance": {
-        "what_directors_look_for": "Can you be genuinely charming and then genuinely terrifying? The duality is everything.",
-        "common_mistakes": "Playing Hans as obviously evil from the start. The audience must believe the charm.",
-        "song_styles_recommended": ["charming baritone", "classic musical theatre", "smooth"],
-        "song_styles_avoid": ["belty", "comedic character songs"],
-        "audition_tips": "Show your charm first. Pick a song where you're likable, then show a flash of something darker in the acting."
-      },
-      "key_songs": [
-        { "title": "Love Is an Open Door", "type": "duet", "difficulty": 3, "notes": "Duet with Anna — must seem genuinely romantic" },
-        { "title": "Hans of the Southern Isles", "type": "solo", "difficulty": 3, "notes": "Villain reveal — dark, controlled, satisfying" }
-      ],
-      "description": "Hans is one of the most interesting villain roles in modern musical theatre because for the first half, he isn't one. He's a charming prince who sweeps Anna off her feet, and the audience must believe it completely. The reveal requires an actor who can shift from warmth to coldness in a heartbeat."
-    },
-
-    {
-      "id": "frozen-kristoff",
-      "musical_id": "frozen",
-      "name": "Kristoff",
-      "role_type": "supporting",
-      "gender": "male",
-      "gender_notes": "Traditionally male",
-      "age_range": { "min": 18, "max": 35 },
-      "age_ideal": { "min": 20, "max": 30 },
-      "vocal": {
-        "range_low": "A2",
-        "range_high": "G4",
-        "tessitura_low": "C3",
-        "tessitura_high": "E4",
-        "voice_type": ["baritone"],
-        "belt_required": false,
-        "belt_level": 2,
-        "mix_required": true,
-        "head_voice_required": false,
-        "vocal_stamina": 3,
-        "harmony_required": true,
-        "solo_singing": true,
-        "vocal_difficulty": 3
-      },
-      "dance": {
-        "level": 2,
-        "styles_required": ["movement"],
-        "styles_beneficial": ["physical-comedy"],
-        "choreography_complexity": 2,
-        "stamina_required": 3,
-        "pickup_speed_needed": 2,
-        "dance_difficulty": 2
-      },
-      "acting": {
-        "level": 4,
-        "emotional_depth": 3,
-        "comedic_timing": 4,
-        "dramatic_intensity": 3,
-        "accent_required": null,
-        "character_type": ["gruff", "lovable", "loner", "comedic", "honest"],
-        "acting_difficulty": 3
-      },
-      "performance": {
-        "energy_type": ["grounded", "comedic", "warm", "reluctant-hero"],
-        "stage_presence_needed": 3,
-        "confidence_level_needed": 3,
-        "improvisation_needed": 2,
-        "audience_interaction": false
-      },
-      "casting_insights": {
-        "spotlight_level": 4,
-        "spotlight_label": "High Visibility",
-        "growth_value": 3,
-        "growth_label": "Steady Growth",
-        "casting_competitiveness": 3,
-        "typical_cast_description": "A likeable actor with good comic instinct and a solid baritone. Kristoff is the relatable everyman — grounded, funny, and genuinely good-hearted.",
-        "who_this_role_is_best_for": "Baritones with natural comedic ability who can play the straight man. Less vocal demand than other leads — acting and likability are key.",
-        "not_ideal_for": "Performers looking for a vocal showcase. Kristoff is more actor than singer."
-      },
-      "growth_profile": {
-        "skills_developed": ["comedic timing", "physical comedy", "character acting", "scene partner work"],
-        "career_value": "Solid supporting credit in a major show — proves comedy + character work",
-        "stepping_stone_to": ["Davey (Newsies)", "Emmett (Legally Blonde)", "Fiyero (Wicked)"],
-        "stepping_stone_from": ["Ensemble featured", "Comedy roles"]
-      },
-      "audition_guidance": {
-        "what_directors_look_for": "Natural humour and likability. Chemistry with Anna is crucial — the pair need to spark.",
-        "common_mistakes": "Playing Kristoff as too grumpy without the warmth underneath.",
-        "song_styles_recommended": ["comedic baritone", "warm storytelling", "character song"],
-        "song_styles_avoid": ["high tenor belt", "classical", "dramatic"],
-        "audition_tips": "Be real and funny. Pick something that shows you can be gruff but lovable."
-      },
-      "key_songs": [
-        { "title": "Reindeer(s) Are Better Than People", "type": "solo", "difficulty": 2, "notes": "Short, comedic, character-establishing" },
-        { "title": "What Do You Know About Love?", "type": "duet", "difficulty": 3, "notes": "With Anna — chemistry and humour" },
-        { "title": "Kristoff Lullaby", "type": "solo", "difficulty": 2, "notes": "Gentle, shows vulnerable side" }
-      ],
-      "description": "Kristoff is the grounded counterpoint to Frozen's magical world — a rough-around-the-edges ice harvester who reluctantly becomes Anna's guide. He's comedic without being a clown, tough without being mean, and loving without being sappy. A great role for actors with natural warmth and comic instinct."
-    },
-
-    {
-      "id": "frozen-olaf",
-      "musical_id": "frozen",
-      "name": "Olaf",
-      "role_type": "supporting",
-      "gender": "any",
-      "gender_notes": "Traditionally performed by male actor; gender-flexible in many productions. Often played with a puppet.",
-      "age_range": { "min": 16, "max": 45 },
-      "age_ideal": { "min": 18, "max": 35 },
-      "vocal": {
-        "range_low": "C3",
-        "range_high": "E5",
-        "tessitura_low": "F3",
-        "tessitura_high": "C5",
-        "voice_type": ["tenor", "character-voice"],
-        "belt_required": false,
-        "belt_level": 2,
-        "mix_required": true,
-        "head_voice_required": true,
-        "vocal_stamina": 3,
-        "harmony_required": false,
-        "solo_singing": true,
-        "vocal_difficulty": 3
-      },
-      "dance": {
-        "level": 3,
-        "styles_required": ["physical-comedy", "movement"],
-        "styles_beneficial": ["puppetry"],
-        "choreography_complexity": 3,
-        "stamina_required": 3,
-        "pickup_speed_needed": 3,
-        "dance_difficulty": 3
-      },
-      "acting": {
-        "level": 5,
-        "emotional_depth": 3,
-        "comedic_timing": 5,
-        "dramatic_intensity": 2,
-        "accent_required": null,
-        "character_type": ["innocent", "comedic", "joyful", "naive", "lovable"],
-        "acting_difficulty": 4
-      },
-      "performance": {
-        "energy_type": ["comedic", "joyful", "high-energy", "physical"],
-        "stage_presence_needed": 5,
-        "confidence_level_needed": 5,
-        "improvisation_needed": 3,
-        "audience_interaction": true
-      },
-      "casting_insights": {
-        "spotlight_level": 5,
-        "spotlight_label": "Show-Stealer",
-        "growth_value": 4,
-        "growth_label": "Strong Development",
-        "casting_competitiveness": 4,
-        "typical_cast_description": "A fearless physical comedian who can bring a puppet/character to life with infectious joy. Must steal every scene without overshadowing the leads. Often requires puppetry skills.",
-        "who_this_role_is_best_for": "Born comedians with physical performance skills. If you can make people laugh without saying a word, this is yours.",
-        "not_ideal_for": "Performers uncomfortable with physical comedy or puppetry. Also not for anyone who needs to be 'cool' on stage."
-      },
-      "growth_profile": {
-        "skills_developed": ["physical comedy", "puppetry", "audience connection", "comedic timing", "character voice"],
-        "career_value": "Scene-stealing supporting credit — proves unique performance skills",
-        "stepping_stone_to": ["Timon (Lion King)", "Donkey (Shrek)", "Lumiere (Beauty and the Beast)"],
-        "stepping_stone_from": ["Comedy ensemble", "Physical theatre", "Character roles"]
-      },
-      "audition_guidance": {
-        "what_directors_look_for": "Fearless physical comedy and an infectious sense of joy. Can you make the audition panel genuinely laugh?",
-        "common_mistakes": "Playing Olaf as annoying rather than endearing. Too much noise, not enough heart.",
-        "song_styles_recommended": ["comedic character song", "upbeat", "physical-comedy"],
-        "song_styles_avoid": ["serious dramatic", "classical", "slow ballads"],
-        "audition_tips": "Be joyful, not try-hard. Bring physical comedy into your audition piece. If you can incorporate a prop or puppet work, do it."
-      },
-      "key_songs": [
-        { "title": "In Summer", "type": "solo", "difficulty": 3, "notes": "THE Olaf number — comedic, physical, audience-connecting" },
-        { "title": "When I Am Older", "type": "solo", "difficulty": 3, "notes": "New stage song — funny with a touch of heart" }
-      ],
-      "description": "Olaf is a magical snowman brought to life by Elsa's powers — innocent, joyful, and completely unaware of his own hilarity. On stage, this role often involves puppetry and demands exceptional physical comedy. Olaf gets some of the biggest laughs in the show and is remembered long after the curtain falls."
-    },
-
-    {
-      "id": "frozen-sven",
-      "musical_id": "frozen",
-      "name": "Sven",
-      "role_type": "supporting",
-      "gender": "any",
-      "gender_notes": "Non-speaking role performed in costume/puppet; gender irrelevant",
-      "age_range": { "min": 16, "max": 40 },
-      "age_ideal": { "min": 18, "max": 30 },
-      "vocal": {
-        "range_low": null,
-        "range_high": null,
-        "voice_type": ["non-singing"],
-        "belt_required": false,
-        "belt_level": 0,
-        "vocal_stamina": 0,
-        "solo_singing": false,
-        "vocal_difficulty": 0
-      },
-      "dance": {
-        "level": 4,
-        "styles_required": ["physical-theatre", "movement", "puppetry"],
-        "styles_beneficial": ["acrobatics"],
-        "choreography_complexity": 4,
-        "stamina_required": 5,
-        "pickup_speed_needed": 3,
-        "dance_difficulty": 4
-      },
-      "acting": {
-        "level": 4,
-        "emotional_depth": 3,
-        "comedic_timing": 4,
-        "dramatic_intensity": 2,
-        "accent_required": null,
-        "character_type": ["loyal", "comedic", "physical", "animal"],
-        "acting_difficulty": 4
-      },
-      "performance": {
-        "energy_type": ["physical", "comedic", "loyal"],
-        "stage_presence_needed": 3,
-        "confidence_level_needed": 4,
-        "improvisation_needed": 2,
-        "audience_interaction": false
-      },
-      "casting_insights": {
-        "spotlight_level": 3,
-        "spotlight_label": "Balanced",
-        "growth_value": 4,
-        "growth_label": "Strong Development",
-        "casting_competitiveness": 2,
-        "typical_cast_description": "A physically strong, expressive performer who can bring an animal character to life through movement alone. Must be comfortable in heavy costume/puppet rig with excellent stamina.",
-        "who_this_role_is_best_for": "Physical performers, dancers, puppetry enthusiasts. If you express more through body than voice, this role showcases you.",
-        "not_ideal_for": "Singers looking for vocal opportunities. This is a purely physical performance."
-      },
-      "growth_profile": {
-        "skills_developed": ["physical theatre", "puppetry", "non-verbal storytelling", "stamina", "animal characterisation"],
-        "career_value": "Unique credit that demonstrates physical performance skills beyond typical musical theatre",
-        "stepping_stone_to": ["Lion King ensemble", "Physical theatre roles", "Puppetry-based productions"],
-        "stepping_stone_from": ["Dance ensemble", "Physical comedy roles"]
-      },
-      "key_songs": [],
-      "description": "Sven is Kristoff's loyal reindeer companion — performed entirely through physical theatre and puppetry with no singing. This is an incredibly demanding physical role requiring excellent stamina, expressiveness, and the ability to create a believable animal character. A unique and rewarding challenge for physical performers."
-    },
-
-    {
-      "id": "frozen-weselton",
-      "musical_id": "frozen",
-      "name": "Duke of Weselton",
-      "role_type": "supporting",
-      "gender": "male",
-      "gender_notes": "Traditionally male; could be played by any gender in comedic productions",
-      "age_range": { "min": 25, "max": 60 },
-      "age_ideal": { "min": 30, "max": 55 },
-      "vocal": {
-        "range_low": "C3",
-        "range_high": "E4",
-        "tessitura_low": "E3",
-        "tessitura_high": "C4",
-        "voice_type": ["tenor", "character-tenor"],
-        "belt_required": false,
-        "belt_level": 1,
-        "mix_required": false,
-        "head_voice_required": false,
-        "vocal_stamina": 2,
-        "harmony_required": false,
-        "solo_singing": false,
-        "vocal_difficulty": 2
-      },
-      "dance": {
-        "level": 3,
-        "styles_required": ["comedic-movement", "ballroom"],
-        "styles_beneficial": ["physical-comedy"],
-        "choreography_complexity": 3,
-        "stamina_required": 2,
-        "pickup_speed_needed": 3,
-        "dance_difficulty": 2
-      },
-      "acting": {
-        "level": 4,
-        "emotional_depth": 2,
-        "comedic_timing": 5,
-        "dramatic_intensity": 2,
-        "accent_required": "Exaggerated European",
-        "character_type": ["pompous", "comedic", "scheming", "ridiculous"],
-        "acting_difficulty": 3
-      },
-      "casting_insights": {
-        "spotlight_level": 3,
-        "spotlight_label": "Balanced",
-        "growth_value": 3,
-        "growth_label": "Steady Growth",
-        "casting_competitiveness": 2,
-        "typical_cast_description": "A character actor with strong comedic instinct who can make a pompous, ridiculous villain genuinely funny. Physical comedy is essential.",
-        "who_this_role_is_best_for": "Character actors who enjoy being ridiculous. If you can get laughs playing pompous fools, this is perfect.",
-        "not_ideal_for": "Performers seeking vocal showcase or serious dramatic work."
-      },
-      "growth_profile": {
-        "skills_developed": ["character comedy", "physical comedy", "accent work", "supporting role craft"],
-        "career_value": "Fun supporting credit — demonstrates comedic range",
-        "stepping_stone_to": ["Cogsworth (Beauty and the Beast)", "Wiesel (Newsies)", "Max (Sound of Music)"],
-        "stepping_stone_from": ["Ensemble character roles", "Comedy ensemble"]
-      },
-      "key_songs": [],
-      "description": "The Duke of Weselton is Frozen's comic villain — a pompous, tiny-man-with-big-ideas dignitary who provides consistent comic relief. His ridiculous dancing and outraged reactions are highlights. A gift for character actors."
-    },
-
-    {
-      "id": "frozen-pabbie",
-      "musical_id": "frozen",
-      "name": "Pabbie (Grand Pabbie)",
-      "role_type": "supporting",
-      "gender": "any",
-      "gender_notes": "Traditionally male elder; gender-flexible",
-      "age_range": { "min": 25, "max": 60 },
-      "age_ideal": { "min": 35, "max": 55 },
-      "vocal": {
-        "range_low": "Bb2",
-        "range_high": "D4",
-        "tessitura_low": "D3",
-        "tessitura_high": "Bb3",
-        "voice_type": ["bass", "baritone"],
-        "belt_required": false,
-        "belt_level": 1,
-        "vocal_stamina": 2,
-        "solo_singing": true,
-        "vocal_difficulty": 2
-      },
-      "dance": {
-        "level": 1,
-        "styles_required": ["movement"],
-        "choreography_complexity": 1,
-        "stamina_required": 1,
-        "dance_difficulty": 1
-      },
-      "acting": {
-        "level": 4,
-        "emotional_depth": 4,
-        "comedic_timing": 1,
-        "dramatic_intensity": 3,
-        "character_type": ["wise", "mystical", "authoritative", "gentle"],
-        "acting_difficulty": 3
-      },
-      "casting_insights": {
-        "spotlight_level": 2,
-        "spotlight_label": "Support Role",
-        "growth_value": 2,
-        "growth_label": "Limited Growth",
-        "casting_competitiveness": 1,
-        "typical_cast_description": "A performer with gravitas and a warm, deep voice. Small but impactful role.",
-        "who_this_role_is_best_for": "Bass/baritones who command authority. Good for performers wanting a named credit without heavy time commitment.",
-        "not_ideal_for": "Anyone seeking significant stage time or development."
-      },
-      "growth_profile": {
-        "skills_developed": ["authority presence", "minimal-time impact"],
-        "career_value": "Named supporting credit in a popular show"
-      },
-      "key_songs": [
-        { "title": "Hidden Folk", "type": "ensemble-lead", "difficulty": 2, "notes": "Leads the trolls number" },
-        { "title": "Fixer Upper", "type": "ensemble", "difficulty": 2, "notes": "Part of the trolls ensemble number" }
-      ],
-      "description": "Grand Pabbie is the wise leader of the Hidden Folk (trolls) who holds the key to understanding Elsa's powers. A small but important role with gravitas and warmth."
-    },
-
-    {
-      "id": "frozen-oaken",
-      "musical_id": "frozen",
-      "name": "Oaken",
-      "role_type": "supporting",
-      "gender": "any",
-      "gender_notes": "Gender-flexible; traditionally played large and warm",
-      "age_range": { "min": 20, "max": 50 },
-      "age_ideal": { "min": 25, "max": 45 },
-      "vocal": {
-        "range_low": "C3",
-        "range_high": "D4",
-        "voice_type": ["baritone", "character-voice"],
-        "belt_required": false,
-        "belt_level": 1,
-        "vocal_stamina": 2,
-        "solo_singing": true,
-        "vocal_difficulty": 2
-      },
-      "dance": {
-        "level": 2,
-        "styles_required": ["movement"],
-        "styles_beneficial": ["physical-comedy"],
-        "choreography_complexity": 2,
-        "stamina_required": 2,
-        "dance_difficulty": 1
-      },
-      "acting": {
-        "level": 3,
-        "comedic_timing": 4,
-        "character_type": ["warm", "quirky", "comedic", "friendly"],
-        "acting_difficulty": 2
-      },
-      "casting_insights": {
-        "spotlight_level": 3,
-        "spotlight_label": "Balanced",
-        "growth_value": 2,
-        "growth_label": "Limited Growth",
-        "casting_competitiveness": 1,
-        "typical_cast_description": "A charismatic character actor with warmth and comedy. Oaken is a fan-favourite cameo role.",
-        "who_this_role_is_best_for": "Naturally warm, funny performers. Great small role for someone who wants a memorable moment without heavy commitment.",
-        "not_ideal_for": "Anyone wanting significant stage time."
-      },
-      "growth_profile": {
-        "skills_developed": ["character comedy", "audience connection"],
-        "career_value": "Memorable cameo credit — always gets a laugh"
-      },
-      "key_songs": [
-        { "title": "Hygge", "type": "solo-with-ensemble", "difficulty": 2, "notes": "New stage song — warm, quirky, audience favourite" }
-      ],
-      "description": "Oaken runs the Wandering Oaken's Trading Post and Sauna — a brief but beloved appearance. His warm 'Yoo-hoo!' and quirky charm make this one of the most memorable small roles in the show."
-    },
-
-    {
-      "id": "frozen-young-elsa",
-      "musical_id": "frozen",
-      "name": "Young Elsa",
-      "role_type": "supporting",
-      "gender": "female",
-      "age_range": { "min": 8, "max": 14 },
-      "age_ideal": { "min": 9, "max": 12 },
-      "vocal": {
-        "range_low": "C4",
-        "range_high": "D5",
-        "voice_type": ["treble", "soprano"],
-        "belt_required": false,
-        "belt_level": 2,
-        "vocal_stamina": 2,
-        "solo_singing": true,
-        "vocal_difficulty": 3
-      },
-      "dance": {
-        "level": 2,
-        "styles_required": ["movement"],
-        "choreography_complexity": 2,
-        "stamina_required": 2,
-        "dance_difficulty": 2
-      },
-      "acting": {
-        "level": 4,
-        "emotional_depth": 4,
-        "comedic_timing": 1,
-        "dramatic_intensity": 4,
-        "character_type": ["fearful", "protective", "isolated", "loving"],
-        "acting_difficulty": 4
-      },
-      "casting_insights": {
-        "spotlight_level": 4,
-        "spotlight_label": "High Visibility",
         "growth_value": 5,
         "growth_label": "Skill Accelerator",
-        "casting_competitiveness": 4,
-        "typical_cast_description": "A mature young actress who can convey fear, love, and isolation beyond her years. Must transition believably into the adult Elsa's emotional world.",
-        "who_this_role_is_best_for": "Young performers with exceptional emotional maturity and natural singing ability. A career-defining youth role.",
-        "not_ideal_for": "Children who struggle with sustained emotional scenes or quiet, internal acting."
+        "why": "Let It Go is known worldwide. The full role is vocally and dramatically enormous.",
+        "common_casting": "Powerful soprano-mezzo belts with dramatic presence and vocal stamina."
       },
-      "growth_profile": {
-        "skills_developed": ["emotional acting", "vocal confidence", "carrying dramatic weight", "professional discipline"],
-        "career_value": "Top-tier youth credit — demonstrates maturity and ability to handle featured roles",
-        "stepping_stone_to": ["Matilda (Matilda)", "Annie", "Young Cosette (Les Mis)", "Future adult Elsa"]
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Let It Go - the belt must be secure and powerful, not reached for",
+          "The controlled exterior that contains enormous emotion",
+          "The full dramatic range from Act 1 isolation to Act 2 acceptance",
+          "Vocal stamina - the show is vocally punishing"
+        ],
+        "tips": [
+          "Let It Go is the natural audition piece but Monster will distinguish you",
+          "Show the restraint before the release - the explosion only means something if the control was real",
+          "Work with a vocal coach specialising in contemporary Broadway belt"
+        ],
+        "common_mistakes": [
+          "Playing Elsa as cold - she is terrified, not cold",
+          "Reaching for Let It Go rather than owning it"
+        ]
       },
       "key_songs": [
-        { "title": "Do You Want to Build a Snowman?", "type": "solo-section", "difficulty": 3, "notes": "Opens the song — must establish emotional foundation" },
-        { "title": "A Little Bit of You", "type": "duet", "difficulty": 2, "notes": "With Young Anna — playful, sisterly" }
-      ],
-      "description": "Young Elsa opens the show and establishes the emotional foundation of the entire story. This is one of the most significant youth roles in modern musical theatre — the audience must fall in love with and feel sorry for this child in the first 10 minutes."
+        {
+          "title": "Dangerous to Dream",
+          "type": "solo",
+          "notes": "Elsa's pre-coronation fear."
+        },
+        {
+          "title": "Let It Go",
+          "type": "solo",
+          "notes": "The defining number. Full belt to top C required."
+        },
+        {
+          "title": "Monster",
+          "type": "solo",
+          "notes": "Act 2 crisis. Elsa at her most dramatically expansive."
+        },
+        {
+          "title": "Show Yourself",
+          "type": "duet",
+          "notes": "The Act 2 climax of self-acceptance. Sung with Anna."
+        }
+      ]
     },
-
     {
-      "id": "frozen-young-anna",
-      "musical_id": "frozen",
-      "name": "Young Anna",
+      "id": "frozen-anna",
+      "name": "Anna",
+      "role_type": "lead",
+      "age_range": {
+        "min": 17,
+        "max": 30
+      },
+      "description": "The irrepressibly warm, occasionally clumsy, completely devoted younger sister. Anna is the emotional engine of the show. Her love for Elsa is the reason everything happens. The show understands that warmth is as powerful as magic.",
+      "vocal": {
+        "range": "A3-Bb5",
+        "voice_type": "mezzo soprano belt",
+        "belt_required": true,
+        "belt_range": "E5-Bb5",
+        "style_notes": "Warm bright mezzo belt with genuine pop energy. For the First Time in Forever requires both breathless excitement and genuine longing."
+      },
+      "dance": {
+        "level": "moderate",
+        "styles": [
+          "contemporary Broadway",
+          "comedy movement"
+        ],
+        "notes": "Anna's physicality is warm, spontaneous, and slightly clumsy in the most endearing way."
+      },
+      "acting": {
+        "level": "advanced",
+        "character_types": [
+          "warm",
+          "hopeful",
+          "brave",
+          "loving"
+        ],
+        "notes": "Anna's optimism must never feel naive - she chooses hope the way Elsa chooses control."
+      },
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "An equal lead role to Elsa. Anna carries the emotional warmth and drive of the show.",
+        "common_casting": "Warm belt mezzos with genuine stage charisma and natural comedy instinct."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth and physical aliveness",
+          "For the First Time in Forever shows the full range: excitement, longing, hope",
+          "Comedy must feel natural - Anna does not know she is funny",
+          "Acting depth for the sacrifice scene"
+        ],
+        "tips": [
+          "Show the joy first",
+          "For the First Time in Forever is the ideal audition piece",
+          "Never play Anna as an ingenue - she is brave and active at every moment"
+        ],
+        "common_mistakes": [
+          "Playing Anna as sweet rather than warm",
+          "Missing the genuine bravery"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "For the First Time in Forever",
+          "type": "solo and duet",
+          "notes": "Anna's complete character introduction."
+        },
+        {
+          "title": "Love Is an Open Door",
+          "type": "duet",
+          "notes": "Anna and Hans's whirlwind romance."
+        },
+        {
+          "title": "A Little Thing Called Love",
+          "type": "solo ensemble",
+          "notes": "The new stage song. Anna's determined warmth in full bloom."
+        }
+      ]
+    },
+    {
+      "id": "frozen-hans",
+      "name": "Prince Hans",
       "role_type": "supporting",
-      "gender": "female",
-      "age_range": { "min": 7, "max": 13 },
-      "age_ideal": { "min": 8, "max": 11 },
+      "age_range": {
+        "min": 20,
+        "max": 32
+      },
+      "description": "The charming prince who is absolutely not what he appears. Hans is the show's great dramatic reveal - perfectly courtly in Act 1, revealed as utterly ruthless in Act 2. Requires an actor who can play genuine warmth so convincingly that the reversal truly shocks.",
       "vocal": {
-        "range_low": "D4",
-        "range_high": "C5",
-        "voice_type": ["treble"],
+        "range": "Bb2-F4",
+        "voice_type": "baritone tenor",
         "belt_required": false,
-        "belt_level": 1,
-        "vocal_stamina": 2,
-        "solo_singing": true,
-        "vocal_difficulty": 2
+        "style_notes": "Clean charming tenor-baritone. Love Is an Open Door should feel completely genuine."
       },
       "dance": {
-        "level": 2,
-        "styles_required": ["movement"],
-        "choreography_complexity": 2,
-        "stamina_required": 2,
-        "dance_difficulty": 2
+        "level": "moderate",
+        "styles": [
+          "courtly",
+          "contemporary Broadway"
+        ],
+        "notes": "Hans moves with princely assurance."
       },
       "acting": {
-        "level": 4,
-        "emotional_depth": 3,
-        "comedic_timing": 3,
-        "dramatic_intensity": 3,
-        "character_type": ["bubbly", "playful", "hopeful", "lonely"],
-        "acting_difficulty": 3
+        "level": "advanced",
+        "character_types": [
+          "charming false prince",
+          "secretly ruthless",
+          "dual nature"
+        ],
+        "notes": "The entire first act must be played with complete sincerity."
       },
       "casting_insights": {
-        "spotlight_level": 4,
+        "spotlight_score": 4,
         "spotlight_label": "High Visibility",
-        "growth_value": 4,
-        "growth_label": "Strong Development",
-        "casting_competitiveness": 3,
-        "typical_cast_description": "An energetic, naturally charming young performer who radiates warmth and playfulness. Must make the audience love Anna instantly.",
-        "who_this_role_is_best_for": "Bubbly, confident young performers with natural stage presence. Needs to be genuinely endearing.",
-        "not_ideal_for": "Shy children or those who need significant direction to show personality."
+        "growth_value": 3,
+        "growth_label": "Dramatic Range Showcase",
+        "why": "Requires genuine acting range from complete charm to complete menace.",
+        "common_casting": "Tenor-baritones with natural stage charm and acting range for a major character reversal."
       },
-      "growth_profile": {
-        "skills_developed": ["stage confidence", "character building", "singing in a professional context"],
-        "career_value": "Excellent youth credit in a beloved show",
-        "stepping_stone_to": ["Annie", "Young Cosette", "Matilda", "Future adult Anna"]
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Love Is an Open Door sung with absolute genuine romantic conviction",
+          "Physical assurance of a trained prince",
+          "The ability to make the Act 2 reveal believable in retrospect"
+        ],
+        "tips": [
+          "Show the warmth completely in Act 1",
+          "Hans charm must feel real not performed"
+        ],
+        "common_mistakes": [
+          "Playing Hans with any hint of his true nature in Act 1",
+          "Making the villain reveal cartoonish"
+        ]
       },
       "key_songs": [
-        { "title": "Do You Want to Build a Snowman?", "type": "solo-section", "difficulty": 2, "notes": "The heart-wrenching repeated question" },
-        { "title": "A Little Bit of You", "type": "duet", "difficulty": 2, "notes": "With Young Elsa — sweet sisterly bond" }
-      ],
-      "description": "Young Anna is the sunshine to Young Elsa's shadow — a bubbly, hopeful child who doesn't understand why her sister won't play anymore. Her repeated knocking on Elsa's door is one of the most emotionally effective moments in the show."
+        {
+          "title": "Love Is an Open Door",
+          "type": "duet",
+          "notes": "Hans and Anna's whirlwind romance. Must feel completely genuine."
+        }
+      ]
     },
-
     {
-      "id": "frozen-ensemble-townspeople",
-      "musical_id": "frozen",
-      "name": "Ensemble — Townspeople of Arendelle",
-      "role_type": "ensemble",
-      "ensemble_subtype": "vocal-heavy",
-      "gender": "any",
-      "age_range": { "min": 16, "max": 50 },
-      "age_ideal": { "min": 18, "max": 40 },
+      "id": "frozen-kristoff",
+      "name": "Kristoff",
+      "role_type": "supporting",
+      "age_range": {
+        "min": 20,
+        "max": 35
+      },
+      "description": "The gruff reindeer-obsessed ice harvester who saves the day through sheer reliability and genuine goodness. Kristoff is the show's warm heart when Elsa and Anna are in crisis.",
       "vocal": {
-        "range_low": "varies",
-        "range_high": "varies",
-        "voice_type": ["mixed"],
+        "range": "A2-F4",
+        "voice_type": "baritone",
         "belt_required": false,
-        "belt_level": 2,
-        "vocal_stamina": 3,
-        "harmony_required": true,
-        "solo_singing": false,
-        "vocal_difficulty": 3
+        "style_notes": "Warm rough-edged baritone. Honest, direct, surprisingly tender."
       },
       "dance": {
-        "level": 3,
-        "styles_required": ["jazz", "waltz", "movement"],
-        "styles_beneficial": ["folk-dance"],
-        "choreography_complexity": 3,
-        "stamina_required": 3,
-        "dance_difficulty": 3
+        "level": "moderate",
+        "styles": [
+          "physical comedy",
+          "contemporary Broadway"
+        ],
+        "notes": "Physical and strong. Comedy is physical rather than verbal."
       },
       "acting": {
-        "level": 3,
-        "comedic_timing": 2,
-        "dramatic_intensity": 3,
-        "character_type": ["reactive", "fearful", "celebratory"],
-        "acting_difficulty": 2
+        "level": "moderate",
+        "character_types": [
+          "gruff",
+          "loyal",
+          "unexpectedly tender",
+          "genuine"
+        ],
+        "notes": "Kristoff is the show's anchor - reliable decency that makes the fantastical elements feel grounded."
       },
       "casting_insights": {
-        "spotlight_level": 2,
-        "spotlight_label": "Support Role",
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
         "growth_value": 3,
         "growth_label": "Steady Growth",
-        "casting_competitiveness": 1,
-        "typical_cast_description": "Strong ensemble singers who can harmonise, move well, and react convincingly to the magical events of the story.",
-        "who_this_role_is_best_for": "Solid all-rounders building experience. Good entry point into large-cast Disney shows.",
-        "not_ideal_for": "Performers seeking spotlight moments or heavy dance."
+        "why": "A warm strong supporting role with good vocal and comedic requirements.",
+        "common_casting": "Warm baritones with natural physical comedy and genuine stage warmth."
       },
-      "growth_profile": {
-        "skills_developed": ["ensemble singing", "harmony", "reactive acting", "group choreography"],
-        "career_value": "Ensemble credit in a popular Disney show — good foundation",
-        "stepping_stone_to": ["Featured ensemble roles", "Supporting roles in future shows"]
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The gruff exterior that barely conceals genuine warmth",
+          "Physical comedy and natural stage presence",
+          "Warm baritone quality"
+        ],
+        "tips": [
+          "Kristoff is not the sharpest person in the room and he knows it",
+          "The warmth for Sven and for Anna must be completely genuine"
+        ],
+        "common_mistakes": [
+          "Playing Kristoff as purely comic - he is also genuinely brave and good"
+        ]
       },
       "key_songs": [
-        { "title": "Vuelie / Let the Sun Shine On", "type": "ensemble", "difficulty": 3, "notes": "Opening number — choral, atmospheric" },
-        { "title": "Coronation Day", "type": "ensemble", "difficulty": 3, "notes": "Big celebration number — dancing + singing" },
-        { "title": "Finale", "type": "ensemble", "difficulty": 3, "notes": "Full company finale" }
-      ],
-      "description": "The Townspeople of Arendelle form the world of the story — celebrating at the coronation, reacting in fear to the eternal winter, and ultimately joining in the resolution. A solid ensemble role with good singing requirements and moderate dance."
+        {
+          "title": "Reindeer(s) Are Better Than People",
+          "type": "solo",
+          "notes": "Kristoff's honest assessment. Warm and funny."
+        },
+        {
+          "title": "What Do You Know About Love?",
+          "type": "ensemble",
+          "notes": "The trolls' comic marriage pressure."
+        }
+      ]
     },
-
     {
-      "id": "frozen-ensemble-hidden-folk",
-      "musical_id": "frozen",
-      "name": "Ensemble — Hidden Folk (Trolls)",
-      "role_type": "ensemble",
-      "ensemble_subtype": "dance-heavy",
-      "gender": "any",
-      "age_range": { "min": 14, "max": 45 },
-      "age_ideal": { "min": 16, "max": 35 },
+      "id": "frozen-olaf",
+      "name": "Olaf",
+      "role_type": "supporting",
+      "age_range": {
+        "min": 20,
+        "max": 40
+      },
+      "description": "The magical snowman brought to life by Elsa's powers. Innocent, warm, and completely certain that summer will be wonderful. Olaf is the show's pure heart and its finest comic role.",
       "vocal": {
-        "range_low": "varies",
-        "range_high": "varies",
-        "voice_type": ["mixed"],
+        "range": "C3-E4",
+        "voice_type": "tenor character",
         "belt_required": false,
-        "belt_level": 2,
-        "vocal_stamina": 2,
-        "harmony_required": true,
-        "solo_singing": false,
-        "vocal_difficulty": 2
+        "style_notes": "Light warm character tenor with genuine sweetness. In the Right Here should feel like the most sincere thing he has ever said."
       },
       "dance": {
-        "level": 4,
-        "styles_required": ["physical-theatre", "movement", "character-dance"],
-        "styles_beneficial": ["acrobatics", "tumbling"],
-        "choreography_complexity": 4,
-        "stamina_required": 4,
-        "dance_difficulty": 4
+        "level": "moderate",
+        "styles": [
+          "physical comedy",
+          "clown movement"
+        ],
+        "notes": "Pure comedy - a body made of snow that should not move the way it does. Creative physical performance is central."
       },
       "acting": {
-        "level": 3,
-        "comedic_timing": 4,
-        "character_type": ["playful", "mischievous", "magical", "comedic"],
-        "acting_difficulty": 3
+        "level": "advanced",
+        "character_types": [
+          "innocent",
+          "warm",
+          "wise despite himself",
+          "physically comic"
+        ],
+        "notes": "Must be genuinely funny without being irritating. The sweetness must be completely genuine for In the Right Here to pay off."
       },
       "casting_insights": {
-        "spotlight_level": 3,
-        "spotlight_label": "Balanced",
+        "spotlight_score": 4,
+        "spotlight_label": "Scene-Stealer",
         "growth_value": 4,
         "growth_label": "Strong Development",
-        "casting_competitiveness": 2,
-        "typical_cast_description": "Physical performers who can bring rock-like creatures to life with energy and comedy. Often requires puppetry or costume work.",
-        "who_this_role_is_best_for": "Physical performers and dancers who enjoy character work. Great role for developing physical theatre skills.",
-        "not_ideal_for": "Performers focused primarily on singing."
+        "why": "Olaf is the show's most beloved character for many audience members.",
+        "common_casting": "Physical comedians with real acting depth."
       },
-      "growth_profile": {
-        "skills_developed": ["physical theatre", "character movement", "comedic ensemble work", "puppetry"],
-        "career_value": "Unique ensemble credit — demonstrates physical performance skills",
-        "stepping_stone_to": ["Lion King ensemble", "Physical theatre productions", "Featured physical roles"]
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Physical comedy that creates a convincing snowman without becoming tiresome",
+          "Genuine warmth and innocence must be completely real",
+          "In the Right Here: emotion must be fully accessible"
+        ],
+        "tips": [
+          "Olaf never knows he is funny - always completely sincere",
+          "Physical comedy should feel discovered not performed"
+        ],
+        "common_mistakes": [
+          "Playing Olaf as a small child - he is innocent but not stupid",
+          "Making the physical comedy too broad"
+        ]
       },
       "key_songs": [
-        { "title": "Hidden Folk", "type": "ensemble", "difficulty": 2, "notes": "Introduces the trolls — physical + vocal" },
-        { "title": "Fixer Upper", "type": "ensemble", "difficulty": 3, "notes": "The big troll number — comedic, high-energy, audience favourite" }
-      ],
-      "description": "The Hidden Folk (trolls) are magical, mischievous creatures who provide comic relief and mystical guidance. Their big number 'Fixer Upper' is a highlight of the show. This is a physical theatre role with puppetry/costume elements — great for performers who love character work and movement."
+        {
+          "title": "In Summer",
+          "type": "solo",
+          "notes": "Olaf's famous fantasy about summer. Pure comic joy."
+        },
+        {
+          "title": "In the Right Here",
+          "type": "solo",
+          "notes": "The new stage song. Heartfelt meditation on love and presence."
+        }
+      ]
     },
-
     {
-      "id": "frozen-ensemble-snow-chorus",
-      "musical_id": "frozen",
-      "name": "Ensemble — Snow Chorus",
-      "role_type": "ensemble",
-      "ensemble_subtype": "vocal-heavy",
-      "gender": "any",
-      "age_range": { "min": 14, "max": 40 },
-      "age_ideal": { "min": 16, "max": 30 },
+      "id": "frozen-weselton",
+      "name": "Duke of Weselton",
+      "role_type": "character",
+      "age_range": {
+        "min": 35,
+        "max": 65
+      },
+      "description": "The pompous suspicious opportunistic Duke. The show's comic threat - not the true villain but an effective obstacle. Great character comedy for someone who can dance badly with complete commitment.",
       "vocal": {
-        "range_low": "varies",
-        "range_high": "varies",
-        "voice_type": ["soprano", "alto"],
+        "range": "B2-Eb4",
+        "voice_type": "tenor character",
         "belt_required": false,
-        "belt_level": 1,
-        "vocal_stamina": 3,
-        "harmony_required": true,
-        "solo_singing": false,
-        "vocal_difficulty": 3
+        "style_notes": "Slightly squeaky puffed-up character tenor. Pomposity over talent."
       },
       "dance": {
-        "level": 3,
-        "styles_required": ["contemporary", "movement"],
-        "styles_beneficial": ["ballet"],
-        "choreography_complexity": 3,
-        "stamina_required": 3,
-        "dance_difficulty": 3
+        "level": "high",
+        "styles": [
+          "intentionally terrible dancing",
+          "character comedy"
+        ],
+        "notes": "Dances with tremendous confidence and terrible technique. Requires real dance training - dancing badly on purpose is hard."
       },
       "acting": {
-        "level": 2,
-        "character_type": ["ethereal", "atmospheric"],
-        "acting_difficulty": 2
+        "level": "moderate",
+        "character_types": [
+          "pompous",
+          "suspicious",
+          "opportunistic",
+          "self-important"
+        ],
+        "notes": "Complete confidence in his own importance is the whole character."
       },
       "casting_insights": {
-        "spotlight_level": 2,
-        "spotlight_label": "Support Role",
-        "growth_value": 3,
-        "growth_label": "Steady Growth",
-        "casting_competitiveness": 1,
-        "typical_cast_description": "Strong choral singers who can also move gracefully. They create the magical atmosphere of Elsa's powers on stage.",
-        "who_this_role_is_best_for": "Vocally strong performers who enjoy creating atmosphere. Good for building choral and movement skills.",
-        "not_ideal_for": "Performers seeking comedy, character work, or heavy spotlight."
+        "spotlight_score": 3,
+        "spotlight_label": "Scene-Stealer",
+        "growth_value": 2,
+        "growth_label": "Character Comedy",
+        "why": "One of the most entertaining character comedy moments in the show.",
+        "common_casting": "Physical character comedians who can commit to intentional bad dancing."
       },
-      "growth_profile": {
-        "skills_developed": ["choral singing", "harmony", "atmospheric performance", "graceful movement"],
-        "career_value": "Ensemble credit with vocal focus"
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Comic pomposity",
+          "Physical comedy and dancing badly with conviction",
+          "The specific threat level - annoying but not dangerous"
+        ],
+        "tips": [
+          "The bad dancing should look like someone who believes they are dancing beautifully"
+        ],
+        "common_mistakes": [
+          "Playing the Duke as purely silly - he genuinely believes he is important"
+        ]
       },
       "key_songs": [
-        { "title": "Let It Go (backing)", "type": "ensemble", "difficulty": 3, "notes": "Vocal backing for Elsa's signature number" },
-        { "title": "Vuelie", "type": "ensemble", "difficulty": 3, "notes": "Atmospheric choral opening" }
-      ],
-      "description": "The Snow Chorus creates the magical atmosphere of Frozen — the swirling snow, the choral backdrop to Elsa's powers, the ethereal quality of the world. Primarily a vocal ensemble with graceful movement, they are the visual and aural representation of Elsa's magic."
+        {
+          "title": "Coronation Sequence",
+          "type": "ensemble",
+          "notes": "The Duke's pompous interjections throughout the coronation."
+        }
+      ]
+    },
+    {
+      "id": "frozen-pabbie",
+      "name": "Grand Pabbie",
+      "role_type": "character",
+      "age_range": {
+        "min": 40,
+        "max": 70
+      },
+      "description": "The ancient wise troll elder. His prophecies bookend the story and his scenes carry significant dramatic weight despite limited stage time.",
+      "vocal": {
+        "range": "G2-D4",
+        "voice_type": "bass baritone",
+        "belt_required": false,
+        "style_notes": "Deep warm bass-baritone with genuine authority. Pabbie should sound like someone who has seen centuries."
+      },
+      "dance": {
+        "level": "light",
+        "styles": [
+          "troll character movement"
+        ],
+        "notes": "Distinctive troll physicality. Strong physical character."
+      },
+      "acting": {
+        "level": "moderate",
+        "character_types": [
+          "ancient",
+          "wise",
+          "protective",
+          "foreboding"
+        ],
+        "notes": "Holds the key to everything and must carry genuine mystical authority in brief appearances."
+      },
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "Character Feature",
+        "growth_value": 2,
+        "growth_label": "Character Role",
+        "why": "A character role with genuine dramatic impact in key scenes.",
+        "common_casting": "Deep voices with natural authority and character acting depth."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine gravitas",
+          "Deep voice with natural authority",
+          "Physical distinctness in troll movement"
+        ],
+        "tips": [
+          "Pabbie's care for both children must be completely real - his warning comes from love"
+        ],
+        "common_mistakes": [
+          "Playing Pabbie as mysterious rather than wise"
+        ]
+      },
+      "key_songs": [
+        {
+          "title": "Troll Ensemble",
+          "type": "ensemble",
+          "notes": "Pabbie leads the troll community in welcoming Kristoff and Anna."
+        }
+      ]
     }
   ]
 }

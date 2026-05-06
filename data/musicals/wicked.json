@@ -1,0 +1,362 @@
+{
+  "musical": {
+    "id": "wicked",
+    "title": "Wicked",
+    "music_by": "Stephen Schwartz",
+    "year_premiered": 2003,
+    "vocal_style": "Powerhouse contemporary Broadway. Elphaba demands one of musical theatre's most extreme belts. Glinda is bright coloratura soprano. Strong acting and emotional intelligence required from all principals.",
+    "synopsis": "Set before the events of The Wizard of Oz, Wicked tells the untold story of two very different witches: the misunderstood green-skinned Elphaba, who will become the Wicked Witch of the West, and the popular blonde Glinda, who will become the Good Witch. Their unlikely friendship, and its destruction, illuminates the true cost of power, prejudice, and what it really means to be called 'wicked'.",
+    "junior_version_available": false,
+    "difficulty_overall": "advanced_to_expert",
+    "dance_intensity": "high",
+    "typical_cast_size": "22-30",
+    "age_range": "16-60",
+    "genre_tags": ["fantasy", "classic_broadway", "female_led", "powerhouse", "pop_rock", "oz", "empowerment", "friendship"]
+  },
+  "roles": [
+    {
+      "id": "wicked-elphaba",
+      "name": "Elphaba",
+      "role_type": "lead",
+      "age_range": {"min": 18, "max": 35},
+      "description": "Elphaba is the defining role of early 21st century musical theatre — a green-skinned misfit who refuses to compromise her beliefs even at enormous personal cost. Her journey from outcast to revolutionary is told through a score that demands extraordinary vocal power, emotional complexity, and genuine star quality. 'Defying Gravity' is one of the greatest belt climaxes ever written for the stage.",
+      "vocal": {
+        "range": "Ab3-G5",
+        "voice_type": "mezzo-soprano powerhouse belt",
+        "belt_required": true,
+        "belt_range": "C5-G5",
+        "style_notes": "One of the most demanding belts in musical theatre. Requires mix voice for lyrical passages ('I'm Not That Girl'), raw belt power for Defying Gravity and No Good Deed, and absolute emotional control throughout. Months of preparation required."
+      },
+      "dance": {"level": "moderate", "styles": ["contemporary", "dramatic movement"], "notes": "Strong movement required but not primarily a dance role. Flying rig work in Defying Gravity is a technical requirement in professional and some community productions."},
+      "acting": {"level": "advanced", "character_types": ["principled", "passionate", "isolated", "revolutionary"], "notes": "Must play someone who is completely right and completely alone because of it. Elphaba's convictions drive every choice — she never compromises, never plays for sympathy. The audience must root for her without her asking for it."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 5,
+        "growth_label": "Skill Accelerator",
+        "why": "The most coveted role in community musical theatre. Every major element — belt technique, emotional range, stage presence, storytelling — is pushed to its absolute limit.",
+        "common_casting": "Exceptional soprano/mezzos with genuine belt power. Acting depth is as important as the voice — directors have heard the notes before, they need the soul."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "The belt — specifically, can you sustain 'Defying Gravity' and 'The Wizard and I' with control AND real power?",
+          "Emotional intelligence — Elphaba is never a victim, always an agent with clear principles",
+          "Natural magnetism that doesn't rely on being likable — her charisma comes from conviction",
+          "The restraint and vulnerability in 'I'm Not That Girl' — the role requires both extremes"
+        ],
+        "tips": [
+          "'The Wizard and I' or 'Defying Gravity' are the obvious audition songs — know them cold and then find your own truth in them",
+          "Show vulnerability AND power. The quiet moments are as important as the belt",
+          "Belt preparation is months of work — book a technique-focused singing teacher well before auditions",
+          "Don't play green. Play a person who happens to have been treated differently her whole life"
+        ],
+        "common_mistakes": [
+          "All power, no vulnerability — the show's emotional core is Elphaba's loneliness, not her rage",
+          "Imitating Idina Menzel rather than finding a genuine interpretation",
+          "Oversinging from bar one — save the power for when it matters dramatically"
+        ]
+      },
+      "key_songs": [
+        {"title": "The Wizard and I", "type": "solo", "notes": "Act 1 aspiration anthem. Shows her ambition, hope, and the seeds of her eventual disillusionment."},
+        {"title": "I'm Not That Girl", "type": "solo", "notes": "Vocally restrained ballad of unrequited love. The emotional contrast to the power numbers — shows depth."},
+        {"title": "Defying Gravity", "type": "duet / solo", "notes": "Act 1 closer and the summit of the belt repertoire. One of the most exhilarating moments in contemporary musical theatre."},
+        {"title": "No Good Deed", "type": "solo", "notes": "Act 2 rock belt. Pure rage and grief at every good intention turning to ruin. Visceral and demanding."},
+        {"title": "For Good", "type": "duet", "notes": "The emotional finale with Glinda. Must be completely genuine — the friendship the whole show was about."}
+      ]
+    },
+    {
+      "id": "wicked-glinda",
+      "name": "Glinda",
+      "role_type": "lead",
+      "age_range": {"min": 18, "max": 35},
+      "description": "Glinda is one of musical theatre's great comedic soprano roles — superficial, self-absorbed, and laugh-out-loud funny in Act One, before revealing unexpected depth and genuine love for Elphaba in Act Two. The role demands perfect comic timing, a bright coloratura soprano, and the ability to make the audience love someone who initially seems vacuous.",
+      "vocal": {
+        "range": "C4-B5",
+        "voice_type": "soprano coloratura",
+        "belt_required": false,
+        "style_notes": "Bright, clear coloratura soprano with excellent diction for comedy. 'Popular' requires perfect comic timing within the vocal line. Head voice runs and sustained high notes are essential."
+      },
+      "dance": {"level": "moderate", "styles": ["jazz", "physical comedy", "pageant-style"], "notes": "Physical comedy and expressive movement are central to the role. Glinda's walk, gestures, and physical reactions are as important as her voice."},
+      "acting": {"level": "advanced", "character_types": ["comedic", "superficial", "growing", "genuinely loving"], "notes": "The arc from comic relief to genuine emotional depth is the whole character. Must make the audience laugh AT Glinda and then cry FOR her. A difficult balance requiring sophisticated comic instincts."},
+      "casting_insights": {
+        "spotlight_score": 5,
+        "spotlight_label": "Show-Stealer",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "A genuine star role that showcases an entirely different skill set from Elphaba. The comedy makes you love her; the drama proves you were right to.",
+        "common_casting": "Bright-voiced sopranos with natural comedic instincts. Directors look for someone who is funny without trying — the laughs must seem effortless."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural comedy — can you get a laugh without mugging?",
+          "A bright, clean soprano that handles coloratura cleanly",
+          "The emotional transition in Act 2 — when Glinda grieves for Elphaba, it must surprise and move us",
+          "Distinctive physical comedy — Glinda's movement vocabulary is as important as her voice"
+        ],
+        "tips": [
+          "'Popular' is the obvious audition piece — if you're allowed to sing it, play the comedy completely straight",
+          "Show your Act 2 depth to directors — mention you've thought about where Glinda's real feelings live",
+          "Glinda's sadness must feel authentic, not performed — the final scenes require genuine emotion",
+          "Work on the high notes — the soprano demands are real, not cosmetic"
+        ],
+        "common_mistakes": [
+          "Playing the comedy too broadly — Glinda thinks she's being sincere, which is why she's funny",
+          "Showing the real Glinda too early — the transformation in Act 2 needs to be a genuine revelation",
+          "Missing the genuine love for Elphaba — it has to be real from the start, just hidden"
+        ]
+      },
+      "key_songs": [
+        {"title": "Popular", "type": "solo", "notes": "The pure comedy showcase. A pitch-perfect satire of the most popular girl sincerely trying to help."},
+        {"title": "I Couldn't Be Happier", "type": "solo", "notes": "The Act 2 moment where Glinda's real feelings break through despite her best efforts."},
+        {"title": "For Good", "type": "duet", "notes": "The emotional finale. Glinda and Elphaba have changed each other, and the audience must feel every year of that friendship."}
+      ]
+    },
+    {
+      "id": "wicked-fiyero",
+      "name": "Fiyero",
+      "role_type": "supporting",
+      "age_range": {"min": 18, "max": 35},
+      "description": "Fiyero is a student prince who would rather dance than think — until he meets Elphaba and finds himself unexpectedly driven to choose principles over comfort. 'Dancing Through Life' establishes him as the most popular boy in school; by Act 2 he's risking everything for what he believes in.",
+      "vocal": {
+        "range": "A2-G4",
+        "voice_type": "tenor-baritone",
+        "belt_required": false,
+        "style_notes": "Warm, lyrical quality rather than power. Fiyero's voice should sound easy and charismatic. 'As Long As You're Mine' requires genuine romantic intensity."
+      },
+      "dance": {"level": "moderate", "styles": ["jazz", "social dance"], "notes": "Physical ease and natural charisma in movement. 'Dancing Through Life' needs a performer who moves like someone who has never thought about how they look."},
+      "acting": {"level": "moderate", "character_types": ["carefree", "charismatic", "evolving", "principled"], "notes": "The arc from carefree to committed is the character. Must be believable at both ends and have genuine chemistry with Elphaba."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "A strong male lead that showcases natural charisma and character development.",
+        "common_casting": "Physically appealing performers with natural charm and lyrical voices. Acting the transformation is the key challenge."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Effortless charisma — Fiyero is the most popular man in the room and it should feel natural",
+          "The genuine conviction that emerges in Act 2 — directors need to believe he would risk everything",
+          "Chemistry read potential with Elphaba — the love story must feel earned and real"
+        ],
+        "tips": [
+          "Choose something charismatic and lyrical — show the charm before you show any depth",
+          "Fiyero's Act 2 conviction must feel surprising but inevitable — think through his arc",
+          "Physical ease and confidence matter as much as vocal technique here"
+        ],
+        "common_mistakes": [
+          "Playing Fiyero as deep from the start — the carefree quality is what makes the change matter",
+          "Over-singing to compensate for a lighter role — Fiyero's voice should sound natural, not effortful"
+        ]
+      },
+      "key_songs": [
+        {"title": "Dancing Through Life", "type": "solo / ensemble", "notes": "The charismatic Act 1 showpiece. Fiyero essentially seduces the entire school."},
+        {"title": "As Long As You're Mine", "type": "duet", "notes": "Romantic duet with Elphaba. Must feel genuinely passionate — this is where his principles cost him everything."}
+      ]
+    },
+    {
+      "id": "wicked-nessarose",
+      "name": "Nessarose",
+      "role_type": "supporting",
+      "age_range": {"min": 16, "max": 32},
+      "description": "Elphaba's physically disabled younger sister — the family's favourite despite (or because of) her limitations. Nessarose's arc from sympathetic victim to rigid tyrant is one of the show's most morally complex storylines. Often cast in a wheelchair.",
+      "vocal": {
+        "range": "B3-F#5",
+        "voice_type": "soprano",
+        "belt_required": false,
+        "style_notes": "Clear, sweet soprano. The voice should initially sound gentle and sympathetic, reflecting the guileless quality that turns to brittleness."
+      },
+      "dance": {"level": "none", "styles": [], "notes": "Typically cast in a wheelchair. The role requires physical storytelling from a stationary or limited-movement position."},
+      "acting": {"level": "advanced", "character_types": ["vulnerable", "privileged", "demanding", "brittle"], "notes": "Must generate genuine audience sympathy before revealing her demanding and eventually cruel character. Complex moral arc."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 4,
+        "growth_label": "Strong Development",
+        "why": "A morally complex role that develops sophisticated character work. The arc from sympathetic to troubling is genuinely challenging.",
+        "common_casting": "Sopranos with strong acting instincts. Disabled or non-disabled performers may be cast — physical storytelling within the staging is the key skill."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine sympathy in early scenes — the audience must feel for Nessarose before they're troubled by her",
+          "The clear soprano voice that carries her fragility",
+          "The emotional complexity as her power corrupts her"
+        ],
+        "tips": [
+          "Show both your vulnerability and your strength — Nessarose isn't simply a victim",
+          "Think carefully about the physicality and what the staging tells the story for you"
+        ],
+        "common_mistakes": [
+          "Playing Nessarose as purely pitiable — she has genuine power and chooses to misuse it"
+        ]
+      },
+      "key_songs": [
+        {"title": "The Wicked Witch of the East (reprise material)", "type": "ensemble", "notes": "Featured in ensemble numbers and staging. Brief but dramatically significant solo moments."}
+      ]
+    },
+    {
+      "id": "wicked-the-wizard",
+      "name": "The Wizard",
+      "role_type": "supporting",
+      "age_range": {"min": 45, "max": 65},
+      "description": "The great and powerful Wizard is a warm, charming, completely amoral fraud. He genuinely likes Elphaba and genuinely wants to keep his power — those two things cannot coexist. A baritone character role requiring real warmth hiding real moral emptiness.",
+      "vocal": {
+        "range": "G2-D4",
+        "voice_type": "baritone character",
+        "belt_required": false,
+        "style_notes": "Warm, grandfatherly baritone with showman quality. 'Wonderful' requires the specific charm of someone who truly believes their own spin."
+      },
+      "dance": {"level": "light", "styles": ["character movement"], "notes": "Showman presence rather than technical dance."},
+      "acting": {"level": "advanced", "character_types": ["charming", "fraudulent", "grandfatherly", "amoral"], "notes": "Must be genuinely likeable while being completely without real principles. The audience should understand how everyone was fooled."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "Scene-stealing character role with a brilliant satirical number. Develops the skill of playing likeability as a weapon.",
+        "common_casting": "Experienced character actors with natural warmth, authority, and dark comedy. Often double-cast with Doctor Dillamond."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine warmth — the Wizard must be likeable or 'Wonderful' doesn't land",
+          "The showman quality — he treats every conversation as a performance",
+          "The specific intelligence of a man who has survived entirely by managing perception"
+        ],
+        "tips": [
+          "'Wonderful' is the natural audition piece — perform it with complete sincerity",
+          "Show the warmth and charm first; the amorality is revealed by what he does, not how he presents"
+        ],
+        "common_mistakes": [
+          "Playing the Wizard as obviously sinister — he should seem genuinely reasonable"
+        ]
+      },
+      "key_songs": [
+        {"title": "Wonderful", "type": "duet / solo", "notes": "The cynical manifesto of a man who believes in nothing but effective messaging. Brilliantly satirical."},
+        {"title": "Sentimental Man", "type": "solo", "notes": "Brief but self-revealing — the Wizard's self-image and his reality are wildly different."}
+      ]
+    },
+    {
+      "id": "wicked-morrible",
+      "name": "Madame Morrible",
+      "role_type": "supporting",
+      "age_range": {"min": 40, "max": 65},
+      "description": "The head of Shiz University and eventually the Wizard's press secretary — pompous, theatrical, and genuinely menacing beneath the comedy. One of musical theatre's great scene-stealing character roles. She speaks in press releases and has never had an authentic moment in her life.",
+      "vocal": {
+        "range": "G2-D4",
+        "voice_type": "mezzo-contralto character",
+        "belt_required": false,
+        "style_notes": "Rich, plummy character mezzo with theatrical flair. Should sound like someone who practises every line in the mirror."
+      },
+      "dance": {"level": "none", "styles": ["theatrical movement"], "notes": "Blocking and physical presence over dance. Morrible moves with maximum drama and minimum efficiency."},
+      "acting": {"level": "advanced", "character_types": ["pompous", "theatrical", "opportunistic", "genuinely dark"], "notes": "The comedy of her self-importance combined with the genuine threat she represents. Never admits she is the villain; always believes she's doing the right thing."},
+      "casting_insights": {
+        "spotlight_score": 4,
+        "spotlight_label": "High Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "A prime character role in a major show. Gets big laughs AND a genuine moment of menace.",
+        "common_casting": "Character actresses with strong comic instincts and natural authority. Voice quality matters but theatrical presence matters more."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Natural theatrical pomposity that reads as funny but real",
+          "Physical authority — Morrible commands every room she enters",
+          "The genuine darkness under the comedy — she causes real harm without ever thinking of herself as harmful"
+        ],
+        "tips": [
+          "Choose a theatrical character song that shows your comic persona with authority",
+          "Play every line as though it was rehearsed — Morrible never speaks naturally, only pronounces"
+        ],
+        "common_mistakes": [
+          "Playing Morrible as purely comic and missing the menace",
+          "Over-camping the character — she thinks she is being perfectly dignified"
+        ]
+      },
+      "key_songs": [
+        {"title": "Dancing Through Life (scene)", "type": "ensemble", "notes": "Featured in Act 1 scenes. No major solo but significant dramatic presence."}
+      ]
+    },
+    {
+      "id": "wicked-boq",
+      "name": "Boq",
+      "role_type": "supporting",
+      "age_range": {"min": 16, "max": 30},
+      "description": "Munchkin student Boq starts as the kind, earnest boy who asks Glinda to the dance and ends up transformed into the Tin Man, nursing a bitter heart. His arc from sweet idealist to resentful victim is one of the show's darkest comic threads.",
+      "vocal": {
+        "range": "C3-G4",
+        "voice_type": "tenor",
+        "belt_required": false,
+        "style_notes": "Light, friendly tenor in Act 1. Must handle the comic frustration of 'Dancing Through Life' interactions."
+      },
+      "dance": {"level": "moderate", "styles": ["jazz", "ensemble", "character movement"], "notes": "Part of the dancing ensemble. Needs moderate dance skills for Shiz scenes."},
+      "acting": {"level": "moderate", "character_types": ["earnest", "lovesick", "growing bitter", "tragic"], "notes": "The comedy of his repeated rejection must slowly darken. His transformation is one of the show's most quietly sad moments."},
+      "casting_insights": {
+        "spotlight_score": 3,
+        "spotlight_label": "Solid Visibility",
+        "growth_value": 3,
+        "growth_label": "Steady Growth",
+        "why": "A complete arc in a supporting role. Good training in playing a character whose circumstances steadily worsen.",
+        "common_casting": "Young tenors with natural, friendly quality who can track a character's slow deterioration."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Genuine sincerity and warmth in early scenes — Boq must be sympathetic",
+          "The ability to track the character's growing resentment across the show",
+          "Comedy timing in the rejection scenes"
+        ],
+        "tips": [
+          "Show your natural likability first — Boq's tragedy only works if we liked him before it happened"
+        ],
+        "common_mistakes": [
+          "Playing the ending before the beginning — let the bitterness arrive gradually"
+        ]
+      },
+      "key_songs": [
+        {"title": "Dancing Through Life ensemble", "type": "featured ensemble", "notes": "Key scenes with Glinda and Nessarose. Establishes the comic romantic triangle."}
+      ]
+    },
+    {
+      "id": "wicked-ensemble",
+      "name": "Ozians / Emerald City Ensemble",
+      "role_type": "ensemble",
+      "age_range": {"min": 16, "max": 60},
+      "description": "The ensemble of Wicked are the people of Oz — students at Shiz, citizens of the Emerald City, and ultimately the mob that turns against Elphaba. Strong dance, solid vocals, and the skills to embody both political innocence and moral cowardice.",
+      "vocal": {
+        "range": "varied",
+        "voice_type": "varied",
+        "belt_required": false,
+        "style_notes": "Strong ensemble harmony and energy. 'One Short Day' and 'What Is This Feeling?' require precision and commitment."
+      },
+      "dance": {"level": "high", "styles": ["jazz", "contemporary", "character"], "notes": "Dance-heavy ensemble. Professionals and advanced community performers are the typical cast."},
+      "acting": {"level": "moderate", "character_types": ["public", "impressionable", "complicit"], "notes": "Must be convincing as a society that makes, worships, and then destroys its celebrities."},
+      "casting_insights": {
+        "spotlight_score": 2,
+        "spotlight_label": "Ensemble",
+        "growth_value": 3,
+        "growth_label": "Strong Technical Development",
+        "why": "Technically demanding ensemble that develops advanced jazz dance and ensemble singing skills.",
+        "common_casting": "Advanced dancers with solid vocal technique and physical stamina."
+      },
+      "audition_guidance": {
+        "what_directors_look_for": [
+          "Technical dance ability — this ensemble is genuinely demanding",
+          "Strong ensemble vocal blend",
+          "Physical commitment and the ability to shift from celebratory to menacing as a group"
+        ],
+        "tips": [
+          "Prepare a number that shows your jazz technique clearly",
+          "Show your vocal range and blend in the singing audition",
+          "Be prepared for an intensive dance call"
+        ],
+        "common_mistakes": [
+          "Underestimating the dance requirements — this is an advanced ensemble"
+        ]
+      },
+      "key_songs": [
+        {"title": "What Is This Feeling?", "type": "ensemble", "notes": "Comedy feud song between Glinda and Elphaba with full ensemble participation."},
+        {"title": "One Short Day", "type": "ensemble", "notes": "Exuberant Emerald City number. High energy, technically demanding."},
+        {"title": "Thank Goodness", "type": "ensemble", "notes": "Act 2 opener. The ensemble as the cheerfully hypocritical public."}
+      ]
+    }
+  ]
+}

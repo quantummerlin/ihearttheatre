@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
         .page-hero {
             padding: 120px 2rem 45px;
             text-align: center;
-            background: linear-gradient(180deg, rgba(102,126,234,0.12) 0%, transparent 100%);
+            background: linear-gradient(180deg, rgba(5,5,8,0.72) 0%, rgba(5,5,8,0.45) 100%), url('images/auditions/hero-banner.jpg') center/cover no-repeat;
         }
         .page-hero h1 {
             font-family: 'Playfair Display', serif;
@@ -356,11 +356,11 @@
  <meta property="og:title" content="Audition Noticeboard | Melbourne &amp; Victoria | iHeartTheatre">
  <meta property="og:description" content="Open auditions and casting calls across Melbourne and Victoria. Musical theatre, community theatre, professional productions, find your next role here.">
  <meta property="og:url" content="https://ihearttheatre.com/auditions.html">
- <meta property="og:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="Audition Noticeboard | Melbourne &amp; Victoria | iHeartTheatre">
  <meta name="twitter:description" content="Open auditions and casting calls across Melbourne and Victoria. Musical theatre, community theatre, professional productions, find your next role here.">
- <meta name="twitter:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 </head>
 <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -375,13 +375,13 @@
     </nav>
 
     <section class="page-hero">
-        <h1>Audition Noticeboard</h1>
-        <p>Your one-stop board for musical theatre auditions across Melbourne &amp; Victoria. Updated by the community, always free.</p>
+        <h1 data-reveal>Audition Noticeboard</h1>
+        <p data-reveal data-reveal-delay="2">Your one-stop board for musical theatre auditions across Melbourne &amp; Victoria. Updated by the community, always free.</p>
     </section>
 
     <div class="submit-banner">
         <p><strong>Theatre companies:</strong> Share your auditions with hundreds of local performers!</p>
-        <a href="mailto:auditions@ihearttheatre.com?subject=Audition%20Announcement%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20add%20our%20audition%20to%20the%20noticeboard%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AAudition%20Date%3A%20%0ALocation%3A%20%0ALink%20to%20full%20details%3A%20%0ARoles%20Available%3A%20%0ANotes%3A%20%0A%0AThanks!" class="btn-submit">Submit an Audition →</a>
+        <a href="mailto:auditions@ihearttheatre.com?subject=Audition%20Announcement%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20add%20our%20audition%20to%20the%20noticeboard%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AAudition%20Date%3A%20%0ALocation%3A%20%0ALink%20to%20full%20details%3A%20%0ARoles%20Available%3A%20%0ANotes%3A%20%0A%0AThanks!" class="btn-submit">Submit an Audition ?</a>
     </div>
 
     <div class="stats-bar">
@@ -394,7 +394,7 @@
     <div class="controls">
         <div class="search-wrap">
             <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
-            <input type="search" id="search-input" placeholder="Search shows, companies, roles, locations…" aria-label="Search auditions">
+            <input type="search" id="search-input" placeholder="Search shows, companies, roles, locations�" aria-label="Search auditions">
         </div>
         <button class="filter-accordion-header" data-target="audition-filters-body" aria-expanded="false">
             <span class="filter-acc-label">
@@ -496,7 +496,7 @@
         if (!item) return;
         const summary = { id: item.id, title: item.show_title, company: item.company, audition_date: item.audition_date, location: item.audition_location };
         const saved = iHT.toggle('audition', id, summary);
-        btn.innerHTML = saved ? '♥' : '♡';
+        btn.innerHTML = saved ? '?' : '?';
         btn.title = saved ? 'Saved - click to unsave' : 'Save this audition';
         btn.style.color = saved ? '#ff6b9d' : '#a0a0b0';
     }
@@ -504,7 +504,7 @@
     function renderCard(item) {
         const st = getStatus(item);
         const badgeMap = { open:'badge-open', soon:'badge-soon', closed:'badge-closed' };
-        const labelMap = { open:'● Open', soon:'◑ Closing Soon', closed:'○ Closed' };
+        const labelMap = { open:'? Open', soon:'? Closing Soon', closed:'? Closed' };
         const cd = st !== 'closed' ? getCountdown(item.audition_date) : '';
         const tags = (item.tags||[]).map(t=>`<span class="tag">${escHtml(t)}</span>`).join('');
         const savedNow = false;
@@ -527,7 +527,7 @@
     <div class="card-footer">
         <span class="card-posted">Posted ${fmtDate(item.date_posted)}</span>
         <div style="display:flex;align-items:center;gap:8px;">
-            <a href="${escUrl(item.submission_link)}" target="_blank" rel="noopener noreferrer" class="card-cta">Full Details →</a>
+            <a href="${escUrl(item.submission_link)}" target="_blank" rel="noopener noreferrer" class="card-cta">Full Details ?</a>
         </div>
     </div>
 </article>`;
@@ -584,10 +584,10 @@
             allSubmissions = [
                 {id:"d001",show_title:"Into the Woods",company:"Fab Nobs Theatre",type:"musical",audition_date:"2026-07-15",closing_date:"2026-07-10",audition_location:"Wangaratta PAC, Wangaratta",region:"regional",submission_link:"https://www.fabnobs.com.au/auditions",roles_available:"All principal and ensemble roles",notes:"Prepare 32 bars in the style of the show. Cold reads from script.",date_posted:"2026-04-01",status:"active",tags:["musical","all ages","regional","sondheim"]},
                 {id:"d002",show_title:"Jersey Boys",company:"CLOC Musical Theatre",type:"musical",audition_date:"2026-05-20",closing_date:"2026-05-15",audition_location:"National Theatre, St Kilda",region:"melbourne",submission_link:"https://www.cloc.org.au/auditions",roles_available:"Frankie Valli, Tommy DeVito, Bob Gaudio, Nick Massi + ensemble",notes:"Strong male vocalists essential. Falsetto range required for Frankie Valli.",date_posted:"2026-04-01",status:"active",tags:["musical","adults","melbourne","jukebox"]},
-                {id:"d003",show_title:"Frozen Jr.",company:"Babirra Music Theatre",type:"musical",audition_date:"2026-06-01",closing_date:"2026-05-25",audition_location:"Karralyka Centre, Ringwood",region:"melbourne",submission_link:"https://www.babirra.org.au/auditions",roles_available:"Elsa, Anna, Hans, Kristoff, Olaf + ensemble",notes:"Junior production 8–18. Strong belt for Elsa. Dance audition included.",date_posted:"2026-04-01",status:"active",tags:["musical","junior","melbourne","disney"]},
+                {id:"d003",show_title:"Frozen Jr.",company:"Babirra Music Theatre",type:"musical",audition_date:"2026-06-01",closing_date:"2026-05-25",audition_location:"Karralyka Centre, Ringwood",region:"melbourne",submission_link:"https://www.babirra.org.au/auditions",roles_available:"Elsa, Anna, Hans, Kristoff, Olaf + ensemble",notes:"Junior production 8�18. Strong belt for Elsa. Dance audition included.",date_posted:"2026-04-01",status:"active",tags:["musical","junior","melbourne","disney"]},
                 {id:"d004",show_title:"Sister Act",company:"Whitehorse Musical Theatre",type:"musical",audition_date:"2026-08-10",closing_date:"2026-08-05",audition_location:"Whitehorse Centre, Nunawading",region:"melbourne",submission_link:"https://www.wmtc.org.au/auditions",roles_available:"Deloris Van Cartier, Mother Superior + nuns + ensemble",notes:"Seeking powerful female vocalists. Motown/soul style.",date_posted:"2026-04-01",status:"active",tags:["musical","adults","melbourne","comedy"]},
                 {id:"d005",show_title:"Mary Poppins",company:"Geelong Lyric Theatre",type:"musical",audition_date:"2026-09-05",closing_date:"2026-08-30",audition_location:"Geelong Arts Centre, Geelong",region:"regional",submission_link:"https://www.geelonglyric.com.au/auditions",roles_available:"Mary Poppins, Bert, George Banks, Winifred Banks + ensemble",notes:"Flying involved for Mary. Strong soprano. Triple-threat Bert required.",date_posted:"2026-04-01",status:"active",tags:["musical","all ages","regional","disney","family"]},
-                {id:"d006",show_title:"The Lightning Thief",company:"Pumphouse Theatre",type:"musical",audition_date:"2026-06-20",closing_date:"2026-06-15",audition_location:"Pumphouse Theatre, Melbourne",region:"melbourne",submission_link:"https://www.trybooking.com/events/example",roles_available:"Percy Jackson, Annabeth Chase, Grover, Luke + ensemble",notes:"Young adult cast preferred (16–30). High energy pop-rock score.",date_posted:"2026-04-01",status:"active",tags:["musical","young adult","melbourne","pop-rock"]}
+                {id:"d006",show_title:"The Lightning Thief",company:"Pumphouse Theatre",type:"musical",audition_date:"2026-06-20",closing_date:"2026-06-15",audition_location:"Pumphouse Theatre, Melbourne",region:"melbourne",submission_link:"https://www.trybooking.com/events/example",roles_available:"Percy Jackson, Annabeth Chase, Grover, Luke + ensemble",notes:"Young adult cast preferred (16�30). High energy pop-rock score.",date_posted:"2026-04-01",status:"active",tags:["musical","young adult","melbourne","pop-rock"]}
             ];
         }
         render();

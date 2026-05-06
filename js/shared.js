@@ -554,7 +554,75 @@ document.addEventListener('DOMContentLoaded', () => {
  initLightbox();
  initScrollReveal();
  initFilterAccordion();
+ initNavScroll();
+ initCounters();
+ initActiveNavLink();
 });
+
+// ============================================
+// Nav Scroll Shrink
+// ============================================
+function initNavScroll() {
+ var nav = document.querySelector('nav');
+ if (!nav) return;
+ var ticking = false;
+ function onScroll() {
+  if (ticking) return;
+  ticking = true;
+  requestAnimationFrame(function() {
+   nav.classList.toggle('scrolled', window.scrollY > 60);
+   ticking = false;
+  });
+ }
+ window.addEventListener('scroll', onScroll, { passive: true });
+}
+
+// ============================================
+// Count-Up Animation
+// ============================================
+function initCounters() {
+ var counters = document.querySelectorAll('[data-count]');
+ if (!counters.length || !window.IntersectionObserver) return;
+ var io = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+   if (!entry.isIntersecting) return;
+   var el = entry.target;
+   var target = parseInt(el.getAttribute('data-count'), 10);
+   var duration = parseInt(el.getAttribute('data-count-duration') || '1500', 10);
+   var start = performance.now();
+   function tick(now) {
+    var elapsed = now - start;
+    var progress = Math.min(elapsed / duration, 1);
+    // ease-out cubic
+    var eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.round(target * eased);
+    if (progress < 1) {
+     requestAnimationFrame(tick);
+    } else {
+     el.textContent = target;
+    }
+   }
+   requestAnimationFrame(tick);
+   io.unobserve(el);
+  });
+ }, { threshold: 0.5 });
+ counters.forEach(function(el) { io.observe(el); });
+}
+
+// ============================================
+// Active Nav Link Highlighter
+// ============================================
+function initActiveNavLink() {
+ var path = window.location.pathname.replace(/\/$/, '');
+ var filename = path.split('/').pop() || 'index.html';
+ document.querySelectorAll('.nav-links a').forEach(function(link) {
+  var href = link.getAttribute('href') || '';
+  var linkFile = href.split('/').pop().replace(/^\.\.\//, '') || 'index.html';
+  if (linkFile === filename || (filename === '' && linkFile === 'index.html')) {
+   link.classList.add('active');
+  }
+ });
+}
 
 // ============================================
 // Filter Accordion

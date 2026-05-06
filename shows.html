@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,7 +34,7 @@
         .page-hero {
             padding: 120px 2rem 45px;
             text-align: center;
-            background: linear-gradient(180deg, rgba(102,126,234,0.12) 0%, transparent 100%);
+            background: linear-gradient(180deg, rgba(5,5,8,0.72) 0%, rgba(5,5,8,0.45) 100%), url('images/shows/hero-banner.jpg') center/cover no-repeat;
         }
         .page-hero h1 {
             font-family: 'Playfair Display', serif;
@@ -47,7 +47,7 @@
         }
         .page-hero p { color: var(--text-secondary); font-size: 1.05rem; max-width: 640px; margin: 0 auto; }
 
-        /* ── STATS ─────────────────────────────────── */
+        /* -- STATS ----------------------------------- */
         .stats-bar {
             display: flex;
             justify-content: center;
@@ -69,7 +69,7 @@
         }
         .stat-label { font-size: 0.75rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; margin-top: 0.2rem; }
 
-        /* ── CONTROLS ──────────────────────────────── */
+        /* -- CONTROLS -------------------------------- */
         .controls {
             max-width: 1200px;
             margin: 2rem auto 0;
@@ -111,7 +111,7 @@
         .filter-btn:hover { border-color: rgba(102,126,234,0.5); color: var(--text-primary); }
         .filter-btn.active { background: var(--gradient-primary); border-color: transparent; color: white; }
 
-        /* ── MONTH GROUPS ──────────────────────────── */
+        /* -- MONTH GROUPS ---------------------------- */
         .calendar-container {
             max-width: 1200px;
             margin: 2rem auto 3rem;
@@ -142,7 +142,7 @@
             gap: 16px;
         }
 
-        /* ── SHOW CARD ─────────────────────────────── */
+        /* -- SHOW CARD ------------------------------- */
         .show-card {
             background: var(--glass-bg);
             border: 1px solid var(--glass-border);
@@ -252,7 +252,7 @@
         .show-card.now-showing { border-color: rgba(39,174,96,0.4); }
         .badge-now { background: rgba(39,174,96,0.15); color: #27ae60; border: 1px solid rgba(39,174,96,0.3); padding: 3px 9px; border-radius: 20px; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; white-space: nowrap; }
 
-        /* ── SUBMIT SHOW CTA ───────────────────────── */
+        /* -- SUBMIT SHOW CTA ------------------------- */
         .submit-cta {
             max-width: 700px;
             margin: 0 auto 80px;
@@ -304,11 +304,11 @@
  <meta property="og:title" content="2026 Melbourne &amp; Victoria Theatre Calendar | iHeartTheatre">
  <meta property="og:description" content="The complete 2026 Melbourne and Victoria musical theatre calendar. Browse upcoming shows, filter by month, region and genre. Add shows to your calendar.">
  <meta property="og:url" content="https://ihearttheatre.com/shows.html">
- <meta property="og:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="2026 Melbourne &amp; Victoria Theatre Calendar | iHeartTheatre">
  <meta name="twitter:description" content="The complete 2026 Melbourne and Victoria musical theatre calendar. Browse upcoming shows, filter by month, region and genre. Add shows to your calendar.">
- <meta name="twitter:image" content="https://ihearttheatre.com/generated_images/hero-background.png">
+ <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 </head>
 <body>
     <div class="progress-bar" id="progressBar"></div>
@@ -323,11 +323,11 @@
     </nav>
 
     <section class="page-hero">
-        <h1>2026 Shows Calendar</h1>
-        <p>The complete Melbourne &amp; Victoria theatre calendar for 2026. Browse upcoming shows, add them to your calendar, and never miss a performance.</p>
+        <h1 data-reveal>2026 Shows Calendar</h1>
+        <p data-reveal data-reveal-delay="2">The complete Melbourne &amp; Victoria theatre calendar for 2026. Browse upcoming shows, add them to your calendar, and never miss a performance.</p>
     </section>
 
-    <div class="stats-bar">
+    <div class="stats-bar" data-reveal>
         <div class="stat"><div class="stat-number" id="stat-total"> - </div><div class="stat-label">Shows Listed</div></div>
         <div class="stat"><div class="stat-number" id="stat-upcoming"> - </div><div class="stat-label">Still Upcoming</div></div>
         <div class="stat"><div class="stat-number" id="stat-companies"> - </div><div class="stat-label">Companies</div></div>
@@ -337,7 +337,7 @@
     <div class="controls">
         <div class="search-wrap">
             <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
-            <input type="search" id="search-input" placeholder="Search shows, companies, venues, locations…" aria-label="Search shows">
+            <input type="search" id="search-input" placeholder="Search shows, companies, venues, locations�" aria-label="Search shows">
         </div>
         <button class="filter-accordion-header" data-target="shows-filters-body">Filters <span class="filter-acc-arrow">&#8964;</span></button>
         <div class="filter-accordion-body" id="shows-filters-body">
@@ -383,7 +383,7 @@
         <div class="submit-cta">
             <h2>Got a show on in 2026?</h2>
             <p>Producers and companies, get your production listed on the calendar for free so performers and theatre lovers can find you.</p>
-            <a href="mailto:contact@ihearttheatre.com?subject=Show%20Listing%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20our%20show%20on%20the%20calendar%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AVenue%3A%20%0ALocation%3A%20%0ADates%3A%20%0ATickets%3A%20%0A%0AThanks!" class="btn-cta">Submit Your Show →</a>
+            <a href="mailto:contact@ihearttheatre.com?subject=Show%20Listing%20%E2%80%94%20%5BShow%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20our%20show%20on%20the%20calendar%3A%0A%0AShow%3A%20%0ACompany%3A%20%0AVenue%3A%20%0ALocation%3A%20%0ADates%3A%20%0ATickets%3A%20%0A%0AThanks!" class="btn-cta">Submit Your Show ?</a>
         </div>
     </div>
 
@@ -430,8 +430,8 @@
         const e = end ? new Date(end) : null;
         const opts = { day:'numeric', month:'short' };
         if (!e || start === end) return s.toLocaleDateString('en-AU', {...opts, year:'numeric'});
-        if (s.getMonth() === e.getMonth()) return `${s.getDate()}–${e.toLocaleDateString('en-AU', {...opts, year:'numeric'})}`;
-        return `${s.toLocaleDateString('en-AU', opts)} – ${e.toLocaleDateString('en-AU', {...opts, year:'numeric'})}`;
+        if (s.getMonth() === e.getMonth()) return `${s.getDate()}�${e.toLocaleDateString('en-AU', {...opts, year:'numeric'})}`;
+        return `${s.toLocaleDateString('en-AU', opts)} � ${e.toLocaleDateString('en-AU', {...opts, year:'numeric'})}`;
     }
 
     function getProdType(show) {
@@ -478,7 +478,7 @@
         if (!show) return;
         const summary = { id: show.id, title: show.show_title, company: show.company, venue: show.venue, location: show.location, date_start: show.date_start, date_end: show.date_end };
         const saved = iHT.toggle('show', id, summary);
-        btn.innerHTML = saved ? '♥' : '♡';
+        btn.innerHTML = saved ? '?' : '?';
         btn.title = saved ? 'Saved - click to unsave' : 'Save this show';
         btn.classList.toggle('saved', saved);
     }
@@ -607,7 +607,7 @@
         render();
     }
 
-    // ── EVENT LISTENERS ────────────────────────────────
+    // -- EVENT LISTENERS --------------------------------
     document.getElementById('search-input').addEventListener('input', render);
     document.getElementById('showPast').addEventListener('change', function() {
         showPast = this.checked;

@@ -1,0 +1,20 @@
+site: .
+output_subdir: _pagefind
+glob: "**/*.html"
+
+exclude_selectors:
+  - "nav"
+  - "footer"
+  - ".hamburger"
+  - ".progress-bar"
+  - ".progress-fill"
+  - ".scroll-top"
+  - "#particles-js"
+  - ".confetti-canvas"
+  - ".nav-container"
+  - ".nav-links"
+  - ".achievement-toast"
+  - ".iht-update-toast"
+  - ".footer-bottom"
+  - ".footer-content"
+  - ".footer-links"

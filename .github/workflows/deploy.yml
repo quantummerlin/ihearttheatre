@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build search index
+        run: npx -y pagefind@1.5.2
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

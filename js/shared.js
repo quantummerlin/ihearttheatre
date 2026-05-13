@@ -844,3 +844,12 @@ function _iHTShowEmailFallbackModal(opts) {
  modal.classList.add('efm-open');
 }
 
+// ============================================
+// Site-wide Search (Cmd-K modal, Pagefind)
+// ============================================
+(function() {
+  var s = document.createElement('script');
+  s.src = '/js/search.js';
+  s.defer = true;
+  document.head.appendChild(s);
+})();

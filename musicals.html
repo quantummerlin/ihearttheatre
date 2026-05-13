@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Role guides for 22 musicals, find your perfect role, hear audition song suggestions, and understand what directors are looking for.">
+<meta name="description" content="Find your perfect musical theatre role. Search and filter 30 musicals and 270+ roles by voice type, dance level, difficulty, and more. Audition song suggestions and casting insights for every role.">
 <meta name="theme-color" content="#667eea">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Musical Role Guides - iHeartTheatre</title>
+<title>Role Finder — iHeartTheatre</title>
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/icon-192x192.png">
 <link rel="stylesheet" href="css/shared.css?v=202604150813">
@@ -99,6 +99,36 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     white-space: nowrap;
 }
 .pill.active, .pill:hover { background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25)); border-color: var(--accent-primary); color: var(--text-primary); }
+
+/* Filter bar */
+.filter-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filter-select {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 8px 32px 8px 12px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23a0a0b0' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+.filter-select:focus, .filter-select:hover { border-color: var(--accent-primary); color: var(--text-primary); }
+.filter-select.has-value { border-color: var(--accent-primary); color: var(--accent-primary); background-color: rgba(102,126,234,0.08); }
+.filter-select option { background: #1a1a2e; color: var(--text-primary); }
+.results-count {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-left: auto;
+    white-space: nowrap;
+}
 
 /* Musicals grid */
 .musicals-grid {
@@ -362,7 +392,8 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 /* Mobile */
 @media (max-width: 600px) {
     .controls { flex-direction: column; }
-    .filter-pills { display: grid; grid-template-columns: 1fr 1fr; }
+    .filter-bar { display: grid; grid-template-columns: 1fr 1fr; }
+    .filter-bar .results-count { grid-column: 1 / -1; text-align: center; margin-left: 0; }
     .musicals-grid { grid-template-columns: 1fr; padding: 0 12px 40px; }
 }
 </style>
@@ -379,13 +410,13 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
  <meta name="robots" content="index, follow">
  <meta property="og:type" content="website">
  <meta property="og:site_name" content="iHeartTheatre">
- <meta property="og:title" content="Musical Role Guides - iHeartTheatre">
- <meta property="og:description" content="Role guides for 22 musicals, find your perfect role, hear audition song suggestions, and understand what directors are looking for.">
+ <meta property="og:title" content="Role Finder — iHeartTheatre">
+ <meta property="og:description" content="Find your perfect musical theatre role. Search and filter 30 musicals and 270+ roles by voice type, dance level, difficulty, and more.">
  <meta property="og:url" content="https://ihearttheatre.com/musicals.html">
  <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
  <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:title" content="Musical Role Guides - iHeartTheatre">
- <meta name="twitter:description" content="Role guides for 22 musicals, find your perfect role, hear audition song suggestions, and understand what directors are looking for.">
+ <meta name="twitter:title" content="Role Finder — iHeartTheatre">
+ <meta name="twitter:description" content="Find your perfect musical theatre role. Search and filter 30 musicals and 270+ roles by voice type, dance level, difficulty, and more.">
  <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 </head>
 <body>
@@ -410,24 +441,40 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 </nav>
 
 <div class="page-hero">
-  <div class="page-badge" data-reveal>22 Musicals</div>
-  <h1 data-reveal data-reveal-delay="1">Musical Role Guides</h1>
-  <p data-reveal data-reveal-delay="2">Every role is yours to discover. Explore what each character needs, what directors love to see, and exactly which songs to bring to your audition.</p>
+  <div class="page-badge" id="hero-badge" data-reveal>Role Finder</div>
+  <h1 data-reveal data-reveal-delay="1">Find Your Role</h1>
+  <p data-reveal data-reveal-delay="2">Search 30 musicals and 270+ roles by voice type, dance level, and difficulty. Every role includes audition song suggestions, casting insights, and what directors love to see.</p>
 </div>
 
 <div class="controls">
   <div class="search-wrap">
-    <input type="search" id="search-input" placeholder="Search musical title, composer, style�" autocomplete="off">
+    <input type="search" id="search-input" placeholder="Search by title, composer, genre, vocal style…" autocomplete="off">
   </div>
-  <div class="filter-pills" id="filter-pills">
-    <button class="pill active" data-filter="all">All Musicals</button>
+  <div class="filter-bar" id="filter-bar">
+    <select class="filter-select" id="filter-dance" aria-label="Filter by dance level">
+      <option value="">Dance Level</option>
+      <option value="low">Low / Light</option>
+      <option value="moderate">Moderate</option>
+      <option value="high">High</option>
+      <option value="very_high">Very High</option>
+    </select>
+    <select class="filter-select" id="filter-difficulty" aria-label="Filter by difficulty">
+      <option value="">Difficulty</option>
+      <option value="beginner">Beginner</option>
+      <option value="intermediate">Intermediate</option>
+      <option value="advanced">Advanced</option>
+      <option value="expert">Expert+</option>
+    </select>
+    <button class="pill" id="filter-junior" aria-label="Toggle junior shows only">Junior Shows</button>
+    <button class="pill" id="filter-auditions" aria-label="Toggle open auditions only">Open Auditions</button>
+    <span class="results-count" id="results-count"></span>
   </div>
 </div>
 
 <div class="musicals-grid" id="musicals-grid">
   <div class="loading-spinner" style="grid-column:1/-1;">
     <div class="spinner"></div>
-    <span>Loading role guides�</span>
+    <span>Loading roles…</span>
   </div>
 </div>
 
@@ -455,7 +502,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
       <a href="auditions.html">Auditions</a>
       <a href="venues.html">Venues</a>
       <a href="reviews.html">Reviews</a>
-      <a href="musicals.html">Musicals</a>
+      <a href="musicals.html">Role Finder</a>
       <a href="career-builder.html">Career Builder</a>
       <a href="about.html">About</a>
       <a href="privacy.html">Privacy</a>
@@ -472,7 +519,6 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 <script>
 (function() {
     var allMusicals = [];
-    var activeFilter = 'all';
     var AUDITION_SONGS = {};
     var OPEN_AUDITION_TITLES = new Set();
 
@@ -557,25 +603,76 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         </div>`;
     }
 
+    function normDance(d) {
+        if (!d) return '';
+        d = d.toLowerCase().replace(/[\s\-]/g, '_');
+        if (d === 'very_high') return 'very_high';
+        if (d === 'high' || d === 'choreography_heavy') return 'high';
+        if (d === 'moderate_to_high' || d === 'intermediate_to_advanced') return 'high';
+        if (d === 'moderate' || d === 'medium' || d === 'light_to_moderate' || d === 'low_to_moderate') return 'moderate';
+        return 'low'; // low, light, minimal, none
+    }
+
+    function normDiff(d) {
+        if (!d) return '';
+        d = d.toLowerCase();
+        if (d.includes('expert')) return 'expert';
+        if (d.includes('advanced')) return 'advanced';
+        if (d.includes('intermediate')) return 'intermediate';
+        if (d.includes('beginner')) return 'beginner';
+        return '';
+    }
+
     function getFiltered() {
-        const q = document.getElementById('search-input').value.toLowerCase().trim();
-        return allMusicals.filter(m => {
+        var q = document.getElementById('search-input').value.toLowerCase().trim();
+        var danceVal = document.getElementById('filter-dance').value;
+        var diffVal = document.getElementById('filter-difficulty').value;
+        var juniorOn = document.getElementById('filter-junior').classList.contains('active');
+        var auditionsOn = document.getElementById('filter-auditions').classList.contains('active');
+
+        return allMusicals.filter(function(m) {
+            // Text search
             if (q) {
-                const s = [m.title, m.music_by, (m.genre_tags||[]).join(' '), m.vocal_style].join(' ').toLowerCase();
-                return s.includes(q);
+                var s = [m.title, m.music_by, (m.genre_tags||[]).join(' '), m.vocal_style, m.difficulty_overall, m.dance_intensity].join(' ').toLowerCase();
+                if (!s.includes(q)) return false;
             }
+            // Dance level filter
+            if (danceVal && normDance(m.dance_intensity) !== danceVal) return false;
+            // Difficulty filter
+            if (diffVal) {
+                var nd = normDiff(m.difficulty_overall);
+                if (diffVal === 'expert') { if (nd !== 'expert') return false; }
+                else if (diffVal === 'advanced') { if (nd !== 'advanced' && nd !== 'expert') return false; }
+                else if (diffVal === 'intermediate') { if (nd !== 'intermediate') return false; }
+                else if (diffVal === 'beginner') { if (nd !== 'beginner') return false; }
+            }
+            // Junior shows toggle
+            if (juniorOn && !m.junior_version_available) return false;
+            // Open auditions toggle
+            if (auditionsOn && !OPEN_AUDITION_TITLES.has(normalizeTitle(m.title))) return false;
             return true;
         });
     }
 
+    function updateResultsCount() {
+        var filtered = getFiltered();
+        var el = document.getElementById('results-count');
+        if (filtered.length === allMusicals.length) {
+            el.textContent = allMusicals.length + ' musicals';
+        } else {
+            el.textContent = filtered.length + ' of ' + allMusicals.length;
+        }
+    }
+
     function render() {
-        const grid = document.getElementById('musicals-grid');
-        const filtered = getFiltered();
+        var grid = document.getElementById('musicals-grid');
+        var filtered = getFiltered();
+        updateResultsCount();
         if (!filtered.length) {
-            grid.innerHTML = '<div class="no-results"><p>No musicals found matching your search.</p></div>';
+            grid.innerHTML = '<div class="no-results"><p>No musicals match your current filters. Try broadening your search.</p></div>';
             return;
         }
-        grid.innerHTML = filtered.map((m, i) => renderMusicalCard(m, i)).join('');
+        grid.innerHTML = filtered.map(function(m, i) { return renderMusicalCard(m, i); }).join('');
         // Observe newly rendered cards for scroll reveal
         if (window.iHTReveal) {
             grid.querySelectorAll('[data-reveal]').forEach(function(el) { window.iHTReveal.observe(el); });
@@ -798,13 +895,23 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         document.body.style.overflow = '';
     }
 
-    // Filter pills
-    document.getElementById('filter-pills').addEventListener('click', function(e) {
-        var pill = e.target.closest('.pill');
-        if (!pill) return;
-        document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-        activeFilter = pill.dataset.filter;
+    // Filter dropdowns
+    document.getElementById('filter-dance').addEventListener('change', function() {
+        this.classList.toggle('has-value', !!this.value);
+        render();
+    });
+    document.getElementById('filter-difficulty').addEventListener('change', function() {
+        this.classList.toggle('has-value', !!this.value);
+        render();
+    });
+
+    // Toggle pill filters
+    document.getElementById('filter-junior').addEventListener('click', function() {
+        this.classList.toggle('active');
+        render();
+    });
+    document.getElementById('filter-auditions').addEventListener('click', function() {
+        this.classList.toggle('active');
         render();
     });
 
@@ -837,7 +944,10 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
         .then(r => r.json())
         .then(data => {
             allMusicals = Array.isArray(data) ? data : [];
-            allMusicals.sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+            allMusicals.sort(function(a, b) { return (a.title || '').localeCompare(b.title || ''); });
+            // Update hero badge with actual count
+            var badge = document.getElementById('hero-badge');
+            if (badge) badge.textContent = allMusicals.length + ' Musicals · Role Finder';
             render();
             // Handle URL deep-links from career-builder.html
             var params = new URLSearchParams(window.location.search);

@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audition Songs Browser — iHeartTheatre</title>
+<meta name="description" content="Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type to find the perfect piece for your next audition.">
+<meta property="og:title" content="Audition Songs Browser — iHeartTheatre">
+<meta property="og:description" content="Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type to find the perfect piece for your next audition.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ihearttheatre.com/songs.html">
+<link rel="canonical" href="https://ihearttheatre.com/songs.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RS9LV72HK8');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Audition Songs Browser — iHeartTheatre",
+  "description": "Browse 760 curated audition song suggestions across 23 musicals.",
+  "url": "https://ihearttheatre.com/songs.html"
+}
+</script>
+<style>
+:root {
+  --bg-primary: #050508;
+  --bg-secondary: #0a0a0f;
+  --bg-tertiary: #12121a;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a0a0b0;
+  --accent-primary: #667eea;
+  --accent-secondary: #764ba2;
+  --accent-gold: #ffd700;
+  --glass-bg: rgba(255,255,255,0.03);
+  --glass-border: rgba(255,255,255,0.08);
+}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Navigation ── */
+.site-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: rgba(5,5,8,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--glass-border);
+}
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--text-primary); }
+.nav-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+/* ── Hero ── */
+.hero {
+  padding: 140px 2rem 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(102,126,234,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block;
+  padding: 0.375rem 1rem;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  border: 1px solid rgba(255,215,0,0.25);
+  background: rgba(255,215,0,0.06);
+  margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero p {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* ── Controls ── */
+.controls-section {
+  max-width: 1200px;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+}
+.controls-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.search-wrap {
+  position: relative;
+  flex: 1 1 280px;
+  min-width: 220px;
+}
+.search-wrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--text-secondary);
+  pointer-events: none;
+}
+.search-wrap input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-primary);
+  font-size: 0.9375rem;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.search-wrap input::placeholder { color: var(--text-secondary); opacity: 0.6; }
+.search-wrap input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.15);
+}
+.filter-select {
+  padding: 0.75rem 2.25rem 0.75rem 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' stroke='%23a0a0b0' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  transition: border-color 0.2s;
+}
+.filter-select:focus {
+  border-color: var(--accent-primary);
+}
+.filter-select option {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* ── Type Pills ── */
+.type-pills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.type-pill {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  user-select: none;
+}
+.type-pill:hover {
+  border-color: rgba(255,255,255,0.15);
+  color: var(--text-primary);
+}
+.type-pill.active-gold {
+  background: rgba(255,215,0,0.12);
+  border-color: rgba(255,215,0,0.35);
+  color: var(--accent-gold);
+}
+.type-pill.active-purple {
+  background: rgba(118,75,162,0.15);
+  border-color: rgba(118,75,162,0.4);
+  color: #b48ce8;
+}
+.type-pill.active-teal {
+  background: rgba(45,212,191,0.1);
+  border-color: rgba(45,212,191,0.35);
+  color: #2dd4bf;
+}
+.results-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-bottom: 0.5rem;
+}
+.results-count {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+.results-count span {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ── Musical Group Sections ── */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+.musical-group {
+  margin-bottom: 3rem;
+}
+.musical-group.hidden { display: none; }
+.musical-group-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+.musical-group-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.musical-group-meta {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+}
+.role-section {
+  margin-bottom: 2rem;
+}
+.role-section.hidden { display: none; }
+.role-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.role-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.role-guidance {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  padding-left: 0.25rem;
+  font-style: italic;
+}
+.songs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
+}
+
+/* ── Song Card ── */
+.song-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+  display: flex;
+  flex-direction: column;
+}
+.song-card:hover {
+  border-color: rgba(102,126,234,0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+.song-card.hidden { display: none; }
+.song-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.625rem;
+}
+.song-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+.type-badge {
+  flex-shrink: 0;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.type-badge.same_show {
+  background: rgba(255,215,0,0.12);
+  color: var(--accent-gold);
+  border: 1px solid rgba(255,215,0,0.25);
+}
+.type-badge.style_match {
+  background: rgba(118,75,162,0.15);
+  color: #b48ce8;
+  border: 1px solid rgba(118,75,162,0.3);
+}
+.type-badge.contrasting {
+  background: rgba(45,212,191,0.1);
+  color: #2dd4bf;
+  border: 1px solid rgba(45,212,191,0.25);
+}
+.song-source {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+.song-source em {
+  font-style: italic;
+  color: #c0c0d0;
+}
+.song-why {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  flex: 1;
+  margin-bottom: 0.875rem;
+}
+.song-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--glass-border);
+  flex-wrap: wrap;
+}
+.song-suggested-for {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+.song-suggested-for strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.role-finder-link {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+.role-finder-link:hover {
+  color: #8ea3f5;
+}
+
+/* ── Loading ── */
+.loading-state {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--glass-border);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.loading-text {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+.error-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #ef4444;
+}
+
+/* ── No Results ── */
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  display: none;
+}
+.no-results-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+.no-results h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+.no-results p {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+}
+.clear-filters-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent-primary);
+  background: transparent;
+  color: var(--accent-primary);
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.clear-filters-btn:hover {
+  background: var(--accent-primary);
+  color: #fff;
+}
+
+/* ── Footer ── */
+.site-footer {
+  border-top: 1px solid var(--glass-border);
+  padding: 3rem 2rem 2rem;
+  text-align: center;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.footer-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  transition: color 0.2s;
+}
+.footer-links a:hover { color: var(--text-primary); }
+.site-footer p {
+  color: var(--text-secondary);
+  font-size: 0.8125rem;
+  opacity: 0.6;
+}
+
+/* ── Back to Top ── */
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--accent-primary);
+  color: #fff;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+  box-shadow: 0 4px 20px rgba(102,126,234,0.3);
+  z-index: 900;
+}
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+.back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 28px rgba(102,126,234,0.45);
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-hamburger { display: block; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: rgba(5,5,8,0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--glass-border);
+    padding: 1rem 2rem 1.5rem;
+    gap: 0.75rem;
+  }
+  .hero { padding: 120px 1.25rem 40px; }
+  .hero h1 { font-size: 2.25rem; }
+  .hero p { font-size: 1rem; }
+  .controls-section { padding: 0 1.25rem; }
+  .controls-bar { flex-direction: column; align-items: stretch; }
+  .search-wrap { flex: 1 1 auto; min-width: auto; }
+  .filter-select { width: 100%; }
+  .type-pills { justify-content: center; }
+  .main-content { padding: 0 1.25rem 3rem; }
+  .songs-grid { grid-template-columns: 1fr; }
+  .musical-group-header { flex-direction: column; gap: 0.25rem; }
+  .site-nav { padding: 0 1.25rem; }
+  .site-footer { padding: 2rem 1.25rem 1.5rem; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.875rem; }
+  .song-card { padding: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/" class="nav-logo">iHeartTheatre</a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/whats-on.html">What's On</a>
+    <a href="/companies.html">Venues</a>
+    <a href="/auditions.html">Auditions</a>
+    <a href="/junior-kids-schools.html">Junior & Kids</a>
+    <a href="/reviews/">Reviews</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Menu">&#9776;</button>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">AUDITION PREP</div>
+  <h1>Find Your Song</h1>
+  <p>Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type to find the perfect piece for your next audition.</p>
+</section>
+
+<section class="controls-section">
+  <div class="controls-bar">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="searchInput" placeholder="Search songs, shows, composers, roles...">
+    </div>
+    <select id="musicalFilter" class="filter-select" aria-label="Filter by musical">
+      <option value="">All Musicals</option>
+    </select>
+    <select id="composerFilter" class="filter-select" aria-label="Filter by composer">
+      <option value="">All Composers</option>
+    </select>
+  </div>
+  <div class="type-pills">
+    <button class="type-pill" data-type="all">All Types</button>
+    <button class="type-pill" data-type="same_show">Same Show</button>
+    <button class="type-pill" data-type="style_match">Style Match</button>
+    <button class="type-pill" data-type="contrasting">Contrasting</button>
+  </div>
+  <div class="results-meta">
+    <div class="results-count" id="resultsCount"></div>
+  </div>
+</section>
+
+<main class="main-content" id="mainContent">
+  <div class="loading-state" id="loadingState">
+    <div class="loading-spinner"></div>
+    <div class="loading-text">Loading audition songs&hellip;</div>
+  </div>
+  <div class="error-state" id="errorState" style="display:none;"></div>
+  <div id="songsContainer"></div>
+  <div class="no-results" id="noResults">
+    <div class="no-results-icon">&#9835;</div>
+    <h3>No songs found</h3>
+    <p>Try adjusting your search or filters to find what you're looking for.</p>
+    <button class="clear-filters-btn" id="clearFiltersBtn">Clear all filters</button>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/whats-on.html">What's On</a>
+    <a href="/auditions.html">Auditions</a>
+    <a href="/companies.html">Venues</a>
+    <a href="/reviews/">Reviews</a>
+    <a href="/musicals.html">Role Finder</a>
+    <a href="/career-builder.html">Career Builder</a>
+    <a href="/about.html">About</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/disclaimer.html">Disclaimer</a>
+    <a href="/contact.html">Contact</a>
+  </div>
+  <p>&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
+</footer>
+
+<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</a>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ── State ── */
+  let allData = null;
+  let activeType = 'all';
+  let searchQuery = '';
+  let selectedMusical = '';
+  let selectedComposer = '';
+  let debounceTimer = null;
+
+  /* ── DOM refs ── */
+  const searchInput = document.getElementById('searchInput');
+  const musicalFilter = document.getElementById('musicalFilter');
+  const composerFilter = document.getElementById('composerFilter');
+  const songsContainer = document.getElementById('songsContainer');
+  const loadingState = document.getElementById('loadingState');
+  const errorState = document.getElementById('errorState');
+  const noResults = document.getElementById('noResults');
+  const resultsCount = document.getElementById('resultsCount');
+  const clearFiltersBtn = document.getElementById('clearFiltersBtn');
+  const typePills = document.querySelectorAll('.type-pill');
+  const backToTop = document.getElementById('backToTop');
+
+  /* ── Hamburger ── */
+  const hamburger = document.querySelector('.nav-hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  hamburger.addEventListener('click', function() {
+    navLinks.classList.toggle('open');
+  });
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.site-nav')) {
+      navLinks.classList.remove('open');
+    }
+  });
+
+  /* ── Back to Top ── */
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 600) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  }, { passive: true });
+
+  /* ── Type badge labels ── */
+  var typeLabels = {
+    same_show: 'Same Show',
+    style_match: 'Style Match',
+    contrasting: 'Contrasting'
+  };
+
+  /* ── Escape HTML ── */
+  function esc(str) {
+    var d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  /* ── Parse + group data ── */
+  function parseData(raw) {
+    var songs = raw.songs;
+    var musicals = {};
+    var composerSet = {};
+
+    Object.keys(songs).forEach(function(key) {
+      var parts = key.split('/');
+      var musicalId = parts[0];
+      var roleId = parts[1];
+      var entry = songs[key];
+
+      if (!musicals[musicalId]) {
+        musicals[musicalId] = {
+          id: musicalId,
+          name: entry.musical,
+          roles: []
+        };
+      }
+
+      var role = {
+        id: roleId,
+        name: entry.role_name,
+        musicalId: musicalId,
+        musicalName: entry.musical,
+        styleGuidance: entry.style_guidance || '',
+        avoid: entry.avoid || [],
+        songs: []
+      };
+
+      entry.songs_to_prepare.forEach(function(s) {
+        var songObj = {
+          title: s.title,
+          from: s.from,
+          composer: s.composer,
+          why: s.why,
+          type: s.type,
+          roleName: entry.role_name,
+          musicalName: entry.musical,
+          musicalId: musicalId,
+          roleId: roleId
+        };
+        role.songs.push(songObj);
+        composerSet[s.composer] = (composerSet[s.composer] || 0) + 1;
+      });
+
+      musicals[musicalId].roles.push(role);
+    });
+
+    /* Sort musicals alphabetically */
+    var sortedMusicals = Object.keys(musicals).sort(function(a, b) {
+      return musicals[a].name.localeCompare(musicals[b].name);
+    }).map(function(k) { return musicals[k]; });
+
+    /* Sort composers by frequency */
+    var sortedComposers = Object.keys(composerSet).sort(function(a, b) {
+      return composerSet[b] - composerSet[a];
+    });
+
+    return { musicals: sortedMusicals, composers: sortedComposers };
+  }
+
+  /* ── Populate filter dropdowns ── */
+  function populateFilters(data) {
+    data.musicals.forEach(function(m) {
+      var opt = document.createElement('option');
+      opt.value = m.id;
+      opt.textContent = m.name;
+      musicalFilter.appendChild(opt);
+    });
+
+    data.composers.forEach(function(c) {
+      var opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = c;
+      composerFilter.appendChild(opt);
+    });
+  }
+
+  /* ── Render all musicals ── */
+  function renderAll(data) {
+    var html = '';
+    data.musicals.forEach(function(musical) {
+      var totalSongs = 0;
+      musical.roles.forEach(function(r) { totalSongs += r.songs.length; });
+
+      html += '<div class="musical-group" data-musical-id="' + esc(musical.id) + '">';
+      html += '<div class="musical-group-header">';
+      html += '<div class="musical-group-title">' + esc(musical.name) + '</div>';
+      html += '<div class="musical-group-meta">' + musical.roles.length + ' roles &middot; ' + totalSongs + ' songs</div>';
+      html += '</div>';
+
+      musical.roles.forEach(function(role) {
+        html += '<div class="role-section" data-role-id="' + esc(role.id) + '" data-musical-id="' + esc(role.musicalId) + '">';
+        html += '<div class="role-header">';
+        html += '<div class="role-name">' + esc(role.name) + '</div>';
+        html += '</div>';
+        if (role.styleGuidance) {
+          html += '<div class="role-guidance">' + esc(role.styleGuidance) + '</div>';
+        }
+        html += '<div class="songs-grid">';
+
+        role.songs.forEach(function(song) {
+          var searchable = (song.title + ' ' + song.from + ' ' + song.composer + ' ' + song.why + ' ' + song.roleName + ' ' + song.musicalName).toLowerCase();
+          html += '<div class="song-card" data-type="' + esc(song.type) + '" data-composer="' + esc(song.composer) + '" data-musical="' + esc(song.musicalId) + '" data-search="' + esc(searchable) + '">';
+          html += '<div class="song-card-top">';
+          html += '<div class="song-title">' + esc(song.title) + '</div>';
+          html += '<span class="type-badge ' + esc(song.type) + '">' + esc(typeLabels[song.type] || song.type) + '</span>';
+          html += '</div>';
+          html += '<div class="song-source">from <em>' + esc(song.from) + '</em> by ' + esc(song.composer) + '</div>';
+          html += '<div class="song-why">' + esc(song.why) + '</div>';
+          html += '<div class="song-card-footer">';
+          html += '<div class="song-suggested-for">Suggested for <strong>' + esc(song.roleName) + '</strong> in ' + esc(song.musicalName) + '</div>';
+          html += '<a href="/musicals.html?open=' + encodeURIComponent(song.musicalId) + '&role=' + encodeURIComponent(song.roleId) + '" class="role-finder-link">View in Role Finder &rarr;</a>';
+          html += '</div>';
+          html += '</div>';
+        });
+
+        html += '</div>'; /* songs-grid */
+        html += '</div>'; /* role-section */
+      });
+
+      html += '</div>'; /* musical-group */
+    });
+    songsContainer.innerHTML = html;
+  }
+
+  /* ── Apply filters ── */
+  function applyFilters() {
+    var q = searchQuery.toLowerCase().trim();
+    var visibleSongs = 0;
+    var visibleMusicals = 0;
+
+    var musicalGroups = songsContainer.querySelectorAll('.musical-group');
+    musicalGroups.forEach(function(group) {
+      var groupMusicalId = group.getAttribute('data-musical-id');
+      var groupHasVisible = false;
+
+      /* Musical filter: skip entire group */
+      if (selectedMusical && groupMusicalId !== selectedMusical) {
+        group.classList.add('hidden');
+        return;
+      }
+
+      var roleSections = group.querySelectorAll('.role-section');
+      roleSections.forEach(function(roleSection) {
+        var roleHasVisible = false;
+        var cards = roleSection.querySelectorAll('.song-card');
+
+        cards.forEach(function(card) {
+          var show = true;
+
+          /* Type filter */
+          if (activeType !== 'all' && card.getAttribute('data-type') !== activeType) {
+            show = false;
+          }
+
+          /* Composer filter */
+          if (show && selectedComposer && card.getAttribute('data-composer') !== selectedComposer) {
+            show = false;
+          }
+
+          /* Search filter */
+          if (show && q) {
+            var tokens = q.split(/\s+/);
+            var searchText = card.getAttribute('data-search');
+            for (var i = 0; i < tokens.length; i++) {
+              if (searchText.indexOf(tokens[i]) === -1) {
+                show = false;
+                break;
+              }
+            }
+          }
+
+          if (show) {
+            card.classList.remove('hidden');
+            visibleSongs++;
+            roleHasVisible = true;
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+
+        if (roleHasVisible) {
+          roleSection.classList.remove('hidden');
+          groupHasVisible = true;
+        } else {
+          roleSection.classList.add('hidden');
+        }
+      });
+
+      if (groupHasVisible) {
+        group.classList.remove('hidden');
+        visibleMusicals++;
+      } else {
+        group.classList.add('hidden');
+      }
+    });
+
+    /* Update count */
+    var totalSongs = songsContainer.querySelectorAll('.song-card').length;
+    if (q || selectedMusical || selectedComposer || activeType !== 'all') {
+      resultsCount.innerHTML = 'Showing <span>' + visibleSongs + '</span> of ' + totalSongs + ' songs across <span>' + visibleMusicals + '</span> musicals';
+    } else {
+      resultsCount.innerHTML = '<span>' + totalSongs + '</span> songs across <span>' + visibleMusicals + '</span> musicals';
+    }
+
+    /* No results state */
+    if (visibleSongs === 0) {
+      noResults.style.display = 'block';
+    } else {
+      noResults.style.display = 'none';
+    }
+  }
+
+  /* ── Clear all filters ── */
+  function clearAllFilters() {
+    searchInput.value = '';
+    searchQuery = '';
+    musicalFilter.value = '';
+    selectedMusical = '';
+    composerFilter.value = '';
+    selectedComposer = '';
+    activeType = 'all';
+    updatePillUI();
+    applyFilters();
+  }
+
+  /* ── Pill UI ── */
+  function updatePillUI() {
+    typePills.forEach(function(pill) {
+      var t = pill.getAttribute('data-type');
+      pill.className = 'type-pill';
+      if (t === activeType || (t === 'all' && activeType === 'all')) {
+        if (t === 'same_show') pill.classList.add('active-gold');
+        else if (t === 'style_match') pill.classList.add('active-purple');
+        else if (t === 'contrasting') pill.classList.add('active-teal');
+        else pill.classList.add('active-purple'); /* 'all' gets accent */
+      }
+    });
+  }
+
+  /* ── Event listeners ── */
+  searchInput.addEventListener('input', function() {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(function() {
+      searchQuery = searchInput.value;
+      applyFilters();
+    }, 200);
+  });
+
+  musicalFilter.addEventListener('change', function() {
+    selectedMusical = this.value;
+    applyFilters();
+  });
+
+  composerFilter.addEventListener('change', function() {
+    selectedComposer = this.value;
+    applyFilters();
+  });
+
+  typePills.forEach(function(pill) {
+    pill.addEventListener('click', function() {
+      activeType = this.getAttribute('data-type');
+      updatePillUI();
+      applyFilters();
+    });
+  });
+
+  clearFiltersBtn.addEventListener('click', clearAllFilters);
+
+  /* ── Initial active pill ── */
+  updatePillUI();
+
+  /* ── Fetch and render ── */
+  fetch('/data/audition-songs.json')
+    .then(function(res) {
+      if (!res.ok) throw new Error('Failed to load song data (HTTP ' + res.status + ')');
+      return res.json();
+    })
+    .then(function(raw) {
+      allData = parseData(raw);
+      loadingState.style.display = 'none';
+      populateFilters(allData);
+      renderAll(allData);
+      applyFilters();
+
+      /* Check URL params for pre-filter */
+      var params = new URLSearchParams(window.location.search);
+      if (params.get('musical')) {
+        musicalFilter.value = params.get('musical');
+        selectedMusical = params.get('musical');
+        applyFilters();
+      }
+      if (params.get('type')) {
+        activeType = params.get('type');
+        updatePillUI();
+        applyFilters();
+      }
+    })
+    .catch(function(err) {
+      loadingState.style.display = 'none';
+      errorState.style.display = 'block';
+      errorState.textContent = 'Could not load audition songs. ' + err.message;
+    });
+})();
+</script>
+</body>
+</html>

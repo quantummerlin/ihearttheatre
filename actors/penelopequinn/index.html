@@ -287,6 +287,63 @@
                 padding: 12px;
             }
         }
+
+        /* Story */
+        .story-body {
+            max-width: 720px;
+            margin: 0 auto;
+            color: rgba(255, 255, 255, 0.82);
+            font-size: 1.05rem;
+            line-height: 1.85;
+        }
+        .story-body p {
+            margin-bottom: 1.4rem;
+        }
+        .story-body em {
+            color: rgba(255, 255, 255, 0.95);
+            font-style: italic;
+        }
+        .story-chapter {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--actor-primary);
+            margin: 2.6rem 0 1rem;
+            letter-spacing: -0.005em;
+        }
+        .story-chapter:first-child {
+            margin-top: 0;
+        }
+        .story-pull {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(1.6rem, 3vw, 2.1rem);
+            font-weight: 500;
+            font-style: italic;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.95);
+            margin: 2rem auto;
+            padding: 1.4rem 2rem;
+            border-left: 3px solid var(--actor-primary);
+            border-right: 3px solid var(--actor-primary);
+            max-width: 580px;
+            line-height: 1.3;
+        }
+        .story-closing {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.7);
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+            padding-top: 1.4rem;
+            margin-top: 2.4rem;
+            font-size: 1rem;
+        }
+        @media (max-width: 700px) {
+            .story-pull {
+                font-size: 1.3rem;
+                padding: 1rem 1.2rem;
+                border-left-width: 2px;
+                border-right-width: 2px;
+            }
+        }
     </style>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
@@ -327,13 +384,67 @@
         <div class="actor-title">Theatre Reviewer & Young Performer</div>
         <div class="actor-location"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;opacity:0.6"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Melbourne, Victoria</div>
         <p class="actor-bio-short">
-            Hi! I'm Penelope and I'm 7 years old. I love going to the theatre and writing about the shows I see. 
-            My favourite musicals are Into The Woods and The Little Mermaid. I want to be on stage one day!
+            Hi! I'm Penelope. I love going to the theatre and writing about the shows I see.
+            My favourite musicals are Into The Woods and The Little Mermaid — and I want to be on stage as much as I can. Scroll down for my whole story.
         </p>
         <div class="actor-social">
             <a href="#" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
             <a href="mailto:penelope@ihearttheatre.com" title="Email"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
             <a href="../../index.html" title="iHeartTheatre"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></a>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         MY STORY — long-form narrative
+    ═══════════════════════════════════════════════════ -->
+    <section class="actor-section" id="story">
+        <h2 class="actor-section-title">My Story</h2>
+
+        <div class="story-body">
+
+            <h3 class="story-chapter">Nonna's Legacy</h3>
+            <p>It all began with Penelope's Nonna, whose love for the stage was woven through her entire life. From cinema trips as a teenager with her sister, to later taking Penelope's mum to shows across Melbourne, theatre was always close to her heart. And when Penelope began to show that same spark, Nonna delighted in sharing that world with her.</p>
+            <p>One of the last shows they experienced together was an operatic version of <em>The Wizard of Oz</em>. For a very young Penelope, it was pure magic.</p>
+            <p>Not long after, Nonna passed away.</p>
+
+            <h3 class="story-chapter">A Return to Oz</h3>
+            <p>Seven months later, something remarkable happened. A colleague of Nonna's shared that her daughter was performing in a theatrical production of <em>The Wizard of Oz</em>. Penelope and her family went to opening night — a night that would become unforgettable for many reasons.</p>
+            <p>Due to unexpected flooding at the theatre, the main entrance was closed and audiences were brought in through a fire escape. Despite the chaos, the show went on. By chance, Penelope's seat was placed right beside a makeshift red carpet and promotional setup inside the theatre. As always, she was dressed for the occasion — a perfect little Dorothy, complete with pigtails, a basket and a fluffy dog.</p>
+            <p>That night, the performance captivated her. As the audience was leaving, she was asked if she'd like to say a few words on camera. Without hesitation, she said yes — and soon after, she appeared in the show's promotional highlights.</p>
+            <p>A few days later, a message came through: the cast had noticed her and wanted to meet her. When she returned, she was welcomed warmly — photos, smiles and a sense of belonging that stayed with her. The executive producer invited her back once more, and during the interval she was taken backstage in full costume to meet the cast — an unforgettable moment that planted something deep within her.</p>
+
+            <blockquote class="story-pull">
+                "Do you want to hear a secret?"
+            </blockquote>
+
+            <p>As she was leaving, one performer — who played Uncle Henry and the Guard to Oz — leaned in and whispered that an upcoming production of <em>The Sound of Music</em> would soon be casting… and they would need a Gretel.</p>
+            <p>That was the moment the fire was lit.</p>
+
+            <h3 class="story-chapter">Gretel</h3>
+            <p>Penelope threw herself into preparation — taking classes, building confidence, learning choreography through cheerleading, and training with inspiring teachers including Sarah De Bono and the team at ELS Dance.</p>
+            <p>When auditions arrived, Penelope was ready. Armed with two of Nonna's favourites — <em>Can't Help Falling in Love</em> and <em>A Spoonful of Sugar</em> — she stepped forward into her first musical audition.</p>
+            <p>There were nerves, of course. Sitting and waiting, shivering slightly before her turn, she was comforted by a kind word from a fellow auditionee — Stephanie — who told her how beautiful she looked. A small moment, but one that meant everything at the time.</p>
+            <p>At the callback, another parent remarked, <em>"Well, there's a Gretel if ever I saw one"</em>, lifting her confidence even higher. Small, perfectly timed moments seemed to appear just when she needed them most.</p>
+            <p>Then came the call. Excitement filled the room. Tears followed — tears of joy, and of connection to Nonna, whose influence was felt every step of the way.</p>
+            <p><strong>Penelope had been cast as Gretel.</strong></p>
+            <p>But as quickly as the celebration came, so did the reality: the work was just beginning. <em>The Sound of Music</em> demanded commitment — months of rehearsals, long days and constant growth. Penelope met every challenge with determination, supported by an incredibly talented cast and a community of experienced families. There were two casts, but her dedication extended far beyond her scheduled performances. She attended every show she could — whether performing or not — supporting castmates, helping sell programs, and becoming a constant, enthusiastic presence throughout the season.</p>
+
+            <h3 class="story-chapter">The Patience Phase</h3>
+            <p>After <em>The Sound of Music</em>, there was a new challenge — patience. Many of the productions that followed were out of reach due to age. But rather than stepping away, Penelope leaned in even further. The spark that had been lit had become something steady — a genuine love for theatre that wasn't going anywhere.</p>
+            <p>She embraced the waiting. Every opportunity to experience a show became something special — local productions, school performances in Ballarat, shows in Geelong, larger-scale productions like <em>The Phantom of the Opera</em>. Each performance left an impression, shaping her understanding of storytelling, stage presence, and the magic that happens when everything comes together.</p>
+
+            <h3 class="story-chapter">Where She Is Now</h3>
+            <p>As her love for theatre continued to grow, Penelope found new ways to stay connected to the stage even when she wasn't performing. She became a young reviewer for thetheatre.au and stepped into a roving reporter role with Theatrical during their debut production of <em>Three Little Pigs</em>. These experiences gave her a unique view of the theatre world — not just as a performer, but as a storyteller and observer.</p>
+            <p>Alongside this, she has been dedicating herself to training — focusing on tap and musical theatre at <strong>Chris Horsey's XLR8 Performing Arts</strong>, where she trains with the cadet program among other committed young performers.</p>
+            <p>Her stage experience has continued to grow, with roles in <em>Shrek Jr.</em> and <em>Dare to Dream</em> with Melbourne Kids Theatre, and a musical review and <em>The Aristocats</em> with MusicWorks. She also took the stage with Theatrical in their recent <strong>Theatrical Symphony</strong> — an opportunity she especially treasured, bringing together an incredible collection of talent from across the city.</p>
+            <p>She remains a constant presence in the audience too, regularly attending shows to support former castmates. Watching others perform, grow and excel continues to inspire her — deepening her love for theatre with every opportunity.</p>
+            <p>Her journey and growing presence in the theatre community have also been recognised beyond the stage. She has been featured twice in <em>Sunshine's Star Weekly</em>, appeared in <em>The Age</em> alongside her <em>Sound of Music</em> castmates, and even performed during a live weather segment on Channel 10.</p>
+
+            <h3 class="story-chapter">Next: Newsies</h3>
+            <p>Penelope is currently preparing for her next role — joining the cast of <strong><em>Newsies</em> with Williamstown Theatre Company</strong>. A new challenge, a new community, and the kind of show she's been waiting for.</p>
+
+            <p class="story-closing">From a little girl in a Dorothy dress, sitting wide-eyed at the theatre, to a young performer actively building her place within it — Penelope's journey is only just beginning. And with every step, the love of the stage that began with her Nonna continues to guide her forward.</p>
+
         </div>
     </section>
 
@@ -397,22 +508,46 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>2025</td>
-                    <td>School Play</td>
-                    <td>Lead</td>
-                    <td>School Production</td>
+                    <td>Upcoming</td>
+                    <td>Newsies</td>
+                    <td>Cast</td>
+                    <td>Williamstown Theatre Company</td>
                 </tr>
                 <tr>
-                    <td>2024</td>
-                    <td>Dance Recital</td>
+                    <td>2026</td>
+                    <td>Theatrical Symphony</td>
                     <td>Performer</td>
-                    <td>Dance School</td>
+                    <td>Theatrical</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>The Aristocats</td>
+                    <td>Cast</td>
+                    <td>MusicWorks</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>Musical Review</td>
+                    <td>Cast</td>
+                    <td>MusicWorks</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>Dare to Dream</td>
+                    <td>Cast</td>
+                    <td>Melbourne Kids Theatre</td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>Shrek Jr.</td>
+                    <td>Cast</td>
+                    <td>Melbourne Kids Theatre</td>
                 </tr>
                 <tr>
                     <td>2024</td>
-                    <td>Choir Performance</td>
-                    <td>Singer</td>
-                    <td>School Choir</td>
+                    <td>The Sound of Music</td>
+                    <td>Gretel</td>
+                    <td>Theatrical</td>
                 </tr>
             </tbody>
         </table>
@@ -421,14 +556,16 @@
     <section class="actor-section" id="skills">
         <h2 class="actor-section-title">Skills & Interests</h2>
         <div class="skills-grid">
-            <span class="skill-tag">Theatre Reviewing</span>
             <span class="skill-tag">Musical Theatre</span>
-            <span class="skill-tag">Dancing</span>
+            <span class="skill-tag">Tap</span>
             <span class="skill-tag">Singing</span>
+            <span class="skill-tag">Dancing</span>
+            <span class="skill-tag">Cheerleading</span>
+            <span class="skill-tag">Theatre Reviewing</span>
+            <span class="skill-tag">Roving Reporting</span>
+            <span class="skill-tag">XLR8 Cadet Program</span>
             <span class="skill-tag">Reading</span>
             <span class="skill-tag">Creative Writing</span>
-            <span class="skill-tag">Arts &amp; Crafts</span>
-            <span class="skill-tag">Gymnastics</span>
         </div>
     </section>
 

@@ -14,7 +14,7 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
- <link rel="stylesheet" href="css/shared.css?v=202604150813">
+ <link rel="stylesheet" href="css/shared.css?v=202605130001">
  <link rel="canonical" href="https://ihearttheatre.com/submit-actor.html">
  <meta property="og:type" content="website">
  <meta property="og:site_name" content="iHeartTheatre">
@@ -414,7 +414,7 @@
       </div>
       <div class="form-group">
        <label for="f-pronouns">Pronouns</label>
-       <input type="text" id="f-pronouns" placeholder="she/her, he/him, they/them…">
+       <input type="text" id="f-pronouns" placeholder="she/her, he/him, they/themï¿½">
       </div>
      </div>
      <div class="form-row">
@@ -438,12 +438,12 @@
       </div>
       <div class="form-group">
        <label for="f-location">Location <span style="color:#667eea">*</span></label>
-       <input type="text" id="f-location" placeholder="Melbourne, Geelong, Ballarat…" required>
+       <input type="text" id="f-location" placeholder="Melbourne, Geelong, Ballaratï¿½" required>
       </div>
      </div>
      <div class="form-group photo-preview-wrap">
       <label for="f-photo">Headshot URL</label>
-      <input type="url" id="f-photo" placeholder="https://… paste a link to your headshot image">
+      <input type="url" id="f-photo" placeholder="https://ï¿½ paste a link to your headshot image">
       <img class="photo-thumb" id="photoThumb" src="" alt="Headshot preview">
       <span style="font-size:0.78rem;color:var(--text-secondary);margin-top:0.25rem;display:block;">Paste a public image URL, e.g. from your website or Google Drive. The iHeartTheatre team can help format this.</span>
      </div>
@@ -453,16 +453,16 @@
      <div class="form-section-title">About You</div>
      <div class="form-group">
       <label for="f-bio">Bio <span style="color:#667eea">*</span></label>
-      <textarea id="f-bio" placeholder="Write a short bio: your background, training, recent credits and what drives you in theatre…" rows="5" required></textarea>
+      <textarea id="f-bio" placeholder="Write a short bio: your background, training, recent credits and what drives you in theatreï¿½" rows="5" required></textarea>
       <span id="bio-count" style="font-size:0.78rem;color:var(--text-secondary);text-align:right;">0 / 500</span>
      </div>
      <div class="form-group">
       <label for="f-training">Training / Education</label>
-      <textarea id="f-training" placeholder="NIDA, VCA, private coaching, community groups…" rows="3"></textarea>
+      <textarea id="f-training" placeholder="NIDA, VCA, private coaching, community groupsï¿½" rows="3"></textarea>
      </div>
      <div class="form-group">
       <label for="f-credits">Recent Credits</label>
-      <textarea id="f-credits" placeholder="Show / Role / Company — list your recent work…" rows="4"></textarea>
+      <textarea id="f-credits" placeholder="Show / Role / Company ï¿½ list your recent workï¿½" rows="4"></textarea>
      </div>
     </div>
 
@@ -488,7 +488,7 @@
      <div class="form-row">
       <div class="form-group">
        <label for="f-spotlight">Spotlight / Showcast Profile URL</label>
-       <input type="url" id="f-spotlight" placeholder="https://www.spotlight.com/…">
+       <input type="url" id="f-spotlight" placeholder="https://www.spotlight.com/ï¿½">
       </div>
       <div class="form-group">
        <label for="f-email">Contact Email <span style="color:#667eea">*</span></label>
@@ -581,7 +581,7 @@
  </footer>
 
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
- <script src="js/shared.js?v=202604150813"></script>
+ <script src="js/shared.js?v=202605130001"></script>
  <script>
  var SKILLS = [
   'Acting','Singing','Dancing','Musical Theatre','Physical Theatre',
@@ -709,26 +709,14 @@
    website: document.getElementById('f-website').value.trim(),
    spotlight: document.getElementById('f-spotlight').value.trim(),
    availability: document.getElementById('f-availability').value,
-   email: email,
-   submittedAt: new Date().toISOString()
+   email: email
   };
 
-  var btn = document.getElementById('submitBtn');
-  btn.disabled = true;
-  btn.textContent = 'Sending...';
-
-  fetch('https://formsubmit.co/ajax/submissions@ihearttheatre.com', {
-   method: 'POST',
-   headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-   body: JSON.stringify(Object.assign({ _subject: 'New Performer Profile: ' + name }, data))
-  }).then(function() {
-   document.getElementById('profileForm').style.display = 'none';
-   document.getElementById('successMsg').classList.add('show');
-   window.scrollTo({ top: 0, behavior: 'smooth' });
-  }).catch(function() {
-   btn.disabled = false;
-   btn.textContent = 'Submit Profile';
-   alert('Something went wrong. Please try again or email submissions@ihearttheatre.com directly.');
+  submitFormViaEmail(data, {
+   to: 'auditions@ihearttheatre.com',
+   subject: 'New performer profile: ' + name,
+   formId: 'submit-actor',
+   attachmentNote: 'Please attach your headshot photo before sending this email.'
   });
  }
  </script>

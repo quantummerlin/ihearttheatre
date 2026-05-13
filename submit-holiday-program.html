@@ -382,7 +382,7 @@
  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
- <link rel="stylesheet" href="css/shared.css?v=202604150813">
+ <link rel="stylesheet" href="css/shared.css?v=202605130001">
     <link rel="stylesheet" href="css/magic-effects.css?v=202604150813">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
@@ -571,30 +571,14 @@
 
  <script>
  // Form submission
- document.getElementById('submissionForm').addEventListener('submit', function(e) {
- e.preventDefault();
- 
- const btn = this.querySelector('button[type="submit"]');
- btn.disabled = true;
- btn.textContent = 'Sending...';
-
- const formData = new FormData(this);
- const data = Object.fromEntries(formData);
- data._subject = 'New Holiday Program Submission: ' + (data.programName || data.organisationName || 'Untitled');
-
- fetch('https://formsubmit.co/ajax/submissions@ihearttheatre.com', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-  body: JSON.stringify(data)
- }).then(function() {
-  document.getElementById('programForm').style.display = 'none';
-  document.getElementById('successMessage').classList.add('show');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
- }).catch(function() {
-  btn.disabled = false;
-  btn.textContent = 'Submit Program';
-  alert('Something went wrong. Please try again or email submissions@ihearttheatre.com directly.');
- });
+        document.getElementById('submissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var data = Object.fromEntries(new FormData(this));
+            submitFormViaEmail(this, {
+                to: 'auditions@ihearttheatre.com',
+                subject: 'Holiday program submission: ' + (data.programTitle || data.title || 'Untitled')
+            });
+        });
  });
 
  // Progress bar
@@ -628,7 +612,7 @@
  <!-- Back to Top -->
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
- <script src="js/shared.js?v=202604150813"></script>
+ <script src="js/shared.js?v=202605130001"></script>
     <script src="js/magic-effects.js?v=202604150813" defer></script>
 </body>
 </html>

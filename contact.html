@@ -419,7 +419,7 @@
  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
- <link rel="stylesheet" href="css/shared.css?v=202604150813">
+ <link rel="stylesheet" href="css/shared.css?v=202605130001">
     <link rel="stylesheet" href="css/magic-effects.css?v=202604150813">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
@@ -623,29 +623,14 @@
  };
 
  // Form submission handler
- document.getElementById('contactForm').addEventListener('submit', function(e) {
- e.preventDefault();
-
- const btn = this.querySelector('button[type="submit"]');
- btn.disabled = true;
- btn.textContent = 'Sending...';
-
- const formData = new FormData(this);
- const data = Object.fromEntries(formData);
- data._subject = 'iHeartTheatre Contact: ' + (data.subject || 'Message');
-
- fetch('https://formsubmit.co/ajax/submissions@ihearttheatre.com', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-  body: JSON.stringify(data)
- }).then(function() {
-  document.querySelector('.contact-form').innerHTML = '<div style="text-align:center;padding:3rem 1rem"><div style="width:64px;height:64px;background:linear-gradient(135deg,#667eea,#764ba2);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="font-family:Playfair Display,serif;font-size:1.8rem;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:1rem">Message Sent!</h2><p style="color:#a0a0b0;line-height:1.7">Thanks for getting in touch. We\'ll get back to you soon.</p></div>';
-  window.scrollTo({ top: 0, behavior: 'smooth' });
- }).catch(function() {
-  btn.disabled = false;
-  btn.textContent = 'Send Message';
-  alert('Something went wrong. Please email us directly at submissions@ihearttheatre.com');
- });
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            var data = Object.fromEntries(new FormData(this));
+            submitFormViaEmail(this, {
+                to: 'hello@ihearttheatre.com',
+                subject: 'iHeartTheatre contact: ' + (data.subject || 'Message')
+            });
+        });
  });
 
  // Smooth scroll for navigation
@@ -665,7 +650,7 @@
  <!-- Back to Top -->
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
- <script src="js/shared.js?v=202604150813"></script>
+ <script src="js/shared.js?v=202605130001"></script>
     <script src="js/magic-effects.js?v=202604150813" defer></script>
 </body>
 </html>

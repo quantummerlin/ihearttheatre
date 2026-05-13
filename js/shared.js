@@ -652,3 +652,195 @@ function initFilterAccordion() {
 // Expose so pages with dynamic filters can call after render
 window.iHTInitFilterAccordion = initFilterAccordion;
 
+
+/* ───────────────────────────────────────────────────────────
+   submitFormViaEmail — shared form-to-email submission handler
+   Reads a <form> element OR a plain object, builds a clean
+   formatted email body, and shows a modal with a mailto: link
+   + copy-to-clipboard fallback. No third-party backend.
+
+   Usage with a <form>:
+     <form id="contactForm">
+       <label for="name">Your Name</label>
+       <input id="name" name="name" required>
+       ...
+       <button type="submit">Send</button>
+     </form>
+     <script>
+       document.getElementById('contactForm').addEventListener('submit', function(e) {
+         e.preventDefault();
+         submitFormViaEmail(this, {
+           to: 'hello@ihearttheatre.com',
+           subject: 'iHeartTheatre contact: ' + this.subject.value
+         });
+       });
+     </script>
+
+   Usage with a data object (when there's no real <form>):
+     submitFormViaEmail({
+       Name: name, Pronouns: pronouns, Role: role, ...
+     }, {
+       to: 'auditions@ihearttheatre.com',
+       subject: 'New Performer Profile: ' + name,
+       attachmentNote: 'Please attach your headshot before sending.',
+       formId: 'submit-actor'
+     });
+─────────────────────────────────────────────────────────── */
+
+window.submitFormViaEmail = function(source, opts) {
+ opts = opts || {};
+ var to = opts.to || 'hello@ihearttheatre.com';
+ var subject = opts.subject || 'iHeartTheatre submission';
+ var attachmentNote = opts.attachmentNote || null;
+ var intro = opts.intro || null;
+ var formEl = null;
+ var fields = [];
+
+ if (source && source.nodeType === 1 && source.tagName === 'FORM') {
+  formEl = source;
+  if (!formEl.checkValidity()) {
+   formEl.reportValidity();
+   return false;
+  }
+  var els = formEl.querySelectorAll('input, textarea, select');
+  var skipTypes = ['submit','button','reset','hidden','file','image'];
+  var groups = {};
+  for (var i = 0; i < els.length; i++) {
+   var el = els[i];
+   if (!el.name || skipTypes.indexOf(el.type) > -1) continue;
+   if (el.name.charAt(0) === '_') continue; // skip formsubmit-style hidden fields
+   var value = '';
+   if (el.type === 'checkbox') {
+    if (!el.checked) continue;
+    value = (el.value && el.value !== 'on') ? el.value : 'Yes';
+   } else if (el.type === 'radio') {
+    if (!el.checked) continue;
+    value = el.value;
+   } else {
+    value = (el.value || '').trim();
+   }
+   if (value === '') continue;
+   var label = el.getAttribute('data-email-label');
+   if (!label && el.id) {
+    var labelEl = formEl.querySelector('label[for="' + el.id + '"]');
+    if (labelEl) label = labelEl.textContent.trim().replace(/[*:]+$/, '').trim();
+   }
+   if (!label) label = _iHTTitleCase(el.name);
+   if (groups[el.name]) {
+    groups[el.name].value += ', ' + value;
+   } else {
+    groups[el.name] = { name: el.name, label: label, value: value };
+    fields.push(groups[el.name]);
+   }
+  }
+ } else if (source && typeof source === 'object') {
+  var keys = Object.keys(source);
+  for (var k = 0; k < keys.length; k++) {
+   var key = keys[k];
+   var v = source[key];
+   if (v === null || v === undefined || v === '') continue;
+   if (Array.isArray(v)) v = v.join(', ');
+   fields.push({ name: key, label: _iHTTitleCase(key), value: String(v) });
+  }
+ } else {
+  if (window.console) console.warn('submitFormViaEmail: invalid source');
+  return false;
+ }
+
+ // Build email body
+ var lines = [];
+ if (intro) { lines.push(intro, ''); }
+ for (var j = 0; j < fields.length; j++) {
+  var f = fields[j];
+  if (f.value.indexOf('\n') > -1) {
+   lines.push(f.label + ':');
+   lines.push(f.value);
+   lines.push('');
+  } else {
+   lines.push(f.label + ': ' + f.value);
+  }
+ }
+ if (attachmentNote) {
+  lines.push('', '— ' + attachmentNote);
+ }
+ lines.push('');
+ lines.push('—');
+ lines.push('Submitted via ihearttheatre.com on ' + new Date().toLocaleDateString('en-AU', { day:'numeric', month:'long', year:'numeric' }));
+ var body = lines.join('\n');
+ var mailtoUrl = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+ // GA4 event (if gtag loaded)
+ if (typeof gtag === 'function') {
+  try {
+   gtag('event', 'form_submit', {
+    form_id: (formEl && formEl.id) || opts.formId || 'unknown',
+    destination: to
+   });
+  } catch(e) {}
+ }
+
+ _iHTShowEmailFallbackModal({ to: to, subject: subject, body: body, mailtoUrl: mailtoUrl });
+ return false;
+};
+
+function _iHTTitleCase(s) {
+ return String(s).replace(/[_-]+/g, ' ').replace(/([a-z])([A-Z])/g, '$1 $2').replace(/\b\w/g, function(c){ return c.toUpperCase(); });
+}
+
+function _iHTShowEmailFallbackModal(opts) {
+ var modal = document.getElementById('email-fallback-modal');
+ if (!modal) {
+  modal = document.createElement('div');
+  modal.id = 'email-fallback-modal';
+  modal.innerHTML = ''
+   + '<div class="efm-overlay" data-efm-close></div>'
+   + '<div class="efm-panel" role="dialog" aria-labelledby="efm-title" aria-modal="true">'
+   +  '<button class="efm-close" data-efm-close aria-label="Close">&times;</button>'
+   +  '<h3 class="efm-title" id="efm-title">Almost there — send your submission</h3>'
+   +  '<p class="efm-sub">Your message is ready for <strong class="efm-to"></strong>. Open it in your mail app, or copy the text below to send manually.</p>'
+   +  '<textarea class="efm-body" readonly></textarea>'
+   +  '<div class="efm-actions">'
+   +   '<a class="efm-btn efm-btn-primary efm-mailto" href="#">Open in mail app</a>'
+   +   '<button class="efm-btn efm-btn-secondary efm-copy" type="button">Copy to clipboard</button>'
+   +  '</div>'
+   +  '<p class="efm-note">No mail app? Copy the message above and email it to <strong class="efm-to-inline"></strong> from any account. We will be in touch shortly after receiving it.</p>'
+   + '</div>';
+  document.body.appendChild(modal);
+
+  var closers = modal.querySelectorAll('[data-efm-close]');
+  for (var c = 0; c < closers.length; c++) {
+   closers[c].addEventListener('click', function() {
+    modal.classList.remove('efm-open');
+   });
+  }
+  modal.querySelector('.efm-copy').addEventListener('click', function() {
+   var ta = modal.querySelector('.efm-body');
+   ta.focus();
+   ta.select();
+   var btn = this;
+   var done = function() {
+    btn.textContent = 'Copied ✓';
+    setTimeout(function(){ btn.textContent = 'Copy to clipboard'; }, 2200);
+   };
+   if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(ta.value).then(done, function() {
+     try { document.execCommand('copy'); done(); } catch(e) {}
+    });
+   } else {
+    try { document.execCommand('copy'); done(); } catch(e) {}
+   }
+  });
+  document.addEventListener('keydown', function(e) {
+   if (e.key === 'Escape' && modal.classList.contains('efm-open')) {
+    modal.classList.remove('efm-open');
+   }
+  });
+ }
+
+ var toEls = modal.querySelectorAll('.efm-to, .efm-to-inline');
+ for (var t = 0; t < toEls.length; t++) toEls[t].textContent = opts.to;
+ modal.querySelector('.efm-body').value = 'To: ' + opts.to + '\nSubject: ' + opts.subject + '\n\n' + opts.body;
+ modal.querySelector('.efm-mailto').setAttribute('href', opts.mailtoUrl);
+ modal.classList.add('efm-open');
+}
+

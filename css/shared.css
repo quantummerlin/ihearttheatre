@@ -1045,3 +1045,149 @@ nav.scrolled {
         justify-content: center;
     }
 }
+
+/* ───────────────────────────────────────────────────
+   Email fallback modal (submitFormViaEmail)
+─────────────────────────────────────────────────── */
+#email-fallback-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+#email-fallback-modal.efm-open {
+    display: flex;
+}
+#email-fallback-modal .efm-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.78);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+#email-fallback-modal .efm-panel {
+    position: relative;
+    background: linear-gradient(180deg, #0d0d1a 0%, #050508 100%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    max-width: 580px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 34px 28px 28px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(102, 126, 234, 0.15);
+    animation: efm-rise 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes efm-rise {
+    from { opacity: 0; transform: translateY(20px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+#email-fallback-modal .efm-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px 12px;
+    border-radius: 8px;
+    transition: color 0.18s, background 0.18s;
+}
+#email-fallback-modal .efm-close:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.06);
+}
+#email-fallback-modal .efm-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    color: #f5f5f5;
+    margin: 0 0 8px;
+    padding-right: 32px;
+    line-height: 1.2;
+}
+#email-fallback-modal .efm-sub {
+    color: #a0a0b0;
+    font-size: 0.96rem;
+    line-height: 1.55;
+    margin: 0 0 18px;
+}
+#email-fallback-modal .efm-sub strong,
+#email-fallback-modal .efm-note strong {
+    color: #ffd700;
+    font-weight: 600;
+}
+#email-fallback-modal .efm-body {
+    width: 100%;
+    min-height: 180px;
+    max-height: 280px;
+    padding: 14px 16px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.85);
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.85rem;
+    line-height: 1.55;
+    resize: vertical;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+}
+#email-fallback-modal .efm-body:focus {
+    outline: none;
+    border-color: rgba(102, 126, 234, 0.5);
+}
+#email-fallback-modal .efm-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+#email-fallback-modal .efm-btn {
+    flex: 1 1 200px;
+    text-align: center;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.2s, background 0.2s;
+    font-family: inherit;
+}
+#email-fallback-modal .efm-btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 4px 18px rgba(102, 126, 234, 0.4);
+}
+#email-fallback-modal .efm-btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 22px rgba(102, 126, 234, 0.55);
+}
+#email-fallback-modal .efm-btn-secondary {
+    background: rgba(255, 255, 255, 0.06);
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+#email-fallback-modal .efm-btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-1px);
+}
+#email-fallback-modal .efm-note {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.82rem;
+    line-height: 1.55;
+    margin: 0;
+}
+@media (max-width: 520px) {
+    #email-fallback-modal .efm-panel { padding: 28px 18px 22px; }
+    #email-fallback-modal .efm-title { font-size: 1.3rem; }
+    #email-fallback-modal .efm-btn { flex: 1 1 100%; }
+}

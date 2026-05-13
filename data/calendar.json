@@ -11,9 +11,16 @@
     "date_start": "2026-02-07",
     "date_end": "2026-02-18",
     "dates_approximate": true,
-    "genre": ["jukebox", "comedy", "ensemble-driven"],
+    "genre": [
+      "jukebox",
+      "comedy",
+      "ensemble-driven"
+    ],
     "musical_id": null,
-    "tags": ["community", "all-ages"]
+    "tags": [
+      "community",
+      "all-ages"
+    ]
   },
   {
     "id": "mel-2026-002",
@@ -26,9 +33,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-12",
     "date_end": "2026-02-21",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-003",
@@ -41,9 +52,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-13",
     "date_end": "2026-02-21",
-    "genre": ["comedy", "contemporary"],
+    "genre": [
+      "comedy",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-004",
@@ -56,9 +72,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-14",
     "date_end": "2026-02-14",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional"]
+    "tags": [
+      "opera",
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-005",
@@ -71,9 +92,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-14",
     "date_end": "2026-02-15",
-    "genre": ["musical", "youth"],
+    "genre": [
+      "musical",
+      "youth"
+    ],
     "musical_id": null,
-    "tags": ["community", "youth", "junior-version"]
+    "tags": [
+      "community",
+      "youth",
+      "junior-version"
+    ]
   },
   {
     "id": "mel-2026-006",
@@ -86,9 +114,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-15",
     "date_end": "2026-02-15",
-    "genre": ["drama"],
+    "genre": [
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-007",
@@ -101,9 +133,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-16",
     "date_end": "2026-02-17",
-    "genre": ["concert"],
+    "genre": [
+      "concert"
+    ],
     "musical_id": null,
-    "tags": ["concert", "professional"]
+    "tags": [
+      "concert",
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-008",
@@ -116,9 +153,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-21",
     "date_end": "2026-02-21",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "regional"]
+    "tags": [
+      "opera",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-009",
@@ -131,9 +173,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-26",
     "date_end": "2026-03-08",
-    "genre": ["jukebox", "contemporary", "comedy"],
+    "genre": [
+      "jukebox",
+      "contemporary",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-010",
@@ -146,9 +195,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-27",
     "date_end": "2026-03-07",
-    "genre": ["contemporary", "comedy"],
+    "genre": [
+      "contemporary",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-011",
@@ -161,9 +215,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-27",
     "date_end": "2026-03-15",
-    "genre": ["drama", "shakespeare"],
+    "genre": [
+      "drama",
+      "shakespeare"
+    ],
     "musical_id": null,
-    "tags": ["outdoor", "shakespeare"]
+    "tags": [
+      "outdoor",
+      "shakespeare"
+    ]
   },
   {
     "id": "mel-2026-012",
@@ -176,9 +236,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-28",
     "date_end": "2026-02-28",
-    "genre": ["comedy"],
+    "genre": [
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-013",
@@ -191,9 +255,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-28",
     "date_end": "2026-02-28",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "regional"]
+    "tags": [
+      "opera",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-014",
@@ -206,24 +275,35 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-28",
     "date_end": "2026-02-28",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "regional"]
+    "tags": [
+      "opera",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-015",
     "show_title": "The Arcadians",
     "type": "show",
     "production_type": "community",
-    "company": "GSOV",
+    "company": "Gilbert and Sullivan Opera Victoria",
     "venue": "The Knowe",
     "location": "Sassafras",
     "region": "melbourne-victoria",
     "date_start": "2026-02-28",
     "date_end": "2026-03-09",
-    "genre": ["operetta", "classic-musical"],
+    "genre": [
+      "operetta",
+      "classic-musical"
+    ],
     "musical_id": null,
-    "tags": ["gilbert-sullivan", "community"]
+    "tags": [
+      "gilbert-sullivan",
+      "community"
+    ]
   },
   {
     "id": "mel-2026-016",
@@ -236,9 +316,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-02-28",
     "date_end": "2026-03-15",
-    "genre": ["drama", "family"],
+    "genre": [
+      "drama",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["outdoor", "family"]
+    "tags": [
+      "outdoor",
+      "family"
+    ]
   },
   {
     "id": "mel-2026-017",
@@ -251,9 +337,17 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-06",
     "date_end": "2026-03-28",
-    "genre": ["pantomime", "family", "comedy"],
+    "genre": [
+      "pantomime",
+      "family",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["panto", "family", "community"]
+    "tags": [
+      "panto",
+      "family",
+      "community"
+    ]
   },
   {
     "id": "mel-2026-018",
@@ -266,9 +360,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-08",
     "date_end": "2026-03-09",
-    "genre": ["musical", "youth"],
+    "genre": [
+      "musical",
+      "youth"
+    ],
     "musical_id": null,
-    "tags": ["youth", "kids-version"]
+    "tags": [
+      "youth",
+      "kids-version"
+    ]
   },
   {
     "id": "mel-2026-019",
@@ -281,9 +381,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-10",
     "date_end": "2026-03-10",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-020",
@@ -296,9 +400,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-13",
     "date_end": "2026-03-15",
-    "genre": ["musical", "drama"],
+    "genre": [
+      "musical",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-021",
@@ -306,14 +415,21 @@
     "type": "show",
     "production_type": "community",
     "company": "CentreStage",
-    "venue": "GAC",
+    "venue": "Geelong Arts Centre",
     "location": "Geelong",
     "region": "melbourne-victoria",
     "date_start": "2026-03-13",
     "date_end": "2026-03-28",
-    "genre": ["jukebox", "contemporary", "comedy"],
+    "genre": [
+      "jukebox",
+      "contemporary",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-022",
@@ -326,9 +442,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-14",
     "date_end": "2026-03-14",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "regional"]
+    "tags": [
+      "opera",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-023",
@@ -341,9 +462,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-19",
     "date_end": "2026-03-28",
-    "genre": ["comedy", "satire", "modern"],
+    "genre": [
+      "comedy",
+      "satire",
+      "modern"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-024",
@@ -356,9 +483,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-20",
     "date_end": "2026-03-28",
-    "genre": ["musical", "comedy", "youth"],
+    "genre": [
+      "musical",
+      "comedy",
+      "youth"
+    ],
     "musical_id": null,
-    "tags": ["community", "junior-version"]
+    "tags": [
+      "community",
+      "junior-version"
+    ]
   },
   {
     "id": "mel-2026-025",
@@ -371,9 +505,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-20",
     "date_end": "2026-03-29",
-    "genre": ["classic-musical", "family"],
+    "genre": [
+      "classic-musical",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["community", "family"]
+    "tags": [
+      "community",
+      "family"
+    ]
   },
   {
     "id": "mel-2026-026",
@@ -386,24 +526,35 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-21",
     "date_end": "2026-04-04",
-    "genre": ["drama", "modern", "intimate"],
+    "genre": [
+      "drama",
+      "modern",
+      "intimate"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-027",
     "show_title": "The Arcadians",
     "type": "show",
     "production_type": "community",
-    "company": "GSOV",
+    "company": "Gilbert and Sullivan Opera Victoria",
     "venue": "Queenscliff Town Hall",
     "location": "Queenscliff",
     "region": "melbourne-victoria",
     "date_start": "2026-03-22",
     "date_end": "2026-03-22",
-    "genre": ["operetta"],
+    "genre": [
+      "operetta"
+    ],
     "musical_id": null,
-    "tags": ["gilbert-sullivan", "regional"]
+    "tags": [
+      "gilbert-sullivan",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-028",
@@ -416,9 +567,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-25",
     "date_end": "2026-03-25",
-    "genre": ["musical"],
+    "genre": [
+      "musical"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-029",
@@ -431,9 +586,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-26",
     "date_end": "2026-04-05",
-    "genre": ["comedy", "horror", "musical"],
+    "genre": [
+      "comedy",
+      "horror",
+      "musical"
+    ],
     "musical_id": null,
-    "tags": ["community", "adult"]
+    "tags": [
+      "community",
+      "adult"
+    ]
   },
   {
     "id": "mel-2026-030",
@@ -446,9 +608,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-28",
     "date_end": "2026-03-28",
-    "genre": ["musical", "drama"],
+    "genre": [
+      "musical",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-031",
@@ -461,9 +628,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-03-28",
     "date_end": "2026-03-28",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera"]
+    "tags": [
+      "opera"
+    ]
   },
   {
     "id": "mel-2026-032",
@@ -477,9 +648,16 @@
     "date_start": "2026-04-01",
     "date_end": "2026-05-31",
     "dates_approximate": true,
-    "genre": ["musical", "comedy", "family"],
+    "genre": [
+      "musical",
+      "comedy",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["school", "family"]
+    "tags": [
+      "school",
+      "family"
+    ]
   },
   {
     "id": "mel-2026-033",
@@ -492,9 +670,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-04-10",
     "date_end": "2026-04-18",
-    "genre": ["drama", "modern"],
+    "genre": [
+      "drama",
+      "modern"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-034",
@@ -507,9 +691,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-04-10",
     "date_end": "2026-04-19",
-    "genre": ["drama", "classic-musical", "ensemble-driven"],
+    "genre": [
+      "drama",
+      "classic-musical",
+      "ensemble-driven"
+    ],
     "musical_id": "les-miserables",
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-035",
@@ -522,9 +712,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-04-14",
     "date_end": "2026-04-17",
-    "genre": ["musical", "comedy", "youth"],
+    "genre": [
+      "musical",
+      "comedy",
+      "youth"
+    ],
     "musical_id": null,
-    "tags": ["youth", "regional"]
+    "tags": [
+      "youth",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-036",
@@ -537,9 +734,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-04-16",
     "date_end": "2026-04-19",
-    "genre": ["musical", "family", "youth"],
+    "genre": [
+      "musical",
+      "family",
+      "youth"
+    ],
     "musical_id": null,
-    "tags": ["community", "junior-version"]
+    "tags": [
+      "community",
+      "junior-version"
+    ]
   },
   {
     "id": "mel-2026-037",
@@ -552,9 +756,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-04-17",
     "date_end": "2026-04-19",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-038",
@@ -567,9 +775,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-04-22",
     "date_end": "2026-05-02",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["schools-program"]
+    "tags": [
+      "schools-program"
+    ]
   },
   {
     "id": "mel-2026-039",
@@ -583,9 +795,15 @@
     "date_start": "2026-04-01",
     "date_end": "2026-04-30",
     "dates_approximate": true,
-    "genre": ["musical", "intimate", "drama"],
+    "genre": [
+      "musical",
+      "intimate",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-040",
@@ -599,9 +817,15 @@
     "date_start": "2026-05-01",
     "date_end": "2026-05-31",
     "dates_approximate": true,
-    "genre": ["classic-musical", "family"],
+    "genre": [
+      "classic-musical",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-041",
@@ -615,9 +839,15 @@
     "date_start": "2026-05-01",
     "date_end": "2026-05-31",
     "dates_approximate": true,
-    "genre": ["modern", "comedy", "drama"],
+    "genre": [
+      "modern",
+      "comedy",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-042",
@@ -631,9 +861,16 @@
     "date_start": "2026-05-01",
     "date_end": "2026-05-31",
     "dates_approximate": true,
-    "genre": ["comedy", "musical", "ensemble-driven"],
+    "genre": [
+      "comedy",
+      "musical",
+      "ensemble-driven"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-043",
@@ -646,9 +883,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-01",
     "date_end": "2026-05-31",
-    "genre": ["modern", "comedy", "drama"],
+    "genre": [
+      "modern",
+      "comedy",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["professional", "touring"]
+    "tags": [
+      "professional",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-044",
@@ -661,9 +905,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-01",
     "date_end": "2026-05-17",
-    "genre": ["jukebox", "contemporary", "comedy"],
+    "genre": [
+      "jukebox",
+      "contemporary",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-045",
@@ -676,9 +927,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-08",
     "date_end": "2026-05-16",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional"]
+    "tags": [
+      "opera",
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-046",
@@ -691,9 +947,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-09",
     "date_end": "2026-05-09",
-    "genre": ["rock-musical", "contemporary"],
+    "genre": [
+      "rock-musical",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-047",
@@ -706,9 +967,17 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-09",
     "date_end": "2026-05-17",
-    "genre": ["musical", "youth", "comedy"],
+    "genre": [
+      "musical",
+      "youth",
+      "comedy"
+    ],
     "musical_id": "matilda",
-    "tags": ["community", "junior-version", "youth"]
+    "tags": [
+      "community",
+      "junior-version",
+      "youth"
+    ]
   },
   {
     "id": "mel-2026-048",
@@ -721,9 +990,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-15",
     "date_end": "2026-05-30",
-    "genre": ["drama", "modern", "ensemble-driven"],
+    "genre": [
+      "drama",
+      "modern",
+      "ensemble-driven"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-049",
@@ -736,9 +1011,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-09",
     "date_end": "2026-05-29",
-    "genre": ["opera", "family"],
+    "genre": [
+      "opera",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring"]
+    "tags": [
+      "professional",
+      "family",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-050",
@@ -751,9 +1033,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-20",
     "date_end": "2026-05-30",
-    "genre": ["drama", "contemporary"],
+    "genre": [
+      "drama",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-051",
@@ -766,9 +1053,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-21",
     "date_end": "2026-05-31",
-    "genre": ["musical", "family", "spectacle"],
+    "genre": [
+      "musical",
+      "family",
+      "spectacle"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-052",
@@ -776,14 +1070,21 @@
     "type": "show",
     "production_type": "community",
     "company": "Geelong Lyric Theatre",
-    "venue": "GAC",
+    "venue": "Geelong Arts Centre",
     "location": "Geelong",
     "region": "melbourne-victoria",
     "date_start": "2026-05-22",
     "date_end": "2026-06-07",
-    "genre": ["classic-musical", "family", "spectacle"],
+    "genre": [
+      "classic-musical",
+      "family",
+      "spectacle"
+    ],
     "musical_id": "beauty-and-the-beast",
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-053",
@@ -796,9 +1097,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-29",
     "date_end": "2026-05-30",
-    "genre": ["opera", "family"],
+    "genre": [
+      "opera",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family"]
+    "tags": [
+      "professional",
+      "family"
+    ]
   },
   {
     "id": "mel-2026-054",
@@ -811,9 +1118,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-05-29",
     "date_end": "2026-06-07",
-    "genre": ["classic-musical", "dance-heavy"],
+    "genre": [
+      "classic-musical",
+      "dance-heavy"
+    ],
     "musical_id": null,
-    "tags": ["community", "dance-heavy"]
+    "tags": [
+      "community",
+      "dance-heavy"
+    ]
   },
   {
     "id": "mel-2026-055",
@@ -827,9 +1140,15 @@
     "date_start": "2026-06-01",
     "date_end": "2026-06-30",
     "dates_approximate": true,
-    "genre": ["jukebox", "contemporary", "comedy"],
+    "genre": [
+      "jukebox",
+      "contemporary",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-056",
@@ -842,24 +1161,33 @@
     "region": "melbourne-victoria",
     "date_start": "2026-06-03",
     "date_end": "2026-06-13",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-057",
     "show_title": "Beauty and the Beast",
     "type": "show",
     "production_type": "community",
-    "company": "MDMS",
+    "company": "Mount Dandenong Musical Society",
     "venue": "Karralyka",
     "location": "Ringwood",
     "region": "melbourne-victoria",
     "date_start": "2026-06-12",
     "date_end": "2026-06-21",
-    "genre": ["classic-musical", "family"],
+    "genre": [
+      "classic-musical",
+      "family"
+    ],
     "musical_id": "beauty-and-the-beast",
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-058",
@@ -872,9 +1200,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-06-13",
     "date_end": "2026-06-22",
-    "genre": ["family", "classic-musical", "spectacle"],
+    "genre": [
+      "family",
+      "classic-musical",
+      "spectacle"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-059",
@@ -887,24 +1221,37 @@
     "region": "melbourne-victoria",
     "date_start": "2026-06-18",
     "date_end": "2026-07-11",
-    "genre": ["comedy", "contemporary"],
+    "genre": [
+      "comedy",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-060",
     "show_title": "Seussical",
     "type": "show",
     "production_type": "community",
-    "company": "GSODA",
-    "venue": "GAC",
+    "company": "Geelong Singers of Drama and the Arts",
+    "venue": "Geelong Arts Centre",
     "location": "Geelong",
     "region": "melbourne-victoria",
     "date_start": "2026-06-20",
     "date_end": "2026-06-27",
-    "genre": ["musical", "family", "comedy"],
+    "genre": [
+      "musical",
+      "family",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community", "family", "regional"]
+    "tags": [
+      "community",
+      "family",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-061",
@@ -912,14 +1259,18 @@
     "type": "show",
     "production_type": "community",
     "company": "Berninneit",
-    "venue": null,
+    "venue": "Berninneit",
     "location": "Cowes",
     "region": "melbourne-victoria",
     "date_start": "2026-06-21",
     "date_end": "2026-06-21",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-062",
@@ -932,9 +1283,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-06-27",
     "date_end": "2026-06-28",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring"]
+    "tags": [
+      "professional",
+      "family",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-063",
@@ -947,9 +1304,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-06-30",
     "date_end": "2026-06-30",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["community", "family"]
+    "tags": [
+      "community",
+      "family"
+    ]
   },
   {
     "id": "mel-2026-064",
@@ -962,25 +1324,36 @@
     "region": "melbourne-victoria",
     "date_start": "2026-06-30",
     "date_end": "2026-07-04",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional"]
+    "tags": [
+      "opera",
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-065",
     "show_title": "Jersey Boys",
     "type": "show",
     "production_type": "community",
-    "company": "PLOS",
-    "venue": "FAC",
+    "company": "Peninsula Light Opera Society",
+    "venue": "Frankston Arts Centre",
     "location": "Frankston",
     "region": "melbourne-victoria",
     "date_start": "2026-07-01",
     "date_end": "2026-08-31",
     "dates_approximate": true,
-    "genre": ["jukebox", "drama", "modern"],
+    "genre": [
+      "jukebox",
+      "drama",
+      "modern"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-066",
@@ -993,9 +1366,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-01",
     "date_end": "2026-07-12",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring"]
+    "tags": [
+      "professional",
+      "family",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-067",
@@ -1008,9 +1387,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-03",
     "date_end": "2026-07-11",
-    "genre": ["musical", "youth", "contemporary"],
+    "genre": [
+      "musical",
+      "youth",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community", "youth"]
+    "tags": [
+      "community",
+      "youth"
+    ]
   },
   {
     "id": "mel-2026-068",
@@ -1023,9 +1409,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-03",
     "date_end": "2026-07-12",
-    "genre": ["musical", "youth", "comedy"],
+    "genre": [
+      "musical",
+      "youth",
+      "comedy"
+    ],
     "musical_id": "matilda",
-    "tags": ["community", "junior-version"]
+    "tags": [
+      "community",
+      "junior-version"
+    ]
   },
   {
     "id": "mel-2026-069",
@@ -1038,24 +1431,33 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-08",
     "date_end": "2026-07-08",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-070",
     "show_title": "Patience",
     "type": "show",
     "production_type": "community",
-    "company": "GSOV",
+    "company": "Gilbert and Sullivan Opera Victoria",
     "venue": "Alexander Theatre",
     "location": "Clayton",
     "region": "melbourne-victoria",
     "date_start": "2026-07-10",
     "date_end": "2026-07-12",
-    "genre": ["operetta"],
+    "genre": [
+      "operetta"
+    ],
     "musical_id": null,
-    "tags": ["gilbert-sullivan", "community"]
+    "tags": [
+      "gilbert-sullivan",
+      "community"
+    ]
   },
   {
     "id": "mel-2026-071",
@@ -1068,9 +1470,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-14",
     "date_end": "2026-09-09",
-    "genre": ["modern", "romance", "comedy"],
+    "genre": [
+      "modern",
+      "romance",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["professional", "touring"]
+    "tags": [
+      "professional",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-072",
@@ -1083,9 +1492,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-15",
     "date_end": "2026-07-16",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring", "regional"]
+    "tags": [
+      "professional",
+      "family",
+      "touring",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-073",
@@ -1098,9 +1514,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-18",
     "date_end": "2026-07-19",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring", "regional"]
+    "tags": [
+      "professional",
+      "family",
+      "touring",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-074",
@@ -1108,14 +1531,21 @@
     "type": "show",
     "production_type": "professional",
     "company": null,
-    "venue": "GAC",
+    "venue": "Geelong Arts Centre",
     "location": "Geelong",
     "region": "melbourne-victoria",
     "date_start": "2026-07-22",
     "date_end": "2026-07-23",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring", "regional"]
+    "tags": [
+      "professional",
+      "family",
+      "touring",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-075",
@@ -1128,9 +1558,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-22",
     "date_end": "2026-08-08",
-    "genre": ["contemporary", "drama"],
+    "genre": [
+      "contemporary",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-076",
@@ -1143,9 +1578,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-23",
     "date_end": "2026-07-23",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional"]
+    "tags": [
+      "opera",
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-077",
@@ -1158,9 +1598,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-07-24",
     "date_end": "2026-10-23",
-    "genre": ["contemporary", "pop-rock", "ensemble-driven"],
+    "genre": [
+      "contemporary",
+      "pop-rock",
+      "ensemble-driven"
+    ],
     "musical_id": null,
-    "tags": ["professional", "touring"]
+    "tags": [
+      "professional",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-078",
@@ -1174,9 +1621,18 @@
     "date_start": "2026-08-01",
     "date_end": "2026-08-31",
     "dates_approximate": true,
-    "genre": ["musical", "dance-heavy", "ensemble-driven", "youth"],
+    "genre": [
+      "musical",
+      "dance-heavy",
+      "ensemble-driven",
+      "youth"
+    ],
     "musical_id": "newsies",
-    "tags": ["community", "junior-version", "dance-heavy"]
+    "tags": [
+      "community",
+      "junior-version",
+      "dance-heavy"
+    ]
   },
   {
     "id": "mel-2026-079",
@@ -1189,9 +1645,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-01",
     "date_end": "2026-08-01",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional", "regional"]
+    "tags": [
+      "opera",
+      "professional",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-080",
@@ -1204,9 +1666,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-01",
     "date_end": "2026-08-02",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring"]
+    "tags": [
+      "professional",
+      "family",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-081",
@@ -1219,9 +1687,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-05",
     "date_end": "2026-08-05",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring", "regional"]
+    "tags": [
+      "professional",
+      "family",
+      "touring",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-082",
@@ -1234,9 +1709,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-05",
     "date_end": "2026-09-27",
-    "genre": ["jukebox", "drama"],
+    "genre": [
+      "jukebox",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["professional", "touring"]
+    "tags": [
+      "professional",
+      "touring"
+    ]
   },
   {
     "id": "mel-2026-083",
@@ -1249,9 +1730,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-14",
     "date_end": "2026-08-14",
-    "genre": ["comedy"],
+    "genre": [
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-084",
@@ -1264,9 +1749,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-14",
     "date_end": "2026-08-30",
-    "genre": ["rock-musical", "contemporary"],
+    "genre": [
+      "rock-musical",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-085",
@@ -1279,9 +1770,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-15",
     "date_end": "2026-08-15",
-    "genre": ["comedy"],
+    "genre": [
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-086",
@@ -1294,9 +1789,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-19",
     "date_end": "2026-08-20",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "touring", "regional"]
+    "tags": [
+      "professional",
+      "family",
+      "touring",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-087",
@@ -1309,9 +1811,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-19",
     "date_end": "2026-08-29",
-    "genre": ["comedy"],
+    "genre": [
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-088",
@@ -1324,9 +1830,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-20",
     "date_end": "2026-08-22",
-    "genre": ["musical", "family"],
+    "genre": [
+      "musical",
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["school", "regional"]
+    "tags": [
+      "school",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-089",
@@ -1339,9 +1851,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-25",
     "date_end": "2026-08-25",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["regional"]
+    "tags": [
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-090",
@@ -1354,9 +1870,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-08-28",
     "date_end": "2026-08-30",
-    "genre": ["classic-musical", "youth"],
+    "genre": [
+      "classic-musical",
+      "youth"
+    ],
     "musical_id": null,
-    "tags": ["community", "junior-version", "regional"]
+    "tags": [
+      "community",
+      "junior-version",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-091",
@@ -1370,9 +1893,14 @@
     "date_start": "2026-08-01",
     "date_end": "2026-08-31",
     "dates_approximate": true,
-    "genre": ["musical"],
+    "genre": [
+      "musical"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-092",
@@ -1386,9 +1914,15 @@
     "date_start": "2026-09-01",
     "date_end": "2026-09-30",
     "dates_approximate": true,
-    "genre": ["comedy", "contemporary"],
+    "genre": [
+      "comedy",
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-093",
@@ -1402,9 +1936,14 @@
     "date_start": "2026-09-01",
     "date_end": "2026-09-30",
     "dates_approximate": true,
-    "genre": ["musical"],
+    "genre": [
+      "musical"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-094",
@@ -1417,9 +1956,16 @@
     "region": "melbourne-victoria",
     "date_start": "2026-09-04",
     "date_end": "2026-09-05",
-    "genre": ["musical", "drama", "ensemble-driven"],
+    "genre": [
+      "musical",
+      "drama",
+      "ensemble-driven"
+    ],
     "musical_id": null,
-    "tags": ["community", "regional"]
+    "tags": [
+      "community",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-095",
@@ -1432,9 +1978,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-09-17",
     "date_end": "2026-09-17",
-    "genre": ["family"],
+    "genre": [
+      "family"
+    ],
     "musical_id": null,
-    "tags": ["professional", "family", "regional"]
+    "tags": [
+      "professional",
+      "family",
+      "regional"
+    ]
   },
   {
     "id": "mel-2026-096",
@@ -1447,9 +1999,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-09-22",
     "date_end": "2026-09-26",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-097",
@@ -1462,9 +2018,15 @@
     "region": "melbourne-victoria",
     "date_start": "2026-09-29",
     "date_end": "2026-10-01",
-    "genre": ["opera", "drama"],
+    "genre": [
+      "opera",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["professional", "opera"]
+    "tags": [
+      "professional",
+      "opera"
+    ]
   },
   {
     "id": "mel-2026-098",
@@ -1477,9 +2039,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-10-07",
     "date_end": "2026-10-10",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-099",
@@ -1492,9 +2058,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-10-08",
     "date_end": "2026-10-24",
-    "genre": ["comedy", "musical"],
+    "genre": [
+      "comedy",
+      "musical"
+    ],
     "musical_id": null,
-    "tags": ["professional"]
+    "tags": [
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-100",
@@ -1507,9 +2078,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-10-14",
     "date_end": "2026-10-14",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-101",
@@ -1522,9 +2097,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-10-23",
     "date_end": "2026-11-07",
-    "genre": ["comedy", "musical"],
+    "genre": [
+      "comedy",
+      "musical"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-102",
@@ -1537,9 +2117,13 @@
     "region": "melbourne-victoria",
     "date_start": "2026-10-25",
     "date_end": "2026-10-25",
-    "genre": ["contemporary"],
+    "genre": [
+      "contemporary"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-103",
@@ -1553,9 +2137,15 @@
     "date_start": "2026-11-01",
     "date_end": "2026-11-30",
     "dates_approximate": true,
-    "genre": ["jukebox", "contemporary", "comedy"],
+    "genre": [
+      "jukebox",
+      "contemporary",
+      "comedy"
+    ],
     "musical_id": null,
-    "tags": ["community"]
+    "tags": [
+      "community"
+    ]
   },
   {
     "id": "mel-2026-104",
@@ -1568,24 +2158,36 @@
     "region": "melbourne-victoria",
     "date_start": "2026-11-07",
     "date_end": "2026-11-18",
-    "genre": ["opera"],
+    "genre": [
+      "opera"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional"]
+    "tags": [
+      "opera",
+      "professional"
+    ]
   },
   {
     "id": "mel-2026-105",
     "show_title": "A G&S Christmas Carol",
     "type": "show",
     "production_type": "community",
-    "company": "GSOV",
-    "venue": null,
+    "company": "Gilbert and Sullivan Opera Victoria",
+    "venue": "Malvern Theatre",
     "location": "Malvern",
     "region": "melbourne-victoria",
     "date_start": "2026-11-19",
     "date_end": "2026-11-22",
-    "genre": ["operetta", "comedy", "holiday"],
+    "genre": [
+      "operetta",
+      "comedy",
+      "holiday"
+    ],
     "musical_id": null,
-    "tags": ["gilbert-sullivan", "community"]
+    "tags": [
+      "gilbert-sullivan",
+      "community"
+    ]
   },
   {
     "id": "mel-2026-106",
@@ -1598,8 +2200,14 @@
     "region": "melbourne-victoria",
     "date_start": "2026-11-21",
     "date_end": "2026-11-28",
-    "genre": ["opera", "drama"],
+    "genre": [
+      "opera",
+      "drama"
+    ],
     "musical_id": null,
-    "tags": ["opera", "professional"]
+    "tags": [
+      "opera",
+      "professional"
+    ]
   }
 ]

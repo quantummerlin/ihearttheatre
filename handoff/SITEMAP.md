@@ -1,7 +1,7 @@
 # iHeartTheatre — Site Map
 
 ```
-ihearttheatre.com.au
+ihearttheatre.com
 │
 ├── 🏠 HOME (/)
 │   ├── Hero: "Melbourne's Musical Theatre Community Hub"
@@ -14,7 +14,7 @@ ihearttheatre.com.au
 ├── 🎭 AUDITION NOTICEBOARD (/auditions) ✅ PROVIDED
 │   ├── Search & filter auditions
 │   ├── Audition listing cards (Open / Soon / Closed)
-│   ├── Submit CTA → auditions@ihearttheatre.com.au
+│   ├── Submit CTA → auditions@ihearttheatre.com
 │   └── "How it works" section
 │
 ├── 🌟 SERVICE PROVIDER DIRECTORY (/services) ✅ PROVIDED
@@ -23,7 +23,7 @@ ihearttheatre.com.au
 │   ├── Search across all provider data
 │   ├── Provider cards with contact info
 │   ├── Featured provider badges
-│   ├── Submit CTA → promotions@ihearttheatre.com.au
+│   ├── Submit CTA → promotions@ihearttheatre.com
 │   └── "How it works" section
 │
 ├── ⭐ REVIEWS (/reviews) — EXISTING (enhance)
@@ -56,9 +56,9 @@ ihearttheatre.com.au
 │   └── Contact info
 │
 └── 📧 EMAIL INFRASTRUCTURE (configured)
-    ├── auditions@ihearttheatre.com.au → Gmail
-    ├── promotions@ihearttheatre.com.au → Gmail
-    └── *@ihearttheatre.com.au → Gmail (catch-all)
+    ├── auditions@ihearttheatre.com → Gmail
+    ├── promotions@ihearttheatre.com → Gmail
+    └── *@ihearttheatre.com → Gmail (catch-all)
 ```
 
 ## User Flows
@@ -75,13 +75,13 @@ Home → Services → Filter "Vocal Coaches" → Browse cards → Click Website/
 
 ### Flow 3: Theatre company submits an audition
 ```
-Auditions page → "Submit an Audition" → Pre-filled email to auditions@ihearttheatre.com.au
+Auditions page → "Submit an Audition" → Pre-filled email to auditions@ihearttheatre.com
 (Admin manually adds listing to CMS/JSON)
 ```
 
 ### Flow 4: Service provider requests listing
 ```
-Services page → "Get Listed Free" → Pre-filled email to promotions@ihearttheatre.com.au
+Services page → "Get Listed Free" → Pre-filled email to promotions@ihearttheatre.com
 (Admin manually adds listing to CMS/JSON)
 ```
 

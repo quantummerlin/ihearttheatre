@@ -30,7 +30,7 @@
 ### 3. **Disclaimer** (`disclaimer.html`)
 - **Clear statement** that reviews are personal opinions
 - **"We Are Reviewers, NOT Critics" philosophy** prominently featured
-- **Special section about Penelope's reviews** (age 7, supervised, child's perspective)
+- **Special section about Penelope's reviews** (supervised, kid reviewer's perspective)
 - **No financial endorsements** statement
 - **Accuracy and timeliness** disclaimers
 - **Limitation of liability**

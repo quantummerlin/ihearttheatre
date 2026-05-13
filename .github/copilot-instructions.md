@@ -1,7 +1,7 @@
 # iHeartTheatre — Copilot Project Instructions
 
 ## Project Overview
-iHeartTheatre.com is a Melbourne theatre community PWA website run by **Deanna Amato** and her 7-year-old daughter **Penelope Quinn**. They publish theatre reviews celebrating Melbourne's theatre scene — from school halls to Broadway blockbusters.
+iHeartTheatre.com is a Melbourne theatre community PWA website run by **Deanna Amato** and her young daughter **Penelope Quinn**, the site's junior reviewer. They publish theatre reviews celebrating Melbourne's theatre scene — from school halls to Broadway blockbusters.
 
 ## Tech Stack
 - **Static HTML** — No build system, no framework. Pages are self-contained HTML files with inline `<style>` + shared assets.

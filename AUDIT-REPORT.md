@@ -72,7 +72,7 @@
 
 ### reviewer-penelope.html — ✅ FAIR
 - Same pattern as Deanna's page.
-- States "7 years old" — will need annual updates.
+- ~~States "7 years old" — will need annual updates.~~ *Resolved May 2026 — generalised to "Jr. Reviewer".*
 - Uses emoji 👧 as avatar fallback.
 
 ### about.html — ✅ GOOD
@@ -161,7 +161,7 @@
 ### Moderate Content Issues
 5. **Contact page lists 4+ email addresses** (hello@, press@, partnerships@, plus implied reviews@ and promote@) — unclear if any of these actually work.
 6. **Social media links** (Instagram, Facebook, Twitter, YouTube) link to accounts that may not exist.
-7. **Penelope's age hardcoded as "7 years old"** — will need updating.
+7. ~~**Penelope's age hardcoded as "7 years old"** — will need updating.~~ *Resolved May 2026 — generalised to "Jr. Reviewer" across all public pages.*
 8. **"New This Week" and "Still Available" filters** on reviews.html are date-based but all dates are hardcoded and stale.
 9. **Review excerpts in JS arrays** are generic blurbs, not actual excerpts from the review content.
 10. **Energy flow section** (🎭→📝→👥→⭐→✨) appears on both index.html and manifesto.html — duplicated content.

@@ -9,7 +9,7 @@
 
 **✅ What We ARE (Unique Strengths):**
 - **First Melbourne platform** covering COMPLETE theatre spectrum (school halls → Broadway)
-- **Dual-perspective authority** - Adult reviews (Deanna) + Junior reviews (Penelope, age 7)
+- **Dual-perspective authority** - Adult reviews (Deanna) + Junior reviews (Penelope, the site's kid reviewer)
 - **Family-focused approach** - Parents trust Penelope's kid-friendly reviews
 - **Community-driven** - Not just reviews, but a theatre community hub
 - **Production-first philosophy** - Partnering with theatres, not just critiquing

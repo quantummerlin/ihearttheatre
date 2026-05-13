@@ -3,7 +3,7 @@
 > **Date:** June 2025
 > **From:** Product / Content team
 > **To:** Developer
-> **Domain:** ihearttheatre.com.au
+> **Domain:** ihearttheatre.com
 > **Email routing:** Cloudflare catch-all → Gmail (already configured)
 
 ---
@@ -15,7 +15,7 @@ iHeartTheatre is pivoting from a **review-only site** to a **community hub for m
 ### New Site Structure
 
 ```
-ihearttheatre.com.au/
+ihearttheatre.com/
 ├── /                          → Landing / Home page (needs building)
 ├── /auditions                 → Audition Noticeboard (PROVIDED ✅)
 ├── /services                  → Service Provider Directory (PROVIDED ✅)
@@ -259,9 +259,9 @@ The existing review system should be enhanced to support this flow:
 
 | Address | Purpose | Routing |
 |---------|---------|---------|
-| `auditions@ihearttheatre.com.au` | Audition submissions from companies | → Gmail via Cloudflare catch-all |
-| `promotions@ihearttheatre.com.au` | Service provider listing requests | → Gmail via Cloudflare catch-all |
-| `*@ihearttheatre.com.au` | Any other address | → Gmail via Cloudflare catch-all |
+| `auditions@ihearttheatre.com` | Audition submissions from companies | → Gmail via Cloudflare catch-all |
+| `promotions@ihearttheatre.com` | Service provider listing requests | → Gmail via Cloudflare catch-all |
+| `*@ihearttheatre.com` | Any other address | → Gmail via Cloudflare catch-all |
 
 Outbound sending is configured via Brevo SMTP in Gmail (can send FROM custom addresses).
 
@@ -332,4 +332,4 @@ Both pages use these shared design tokens. Adjust to match your site:
 
 ---
 
-## Questions? Reach out to the product team or email auditions@ihearttheatre.com.au
+## Questions? Reach out to the product team or email auditions@ihearttheatre.com

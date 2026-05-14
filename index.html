@@ -846,24 +846,7 @@
  transition: width 0.1s ease;
  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
  }
-
- .particle {
- position: fixed;
- width: 8px;
- height: 8px;
- background: radial-gradient(circle, rgba(102, 126, 234, 0.6) 0%, transparent 70%);
- border-radius: 50%;
- pointer-events: none;
- animation: float 4s ease-in-out infinite;
- z-index: 1;
- }
-
- @keyframes float {
- 0%, 100% {
- transform: translateY(0) rotate(0deg);
- opacity: 0.4;
- }
- 50% {
+50% {
  transform: translateY(-100px) rotate(180deg);
  opacity: 0.8;
  }
@@ -960,8 +943,7 @@
  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
  <link rel="stylesheet" href="css/shared.css?v=202604150813">
- <link rel="stylesheet" href="css/magic-effects.css?v=202604150813">
- <script type="application/ld+json">
+<script type="application/ld+json">
  {
  "@context": "https://schema.org",
  "@type": "WebSite",
@@ -1472,8 +1454,7 @@
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
  <script src="js/shared.js?v=202604150813"></script>
- <script src="js/magic-effects.js?v=202604150813" defer></script>
- <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js" async></script>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js" async></script>
  <script>
  // Dynamic homepage previews
  (function() {

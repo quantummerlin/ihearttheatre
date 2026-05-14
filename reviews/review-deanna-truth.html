@@ -33,30 +33,7 @@
  z-index: 1000;
  transition: width 0.1s ease;
  }
-
- .particles {
- position: fixed;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- pointer-events: none;
- z-index: 1;
- overflow: hidden;
- }
-
- .particle {
- position: absolute;
- width: 4px;
- height: 4px;
- background: rgba(102, 126, 234, 0.3);
- border-radius: 50%;
- animation: float 15s infinite ease-in-out;
- }
-
- @keyframes float {
- 0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
- 10% { opacity: 1; }
+10% { opacity: 1; }
  90% { opacity: 1; }
  100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
  }
@@ -336,7 +313,6 @@
  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
  <link rel="apple-touch-icon" sizes="192x192" href="../icons/icon-192x192.png">
  <link rel="stylesheet" href="../css/shared.css?v=202604150813">
-    <link rel="stylesheet" href="../css/magic-effects.css?v=202604150813">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
 <script>
@@ -386,10 +362,7 @@
  </script>
 </head>
 <body>
- <div class="progress-bar"></div>
- <div class="particles" id="particles"></div>
-
- <nav>
+ <div class="progress-bar"></div><nav>
  <div class="nav-container">
  <a href="../index.html" class="logo">iHeartTheatre</a>
  <div class="hamburger" aria-label="Toggle navigation">
@@ -539,6 +512,5 @@
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
  <script src="../js/shared.js?v=202604150813"></script>
-    <script src="../js/magic-effects.js?v=202604150813" defer></script>
 </body>
 </html>

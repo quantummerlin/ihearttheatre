@@ -323,25 +323,6 @@ function initProgressBar() {
 }
 
 // ============================================
-// Floating Particles
-// ============================================
-function initParticles() {
- const container = document.getElementById('particles');
- if (!container) return;
-
- if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
- const count = window.innerWidth < 768 ? 4 : 7;
- for (let i = 0; i < count; i++) {
- const particle = document.createElement('div');
- particle.className = 'particle';
- particle.style.left = Math.random() * 100 + '%';
- particle.style.animationDuration = (Math.random() * 15 + 15) + 's';
- particle.style.animationDelay = (Math.random() * 20) + 's';
- container.appendChild(particle);
- }
-}
-
-// ============================================
 // Hamburger Menu
 // ============================================
 function initHamburger() {
@@ -547,7 +528,6 @@ function initScrollReveal() {
 
 document.addEventListener('DOMContentLoaded', () => {
  initProgressBar();
- initParticles();
  initHamburger();
  initBackToTop();
  initCookieConsent();
@@ -852,4 +832,92 @@ function _iHTShowEmailFallbackModal(opts) {
   s.src = '/js/search.js';
   s.defer = true;
   document.head.appendChild(s);
+})();
+
+// ============================================
+// GA4 Custom Events
+// ============================================
+(function() {
+ function ga4(event, params) {
+  if (typeof gtag === 'function') gtag('event', event, params || {});
+ }
+
+ var path = window.location.pathname;
+ var page = path.split('/').pop() || 'index.html';
+
+ // Page-type events — fire once on load
+ // Reviews: /reviews/review-*.html
+ if (/^\/reviews\//.test(path)) {
+  var title = document.title.replace(/\s*[|–—].*$/, '').trim();
+  var reviewer = /penelope/i.test(page) ? 'Penelope' : 'Deanna';
+  ga4('review_read', { review_title: title, reviewer: reviewer });
+ }
+
+ // Shows: /shows/mel-*.html
+ if (/^\/shows\//.test(path)) {
+  var showTitle = document.title.replace(/\s*[|–—].*$/, '').trim();
+  ga4('show_view', { show_title: showTitle });
+ }
+
+ // Per-role pages: /musicals/*/role.html
+ if (/^\/musicals\/[^/]+\/[^/]+\.html/.test(path)) {
+  var parts = path.split('/');
+  ga4('role_page_view', { musical: parts[2], role: parts[3].replace('.html', '') });
+ }
+
+ // Songs browser
+ if (page === 'songs.html') {
+  ga4('songs_browse', {});
+ }
+
+ // Auditions page
+ if (page === 'auditions.html') {
+  ga4('auditions_browse', {});
+ }
+
+ // Role Finder (musicals.html)
+ if (page === 'musicals.html') {
+  ga4('role_finder_view', {});
+
+  // Track search usage (debounced — fires after user stops typing)
+  document.addEventListener('DOMContentLoaded', function() {
+   var searchInput = document.getElementById('role-search') ||
+                     document.querySelector('input[type="search"], input[placeholder*="earch"]');
+   if (searchInput) {
+    var timer;
+    searchInput.addEventListener('input', function() {
+     clearTimeout(timer);
+     var val = this.value.trim();
+     if (val.length >= 3) {
+      timer = setTimeout(function() {
+       ga4('role_search', { search_term: val });
+      }, 1500);
+     }
+    });
+   }
+  });
+ }
+
+ // Track outbound audition link clicks across all pages
+ document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href]');
+  if (!link) return;
+  var href = link.getAttribute('href') || '';
+
+  // Audition-related clicks (links to auditions page or external audition sites)
+  if (/audition/i.test(href) && href !== '#') {
+   ga4('audition_click', {
+    link_url: href,
+    link_text: (link.textContent || '').trim().substring(0, 80)
+   });
+  }
+
+  // Track show booking / ticket clicks (external links from show pages)
+  if (/^\/shows\//.test(path) && /^https?:\/\//.test(href) && !/ihearttheatre/i.test(href)) {
+   ga4('show_ticket_click', {
+    show_title: document.title.replace(/\s*[|–—].*$/, '').trim(),
+    link_url: href
+   });
+  }
+ });
 })();

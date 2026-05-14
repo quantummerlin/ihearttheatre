@@ -362,7 +362,7 @@
 
     <div class="submit-banner">
         <p><strong>Service providers:</strong> Get listed for free and reach hundreds of performers looking for exactly what you offer!</p>
-        <a href="mailto:contact@ihearttheatre.com?subject=Service%20Provider%20Listing%20%E2%80%94%20%5BBusiness%20Name%5D&body=Hi%20iHeartTheatre%20team%2C%0A%0APlease%20list%20my%20service%3A%0A%0ABusiness%20Name%3A%20%0ACategory%20(vocal%20coach%2C%20dance%20school%2C%20etc.)%3A%20%0AShort%20Description%3A%20%0AServices%20Offered%3A%20%0ALocation%3A%20%0AWebsite%3A%20%0AEmail%3A%20%0APhone%20(optional)%3A%20%0APrice%20Range%20(%24%2C%20%24%24%2C%20%24%24%24)%3A%20%0A%0AThanks!" class="btn-submit">Get Listed Free ?</a>
+        <a href="submit-service.html" class="btn-submit">Get Listed Free &#x2192;</a>
     </div>
 
     <div class="category-bar" id="category-bar">
@@ -372,7 +372,7 @@
     <div class="controls">
         <div class="search-wrap">
             <span class="search-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
-            <input type="search" id="search-input" placeholder="Search providers, services, locations�" aria-label="Search service providers">
+            <input type="search" id="search-input" placeholder="Search providers, services, locations..." aria-label="Search service providers">
         </div>
         <div class="region-toggle">
             <button class="region-btn active" data-region="all">All Areas</button>
@@ -393,7 +393,7 @@
         <div class="steps">
             <div class="step"><div class="step-num">1</div><h3>Browse or Search</h3><p>Filter by category, location or search for specific services. Find exactly what you need for your career.</p></div>
             <div class="step"><div class="step-num">2</div><h3>Connect Directly</h3><p>Every listing links straight to the provider. Visit their website, email or call, no middleman.</p></div>
-            <div class="step"><div class="step-num">3</div><h3>Get Listed Free</h3><p>Service providers can email us to get a free listing. We want this to be the most complete resource in Victoria.</p></div>
+            <div class="step"><div class="step-num">3</div><h3>Get Listed Free</h3><p>Service providers can <a href="submit-service.html" style="color:var(--accent-primary);text-decoration:underline;">submit a free listing</a>. We want this to be the most complete resource in Victoria.</p></div>
             <div class="step"><div class="step-num">4</div><h3>Community Built</h3><p>Know a great coach or school? Let us know! We rely on the community to keep this directory growing.</p></div>
         </div>
     </section>
@@ -428,16 +428,16 @@
     let activeRegion = 'all';
 
     const DEFAULT_CATEGORIES = [
-        {id:"vocal-coach",label:"Vocal Coaches",icon:""},
-        {id:"dance-school",label:"Dance Schools",icon:""},
-        {id:"acting-coach",label:"Acting Coaches",icon:""},
-        {id:"accompanist",label:"Accompanists",icon:""},
-        {id:"headshots",label:"Headshots",icon:""},
-        {id:"audition-prep",label:"Audition Prep",icon:"?"},
-        {id:"music-director",label:"Music Directors",icon:""},
-        {id:"choreographer",label:"Choreographers",icon:""},
-        {id:"costume",label:"Costumes",icon:""},
-        {id:"other",label:"Other",icon:""}
+        {id:"vocal-coach",label:"Vocal Coaches",icon:"\u{1F3A4}"},
+        {id:"dance-school",label:"Dance Schools",icon:"\u{1F483}"},
+        {id:"acting-coach",label:"Acting Coaches",icon:"\u{1F3AD}"},
+        {id:"accompanist",label:"Accompanists",icon:"\u{1F3B9}"},
+        {id:"headshots",label:"Headshots",icon:"\u{1F4F8}"},
+        {id:"audition-prep",label:"Audition Prep",icon:"\u{2B50}"},
+        {id:"music-director",label:"Music Directors",icon:"\u{1F3BC}"},
+        {id:"choreographer",label:"Choreographers",icon:"\u{1FA70}"},
+        {id:"costume",label:"Costumes",icon:"\u{1F457}"},
+        {id:"other",label:"Other",icon:"\u{1F527}"}
     ];
 
     function escHtml(s) {
@@ -467,16 +467,6 @@
     function getCatLabel(catId) {
         const c = categories.find(c=>c.id===catId);
         return c ? c.label : catId;
-    }
-
-    function toggleServiceSave(id, btn) {
-        const p = allProviders.find(x => x.id === id);
-        if (!p) return;
-        const summary = { id: p.id, name: p.name, category: p.category, tagline: p.tagline, location: p.location };
-        const saved = iHT.toggle('service', id, summary);
-        btn.innerHTML = saved ? '?' : '?';
-        btn.title = saved ? 'Saved - click to unsave' : 'Save this provider';
-        btn.style.color = saved ? '#ff6b9d' : '#a0a0b0';
     }
 
     function renderCard(p) {
@@ -572,7 +562,9 @@
                 {id:"demo-a01",name:"Michael Chen - Acting & Scene Work",category:"acting-coach",tagline:"Meisner-trained. Scene work, monologues & cold reading",description:"One-on-one and small group acting coaching with a focus on truthful, grounded performance. Meisner technique adapted for musical theatre.",services:["Private coaching","Scene study groups","Cold reading technique","Monologue prep","Callback coaching"],location:"Fitzroy, Melbourne",region:"melbourne",website:null,email:"michael@example.com",phone:null,price_range:"$$$",experience:"12 years",tags:["meisner","scene work","audition prep","adults"],featured:false},
                 {id:"demo-p01",name:"Alex Rossi - Audition Accompanist",category:"accompanist",tagline:"Reliable keys for your next audition or rehearsal",description:"Experienced accompanist available for auditions, rehearsals, and private coaching sessions. Comfortable sight-reading all MT repertoire.",services:["Audition accompaniment","Rehearsal pianist","Transpositions & cuts"],location:"Available across Melbourne metro",region:"melbourne",website:null,email:"alex.rossi@example.com",phone:"0401 234 567",price_range:"$$",experience:"8 years",tags:["piano","sight-reading","auditions","rehearsals"],featured:false},
                 {id:"demo-h01",name:"Spotlight Studios - Performer Headshots",category:"headshots",tagline:"Headshots that book auditions. Theatre-focused.",description:"Specialising in performer headshots for musical theatre, acting, and dance. Natural light studio and outdoor options. Edited gallery within 48 hours.",services:["Standard headshot session","Multiple-look packages","Outdoor/natural light","Quick retouching"],location:"Brunswick, Melbourne",region:"melbourne",website:"https://www.example.com",email:"bookings@example.com",phone:"0423 456 789",price_range:"$$",experience:"6 years",tags:["headshots","performer photos","quick turnaround"],featured:true},
-                {id:"demo-rd01",name:"Ballarat School of Dance",category:"dance-school",tagline:"Regional Victoria's home for musical theatre dance",description:"Offering jazz, tap, ballet, and contemporary classes with a strong musical theatre focus. Located in the heart of Ballarat.",services:["Jazz classes","Tap classes","Ballet","Contemporary","MT combo class"],location:"Ballarat, VIC",region:"regional",website:"https://www.example.com",email:"info@example.com",phone:"0353 456 789",price_range:"$",experience:"25+ years",tags:["jazz","tap","ballet","regional","ballarat","all ages"],featured:false}
+                {id:"demo-rd01",name:"Ballarat School of Dance",category:"dance-school",tagline:"Regional Victoria's home for musical theatre dance",description:"Offering jazz, tap, ballet, and contemporary classes with a strong musical theatre focus. Located in the heart of Ballarat.",services:["Jazz classes","Tap classes","Ballet","Contemporary","MT combo class"],location:"Ballarat, VIC",region:"regional",website:"https://www.example.com",email:"info@example.com",phone:"0353 456 789",price_range:"$",experience:"25+ years",tags:["jazz","tap","ballet","regional","ballarat","all ages"],featured:false},
+                {id:"demo-ap01",name:"Triple Threat Coaching",category:"audition-prep",tagline:"Complete audition preparation — song, scene, dance",description:"Full-service audition coaching covering song selection, interpretation, monologue work, and dance combination prep. Run by a team of three specialists who work together to prepare you for the whole audition room.",services:["Full audition coaching","Song selection & cuts","Monologue coaching","Dance combo prep","Mock auditions","Self-tape coaching"],location:"Prahran, Melbourne",region:"melbourne",website:"https://www.example.com",email:"team@example.com",phone:null,price_range:"$$$",experience:"5 years (team collective 30+)",tags:["audition prep","triple threat","mock auditions","self-tapes"],featured:true},
+                {id:"demo-co01",name:"Stagewear Costumes Melbourne",category:"costume",tagline:"Costume hire & custom builds for community theatre",description:"Extensive costume hire library for musical theatre productions, plus custom builds for specific shows. Period costumes, character pieces, and ensemble packages available. Discounts for community theatre companies.",services:["Costume hire","Custom builds","Ensemble packages","Fittings & alterations","Delivery available"],location:"Moorabbin, Melbourne",region:"melbourne",website:"https://www.example.com",email:"hire@example.com",phone:"0399 876 543",price_range:"$$",experience:"20+ years",tags:["costume hire","custom costumes","community theatre"],featured:false}
             ];
         }
         renderCategoryPills();

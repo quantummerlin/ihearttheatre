@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Find your perfect musical theatre role. Search and filter 30 musicals and 270+ roles by voice type, dance level, difficulty, and more. Audition song suggestions and casting insights for every role.">
-<meta name="theme-color" content="#667eea">
+<meta name="theme-color" content="#e8b923">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <title>Role Finder — iHeartTheatre</title>
@@ -20,8 +20,8 @@
     --bg-tertiary: #12121a;
     --text-primary: #f5f5f5;
     --text-secondary: #a0a0b0;
-    --accent-primary: #667eea;
-    --accent-secondary: #764ba2;
+    --accent-primary: #e8b923;
+    --accent-secondary: #b91c1c;
     --accent-gold: #ffd700;
     --glass-bg: rgba(255,255,255,0.03);
     --glass-border: rgba(255,255,255,0.08);
@@ -33,12 +33,12 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 .page-hero {
     padding: 100px 20px 48px;
     text-align: center;
-    background: linear-gradient(180deg, rgba(5,5,8,0.72) 0%, rgba(5,5,8,0.45) 100%), url('images/musicals/hero-banner.jpg') center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(5,5,8,0.50) 0%, rgba(5,5,8,0.20) 100%), url('images/musicals/hero-banner.jpg') center/cover no-repeat;
 }
 .page-badge {
     display: inline-block;
-    background: linear-gradient(135deg, rgba(102,126,234,0.2), rgba(118,75,162,0.2));
-    border: 1px solid rgba(102,126,234,0.3);
+    background: linear-gradient(135deg, rgba(232,185,35,0.2), rgba(185,28,28,0.2));
+    border: 1px solid rgba(232,185,35,0.3);
     border-radius: 20px;
     padding: 6px 16px;
     font-size: 0.8rem;
@@ -51,7 +51,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 .page-hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 5vw, 3.5rem);
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #e8b923, #b91c1c);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -97,7 +97,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     transition: all 0.2s;
     white-space: nowrap;
 }
-.pill.active, .pill:hover { background: linear-gradient(135deg, rgba(102,126,234,0.25), rgba(118,75,162,0.25)); border-color: var(--accent-primary); color: var(--text-primary); }
+.pill.active, .pill:hover { background: linear-gradient(135deg, rgba(232,185,35,0.25), rgba(185,28,28,0.25)); border-color: var(--accent-primary); color: var(--text-primary); }
 
 /* Filter bar */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
@@ -120,7 +120,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     background-position: right 12px center;
 }
 .filter-select:focus, .filter-select:hover { border-color: var(--accent-primary); color: var(--text-primary); }
-.filter-select.has-value { border-color: var(--accent-primary); color: var(--accent-primary); background-color: rgba(102,126,234,0.08); }
+.filter-select.has-value { border-color: var(--accent-primary); color: var(--accent-primary); background-color: rgba(232,185,35,0.08); }
 .filter-select option { background: #1a1a2e; color: var(--text-primary); }
 .results-count {
     font-size: 0.78rem;
@@ -159,11 +159,11 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 .musical-card::before {
     content: '';
     position: absolute; inset: 0;
-    background: linear-gradient(135deg, rgba(102,126,234,0.05), rgba(118,75,162,0.05));
+    background: linear-gradient(135deg, rgba(232,185,35,0.05), rgba(185,28,28,0.05));
     opacity: 0;
     transition: opacity 0.25s;
 }
-.musical-card:hover { border-color: rgba(102,126,234,0.4); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(102,126,234,0.15); }
+.musical-card:hover { border-color: rgba(232,185,35,0.4); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(232,185,35,0.15); }
 .musical-card:hover::before { opacity: 1; }
 .musical-title { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 600; margin-bottom: 4px; line-height: 1.3; }
 .musical-composer { color: var(--text-secondary); font-size: 0.85rem; margin-bottom: 12px; }
@@ -184,11 +184,11 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 .meta-chip.meta-age { color: #c084fc; border-color: rgba(192,132,252,0.3); background: rgba(192,132,252,0.08); }
 .meta-chip.meta-dance { color: #4dd0e1; border-color: rgba(77,208,225,0.3); background: rgba(77,208,225,0.07); }
 .genre-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 10px; }
-.genre-tag { font-size: 0.72rem; color: var(--accent-primary); background: rgba(102,126,234,0.1); border-radius: 4px; padding: 2px 7px; }
+.genre-tag { font-size: 0.72rem; color: var(--accent-primary); background: rgba(232,185,35,0.1); border-radius: 4px; padding: 2px 7px; }
 .card-footer-row { display: flex; justify-content: space-between; align-items: center; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--glass-border); }
 .role-count { font-size: 0.8rem; color: var(--text-secondary); }
 .view-roles-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+    background: linear-gradient(135deg, #e8b923, #b91c1c);
     border: none;
     border-radius: 8px;
     padding: 7px 14px;
@@ -263,7 +263,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     margin-bottom: 10px;
     transition: border-color 0.2s;
 }
-.role-card.open { border-color: rgba(102,126,234,0.35); }
+.role-card.open { border-color: rgba(232,185,35,0.35); }
 .role-header { display: flex; justify-content: space-between; align-items: center; gap: 8px; cursor: pointer; user-select: none; }
 .role-header:hover .role-name { color: var(--accent-primary); }
 .role-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; transition: color 0.15s; }
@@ -283,8 +283,8 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     flex-shrink: 0;
 }
 .type-lead { background: rgba(255,215,0,0.15); color: var(--accent-gold); }
-.type-supporting { background: rgba(102,126,234,0.15); color: var(--accent-primary); }
-.type-character { background: rgba(118,75,162,0.15); color: #c084fc; }
+.type-supporting { background: rgba(232,185,35,0.15); color: var(--accent-primary); }
+.type-character { background: rgba(185,28,28,0.15); color: #c084fc; }
 .type-ensemble { background: rgba(76,175,80,0.15); color: #4caf50; }
 .vocal-row {
     display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px;
@@ -293,9 +293,9 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
     font-size: 0.77rem;
     padding: 3px 9px;
     border-radius: 6px;
-    background: rgba(102,126,234,0.1);
+    background: rgba(232,185,35,0.1);
     color: var(--accent-primary);
-    border: 1px solid rgba(102,126,234,0.2);
+    border: 1px solid rgba(232,185,35,0.2);
 }
 .vocal-chip.belt { background: rgba(255,152,0,0.1); color: #ff9800; border-color: rgba(255,152,0,0.3); }
 .role-description {
@@ -379,7 +379,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 }
 .spinner {
     width: 36px; height: 36px;
-    border: 3px solid rgba(102,126,234,0.2);
+    border: 3px solid rgba(232,185,35,0.2);
     border-top-color: var(--accent-primary);
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
@@ -719,7 +719,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 
         // Musical overview strip
         if (musical.vocal_style || musical.synopsis || musical.junior_version_available) {
-            html += '<div style="background:rgba(102,126,234,0.07);border:1px solid rgba(102,126,234,0.2);border-radius:12px;padding:14px 16px;margin-bottom:20px;">';
+            html += '<div style="background:rgba(232,185,35,0.07);border:1px solid rgba(232,185,35,0.2);border-radius:12px;padding:14px 16px;margin-bottom:20px;">';
             if (musical.junior_version_available) {
                 html += '<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:0.8rem;color:#a78bfa;font-weight:600;">&#10024; A Junior/Kids edition of this musical exists � role names, song keys and casting ages may differ. These guides cover the standard version.</div>';
             }
@@ -813,7 +813,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
                 html += '</div></div>';
             });
             if (curated.style_guidance) {
-                html += '<div style="margin-top:8px;padding:8px 10px;background:rgba(102,126,234,0.06);border-left:2px solid var(--accent-primary);border-radius:0 6px 6px 0;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;">' + escHtml(curated.style_guidance) + '</div>';
+                html += '<div style="margin-top:8px;padding:8px 10px;background:rgba(232,185,35,0.06);border-left:2px solid var(--accent-primary);border-radius:0 6px 6px 0;font-size:0.8rem;color:var(--text-secondary);line-height:1.5;">' + escHtml(curated.style_guidance) + '</div>';
             }
             if (curated.avoid && curated.avoid.length) {
                 html += '<div style="margin-top:6px;font-size:0.75rem;color:#ff8080;">Avoid: ' + curated.avoid.map(function(a){ return escHtml(a); }).join(' � ') + '</div>';
@@ -851,7 +851,7 @@ body { background: var(--bg-primary); color: var(--text-primary); font-family: '
 
         // Career Builder CTA
         html += '<div style="margin-top:14px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06);display:flex;gap:8px;flex-wrap:wrap;">';
-        html += '<a href="career-builder.html?musical=' + encodeURIComponent((musicalId||'')) + '&role=' + encodeURIComponent((role.id||'')) + '" style="display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(102,126,234,0.15),rgba(118,75,162,0.15));border:1px solid rgba(102,126,234,0.3);border-radius:8px;padding:7px 14px;font-size:0.8rem;font-weight:600;color:#667eea;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor=\'#667eea\'" onmouseout="this.style.borderColor=\'rgba(102,126,234,0.3)\'">Could this be my role? ?</a>';
+        html += '<a href="career-builder.html?musical=' + encodeURIComponent((musicalId||'')) + '&role=' + encodeURIComponent((role.id||'')) + '" style="display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,rgba(232,185,35,0.15),rgba(185,28,28,0.15));border:1px solid rgba(232,185,35,0.3);border-radius:8px;padding:7px 14px;font-size:0.8rem;font-weight:600;color:#e8b923;text-decoration:none;transition:border-color 0.2s;" onmouseover="this.style.borderColor=\'#e8b923\'" onmouseout="this.style.borderColor=\'rgba(232,185,35,0.3)\'">Could this be my role? ?</a>';
         html += '</div>';
 
         html += '</div>'; // end role-body

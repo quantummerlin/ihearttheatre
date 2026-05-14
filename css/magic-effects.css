@@ -1,0 +1,83 @@
+/* ============================================
+   iHeartTheatre - Magic Effects CSS
+   Curtain Reveal Only
+   ============================================ */
+
+/* === Curtain Reveal Transitions === */
+.curtain-reveal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.curtain-left,
+.curtain-right {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg, #dc2626 0%, #ef4444 30%, #f87171 50%, #ef4444 70%, #dc2626 100%);
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.curtain-left {
+    left: 0;
+    transform: translateX(0);
+}
+
+.curtain-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.curtain-reveal.open .curtain-left {
+    transform: translateX(-100%);
+}
+
+.curtain-reveal.open .curtain-right {
+    transform: translateX(100%);
+}
+
+/* Curtain texture overlay */
+.curtain-left::after,
+.curtain-right::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 12px,
+        rgba(0,0,0,0.04) 12px,
+        rgba(0,0,0,0.04) 24px
+    );
+    pointer-events: none;
+}
+
+/* Curtain fabric fold highlights */
+.curtain-left::before,
+.curtain-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,0.08),
+        rgba(255,255,255,0.08) 6px,
+        transparent 6px,
+        transparent 28px
+    );
+    pointer-events: none;
+}
+
+/* === Reduced Motion Support === */
+@media (prefers-reduced-motion: reduce) {
+    .curtain-left,
+    .curtain-right {
+        transition: none;
+    }
+}

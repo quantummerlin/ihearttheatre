@@ -943,6 +943,7 @@
  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
  <link rel="stylesheet" href="css/shared.css?v=202604150813">
+ <link rel="stylesheet" href="css/magic-effects.css?v=20260515">
 <script type="application/ld+json">
  {
  "@context": "https://schema.org",
@@ -986,6 +987,24 @@
  <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 </head>
 <body>
+ <!-- Curtain reveal -->
+ <div class="curtain-reveal" id="curtainReveal" aria-hidden="true">
+   <div class="curtain-left"></div>
+   <div class="curtain-right"></div>
+ </div>
+ <script>
+ (function(){
+   document.addEventListener('DOMContentLoaded', function() {
+     var c = document.getElementById('curtainReveal');
+     if (!c) return;
+     setTimeout(function() {
+       c.classList.add('open');
+       setTimeout(function() { c.style.display = 'none'; }, 1600);
+     }, 400);
+   });
+ })();
+ </script>
+
  <div class="progress-bar" id="progressBar"></div>
  
  <nav>

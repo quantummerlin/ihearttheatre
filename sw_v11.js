@@ -1,9 +1,9 @@
 /* iHeartTheatre — sw_v11.js
    Network-first for HTML, cache-first for static assets */
 
-var CACHE_VERSION  = 'iht-v1';
-var STATIC_CACHE   = 'iht-v1-static';
-var PAGE_CACHE     = 'iht-v1-pages';
+var CACHE_VERSION  = 'iht-v2';
+var STATIC_CACHE   = 'iht-v2-static';
+var PAGE_CACHE     = 'iht-v2-pages';
 
 var PRECACHE_URLS = [
   '/css/style.css',

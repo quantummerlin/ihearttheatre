@@ -425,8 +425,8 @@ button {
   background: linear-gradient(
     to bottom,
     transparent 35%,
-    rgba(5,5,8,0.4) 60%,
-    rgba(5,5,8,0.85) 100%
+    rgba(8,0,4,0.4) 60%,
+    rgba(8,0,4,0.85) 100%
   );
   pointer-events: none;
 }
@@ -440,7 +440,7 @@ button {
   z-index: 10;
   width: 40px;
   height: 40px;
-  background: rgba(5,5,8,0.7);
+  background: rgba(8,0,4,0.7);
   border: 1px solid var(--border);
   border-radius: 50%;
   color: var(--text);
@@ -842,7 +842,7 @@ button {
 /* Category text pills (inline on cards) */
 .cat-musical  { color: var(--neon-gold)   !important; }
 .cat-drama    { color: var(--neon-pink)    !important; }
-.cat-comedy   { color: var(--neon-cyan)    !important; }
+.cat-comedy   { color: var(--neon-gold)    !important; }
 .cat-kids     { color: var(--neon-green)   !important; }
 .cat-review   { color: var(--neon-purple)  !important; }
 .cat-audition { color: var(--neon-gold)    !important; }

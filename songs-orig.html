@@ -2,25 +2,35 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Song Browser — iHeartTheatre</title>
-<meta name="description" content="Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type.">
-<meta property="og:title" content="Audition Song Browser — iHeartTheatre">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audition Songs Browser — iHeartTheatre</title>
+<meta name="description" content="Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type to find the perfect piece for your next audition.">
+<meta property="og:title" content="Audition Songs Browser — iHeartTheatre">
+<meta property="og:description" content="Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type to find the perfect piece for your next audition.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#8B0000">
+<meta property="og:url" content="https://ihearttheatre.com/songs.html">
+  <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
+  <meta property="og:site_name" content="iHeartTheatre">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Audition Songs Browser — iHeartTheatre">
+  <meta name="twitter:description" content="Browse 760 curated audition song suggestions across 23 musicals. Filter by show, composer, or song type to find the perfect piece for your next audition.">
+  <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 <link rel="canonical" href="https://ihearttheatre.com/songs.html">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@400;500;600;700&display=swap"></noscript>
-
-<link rel="stylesheet" href="/css/style.css">
-<link rel="icon" type="image/svg+xml" href="/images/icons/iht-icon.svg">
-<link rel="manifest" href="/manifest.json">
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RS9LV72HK8');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Audition Songs Browser — iHeartTheatre",
+  "description": "Browse 760 curated audition song suggestions across 23 musicals.",
+  "url": "https://ihearttheatre.com/songs.html"
+}
+</script>
+  <link rel="stylesheet" href="css/shared.css?v=20260515">
 <style>
 :root {
   --bg-primary: #050508;
@@ -587,37 +597,9 @@ body {
   .hero h1 { font-size: 1.875rem; }
   .song-card { padding: 1rem; }
 }
-/* === iHT Theme overrides — applied last === */
-:root {
-  --bg-primary:     #050508;
-  --bg-secondary:   #07070f;
-  --bg-tertiary:    #111120;
-  --text-primary:   #f1f0e8;
-  --text-secondary: rgba(241,240,232,0.60);
-  --accent-primary: #8B0000;
-  --accent-secondary: #8B0000;
-  --accent-gold:    #ffd700;
-  --glass-bg:       rgba(212,175,55,0.04);
-  --glass-border:   rgba(212,175,55,0.12);
-}
-/* Hide original nav/footer — replaced by app shell */
-.site-nav, .site-footer, nav.site-nav { display: none !important; }
-/* Adjust hero since no fixed nav */
-.hero { padding: 36px 28px 28px !important; text-align: left !important; background: none !important; border-bottom: 1px solid var(--glass-border); }
-.hero h1 { font-family: 'Playfair Display', serif !important; font-size: clamp(1.6rem,3.5vw,2.5rem) !important; color: var(--text-primary) !important; font-weight: 900 !important; margin-bottom: 8px; }
-.hero h1 em { color: var(--accent-primary); }
-.hero p { color: var(--text-secondary) !important; max-width: 560px; font-size: 1rem !important; line-height: 1.6 !important; }
-.hero-badge { background: rgba(212,175,55,0.1) !important; border-color: rgba(212,175,55,0.25) !important; color: var(--accent-primary) !important; }
-.controls-section { background: var(--bg-primary) !important; border-color: var(--glass-border) !important; position: sticky !important; top: 0 !important; z-index: 50 !important; }
-.filter-select { border-color: var(--glass-border) !important; background-color: var(--glass-bg) !important; color: var(--text-secondary) !important; }
-.filter-select.active, .filter-select:focus { border-color: var(--accent-primary) !important; }
-.type-pill { border-color: var(--glass-border) !important; color: var(--text-secondary) !important; background: var(--glass-bg) !important; }
-.type-pill.active { background: rgba(212,175,55,0.15) !important; border-color: var(--accent-primary) !important; color: var(--text-primary) !important; }
-.main-content#mainContent { margin-left: 0 !important; margin-bottom: 0 !important; } /* override app shell .main-content if conflicting */
 </style>
 </head>
 <body>
-<main>
 
 <nav class="site-nav">
   <a href="/" class="nav-logo">iHeartTheatre</a>
@@ -664,7 +646,7 @@ body {
   </div>
 </section>
 
-<div id="mainContent">
+<main class="main-content" id="mainContent">
   <div class="loading-state" id="loadingState">
     <div class="loading-spinner"></div>
     <div class="loading-text">Loading audition songs&hellip;</div>
@@ -677,9 +659,9 @@ body {
     <p>Try adjusting your search or filters to find what you're looking for.</p>
     <button class="clear-filters-btn" id="clearFiltersBtn">Clear all filters</button>
   </div>
-</div>
+</main>
 
-
+<footer class="site-footer">
   <div class="footer-links">
     <a href="/">Home</a>
     <a href="/whats-on.html">What's On</a>
@@ -694,8 +676,9 @@ body {
     <a href="/contact.html">Contact</a>
   </div>
   <p>&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
+</footer>
 
-</main>
+<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</a>
 
 <script>
 (function() {
@@ -1064,6 +1047,6 @@ body {
     });
 })();
 </script>
-<script src="/js/main.js"></script>
+<script src="/js/shared.js" defer></script>
 </body>
 </html>

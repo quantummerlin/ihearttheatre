@@ -127,7 +127,7 @@
     for (var copy = 0; copy < 2; copy++) {
       for (var i = 0; i < items.length; i++) {
         var item = items[i];
-        var bs = BADGE_STYLE[item.badge] || 'color:#667eea;border-color:rgba(102,126,234,.5)';
+        var bs = BADGE_STYLE[item.badge] || 'color:#d4af37;border-color:rgba(212,175,55,.5)';
         var badgeHtml = item.badge
           ? '<span class="ticker-badge" style="' + bs + '">' + item.badge + '</span>'
           : '';

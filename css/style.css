@@ -8,37 +8,37 @@
 
 /* ── 1. CSS Variables ─────────────────────────────────────── */
 :root {
-  /* Backgrounds */
-  --bg:          #050508;
-  --bg-card:     #0c0c18;
-  --bg-nav:      #07070f;
-  --bg-elevated: #111120;
+  /* Backgrounds — Greatest Showman: deep burgundy-black */
+  --bg:          #080004;
+  --bg-card:     #120008;
+  --bg-nav:      #060003;
+  --bg-elevated: #1a000c;
 
-  /* Borders */
-  --border:      rgba(102,126,234,0.12);
-  --border-card: rgba(102,126,234,0.08);
+  /* Borders — gold tint */
+  --border:      rgba(212,175,55,0.12);
+  --border-card: rgba(212,175,55,0.08);
 
-  /* Text — ALWAYS use these */
-  --text:        #f1f0e8;
-  --muted:       rgba(241,240,232,0.60);
+  /* Text — warm cream/ivory */
+  --text:   #f5e6d0;
+  --muted:  rgba(245,230,208,0.55);
 
-  /* iHT Neon palette */
-  --neon-indigo: #667eea;
-  --neon-cyan:   #764ba2;
-  --neon-gold:   #ffd700;
+  /* iHT palette — theatrical gold & crimson */
+  --neon-indigo: #d4af37;   /* antique gold — primary accent  */
+  --neon-cyan:   #8B0000;   /* deep crimson                   */
+  --neon-gold:   #ffd700;   /* bright gold                    */
   --neon-green:  #34d399;
-  --neon-pink:   #f472b6;
-  --neon-purple: #a78bfa;
+  --neon-pink:   #e74c3c;   /* theatrical red                 */
+  --neon-purple: #c9a84c;   /* warm gold variant              */
   --neon-red:    #f87171;
 
   /* Semantic */
-  --primary:   #667eea;
-  --secondary: #764ba2;
+  --primary:   #d4af37;   /* antique gold */
+  --secondary: #8B0000;   /* deep crimson */
 
   /* Glow shadows */
-  --glow-indigo: 0 0 20px rgba(102,126,234,0.35), 0 0 40px rgba(102,126,234,0.15);
-  --glow-gold:   0 0 20px rgba(255,215,0,0.35),   0 0 40px rgba(255,215,0,0.15);
-  --glow-purple: 0 0 20px rgba(118,75,162,0.35),  0 0 40px rgba(118,75,162,0.15);
+  --glow-indigo: 0 0 20px rgba(212,175,55,0.35), 0 0 40px rgba(212,175,55,0.15);
+  --glow-gold:   0 0 20px rgba(255,215,0,0.35),  0 0 40px rgba(255,215,0,0.15);
+  --glow-purple: 0 0 20px rgba(139,0,0,0.35),    0 0 40px rgba(139,0,0,0.15);
 
   /* Layout */
   --sidebar-w: 240px;
@@ -185,13 +185,13 @@ button {
 }
 
 .sidebar-nav-link:hover {
-  background: rgba(102,126,234,0.08);
+  background: rgba(212,175,55,0.08);
   color: var(--text);
 }
 
 .sidebar-nav-link.active {
   color: var(--primary);
-  background: rgba(102,126,234,0.12);
+  background: rgba(212,175,55,0.12);
 }
 
 .sidebar-nav-link.active::before {
@@ -458,7 +458,7 @@ button {
 
 .hero-slide-prev:hover,
 .hero-slide-next:hover {
-  background: rgba(102,126,234,0.3);
+  background: rgba(212,175,55,0.3);
   border-color: var(--primary);
 }
 
@@ -604,7 +604,7 @@ button {
 .article-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.4);
-  border-color: rgba(102,126,234,0.25);
+  border-color: rgba(212,175,55,0.25);
 }
 
 .article-card-img-wrap {
@@ -687,7 +687,7 @@ button {
   position: absolute;
   inset: 0;
   border-radius: 10px;
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(102,126,234,0.07) 0%, transparent 65%);
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(212,175,55,0.07) 0%, transparent 65%);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.3s;
@@ -713,7 +713,7 @@ button {
 .show-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 28px rgba(0,0,0,0.35);
-  border-color: rgba(102,126,234,0.25);
+  border-color: rgba(212,175,55,0.25);
 }
 
 .show-card-poster {
@@ -806,7 +806,7 @@ button {
 .tool-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--glow-indigo);
-  border-color: rgba(102,126,234,0.35);
+  border-color: rgba(212,175,55,0.35);
 }
 
 .tool-card-icon {
@@ -845,7 +845,7 @@ button {
 .cat-comedy   { color: var(--neon-cyan)    !important; }
 .cat-kids     { color: var(--neon-green)   !important; }
 .cat-review   { color: var(--neon-purple)  !important; }
-.cat-audition { color: var(--neon-indigo)  !important; }
+.cat-audition { color: var(--neon-gold)    !important; }
 .cat-news     { color: var(--neon-pink)    !important; }
 
 /* Badge pills */
@@ -894,8 +894,8 @@ button {
 
 .badge-audition {
   color: var(--neon-indigo);
-  background: rgba(102,126,234,0.09);
-  border-color: rgba(102,126,234,0.28);
+  background: rgba(212,175,55,0.09);
+  border-color: rgba(212,175,55,0.28);
 }
 
 .badge-news {
@@ -919,8 +919,8 @@ button {
   border-radius: 4px;
   font-size: 10px;
   font-weight: 600;
-  background: rgba(102,126,234,0.1);
-  border: 1px solid rgba(102,126,234,0.25);
+  background: rgba(212,175,55,0.1);
+  border: 1px solid rgba(212,175,55,0.25);
   color: var(--neon-indigo);
 }
 
@@ -1123,7 +1123,7 @@ button {
   border-left: 3px solid var(--primary);
   padding: 12px 20px;
   margin: 20px 0;
-  background: rgba(102,126,234,0.06);
+  background: rgba(212,175,55,0.06);
   border-radius: 0 6px 6px 0;
   font-style: italic;
   color: var(--text);
@@ -1142,7 +1142,7 @@ button {
 .article-body a {
   color: var(--primary);
   text-decoration: underline;
-  text-decoration-color: rgba(102,126,234,0.4);
+  text-decoration-color: rgba(212,175,55,0.4);
 }
 .article-body a:hover {
   color: var(--neon-gold);
@@ -1298,7 +1298,7 @@ button {
 }
 
 .cast-card:hover {
-  border-color: rgba(102,126,234,0.3);
+  border-color: rgba(212,175,55,0.3);
   transform: translateY(-2px);
 }
 
@@ -1369,7 +1369,7 @@ button {
 }
 
 .filter-btn.active {
-  background: rgba(102,126,234,0.15);
+  background: rgba(212,175,55,0.15);
   border-color: var(--primary);
   color: var(--primary);
 }
@@ -1444,7 +1444,7 @@ button {
 }
 
 .role-card:hover {
-  border-color: rgba(102,126,234,0.3);
+  border-color: rgba(212,175,55,0.3);
   transform: translateX(3px);
 }
 
@@ -1452,7 +1452,7 @@ button {
   width: 36px;
   height: 36px;
   border-radius: 6px;
-  background: rgba(102,126,234,0.1);
+  background: rgba(212,175,55,0.1);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1557,7 +1557,7 @@ button {
 }
 
 .company-card:hover {
-  border-color: rgba(102,126,234,0.3);
+  border-color: rgba(212,175,55,0.3);
   transform: translateY(-2px);
 }
 
@@ -1632,8 +1632,8 @@ button {
 /* ── 16. Manifesto / Callout ─────────────────────────────── */
 
 .manifesto {
-  background: linear-gradient(135deg, rgba(102,126,234,0.1), rgba(118,75,162,0.08));
-  border: 1px solid rgba(102,126,234,0.2);
+  background: linear-gradient(135deg, rgba(212,175,55,0.07), rgba(139,0,0,0.06));
+  border: 1px solid rgba(212,175,55,0.2);
   border-radius: 12px;
   padding: 28px;
   margin: 0 28px 28px;
@@ -1916,7 +1916,7 @@ button {
 }
 
 .search-result-item:hover {
-  background: rgba(102,126,234,0.1);
+  background: rgba(212,175,55,0.1);
 }
 
 .search-result-title {
@@ -1997,8 +1997,8 @@ button {
 
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: rgba(102,126,234,0.25); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(102,126,234,0.45); }
+::-webkit-scrollbar-thumb { background: rgba(212,175,55,0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(212,175,55,0.45); }
 
 /* ── 23. Focus / A11y ────────────────────────────────────── */
 
@@ -2072,7 +2072,7 @@ main {
   vertical-align: top;
 }
 
-.data-table tr:hover td { background: rgba(102,126,234,0.04); }
+.data-table tr:hover td { background: rgba(212,175,55,0.04); }
 
 .data-table tr:last-child td { border-bottom: none; }
 
@@ -2119,3 +2119,106 @@ main {
 .accordion-item.open .accordion-body { display: block; }
 
 /* ── END ─────────────────────────────────────────────────── */
+
+
+/* ── Theatre Curtain Transition ──────────────────────────────── */
+
+.stage-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  display: flex;
+  pointer-events: none;
+}
+
+.curtain-l,
+.curtain-r {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  will-change: transform;
+  transition: transform 0.62s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+/* Velvet left panel */
+.curtain-l {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.0)  0px,
+      rgba(0,0,0,0.22) 5px,
+      rgba(0,0,0,0.0)  10px,
+      rgba(255,255,255,0.05) 15px,
+      rgba(0,0,0,0.0)  20px,
+      rgba(0,0,0,0.18) 25px,
+      rgba(0,0,0,0.0)  30px
+    ),
+    linear-gradient(175deg, #7b0000 0%, #3d0000 35%, #7b0000 65%, #4a0000 100%);
+}
+
+/* Velvet right panel (mirror folds) */
+.curtain-r {
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(0,0,0,0.18) 0px,
+      rgba(0,0,0,0.0)  5px,
+      rgba(255,255,255,0.05) 10px,
+      rgba(0,0,0,0.0)  15px,
+      rgba(0,0,0,0.22) 20px,
+      rgba(0,0,0,0.0)  25px,
+      rgba(0,0,0,0.0)  30px
+    ),
+    linear-gradient(5deg, #7b0000 0%, #3d0000 35%, #7b0000 65%, #4a0000 100%);
+}
+
+/* Gold valance at top */
+.curtain-l::before,
+.curtain-r::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 7px;
+  background: linear-gradient(90deg,
+    #7a5c00 0%, #c9a84c 12%, #ffd700 25%, #d4af37 38%,
+    #b8860b 50%, #d4af37 62%, #ffd700 75%, #c9a84c 88%, #7a5c00 100%
+  );
+  z-index: 2;
+}
+
+/* Gold inner-edge trim */
+.curtain-l::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0;
+  width: 5px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d4af37 0px, #b8860b 6px, #ffd700 12px, #b8860b 18px, #d4af37 24px
+  );
+  opacity: 0.75;
+}
+.curtain-r::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 5px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #d4af37 0px, #b8860b 6px, #ffd700 12px, #b8860b 18px, #d4af37 24px
+  );
+  opacity: 0.75;
+}
+
+/* OPEN — panels slide apart */
+.stage-curtain.curtain-open .curtain-l { transform: translateX(-100%); }
+.stage-curtain.curtain-open .curtain-r { transform: translateX(100%);  }
+
+/* Block clicks while closed / transitioning */
+.stage-curtain:not(.curtain-open) { pointer-events: all; }
+
+/* Reduce motion */
+@media (prefers-reduced-motion: reduce) {
+  .curtain-l, .curtain-r { transition-duration: 0.01ms; }
+}

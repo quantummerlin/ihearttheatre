@@ -114,9 +114,9 @@
 
   var BADGE_STYLE = {
     'NOW SHOWING':  'color:#ffd700;border-color:rgba(255,215,0,.5)',
-    'OPENING SOON': 'color:#22d3ee;border-color:rgba(34,211,238,.5)',
+    'OPENING SOON': 'color:#c9a84c;border-color:rgba(212,175,55,.5)',
     'NEW REVIEW':   'color:#f472b6;border-color:rgba(244,114,182,.5)',
-    'AUDITIONS':    'color:#667eea;border-color:rgba(102,126,234,.5)',
+    'AUDITIONS':    'color:#d4af37;border-color:rgba(212,175,55,.5)',
     'CLOSING SOON': 'color:#f87171;border-color:rgba(248,113,113,.5)',
     'KIDS':         'color:#34d399;border-color:rgba(52,211,153,.5)',
     'NEWS':         'color:#f472b6;border-color:rgba(244,114,182,.5)'
@@ -352,8 +352,55 @@
     }, 3000);
   }
 
+
+  /* ── 21. Stage Curtain ─────────────────────────────────── */
+  function initCurtain() {
+    var el = document.createElement('div');
+    el.id = 'stageCurtain';
+    el.className = 'stage-curtain';
+    el.innerHTML = '<div class="curtain-l"></div><div class="curtain-r"></div>';
+    document.body.appendChild(el);
+
+    // Open after the page is ready (tiny delay lets the CSS transition fire)
+    requestAnimationFrame(function() {
+      setTimeout(function() {
+        el.classList.add('curtain-open');
+      }, 60);
+    });
+
+    // Intercept all internal navigation to close curtain first
+    document.addEventListener('click', function(e) {
+      var a = e.target.closest('a[href]');
+      if (!a) return;
+      var href = a.getAttribute('href');
+      if (!href) return;
+      // Skip: external, anchors, mailto, tel, _blank targets
+      if (href.charAt(0) === '#' ||
+          href.indexOf('://') !== -1 ||
+          href.indexOf('mailto:') === 0 ||
+          href.indexOf('tel:') === 0 ||
+          a.target === '_blank') return;
+      // Skip if this is the current page
+      var curr = window.location.pathname;
+      var dest = href;
+      if (curr === dest ||
+          (curr === '/' && dest === '/index.html') ||
+          (curr.endsWith('/index.html') && dest === '/index.html')) return;
+
+      e.preventDefault();
+      e.stopImmediatePropagation();
+
+      // Close curtain then navigate
+      el.classList.remove('curtain-open');
+      setTimeout(function() {
+        window.location.href = dest;
+      }, 600);
+    }, true); // capture phase
+  }
+
   /* ── 20. Init ──────────────────────────────────────────── */
   function init() {
+    initCurtain();
     injectShell();
     initTicker();
     initReveal();

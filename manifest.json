@@ -4,8 +4,8 @@
   "description": "Your community theatre hub — shows, reviews, auditions & tools",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#050508",
-  "theme_color": "#667eea",
+  "background_color": "#080004",
+  "theme_color": "#8B0000",
   "orientation": "portrait-primary",
   "icons": [
     {

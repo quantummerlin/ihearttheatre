@@ -1,1055 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Theatre reviews by Deanna Amato and Penelope Quinn. Celebrating Melbourne and Victorian theatre from school stages to professional seasons.">
- <title>Reviews Archive | iHeartTheatre.com</title>
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
- <style>
- * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reviews — iHeartTheatre</title>
+  <meta name="description" content="Honest, passionate community theatre reviews from Deanna and Penelope Jr. — 33 shows and counting.">
+  <meta property="og:title" content="Reviews — iHeartTheatre">
+  <meta property="og:description" content="Community theatre reviews by Deanna and Penelope Jr. Reviewer.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#667eea">
 
- body {
- font-family: 'Inter', sans-serif;
- background: #050508;
- color: #f5f5f5;
- min-height: 100vh;
- overflow-x: hidden;
- }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
- /* Progress Bar */
- .progress-bar {
- position: fixed;
- top: 0;
- left: 0;
- height: 3px;
- background: linear-gradient(90deg, #e8b923, #b91c1c);
- width: 0%;
- z-index: 1000;
- transition: width 0.1s ease;
- }
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/images/icons/iht-icon.svg">
+  <link rel="manifest" href="/manifest.json">
 
- /* Floating Particles */
-10% {
- opacity: 1;
- }
- 90% {
- opacity: 1;
- }
- 100% {
- transform: translateY(-100vh) rotate(720deg);
- opacity: 0;
- }
- }
-
- /* Navigation */
- nav {
- position: fixed;
- top: 0;
- left: 0;
- right: 0;
- background: rgba(5, 5, 8, 0.95);
- backdrop-filter: blur(20px);
- border-bottom: 1px solid rgba(255, 255, 255, 0.08);
- z-index: 100;
- padding: 1rem 2rem;
- }
-
- .nav-container {
- max-width: 1400px;
- margin: 0 auto;
- display: flex;
- justify-content: space-between;
- align-items: center;
- }
-
- .logo {
- font-family: 'Playfair Display', serif;
- font-size: 1.5rem;
- font-weight: 700;
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- background-clip: text;
- text-decoration: none;
- }
-
- .nav-links {
- display: flex;
- gap: 2rem;
- list-style: none;
- }
-
- .nav-links a {
- color: #a0a0b0;
- text-decoration: none;
- font-weight: 500;
- transition: color 0.3s ease;
- }
-
- .nav-links a:hover {
- color: #f5f5f5;
- }
-
- .nav-links a.active {
- color: #e8b923;
- }
-
- /* Main Content */
- .main-content {
- position: relative;
- z-index: 2;
- padding-top: 100px;
- max-width: 1400px;
- margin: 0 auto;
- padding-left: 2rem;
- padding-right: 2rem;
- }
-
- .page-header {
- text-align: center;
- margin-bottom: 2.5rem;
- }
-
- .page-header h1 {
- font-family: 'Playfair Display', serif;
- font-size: 3.5rem;
- font-weight: 700;
- margin-bottom: 1rem;
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- background-clip: text;
- }
-
- .page-header p {
- color: #a0a0b0;
- font-size: 1.1rem;
- max-width: 600px;
- margin: 0 auto;
- }
-
- /* Filter Section */
- .filter-section {
- margin-bottom: 3rem;
- display: flex;
- gap: 1rem;
- flex-wrap: wrap;
- justify-content: center;
- }
-
- .filter-btn {
- padding: 0.75rem 1.5rem;
- background: rgba(255, 255, 255, 0.03);
- border: 1px solid rgba(255, 255, 255, 0.08);
- border-radius: 8px;
- color: #a0a0b0;
- font-size: 0.9rem;
- font-weight: 500;
- cursor: pointer;
- transition: all 0.3s ease;
- }
-
- .filter-btn:hover {
- background: rgba(232, 185, 35, 0.1);
- border-color: rgba(232, 185, 35, 0.3);
- color: #f5f5f5;
- }
-
- .filter-btn.active {
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- border-color: transparent;
- color: #f5f5f5;
- }
-
- /* Reviews Grid */
- .reviews-grid {
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
- gap: 2rem;
- margin-bottom: 4rem;
- }
-
- .review-card {
- background: rgba(255, 255, 255, 0.03);
- border: 1px solid rgba(255, 255, 255, 0.08);
- border-radius: 16px;
- overflow: hidden;
- transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
- cursor: pointer;
- position: relative;
- }
-
- .review-card:hover {
- transform: translateY(-8px);
- border-color: rgba(232, 185, 35, 0.3);
- box-shadow: 0 20px 40px rgba(232, 185, 35, 0.15);
- }
-
- .review-card-image {
- width: 100%;
- aspect-ratio: 2 / 3;
- object-fit: cover;
- object-position: center top;
- position: relative;
- display: block;
- }
-
- .review-card-content {
- padding: 1.5rem;
- }
-
- .review-card-badges {
- display: flex;
- gap: 0.5rem;
- margin-bottom: 1rem;
- flex-wrap: wrap;
- }
-
- .badge {
- padding: 0.25rem 0.75rem;
- border-radius: 20px;
- font-size: 0.75rem;
- font-weight: 600;
- text-transform: uppercase;
- letter-spacing: 0.5px;
- }
-
- .badge-new {
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- color: #f5f5f5;
- }
-
- .badge-days-left {
- background: rgba(255, 215, 0, 0.15);
- border: 1px solid rgba(255, 215, 0, 0.3);
- color: #ffd700;
- }
-
- .review-card-title {
- font-family: 'Playfair Display', serif;
- font-size: 1.5rem;
- font-weight: 600;
- margin-bottom: 0.5rem;
- color: #f5f5f5;
- }
-
- .review-card-meta {
- display: flex;
- gap: 1rem;
- color: #a0a0b0;
- font-size: 0.85rem;
- margin-bottom: 1rem;
- }
-
- .review-card-meta span {
- display: flex;
- align-items: center;
- gap: 0.25rem;
- }
-
- .review-card-excerpt {
- color: #a0a0b0;
- font-size: 0.9rem;
- line-height: 1.6;
- margin-bottom: 1rem;
- display: -webkit-box;
- -webkit-line-clamp: 3;
- -webkit-box-orient: vertical;
- overflow: hidden;
- }
-
- .review-card-reviewer {
- display: flex;
- align-items: center;
- gap: 0.75rem;
- padding-top: 1rem;
- border-top: 1px solid rgba(255, 255, 255, 0.08);
- }
-
- .review-card-reviewer img {
- width: 40px;
- height: 40px;
- border-radius: 50%;
- object-fit: cover;
- }
-
- .review-card-reviewer-info {
- flex: 1;
- }
-
- .review-card-reviewer-name {
- font-weight: 600;
- color: #f5f5f5;
- font-size: 0.9rem;
- }
-
- .review-card-reviewer-role {
- color: #a0a0b0;
- font-size: 0.8rem;
- }
-
- /* Footer */
- footer {
- background: rgba(5, 5, 8, 0.95);
- border-top: 1px solid rgba(255, 255, 255, 0.08);
- padding: 3rem 2rem;
- margin-top: 4rem;
- }
-
- .footer-content {
- max-width: 1400px;
- margin: 0 auto;
- text-align: center;
- }
-
- .footer-links {
- display: flex;
- justify-content: center;
- gap: 2rem;
- margin-bottom: 2rem;
- }
-
- .footer-links a {
- color: #a0a0b0;
- text-decoration: none;
- transition: color 0.3s ease;
- }
-
- .footer-links a:hover {
- color: #e8b923;
- }
-
- .footer-copyright {
- color: #606070;
- font-size: 0.85rem;
- }
-
- /* Responsive */
- @media (max-width: 768px) {
- .page-header h1 {
- font-size: 2.5rem;
- text-align: center;
- }
-
- .page-header p {
- text-align: center;
- }
-
- .reviews-grid {
- grid-template-columns: 1fr;
- }
-
- .review-card-content {
- text-align: center;
- }
-
- .review-card-badges {
- justify-content: center;
- }
-
- .review-card-meta {
- justify-content: center;
- flex-wrap: wrap;
- }
-
- .review-card-reviewer {
- justify-content: center;
- }
-
- .nav-links {
- display: none;
- }
- }
- </style>
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
- <meta name="theme-color" content="#e8b923">
- <meta name="apple-mobile-web-app-capable" content="yes">
- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
- <link rel="manifest" href="manifest.json">
- <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
- <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
- <link rel="stylesheet" href="css/shared.css?v=20260515">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RS9LV72HK8');
-</script>
-
- <link rel="alternate" type="application/rss+xml" title="iHeartTheatre Reviews" href="https://ihearttheatre.com/reviews/feed.xml">
- <link rel="canonical" href="https://ihearttheatre.com/reviews.html">
- <meta name="robots" content="index, follow">
- <meta property="og:type" content="website">
- <meta property="og:site_name" content="iHeartTheatre">
- <meta property="og:title" content="Reviews Archive | iHeartTheatre.com">
- <meta property="og:description" content="Theatre reviews by Deanna Amato and Penelope Quinn. Celebrating Melbourne and Victorian theatre from school stages to professional seasons.">
- <meta property="og:url" content="https://ihearttheatre.com/reviews.html">
- <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
- <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:title" content="Reviews Archive | iHeartTheatre.com">
- <meta name="twitter:description" content="Theatre reviews by Deanna Amato and Penelope Quinn. Celebrating Melbourne and Victorian theatre from school stages to professional seasons.">
- <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RS9LV72HK8');</script>
 </head>
 <body>
- <div class="progress-bar" id="progressBar"></div><nav>
- <div class="nav-container">
- <a href="index.html" class="logo">iHeartTheatre</a>
- <div class="hamburger" aria-label="Toggle navigation">
- <span></span>
- <span></span>
- <span></span>
- </div>
- <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html" class="active">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="musicals.html">Musicals</a><a href="career-builder.html">Career Builder</a></div>
- </div>
- </nav>
+<main>
 
- <div class="main-content">
- <div class="page-header" data-reveal>
- <h1>All Reviews</h1>
- <p>Discover Melbourne's theatre scene through our comprehensive collection of reviews</p>
- </div>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-eyebrow">⭐ Reviews</div>
+    <h1 class="page-hero-title"><em>Honest</em> Reviews</h1>
+    <p class="page-hero-sub">33 community theatre productions reviewed by Deanna and Penelope Jr. Reviewer — passionate, fair and written from the front row.</p>
+  </div>
 
- <div class="filter-section">
- <button class="filter-btn active" data-filter="all">All Reviews</button>
- <button class="filter-btn" data-filter="deanna">Deanna's Reviews</button>
- <button class="filter-btn" data-filter="penelope">Penelope's Reviews</button>
- <button class="filter-btn" data-filter="new">New This Week</button>
- <button class="filter-btn" data-filter="available">Still Available</button>
- </div>
+  <!-- REVIEWER BIOS (compact inline) -->
+  <div style="display:flex;gap:12px;padding:16px 28px;border-bottom:1px solid var(--border);flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:200px">
+      <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--neon-indigo),var(--secondary));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">🎭</div>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:var(--text)">Deanna</div>
+        <div style="font-size:11px;color:var(--muted)">Lead Reviewer — community theatre since 2003</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;flex:1;min-width:200px">
+      <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--neon-gold),var(--neon-pink));display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">⭐</div>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:var(--text)">Penelope Jr. Reviewer</div>
+        <div style="font-size:11px;color:var(--muted)">Junior Reviewer — the next generation of theatre criticism</div>
+      </div>
+    </div>
+    <div style="margin-left:auto;display:flex;align-items:center">
+      <div class="search-bar" style="max-width:240px">
+        <span class="search-bar-icon">🔍</span>
+        <input type="text" id="reviewSearch" placeholder="Search reviews…" aria-label="Search reviews">
+      </div>
+    </div>
+  </div>
 
- <div class="reviews-grid" id="reviewsGrid">
- <!-- Reviews will be dynamically loaded here -->
- </div>
- </div>
+  <!-- FILTER -->
+  <div class="filter-bar" id="reviewFilterBar">
+    <button class="filter-btn active" data-filter="all">All Reviews</button>
+    <button class="filter-btn" data-filter="musical">Musicals</button>
+    <button class="filter-btn" data-filter="drama">Drama</button>
+    <button class="filter-btn" data-filter="comedy">Comedy</button>
+    <button class="filter-btn" data-filter="5">★★★★★</button>
+    <button class="filter-btn" data-filter="4">★★★★+</button>
+    <button class="filter-btn" data-filter="deanna">By Deanna</button>
+    <button class="filter-btn" data-filter="penelope">By Penelope Jr.</button>
+  </div>
 
- <footer>
- <div class="footer-content">
-  <div class="footer-links">
- <a href="index.html">Home</a>
- <a href="shows.html">Shows</a>
- <a href="auditions.html">Auditions</a>
- <a href="reviews.html">Reviews</a>
- <a href="junior-kids-schools.html">Junior &amp; Kids</a>
- <a href="services.html">Services</a>
- <a href="musicals.html">Role Guides</a>
- <a href="companies.html">Companies</a>
- <a href="about.html">About</a>
- <a href="contact.html">Contact</a>
- <a href="privacy.html">Privacy</a>
- <a href="disclaimer.html">Disclaimer</a>
-</div>
- <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
- </div>
- </footer>
- <script>
- // Review Data with dates and show end dates
- const reviews = [
- {
- id: 'review-deanna-a-christmas-carol',
- title: 'A Christmas Carol',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Comedy Theatre',
- company: 'Old Vic Production',
- publishedDate: '2024-12-15',
- showEndDate: '2024-12-24',
- category: 'Musical',
- excerpt: 'A timeless classic brought to life with stunning production values and heartfelt performances that capture the true spirit of Christmas.',
- image: 'REVIEWERS/Deanna/christmas-carol-1.jpg'
- },
- {
- id: 'review-deanna-the-good-life',
- title: 'The Good Life',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Brighton Theatre',
- company: 'Brighton Theatre Company',
- publishedDate: '2025-11-10',
- showEndDate: '2025-11-23',
- category: 'Play',
- excerpt: 'A thought-provoking exploration of modern life that balances humor with profound insights about what truly matters.',
- image: 'REVIEWERS/Deanna/good-life-1.jpg'
- },
- {
- id: 'review-deanna-mamma-mia',
- title: 'Mamma Mia!',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Geelong Arts Centre',
- company: 'Geelong Lyric Theatre Society',
- publishedDate: '2025-10-20',
- showEndDate: '2025-10-27',
- category: 'Musical',
- excerpt: 'ABBA\'s greatest songs shine in this energetic production that had the audience dancing in the aisles.',
- image: 'REVIEWERS/Deanna/mamma-mia-1.jpg'
- },
- {
- id: 'review-deanna-mary-poppins',
- title: 'Mary Poppins',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Karralyka Theatre',
- company: 'MDMS',
- publishedDate: '2025-06-15',
- showEndDate: '2025-06-22',
- category: 'Musical',
- excerpt: 'Practically perfect in every way, this production captures the magic and wonder of the beloved story.',
- image: 'REVIEWERS/Deanna/mary-poppins-1.jpg'
- },
- {
- id: 'review-deanna-romeo-and-juliet',
- title: 'Romeo & Juliet',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Central Park Malvern',
- company: 'Melbourne Shakespeare Company',
- publishedDate: '2025-03-20',
- showEndDate: '2025-03-30',
- category: 'Play',
- excerpt: 'Shakespeare\'s timeless tragedy reimagined with fresh energy and powerful performances.',
- image: 'REVIEWERS/Deanna/romeo-juliet-1.jpg'
- },
- {
- id: 'review-deanna-dying-a-memoir',
- title: 'Dying: A Memoir',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Fairfax Studio',
- company: 'Melbourne Theatre Company',
- publishedDate: '2025-11-15',
- showEndDate: '2025-11-28',
- category: 'Play',
- excerpt: 'A deeply moving and courageous exploration of mortality that challenges and inspires in equal measure.',
- image: 'REVIEWERS/Deanna/dying-memoir-1.jpg'
- },
- {
- id: 'review-deanna-girl-on-the-train',
- title: 'Girl on the Train',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'The Mount Players Theatre',
- company: 'The Mount Players',
- publishedDate: '2025-05-10',
- showEndDate: '2025-05-18',
- category: 'Play',
- excerpt: 'A gripping thriller that keeps you guessing until the very end with outstanding ensemble performances.',
- image: 'REVIEWERS/Deanna/girl-train-1.jpg'
- },
- {
- id: 'review-deanna-the-lucky-country',
- title: 'The Lucky Country',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Southbank Theatre',
- company: 'Melbourne Fringe Festival',
- publishedDate: '2025-10-15',
- showEndDate: '2025-10-19',
- category: 'Play',
- excerpt: 'A powerful examination of Australian identity that resonates long after the curtain falls.',
- image: 'REVIEWERS/Deanna/lucky-country-1.jpg'
- },
- {
- id: 'review-deanna-abracadickhead',
- title: 'Abracadickhead',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Speakeasy Theatre',
- company: 'Melbourne Comedy Festival',
- publishedDate: '2025-04-10',
- showEndDate: '2025-04-20',
- category: 'Comedy',
- excerpt: 'Hilarious and thought-provoking comedy that pushes boundaries while delivering genuine laughs.',
- image: 'REVIEWERS/Deanna/abracadickhead-1.jpg'
- },
- {
- id: 'review-deanna-apocrypha-by-oozing-future',
- title: 'Apocrypha by Oozing Future',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Darebin Arts Centre',
- company: 'Melbourne Fringe Festival',
- publishedDate: '2025-09-20',
- showEndDate: '2025-09-28',
- category: 'Play',
- excerpt: 'An innovative and challenging work that defies categorization and demands your full attention.',
- image: 'REVIEWERS/Deanna/apocrypha-1.jpg'
- },
- {
- id: 'review-deanna-asexual-fantasies',
- title: 'Asexual Fantasies and Hopeless Aromantics',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'The Butterfly Club',
- company: 'Sophie Harvey',
- publishedDate: '2025-08-15',
- showEndDate: '2025-08-25',
- category: 'Cabaret',
- excerpt: 'A brave and beautiful exploration of identity that is both deeply personal and universally relatable.',
- image: 'REVIEWERS/Deanna/asexual-1.jpg'
- },
- {
- id: 'review-deanna-batshit',
- title: 'BATSH*T',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Fairfax Studio',
- company: 'Arts Centre Melbourne',
- publishedDate: '2025-07-20',
- showEndDate: '2025-07-28',
- category: 'Comedy',
- excerpt: 'Wildly entertaining and unexpectedly profound, this show delivers on every level.',
- image: 'REVIEWERS/Deanna/batshit-1.jpg'
- },
- {
- id: 'review-deanna-bubble-laboratory',
- title: 'Bubble Laboratory � Bubble Show in Space',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Melbourne Museum',
- company: 'Melbourne Comedy Festival',
- publishedDate: '2025-04-15',
- showEndDate: '2025-04-25',
- category: 'Comedy',
- excerpt: 'Mesmerizing bubble artistry combined with clever storytelling creates a truly unique experience.',
- image: 'REVIEWERS/Deanna/bubble-lab-1.jpg'
- },
- {
- id: 'review-deanna-circus-oz-non-stop',
- title: 'Circus Oz � Non Stop',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Melbourne Town Hall',
- company: 'Melbourne International Comedy Festival',
- publishedDate: '2025-04-05',
- showEndDate: '2025-04-15',
- category: 'Circus',
- excerpt: 'Australia\'s iconic circus delivers another spectacular show of skill, humor, and heart.',
- image: 'REVIEWERS/Deanna/circus-oz-1.jpg'
- },
- {
- id: 'review-deanna-greeking-out',
- title: 'Greeking Out',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Spielhaus',
- company: 'Melbourne Fringe Festival',
- publishedDate: '2025-09-15',
- showEndDate: '2025-09-22',
- category: 'Comedy',
- excerpt: 'A hilarious journey through Greek mythology that makes ancient stories feel fresh and relevant.',
- image: 'REVIEWERS/Deanna/greeking-1.jpg'
- },
- {
- id: 'review-deanna-lou-wall-breaking-the-5th-wall',
- title: 'Lou Wall � Breaking the 5th Wall',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Comedy Republic',
- company: 'Melbourne Comedy Festival',
- publishedDate: '2025-04-20',
- showEndDate: '2025-04-28',
- category: 'Comedy',
- excerpt: 'Meta-comedy at its finest, breaking boundaries and delivering brilliant laughs.',
- image: 'REVIEWERS/Deanna/lou-wall-1.jpg'
- },
- {
- id: 'review-deanna-muse',
- title: 'MUSE',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'The National Institute of Circus Arts',
- company: 'NICA',
- publishedDate: '2025-11-20',
- showEndDate: '2025-11-30',
- category: 'Circus',
- excerpt: 'Showcasing the next generation of circus talent with breathtaking skill and artistry.',
- image: 'REVIEWERS/Deanna/muse-1.jpg'
- },
- {
- id: 'review-deanna-mother-play',
- title: 'Mother Play',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Southbank Theatre',
- company: 'Melbourne Theatre Company',
- publishedDate: '2025-10-25',
- showEndDate: '2025-11-08',
- category: 'Play',
- excerpt: 'A powerful family drama that explores complex relationships with honesty and grace.',
- image: 'REVIEWERS/Deanna/mother-play-1.jpg'
- },
- {
- id: 'review-deanna-my-brilliant-apocalypse',
- title: 'My Brilliant Apocalypse: The Return of Barry Brilliant',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Panarcadian Association',
- company: 'Melbourne Fringe Festival',
- publishedDate: '2025-09-25',
- showEndDate: '2025-10-02',
- category: 'Comedy',
- excerpt: 'Apocalyptic comedy that finds humor in the end of the world with brilliant timing.',
- image: 'REVIEWERS/Deanna/brilliant-apocalypse-1.jpg'
- },
- {
- id: 'review-deanna-ruby-wax',
- title: 'Ruby Wax � I\'m Not As Well As I Thought I Was',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Comedy Theatre',
- company: 'Melbourne Comedy Festival',
- publishedDate: '2025-04-25',
- showEndDate: '2025-05-03',
- category: 'Comedy',
- excerpt: 'Intimate, honest, and hilarious exploration of mental health from a master storyteller.',
- image: 'REVIEWERS/Deanna/ruby-wax-1.jpg'
- },
- {
- id: 'review-deanna-secret-girl-stuff',
- title: 'Secret Girl Stuff',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'St Martins Irene Mitchell Studio',
- company: 'Melbourne Fringe Festival',
- publishedDate: '2025-09-10',
- showEndDate: '2025-09-17',
- category: 'Play',
- excerpt: 'A touching and honest exploration of female friendship and growing up.',
- image: 'REVIEWERS/Deanna/secret-girl-1.jpg'
- },
- {
- id: 'review-deanna-seussical-the-musical',
- title: 'Seussical The Musical',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Carey Baptist Grammar School',
- company: 'OCPAC',
- publishedDate: '2025-08-20',
- showEndDate: '2025-08-27',
- category: 'Musical',
- excerpt: 'Dr. Seuss\'s beloved characters come to life in this colorful and energetic production.',
- image: 'REVIEWERS/Deanna/seussical-1.jpg'
- },
- {
- id: 'review-deanna-shakespeare-in-between',
- title: 'Shakespeare-In-Between: Romeo & Juliet',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'St Kilda South Port Uniting Church',
- company: 'Scott Jackson and Sorcha Breen',
- publishedDate: '2025-07-25',
- showEndDate: '2025-08-02',
- category: 'Play',
- excerpt: 'A creative reimagining that makes Shakespeare accessible and engaging for modern audiences.',
- image: 'REVIEWERS/Deanna/shakespeare-between-1.jpg'
- },
- {
- id: 'review-deanna-tristan-mclindon',
- title: 'Tristan McLindon DM for Deception',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Limerick Arms',
- company: 'Melbourne Comedy Festival',
- publishedDate: '2025-04-30',
- showEndDate: '2025-05-08',
- category: 'Comedy',
- excerpt: 'Digital deception meets live comedy in this clever and timely production.',
- image: 'REVIEWERS/Deanna/tristan-1.jpg'
- },
- {
- id: 'review-deanna-truth',
- title: 'TRUTH',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Merlyn Theatre',
- company: 'Malthouse Theatre',
- publishedDate: '2025-11-25',
- showEndDate: '2025-12-07',
- category: 'Play',
- excerpt: 'A powerful exploration of whistleblowing and the cost of truth in our modern world.',
- image: 'REVIEWERS/Deanna/truth-1.jpg'
- },
- {
- id: 'review-deanna-your-name-means-dream',
- title: 'YOUR NAME MEANS DREAM',
- reviewer: 'Deanna Amato',
- reviewerRole: 'Adult Reviews Editor',
- reviewerImage: 'generated_images/deanna-profile.webp',
- venue: 'Red Stitch Theatre',
- company: 'Red Stitch Actors',
- publishedDate: '2025-11-30',
- showEndDate: '2025-12-14',
- category: 'Play',
- excerpt: 'A beautiful and moving exploration of family, identity, and the power of names.',
- image: 'REVIEWERS/Deanna/your-name-1.jpg'
- },
- {
- id: 'review-penelope-josephine-wants-to-dance',
- title: 'Josephine Wants To Dance',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'The Ian Potter Centre',
- company: 'Monkey Baa',
- publishedDate: '2025-05-15',
- showEndDate: '2025-05-25',
- category: 'Family',
- excerpt: 'A delightful story about following your dreams that will inspire children and adults alike.',
- image: 'REVIEWERS/Penelope/josephine-1.jpg'
- },
- {
- id: 'review-penelope-into-the-woods-jr',
- title: 'Into The Woods Jr.',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'Doncaster Playhouse',
- company: 'Wendy Samantha Productions',
- publishedDate: '2025-07-20',
- showEndDate: '2025-07-28',
- category: 'Family',
- excerpt: 'Stephen Sondheim\'s magical musical comes to life in this enchanting junior production.',
- image: 'REVIEWERS/Penelope/woods-jr-1.jpg'
- },
- {
- id: 'review-penelope-into-the-woods-jnr',
- title: 'Into The Woods Jnr',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'Eltham Little Theatre',
- company: 'Wendy Samantha Productions',
- publishedDate: '2025-07-22',
- showEndDate: '2025-07-30',
- category: 'Family',
- excerpt: 'Another wonderful production of this beloved musical with a talented young cast.',
- image: 'REVIEWERS/Penelope/woods-jnr-1.jpg'
- },
- {
- id: 'review-penelope-the-little-mermaid-junior',
- title: 'The Little Mermaid Junior',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'Rowville Performing Arts Centre',
- company: 'Windmill Theatre Company Inc.',
- publishedDate: '2025-04-20',
- showEndDate: '2025-04-28',
- category: 'Family',
- excerpt: 'Disney\'s underwater adventure comes to life in this magical junior production.',
- image: 'REVIEWERS/Penelope/mermaid-1.jpg'
- },
- {
- id: 'review-penelope-robin-hood',
- title: 'Robin Hood',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'Central Park Malvern',
- company: 'Melbourne Shakespeare Company',
- publishedDate: '2025-03-25',
- showEndDate: '2025-04-05',
- category: 'Family',
- excerpt: 'A swashbuckling adventure that brings the legendary hero to life for young audiences.',
- image: 'REVIEWERS/Penelope/robin-hood-1.jpg'
- },
- {
- id: 'review-penelope-the-wind-in-the-willows',
- title: 'The Wind in the Willows',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'Royal Botanic Gardens Melbourne',
- company: 'Australian Shakespeare Company',
- publishedDate: '2025-01-15',
- showEndDate: '2025-01-28',
- category: 'Family',
- excerpt: 'A charming outdoor production that brings the classic story to life in a beautiful setting.',
- image: 'REVIEWERS/Penelope/willows-1.jpg'
- },
- {
- id: 'review-penelope-imagine-live',
- title: 'Imagine LIVE',
- reviewer: 'Penelope Quinn',
- reviewerRole: 'Junior Reviews Editor',
- reviewerImage: 'generated_images/penelope-profile.webp',
- venue: 'Geelong Arts Centre',
- company: 'Jolyon James NCM',
- publishedDate: '2025-06-20',
- showEndDate: '2025-06-28',
- category: 'Family',
- excerpt: 'An imaginative and interactive experience that sparks creativity in young minds.',
- image: 'REVIEWERS/Penelope/imagine-1.jpg'
- }
- ];
+  <!-- REVIEWS GRID -->
+  <section class="hub-section reveal-section" style="padding-bottom:40px" aria-label="Reviews listing">
+    <div class="article-grid reveal-stagger" id="reviewsGrid">
+      <!-- populated by JS below -->
+    </div>
+    <div id="reviewsEmpty" class="empty-state" style="display:none">
+      <div class="empty-state-icon">⭐</div>
+      <div class="empty-state-text">No reviews match that filter.</div>
+    </div>
+  </section>
 
- // Calculate days since published and days until show ends
- function calculateBadges(review) {
- const today = new Date();
- const publishedDate = new Date(review.publishedDate);
- const showEndDate = new Date(review.showEndDate);
- 
- const daysSincePublished = Math.floor((today - publishedDate) / (1000 * 60 * 60 * 24));
- const daysUntilShowEnds = Math.floor((showEndDate - today) / (1000 * 60 * 60 * 24));
- 
- const badges = [];
- 
- // NEW badge if published within last 7 days
- if (daysSincePublished <= 7) {
- badges.push({
- type: 'new',
- text: 'NEW'
- });
- }
- 
- // Days left badge if show is still running
- if (daysUntilShowEnds >= 0) {
- badges.push({
- type: 'days-left',
- text: `${daysUntilShowEnds} days left`
- });
- }
- 
- return badges;
- }
+</main>
 
- // Render review cards
- function renderReviews(filter = 'all') {
- const grid = document.getElementById('reviewsGrid');
- grid.innerHTML = '';
- 
- const filteredReviews = reviews.filter(review => {
- if (filter === 'all') return true;
- if (filter === 'deanna') return review.reviewer === 'Deanna Amato';
- if (filter === 'penelope') return review.reviewer === 'Penelope Quinn';
- if (filter === 'new') {
- const daysSincePublished = Math.floor((new Date() - new Date(review.publishedDate)) / (1000 * 60 * 60 * 24));
- return daysSincePublished <= 7;
- }
- if (filter === 'available') {
- const daysUntilShowEnds = Math.floor((new Date(review.showEndDate) - new Date()) / (1000 * 60 * 60 * 24));
- return daysUntilShowEnds >= 0;
- }
- return true;
- });
- 
- filteredReviews.forEach(review => {
- const badges = calculateBadges(review);
- const badgesHTML = badges.map(badge => 
- `<span class="badge badge-${badge.type}">${badge.text}</span>`
- ).join('');
- 
- const card = document.createElement('div');
- card.className = 'review-card card-glow';
- card.setAttribute('data-reveal', '');
- card.innerHTML = `
- <img src="${review.image}" alt="${review.title}" class="review-card-image">
- <div class="review-card-content">
- <div class="review-card-badges">
- ${badgesHTML}
- </div>
- <h3 class="review-card-title">${review.title}</h3>
- <div class="review-card-meta">
- <span> ${review.venue}</span>
- <span> ${review.category}</span>
- </div>
- <p class="review-card-excerpt">${review.excerpt}</p>
- <div class="review-card-reviewer">
- <img src="${review.reviewerImage}" alt="${review.reviewer}">
- <div class="review-card-reviewer-info">
- <div class="review-card-reviewer-name">${review.reviewer}</div>
- <div class="review-card-reviewer-role">${review.reviewerRole}</div>
- </div>
- </div>
- </div>
- `;
- 
- card.addEventListener('click', () => {
- window.location.href = `reviews/${review.id}.html`;
- });
- 
- grid.appendChild(card);
- // Observe new card for scroll reveal
- if (window.iHTReveal) window.iHTReveal.observe(card);
- }); }
+<script>
+(function() {
+  /* Reviews data — 33 shows */
+  var REVIEWS = [
+    { id:'r01', title:'The Phantom of the Opera',  genre:'drama',   stars:5,   reviewer:'deanna',   date:'May 2025',   company:'UK Tour',                  excerpt:'Breathtaking tour production — sumptuous staging and vocal fireworks.',             href:'/reviews/phantom-of-the-opera-2024.html' },
+    { id:'r02', title:'Hamilton — UK Tour',         genre:'musical', stars:4.5, reviewer:'penelope', date:'Apr 2025',   company:'UK Tour',                  excerpt:'Thunderous and joyful — Penelope Jr. witnessed history in the making.',            href:'/reviews/hamilton-uk-tour-2024.html' },
+    { id:'r03', title:'Six the Musical',            genre:'musical', stars:4,   reviewer:'deanna',   date:'Mar 2025',   company:'Community Stage',          excerpt:'Pure electric pop joy. Six queens, one stage, and an audience that roared.',       href:'/reviews/six-the-musical-2024.html' },
+    { id:'r04', title:'Mamma Mia!',                 genre:'musical', stars:4,   reviewer:'deanna',   date:'May 2025',   company:'Cheltenham Operatic',      excerpt:"Community theatre gold — the cast's joy is utterly infectious.",                   href:'/reviews/mamma-mia-cheltenham-2025.html' },
+    { id:'r05', title:'Les Misérables',             genre:'musical', stars:5,   reviewer:'deanna',   date:'Jan 2025',   company:'Bournemouth G&S Society',  excerpt:"Hugo's epic brought to devastating life. The barricade scene left me speechless.", href:'/reviews/les-mis-2025.html' },
+    { id:'r06', title:'Chicago',                    genre:'drama',   stars:4,   reviewer:'penelope', date:'Apr 2025',   company:'Swindon Operatic',         excerpt:'Razzle dazzle done right — sharp choreography and a killer Roxie.',               href:'/reviews/chicago-swindon-2025.html' },
+    { id:'r07', title:'Grease',                     genre:'musical', stars:4,   reviewer:'deanna',   date:'Feb 2025',   company:'Bournemouth Musical Theatre','excerpt':'Summer lovin' had us all smiling — energetic, colourful and pure fun.',          href:'/reviews/grease-bournemouth-2025.html' },
+    { id:'r08', title:'Oliver!',                    genre:'musical', stars:4.5, reviewer:'deanna',   date:'Mar 2025',   company:'Swindon Musical Theatre',  excerpt:"A Fagin for the ages. The ensemble's 'Consider Yourself' had us all joining in.", href:'/reviews/oliver-swindon-2025.html' },
+    { id:'r09', title:'Into the Woods',             genre:'musical', stars:5,   reviewer:'penelope', date:'May 2025',   company:'Forest Youth Theatre',     excerpt:'Sondheim at the Minack — the setting alone was worth the trip. Beautiful.',       href:'/reviews/into-the-woods-2025.html' },
+    { id:'r10', title:'Annie',                      genre:'musical', stars:3.5, reviewer:'deanna',   date:'Apr 2025',   company:'West Swindon Singers',     excerpt:"Warm-hearted community show — a joyful Annie carried the evening.",               href:'/reviews/annie-west-swindon-2025.html' },
+    { id:'r11', title:'Sweeney Todd',               genre:'drama',   stars:5,   reviewer:'deanna',   date:'Dec 2024',   company:'Oxford Stage Company',     excerpt:'Fiercely dark and brilliantly performed. The Grand Guignol of community theatre.', href:'/reviews/sweeney-todd-oxford-2024.html' },
+    { id:'r12', title:'Guys and Dolls',             genre:'comedy',  stars:4,   reviewer:'penelope', date:'Nov 2024',   company:'Dorset Operatic Society',  excerpt:'Old-fashioned musical joy — big voices, big moves, big fun.',                     href:'/reviews/guys-dolls-dorset-2024.html' },
+    { id:'r13', title:'Legally Blonde',             genre:'musical', stars:4.5, reviewer:'deanna',   date:'Oct 2024',   company:'Swindon Operatic Society', excerpt:"'Omigod you guys' — a powerhouse Elle and a company on top form.",               href:'/reviews/legally-blonde-swindon-2024.html' },
+    { id:'r14', title:'The Sound of Music',         genre:'musical', stars:4,   reviewer:'deanna',   date:'Sep 2024',   company:'Cheltenham Operatic',      excerpt:'The hills are alive and so was the audience. Classic done beautifully.',           href:'/reviews/sound-of-music-cheltenham-2024.html' },
+    { id:'r15', title:'Cabaret',                    genre:'drama',   stars:5,   reviewer:'penelope', date:'Aug 2024',   company:'Swindon Musical Theatre',  excerpt:'Unsettling, seductive, unforgettable. The Emcee will haunt your dreams.',         href:'/reviews/cabaret-swindon-2024.html' },
+    { id:'r16', title:'My Fair Lady',               genre:'musical', stars:4,   reviewer:'deanna',   date:'Jul 2024',   company:'Bournemouth G&S Society',  excerpt:"An Eliza to make Higgins proud — and the audience too.",                          href:'/reviews/my-fair-lady-bournemouth-2024.html' },
+    { id:'r17', title:'West Side Story',            genre:'musical', stars:5,   reviewer:'deanna',   date:'Jun 2024',   company:'Cheltenham Operatic',      excerpt:"'Tonight, tonight' — and every night of this run was unmissable.",               href:'/reviews/west-side-story-cheltenham-2024.html' },
+    { id:'r18', title:'Anything Goes',              genre:'comedy',  stars:4,   reviewer:'penelope', date:'May 2024',   company:'Swindon Operatic Society', excerpt:'Tap-dancing sailors and a ship full of laughs. Penelope loved every minute.',     href:'/reviews/anything-goes-swindon-2024.html' },
+    { id:'r19', title:'The Wizard of Oz',           genre:'musical', stars:3.5, reviewer:'deanna',   date:'Apr 2024',   company:'West Swindon Singers',     excerpt:'Over the rainbow and back again — a charming family show.',                       href:'/reviews/wizard-of-oz-2024.html' },
+    { id:'r20', title:'Mary Poppins',               genre:'musical', stars:4.5, reviewer:'deanna',   date:'Nov 2024',   company:'West Swindon Singers',     excerpt:'Supercalifragilistic indeed — magnificent staging and a perfect Mary.',           href:'/reviews/mary-poppins-2024.html' },
+    { id:'r21', title:'Beauty and the Beast',       genre:'musical', stars:4,   reviewer:'penelope', date:'Oct 2024',   company:'Footlights Youth Theatre', excerpt:'A tale as old as time, told with fresh young energy and genuine charm.',           href:'/reviews/beauty-beast-footlights-2024.html' },
+    { id:'r22', title:'Aladdin',                    genre:'kids',    stars:4.5, reviewer:'deanna',   date:'Dec 2024',   company:'Junior Theatre Workshop',  excerpt:"The genie stole every scene. A wonderful first theatre experience for young audiences.", href:'/reviews/aladdin-junior-2024.html' },
+    { id:'r23', title:'The Lion King Jr.',          genre:'kids',    stars:4,   reviewer:'penelope', date:'Jul 2024',   company:'Kidstage Productions',     excerpt:"Simba's journey moved even the hardened adult audience. Remarkable young talent.", href:'/reviews/lion-king-jr-2024.html' },
+    { id:'r24', title:'Little Shop of Horrors',     genre:'comedy',  stars:5,   reviewer:'deanna',   date:'Sep 2024',   company:'Oxford Stage Company',     excerpt:"Audrey II was terrifyingly good. Feed me — more of this, please.",               href:'/reviews/little-shop-oxford-2024.html' },
+    { id:'r25', title:"A Funny Thing Happened…",   genre:'comedy',  stars:4,   reviewer:'penelope', date:'Aug 2024',   company:'Bournemouth Musical Theatre', excerpt:'Farce, song, and slapstick — Penelope Jr. laughed until she cried.',            href:'/reviews/funny-thing-happened-2024.html' },
+    { id:'r26', title:'Carousel',                   genre:'drama',   stars:4.5, reviewer:'deanna',   date:'Mar 2024',   company:'Dorset Operatic Society',  excerpt:"Rodgers & Hammerstein's most complex show — performed with courage and grace.",   href:'/reviews/carousel-dorset-2024.html' },
+    { id:'r27', title:'South Pacific',              genre:'musical', stars:4,   reviewer:'deanna',   date:'Feb 2024',   company:'Cheltenham Operatic',      excerpt:'Some enchanted evening — and morning and afternoon. Beautiful.',                   href:'/reviews/south-pacific-cheltenham-2024.html' },
+    { id:'r28', title:'Kiss Me, Kate',              genre:'comedy',  stars:3.5, reviewer:'penelope', date:'Jan 2024',   company:'Swindon Operatic Society', excerpt:'Shakespeare, slapstick and a seriously good Cole Porter score.',                  href:'/reviews/kiss-me-kate-swindon-2024.html' },
+    { id:'r29', title:'Bugsy Malone',               genre:'comedy',  stars:5,   reviewer:'deanna',   date:'Dec 2023',   company:'Footlights Youth Theatre', excerpt:'The best Bugsy I have ever seen from a youth company. Simply outstanding.',       href:'/reviews/bugsy-malone-footlights-2023.html' },
+    { id:'r30', title:"Singin' in the Rain",        genre:'musical', stars:4.5, reviewer:'deanna',   date:'Nov 2023',   company:'Bournemouth G&S Society',  excerpt:'And they actually got wet. Legendary commitment from the whole company.',         href:'/reviews/singin-in-the-rain-2023.html' },
+    { id:'r31', title:'Rent',                       genre:'drama',   stars:4,   reviewer:'penelope', date:'Oct 2023',   company:'Swindon Musical Theatre',  excerpt:"'No day but today' — and this show lived up to every word of it.",               href:'/reviews/rent-swindon-2023.html' },
+    { id:'r32', title:'Company',                    genre:'drama',   stars:5,   reviewer:'deanna',   date:'Sep 2023',   company:'Oxford Stage Company',     excerpt:"Sondheim's masterpiece, fully realised. The 'Being Alive' moment broke me.",     href:'/reviews/company-oxford-2023.html' },
+    { id:'r33', title:'The Pirates of Penzance',    genre:'comedy',  stars:4,   reviewer:'deanna',   date:'Aug 2023',   company:'Bournemouth G&S Society',  excerpt:'G&S at its most rollicking — patter songs delivered at machine-gun speed.',       href:'/reviews/pirates-of-penzance-2023.html' }
+  ];
 
- // Filter button functionality
- document.querySelectorAll('.filter-btn').forEach(btn => {
- btn.addEventListener('click', () => {
- document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
- btn.classList.add('active');
- renderReviews(btn.dataset.filter);
- });
- });
+  var EMOJIS = { musical:'🎭', drama:'🎪', comedy:'😄', kids:'⭐' };
 
- // Progress bar
- window.addEventListener('scroll', () => {
- const scrollTop = window.scrollY;
- const docHeight = document.documentElement.scrollHeight - window.innerHeight;
- const scrollPercent = (scrollTop / docHeight) * 100;
- document.getElementById('progressBar').style.width = scrollPercent + '%';
- });
+  function starsHTML(n) {
+    var full = Math.floor(n);
+    var half = n % 1 >= 0.5;
+    var s = '';
+    for (var i = 0; i < full; i++) s += '★';
+    if (half) s += '½';
+    return '<span class="star-rating" title="' + n + ' stars">' + s + '</span>';
+  }
 
- // Floating particles
- function createParticles() {
- const container = document.getElementById('particles');
- for (let i = 0; i < 50; i++) {
- const particle = document.createElement('div');
- particle.className = 'particle';
- particle.style.left = Math.random() * 100 + '%';
- particle.style.animationDelay = Math.random() * 15 + 's';
- particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
- container.appendChild(particle);
- }
- }
+  function genreBadge(g) {
+    var map = { musical:'badge-musical', drama:'badge-drama', comedy:'badge-comedy', kids:'badge-kids' };
+    var label = g.charAt(0).toUpperCase() + g.slice(1);
+    return '<span class="badge ' + (map[g]||'badge-company') + '">' + label + '</span>';
+  }
 
+  var grid = document.getElementById('reviewsGrid');
+  var emptyState = document.getElementById('reviewsEmpty');
+  var currentFilter = 'all';
+  var currentSearch = '';
 
- // Initialize
- createParticles();
- renderReviews();
- </script>
- <button class="pwa-install-btn" onclick="installPWA()">Install</button>
- <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
- </div>
+  function renderReviews(reviews) {
+    if (!reviews.length) {
+      grid.innerHTML = '';
+      emptyState.style.display = 'block';
+      return;
+    }
+    emptyState.style.display = 'none';
+    grid.innerHTML = reviews.map(function(r) {
+      var reviewerBadge = r.reviewer === 'penelope'
+        ? '<span class="reviewer-badge">Penelope Jr.</span>'
+        : '<span class="reviewer-badge">Deanna</span>';
+      return (
+        '<a href="' + r.href + '" class="article-card">' +
+          '<div class="article-card-img-wrap">' +
+            '<div class="article-card-img-placeholder">' + (EMOJIS[r.genre]||'🎭') + '</div>' +
+          '</div>' +
+          '<div class="article-card-body">' +
+            '<div class="article-card-meta">' + genreBadge(r.genre) + starsHTML(r.stars) + '</div>' +
+            '<h3 class="article-card-title">' + r.title + '</h3>' +
+            '<p class="article-card-excerpt">' + r.excerpt + '</p>' +
+            '<div class="article-card-footer">' +
+              reviewerBadge +
+              '<span class="article-meta-sep">·</span>' +
+              '<span>' + r.company + '</span>' +
+              '<span class="article-meta-sep">·</span>' +
+              '<span>' + r.date + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>'
+      );
+    }).join('');
+  }
 
- <!-- Back to Top -->
- <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+  function applyFilters() {
+    var q = currentSearch.toLowerCase();
+    var filtered = REVIEWS.filter(function(r) {
+      var matchFilter = currentFilter === 'all'
+        || currentFilter === r.genre
+        || (currentFilter === 'deanna' && r.reviewer === 'deanna')
+        || (currentFilter === 'penelope' && r.reviewer === 'penelope')
+        || (currentFilter === '5' && r.stars >= 5)
+        || (currentFilter === '4' && r.stars >= 4);
+      var matchSearch = !q || r.title.toLowerCase().indexOf(q) !== -1
+        || r.company.toLowerCase().indexOf(q) !== -1
+        || r.excerpt.toLowerCase().indexOf(q) !== -1;
+      return matchFilter && matchSearch;
+    });
+    renderReviews(filtered);
+  }
 
- <script defer src="js/shared.js?v=202604150813"></script>
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  var searchInput = document.getElementById('reviewSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      currentSearch = this.value;
+      applyFilters();
+    });
+  }
+
+  applyFilters();
+})();
+</script>
+
+<script src="/js/main.js"></script>
 </body>
 </html>

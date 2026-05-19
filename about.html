@@ -1,725 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>About Us | iHeartTheatre.com - Celebrating Victorian Theatre</title>
- <meta name="description" content="Meet Deanna Amato and her daughter Penelope Quinn, the heart behind iHeartTheatre. Celebrating Victorian theatre in every form, from school stages to professional seasons.">
- <meta name="keywords" content="about iHeartTheatre, Deanna Amato, Penelope Quinn, Victorian theatre community, Melbourne theatre celebration">
- <link rel="preconnect" href="https://fonts.googleapis.com">
- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
- <style>
- * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — iHeartTheatre</title>
+  <meta name="description" content="About iHeartTheatre — who we are, why we exist, and the companies and performers we champion.">
+  <meta property="og:title" content="About iHeartTheatre">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#667eea">
 
- body {
- font-family: 'Inter', sans-serif;
- background: linear-gradient(135deg, #050508 0%, #0a0a0f 100%);
- color: #f5f5f5;
- line-height: 1.8;
- min-height: 100vh;
- }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
- .progress-bar {
- position: fixed;
- top: 0;
- left: 0;
- height: 4px;
- background: linear-gradient(90deg, #e8b923, #b91c1c);
- width: 0%;
- z-index: 1000;
- transition: width 0.3s ease;
- }
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/images/icons/iht-icon.svg">
+  <link rel="manifest" href="/manifest.json">
 
- .container {
- max-width: 900px;
- margin: 0 auto;
- padding: 100px 20px 40px;
- }
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RS9LV72HK8');</script>
 
- nav {
- position: fixed;
- top: 0;
- left: 0;
- right: 0;
- background: rgba(5, 5, 8, 0.95);
- backdrop-filter: blur(20px);
- border-bottom: 1px solid rgba(232, 185, 35, 0.1);
- z-index: 100;
- padding: 15px 0;
- }
-
- /* nav-container and logo styles provided by shared.css */
-
- .nav-links {
- display: flex;
- gap: 30px;
- }
-
- .nav-links a {
- color: #a0a0b0;
- text-decoration: none;
- font-size: 0.9rem;
- transition: color 0.3s;
- }
-
- .nav-links a:hover {
- color: #f5f5f5;
- }
-
- .hero {
- text-align: center;
- padding: 120px 2rem 60px;
- margin-bottom: 40px;
- min-height: 480px;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- background: linear-gradient(180deg, rgba(5,5,8,0.50) 0%, rgba(5,5,8,0.20) 100%), url('images/about/hero-banner.webp') center/cover no-repeat;
- }
-
- .hero h1 {
- font-family: 'Playfair Display', serif;
- font-size: clamp(2.5rem, 5vw, 4rem);
- margin-bottom: 20px;
- background: linear-gradient(135deg, #e8b923, #b91c1c, #ffd700);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- }
-
- .hero p {
- color: #a0a0b0;
- font-size: 1.2rem;
- max-width: 600px;
- margin: 0 auto;
- }
-
- .section {
- margin-bottom: 50px;
- }
-
- .section h2 {
- font-family: 'Playfair Display', serif;
- font-size: 2rem;
- margin-bottom: 30px;
- color: #f5f5f5;
- display: flex;
- align-items: center;
- gap: 15px;
- }
-
- .section h2::before {
- content: '';
- width: 4px;
- height: 40px;
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- border-radius: 2px;
- }
-
- .story-block {
- background: rgba(255, 255, 255, 0.03);
- border: 1px solid rgba(255, 255, 255, 0.08);
- border-radius: 20px;
- padding: 40px;
- margin-bottom: 40px;
- backdrop-filter: blur(10px);
- }
-
- .story-block p {
- margin-bottom: 20px;
- color: #d0d0d0;
- line-height: 1.9;
- }
-
- .story-block p:last-child {
- margin-bottom: 0;
- }
-
- .story-block .highlight {
- color: #ffd700;
- font-weight: 600;
- }
-
- .story-block .emphasis {
- font-style: italic;
- color: #a0a0b0;
- }
-
- .journey-timeline {
- position: relative;
- margin: 40px 0;
- }
-
- .journey-timeline::before {
- content: '';
- position: absolute;
- left: 20px;
- top: 0;
- bottom: 0;
- width: 2px;
- background: linear-gradient(180deg, #e8b923, #b91c1c);
- }
-
- .timeline-item {
- position: relative;
- padding-left: 60px;
- margin-bottom: 30px;
- }
-
- .timeline-item::before {
- content: '';
- position: absolute;
- left: 12px;
- top: 8px;
- width: 18px;
- height: 18px;
- border-radius: 50%;
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- border: 3px solid #050508;
- }
-
- .timeline-item h3 {
- font-family: 'Playfair Display', serif;
- font-size: 1.4rem;
- margin-bottom: 10px;
- color: #f5f5f5;
- }
-
- .timeline-item p {
- color: #a0a0b0;
- }
-
- .gratitude {
- background: linear-gradient(135deg, rgba(232, 185, 35, 0.1), rgba(185, 28, 28, 0.1));
- border: 1px solid rgba(232, 185, 35, 0.2);
- border-radius: 20px;
- padding: 40px;
- margin-top: 40px;
- }
-
- .gratitude h3 {
- font-family: 'Playfair Display', serif;
- font-size: 1.8rem;
- margin-bottom: 20px;
- color: #ffd700;
- text-align: center;
- }
-
- .gratitude p {
- color: #d0d0d0;
- text-align: center;
- line-height: 1.9;
- }
-
- .philosophy {
- background: rgba(255, 215, 0, 0.05);
- border: 1px solid rgba(255, 215, 0, 0.1);
- border-radius: 20px;
- padding: 40px;
- margin-top: 40px;
- }
-
- .philosophy h3 {
- font-family: 'Playfair Display', serif;
- font-size: 1.8rem;
- margin-bottom: 20px;
- color: #ffd700;
- }
-
- .philosophy p {
- color: #d0d0d0;
- margin-bottom: 15px;
- }
-
- .stats {
- display: grid;
- grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
- gap: 20px;
- margin: 40px 0;
- }
-
- .stat-card {
- background: rgba(255, 255, 255, 0.03);
- border: 1px solid rgba(255, 255, 255, 0.08);
- border-radius: 15px;
- padding: 30px;
- text-align: center;
- transition: transform 0.3s ease;
- }
-
- .stat-card:hover {
- transform: translateY(-5px);
- }
-
- .stat-number {
- font-family: 'Playfair Display', serif;
- font-size: 3rem;
- font-weight: 700;
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- -webkit-background-clip: text;
- -webkit-text-fill-color: transparent;
- }
-
- .stat-label {
- color: #a0a0b0;
- margin-top: 10px;
- }
-
- .cta-section {
- text-align: center;
- padding: 60px;
- background: linear-gradient(135deg, rgba(232, 185, 35, 0.1), rgba(185, 28, 28, 0.1));
- border-radius: 20px;
- margin-top: 60px;
- }
-
- .cta-section h2 {
- font-family: 'Playfair Display', serif;
- font-size: 2rem;
- margin-bottom: 20px;
- color: #f5f5f5;
- }
-
- .cta-section p {
- color: #a0a0b0;
- margin-bottom: 30px;
- }
-
- .cta-button {
- display: inline-block;
- padding: 15px 40px;
- background: linear-gradient(135deg, #e8b923, #b91c1c);
- color: #fff;
- text-decoration: none;
- border-radius: 50px;
- font-weight: 600;
- transition: transform 0.3s, box-shadow 0.3s;
- }
-
- .cta-button:hover {
- transform: translateY(-3px);
- box-shadow: 0 10px 30px rgba(232, 185, 35, 0.4);
- }
-
- footer {
- background: rgba(5, 5, 8, 0.95);
- padding: 40px 20px;
- margin-top: 80px;
- border-top: 1px solid rgba(255, 255, 255, 0.08);
- }
-
- .footer-content {
- max-width: 1200px;
- margin: 0 auto;
- text-align: center;
- color: #a0a0b0;
- }
-
- .footer-links {
- display: flex;
- justify-content: center;
- gap: 30px;
- margin-top: 20px;
- flex-wrap: wrap;
- }
-
- .footer-links a {
- color: #a0a0b0;
- text-decoration: none;
- transition: color 0.3s;
- }
-
- .footer-links a:hover {
- color: #e8b923;
- }
-
- @media (max-width: 768px) {
- .nav-links {
- display: none;
- }
-
- .hero, .page-header {
- text-align: center;
- }
-
- .hero h1, .hero p,
- .page-header h1, .page-header p {
- text-align: center;
- }
-
- .about-section {
- text-align: center;
- }
-
- .journey-timeline::before {
- left: 15px;
- }
-
- .timeline-item {
- padding-left: 45px;
- text-align: center;
- }
-
- .timeline-item::before {
- left: 7px;
- width: 15px;
- height: 15px;
- }
-
- .venue-list li {
- text-align: center;
- }
- }
-
- /* Story/philosophy block accordion (details/summary) */
- .story-accordion > summary {
- list-style: none;
- font-family: 'Playfair Display', serif;
- font-size: 1.5rem;
- font-weight: 600;
- color: #ffd700;
- cursor: pointer;
- display: flex;
- justify-content: space-between;
- align-items: center;
- user-select: none;
- margin-bottom: 0;
- gap: 12px;
- }
- .story-accordion > summary::-webkit-details-marker { display: none; }
- .story-accordion > summary::marker { content: ''; }
- .story-accordion > summary::after {
- content: '+';
- font-size: 1.8rem;
- line-height: 1;
- font-weight: 300;
- display: inline-block;
- transition: transform 0.3s ease;
- color: #e8b923;
- flex-shrink: 0;
- font-family: 'Inter', sans-serif;
- }
- .story-accordion[open] > summary::after {
- transform: rotate(45deg);
- }
- .story-accordion:not([open]) {
- padding-top: 20px;
- padding-bottom: 20px;
- }
- .story-accordion .accordion-body {
- padding-top: 20px;
- }
- </style>
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
- <meta name="theme-color" content="#e8b923">
- <meta name="apple-mobile-web-app-capable" content="yes">
- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
- <link rel="manifest" href="manifest.json">
- <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
- <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
- <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
- <link rel="stylesheet" href="css/shared.css?v=20260515">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RS9LV72HK8');
-</script>
-
- <link rel="canonical" href="https://ihearttheatre.com/about.html">
- <meta name="robots" content="index, follow">
- <meta property="og:type" content="website">
- <meta property="og:site_name" content="iHeartTheatre">
- <meta property="og:title" content="About Us | iHeartTheatre.com - Celebrating Victorian Theatre">
- <meta property="og:description" content="Meet Deanna Amato and her daughter Penelope Quinn, the heart behind iHeartTheatre. Celebrating Victorian theatre in every form, from school stages to profess...">
- <meta property="og:url" content="https://ihearttheatre.com/about.html">
- <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
- <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:title" content="About Us | iHeartTheatre.com - Celebrating Victorian Theatre">
- <meta name="twitter:description" content="Meet Deanna Amato and her daughter Penelope Quinn, the heart behind iHeartTheatre. Celebrating Victorian theatre in every form, from school stages to profess...">
- <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
+  <!-- JSON-LD Organisation -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "iHeartTheatre",
+    "url": "https://ihearttheatre.com",
+    "description": "Community theatre hub — shows, reviews, auditions and performer tools",
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
- <div class="progress-bar" id="progressBar"></div>
+<main>
 
- <nav>
- <div class="nav-container">
- <a href="index.html" class="logo">iHeartTheatre</a>
- <div class="hamburger" aria-label="Toggle navigation">
- <span></span>
- <span></span>
- <span></span>
- </div>
- <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html">Reviews</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a><a href="musicals.html">Musicals</a><a href="career-builder.html">Career Builder</a></div>
- </div>
- </nav>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-eyebrow">ℹ️ About</div>
+    <h1 class="page-hero-title">We <em>♥</em> Theatre</h1>
+    <p class="page-hero-sub">iHeartTheatre is a free community theatre hub — celebrating the shows, people and companies that make community theatre extraordinary.</p>
+  </div>
 
- <div class="container">
- <section class="hero">
- <h1>About iHeartTheatre</h1>
- <p>Celebrating Melbourne's Theatre Community, One Performance at a Time</p>
- </section>
+  <!-- MANIFESTO -->
+  <div class="manifesto">
+    <div class="manifesto-title">Our Manifesto</div>
+    <p class="manifesto-text">
+      Community theatre is where the magic lives. It's where teachers, nurses, accountants, and teenagers transform themselves every night into heroes, villains, queens and clowns — for the pure love of it. iHeartTheatre exists to celebrate that. To shine a light on every company putting in the work, every performer taking their first terrifying steps on stage, and every show that deserves a bigger audience.
+    </p>
+    <p class="manifesto-text" style="margin-top:10px">
+      We are independent, free and always will be. No paywalls, no accounts required — just a love of theatre, freely shared.
+    </p>
+  </div>
 
- <section class="section">
- <h2>Our Journey</h2>
- 
- <details class="story-block story-accordion" open>
- <summary>Nonna's Legacy</summary>
- <div class="accordion-body">
- <p>Penelope's <span class="highlight">Nonna</span> loved the stage and the shows her whole life. As a teenager, she and her sister would go to the cinema together. When Penelope's mum came along, Nonna took her to shows too. And when <span class="highlight">Penelope</span> arrived, Nonna carried on that tradition, taking her granddaughter along too.</p>
- 
- <p>The last show they saw together was an opera version of <em>The Wizard of Oz</em>. Penelope was very young and absolutely loved it. We had no idea how much that night would matter.</p>
- 
- <p class="emphasis">Then Nonna passed away.</p>
- </div>
- </details>
+  <!-- TEAM / BIOS -->
+  <section class="hub-section reveal-section" aria-labelledby="team-title">
+    <div class="section-header">
+      <h2 class="section-title" id="team-title">The <span class="section-title-accent">Team</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px">
 
- <details class="story-block story-accordion">
- <summary>The Night Everything Changed</summary>
- <div class="accordion-body">
- <p>Seven months after Nonna passed, her former work colleague Maria posted that her daughter was performing in <span class="highlight">Theatrical's production of The Wizard of Oz</span>. We knew we had to take Penelope.</p>
- 
- <p>Opening night was one we'd never forget, and not just because of what happened on stage. There was flooding at the <span class="highlight">National Theatre</span>. The foyer and main entrance were closed. Everyone had to enter through the fire escape. But the show must go on, and it did.</p>
- 
- <p>Penelope's seat was right in front of a makeshift red carpet and promo stand on stage. She'd come dressed as <span class="highlight">Dorothy</span>. Pigtails, a basket with a fluffy dog inside, the whole lot. The show blew our whole family away.</p>
- 
- <p>On the way out, Penelope asked if she could say some words on a camera that was recording audience reactions. She did, and her clip ended up in <span class="highlight">Theatrical's highlights reel</span>.</p>
- 
- <p>Maria messaged us afterwards: <span class="emphasis">"The cast noticed Penelope and they want to meet her."</span></p>
- 
- <p>Days later, Penelope and a friend went back to watch the show again. She met the cast, took photos, and was welcomed by every single performer. The next day, Maria's daughter told us the executive producer had <span class="emphasis">"a treat"</span> for Penelope at interval.</p>
- 
- <p>So we went again, this time with another friend. At interval, the executive producer took Penelope and her friend <span class="highlight">backstage</span> to meet the cast in full costume. Going backstage with the whole cast still in costume, that was the moment.</p>
- 
- <p>After the show, while waiting for photos with the remaining cast members she hadn't yet met, one of the actors (he played Dorothy's uncle and the Guard of Oz) leaned down and whispered: <span class="emphasis">"Do you want to hear a secret? There's a new show coming, The Sound of Music, and they need a Gretl. You should audition."</span></p>
- 
- <p class="highlight" style="font-size: 1.2rem; text-align: center; margin-top: 25px;">That was it.</p>
- </div>
- </details>
+      <div class="bio-card">
+        <div class="bio-avatar">🎭</div>
+        <div>
+          <div class="bio-name">Deanna</div>
+          <div class="bio-role">Founder &amp; Lead Reviewer</div>
+          <p class="bio-text">
+            Deanna has been watching, performing in and writing about community theatre since 2003. She's sat in more stalls than she can count, cried at more finales than she'll admit to, and believes community theatre is as worthy of serious criticism as the West End.
+          </p>
+        </div>
+      </div>
 
- <details class="story-block story-accordion">
- <summary>Becoming Gretl</summary>
- <div class="accordion-body">
- <p>Penelope got stuck into preparation. She took cheerleading classes for choreography and teamwork, trained with <span class="highlight">Sarah DiBono</span> in local sessions, and took dancing lessons with Matilda at <span class="highlight">ELS Dance</span>. By the time auditions came around, she was ready.</p>
- 
- <p>She went in with two of Nonna's favourites: <span class="highlight">"I Can't Help Falling in Love"</span> by Elvis and <span class="highlight">"A Spoonful of Sugar"</span>. While waiting and shivering with nerves, a girl named <span class="highlight">Stephanie Stevenson</span>, who was auditioning just before her, came over and told Penelope how beautiful she looked in her dress. That helped more than anything. Stephanie was later cast too, in one of the roles under Liesl.</p>
+      <div class="bio-card">
+        <div class="bio-avatar">⭐</div>
+        <div>
+          <div class="bio-name">Penelope</div>
+          <div class="bio-role">Junior Reviewer</div>
+          <p class="bio-text">
+            Penelope is our Junior Reviewer — bringing fresh eyes, genuine excitement and the perspective of a young theatre-goer to every show she sees. She's been reviewing since 2023 and her star ratings are never anything other than completely honest.
+          </p>
+        </div>
+      </div>
 
- <p>The production team cheered her on. They were upfront about the workload. Three months of three-hour rehearsals, full days on weekends. Penelope got the callback invite. She was the only Gretl in attendance.</p>
- 
- <p>In the callback parking lot, another father looked at Penelope and said: <span class="emphasis">"Well, there's a Gretl if ever I saw one."</span></p>
- 
- <p>Then came the call. Tears of joy. And a feeling we couldn't shake that <span class="highlight">Nonna had something to do with it</span>.</p>
- </div>
- </details>
+    </div>
+  </section>
 
- <details class="story-block story-accordion">
- <summary>The Sound of Music Season</summary>
- <div class="accordion-body">
- <p>Three months of rehearsals followed. Long sessions, full days, learning every part of how a production works. There were two casts, and Penelope was part of one, but she attended <span class="highlight">every single show</span>. She helped sell programs, getting into every part of it.</p>
- 
- <p>It was a really talented cast, and the families around them had done this before. They welcomed us in. Through selling programs and watching a whole season of performances, we began to understand how every little thing affects an audience, and how the audience in turn affects those on stage.</p>
- 
- <p class="emphasis">That understanding of the relationship between performer and audience is what drives everything we do at iHeartTheatre.</p>
- </div>
- </details>
+  <!-- PARTNER COMPANIES -->
+  <section class="hub-section reveal-section" style="padding-top:28px" aria-labelledby="companies-title" id="companies">
+    <div class="section-header">
+      <h2 class="section-title" id="companies-title">Partner <span class="section-title-accent">Companies</span></h2>
+    </div>
+    <div class="companies-grid reveal-stagger">
 
- <div class="journey-timeline">
- <div class="timeline-item">
- <h3>Nonna's Legacy</h3>
- <p>A lifetime love of shows, passed down through the family. Cinema trips as a teenager with her sister, shows with Penelope's mum, and a very young Penelope at an opera version of The Wizard of Oz.</p>
- </div>
+      <a href="/companies/cheltenham-operatic.html" class="company-card">
+        <div class="company-logo">🎭</div>
+        <div class="company-name">Cheltenham Operatic Society</div>
+      </a>
 
- <div class="timeline-item">
- <h3>Theatrical's Wizard of Oz</h3>
- <p>Seven months after Nonna passed, opening night at the National Theatre. Flooding, a fire escape entrance, Dorothy pigtails, a camera interview, meeting the cast, and a backstage visit Pea still talks about.</p>
- </div>
+      <a href="/companies/bournemouth-gs.html" class="company-card">
+        <div class="company-logo">🎵</div>
+        <div class="company-name">Bournemouth G&S Society</div>
+      </a>
 
- <div class="timeline-item">
- <h3>Cast as Gretl in The Sound of Music</h3>
- <p>Penelope went into auditions with two of Nonna's favourites and got the call. Three months of rehearsals, every show of the season, selling programs in the foyer.</p>
- </div>
+      <a href="/companies/swindon-musical.html" class="company-card">
+        <div class="company-logo">🎼</div>
+        <div class="company-name">Swindon Musical Theatre</div>
+      </a>
 
- <div class="timeline-item">
- <h3>Reviewer &amp; Roving Reporter</h3>
- <p>Penelope became a reviewer for thetheatre.au and served as roving reporter for Theatrical's debut of Three Little Pigs. Deanna began reviewing shows Pea was too young for.</p>
- </div>
+      <a href="/companies/swindon-operatic.html" class="company-card">
+        <div class="company-logo">🎤</div>
+        <div class="company-name">Swindon Operatic Society</div>
+      </a>
 
- <div class="timeline-item">
- <h3>Training &amp; Performing</h3>
- <p>Tap and musical theatre at Chris Horsey's XLR8 school. Shrek Jr. and Dare to Dream with Melbourne Kids Theatre. Musical review and Aristocats with MusicWorks. Theatrical Symphony. Cast by Williamstown Theatre Company in Newsies.</p>
- </div>
+      <a href="/companies/footlights-youth.html" class="company-card">
+        <div class="company-logo">⭐</div>
+        <div class="company-name">Footlights Youth Theatre</div>
+      </a>
 
- <div class="timeline-item">
- <h3>In the Spotlight</h3>
- <p>Featured twice in Sunshine's Star Weekly, in The Age alongside Sound of Music castmates, and performing during a weather segment on Channel 10.</p>
- </div>
+      <a href="/companies/forest-youth.html" class="company-card">
+        <div class="company-logo">🌳</div>
+        <div class="company-name">Forest Youth Theatre</div>
+      </a>
 
- <div class="timeline-item">
- <h3>Building iHeartTheatre</h3>
- <p>40+ published reviews, countless shows across Melbourne and Victoria, and a website built to celebrate all of it.</p>
- </div>
- </div>
- </section>
+      <a href="/companies/dorset-operatic.html" class="company-card">
+        <div class="company-logo">🎪</div>
+        <div class="company-name">Dorset Operatic Society</div>
+      </a>
 
- <section class="section">
- <h2>Our Philosophy</h2>
- 
- <div class="story-block">
- <p>Having experienced the love from an audience through <em>The Sound of Music</em>, we knew what these people were experiencing. We know what it's like to be the family of a kid performer on opening night. When we see the other "star" on an opening night show we're attending, we try to acknowledge them by asking for a photo with them & Pea.</p>
- 
- <p class="emphasis">It can feel weird where you are with a big crowd who are seeing a show you are in, but that night you are almost anonymous. But they are a star in their own right.</p>
- </div>
+      <a href="/companies/oxford-stage.html" class="company-card">
+        <div class="company-logo">🏛️</div>
+        <div class="company-name">Oxford Stage Company</div>
+      </a>
 
- <details class="philosophy story-accordion">
- <summary>The Theatre Renaissance</summary>
- <div class="accordion-body">
- <p>We believe we are stepping into a world where AI has had such a profound effect on digital entertainment that the future is very much <span class="highlight">LIVE performance</span>. Humanity craves something real. Real emotion, real stories.</p>
- 
- <p>As the love from the audience grows, so will the performance for those on stage. The energy and safety of knowing that everyone there is willing them to be fantastic transforms the experience.</p>
- 
- <p>As an audience, we have a <span class="highlight">duty of care</span> to be as positive and excited as we can, in our part of the performance, to get the most of what we are seeing in front of us.</p>
- 
- <p>We've seen many times how a misstep or break in concentration can shake a performer. But in that moment of recovery, when they can be unsure of themselves for a moment, a cheer of encouragement can see the performer <span class="highlight">thrive</span>.</p>
- </div>
- </details>
+      <a href="/companies/west-swindon-singers.html" class="company-card">
+        <div class="company-logo">🎶</div>
+        <div class="company-name">West Swindon Singers</div>
+      </a>
 
- <details class="story-block story-accordion">
- <summary>The Audience's Role</summary>
- <div class="accordion-body">
- <p>Through selling programs and watching a whole season of performances as we completely immersed ourselves into every experience of it, we could tell how little things could affect the audience, which in turn affects those on stage.</p>
- 
- <p>It starts before they even get to the venue. If the journey is a hassle, or something happens on the way or just before, if the venue is hard to find or no parking, the energy can start to shift.</p>
- 
- <p>The second they walk through the door, <span class="highlight">we are in charge</span>. We can control that energy between the door and the threshold to the auditorium.</p>
- </div>
- </details>
+      <a href="/companies/bournemouth-musical.html" class="company-card">
+        <div class="company-logo">🎸</div>
+        <div class="company-name">Bournemouth Musical Theatre</div>
+      </a>
 
- <details class="philosophy story-accordion">
- <summary>How We Celebrate</summary>
- <div class="accordion-body">
- <p><span class="highlight">We are celebrators, not critics.</span></p>
- 
- <p>Our write-ups aim to show the positives of every show, knowing that it is possible to not enjoy a performance and still appreciate the art, the effort, the production, the dedication, and still find something wonderful in it.</p>
- 
- <p>We write about school shows, community groups, holiday programmes, all shows. We are building a bridge of connections across Victoria in all aspects of live performance.</p>
- </div>
- </details>
- </section>
+      <a href="/companies/junior-theatre-workshop.html" class="company-card">
+        <div class="company-logo">📚</div>
+        <div class="company-name">Junior Theatre Workshop</div>
+      </a>
 
- <section class="section">
- <h2>Our Impact</h2>
- 
- <div class="stats">
- <div class="stat-card">
- <div class="stat-number">40+</div>
-   <div class="stat-label">Shows Covered</div>
- </div>
- <div class="stat-card">
- <div class="stat-number">100+</div>
- <div class="stat-label">Shows Attended</div>
- </div>
- <div class="stat-card">
- <div class="stat-number">50+</div>
- <div class="stat-label">Venues Visited</div>
- </div>
- <div class="stat-card">
- <div class="stat-number">8</div>
- <div class="stat-label">Love for Theatre</div>
- </div>
- </div>
- </section>
+      <a href="/companies/kidstage.html" class="company-card">
+        <div class="company-logo">🦁</div>
+        <div class="company-name">Kidstage Productions</div>
+      </a>
 
- <section class="section">
- <h2>The Melbourne Theatre Experience</h2>
- 
- <div class="story-block">
- <p>We've experienced theatre in so many different types of spaces across Melbourne:</p>
- 
- <ul style="list-style: none; padding: 0; margin: 20px 0;">
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>Botanical Gardens</strong> - Open air, actual stars overhead</li>
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>St Kilda Beach</strong> - A taped-off section of sand that somehow becomes a stage</li>
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>The Malthouse</strong> - Home to some of Melbourne's most adventurous shows</li>
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>The Round</strong> - Theatre in the round, you're practically part of it</li>
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>Collingwood Pubs</strong> - 20 seats in an upstairs room, nothing quite like it</li>
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>School Theatres</strong> - A special mention for <strong>Haileybury</strong>, whose facilities are simply world-class</li>
- <li style="margin-bottom: 15px; color: #d0d0d0;"><strong>National Theatre</strong> - Our second home, where you'll regularly find us volunteering to sell programs and checking in with the wonderful staff who have always shown so much love for Pea</li>
- </ul>
- 
- <p class="emphasis">Or we are just really lucky to live in this city with so many incredible performers and real people.</p>
- </div>
- </section>
+    </div>
+    <div style="padding:16px 0">
+      <p style="font-size:13px;color:var(--muted)">
+        Want your company listed? <a href="#contact" style="color:var(--primary)">Get in touch</a> — we'd love to feature your work.
+      </p>
+    </div>
+  </section>
 
- <section class="section">
- <h2>Our Gratitude</h2>
- 
- <div class="gratitude">
- <h3>Eternal Thanks</h3>
- <p>Dea & Pea are eternally grateful to the opportunities given to them by:</p>
- <p style="margin-top: 20px; font-size: 1.2rem; color: #ffd700;">
- <strong>Theatrical</strong> &bull; <strong>thetheatre.au</strong> &bull; <strong>AG Theatre</strong>
- </p>
- <p style="margin-top: 15px;">
- Because of these opportunities, we have, as a family, been able to see so many different types of theatre on so many different stages. This experience, dedication, and love for all forms of theatre and performance is what we present to you.
- </p>
- </div>
- </section>
+  <!-- WHAT WE DO -->
+  <section class="hub-section reveal-section" style="padding-top:28px" aria-labelledby="what-we-do-title">
+    <div class="section-header">
+      <h2 class="section-title" id="what-we-do-title">What We <span class="section-title-accent">Do</span></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px">
 
- <section class="cta-section">
-  <h2>Get Your Show on the Hub</h2>
-  <p>Whether you're a performer, a theatre company, a school, or an audience member, we're building Victoria's theatre community together.</p>
-  <a href="submit-show.html" class="cta-button">List Your Show</a>
- </section>
- </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-card);border-radius:10px;padding:20px">
+        <div style="font-size:1.8rem;margin-bottom:10px">🎭</div>
+        <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--text);margin-bottom:6px">Reviews</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.6">Honest, passionate reviews of community theatre productions. We believe amateur theatre deserves the same serious engagement as professional.</p>
+      </div>
 
- <footer>
- <div class="footer-content">
-  <div class="footer-links">
- <a href="index.html">Home</a>
- <a href="shows.html">Shows</a>
- <a href="auditions.html">Auditions</a>
- <a href="reviews.html">Reviews</a>
- <a href="junior-kids-schools.html">Junior &amp; Kids</a>
- <a href="services.html">Services</a>
- <a href="musicals.html">Role Guides</a>
- <a href="companies.html">Companies</a>
- <a href="about.html">About</a>
- <a href="contact.html">Contact</a>
- <a href="privacy.html">Privacy</a>
- <a href="disclaimer.html">Disclaimer</a>
-</div>
-   <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
- // Progress bar
- window.onscroll = function() {
- const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
- const height = document.documentElement.scrollHeight, document.documentElement.clientHeight;
- const scrolled = (winScroll / height) * 100;
- document.getElementById("progressBar").style.width = scrolled + "%";
- };
+      <div style="background:var(--bg-card);border:1px solid var(--border-card);border-radius:10px;padding:20px">
+        <div style="font-size:1.8rem;margin-bottom:10px">📅</div>
+        <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--text);margin-bottom:6px">What's On</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.6">A regularly updated calendar of community theatre shows — so you never miss a great production near you.</p>
+      </div>
 
- // Smooth scroll for navigation
- document.querySelectorAll('a[href^="#"]').forEach(anchor => {
- anchor.addEventListener('click', function (e) {
- e.preventDefault();
- document.querySelector(this.getAttribute('href')).scrollIntoView({
- behavior: 'smooth'
- });
- });
- });
- </script>
- <button class="pwa-install-btn" onclick="installPWA()">Install</button>
- <button class="pwa-dismiss" onclick="dismissPWA()">&times;</button>
- </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-card);border-radius:10px;padding:20px">
+        <div style="font-size:1.8rem;margin-bottom:10px">🎤</div>
+        <h3 style="font-family:var(--font-heading);font-size:1rem;font-weight:700;color:var(--text);margin-bottom:6px">Performer Tools</h3>
+        <p style="font-size:13px;color:var(--muted);line-height:1.6">Role Finder, Song Browser and Career Builder — free tools to help performers at every stage of their community theatre journey.</p>
+      </div>
 
- <!-- Back to Top -->
- <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
+    </div>
+  </section>
 
- <script defer src="js/shared.js?v=202604150813"></script>
+  <!-- CONTACT -->
+  <section class="hub-section reveal-section" style="padding-top:28px;padding-bottom:40px" aria-labelledby="contact-title" id="contact">
+    <div class="section-header">
+      <h2 class="section-title" id="contact-title">Get in <span class="section-title-accent">Touch</span></h2>
+    </div>
+    <div style="max-width:560px">
+      <p style="font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.6">
+        Want to submit a show for review? Have a production coming up you'd like listed? Or just want to say hello? We'd love to hear from you.
+      </p>
+      <div class="contact-section">
+        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-group">
+            <label class="form-label" for="contactName">Your Name</label>
+            <input class="form-input" type="text" id="contactName" name="name" placeholder="e.g. Jane Smith" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">Email</label>
+            <input class="form-input" type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contactSubject">Subject</label>
+            <input class="form-input" type="text" id="contactSubject" name="subject" placeholder="e.g. Review request, Show listing…" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Message</label>
+            <textarea class="form-textarea" id="contactMessage" name="message" placeholder="Tell us about your show, company or question…" required></textarea>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <span style="font-size:12px;color:var(--muted)">Opens your email client — no data stored</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+function handleContactSubmit(e) {
+  e.preventDefault();
+  var form = document.getElementById('contactForm');
+  submitFormViaEmail(form, 'iHT Contact');
+}
+</script>
+
+<script src="/js/main.js"></script>
 </body>
 </html>

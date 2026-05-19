@@ -2,585 +2,199 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>What's On | Melbourne &amp; Victorian Theatre 2026 | iHeartTheatre</title>
-  <meta name="description" content="Every show on stage in Melbourne and regional Victoria — professional, community and school theatre from Feb to Nov 2026. Filter by month, type or genre.">
-  <link rel="canonical" href="https://ihearttheatre.com/whats-on.html">
-  <meta property="og:title" content="What's On | Melbourne &amp; Victorian Theatre 2026 | iHeartTheatre">
-  <meta property="og:description" content="106 shows across Melbourne and Victoria. Filter by month, production type or genre.">
-  <meta property="og:url" content="https://ihearttheatre.com/whats-on.html">
-  <meta property="og:site_name" content="iHeartTheatre">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>What's On — iHeartTheatre</title>
+  <meta name="description" content="The complete community theatre calendar — shows happening now, opening soon and coming up near you.">
+  <meta property="og:title" content="What's On — iHeartTheatre">
+  <meta property="og:description" content="Community theatre shows, dates, venues and booking info.">
   <meta property="og:type" content="website">
-  <meta name="twitter:title" content="What's On | Melbourne &amp; Victorian Theatre 2026 | iHeartTheatre">
-  <meta name="twitter:description" content="106 shows across Melbourne and Victoria. Filter by month, production type or genre.">
-  <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <meta name="theme-color" content="#667eea">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/shared.css?v=20260515">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
-  <!-- Google tag -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="/images/icons/iht-icon.svg">
+  <link rel="manifest" href="/manifest.json">
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-RS9LV72HK8');</script>
-
-  <style>
-    :root {
-      --bg:#0a0a0a; --surface:#111; --surface2:#1a1a1a; --surface3:#222;
-      --border:rgba(255,255,255,0.08); --border2:rgba(255,255,255,0.12);
-      --purple:#e8b923; --purple-d:#b91c1c; --gold:#e8b923;
-      --text:#f0f0f0; --text-muted:#9ca3af; --radius:12px;
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-
-    /* ── HERO ── */
-    .page-hero {
-      background: linear-gradient(180deg, rgba(5,5,8,0.50) 0%, rgba(5,5,8,0.20) 100%), url('images/whats-on/hero-banner.webp') center/cover no-repeat;
-      border-bottom: 1px solid var(--border);
-      padding: 120px 1.5rem 60px;
-      min-height: 440px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .page-hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: radial-gradient(ellipse at 30% 60%, rgba(232,185,35,.14) 0%, transparent 55%),
-                  radial-gradient(ellipse at 75% 30%, rgba(245,158,11,.07) 0%, transparent 45%);
-      pointer-events: none;
-    }
-    .page-hero-inner { max-width: 720px; margin: 0 auto; position: relative; }
-    .page-hero-eyebrow {
-      display: inline-block;
-      font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
-      color: #fde68a; background: rgba(232,185,35,.15);
-      border: 1px solid rgba(232,185,35,.3);
-      padding: .3rem .9rem; border-radius: 999px; margin-bottom: 1.25rem;
-    }
-    .page-hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.2rem, 5vw, 3.5rem);
-      font-weight: 700; line-height: 1.1;
-      margin-bottom: .75rem;
-    }
-    .page-hero-sub {
-      font-size: 1.05rem; color: var(--text-muted); max-width: 540px; margin: 0 auto;
-    }
-
-    /* ── STICKY FILTER BAR ── */
-    .filter-bar {
-      position: sticky; top: 0; z-index: 100;
-      background: rgba(10,10,10,.92);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: .85rem 1.5rem;
-    }
-    .filter-bar-inner {
-      max-width: 1180px; margin: 0 auto;
-      display: flex; flex-wrap: wrap; gap: .65rem; align-items: center;
-    }
-
-    /* Search */
-    .filter-search {
-      flex: 1 1 200px; min-width: 160px; max-width: 280px;
-      background: var(--surface2); border: 1px solid var(--border);
-      border-radius: 8px; padding: .45rem .9rem;
-      color: var(--text); font-size: .9rem; font-family: inherit;
-      outline: none; transition: border-color .2s;
-    }
-    .filter-search::placeholder { color: var(--text-muted); }
-    .filter-search:focus { border-color: rgba(232,185,35,.5); }
-
-    /* Chip groups */
-    .chip-group { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
-    .chip-label {
-      font-size: .7rem; font-weight: 600; letter-spacing: .06em;
-      text-transform: uppercase; color: var(--text-muted);
-      margin-right: .15rem;
-    }
-    .chip {
-      display: inline-block; padding: .3rem .8rem;
-      border-radius: 999px; font-size: .8rem; font-weight: 500;
-      cursor: pointer; border: 1px solid var(--border);
-      background: transparent; color: var(--text-muted);
-      transition: background .15s, color .15s, border-color .15s;
-      white-space: nowrap;
-    }
-    .chip:hover { background: var(--surface2); color: var(--text); border-color: var(--border2); }
-    .chip.active {
-      background: linear-gradient(135deg, var(--purple-d), var(--purple));
-      color: #fff; border-color: transparent;
-    }
-    .chip.pt-professional.active { background: linear-gradient(135deg,#b45309,#d97706); }
-    .chip.pt-community.active    { background: linear-gradient(135deg,#8b0000,var(--purple)); }
-    .chip.pt-school.active       { background: linear-gradient(135deg,#065f46,#059669); }
-
-    /* Count + clear */
-    .filter-meta {
-      margin-left: auto; display: flex; align-items: center; gap: .75rem;
-      font-size: .82rem; color: var(--text-muted); white-space: nowrap;
-    }
-    .btn-clear {
-      background: none; border: 1px solid var(--border); border-radius: 6px;
-      padding: .25rem .65rem; font-size: .78rem; color: var(--text-muted);
-      cursor: pointer; transition: border-color .15s, color .15s;
-    }
-    .btn-clear:hover { border-color: var(--border2); color: var(--text); }
-
-    /* ── GRID ── */
-    .shows-wrapper { max-width: 1180px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
-
-    .shows-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 1.1rem;
-    }
-
-    /* Show card */
-    .show-card {
-      display: flex; flex-direction: column;
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 1.1rem;
-      text-decoration: none; color: inherit;
-      transition: border-color .2s, background .2s, transform .15s, box-shadow .2s;
-    }
-    .show-card:hover {
-      border-color: rgba(232,185,35,.4);
-      background: var(--surface2);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0,0,0,.4);
-    }
-
-    .card-badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .75rem; }
-
-    .badge {
-      display: inline-block; font-size: .68rem; font-weight: 600;
-      letter-spacing: .04em; text-transform: uppercase;
-      padding: .2rem .6rem; border-radius: 999px;
-    }
-    .badge-professional { background:rgba(245,158,11,.15); color:var(--gold); border:1px solid rgba(245,158,11,.3) }
-    .badge-community    { background:rgba(232,185,35,.15); color:#fde68a; border:1px solid rgba(232,185,35,.3) }
-    .badge-school       { background:rgba(52,211,153,.12); color:#6ee7b7; border:1px solid rgba(52,211,153,.25) }
-    .badge-genre        { background:rgba(255,255,255,.06); color:var(--text-muted); border:1px solid var(--border) }
-
-    .card-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.05rem; font-weight: 700; line-height: 1.3;
-      color: var(--text); margin-bottom: .3rem;
-    }
-    .card-company {
-      font-size: .82rem; color: #a78bfa; font-weight: 500;
-      margin-bottom: .65rem;
-    }
-    .card-meta { margin-top: auto; display: flex; flex-direction: column; gap: .25rem; }
-    .card-meta-row {
-      display: flex; align-items: center; gap: .4rem;
-      font-size: .8rem; color: var(--text-muted);
-    }
-    .card-meta-row svg { flex-shrink: 0; opacity: .6; }
-    .card-meta-row .approx { font-size: .7rem; color: #6b7280; }
-
-    /* Empty state */
-    .no-results {
-      grid-column: 1/-1; text-align: center;
-      padding: 4rem 2rem; color: var(--text-muted);
-    }
-    .no-results h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: .5rem; color: var(--text); }
-
-    /* Month section headings */
-    .month-heading {
-      grid-column: 1/-1;
-      font-family: 'Playfair Display', serif;
-      font-size: 1.2rem; font-weight: 600;
-      color: var(--text); padding-top: .5rem;
-      border-bottom: 1px solid var(--border); padding-bottom: .5rem;
-      margin-top: .5rem;
-    }
-
-    @media(max-width:600px) {
-      .filter-bar { padding: .75rem 1rem; }
-      .filter-meta { display:none; }
-      .shows-wrapper { padding: 1.5rem 1rem 3rem; }
-      .shows-grid { grid-template-columns: 1fr; }
-    }
-    @media(max-width:900px) {
-      .chip-label { display:none; }
-    }
-  </style>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RS9LV72HK8');</script>
 </head>
 <body>
+<main>
 
-<nav>
-<div class="nav-container">
-<a href="index.html" class="logo">iHeartTheatre</a>
-<div class="hamburger" aria-label="Toggle navigation">
-<span></span><span></span><span></span>
-</div>
-<div class="nav-links">
-<a href="index.html">Home</a>
-<a href="whats-on.html" class="active">What's On</a>
-<a href="auditions.html">Auditions</a>
-<a href="reviews.html">Reviews</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="musicals.html">Musicals</a>
-<a href="career-builder.html">Career Builder</a>
-</div>
-</div>
-</nav>
-
-<!-- HERO -->
-<section class="page-hero">
-  <div class="page-hero-inner">
-    <span class="page-hero-eyebrow">Melbourne &amp; Victoria</span>
-    <h1>What's On</h1>
-    <p class="page-hero-sub">106 shows across Melbourne and regional Victoria, Feb – Nov 2026. Professional, community and school productions all in one place.</p>
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-eyebrow">🎭 Theatre Calendar</div>
+    <h1 class="page-hero-title">What's <em>On</em></h1>
+    <p class="page-hero-sub">Community theatre shows across the UK — now showing, opening soon and coming up. Updated weekly.</p>
   </div>
-</section>
 
-<!-- FILTER BAR -->
-<div class="filter-bar" id="filterBar">
-  <div class="filter-bar-inner">
-
-    <input class="filter-search" type="search" id="searchInput"
-           placeholder="Search shows or companies…" aria-label="Search shows">
-
-    <div class="chip-group" id="typeChips" role="group" aria-label="Filter by production type">
-      <span class="chip-label">Type</span>
-      <button class="chip active" data-pt="all">All</button>
-      <button class="chip pt-professional" data-pt="professional">Professional</button>
-      <button class="chip pt-community"    data-pt="community">Community</button>
-      <button class="chip pt-school"       data-pt="school">School</button>
+  <!-- FILTER BAR -->
+  <div class="filter-bar" id="filterBar" role="toolbar" aria-label="Filter shows">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="now">Now Showing</button>
+    <button class="filter-btn" data-filter="soon">Opening Soon</button>
+    <button class="filter-btn" data-filter="musical">Musical</button>
+    <button class="filter-btn" data-filter="drama">Drama</button>
+    <button class="filter-btn" data-filter="comedy">Comedy</button>
+    <button class="filter-btn" data-filter="kids">Kids</button>
+    <div style="margin-left:auto;flex-shrink:0">
+      <div class="search-bar">
+        <span class="search-bar-icon">🔍</span>
+        <input type="text" id="showSearch" placeholder="Search shows…" aria-label="Search shows">
+      </div>
     </div>
-
-    <div class="chip-group" id="monthChips" role="group" aria-label="Filter by month">
-      <span class="chip-label">Month</span>
-      <button class="chip active" data-month="all">All</button>
-      <button class="chip" data-month="2026-02">Feb</button>
-      <button class="chip" data-month="2026-03">Mar</button>
-      <button class="chip" data-month="2026-04">Apr</button>
-      <button class="chip" data-month="2026-05">May</button>
-      <button class="chip" data-month="2026-06">Jun</button>
-      <button class="chip" data-month="2026-07">Jul</button>
-      <button class="chip" data-month="2026-08">Aug</button>
-      <button class="chip" data-month="2026-09">Sep</button>
-      <button class="chip" data-month="2026-10">Oct</button>
-      <button class="chip" data-month="2026-11">Nov</button>
-    </div>
-
-    <div class="filter-meta">
-      <span id="showCount"></span>
-      <button class="btn-clear" id="btnClear" aria-label="Clear all filters">Clear</button>
-    </div>
-
   </div>
-</div>
 
-<!-- SHOWS GRID -->
-<div class="shows-wrapper">
-  <div class="shows-grid" id="showsGrid" aria-live="polite" aria-atomic="true"></div>
-</div>
+  <!-- SHOWS GRID — populated from data inline + JS filter -->
+  <section class="hub-section reveal-section" aria-label="Shows listing" style="padding-bottom:40px">
+    <div class="show-card-grid reveal-stagger" id="showsGrid">
+      <!-- Populated by inline data + optional calendar.json fetch below -->
+    </div>
+    <div id="emptyState" class="empty-state" style="display:none">
+      <div class="empty-state-icon">🎭</div>
+      <div class="empty-state-text">No shows match your filter. Try another category.</div>
+    </div>
+  </section>
 
-<footer>
-<div class="footer-content">
-<div class="footer-links">
-<a href="index.html">Home</a>
-<a href="whats-on.html">What's On</a>
-<a href="auditions.html">Auditions</a>
-<a href="reviews.html">Reviews</a>
-<a href="junior-kids-schools.html">Junior &amp; Kids</a>
-<a href="services.html">Services</a>
-<a href="musicals.html">Role Guides</a>
-<a href="companies.html">Companies</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<a href="privacy.html">Privacy</a>
-<a href="disclaimer.html">Disclaimer</a>
-</div>
-<p class="footer-copy">&copy; 2026 iHeartTheatre &bull; For Theatre Lovers Everywhere</p>
-</div>
-</footer>
+</main>
 
 <script>
-/* ── Show data (generated from data/calendar.json) ── */
-var SHOWS = [
-  {"id": "mel-2026-001", "t": "Mamma Mia!", "co": "National Theatre", "v": "National Theatre", "loc": "St Kilda", "ds": "2026-02-07", "de": "2026-02-18", "pt": "community", "g": ["jukebox", "comedy", "ensemble-driven"], "a": 1},
-  {"id": "mel-2026-002", "t": "Robot Song", "co": "Theatre Works", "v": "Theatre Works", "loc": "St Kilda", "ds": "2026-02-12", "de": "2026-02-21", "pt": "professional", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-003", "t": "Ride the Cyclone The Musical", "co": "PEP Productions", "v": "Doncaster Playhouse", "loc": "Doncaster", "ds": "2026-02-13", "de": "2026-02-21", "pt": "community", "g": ["comedy", "contemporary"], "a": 0},
-  {"id": "mel-2026-004", "t": "Orphée et Eurydice", "co": "Lyster Opera", "v": "Platform Arts Geelong, Courthouse Theatre", "loc": "Geelong", "ds": "2026-02-14", "de": "2026-02-14", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-005", "t": "Frozen Jr", "co": "Red Door Dance and Theatre Co", "v": "", "loc": "Colac", "ds": "2026-02-14", "de": "2026-02-15", "pt": "community", "g": ["musical", "youth"], "a": 0},
-  {"id": "mel-2026-006", "t": "The Man They Call The Banjo", "co": "Armagh House", "v": "Armagh House", "loc": "Toorak", "ds": "2026-02-15", "de": "2026-02-15", "pt": "community", "g": ["drama"], "a": 0},
-  {"id": "mel-2026-007", "t": "A Winter's Journey", "co": "Musica Viva Australia", "v": "", "loc": "Melbourne", "ds": "2026-02-16", "de": "2026-02-17", "pt": "professional", "g": ["concert"], "a": 0},
-  {"id": "mel-2026-008", "t": "Orphée et Eurydice", "co": "Lyster Opera", "v": "Milawa Hall", "loc": "Milawa", "ds": "2026-02-21", "de": "2026-02-21", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-009", "t": "& Juliet", "co": "Ballarat Lyric Theatre", "v": "Lyric Theatre", "loc": "Ballarat", "ds": "2026-02-26", "de": "2026-03-08", "pt": "community", "g": ["jukebox", "contemporary", "comedy"], "a": 0},
-  {"id": "mel-2026-010", "t": "Once Upon A One More Time", "co": "Doncaster Playhouse", "v": "Doncaster Playhouse", "loc": "Doncaster", "ds": "2026-02-27", "de": "2026-03-07", "pt": "community", "g": ["contemporary", "comedy"], "a": 0},
-  {"id": "mel-2026-011", "t": "The Taming of the Shrew", "co": "Melbourne Shakespeare Company", "v": "Central Park", "loc": "Malvern", "ds": "2026-02-27", "de": "2026-03-15", "pt": "community", "g": ["drama", "shakespeare"], "a": 0},
-  {"id": "mel-2026-012", "t": "The Deplorables", "co": "Bluestone Theatre", "v": "Bluestone Theatre", "loc": "Kyneton", "ds": "2026-02-28", "de": "2026-02-28", "pt": "community", "g": ["comedy"], "a": 0},
-  {"id": "mel-2026-013", "t": "Orphée et Eurydice", "co": "Lyster Opera", "v": "Phee Broadway Theatre", "loc": "Castlemaine", "ds": "2026-02-28", "de": "2026-02-28", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-014", "t": "La Traviata", "co": "CPO", "v": "The Home Farm", "loc": "Bunyip", "ds": "2026-02-28", "de": "2026-02-28", "pt": "community", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-015", "t": "The Arcadians", "co": "Gilbert and Sullivan Opera Victoria", "v": "The Knowe", "loc": "Sassafras", "ds": "2026-02-28", "de": "2026-03-09", "pt": "community", "g": ["operetta", "classic-musical"], "a": 0},
-  {"id": "mel-2026-016", "t": "Treasure Island", "co": "Melbourne Shakespeare Company", "v": "Central Park", "loc": "Malvern", "ds": "2026-02-28", "de": "2026-03-15", "pt": "community", "g": ["drama", "family"], "a": 0},
-  {"id": "mel-2026-017", "t": "Cinderella", "co": "Altona Civic Theatre", "v": "Altona Civic Theatre", "loc": "Altona", "ds": "2026-03-06", "de": "2026-03-28", "pt": "community", "g": ["pantomime", "family", "comedy"], "a": 0},
-  {"id": "mel-2026-018", "t": "The Aristocats Kids", "co": "Musicworx", "v": "", "loc": "Melbourne", "ds": "2026-03-08", "de": "2026-03-09", "pt": "community", "g": ["musical", "youth"], "a": 0},
-  {"id": "mel-2026-019", "t": "Imagine – The Journey", "co": "The Potato Shed", "v": "The Potato Shed", "loc": "Geelong", "ds": "2026-03-10", "de": "2026-03-10", "pt": "community", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-020", "t": "Mary Magdalene – The Musical", "co": "", "v": "Kew High School Theatre", "loc": "Kew East", "ds": "2026-03-13", "de": "2026-03-15", "pt": "community", "g": ["musical", "drama"], "a": 0},
-  {"id": "mel-2026-021", "t": "& Juliet", "co": "CentreStage", "v": "Geelong Arts Centre", "loc": "Geelong", "ds": "2026-03-13", "de": "2026-03-28", "pt": "community", "g": ["jukebox", "contemporary", "comedy"], "a": 0},
-  {"id": "mel-2026-022", "t": "Orphée et Eurydice", "co": "Lyster Opera", "v": "", "loc": "Creswick", "ds": "2026-03-14", "de": "2026-03-14", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-023", "t": "Urinetown", "co": "Bottled Snail", "v": "Gasworks Arts Park", "loc": "Albert Park", "ds": "2026-03-19", "de": "2026-03-28", "pt": "community", "g": ["comedy", "satire", "modern"], "a": 0},
-  {"id": "mel-2026-024", "t": "Legally Blonde Jr", "co": "Diamond Valley Singers", "v": "", "loc": "Warrandyte", "ds": "2026-03-20", "de": "2026-03-28", "pt": "community", "g": ["musical", "comedy", "youth"], "a": 0},
-  {"id": "mel-2026-025", "t": "The Sound of Music", "co": "Nova", "v": "", "loc": "Melbourne", "ds": "2026-03-20", "de": "2026-03-29", "pt": "community", "g": ["classic-musical", "family"], "a": 0},
-  {"id": "mel-2026-026", "t": "Fun Home", "co": "Fab Nobs", "v": "", "loc": "Bayswater", "ds": "2026-03-21", "de": "2026-04-04", "pt": "community", "g": ["drama", "modern", "intimate"], "a": 0},
-  {"id": "mel-2026-027", "t": "The Arcadians", "co": "Gilbert and Sullivan Opera Victoria", "v": "Queenscliff Town Hall", "loc": "Queenscliff", "ds": "2026-03-22", "de": "2026-03-22", "pt": "community", "g": ["operetta"], "a": 0},
-  {"id": "mel-2026-028", "t": "Breaking: The Musical", "co": "Riverlinks Westside", "v": "Riverlinks Westside", "loc": "Shepparton", "ds": "2026-03-25", "de": "2026-03-25", "pt": "community", "g": ["musical"], "a": 0},
-  {"id": "mel-2026-029", "t": "Evil Dead The Musical", "co": "", "v": "Chapel Off Chapel", "loc": "Melbourne", "ds": "2026-03-26", "de": "2026-04-05", "pt": "community", "g": ["comedy", "horror", "musical"], "a": 0},
-  {"id": "mel-2026-030", "t": "Ned Kelly: The Musical", "co": "", "v": "Her Majesty's Theatre", "loc": "Ballarat", "ds": "2026-03-28", "de": "2026-03-28", "pt": "community", "g": ["musical", "drama"], "a": 0},
-  {"id": "mel-2026-031", "t": "Orphée et Eurydice", "co": "Lyster Opera", "v": "Irene Mitchell Studio", "loc": "South Yarra", "ds": "2026-03-28", "de": "2026-03-28", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-032", "t": "Shrek the Musical", "co": "Heathdale Christian College", "v": "Heathdale Christian College", "loc": "Werribee", "ds": "2026-04-01", "de": "2026-05-31", "pt": "school", "g": ["musical", "comedy", "family"], "a": 1},
-  {"id": "mel-2026-033", "t": "Bonnie & Clyde", "co": "Theatre of the Damned", "v": "", "loc": "Geelong", "ds": "2026-04-10", "de": "2026-04-18", "pt": "community", "g": ["drama", "modern"], "a": 0},
-  {"id": "mel-2026-034", "t": "Les Misérables", "co": "Upstage Theatre Company", "v": "", "loc": "Berwick", "ds": "2026-04-10", "de": "2026-04-19", "pt": "community", "g": ["drama", "classic-musical", "ensemble-driven"], "a": 0},
-  {"id": "mel-2026-035", "t": "Diary of A Wimpy Kid: The Musical", "co": "Warragul Youth Theatre", "v": "", "loc": "Warragul", "ds": "2026-04-14", "de": "2026-04-17", "pt": "community", "g": ["musical", "comedy", "youth"], "a": 0},
-  {"id": "mel-2026-036", "t": "Frozen Jr", "co": "Windmill, Cranbourne Community Theatre", "v": "Cranbourne Community Theatre", "loc": "Cranbourne", "ds": "2026-04-16", "de": "2026-04-19", "pt": "community", "g": ["musical", "family", "youth"], "a": 0},
-  {"id": "mel-2026-037", "t": "Oshun", "co": "", "v": "Wyndham Cultural Centre", "loc": "Werribee", "ds": "2026-04-17", "de": "2026-04-19", "pt": "community", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-038", "t": "MARA", "co": "Theatre Works", "v": "Theatre Works", "loc": "St Kilda", "ds": "2026-04-22", "de": "2026-05-02", "pt": "professional", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-039", "t": "Once", "co": "AG Theatre", "v": "Chapel Off Chapel", "loc": "Melbourne", "ds": "2026-04-01", "de": "2026-04-30", "pt": "community", "g": ["musical", "intimate", "drama"], "a": 1},
-  {"id": "mel-2026-040", "t": "The Wizard of Oz", "co": "Horsham Arts Council", "v": "", "loc": "Horsham", "ds": "2026-05-01", "de": "2026-05-31", "pt": "community", "g": ["classic-musical", "family"], "a": 1},
-  {"id": "mel-2026-041", "t": "Company", "co": "Williamstown Musical Theatre Company", "v": "", "loc": "Williamstown", "ds": "2026-05-01", "de": "2026-05-31", "pt": "community", "g": ["modern", "comedy", "drama"], "a": 1},
-  {"id": "mel-2026-042", "t": "Sister Act", "co": "Footlight Productions", "v": "", "loc": "Geelong", "ds": "2026-05-01", "de": "2026-05-31", "pt": "community", "g": ["comedy", "musical", "ensemble-driven"], "a": 1},
-  {"id": "mel-2026-043", "t": "Waitress", "co": "", "v": "Her Majesty's Theatre", "loc": "Melbourne", "ds": "2026-05-01", "de": "2026-05-31", "pt": "professional", "g": ["modern", "comedy", "drama"], "a": 0},
-  {"id": "mel-2026-044", "t": "& Juliet", "co": "The Forge Theatre", "v": "The Forge Theatre", "loc": "Bairnsdale", "ds": "2026-05-01", "de": "2026-05-17", "pt": "community", "g": ["jukebox", "contemporary", "comedy"], "a": 0},
-  {"id": "mel-2026-045", "t": "La Traviata", "co": "Opera Australia", "v": "Regent Theatre", "loc": "Melbourne", "ds": "2026-05-08", "de": "2026-05-16", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-046", "t": "AUTO-TUNE (rock opera)", "co": "", "v": "Her Majesty's Theatre", "loc": "Ballarat", "ds": "2026-05-09", "de": "2026-05-09", "pt": "community", "g": ["rock-musical", "contemporary"], "a": 0},
-  {"id": "mel-2026-047", "t": "Matilda Jr", "co": "Seymour Performers Workshop", "v": "", "loc": "Seymour", "ds": "2026-05-09", "de": "2026-05-17", "pt": "community", "g": ["musical", "youth", "comedy"], "a": 0},
-  {"id": "mel-2026-048", "t": "The Hunchback of Notre Dame", "co": "CLOC Musical Theatre", "v": "The National Theatre", "loc": "St Kilda", "ds": "2026-05-15", "de": "2026-05-30", "pt": "community", "g": ["drama", "modern", "ensemble-driven"], "a": 0},
-  {"id": "mel-2026-049", "t": "The Magic Pudding: The Opera", "co": "Victorian Opera", "v": "Various", "loc": "Nunawading, Preston & Narre Warren", "ds": "2026-05-09", "de": "2026-05-29", "pt": "professional", "g": ["opera", "family"], "a": 0},
-  {"id": "mel-2026-050", "t": "Sainting Joan", "co": "Theatre Works", "v": "Explosives Factory", "loc": "St Kilda", "ds": "2026-05-20", "de": "2026-05-30", "pt": "professional", "g": ["drama", "contemporary"], "a": 0},
-  {"id": "mel-2026-051", "t": "Frozen", "co": "BLOC", "v": "Her Majesty's Theatre", "loc": "Ballarat", "ds": "2026-05-21", "de": "2026-05-31", "pt": "community", "g": ["musical", "family", "spectacle"], "a": 0},
-  {"id": "mel-2026-052", "t": "Beauty and the Beast", "co": "Geelong Lyric Theatre", "v": "Geelong Arts Centre", "loc": "Geelong", "ds": "2026-05-22", "de": "2026-06-07", "pt": "community", "g": ["classic-musical", "family", "spectacle"], "a": 0},
-  {"id": "mel-2026-053", "t": "The Magic Pudding: The Opera", "co": "Victorian Opera", "v": "Bunjil Place", "loc": "Narre Warren", "ds": "2026-05-29", "de": "2026-05-30", "pt": "professional", "g": ["opera", "family"], "a": 0},
-  {"id": "mel-2026-054", "t": "42nd Street", "co": "Babirra", "v": "The Round", "loc": "Nunawading", "ds": "2026-05-29", "de": "2026-06-07", "pt": "community", "g": ["classic-musical", "dance-heavy"], "a": 0},
-  {"id": "mel-2026-055", "t": "& Juliet", "co": "Windmill", "v": "Bunjil Place Theatre", "loc": "Narre Warren", "ds": "2026-06-01", "de": "2026-06-30", "pt": "community", "g": ["jukebox", "contemporary", "comedy"], "a": 1},
-  {"id": "mel-2026-056", "t": "Katzenmusik", "co": "Theatre Works", "v": "Explosives Factory", "loc": "St Kilda", "ds": "2026-06-03", "de": "2026-06-13", "pt": "professional", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-057", "t": "Beauty and the Beast", "co": "Mount Dandenong Musical Society", "v": "Karralyka", "loc": "Ringwood", "ds": "2026-06-12", "de": "2026-06-21", "pt": "community", "g": ["classic-musical", "family"], "a": 0},
-  {"id": "mel-2026-058", "t": "Mary Poppins", "co": "Sleeping Star Productions", "v": "Karralyka", "loc": "Ringwood", "ds": "2026-06-13", "de": "2026-06-22", "pt": "community", "g": ["family", "classic-musical", "spectacle"], "a": 0},
-  {"id": "mel-2026-059", "t": "Pride and Prejudice* (*sort of)", "co": "", "v": "Athenaeum", "loc": "Melbourne", "ds": "2026-06-18", "de": "2026-07-11", "pt": "professional", "g": ["comedy", "contemporary"], "a": 0},
-  {"id": "mel-2026-060", "t": "Seussical", "co": "Geelong Singers of Drama and the Arts", "v": "Geelong Arts Centre", "loc": "Geelong", "ds": "2026-06-20", "de": "2026-06-27", "pt": "community", "g": ["musical", "family", "comedy"], "a": 0},
-  {"id": "mel-2026-061", "t": "Sea Wolves Howl", "co": "Berninneit", "v": "Berninneit", "loc": "Cowes", "ds": "2026-06-21", "de": "2026-06-21", "pt": "community", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-062", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "", "loc": "Wangaratta", "ds": "2026-06-27", "de": "2026-06-28", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-063", "t": "Spike the Echidna", "co": "Yan Yean Theatre", "v": "Yan Yean Theatre", "loc": "Yan Yean", "ds": "2026-06-30", "de": "2026-06-30", "pt": "community", "g": ["family"], "a": 0},
-  {"id": "mel-2026-064", "t": "The Coronation of Poppea", "co": "", "v": "Palais Theatre", "loc": "Melbourne", "ds": "2026-06-30", "de": "2026-07-04", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-065", "t": "Jersey Boys", "co": "Peninsula Light Opera Society", "v": "Frankston Arts Centre", "loc": "Frankston", "ds": "2026-07-01", "de": "2026-08-31", "pt": "community", "g": ["jukebox", "drama", "modern"], "a": 1},
-  {"id": "mel-2026-066", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "Comedy Theatre", "loc": "Melbourne", "ds": "2026-07-01", "de": "2026-07-12", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-067", "t": "The Lightning Thief", "co": "Peoples Playhouse", "v": "Cranbourne Community Theatre", "loc": "Cranbourne", "ds": "2026-07-03", "de": "2026-07-11", "pt": "community", "g": ["musical", "youth", "contemporary"], "a": 0},
-  {"id": "mel-2026-068", "t": "Matilda Jr", "co": "Fab Nobs", "v": "", "loc": "Bayswater", "ds": "2026-07-03", "de": "2026-07-12", "pt": "community", "g": ["musical", "youth", "comedy"], "a": 0},
-  {"id": "mel-2026-069", "t": "Robot Song", "co": "BLOC", "v": "", "loc": "Ballarat", "ds": "2026-07-08", "de": "2026-07-08", "pt": "community", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-070", "t": "Patience", "co": "Gilbert and Sullivan Opera Victoria", "v": "Alexander Theatre", "loc": "Clayton", "ds": "2026-07-10", "de": "2026-07-12", "pt": "community", "g": ["operetta"], "a": 0},
-  {"id": "mel-2026-071", "t": "Pretty Woman", "co": "", "v": "Regent Theatre", "loc": "Melbourne", "ds": "2026-07-14", "de": "2026-09-09", "pt": "professional", "g": ["modern", "romance", "comedy"], "a": 0},
-  {"id": "mel-2026-072", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "", "loc": "Ballarat", "ds": "2026-07-15", "de": "2026-07-16", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-073", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "", "loc": "Bendigo", "ds": "2026-07-18", "de": "2026-07-19", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-074", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "Geelong Arts Centre", "loc": "Geelong", "ds": "2026-07-22", "de": "2026-07-23", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-075", "t": "When We Dead Awaken (We Have Never Lived)", "co": "Doppelgangster", "v": "Explosives Factory", "loc": "St Kilda", "ds": "2026-07-22", "de": "2026-08-08", "pt": "professional", "g": ["contemporary", "drama"], "a": 0},
-  {"id": "mel-2026-076", "t": "Don Giovanni", "co": "Opera Australia", "v": "The Round", "loc": "Nunawading", "ds": "2026-07-23", "de": "2026-07-23", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-077", "t": "SIX The Musical", "co": "", "v": "Comedy Theatre", "loc": "Melbourne", "ds": "2026-07-24", "de": "2026-10-23", "pt": "professional", "g": ["contemporary", "pop-rock", "ensemble-driven"], "a": 0},
-  {"id": "mel-2026-078", "t": "Newsies Jr", "co": "Williamstown Musical Theatre Company", "v": "", "loc": "Williamstown", "ds": "2026-08-01", "de": "2026-08-31", "pt": "community", "g": ["musical", "dance-heavy", "ensemble-driven", "youth"], "a": 1},
-  {"id": "mel-2026-079", "t": "Don Giovanni", "co": "Opera Australia", "v": "Ulumbarra Theatre", "loc": "Bendigo", "ds": "2026-08-01", "de": "2026-08-01", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-080", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "Drum Theatre", "loc": "Dandenong", "ds": "2026-08-01", "de": "2026-08-02", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-081", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "", "loc": "Horsham", "ds": "2026-08-05", "de": "2026-08-05", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-082", "t": "A Beautiful Noise: The Neil Diamond Musical", "co": "", "v": "Princess Theatre", "loc": "Melbourne", "ds": "2026-08-05", "de": "2026-09-27", "pt": "professional", "g": ["jukebox", "drama"], "a": 0},
-  {"id": "mel-2026-083", "t": "The Deplorables", "co": "", "v": "Portland Arts Centre", "loc": "Portland", "ds": "2026-08-14", "de": "2026-08-14", "pt": "community", "g": ["comedy"], "a": 0},
-  {"id": "mel-2026-084", "t": "After-Light: The Dramatic Prog-Rock Opera", "co": "The Mount Players", "v": "", "loc": "Macedon", "ds": "2026-08-14", "de": "2026-08-30", "pt": "community", "g": ["rock-musical", "contemporary"], "a": 0},
-  {"id": "mel-2026-085", "t": "The Deplorables", "co": "", "v": "Lighthouse Studio", "loc": "Warrnambool", "ds": "2026-08-15", "de": "2026-08-15", "pt": "community", "g": ["comedy"], "a": 0},
-  {"id": "mel-2026-086", "t": "Bluey's Big Play The Stage Show", "co": "", "v": "", "loc": "Mildura", "ds": "2026-08-19", "de": "2026-08-20", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-087", "t": "The Deplorables", "co": "", "v": "Theatre Works", "loc": "St Kilda", "ds": "2026-08-19", "de": "2026-08-29", "pt": "professional", "g": ["comedy"], "a": 0},
-  {"id": "mel-2026-088", "t": "Frozen", "co": "Horsham College", "v": "Horsham College", "loc": "Horsham", "ds": "2026-08-20", "de": "2026-08-22", "pt": "school", "g": ["musical", "family"], "a": 0},
-  {"id": "mel-2026-089", "t": "Robot Song", "co": "", "v": "", "loc": "Bendigo", "ds": "2026-08-25", "de": "2026-08-25", "pt": "professional", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-090", "t": "Oliver Jr", "co": "Bellarine Jongleurs", "v": "The Jetty Shed", "loc": "Drysdale", "ds": "2026-08-28", "de": "2026-08-30", "pt": "community", "g": ["classic-musical", "youth"], "a": 0},
-  {"id": "mel-2026-091", "t": "Red Door Dance and Theatre Co Senior Musical", "co": "Red Door Dance and Theatre Co", "v": "", "loc": "Colac", "ds": "2026-08-01", "de": "2026-08-31", "pt": "community", "g": ["musical"], "a": 1},
-  {"id": "mel-2026-092", "t": "Ride the Cyclone The Musical", "co": "Theatre of the Damned", "v": "", "loc": "Geelong", "ds": "2026-09-01", "de": "2026-09-30", "pt": "community", "g": ["comedy", "contemporary"], "a": 1},
-  {"id": "mel-2026-093", "t": "Red Door Dance and Theatre Co Musical", "co": "Red Door Dance and Theatre Co", "v": "", "loc": "Birregurra", "ds": "2026-09-01", "de": "2026-09-30", "pt": "community", "g": ["musical"], "a": 1},
-  {"id": "mel-2026-094", "t": "Into the Woods", "co": "BLOC", "v": "", "loc": "Ballarat", "ds": "2026-09-04", "de": "2026-09-05", "pt": "community", "g": ["musical", "drama", "ensemble-driven"], "a": 0},
-  {"id": "mel-2026-095", "t": "Room on the Broom", "co": "", "v": "", "loc": "Bendigo", "ds": "2026-09-17", "de": "2026-09-17", "pt": "professional", "g": ["family"], "a": 0},
-  {"id": "mel-2026-096", "t": "The Eternally Hopeful", "co": "", "v": "Explosives Factory", "loc": "St Kilda", "ds": "2026-09-22", "de": "2026-09-26", "pt": "professional", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-097", "t": "The Turn of the Screw", "co": "", "v": "Palais Theatre", "loc": "Melbourne", "ds": "2026-09-29", "de": "2026-10-01", "pt": "professional", "g": ["opera", "drama"], "a": 0},
-  {"id": "mel-2026-098", "t": "The Spare Room", "co": "", "v": "Palais Theatre", "loc": "Melbourne", "ds": "2026-10-07", "de": "2026-10-10", "pt": "professional", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-099", "t": "Young Frankenstein", "co": "", "v": "Theatre Works", "loc": "St Kilda", "ds": "2026-10-08", "de": "2026-10-24", "pt": "professional", "g": ["comedy", "musical"], "a": 0},
-  {"id": "mel-2026-100", "t": "Sea Wolves Howl", "co": "", "v": "Cardinia Cultural Centre", "loc": "Pakenham", "ds": "2026-10-14", "de": "2026-10-14", "pt": "community", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-101", "t": "Dirty Rotten Scoundrels", "co": "Malvern Theatre Company", "v": "", "loc": "Malvern", "ds": "2026-10-23", "de": "2026-11-07", "pt": "community", "g": ["comedy", "musical"], "a": 0},
-  {"id": "mel-2026-102", "t": "Sea Wolves Howl", "co": "", "v": "Karralyka", "loc": "Ringwood", "ds": "2026-10-25", "de": "2026-10-25", "pt": "community", "g": ["contemporary"], "a": 0},
-  {"id": "mel-2026-103", "t": "& Juliet", "co": "Williamstown Musical Theatre Company", "v": "", "loc": "Williamstown", "ds": "2026-11-01", "de": "2026-11-30", "pt": "community", "g": ["jukebox", "contemporary", "comedy"], "a": 1},
-  {"id": "mel-2026-104", "t": "La Bohème", "co": "Opera Australia", "v": "Regent Theatre", "loc": "Melbourne", "ds": "2026-11-07", "de": "2026-11-18", "pt": "professional", "g": ["opera"], "a": 0},
-  {"id": "mel-2026-105", "t": "A G&S Christmas Carol", "co": "Gilbert and Sullivan Opera Victoria", "v": "Malvern Theatre", "loc": "Malvern", "ds": "2026-11-19", "de": "2026-11-22", "pt": "community", "g": ["operetta", "comedy", "holiday"], "a": 0},
-  {"id": "mel-2026-106", "t": "Watershed The Death of Dr Duncan", "co": "Opera Australia", "v": "Playhouse", "loc": "Melbourne", "ds": "2026-11-21", "de": "2026-11-28", "pt": "professional", "g": ["opera", "drama"], "a": 0}
-];
+/* ── What's On — show data + filter logic ────────────────── */
+(function() {
 
-/* ── Helpers ── */
-var MONTH_SHORT = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-var MONTH_LONG  = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var SHOWS = [
+    /* NOW SHOWING */
+    { id:'s01', title:'Mamma Mia!',       genre:'musical', status:'now',  company:'Cheltenham Operatic Society', venue:'Everyman Theatre, Cheltenham', dates:'Through 25 May 2025', emoji:'🎭', href:'/shows/mamma-mia-cheltenham-2025.html' },
+    { id:'s02', title:'Annie',            genre:'musical', status:'now',  company:'West Swindon Singers',        venue:'Wyvern Theatre, Swindon',      dates:'Through 22 May 2025', emoji:'🌟', href:'/shows/annie-west-swindon-2025.html' },
+    { id:'s03', title:'Into the Woods',   genre:'musical', status:'now',  company:'Forest Youth Theatre',        venue:'Minack Theatre, Cornwall',     dates:'15–29 May 2025',      emoji:'🌳', href:'/shows/into-the-woods-forest-2025.html' },
+    { id:'s04', title:'Chicago',          genre:'drama',   status:'now',  company:'Swindon Operatic Society',    venue:'Wyvern Theatre, Swindon',      dates:'CLOSING 21 May!',     emoji:'🎩', href:'/shows/chicago-swindon-2025.html' },
+    { id:'s05', title:'Grease',           genre:'musical', status:'now',  company:'Bournemouth Musical Theatre', venue:'Lighthouse, Poole',            dates:'18–24 May 2025',      emoji:'⚡', href:'/shows/grease-bournemouth-2025.html' },
+    { id:'s06', title:'Oliver!',          genre:'musical', status:'now',  company:'Swindon Musical Theatre',     venue:'Arts Centre, Swindon',         dates:'14–24 May 2025',      emoji:'🏚️', href:'/shows/oliver-swindon-2025.html' },
 
-function fmtDate(ds, de, approx) {
-  if (!ds) return 'Dates TBA';
-  var sy = +ds.slice(0,4), sm = +ds.slice(5,7)-1, sd = +ds.slice(8,10);
-  var str;
-  if (!de || ds === de) {
-    str = sd + ' ' + MONTH_SHORT[sm] + ' ' + sy;
-  } else {
-    var ey = +de.slice(0,4), em = +de.slice(5,7)-1, ed = +de.slice(8,10);
-    if (sm === em && sy === ey) {
-      str = sd + '\u2013' + ed + ' ' + MONTH_SHORT[sm] + ' ' + sy;
-    } else {
-      str = sd + ' ' + MONTH_SHORT[sm] + ' \u2013 ' + ed + ' ' + MONTH_SHORT[em] + ' ' + sy;
-    }
-  }
-  return approx ? str + '*' : str;
-}
+    /* OPENING SOON */
+    { id:'s07', title:'Les Misérables',   genre:'musical', status:'soon', company:'Bournemouth G&S Society',    venue:'Pavilion, Bournemouth',        dates:'Opens 31 May 2025',   emoji:'🕯️', href:'/shows/les-mis-bournemouth-2025.html' },
+    { id:'s08', title:'Guys and Dolls',   genre:'musical', status:'soon', company:'Dorset Operatic Society',    venue:'Lighthouse, Poole',            dates:'Opens 14 June 2025',  emoji:'🎲', href:'/shows/guys-dolls-dorset-2025.html' },
+    { id:'s09', title:'Legally Blonde',   genre:'musical', status:'soon', company:'Swindon Operatic Society',   venue:'Wyvern Theatre, Swindon',      dates:'Opens 2 July 2025',   emoji:'💗', href:'/shows/legally-blonde-swindon-2025.html' },
+    { id:'s10', title:'The Sound of Music', genre:'musical', status:'soon', company:'Cheltenham Operatic',      venue:'Everyman Theatre, Cheltenham', dates:'Opens 18 Sep 2025',   emoji:'🏔️', href:'/shows/sound-of-music-cheltenham-2025.html' },
+    { id:'s11', title:'Sweeney Todd',     genre:'drama',   status:'soon', company:'Oxford Stage Company',       venue:'New Theatre, Oxford',          dates:'Opens 5 June 2025',   emoji:'🪒', href:'/shows/sweeney-todd-oxford-2025.html' },
+    { id:'s12', title:'Bugsy Malone',     genre:'comedy',  status:'soon', company:'Footlights Youth Theatre',   venue:'Arts Centre, Swindon',         dates:'Opens 12 July 2025',  emoji:'🔫', href:'/shows/bugsy-malone-footlights-2025.html' },
 
-function esc(s) {
-  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
+    /* KIDS */
+    { id:'s13', title:'Matilda Jr.',      genre:'kids',    status:'soon', company:'Junior Theatre Workshop',    venue:'Arts Centre, Swindon',         dates:'Opens 19 July 2025',  emoji:'📚', href:'/shows/matilda-jr-2025.html' },
+    { id:'s14', title:'The Jungle Book',  genre:'kids',    status:'soon', company:'Kidstage Productions',       venue:'Minack Theatre, Cornwall',     dates:'Opens 26 July 2025',  emoji:'🐆', href:'/shows/jungle-book-kidstage-2025.html' },
 
-var PT_BADGE = {
-  professional: '<span class="badge badge-professional">Professional</span>',
-  community:    '<span class="badge badge-community">Community</span>',
-  school:       '<span class="badge badge-school">School</span>'
-};
-
-/* ── State ── */
-var activeType  = 'all';
-var activeMonth = 'all';
-var searchTerm  = '';
-
-/* ── Render ── */
-function showInMonth(show, month) {
-  if (month === 'all') return true;
-  if (!show.ds) return false;
-  // show starts in month OR spans across month
-  var start = show.ds.slice(0,7);
-  var end   = (show.de || show.ds).slice(0,7);
-  return start <= month && month <= end;
-}
-
-function render() {
-  var filtered = SHOWS.filter(function(s) {
-    if (activeType !== 'all' && s.pt !== activeType) return false;
-    if (!showInMonth(s, activeMonth)) return false;
-    if (searchTerm) {
-      var q = searchTerm.toLowerCase();
-      if (s.t.toLowerCase().indexOf(q) < 0 &&
-          s.co.toLowerCase().indexOf(q) < 0 &&
-          s.loc.toLowerCase().indexOf(q) < 0 &&
-          s.v.toLowerCase().indexOf(q) < 0) return false;
-    }
-    return true;
-  });
-
-  // Sort by date_start ascending
-  filtered.sort(function(a,b) {
-    var da = a.ds || '9999', db = b.ds || '9999';
-    return da < db ? -1 : da > db ? 1 : 0;
-  });
+    /* COMING UP */
+    { id:'s15', title:'Cabaret',          genre:'drama',   status:'soon', company:'Swindon Musical Theatre',    venue:'Wyvern Theatre, Swindon',      dates:'Opens Oct 2025',      emoji:'🎪', href:'/shows/cabaret-swindon-2025.html' },
+    { id:'s16', title:'Mary Poppins',     genre:'musical', status:'soon', company:'West Swindon Singers',       venue:'Wyvern Theatre, Swindon',      dates:'Opens Nov 2025',      emoji:'☂️', href:'/shows/mary-poppins-2025.html' }
+  ];
 
   var grid = document.getElementById('showsGrid');
-  var countEl = document.getElementById('showCount');
-  countEl.textContent = filtered.length === SHOWS.length
-    ? 'All ' + SHOWS.length + ' shows'
-    : 'Showing ' + filtered.length + ' of ' + SHOWS.length;
+  var emptyState = document.getElementById('emptyState');
+  var currentFilter = 'all';
+  var currentSearch = '';
 
-  if (!filtered.length) {
-    grid.innerHTML = '<div class="no-results"><h3>No shows found</h3><p>Try adjusting the filters or search term.</p></div>';
-    return;
+  function buildStatusBadge(status) {
+    if (status === 'now') return '<span class="badge badge-musical">Now Showing</span>';
+    if (status === 'soon') return '<span class="badge badge-audition">Opening Soon</span>';
+    return '<span class="badge badge-company">Upcoming</span>';
   }
 
-  // Group by month when not filtered to a single month
-  var groupByMonth = (activeMonth === 'all') && !searchTerm;
-  var html = '';
-  var lastMonth = '';
+  function buildGenreBadge(genre) {
+    var map = { musical:'badge-musical', drama:'badge-drama', comedy:'badge-comedy', kids:'badge-kids' };
+    var cls = map[genre] || 'badge-company';
+    var label = genre.charAt(0).toUpperCase() + genre.slice(1);
+    return '<span class="badge ' + cls + '">' + label + '</span>';
+  }
 
-  filtered.forEach(function(s) {
-    var cardMonth = s.ds ? s.ds.slice(0,7) : '';
-
-    if (groupByMonth && cardMonth && cardMonth !== lastMonth) {
-      var m = +cardMonth.slice(5,7) - 1;
-      html += '<h2 class="month-heading">' + MONTH_LONG[m] + ' 2026</h2>';
-      lastMonth = cardMonth;
+  function renderShows(shows) {
+    if (!shows.length) {
+      grid.innerHTML = '';
+      emptyState.style.display = 'block';
+      return;
     }
-
-    var dates  = fmtDate(s.ds, s.de, s.a);
-    var ptBadge = PT_BADGE[s.pt] || '';
-    var genreBadges = (s.g || []).slice(0,3).map(function(g) {
-      return '<span class="badge badge-genre">' + esc(g.replace(/-/g,' ')) + '</span>';
+    emptyState.style.display = 'none';
+    grid.innerHTML = shows.map(function(s) {
+      return (
+        '<a href="' + s.href + '" class="show-card">' +
+          '<div class="show-card-poster">' +
+            '<div class="show-card-poster-placeholder">' + s.emoji + '</div>' +
+          '</div>' +
+          '<div class="show-card-body">' +
+            '<div class="article-card-meta" style="margin-bottom:4px">' +
+              buildStatusBadge(s.status) +
+            '</div>' +
+            '<h3 class="show-card-title">' + s.title + '</h3>' +
+            '<div class="show-card-venue">' + s.venue + '</div>' +
+            '<div class="show-card-dates">' + s.dates + '</div>' +
+            '<div class="show-card-company">' +
+              buildGenreBadge(s.genre) +
+              '<span class="badge badge-company" style="margin-left:4px">' + s.company + '</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>'
+      );
     }).join('');
+  }
 
-    var venueStr = s.v || s.loc || '';
+  function applyFilters() {
+    var filtered = SHOWS.filter(function(s) {
+      var matchFilter = currentFilter === 'all'
+        || currentFilter === s.genre
+        || (currentFilter === 'now' && s.status === 'now')
+        || (currentFilter === 'soon' && s.status === 'soon');
+      var q = currentSearch.toLowerCase();
+      var matchSearch = !q || s.title.toLowerCase().indexOf(q) !== -1
+        || s.company.toLowerCase().indexOf(q) !== -1
+        || s.venue.toLowerCase().indexOf(q) !== -1;
+      return matchFilter && matchSearch;
+    });
+    renderShows(filtered);
+  }
 
-    html += '<a class="show-card" href="shows/' + esc(s.id) + '.html">' +
-      '<div class="card-badges">' + ptBadge + genreBadges + '</div>' +
-      '<div class="card-title">' + esc(s.t) + '</div>' +
-      (s.co ? '<div class="card-company">' + esc(s.co) + '</div>' : '') +
-      '<div class="card-meta">' +
-        '<div class="card-meta-row">' +
-          '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>' +
-          '<span>' + esc(dates) + '</span>' +
-          (s.a ? '<span class="approx">approx</span>' : '') +
-        '</div>' +
-        (venueStr ? '<div class="card-meta-row">' +
-          '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>' +
-          '<span>' + esc(venueStr) + '</span>' +
-        '</div>' : '') +
-      '</div>' +
-    '</a>';
+  /* Filter buttons */
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      applyFilters();
+    });
   });
 
-  grid.innerHTML = html;
-}
+  /* Search */
+  var searchInput = document.getElementById('showSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      currentSearch = this.value;
+      applyFilters();
+    });
+  }
 
-/* ── Filter interactions ── */
-document.getElementById('typeChips').addEventListener('click', function(e) {
-  var chip = e.target.closest('[data-pt]');
-  if (!chip) return;
-  activeType = chip.dataset.pt;
-  this.querySelectorAll('.chip').forEach(function(c) {
-    c.classList.toggle('active', c.dataset.pt === activeType);
-  });
-  render();
-});
+  /* Try to load from calendar.json (future integration) */
+  fetch('/data/calendar.json')
+    .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+    .then(function(data) {
+      if (data && data.shows && data.shows.length) {
+        data.shows.forEach(function(s) {
+          if (!SHOWS.find(function(x) { return x.id === s.id; })) {
+            SHOWS.unshift(s);
+          }
+        });
+        applyFilters();
+      }
+    })
+    .catch(function() {});
 
-document.getElementById('monthChips').addEventListener('click', function(e) {
-  var chip = e.target.closest('[data-month]');
-  if (!chip) return;
-  activeMonth = chip.dataset.month;
-  this.querySelectorAll('.chip').forEach(function(c) {
-    c.classList.toggle('active', c.dataset.month === activeMonth);
-  });
-  render();
-});
+  /* Initial render */
+  applyFilters();
 
-document.getElementById('searchInput').addEventListener('input', function() {
-  searchTerm = this.value.trim();
-  render();
-});
-
-document.getElementById('btnClear').addEventListener('click', function() {
-  activeType = 'all'; activeMonth = 'all'; searchTerm = '';
-  document.getElementById('searchInput').value = '';
-  document.getElementById('typeChips').querySelectorAll('.chip').forEach(function(c) {
-    c.classList.toggle('active', c.dataset.pt === 'all');
-  });
-  document.getElementById('monthChips').querySelectorAll('.chip').forEach(function(c) {
-    c.classList.toggle('active', c.dataset.month === 'all');
-  });
-  render();
-});
-
-/* ── Boot ── */
-render();
+})();
 </script>
 
-<script defer src="js/shared.js?v=202605130001"></script>
+<script src="/js/main.js"></script>
 </body>
 </html>

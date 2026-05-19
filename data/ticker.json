@@ -1,0 +1,89 @@
+{
+  "updated": "2025-05-19T00:00:00Z",
+  "items": [
+    {
+      "id": "t01",
+      "badge": "NOW SHOWING",
+      "text": "Mamma Mia! — Cheltenham Operatic Society at Everyman Theatre through 25 May",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t02",
+      "badge": "NEW REVIEW",
+      "text": "★★★★★ Deanna: The Phantom of the Opera tour is breathtaking — a must-see",
+      "link": "/reviews.html"
+    },
+    {
+      "id": "t03",
+      "badge": "OPENING SOON",
+      "text": "Les Misérables — Bournemouth G&S Society opens 31 May at the Pavilion",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t04",
+      "badge": "AUDITIONS",
+      "text": "Footlights Youth Theatre: Grease 2025 open auditions — ages 14–25 welcome",
+      "link": "/audition.html"
+    },
+    {
+      "id": "t05",
+      "badge": "CLOSING SOON",
+      "text": "Chicago — final 3 performances! Booking closes Sunday at Wyvern Theatre",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t06",
+      "badge": "NEW REVIEW",
+      "text": "Penelope Jr. Reviewer gives Hamilton UK Tour 4.5 stars — spectacular staging",
+      "link": "/reviews.html"
+    },
+    {
+      "id": "t07",
+      "badge": "NOW SHOWING",
+      "text": "Into the Woods — Forest Youth Theatre at Minack Theatre, Cornwall",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t08",
+      "badge": "KIDS",
+      "text": "Matilda Jr. workshops now open — ages 8–16, no experience needed",
+      "link": "/audition.html"
+    },
+    {
+      "id": "t09",
+      "badge": "AUDITIONS",
+      "text": "Swindon Musical Theatre: Oliver! 2025 — auditions open for all roles including Fagin",
+      "link": "/audition.html"
+    },
+    {
+      "id": "t10",
+      "badge": "OPENING SOON",
+      "text": "Guys and Dolls — Dorset Operatic Society, opens 14 June at the Lighthouse",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t11",
+      "badge": "NEW REVIEW",
+      "text": "★★★★ Six the Musical — 'Pure electric pop joy' reads Deanna's review",
+      "link": "/reviews.html"
+    },
+    {
+      "id": "t12",
+      "badge": "NOW SHOWING",
+      "text": "Annie — West Swindon Singers at Wyvern Theatre, running through 22 May",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t13",
+      "badge": "AUDITIONS",
+      "text": "Swindon Operatic Society: Legally Blonde auditions — belters and dancers needed",
+      "link": "/audition.html"
+    },
+    {
+      "id": "t14",
+      "badge": "KIDS",
+      "text": "Junior theatre clubs forming for Autumn 2025 term — register your interest",
+      "link": "/audition.html"
+    }
+  ]
+}

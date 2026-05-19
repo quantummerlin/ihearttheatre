@@ -1,0 +1,376 @@
+/* ============================================================
+   iHeartTheatre — main.js
+   App shell injector · Ticker · Animations · Service Worker
+   ============================================================ */
+
+(function () {
+  'use strict';
+
+  /* ── 1. SVG Icons ──────────────────────────────────────── */
+  var ICONS = {
+    home:     '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+    calendar: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+    mic:      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>',
+    star:     '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+    info:     '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
+    search:   '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+    heart:    '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>'
+  };
+
+  /* ── 2. Nav Config ─────────────────────────────────────── */
+  var NAV_ITEMS = [
+    { href: '/index.html',    label: 'Home',      page: 'home',     icon: 'home'     },
+    { href: '/whats-on.html', label: "What's On", page: 'whats-on', icon: 'calendar' },
+    { href: '/audition.html', label: 'Audition',  page: 'audition', icon: 'mic'      },
+    { href: '/reviews.html',  label: 'Reviews',   page: 'reviews',  icon: 'star'     },
+    { href: '/about.html',    label: 'About',     page: 'about',    icon: 'info'     }
+  ];
+
+  /* ── 3. Determine active page ──────────────────────────── */
+  function getActivePage() {
+    var path = window.location.pathname;
+    var fn = path.split('/').pop();
+    if (!fn || fn === '' || fn === 'index.html') return 'home';
+    if (fn.indexOf('whats-on') !== -1) return 'whats-on';
+    if (fn.indexOf('audition') !== -1) return 'audition';
+    if (fn.indexOf('reviews') !== -1 || fn.indexOf('review') !== -1) return 'reviews';
+    if (fn.indexOf('about') !== -1 || fn.indexOf('companies') !== -1) return 'about';
+    if (fn.indexOf('musicals') !== -1 || fn.indexOf('songs') !== -1 || fn.indexOf('career') !== -1) return 'audition';
+    return '';
+  }
+
+  /* ── 4. Build nav HTML ─────────────────────────────────── */
+  function buildSidebarNavItems(activePage) {
+    return NAV_ITEMS.map(function (item) {
+      var isActive = item.page === activePage;
+      return (
+        '<a href="' + item.href + '" class="sidebar-nav-link' + (isActive ? ' active' : '') + '" data-page="' + item.page + '">' +
+          '<span class="sidebar-nav-icon">' + ICONS[item.icon] + '</span>' +
+          '<span>' + item.label + '</span>' +
+        '</a>'
+      );
+    }).join('');
+  }
+
+  function buildMobileNavItems(activePage) {
+    var MOB_ICONS = ['🏠', '🎭', '🎤', '⭐', 'ℹ️'];
+    return NAV_ITEMS.map(function (item, i) {
+      var isActive = item.page === activePage;
+      return (
+        '<a href="' + item.href + '" class="mobile-nav-item' + (isActive ? ' active' : '') + '">' +
+          '<span class="mobile-nav-icon">' + MOB_ICONS[i] + '</span>' +
+          '<span>' + item.label + '</span>' +
+        '</a>'
+      );
+    }).join('');
+  }
+
+  /* ── 5. SIDEBAR HTML ───────────────────────────────────── */
+  function buildSidebarHTML(activePage) {
+    return (
+      '<aside class="app-sidebar" role="navigation" aria-label="Main navigation">' +
+        '<a href="/index.html" class="sidebar-logo">' +
+          '<div class="sidebar-logo-icon">' + ICONS.heart + '</div>' +
+          '<div class="sidebar-logo-text">iHeartTheatre' +
+            '<span>Your Theatre Community</span>' +
+          '</div>' +
+        '</a>' +
+        '<nav class="sidebar-nav">' +
+          '<div class="sidebar-nav-label">Navigate</div>' +
+          buildSidebarNavItems(activePage) +
+          '<div class="sidebar-nav-label" style="margin-top:14px">Tools</div>' +
+          '<a href="/musicals.html" class="sidebar-nav-link">' +
+            '<span class="sidebar-nav-icon">🎼</span><span>Role Finder</span>' +
+          '</a>' +
+          '<a href="/songs.html" class="sidebar-nav-link">' +
+            '<span class="sidebar-nav-icon">🎵</span><span>Song Browser</span>' +
+          '</a>' +
+          '<a href="/career-builder.html" class="sidebar-nav-link">' +
+            '<span class="sidebar-nav-icon">🚀</span><span>Career Builder</span>' +
+          '</a>' +
+        '</nav>' +
+        '<div class="sidebar-footer">' +
+          '<div style="margin-bottom:6px">© 2025 iHeartTheatre</div>' +
+          '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
+            '<a href="/about.html">About</a>' +
+            '<a href="/about.html#contact">Contact</a>' +
+          '</div>' +
+        '</div>' +
+      '</aside>'
+    );
+  }
+
+  /* ── 6. NOW BAR (Ticker) ───────────────────────────────── */
+  var TICKER_FALLBACK = [
+    { badge: 'NOW SHOWING', text: 'Mamma Mia! — Cheltenham Operatic Society at Everyman Theatre', link: '/whats-on.html' },
+    { badge: 'OPENING SOON', text: 'Les Misérables — Bournemouth Gilbert & Sullivan Society', link: '/whats-on.html' },
+    { badge: 'NEW REVIEW', text: 'Deanna reviews The Phantom of the Opera ★★★★★', link: '/reviews.html' },
+    { badge: 'AUDITIONS', text: 'Footlights Youth Theatre — Grease 2025 open auditions', link: '/audition.html' },
+    { badge: 'CLOSING SOON', text: "Chicago — last week! Don't miss it", link: '/whats-on.html' },
+    { badge: 'NOW SHOWING', text: 'Into the Woods — Forest Youth Theatre at Minack Theatre', link: '/whats-on.html' },
+    { badge: 'KIDS', text: 'Matilda Jr. — workshops open for ages 8-16', link: '/audition.html' },
+    { badge: 'NEW REVIEW', text: 'Hamilton UK Tour — Penelope Jr. Reviewer gives 4.5 stars', link: '/reviews.html' }
+  ];
+
+  var BADGE_STYLE = {
+    'NOW SHOWING':  'color:#ffd700;border-color:rgba(255,215,0,.5)',
+    'OPENING SOON': 'color:#22d3ee;border-color:rgba(34,211,238,.5)',
+    'NEW REVIEW':   'color:#f472b6;border-color:rgba(244,114,182,.5)',
+    'AUDITIONS':    'color:#667eea;border-color:rgba(102,126,234,.5)',
+    'CLOSING SOON': 'color:#f87171;border-color:rgba(248,113,113,.5)',
+    'KIDS':         'color:#34d399;border-color:rgba(52,211,153,.5)',
+    'NEWS':         'color:#f472b6;border-color:rgba(244,114,182,.5)'
+  };
+
+  function buildTickerHTML(items) {
+    var html = '';
+    for (var copy = 0; copy < 2; copy++) {
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        var bs = BADGE_STYLE[item.badge] || 'color:#667eea;border-color:rgba(102,126,234,.5)';
+        var badgeHtml = item.badge
+          ? '<span class="ticker-badge" style="' + bs + '">' + item.badge + '</span>'
+          : '';
+        var textHtml = item.link
+          ? '<a href="' + item.link + '">' + item.text + '</a>'
+          : item.text;
+        html += '<span class="ticker-item">' + badgeHtml + textHtml + '</span>';
+        html += '<span class="ticker-sep">◆</span>';
+      }
+    }
+    return html;
+  }
+
+  function buildNowBarHTML() {
+    return (
+      '<div class="now-bar" role="marquee" aria-label="Latest theatre news">' +
+        '<div class="now-bar-label">🎭 On Stage</div>' +
+        '<div class="now-bar-track-wrap">' +
+          '<div class="now-bar-track" id="tickerTrack">' +
+            buildTickerHTML(TICKER_FALLBACK) +
+          '</div>' +
+        '</div>' +
+      '</div>'
+    );
+  }
+
+  /* ── 7. Mobile nav HTML ────────────────────────────────── */
+  function buildMobileNavHTML(activePage) {
+    return (
+      '<nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">' +
+        '<div class="mobile-nav-inner">' +
+          buildMobileNavItems(activePage) +
+        '</div>' +
+      '</nav>'
+    );
+  }
+
+  /* ── 8. Inject app shell ───────────────────────────────── */
+  function injectShell() {
+    var activePage = getActivePage();
+    var existing = document.querySelector('.app-sidebar');
+    if (existing) return; // already injected
+
+    // Insert sidebar
+    var sidebarEl = document.createElement('div');
+    sidebarEl.innerHTML = buildSidebarHTML(activePage);
+    document.body.insertBefore(sidebarEl.firstElementChild, document.body.firstChild);
+
+    // Wrap main in .main-content if not already wrapped
+    var mainEl = document.querySelector('main');
+    if (mainEl && !mainEl.classList.contains('main-content')) {
+      var wrapper = document.createElement('div');
+      wrapper.className = 'main-content';
+      mainEl.parentNode.insertBefore(wrapper, mainEl);
+      wrapper.appendChild(mainEl);
+    } else if (!mainEl) {
+      // Fallback: wrap all body content except sidebar in main-content
+      console.warn('iHT: No <main> element found on page.');
+    }
+
+    // Insert mobile nav + ticker bar
+    document.body.insertAdjacentHTML('beforeend', buildMobileNavHTML(activePage));
+    document.body.insertAdjacentHTML('beforeend', buildNowBarHTML());
+  }
+
+  /* ── 9. Ticker fetch ───────────────────────────────────── */
+  function initTicker() {
+    var tickerTrack = document.getElementById('tickerTrack');
+    if (!tickerTrack) return;
+
+    fetch('/data/ticker.json')
+      .then(function (r) { return r.ok ? r.json() : Promise.reject(); })
+      .then(function (data) {
+        if (!data.items || !data.items.length) return;
+        // Reset animation → swap content → force reflow → restart
+        tickerTrack.style.animation = 'none';
+        tickerTrack.innerHTML = buildTickerHTML(data.items);
+        void tickerTrack.offsetWidth;
+        tickerTrack.style.animation = '';
+      })
+      .catch(function () {
+        /* fallback already rendered */
+      });
+  }
+
+  /* ── 10. Scroll reveal (IntersectionObserver) ─────────── */
+  function initReveal() {
+    if (!window.IntersectionObserver) return;
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+
+    document.querySelectorAll('.reveal-section, .reveal-stagger').forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  /* ── 11. Card hover glow (desktop only) ───────────────── */
+  function initCardGlow() {
+    if (!window.matchMedia('(hover: hover)').matches) return;
+    document.querySelectorAll('.article-card, .show-card, .tool-card').forEach(function (card) {
+      card.addEventListener('mousemove', function (e) {
+        var rect = card.getBoundingClientRect();
+        var x = ((e.clientX - rect.left) / rect.width * 100).toFixed(1) + '%';
+        var y = ((e.clientY - rect.top) / rect.height * 100).toFixed(1) + '%';
+        card.style.setProperty('--mouse-x', x);
+        card.style.setProperty('--mouse-y', y);
+      });
+    });
+  }
+
+  /* ── 12. Cmd-K / Ctrl-K search trigger ───────────────── */
+  function initSearchShortcut() {
+    document.addEventListener('keydown', function (e) {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        // Dispatch a custom event — individual pages or pagefind can listen
+        document.dispatchEvent(new CustomEvent('iht:opensearch'));
+      }
+    });
+  }
+
+  /* ── 13. Accordion (delegated) ────────────────────────── */
+  function initAccordions() {
+    document.addEventListener('click', function (e) {
+      var header = e.target.closest('.accordion-header');
+      if (!header) return;
+      var item = header.closest('.accordion-item');
+      if (!item) return;
+      item.classList.toggle('open');
+    });
+  }
+
+  /* ── 14. Hero panel MutationObserver fade ─────────────── */
+  function initHeroPanelAnim() {
+    var panel = document.getElementById('heroContentPanel');
+    if (!panel || !window.MutationObserver) return;
+    var mo = new MutationObserver(function () {
+      panel.classList.remove('animating');
+      void panel.offsetWidth;
+      panel.classList.add('animating');
+    });
+    mo.observe(panel, { childList: true });
+  }
+
+  /* ── 15. Active nav highlight (SPA-style) ─────────────── */
+  function refreshActiveNav() {
+    var activePage = getActivePage();
+    document.querySelectorAll('.sidebar-nav-link[data-page]').forEach(function (link) {
+      link.classList.toggle('active', link.dataset.page === activePage);
+    });
+    document.querySelectorAll('.mobile-nav-item').forEach(function (item) {
+      var href = item.getAttribute('href') || '';
+      var page = href.split('/').pop().replace('.html', '').replace('index', 'home') || 'home';
+      if (page === '') page = 'home';
+      item.classList.toggle('active', page === activePage || item.dataset.page === activePage);
+    });
+  }
+
+  /* ── 16. Service Worker ────────────────────────────────── */
+  function registerSW() {
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
+        .catch(function () { /* non-fatal */ });
+    }
+  }
+
+  /* ── 17. GA4 ───────────────────────────────────────────── */
+  function initGA4() {
+    // Only inject if not already present
+    if (document.querySelector('script[src*="googletagmanager"]')) return;
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8';
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag('js', new Date());
+    gtag('config', 'G-RS9LV72HK8');
+  }
+
+  /* ── 18. submitFormViaEmail helper ────────────────────── */
+  // Preserved from original iHT pattern for contact forms
+  window.submitFormViaEmail = function (formEl, subjectPrefix) {
+    subjectPrefix = subjectPrefix || 'iHT Contact';
+    var data = {};
+    var inputs = formEl.querySelectorAll('input, textarea, select');
+    inputs.forEach(function (el) {
+      if (el.name) data[el.name] = el.value;
+    });
+    var body = Object.keys(data).map(function (k) {
+      return k + ': ' + data[k];
+    }).join('\n');
+    var subject = encodeURIComponent(subjectPrefix + ' — ' + (data.name || data.subject || 'Message'));
+    var bodyEnc = encodeURIComponent(body);
+    var mailto = 'mailto:hello@ihearttheatre.com?subject=' + subject + '&body=' + bodyEnc;
+
+    // Try clipboard copy too
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(body).catch(function () {});
+    }
+    window.location.href = mailto;
+  };
+
+  /* ── 19. Lazy-load hero images (off-screen slides) ────── */
+  function initHeroLazyLoad() {
+    var imgs = document.querySelectorAll('.hero-slide-img[data-src]');
+    if (!imgs.length) return;
+    // Slide 2 onwards — loaded on demand by slideshow JS
+    // This is a safety net: load any remaining after 3s
+    setTimeout(function () {
+      imgs.forEach(function (img) {
+        if (!img.getAttribute('src') && img.dataset.src) {
+          img.setAttribute('src', img.dataset.src);
+        }
+      });
+    }, 3000);
+  }
+
+  /* ── 20. Init ──────────────────────────────────────────── */
+  function init() {
+    injectShell();
+    initTicker();
+    initReveal();
+    initCardGlow();
+    initSearchShortcut();
+    initAccordions();
+    initHeroPanelAnim();
+    refreshActiveNav();
+    initHeroLazyLoad();
+    initGA4();
+    registerSW();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();

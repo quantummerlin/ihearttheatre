@@ -2121,7 +2121,9 @@ main {
 /* ── END ─────────────────────────────────────────────────── */
 
 
-/* ── Theatre Curtain Transition ──────────────────────────────── */
+/* ── Theatre Curtain ─────────────────────────────────────────── */
+/*    Open = CSS animation (fires reliably on DOM insert)         */
+/*    Close = curtain-closing class triggers reverse animation    */
 
 .stage-curtain {
   position: fixed;
@@ -2131,6 +2133,7 @@ main {
   pointer-events: none;
 }
 
+/* ---- Shared panel base ---- */
 .curtain-l,
 .curtain-r {
   flex: 1;
@@ -2138,10 +2141,52 @@ main {
   position: relative;
   overflow: hidden;
   will-change: transform;
-  transition: transform 0.62s cubic-bezier(0.86, 0, 0.07, 1);
+  /* Open animation fires automatically on page load.
+     fill-mode: both → starts at translateX(0) during delay, stays off-screen after. */
+  animation-duration: 0.65s;
+  animation-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  animation-delay: 0.1s;
+  animation-fill-mode: both;
+}
+.curtain-l { animation-name: curtainOpenL; }
+.curtain-r { animation-name: curtainOpenR; }
+
+@keyframes curtainOpenL {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+@keyframes curtainOpenR {
+  from { transform: translateX(0); }
+  to   { transform: translateX(100%); }
 }
 
-/* Velvet left panel */
+/* ---- Closing (nav click) ---- */
+.stage-curtain.curtain-closing {
+  pointer-events: all;          /* block interaction while closing */
+}
+.stage-curtain.curtain-closing .curtain-l {
+  animation-name: curtainCloseL;
+  animation-duration: 0.6s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+.stage-curtain.curtain-closing .curtain-r {
+  animation-name: curtainCloseR;
+  animation-duration: 0.6s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+}
+
+@keyframes curtainCloseL {
+  from { transform: translateX(-100%); }
+  to   { transform: translateX(0); }
+}
+@keyframes curtainCloseR {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+
+/* ---- Velvet left panel ---- */
 .curtain-l {
   background:
     repeating-linear-gradient(
@@ -2157,7 +2202,7 @@ main {
     linear-gradient(175deg, #7b0000 0%, #3d0000 35%, #7b0000 65%, #4a0000 100%);
 }
 
-/* Velvet right panel (mirror folds) */
+/* ---- Velvet right panel ---- */
 .curtain-r {
   background:
     repeating-linear-gradient(
@@ -2173,7 +2218,7 @@ main {
     linear-gradient(5deg, #7b0000 0%, #3d0000 35%, #7b0000 65%, #4a0000 100%);
 }
 
-/* Gold valance at top */
+/* ---- Gold valance at top ---- */
 .curtain-l::before,
 .curtain-r::before {
   content: '';
@@ -2187,7 +2232,7 @@ main {
   z-index: 2;
 }
 
-/* Gold inner-edge trim */
+/* ---- Gold inner-edge trim ---- */
 .curtain-l::after {
   content: '';
   position: absolute;
@@ -2211,14 +2256,10 @@ main {
   opacity: 0.75;
 }
 
-/* OPEN — panels slide apart */
-.stage-curtain.curtain-open .curtain-l { transform: translateX(-100%); }
-.stage-curtain.curtain-open .curtain-r { transform: translateX(100%);  }
-
-/* Block clicks while closed / transitioning */
-.stage-curtain:not(.curtain-open) { pointer-events: all; }
-
-/* Reduce motion */
+/* ---- Reduce motion ---- */
 @media (prefers-reduced-motion: reduce) {
-  .curtain-l, .curtain-r { transition-duration: 0.01ms; }
+  .curtain-l, .curtain-r {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
 }

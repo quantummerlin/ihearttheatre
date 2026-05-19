@@ -361,12 +361,9 @@
     el.innerHTML = '<div class="curtain-l"></div><div class="curtain-r"></div>';
     document.body.appendChild(el);
 
-    // Open after the page is ready (tiny delay lets the CSS transition fire)
-    requestAnimationFrame(function() {
-      setTimeout(function() {
-        el.classList.add('curtain-open');
-      }, 60);
-    });
+    // CSS @keyframes on .curtain-l/.curtain-r fires automatically on DOM insert.
+    // animation-fill-mode:both holds panels closed during the delay, open after.
+    // No JS class needed for the open direction.
 
     // Intercept all internal navigation to close curtain first
     document.addEventListener('click', function(e) {
@@ -380,7 +377,7 @@
           href.indexOf('mailto:') === 0 ||
           href.indexOf('tel:') === 0 ||
           a.target === '_blank') return;
-      // Skip if this is the current page
+      // Skip if already on this page
       var curr = window.location.pathname;
       var dest = href;
       if (curr === dest ||
@@ -390,11 +387,11 @@
       e.preventDefault();
       e.stopImmediatePropagation();
 
-      // Close curtain then navigate
-      el.classList.remove('curtain-open');
+      // curtain-closing class triggers reverse CSS animation then navigate
+      el.classList.add('curtain-closing');
       setTimeout(function() {
         window.location.href = dest;
-      }, 600);
+      }, 620);
     }, true); // capture phase
   }
 

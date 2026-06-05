@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>What's On — iHeartTheatre</title>
-  <meta name="description" content="The complete community theatre calendar — shows happening now, opening soon and coming up near you.">
+  <meta name="description" content="Melbourne theatre calendar — professional, community and school shows happening now, opening soon and coming up.">
   <meta property="og:title" content="What's On — iHeartTheatre">
-  <meta property="og:description" content="Community theatre shows, dates, venues and booking info.">
+  <meta property="og:description" content="Melbourne theatre shows, dates, venues and booking info — professional, community and school productions.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#8B0000">
 
@@ -27,9 +27,9 @@
 
   <!-- PAGE HERO -->
   <div class="page-hero">
-    <div class="page-hero-eyebrow">🎭 Theatre Calendar</div>
+    <div class="page-hero-eyebrow">🎭 Melbourne Theatre Calendar</div>
     <h1 class="page-hero-title">What's <em>On</em></h1>
-    <p class="page-hero-sub">Community theatre shows across the UK — now showing, opening soon and coming up. Updated weekly.</p>
+    <p class="page-hero-sub">Shows across Melbourne — professional, community and school productions. All levels, all stages.</p>
   </div>
 
   <!-- FILTER BAR -->
@@ -49,10 +49,10 @@
     </div>
   </div>
 
-  <!-- SHOWS GRID — populated from data inline + JS filter -->
+  <!-- SHOWS GRID — populated from calendar.json + JS filter -->
   <section class="hub-section reveal-section" aria-label="Shows listing" style="padding-bottom:40px">
     <div class="show-card-grid reveal-stagger" id="showsGrid">
-      <!-- Populated by inline data + optional calendar.json fetch below -->
+      <!-- Populated by JS from /data/calendar.json -->
     </div>
     <div id="emptyState" class="empty-state" style="display:none">
       <div class="empty-state-icon">🎭</div>
@@ -63,53 +63,164 @@
 </main>
 
 <script>
-/* ── What's On — show data + filter logic ────────────────── */
+/* ── What's On — Melbourne calendar.json data + filter logic ── */
 (function() {
 
-  var SHOWS = [
-    /* NOW SHOWING */
-    { id:'s01', title:'Mamma Mia!',       genre:'musical', status:'now',  company:'Cheltenham Operatic Society', venue:'Everyman Theatre, Cheltenham', dates:'Through 25 May 2025', emoji:'🎭', href:'/shows/mamma-mia-cheltenham-2025.html' },
-    { id:'s02', title:'Annie',            genre:'musical', status:'now',  company:'West Swindon Singers',        venue:'Wyvern Theatre, Swindon',      dates:'Through 22 May 2025', emoji:'🌟', href:'/shows/annie-west-swindon-2025.html' },
-    { id:'s03', title:'Into the Woods',   genre:'musical', status:'now',  company:'Forest Youth Theatre',        venue:'Minack Theatre, Cornwall',     dates:'15–29 May 2025',      emoji:'🌳', href:'/shows/into-the-woods-forest-2025.html' },
-    { id:'s04', title:'Chicago',          genre:'drama',   status:'now',  company:'Swindon Operatic Society',    venue:'Wyvern Theatre, Swindon',      dates:'CLOSING 21 May!',     emoji:'🎩', href:'/shows/chicago-swindon-2025.html' },
-    { id:'s05', title:'Grease',           genre:'musical', status:'now',  company:'Bournemouth Musical Theatre', venue:'Lighthouse, Poole',            dates:'18–24 May 2025',      emoji:'⚡', href:'/shows/grease-bournemouth-2025.html' },
-    { id:'s06', title:'Oliver!',          genre:'musical', status:'now',  company:'Swindon Musical Theatre',     venue:'Arts Centre, Swindon',         dates:'14–24 May 2025',      emoji:'🏚️', href:'/shows/oliver-swindon-2025.html' },
-
-    /* OPENING SOON */
-    { id:'s07', title:'Les Misérables',   genre:'musical', status:'soon', company:'Bournemouth G&S Society',    venue:'Pavilion, Bournemouth',        dates:'Opens 31 May 2025',   emoji:'🕯️', href:'/shows/les-mis-bournemouth-2025.html' },
-    { id:'s08', title:'Guys and Dolls',   genre:'musical', status:'soon', company:'Dorset Operatic Society',    venue:'Lighthouse, Poole',            dates:'Opens 14 June 2025',  emoji:'🎲', href:'/shows/guys-dolls-dorset-2025.html' },
-    { id:'s09', title:'Legally Blonde',   genre:'musical', status:'soon', company:'Swindon Operatic Society',   venue:'Wyvern Theatre, Swindon',      dates:'Opens 2 July 2025',   emoji:'💗', href:'/shows/legally-blonde-swindon-2025.html' },
-    { id:'s10', title:'The Sound of Music', genre:'musical', status:'soon', company:'Cheltenham Operatic',      venue:'Everyman Theatre, Cheltenham', dates:'Opens 18 Sep 2025',   emoji:'🏔️', href:'/shows/sound-of-music-cheltenham-2025.html' },
-    { id:'s11', title:'Sweeney Todd',     genre:'drama',   status:'soon', company:'Oxford Stage Company',       venue:'New Theatre, Oxford',          dates:'Opens 5 June 2025',   emoji:'🪒', href:'/shows/sweeney-todd-oxford-2025.html' },
-    { id:'s12', title:'Bugsy Malone',     genre:'comedy',  status:'soon', company:'Footlights Youth Theatre',   venue:'Arts Centre, Swindon',         dates:'Opens 12 July 2025',  emoji:'🔫', href:'/shows/bugsy-malone-footlights-2025.html' },
-
-    /* KIDS */
-    { id:'s13', title:'Matilda Jr.',      genre:'kids',    status:'soon', company:'Junior Theatre Workshop',    venue:'Arts Centre, Swindon',         dates:'Opens 19 July 2025',  emoji:'📚', href:'/shows/matilda-jr-2025.html' },
-    { id:'s14', title:'The Jungle Book',  genre:'kids',    status:'soon', company:'Kidstage Productions',       venue:'Minack Theatre, Cornwall',     dates:'Opens 26 July 2025',  emoji:'🐆', href:'/shows/jungle-book-kidstage-2025.html' },
-
-    /* COMING UP */
-    { id:'s15', title:'Cabaret',          genre:'drama',   status:'soon', company:'Swindon Musical Theatre',    venue:'Wyvern Theatre, Swindon',      dates:'Opens Oct 2025',      emoji:'🎪', href:'/shows/cabaret-swindon-2025.html' },
-    { id:'s16', title:'Mary Poppins',     genre:'musical', status:'soon', company:'West Swindon Singers',       venue:'Wyvern Theatre, Swindon',      dates:'Opens Nov 2025',      emoji:'☂️', href:'/shows/mary-poppins-2025.html' }
-  ];
-
+  var rawShows = [];
   var grid = document.getElementById('showsGrid');
   var emptyState = document.getElementById('emptyState');
   var currentFilter = 'all';
   var currentSearch = '';
 
-  function buildStatusBadge(status) {
-    if (status === 'now') return '<span class="badge badge-musical">Now Showing</span>';
-    if (status === 'soon') return '<span class="badge badge-audition">Opening Soon</span>';
-    return '<span class="badge badge-company">Upcoming</span>';
+  /* ── Date helpers ──────────────────────────────────────── */
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+  function parseDate(str) {
+    // Accepts "YYYY-MM-DD"
+    var parts = str.split('-');
+    return new Date(parseInt(parts[0], 10), parseInt(parts[1], 10) - 1, parseInt(parts[2], 10));
   }
 
-  function buildGenreBadge(genre) {
-    var map = { musical:'badge-musical', drama:'badge-drama', comedy:'badge-comedy', kids:'badge-kids' };
-    var cls = map[genre] || 'badge-company';
-    var label = genre.charAt(0).toUpperCase() + genre.slice(1);
-    return '<span class="badge ' + cls + '">' + label + '</span>';
+  function formatDate(d) {
+    var dd = d.getDate();
+    if (dd < 10) dd = '0' + dd;
+    return dd + ' ' + MONTHS[d.getMonth()] + ' ' + d.getFullYear();
   }
 
+  function formatDateRange(startStr, endStr) {
+    var s = parseDate(startStr);
+    var e = parseDate(endStr);
+    if (s.getFullYear() === e.getFullYear() && s.getMonth() === e.getMonth() && s.getDate() === e.getDate()) {
+      return formatDate(s);
+    }
+    // If same year, don't repeat year on start
+    if (s.getFullYear() === e.getFullYear()) {
+      var dd = s.getDate();
+      if (dd < 10) dd = '0' + dd;
+      return dd + ' ' + MONTHS[s.getMonth()] + ' – ' + formatDate(e);
+    }
+    return formatDate(s) + ' – ' + formatDate(e);
+  }
+
+  function todayMidnight() {
+    var n = new Date();
+    return new Date(n.getFullYear(), n.getMonth(), n.getDate());
+  }
+
+  /* ── Emoji fallback map ────────────────────────────────── */
+  var EMOJI_MAP = {
+    'musical':  '🎭',
+    'drama':    '🎬',
+    'comedy':   '😂',
+    'kids':     '👨‍👩‍👧‍👦',
+    'opera':    '🎶',
+    'panto':    '🎪',
+    'family':   '🏠',
+    'youth':    '⭐'
+  };
+
+  var FILTER_TAGS = ['musical', 'drama', 'comedy', 'kids', 'opera', 'panto', 'family', 'youth'];
+
+  /* ── Derive filter tags from genre + tags arrays ──────── */
+  function deriveFilterTags(show) {
+    var tags = [];
+    var allLabels = [];
+    if (show.genre && show.genre.length) allLabels = allLabels.concat(show.genre);
+    if (show.tags && show.tags.length) allLabels = allLabels.concat(show.tags);
+    for (var i = 0; i < FILTER_TAGS.length; i++) {
+      var ft = FILTER_TAGS[i];
+      for (var j = 0; j < allLabels.length; j++) {
+        if (allLabels[j].toLowerCase().indexOf(ft) !== -1) {
+          if (tags.indexOf(ft) === -1) tags.push(ft);
+          break;
+        }
+      }
+    }
+    return tags;
+  }
+
+  /* ── Pick primary emoji from genre/tags ────────────────── */
+  function pickEmoji(show) {
+    var allLabels = [];
+    if (show.genre && show.genre.length) allLabels = allLabels.concat(show.genre);
+    if (show.tags && show.tags.length) allLabels = allLabels.concat(show.tags);
+    for (var i = 0; i < allLabels.length; i++) {
+      var key = allLabels[i].toLowerCase();
+      if (EMOJI_MAP[key]) return EMOJI_MAP[key];
+    }
+    // Try partial match
+    for (var ek in EMOJI_MAP) {
+      for (var j = 0; j < allLabels.length; j++) {
+        if (allLabels[j].toLowerCase().indexOf(ek) !== -1) return EMOJI_MAP[ek];
+      }
+    }
+    return '🎭';
+  }
+
+  /* ── Status badge from production_type ────────────────── */
+  function buildStatusBadge(productionType) {
+    var pt = (productionType || '').toLowerCase();
+    if (pt === 'professional') return '<span class="badge badge-musical">Professional</span>';
+    if (pt === 'community')   return '<span class="badge badge-company">Community</span>';
+    if (pt === 'school')      return '<span class="badge badge-audition">School</span>';
+    return '<span class="badge badge-company">' + (productionType || 'Production') + '</span>';
+  }
+
+  /* ── Genre badges ──────────────────────────────────────── */
+  function buildGenreBadges(show) {
+    var badges = [];
+    var genres = show.genre || [];
+    for (var i = 0; i < genres.length; i++) {
+      var g = genres[i];
+      var emoji = EMOJI_MAP[g.toLowerCase()] || '🎭';
+      var cls = 'badge-company';
+      var gl = g.toLowerCase();
+      if (gl.indexOf('musical') !== -1) cls = 'badge-musical';
+      else if (gl.indexOf('drama') !== -1) cls = 'badge-drama';
+      else if (gl.indexOf('comedy') !== -1) cls = 'badge-comedy';
+      else if (gl.indexOf('kids') !== -1 || gl.indexOf('children') !== -1) cls = 'badge-kids';
+      badges.push('<span class="badge ' + cls + '">' + emoji + ' ' + g + '</span>');
+    }
+    return badges.join('');
+  }
+
+  /* ── Render a single show card ────────────────────────── */
+  function renderCard(show) {
+    var emoji = show._emoji;
+    var dates = show._dates;
+    var statusBadge = buildStatusBadge(show.production_type);
+    var genreBadges = buildGenreBadges(show);
+    var ticketUrl = show.ticket_url || '#';
+    var suburb = show.location || '';
+    var venue = show.venue || '';
+    var company = show.company || '';
+    var title = show.show_title || 'Untitled';
+
+    return (
+      '<a href="' + ticketUrl + '" class="show-card">' +
+        '<div class="show-card-poster">' +
+          '<div class="show-card-poster-placeholder">' + emoji + '</div>' +
+        '</div>' +
+        '<div class="show-card-body">' +
+          '<div class="article-card-meta" style="margin-bottom:4px">' +
+            statusBadge +
+          '</div>' +
+          '<h3 class="show-card-title">' + title + '</h3>' +
+          '<div class="show-card-venue">' + venue + (suburb ? ', ' + suburb : '') + '</div>' +
+          '<div class="show-card-dates">' + dates + '</div>' +
+          '<div class="show-card-company">' +
+            genreBadges +
+            (company ? '<span class="badge badge-company" style="margin-left:4px">' + company + '</span>' : '') +
+          '</div>' +
+          '<div class="show-card-actions" style="margin-top:10px">' +
+            '<span class="btn btn-sm btn-outline-gold">Get Tickets</span>' +
+          '</div>' +
+        '</div>' +
+      '</a>'
+    );
+  }
+
+  /* ── Render all visible shows ─────────────────────────── */
   function renderShows(shows) {
     if (!shows.length) {
       grid.innerHTML = '';
@@ -117,45 +228,35 @@
       return;
     }
     emptyState.style.display = 'none';
-    grid.innerHTML = shows.map(function(s) {
-      return (
-        '<a href="' + s.href + '" class="show-card">' +
-          '<div class="show-card-poster">' +
-            '<div class="show-card-poster-placeholder">' + s.emoji + '</div>' +
-          '</div>' +
-          '<div class="show-card-body">' +
-            '<div class="article-card-meta" style="margin-bottom:4px">' +
-              buildStatusBadge(s.status) +
-            '</div>' +
-            '<h3 class="show-card-title">' + s.title + '</h3>' +
-            '<div class="show-card-venue">' + s.venue + '</div>' +
-            '<div class="show-card-dates">' + s.dates + '</div>' +
-            '<div class="show-card-company">' +
-              buildGenreBadge(s.genre) +
-              '<span class="badge badge-company" style="margin-left:4px">' + s.company + '</span>' +
-            '</div>' +
-          '</div>' +
-        '</a>'
-      );
-    }).join('');
+    grid.innerHTML = shows.map(renderCard).join('');
   }
 
+  /* ── Filter logic ─────────────────────────────────────── */
   function applyFilters() {
-    var filtered = SHOWS.filter(function(s) {
-      var matchFilter = currentFilter === 'all'
-        || currentFilter === s.genre
-        || (currentFilter === 'now' && s.status === 'now')
-        || (currentFilter === 'soon' && s.status === 'soon');
+    var today = todayMidnight();
+    var filtered = rawShows.filter(function(s) {
+      var matchFilter = true;
+      if (currentFilter === 'now') {
+        matchFilter = s._dateStart <= today && s._dateEnd >= today;
+      } else if (currentFilter === 'soon') {
+        matchFilter = s._dateStart > today;
+      } else if (FILTER_TAGS.indexOf(currentFilter) !== -1) {
+        matchFilter = s._filterTags.indexOf(currentFilter) !== -1;
+      } else if (currentFilter !== 'all') {
+        matchFilter = true;
+      }
       var q = currentSearch.toLowerCase();
-      var matchSearch = !q || s.title.toLowerCase().indexOf(q) !== -1
-        || s.company.toLowerCase().indexOf(q) !== -1
-        || s.venue.toLowerCase().indexOf(q) !== -1;
+      var matchSearch = !q
+        || (s.show_title || '').toLowerCase().indexOf(q) !== -1
+        || (s.company || '').toLowerCase().indexOf(q) !== -1
+        || (s.venue || '').toLowerCase().indexOf(q) !== -1
+        || (s.location || '').toLowerCase().indexOf(q) !== -1;
       return matchFilter && matchSearch;
     });
     renderShows(filtered);
   }
 
-  /* Filter buttons */
+  /* ── Filter buttons ───────────────────────────────────── */
   document.querySelectorAll('.filter-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
       document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
@@ -165,7 +266,7 @@
     });
   });
 
-  /* Search */
+  /* ── Search ───────────────────────────────────────────── */
   var searchInput = document.getElementById('showSearch');
   if (searchInput) {
     searchInput.addEventListener('input', function() {
@@ -174,23 +275,87 @@
     });
   }
 
-  /* Try to load from calendar.json (future integration) */
-  fetch('/data/calendar.json')
-    .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function(data) {
-      if (data && data.shows && data.shows.length) {
-        data.shows.forEach(function(s) {
-          if (!SHOWS.find(function(x) { return x.id === s.id; })) {
-            SHOWS.unshift(s);
-          }
-        });
-        applyFilters();
+  /* ── Show count badge ─────────────────────────────────── */
+  function updateShowCount(count) {
+    var existing = document.getElementById('showCountBadge');
+    if (!existing) {
+      var bar = document.getElementById('filterBar');
+      if (bar) {
+        existing = document.createElement('span');
+        existing.id = 'showCountBadge';
+        existing.style.cssText = 'margin-left:8px;font-size:0.75rem;color:#999;font-family:Inter,sans-serif;';
+        bar.appendChild(existing);
       }
-    })
-    .catch(function() {});
+    }
+    if (existing) {
+      existing.textContent = count + ' show' + (count !== 1 ? 's' : '');
+    }
+  }
 
-  /* Initial render */
-  applyFilters();
+  /* ── Load calendar.json ───────────────────────────────── */
+  function loadShows() {
+    grid.innerHTML = '<div class="empty-state" style="display:block;width:100%;text-align:center;padding:40px"><div class="empty-state-icon">🎭</div><div class="empty-state-text">Loading shows…</div></div>';
+
+    fetch('/data/calendar.json')
+      .then(function(r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      })
+      .then(function(data) {
+        if (!Array.isArray(data)) throw new Error('Expected array');
+
+        var today = todayMidnight();
+
+        // Process, enrich, filter expired, sort
+        rawShows = data
+          .filter(function(s) {
+            // Remove expired shows: date_end < today
+            if (!s.date_end) return false;
+            var end = parseDate(s.date_end);
+            return end >= today;
+          })
+          .map(function(s) {
+            var ds = parseDate(s.date_start);
+            var de = parseDate(s.date_end);
+            return {
+              id: s.id,
+              show_title: s.show_title,
+              company: s.company,
+              venue: s.venue,
+              location: s.location,
+              region: s.region,
+              date_start: s.date_start,
+              date_end: s.date_end,
+              dates_approximate: s.dates_approximate,
+              production_type: s.production_type,
+              genre: s.genre || [],
+              tags: s.tags || [],
+              musical_id: s.musical_id,
+              ticket_url: s.ticket_url || '#',
+              _dateStart: ds,
+              _dateEnd: de,
+              _dates: formatDateRange(s.date_start, s.date_end),
+              _emoji: pickEmoji(s),
+              _filterTags: deriveFilterTags(s)
+            };
+          })
+          .sort(function(a, b) {
+            return a._dateStart - b._dateStart;
+          });
+
+        updateShowCount(rawShows.length);
+        applyFilters();
+      })
+      .catch(function(err) {
+        console.error('Failed to load calendar.json:', err);
+        grid.innerHTML = '';
+        emptyState.style.display = 'block';
+        emptyState.querySelector('.empty-state-text').textContent = 'Unable to load shows. Please try again later.';
+      });
+  }
+
+  /* ── Initial load ─────────────────────────────────────── */
+  loadShows();
 
 })();
 </script>

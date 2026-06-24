@@ -187,7 +187,7 @@
   <div class="hero-badge">June 11 – July 19, 2026 &nbsp;·&nbsp; USA · Canada · Mexico</div>
   <h1>2026 FIFA <span>World Cup</span></h1>
   <div class="hero-sub">48 Teams · 12 Groups · 104 Matches &nbsp;|&nbsp; Knockout Stage Explorer</div>
-  <div class="update-time">Results updated through June 24, 2026 · 3 groups decided, 3 teams eliminated · New H2H tiebreaker in effect</div>
+  <div class="update-time">Results updated through June 24, 2026 · Switzerland qualified (Group B winner) · 50 completed matches · Matchday 3: June 25–26</div>
   <div class="countdown-bar" id="countdown-bar" role="timer" aria-live="polite" aria-label="Countdown to next match">
     <span class="countdown-label">Next match:</span>
     <div class="countdown-match" id="countdown-match"></div>
@@ -220,12 +220,12 @@
   <div class="stats-row">
     <div class="stat-card"><div class="stat-value">48</div><div class="stat-label">Teams</div></div>
     <div class="stat-card"><div class="stat-value">12</div><div class="stat-label">Groups</div></div>
-    <div class="stat-card"><div class="stat-value">44</div><div class="stat-label">Matches Played</div></div>
-    <div class="stat-card"><div class="stat-value">132</div><div class="stat-label">Goals Scored</div></div>
+    <div class="stat-card"><div class="stat-value">50</div><div class="stat-label">Matches Played</div></div>
+    <div class="stat-card"><div class="stat-value">148</div><div class="stat-label">Goals Scored</div></div>
     <div class="stat-card"><div class="stat-value">3.0</div><div class="stat-label">Goals / Match</div></div>
     <div class="stat-card"><div class="stat-value">32</div><div class="stat-label">Knockout Teams</div></div>
   </div>
-  <div class="info-box"><strong>Current status:</strong> Group stage matchday 2 is complete (through June 24). Matchday 3 runs June 25–28. The Round of 32 begins June 29.</div>
+  <div class="info-box"><strong>Current status:</strong> Group stage matchday 2 is complete (through June 24). Matchday 3 runs June 25–26. Switzerland is the first confirmed group winner (Group B, 7pts). The Round of 32 begins June 30.</div>
   <div class="info-box" style="border-color:var(--accent-blue);background:linear-gradient(135deg,rgba(58,124,191,.06),rgba(26,92,42,.06))">
     <strong>⚠️ New Tiebreaker Rule — Head-to-Head!</strong> For the first time in World Cup history, FIFA is using <strong>head-to-head</strong> as the primary tiebreaker instead of goal difference.<br><br>
     <strong>Full order:</strong><ol style="margin-top:8px;padding-left:18px;line-height:1.8;">
@@ -262,7 +262,7 @@
 <div class="accordion-panel" data-panel="results">
 
   <div class="panel-title">Match Results</div>
-  <div class="panel-desc">All completed matches through June 24, 2026.</div>
+  <div class="panel-desc">All completed matches through June 24, 2026. Source: ESPN / FIFA.com</div>
   <div class="search-container"><span class="search-icon" aria-hidden="true">🔍</span><input type="text" class="search-input" id="results-search" placeholder="Search teams..." aria-label="Search matches by team name" oninput="filterResults()"><button class="search-clear" id="results-search-clear" onclick="clearResultsSearch()" aria-label="Clear search">✕</button></div>
   <div class="search-results-count" id="results-search-count"></div>
   <div class="match-list" id="match-list"></div>
@@ -308,88 +308,66 @@
   <h3 style="font-family:'Oswald',sans-serif;font-size:16px;color:var(--gold);margin:20px 0 12px;letter-spacing:1px;">Venue Details</h3>
   <div id="venue-details"></div>
 </div></div>
-<div class="footer">2026 FIFA World Cup Knockout Stage Explorer · Built with ⚽ by Holly<br>Results through June 24, 2026 · Source: FIFA.com</div>
+<div class="footer">2026 FIFA World Cup Knockout Stage Explorer · Built with ⚽ by Holly<br>Results through June 24, 2026 · Data: ESPN / FIFA.com</div>
 <script>
 const groupsData={
-A:{name:'A',matches:[{date:'Jun 11',home:'Mexico',hf:'🇲🇽',away:'South Africa',af:'🇿🇦',score:'2-0',venue:'Mexico City'},{date:'Jun 11',home:'South Korea',hf:'🇰🇷',away:'Czechia',af:'🇨🇿',score:'2-1',venue:'Guadalajara'},{date:'Jun 18',home:'Czechia',hf:'🇨🇿',away:'South Africa',af:'🇿🇦',score:'1-1',venue:'Atlanta'},{date:'Jun 19',home:'Mexico',hf:'🇲🇽',away:'South Korea',af:'🇰🇷',score:'1-0',venue:'Guadalajara'}],teams:[{name:'Mexico',flag:'🇲🇽',pld:2,w:2,d:0,l:0,gf:3,ga:0,gd:3,pts:6,status:'group-winner'},{name:'South Korea',flag:'🇰🇷',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Czechia',flag:'🇨🇿',pld:2,w:0,d:1,l:1,gf:2,ga:3,gd:-1,pts:1,status:'maybe'},{name:'South Africa',flag:'🇿🇦',pld:2,w:0,d:1,l:1,gf:1,ga:3,gd:-2,pts:1,status:''}]},
-B:{name:'B',matches:[{date:'Jun 12',home:'Canada',hf:'🇨🇦',away:'Bosnia',af:'🇧🇦',score:'1-1',venue:'Toronto'},{date:'Jun 14',home:'Qatar',hf:'🇶🇦',away:'Switzerland',af:'🇨🇭',score:'1-1',venue:'SF Bay Area'},{date:'Jun 18',home:'Switzerland',hf:'🇨🇭',away:'Bosnia',af:'🇧🇦',score:'4-1',venue:'Los Angeles'},{date:'Jun 19',home:'Canada',hf:'🇨🇦',away:'Qatar',af:'🇶🇦',score:'6-0',venue:'Vancouver'}],teams:[{name:'Canada',flag:'🇨🇦',pld:2,w:1,d:1,l:0,gf:7,ga:1,gd:6,pts:4,status:''},{name:'Switzerland',flag:'🇨🇭',pld:2,w:1,d:1,l:0,gf:5,ga:2,gd:3,pts:4,status:''},{name:'Bosnia',flag:'🇧🇦',pld:2,w:0,d:1,l:1,gf:2,ga:5,gd:-3,pts:1,status:'maybe'},{name:'Qatar',flag:'🇶🇦',pld:2,w:0,d:1,l:1,gf:1,ga:7,gd:-6,pts:1,status:''}]},
-C:{name:'C',matches:[{date:'Jun 14',home:'Brazil',hf:'🇧🇷',away:'Morocco',af:'🇲🇦',score:'1-1',venue:'New Jersey'},{date:'Jun 14',home:'Haiti',hf:'🇭🇹',away:'Scotland',af:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',score:'0-1',venue:'Boston'},{date:'Jun 20',home:'Scotland',hf:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',away:'Morocco',af:'🇲🇦',score:'0-1',venue:'Boston'},{date:'Jun 20',home:'Brazil',hf:'🇧🇷',away:'Haiti',af:'🇭🇹',score:'3-0',venue:'Philadelphia'}],teams:[{name:'Brazil',flag:'🇧🇷',pld:2,w:1,d:1,l:0,gf:4,ga:1,gd:3,pts:4,status:''},{name:'Morocco',flag:'🇲🇦',pld:2,w:1,d:1,l:0,gf:2,ga:1,gd:1,pts:4,status:''},{name:'Scotland',flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',pld:2,w:1,d:0,l:1,gf:1,ga:1,gd:0,pts:3,status:'maybe'},{name:'Haiti',flag:'🇭🇹',pld:2,w:0,d:0,l:2,gf:0,ga:4,gd:-4,pts:0,status:'eliminated'}]},
-D:{name:'D',matches:[{date:'Jun 13',home:'USA',hf:'🇺🇸',away:'Paraguay',af:'🇵🇾',score:'4-1',venue:'Los Angeles'},{date:'Jun 14',home:'Australia',hf:'🇦🇺',away:'Türkiye',af:'🇹🇷',score:'2-0',venue:'Vancouver'},{date:'Jun 20',home:'USA',hf:'🇺🇸',away:'Australia',af:'🇦🇺',score:'2-0',venue:'Seattle'},{date:'Jun 20',home:'Türkiye',hf:'🇹🇷',away:'Paraguay',af:'🇵🇾',score:'0-1',venue:'SF Bay Area'}],teams:[{name:'USA',flag:'🇺🇸',pld:2,w:2,d:0,l:0,gf:6,ga:1,gd:5,pts:6,status:'group-winner'},{name:'Australia',flag:'🇦🇺',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Paraguay',flag:'🇵🇾',pld:2,w:1,d:0,l:1,gf:2,ga:4,gd:-2,pts:3,status:'maybe'},{name:'Türkiye',flag:'🇹🇷',pld:2,w:0,d:0,l:2,gf:0,ga:3,gd:-3,pts:0,status:'eliminated'}]},
-E:{name:'E',matches:[{date:'Jun 15',home:'Germany',hf:'🇩🇪',away:'Curaçao',af:'🇨🇼',score:'7-1',venue:'Houston'},{date:'Jun 15',home:"Côte d'Ivoire",hf:'🇨🇮',away:'Ecuador',af:'🇪🇨',score:'1-0',venue:'Philadelphia'},{date:'Jun 21',home:'Germany',hf:'🇩🇪',away:"Côte d'Ivoire",af:'🇨🇮',score:'2-1',venue:'Toronto'},{date:'Jun 21',home:'Ecuador',hf:'🇪🇨',away:'Curaçao',af:'🇨🇼',score:'0-0',venue:'Kansas City'}],teams:[{name:'Germany',flag:'🇩🇪',pld:2,w:2,d:0,l:0,gf:9,ga:2,gd:7,pts:6,status:'group-winner'},{name:"Côte d'Ivoire",flag:'🇨🇮',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Ecuador',flag:'🇪🇨',pld:2,w:0,d:1,l:1,gf:0,ga:1,gd:-1,pts:1,status:'maybe'},{name:'Curaçao',flag:'🇨🇼',pld:2,w:0,d:1,l:1,gf:1,ga:7,gd:-6,pts:1,status:''}]},
-F:{name:'F',matches:[{date:'Jun 15',home:'Netherlands',hf:'🇳🇱',away:'Japan',af:'🇯🇵',score:'2-2',venue:'Dallas'},{date:'Jun 15',home:'Sweden',hf:'🇸🇪',away:'Tunisia',af:'🇹🇳',score:'5-1',venue:'Monterrey'},{date:'Jun 21',home:'Netherlands',hf:'🇳🇱',away:'Sweden',af:'🇸🇪',score:'5-1',venue:'Houston'},{date:'Jun 21',home:'Tunisia',hf:'🇹🇳',away:'Japan',af:'🇯🇵',score:'0-4',venue:'Monterrey'}],teams:[{name:'Netherlands',flag:'🇳🇱',pld:2,w:1,d:1,l:0,gf:7,ga:3,gd:4,pts:4,status:''},{name:'Japan',flag:'🇯🇵',pld:2,w:1,d:1,l:0,gf:6,ga:2,gd:4,pts:4,status:''},{name:'Sweden',flag:'🇸🇪',pld:2,w:1,d:0,l:1,gf:6,ga:6,gd:0,pts:3,status:'maybe'},{name:'Tunisia',flag:'🇹🇳',pld:2,w:0,d:0,l:2,gf:1,ga:9,gd:-8,pts:0,status:'eliminated'}]},
-G:{name:'G',matches:[{date:'Jun 16',home:'Belgium',hf:'🇧🇪',away:'Egypt',af:'🇪🇬',score:'1-1',venue:'Seattle'},{date:'Jun 16',home:'Iran',hf:'🇮🇷',away:'New Zealand',af:'🇳🇿',score:'2-2',venue:'Los Angeles'}],teams:[{name:'Belgium',flag:'🇧🇪',pld:1,w:0,d:1,l:0,gf:1,ga:1,gd:0,pts:1,status:''},{name:'Iran',flag:'🇮🇷',pld:1,w:0,d:1,l:0,gf:2,ga:2,gd:0,pts:1,status:''},{name:'Egypt',flag:'🇪🇬',pld:1,w:0,d:1,l:0,gf:1,ga:1,gd:0,pts:1,status:'maybe'},{name:'New Zealand',flag:'🇳🇿',pld:1,w:0,d:1,l:0,gf:2,ga:2,gd:0,pts:1,status:''}]},
-H:{name:'H',matches:[{date:'Jun 16',home:'Spain',hf:'🇪🇸',away:'Cabo Verde',af:'🇨🇻',score:'0-0',venue:'Atlanta'},{date:'Jun 16',home:'Saudi Arabia',hf:'🇸🇦',away:'Uruguay',af:'🇺🇾',score:'1-1',venue:'Miami'}],teams:[{name:'Spain',flag:'🇪🇸',pld:1,w:0,d:1,l:0,gf:0,ga:0,gd:0,pts:1,status:''},{name:'Uruguay',flag:'🇺🇾',pld:1,w:0,d:1,l:0,gf:1,ga:1,gd:0,pts:1,status:''},{name:'Cabo Verde',flag:'🇨🇻',pld:1,w:0,d:1,l:0,gf:0,ga:0,gd:0,pts:1,status:'maybe'},{name:'Saudi Arabia',flag:'🇸🇦',pld:1,w:0,d:1,l:0,gf:1,ga:1,gd:0,pts:1,status:''}]},
-I:{name:'I',matches:[{date:'Jun 17',home:'France',hf:'🇫🇷',away:'Senegal',af:'🇸🇳',score:'3-1',venue:'New Jersey'},{date:'Jun 17',home:'Iraq',hf:'🇮🇶',away:'Norway',af:'🇳🇴',score:'1-4',venue:'Boston'}],teams:[{name:'France',flag:'🇫🇷',pld:1,w:1,d:0,l:0,gf:3,ga:1,gd:2,pts:3,status:''},{name:'Norway',flag:'🇳🇴',pld:1,w:1,d:0,l:0,gf:4,ga:1,gd:3,pts:3,status:''},{name:'Senegal',flag:'🇸🇳',pld:1,w:0,d:0,l:1,gf:1,ga:3,gd:-2,pts:0,status:'maybe'},{name:'Iraq',flag:'🇮🇶',pld:1,w:0,d:0,l:1,gf:1,ga:4,gd:-3,pts:0,status:''}]},
-J:{name:'J',matches:[{date:'Jun 17',home:'Argentina',hf:'🇦🇷',away:'Algeria',af:'🇩🇿',score:'3-0',venue:'Kansas City'},{date:'Jun 17',home:'Austria',hf:'🇦🇹',away:'Jordan',af:'🇯🇴',score:'3-1',venue:'SF Bay Area'}],teams:[{name:'Argentina',flag:'🇦🇷',pld:1,w:1,d:0,l:0,gf:3,ga:0,gd:3,pts:3,status:''},{name:'Austria',flag:'🇦🇹',pld:1,w:1,d:0,l:0,gf:3,ga:1,gd:2,pts:3,status:''},{name:'Algeria',flag:'🇩🇿',pld:1,w:0,d:0,l:1,gf:0,ga:3,gd:-3,pts:0,status:'maybe'},{name:'Jordan',flag:'🇯🇴',pld:1,w:0,d:0,l:1,gf:1,ga:3,gd:-2,pts:0,status:''}]},
-K:{name:'K',matches:[{date:'Jun 18',home:'Portugal',hf:'🇵🇹',away:'Congo DR',af:'🇨🇩',score:'1-1',venue:'Houston'},{date:'Jun 18',home:'Uzbekistan',hf:'🇺🇿',away:'Colombia',af:'🇨🇴',score:'1-3',venue:'Mexico City'}],teams:[{name:'Colombia',flag:'🇨🇴',pld:1,w:1,d:0,l:0,gf:3,ga:1,gd:2,pts:3,status:''},{name:'Portugal',flag:'🇵🇹',pld:1,w:0,d:1,l:0,gf:1,ga:1,gd:0,pts:1,status:''},{name:'Congo DR',flag:'🇨🇩',pld:1,w:0,d:1,l:0,gf:1,ga:1,gd:0,pts:1,status:'maybe'},{name:'Uzbekistan',flag:'🇺🇿',pld:1,w:0,d:0,l:1,gf:1,ga:3,gd:-2,pts:0,status:''}]},
-L:{name:'L',matches:[{date:'Jun 18',home:'England',hf:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',away:'Croatia',af:'🇭🇷',score:'4-2',venue:'Dallas'},{date:'Jun 18',home:'Ghana',hf:'🇬🇭',away:'Panama',af:'🇵🇦',score:'1-0',venue:'Toronto'}],teams:[{name:'England',flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',pld:1,w:1,d:0,l:0,gf:4,ga:2,gd:2,pts:3,status:''},{name:'Ghana',flag:'🇬🇭',pld:1,w:1,d:0,l:0,gf:1,ga:0,gd:1,pts:3,status:''},{name:'Croatia',flag:'🇭🇷',pld:1,w:0,d:0,l:1,gf:2,ga:4,gd:-2,pts:0,status:'maybe'},{name:'Panama',flag:'🇵🇦',pld:1,w:0,d:0,l:1,gf:0,ga:1,gd:-1,pts:0,status:''}]}
+A:{name:'A',matches:[{date:'2026-06-11',home:'Mexico',hf:'MEX',away:'South Africa',af:'RSA',score:'2-0',venue:'Estadio Banorte'},{date:'2026-06-12',home:'Korea Republic',hf:'KOR',away:'Czechia',af:'CZE',score:'2-1',venue:'Estadio Akron'},{date:'2026-06-18',home:'Czechia',hf:'CZE',away:'South Africa',af:'RSA',score:'1-1',venue:'Mercedes-Benz Stadium'},{date:'2026-06-19',home:'Mexico',hf:'MEX',away:'Korea Republic',af:'KOR',score:'1-0',venue:'Estadio Akron'},{date:'2026-06-25',home:'Czechia',hf:'CZE',away:'Mexico',af:'MEX',score:'vs',venue:'Estadio Banorte'},{date:'2026-06-25',home:'South Africa',hf:'RSA',away:'Korea Republic',af:'KOR',score:'vs',venue:'Estadio BBVA'}],teams:[{name:'Mexico',flag:'🇲🇽',pld:2,w:2,d:0,l:0,gf:3,ga:0,gd:3,pts:6,status:''},{name:'Korea Republic',flag:'🇰🇷',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Czechia',flag:'🇨🇿',pld:2,w:0,d:1,l:1,gf:2,ga:3,gd:-1,pts:1,status:''},{name:'South Africa',flag:'🇿🇦',pld:2,w:0,d:1,l:1,gf:1,ga:3,gd:-2,pts:1,status:''}]},
+B:{name:'B',matches:[{date:'2026-06-12',home:'Canada',hf:'CAN',away:'Bosnia and Herzegovina',af:'BIH',score:'1-1',venue:'BMO Field'},{date:'2026-06-13',home:'Qatar',hf:'QAT',away:'Switzerland',af:'SUI',score:'1-1',venue:'Levi's Stadium'},{date:'2026-06-18',home:'Switzerland',hf:'SUI',away:'Bosnia and Herzegovina',af:'BIH',score:'4-1',venue:'SoFi Stadium'},{date:'2026-06-18',home:'Canada',hf:'CAN',away:'Qatar',af:'QAT',score:'6-0',venue:'BC Place'},{date:'2026-06-24',home:'Bosnia and Herzegovina',hf:'BIH',away:'Qatar',af:'QAT',score:'3-1',venue:'Lumen Field'},{date:'2026-06-24',home:'Switzerland',hf:'SUI',away:'Canada',af:'CAN',score:'2-1',venue:'BC Place'}],teams:[{name:'Switzerland',flag:'🇨🇭',pld:3,w:2,d:1,l:0,gf:7,ga:3,gd:4,pts:7,status:'qualified'},{name:'Canada',flag:'🇨🇦',pld:3,w:1,d:1,l:1,gf:8,ga:3,gd:5,pts:4,status:''},{name:'Bosnia and Herzegovina',flag:'🇧🇦',pld:3,w:1,d:1,l:1,gf:5,ga:6,gd:-1,pts:4,status:''},{name:'Qatar',flag:'🇶🇦',pld:3,w:0,d:1,l:2,gf:2,ga:10,gd:-8,pts:1,status:''}]},
+C:{name:'C',matches:[{date:'2026-06-13',home:'Brazil',hf:'BRA',away:'Morocco',af:'MAR',score:'1-1',venue:'MetLife Stadium'},{date:'2026-06-14',home:'Haiti',hf:'HAI',away:'Scotland',af:'SCO',score:'0-1',venue:'Gillette Stadium'},{date:'2026-06-19',home:'Scotland',hf:'SCO',away:'Morocco',af:'MAR',score:'0-1',venue:'Gillette Stadium'},{date:'2026-06-20',home:'Brazil',hf:'BRA',away:'Haiti',af:'HAI',score:'3-0',venue:'Lincoln Financial Field'},{date:'2026-06-24',home:'Morocco',hf:'MAR',away:'Haiti',af:'HAI',score:'vs',venue:'Mercedes-Benz Stadium'},{date:'2026-06-24',home:'Scotland',hf:'SCO',away:'Brazil',af:'BRA',score:'vs',venue:'Hard Rock Stadium'}],teams:[{name:'Brazil',flag:'🇧🇷',pld:2,w:1,d:1,l:0,gf:4,ga:1,gd:3,pts:4,status:''},{name:'Morocco',flag:'🇲🇦',pld:2,w:1,d:1,l:0,gf:2,ga:1,gd:1,pts:4,status:''},{name:'Scotland',flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',pld:2,w:1,d:0,l:1,gf:1,ga:1,gd:0,pts:3,status:''},{name:'Haiti',flag:'🇭🇹',pld:2,w:0,d:0,l:2,gf:0,ga:4,gd:-4,pts:0,status:''}]},
+D:{name:'D',matches:[{date:'2026-06-13',home:'USA',hf:'USA',away:'Paraguay',af:'PAR',score:'4-1',venue:'SoFi Stadium'},{date:'2026-06-14',home:'Australia',hf:'AUS',away:'Türkiye',af:'TUR',score:'2-0',venue:'BC Place'},{date:'2026-06-19',home:'USA',hf:'USA',away:'Australia',af:'AUS',score:'2-0',venue:'Lumen Field'},{date:'2026-06-20',home:'Türkiye',hf:'TUR',away:'Paraguay',af:'PAR',score:'0-1',venue:'Levi's Stadium'},{date:'2026-06-26',home:'Paraguay',hf:'PAR',away:'Australia',af:'AUS',score:'vs',venue:'Levi's Stadium'},{date:'2026-06-26',home:'Türkiye',hf:'TUR',away:'USA',af:'USA',score:'vs',venue:'SoFi Stadium'}],teams:[{name:'USA',flag:'🇺🇸',pld:2,w:2,d:0,l:0,gf:6,ga:1,gd:5,pts:6,status:''},{name:'Paraguay',flag:'🇵🇾',pld:2,w:1,d:0,l:1,gf:2,ga:4,gd:-2,pts:3,status:''},{name:'Australia',flag:'🇦🇺',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Türkiye',flag:'🇹🇷',pld:2,w:0,d:0,l:2,gf:0,ga:3,gd:-3,pts:0,status:''}]},
+E:{name:'E',matches:[{date:'2026-06-14',home:'Germany',hf:'GER',away:'Curaçao',af:'CUW',score:'7-1',venue:'NRG Stadium'},{date:'2026-06-14',home:'Côte d'Ivoire',hf:'CIV',away:'Ecuador',af:'ECU',score:'1-0',venue:'Lincoln Financial Field'},{date:'2026-06-20',home:'Germany',hf:'GER',away:'Côte d'Ivoire',af:'CIV',score:'2-1',venue:'BMO Field'},{date:'2026-06-21',home:'Ecuador',hf:'ECU',away:'Curaçao',af:'CUW',score:'0-0',venue:'GEHA Field at Arrowhead Stadium'},{date:'2026-06-25',home:'Curaçao',hf:'CUW',away:'Côte d'Ivoire',af:'CIV',score:'vs',venue:'Lincoln Financial Field'},{date:'2026-06-25',home:'Ecuador',hf:'ECU',away:'Germany',af:'GER',score:'vs',venue:'MetLife Stadium'}],teams:[{name:'Germany',flag:'🇩🇪',pld:2,w:2,d:0,l:0,gf:9,ga:2,gd:7,pts:6,status:''},{name:'Côte d'Ivoire',flag:'🇨🇮',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Curaçao',flag:'🇨🇼',pld:2,w:0,d:1,l:1,gf:1,ga:7,gd:-6,pts:1,status:''},{name:'Ecuador',flag:'🇪🇨',pld:2,w:0,d:1,l:1,gf:0,ga:1,gd:-1,pts:1,status:''}]},
+F:{name:'F',matches:[{date:'2026-06-14',home:'Netherlands',hf:'NED',away:'Japan',af:'JPN',score:'2-2',venue:'AT&T Stadium'},{date:'2026-06-15',home:'Sweden',hf:'SWE',away:'Tunisia',af:'TUN',score:'5-1',venue:'Estadio BBVA'},{date:'2026-06-20',home:'Netherlands',hf:'NED',away:'Sweden',af:'SWE',score:'5-1',venue:'NRG Stadium'},{date:'2026-06-21',home:'Tunisia',hf:'TUN',away:'Japan',af:'JPN',score:'0-4',venue:'Estadio BBVA'},{date:'2026-06-25',home:'Japan',hf:'JPN',away:'Sweden',af:'SWE',score:'vs',venue:'AT&T Stadium'},{date:'2026-06-25',home:'Tunisia',hf:'TUN',away:'Netherlands',af:'NED',score:'vs',venue:'GEHA Field at Arrowhead Stadium'}],teams:[{name:'Netherlands',flag:'🇳🇱',pld:2,w:1,d:1,l:0,gf:7,ga:3,gd:4,pts:4,status:''},{name:'Japan',flag:'🇯🇵',pld:2,w:1,d:1,l:0,gf:6,ga:2,gd:4,pts:4,status:''},{name:'Sweden',flag:'🇸🇪',pld:2,w:1,d:0,l:1,gf:6,ga:6,gd:0,pts:3,status:''},{name:'Tunisia',flag:'🇹🇳',pld:2,w:0,d:0,l:2,gf:1,ga:9,gd:-8,pts:0,status:''}]},
+G:{name:'G',matches:[{date:'2026-06-15',home:'Belgium',hf:'BEL',away:'Egypt',af:'EGY',score:'1-1',venue:'Lumen Field'},{date:'2026-06-16',home:'IR Iran',hf:'IRN',away:'New Zealand',af:'NZL',score:'2-2',venue:'SoFi Stadium'},{date:'2026-06-21',home:'Belgium',hf:'BEL',away:'IR Iran',af:'IRN',score:'0-0',venue:'SoFi Stadium'},{date:'2026-06-22',home:'New Zealand',hf:'NZL',away:'Egypt',af:'EGY',score:'1-3',venue:'BC Place'}],teams:[{name:'Egypt',flag:'🇪🇬',pld:2,w:1,d:1,l:0,gf:4,ga:2,gd:2,pts:4,status:''},{name:'IR Iran',flag:'🇮🇷',pld:2,w:0,d:2,l:0,gf:2,ga:2,gd:0,pts:2,status:''},{name:'Belgium',flag:'🇧🇪',pld:2,w:0,d:2,l:0,gf:1,ga:1,gd:0,pts:2,status:''},{name:'New Zealand',flag:'🇳🇿',pld:2,w:0,d:1,l:1,gf:3,ga:5,gd:-2,pts:1,status:''}]},
+H:{name:'H',matches:[{date:'2026-06-15',home:'Spain',hf:'ESP',away:'Cabo Verde',af:'CPV',score:'0-0',venue:'Mercedes-Benz Stadium'},{date:'2026-06-15',home:'Saudi Arabia',hf:'KSA',away:'Uruguay',af:'URU',score:'1-1',venue:'Hard Rock Stadium'},{date:'2026-06-21',home:'Spain',hf:'ESP',away:'Saudi Arabia',af:'KSA',score:'4-0',venue:'Mercedes-Benz Stadium'},{date:'2026-06-21',home:'Uruguay',hf:'URU',away:'Cabo Verde',af:'CPV',score:'2-2',venue:'Hard Rock Stadium'}],teams:[{name:'Spain',flag:'🇪🇸',pld:2,w:1,d:1,l:0,gf:4,ga:0,gd:4,pts:4,status:''},{name:'Uruguay',flag:'🇺🇾',pld:2,w:0,d:2,l:0,gf:3,ga:3,gd:0,pts:2,status:''},{name:'Cabo Verde',flag:'🇨🇻',pld:2,w:0,d:2,l:0,gf:2,ga:2,gd:0,pts:2,status:''},{name:'Saudi Arabia',flag:'🇸🇦',pld:2,w:0,d:1,l:1,gf:1,ga:5,gd:-4,pts:1,status:''}]},
+I:{name:'I',matches:[{date:'2026-06-16',home:'France',hf:'FRA',away:'Senegal',af:'SEN',score:'3-1',venue:'MetLife Stadium'},{date:'2026-06-16',home:'Iraq',hf:'IRQ',away:'Norway',af:'NOR',score:'1-4',venue:'Gillette Stadium'},{date:'2026-06-22',home:'France',hf:'FRA',away:'Iraq',af:'IRQ',score:'3-0',venue:'Lincoln Financial Field'},{date:'2026-06-23',home:'Norway',hf:'NOR',away:'Senegal',af:'SEN',score:'3-2',venue:'MetLife Stadium'}],teams:[{name:'Norway',flag:'🇳🇴',pld:2,w:2,d:0,l:0,gf:7,ga:3,gd:4,pts:6,status:''},{name:'France',flag:'🇫🇷',pld:2,w:2,d:0,l:0,gf:6,ga:1,gd:5,pts:6,status:''},{name:'Senegal',flag:'🇸🇳',pld:2,w:0,d:0,l:2,gf:3,ga:6,gd:-3,pts:0,status:''},{name:'Iraq',flag:'🇮🇶',pld:2,w:0,d:0,l:2,gf:1,ga:7,gd:-6,pts:0,status:''}]},
+J:{name:'J',matches:[{date:'2026-06-17',home:'Argentina',hf:'ARG',away:'Algeria',af:'ALG',score:'3-0',venue:'GEHA Field at Arrowhead Stadium'},{date:'2026-06-17',home:'Austria',hf:'AUT',away:'Jordan',af:'JOR',score:'3-1',venue:'Levi's Stadium'},{date:'2026-06-22',home:'Argentina',hf:'ARG',away:'Austria',af:'AUT',score:'2-0',venue:'AT&T Stadium'},{date:'2026-06-23',home:'Jordan',hf:'JOR',away:'Algeria',af:'ALG',score:'1-2',venue:'Levi's Stadium'}],teams:[{name:'Argentina',flag:'🇦🇷',pld:2,w:2,d:0,l:0,gf:5,ga:0,gd:5,pts:6,status:''},{name:'Austria',flag:'🇦🇹',pld:2,w:1,d:0,l:1,gf:3,ga:3,gd:0,pts:3,status:''},{name:'Algeria',flag:'🇩🇿',pld:2,w:1,d:0,l:1,gf:2,ga:4,gd:-2,pts:3,status:''},{name:'Jordan',flag:'🇯🇴',pld:2,w:0,d:0,l:2,gf:2,ga:5,gd:-3,pts:0,status:''}]},
+K:{name:'K',matches:[{date:'2026-06-17',home:'Portugal',hf:'POR',away:'Congo DR',af:'COD',score:'1-1',venue:'NRG Stadium'},{date:'2026-06-18',home:'Uzbekistan',hf:'UZB',away:'Colombia',af:'COL',score:'1-3',venue:'Estadio Banorte'},{date:'2026-06-23',home:'Portugal',hf:'POR',away:'Uzbekistan',af:'UZB',score:'5-0',venue:'NRG Stadium'},{date:'2026-06-24',home:'Colombia',hf:'COL',away:'Congo DR',af:'COD',score:'1-0',venue:'Estadio Akron'}],teams:[{name:'Colombia',flag:'🇨🇴',pld:2,w:2,d:0,l:0,gf:4,ga:1,gd:3,pts:6,status:''},{name:'Portugal',flag:'🇵🇹',pld:2,w:1,d:1,l:0,gf:6,ga:1,gd:5,pts:4,status:''},{name:'Congo DR',flag:'🇨🇩',pld:2,w:0,d:1,l:1,gf:1,ga:2,gd:-1,pts:1,status:''},{name:'Uzbekistan',flag:'🇺🇿',pld:2,w:0,d:0,l:2,gf:1,ga:8,gd:-7,pts:0,status:''}]},
+L:{name:'L',matches:[{date:'2026-06-17',home:'England',hf:'ENG',away:'Croatia',af:'CRO',score:'4-2',venue:'AT&T Stadium'},{date:'2026-06-17',home:'Ghana',hf:'GHA',away:'Panama',af:'PAN',score:'1-0',venue:'BMO Field'},{date:'2026-06-23',home:'England',hf:'ENG',away:'Ghana',af:'GHA',score:'0-0',venue:'Gillette Stadium'},{date:'2026-06-23',home:'Panama',hf:'PAN',away:'Croatia',af:'CRO',score:'0-1',venue:'BMO Field'}],teams:[{name:'England',flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',pld:2,w:1,d:1,l:0,gf:4,ga:2,gd:2,pts:4,status:''},{name:'Ghana',flag:'🇬🇭',pld:2,w:1,d:1,l:0,gf:1,ga:0,gd:1,pts:4,status:''},{name:'Croatia',flag:'🇭🇷',pld:2,w:1,d:0,l:1,gf:3,ga:4,gd:-1,pts:3,status:''},{name:'Panama',flag:'🇵🇦',pld:2,w:0,d:0,l:2,gf:0,ga:2,gd:-2,pts:0,status:''}]}
 };
 
 const upcomingMD3=[
-  {date:'Jun 22',time:'03:00',home:'Argentina',hf:'🇦🇷',away:'Austria',af:'🇦🇹',group:'J',venue:'Dallas'},
-  {date:'Jun 22',time:'07:00',home:'France',hf:'🇫🇷',away:'Iraq',af:'🇮🇶',group:'I',venue:'Philadelphia'},
-  {date:'Jun 22',time:'10:00',home:'Norway',hf:'🇳🇴',away:'Senegal',af:'🇸🇳',group:'I',venue:'New Jersey'},
-  {date:'Jun 22',time:'13:00',home:'Jordan',hf:'🇯🇴',away:'Algeria',af:'🇩🇿',group:'J',venue:'SF Bay Area'},
-  {date:'Jun 23',time:'03:00',home:'Portugal',hf:'🇵🇹',away:'Uzbekistan',af:'🇺🇿',group:'K',venue:'Houston'},
-  {date:'Jun 23',time:'06:00',home:'England',hf:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',away:'Ghana',af:'🇬🇭',group:'L',venue:'Boston'},
-  {date:'Jun 23',time:'09:00',home:'Panama',hf:'🇵🇦',away:'Croatia',af:'🇭🇷',group:'L',venue:'Toronto'},
-  {date:'Jun 23',time:'12:00',home:'Colombia',hf:'🇨🇴',away:'Congo DR',af:'🇨🇩',group:'K',venue:'Guadalajara'},
-  {date:'Jun 24',time:'05:00',home:'Switzerland',hf:'🇨🇭',away:'Canada',af:'🇨🇦',group:'B',venue:'Vancouver'},
-  {date:'Jun 24',time:'05:00',home:'Bosnia',hf:'🇧🇦',away:'Qatar',af:'🇶🇦',group:'B',venue:'Seattle'},
-  {date:'Jun 24',time:'08:00',home:'Scotland',hf:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',away:'Brazil',af:'🇧🇷',group:'C',venue:'Miami'},
-  {date:'Jun 24',time:'08:00',home:'Morocco',hf:'🇲🇦',away:'Haiti',af:'🇭🇹',group:'C',venue:'Atlanta'},
-  {date:'Jun 24',time:'11:00',home:'Czechia',hf:'🇨🇿',away:'Mexico',hf:'🇲🇽',group:'A',venue:'Mexico City'},
-  {date:'Jun 24',time:'11:00',home:'South Africa',hf:'🇿🇦',away:'South Korea',af:'🇰🇷',group:'A',venue:'Monterrey'},
-  {date:'Jun 25',time:'06:00',home:'Curaçao',hf:'🇨🇼',away:"Côte d'Ivoire",af:'🇨🇮',group:'E',venue:'Philadelphia'},
-  {date:'Jun 25',time:'06:00',home:'Ecuador',hf:'🇪🇨',away:'Germany',af:'🇩🇪',group:'E',venue:'New Jersey'},
-  {date:'Jun 25',time:'09:00',home:'Japan',hf:'🇯🇵',away:'Sweden',af:'🇸🇪',group:'F',venue:'Dallas'},
-  {date:'Jun 25',time:'09:00',home:'Tunisia',hf:'🇹🇳',away:'Netherlands',af:'🇳🇱',group:'F',venue:'Kansas City'},
-  {date:'Jun 25',time:'12:00',home:'Türkiye',hf:'🇹🇷',away:'USA',hf:'🇺🇸',group:'D',venue:'Los Angeles'},
-  {date:'Jun 25',time:'12:00',home:'Paraguay',hf:'🇵🇾',away:'Australia',af:'🇦🇺',group:'D',venue:'SF Bay Area'},
-  {date:'Jun 26',time:'10:00',home:'Cabo Verde',hf:'🇨🇻',away:'Saudi Arabia',af:'🇸🇦',group:'H',venue:'Houston'},
-  {date:'Jun 26',time:'10:00',home:'Uruguay',hf:'🇺🇾',away:'Spain',af:'🇪🇸',group:'H',venue:'Guadalajara'},
-  {date:'Jun 26',time:'13:00',home:'Egypt',hf:'🇪🇬',away:'Iran',af:'🇮🇷',group:'G',venue:'Seattle'},
-  {date:'Jun 26',time:'13:00',home:'New Zealand',hf:'🇳🇿',away:'Belgium',af:'🇧🇪',group:'G',venue:'Vancouver'},
-  {date:'Jun 27',time:'05:00',home:'Norway',hf:'🇳🇴',away:'France',hf:'🇫🇷',group:'I',venue:'Boston'},
-  {date:'Jun 27',time:'05:00',home:'Senegal',hf:'🇸🇳',away:'Iraq',af:'🇮🇶',group:'I',venue:'Toronto'},
-  {date:'Jun 27',time:'12:00',home:'Algeria',hf:'🇩🇿',away:'Austria',af:'🇦🇹',group:'J',venue:'Kansas City'},
-  {date:'Jun 27',time:'12:00',home:'Jordan',hf:'🇯🇴',away:'Argentina',af:'🇦🇷',group:'J',venue:'Dallas'},
-  {date:'Jun 28',time:'07:00',home:'Panama',hf:'🇵🇦',away:'England',hf:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',group:'L',venue:'New Jersey'},
-  {date:'Jun 28',time:'07:00',home:'Croatia',hf:'🇭🇷',away:'Ghana',af:'🇬🇭',group:'L',venue:'Philadelphia'},
-  {date:'Jun 28',time:'09:30',home:'Colombia',hf:'🇨🇴',away:'Portugal',hf:'🇵🇹',group:'K',venue:'Miami'},
-  {date:'Jun 28',time:'09:30',home:'Congo DR',hf:'🇨🇩',away:'Uzbekistan',af:'🇺🇿',group:'K',venue:'Atlanta'}
+{date:'2026-06-25',time:'10:00',home:'Czechia',hf:'CZE',away:'Mexico',af:'MEX',group:'A',venue:'Estadio Banorte'},
+{date:'2026-06-25',time:'10:00',home:'South Africa',hf:'RSA',away:'Korea Republic',af:'KOR',group:'A',venue:'Estadio BBVA'},
+{date:'2026-06-26',time:'13:00',home:'Paraguay',hf:'PAR',away:'Australia',af:'AUS',group:'D',venue:'Levi's Stadium'},
+{date:'2026-06-26',time:'13:00',home:'Türkiye',hf:'TUR',away:'USA',af:'USA',group:'D',venue:'SoFi Stadium'},
+{date:'2026-06-24',time:'11:00',home:'Morocco',hf:'MAR',away:'Haiti',af:'HAI',group:'C',venue:'Mercedes-Benz Stadium'},
+{date:'2026-06-24',time:'11:00',home:'Scotland',hf:'SCO',away:'Brazil',af:'BRA',group:'C',venue:'Hard Rock Stadium'},
+{date:'2026-06-25',time:'19:00',home:'Curaçao',hf:'CUW',away:'Côte d'Ivoire',af:'CIV',group:'E',venue:'Lincoln Financial Field'},
+{date:'2026-06-25',time:'19:00',home:'Ecuador',hf:'ECU',away:'Germany',af:'GER',group:'E',venue:'MetLife Stadium'},
+{date:'2026-06-25',time:'13:00',home:'Japan',hf:'JPN',away:'Sweden',af:'SWE',group:'F',venue:'AT&T Stadium'},
+{date:'2026-06-25',time:'13:00',home:'Tunisia',hf:'TUN',away:'Netherlands',af:'NED',group:'F',venue:'GEHA Field at Arrowhead Stadium'}
 ];
 
 const r32Matches=[
-  {date:'Jun 29',time:'05:00',slot:'2A vs 2B',venue:'Los Angeles'},
-  {date:'Jun 30',time:'03:00',slot:'1C vs 2F',venue:'Houston'},
-  {date:'Jun 30',time:'06:30',slot:'Germany vs 3ABCDF',venue:'Boston'},
-  {date:'Jun 30',time:'11:00',slot:'1F vs 2C',venue:'Monterrey'},
-  {date:'Jul 1',time:'03:00',slot:'2E vs 2I',venue:'Dallas'},
-  {date:'Jul 1',time:'07:00',slot:'1I vs 3CDFGH',venue:'New Jersey'},
-  {date:'Jul 1',time:'11:00',slot:'Mexico vs 3CEFHI',venue:'Mexico City'},
-  {date:'Jul 2',time:'02:00',slot:'1L vs 3EHIJK',venue:'Atlanta'},
-  {date:'Jul 2',time:'06:00',slot:'1G vs 3AEHIJ',venue:'Seattle'},
-  {date:'Jul 2',time:'10:00',slot:'USA vs 3BEFIJ',venue:'SF Bay Area'},
-  {date:'Jul 3',time:'05:00',slot:'1H vs 2J',venue:'Los Angeles'},
-  {date:'Jul 3',time:'09:00',slot:'2K vs 2L',venue:'Toronto'},
-  {date:'Jul 3',time:'13:00',slot:'1B vs 3EFGIJ',venue:'Vancouver'},
-  {date:'Jul 4',time:'04:00',slot:'2D vs 2G',venue:'Dallas'},
-  {date:'Jul 4',time:'08:00',slot:'1J vs 2H',venue:'Miami'},
-  {date:'Jul 4',time:'11:30',slot:'1K vs 3DEIJL',venue:'Kansas City'}
+{date:'Jun 30',time:'03:00',slot:'A1 vs B2',venue:'SoFi Stadium',a:'🇲🇽 Mexico',b:'🇨🇦 Canada'},
+{date:'Jun 30',time:'07:00',slot:'J1 vs EF2',venue:'Mercedes-Benz Stadium',a:'🇦🇷 Argentina',b:'TBD'},
+{date:'Jun 30',time:'11:00',slot:'L1 vs CFG',venue:'Hard Rock Stadium',a:'TBD',b:'TBD'},
+{date:'Jul 1',time:'03:00',slot:'C1 vs 3ABCD',venue:'NRG Stadium',a:'🇧🇷 Brazil',b:'TBD'},
+{date:'Jul 1',time:'07:00',slot:'G1 vs BEHI',venue:'Estadio BBVA',a:'TBD',b:'TBD'},
+{date:'Jul 1',time:'11:00',slot:'B1 vs 3ACDE',venue:'Gillette Stadium',a:'🇨🇭 Switzerland',b:'TBD'},
+{date:'Jul 1',time:'13:00',slot:'F1 vs DGH',venue:'Lincoln Financial Field',a:'TBD',b:'TBD'},
+{date:'Jul 2',time:'02:00',slot:'H1 vs CEI2',venue:'BC Place',a:'TBD',b:'TBD'},
+{date:'Jul 2',time:'02:00',slot:'2A vs C2',venue:'BMO Field',a:'TBD',b:'TBD'},
+{date:'Jul 2',time:'06:00',slot:'E1 vs A2I',venue:'AT&T Stadium',a:'🇩🇪 Germany',b:'TBD'},
+{date:'Jul 2',time:'10:00',slot:'D1 vs 3BCEF',venue:'Lumen Field',a:'🇺🇸 USA',b:'TBD'},
+{date:'Jul 3',time:'05:00',slot:'I1 vs GH2',venue:'MetLife Stadium',a:'🇫🇷 France',b:'TBD'},
+{date:'Jul 3',time:'09:00',slot:'TBD vs TBD',venue:'Estadio Akron',a:'TBD',b:'TBD'},
+{date:'Jul 3',time:'09:00',slot:'TBD vs TBD',venue:'Estadio Banorte',a:'TBD',b:'TBD'},
+{date:'Jul 3',time:'13:00',slot:'K1 vs BDHJ',venue:'GEHA Field',a:'🇨🇴 Colombia',b:'TBD'},
+{date:'Jul 4',time:'11:30',slot:'TBD vs TBD',venue:'Levi\'s Stadium',a:'TBD',b:'TBD'}
 ];
 
 const topScorers=[
-  {name:'Lionel Messi',team:'Argentina',flag:'🇦🇷',goals:3},
-  {name:'Jonathan David',team:'Canada',flag:'🇨🇦',goals:3},
-  {name:'Deniz Undav',team:'Germany',flag:'🇩🇪',goals:3},
-  {name:'Alphonso Davies',team:'Canada',flag:'🇨🇦',goals:2},
-  {name:'Christian Pulisic',team:'USA',flag:'🇺🇸',goals:2},
-  {name:'Rafael Leão',team:'Portugal',flag:'🇵🇹',goals:2},
-  {name:'Takefusa Kubo',team:'Japan',flag:'🇯🇵',goals:2},
-  {name:'Leroy Sané',team:'Germany',flag:'🇩🇪',goals:2},
-  {name:'Gabriel Martinelli',team:'Brazil',flag:'🇧🇷',goals:2},
-  {name:'Bukayo Saka',team:'England',flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',goals:2}
+{name:'Peniz Güler',team:'Germany',flag:'🇩🇪',goals:4},
+{name:'Kai Havertz',team:'Germany',flag:'🇩🇪',goals:3},
+{name:'Ángel Di María',team:'Argentina',flag:'🇦🇷',goals:3},
+{name:'Harry Kane',team:'England',flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',goals:3},
+{name:'Ferran Torres',team:'Spain',flag:'🇪🇸',goals:2},
+{name:'Ousmane Dembélé',team:'France',flag:'🇫🇷',goals:2},
+{name:'Frenkie de Jong',team:'Netherlands',flag:'🇳🇱',goals:2},
+{name:'Bukayo Saka',team:'England',flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',goals:2},
+{name:'Christian Pulisic',team:'USA',flag:'🇺🇸',goals:2},
+{name:'Lionel Messi',team:'Argentina',flag:'🇦🇷',goals:2}
 ];
 
 const venues=[

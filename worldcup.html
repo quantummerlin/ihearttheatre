@@ -40,11 +40,10 @@
   /* Accordion styles for mobile */
   .accordion-header{display:none;width:100%;padding:14px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:8px;margin-bottom:4px;color:var(--text);font-family:'Oswald',sans-serif;font-size:14px;font-weight:500;letter-spacing:1px;text-transform:uppercase;cursor:pointer;text-align:left;transition:all .2s}
   .accordion-header:hover{background:var(--bg-card-hover)}
-  .accordion-header.active{background:linear-gradient(135deg,var(--green),var(--green-dark));color:var(--gold-light)}
-  .accordion-header .arrow{display:inline-block;margin-right:8px;transition:transform .2s;font-size:10px}
-  .accordion-header[aria-expanded="true"] .arrow{transform:rotate(90deg)}
+  .accordion-header.open{background:linear-gradient(135deg,var(--green),var(--green-dark));color:var(--gold-light);border-color:var(--green)}
+  .accordion-header.open .arrow{transform:rotate(90deg)}
   .accordion-panel{display:none;padding:20px 16px;border:1px solid var(--border);border-top:none;border-radius:0 0 8px 8px;margin-bottom:12px;background:var(--bg-card)}
-  .accordion-panel.open{display:block;animation:fadeIn .3s ease}
+  .accordion-panel.open{display:block;animation:fadeIn .3s ease;border-color:var(--green);border-width:2px}
   .panel-title{font-family:'Oswald',sans-serif;font-size:26px;font-weight:600;text-transform:uppercase;letter-spacing:2px;color:var(--gold);margin-bottom:4px}
   .panel-desc{color:var(--text-dim);font-size:13px;margin-bottom:22px}
   .stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:28px}
@@ -188,7 +187,7 @@
   <div class="hero-badge">June 11 – July 19, 2026 &nbsp;·&nbsp; USA · Canada · Mexico</div>
   <h1>2026 FIFA <span>World Cup</span></h1>
   <div class="hero-sub">48 Teams · 12 Groups · 104 Matches &nbsp;|&nbsp; Knockout Stage Explorer</div>
-  <div class="update-time">Results updated through June 21, 2026 · 3 groups decided, 3 teams eliminated · New H2H tiebreaker in effect</div>
+  <div class="update-time">Results updated through June 24, 2026 · 3 groups decided, 3 teams eliminated · New H2H tiebreaker in effect</div>
   <div class="countdown-bar" id="countdown-bar" role="timer" aria-live="polite" aria-label="Countdown to next match">
     <span class="countdown-label">Next match:</span>
     <div class="countdown-match" id="countdown-match"></div>
@@ -221,12 +220,12 @@
   <div class="stats-row">
     <div class="stat-card"><div class="stat-value">48</div><div class="stat-label">Teams</div></div>
     <div class="stat-card"><div class="stat-value">12</div><div class="stat-label">Groups</div></div>
-    <div class="stat-card"><div class="stat-value">39</div><div class="stat-label">Matches Played</div></div>
-    <div class="stat-card"><div class="stat-value">117</div><div class="stat-label">Goals Scored</div></div>
+    <div class="stat-card"><div class="stat-value">44</div><div class="stat-label">Matches Played</div></div>
+    <div class="stat-card"><div class="stat-value">132</div><div class="stat-label">Goals Scored</div></div>
     <div class="stat-card"><div class="stat-value">3.0</div><div class="stat-label">Goals / Match</div></div>
     <div class="stat-card"><div class="stat-value">32</div><div class="stat-label">Knockout Teams</div></div>
   </div>
-  <div class="info-box"><strong>Current status:</strong> Group stage matchday 2 is complete (through June 21). Matchday 3 runs June 22–27. The Round of 32 begins June 29.</div>
+  <div class="info-box"><strong>Current status:</strong> Group stage matchday 2 is complete (through June 24). Matchday 3 runs June 25–28. The Round of 32 begins June 29.</div>
   <div class="info-box" style="border-color:var(--accent-blue);background:linear-gradient(135deg,rgba(58,124,191,.06),rgba(26,92,42,.06))">
     <strong>⚠️ New Tiebreaker Rule — Head-to-Head!</strong> For the first time in World Cup history, FIFA is using <strong>head-to-head</strong> as the primary tiebreaker instead of goal difference.<br><br>
     <strong>Full order:</strong><ol style="margin-top:8px;padding-left:18px;line-height:1.8;">
@@ -263,7 +262,7 @@
 <div class="accordion-panel" data-panel="results">
 
   <div class="panel-title">Match Results</div>
-  <div class="panel-desc">All completed matches through June 21, 2026.</div>
+  <div class="panel-desc">All completed matches through June 24, 2026.</div>
   <div class="search-container"><span class="search-icon" aria-hidden="true">🔍</span><input type="text" class="search-input" id="results-search" placeholder="Search teams..." aria-label="Search matches by team name" oninput="filterResults()"><button class="search-clear" id="results-search-clear" onclick="clearResultsSearch()" aria-label="Clear search">✕</button></div>
   <div class="search-results-count" id="results-search-count"></div>
   <div class="match-list" id="match-list"></div>
@@ -288,7 +287,7 @@
 <div class="accordion-panel" data-panel="upcoming">
 
   <div class="panel-title">Upcoming Matches</div>
-  <div class="panel-desc">Matchday 3 and Round of 32 fixtures.</div>
+  <div class="panel-desc">Matchday 3 and Round of 32 fixtures. Today: June 25, 2026.</div>
   <div class="search-container"><span class="search-icon" aria-hidden="true">🔍</span><input type="text" class="search-input" id="upcoming-search" placeholder="Search teams..." aria-label="Search upcoming matches by team name" oninput="filterUpcoming()"><button class="search-clear" id="upcoming-search-clear" onclick="clearUpcomingSearch()" aria-label="Clear search">✕</button></div>
   <div class="search-results-count" id="upcoming-search-count"></div>
   <div id="upcoming-md3"><h3 style="font-family:'Oswald',sans-serif;font-size:16px;color:var(--gold);margin:16px 0 10px;letter-spacing:1px;">Matchday 3 — Group Stage</h3><div class="match-list" id="upcoming-list"></div><div class="no-results" id="upcoming-no-results" style="display:none;">No upcoming matches found.</div></div>
@@ -309,7 +308,7 @@
   <h3 style="font-family:'Oswald',sans-serif;font-size:16px;color:var(--gold);margin:20px 0 12px;letter-spacing:1px;">Venue Details</h3>
   <div id="venue-details"></div>
 </div></div>
-<div class="footer">2026 FIFA World Cup Knockout Stage Explorer · Built with ⚽ by Holly<br>Results through June 21, 2026 · Source: FIFA.com</div>
+<div class="footer">2026 FIFA World Cup Knockout Stage Explorer · Built with ⚽ by Holly<br>Results through June 24, 2026 · Source: FIFA.com</div>
 <script>
 const groupsData={
 A:{name:'A',matches:[{date:'Jun 11',home:'Mexico',hf:'🇲🇽',away:'South Africa',af:'🇿🇦',score:'2-0',venue:'Mexico City'},{date:'Jun 11',home:'South Korea',hf:'🇰🇷',away:'Czechia',af:'🇨🇿',score:'2-1',venue:'Guadalajara'},{date:'Jun 18',home:'Czechia',hf:'🇨🇿',away:'South Africa',af:'🇿🇦',score:'1-1',venue:'Atlanta'},{date:'Jun 19',home:'Mexico',hf:'🇲🇽',away:'South Korea',af:'🇰🇷',score:'1-0',venue:'Guadalajara'}],teams:[{name:'Mexico',flag:'🇲🇽',pld:2,w:2,d:0,l:0,gf:3,ga:0,gd:3,pts:6,status:'group-winner'},{name:'South Korea',flag:'🇰🇷',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Czechia',flag:'🇨🇿',pld:2,w:0,d:1,l:1,gf:2,ga:3,gd:-1,pts:1,status:'maybe'},{name:'South Africa',flag:'🇿🇦',pld:2,w:0,d:1,l:1,gf:1,ga:3,gd:-2,pts:1,status:''}]},
@@ -414,7 +413,11 @@ const venues=[
 
 // ============================================================
 // TAB / ACCORDION NAVIGATION
+let accordionAnim=false;
 function showPanel(id){
+  if(accordionAnim) return;
+  accordionAnim=true;
+  setTimeout(()=>{accordionAnim=false;},350);
   // Desktop: show panel, update tab states
   document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>{t.classList.remove('active');t.setAttribute('aria-selected','false')});
@@ -424,19 +427,33 @@ function showPanel(id){
   if(tab){tab.classList.add('active');tab.setAttribute('aria-selected','true')}
   // Mobile: show accordion panel, update header states
   document.querySelectorAll('.accordion-panel').forEach(p=>p.classList.remove('open'));
-  document.querySelectorAll('.accordion-header').forEach(h=>h.setAttribute('aria-expanded','false'));
+  document.querySelectorAll('.accordion-header').forEach(h=>{h.classList.remove('open');h.setAttribute('aria-expanded','false')});
   var accPanel=document.querySelector('.accordion-panel[data-panel="'+id+'"]');
   if(accPanel)accPanel.classList.add('open');
   var accHeader=document.querySelector('.accordion-header[data-panel="'+id+'"]');
-  if(accHeader)accHeader.setAttribute('aria-expanded','true');
+  if(accHeader){accHeader.classList.add('open');accHeader.setAttribute('aria-expanded','true')}
 }
 // Desktop tab clicks
 document.querySelectorAll('.tab').forEach(function(tab){
   tab.addEventListener('click',function(){showPanel(this.getAttribute('data-panel'))});
 });
-// Mobile accordion clicks
+// Mobile accordion clicks — scroll content into view
 document.querySelectorAll('.accordion-header').forEach(function(hdr){
-  hdr.addEventListener('click',function(){showPanel(this.getAttribute('data-panel'))});
+  hdr.addEventListener('click',function(){
+    const panelId=this.getAttribute('data-panel');
+    if(accordionAnim) return; // debounce rapid taps
+    showPanel(panelId);
+    // Scroll header into view on mobile (so content below is visible)
+    if(window.innerWidth<=768){
+      setTimeout(()=>{
+        const hdrRect=this.getBoundingClientRect();
+        const viewportH=window.innerHeight;
+        if(hdrRect.bottom>viewportH*0.4){
+          this.scrollIntoView({behavior:'instant',block:'start'});
+        }
+      },50);
+    }
+  });
 });
 
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
@@ -476,7 +493,7 @@ function renderResults(){
     groupsData[key].matches.forEach(m=>{allMatches.push({...m,group:key})});
   }
   allMatches.sort((a,b)=>{
-    const o={'Jun 11':1,'Jun 12':2,'Jun 13':3,'Jun 14':4,'Jun 15':5,'Jun 16':6,'Jun 17':7,'Jun 18':8,'Jun 19':9,'Jun 20':10,'Jun 21':11};
+    const o={'Jun 11':1,'Jun 12':2,'Jun 13':3,'Jun 14':4,'Jun 15':5,'Jun 16':6,'Jun 17':7,'Jun 18':8,'Jun 19':9,'Jun 20':10,'Jun 21':11,'Jun 22':12,'Jun 23':13,'Jun 24':14,'Jun 25':15,'Jun 26':16,'Jun 27':17,'Jun 28':18};
     return(o[a.date]||99)-(o[b.date]||99);
   });
   allMatches.forEach(m=>{
@@ -575,11 +592,11 @@ function renderBracket(){
 function renderUpcoming(){
   const md3List=document.getElementById('upcoming-list');
   const r32List=document.getElementById('r32-list');
-  const today='Jun 23'; // Simulated "today" for demo; in production use new Date()
+  const today='Jun 25'; // Simulated "today" for demo; in production use new Date()
   let html3='';
   upcomingMD3.forEach(m=>{
     const isToday=m.date===today;
-    const isLive=m.date==='Jun 22'; // Simulated live
+    const isLive=m.date==='Jun 24'; // Simulated live (yesterday's matches now finishing)
     const extraClass=isLive?' live-match':(isToday?' today-match':'');
     const indicator=isLive?'<span class="live-indicator">LIVE</span>':(isToday?'<span class="today-indicator">TODAY</span>':'');
     html3+=`<div class="match-item${extraClass}" data-teams="${esc(m.home)} ${esc(m.away)}">
@@ -733,7 +750,7 @@ function applyResult(teams,home,away,outcome){
 }
 
 function initCountdown(){
-  const simulatedNow=new Date('2026-06-23T05:00:00Z');
+  const simulatedNow=new Date('2026-06-25T05:00:00Z');
   let nextMatch=null;
   for(const m of upcomingMD3){
     const matchDate=parseMatchDate(m.date,m.time);

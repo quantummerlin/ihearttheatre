@@ -138,6 +138,7 @@
   .scenario-table td:nth-child(n+2){text-align:center}
   .scenario-table tr:hover td{background:rgba(212,168,67,.03)}
   .outcome-advances{color:#4caf50;font-weight:600}.outcome-eliminated{color:var(--accent-red);font-weight:600}.outcome-possible{color:var(--gold);font-weight:600}
+  .proj-bar{display:flex;align-items:center;gap:6px;margin-top:2px}.proj-bar-fill{height:4px;border-radius:2px;transition:width .3s}.proj-bar-label{font-size:9px;color:var(--text-dim);white-space:nowrap}
   .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   .scorer-card{display:flex;align-items:center;gap:10px;padding:10px 14px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:8px;margin-bottom:6px}
   .scorer-rank{font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:var(--gold-dark);min-width:24px;text-align:center}
@@ -187,7 +188,7 @@
   <div class="hero-badge">June 11 – July 19, 2026 &nbsp;·&nbsp; USA · Canada · Mexico</div>
   <h1>2026 FIFA <span>World Cup</span></h1>
   <div class="hero-sub">48 Teams · 12 Groups · 104 Matches &nbsp;|&nbsp; Knockout Stage Explorer</div>
-  <div class="update-time">Results updated through June 25, 2026 · Group A MD3 LIVE · Switzerland qualified (Group B winner) · 52 completed matches · Matchday 3 continues tonight</div>
+  <div class="update-time">Results updated through June 25, 2026 · Group A MD3 LIVE · Switzerland qualified (Group B winner) · 54 completed matches · Matchday 3 continues tonight</div>
   <div class="countdown-bar" id="countdown-bar" role="timer" aria-live="polite" aria-label="Countdown to next match">
     <span class="countdown-label">Next match:</span>
     <div class="countdown-match" id="countdown-match"></div>
@@ -221,7 +222,7 @@
     <div class="stat-card"><div class="stat-value">48</div><div class="stat-label">Teams</div></div>
     <div class="stat-card"><div class="stat-value">12</div><div class="stat-label">Groups</div></div>
     <div class="stat-card"><div class="stat-value">54</div><div class="stat-label">Matches Played</div></div>
-    <div class="stat-card"><div class="stat-value">157</div><div class="stat-label">Goals Scored</div></div>
+    <div class="stat-card"><div class="stat-value">160</div><div class="stat-label">Goals Scored</div></div>
     <div class="stat-card"><div class="stat-value">3.0</div><div class="stat-label">Goals / Match</div></div>
     <div class="stat-card"><div class="stat-value">32</div><div class="stat-label">Knockout Teams</div></div>
   </div>
@@ -308,7 +309,7 @@
   <h3 style="font-family:'Oswald',sans-serif;font-size:16px;color:var(--gold);margin:20px 0 12px;letter-spacing:1px;">Venue Details</h3>
   <div id="venue-details"></div>
 </div></div>
-<div class="footer">2026 FIFA World Cup Knockout Stage Explorer · Built with ⚽ by Holly<br>Results through June 25, 2026 (Group A MD3 LIVE) · Data: ESPN / FIFA.com</div>
+<div class="footer">2026 FIFA World Cup Knockout Stage Explorer · Built with ⚽ by Holly<br>Results through June 25, 2026 · 54 matches · 160 goals · Data: ESPN / FIFA.com</div>
 <script>
 const groupsData={
 A:{name:'A',matches:[{date:'2026-06-11',home:'Mexico',hf:'MEX',away:'South Africa',af:'RSA',score:'2-0',venue:'Estadio Banorte'},{date:'2026-06-12',home:'Korea Republic',hf:'KOR',away:'Czechia',af:'CZE',score:'2-1',venue:'Estadio Akron'},{date:'2026-06-18',home:'Czechia',hf:'CZE',away:'South Africa',af:'RSA',score:'1-1',venue:'Mercedes-Benz Stadium'},{date:'2026-06-19',home:'Mexico',hf:'MEX',away:'Korea Republic',af:'KOR',score:'1-0',venue:'Estadio Akron'},{date:'2026-06-25',home:'Czechia',hf:'CZE',away:'Mexico',af:'MEX',score:'0-2',venue:'Estadio Banorte'},{date:'2026-06-25',home:'South Africa',hf:'RSA',away:'Korea Republic',af:'KOR',score:'1-0',venue:'Estadio BBVA'}],teams:[{name:'Mexico',flag:'🇲🇽',pld:2,w:2,d:0,l:0,gf:3,ga:0,gd:3,pts:6,status:''},{name:'Korea Republic',flag:'🇰🇷',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Czechia',flag:'🇨🇿',pld:2,w:0,d:1,l:1,gf:2,ga:3,gd:-1,pts:1,status:''},{name:'South Africa',flag:'🇿🇦',pld:2,w:0,d:1,l:1,gf:1,ga:3,gd:-2,pts:1,status:''}]},
@@ -326,11 +327,9 @@ L:{name:'L',matches:[{date:'2026-06-17',home:'England',hf:'ENG',away:'Croatia',a
 };
 
 const upcomingMD3=[
-{date:'2026-06-25',time:'10:00',home:'Czechia',hf:'CZE',away:'Mexico',af:'MEX',group:'A',venue:'Estadio Banorte'},
-{date:'2026-06-25',time:'10:00',home:'South Africa',hf:'RSA',away:'Korea Republic',af:'KOR',group:'A',venue:'Estadio BBVA'},
-{date:'2026-06-26',time:'13:00',home:'Paraguay',hf:'PAR',away:'Australia',af:'AUS',group:'D',venue:'Levi's Stadium'},
+{date:'2026-06-26',time:'13:00',home:'Paraguay',hf:'PAR',away:'Australia',af:'AUS',group:'D',venue:'Levi\'s Stadium'},
 {date:'2026-06-26',time:'13:00',home:'Türkiye',hf:'TUR',away:'USA',af:'USA',group:'D',venue:'SoFi Stadium'},
-{date:'2026-06-25',time:'19:00',home:'Curaçao',hf:'CUW',away:'Côte d'Ivoire',af:'CIV',group:'E',venue:'Lincoln Financial Field'},
+{date:'2026-06-25',time:'19:00',home:'Curaçao',hf:'CUW',away:'Côte d\'Ivoire',af:'CIV',group:'E',venue:'Lincoln Financial Field'},
 {date:'2026-06-25',time:'19:00',home:'Ecuador',hf:'ECU',away:'Germany',af:'GER',group:'E',venue:'MetLife Stadium'},
 {date:'2026-06-25',time:'13:00',home:'Japan',hf:'JPN',away:'Sweden',af:'SWE',group:'F',venue:'AT&T Stadium'},
 {date:'2026-06-25',time:'13:00',home:'Tunisia',hf:'TUN',away:'Netherlands',af:'NED',group:'F',venue:'GEHA Field at Arrowhead Stadium'}
@@ -439,7 +438,7 @@ function renderGroups(){
   let html='';
   for(const key of Object.keys(groupsData)){
     const g=groupsData[key];
-    const hasGW=g.teams.some(t=>t.status==='group-winner');
+    const hasGW=g.teams.some(t=>t.status==='group-winner'||t.status==='qualified');
     const hasEl=g.teams.some(t=>t.status==='eliminated');
     let sl='MD3 pending';
     if(hasGW&&hasEl)sl='🏆 Winner confirmed';
@@ -450,7 +449,7 @@ function renderGroups(){
     g.teams.forEach((t,i)=>{
       const pc=i<2?'pos-advances':(i===2?'pos-maybe':'pos-out');
       let st='';
-      if(t.status==='group-winner')st='<span class="clinched">🏆 WINNER</span>';
+      if(t.status==='group-winner'||t.status==='qualified')st='<span class="clinched">🏆 WINNER</span>';
       else if(t.status==='eliminated')st='<span class="eliminated">✗ OUT</span>';
       html+=`<tr><td><span class="pos-dot ${pc}" aria-hidden="true"></span><span class="team-flag">${t.flag}</span>${esc(t.name)}${st}</td>
         <td>${t.pld}</td><td>${t.w}</td><td>${t.d}</td><td>${t.l}</td>

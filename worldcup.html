@@ -187,7 +187,7 @@
   <div class="hero-badge">June 11 – July 19, 2026 &nbsp;·&nbsp; USA · Canada · Mexico</div>
   <h1>2026 FIFA <span>World Cup</span></h1>
   <div class="hero-sub">48 Teams · 12 Groups · 104 Matches &nbsp;|&nbsp; Knockout Stage Explorer</div>
-  <div class="update-time">Results updated through June 24, 2026 · Switzerland qualified (Group B winner) · 50 completed matches · Matchday 3: June 25–26</div>
+  <div class="update-time">Results updated through June 25, 2026 · Group A MD3 LIVE · Switzerland qualified (Group B winner) · 52 completed matches · Matchday 3 continues tonight</div>
   <div class="countdown-bar" id="countdown-bar" role="timer" aria-live="polite" aria-label="Countdown to next match">
     <span class="countdown-label">Next match:</span>
     <div class="countdown-match" id="countdown-match"></div>
@@ -220,12 +220,12 @@
   <div class="stats-row">
     <div class="stat-card"><div class="stat-value">48</div><div class="stat-label">Teams</div></div>
     <div class="stat-card"><div class="stat-value">12</div><div class="stat-label">Groups</div></div>
-    <div class="stat-card"><div class="stat-value">50</div><div class="stat-label">Matches Played</div></div>
-    <div class="stat-card"><div class="stat-value">148</div><div class="stat-label">Goals Scored</div></div>
+    <div class="stat-card"><div class="stat-value">52</div><div class="stat-label">Matches Played</div></div>
+    <div class="stat-card"><div class="stat-value">155</div><div class="stat-label">Goals Scored</div></div>
     <div class="stat-card"><div class="stat-value">3.0</div><div class="stat-label">Goals / Match</div></div>
     <div class="stat-card"><div class="stat-value">32</div><div class="stat-label">Knockout Teams</div></div>
   </div>
-  <div class="info-box"><strong>Current status:</strong> Group stage matchday 2 is complete (through June 24). Matchday 3 runs June 25–26. Switzerland is the first confirmed group winner (Group B, 7pts). The Round of 32 begins June 30.</div>
+  <div class="info-box"><strong>Current status:</strong> Group A Matchday 3 is LIVE (CZE 0-2 MEX, RSA 1-0 KOR). Groups B and C MD3 completed Jun 24. Switzerland is the first confirmed knockout qualifier (Group B, 7pts). Groups D-F MD3 play tonight (Jun 25-26). The Round of 32 begins June 30.</div>
   <div class="info-box" style="border-color:var(--accent-blue);background:linear-gradient(135deg,rgba(58,124,191,.06),rgba(26,92,42,.06))">
     <strong>⚠️ New Tiebreaker Rule — Head-to-Head!</strong> For the first time in World Cup history, FIFA is using <strong>head-to-head</strong> as the primary tiebreaker instead of goal difference.<br><br>
     <strong>Full order:</strong><ol style="margin-top:8px;padding-left:18px;line-height:1.8;">
@@ -236,7 +236,7 @@
     <li>Overall group goals scored</li>
     <li>Fair play points (yellow −1, indirect red −3, straight red −4, yellow+red −5)</li>
     <li>FIFA World Ranking</li></ol>
-    <p style="margin-top:10px;"><strong>Impact so far:</strong> 🇲🇽 Mexico, 🇺🇸 USA, and 🇩🇪 Germany have all won their groups with a game to spare. 🇭🇹 Haiti, 🇹🇷 Türkiye, and 🇹🇳 Tunisia are eliminated.</p>
+    <p style="margin-top:10px;"><strong>Impact so far:</strong> 🇲🇽 Mexico, 🇺🇸 USA, and 🇩🇪 Germany have all won their groups with a game to spare. 🇭🇹 Haiti, 🇹🇷 Türkiye, and 🇹🇳 Tunisia are eliminated. 🇧🇷 Brazil and 🇲🇦 Morocco both have 7pts in Group C with H2H deciding the winner.</p>
   </div>
   <h3 style="font-family:'Oswald',sans-serif;font-size:18px;color:var(--gold);margin:20px 0 12px;letter-spacing:1px;">Knockout Stage Path</h3>
   <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px;">
@@ -287,7 +287,7 @@
 <div class="accordion-panel" data-panel="upcoming">
 
   <div class="panel-title">Upcoming Matches</div>
-  <div class="panel-desc">Matchday 3 and Round of 32 fixtures. Today: June 25, 2026.</div>
+  <div class="panel-desc">Matchday 3 and Round of 32 fixtures. Group A MD3 is LIVE · Today: June 25, 2026.</div>
   <div class="search-container"><span class="search-icon" aria-hidden="true">🔍</span><input type="text" class="search-input" id="upcoming-search" placeholder="Search teams..." aria-label="Search upcoming matches by team name" oninput="filterUpcoming()"><button class="search-clear" id="upcoming-search-clear" onclick="clearUpcomingSearch()" aria-label="Clear search">✕</button></div>
   <div class="search-results-count" id="upcoming-search-count"></div>
   <div id="upcoming-md3"><h3 style="font-family:'Oswald',sans-serif;font-size:16px;color:var(--gold);margin:16px 0 10px;letter-spacing:1px;">Matchday 3 — Group Stage</h3><div class="match-list" id="upcoming-list"></div><div class="no-results" id="upcoming-no-results" style="display:none;">No upcoming matches found.</div></div>
@@ -313,7 +313,7 @@
 const groupsData={
 A:{name:'A',matches:[{date:'2026-06-11',home:'Mexico',hf:'MEX',away:'South Africa',af:'RSA',score:'2-0',venue:'Estadio Banorte'},{date:'2026-06-12',home:'Korea Republic',hf:'KOR',away:'Czechia',af:'CZE',score:'2-1',venue:'Estadio Akron'},{date:'2026-06-18',home:'Czechia',hf:'CZE',away:'South Africa',af:'RSA',score:'1-1',venue:'Mercedes-Benz Stadium'},{date:'2026-06-19',home:'Mexico',hf:'MEX',away:'Korea Republic',af:'KOR',score:'1-0',venue:'Estadio Akron'},{date:'2026-06-25',home:'Czechia',hf:'CZE',away:'Mexico',af:'MEX',score:'vs',venue:'Estadio Banorte'},{date:'2026-06-25',home:'South Africa',hf:'RSA',away:'Korea Republic',af:'KOR',score:'vs',venue:'Estadio BBVA'}],teams:[{name:'Mexico',flag:'🇲🇽',pld:2,w:2,d:0,l:0,gf:3,ga:0,gd:3,pts:6,status:''},{name:'Korea Republic',flag:'🇰🇷',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Czechia',flag:'🇨🇿',pld:2,w:0,d:1,l:1,gf:2,ga:3,gd:-1,pts:1,status:''},{name:'South Africa',flag:'🇿🇦',pld:2,w:0,d:1,l:1,gf:1,ga:3,gd:-2,pts:1,status:''}]},
 B:{name:'B',matches:[{date:'2026-06-12',home:'Canada',hf:'CAN',away:'Bosnia and Herzegovina',af:'BIH',score:'1-1',venue:'BMO Field'},{date:'2026-06-13',home:'Qatar',hf:'QAT',away:'Switzerland',af:'SUI',score:'1-1',venue:'Levi's Stadium'},{date:'2026-06-18',home:'Switzerland',hf:'SUI',away:'Bosnia and Herzegovina',af:'BIH',score:'4-1',venue:'SoFi Stadium'},{date:'2026-06-18',home:'Canada',hf:'CAN',away:'Qatar',af:'QAT',score:'6-0',venue:'BC Place'},{date:'2026-06-24',home:'Bosnia and Herzegovina',hf:'BIH',away:'Qatar',af:'QAT',score:'3-1',venue:'Lumen Field'},{date:'2026-06-24',home:'Switzerland',hf:'SUI',away:'Canada',af:'CAN',score:'2-1',venue:'BC Place'}],teams:[{name:'Switzerland',flag:'🇨🇭',pld:3,w:2,d:1,l:0,gf:7,ga:3,gd:4,pts:7,status:'qualified'},{name:'Canada',flag:'🇨🇦',pld:3,w:1,d:1,l:1,gf:8,ga:3,gd:5,pts:4,status:''},{name:'Bosnia and Herzegovina',flag:'🇧🇦',pld:3,w:1,d:1,l:1,gf:5,ga:6,gd:-1,pts:4,status:''},{name:'Qatar',flag:'🇶🇦',pld:3,w:0,d:1,l:2,gf:2,ga:10,gd:-8,pts:1,status:''}]},
-C:{name:'C',matches:[{date:'2026-06-13',home:'Brazil',hf:'BRA',away:'Morocco',af:'MAR',score:'1-1',venue:'MetLife Stadium'},{date:'2026-06-14',home:'Haiti',hf:'HAI',away:'Scotland',af:'SCO',score:'0-1',venue:'Gillette Stadium'},{date:'2026-06-19',home:'Scotland',hf:'SCO',away:'Morocco',af:'MAR',score:'0-1',venue:'Gillette Stadium'},{date:'2026-06-20',home:'Brazil',hf:'BRA',away:'Haiti',af:'HAI',score:'3-0',venue:'Lincoln Financial Field'},{date:'2026-06-24',home:'Morocco',hf:'MAR',away:'Haiti',af:'HAI',score:'vs',venue:'Mercedes-Benz Stadium'},{date:'2026-06-24',home:'Scotland',hf:'SCO',away:'Brazil',af:'BRA',score:'vs',venue:'Hard Rock Stadium'}],teams:[{name:'Brazil',flag:'🇧🇷',pld:2,w:1,d:1,l:0,gf:4,ga:1,gd:3,pts:4,status:''},{name:'Morocco',flag:'🇲🇦',pld:2,w:1,d:1,l:0,gf:2,ga:1,gd:1,pts:4,status:''},{name:'Scotland',flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',pld:2,w:1,d:0,l:1,gf:1,ga:1,gd:0,pts:3,status:''},{name:'Haiti',flag:'🇭🇹',pld:2,w:0,d:0,l:2,gf:0,ga:4,gd:-4,pts:0,status:''}]},
+C:{name:'C',matches:[{date:'2026-06-13',home:'Brazil',hf:'BRA',away:'Morocco',af:'MAR',score:'1-1',venue:'MetLife Stadium'},{date:'2026-06-14',home:'Haiti',hf:'HAI',away:'Scotland',af:'SCO',score:'0-1',venue:'Gillette Stadium'},{date:'2026-06-19',home:'Scotland',hf:'SCO',away:'Morocco',af:'MAR',score:'0-1',venue:'Gillette Stadium'},{date:'2026-06-20',home:'Brazil',hf:'BRA',away:'Haiti',af:'HAI',score:'3-0',venue:'Lincoln Financial Field'},{date:'2026-06-24',home:'Morocco',hf:'MAR',away:'Haiti',af:'HAI',score:'4-2',venue:'Mercedes-Benz Stadium'},{date:'2026-06-24',home:'Scotland',hf:'SCO',away:'Brazil',af:'BRA',score:'0-3',venue:'Hard Rock Stadium'}],teams:[{name:'Brazil',flag:'🇧🇷',pld:3,w:2,d:1,l:0,gf:5,ga:1,gd:4,pts:7,status:''},{name:'Morocco',flag:'🇲🇦',pld:3,w:2,d:1,l:0,gf:3,ga:2,gd:1,pts:7,status:''},{name:'Scotland',flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',pld:3,w:1,d:0,l:2,gf:1,ga:6,gd:-5,pts:3,status:''},{name:'Haiti',flag:'🇭🇹',pld:3,w:0,d:0,l:3,gf:2,ga:7,gd:-5,pts:0,status:''}]},
 D:{name:'D',matches:[{date:'2026-06-13',home:'USA',hf:'USA',away:'Paraguay',af:'PAR',score:'4-1',venue:'SoFi Stadium'},{date:'2026-06-14',home:'Australia',hf:'AUS',away:'Türkiye',af:'TUR',score:'2-0',venue:'BC Place'},{date:'2026-06-19',home:'USA',hf:'USA',away:'Australia',af:'AUS',score:'2-0',venue:'Lumen Field'},{date:'2026-06-20',home:'Türkiye',hf:'TUR',away:'Paraguay',af:'PAR',score:'0-1',venue:'Levi's Stadium'},{date:'2026-06-26',home:'Paraguay',hf:'PAR',away:'Australia',af:'AUS',score:'vs',venue:'Levi's Stadium'},{date:'2026-06-26',home:'Türkiye',hf:'TUR',away:'USA',af:'USA',score:'vs',venue:'SoFi Stadium'}],teams:[{name:'USA',flag:'🇺🇸',pld:2,w:2,d:0,l:0,gf:6,ga:1,gd:5,pts:6,status:''},{name:'Paraguay',flag:'🇵🇾',pld:2,w:1,d:0,l:1,gf:2,ga:4,gd:-2,pts:3,status:''},{name:'Australia',flag:'🇦🇺',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Türkiye',flag:'🇹🇷',pld:2,w:0,d:0,l:2,gf:0,ga:3,gd:-3,pts:0,status:''}]},
 E:{name:'E',matches:[{date:'2026-06-14',home:'Germany',hf:'GER',away:'Curaçao',af:'CUW',score:'7-1',venue:'NRG Stadium'},{date:'2026-06-14',home:'Côte d'Ivoire',hf:'CIV',away:'Ecuador',af:'ECU',score:'1-0',venue:'Lincoln Financial Field'},{date:'2026-06-20',home:'Germany',hf:'GER',away:'Côte d'Ivoire',af:'CIV',score:'2-1',venue:'BMO Field'},{date:'2026-06-21',home:'Ecuador',hf:'ECU',away:'Curaçao',af:'CUW',score:'0-0',venue:'GEHA Field at Arrowhead Stadium'},{date:'2026-06-25',home:'Curaçao',hf:'CUW',away:'Côte d'Ivoire',af:'CIV',score:'vs',venue:'Lincoln Financial Field'},{date:'2026-06-25',home:'Ecuador',hf:'ECU',away:'Germany',af:'GER',score:'vs',venue:'MetLife Stadium'}],teams:[{name:'Germany',flag:'🇩🇪',pld:2,w:2,d:0,l:0,gf:9,ga:2,gd:7,pts:6,status:''},{name:'Côte d'Ivoire',flag:'🇨🇮',pld:2,w:1,d:0,l:1,gf:2,ga:2,gd:0,pts:3,status:''},{name:'Curaçao',flag:'🇨🇼',pld:2,w:0,d:1,l:1,gf:1,ga:7,gd:-6,pts:1,status:''},{name:'Ecuador',flag:'🇪🇨',pld:2,w:0,d:1,l:1,gf:0,ga:1,gd:-1,pts:1,status:''}]},
 F:{name:'F',matches:[{date:'2026-06-14',home:'Netherlands',hf:'NED',away:'Japan',af:'JPN',score:'2-2',venue:'AT&T Stadium'},{date:'2026-06-15',home:'Sweden',hf:'SWE',away:'Tunisia',af:'TUN',score:'5-1',venue:'Estadio BBVA'},{date:'2026-06-20',home:'Netherlands',hf:'NED',away:'Sweden',af:'SWE',score:'5-1',venue:'NRG Stadium'},{date:'2026-06-21',home:'Tunisia',hf:'TUN',away:'Japan',af:'JPN',score:'0-4',venue:'Estadio BBVA'},{date:'2026-06-25',home:'Japan',hf:'JPN',away:'Sweden',af:'SWE',score:'vs',venue:'AT&T Stadium'},{date:'2026-06-25',home:'Tunisia',hf:'TUN',away:'Netherlands',af:'NED',score:'vs',venue:'GEHA Field at Arrowhead Stadium'}],teams:[{name:'Netherlands',flag:'🇳🇱',pld:2,w:1,d:1,l:0,gf:7,ga:3,gd:4,pts:4,status:''},{name:'Japan',flag:'🇯🇵',pld:2,w:1,d:1,l:0,gf:6,ga:2,gd:4,pts:4,status:''},{name:'Sweden',flag:'🇸🇪',pld:2,w:1,d:0,l:1,gf:6,ga:6,gd:0,pts:3,status:''},{name:'Tunisia',flag:'🇹🇳',pld:2,w:0,d:0,l:2,gf:1,ga:9,gd:-8,pts:0,status:''}]},
@@ -330,8 +330,6 @@ const upcomingMD3=[
 {date:'2026-06-25',time:'10:00',home:'South Africa',hf:'RSA',away:'Korea Republic',af:'KOR',group:'A',venue:'Estadio BBVA'},
 {date:'2026-06-26',time:'13:00',home:'Paraguay',hf:'PAR',away:'Australia',af:'AUS',group:'D',venue:'Levi's Stadium'},
 {date:'2026-06-26',time:'13:00',home:'Türkiye',hf:'TUR',away:'USA',af:'USA',group:'D',venue:'SoFi Stadium'},
-{date:'2026-06-24',time:'11:00',home:'Morocco',hf:'MAR',away:'Haiti',af:'HAI',group:'C',venue:'Mercedes-Benz Stadium'},
-{date:'2026-06-24',time:'11:00',home:'Scotland',hf:'SCO',away:'Brazil',af:'BRA',group:'C',venue:'Hard Rock Stadium'},
 {date:'2026-06-25',time:'19:00',home:'Curaçao',hf:'CUW',away:'Côte d'Ivoire',af:'CIV',group:'E',venue:'Lincoln Financial Field'},
 {date:'2026-06-25',time:'19:00',home:'Ecuador',hf:'ECU',away:'Germany',af:'GER',group:'E',venue:'MetLife Stadium'},
 {date:'2026-06-25',time:'13:00',home:'Japan',hf:'JPN',away:'Sweden',af:'SWE',group:'F',venue:'AT&T Stadium'},
@@ -536,7 +534,7 @@ function renderThirdPlace(){
 
 function renderBracket(){
   const container=document.getElementById('bracket-container');
-  const known={'1A':'🇲🇽 Mexico','2A':'🇰🇷 South Korea','1B':'🇨🇦 Canada','2B':'🇨🇭 Switzerland','1C':'🇧🇷 Brazil','2C':'🇲🇦 Morocco','1D':'🇺🇸 USA','2D':'🇦🇺 Australia','1E':'🇩🇪 Germany','2E':"🇨🇮 Côte d'Ivoire",'1F':'🇳🇱 Netherlands','2F':'🇯🇵 Japan'};
+  const known={'1A':'🇲🇽 Mexico','2A':'🇰🇷 Korea Republic','1B':'🇨🇦 Canada','2B':'🇨🇭 Switzerland','1C':'🇧🇷 Brazil','2C':'🇲🇦 Morocco','1D':'🇺🇸 USA','2D':'🇦🇺 Australia','1E':'🇩🇪 Germany','2E':"🇨🇮 Côte d'Ivoire",'1F':'🇳🇱 Netherlands','2F':'🇯🇵 Japan'};
   const r32=[{a:'2A',b:'2B'},{a:'1C',b:'2F'},{a:'🇩🇪 Germany',b:'3ABCDF'},{a:'1F',b:'2C'},{a:'2E',b:'2I'},{a:'1I',b:'3CDFGH'},{a:'🇲🇽 Mexico',b:'3CEFHI'},{a:'1L',b:'3EHIJK'},{a:'1G',b:'3AEHIJ'},{a:'🇺🇸 USA',b:'3BEFIJ'},{a:'1H',b:'2J'},{a:'2K',b:'2L'},{a:'1B',b:'3EFGIJ'},{a:'2D',b:'2G'},{a:'1J',b:'2H'},{a:'1K',b:'3DEIJL'}];
   let html='<div class="bracket-round"><div class="bracket-round-label">Round of 32</div><div class="bracket-matches">';
   r32.forEach((m,i)=>{
@@ -570,11 +568,14 @@ function renderBracket(){
 function renderUpcoming(){
   const md3List=document.getElementById('upcoming-list');
   const r32List=document.getElementById('r32-list');
-  const today='Jun 25'; // Simulated "today" for demo; in production use new Date()
+  const now=new Date();
+  const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const today=months[now.getMonth()]+' '+now.getDate();
+  const yesterday=months[now.getMonth()]+' '+(now.getDate()-1);
   let html3='';
   upcomingMD3.forEach(m=>{
     const isToday=m.date===today;
-    const isLive=m.date==='Jun 24'; // Simulated live (yesterday's matches now finishing)
+    const isLive=m.date===yesterday;
     const extraClass=isLive?' live-match':(isToday?' today-match':'');
     const indicator=isLive?'<span class="live-indicator">LIVE</span>':(isToday?'<span class="today-indicator">TODAY</span>':'');
     html3+=`<div class="match-item${extraClass}" data-teams="${esc(m.home)} ${esc(m.away)}">
@@ -626,15 +627,20 @@ function renderTeamStats(){
   let totalGoals=0,totalMatches=0,bestDefense={name:'',ga:999},bestAttack={name:'',gf:0},cleanSheets=0;
   for(const key of Object.keys(groupsData)){
     const g=groupsData[key];
-    totalMatches+=g.matches.length;
+    g.matches.forEach(m=>{
+      if(m.score!=='vs'){
+        totalMatches++;
+        const [hg,ag]=m.score.split('-').map(Number);
+        totalGoals+=hg+ag;
+      }
+    });
     g.teams.forEach(t=>{
-      totalGoals+=t.gf;
       if(t.ga<bestDefense.ga)bestDefense={name:t.flag+' '+t.name,ga:t.ga};
       if(t.gf>bestAttack.gf)bestAttack={name:t.flag+' '+t.name,gf:t.gf};
       if(t.ga===0)cleanSheets++;
     });
   }
-  const avgGoals=(totalGoals/totalMatches).toFixed(1);
+  const avgGoals=totalMatches>0?(totalGoals/totalMatches).toFixed(1):'0.0';
   const stats=[
     {label:'Total Goals Scored',value:totalGoals},
     {label:'Goals per Match',value:avgGoals},
@@ -728,11 +734,11 @@ function applyResult(teams,home,away,outcome){
 }
 
 function initCountdown(){
-  const simulatedNow=new Date('2026-06-25T05:00:00Z');
+  const now=new Date();
   let nextMatch=null;
   for(const m of upcomingMD3){
     const matchDate=parseMatchDate(m.date,m.time);
-    if(matchDate>simulatedNow){nextMatch={...m,dateObj:matchDate};break;}
+    if(matchDate>now){nextMatch={...m,dateObj:matchDate};break;}
   }
   if(!nextMatch){document.getElementById('countdown-bar').style.display='none';return;}
   const matchEl=document.getElementById('countdown-match');

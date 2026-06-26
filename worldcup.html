@@ -153,9 +153,10 @@
     /* Hide tabs, show accordion */
     .tabs{display:none}
     .accordion-header{display:flex;align-items:center;justify-content:space-between}
-    /* Hide desktop panel wrappers — mobile uses accordion-panel visibility only */
-    .panel{display:none!important;border:none;padding:0;margin:0;background:none}
-    .panel.active{display:none!important}
+    /* On mobile: panels always show (no border/padding from desktop), 
+       accordion-panel.open controls visibility instead */
+    .panel{display:block!important;border:none!important;padding:0!important;margin:0!important;background:none!important;border-radius:0!important}
+    .accordion-panel{display:none}
     .accordion-panel.open{display:block}
     /* Match items stack better */
     .match-item{flex-wrap:wrap;gap:6px;padding:8px 10px}

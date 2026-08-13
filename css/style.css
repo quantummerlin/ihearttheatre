@@ -1,0 +1,126 @@
+/* Color Palette Refinement */
+
+:root {
+  --bg-primary: #050508;
+  --bg-secondary: #0a0a0f;
+  --bg-tertiary: #1a1a25; /* Richer black for depth */
+  --text-primary: #f5f5f5;
+  --text-secondary: #c0c0d0; /* Lighter secondary text */
+  --accent-primary: #667eea;
+  --accent-secondary: #764ba2;
+  --accent-gold: #ffd700; /* Warm gold */
+  --accent-bright-gold: #ffb347; /* Brighter gold for highlights */
+  --accent-pink: #f093fb; /* Soft pink for Penelope */
+  --accent-red: #f5576c; /* Red for emphasis/alerts */
+  --accent-electric-blue: #4facfe; /* Electric blue for CTAs */
+
+  --gradient-primary: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  --gradient-gold: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-bright-gold) 100%);
+  --gradient-pink: linear-gradient(135deg, var(--accent-pink) 0%, var(--accent-red) 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+/* Apply colors to elements */
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+}
+
+.nav-links a:hover {
+  color: var(--text-primary);
+}
+
+.logo {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h1 {
+  background: linear-gradient(135deg, #ffffff 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle,
+.mission-text,
+.energy-desc,
+.show-venue,
+.show-dates,
+.audition-company,
+.audition-dates,
+.coach-specialty,
+.coach-description,
+.pitchfix-description,
+.footer-links a,
+.footer-copy {
+  color: var(--text-secondary);
+}
+
+.emphasis {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.btn-primary,
+.nav-cta,
+.filter-btn.active,
+.show-btn,
+.audition-btn,
+.coach-btn,
+.pitchfix-btn {
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background: var(--glass-bg);
+  border-color: var(--glass-border);
+  color: var(--text-primary);
+}
+
+.energy-step:hover {
+  background: rgba(var(--accent-primary-rgb),0.07);
+  border-color: rgba(var(--accent-primary-rgb),0.3);
+}
+
+.energy-step:hover .energy-icon {
+  background: var(--gradient-primary);
+}
+
+.show-type,
+.audition-type,
+.coach-type {
+  background: rgba(var(--accent-primary-rgb),0.2);
+  color: var(--accent-primary);
+}
+
+/* Additional color for Penelope's content */
+.penelope-accent {
+  background: var(--gradient-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Utility for RGB values */
+:root {
+  --accent-primary-rgb: 102, 126, 234;
+  --accent-gold-rgb: 255, 215, 0;
+  --accent-pink-rgb: 240, 147, 251;
+}
+
+/* Mobile navigation hamburger */
+.hamburger span {
+  background-color: var(--text-primary);
+}

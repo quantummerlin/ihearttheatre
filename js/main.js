@@ -14,16 +14,19 @@
     star:     '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
     info:     '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>',
     search:   '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
-    heart:    '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>'
+    heart:    '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>',
+    users:    '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>',
+    mail:     '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>'
   };
 
   /* ── 2. Nav Config ─────────────────────────────────────── */
   var NAV_ITEMS = [
     { href: '/index.html',    label: 'Home',      page: 'home',     icon: 'home'     },
     { href: '/whats-on.html', label: "What's On", page: 'whats-on', icon: 'calendar' },
-    { href: '/audition.html', label: 'Audition',  page: 'audition', icon: 'mic'      },
+    { href: '/auditions.html', label: 'Auditions', page: 'audition', icon: 'mic'      },
     { href: '/reviews.html',  label: 'Reviews',   page: 'reviews',  icon: 'star'     },
-    { href: '/about.html',    label: 'About',     page: 'about',    icon: 'info'     }
+    { href: '/reviewers.html', label: 'Reviewers', page: 'reviewers', icon: 'users'   },
+    { href: '/contact.html',  label: 'Contact',   page: 'contact',  icon: 'mail'     }
   ];
 
   /* ── 3. Determine active page ──────────────────────────── */
@@ -34,7 +37,9 @@
     if (fn.indexOf('whats-on') !== -1) return 'whats-on';
     if (fn.indexOf('audition') !== -1) return 'audition';
     if (fn.indexOf('reviews') !== -1 || fn.indexOf('review') !== -1) return 'reviews';
+    if (fn.indexOf('reviewer') !== -1) return 'reviewers';
     if (fn.indexOf('about') !== -1 || fn.indexOf('companies') !== -1) return 'about';
+    if (fn.indexOf('contact') !== -1 || fn.indexOf('submit') !== -1) return 'contact';
     if (fn.indexOf('musicals') !== -1 || fn.indexOf('songs') !== -1 || fn.indexOf('career') !== -1) return 'audition';
     return '';
   }
@@ -53,7 +58,7 @@
   }
 
   function buildMobileNavItems(activePage) {
-    var MOB_ICONS = ['🏠', '🎭', '🎤', '⭐', 'ℹ️'];
+    var MOB_ICONS = ['🏠', '🎭', '🎤', '⭐', '👥', '✉️'];
     return NAV_ITEMS.map(function (item, i) {
       var isActive = item.page === activePage;
       return (
@@ -78,7 +83,10 @@
         '<nav class="sidebar-nav">' +
           '<div class="sidebar-nav-label">Navigate</div>' +
           buildSidebarNavItems(activePage) +
-          '<div class="sidebar-nav-label" style="margin-top:14px">Tools</div>' +
+          '<div class="sidebar-nav-label" style="margin-top:14px">More</div>' +
+          '<a href="/about.html" class="sidebar-nav-link">' +
+            '<span class="sidebar-nav-icon">' + ICONS.info + '</span><span>About</span>' +
+          '</a>' +
           '<a href="/musicals.html" class="sidebar-nav-link">' +
             '<span class="sidebar-nav-icon">🎼</span><span>Role Finder</span>' +
           '</a>' +
@@ -92,8 +100,8 @@
         '<div class="sidebar-footer">' +
           '<div style="margin-bottom:6px">© 2026 iHeartTheatre</div>' +
           '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
-            '<a href="/about.html">About</a>' +
-            '<a href="/about.html#contact">Contact</a>' +
+            '<a href="/privacy.html">Privacy</a>' +
+            '<a href="/disclaimer.html">Disclaimer</a>' +
           '</div>' +
         '</div>' +
       '</aside>'
@@ -102,14 +110,14 @@
 
   /* ── 6. NOW BAR (Ticker) ───────────────────────────────── */
   var TICKER_FALLBACK = [
-    { badge: 'NOW SHOWING', text: 'Mamma Mia! — Cheltenham Operatic Society at Everyman Theatre', link: '/whats-on.html' },
-    { badge: 'OPENING SOON', text: 'Les Misérables — Bournemouth Gilbert & Sullivan Society', link: '/whats-on.html' },
-    { badge: 'NEW REVIEW', text: 'Deanna reviews The Phantom of the Opera ★★★★★', link: '/reviews.html' },
-    { badge: 'AUDITIONS', text: 'Footlights Youth Theatre — Grease 2025 open auditions', link: '/audition.html' },
-    { badge: 'CLOSING SOON', text: "Chicago — last week! Don't miss it", link: '/whats-on.html' },
-    { badge: 'NOW SHOWING', text: 'Into the Woods — Forest Youth Theatre at Minack Theatre', link: '/whats-on.html' },
-    { badge: 'KIDS', text: 'Matilda Jr. — workshops open for ages 8-16', link: '/audition.html' },
-    { badge: 'NEW REVIEW', text: 'Hamilton UK Tour — Penelope Jr. Reviewer gives 4.5 stars', link: '/reviews.html' }
+    { badge: 'NOW SHOWING', text: 'Mamma Mia! — Geelong Lyric Theatre Society at Geelong Arts Centre', link: '/whats-on.html' },
+    { badge: 'OPENING SOON', text: 'Les Misérables — Upstage Theatre Company at Berwick', link: '/whats-on.html' },
+    { badge: 'NEW REVIEW', text: 'Deanna reviews Dying: A Memoir ★★★★★ — MTC', link: '/reviews.html' },
+    { badge: 'AUDITIONS', text: 'Grease — Footlights Youth Theatre open auditions', link: '/auditions.html' },
+    { badge: 'CLOSING SOON', text: "The Good Life — Brighton Theatre Company, don't miss it", link: '/whats-on.html' },
+    { badge: 'NOW SHOWING', text: 'Mamma Mia! — National Theatre, St Kilda', link: '/whats-on.html' },
+    { badge: 'KIDS', text: 'Junior theatre workshops open for ages 8-16', link: '/junior-kids-schools.html' },
+    { badge: 'NEW REVIEW', text: 'Wayne Michael joins iHeartTheatre — first review coming soon', link: '/reviews.html' }
   ];
 
   var BADGE_STYLE = {
@@ -224,20 +232,29 @@
   }
 
   /* ── 10. Scroll reveal (IntersectionObserver) ─────────── */
+  var _revealObserver = null;
   function initReveal() {
-    if (!window.IntersectionObserver) return;
-    var observer = new IntersectionObserver(function (entries) {
+    if (!window.IntersectionObserver) {
+      // Fallback: reveal everything instantly
+      document.querySelectorAll('.reveal-section, .reveal-stagger').forEach(function(el) {
+        el.classList.add('visible');
+      });
+      return;
+    }
+    _revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+          _revealObserver.unobserve(entry.target);
         }
       });
     }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
 
     document.querySelectorAll('.reveal-section, .reveal-stagger').forEach(function (el) {
-      observer.observe(el);
+      _revealObserver.observe(el);
     });
+    // Expose for dynamically injected content (e.g. review cards from JS)
+    window.iHTRevealObserver = _revealObserver;
   }
 
   /* ── 11. Card hover glow (desktop only) ───────────────── */

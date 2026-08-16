@@ -132,20 +132,9 @@
 
   var EMOJIS = { musical:'🎭', drama:'🎪', comedy:'😄', kids:'⭐' };
 
-  var IMAGES = {
-    r01:'', r02:'/REVIEWERS/Deanna/christmas-carol-1.jpg', r03:'/REVIEWERS/Deanna/abracadickhead-1.jpg',
-    r04:'/REVIEWERS/Deanna/apocrypha-1.jpg', r05:'/REVIEWERS/Deanna/asexual-1.jpg', r06:'/REVIEWERS/Deanna/batshit-1.jpg',
-    r07:'/REVIEWERS/Deanna/bubble-lab-1.jpg', r08:'/REVIEWERS/Deanna/Circus-Oz-1.jpg', r09:'/REVIEWERS/Deanna/dying-memoir-1.jpg',
-    r10:'/REVIEWERS/Deanna/girl-train-1.jpg', r11:'/REVIEWERS/Deanna/greeking-1.jpg', r12:'/REVIEWERS/Deanna/lou-wall-1.jpg',
-    r13:'/REVIEWERS/Deanna/mamma-mia-1.jpg', r14:'/REVIEWERS/Deanna/Mary-Poppins-1.jpg', r15:'/REVIEWERS/Deanna/mother-play-1.jpg',
-    r16:'/REVIEWERS/Deanna/muse-1.jpg', r17:'/REVIEWERS/Deanna/brilliant-apocalypse-1.jpg', r18:'/REVIEWERS/Deanna/romeo-juliet-1.jpg',
-    r19:'/REVIEWERS/Deanna/ruby-wax-1.jpg', r20:'/REVIEWERS/Deanna/secret-girl-1.jpg', r21:'/REVIEWERS/Deanna/seussical-1.jpg',
-    r22:'/REVIEWERS/Deanna/shakespeare-between-1.jpg', r23:'/REVIEWERS/Deanna/good-life-1.jpg', r24:'/REVIEWERS/Deanna/lucky-country-1.jpg',
-    r25:'/REVIEWERS/Deanna/tristan-1.jpg', r26:'/REVIEWERS/Deanna/truth-1.jpg', r27:'/REVIEWERS/Deanna/your-name-1.jpg',
-    r28:'/REVIEWERS/Penelope/imagine-1.jpg', r29:'/REVIEWERS/Penelope/into-the-woods-jnr1.jpg', r30:'/REVIEWERS/Penelope/woods-jr-1.jpg',
-    r31:'/REVIEWERS/Penelope/josephine-1.jpg', r32:'/REVIEWERS/Penelope/robin-hood-1.jpg', r33:'/REVIEWERS/Penelope/mermaid-1.jpg',
-    r34:'/REVIEWERS/Penelope/willows-1.jpg'
-  };
+  // Images removed from cards — only original photos should be used.
+  // Individual review pages still show photos as proof of attendance.
+  var IMAGES = {};
 
   function starsHTML(n) {
     var full = Math.floor(n);
@@ -221,6 +210,13 @@
       return matchFilter && matchSearch;
     });
     renderReviews(filtered);
+    // Re-trigger scroll reveal for newly injected cards
+    var grid = document.getElementById('reviewsGrid');
+    if (grid && window.iHTRevealObserver) {
+      grid.querySelectorAll('.article-card').forEach(function(card) {
+        window.iHTRevealObserver.observe(card);
+      });
+    }
   }
 
   document.querySelectorAll('.filter-btn').forEach(function(btn) {

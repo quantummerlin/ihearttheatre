@@ -887,6 +887,56 @@ body {
 .empty-state-icon { font-size: 3rem; margin-bottom: 12px; opacity: .5; }
 .empty-state-text { font-size: .95rem; }
 
+/* ── 18b. Tool Cards (audition.html) ────────────────────────── */
+.tool-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+.tool-card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px 24px;
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s;
+}
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(102,126,234,.35);
+  box-shadow: 0 12px 40px rgba(102,126,234,.15);
+}
+.tool-card-icon { font-size: 2rem; line-height: 1; }
+.tool-card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.tool-card-desc {
+  font-size: .84rem;
+  color: var(--muted);
+  line-height: 1.6;
+  flex: 1;
+}
+.tool-card-cta {
+  font-size: .8rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-top: 4px;
+}
+.tool-card:hover .tool-card-cta { color: var(--gold); }
+
+/* Badge: audition status */
+.badge-audition {
+  background: rgba(52,211,153,.1);
+  color: #34d399;
+  border: 1px solid rgba(52,211,153,.25);
+}
+
 /* ── 19. Scroll Animations ──────────────────────────────────── */
 .reveal-section {
   opacity: 0;

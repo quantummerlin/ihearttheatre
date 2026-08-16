@@ -184,8 +184,18 @@
       mainEl.parentNode.insertBefore(wrapper, mainEl);
       wrapper.appendChild(mainEl);
     } else if (!mainEl) {
-      // Fallback: wrap all body content except sidebar in main-content
-      console.warn('iHT: No <main> element found on page.');
+      // Wrap all non-shell body children in .main-content so sidebar layout works
+      var wrapper = document.createElement('div');
+      wrapper.className = 'main-content';
+      var toWrap = Array.prototype.slice.call(document.body.children).filter(function(el) {
+        return !el.classList.contains('app-sidebar') &&
+               !el.classList.contains('stage-curtain') &&
+               el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE';
+      });
+      if (toWrap.length) {
+        document.body.insertBefore(wrapper, toWrap[0]);
+        toWrap.forEach(function(el) { wrapper.appendChild(el); });
+      }
     }
 
     // Insert mobile nav + ticker bar

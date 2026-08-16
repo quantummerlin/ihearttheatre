@@ -254,7 +254,7 @@
 
  @media (max-width: 768px) {
  .container {
- padding: 100px 20px 60px;
+ padding: 90px 16px calc(64px + 36px + 24px); /* clear fixed nav + mobile nav + ticker */
  }
 
  h1 {

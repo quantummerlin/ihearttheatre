@@ -160,12 +160,13 @@
  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
  const scrolled = (winScroll / height) * 100;
- document.getElementById('progressBar').style.width = scrolled + '%';
+ var pb = document.getElementById('progressBar'); if (pb) pb.style.width = (scrolled || scrollPercent) + '%';
  });
 
  // Particles
  function createParticles() {
  const container = document.getElementById('particles');
+  if (!container) return;
  for (let i = 0; i < 30; i++) {
  const particle = document.createElement('div');
  particle.className = 'particle';

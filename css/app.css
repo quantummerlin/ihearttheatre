@@ -772,6 +772,18 @@ body {
   color: var(--muted);
   border: 1px solid var(--border);
 }
+/* Review badge — gold for review ticker items */
+.badge-review {
+  background: rgba(255,215,0,.1);
+  color: #ffd700;
+  border: 1px solid rgba(255,215,0,.25);
+}
+/* Past/closed status badge */
+.badge-closed {
+  background: rgba(128,128,144,.1);
+  color: #808090;
+  border: 1px solid rgba(128,128,144,.2);
+}
 
 /* ── 13. Star Rating ────────────────────────────────────────── */
 .star-rating {

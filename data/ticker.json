@@ -1,89 +1,53 @@
 {
-  "updated": "2026-06-05T00:00:00Z",
+  "updated": "2026-08-16T00:00:00Z",
   "items": [
     {
       "id": "t01",
-      "badge": "NOW SHOWING",
-      "text": "Mamma Mia! — National Theatre, St Kilda",
-      "link": "/whats-on.html"
+      "badge": "NEW REVIEW",
+      "text": "Wayne Michael joins iHeartTheatre — first review coming soon",
+      "link": "/reviews.html"
     },
     {
       "id": "t02",
-      "badge": "NOW SHOWING",
-      "text": "Robot Song — Theatre Works, St Kilda",
-      "link": "/whats-on.html"
+      "badge": "REVIEW",
+      "text": "Dying: A Memoir — MTC ★★★★★ — 'disarming us before leading us into the enormity'",
+      "link": "/reviews/review-deanna-dying-a-memoir.html"
     },
     {
       "id": "t03",
-      "badge": "AUDITIONS",
-      "text": "Ride the Cyclone — PEP Productions at Doncaster Playhouse",
-      "link": "/audition.html"
+      "badge": "REVIEW",
+      "text": "Mamma Mia! — Geelong Lyric Theatre Society ★★★★★",
+      "link": "/reviews/review-deanna-mamma-mia.html"
     },
     {
       "id": "t04",
-      "badge": "NOW SHOWING",
-      "text": "Frozen Jr — Red Door Dance and Theatre Co, Colac",
-      "link": "/whats-on.html"
+      "badge": "REVIEW",
+      "text": "The Wind in the Willows — Royal Botanic Gardens ★★★★★ — Penelope's pick",
+      "link": "/reviews/review-penelope-the-wind-in-the-willows.html"
     },
     {
       "id": "t05",
-      "badge": "OPENING SOON",
-      "text": "& Juliet — Ballarat Lyric Theatre, opens 26 Feb",
-      "link": "/whats-on.html"
+      "badge": "REVIEW",
+      "text": "The Lucky Country — Melbourne Fringe ★★★★★ — 'a bold new chapter of Australian storytelling'",
+      "link": "/reviews/review-deanna-the-lucky-country.html"
     },
     {
       "id": "t06",
-      "badge": "AUDITIONS",
-      "text": "Once Upon A One More Time — Doncaster Playhouse, opens 27 Feb",
-      "link": "/audition.html"
+      "badge": "REVIEW",
+      "text": "Mary Poppins — MDMS at Karralyka ★★★★★ — 'a full-scale dollhouse opening to reveal the Banks family'",
+      "link": "/reviews/review-deanna-mary-poppins.html"
     },
     {
       "id": "t07",
-      "badge": "NOW SHOWING",
-      "text": "The Taming of the Shrew — Melbourne Shakespeare Company, Malvern",
-      "link": "/whats-on.html"
+      "badge": "REVIEW",
+      "text": "Seussical The Musical — OCPAC ★★★★★ — 'nothing short of magical'",
+      "link": "/reviews/review-deanna-seussical-the-musical.html"
     },
     {
       "id": "t08",
-      "badge": "KIDS",
-      "text": "Matilda Jr workshops — ages 8–16, no experience needed",
-      "link": "/coaches.html"
-    },
-    {
-      "id": "t09",
-      "badge": "OPENING SOON",
-      "text": "Urinetown — Bottled Snail at Gasworks Arts Park",
-      "link": "/whats-on.html"
-    },
-    {
-      "id": "t10",
-      "badge": "AUDITIONS",
-      "text": "Legally Blonde Jr — Diamond Valley Singers, Warrandyte",
-      "link": "/audition.html"
-    },
-    {
-      "id": "t11",
-      "badge": "NOW SHOWING",
-      "text": "The Sound of Music — Nova, Melbourne",
-      "link": "/whats-on.html"
-    },
-    {
-      "id": "t12",
-      "badge": "OPENING SOON",
-      "text": "Evil Dead The Musical — Chapel Off Chapel, Prahran",
-      "link": "/whats-on.html"
-    },
-    {
-      "id": "t13",
-      "badge": "KIDS",
-      "text": "The Aristocats Kids — Musicworx, Melbourne",
-      "link": "/whats-on.html"
-    },
-    {
-      "id": "t14",
-      "badge": "AUDITIONS",
-      "text": "Newsies Jr — Williamstown Musical Theatre Company",
-      "link": "/audition.html"
+      "badge": "REVIEW",
+      "text": "The Phantom of the Opera — UK Tour ★★★★★",
+      "link": "/reviews/phantom-of-the-opera-2024.html"
     }
   ]
 }

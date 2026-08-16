@@ -127,6 +127,7 @@
     'AUDITIONS':    'color:#d4af37;border-color:rgba(212,175,55,.5)',
     'CLOSING SOON': 'color:#f87171;border-color:rgba(248,113,113,.5)',
     'KIDS':         'color:#34d399;border-color:rgba(52,211,153,.5)',
+    'REVIEW':       'color:#ffd700;border-color:rgba(255,215,0,.5)',
     'NEWS':         'color:#f472b6;border-color:rgba(244,114,182,.5)'
   };
 

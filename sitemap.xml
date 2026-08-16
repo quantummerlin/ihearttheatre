@@ -112,6 +112,12 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://ihearttheatre.com/reviewer-wayne.html</loc>
+    <lastmod>2026-08-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://ihearttheatre.com/reviewers.html</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
@@ -318,6 +324,12 @@
   <url>
     <loc>https://ihearttheatre.com/reviews/review-penelope-the-wind-in-the-willows.html</loc>
     <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://ihearttheatre.com/reviews/review-wayne-my-brilliant-apocalypse-the-return-of-barry-brilliant.html</loc>
+    <lastmod>2026-08-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>

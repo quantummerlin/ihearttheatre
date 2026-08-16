@@ -90,7 +90,7 @@
           '</a>' +
         '</nav>' +
         '<div class="sidebar-footer">' +
-          '<div style="margin-bottom:6px">© 2025 iHeartTheatre</div>' +
+          '<div style="margin-bottom:6px">© 2026 iHeartTheatre</div>' +
           '<div style="display:flex;gap:10px;flex-wrap:wrap">' +
             '<a href="/about.html">About</a>' +
             '<a href="/about.html#contact">Contact</a>' +

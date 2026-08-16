@@ -132,7 +132,7 @@
 
   var EMOJIS = { musical:'🎭', drama:'🎪', comedy:'😄', kids:'⭐' };
 
-  // Images removed from cards — only original photos should be used.
+  // Images removed from cards — text-only design is cleaner.
   // Individual review pages still show photos as proof of attendance.
   var IMAGES = {};
 
@@ -170,13 +170,7 @@
         ? '<span class="reviewer-badge">Wayne</span>'
         : '<span class="reviewer-badge">Deanna</span>';
       return (
-        '<a href="' + r.href + '" class="article-card">' +
-          '<div class="article-card-img-wrap">' +
-            (IMAGES[r.id]
-              ? '<img class="article-card-img" src="' + IMAGES[r.id] + '" alt="' + r.title + '" loading="lazy">'
-              : '<div class="article-card-img-placeholder">' + (EMOJIS[r.genre]||'🎭') + '</div>'
-            ) +
-          '</div>' +
+        '<a href="' + r.href + '" class="article-card article-card--text-only">' +
           '<div class="article-card-body">' +
             '<div class="article-card-meta">' + genreBadge(r.genre) + starsHTML(r.stars) + '</div>' +
             '<h3 class="article-card-title">' + r.title + '</h3>' +

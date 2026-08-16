@@ -574,6 +574,24 @@ body {
   pointer-events: none;
 }
 
+/* Text-only cards — no image area, clean type-forward design */
+.article-card--text-only {
+  border-left: 3px solid rgba(102,126,234,.3);
+}
+.article-card--text-only .article-card-body {
+  padding: 20px 20px 18px;
+  flex: 1;
+  justify-content: flex-start;
+}
+.article-card--text-only .article-card-title {
+  font-size: 1.15rem;
+  margin-top: 6px;
+}
+.article-card--text-only .article-card-excerpt {
+  font-size: .85rem;
+  -webkit-line-clamp: 4;
+}
+
 .article-card-body {
   padding: 16px 18px 18px;
   display: flex;
@@ -800,6 +818,7 @@ body {
 .show-card {
   background: var(--bg-3);
   border: 1px solid var(--border);
+  border-left: 3px solid rgba(102,126,234,.25);
   border-radius: var(--radius);
   overflow: hidden;
   transition: var(--trans);
@@ -808,24 +827,12 @@ body {
 }
 .show-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(102,126,234,.25);
+  border-color: rgba(102,126,234,.35);
   box-shadow: 0 8px 32px rgba(102,126,234,.12);
 }
-.show-card-poster {
-  aspect-ratio: 3/4;
-  background: var(--bg-4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  max-height: 140px;
-}
-.show-card-poster-placeholder {
-  font-size: 2.5rem;
-  opacity: .8;
-}
+/* No poster area — text-first design */
 .show-card-body {
-  padding: 12px 14px 14px;
+  padding: 14px 16px 16px;
   flex: 1;
 }
 .show-card-title {

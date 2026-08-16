@@ -16,6 +16,7 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/app.css">
   <link rel="icon" type="image/svg+xml" href="/images/icons/iht-icon.svg">
   <link rel="manifest" href="/manifest.json">
 
@@ -131,6 +132,21 @@
 
   var EMOJIS = { musical:'🎭', drama:'🎪', comedy:'😄', kids:'⭐' };
 
+  var IMAGES = {
+    r01:'', r02:'/REVIEWERS/Deanna/christmas-carol-1.jpg', r03:'/REVIEWERS/Deanna/abracadickhead-1.jpg',
+    r04:'/REVIEWERS/Deanna/apocrypha-1.jpg', r05:'/REVIEWERS/Deanna/asexual-1.jpg', r06:'/REVIEWERS/Deanna/batshit-1.jpg',
+    r07:'/REVIEWERS/Deanna/bubble-lab-1.jpg', r08:'/REVIEWERS/Deanna/Circus-Oz-1.jpg', r09:'/REVIEWERS/Deanna/dying-memoir-1.jpg',
+    r10:'/REVIEWERS/Deanna/girl-train-1.jpg', r11:'/REVIEWERS/Deanna/greeking-1.jpg', r12:'/REVIEWERS/Deanna/lou-wall-1.jpg',
+    r13:'/REVIEWERS/Deanna/mamma-mia-1.jpg', r14:'/REVIEWERS/Deanna/Mary-Poppins-1.jpg', r15:'/REVIEWERS/Deanna/mother-play-1.jpg',
+    r16:'/REVIEWERS/Deanna/muse-1.jpg', r17:'/REVIEWERS/Deanna/brilliant-apocalypse-1.jpg', r18:'/REVIEWERS/Deanna/romeo-juliet-1.jpg',
+    r19:'/REVIEWERS/Deanna/ruby-wax-1.jpg', r20:'/REVIEWERS/Deanna/secret-girl-1.jpg', r21:'/REVIEWERS/Deanna/seussical-1.jpg',
+    r22:'/REVIEWERS/Deanna/shakespeare-between-1.jpg', r23:'/REVIEWERS/Deanna/good-life-1.jpg', r24:'/REVIEWERS/Deanna/lucky-country-1.jpg',
+    r25:'/REVIEWERS/Deanna/tristan-1.jpg', r26:'/REVIEWERS/Deanna/truth-1.jpg', r27:'/REVIEWERS/Deanna/your-name-1.jpg',
+    r28:'/REVIEWERS/Penelope/imagine-1.jpg', r29:'/REVIEWERS/Penelope/into-the-woods-jnr1.jpg', r30:'/REVIEWERS/Penelope/woods-jr-1.jpg',
+    r31:'/REVIEWERS/Penelope/josephine-1.jpg', r32:'/REVIEWERS/Penelope/robin-hood-1.jpg', r33:'/REVIEWERS/Penelope/mermaid-1.jpg',
+    r34:'/REVIEWERS/Penelope/willows-1.jpg'
+  };
+
   function starsHTML(n) {
     var full = Math.floor(n);
     var half = n % 1 >= 0.5;
@@ -167,7 +183,10 @@
       return (
         '<a href="' + r.href + '" class="article-card">' +
           '<div class="article-card-img-wrap">' +
-            '<div class="article-card-img-placeholder">' + (EMOJIS[r.genre]||'🎭') + '</div>' +
+            (IMAGES[r.id]
+              ? '<img class="article-card-img" src="' + IMAGES[r.id] + '" alt="' + r.title + '" loading="lazy">'
+              : '<div class="article-card-img-placeholder">' + (EMOJIS[r.genre]||'🎭') + '</div>'
+            ) +
           '</div>' +
           '<div class="article-card-body">' +
             '<div class="article-card-meta">' + genreBadge(r.genre) + starsHTML(r.stars) + '</div>' +

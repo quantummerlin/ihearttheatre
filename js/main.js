@@ -25,7 +25,7 @@
     { href: '/whats-on.html', label: "What's On", page: 'whats-on', icon: 'calendar' },
     { href: '/auditions.html', label: 'Auditions', page: 'audition', icon: 'mic'      },
     { href: '/reviews.html',  label: 'Reviews',   page: 'reviews',  icon: 'star'     },
-    { href: '/reviewers.html', label: 'Reviewers', page: 'reviewers', icon: 'users'   },
+    { href: '/reviewers.html', label: 'Meet the Reviewers', page: 'reviewers', icon: 'users'   },
     { href: '/contact.html',  label: 'Contact',   page: 'contact',  icon: 'mail'     }
   ];
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
  <meta charset="UTF-8">
@@ -101,11 +101,11 @@
  color: #e8b923;
  }
 
- /* Main Content */
+ /* Main Content — override app.css margin since page has its own top padding */
  .main-content {
  position: relative;
  z-index: 2;
- padding-top: 100px;
+ padding-top: 40px;
  max-width: 1400px;
  margin: 0 auto;
  padding-left: 2rem;
@@ -370,7 +370,8 @@
  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
  <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
- <link rel="stylesheet" href="css/shared.css?v=20260515">
+ 
+  <link rel="stylesheet" href="css/app.css">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RS9LV72HK8"></script>
 <script>
@@ -394,19 +395,10 @@
  <meta name="twitter:image" content="https://ihearttheatre.com/images/global/og-social-share.jpg">
 </head>
 <body>
- <div class="progress-bar" id="progressBar"></div><nav>
- <div class="nav-container">
- <a href="index.html" class="logo">iHeartTheatre</a>
- <div class="hamburger" aria-label="Toggle navigation">
- <span></span>
- <span></span>
- <span></span>
- </div>
- <div class="nav-links"><a href="index.html">Home</a><a href="shows.html">Shows</a><a href="auditions.html">Auditions</a><a href="reviews.html" class="active">Reviews</a><a href="about.html">About</a><a href="contact.html">Contact</a><a href="musicals.html">Musicals</a><a href="career-builder.html">Career Builder</a></div>
- </div>
- </nav>
+ <div class="progress-bar" id="progressBar"></div>
 
- <div class="main-content">
+ <!-- Content — main.js injects .main-content wrapper; this div is the page content area -->
+ <div class="main-content" style="max-width:none;margin-left:0;padding-left:0;padding-right:0;">
  <div class="page-header">
  <h1>Meet Our Reviewers</h1>
  <p>The passionate voices behind iHeartTheatre</p>
@@ -991,6 +983,7 @@
  // Floating particles
  function createParticles() {
  const container = document.getElementById('particles');
+ if (!container) return;
  for (let i = 0; i < 50; i++) {
  const particle = document.createElement('div');
  particle.className = 'particle';
@@ -1015,5 +1008,6 @@
  <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
  <script defer src="js/shared.js?v=202604150813"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -61,6 +61,15 @@
     </div>
   </section>
 
+  <!-- SUBMIT CTA — shown when calendar is empty or low on shows -->
+  <section class="hub-section" id="submitCta" style="display:none;padding-bottom:48px">
+    <div class="manifesto" style="text-align:center">
+      <div class="manifesto-title" style="margin-bottom:8px">🎭 Know a show we're missing?</div>
+      <p class="manifesto-text" style="margin-bottom:20px">We cover professional, community and school theatre across Melbourne and Victoria. If your company has a show coming up, let us know — it's free.</p>
+      <a href="/submit-show.html" class="btn btn-primary">Submit Your Show →</a>
+    </div>
+  </section>
+
 </main>
 
 <script>
@@ -346,6 +355,10 @@
 
         updateShowCount(rawShows.length);
         applyFilters();
+
+        // Show submit CTA if fewer than 3 shows are listed
+        var cta = document.getElementById('submitCta');
+        if (cta && rawShows.length < 3) cta.style.display = 'block';
       })
       .catch(function(err) {
         console.error('Failed to load calendar.json:', err);

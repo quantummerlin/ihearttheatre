@@ -193,15 +193,42 @@
  </footer>
 
  <script>
- // Form submission
-        document.getElementById('submissionForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            var data = Object.fromEntries(new FormData(this));
-            submitFormViaEmail(this, {
-                to: 'auditions@ihearttheatre.com',
-                subject: 'Show submission: ' + (data.showTitle || data.title || 'Untitled')
-            });
-        });
+ // Form submission — opens email client with pre-filled message
+ document.getElementById('submissionForm').addEventListener('submit', function(e) {
+   e.preventDefault();
+   var data = Object.fromEntries(new FormData(this));
+   var lines = [
+     'SHOW SUBMISSION — iHeartTheatre',
+     '================================',
+     'Show Title: ' + (data.showTitle || ''),
+     'Category: ' + (data.category || ''),
+     'Target Audience: ' + (data.targetAudience || ''),
+     'Venue: ' + (data.venue || ''),
+     'Company: ' + (data.company || ''),
+     'Start Date: ' + (data.startDate || ''),
+     'End Date: ' + (data.endDate || ''),
+     '',
+     'Description:',
+     (data.description || ''),
+     '',
+     'Contact Name: ' + (data.contactName || ''),
+     'Email: ' + (data.contactEmail || ''),
+     'Phone: ' + (data.contactPhone || ''),
+     'Website/Tickets: ' + (data.website || ''),
+     '',
+     'Additional Info:',
+     (data.additionalInfo || ''),
+     '',
+     'Review Requested: ' + (data.requestReview ? 'Yes' : 'No')
+   ];
+   var subject = encodeURIComponent('Show Submission: ' + (data.showTitle || 'Untitled'));
+   var body = encodeURIComponent(lines.join('\n'));
+   window.location.href = 'mailto:hello@ihearttheatre.com?subject=' + subject + '&body=' + body;
+   // Show success state
+   document.getElementById('submissionForm').style.display = 'none';
+   var success = document.getElementById('successMessage');
+   success.classList.add('show');
+   success.scrollIntoView({ behavior: 'smooth' });
  });
 
  // Progress bar
@@ -209,12 +236,14 @@
  const scrollTop = window.scrollY;
  const docHeight = document.documentElement.scrollHeight - window.innerHeight;
  const scrollPercent = (scrollTop / docHeight) * 100;
- document.getElementById('progressBar').style.width = scrollPercent + '%';
+ const bar = document.getElementById('progressBar');
+ if (bar) bar.style.width = scrollPercent + '%';
  });
 
- // Floating particles
+ // Floating particles (only if container exists)
  function createParticles() {
  const container = document.getElementById('particles');
+ if (!container) return;
  for (let i = 0; i < 50; i++) {
  const particle = document.createElement('div');
  particle.className = 'particle';
@@ -225,7 +254,6 @@
  }
  }
 
- // Initialize
  createParticles();
  </script>
  <button class="pwa-install-btn" onclick="installPWA()">Install</button>

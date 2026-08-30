@@ -146,7 +146,14 @@ nav {
     cursor: pointer;
     gap: 5px;
     z-index: 1001;
-    padding: 5px;
+    /* 44px+ tap target: 3 spans + 5px gaps + padding */
+    padding: 10px;
+    margin: -10px;
+}
+
+/* Scroll-lock behind the open mobile drawer */
+body.nav-open {
+    overflow: hidden;
 }
 
 .hamburger span {
@@ -174,6 +181,8 @@ footer {
     background: var(--bg-secondary);
     border-top: 1px solid var(--glass-border);
     padding: 2.5rem 0;
+    /* Keep footer content clear of the iPhone home indicator */
+    padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 0px));
     text-align: center;
     position: relative;
     z-index: 2;
@@ -571,6 +580,7 @@ footer {
 
     .nav-links.active {
         right: 0;
+        padding-bottom: calc(2rem + env(safe-area-inset-bottom, 0px));
     }
 
     .nav-links a,

@@ -177,16 +177,19 @@ body {
 }
 
 /* ── 3. Mobile Navigation (bottom bar) ─────────────────────── */
+/* iOS safe-area aware: bottom chrome sits above the home indicator */
 .mobile-nav {
   display: none;
   position: fixed;
-  bottom: var(--ticker-h);
+  bottom: calc(var(--ticker-h) + env(safe-area-inset-bottom, 0px));
   left: 0; right: 0;
   height: var(--mobile-nav-h);
   background: rgba(10,10,15,.96);
   backdrop-filter: blur(20px) saturate(1.5);
   border-top: 1px solid var(--border);
   z-index: 300;
+  padding-left: env(safe-area-inset-left, 0px);
+  padding-right: env(safe-area-inset-right, 0px);
 }
 .mobile-nav-inner {
   display: flex;
@@ -219,13 +222,15 @@ body {
   max-width: 100%;
 }
 .mobile-nav-item:hover, .mobile-nav-item.active { color: var(--primary); }
+.mobile-nav-item.active { padding-bottom: env(safe-area-inset-bottom, 0px); /* keep label clear of home bar */ }
 .mobile-nav-icon { font-size: 1.1rem; line-height: 1; flex-shrink: 0; }
 
 /* ── 4. Now Bar (Ticker) ────────────────────────────────────── */
 .now-bar {
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  height: var(--ticker-h);
+  height: calc(var(--ticker-h) + env(safe-area-inset-bottom, 0px));
+  padding-bottom: env(safe-area-inset-bottom, 0px);
   background: var(--bg-2);
   border-top: 1px solid var(--border);
   display: flex;
@@ -353,19 +358,21 @@ body {
   padding: 10px 0 6px;
   background: var(--bg);
 }
-.hero-slide-dots { display: flex; gap: 8px; align-items: center; }
+.hero-slide-dots { display: flex; gap: 4px; align-items: center; }
 .hero-dot {
+  /* 8px visible dot, 24px+ touch target via padding */
   width: 8px; height: 8px;
+  padding: 8px;
+  box-sizing: content-box;
   border-radius: 50%;
   background: var(--border-2);
   border: none;
   cursor: pointer;
   transition: var(--trans);
-  padding: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 .hero-dot.active {
   background: var(--gold);
-  transform: scale(1.25);
   box-shadow: 0 0 6px var(--gold);
 }
 
@@ -1022,7 +1029,7 @@ body {
   .app-sidebar { display: none; }
   .main-content {
     margin-left: 0;
-    padding-bottom: calc(var(--mobile-nav-h) + var(--ticker-h) + 24px);
+    padding-bottom: calc(var(--mobile-nav-h) + var(--ticker-h) + env(safe-area-inset-bottom, 0px) + 24px);
   }
   .mobile-nav { display: flex; }
   .article-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
@@ -1043,13 +1050,15 @@ body {
   .section-header { margin-bottom: 14px; }
   .page-hero { padding: 28px 16px 24px; }
 
-  /* Filter bar — bigger tap targets, slightly more padding */
+  /* Touch targets must be >= 44px on small screens */
+  .btn { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .filter-bar { padding: 10px 12px; gap: 6px; }
   .filter-btn {
     padding: 9px 14px;
-    min-height: 38px;
+    min-height: 44px;
     font-size: .75rem;
   }
+  .mobile-nav-item { font-size: .65rem; }
 
   /* Stats bar — 2 column grid on small screens */
   .stats-bar {

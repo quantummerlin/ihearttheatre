@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Career Builder — iHeartTheatre</title>
 <meta name="description" content="Find roles that suit your voice, get audition prep guidance, and build your professional theatre resume — free forever.">
 <meta property="og:title" content="Career Builder — iHeartTheatre">
@@ -366,8 +366,12 @@ textarea.form-input { resize: vertical; min-height: 90px; }
   background-clip: text;
 }
 
+.credits-table-wrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -4px 12px;
+}
 .credits-table {
-  width: 100%; border-collapse: collapse; margin-bottom: 12px; font-size: 0.85rem;
+  width: 100%; border-collapse: collapse; margin-bottom: 0; font-size: 0.85rem;
+  min-width: 480px;
 }
 .credits-table th {
   text-align: left; padding: 8px 10px;
@@ -384,7 +388,8 @@ textarea.form-input { resize: vertical; min-height: 90px; }
 .credits-table td input {
   background: transparent; border: none;
   color: var(--text-primary); font-family: inherit;
-  font-size: 0.85rem; width: 100%; outline: none;
+  /* 16px = iOS does not auto-zoom small text */
+  font-size: 16px; width: 100%; outline: none;
   padding: 2px 0;
 }
 .credits-table td input:focus { border-bottom: 1px solid var(--accent-primary); }
@@ -645,6 +650,7 @@ footer { display: none !important; }
       <div class="section-label" style="display:flex; justify-content:space-between; align-items:center;">
         <span>Performance Credits</span>
       </div>
+      <div class="credits-table-wrap">
       <table class="credits-table" id="credits-table">
         <thead>
           <tr>
@@ -657,11 +663,13 @@ footer { display: none !important; }
         </thead>
         <tbody id="credits-tbody"></tbody>
       </table>
+      </div>
       <button class="btn-add-row" onclick="addCredit()">+ Add Credit</button>
     </div>
 
     <div class="cb-card">
       <div class="section-label">Training</div>
+      <div class="credits-table-wrap">
       <table class="credits-table" id="training-table">
         <thead>
           <tr>
@@ -673,6 +681,7 @@ footer { display: none !important; }
         </thead>
         <tbody id="training-tbody"></tbody>
       </table>
+      </div>
       <button class="btn-add-row" onclick="addTraining()">+ Add Training</button>
     </div>
 

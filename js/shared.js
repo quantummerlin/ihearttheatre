@@ -332,9 +332,15 @@ function initHamburger() {
  const navLinks = document.querySelector('.nav-links');
  if (!hamburger || !navLinks) return;
 
+ // Sync body.nav-open scroll-lock whenever the drawer state changes
+ function syncScrollLock() {
+ document.body.classList.toggle('nav-open', navLinks.classList.contains('active'));
+ }
+
  hamburger.addEventListener('click', () => {
  hamburger.classList.toggle('active');
  navLinks.classList.toggle('active');
+ syncScrollLock();
  });
 
  // Close menu when clicking a link
@@ -342,6 +348,7 @@ function initHamburger() {
  link.addEventListener('click', () => {
  hamburger.classList.remove('active');
  navLinks.classList.remove('active');
+ syncScrollLock();
  });
  });
 
@@ -350,6 +357,7 @@ function initHamburger() {
  if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
  hamburger.classList.remove('active');
  navLinks.classList.remove('active');
+ syncScrollLock();
  }
  });
 }

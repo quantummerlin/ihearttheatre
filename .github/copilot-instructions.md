@@ -88,7 +88,7 @@ The site's ONE canonical palette is the **gold/red curtain** theme. The purple p
 ### A. App-shell pages (new standard — use for NEW pages)
 `index.html`, hub pages (`shows.html`, `whats-on.html`, `auditions.html`, `reviews.html`, `musicals.html`, `songs.html`, `career-builder.html`, `about.html`, `contact.html`…) and all `reviews/*.html`.
 - Load `/css/style.css` + `/css/app.css` (+ `reviews.css` for review articles)
-- Load `/js/main.js` — it injects the sidebar (≥768px) and mobile bottom nav (≤767px) from its `NAV_ITEMS` config. **Do NOT hand-write nav markup on these pages.**
+- Load `/js/main.js` — it injects the sidebar (≥901px) and mobile bottom nav (≤900px) from its `NAV_ITEMS` config; switching is pure CSS (`@media max-width: 900px` in `app.css`). **Do NOT hand-write nav markup on these pages.**
 - Active-page detection in `main.js#getActivePage()` — update it when adding nav targets.
 
 ### B. Legacy static pages

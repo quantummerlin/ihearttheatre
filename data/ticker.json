@@ -1,47 +1,53 @@
 {
-  "updated": "2026-08-16T00:00:00Z",
+  "updated": "2026-08-30T00:00:00Z",
   "items": [
     {
+      "id": "t01",
+      "badge": "CLOSING SOON",
+      "text": "After-Light: Prog-Rock Opera — The Mount Players, Macedon — final performances this weekend",
+      "link": "/shows/mel-2026-084.html"
+    },
+    {
       "id": "t02",
-      "badge": "REVIEW",
-      "text": "Dying: A Memoir — MTC ★★★★★ — 'disarming us before leading us into the enormity'",
-      "link": "/reviews/review-deanna-dying-a-memoir.html"
+      "badge": "CLOSING SOON",
+      "text": "Jersey Boys — Peninsula Light Opera at Frankston Arts Centre — closes tomorrow",
+      "link": "/shows/mel-2026-065.html"
     },
     {
       "id": "t03",
-      "badge": "REVIEW",
+      "badge": "NOW SHOWING",
+      "text": "Pretty Woman — Regent Theatre | SIX — Comedy Theatre | Neil Diamond Musical — Princess Theatre",
+      "link": "/whats-on.html"
+    },
+    {
+      "id": "t04",
+      "badge": "OPENING SOON",
+      "text": "Ride the Cyclone — Theatre of the Damned, Geelong — opens 1 September",
+      "link": "/shows/mel-2026-092.html"
+    },
+    {
+      "id": "t05",
+      "badge": "OPENING SOON",
+      "text": "Into the Woods — BLOC, Ballarat — 4 & 5 September",
+      "link": "/shows/mel-2026-094.html"
+    },
+    {
+      "id": "t06",
+      "badge": "NEW REVIEW",
+      "text": "Dying: A Memoir — MTC ★★★★★ — disarming us before leading us into the enormity",
+      "link": "/reviews/review-deanna-dying-a-memoir.html"
+    },
+    {
+      "id": "t07",
+      "badge": "NEW REVIEW",
       "text": "Mamma Mia! — Geelong Lyric Theatre Society ★★★★★",
       "link": "/reviews/review-deanna-mamma-mia.html"
     },
     {
-      "id": "t04",
-      "badge": "REVIEW",
-      "text": "The Wind in the Willows — Royal Botanic Gardens ★★★★★ — Penelope's pick",
-      "link": "/reviews/review-penelope-the-wind-in-the-willows.html"
-    },
-    {
-      "id": "t05",
-      "badge": "REVIEW",
-      "text": "The Lucky Country — Melbourne Fringe ★★★★★ — 'a bold new chapter of Australian storytelling'",
-      "link": "/reviews/review-deanna-the-lucky-country.html"
-    },
-    {
-      "id": "t06",
-      "badge": "REVIEW",
-      "text": "Mary Poppins — MDMS at Karralyka ★★★★★ — 'a full-scale dollhouse opening to reveal the Banks family'",
-      "link": "/reviews/review-deanna-mary-poppins.html"
-    },
-    {
-      "id": "t07",
-      "badge": "REVIEW",
-      "text": "Seussical The Musical — OCPAC ★★★★★ — 'nothing short of magical'",
-      "link": "/reviews/review-deanna-seussical-the-musical.html"
-    },
-    {
       "id": "t08",
-      "badge": "REVIEW",
-      "text": "The Phantom of the Opera — UK Tour ★★★★★",
-      "link": "/reviews/phantom-of-the-opera-2024.html"
+      "badge": "NEW REVIEW",
+      "text": "The Lucky Country — Melbourne Fringe ★★★★★ — a bold new chapter of Australian storytelling",
+      "link": "/reviews/review-deanna-the-lucky-country.html"
     }
   ]
 }

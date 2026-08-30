@@ -399,6 +399,18 @@ for (const show of calendar) {
   written++;
 }
 
+// Prune stale generated pages that no longer exist in calendar.json
+// (e.g. after dedupe-calendar.js removes duplicate entries)
+const validIds = new Set(calendar.map(s => `${s.id}.html`));
+let pruned = 0;
+for (const f of fs.readdirSync(OUT_DIR)) {
+  if (!/^mel-\d{4}-\d+\.html$/.test(f)) continue;
+  if (validIds.has(f)) continue;
+  if (!DRY_RUN) fs.unlinkSync(path.join(OUT_DIR, f));
+  pruned++;
+}
+if (pruned) console.log(`Pruned ${pruned} stale show ${pruned === 1 ? 'page' : 'pages'}`);
+
 console.log(`${DRY_RUN ? '[DRY RUN] Would write' : 'Written'} ${written} show pages to shows/`);
 if (!DRY_RUN) {
   const files = fs.readdirSync(OUT_DIR).filter(f => f.endsWith('.html') && f !== 'TEMPLATE.html');

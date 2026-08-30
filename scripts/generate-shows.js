@@ -382,7 +382,8 @@ ${jsonLd}
 
 // ─── Main ────────────────────────────────────────────────────────────────────
 
-const calendar = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8'));
+// Strip a UTF-8 BOM if present (some Windows editors prepend one and JSON.parse rejects it)
+const calendar = JSON.parse(fs.readFileSync(DATA_FILE, 'utf8').replace(/^\uFEFF/, ''));
 
 if (!DRY_RUN) {
   fs.mkdirSync(OUT_DIR, { recursive: true });

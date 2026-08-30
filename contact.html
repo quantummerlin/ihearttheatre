@@ -411,7 +411,6 @@
  }
  }
  </style>
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#e8b923">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -504,7 +503,7 @@
  <h2>Send Us a Message</h2>
  
  <div class="contact-form">
- <form id="contactForm">
+ <form id="contactForm" data-form-kind="contact">
  <div class="form-group">
  <label for="name">Your Name *</label>
  <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -616,7 +615,8 @@
             var data = Object.fromEntries(new FormData(this));
             submitFormViaEmail(this, {
                 to: 'hello@ihearttheatre.com',
-                subject: 'iHeartTheatre contact: ' + (data.subject || 'Message')
+                subject: 'iHeartTheatre contact: ' + (data.subject || 'Message'),
+                formId: 'contact'
             });
         });
  });

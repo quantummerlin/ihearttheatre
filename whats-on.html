@@ -8,7 +8,7 @@
   <meta property="og:title" content="What's On — iHeartTheatre">
   <meta property="og:description" content="Melbourne theatre shows, dates, venues and booking info — professional, community and school productions.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#8B0000">
+  <meta name="theme-color" content="#e8b923">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -200,14 +200,11 @@
     var dates = show._dates;
     var statusBadge = buildStatusBadge(show.production_type);
     var genreBadges = buildGenreBadges(show);
-    var ticketUrl = show.ticket_url || '#';
-    var suburb = show.location || '';
-    var venue = show.venue || '';
-    var company = show.company || '';
+    var detailUrl = show.id ? 'shows/' + show.id + '.html' : (show.ticket_url || '#');
     var title = show.show_title || 'Untitled';
 
     return (
-      '<a href="' + ticketUrl + '" class="show-card">' +
+      '<a href="' + detailUrl + '" class="show-card">' +
         '<div class="show-card-poster">' +
           '<div class="show-card-poster-placeholder">' + emoji + '</div>' +
         '</div>' +
@@ -216,14 +213,14 @@
             statusBadge +
           '</div>' +
           '<h3 class="show-card-title">' + title + '</h3>' +
-          '<div class="show-card-venue">' + venue + (suburb ? ', ' + suburb : '') + '</div>' +
+          '<div class="show-card-venue">' + (show.venue ? show.venue + (show.location ? ', ' + show.location : '') : (show.location || '')) + '</div>' +
           '<div class="show-card-dates">' + dates + '</div>' +
           '<div class="show-card-company">' +
             genreBadges +
-            (company ? '<span class="badge badge-company" style="margin-left:4px">' + company + '</span>' : '') +
+            (show.company ? '<span class="badge badge-company" style="margin-left:4px">' + show.company + '</span>' : '') +
           '</div>' +
           '<div class="show-card-actions" style="margin-top:10px">' +
-            '<span class="btn btn-sm btn-outline-gold">Get Tickets</span>' +
+            '<span class="btn btn-sm btn-outline-gold">View Details</span>' +
           '</div>' +
         '</div>' +
       '</a>'

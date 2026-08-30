@@ -1,15 +1,26 @@
 /* iHeartTheatre — sw_v11.js
    Network-first for HTML, cache-first for static assets */
 
-var CACHE_VERSION  = 'iht-v2';
-var STATIC_CACHE   = 'iht-v2-static';
-var PAGE_CACHE     = 'iht-v2-pages';
+var CACHE_VERSION  = 'iht-v3';
+var STATIC_CACHE   = 'iht-v3-static';
+var PAGE_CACHE     = 'iht-v3-pages';
 
 var PRECACHE_URLS = [
   '/css/style.css',
+  '/css/app.css',
+  '/css/shared.css',
+  '/css/reviews.css',
+  '/css/shows.css',
+  '/css/musicals.css',
+  '/css/submit-forms.css',
   '/js/main.js',
+  '/js/shared.js',
+  '/js/search.js',
   '/manifest.json',
-  '/data/ticker.json'
+  '/data/ticker.json',
+  '/data/calendar.json',
+  '/icons/icon-192x192.png',
+  '/offline.html'
 ];
 
 self.addEventListener('install', function (e) {

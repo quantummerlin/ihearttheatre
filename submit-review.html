@@ -360,7 +360,6 @@
  }
  }
  </style>
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#e8b923">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -421,7 +420,7 @@
  </ul>
  </div>
 
- <form id="reviewForm">
+ <form id="reviewForm" data-form-kind="review">
  <div class="form-group">
  <label class="form-label">Your Name <span class="required">*</span></label>
  <input type="text" class="form-input" name="reviewerName" required placeholder="Your full name">
@@ -538,7 +537,8 @@
             var data = Object.fromEntries(new FormData(this));
             submitFormViaEmail(this, {
                 to: 'auditions@ihearttheatre.com',
-                subject: 'Review submission: ' + (data.showTitle || data.title || data.show || 'Untitled')
+                subject: 'Review submission: ' + (data.showTitle || data.title || data.show || 'Untitled'),
+                formId: 'submit-review'
             });
         });
  });

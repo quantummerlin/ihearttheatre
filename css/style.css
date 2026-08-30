@@ -1,4 +1,4 @@
-/* Color Palette Refinement */
+/* Color Palette Refinement — canonical gold/red curtain palette */
 
 :root {
   --bg-primary: #050508;
@@ -6,8 +6,8 @@
   --bg-tertiary: #1a1a25; /* Richer black for depth */
   --text-primary: #f5f5f5;
   --text-secondary: #c0c0d0; /* Lighter secondary text */
-  --accent-primary: #667eea;
-  --accent-secondary: #764ba2;
+  --accent-primary: #e8b923;
+  --accent-secondary: #b91c1c;
   --accent-gold: #ffd700; /* Warm gold */
   --accent-bright-gold: #ffb347; /* Brighter gold for highlights */
   --accent-pink: #f093fb; /* Soft pink for Penelope */
@@ -115,7 +115,7 @@ body {
 
 /* Utility for RGB values */
 :root {
-  --accent-primary-rgb: 102, 126, 234;
+  --accent-primary-rgb: 232, 185, 35;
   --accent-gold-rgb: 255, 215, 0;
   --accent-pink-rgb: 240, 147, 251;
 }

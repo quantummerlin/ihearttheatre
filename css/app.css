@@ -18,19 +18,19 @@
   --border:         rgba(255,255,255,.08);
   --border-2:       rgba(255,255,255,.14);
 
-  /* Accent */
-  --primary:        #667eea;
-  --secondary:      #764ba2;
+  /* Accent — canonical gold/red curtain palette */
+  --primary:        #e8b923;
+  --secondary:      #b91c1c;
   --gold:           #ffd700;
   --gold-2:         #e8b923;
-  --neon-indigo:    #667eea;
+  --neon-indigo:    #e8b923;
   --neon-gold:      #ffd700;
   --neon-pink:      #f093fb;
   --neon-green:     #34d399;
   --neon-red:       #f5576c;
 
   /* Gradients */
-  --grad-primary:   linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --grad-primary:   linear-gradient(135deg, #e8b923 0%, #b91c1c 100%);
   --grad-gold:      linear-gradient(135deg, #ffd700 0%, #e8b923 100%);
   --grad-warm:      linear-gradient(135deg, #e8b923 0%, #b91c1c 100%);
   --grad-pink:      linear-gradient(135deg, #f093fb 0%, #f5576c 100%);

@@ -24,6 +24,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerate show pages from calendar.json
+        run: node scripts/generate-shows.js
+
+      - name: Regenerate sitemap.xml
+        run: node scripts/generate-sitemap.js
+
+      - name: Regenerate reviews RSS feed
+        run: node scripts/generate-feed.js
+
       - name: Build search index
         run: npx -y pagefind@1.5.2
 

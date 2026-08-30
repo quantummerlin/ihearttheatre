@@ -1,177 +1,147 @@
 # iHeartTheatre — Copilot Project Instructions
 
+> Last updated: August 2026. This file documents the **actual current state** of the codebase. Previous versions were stale — trust this one.
+
 ## Project Overview
-iHeartTheatre.com is a Melbourne theatre community PWA website run by **Deanna Amato** and her young daughter **Penelope Quinn**, the site's junior reviewer. They publish theatre reviews celebrating Melbourne's theatre scene — from school halls to Broadway blockbusters.
+iHeartTheatre.com is a Melbourne theatre community PWA website run by **Deanna Amato** and her young daughter **Penelope Quinn**, the site's junior reviewer (plus guest reviewer **Wayne Michael**, profile pending). They publish theatre reviews celebrating Melbourne's theatre scene — from school halls to Broadway blockbusters — and host data-driven tools: What's On calendar, Role Finder, Song Browser, Career Builder.
+
+**Brand voice:** warm, exuberant, community-first. "We ♥ Theatre" — reviewers, not critics. Real counts only; never inflate stats.
 
 ## Tech Stack
-- **Static HTML** — No build system, no framework. Pages are self-contained HTML files with inline `<style>` + shared assets.
-- **PWA** — `manifest.json`, `sw.js` (service worker), icons in `icons/`
-- **Deployment** — GitHub Pages via `.github/workflows/deploy.yml`
+- **Static HTML** — No build system, no framework. Pages are self-contained HTML files with inline `<style>` + shared CSS/JS assets.
+- **PWA** — `manifest.json`, `sw.js` (shim → `sw_v11.js`), icons in `icons/` and favicon SVG in `images/icons/iht-icon.svg`
+- **Deployment** — GitHub Pages via `.github/workflows/deploy.yml` (runs Pagefind during deploy)
+- **Search** — Pagefind (`pagefind.yml`), triggered by Cmd-K via `js/search.js` (only works on deployed site)
 - **Domain** — ihearttheatre.com
+- **Data layer** — `/data/*.json` consumed at runtime (fetch) and at build time (`scripts/*.js`)
 
 ## File Structure
 ```
-index.html                  ← Homepage (canonical)
-reviews.html                ← Reviews archive/listing page
-reviewers.html              ← Reviewer profiles
-reviewer-deanna.html        ← Deanna's profile page
-reviewer-penelope.html      ← Penelope's profile page
-about.html, contact.html    ← Info pages
-junior-kids-schools.html    ← Kids/schools section
-holiday-programs.html       ← Holiday programs
-submit-review.html          ← Review submission form
-submit-show.html            ← Show submission form
-submit-holiday-program.html ← Holiday program submission
-promote-show.html           ← Show promotion page
-manifesto.html              ← Site manifesto
-privacy.html, disclaimer.html ← Legal pages
-review-sample.html          ← Sample review template
-reviews/                    ← 33 individual review HTML pages
-  review-deanna-*.html      ← Deanna's reviews (26)
-  review-penelope-*.html    ← Penelope's reviews (7)
-REVIEWERS/                  ← Raw content & images
-  Deanna/                   ← Deanna's source text + photos
-  Penelope/                 ← Penelope's source text + photos
-generated_images/           ← AI-generated profile/hero images
-icons/                      ← PWA icons (72-512px)
-css/shared.css              ← Shared stylesheet
-js/shared.js                ← Shared JS (SW, PWA, particles, hamburger, achievements)
-sw.js                       ← Service worker
-manifest.json               ← PWA manifest
-sitemap.xml                 ← SEO sitemap
-robots.txt                  ← SEO robots
-404.html                    ← Error page
+index.html                  ← Homepage (canonical; app-shell with sidebar)
+whats-on.html               ← Melbourne calendar view (data/calendar.json)
+shows.html                  ← Shows hub (data/calendar.json)
+auditions.html              ← Auditions noticeboard (data/noticeboard/submissions.json)
+services.html               ← Service providers (data/providers/providers.json)
+companies.html              ← Victorian theatre companies
+musicals.html               ← Role Finder hub (data/musicals/*.json)
+songs.html                  ← Audition song browser (data/audition-songs.json)
+career-builder.html         ← Career tool
+reviews.html, reviewers.html ← Review listing & profiles
+reviewer-deanna.html, reviewer-penelope.html, reviewer-wayne.html
+about.html, contact.html, manifesto.html, privacy.html, disclaimer.html
+submit-*.html               ← Submission forms (Formspree)
+reviews/                    ← Individual review pages
+  review-deanna-*.html      ← Deanna's reviews
+  review-penelope-*.html    ← Penelope's reviews
+  phantom-of-the-opera-2024.html
+shows/                      ← Generated show detail pages (mel-2026-*.html) — output of scripts/generate-shows.js; NEVER hand-edit
+musicals/{show}/            ← Static role guide pages (shared.css + musicals.css)
+REVIEWERS/                  ← Raw photos per reviewer (Deanna/, Penelope/)
+generated_images/           ← AI-generated profile/hero images (deanna-profile.webp, penelope-profile.webp, hero-background.webp)
+icons/                      ← PWA icons 72-512px (icon-192x192.png etc.)
+images/                     ← Site imagery (musicals/, roles/, articles/, global/, per-section heroes)
+css/shared.css              ← Legacy shared stylesheet (gold/red tokens, static nav/footer)
+css/app.css                 ← App-shell stylesheet (sidebar, mobile nav, ticker, cards)
+css/style.css               ← Thin token override layer (kept for app-shell cohort)
+css/reviews.css, shows.css, musicals.css, submit-forms.css
+js/shared.js                ← Legacy runtime: SW registration, GA4, forms, cookie banner
+js/main.js                  ← App-shell runtime: sidebar/mobile nav injection, ticker, page transitions
+js/search.js                ← Pagefind Cmd-K modal
+scripts/generate-shows.js   ← Builds shows/mel-2026-*.html from data/calendar.json
+scripts/merge-songs.js      ← Rebuilds data/audition-songs.json from _batch*.json with UTF-8
+sw.js + sw_v11.js           ← Service worker (sw.js is a shim importing sw_v11.js)
+manifest.json, sitemap.xml, robots.txt, 404.html
 ```
 
-## Design System
+## Canonical Design System — gold/red curtain
+The site's ONE canonical palette is the **gold/red curtain** theme. The purple palette (`#667eea`/`#764ba2`) is DEPRECATED and must never be re-introduced.
 
 ### Colors
 | Token | Value | Usage |
 |-------|-------|-------|
-| `--bg-primary` | `#050508` | Page background |
-| `--bg-secondary` | `#0a0a0f` | Card/section backgrounds |
-| `--bg-tertiary` | `#12121a` | Elevated surfaces |
-| `--text-primary` | `#f5f5f5` | Headings, body text |
-| `--text-secondary` | `#a0a0b0` | Muted text, dates, meta |
-| `--accent-primary` | `#667eea` | Links, badges, active states |
-| `--accent-secondary` | `#764ba2` | Gradient end, accents |
-| `--accent-gold` | `#ffd700` | Stars, highlights, premium |
-| `--gradient-primary` | `linear-gradient(135deg, #667eea 0%, #764ba2 100%)` | Buttons, headings, cards |
-| `--gradient-gold` | `linear-gradient(135deg, #ffd700 0%, #ffb347 100%)` | Stars, ratings |
-| `--glass-bg` | `rgba(255, 255, 255, 0.03)` | Glassmorphism panels |
+| `--bg-primary` / `--bg` | `#050508` | Page background |
+| `--bg-secondary` / `--bg-2` | `#0a0a0f` | Card/section backgrounds |
+| `--bg-tertiary` / `--bg-3` | `#12121a` | Elevated surfaces |
+| `--text-primary` / `--text` | `#f5f5f5` | Headings, body text |
+| `--text-secondary` / `--text-2` | `#c0c0d0` (legacy `#a0a0b0`) | Muted text, dates, meta |
+| `--accent-primary` / `--primary` | `#e8b923` | Links, badges, active states |
+| `--accent-secondary` / `--secondary` | `#b91c1c` | Gradient end, accents |
+| `--accent-gold` / `--gold` | `#ffd700` | Stars, highlights, premium |
+| `--gradient-primary` / `--grad-primary` | `linear-gradient(135deg, #e8b923 0%, #b91c1c 100%)` | Buttons, headings, cards |
+| `--gradient-gold` / `--grad-gold` | `linear-gradient(135deg, #ffd700 0%, #ffb347 100%)` | Stars, ratings |
+| `--glass-bg` / `--glass` | `rgba(255, 255, 255, 0.03)` | Glassmorphism panels |
 | `--glass-border` | `rgba(255, 255, 255, 0.08)` | Glass borders |
 
 ### Typography
-- **Headings:** `'Playfair Display', serif` — weights 400-700
-- **Body:** `'Inter', -apple-system, BlinkMacSystemFont, sans-serif` — weights 300-700
-- **Google Fonts link:** `https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap`
+- **Headings:** `'Playfair Display', serif` — weights 400–900
+- **Body:** `'Inter', -apple-system, BlinkMacSystemFont, sans-serif` — weights 300–700
+- **Fonts:** preconnect + async preload pattern (see any hub page `<head>`)
 
-### Visual Effects
-- **Glassmorphism:** `backdrop-filter: blur(20px)` + glass-bg/glass-border
-- **Floating particles:** Purple (#667eea at 30% opacity) floating dots
-- **Progress bar:** Gradient purple bar fixed at top
-- **Confetti:** On 90% scroll achievement
-- **Animations:** Subtle fade-ins, translateY reveals, hover scale effects
+### Visual language
+- Dark stage (#050508) with glassmorphism (`backdrop-filter: blur(16-20px)`)
+- Gold spotlight / curtain-red gradients; gold star ratings
+- Progress bar: gold→red gradient fixed at top
+- Animations: subtle fade-ins, translateY reveals, hover scale/glow effects
 
-## Navigation Pattern
-Every page MUST have this nav structure:
+## Two Page Cohorts
 
-### Root-level pages:
+### A. App-shell pages (new standard — use for NEW pages)
+`index.html`, hub pages (`shows.html`, `whats-on.html`, `auditions.html`, `reviews.html`, `musicals.html`, `songs.html`, `career-builder.html`, `about.html`, `contact.html`…) and all `reviews/*.html`.
+- Load `/css/style.css` + `/css/app.css` (+ `reviews.css` for review articles)
+- Load `/js/main.js` — it injects the sidebar (≥768px) and mobile bottom nav (≤767px) from its `NAV_ITEMS` config. **Do NOT hand-write nav markup on these pages.**
+- Active-page detection in `main.js#getActivePage()` — update it when adding nav targets.
+
+### B. Legacy static pages
+`musicals/{show}/*.html` role guides and `shows/mel-2026-*.html` generated pages.
+- Load `../../css/shared.css` + page stylesheet (`musicals.css` / `shows.css`) with `?v=` cache-buster
+- Hand-written static nav + hamburger + `js/shared.js`
+- `shows/mel-2026-*.html` are generated — edit `scripts/generate-shows.js` + `data/calendar.json` instead.
+
+## Required Head Tags
+
+App-shell pages (absolute paths):
 ```html
-<nav>
-  <div class="nav-container">
-    <a href="index.html" class="logo">iHeartTheatre</a>
-    <div class="hamburger"><span></span><span></span><span></span></div>
-    <div class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="whats-on.html">What's On</a>
-      <a href="venues.html">Venues</a>
-      <a href="auditions.html">Auditions</a>
-      <a href="junior-kids-schools.html">Junior &amp; Kids</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
-</nav>
+<meta name="theme-color" content="#e8b923">
+<link rel="icon" type="image/svg+xml" href="/images/icons/iht-icon.svg">
+<link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+<link rel="manifest" href="/manifest.json">
 ```
 
-### Pages inside `reviews/` subfolder:
-Same structure but all `href` values prefixed with `../`:
+Legacy pages inside subfolders (relative paths):
 ```html
-<a href="../index.html" class="logo">iHeartTheatre</a>
-<!-- ... -->
-<a href="../index.html">Home</a>
-<a href="../whats-on.html">What's On</a>
-<a href="../venues.html">Venues</a>
-<a href="../auditions.html">Auditions</a>
-<a href="../junior-kids-schools.html">Junior &amp; Kids</a>
-<a href="../reviews.html">Reviews</a>
-<!-- etc. -->
-```
-
-## Footer Pattern
-```html
-<footer>
-  <div class="footer-content">
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="whats-on.html">What's On</a>
-      <a href="auditions.html">Auditions</a>
-      <a href="venues.html">Venues</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="disclaimer.html">Disclaimer</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <p class="footer-copy">&copy; 2026 iHeartTheatre &bull; The Home of Victorian Theatre</p>
-  </div>
-</footer>
-```
-(Use `../` prefix for pages in `reviews/`)
-
-## Required Head Tags (every page)
-```html
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#667eea">
+<meta name="theme-color" content="#e8b923">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="manifest" href="manifest.json">   <!-- or ../manifest.json in reviews/ -->
-<link rel="apple-touch-icon" href="icons/icon-192x192.png">  <!-- or ../icons/ -->
-<link rel="stylesheet" href="css/shared.css">  <!-- or ../css/ -->
+<link rel="manifest" href="../manifest.json">   <!-- or ../../manifest.json -->
+<link rel="apple-touch-icon" href="../icons/icon-192x192.png">
+<link rel="stylesheet" href="../css/shared.css?v=20260515">
 ```
 
-## Required Body Elements (every page)
-```html
-<div class="progress-bar" id="progressBar"></div>
-<div class="particles" id="particles"></div>
-<!-- ... page content ... -->
-<button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
-<script src="js/shared.js"></script>  <!-- or ../js/ -->
-```
+## Forms
+All submission forms (`submit-*.html`, contact) use **Formspree** endpoints with `submitFormHelper()` fallback. Do NOT re-introduce mailto-only submission; do NOT log submissions to console.
 
-## Review Page Template Convention
-Review files follow naming: `review-{reviewer}-{show-slug}.html`
-- Deanna's: `reviews/review-deanna-{show}.html`
-- Penelope's: `reviews/review-penelope-{show}.html`
+## Data Conventions
+- `data/calendar.json` — single source of truth for Melbourne shows (ids `mel-2026-001`…). Run `node scripts/generate-shows.js` after editing.
+- `data/audition-songs.json` — generated by `node scripts/merge-songs.js` (UTF-8 safe). Never hand-edit; edit `_batch*.json` and re-merge.
+- `data/ticker.json` — homepage ticker items.
+- JSON files must be valid UTF-8 (Windows PowerShell 5.1 corrupts accents — use Node for merges).
 
-Each review page includes:
-1. Reviewer badge with profile image
-2. Show title (h1, Playfair Display)
-3. Meta info (venue, dates, rating stars)
-4. Hero image from `REVIEWERS/{Name}/`
-5. Review body content
-6. Image gallery (if multiple photos)
-7. Related reviews section
+## Review Page Convention
+- Naming: `reviews/review-{reviewer}-{show-slug}.html`
+- Photos live in `REVIEWERS/{Reviewer}/` and are referenced as `../REVIEWERS/{Reviewer}/{file}`
+- Include JSON-LD Review schema, og:image (ideally a real show photo), progress bar, related-reviews section
+- Use `.github/prompts/review-publisher.prompt.md` as the publishing workflow
+- After adding a review: update `reviews.html` REVIEWS array, reviewer profile page count, and re-run sitemap generation if present
 
 ## Rules
 1. **NEVER use light backgrounds.** All pages use dark theme (#050508).
-2. **NEVER reference index-v2.html.** The canonical homepage is `index.html`.
-3. **Copyright year is 2026.** Keep it current.
-4. **All inline styles stay inline.** shared.css handles nav/footer/common elements; page-specific styles remain in `<style>` tags.
-5. **Test on mobile.** Hamburger menu must work on all pages.
-6. **Update sitemap.xml** when adding new pages.
-7. **Update sw.js PRECACHE_URLS** when adding important new pages.
-8. **Update reviews.html** when adding new reviews (the listing page).
+2. **NEVER use purple (#667eea/#764ba2).** Canonical palette is gold/red (#e8b923/#b91c1c).
+3. **NEVER reference index-v2.html.** The canonical homepage is `index.html`.
+4. **NEVER add third-party scripts** (no trackers, no ninja/myninja scripts).
+5. **Copyright year is 2026.** Keep it current.
+6. **Never hand-edit `shows/mel-2026-*.html`** — regenerate via script.
+7. **Image files must exist before referencing them** — check with a dir listing; use a fallback (hide-on-error) for optional art.
+8. **Test on mobile.** App-shell pages get the injected mobile bottom nav; legacy pages need working hamburger.
+9. **Update sitemap.xml** when adding new pages.
+10. **Update `sw_v11.js` PRECACHE_URLS** (not `sw.js`) when adding critical assets.
+11. **Update reviews.html** when adding new reviews (the listing page).
+12. **Real counts only** — no fake stats, no invented social proof.

@@ -225,6 +225,13 @@
             color: var(--text-secondary);
         }
         .btn-cal-ics:hover { border-color: rgba(232,185,35,0.5); color: var(--text-primary); }
+        .btn-cal-details {
+            background: var(--gradient-primary);
+            color: #0a0a0f;
+            font-weight: 700;
+            margin-right: auto;
+        }
+        .btn-cal-details:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(185,28,28,0.35); }
         .btn-cal-google {
             background: var(--gradient-primary);
             color: white;
@@ -496,6 +503,7 @@
     </div>
     ${tags ? `<div class="show-tags">${tags}</div>` : ''}
     <div class="show-card-footer">
+        <a href="shows/${escHtml(show.id)}.html" class="btn-cal btn-cal-details">View details</a>
         <button class="btn-cal btn-cal-ics" onclick="generateICS(SHOWS_DATA['${escHtml(show.id)}'])">+ .ics</button>
         <a href="${googleCalUrl(show)}" target="_blank" rel="noopener noreferrer" class="btn-cal btn-cal-google">+ Google Cal</a>
     </div>

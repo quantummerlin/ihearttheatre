@@ -110,14 +110,11 @@
 
   /* ── 6. NOW BAR (Ticker) ───────────────────────────────── */
   var TICKER_FALLBACK = [
-    { badge: 'NOW SHOWING', text: 'Mamma Mia! — Geelong Lyric Theatre Society at Geelong Arts Centre', link: '/whats-on.html' },
-    { badge: 'OPENING SOON', text: 'Les Misérables — Upstage Theatre Company at Berwick', link: '/whats-on.html' },
     { badge: 'NEW REVIEW', text: 'Deanna reviews Dying: A Memoir ★★★★★ — MTC', link: '/reviews.html' },
-    { badge: 'AUDITIONS', text: 'Grease — Footlights Youth Theatre open auditions', link: '/auditions.html' },
-    { badge: 'CLOSING SOON', text: "The Good Life — Brighton Theatre Company, don't miss it", link: '/whats-on.html' },
-    { badge: 'NOW SHOWING', text: 'Mamma Mia! — National Theatre, St Kilda', link: '/whats-on.html' },
-    { badge: 'KIDS', text: 'Junior theatre workshops open for ages 8-16', link: '/junior-kids-schools.html' },
-    { badge: 'NEW REVIEW', text: 'Wayne Michael joins iHeartTheatre — first review coming soon', link: '/reviews.html' }
+    { badge: 'NEW REVIEW', text: 'Mamma Mia! — Geelong Lyric Theatre Society ★★★★★', link: '/reviews/review-deanna-mamma-mia.html' },
+    { badge: 'NEW REVIEW', text: 'The Wind in the Willows — Royal Botanic Gardens ★★★★★ — Penelope\u2019s pick', link: '/reviews/review-penelope-the-wind-in-the-willows.html' },
+    { badge: 'NEW REVIEW', text: 'The Lucky Country — Melbourne Fringe ★★★★★ — a bold new chapter of Australian storytelling', link: '/reviews/review-deanna-the-lucky-country.html' },
+    { badge: 'NEW REVIEW', text: 'Seussical The Musical — OCPAC ★★★★★ — nothing short of magical', link: '/reviews/review-deanna-seussical-the-musical.html' }
   ];
 
   var BADGE_STYLE = {
@@ -322,7 +319,9 @@
 
   /* ── 16. Service Worker ────────────────────────────────── */
   function registerSW() {
+    if (window.__ihtSWRegistered) return; // already registered by shared.js
     if ('serviceWorker' in navigator) {
+      window.__ihtSWRegistered = true;
       navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
         .catch(function () { /* non-fatal */ });
     }
@@ -343,26 +342,33 @@
   }
 
   /* ── 18. submitFormViaEmail helper ────────────────────── */
-  // Preserved from original iHT pattern for contact forms
-  window.submitFormViaEmail = function (formEl, subjectPrefix) {
-    subjectPrefix = subjectPrefix || 'iHT Contact';
+  // Unified entry point. Canonical implementation lives in js/shared.js
+  // (window.iHTSubmitForm). Supports both call signatures:
+  //   submitFormViaEmail(formEl | dataObject, optsObject)   ← shared.js style
+  //   submitFormViaEmail(formEl, 'Subject prefix')          ← legacy string style
+  // Only installed if not already defined, so shared.js can take precedence.
+  window.submitFormViaEmail = window.submitFormViaEmail || function (source, arg2) {
+    var opts = (arg2 && typeof arg2 === 'object') ? arg2
+      : { subject: ((arg2 || 'iHeartTheatre') + ' submission') };
+    if (window.iHTSubmitForm) return window.iHTSubmitForm(source, opts);
+    // Minimal fallback when shared.js is not loaded: build and open mailto.
     var data = {};
-    var inputs = formEl.querySelectorAll('input, textarea, select');
-    inputs.forEach(function (el) {
-      if (el.name) data[el.name] = el.value;
-    });
+    if (source && source.querySelectorAll) {
+      source.querySelectorAll('input, textarea, select').forEach(function (el) {
+        if (el.name && el.value) data[el.name] = el.value;
+      });
+    } else if (source && typeof source === 'object') {
+      data = source;
+    }
     var body = Object.keys(data).map(function (k) {
       return k + ': ' + data[k];
     }).join('\n');
-    var subject = encodeURIComponent(subjectPrefix + ' — ' + (data.name || data.subject || 'Message'));
-    var bodyEnc = encodeURIComponent(body);
-    var mailto = 'mailto:hello@ihearttheatre.com?subject=' + subject + '&body=' + bodyEnc;
-
-    // Try clipboard copy too
+    var to = opts.to || 'hello@ihearttheatre.com';
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(body).catch(function () {});
     }
-    window.location.href = mailto;
+    window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(opts.subject || 'iHeartTheatre submission') + '&body=' + encodeURIComponent(body);
+    return false;
   };
 
   /* ── 19. Lazy-load hero images (off-screen slides) ────── */

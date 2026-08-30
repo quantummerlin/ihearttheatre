@@ -8,7 +8,6 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#e8b923">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -51,7 +50,7 @@
 
  <div class="form-section">
  <div class="form-container" id="programForm">
- <form id="submissionForm">
+ <form id="submissionForm" data-form-kind="holiday">
  <div class="form-group">
  <label for="programTitle">Program Title <span>*</span></label>
  <input type="text" id="programTitle" name="programTitle" required placeholder="Enter the name of your program">
@@ -197,7 +196,8 @@
             var data = Object.fromEntries(new FormData(this));
             submitFormViaEmail(this, {
                 to: 'auditions@ihearttheatre.com',
-                subject: 'Holiday program submission: ' + (data.programTitle || data.title || 'Untitled')
+                subject: 'Holiday program submission: ' + (data.programTitle || data.title || 'Untitled'),
+                formId: 'submit-holiday'
             });
         });
  });

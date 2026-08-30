@@ -412,7 +412,7 @@
     <div class="cards-container">
         <div class="cards-grid" id="cards-grid"></div>
         <div class="no-results" id="no-results">
-            <p>No auditions match your search, try different keywords or clear filters.</p>
+            <p>No auditions are listed just yet. Are you casting for a production? <a href=submit-show.html style=color:var(--accent-primary)>Submit your audition notice</a> and we will post it here for free.</p>
         </div>
     </div>
 
@@ -571,16 +571,9 @@
             const data = await res.json();
             allSubmissions = data.submissions || [];
         } catch {
-            // demo fallback
-            allSubmissions = [
-                {id:"d001",show_title:"Into the Woods",company:"Fab Nobs Theatre",type:"musical",audition_date:"2026-07-15",closing_date:"2026-07-10",audition_location:"Wangaratta PAC, Wangaratta",region:"regional",submission_link:"https://www.fabnobs.com.au/auditions",roles_available:"All principal and ensemble roles",notes:"Prepare 32 bars in the style of the show. Cold reads from script.",date_posted:"2026-04-01",status:"active",tags:["musical","all ages","regional","sondheim"]},
-                {id:"d002",show_title:"Jersey Boys",company:"CLOC Musical Theatre",type:"musical",audition_date:"2026-05-20",closing_date:"2026-05-15",audition_location:"National Theatre, St Kilda",region:"melbourne",submission_link:"https://www.cloc.org.au/auditions",roles_available:"Frankie Valli, Tommy DeVito, Bob Gaudio, Nick Massi + ensemble",notes:"Strong male vocalists essential. Falsetto range required for Frankie Valli.",date_posted:"2026-04-01",status:"active",tags:["musical","adults","melbourne","jukebox"]},
-                {id:"d003",show_title:"Frozen Jr.",company:"Babirra Music Theatre",type:"musical",audition_date:"2026-06-01",closing_date:"2026-05-25",audition_location:"Karralyka Centre, Ringwood",region:"melbourne",submission_link:"https://www.babirra.org.au/auditions",roles_available:"Elsa, Anna, Hans, Kristoff, Olaf + ensemble",notes:"Junior production 8�18. Strong belt for Elsa. Dance audition included.",date_posted:"2026-04-01",status:"active",tags:["musical","junior","melbourne","disney"]},
-                {id:"d004",show_title:"Sister Act",company:"Whitehorse Musical Theatre",type:"musical",audition_date:"2026-08-10",closing_date:"2026-08-05",audition_location:"Whitehorse Centre, Nunawading",region:"melbourne",submission_link:"https://www.wmtc.org.au/auditions",roles_available:"Deloris Van Cartier, Mother Superior + nuns + ensemble",notes:"Seeking powerful female vocalists. Motown/soul style.",date_posted:"2026-04-01",status:"active",tags:["musical","adults","melbourne","comedy"]},
-                {id:"d005",show_title:"Mary Poppins",company:"Geelong Lyric Theatre",type:"musical",audition_date:"2026-09-05",closing_date:"2026-08-30",audition_location:"Geelong Arts Centre, Geelong",region:"regional",submission_link:"https://www.geelonglyric.com.au/auditions",roles_available:"Mary Poppins, Bert, George Banks, Winifred Banks + ensemble",notes:"Flying involved for Mary. Strong soprano. Triple-threat Bert required.",date_posted:"2026-04-01",status:"active",tags:["musical","all ages","regional","disney","family"]},
-                {id:"d006",show_title:"The Lightning Thief",company:"Pumphouse Theatre",type:"musical",audition_date:"2026-06-20",closing_date:"2026-06-15",audition_location:"Pumphouse Theatre, Melbourne",region:"melbourne",submission_link:"https://www.trybooking.com/events/example",roles_available:"Percy Jackson, Annabeth Chase, Grover, Luke + ensemble",notes:"Young adult cast preferred (16�30). High energy pop-rock score.",date_posted:"2026-04-01",status:"active",tags:["musical","young adult","melbourne","pop-rock"]}
-            ];
+            allSubmissions = [];
         }
+        
         render();
     }
 

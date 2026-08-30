@@ -8,6 +8,8 @@
 // ============================================
 if ('serviceWorker' in navigator) {
  window.addEventListener('load', () => {
+ if (window.__ihtSWRegistered) return; // already registered by main.js
+ window.__ihtSWRegistered = true;
  navigator.serviceWorker.register('/sw.js')
  .then(reg => console.log('[iHT] Service Worker registered:', reg.scope))
  .catch(err => console.log('[iHT] Service Worker registration failed:', err));
@@ -634,7 +636,55 @@ window.iHTInitFilterAccordion = initFilterAccordion;
 
 
 /* ───────────────────────────────────────────────────────────
-   submitFormViaEmail — shared form-to-email submission handler
+   Formspree configuration — direct form submission.
+   Create one form per submission type at https://formspree.io
+   (free tier: 50 submissions/month, no backend required) and
+   paste each form's ID below. Leave a value empty to use the
+   email-modal fallback for that form instead.
+   ─────────────────────────────────────────────────────────── */
+window.IHT_FORMSPREE = {
+ show: '',      // submit-show.html       → paste Formspree ID e.g. 'xwkgabcd'
+ review: '',    // submit-review.html
+ actor: '',     // submit-actor.html
+ service: '',   // submit-service.html
+ holiday: '',   // submit-holiday-program.html
+ contact: ''    // contact.html
+};
+
+// Disable/enable a form's submit button while a request is in flight
+function _iHTSetFormBusy(formEl, busy) {
+ if (!formEl || !formEl.querySelectorAll) return;
+ var btns = formEl.querySelectorAll('button[type="submit"], input[type="submit"]');
+ for (var i = 0; i < btns.length; i++) {
+  btns[i].disabled = !!busy;
+  if (busy) btns[i].dataset.origText = btns[i].textContent, btns[i].textContent = 'Sending…';
+  else if (btns[i].dataset.origText) btns[i].textContent = btns[i].dataset.origText;
+ }
+}
+
+// Success modal shown after a Formspree submission goes through
+function _iHTShowFormSuccessModal(title) {
+ var old = document.getElementById('form-success-modal');
+ if (old) old.remove();
+ var modal = document.createElement('div');
+ modal.id = 'form-success-modal';
+ modal.innerHTML = ''
+  + '<div class="efm-overlay" data-fsm-close></div>'
+  + '<div class="efm-panel" role="dialog" aria-modal="true" style="text-align:center">'
+  +  '<button class="efm-close" data-fsm-close aria-label="Close">&times;</button>'
+  +  '<div style="font-size:3rem;margin-bottom:12px">🎭</div>'
+  +  '<h3 class="efm-title">' + (title || 'Thank you — received!') + '</h3>'
+  +  '<p class="efm-sub">Your submission is on its way to the iHeartTheatre team. We read every single one and will be in touch if we need anything else.</p>'
+  +  '<button class="efm-btn efm-btn-primary" data-fsm-close type="button" style="margin-top:12px">Back to the show</button>'
+  + '</div>';
+ document.body.appendChild(modal);
+ modal.addEventListener('click', function (e) {
+  if (e.target.closest('[data-fsm-close]')) modal.remove();
+ });
+}
+
+/* ───────────────────────────────────────────────────────────
+   submitFormViaEmail — shared form submission handler
    Reads a <form> element OR a plain object, builds a clean
    formatted email body, and shows a modal with a mailto: link
    + copy-to-clipboard fallback. No third-party backend.
@@ -667,7 +717,11 @@ window.iHTInitFilterAccordion = initFilterAccordion;
      });
 ─────────────────────────────────────────────────────────── */
 
-window.submitFormViaEmail = function(source, opts) {
+window.submitFormViaEmail = window.iHTSubmitForm = function(source, opts) {
+ // Canonical form handler (shared.js always overwrites the main.js adapter,
+ // since shared.js is deferred and therefore executes second).
+ // Legacy string-signature support: submitFormViaEmail(form, 'Subject prefix')
+ if (typeof opts === 'string') opts = { subject: opts + ' — iHeartTheatre submission' };
  opts = opts || {};
  var to = opts.to || 'hello@ihearttheatre.com';
  var subject = opts.subject || 'iHeartTheatre submission';
@@ -675,6 +729,74 @@ window.submitFormViaEmail = function(source, opts) {
  var intro = opts.intro || null;
  var formEl = null;
  var fields = [];
+
+ // ── Formspree path: if a Formspree form ID is configured for this
+ //    submission type, POST directly (no backend needed on GitHub Pages).
+ //    On success show the modal; on failure fall through to email fallback.
+ //    opts._noFormspree=true marks a fallback re-entry and skips this path.
+ var fsKey = null;
+ if (!opts._noFormspree && window.IHT_FORMSPREE) {
+  fsKey = opts.formspree || null;
+  if (!fsKey && opts.formId) {
+   var normKey = String(opts.formId).replace(/^submit-/, '');
+   fsKey = window.IHT_FORMSPREE[opts.formId] || window.IHT_FORMSPREE[normKey] || null;
+  }
+  if (!fsKey && source && source.nodeType === 1 && source.tagName === 'FORM') {
+   fsKey = source.getAttribute('data-formspree') || null;
+   if (!fsKey) {
+    var kind = source.getAttribute('data-form-kind');
+    if (kind && window.IHT_FORMSPREE[kind]) fsKey = window.IHT_FORMSPREE[kind];
+   }
+  }
+ }
+ if (fsKey) {
+  // Build FormData from the same source types handled below
+  var fd = new FormData();
+  var pushField = function (name, value) {
+   if (value === null || value === undefined || value === '') return;
+   if (Array.isArray(value)) value = value.join(', ');
+   var k = String(name).replace(/^_/, ''); // formspree control fields start with _
+   if (!k || k.charAt(k.length - 1) === ':') return;
+   fd.append(k, String(value));
+  };
+  if (source && source.nodeType === 1 && source.tagName === 'FORM') {
+   if (!source.checkValidity()) { source.reportValidity(); return false; }
+   var skipTypes = ['submit', 'button', 'reset', 'hidden', 'file', 'image'];
+   var els = source.querySelectorAll('input, textarea, select');
+   for (var fi = 0; fi < els.length; fi++) {
+    var fel = els[fi];
+    if (!fel.name || skipTypes.indexOf(fel.type) > -1) continue;
+    if (fel.name.charAt(0) === '_') continue;
+    if (fel.type === 'checkbox') { if (fel.checked) pushField(fel.name, (fel.value && fel.value !== 'on') ? fel.value : 'Yes'); }
+    else if (fel.type === 'radio') { if (fel.checked) pushField(fel.name, fel.value); }
+    else pushField(fel.name, (fel.value || '').trim());
+   }
+  } else if (source && typeof source === 'object') {
+   var fkeys = Object.keys(source);
+   for (var fk = 0; fk < fkeys.length; fk++) pushField(fkeys[fk], source[fkeys[fk]]);
+  }
+  if (subject) fd.append('_subject', subject);
+  _iHTSetFormBusy(source && source.nodeType === 1 && source.tagName === 'FORM' ? source : null, true);
+  fetch('https://formspree.io/f/' + fsKey, {
+   method: 'POST',
+   body: fd,
+   headers: { Accept: 'application/json' }
+  }).then(function (res) {
+   if (source && source.nodeType === 1 && source.tagName === 'FORM') { source.reset(); }
+   _iHTSetFormBusy(source && source.nodeType === 1 && source.tagName === 'FORM' ? source : null, false);
+   if (res.ok) {
+    _iHTShowFormSuccessModal();
+    if (typeof gtag === 'function') { try { gtag('event', 'form_submit', { form_id: (opts.formId || fsKey), destination: 'formspree' }); } catch (e) {} }
+   } else {
+    // Fall through to email fallback path
+    window.submitFormViaEmail(source, { to: to, subject: subject, attachmentNote: attachmentNote, intro: intro, _noFormspree: true, formId: opts.formId });
+   }
+  }).catch(function () {
+   _iHTSetFormBusy(source && source.nodeType === 1 && source.tagName === 'FORM' ? source : null, false);
+   window.submitFormViaEmail(source, { to: to, subject: subject, attachmentNote: attachmentNote, intro: intro, _noFormspree: true, formId: opts.formId });
+  });
+  return false;
+ }
 
  if (source && source.nodeType === 1 && source.tagName === 'FORM') {
   formEl = source;

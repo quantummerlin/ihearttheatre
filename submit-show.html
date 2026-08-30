@@ -8,7 +8,6 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
  <meta name="theme-color" content="#e8b923">
  <meta name="apple-mobile-web-app-capable" content="yes">
  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -51,7 +50,7 @@
 
  <div class="form-section">
  <div class="form-container" id="showForm">
- <form id="submissionForm">
+ <form id="submissionForm" data-form-kind="show">
  <div class="form-group">
  <label for="showTitle">Show Title <span>*</span></label>
  <input type="text" id="showTitle" name="showTitle" required placeholder="Enter the name of your show">
@@ -193,42 +192,15 @@
  </footer>
 
  <script>
- // Form submission — opens email client with pre-filled message
+ // Form submission — Formspree (when configured) or email fallback
  document.getElementById('submissionForm').addEventListener('submit', function(e) {
    e.preventDefault();
-   var data = Object.fromEntries(new FormData(this));
-   var lines = [
-     'SHOW SUBMISSION — iHeartTheatre',
-     '================================',
-     'Show Title: ' + (data.showTitle || ''),
-     'Category: ' + (data.category || ''),
-     'Target Audience: ' + (data.targetAudience || ''),
-     'Venue: ' + (data.venue || ''),
-     'Company: ' + (data.company || ''),
-     'Start Date: ' + (data.startDate || ''),
-     'End Date: ' + (data.endDate || ''),
-     '',
-     'Description:',
-     (data.description || ''),
-     '',
-     'Contact Name: ' + (data.contactName || ''),
-     'Email: ' + (data.contactEmail || ''),
-     'Phone: ' + (data.contactPhone || ''),
-     'Website/Tickets: ' + (data.website || ''),
-     '',
-     'Additional Info:',
-     (data.additionalInfo || ''),
-     '',
-     'Review Requested: ' + (data.requestReview ? 'Yes' : 'No')
-   ];
-   var subject = encodeURIComponent('Show Submission: ' + (data.showTitle || 'Untitled'));
-   var body = encodeURIComponent(lines.join('\n'));
-   window.location.href = 'mailto:hello@ihearttheatre.com?subject=' + subject + '&body=' + body;
-   // Show success state
-   document.getElementById('submissionForm').style.display = 'none';
-   var success = document.getElementById('successMessage');
-   success.classList.add('show');
-   success.scrollIntoView({ behavior: 'smooth' });
+   var form = this;
+   submitFormViaEmail(form, {
+     to: 'hello@ihearttheatre.com',
+     subject: 'Show Submission: ' + (form.showTitle ? form.showTitle.value : 'Untitled'),
+     formId: 'submit-show'
+   });
  });
 
  // Progress bar
